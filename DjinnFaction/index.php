@@ -39,9 +39,10 @@
 	<br/>
 	<p><b>Faction spell</b></p>
 	<p><b><img src="/realm/Factions/picks/LimitedWish.png" align="middle"> Limited Wish</b></p>
-	<p><b>Cost</b>: 888,888 mana - <b>Duration</b>: Fixed to 12 seconds</p>
-	<p><b>Effect</b>: Provide a random effect based on your chosen base alignment, for 12 seconds. The duration of the spell cannot be modified. Its power increases as you continue casting this spell.</p>
-	<p><b>Formula</b>: (2.25 * (ln(1 + x) ^ 1.35) * y ^ 0.45)%, where x is Limited Wish activity time in this Era and y is a random number between 1 and Limited Wish casts this Era rolled on cast.</p>
+	<p><b>Cost</b>: 800,000 Mana - <b>Duration</b>: Fixed to 6 seconds</p>
+	<p><b>Effect</b>: Provide a random effect based on your chosen base alignment. The duration cannot be modified, and its cost decreases by 1% per minute for up to 1 hour before resetting. Its power increases with continued casts.</p>
+	<p><b>Production Formula</b>: (50 + 5 * ln(1 + x) ^ 1.75 * y)%, where x is Limited Wish activity time in this Era and y is the cast value rolled for the wish.</p>
+	<p><b>Non-Production Formula</b>: (25 + 2.5 * ln(1 + x) ^ 1.75 * y ^ 0.5)%, further multiplied by spell tier.</p>
 	<p><b>Possible Effects</b></p>
 	<p><b>1</b>: Increase the production of all buildings.</p>
 	<p><b>Good Alignment</b></p>
@@ -75,17 +76,17 @@
 	<p><b>Effect</b>: Unlocks Djinn Upgrades</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DjinnUpgrade1.png" align="middle"> The Desire Within</b></p>
-	<p><b>Cost</b>: 1 NoQag (1e150)</p>
+	<p><b>Cost</b>: 1e153 Coins</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on spells of your current alignments cast in this Era.</p>
 	<p><b>Formula</b>: (25 * ln(1 + x) ^ 2.5)%, where x is alignments spells cast in this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DjinnUpgrade2.png" align="middle"> Forbidden Will</b></p>
-	<p><b>Cost</b>: 10 NoQag (1e151)</p>
+	<p><b>Cost</b>: 1e155 Coins</p>
 	<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on the highest amount of Faction Coins found in this Reincarnation.</p>
-	<p><b>Formula</b>: (0.2 * log10(1 + x) ^ 2)%, where x is highest amount of Faction Coins found in this Reincarnation.</p>
+	<p><b>Formula</b>: (0.2 * (0.5 * ln(1 + x)) ^ 2)%, where x is highest amount of Faction Coins found in this Reincarnation.</p>
 	<br>
 	<p><b><img src="/realm/Factions/picks/DjinnUpgrade3.png" align="middle"> Magical Circuit</b></p>
-	<p><b>Cost</b>: 100 NoQag (1e152)</p>
+	<p><b>Cost</b>: 1e157 Coins</p>
 	<p><b>Effect</b>: Multiplicatively increase Maximum Mana based on researches selected.</p>
 	<p><b>Formula</b>: (sum(sumOfDigits(x)) ^ 1.15)%, where x is any single selected research upgrade.</p>
 	<hr>
@@ -95,19 +96,20 @@
 	<p><b>Effect</b>: Unlocks Djinn Upgrades</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DjinnUpgrade4.png" align="middle"> Aura of Magic</b></p>
-	<p><b>Cost</b>: 100 UQig (1e158)</p>
+	<p><b>Cost</b>: 1e163 Coins</p>
 	<p><b>Effect</b>: Increase non-unique building production based on Mana produced this Era.</p>
 	<p><b>Formula</b>: (0.325 * x ^ 0.325)%, where x is Mana produced this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DjinnUpgrade5.png" align="middle"> Spiritual Bindings</b></p>
-	<p><b>Cost</b>: 1 DQig (1e159)</p>
-	<p><b>Effect</b>: Multiplicatively increase assistants based on time spent offline.</p>
-	<p><b>Formula</b>: (0.65 * x ^ 0.5)%, where x is time spent offline in this Era.</p>
+	<p><b>Cost</b>: 1e165 Coins</p>
+	<p><b>Effect</b>: Multiplicatively increase assistants, and make spell casts and activity times count more, based on time spent offline in this Reincarnation.</p>
+	<p><b>Assistant Formula</b>: (0.4 * x ^ 0.6)%, where x is time spent offline in this Reincarnation.</p>
+	<p><b>Spell Formula</b>: (0.2 * x ^ 0.6)%, where x is time spent offline in this Reincarnation.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DjinnUpgrade6.png" align="middle"> Wild Surge</b></p>
-	<p><b>Cost</b>: 10 DQig (1e160)</p>
-	<p><b>Effect</b>: Increase the production of all buildings based on the duration of your longest spell.</p>
-	<p><b>Formula</b>: (0.75 * x ^ 0.75)%, where x is the duration of your longest spell.</p>
+	<p><b>Cost</b>: 1e167 Coins</p>
+	<p><b>Effect</b>: Multiplicatively increase production bonus from Gems based on the duration of your longest spell.</p>
+	<p><b>Formula</b>: (0.5 * x ^ 0.5)%, where x is the duration of your longest spell.</p>
 	<hr>
 	<p><b>Tier 3 Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/DjinnAlliance.png" align="middle"> Djinn Alliance</b></p>
@@ -115,43 +117,44 @@
 	<p><b>Effect</b>: Unlocks Djinn Upgrades</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DjinnUpgrade7.png" align="middle"> Wishing Well</b></p>
-	<p><b>Cost</b>: 10 TQig (1e163)</p>
-	<p><b>Effect</b>: Multiplicatively increase production bonus from Gems based on the amount of assistants you own.</p>
-	<p><b>Formula</b>: (0.03 * x ^ 0.3)%, where x is the amount of assistants you own.</p>
+	<p><b>Cost</b>: 1e173 Coins</p>
+	<p><b>Effect</b>: Increase the production of all buildings based on assistants owned.</p>
+	<p><b>Formula</b>: (1.5 * ln(1 + x) ^ 1.5)%, where x is the amount of assistants you own.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DjinnUpgrade8.png" align="middle"> Flashy Storm</b></p>
-	<p><b>Cost</b>: 100 TQig (1e164)</p>
-	<p><b>Effect</b>: Increase the production of even-tier buildings on odd days of the month, odd-tier buildings on even days.</p>
-	<p><b>Formula</b>: (ln(1 + x) ^ 2.5)%, where x is assistants owned.</p>
+	<p><b>Cost</b>: 1e175 Coins</p>
+	<p><b>Effect</b>: Increase even-tier building production based on assistants owned and odd-tier building production based on Excavation Depth.</p>
+	<p><b>Even-Tier Formula</b>: (ln(1 + x) ^ 2)%, where x is assistants owned.</p>
+	<p><b>Odd-Tier Formula</b>: (y ^ 0.6)%, where y is Excavation Depth.</p>
 	<p><b>Note</b>: The bonus is based on assistants owned.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DjinnUpgrade9.png" align="middle"> Mana Creatures</b></p>
-	<p><b>Cost</b>: 1 QaQig (1e165)</p>
+	<p><b>Cost</b>: 1e177 Coins</p>
 	<p><b>Effect</b>: Multiplicatively increase assistants based on the highest mana produced in this Reincarnation.</p>
-	<p><b>Formula</b>: (1.8 * log10(1 + x) ^ 1.8)%, where x is highest mana produced in a single game this Reincarnation.</p>
+	<p><b>Formula</b>: (1.8 * (0.5 * ln(1 + x)) ^ 1.8)%, where x is highest mana produced in a single game this Reincarnation.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/DjinnHeritage.png" align="middle"> Djinn Heritage</b></p>
 	<p><b>Requirements</b>: Djinn Champion Trophy</p>
 	<p><b>Cost</b>: 1 Ud (1e36) Fairy and Demon Coins</p>
 	<p><b>Effect</b>: Increase the production of Unique Buildings based on Limited Wish activity time in this Reincarnation.</p>
-	<p><b>Formula</b>: (0.3 * x ^ 0.65)%, where x is Limited Wish activity time in this Reincarnation.</p>
+	<p><b>Formula</b>: (30 + 0.3 * x ^ 0.65)%, where x is Limited Wish activity time in this Reincarnation.</p>
 	<hr>
 	<p><b>R130+</b></p>
 	<p><b><img src="/realm/Factions/picks/PavilionQuest.png" align="middle"> Pavilion Quest</b></p>
 	<p><b>Description</b>: Greetings. You will have the honor of hosting our people. Cover your realm in Chaos magic for us!</p>
-	<p><b>Requirements</b>: R130+, 5 days of chaos spell activity time this Era (combined).</p>
-	<p><b>Cost</b>: 1 QaQig (1e165)</p>
+	<p><b>Requirements</b>: R130+ and 1 day of combined Chaos spell activity time this Era.</p>
+	<p><b>Cost</b>: 1e177 Coins</p>
 	<p><b>Note</b>: Chaos spells are: Maelstrom, Limited Wish, Catalyst, Hellfire Blast, Fairy Chanting and Brainwave.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/PavilionUpgrade.png" align="middle"> Unique Building Upgrade</b></p>
 	<p><b>Requirements</b>: Pavilion Quest.</p>
-	<p><b>Cost</b>: 1 QiQig (1e168)</p>
+	<p><b>Cost</b>: 1e180 Coins</p>
 	<p><b>Effect</b>: Gives Pavilion Unique Building.</p>
 	<br/>
 	<p><b>Unique Building</b></p>
 	<p><b><img src="/realm/Factions/picks/PavillionUniqueBuilding.png" align="middle"></b></p>
 	<p>Upgrade Slave Pens/Warrior Barracks/Deep Mines to Pavilions, boosting their production based on spells cast in this Reincarnation and unlocking more unique perks for the building.</p>
-	<p><b>Formula</b>: Formula: (10 * x ^ 0.5)%, where x is spells cast this Reincarnation.</p>
+	<p><b>Formula</b>: (12 * x ^ 0.6)%, where x is spells cast this Reincarnation.</p>
 	<p><b>Requirement</b>: Pavilion Quest.</p>
 	<p><b>Effect</b>: Grants access to Faction Union.</p>
 	<hr>
@@ -165,19 +168,19 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DjinnUpgrade10.png" align="middle"> Wishes Come True</b></p>
 	<p><b>Requirements</b>: Djinn Union</p>
-	<p><b>Cost</b>: 100 QiQig (1e170)</p>
+	<p><b>Cost</b>: 1e183 Coins</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on Limited Wish activity time in this Reincarnation.</p>
 	<p><b>Formula</b>: (0.3 * x ^ 0.7)%, where x is Limited Wish activity time this Reincarnation.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DjinnUpgrade11.png" align="middle"> Blue Powder</b></p>
 	<p><b>Requirements</b>: Djinn Union</p>
-	<p><b>Cost</b>: 1 SxQig (1e171)</p>
+	<p><b>Cost</b>: 1e185 Coins</p>
 	<p><b>Effect</b>: Multiplicatively increase mana regeneration based on Royal Exchanges made.</p>
-	<p><b>Formula</b>: (0.3 * x ^ 0.8)%, where x is Royal Exchanges made.</p>
+	<p><b>Formula</b>: (0.4 * x ^ 0.8)%, where x is Royal Exchanges made.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DjinnUpgrade12.png" align="middle"> Academic Prodigy</b></p>
 	<p><b>Requirements</b>: Djinn Union</p>
-	<p><b>Cost</b>: 10 SxQig (1e172)</p>
+	<p><b>Cost</b>: 1e187 Coins</p>
 	<p><b>Effect</b>: Tax Collections are worth more seconds based on trophies unlocked.</p>
-	<p><b>Formula</b>: (5 * x ^ 0.5)%, where x is trophies unlocked.</p>
+	<p><b>Formula</b>: +floor(5 * x ^ 0.5) seconds, where x is trophies unlocked.</p>
 <?php include "../scripts/footer.html"; ?>
