@@ -5,6 +5,7 @@
 <?php include "../scripts/header.html"; ?>
 	<h6>Lineages</h6>
 	<p><b>Requirement</b>: R60+</p>
+	<p><b>Ascension 4 requirement</b>: Lineages become available again at R230.</p>
 	<p>At R60 you will unlock Lineages, which gives you access to powerful upgrades based on your chosen Bloodline in the form of perks, and will even allow you to use the spell of other Factions, provided you complete the respective lineage challenge.</p>
 	<p>Lineages need 400 Royal Exchanges of the respective Faction plus their Bloodline to be used (needs to be bought every Abdication).</p>
 	<p><b>Note</b>: You can not use a Lineage if it matches your faction or its respective Prestige or Astral faction.</p>
@@ -551,7 +552,6 @@
 	<p><b><img src="/realm/Factions/picks/DwarvenLineage.png" align="middle"> Dwarven Lineage</b></p>
 	<p><b>Cost</b>: 400 Dwarven Royal Exchanges</p>
 	<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance by (10 + 0.75 * x ^ 1.5)%, where x is Lineage level.</p>
-	<p><b>Formula</b>: +(x * 10 ^ (0.2 * T  ^ 1.4)), where x is Lineage level and T is Building tier.</p>
 	<br/>
 	<p><b>Level 12 (R72+)</b></p>
 	<p><b><img src="/realm/Factions/picks/DwarvenPerk1.png" align="middle"> Dwarven Perk 1</b></p>
@@ -613,9 +613,10 @@
 	<p><b>Level 39 (R132+)</b></p>
 	<p><b><img src="/realm/Factions/picks/DrowPerk4.png" align="middle"> Drow Perk 4</b></p>
 	<p><b>Requirement</b>: R132+, Reach Lineage Level 39</p>
-	<p><b>Effect</b>: Combo Strike's combo bonus increases by 5% per 30 seconds spent this Era.</p>
+	<p><b>Effect</b>: Increase Combo Strike's combo bonus based on time spent in this Era.</p>
+	<p><b>Formula</b>: (0.5 * floor(x))%, where x is time spent in this Era in seconds.</p>
 	<p><b>Effect</b>: While Combo Strike is active, increase the production of all buildings based on the current Combo Strike bonus.</p>
-	<p><b>Formula</b>: (2 * log10((x ^ 0.9) ^ T) ^ 2)%, where x is Combo Strike counter, and T is spell tier.</p>
+	<p><b>Formula</b>: (2 * ln(1 + (x ^ 0.9) ^ T) ^ 2)%, where x is the Combo Strike counter and T is the spell tier.</p>
 	<br/>
 	<p><b>Level 54 (R166+)</b></p>
 	<p><b><img src="/realm/Factions/picks/DrowPerk5.png" align="middle"> Drow Perk 5</b></p>
