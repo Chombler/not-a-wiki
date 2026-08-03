@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 <?php include "../scripts/header.html"; ?>
-	<h6><img src="http://musicfamily.org/realm/Factions/picks/TopPageResearch.png" alt="Spellcraft" align="middle"></h6>
+	<h6><img src="/realm/Factions/picks/TopPageResearch.png" alt="Spellcraft" align="middle"></h6>
 	<p><b>Optimal Tiering for R75-R99:</b></p>
 	<p>R85: Blood Frenzy, Night Time, Grand Balance and God's Hand to Tier 6: 16 hours and 59 minutes (assuming optimal tiering)</p>
 	<p>R99: Combo Strike, Goblin's Greed and Moon Blessing to Tier 6: 9 hours and 28 minutes</p>
@@ -360,7 +360,7 @@
 				<p><b>Note</b>: DG9 requires Dragon's Breath spell (Dragon Perk 2 purchased) to become available.</p>
 				<p><b>Note</b>: Tiering every spell the build uses to T6 is highly recommended.</p>
 				<p><b>Note</b>: At higher gems buffing TTC4, DM2 and FC3 when build slows down is recommended.</p>
-				<p><b>Note</b>: Swap Night Time->Grand Balance if you have <b><a href="http://musicfamily.org/realm/Druid/#DruidDCR">Primal Balance</a></b> +10.</p>
+				<p><b>Note</b>: Swap Night Time->Grand Balance if you have <b><a href="/realm/Druid/#DruidDCR">Primal Balance</a></b> +10.</p>
 			</div>
 		</div>
 		<div class="shelementwhole">

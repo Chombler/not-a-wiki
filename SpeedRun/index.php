@@ -5,7 +5,7 @@
 <?php include "../scripts/header.html"; ?>
 <h3>Speed Run Instructions</h3>
 <hr>
-<p><img src="http://musicfamily.org/realm/Factions/picks/SpeedrunSecretTrophy.png" alt="Speedrun" align="middle"> <b>Speed Run</b></p>
+<p><img src="/realm/Factions/picks/SpeedrunSecretTrophy.png" alt="Speedrun" align="middle"> <b>Speed Run</b></p>
 <p><b>Requirement</b>: Reach 1 M (1E6) coins in less than 5 minutes, without using Gem Power.</p>
 <p><b>Effect</b>: Increase your base clicking reward by 1m.</p>
 <p>Really overpowered for the first dozen abdications, so you may as well get this right out of the gate.</p>

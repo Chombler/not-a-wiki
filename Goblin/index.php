@@ -3,9 +3,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <?php include "../scripts/header.html"; ?>
-	<h6><a href="/realm/Challenges/"><img src="http://musicfamily.org/realm/Factions/picks/ChallengesTopPage.png"></h6></a>
+	<h6><a href="/realm/Challenges/"><img src="/realm/Factions/picks/ChallengesTopPage.png"></h6></a>
 	<h6 id="GBC1"></h6><p><b>Goblin Challenge 1</b></p>
-	<p><img src="http://musicfamily.org/realm/Factions/picks/DiscountSeasonChallenge.png" alt="Discount Season" align="middle"> <b>Discount Season</b></p>
+	<p><img src="/realm/Factions/picks/DiscountSeasonChallenge.png" alt="Discount Season" align="middle"> <b>Discount Season</b></p>
 	<p>"The goblin king has revealed the secrets of his race's success. Patience and persistence."</p>
 	<p><b>Requirements</b>: Goblin as Base Faction, Reincarnation 2+, Greed Drive upgrade purchased.</p>
 	<p><b>Note</b>: Drow can be used but not required.</p>
@@ -17,7 +17,7 @@
 	<p><b>Upgrade</b>: Works with Goblin</p>
 	<hr>
 	<h6 id="GBC2"></h6><p><b>Goblin Challenge 2</b></p>
-	<p><img src="http://musicfamily.org/realm/Factions/picks/EliteWarriorsChallenge.png" alt="Elite Warriors" align="middle"> <b>Elite Warriors</b></p>
+	<p><img src="/realm/Factions/picks/EliteWarriorsChallenge.png" alt="Elite Warriors" align="middle"> <b>Elite Warriors</b></p>
 	<p>"Goblin elites are used to unimaginable wealth. They will work for you after you bribe them generously and show them your worth."</p>
 	<p><b>Requirements</b>: Goblin as Base Faction, Reincarnation 8+, Goblin Bloodline, Goblin challenge 1 completed.</p>
 	<p><b>Note</b>: Drow can be used but not required.</p>
@@ -26,7 +26,7 @@
 	<p><b>Upgrade</b>: Works with Demon</p>
 	<hr>
 	<h6 id="GBC3"></h6><p><b>Goblin Challenge 3</b></p>
-	<p><img src="http://musicfamily.org/realm/Factions/picks/SmuggledJewelsChallenge.png" alt="Smuggled Jewels" align="middle"> <b>Smuggled Jewels</b></p>
+	<p><img src="/realm/Factions/picks/SmuggledJewelsChallenge.png" alt="Smuggled Jewels" align="middle"> <b>Smuggled Jewels</b></p>
 	<p>"The goblin king wants a castle made of jewels all to himself."</p>
 	<p><b>Requirements</b>: Goblin as Base Faction, Reincarnation 18+, Goblin Unique Building.</p>
 	<p><b>Note</b>: Drow can <b>NOT</b> be used unless you can get Drow's Unique Building at R28+.</p>
@@ -35,6 +35,6 @@
 	<p><b>Upgrade</b>: Works with All</p>
 	<hr>
 	<h6 id="GBCR"></h6><p><b>Goblin Challenge Reward</b></p>
-	<p><img src="http://musicfamily.org/realm/Factions/picks/AvariceDriveChallengeReward.png" alt="Avarice Drive" align="middle"> <b>Avarice Drive</b></p>
+	<p><img src="/realm/Factions/picks/AvariceDriveChallengeReward.png" alt="Avarice Drive" align="middle"> <b>Avarice Drive</b></p>
 	<p><b>Effect</b>: Goblin's Greed counts Faction Coins found in this Reincarnation.</p>
 <?php include "../scripts/footer.html"; ?>

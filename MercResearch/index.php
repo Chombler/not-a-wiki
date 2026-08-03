@@ -4,9 +4,9 @@
 <head>
 <?php include "../scripts/header.html"; ?>
 <b><center><font size="5">Historic Page, outdated and no longer worked on!</font></center></b>
-<h6><img src="http://musicfamily.org/realm/Factions/picks/ResearchTopPage.png"></h6>
+<h6><img src="/realm/Factions/picks/ResearchTopPage.png"></h6>
 <h6>Mercenary Research</h6>
-<p><img src="http://musicfamily.org/realm/Factions/picks/MercenaryEncampmentQuest.png" alt="Mercenary Encampment Quest" align="middle"> <b>Mercenary Encampment Quest</b></p>
+<p><img src="/realm/Factions/picks/MercenaryEncampmentQuest.png" alt="Mercenary Encampment Quest" align="middle"> <b>Mercenary Encampment Quest</b></p>
 <p>We salute you, commander. Your strategical skills had not gone unnoticed within our ranks. We have decided to offer you a chance to establish a formal encampment within your boundaries... Build more structures to strengthen our city.</p>
 <p><b>Requirement</b>: Mercenary (Any Alignment), 125000 buildings</p>
 <p><b>Cost</b>: 10 Notg (1e121)</p>
@@ -15,7 +15,7 @@
 <hr>
 <p><b>Unique Buildings</b></p>
 <p><b>Good</b></p>
-<p><img src="http://musicfamily.org/realm/Factions/picks/MercenaryCamp.png" alt="Mercenary Camp" align="middle"> <b>Mercenary Camp</b></p>
+<p><img src="/realm/Factions/picks/MercenaryCamp.png" alt="Mercenary Camp" align="middle"> <b>Mercenary Camp</b></p>
 <p><b>Requirement</b>: Mercenary Encampment Quest</p>
 <p><b>Cost</b>: 100 Qag (1e125)</p>
 <p><b>Effect 1</b>: Allows access to Research Facilities</p>
@@ -23,7 +23,7 @@
 <p><b>Formula</b>: (1.25 * (1 + x) ^ 1.05), where X is number of Non-Unique Buildings.</p>
 <p><b>Effect 3</b>: Unlocks Round Table</p>
 <br/>
-<p><img src="http://musicfamily.org/realm/Factions/picks/RoundTable.png" alt="Round Table" align="middle"> <b>Round Table</b> (Spell Upgrade)</p>
+<p><img src="/realm/Factions/picks/RoundTable.png" alt="Round Table" align="middle"> <b>Round Table</b> (Spell Upgrade)</p>
 <p><b>Requirement</b>: Mercenary Camp</p>
 <p><b>Cost</b>: 1 Qaqag (1e135)</p>
 <p><b>Effect 1</b>: Gives 1 additional upgrade from any of the Good factions.</p>
@@ -31,7 +31,7 @@
 <p><b>Note</b>: Tier 41 and above cost x4/x2.25 (with S1275) instead of x2/x1.5 (with S1275) than each previous tier.</p>
 <p><b>Faction Spell</b>: Tax Collection</p>
 <br/>
-<p><img src="http://musicfamily.org/realm/Factions/picks/ShareBenefits.png" alt="Round Table" align="middle"> <b>Good</b></p>
+<p><img src="/realm/Factions/picks/ShareBenefits.png" alt="Round Table" align="middle"> <b>Good</b></p>
 <p><b>Requirement</b>: Mercenary Camp</p>
 <p><b>Cost</b>: 1 Qaqag (1e135)</p>
 <p><b>Effect</b>: Increases the production of all buildings and Faction Coin find chance based on this spell tier level for 20 seconds. Can be cast up to 36 tiers.</p>
@@ -41,12 +41,12 @@
 <p><b>Formula</b>: (10 * x * T), where x is spell duration and T is spell tier</p>
 <p><b>Formula</b>: sum formula is (x ^ (0.15 * T)), where x is spell duration and T is spell tier</p>
 <br/>
-<p><img src="http://musicfamily.org/realm/Factions/picks/GoodMercenaryUpgrade13.png" alt="Round Table" align="middle"> <b>Good Mercenary Upgrade 13</b></p>
+<p><img src="/realm/Factions/picks/GoodMercenaryUpgrade13.png" alt="Round Table" align="middle"> <b>Good Mercenary Upgrade 13</b></p>
 <p>You can purchase any upgrade from any Good Faction for an increased price</p>
 <p><b>Requirement</b>: Round Table (Good Spell Upgrade)</p>
 <hr>
 <p><b>Evil</b></p>
-<p><img src="http://musicfamily.org/realm/Factions/picks/TyrantGarrison.png" alt="Tyrant Garrison" align="middle"> <b>Tyrant Garrison</b></p>
+<p><img src="/realm/Factions/picks/TyrantGarrison.png" alt="Tyrant Garrison" align="middle"> <b>Tyrant Garrison</b></p>
 <p><b>Requirement</b>: Mercenary Encampment Quest</p>
 <p><b>Cost</b>: 100 Qag (1e125)</p>
 <p><b>Effect 1</b>: Allows access to Research Facilities</p>
@@ -54,7 +54,7 @@
 <p><b>Effect 3</b>: Unlocks Dark Covenant</p>
 <p><b>Formula</b>: ((log10(1 + x) ^ 3)%, where x is your offline production.</p>
 <br/>
-<p><img src="http://musicfamily.org/realm/Factions/picks/ReapInterests.png" alt="Tyrant Garrison" align="middle"> <b>Evil</b></p>
+<p><img src="/realm/Factions/picks/ReapInterests.png" alt="Tyrant Garrison" align="middle"> <b>Evil</b></p>
 <p><b>Requirement</b>: Tyrant Garrison</p>
 <p><b>Cost</b>: 1 Qaqag (1e135)</p>
 <p><b>Effect</b>: Additional casts of Reap Interests increase its seconds worth of production.</p>
@@ -62,18 +62,18 @@
 <p><b>Note</b>: Extra time from reap interests does apply to S50.</p>
 <p><b>Note</b>: S50 tax collections do increase reap interests.</p>
 <br/>
-<p><img src="http://musicfamily.org/realm/Factions/picks/DarkCovenant.png" alt="Dark Covenant" align="middle"> <b>Dark Covenant</b> (Spell Upgrade)</p>
+<p><img src="/realm/Factions/picks/DarkCovenant.png" alt="Dark Covenant" align="middle"> <b>Dark Covenant</b> (Spell Upgrade)</p>
 <p><b>Requirement</b>: Tyrant Garrison</p>
 <p><b>Cost</b>: 1 Qaqag (1e135)</p>
 <p><b>Effect 1</b>: Gives 1 additional upgrade from any of the Evil factions.</p>
 <p><b>Effect 2</b>: Upgrades Tax Collection spell to Reap Interests Additional casts of Reap Interests increase its seconds worth of production.</p>
 <br/>
-<p><img src="http://musicfamily.org/realm/Factions/picks/EvilMercenaryUpgrade13.png" alt="Round Table" align="middle"> <b>Evil Mercenary Upgrade 13</b></p>
+<p><img src="/realm/Factions/picks/EvilMercenaryUpgrade13.png" alt="Round Table" align="middle"> <b>Evil Mercenary Upgrade 13</b></p>
 <p>You can purchase any upgrade from any Evil Faction for an increased price.</p>
 <p><b>Requirement</b>: Tyrant Garrison (Evil Spell Upgrade)</p>
 <hr>
 <p><b>Neutral</b></p>
-<p><img src="http://musicfamily.org/realm/Factions/picks/Freemason'sHall.png" alt="Freemason's Hall" align="middle"> <b>Freemason's Hall</b></p>
+<p><img src="/realm/Factions/picks/Freemason'sHall.png" alt="Freemason's Hall" align="middle"> <b>Freemason's Hall</b></p>
 <p><b>Requirement</b>: Mercenary Encampment Quest</p>
 <p><b>Cost</b>: 100 Qag (1e125)</p>
 <p><b>Effect 1</b>: Allows access to Research Facilities</p>
@@ -81,22 +81,22 @@
 <p><b>Formula</b>: (20 + 20 * x ^ 0.8)%, where x is the highest assistants you had in a single game this R.</p>
 <p><b>Effect 3</b>: Unlocks Secret Exchange</p>
 <br/>
-<p><img src="http://musicfamily.org/realm/Factions/picks/SecretExchange.png" alt="Secret Exchange" align="middle"> <b>Secret Exchange</b> (Spell Upgrade)</p>
+<p><img src="/realm/Factions/picks/SecretExchange.png" alt="Secret Exchange" align="middle"> <b>Secret Exchange</b> (Spell Upgrade)</p>
 <p><b>Requirement</b>: Freemason's Hall</p>
 <p><b>Cost</b>: 1 Qaqag (1e135)</p>
 <p><b>Effect </b>: Upgrades Tax Collection spell to Appraisal Vantage, Generates additional Faction Coins per cast</p>
-<p><img src="http://musicfamily.org/realm/Factions/picks/AppraisalVantage.png" alt="Freemason's Hall" align="middle"> <b>Neutral</b></p>
+<p><img src="/realm/Factions/picks/AppraisalVantage.png" alt="Freemason's Hall" align="middle"> <b>Neutral</b></p>
 <p><b>Requirement</b>: Freemason's Hall</p>
 <p><b>Cost</b>: 1 Qaqag (1e135)</p>
 <p><b>Effect</b>: Generates additional Faction Coins per cast</p>
 <p><b>Formula</b>: (2.5 * x ^ 2.5), where x is original Faction Coin chance.</p>
 <br/>
-<p><img src="http://musicfamily.org/realm/Factions/picks/ObsidianShardArtifact.png" alt="Secrets of the Warriors" align="middle"> <b>Obsidian Shard</b></p>
+<p><img src="/realm/Factions/picks/ObsidianShardArtifact.png" alt="Secrets of the Warriors" align="middle"> <b>Obsidian Shard</b></p>
 <p><b>Requirement</b>: 8000th Excavation as any Faction, R75+</p>
 <p><b>Description</b>: Extremely hard and black as darkness itself, this material cannot apparently be carved or melted. It is a mystery how you can make this thing into a sword.</p>
 <p><b>Effect</b>: Unlocks Secrets of the Warriors</p>
 <br/>
-<p><img src="http://musicfamily.org/realm/Factions/picks/SecretsoftheWarriors.png" alt="Secrets of the Warriors" align="middle"> <b>Secrets of the Warriors</b></p>
+<p><img src="/realm/Factions/picks/SecretsoftheWarriors.png" alt="Secrets of the Warriors" align="middle"> <b>Secrets of the Warriors</b></p>
 <p><b>Requirement</b>: Obsidian Shard</p>
 <p><b>Cost</b>: 100 Qiqag (1e140) and 10 Qa (1e16) of every Faction Coin.</p>
 <p><b>Effect</b>: Unlocks Researches for Mercenaries and increases their production by 1000%.</p>

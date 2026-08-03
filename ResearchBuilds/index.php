@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 <?php include "../scripts/header.html"; ?>
-    <h6><img src="http://musicfamily.org/realm/Factions/picks/TopPageResearch.png" alt="Spellcraft" align="middle"></h6>
+    <h6><img src="/realm/Factions/picks/TopPageResearch.png" alt="Spellcraft" align="middle"></h6>
     <p>As a general Rule: All builds were tested without Sunforce, if not stated otherwise. All builds had access to all relevant trophies, challenges and artifacts. Only the fastest build for each bracket made it into this, but every combination that looked useful (and even some others) was tested.</p>
 	<p>Vanilla Flavor Juice and Ancient Cocoa Bean are required.</p>
     <p>All of the builds are rush builds with under 25 minutes (vanilla) or 15 minutes (neutral) runtime due to the above artifacts.</p>
@@ -17,7 +17,7 @@
                 <p onclick="shohid($(this));"><b><a href="#" onclick="return false;"><font color="DarkRed">Notes for R16</font></a></b></p>
                 <div class="autohide">
                     <p><b>Note</b></p>
-                    <p>There is a relevant guide on how to go through the unlocking of the researches needed to start using research builds. (<a target="_blank" href="http://musicfamily.org/realm/R16Guide/"><b>R16 Research Guide</b></a>)</p>
+                    <p>There is a relevant guide on how to go through the unlocking of the researches needed to start using research builds. (<a target="_blank" href="/realm/R16Guide/"><b>R16 Research Guide</b></a>)</p>
                     <p>IMPORTANT: Although you unlock all researches at the end of R16, you do not use research until R17. Keep using Mercenary to finish R16 </p>
                     <p>All factions were used and tested, Goblin proved to be the best in a reasonable amount of time.</p>
                 </div>

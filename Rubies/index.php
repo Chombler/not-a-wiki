@@ -79,14 +79,14 @@
     <p>The formula for the number of excavations required for each ruby is (25 * n * (n + 1)), where n is the number of rubies found from excavations.</p>
     <p>Finding the 1st, 10th, 25th and 50th ruby rewards a trophy.</p>
     <p><b>Spending Rubies</b></p>
-    <p>Rubies enable you to buy: Excavation Resets (see <b><a target="_blank" href="http://musicfamily.org/realm/Artifacts/">Artifacts</a></b> page)), Event items (such as snowballs during the Christmas event) or mainly <b>Ruby Upgrades</b>.</p>
-	<p><img src="http://musicfamily.org/realm/Factions/picks/RubyPower.png" align="middle"><b> Ruby Power Upgrade</b></p>
+    <p>Rubies enable you to buy: Excavation Resets (see <b><a target="_blank" href="/realm/Artifacts/">Artifacts</a></b> page)), Event items (such as snowballs during the Christmas event) or mainly <b>Ruby Upgrades</b>.</p>
+	<p><img src="/realm/Factions/picks/RubyPower.png" align="middle"><b> Ruby Power Upgrade</b></p>
     <p>Finding 1 Ruby will unlock the Ruby power upgrade which unlocks The Power of Rubies.</p>
     <p>Each Ruby enables you to purchase one of the Ruby powers listed below:</p>
     <p>Ruby power bonus will also increase by Tier based on all-time amounts of Rubies collected. See Ruby Upgrades for more details.</p>
     <hr>
     <p><b>Ruby Upgrade Panel</b></p>
-    <p><img src="http://musicfamily.org/realm/Factions/picks/RubyUpgradePanel.png" alt=""></p>
+    <p><img src="/realm/Factions/picks/RubyUpgradePanel.png" alt=""></p>
        <a id="Upgrades"></a>
     <table class="numtable">
         <tr>
@@ -164,7 +164,7 @@
         </thead>
         <tbody>
         <tr>
-            <td> <img src="http://musicfamily.org/realm/Factions/picks/RubyTier1.png" alt="" align="center"> <b>1</b></td>
+            <td> <img src="/realm/Factions/picks/RubyTier1.png" alt="" align="center"> <b>1</b></td>
             <td>1 Coin</td>
             <td>50 Rubies</td>
             <td>Increases ruby power by 100% to 200%.</td>
@@ -176,7 +176,7 @@
         </thead>
         <tbody>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier2.png" alt="" align="center"> <b>2</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier2.png" alt="" align="center"> <b>2</b></td>
             <td>1 Coin</td>
             <td>100 Rubies</td>
             <td>Increases ruby power 100% to 300%.</td>
@@ -187,7 +187,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier3.png" alt="" align="center"> <b>3</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier3.png" alt="" align="center"> <b>3</b></td>
             <td>1 Coin</td>
             <td>150 Rubies</td>
             <td>Increases ruby power 100% to 400%.</td>
@@ -198,7 +198,7 @@
        </tr>
         </thead>
        <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier4.png" alt="" align="center"> <b>4</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier4.png" alt="" align="center"> <b>4</b></td>
             <td>1 Coin</td>
             <td>250 Rubies</td>
             <td>Increases ruby power 200% to 600%.</td>
@@ -209,7 +209,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier5.png" alt="" align="center"> <b>5</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier5.png" alt="" align="center"> <b>5</b></td>
             <td>1 Coin</td>
             <td>350 Rubies</td>
             <td>Increases ruby power 200% to 800%.</td>
@@ -220,7 +220,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier6.png" alt="" align="center"> <b>6</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier6.png" alt="" align="center"> <b>6</b></td>
             <td>1 Coin</td>
             <td>450 Rubies</td>
             <td>Increases ruby power 200% to 1000%.</td>
@@ -231,7 +231,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier7.png" alt="" align="center"> <b>7</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier7.png" alt="" align="center"> <b>7</b></td>
             <td>1 Coin</td>
             <td>550 Rubies</td>
             <td>Increases ruby power 200% to 1200%.</td>
@@ -242,7 +242,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier8.png" alt="" align="center"> <b>8</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier8.png" alt="" align="center"> <b>8</b></td>
             <td>1 Coin</td>
             <td>650 Rubies</td>
             <td>Increases ruby power 200% to 1400%.</td>
@@ -254,7 +254,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier9.png" alt="" align="center"> <b>9</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier9.png" alt="" align="center"> <b>9</b></td>
             <td>1 Coin</td>
             <td>800 Rubies</td>
             <td>Increases ruby power 300% to 1700%.</td>
@@ -266,7 +266,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier10.png" alt="" align="center"> <b>10</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier10.png" alt="" align="center"> <b>10</b></td>
             <td>1 Coin</td>
             <td>950 Rubies</td>
             <td>Increases ruby power 300% to 2000%.</td>
@@ -278,7 +278,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier11.png" align="center"> <b>11</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier11.png" align="center"> <b>11</b></td>
             <td>1 Coin</td>
             <td>1100 Rubies</td>
             <td>Increases ruby power 300% to 2300%.</td>
@@ -290,7 +290,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier12.png" alt="" align="center"> <b>12</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier12.png" alt="" align="center"> <b>12</b></td>
             <td>1 Coin</td>
             <td>1250 Rubies</td>
             <td>Increases ruby power 300% to 2600%.</td>
@@ -301,7 +301,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier13.png" alt="" align="center"> <b>13</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier13.png" alt="" align="center"> <b>13</b></td>
             <td>1 Coin</td>
             <td>1400 Rubies</td>
             <td>Increases ruby power 300% to 2900%.</td>
@@ -312,7 +312,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier14.png" alt="" align="center"> <b>14</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier14.png" alt="" align="center"> <b>14</b></td>
             <td>1 Coin</td>
             <td>1600 Rubies</td>
             <td>Increases ruby power 400% to 3300%.</td>
@@ -323,7 +323,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier15.png" alt="" align="center"> <b>15</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier15.png" alt="" align="center"> <b>15</b></td>
             <td>1 Coin</td>
             <td>1800 Rubies</td>
             <td>Increases ruby power 400% to 3700%.</td>
@@ -334,7 +334,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier16.png" alt="" align="center"> <b>16</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier16.png" alt="" align="center"> <b>16</b></td>
             <td>1 Coin</td>
             <td>2000 Rubies</td>
             <td>Increases ruby power 400% to 4100%.</td>
@@ -345,7 +345,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier17.png" alt="" align="center"> <b>17</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier17.png" alt="" align="center"> <b>17</b></td>
             <td>1 Coin</td>
             <td>2200 Rubies</td>
             <td>Increases ruby power 400% to 4500%.</td>
@@ -356,7 +356,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier18.png" alt="" align="center"> <b>18</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier18.png" alt="" align="center"> <b>18</b></td>
             <td>1 Coin</td>
             <td>2400 Rubies</td>
             <td>Increases ruby power 400% to 4900%.</td>
@@ -367,7 +367,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier19.png" alt="" align="center"> <b>19</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier19.png" alt="" align="center"> <b>19</b></td>
             <td>1 Coin</td>
             <td>2650 Rubies</td>
             <td>Increases ruby power 500% to 5400%.</td>
@@ -378,7 +378,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier20.png" alt="" align="center"> <b>20</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier20.png" alt="" align="center"> <b>20</b></td>
             <td>1 Coin</td>
             <td>2900 Rubies</td>
             <td>Increases ruby power 500% to 5900%.</td>
@@ -389,7 +389,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier21.png" alt="" align="center"> <b>21</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier21.png" alt="" align="center"> <b>21</b></td>
             <td>1 Coin</td>
             <td>3150 Rubies</td>
             <td>Increases ruby power 500% to 6400%.</td>
@@ -400,7 +400,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier22.png" alt="" align="center"> <b>22</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier22.png" alt="" align="center"> <b>22</b></td>
             <td>1 Coin</td>
             <td>3400 Rubies</td>
             <td>Increases ruby power 500% to 6900%.</td>
@@ -411,7 +411,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier23.png" alt="" align="center"> <b>23</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier23.png" alt="" align="center"> <b>23</b></td>
             <td>1 Coin</td>
             <td>3650 Rubies</td>
             <td>Increases ruby power 500% to 7400%.</td>
@@ -422,7 +422,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier24.png" alt="" align="center"> <b>24</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier24.png" alt="" align="center"> <b>24</b></td>
             <td>1 Coin</td>
             <td>3900 Rubies</td>
             <td>Increases ruby power 600% to 8000%.</td>
@@ -433,7 +433,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier25.png" alt="" align="center"> <b>25</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier25.png" alt="" align="center"> <b>25</b></td>
             <td>1 Coin</td>
             <td>4200 Rubies</td>
             <td>Increases ruby power 600% to 8600%.</td>
@@ -444,7 +444,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier26.png" alt="" align="center"> <b>26</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier26.png" alt="" align="center"> <b>26</b></td>
             <td>1 Coin</td>
             <td>4500 Rubies</td>
             <td>Increases ruby power 600% to 9200%.</td>
@@ -455,7 +455,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier27.png" alt="" align="center"> <b>27</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier27.png" alt="" align="center"> <b>27</b></td>
             <td>1 Coin</td>
             <td>4800 Rubies</td>
             <td>Increases ruby power 600% to 9800%.</td>
@@ -466,7 +466,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier28.png" alt="" align="center"> <b>28</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier28.png" alt="" align="center"> <b>28</b></td>
             <td>1 Coin</td>
             <td>5150 Rubies</td>
             <td>Increases ruby power 600% to 10400%.</td>
@@ -477,7 +477,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier29.png" alt="" align="center"> <b>29</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier29.png" alt="" align="center"> <b>29</b></td>
             <td>1 Coin</td>
             <td>5500 Rubies</td>
             <td>Increases ruby power 600% to 11000%.</td>
@@ -488,7 +488,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier30.png" alt="" align="center"> <b>30</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier30.png" alt="" align="center"> <b>30</b></td>
             <td>1 Coin</td>
             <td>5850 Rubies</td>
             <td>Increases ruby power 700% to 11700%.</td>
@@ -499,7 +499,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier31.png" alt="" align="center"> <b>31</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier31.png" alt="" align="center"> <b>31</b></td>
             <td>1 Coin</td>
             <td>6200 Rubies</td>
             <td>Increases ruby power 700% to 12400%.</td>
@@ -510,7 +510,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier32.png" alt="" align="center"> <b>32</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier32.png" alt="" align="center"> <b>32</b></td>
             <td>1 Coin</td>
             <td>6550 Rubies</td>
             <td>Increases ruby power 700% to 13100%.</td>
@@ -521,7 +521,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier33.png" alt="" align="center"> <b>33</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier33.png" alt="" align="center"> <b>33</b></td>
             <td>1 Coin</td>
             <td>6900 Rubies</td>
             <td>Increases ruby power 700% to 13800%.</td>
@@ -532,7 +532,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier34.png" alt="" align="center"> <b>34</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier34.png" alt="" align="center"> <b>34</b></td>
             <td>1 Coin</td>
             <td>7300 Rubies</td>
             <td>Increases ruby power 700% to 14500%.</td>
@@ -543,7 +543,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier35.png" alt="" align="center"> <b>35</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier35.png" alt="" align="center"> <b>35</b></td>
             <td>1 Coin</td>
             <td>7700 Rubies</td>
             <td>Increases ruby power 800% to 15300%.</td>
@@ -554,7 +554,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier36.png" alt="" align="center"> <b>36</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier36.png" alt="" align="center"> <b>36</b></td>
             <td>1 Coin</td>
             <td>8100 Rubies</td>
             <td>Increases ruby power 800% to 16100%.</td>
@@ -565,7 +565,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier37.png" alt="" align="center"> <b>37</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier37.png" alt="" align="center"> <b>37</b></td>
             <td>1 Coin</td>
             <td>8500 Rubies</td>
             <td>Increases ruby power 800% to 16900%.</td>
@@ -576,7 +576,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier38.png" alt="" align="center"> <b>38</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier38.png" alt="" align="center"> <b>38</b></td>
             <td>1 Coin</td>
             <td>8900 Rubies</td>
             <td>Increases ruby power 800% to 17700%.</td>
@@ -587,7 +587,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier39.png" alt="" align="center"> <b>39</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier39.png" alt="" align="center"> <b>39</b></td>
             <td>1 Coin</td>
             <td>9350 Rubies</td>
             <td>Increases ruby power 800% to 18500%.</td>
@@ -598,7 +598,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier40.png" alt="" align="center"> <b>40</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier40.png" alt="" align="center"> <b>40</b></td>
             <td>1 Coin</td>
             <td>9800 Rubies</td>
             <td>Increases ruby power 900% to 19400%.</td>
@@ -609,7 +609,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier41.png" alt="" align="center"> <b>41</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier41.png" alt="" align="center"> <b>41</b></td>
             <td>1 Coin</td>
             <td>10250 Rubies</td>
             <td>Increases ruby power 900% to 20300%.</td>
@@ -620,7 +620,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier42.png" alt="" align="center"> <b>42</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier42.png" alt="" align="center"> <b>42</b></td>
             <td>1 Coin</td>
             <td>10700 Rubies</td>
             <td>Increases ruby power 900% to 21200%.</td>
@@ -631,7 +631,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier43.png" alt="" align="center"> <b>43</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier43.png" alt="" align="center"> <b>43</b></td>
             <td>1 Coin</td>
             <td>11150 Rubies</td>
             <td>Increases ruby power 900% to 22100%.</td>
@@ -642,7 +642,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier44.png" alt="" align="center"> <b>44</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier44.png" alt="" align="center"> <b>44</b></td>
             <td>1 Coin</td>
             <td>11650 Rubies</td>
             <td>Increases ruby power 900% to 23000%.</td>
@@ -653,7 +653,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier45.png" alt="" align="center"> <b>45</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier45.png" alt="" align="center"> <b>45</b></td>
             <td>1 Coin</td>
             <td>12150 Rubies</td>
             <td>Increases ruby power 1000% to 24000%.</td>
@@ -664,7 +664,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier46.png" alt="" align="center"> <b>46</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier46.png" alt="" align="center"> <b>46</b></td>
             <td>1 Coin</td>
             <td>12650 Rubies</td>
             <td>Increases ruby power 1000% to 25000%.</td>
@@ -675,7 +675,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier47.png" alt="" align="center"> <b>47</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier47.png" alt="" align="center"> <b>47</b></td>
             <td>1 Coin</td>
             <td>13150 Rubies</td>
             <td>Increases ruby power 1000% to 26000%.</td>
@@ -686,7 +686,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier48.png" alt="" align="center"> <b>48</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier48.png" alt="" align="center"> <b>48</b></td>
             <td>1 Coin</td>
             <td>13650 Rubies</td>
             <td>Increases ruby power 1000% to 27000%.</td>
@@ -697,7 +697,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier49.png" alt="" align="center"> <b>49</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier49.png" alt="" align="center"> <b>49</b></td>
             <td>1 Coin</td>
             <td>14200 Rubies</td>
             <td>Increases ruby power 1000% to 28000%.</td>
@@ -708,7 +708,7 @@
        </tr>
         </thead>
         <tr>
-            <td><img src="http://musicfamily.org/realm/Factions/picks/RubyTier50.png" alt="" align="center"> <b>50</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier50.png" alt="" align="center"> <b>50</b></td>
             <td>1 Coin</td>
             <td>14750 Rubies</td>
             <td>Increases ruby power 1100% to 29100%.</td>

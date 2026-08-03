@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 <?php include "../scripts/header.html"; ?>
-<h6><img src="http://musicfamily.org/realm/Factions/picks/TopPageResearch.png" alt="Spellcraft" align="middle"></h6>
+<h6><img src="/realm/Factions/picks/TopPageResearch.png" alt="Spellcraft" align="middle"></h6>
 <p><b>General Note</b>: There are certain things that are always beneficial to buff each Reincarnation such as Lightning Strike casts (<b>TTC4</b>), Lightning Strike activity time (<b>TTS2</b>) or Excavation/Resets (<b>DN AH</b>).</p>
 <br/>
 <div class="shlisting">

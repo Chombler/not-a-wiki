@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 <?php include "../scripts/header.html"; ?>
-	<h6><img src="http://musicfamily.org/realm/Factions/picks/TopPageResearch.png" alt="Spellcraft" align="middle"></h6>
+	<h6><img src="/realm/Factions/picks/TopPageResearch.png" alt="Spellcraft" align="middle"></h6>
 	<!--<p><b>Optimal Tiering for R46:</b></p>
 	<p>Demon spells to Tier 2: 1 day 6 hours and 3 minutes (of their spells activity time in this R)</p>
 	<p>Elf spells to Tier 2: 20 hours and 13 minutes</p>-->
@@ -101,31 +101,31 @@
 				</p>
 				<div class="autohide">
 					<p><b>Overview</b>: After excavating the quest artifact "Spiky Rough Egg", Dragon unlock is divided into 4 parts commonly referred to as "Stages". Each stages come with a compulsory unskippable 12 hours wait, meaning that Dragon unlock is guaranteed to last at least 2 days in real time.</p>
-					<p><img src="http://musicfamily.org/realm/Factions/picks/SpikyRoughEggArtifact.png" align="middle"><b> Spiky Rough Egg Artifact</b></p>
+					<p><img src="/realm/Factions/picks/SpikyRoughEggArtifact.png" align="middle"><b> Spiky Rough Egg Artifact</b></p>
 					<p><b>Description</b>: What a weird egg... it looks ages old, yet something alive is inside. Perhaps if you wait long enough, something will hatch?</p>
 					<p><b>Requirement</b>: R46+, 1500+ Excavations</p>
 					<p><b>Chance</b>: 2%</p>
 					<br/>
-					<p><img src="http://musicfamily.org/realm/Factions/picks/Hatch!Artifact.png" align="middle"><b> Hatch!</b></p>
+					<p><img src="/realm/Factions/picks/Hatch!Artifact.png" align="middle"><b> Hatch!</b></p>
 					<p><b>Description</b>: After waiting for a while... hatch the spiky egg and reveal what's inside!</p>
 					<p><b>Requirement</b>: Spiky Rough Egg, 12 hours since obtaining the quest artifact</p>
 					<p><b>Cost</b>: 1e64 (10 Vg), 1e7 (10 M) each Faction Coin</p>
 					<p><b>Effect</b>: Hatches the Egg.</p>
 					<br/>
-					<p><img src="http://musicfamily.org/realm/Factions/picks/DrakelingFactionUpgrade.png" align="middle"><b> Drakeling</b></p>
+					<p><img src="/realm/Factions/picks/DrakelingFactionUpgrade.png" align="middle"><b> Drakeling</b></p>
 					<p><b>Description</b>: The baby dragon needs to learn how to breathe flames first... perhaps a fair amount of Hellfire Blasts will help. Once it is ready, grow your baby dragon into a drakeling.</p>
 					<p><b>Requirement</b>: Hatch!, 12 hours of active Hellfire Blast since purchasing the previous stage.</p>
 					<p><b>Cost</b>: 1e67 (10 Uvg), 1e8 (100 M) of each Faction Coin</p>
 					<p><b>Effect</b>: Grows Drakeling into Dragon.</p>
 					<p><b>Note</b>: Do not use Research A25 as it will mess up the timer even worse and could increase the time needed.</p>
 					<br/>
-					<p><img src="http://musicfamily.org/realm/Factions/picks/DragonFactionUpgrade.png" align="middle"><b> Dragon</b></p>
+					<p><img src="/realm/Factions/picks/DragonFactionUpgrade.png" align="middle"><b> Dragon</b></p>
 					<p><b>Description</b>: The drakeling can now breathe fire, but it is not self-sufficient yet. A decent army of Fairy assistants will surely help. Once it is ready, grow your drakeling into a mature dragon.</p>
 					<p><b>Requirement</b>: Drakeling, 12 hours since purchasing the previous stage, 3750 Fairy Assistants (Assists from Fairy Chanting count)</p>
 					<p><b>Cost</b>: 1e70 (10 Dvg), 1e9 (1 B) of each Faction Coin</p>
 					<p><b>Effect</b>: Grows Dragon into Elder Dragon</p>
 					<br/>
-					<p><img src="http://musicfamily.org/realm/Factions/picks/ElderDragonFactionUpgrade.png" align="middle"><b> Elder Dragon</b></p>
+					<p><img src="/realm/Factions/picks/ElderDragonFactionUpgrade.png" align="middle"><b> Elder Dragon</b></p>
 					<p><b>Description</b>: The dragon is now mature and has learned the customs of your realm. The only thing that remains is to feed him with a large amount of magical power... increase your maximum mana. Once it is ready, grow your dragon into an elder dragon.</p>
 					<p><b>Requirement</b>: Dragon, 12 hours since purchasing the previous stage, 50000 Max Mana</p>
 					<p><b>Cost</b>: 1e73 (10 Tvg), 1e10 (10 B) of each Faction Coin</p>
@@ -188,7 +188,7 @@
 					<p>(2 / 3) * 0.97 ^ (R - 35) * (0.4 + 0.1 * T) * (1 + T ^ 2) / (1 + 0.1 * U)<br>Where T is the Spell Tier you're aiming for, U is your additional unlocked tiers from all spells (Tier 1 does not count) and R is your Reincarnation.</p>
 					<p>Click <b><a target="_blank" href="https://www.desmos.com/calculator/easbpgto2s">here</a></b> for an online calculator.</p>
 					<p>Click <b><a target="_blank" href="https://dox4242.github.io/misc/tiers.html">here</a></b> to see your unlocked Tiers.</p>
-					<p>Additional information about <b><a target="_blank" href="http://musicfamily.org/realm/Spells/">Spells and Spell Tiers</a></b>.</p>
+					<p>Additional information about <b><a target="_blank" href="/realm/Spells/">Spells and Spell Tiers</a></b>.</p>
 					<p><b>Step 1</b>: Start with Goblin until Spiky Rough Egg is excavated, then go to step 2. Switch back to Goblin (or Fairy, for stage 3) for completion when necessary.</p>
 					<p><b>Step 2</b>: Run Demon (all spells on autocast) until all of its spells hit Tier 2 (requires 1 day, 10 hours and 21 minutes of spell activity time this R).</p>
 					<p><b>Step 3</b>: Run Elf (all spells on autocast) until all of its spells hit at least Tier 2 (requires 20 hours and 13 minutes of spell activity time this R).</p>

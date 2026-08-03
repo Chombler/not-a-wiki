@@ -50,40 +50,40 @@
 				<p><b>Coin Cost</b>: 1 Tvg (1e72).</p>
 				<p><b>Faction Coin Cost</b>: 1 Dc (1e33) of both Factions.</p>
 			<br>
-			<p><b><img src="http://musicfamily.org/realm/Factions/picks/MysticForest.png" align="middle"> Fairy/Elf - Mystic Forest</b></p>
+			<p><b><img src="/realm/Factions/picks/MysticForest.png" align="middle"> Fairy/Elf - Mystic Forest</b></p>
 				<p><b>Effect</b>: Increase the production of all buildings based on the amount of assistants you own.</p>
 				<p><b>Formula</b>: (2 * ln(1 + x) ^ 2)%, where x is the amount of assistants you own.</p>
 			<br>
-			<p><b><img src="http://musicfamily.org/realm/Factions/picks/DreamRealm.png" align="middle"> Fairy/Angel - Dream Realm</b></p>
+			<p><b><img src="/realm/Factions/picks/DreamRealm.png" align="middle"> Fairy/Angel - Dream Realm</b></p>
 				<p><b>Effect</b>: Increase Mana Regeneration based on time spent as Good in this Reincarnation.</p>
 				<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent as Good in this Reincarnation.</p>
 			<br>
-			<p><b><img src="http://musicfamily.org/realm/Factions/picks/ArtifactCaveau.png" align="middle"> Fairy/Goblin - Artifact Caveau</b></p>
+			<p><b><img src="/realm/Factions/picks/ArtifactCaveau.png" align="middle"> Fairy/Goblin - Artifact Caveau</b></p>
 				<p><b>Effect</b>: Increase the production of all buildings based on artifacts found.</p>
 				<p><b>Formula</b>: (x ^ 0.95)%, where x is the number of artifacts found.</p>
 			<br>
-			<p><b><img src="http://musicfamily.org/realm/Factions/picks/TwistingNether.png" align="middle"> Fairy/Undead - Twisting Nether</b></p>
+			<p><b><img src="/realm/Factions/picks/TwistingNether.png" align="middle"> Fairy/Undead - Twisting Nether</b></p>
 				<p><b>Effect</b>: Gain a new spell with the same name (Duration: 20 seconds, Mana Cost: 1 M (1e6), can be cast up to Tier 99). While active, increases Lineage Level by +1 per Tier.</p>
 				<p><b>Note</b>: The Lineage Level increase is only a 'count more' effect and does not affect base lineage in any way.</p>
 				<p><b>Note</b>: Twisting Nether counts as a faction spell, but has no alignments for upgrades such as Djinn Challenge 5.</p>
 			<br>
-			<p><b><img src="http://musicfamily.org/realm/Factions/picks/BroodingAbyss.png" align="middle"> Fairy/Demon - Brooding Abyss</b></p>
+			<p><b><img src="/realm/Factions/picks/BroodingAbyss.png" align="middle"> Fairy/Demon - Brooding Abyss</b></p>
 				<p><b>Effect</b>: Chaotically increase assistants based on amount of alignments among the active spells you have.</p>
 				<p><b>Formula</b>: ((a ^ 1.5 + b ^ 1.5 + c ^ 1.5 + d ^ 1.5 + e ^ 1.5 + f ^ 1.5)^((1 + sum(a, b, c, d, e, f)) * 0.5))%, where a - f represent the six alignments.</p>
 			<br>
-			<p><b><img src="http://musicfamily.org/realm/Factions/picks/SacredGlade.png" align="middle"> Elf/Angel - Sacred Glade</b></p>
+			<p><b><img src="/realm/Factions/picks/SacredGlade.png" align="middle"> Elf/Angel - Sacred Glade</b></p>
 				<p><b>Effect</b>: Increase all spells duration based on clicks made in this game.</p>
 				<p><b>Formula</b>: (2.4 * x ^ 0.4)%, where x is the amount of clicks made in this game.</p>
 			<br>
-			<p><b><img src="http://musicfamily.org/realm/Factions/picks/GreedFactory.png" align="middle"> Elf/Goblin - Greed Factory</b></p>
+			<p><b><img src="/realm/Factions/picks/GreedFactory.png" align="middle"> Elf/Goblin - Greed Factory</b></p>
 				<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on Tax Collections casts in this game.</p>
 				<p><b>Formula</b>: (2.5 * ln(1 + x) ^ 2.5)%, where x is the amount of Tax Collection casts in this game.</p>
 			<br>
-			<p><b><img src="http://musicfamily.org/realm/Factions/picks/SwampofSorrows.png" align="middle"> Elf/Undead - Swamp of Sorrows</b></p>
+			<p><b><img src="/realm/Factions/picks/SwampofSorrows.png" align="middle"> Elf/Undead - Swamp of Sorrows</b></p>
 				<p><b>Effect</b>: Activity time of all spells counts more based on Maximum Mana.</p>
 				<p><b>Formula</b>: (2 * ln(1 + x) ^ 2.25)%, where x is your Maximum Mana.</p>
 			<br>
-			<p><b><img src="http://musicfamily.org/realm/Factions/picks/ForbiddenGrove.png" align="middle"> Elf/Demon - Forbidden Grove</b></p>
+			<p><b><img src="/realm/Factions/picks/ForbiddenGrove.png" align="middle"> Elf/Demon - Forbidden Grove</b></p>
 				<p><b>Effect</b>: Autoclicks per second based on the amount of Unique Buildings you own.</p>
 				<p><b>Effect</b>: Also generates the same amount of clicks while offline.</p>
 				<p><b>Formula</b>: +(1 + 1.5 * x ^ 0.2), where x is the amount of Unique Buildings you own.</p>
@@ -91,32 +91,32 @@
 				<p><b>Formula</b>: (2 * log10(1 + x) ^ 2)%, where x is Autoclicks made this game.</p>
 				<p><b>Note</b>: 'Clicks count more' effects are <b>not</b> affecting this upgrade.</p>
 			<br>
-			<p><b><img src="http://musicfamily.org/realm/Factions/picks/GoldenHeaven.png" align="middle"> Angel/Goblin - Golden Heaven</b></p>
+			<p><b><img src="/realm/Factions/picks/GoldenHeaven.png" align="middle"> Angel/Goblin - Golden Heaven</b></p>
 				<p><b>Effect</b>: Increase the production of all buildings based on Gold owned.</p>
 				<p><b>Formula</b>: (log10(1 + x) ^ 2)%, where x is the current amount of Gold you own.</p>
 				<br>
-			<p><b><img src="http://musicfamily.org/realm/Factions/picks/DarkSanctum.png" align="middle"> Angel/Undead - Dark Sanctum</b></p>
+			<p><b><img src="/realm/Factions/picks/DarkSanctum.png" align="middle"> Angel/Undead - Dark Sanctum</b></p>
 				<p><b>Effect</b>: Multiplicatively increase Maximum Mana based on time spent as Order in this Reincarnation.</p>
 				<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent as Order in this Reincarnation.</p>
 				<br>
-			<p><b><img src="http://musicfamily.org/realm/Factions/picks/EternalBattlefield.png" align="middle"> Angel/Demon - Eternal Battlefield</b></p>
+			<p><b><img src="/realm/Factions/picks/EternalBattlefield.png" align="middle"> Angel/Demon - Eternal Battlefield</b></p>
 				<p><b>Effect</b>: Increase the production of Evil Buildings based on time spent as Good in this Reincarnation, and vice-versa. Does not affect Neutral Buildings</p>
 				<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent as Good/Evil in this Reincarnation.</p>
 				<br>
-			<p><b><img src="http://musicfamily.org/realm/Factions/picks/HomunculusLab.png" align="middle"> Goblin/Undead - Homunculus Lab</b></p>
+			<p><b><img src="/realm/Factions/picks/HomunculusLab.png" align="middle"> Goblin/Undead - Homunculus Lab</b></p>
 				<p><b>Effect</b>: Increase Research Budget based on the least time spent between Order and Balance in this Reincarnation.</p>
 				<p><b>Formula</b>: +(2000 + 0.7 * ln(min(x , y)) ^ 3.5)%, where x and y is time spent as Order and Balance respectively in this Reincarnation.</p></p>
 				<br>
-			<p><b><img src="http://musicfamily.org/realm/Factions/picks/CorruptionZone.png" align="middle"> Goblin/Demon - Corruption Zone</b></p>
+			<p><b><img src="/realm/Factions/picks/CorruptionZone.png" align="middle"> Goblin/Demon - Corruption Zone</b></p>
 				<p><b>Effect</b>: Increase the production of Non-Unique buildings based on the duration of your longest spell.</p>
 				<p><b>Formula</b>: (0.8 * x ^ 0.8)%, where x is the duration of your longest spell.</p></p>
 				<br>
-			<p><b><img src="http://musicfamily.org/realm/Factions/picks/FrozenWastes.png" align="middle"> Undead/Demon - Frozen Wastes</b></p>
+			<p><b><img src="/realm/Factions/picks/FrozenWastes.png" align="middle"> Undead/Demon - Frozen Wastes</b></p>
 				<p><b>Effect</b>: Increase Offline Production based on time spent offline in this Reincarnation.</p>
 				<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent offline in this Reincarnation.</p>
 			<hr>
 			<p><b>New Trophy</b></p>
-				<p><b><img src="http://musicfamily.org/realm/Factions/picks/NoviceCombinator.png" align="middle"> Novice Combinator</b></p>
+				<p><b><img src="/realm/Factions/picks/NoviceCombinator.png" align="middle"> Novice Combinator</b></p>
 				<p><b>Requirement</b>: R220+, Purchase Legacies from 4 different factions in a single game.</p>
 				<p><b>Cost</b>: 1 Qavg (1e75)</p>
 				<p><b>Effect</b>: Increase production for Good or Evil factions based on time spent with the least used alignment.</p>

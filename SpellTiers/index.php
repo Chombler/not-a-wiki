@@ -52,7 +52,7 @@
 		}
 	</style>
 <?php include "../scripts/header.html"; ?>
-	<h6><img src="http://musicfamily.org/realm/Factions/picks/SpellsTopPage.png"></h6>
+	<h6><img src="/realm/Factions/picks/SpellsTopPage.png"></h6>
 	<p><b>From R42+, Spell Tiers become available</b> and based on the number of tiers for a single spell unlocked allows to cast that spell up to that times simultaneously, increasing the overall spell bonus multiplicatively.</p>
 	<p>The generalized formula for the final spell bonus is (B ^ T), where B is the base spell production (<b>not</b> as a percentage bonus but as a multiplier) and T is the tier of the spell. The exceptions to this are Gem Grinder, which increases its production by a linear amount, and Dragon's Breath, which simply adds one new type of Dragon Breath to the current breaths in effect. Other peripheral effects, such as the tripling of assistants granted from Fairy Chanting, are also not impacted by spell tiers.</p>
 	<p>Each tier also doubles the Mana cost of the spell compared to the previous one starting at the base cost of the spell.</p>
@@ -64,7 +64,7 @@
 	<br/>
 	<hr>
 	<p><b>Spell Tier Upgrades and Autocasting</b>:</p>
-	<p>Require the <img src="http://musicfamily.org/realm/Factions/picks/TieredAutocastingTrophy.png" align="middle"><b> Tiered Autocasting</b> (R40+, 200 M Mana Produced this Reincarnation) trophy.</p>
+	<p>Require the <img src="/realm/Factions/picks/TieredAutocastingTrophy.png" align="middle"><b> Tiered Autocasting</b> (R40+, 200 M Mana Produced this Reincarnation) trophy.</p>
 	<p>Tiered Autocasting will automatically set the autocasted spell tier at the highest you have bought, but you can change it to a lower tier if you wish.</p>
 	<p>The Spell Tier upgrades need to be unlocked once (see chapter below), but they need to be purchased in every abdication and cost Diamond Coins (free in A2+) and Faction Coins.</p>
 	<p><b>Additional Effect</b>: The spell tier upgrades also have an additional effect themselves, apart from allowing an extra cast spell. Each tier upgrades increases offline production based on Mana statistics. (Not Tax Collection)</p>

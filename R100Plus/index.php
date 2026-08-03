@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 <?php include "../scripts/header.html"; ?>
-	<h6><img src="http://musicfamily.org/realm/Factions/picks/TopPageResearch.png" alt="Spellcraft" align="middle"></h6>
+	<h6><img src="/realm/Factions/picks/TopPageResearch.png" alt="Spellcraft" align="middle"></h6>
 	<p><b>General Note</b>: Once the buffing of Uniformity and TTC4 is recommended, the beginning of an Reincarnation (below 1e30 (1 No)) can be used best for it. A pair of example builds is shown below, but pretty much any valid combination that matches with the final production build of that Reincarnation works</p>
 	<br/>
 	<div class="shlisting">

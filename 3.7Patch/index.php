@@ -122,7 +122,7 @@
                 <div class="autohide">
         <br/>
         <p><b>Added</b>: Added a new Christmas feat and upgrade.</p>
-        <p>Check <a target="_blank" href="http://musicfamily.org/realm/Events/"><b>Event</b></a> page once event starts.</p>
+        <p>Check <a target="_blank" href="/realm/Events/"><b>Event</b></a> page once event starts.</p>
         <br/>
         <p><b>Changed A3 Only</b>: Research now has a budget system: Each branch is given a 3500 budget, and now research cost their number to buy.</p>
         <p><b>Changed</b>: Faction Research in A3 is no longer free.</p>
@@ -131,7 +131,7 @@
         <br/>
         <br/>
         <p><b>New Artifacts</b></p>
-        <p><b><img src="http://musicfamily.org/realm/Factions/picks/ForgottenRelic.png" align="middle"> Forgotten Relic</b></p>
+        <p><b><img src="/realm/Factions/picks/ForgottenRelic.png" align="middle"> Forgotten Relic</b></p>
         <p><b>Clue</b>: Research it!</p>
         <p><b>Description</b>: Intricate leylines of mana cover the surface of this stone, moving and flailing endlessly to create ever-different patterns.</p>
         <p><b>Requirement</b>: R175+</p>
@@ -139,7 +139,7 @@
         <p><b>Effect</b>: Unlocks Research Facility upgrades</p>
         <p><b>Note</b>: Each Facility needs their respective artifact and this artifact to get their respective upgrade.</p>
         <br/>
-        <p><b><img src="http://musicfamily.org/realm/Factions/picks/Apeiron.png" align="middle"> Apeiron</b></p>
+        <p><b><img src="/realm/Factions/picks/Apeiron.png" align="middle"> Apeiron</b></p>
         <p><b>Clue</b>: Be different.</p>
         <p><b>Description</b>: The source of everything. Can fit in the average pocket.</p>
         <p><b>Requirement</b>: R175, Mercenary, 15 different faction upgrades.</p>
@@ -151,11 +151,11 @@
         <p><b>Upgrade Description</b>: Unlock the Forbidden research facility and increase Mercenary production by 100%, plus an additional bonus based on Forbidden research point. These upgrades will persist through abdications and reincarnations, providing a permanent bonus to all factions affected.</p>
         <p><b>Upgrade Cost</b>: 1 Qatg (1e105), 100 Qid (1e50) Dwarven and Drow Coins</p>
         <p><b>Note</b>: Upgrade only needs to be bought once.</p>
-        <p><b><img src="http://musicfamily.org/realm/Factions/picks/Forbidden.png" align="middle"> Forbidden (New Facility)</b></p>
+        <p><b><img src="/realm/Factions/picks/Forbidden.png" align="middle"> Forbidden (New Facility)</b></p>
         <p><b>Requirement</b>: Forgotten Relic, Apeiron artifact and upgrade.</p>
         <p><b>Effect</b>: Increase Mercenary production based on Forbidden research points. (Not A nerfed)</p>
         <br/>
-        <p><img src="http://musicfamily.org/realm/Factions/picks/ManaLoom.png" align="middle"> <b>Mana Loom</b></p>
+        <p><img src="/realm/Factions/picks/ManaLoom.png" align="middle"> <b>Mana Loom</b></p>
         <p><b>Clue</b>: Attracted by amassed mana reserves.</p>
         <p><b>Description</b>: Used to weave even the thinnest mana strings.</p>
         <p><b>Requirement</b>: R175, Chaos Alignment</p>
@@ -166,7 +166,7 @@
         <p><b>Upgrade Cost</b>: 10 Dtg (1e100), 1 Qid (1e48) Fairy Coins</p>
         <p><b>Note</b>: Upgrade only needs to be bought once.</p>
         <br/>
-        <p><img src="http://musicfamily.org/realm/Factions/picks/Factory.png" align="middle"> <b>Factory</b></p>
+        <p><img src="/realm/Factions/picks/Factory.png" align="middle"> <b>Factory</b></p>
         <p><b>Clue</b>: Dig it manually.</p>
         <p><b>Description</b>: Mass-production is the way to go.</p>
         <p><b>Requirement</b>: R175, True Neutral Alignment</p>
@@ -177,7 +177,7 @@
         <p><b>Upgrade Cost</b>: 10 Dtg (1e100), 1 Qid (1e48) Elven Coins</p>
         <p><b>Note</b>: Upgrade only needs to be bought once.</p>
         <br/>
-        <p><img src="http://musicfamily.org/realm/Factions/picks/Mythos.png" align="middle"> <b>Mythos</b></p>
+        <p><img src="/realm/Factions/picks/Mythos.png" align="middle"> <b>Mythos</b></p>
         <p><b>Clue</b>: Spells get sad when not used for a long time.</p>
         <p><b>Description</b>: Accurate historical list of every existing or non-existing deity.</p>
         <p><b>Requirement</b>: R175, Good Alignment</p>
@@ -188,7 +188,7 @@
         <p><b>Upgrade Cost</b>: 10 Dtg (1e100), 1 Qid (1e48) Angel Coins</p>
         <p><b>Note</b>: Upgrade only needs to be bought once.</p>
         <br/>
-        <p><img src="http://musicfamily.org/realm/Factions/picks/Vault.png" align="middle"> <b>Vault</b></p>
+        <p><img src="/realm/Factions/picks/Vault.png" align="middle"> <b>Vault</b></p>
         <p><b>Clue</b>: Show your prowess as a Royal Trader.</p>
         <p><b>Description</b>: Never a place could be more secure.</p>
         <p><b>Requirement</b>: R175, Balance Alignment</p>
@@ -199,7 +199,7 @@
         <p><b>Upgrade Cost</b>: 10 Dtg (1e100), 1 Qid (1e48) Goblin Coins</p>
         <p><b>Note</b>: Upgrade only needs to be bought once.</p>
         <br/>
-        <p><img src="http://musicfamily.org/realm/Factions/picks/Athanor.png" align="middle"> <b>Athanor</b></p>
+        <p><img src="/realm/Factions/picks/Athanor.png" align="middle"> <b>Athanor</b></p>
         <p><b>Clue</b>: Archemy.</p>
         <p><b>Description</b>: The legendary oven that could smelt souls into matter.</p>
         <p><b>Requirement</b>: R175, Order Alignment</p>
@@ -210,7 +210,7 @@
         <p><b>Upgrade Cost</b>: 10 Dtg (1e100), 1 Qid (1e48) Undead Coins</p>
         <p><b>Note</b>: Upgrade only needs to be bought once.</p>
         <br/>
-        <p><img src="http://musicfamily.org/realm/Factions/picks/Battlefield.png" align="middle"> <b>Battlefield</b></p>
+        <p><img src="/realm/Factions/picks/Battlefield.png" align="middle"> <b>Battlefield</b></p>
         <p><b>Clue</b>: Would you think an army is enough to excavate this?</p>
         <p><b>Description</b>: An extremely accurate replica of a battle fought long ago.</p>
         <p><b>Requirement</b>: R175, Evil Alignment</p>
@@ -226,7 +226,7 @@
             <p><b>Spellcraft</b></p>
         </center>
         <center>
-            <p><img src="http://musicfamily.org/realm/Factions/picks/Spellcraft.png" align="middle"> </p>
+            <p><img src="/realm/Factions/picks/Spellcraft.png" align="middle"> </p>
         </center>
         <p><b>S5125</b>: For all Factions</p>
         <p><b>Research Name</b>: Spilling</p>
@@ -254,7 +254,7 @@
             <p><b>Craftsmanship</b></p>
         </center>
         <center>
-            <p><img src="http://musicfamily.org/realm/Factions/picks/Craftsmanship.png" align="middle"> </p>
+            <p><img src="/realm/Factions/picks/Craftsmanship.png" align="middle"> </p>
         </center>
         <p><b>C5125</b>: For all Factions</p>
         <p><b>Research Name</b>: Restaurantian</p>
@@ -282,7 +282,7 @@
             <p><b>Divine</b></p>
         </center>
         <center>
-            <p><img src="http://musicfamily.org/realm/Factions/picks/Divine.png" align="middle"> </p>
+            <p><img src="/realm/Factions/picks/Divine.png" align="middle"> </p>
         </center>
         <p><b>D5125</b>: For all Factions</p>
         <p><b>Research Name</b>: Selection</p>
@@ -308,7 +308,7 @@
             <p><b>Economics</b></p>
         </center>
         <center>
-            <p><img src="http://musicfamily.org/realm/Factions/picks/Economics.png" align="middle"> </p>
+            <p><img src="/realm/Factions/picks/Economics.png" align="middle"> </p>
         </center>
         <p><b>E5125</b>: For all Factions</p>
         <p><b>Research Name</b>: Decentralization</p>
@@ -337,7 +337,7 @@
             <p><b>Alchemy</b></p>
         </center>
         <center>
-            <p><img src="http://musicfamily.org/realm/Factions/picks/Alchemy.png" align="middle"> </p>
+            <p><img src="/realm/Factions/picks/Alchemy.png" align="middle"> </p>
         </center>
         <p><b>A5125</b>: For all Factions</p>
         <p><b>Research Name</b>: Putrefaction</p>
@@ -363,7 +363,7 @@
             <p><b>Warfare</b></p>
         </center>
         <center>
-            <p><img src="http://musicfamily.org/realm/Factions/picks/Warfare.png" align="middle"> </p>
+            <p><img src="/realm/Factions/picks/Warfare.png" align="middle"> </p>
         </center>
         <p><b>W5125</b>: For all Factions</p>
         <p><b>Research Name</b>: Sovereignty</p>
@@ -388,7 +388,7 @@
             <p><b>Forbidden</b></p>
         </center>
         <center>
-            <p><img src="http://musicfamily.org/realm/Factions/picks/Forbidden.png" align="middle"> </p>
+            <p><img src="/realm/Factions/picks/Forbidden.png" align="middle"> </p>
         </center>
         <p><b>F5250</b>: For all Factions</p>
         <p><b>Research Name</b>: Dreamwalking</p>
@@ -411,7 +411,7 @@
         <p><b>Formula</b>: (x ^ 0.75), where x is time spent (This Game)</p>
         <hr>
         <p><b>New Secret Trophy</b></p>
-        <p><img src="http://musicfamily.org/realm/Factions/picks/TrueHarlequin.png" align="middle"> <b>True Harlequin</b></p>
+        <p><img src="/realm/Factions/picks/TrueHarlequin.png" align="middle"> <b>True Harlequin</b></p>
         <p><b>Requirement</b>: As a Mercenary, purchase one upgrade from 15 different factions.</p>
         <p><b>Effect</b>: Gives Upgrade with same name.</p>
         <p><b>Effect</b>: Increase the production of all buildings based on the amount of different factions involved in your Mercenary upgrades.</p>
@@ -419,7 +419,7 @@
         <p><b>Cost</b>: 1e152 (100 Noqag)</p>
         <br/>
         <p><b>Changed</b></p>
-        <p><img src="http://musicfamily.org/realm/Factions/picks/God'sFingers.png" align="middle"> <b>God's Fingers</b></p>
+        <p><img src="/realm/Factions/picks/God'sFingers.png" align="middle"> <b>God's Fingers</b></p>
         <p>Now a Secret Trophy.</p>
         <p><b>Old Requirement</b>: Reach 700 M (7e8) automatic clicks in this Reincarnation.</p>
         <p><b>New Requirement</b>: Reach 100 M (1e8) automatic clicks in this Reincarnation.</p>

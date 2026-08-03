@@ -256,7 +256,7 @@
 			<br/>
 			<hr>
 			<p><b>3 New Lore Artifacts</b>: 1 for each prestige faction, unlocking their set's second effect (currently <b>bugged, not unlockable</b>).</p>
-			<p><b><img src="http://musicfamily.org/realm/Factions/picks/DwarvenAnvilArtifact.png" align="middle"> Dwarven Anvil</b></p>
+			<p><b><img src="/realm/Factions/picks/DwarvenAnvilArtifact.png" align="middle"> Dwarven Anvil</b></p>
 				<p><b>Hint</b>: Dwarven clicks!</p>
 				<p><b>Description</b>: Every dwarven child is required to bring this to school every day.</p>
 				<p><b>Requirement</b>: R240+, Dwarven Faction, 10,000+ Excavations</p>
@@ -264,7 +264,7 @@
 				<p><b>Dwarf Set 2nd Effect</b>: Multiplicatively increase Mana Regeneration based on time spent in this game.</p>
 				<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is your time spent in this game.</p>
 			<br/>
-			<p><b><img src="http://musicfamily.org/realm/Factions/picks/StilettoHeelArtifact.png" align="middle"> Stiletto Heel</b></p>
+			<p><b><img src="/realm/Factions/picks/StilettoHeelArtifact.png" align="middle"> Stiletto Heel</b></p>
 				<p><b>Hint</b>: A drow trade.</p>
 				<p><b>Description</b>: Drow make the most beautiful underground females.</p>
 				<p><b>Requirement</b>: R240+, Drow Faction, 10,000+ Excavations</p>
@@ -272,7 +272,7 @@
 				<p><b>Drow Set 2nd effect</b>: Spells cast count more based on time spent as Evil in this Reincarnation.</p>
 				<p><b>Formula</b>: (6 * ln(1 + x) ^ 1.2)%, where x is time spent as Evil in this Reincarnation.</p>
 			<br/>
-			<p><b><img src="http://musicfamily.org/realm/Factions/picks/EyeOfTheDragonArtifact.png" align="middle"> Eye Of The Dragon</b></p>
+			<p><b><img src="/realm/Factions/picks/EyeOfTheDragonArtifact.png" align="middle"> Eye Of The Dragon</b></p>
 				<p><b>Hint</b>: Draconic Assistants.</p>
 				<p><b>Description</b>: The ultimate thrill of the fight.</p>
 				<p><b>Requirement</b>: R220+, Dragon Faction, 10,000+ Excavations</p>
@@ -281,7 +281,7 @@
 				<p><b>Formula</b>: (0.25 * (x * (y + 1)) ^ 0.5)%, where x is the number of excavations made, and y is your number of resets in this game.</p>
 			<hr>
 			<p><b>1 New Trophy</b>:</p>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/ExpertCombinator.png" align="middle"> <b>Expert Combinator</b></p>
+				<p><img src="/realm/Factions/picks/ExpertCombinator.png" align="middle"> <b>Expert Combinator</b></p>
 				<p><b>Requirement</b>: R220+, Purchase Legacies from 6 different factions in a single game.</p>
 				<p><b>Cost</b>: 10 Dtg (1e100)</p>
 				<p><b>Effect</b>: Increase the production of all buildings when playing a Prestige Faction based on time spent with the least used alignment.</p>
@@ -624,14 +624,14 @@
 	<br/>
 	<p><b>Old Patches</b></p>
 	<p>
-		<a href="http://musicfamily.org/realm/4.1Patch/" target="_blank"><b>V4.1</b></a>
-		<a href="http://musicfamily.org/realm/4.0Patch/" target="_blank"><b>V4.0</b></a>
-		<a href="http://musicfamily.org/realm/3.8Patch/" target="_blank"><b>V3.8</b></a>
-		<a href="http://musicfamily.org/realm/3.7Patch/" target="_blank"><b>V3.7</b></a>
-		<a href="http://musicfamily.org/realm/3.6Patch/" target="_blank"><b>V3.6</b></a>
-		<a href="http://musicfamily.org/realm/3.5Patch/" target="_blank"><b>V3.5</b></a>
-		<a href="http://musicfamily.org/realm/3.4Patch/" target="_blank"><b>V3.4</b></a>
-		<a href="http://musicfamily.org/realm/3.3Patch/" target="_blank"><b>V3.3</b></a>
+		<a href="/realm/4.1Patch/" target="_blank"><b>V4.1</b></a>
+		<a href="/realm/4.0Patch/" target="_blank"><b>V4.0</b></a>
+		<a href="/realm/3.8Patch/" target="_blank"><b>V3.8</b></a>
+		<a href="/realm/3.7Patch/" target="_blank"><b>V3.7</b></a>
+		<a href="/realm/3.6Patch/" target="_blank"><b>V3.6</b></a>
+		<a href="/realm/3.5Patch/" target="_blank"><b>V3.5</b></a>
+		<a href="/realm/3.4Patch/" target="_blank"><b>V3.4</b></a>
+		<a href="/realm/3.3Patch/" target="_blank"><b>V3.3</b></a>
 	</p>
-	<p>No history for older patches, see <a href="http://musicfamily.org/realm/Changelog/" target="_blank"><b>Changelogs</b></a></p>
+	<p>No history for older patches, see <a href="/realm/Changelog/" target="_blank"><b>Changelogs</b></a></p>
 <?php include "../scripts/footer.html"; ?>

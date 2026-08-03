@@ -3,9 +3,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <?php include "../scripts/header.html"; ?>
-	<h6><a href="/realm/Challenges/"><img src="http://musicfamily.org/realm/Factions/picks/ChallengesTopPage.png"></h6></a>
+	<h6><a href="/realm/Challenges/"><img src="/realm/Factions/picks/ChallengesTopPage.png"></h6></a>
 	<h6 id="FRC1"></h6><p><b>Fairy Challenge 1</b></p>
-	<p><img src="http://musicfamily.org/realm/Factions/picks/PixieMischiefChallenge.png" alt="Pixie Mischief" align="middle"> <b>Pixie Mischief</b></p>
+	<p><img src="/realm/Factions/picks/PixieMischiefChallenge.png" alt="Pixie Mischief" align="middle"> <b>Pixie Mischief</b></p>
 	<p>"The Fairies are small and mighty, and they can turn little things into all you ever need. Speed is paramount and they do not tolerate cheating!"</p>
 	<p><b>Requirements</b>: Fairy as Base Faction, Reincarnation 2+, Fairy Choir upgrade purchased.</p>
 	<p><b>Note</b>: Dwarven can be used but not required.</p>
@@ -16,7 +16,7 @@
 	<p><b>Tip</b>: Do excavations to quickly unlock all the fairy treaties and buy the fairy upgrades. Don't forget the Fairy Choir spell upgrade.</p>
 	<hr>
 	<h6 id="FRC2"></h6><p><b>Fairy Challenge 2</b></p>
-	<p><img src="http://musicfamily.org/realm/Factions/picks/DonationsChallenge.png" alt="Donations" align="middle"> <b>Donations</b></p>
+	<p><img src="/realm/Factions/picks/DonationsChallenge.png" alt="Donations" align="middle"> <b>Donations</b></p>
 	<p>"Our farmers' crops are not growing. Perhaps a little quick-magic can change that."</p>
 	<p><b>Requirements</b>: Fairy as Base Faction, Reincarnation 8+, Fairy Bloodline, Fairy challenge 1 completed.</p>
 	<p><b>Note</b>: Dwarven can be used but not required.</p>
@@ -27,7 +27,7 @@
 	<p><b>Tip 2</b>: Don't forget to purchase the Bloodline within the time limit.</p>
 	<hr>
 	<h6 id="FRC3"></h6><p><b>Fairy Challenge 3</b></p>
-	<p><img src="http://musicfamily.org/realm/Factions/picks/EnchantedLandsChallenge.png" alt="Enchanted Lands" align="middle"> <b>Enchanted Lands</b></p>
+	<p><img src="/realm/Factions/picks/EnchantedLandsChallenge.png" alt="Enchanted Lands" align="middle"> <b>Enchanted Lands</b></p>
 	<p>"The Fairies have developed a taste for honey. Find out quickly if they have a queen!"</p>
 	<p><b>Requirements</b>: Fairy as Base Faction, Reincarnation 18+, and Fairy Unique Building, Fairy challenge 2 completed.</p>
 	<p><b>Note</b>: Dwarven can <b>NOT</b> be used unless you can get Dwarven's Unique Building at R28+.</p>
@@ -39,6 +39,6 @@
 	<p><b>Tip 2</b>: Use Goblin Bloodline.</p>
 	<hr>
 	<h6 id="FRCR"></h6><p><b>Fairy Challenge Reward</b></p>
-	<p><img src="http://musicfamily.org/realm/Factions/picks/FairyOrchestraChallengeReward.png" alt="Fairy Orchestra" align="middle"> <b>Fairy Orchestra</b></p>
+	<p><img src="/realm/Factions/picks/FairyOrchestraChallengeReward.png" alt="Fairy Orchestra" align="middle"> <b>Fairy Orchestra</b></p>
 	<p><b>Effect</b>: Each assistant generates 3 times as many faction coins while Fairy Chanting is active.</p>
 <?php include "../scripts/footer.html"; ?>

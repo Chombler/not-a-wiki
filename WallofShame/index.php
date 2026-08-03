@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <div>
     <?php include "../scripts/header.html"; ?>
-    <h6><img src="http://musicfamily.org/realm/Factions/picks/WallofShame.png" alt="WallofShame" align="middle"></h6>
+    <h6><img src="/realm/Factions/picks/WallofShame.png" alt="WallofShame" align="middle"></h6>
     <h6>Wall of Shame</h6>
     <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThis page is for the smart people.</p>
     <div class="shlisting">
@@ -241,7 +241,7 @@
                 <p><b>Coolle</b>: and thinking that the gameplay you have in mind is the only right one
                 <p><b>necrodoom</b>: well im not going to tell someone to waste a week on something that takes a few minutes
                 <p><b>necrodoom</b>: if you are going to complain that a walkthough recommends the most effective method then i cant say much
-                <p><b>G00FBALL</b>: http://musicfamily.org/realm/
+                <p><b>G00FBALL</b>: /realm/
                 <p><b>G00FBALL</b>: Realm Grinder the right way^^^
                 <p><b>necrodoom</b>: again, if offline was even viable but somewhat weaker
                 <p><b>Coolle</b>: because your goal is to get to the later stages and you're thinking others should use the same thing
@@ -250,7 +250,7 @@
                 <p><b>necrodoom</b>: it sucks
                 <p><b>necrodoom</b>: but you dont want to understand it
                 <p><b>Coolle</b>: you don't get gaming or different needs and wants from a game
-                <p><b>forcesman</b>: http://musicfamily.org/realm/
+                <p><b>forcesman</b>: /realm/
                 <p><b>necrodoom</b>: you are just angry because you are wrong
                 <p><b>derpdragon45</b>: what if people can't get on everyday
                 <p><b>forcesman</b>: the only way to play realm grinder ^^

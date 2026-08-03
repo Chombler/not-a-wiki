@@ -83,7 +83,7 @@
 
 	</table>
 <br/>
-<p><b>New Upgrade</b>:<img src="http://musicfamily.org/realm/Factions/picks/LegacyContainer.png" align="middle"> <b>Legacy</b>.</p>
+<p><b>New Upgrade</b>:<img src="/realm/Factions/picks/LegacyContainer.png" align="middle"> <b>Legacy</b>.</p>
 	<p><b>Effect</b>: Choose a Legacy (set of 3 faction upgrades of the same tier) that doesn't match your current faction. You can purchase more Legacies for a progressively increasing cost.</p>
 	<p><b>Coin Cost</b>: (1e72 * (1,000 ^ (x ^ 2 - x))), where x is your current Legacy container.</p>
 	<p><b>Faction Coin Cost</b>: (1e33 * (1,000 ^ ( 0.5 * ( x ^ 2 - x)))), where x is your current Legacy container.</p>
@@ -247,7 +247,7 @@
 	<p><b>Note</b>: This will not increase the cost of the normal Legacy.</p>
 <hr>
 <p><b>9 New Lore Artifacts</b>: 1 for each base faction, unlocking their set's second effect</p>
-<p><b><img src="http://musicfamily.org/realm/Factions/picks/GlowingWingArtifact.png" align="middle"> Glowing Wing</b></p>
+<p><b><img src="/realm/Factions/picks/GlowingWingArtifact.png" align="middle"> Glowing Wing</b></p>
 	<p><b>Hint</b>: Mana Wings!</p>
 	<p><b>Description</b>: And this is why Fairies don't need torches.</p>
 	<p><b>Requirement</b>: R220+, 10,000 excavations, play as Fairy</p></p>
@@ -255,7 +255,7 @@
 	<p><b>Fairy Set 2nd Effect</b>: Mutiplicatively increase Maximum Mana based on the amount of Good Buildings owned.</p>
 	<p><b>Formula</b>: (x ^ 0.5)%, where x is the amount of Good Buildings you own.</p>
 <br/>
-<p><b><img src="http://musicfamily.org/realm/Factions/picks/SylvanMirrorArtifact.png" align="middle"> Sylvan Mirror</b></p>
+<p><b><img src="/realm/Factions/picks/SylvanMirrorArtifact.png" align="middle"> Sylvan Mirror</b></p>
 	<p><b>Hint</b>: Pay a barber with Faction Coins.</p>
 	<p><b>Description</b>: An Elf with messy hair is not an Elf, by their own laws.</p>
 	<p><b>Requirement</b>: R220+, 10,000 excavations, play as Elf</p></p>
@@ -264,7 +264,7 @@
 	<p><b>Formula</b>: (ln(1 + x) ^ 2.5 + x ^ 0.25)%, where x is automatic clicks this game.</p>
 	<p><b>Note</b>: NOT affected by any "clicks count more" effects.</p>
 <br/>
-<p><b><img src="http://musicfamily.org/realm/Factions/picks/SolidCloudArtifact.png" align="middle"> Solid Cloud</b></p>
+<p><b><img src="/realm/Factions/picks/SolidCloudArtifact.png" align="middle"> Solid Cloud</b></p>
 	<p><b>Hint</b>: A cloud of spells.</p>
 	<p><b>Description</b>: Angels have the power to save your life! And make a backup of it on the internet.</p>
 	<p><b>Requirement</b>: R220+, 10,000 excavations, play as Angel</p></p>
@@ -272,7 +272,7 @@
 	<p><b>Angel Set 2nd effect</b>: Increase the duration of all spells based on the amount of Unique Buildings you own.</p>
 	<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is the amount of Unique Buildings you own.</p>
 <br/>
-<p><b><img src="http://musicfamily.org/realm/Factions/picks/OrcFangNecklaceArtifact.png" align="middle"> Orc Fang Necklace</b></p>
+<p><b><img src="/realm/Factions/picks/OrcFangNecklaceArtifact.png" align="middle"> Orc Fang Necklace</b></p>
 	<p><b>Hint</b>: Torment your subjects with taxes.</p>
 	<p><b>Description</b>: To remind your slaves who's in charge.</p>
 	<p><b>Requirement</b>: R220+, 10,000 excavations, play as Goblin</p>
@@ -280,7 +280,7 @@
 	<p><b>Goblin Set 2nd effect</b>: Each time you cast a spell, you also cast free Tax Collections based on time spent in this game.</p>
 	<p><b>Formula</b>: +(floor(1 + 0.25 * ln(1 + x) ^ 1.5)), where x is time spent this game.</p>
 <br/>
-<p><b><img src="http://musicfamily.org/realm/Factions/picks/BloodChaliceArtifact.png" align="middle"> Blood Chalice</b></p>
+<p><b><img src="/realm/Factions/picks/BloodChaliceArtifact.png" align="middle"> Blood Chalice</b></p>
 	<p><b>Hint</b>: Pour a bottle of Frenzy.</p>
 	<p><b>Description</b>: The healthiest vampire breakfast.</p>
 	<p><b>Requirement</b>: R220+, 10,000 excavations, play as Undead</p></p>
@@ -288,7 +288,7 @@
 	<p><b>Undead Set 2nd effect</b>: Increases production bonus from gems based on FC found this game (Multiplicative).</p>
 	<p><b>Formula</b>: (log10(1 + x) ^ 2)%, where x is faction coins this game.</p>
 <br/>
-<p><b><img src="http://musicfamily.org/realm/Factions/picks/DemonTailArtifact.png" align="middle"> Demon Tail</b></p>
+<p><b><img src="/realm/Factions/picks/DemonTailArtifact.png" align="middle"> Demon Tail</b></p>
 	<p><b>Hint</b>: Evil wizardry.</p>
 	<p><b>Description</b>: Said to bring great luck to whom it possess...es.</p>
 	<p><b>Requirement</b>: R220+, 10,000 excavations, play as Demon</p></p>
@@ -296,7 +296,7 @@
 	<p><b>Demon Set 2nd effect</b>: Increase production bonus from Gems based on the amount of Evil spells cast in this Reincarnation.</p>
 	<p><b>Formula</b>: +(2.25 * ln(1 + x) ^ 2.25)%, where x is Evil Spell Casts this Reincarnation.</p>
 <br/>
-<p><b><img src="http://musicfamily.org/realm/Factions/picks/FrozenLightningArtifact.png" align="middle"> Frozen Lightning</b></p>
+<p><b><img src="/realm/Factions/picks/FrozenLightningArtifact.png" align="middle"> Frozen Lightning</b></p>
 	<p><b>Hint</b>: Lightning never strikes the same place a couple million times. Maybe.</p>
 	<p><b>Description</b>: A sculpture representing the embodiment of Titanic power.</p>
 	<p><b>Requirement</b>: R220+, 10,000 excavations, play as Titan</p>
@@ -304,7 +304,7 @@
 	<p><b>Titan Set 2nd effect</b>: Whenever you cast a spell, your production is increased based on Lightning Strike activity in this Reincarnation for 20 seconds. If another spell is cast while this effect is active, it is restored to full duration.</p>
 	<p><b>Formula</b>: (x ^ 0.7)%, where x is Lightning Strike activity time this Reincarnation.</p>
 <br/>
-<p><b><img src="http://musicfamily.org/realm/Factions/picks/PrimalLeafArtifact.png" align="middle"> Primal Leaf</b></p>
+<p><b><img src="/realm/Factions/picks/PrimalLeafArtifact.png" align="middle"> Primal Leaf</b></p>
 	<p><b>Hint</b>: Huuuuge blue ball.</p>
 	<p><b>Description</b>: Druid Catalyst for channeling the power of nature.</p>
 	<p><b>Requirement</b>: R220+, 10,000 excavations, play as Druid</p></p>
@@ -312,7 +312,7 @@
 	<p><b>Druid Set 2nd effect</b>: Lineage levels count more based on spell casts in this game.</p>
 	<p><b>Formula</b>: (0.5 * log10(1 + x) ^ 1.5)%, where x is spell casts this game.</p>
 <br/>
-<p><b><img src="http://musicfamily.org/realm/Factions/picks/TheBlackestInkArtifact.png" align="middle"> The Blackest Ink</b></p>
+<p><b><img src="/realm/Factions/picks/TheBlackestInkArtifact.png" align="middle"> The Blackest Ink</b></p>
 	<p><b>Hint</b>: Quality takes time.</p>
 	<p><b>Description</b>: High-quality, freshly produced Faceless ink.</p>
 	<p><b>Requirement</b>: 10,000 excavations, play as Faceless</p></p>
@@ -323,7 +323,7 @@
 <p><b>Balance Changes</b></p>
 <br/>
 <p><b>Reincarnation Power</b></p>
-<p><b>New Upgrade</b>: <img src="http://musicfamily.org/realm/Factions/picks/Reincarnation_power_upgrade.png" align="middle"> Reincarnation Power 2</p>
+<p><b>New Upgrade</b>: <img src="/realm/Factions/picks/Reincarnation_power_upgrade.png" align="middle"> Reincarnation Power 2</p>
 	<p><b>Effect</b>: Unlocks the power of Reincarnations from A3 onward (R160+).</p>
 <br/>
 <p><b>R1 Power</b></p>

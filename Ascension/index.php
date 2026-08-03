@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <?php include "../scripts/header.html"; ?>
-<h6><img src="http://musicfamily.org/realm/Factions/picks/Reset-Ascend.png" alt="Ascend" align="middle"></h6>
+<h6><img src="/realm/Factions/picks/Reset-Ascend.png" alt="Ascend" align="middle"></h6>
 <h6>Description</h6>
 <p>Ascension is a third kind of soft reset. It was implemented to overcome the usual representation limit for coins. Most production upgrades will be shifted to a smaller range to enable the game to progress further.</p>
 <p>At <b>R39</b>, <b>R99</b>, <b>R159</b> and <b>R219</b> the Reincarnation Button will say Ascension and will reset all the progress a Reincarnation would reset.</p>
@@ -26,7 +26,7 @@
 </br>
 <h6>Multiplier reduction</h6>
 <p>Ascensions also reduces the Cost Multipliers for buildings and excavation.</p>
-<p>For more information, see <b><a target="" href="http://musicfamily.org/realm/BuildingAlignments/">Buildings Cost</b></a> & <b><a target="" href="http://musicfamily.org/realm/Artifacts/">Excavation Cost</b></a>.</p>
+<p>For more information, see <b><a target="" href="/realm/BuildingAlignments/">Buildings Cost</b></a> & <b><a target="" href="/realm/Artifacts/">Excavation Cost</b></a>.</p>
 <hr>
 <h6>Ascension Details</h6>
 <p><b>Pre Ascension</b>: (R0 - R39)</p>
@@ -48,9 +48,9 @@
  - Mercenaries and Prestige Factions will become inaccessible (prestige return in R116).<br>
  - All Lineage levels will be reset back to 25 (if higher).<br>
  - Research is limited to one per branch (not counting Faction specific ones).<br>
- - Tier 7 Spells will become obtainable (see <b><a target="" href="http://musicfamily.org/realm/Spells/">Spells Page</b></a> for time required).<br>
+ - Tier 7 Spells will become obtainable (see <b><a target="" href="/realm/Spells/">Spells Page</b></a> for time required).<br>
  - Secondary Alignments and Spells will become available.</p>
-<p>For more information, see <b><a target="" href="http://musicfamily.org/realm/Ascension2/">Ascension 2</b></a>.</p>
+<p>For more information, see <b><a target="" href="/realm/Ascension2/">Ascension 2</b></a>.</p>
 <hr>
 <p><b>Third Ascension</b>: (R160 - R219)</p>
 <p><b>Gem Requirement</b>: 1e27 * 100 ^ (R - 160)</p>
@@ -74,6 +74,6 @@
  - All Ascension Penalties from Faction Upgrades and Advanced Heritages are completely removed in A4.<br>
  - Building Cost Multiplier reverted to A0.<br>
  - Legacies introduced.</p>
-<p>For more information, see <b><a target="" href="http://musicfamily.org/realm/Ascension4/">Ascension 4</b></a>.</p>
+<p>For more information, see <b><a target="" href="/realm/Ascension4/">Ascension 4</b></a>.</p>
 <br/>
 <?php include "../scripts/footer.html"; ?>

@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 <?php include "../scripts/header.html"; ?>
-    <h6><img src="http://musicfamily.org/realm/Factions/picks/MercenaryTopPage.png" alt="Spellcraft" align="middle"></h6>
+    <h6><img src="/realm/Factions/picks/MercenaryTopPage.png" alt="Spellcraft" align="middle"></h6>
     <p><b>Important</b>: For <font color=DarkRed><b>R12</b> and above get the <b>Know Your Enemy Part I</b> Artifact, using the Harley Quinn build.</font>
     <p>With version 2 comes the ability to load and save mercenary builds. The Faction Upgrades and Spells are saved in templates.</p>
     <p><b>Note</b>: You will need to manually select the alignment and bloodline.</p>

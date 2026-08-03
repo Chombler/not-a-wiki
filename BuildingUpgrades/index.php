@@ -3,13 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <?php include "../scripts/header.html"; ?>
-<h6><img src="http://musicfamily.org/realm/Factions/picks/UpgradesTopPage.png"></h6>
+<h6><img src="/realm/Factions/picks/UpgradesTopPage.png"></h6>
 <p><b>A complete list of building upgrades</p></b>
-<!--<a target="_blank" href="http://musicfamily.org/realm/BuildingUpgrades/textversion.php"><b>Text Version</b></a>-->
+<!--<a target="_blank" href="/realm/BuildingUpgrades/textversion.php"><b>Text Version</b></a>-->
 <p>In order from <b>Neutral</b> to <b>Good</b> to <b>Evil</b> with <b>Halls of Legends</b> at the bottom.</p>
 <p>Each building has 23 upgrades except Halls of Legends, it has 29 upgrades.
 <p><b>Farm Upgrades (Alignment: Any-None)</b></p>
-<p><img src="http://musicfamily.org/realm/Factions/picks/fgroup2.png" usemap="#fgroup2-map">
+<p><img src="/realm/Factions/picks/fgroup2.png" usemap="#fgroup2-map">
 <map name="fgroup2-map">
     <area target="" research="Upgrade 1: Crop Rotation<p>Requirement: 5 Farms<p> Cost Pre Ascension: 200<p>Cost Post Ascension: Free<p>Pre Ascencion: Increase Farm production by 100%.<p>Post Ascencion: Increase Farm production by 7.18%.<p>Adds 1 Assistant" coords="5,3,50,51" shape="rect">
     <area target="" research="Upgrade 2: Irrigation<p>Requirement: 25 Farms<p>Cost Pre Ascension: 6,580<p>Cost Post Ascension: Free<p>Pre Ascencion: Increase Farm production by 200%.<p>Post Ascencion: Increase Farm production by 11.6%.<p>Adds 1 Assistant" coords="58,3,103,51" shape="rect">
@@ -39,7 +39,7 @@
 </map>
 </br>
 <p><b>Inn Upgrades (Alignment: Any-None)</b></p>
-<p><img src="http://musicfamily.org/realm/Factions/picks/igroup3.6.png" usemap="#igroup2-map">
+<p><img src="/realm/Factions/picks/igroup3.6.png" usemap="#igroup2-map">
 <map name="igroup2-map">
     <area target="" research="Upgrade 1: Top Quality Beer<p>Requirement: 5 Inns<p>Cost Pre Ascension: 2,510<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Inn production by 100%.<p>Post Ascension: Increase Inn production by 17.8%.<p>Adds 1 Assistant" coords="5,4,51,51" shape="rect">
     <area target="" research="Upgrade 2: Cockroach Disinfestation<p>Requirement: 25 Inns<p>Cost Pre Ascension: 82,300<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Inn production by 200%.<p>Post Ascension: Increase Inn production by 11.6%.<p>Adds 1 Assistant" coords="56,4,105,51" shape="rect">
@@ -68,7 +68,7 @@
     <area target="" research="<b>Freemason's Halls</b><p>At R75, Inns can be upgraded to the Unique Building: Freemason's Halls, boosting their production based on the highest amount of assistants you had in a single game and unlocking additional perks related to the building.</p><p><b>Alignment: </b>Neutral Mercenary</p><p><b>Unlock Requirements:</b> R75+, 125,000 buildings</p><p><b>Effect:</b> Grants access to Research Facilities.</p><p><b>Formula: </b>(20 + 20 * x ^ 0.8)%, where x is the highest assistants you had in a single game this R.</p>" coords="347,111,540,162" shape="rect"></map>
 </br>
 <p><b>Blacksmith Upgrades (Alignment: Any-None)</b></p>
-<p><img src="http://musicfamily.org/realm/Factions/picks/bgroup1.png" usemap="#bgroup1-map">
+<p><img src="/realm/Factions/picks/bgroup1.png" usemap="#bgroup1-map">
 <map name="bgroup1-map">
     <area target="" research="Upgrade 1: Heavy Hammer<p>Requirement: 5 Blacksmiths<p>Cost Pre Ascension: 12,070<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Blacksmith production by 100%.<p>Post Ascension: Increase Blacksmith production by 7.18%.<p>Adds 1 Assistant" coords="2,3,51,52" shape="rect">
     <area target="" research="Upgrade 2: Stone Molds<p>Requirement: 25 Blacksmiths<p>Cost Pre Ascension: 395,020<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Blacksmith production by 200%.<p>Post Ascension: Increase Blacksmith production by 11.6%.<p>Adds 1 Assistant" coords="58,3,105,51" shape="rect">
@@ -96,7 +96,7 @@
     <area target="" research="<b>Dwarven Forges</b><p>At R28, Blacksmiths can be upgraded to the Unique Building: Dwarven Forges, boosting their production based on mana regeneration and unlocking additional perks related to the building.</p><p><b>Alignment:</b> Good-Dwarf</p><p><b>Unlock Requirements:</b> R28+, 3,500 Blacksmiths</p><p><b>Formula:</b> (80 * x ^ 0.8)%, where x is mana per second.</p>" coords="351,111,536,159" shape="rect">
 </map>
 <p><b>Deep Mine Upgrades (Alignment: Neutral)</b></p>
-<p><img src="http://musicfamily.org/realm/Factions/picks/dgroup3.6.png" usemap="#dgroup1-map">
+<p><img src="/realm/Factions/picks/dgroup3.6.png" usemap="#dgroup1-map">
 <map name="dgroup1-map">
     <area target="" research="Upgrade 1: Reinforced Beams<p>Requirement: 5 Deep Mines<p>Cost Pre Ascension: 36,200<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Deep Mines production by 100%.<p>Post Ascension: Increase Deep Mines production by 7.18%.<p>Adds 1 Assistant" coords="3,3,51,52" shape="rect">
     <area target="" research="Upgrade 2: Lifesaving Canary<p>Requirement: 25 Deep Mines<p>Cost Pre Ascension: 1.185M (1.185e6)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Deep Mines production by 100%.<p>Post Ascension: Increase Deep Mines production by 7.18%.<p>Adds 1 Assistant" coords="58,3,105,52" shape="rect">
@@ -125,7 +125,7 @@
   	<area target="" research="<b>Pavillons</b><p>At R130, Deep Mine can be upgraded to the Unique Building: Pavillons, boosting their production based on spell casts in this Reincarnation and unlocking additional perks related to the building.</p><p><b>Alignment: </b>Proof of Chaos, Faceless</p><p><b>Unlock Requirements:</b> R130+, 5 days of Chaos spells in this game</p><p><b>Effect:</b> Grants access to Djinn Union.</p><p><b>Formula: </b>10 * x ^ 0.5, where x is spell casts this Reincarnation.</p>" coords="164,110,346,162" shape="rect">
 </map>
 <p><b>Stone Pillars Upgrades (Alignment: Neutral)</b></p>
-<p><img src="http://musicfamily.org/realm/Factions/picks/sgroup3.6.png" usemap="#sgroup1-map">
+<p><img src="/realm/Factions/picks/sgroup3.6.png" usemap="#sgroup1-map">
 <map name="sgroup1-map">
     <area target="" research="Upgrade 1: Rune of Saving<p>Requirement: 5 Stone Pillars<p>Cost Pre Ascension: 36,200<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Stone Pillars production by 100%.<p>Post Ascension: Increase Stone Pillars production by 7.18%.<p>Adds 1 Assistant" coords="3,3,50,52" shape="rect">
     <area target="" research="Upgrade 2: Rune of Earning<p>Requirement: 25 Stone Pillars<p>Cost Pre Ascension: 3.687M (3.687e6)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Stone Pillars production by 100%.<p>Post Ascension: Increase Stone Pillars production by 7.18%.<p>Adds 1 Assistant" coords="56,3,105,51" shape="rect">
@@ -153,7 +153,7 @@
     <area target="" research="<b>Stonehenge Circles</b><p>At R22, Stone Pillars can be upgraded to the Unique Building: Stonehenge Circles, boosting their production based on maximum mana and unlocking additional perks related to the building.</p><p><b>Alignment:</b> Druid</p><p><b>Unlock Requirements:</b> R22+, 2000 Stone Pillars</p><p><b>Effect:</b> Grants access to Research Facilities.</p><p><b>Formula:</b> (30 * x ^ 0.6)%, where x is your Maximum Mana.</p>" coords="351,111,536,159" shape="rect">
 </map>
 <p><b>Alchemist Lab Upgrades (Alignment: Neutral)</b></p>
-<p><img src="http://musicfamily.org/realm/Factions/picks/agroup3.6.png" usemap="#agroup1-map">
+<p><img src="/realm/Factions/picks/agroup3.6.png" usemap="#agroup1-map">
 <map name="agroup1-map">
     <area target="" research="Upgrade 1: Copper Transmutation<p>Requirement: 5 Alchemist Labs<p>Cost Pre Ascension: 764,320<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Alchemist Labs production by 100%.<p>Post Ascension: Increase Alchemist Labs production by 7.18%.<p>Adds 1 Assistant" coords="3,2,50,51" shape="rect">
     <area target="" research="Upgrade 2: Bronze Transmutation<p>Requirement: 25 Alchemist Labs<p>Cost Pre Ascension: 25.02M (2.502e7)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Alchemist Labs production by 100%.<p>Post Ascension: Increase Alchemist Labs production by 7.18%.<p>Adds 1 Assistant" coords="56,3,103,51" shape="rect">
@@ -181,7 +181,7 @@
   	<area target="" research="<b>Nexuses</b><p>At R130, Alchemist Labs can be upgraded to the Unique Building: Nexuses, boosting their production based on time spent as Order in this Reincarnation and unlocking additional perks related to the building.</p><p><b>Alignment: </b>Proof of Order, Titan</p><p><b>Unlock Requirements:</b> R130+, 25,000 Wizard Towers/Witch Conclaves/Alchemist Labs</p><p><b>Effect:</b> Grants access to Archon Union.</p><p><b>Formula:</b>(80 * x ^ 0.8), where x is time spent as Order this Reincarnation.</p>" coords="347,111,540,162" shape="rect">
 </map>
 <p><b>Monastery Upgrades (Alignment: Neutral)</b></p>
-<p><img src="http://musicfamily.org/realm/Factions/picks/mgroup1.png" usemap="#mgroup1-map">
+<p><img src="/realm/Factions/picks/mgroup1.png" usemap="#mgroup1-map">
 <map name="mgroup1-map">
     <area target="" research="Upgrade 1: Scheduled Orations<p>Requirement: 5 Monasteries<p>Cost Pre Ascension: 8.89M (8.89e6)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Monasteries production by 100%.<p>Post Ascension: Increase Monasteries production by 7.18%.<p>Adds 1 Assistant" coords="5,3,51,52" shape="rect">
     <area target="" research="Upgrade 2: Unshakable Faith<p>Requirement: 25 Monasteries<p>Cost Pre Ascension: 291M (2.91e8)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Monasteries production by 100%.<p>Post Ascension: Increase Monasteries production by 7.18%.<p>Adds 1 Assistant" coords="58,3,105,52" shape="rect">
@@ -209,7 +209,7 @@
     <area target="" research="<b>Forbidden Libraries</b><p>At R100, Monasteries can be upgraded to the Unique Building: Forbidden Libraries, boosting their production chaotically based on spell casts in the game and unlocking additional perks related to the building.</p><p><b>Alignment: </b>Proof of Chaos, Faceless</p><p><b>Unlock Requirements:</b> R100+, 5,000 Excavations</p><p><b>Effect:</b> Grants access to Faceless Union.</p><p><b>Formula: </b>(18 * (ln(1 + x) / (ln(x % 10 + 2))) ^ 1.8)%, where x is spells cast this game.</p>" coords="350,110,539,161" shape="rect">
 </map>
 <p><b>Labyrinth Upgrades (Alignment: Neutral)</b></p>
-<p><img src="http://musicfamily.org/realm/Factions/picks/lgroup1.png" usemap="#lgroup1-map">
+<p><img src="/realm/Factions/picks/lgroup1.png" usemap="#lgroup1-map">
 <map name="lgroup1-map">
     <area target="" research="Upgrade 1: Fake Exits<p>Requirement: 5 Labyrinths<p>Cost Pre Ascension: 146.8M (1.468e8)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Labyrinths production by 100%.<p>Post Ascension: Increase Labyrinths production by 7.18%.<p>Adds 1 Assistant" coords="5,3,51,52" shape="rect">
     <area target="" research="Upgrade 2: Roaming Beasts<p>Requirement: 25 Labyrinths<p>Cost Pre Ascension: 4.806B (4.806e9)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Labyrinths production by 100%.<p>Post Ascension: Increase Labyrinths production by 7.18%.<p>Adds 1 Assistant" coords="56,2,105,52" shape="rect">
@@ -237,7 +237,7 @@
     <area target="" research="<b>Sunken Cities</b><p>At R22, Labyrinths can be upgraded to the Unique Building: Sunken Cities, boosting their production based on time spent in your longest game session and unlocking additional perks related to the building.</p><p><b>Alignment: </b>Faceless</p><p><b>Unlock Requirements:</b> R22+, 2000 Labyrinths</p><p><b>Effect:</b> Grants access to Research Facilities.</p><p><b>Formula: </b>(75 * (x / 3600) ^ 0.9), where x is your Playtime (Longest Session).</p>" coords="351,112,536,159" shape="rect">
 </map>
 <p><b>Iron Stronghold Upgrades (Alignment: Neutral)</b></p>
-<p><img src="http://musicfamily.org/realm/Factions/picks/isgroup1.png" usemap="#isgroup1-map">
+<p><img src="/realm/Factions/picks/isgroup1.png" usemap="#isgroup1-map">
 <map name="isgroup1-map">
     <area target="" research="Upgrade 1: Higher Walls<p>Requirement: 5 Iron Strongholds<p>Cost Pre Ascension: 2.916B (2.916e9)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Iron Strongholds production by 100%.<p>Post Ascension Increase Iron Strongholds production by 7.18%.<p>Adds 1 Assistant" coords="3,2,51,51" shape="rect">
     <area target="" research="Upgrade 2: Crenellations<p>Requirement: 25 Iron Strongholds<p>Cost Pre Ascension: 95.46B (9.546e10)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Iron Strongholds production by 100%.<p>Post Ascension Increase Iron Strongholds production by 7.18%.<p>Adds 1 Assistant" coords="56,2,105,52" shape="rect">
@@ -265,7 +265,7 @@
     <area target="" research="<b>Wyrm Dens</b><p>At R46, Iron Strongholds can be upgraded to the Unique Building: Wyrm's Dens, boosting their production based on Faction Coins found and unlocking additional perks related to the building.</p><p><b>Alignment: </b>Neutral Dragon</p><p><b>Unlock Requirements:</b> R46+, 4500 Iron Strongholds</p><p><b>Formula: </b>0.065 * (ln(1 + (x / 2) + y)) ^ 3.65, where x is Faction Coins in this game and y is Faction Coins in this Reincarnation.</p>" coords="352,113,538,159" shape="rect">
 </map>
 <p><b>Ancient Pyramid Upgrades (Alignment: Neutral)</b></p>
-<p><img src="http://musicfamily.org/realm/Factions/picks/apgroup1.png" usemap="#apgroup1-map">
+<p><img src="/realm/Factions/picks/apgroup1.png" usemap="#apgroup1-map">
 <map name="apgroup1-map">
     <area target="" research="Upgrade 1: Golden Sarcophagi<p>Requirement: 5 Ancient Pyramids<p>Cost Pre Ascension: 64.36B (6.436e10)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Ancient Pyramids production by 100%.<p>Post Ascension: Increase Ancient Pyramids production by 7.18%.<p>Adds 1 Assistant" coords="2,3,51,52" shape="rect">
     <area target="" research="Upgrade 2: Wandering Mummies<p>Requirement: 25 Ancient Pyramids<p>Cost Pre Ascension: 2.107T (2.107e12)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Ancient Pyramids production by 100%.<p>Post Ascension: Increase Ancient Pyramids production by 7.18%.<p>Adds 1 Assistant" coords="56,3,105,52" shape="rect">
@@ -293,7 +293,7 @@
     <area target="" research="<b>Ziggurats</b><p>At R100, Ancient Pyramids can be upgraded to the Unique Building: Ziggurats, boosting their production based on total Lineage levels and unlocking additional perks related to the building.</p><p><b>Alignment: </b>Proof of Balance, Druid</p><p><b>Unlock Requirements:</b> R100+, 10,000 Stonehenge Circles</p><p><b>Effect: </b>Grants access to Druid Union.</p><p><b>Formula: </b>floor(x ^ 1.2), where x is total Lineage levels.</p>" coords="349,110,540,163" shape="rect">
 </map>
 <p><b>Warrior Barracks Upgrades (Alignment: Good)</b></p>
-<p><img src="http://musicfamily.org/realm/Factions/picks/wbgroup3.6.png" usemap="#wbgroup1-map">
+<p><img src="/realm/Factions/picks/wbgroup3.6.png" usemap="#wbgroup1-map">
 <map name="wbgroup1-map">
     <area target="" research="Upgrade 1: Bronze Weapons<p>Requirement: 5 Warrior Barracks<p>Cost Pre Ascension: 36,200<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Warrior Barracks production by 100%.<p>Post Ascension: Increase Warrior Barracks production by 7.18%.<p>Adds 1 Assistant" coords="3,2,50,52" shape="rect">
     <area target="" research="Upgrade 2: Iron Weapons<p>Requirement: 25 Warrior Barracks<p>Cost Pre Ascension: 1.185M (1.185e6)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Warrior Barracks production by 100%.<p>Post Ascension: Increase Warrior Barracks production by 7.18%.<p>Adds 1 Assistant" coords="58,3,105,51" shape="rect">
@@ -322,7 +322,7 @@
   	<area target="" research="<b>Pavillons</b><p>At R130, Warrior Barracks can be upgraded to the Unique Building: Pavillons, boosting their production based on spell casts in this Reincarnation and unlocking additional perks related to the building.</p><p><b>Alignment: </b>Proof of Chaos, Fairy</p><p><b>Unlock Requirements:</b> R130+, 5 days of Chaos spells in this game</p><p><b>Effect:</b> Grants access to Djinn Union.</p><p><b>Formula: </b>10 * x ^ 0.5, where x is spell casts this Reincarnation.</p>" coords="164,110,346,162" shape="rect">
 </map>
 <p><b>Knights Joust Upgrades (Alignment: Good)</b></p>
-<p><img src="http://musicfamily.org/realm/Factions/picks/kjgroup3.6.png" usemap="#kjgroup1-map">
+<p><img src="/realm/Factions/picks/kjgroup3.6.png" usemap="#kjgroup1-map">
 <map name="kjgroup1-map">
     <area target="" research="Upgrade 1: Pointy Lances<p>Requirement: 5 Knights Jousts<p>Cost Pre Ascension: 112,640<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Knights Jousts production by 100%.<p>Post Ascension: Increase Knights Jousts production by 7.18%.<p>Adds 1 Assistant" coords="5,4,52,51" shape="rect">
     <area target="" research="Upgrade 2: Stallion Horses<p>Requirement: 25 Knights Jousts<p>Cost Pre Ascension: 3.687M (3.687e6)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Knights Jousts production by 100%.<p>Post Ascension: Increase Knights Jousts production by 7.18%.<p>Adds 1 Assistant" coords="58,2,105,51" shape="rect">
@@ -350,7 +350,7 @@
     <area target="" research="<b>Mercenary Camps</b><p>At R75, Knights Jousts can be upgraded to the Unique Building: Mercenary Camps, boosting their production based on Non-Unique Buildings you own and unlocking additional perks related to the building.</p><p><b>Alignment: </b>Good Mercenary</p><p><b>Unlock Requirements:</b> R75+, 125,000 buildings</p><p><b>Effect: </b>Grants access to Research Facilities.</p><p><b>Formula: </b>1.25 * (1 + x) ^ 1.05, where x is amount of non-Unique buildings.</p>" coords="348,109,539,162" shape="0">
 </map>
 <p><b>Wizard Tower Upgrades (Alignment: Good)</b></p>
-<p><img src="http://musicfamily.org/realm/Factions/picks/wizardtowergroup2.png" usemap="#wizardtowergroup1-map">
+<p><img src="/realm/Factions/picks/wizardtowergroup2.png" usemap="#wizardtowergroup1-map">
 <map name="wizardtowergroup1-map">
     <area target="" research="Upgrade 1: Arcane Circle<p>Requirement: 5 Wizard Towers<p>Cost Pre Ascension: 764,320<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Wizard Towers production by 100%.<p>Post Ascension: Increase Wizard Towers production by 7.18%.<p>Adds 1 Assistant" coords="3,2,51,51" shape="rect">
     <area target="" research="Upgrade 2: Magic Channeling<p>Requirement: 25 Wizard Towers<p>Cost Pre Ascension: 25.02M (2.502e7)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Wizard Towers production by 100%.<p>Post Ascension: Increase Wizard Towers production by 7.18%.<p>Adds 1 Assistant" coords="58,4,105,51" shape="rect">
@@ -379,7 +379,7 @@
   	<area target="" research="<b>Nexuses</b><p>At R130, Wizard Towers can be upgraded to the Unique Building: Nexuses, boosting their production based on time spent as Order in this Reincarnation and unlocking additional perks related to the building.</p><p><b>Alignment: </b>Proof of Order, Angel</p><p><b>Unlock Requirements:</b> R130+, 25,000 Wizard Towers/Witch Conclaves/Alchemist Labs</p><p><b>Effect:</b> Grants access to Archon Union.</p><p><b>Formula: </b>(80 * x ^ 0.8), where x is time spent as Order this Reincarnation.</p>" coords="164,110,346,162" shape="rect">
 </map>
 <p><b>Cathedral Upgrades (Alignment: Good)</b></p>
-<p><img src="http://musicfamily.org/realm/Factions/picks/cathedralgroup1.png" usemap="#cathedralgroup1-map">
+<p><img src="/realm/Factions/picks/cathedralgroup1.png" usemap="#cathedralgroup1-map">
 <map name="cathedralgroup1-map">
     <area target="" research="Upgrade 1: Golden Cross<p>Requirement: 5 Cathedrals<p>Cost Pre Ascension: 8.89M (8.89e6)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Cathedral production by 100%.<p>Post Ascension: Increase Cathedrals production by 7.18%.<p>Adds 1 Assistant" coords="2,1,51,52" shape="rect">
     <area target="" research="Upgrade 2: Mausoleum<p>Requirement: 25 Cathedrals<p>Cost Pre Ascension: 291M (2.91e8)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Cathedral production by 100%.<p>Post Ascension: Increase Cathedrals production by 7.18%.<p>Adds 1 Assistant" coords="58,4,105,52" shape="rect">
@@ -407,7 +407,7 @@
     <area target="" research="<b>Holy Sites</b><p>At R100, Cathedrals can be upgraded to the Unique Building: Holy Sites, boosting their production based on time spent as Good in this Reincarnation and unlocking additional perks related to the building.</p><p><b>Alignment: </b>Proof of Order, Angel</p><p><b>Unlock Requirements:</b> R100+, 3M (3e6) Mana Regeneration.</p><p><b>Effect:</b> Grants access to Angel Union.</p><p><b>Formula: </b>(x ^ 0.85), where x is time in second as good in this R.</p>" coords="351,109,540,162" shape="rect">
 </map>
 <p><b>Citadel Upgrades (Alignment: Good)</b></p>
-<p><img src="http://musicfamily.org/realm/Factions/picks/citadelgroup1.png" usemap="#citadelgroup1-map">
+<p><img src="/realm/Factions/picks/citadelgroup1.png" usemap="#citadelgroup1-map">
 <map name="citadelgroup1-map">
     <area target="" research="Upgrade 1: Guard Training<p>Requirement: 5 Citadels<p>Cost Pre Ascension: 146.8M (1.468e8)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Citadels production by 100%.<p>Post Ascension: Increase Citadels production by 7.18%.<p>Adds 1 Assistant" coords="3,2,51,51" shape="rect">
     <area target="" research="Upgrade 2: Lookouts<p>Requirement: 25 Citadels<p>Cost Pre Ascension: 4.806B (4.806e9)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Citadels production by 100%.<p>Post Ascension: Increase Citadels production by 7.18%.<p>Adds 1 Assistant" coords="56,2,105,51" shape="rect">
@@ -435,7 +435,7 @@
     <area target="" research="<b>Arboreal Cities</b><p>At R100, Citadels can be upgraded to the Unique Building: Arboreal Cities, boosting their production based on Faction Coin find chance and unlocking additional perks related to the building.</p><p><b>Alignment: </b>Proof of Balance, Elf</p><p><b>Unlock Requirements:</b> R100+, 1e23 Elf Faction Coins found</p><p><b>Effect:</b> Grants access to Elven Union.</p><p><b>Formula: </b>floor(20 * (ln(1 + x)) ^ 2), where x is Faction Coin find chance.</p>" coords="350,109,539,162" shape="rect">
 </map>
 <p><b>Royal Castle Upgrades (Alignment: Good)</b></p>
-<p><img src="http://musicfamily.org/realm/Factions/picks/royalcastlegroup2.png" usemap="#royalcastlegroup2-map">
+<p><img src="/realm/Factions/picks/royalcastlegroup2.png" usemap="#royalcastlegroup2-map">
 <map name="royalcastlegroup2-map">
     <area target="" research="Upgrade 1: Reinforced Walls<p>Requirement: 5 Royal Castles<p>Cost Pre Ascension: 2.916B (2.916e9)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Royal Castles production by 100%.<p>Pre Ascension: Increase Royal Castles production by 7.18%.<p>Adds 1 Assistant" coords="3,4,51,52" shape="rect">
     <area target="" research="Upgrade 2: Court Jesters<p>Requirement: 25 Royal Castles<p>Cost Pre Ascension: 95.46B (9.546e10)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Royal Castles production by 100%.<p>Pre Ascension: Increase Royal Castles production by 7.18%.<p>Adds 1 Assistant" coords="58,2,105,51" shape="rect">
@@ -463,7 +463,7 @@
     <area target="" research="<b>High Bastions</b><p>At R116, Royal Castles can be upgraded to the Unique Building: High Bastions, boosting their production based on clicks made in this Reincarnation and unlocking additional perks related to the building.</p><p><b>Alignment: </b>Good-Dwarf</p><p><b>Unlock Requirements:</b> R116+, 5 Free Resets this R</p><p><b>Effect:</b> Grants access to Dwarven Union.</p><p><b>Formula: </b>ln(1 + x) ^ 2, where x is clicks this R.</p>" coords="350,108,538,161" shape="rect">
 </map>
 <p><b>Heaven's Gate Upgrades (Alignment: Good)</b></p>
-<p><img src="http://musicfamily.org/realm/Factions/picks/heavensgategroup1.png" usemap="#heavensgategroup1-map">
+<p><img src="/realm/Factions/picks/heavensgategroup1.png" usemap="#heavensgategroup1-map">
 <map name="heavensgategroup1-map">
     <area target="" research="Upgrade 1: Golden Key<p>Requirement: 5 Heaven's Gates<p>Cost Pre Ascension: 64.36B (6.436e10)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Heaven's Gates production by 100%.<p>Post Ascension: Increase Heaven's Gates production by 7.18%.<p>Adds 1 Assistant" coords="7,4,51,50" shape="rect">
     <area target="" research="Upgrade 2: Flying Clouds<p>Requirement: 25 Heaven's Gates<p>Cost Pre Ascension: 2.107T (2.107e12)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Heaven's Gates production by 100%.<p>Post Ascension: Increase Heaven's Gates production by 7.18%.<p>Adds 1 Assistant" coords="58,2,105,50" shape="rect">
@@ -491,7 +491,7 @@
     <area target="" research="<b>Heaven's Domains</b><p>At R16, Heaven's Gates can be upgraded to the Unique Building: Heaven's Domains, boosting their production based on spells affecting them and unlocking additional perks related to the building.</p><p><b>Alignment: </b>Angel</p><p><b>Unlock Requirements:</b> R16+, 1500 Heaven's Gates</p><p><b>Effect:</b> Grants access to Research Facilities.</p><p><b>Formula: </b>(350 * x ^ 1.1)%, where x is the amount of spells affecting Heaven's Domain.</p>" coords="348,111,536,160" shape="rect">
 </map>
 <p><b>Slave Pen Upgrades (Alignment: Evil)</b></p>
-<p><img src="http://musicfamily.org/realm/Factions/picks/slavepengroup3.6.png" usemap="#slavepengroup1-map">
+<p><img src="/realm/Factions/picks/slavepengroup3.6.png" usemap="#slavepengroup1-map">
 <map name="slavepengroup1-map">
     <area target="" research="Upgrade 1: Smaller Cells<p>Requirement: 5 Slave Pens<p>Cost Pre Ascension: 36,200<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Slave Pens production by 100%.<p>Post Ascension: Increase Slave Pens production by 7.18%.<p>Adds 1 Assistant" coords="2,4,51,54" shape="rect">
     <area target="" research="Upgrade 2: Punishment Whips<p>Requirement: 25 Slave Pens<p>Cost Pre Ascension: 1.185M (1.185e6)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Slave Pens production by 100%.<p>Post Ascension: Increase Slave Pens production by 7.18%.<p>Adds 1 Assistant" coords="54,3,105,53" shape="rect">
@@ -520,7 +520,7 @@
   	<area target="" research="<b>Pavillons</b><p>At R130, Slave Pens can be upgraded to the Unique Building: Pavillons, boosting their production based on spell casts in this Reincarnation and unlocking additional perks related to the building.</p><p><b>Alignment: </b>Proof of Chaos, Demon</p><p><b>Unlock Requirements:</b> R130+, 5 days of Chaos spells this game</p><p><b>Effect:</b> Grants access to Djinn Union.</p><p><b>Formula: </b>10 * x ^ 0.5, where x is spell casts in this Reincarnation.</p>" coords="164,110,346,162" shape="rect">
 </map>
 <p><b>Orcish Arena Upgrades (Alignment: Evil)</b></p>
-<p><img src="http://musicfamily.org/realm/Factions/picks/orcisharenagroup3.6.png" usemap="#orcisharenagroup1-map">
+<p><img src="/realm/Factions/picks/orcisharenagroup3.6.png" usemap="#orcisharenagroup1-map">
 <map name="orcisharenagroup1-map">
     <area target="" research="Upgrade 1: Unfair Judge<p><p>Requirement: 5 Orcish ArenasCost Pre Ascension: 112,640<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Orcish Arenas production by 100%.<p>Post Ascension: Increase Orcish Arenas production by 7.18%.<p>Adds 1 Assistant" coords="3,3,51,54" shape="rect">
     <area target="" research="Upgrade 2: Rule Abolition<p>Requirement: 25 Orcish Arenas<p>Cost Pre Ascension: 3.687M (3.687e6)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Orcish Arenas production by 100%.<p>Post Ascension: Increase Orcish Arenas production by 7.18%.<p>Adds 1 Assistant" coords="56,4,105,52" shape="rect">
@@ -548,7 +548,7 @@
     <area target="" research="<b>Flesh Workshops</b><p>At R100, Orcish Arenas can be upgraded to the Unique Building: Flesh Workshops, boosting their production based on mana regeneration and unlocking additional perks related to the building.</p><p><b>Alignment: </b>Proof of Order, Undead</p><p><b>Unlock Requirements:</b> R100+, 500,000% Offline Prod Bonus</p><p><b>Effect:</b> Grants access to Undead Union.</p><p><b>Formula: </b>(35 * x ^ 0.65), where x is mana regen per second.</p>" coords="349,111,538,161" shape="rect">
 </map>
 <p><b>Witch Conclave Upgrades (Alignment: Evil)</b></p>
-<p><img src="http://musicfamily.org/realm/Factions/picks/witchconclavegroup2.png" usemap="#witchconclavegroup1-map">
+<p><img src="/realm/Factions/picks/witchconclavegroup2.png" usemap="#witchconclavegroup1-map">
 <map name="witchconclavegroup1-map">
     <area target="" research="Upgrade 1: Witch Sabbath<p>Requirement: 5 Witch Conclaves<p>Cost Pre Ascension: 764,320<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Witch Conclaves production by 100%.<p>Post Ascension: Increase Witch Conclaves production by 7.18%.<p>Adds 1 Assistant" coords="1,2,52,52" shape="rect">
     <area target="" research="Upgrade 2: Black Magic<p>Requirement: 25 Witch Conclaves<p>Cost Pre Ascension: 25.02M (2.502e7)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Witch Conclaves production by 100%.<p>Post Ascension: Increase Witch Conclaves production by 7.18%.<p>Adds 1 Assistant" coords="54,2,105,53" shape="rect">
@@ -577,7 +577,7 @@
   	<area target="" research="<b>Nexuses</b><p>At R130, Witch Conclaves can be upgraded to the Unique Building: Nexuses, boosting their production based on time spent as Order in this Reincarnation and unlocking additional perks related to the building.</p><p><b>Alignment: </b>Proof of Order, Undead</p><p><b>Unlock Requirements:</b> R130+, 25,000 Wizard Towers/Witch Conclaves/Alchemist Labs</p><p><b>Effect:</b> Grants access to Archon Union.</p><p><b>Formula: </b>(80 * x ^ 0.8), where x is time spent as Order in this Reincarnation.</p>" coords="164,110,346,162" shape="rect">
 </map>
 <p><b>Dark Temple Upgrades (Alignment: Evil)</b></p>
-<p><img src="http://musicfamily.org/realm/Factions/picks/darktemplesgroup1.png" usemap="#darktemplesgroup1-map">
+<p><img src="/realm/Factions/picks/darktemplesgroup1.png" usemap="#darktemplesgroup1-map">
 <map name="darktemplesgroup1-map">
     <area target="" research="Upgrade 1: Sacrificial Altar<p>Requirement: 5 Dark Temples<p>Cost Pre Ascension: 8.89M (8.89e6)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Dark Temples production by 100%.<p>Post Ascension: Increase Dark Temples production by 7.18%.<p>Adds 1 Assistant" coords="2,4,51,54" shape="rect">
     <area target="" research="Upgrade 2: Dark Rituals<p>Requirement: 25 Dark Temples<p>Cost Pre Ascension: 291M (2.91e8)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Dark Temples production by 100%.<p>Post Ascension: Increase Dark Temples production by 7.18%.<p>Adds 1 Assistant" coords="56,3,105,53" shape="rect">
@@ -605,7 +605,7 @@
     <area target="" research="<b>Spider Sanctuaries</b><p>At R28, Dark Temples can be upgraded to the Unique Building: Spider Sanctuaries, boosting their production based on time spent offline in this Reincarnation and unlocking additional perks related to the building.</p><p><b>Alignment: </b>Evil Drow</p><p><b>Unlock Requirements:</b> R28+, 2,000 Dark Temples</p><p><b>Formula: </b>30 * x ^ 0.8, where x is your Time spent Offline (Total) stat.</p>" coords="351,111,538,161" shape="rect">
 </map>
 <p><b>Necropolis Upgrades (Alignment: Evil)</b></p>
-<p><img src="http://musicfamily.org/realm/Factions/picks/necropolisgroup1.png" usemap="#necropolisgroup1-map">
+<p><img src="/realm/Factions/picks/necropolisgroup1.png" usemap="#necropolisgroup1-map">
 <map name="necropolisgroup1-map">
     <area target="" research="Upgrade 1: Desecrated Crypt<p>Requirement: 5 Necropolises<p>Cost Pre Ascension: 146.8M (1.468e8)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Necropolises production by 100%.<p>Pre Ascension: Increase Necropolises production by 7.18%.<p>Adds 1 Assistant" coords="2,2,52,53" shape="rect">
     <area target="" research="Upgrade 2: Rotting Corpses<p>Requirement: 25 Necropolises<p>Cost Pre Ascension: 4.806B (4.806e9)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Necropolises production by 100%.<p>Pre Ascension: Increase Necropolises production by 7.18%.<p>Adds 1 Assistant" coords="58,4,105,51" shape="rect">
@@ -633,7 +633,7 @@
     <area target="" research="<b>Undercities</b><p>At R16, Necropolises can be upgraded to the Unique Building: Undercities, boosting their production based on time spent in this game and unlocking additional perks related to the building.</p><p><b>Alignment: </b>Undead</p><p><b>Unlock Requirements:</b> R16+, 2500 Necropolises</p><p><b>Effect: </b>Grants access to Research Facilities.</p><p><b>Formula: </b>12 * (2.5 * x) ^ 0.75, where x is time spent this game.</p>" coords="351,111,538,160" shape="rect">
 </map>
 <p><b>Evil Fortress Upgrades (Alignment: Evil)</b></p>
-<p><img src="http://musicfamily.org/realm/Factions/picks/evilfortressgroup1.png" usemap="#evilfortressgroup1-map">
+<p><img src="/realm/Factions/picks/evilfortressgroup1.png" usemap="#evilfortressgroup1-map">
 <map name="evilfortressgroup1-map">
     <area target="" research="Upgrade 1: Spiked Walls<p>Requirement: 5 Evil Fortresses<p>Cost Pre Ascension: 2.916B (2.916e9)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Evil Fortresses production by 100%.<p>Pre Ascension: Increase Evil Fortresses production by 7.18%.<p>Adds 1 Assistant" coords="2,4,50,51" shape="rect">
     <area target="" research="Upgrade 2: Deep Dungeons<p>Requirement: 25 Evil Fortresses<p>Cost Pre Ascension: 95.46B (9.546e10)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Evil Fortresses production by 100%.<p>Pre Ascension: Increase Evil Fortresses production by 7.18%.<p>Adds 1 Assistant" coords="56,4,105,52" shape="rect">
@@ -661,7 +661,7 @@
     <area target="" research="<b>Tyrant Garrisons</b><p>At R75, Evil Fortresses can be upgraded to the Unique Building: Tyrant Garrisons, boosting their production based on offline production bonus and unlocking additional perks related to the building.</p><p><b>Alignment: </b>Evil Mercenary</p><p><b>Unlock Requirements:</b> R75+, 125,000 buildings</p><p><b>Effect: </b>Grants access to Research Facilities.</p><p><b>Formula: </b>((log10(1 + x) ^ 3)%, where x is your offline production.</p>" coords="347,111,538,162" shape="rect">
 </map>
 <p><b>Hell Portal Upgrades (Alignment: Evil)</b></p>
-<p><img src="http://musicfamily.org/realm/Factions/picks/hellportalgroup1.png" usemap="#hellportalgroup1-map">
+<p><img src="/realm/Factions/picks/hellportalgroup1.png" usemap="#hellportalgroup1-map">
 <map name="hellportalgroup1-map">
     <area target="" research="Upgrade 1: Continuous Pain<p>Requirement: 5 Hell Portals<p>Cost Pre Ascension: 64.36B (6.436e10)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Hell Portals production by 100%.<p>Post Ascension: Increase Hell Portals production by 7.18%.<p>Adds 1 Assistant" coords="3,2,52,53" shape="rect">
     <area target="" research="Upgrade 2: Endless Sorrow<p>Requirement: 25 Hell Portals<p>Cost Pre Ascension: 2.107T (2.107e12)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase Hell Portals production by 100%.<p>Post Ascension: Increase Hell Portals production by 7.18%.<p>Adds 1 Assistant" coords="56,4,107,53" shape="rect">
@@ -689,7 +689,7 @@
     <area target="" research="<b>Infernal Realms</b><p>At R16, Hell Portals can be upgraded to the Unique Building: Infernal Realms, boosting their production based on trophy count and unlocking additional perks related to the building.</p><p><b>Alignment: </b>Demon</p><p><b>Unlock Requirements:</b> R16+, 1500 Hell Portals</p><p><b>Effect: </b>Grants access to Research Facilities.</p><p><b>Formula: </b>(125 * x)%, where x is Trophy count.</p>" coords="351,111,536,162" shape="rect">
 </map>
 <p><b>Hall of Legends Upgrades (Alignment: Any)</b></p>
-<p><img src="http://musicfamily.org/realm/Factions/picks/halloflegendsgroup3.png" usemap="#halloflegendsgroup1-map">
+<p><img src="/realm/Factions/picks/halloflegendsgroup3.png" usemap="#halloflegendsgroup1-map">
 <map name="halloflegendsgroup1-map">
     <area target="" research="Upgrade 1: Legendary Representatives<p>Requirement: 5 Halls of Legends<p>Cost Pre Ascension: 40T (4e13)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase the production of Hall of Legends by 75% and Increase the production of all other buildings by an additional 0.25% for each trophy you unlocked.<p>Post Ascension: Increase the production of Hall of Legends by 5.76% and Increase the production of all other buildings based on the amount of trophies you unlocked.<p>Formula: ((1 + 0.0025 * T)^0.1 - 1) * 100 as a percent" coords="5,2,51,51" shape="rect">
     <area target="" research="Upgrade 2: Legendary League<p>Requirement: 25 Halls of Legends<p>Cost Pre Ascension: 1.3Qa (1.3e15)<p>Cost Post Ascension: Free<p>Pre Ascension: Increase the production of Hall of Legends by 75% and Increase the production of all other buildings by an additional 0.25% for each trophy you unlocked.<p>Post Ascension: Increase the production of Hall of Legends by 5.76% and Increase the production of all other buildings based on the amount of trophies you unlocked.<p>Formula: ((1 + 0.0025 * T)^0.1 - 1) * 100 as a percent" coords="58,3,105,52" shape="rect">

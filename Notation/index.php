@@ -2,7 +2,7 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-    <link rel="stylesheet" href="http://musicfamily.org/realm/scripts/2.css"></link>
+    <link rel="stylesheet" href="/realm/scripts/2.css"></link>
     <style>
         .numtable tr:hover {
             background-color: #ffffff

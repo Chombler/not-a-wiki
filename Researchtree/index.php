@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <?php include "../scripts/header.html"; ?>
-	<h6><img src="http://musicfamily.org/realm/Factions/picks/ResearchTopPage.png"></h6>
+	<h6><img src="/realm/Factions/picks/ResearchTopPage.png"></h6>
 	<div id="calrps">
 		<style>
 			th, td {
@@ -194,7 +194,7 @@
 	<p><b>For R190-219: research points are capped at 7000.</b></p>
 	<p><b>For R246+: research points are capped at 14000.</b></p>
 	<p>Information about how Research Slots / Budget work can be found at <b><a href = "/realm/Research">Research</a></b>.</p>
-	<p><b>All Researches in Text Version</b>: <b><a href="http://musicfamily.org/realm/ResearchList">Research List</a></b>.<p>
+	<p><b>All Researches in Text Version</b>: <b><a href="/realm/ResearchList">Research List</a></b>.<p>
 	<hr>
 	<p><img src="/realm/Factions/picks/ResearchTreeA4.png" usemap="#ResearchTreeA4-map" class="centerimg">
 <map name="ResearchTreeA4-map">

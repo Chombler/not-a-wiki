@@ -4,7 +4,7 @@
 
 <head>
     <?php include "../scripts/header.html"; ?>
-        <h6><img src="http://musicfamily.org/realm/Factions/picks/ResearchTopPage.png"></h6>
+        <h6><img src="/realm/Factions/picks/ResearchTopPage.png"></h6>
         <p><b><a href="/realm/Spellcraft" research="Spellcraft">Spellcraft</a></b></p>
         <p><b><a href="/realm/Craftsmanship" research="Craftsmanship">Craftsmanship</a></b></p>
         <p><b><a href="/realm/Divine" research="Divine">Divine</a></b></p>

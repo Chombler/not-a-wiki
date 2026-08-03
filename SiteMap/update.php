@@ -1,7 +1,7 @@
 <?php
     if (!empty($_POST["pass"])) {
         if (md5($_POST["pass"]) === "9fe9cb12277af13c8bc31be450a3172c") {
-            $website = "http://www.musicfamily.org/realm";
+            $website = "/realm";
             $typos = array(
                 "WallofShame" => "Wall of Shame",
                 "BuildingAlignements" => "Building Alignments",

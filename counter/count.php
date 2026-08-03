@@ -1,5 +1,5 @@
 <?php
-$base_url = 'http://musicfamily.org/realm/counter/';
+$base_url = '/realm/counter/';
 $default_style = 'NaW';
 $default_ext = 'gif';
 $count_unique = 1;
