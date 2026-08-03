@@ -263,9 +263,9 @@
 					<hr>
 					<p><img src="/realm/Factions/picks/StoicResistanceSecretTrophy.png" align="middle"><b> Stoic Resistance</b></p>
 					<p><b>Requirement</b>: Reach an amount of Gems in your treasury equal to the requisite of the first Reincarnation (1 Oc (1e27) gems) without abdicating since the start of a new Reincarnation.</p>
-					<p><b>Cost</b>: 1 Coins, A1+ Free</p>
+					<p><b>Cost</b>: Free</p>
 					<p><b>Gems Needed</b>: A0 = 1 Oc (1e27), A1 = 177.8 Qi (1.778e20), A2 = 1.540 Qa (1.540e15), A3 = 245.8 B (2.458e11), A4 = 349.1 M (3.491e8)</p>
-					<p><b>Effect</b>: Increase base clicking reward by +1 T (1e12)</p>
+					<p><b>Effect</b>: Instantly add 10 Qa (1e16) coins of the current Ascension currency.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/Van!shmentSecretTrophy.png" align="middle"><b> Van!shment</b></p>
 					<p><b>Requirement</b>: Reach an Offline Bonus of at least 1 Qa (1e15) % (Post-Ascension is 1895%).</p>
