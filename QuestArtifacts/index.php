@@ -84,57 +84,57 @@
 	<p><b><img src="/realm/Factions/picks/FirstIronFragment.png" align="middle"> First Iron Fragment</b></p>
 	<p><b>Clue</b>: This one seems to require a lot of magical renewance.</p>
 	<p><b>Description</b>: It looks like a piece of an iron object. It's broken off on two sides.</p>
-	<p><b>Requirement</b>: R125+, Angel Faction, 12,500+ Excavations</p>
-	<p><b>Chance</b>: (log10(1 + x) ^ 3 / 100,000)%, where x is your Mana Regeneration.</p>
+	<p><b>Requirement</b>: R125+, Ascension 2+, Angel Faction, 5,000+ Excavations</p>
+	<p><b>Chance</b>: (ln(1 + 30 * x) ^ 3 / 1,000,000 (1 M))%, where x is your Mana Regeneration.</p>
 	<p><b><img src="/realm/Factions/picks/SecondIronFragment.png" align="middle"> Second Iron Fragment</b></p>
 	<p><b>Clue</b>: Found via extensive Royal Trading mandates.</p>
 	<p><b>Description</b>: It looks like a piece of an iron object. It's broken off on two sides.</p>
-	<p><b>Requirement</b>: R125+, Titan Faction, 12,500+ Excavations</p>
-	<p><b>Chance</b>: (x ^ 3 / 5,000,000,000 (5 B))%, where x is the individual Royal Exchange bonus.</p>
+	<p><b>Requirement</b>: R125+, Ascension 2+, Titan Faction, 5,000+ Excavations</p>
+	<p><b>Chance</b>: (x / 50,000,000 (50 M))%, where x is your Royal Exchange bonus.</p>
 	<p><b><img src="/realm/Factions/picks/ThirdIronFragment.png" align="middle"> Third Iron Fragment</b></p>
 	<p><b>Clue</b>: Chances to find increase while not actively searching.</p>
 	<p><b>Description</b>: It looks like a piece of an iron object. It's broken off on two sides.</p>
-	<p><b>Requirement</b>: R125+, Undead Faction, 12,500+ Excavations</p>
-	<p><b>Chance</b>: ((log10(1 + x) - 2) ^ 3 / 500,000)%, where x is offline bonus.</p>
+	<p><b>Requirement</b>: R125+, Ascension 2+, Undead Faction, 5,000+ Excavations</p>
+	<p><b>Chance</b>: (ln(1 + x) ^ 3 / 500,000)%, where x is your offline production bonus.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/FirstCrystalFragment.png" align="middle"> First Crystal Fragment</b></p>
 	<p><b>Clue</b>: Assistants will lead the way.</p>
 	<p><b>Description</b>: A strange, glass-like material that appears to have been shattered into three pieces.</p>
-	<p><b>Requirement</b>: R125+, Fairy Faction, 12,500+ Excavations</p>
+	<p><b>Requirement</b>: R125+, Ascension 2+, Fairy Faction, 5,000+ Excavations</p>
 	<p><b>Chance</b>: (x / 1,000,000,000,000 (1 T))%, where x is assistant count (including temporary assistants).</p>
 	<p><b><img src="/realm/Factions/picks/SecondCrystalFragment.png" align="middle"> Second Crystal Fragment</b></p>
 	<p><b>Clue</b>: Are Faction Coins attracted to glass?</p>
 	<p><b>Description</b>: A strange, glass-like material that appears to have been shattered into three pieces.</p>
-	<p><b>Requirement</b>: R125+, Faceless Faction, 12,500+ Excavations</p>
-	<p><b>Chance</b>: (log10(1 + x) ^ 3 / 2,500,000 (2.5 M))%, where x is Faction Coins found this Era.</p>
+	<p><b>Requirement</b>: R125+, Ascension 2+, Faceless Faction, 5,000+ Excavations</p>
+	<p><b>Chance</b>: (4 * ln(1 + x) ^ 3 / 50,000,000 (50 M))%, where x is Faction Coins found this Era.</p>
 	<p><b><img src="/realm/Factions/picks/ThirdCrystalFragment.png" align="middle"> Third Crystal Fragment</b></p>
 	<p><b>Clue</b>: Also acts as a spell catalyst.</p>
 	<p><b>Description</b>: A strange, glass-like material that appears to have been shattered into three pieces.</p>
-	<p><b>Requirement</b>: R125+, Demon Faction, 12,500+ Excavations</p>
-	<p><b>Chance</b>: (x / 50,000,000 (50 M))%, where x is evil spells cast this Reincarnation.</p>
+	<p><b>Requirement</b>: R125+, Ascension 2+, Demon Faction, 5,000+ Excavations</p>
+	<p><b>Chance</b>: (x / 1,000,000 (1 M))%, where x is evil spells cast this Reincarnation.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/FirstStoneFragment.png" align="middle"> First Stone Fragment</b></p>
 	<p><b>Clue</b>: Click to Carve.</p>
 	<p><b>Description</b>: Made from stone so ancient it is unknown to the current world. Two parts seem to be missing.</p>
-	<p><b>Requirement</b>: R125+, Elven Faction, 12,500+ Excavations</p>
-	<p><b>Chance</b>: (log10(1 + x) ^ 3 / 20,000)%, where x is the amount of clicks made in this Era.</p>
+	<p><b>Requirement</b>: R125+, Ascension 2+, Elven Faction, 5,000+ Excavations</p>
+	<p><b>Chance</b>: (ln(1 + x) ^ 3 / 20,000)%, where x is the amount of clicks made in this Era.</p>
 	<p><b><img src="/realm/Factions/picks/SecondStoneFragment.png" align="middle"> Second Stone Fragment</b></p>
 	<p><b>Clue</b>: Stone to stone, buildings to buildings.</p>
 	<p><b>Description</b>: Made from stone so ancient it is unknown to the current world. Two parts seem to be missing.</p>
-	<p><b>Requirement</b>: R125+, Druid Faction, 12,500+ Excavations</p>
-	<p><b>Chance</b>: (x / 20,000,000 (20 M))%, where x is amount of buildings.</p>
+	<p><b>Requirement</b>: R125+, Ascension 2+, Druid Faction, 5,000+ Excavations</p>
+	<p><b>Chance</b>: (x / 5,000,000 (5 M))%, where x is the amount of buildings owned this Era.</p>
 	<p><b><img src="/realm/Factions/picks/ThirdStoneFragment.png" align="middle"> Third Stone Fragment</b></p>
 	<p><b>Clue</b>: Might be collected with taxes.</p>
 	<p><b>Description</b>: Made from stone so ancient it is unknown to the current world. Two parts seem to be missing.</p>
-	<p><b>Requirement</b>: R125+, Goblin Faction, 12,500+ Excavations</p>
-	<p><b>Chance</b>: (log10(1 + x) ^ 3 / 125,000)%, where x is Tax Collections cast in this Era.</p>
+	<p><b>Requirement</b>: R125+, Ascension 2+, Goblin Faction, 5,000+ Excavations</p>
+	<p><b>Chance</b>: (ln(1 + x) ^ 3 / 125,000)%, where x is Tax Collections cast in this Era.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/ObsidianCrown.png" align="middle"> Obsidian Crown</b></p>
 	<p><b>Clue</b>: Only the wisest turns over the same stone twice. Or more.</p>
 	<p><b>Description</b>: The legendary Black Crown of the Mercenary Lord. Some words are engraved into the inner circle at its base: &quot;Aran en Ilya, Silas en Quenta&quot;.</p>
-	<p><b>Requirement</b>: R170+, play as Mercenary, 10 excavation resets (This Era)</p>
+	<p><b>Requirement</b>: R170+, play as Mercenary</p>
 	<p><b>Effect</b>: Unlocks Mercenary Union Contract</p>
-	<p><b>Chance</b>: ((x - 10) / 1,000)%, x is the number of free and ruby excavation resets (This Era)</p>
+	<p><b>Chance</b>: (x / 1,000)%, where x is the number of free and ruby excavation resets in this Reincarnation.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/ForgottenRelic.png" align="middle"> Forgotten Relic</b></p>
 	<p><b>Clue</b>: Research it!</p>

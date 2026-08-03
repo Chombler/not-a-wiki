@@ -64,7 +64,7 @@
 	<p><b>Hint</b>: Requires extreme amounts of luck!</p>
 	<p><b>Description</b>: A perfectly shaped four leaf clover. Each leaf is almost unnaturally identical to the other three.</p>
 	<p><b>Requirement</b>: Elven Faction (Not Dwarven)</p>
-	<p><b>Chance</b>: (x - 1) * 50)%, where x is the highest number of consecutive Elven Lucks.</p>
+	<p><b>Chance</b>: ((x - 1) * 50)%, where x is the highest number of consecutive Elven Lucks.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/Mini-treasure.png" alt="Smiley face" align="middle"> Mini-treasure</b></p>
 	<p><b>Hint</b>: Click your way to the treasure!</p>
@@ -341,7 +341,7 @@
 	<p><b>Hint</b>: Found in the Swarming Towers.</p>
 	<p><b>Description</b>: The purest silk made for Fairies, by Fairies, of Fairies.</p>
 	<p><b>Requirement</b>: R100+, Fairy Faction, Pink Carrot and Bottled Voice artifacts, 2000+ Excavations</p>
-	<p><b>Chance</b>: ((x - 8,000) / 200,000)%, where x is the amount of Wizard Towers you own (Building count multipliers <b>do not</b> count).</p>
+	<p><b>Chance</b>: (x / 400,000)%, where x is the amount of Wizard Towers you own (Building count multipliers <b>do not</b> count).</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/RawEmeraldArtifact.png" align="middle"> Raw Emerald</b></p>
 	<p><b>Hint</b>: Not found on the first Excavation round.</p>
@@ -353,31 +353,31 @@
 	<p><b>Hint</b>: Angels may fall after a long time.</p>
 	<p><b>Description</b>: The remains of an Angel fallen to earth.</p>
 	<p><b>Requirement</b>:  R100+, Angel Faction, Pillar Fragment and Divine Sword artifacts, 2000+ Excavations</p>
-	<p><b>Chance</b>: (x / 25,920,000 (25.92 M))%, where x time spent with Angels (All Time).</p>
+	<p><b>Chance</b>: (x / 2,592,000 (2.592 M))%, where x is time spent with Angels (All Time).</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/SpikedWhipArtifact.png" align="middle"> Spiked Whip</b></p>
 	<p><b>Hint</b>: Used by the overseers in the Slave Markets.</p>
 	<p><b>Description</b>: Use with caution. You do not want to exterminate all your slaves.</p>
 	<p><b>Requirement</b>: R100+, Goblin Faction, Ancient Coin Piece and Goblin Purse artifacts, 2000+ Excavations</p>
-	<p><b>Chance</b>: ((x - 8,000) / 300,000)%, where x is the amount of Slave Pens you own (Building count multipliers <b>do not</b> count).</p>
+	<p><b>Chance</b>: (x / 500,000)%, where x is the amount of Slave Pens you own (Building count multipliers <b>do not</b> count).</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/DustyCoffinArtifact.png" align="middle"> Dusty Coffin</b></p>
 	<p><b>Hint</b>: Quick! Quick! You have no time to waste!</p>
 	<p><b>Description</b>: Sealed since forever, yet you can hear a strange noise from within.</p>
 	<p><b>Requirement</b>: R100+, Undead Faction, Rotten Organ and Jaw Bone artifacts, 2000+ Excavations</p>
-	<p><b>Chance</b>: (1 / (30 + x ^ 1.5))%, where x is time spent in this Era.</p>
+	<p><b>Chance</b>: (x / 2,592,000 (2.592 M))%, where x is Undead playtime without abdicating, in seconds.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/CrystallizedLavaArtifact.png" align="middle"> Crystallized Lava</b></p>
 	<p><b>Hint</b>: Found in the Burning Abysses.</p>
 	<p><b>Description</b>: Incandescent but still. Can be used efficiently as a desk lamp.</p>
 	<p><b>Requirement</b>: R100+, Demon Faction, Demonic Figurine and Demon Horn artifacts, 2000+ Excavations</p>
-	<p><b>Chance</b>: ((x - 8,000) / 200,000)%, where x is the amount of Hall of Legends you own (Building count multipliers <b>do not</b> count).</p>
+	<p><b>Chance</b>: (x / 200,000)%, where x is the amount of Hall of Legends you own (Building count multipliers <b>do not</b> count).</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/TitanHelmetArtifact.png" align="middle"> Titan Helmet</b></p>
 	<p><b>Hint</b>: Found in the trade route used for Exchanges.</p>
 	<p><b>Description</b>: Made of enough metal to craft a human-sized full plate.</p>
 	<p><b>Requirement</b>: R100+, Titan Faction, Huge Titan Statue and Titan Shield artifacts, 2000+ Excavations</p>
-	<p><b>Chance</b>: ((x ^ 2) / 1,500,000,000 (1.5B))%, where x is Royal Exchanges (Royal Exchange count multipliers <b>do not</b> count).</p>
+	<p><b>Chance</b>: (x ^ 2 / 500,000,000 (500 M))%, where x is Royal Exchanges (Royal Exchange count multipliers <b>do not</b> count).</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/BranchoftheLifeTreeArtifact.png" align="middle"> Branch of the Life Tree</b></p>
 	<p><b>Hint</b>: Found in the remains of druidic ancestors.</p>
@@ -395,7 +395,7 @@
 	<p><b>Hint</b>: It requires a lot of beard samples to get the perfect hair.</p>
 	<p><b>Description</b>: Hopefully coming from a real dwarven beard.</p>
 	<p><b>Requirement</b>: R116+, Dwarven Faction, Stone Tankard and Dwarven Bow artifacts, 2000+ Excavations</p>
-	<p><b>Chance</b>: (x / 1,000,000,000 (1 B))%, where x is the amount of assistant you own (including temporary assistants).</p>
+	<p><b>Chance</b>: (x / 10,000,000,000,000 (10 T))%, where x is the amount of assistants you own (including temporary assistants).</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/PoisonVial.png" align="middle"> Poison Vial</b></p>
 	<p><b>Hint</b>: Combo your way through.</p>
@@ -407,7 +407,7 @@
 	<p><b>Hint</b>: Usually found when a lot of magic is lingering.</p>
 	<p><b>Description</b>: Very high on the realms' most accurate hardiness rankings.</p>
 	<p><b>Requirement</b>: R116+, Dragon Faction, Dragon Fang and Dragon Soul artifacts, 2000+ Excavations</p>
-	<p><b>Chance</b>: (x / 2,500)%, where x is the amount of active spells.</p>
+	<p><b>Chance</b>: (x / 2,000)%, where x is the amount of active spells, including spell tiers.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/LanternofGuidanceArtifact.png" align="middle"> Lantern of Guidance</b></p>
 	<p><b>Hint</b>: Massive mana flows can offer guidance.</p>
@@ -442,8 +442,8 @@
 	<p><b><img src="/realm/Factions/picks/MercenaryInsigniaArtifact.png" align="middle"> Mercenary Insignia</b></p>
 	<p><b>Hint</b>: Gem rhabdomancy seems to work best.</p>
 	<p><b>Description</b>: The infamous metal cross of the Mercenaries. You should be both proud and afraid to carry one.</p>
-	<p><b>Requirement</b>: R160+, Mercenary Faction, Steel Plate and Black Sword artifacts</p>
-	<p><b>Chance</b>: (floor(log10(1 + x) - 37) * 0.1)%, where x is the amount of gems owned.</p>
+	<p><b>Requirement</b>: R160+, Ascension 3+, Mercenary Faction, Steel Plate and Black Sword artifacts</p>
+	<p><b>Chance</b>: ((0.5 * floor(log10(x))) ^ 2 / 10,000)%, where x is the amount of gems owned.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/ManaLoom.png" align="middle"> Mana Loom</b></p>
 	<p><b>Hint</b>: Attracted by amassed mana reserves.</p>
