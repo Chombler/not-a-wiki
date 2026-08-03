@@ -31,7 +31,9 @@
 	<br/>
 	<p><b>Faction spell</b></p>
 	<p><b><img src="/realm/Factions/picks/DiamondPickaxe.png" align="middle"> Diamond Pickaxe</b></p>
-	<p><b>Effect</b>: Increase clicking reward by 25% per Excavation and "Faction Coin Find Chance" by +200% for 12 seconds.</p>
+	<p><b>Cost</b>: 1,000 Mana - <b>Duration</b>: 360 seconds</p>
+	<p><b>Effect</b>: Increase clicking reward based on Excavation depth and Faction Coin find chance additively by 200%. Each spell tier adds another 200% additive Faction Coin chance and multiplicatively increases it by 10%.</p>
+	<p><b>Clicking Formula</b>: (30 * x)%, where x is Excavation depth.</p>
 	<br/>
 	<p><b>Spell Trophy & Upgrade</b></p>
 	<p><b><img src="/realm/Factions/picks/MinedwarfSpellUpgrade.png" align="middle"> Minedwarf</b></p>
@@ -57,7 +59,7 @@
 	<p><b><img src="/realm/Factions/picks/DwarvenUpgrade3.png" align="middle"> Mining Prodigies</b></p>
 	<p><b>Cost</b>: 500 Qad (5e47)</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on the amount of Excavations you made, including resets, in this Reincarnation.</p>
-	<p><b>Formula</b>: (40 * (x * (1 + 2 * y)) ^ 0.4)%, where x is the number of excavations made this Reincarnation, y is the number of excavation resets in this Reincarnation.</p>	
+	<p><b>Formula</b>: (25 * x ^ 0.5)%, where x is Excavation depth.</p>
 	<hr>
 	<p><b>Tier 2 Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/DwarvenFriendshipPact.png" align="middle"> Dwarven Friendship Pact</b></p>
@@ -67,7 +69,7 @@
 	<p><b><img src="/realm/Factions/picks/DwarvenUpgrade4.png" align="middle"> Underground Citadels</b></p>
 	<p><b>Cost</b>: 50 Qid (5e49)</p>
 	<p><b>Effect</b>: Multiplicatively increase Mana Regeneration based on the amount of Gems you own.</p>
-	<p><b>Formula</b>: (1.5 * log10(1 + x) ^ 1.5)%, where x is the amount of Gems you own.</p>
+	<p><b>Formula</b>: (1.5 * (0.5 * ln(1 + x)) ^ 1.5)%, where x is the amount of Gems you own.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DwarvenUpgrade5.png" align="middle"> Indestructible Treasure</b></p>
 	<p><b>Cost</b>: 500 Qid (5e50)</p>
@@ -87,7 +89,7 @@
 	<p><b><img src="/realm/Factions/picks/DwarvenUpgrade7.png" align="middle"> Battlehammers</b></p>
 	<p><b>Cost</b>: 500 Sxd (5e53)</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on the amount of Dwarven Coins found in this Era.</p>
-	<p><b>Formula</b>: (2 * ln(1 + x) ^ 2))%, where x is the amount of Dwarven Coins found in this Era.</p>
+	<p><b>Formula</b>: (2.5 * ln(1 + x) ^ 2.5)%, where x is the amount of Dwarven Coins found in this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DwarvenUpgrade8.png" align="middle"> Magic Resistance</b></p>
 	<p><b>Cost</b>: 5 Spd (5e54)</p>
@@ -108,7 +110,7 @@
 	<p><b>Dwarf Research Requirements</b></p>
 	<p><b><img src="/realm/Factions/picks/DwarvenForgeQuestFactionUpgrade.png" align="middle"> Dwarven Forge Quest</b></p>
 	<p><b>Description</b>: Aye again lad! Don't ye want a better place to forge yer weapons? With Enough Blacksmiths me people can help ye!</p>
-	<p><b>Requirement</b>: R28 + 3,500 Blacksmiths</p>
+	<p><b>Requirement</b>: R32 + 3,500 Blacksmiths</p>
 	<p><b>Cost</b>: 10 Sxg (1e184)</p>
 	<p><b>Effect</b>: Unlocks Dwarven Forges.</p>
 	<br/>
@@ -116,7 +118,7 @@
 	<p>Upgrade Blacksmiths to Dwarven Forges, boosting their production based on mana regen and unlocking more unique perks for the building.</p>
 	<p><b>Requirements</b>: Dwarven Forge Quest</p>
 	<p><b>Cost</b>: 10 USxg (1e187)</p>
-	<p><b>Formula</b>: (300 * x ^ 0.6)%, where x is your Mana Regeneration.</p>
+	<p><b>Formula</b>: (300 * (30 * x) ^ 0.6)%, where x is your Mana Regeneration.</p>
 	<p><b>Effect</b>: Unlocks Dwarven Unique Buildings.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/EarthCoreArtifactFactionUpgrade.png" align="middle"> Earth Core Artifact</b></p>
@@ -159,7 +161,7 @@
 	<p><b>Unique Building</b></p>
 	<p><b><img src="/realm/Factions/picks/HighBastionUniqueBuilding.png" align="middle"></b></p>
 	<p><b>Effect</b>: Upgrade Royal Castles to High Bastions, boosting their production based on clicks made in this reincarnation and unlocking more unique perks for the building.</p>
-	<p><b>Formula</b>: (0.5 * x ^ 0.5)%, where x is clicks this Reincarnation.</p>
+	<p><b>Formula</b>: (5 * x ^ 0.5)%, where x is clicks this Reincarnation.</p>
 	<p><b>Effect</b>: Grants access to Faction Union.</p>
 	<hr>
 	<p><b>Tier 4 Upgrades</b></p>
@@ -172,7 +174,7 @@
 	<p><b>Formula</b>: (3.5 * x ^ 0.65)%, where x is time spent this Reincarnation.</p>
 	<br/>
 	<p><b>Proof of Chaos</b>: Multiplicatively increase assistant chaotically based on spells cast this Reincarnation.</p>
-	<p><b>Formula</b>: ((sum(digit(x) ^ y)) ^ 0.9)%, with (y = floor(log10(1 + x) + 1) / 10 + 2), where x is spells cast this Reincarnation.</p>
+	<p><b>Formula</b>: ((sum(digit(x) ^ y)) ^ 0.8)%, with y = 2 + (floor(ln(1 + x)) + 1) / 10, where x is spells cast this Reincarnation.</p>
 	<br/>
 	<p><b>Proof of Balance</b>: Increase Mana Regeneration based on clicks made in this Reincarnation.</p>
 	<p><b>Formula</b>: (1.5 * ln(1 + x) ^ 2.5)%, where x is amount of clicks made this Reincarnation.</p>
@@ -180,23 +182,23 @@
 	<p><b><img src="/realm/Factions/picks/DwarvenUpgrade10.png" align="middle"> Solidity</b></p>
 	<p><b>Cost</b>: 10 Dtg (1e100)</p>
 	<p><b>Effect</b>: Multiplicatively increase production bonus from Gems based on the highest amount of High Bastions you built in this Reincarnation.</p>
-	<p><b>Formula</b>: (1.6 * x ^ 0.6)%, where x is the highest amount of High Bastion built in this Reincarnation.</p>
+	<p><b>Formula</b>: (1.2 * x ^ 0.8)%, where x is the highest amount of High Bastions built in this Reincarnation.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DwarvenUpgrade11.png" align="middle"> Stonetalking</b></p>
 	<p><b>Cost</b>: 100 Qitg (1e110)</p>
-	<p><b>Effect</b>: Increase the production of all buildings based on the highest between Maximum Mana and Mana Regeneration.</p>
-	<p><b>Formula</b>: (2 * ln(1 + max(x, y)) ^ 2)%, where x is Maximum Mana and y is Mana Regeneration.</p>
+	<p><b>Effect</b>: Increase the production of all buildings based on the highest between Maximum Mana and 30 times Mana Regeneration.</p>
+	<p><b>Formula</b>: (3 * ln(1 + max(x, 30 * y)) ^ 3)%, where x is Maximum Mana and y is Mana Regeneration.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DwarvenUpgrade12.png" align="middle"> Refined Minerals</b></p>
 	<p><b>Cost</b>: 1 Notg (1e120)</p>
 	<p><b>Effect</b>: Multiplicatively increase Mana Regeneration and Maximum Mana based on highest time spent as Order, Balance or Chaos.</p>
-	<p><b>Formula</b>: (0.03 * max(x, y, z) ^ 0.7)%, where x, y & z is time spent as Order, Balance and Chaos in this Reincarnation respectively.</p>
+	<p><b>Formula</b>: (2.5 * max(x, y, z) ^ 0.5)%, where x, y and z are time spent as Order, Balance and Chaos in this Reincarnation respectively.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/AdvancedDwarvenHeritage.png" align="middle"> Advanced Dwarven Heritage</b></p>
-	<p><b>Requirement</b>: Dwarf Master trophy and 6 hours activity time (This Era) of Diamond Pickaxe.</p>
+	<p><b>Requirement</b>: Dwarf Master trophy and 1 hour of Diamond Pickaxe activity time in this Era.</p>
 	<p><b>Cost</b>: 1 Sp (1e24) Dwarven Coins</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on the amount of current excavations and excavation resets. (This Reincarnation).</p>
 	<p><b>Formula</b>: (0.025 * (x * (1 + y + z)) ^ 0.65)%, where x is current excavations and y & z are free and ruby excavation resets done in this Reincarnation.</p>
 	<p><b>Note</b>: When using their lineage, Advanced Heritage powers are multiplied by the level of the lineage.</p>
-	<p><b>Formula</b>: *(1 + 0.3 * level)</p>
+	<p><b>Formula</b>: *(1 + 0.2 * level)</p>
 <?php include "../scripts/footer.html"; ?>
