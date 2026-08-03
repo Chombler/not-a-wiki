@@ -74,21 +74,21 @@
 <p><b>Dwarven</b></p>
 <p>The Dwarves make the best masons, artisans and blacksmiths in all the realms. Their creations will outlast anything made by other races... except for beer, that is.</p>
 <p>The Dwarven faction focus on boosting production based on how many times you excavated this Reincarnation.</p>
-<p>Part of the Prestige Faction, the Dwarven Faction appears in addition to a good faction and enables the player to use all the 2 faction spells and 18 upgrades and from both the Good and Dwarven factions.</p>
+<p>Part of the Prestige Faction, the Dwarven Faction appears in addition to a Good faction and enables the player to use both faction spells and both factions' upgrades.</p>
 <p>The Dwarven faction cannot be combined with Evil or Neutral Factions. Its Research is available after unlocking its Unique Building and the Secrets of the Underworld.</p>
 	" coords="184,64,238,118" shape="rect">
 	<area href="/realm/DrowFaction/" research="
 <p><b>Drow</b></p>
 <p>The Drows believe that any crime can go unpunished if nobody notices you did it. They value and praise perfect executions, and will reward those who plan accordingly.</p>
 <p>The Drow faction focus on boosting offline production, and boosting production based on offline production.</p>
-<p>Part of the Prestige Faction, the Drow Faction appears in addition to an Evil faction, this enables the player to use all the 2 faction spells and 18 upgrades and from both the Evil and Drow factions.</p>
+<p>Part of the Prestige Faction, the Drow Faction appears in addition to an Evil faction and enables the player to use both faction spells and both factions' upgrades.</p>
 <p>The Drow faction cannot be combined with Good or Neutral Factions. Its Research is available after unlocking its Unique Building and the Secrets of the Underworld.</p>
 	" coords="244,64,298,118" shape="rect">
 	<area href="/realm/DragonFaction/" research="
 <p><b>Dragon</b></p>
 <p>The Dragon is the mightiest, most imposing creature of all the realms. None may stand a chance alone against a Dragon, not even the firecest of heroes.</p>
 <p>They usually care little for the lower creatures, but you have piqued their interest.</p>
-<p>Part of the Prestige Faction, the Dragon Faction appears in addition to an Neutral faction, this enables the player to use all the 2 faction spells and 18 upgrades and from both the Neutral and Dragon factions.</p>
+<p>Part of the Prestige Faction, the Dragon Faction appears in addition to a Neutral faction and enables the player to use both faction spells and both factions' upgrades.</p>
 <p>The Dragon faction cannot be combined with Good or Evil. Unlocking the Dragon faction requires 46 Reincarnations and can be done by completing a series of quests.</p>
 	" coords="304,64,358,118" shape="rect">
 	<area href="/realm/ArchonFaction" research="
@@ -131,69 +131,69 @@
 <p><a href="/realm/FairyFaction"><img src="/realm/Factions/picks/FairyTradeTreaty.png" alt="Fairy"></a> Fairy</p>
 <p><b>Requirement</b>: Proof of Good Deed</p>
 <p><b>Cost</b>: Free with 0 gems, 20 Fairy Coins with any gems</p>
-<p><b>Cost R220+</b>: 1 Qa (1e15) Fairy Coins</p>
+<p><b>Cost R220+</b>: 1 T (1e12) Fairy Coins</p>
 <hr>
 <p><a href="/realm/ElfFaction"><img src="/realm/Factions/picks/ElvenTradeTreaty.png"></a> Elven</p>
 <p><b>Requirement</b>: Proof of Good Deed</p>
 <p><b>Cost</b>: 20 Elven Coins</p>
-<p><b>Cost R220+</b>: 1 Qa (1e15) Elven Coins</p>
+<p><b>Cost R220+</b>: 1 T (1e12) Elven Coins</p>
 <hr>
 <p><a href="/realm/AngelFaction"><img src="/realm/Factions/picks/AngelTradeTreaty.png"></a> Angel</p>
 <p><b>Requirement</b>: Proof of Good Deed
 <p><b>Cost</b>: 20 Angel Coins</p>
-<p><b>Cost R220+</b>: 1 Qa (1e15) Angel Coins</p>
+<p><b>Cost R220+</b>: 1 T (1e12) Angel Coins</p>
 <hr>
 <p><a href="/realm/GoblinFaction"><img src="/realm/Factions/picks/GoblinTradeTreaty.png"></a> Goblin</p>
 <p><b>Requirement</b>: Proof of Evil Deed</p>
 <p><b>Cost</b>: Free with 0 gems, 20 Goblin Coins with any gems</p>
-<p><b>Cost R220+</b>: 1 Qa (1e15) Goblin Coins</p>
+<p><b>Cost R220+</b>: 1 T (1e12) Goblin Coins</p>
 <hr>
 <p><a href="/realm/UndeadFaction"><img src="/realm/Factions/picks/UndeadTradeTreaty.png"></a> Undead</p>
 <p><b>Requirement</b>: Proof of Evil Deed</p>
 <p><b>Cost</b>: 20 Undead Coins</p>
-<p><b>Cost R220+</b>: 1 Qa (1e15) Undead Coins</p>
+<p><b>Cost R220+</b>: 1 T (1e12) Undead Coins</p>
 <hr>
 <p><a href="/realm/DemonFaction"><img src="/realm/Factions/picks/DemonTradeTreaty.png"></a> Demon</p>
 <p><b>Requirement</b>: Proof of Evil Deed</p>
 <p><b>Cost</b>: 20 Demon Coins.</p>
-<p><b>Cost R220+</b>: 1 Qa (1e15) Demon Coins</p>
+<p><b>Cost R220+</b>: 1 T (1e12) Demon Coins</p>
 <hr>
 <p><b>Neutral Factions</b></p>
 <p><a href="/realm/TitanFaction"><img src="/realm/Factions/picks/TitanTradeTreaty.png"></a> Titan</p>
 <p><b>Unlock Requirement</b>: Fragment of a Titan Statue (only needs to be bought once)</p>
 <p><b>Requirement</b>: Proof of Neutrality</p>
 <p><b>Cost</b>: 250 Angel Coins, 250 Goblin Coins</p>
-<p><b>Cost R220+</b>: 1 Qa (1e15) Angel & Goblin Coins</p>
+<p><b>Cost R220+</b>: 1 T (1e12) Angel & Goblin Coins</p>
 <hr>
 <p><a href="/realm/DruidFaction"><img src="/realm/Factions/picks/DruidTradeTreaty.png"></a> Druid</p>
 <p><b>Unlock Requirement</b>: Druidic Runestone (only needs to be bought once)</p>
 <p><b>Requirement</b>: Proof of Neutrality</p>
 <p><b>Cost</b>: 250 Elven Coins, 250 Demon Coins</p>
-<p><b>Cost R220+</b>: 1 Qa (1e15) Elven & Demon Coins</p>
+<p><b>Cost R220+</b>: 1 T (1e12) Elven & Demon Coins</p>
 <hr>
 <p><a href="/realm/FacelessFaction"><img src="/realm/Factions/picks/FacelessTradeTreaty.png"></a> Faceless</p>
 <p><b>Unlock Requirement</b>: Octopus Shaped Spine (only needs to be bought once)</p>
 <p><b>Requirement</b>: Proof of Neutrality</p>
 <p><b>Cost</b>: 250 Fairy Coins, 250 Undead Coins</p>
-<p><b>Cost R220+</b>: 1 Qa (1e15) Fairy & Undead Coins</p>
+<p><b>Cost R220+</b>: 1 T (1e12) Fairy & Undead Coins</p>
 <hr>
 <p><a href="/realm/DwarfFaction"><img src="/realm/Factions/picks/DwarvenTradeTreaty.png"></a> Dwarven</p>
 <p><b>Unlock Requirement</b>: Sturdy Bearded Man's Quest (only needs to be bought once)</p>
 <p><b>Requirement</b>: Proof of Good Deed, Alliance upgrade of the Good Base Faction, Underworld Diplomacy (only R0-R2)</p>
-<p><b>Available</b>: R0-R99, R116-R219, R235+</p>
-<p><b>Cost</b> 3,000 Dwarven Coins</p>
+<p><b>Available</b>: R0-R99, R110-R159, R165-R219, R235+</p>
+<p><b>Cost</b>: 2,500 Dwarven Coins; R220+: 1 Oc (1e27) Dwarven Coins</p>
 <hr>
 <p><a href="/realm/DrowFaction"><img src="/realm/Factions/picks/DrowTradeTreaty.png"></a> Drow</p>
 <p><b>Unlock Requirement</b>: Cloaked Shady Figure's Quest (only needs to be bought once)</p>
 <p><b>Requirement</b>: Proof of Evil Deed, Alliance upgrade of the Evil Base Faction, Underworld Diplomacy (only R0-R2)</p>
-<p><b>Available</b>: R0-R99, R116-R219, R235+</p>
-<p><b>Cost</b> 3,000 Drow Coins</p>
+<p><b>Available</b>: R0-R99, R110-R159, R165-R219, R235+</p>
+<p><b>Cost</b>: 2,500 Drow Coins; R220+: 1 Oc (1e27) Drow Coins</p>
 <hr>
 <p><a href="/realm/DragonFaction"><img src="/realm/Factions/picks/DragonTradeTreaty.png"></a> Dragon</p>
 <p><b>Unlock Requirement</b>: Dragon Tamer Trophy (only needs to be earned once)</p>
 <p><b>Requirement</b>: Proof of Neutrality, Alliance upgrade of the Neutral Base Faction</p>
-<p><b>Available</b>: R46-R99, R116-R219, R235+</p>
-<p><b>Cost</b>: 5 B (5e9) Dwarven & Drow Coins</p>
+<p><b>Available</b>: R46-R99, R110-R159, R165-R219, R235+</p>
+<p><b>Cost</b>: 5 B (5e9) Dwarven & Drow Coins; R220+: 1 Oc (1e27) Dwarven & Drow Coins</p>
 <hr>
 <p><a href="/realm/MercenaryFaction"><img src="/realm/Factions/picks/MercenaryFirstContract.png"></a> Mercenary</p>
 <p><b>Unlock Requirement R3+</b>: Mercenary Tribute (only needs to be bought once)</p>
@@ -205,20 +205,20 @@
 <p><a href="/realm/ArchonFaction"><img src="/realm/Factions/picks/ArchonTradeTreaty.png"></a> Archon</p>
 <p><b>Unlock Requirement</b>: Archon Quest (only needs to be bought once)</p>
 <p><b>Requirement</b>: Proof of Order, Union upgrades of both Base & Prestige Faction</p>
-<p><b>Available</b>: R125-R219, R255+</p>
-<p><b>Cost</b>: 1 Oc (1e27) Angel & Undead Coins</p>
+<p><b>Available</b>: R125-R159, R172-R219, R255+</p>
+<p><b>Cost</b>: 1 Oc (1e27) Angel & Undead Coins; R220+: 1 Sxd (1e51) Angel & Undead Coins</p>
 <hr>
 <p><a href="/realm/DjinnFaction"><img src="/realm/Factions/picks/DjinnTradeTreaty.png"></a> Djinn</p>
 <p><b>Unlock Requirement</b>: Djinn Quest (only needs to be bought once)</p>
 <p><b>Requirement</b>: Proof of Chaos, Union upgrades of both Base & Prestige Faction</p>
-<p><b>Available</b>: R125-R219, R255+</p>
-<p><b>Cost</b>: 1 Oc (1e27) Fairy & Demon Coins</p>
+<p><b>Available</b>: R125-R159, R172-R219, R255+</p>
+<p><b>Cost</b>: 1 Oc (1e27) Fairy & Demon Coins; R220+: 1 Sxd (1e51) Fairy & Demon Coins</p>
 <hr>
 <p><a href="/realm/MakersFaction"><img src="/realm/Factions/picks/MakersTradeTreaty.png"></a> Makers</p>
 <p><b>Unlock Requirement</b>: Makers Quest (only needs to be bought once)</p>
 <p><b>Requirement</b>: Proof of Balance, Union upgrades of both Base & Prestige Faction</p>
-<p><b>Available</b>: R125-R219, R255+</p>
-<p><b>Cost</b>: 1 Oc (1e27) Elven & Goblin Coins</p>
+<p><b>Available</b>: R125-R159, R172-R219, R255+</p>
+<p><b>Cost</b>: 1 Oc (1e27) Elven & Goblin Coins; R220+: 1 Sxd (1e51) Elven & Goblin Coins</p>
 <hr>
 <p><b>Historical Background</b></p>
 <p>Good Factions are oriented to a more active game-play, focusing on spells and treasure clicks.</p>
