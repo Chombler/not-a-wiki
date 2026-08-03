@@ -31,7 +31,7 @@
 	<br/>
 	<p><b>Faction spell</b></p>
 	<p><b><img src="/realm/Factions/picks/DiamondPickaxe.png" align="middle"> Diamond Pickaxe</b></p>
-	<p><b>Cost</b>: 1,000 Mana - <b>Duration</b>: 360 seconds</p>
+	<p><b>Cost</b>: 1,000 Mana - <b>Duration</b>: 12 seconds</p>
 	<p><b>Effect</b>: Increase clicking reward based on Excavation depth and Faction Coin find chance additively by 200%. Each spell tier adds another 200% additive Faction Coin chance and multiplicatively increases it by 10%.</p>
 	<p><b>Clicking Formula</b>: (30 * x)%, where x is Excavation depth.</p>
 	<br/>

@@ -47,8 +47,8 @@
 	<br/>
 	<p><b>Faction spell</b></p>
 	<p><b><img src="/realm/Factions/picks/DragonsBreath.png" align="middle"> Dragon's Breath</b></p>
-	<p><b>Cost</b>: 1,500 Mana - <b>Duration</b>: 600 seconds</p>
-	<p><b>Effect</b>: Activates one of the following effects at random for 600 seconds.</p>
+	<p><b>Cost</b>: 1,500 Mana - <b>Duration</b>: 20 seconds</p>
+	<p><b>Effect</b>: Activates one of the following effects at random for 20 seconds.</p>
 	<p><b><font color="darkred">Red</font></b>: Increase the production of unique buildings based on the amount of Faction Coins found in this Era.</p>
 	<p><b><font color="darkred">Formula</font></b>: (1.75 * ln(1 + x) ^ 1.75)%, where x is the amount of Faction Coins found in this Era.</p>
 	<br>

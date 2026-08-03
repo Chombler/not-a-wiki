@@ -30,7 +30,7 @@
 	<br/>
 	<p><b>Faction spell</b></p>
 	<p><b><img src="/realm/Factions/picks/Brainwave.png" align="middle"> Brainwave</b></p>
-	<p><b>Cost</b>: 600 Mana - <b>Duration</b>: 18,000 seconds (5 hours)</p>
+	<p><b>Cost</b>: 600 Mana - <b>Duration</b>: 600 seconds (10 minutes)</p>
 	<p><b>Effect</b>: Increase production of all buildings by a cumulative 20% per second. Each spell tier adds 10 minutes of headstart time.</p>
 	<br/>
 	<p><b>Spell Trophy & Upgrade</b></p>

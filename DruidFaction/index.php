@@ -29,7 +29,7 @@
 	<br/>
 	<p><b>Faction spell</b></p>
 	<p><b><img src="/realm/Factions/picks/GrandBalance.png" align="middle"> Grand Balance</b></p>
-	<p><b>Cost</b>: 1,000 Mana - <b>Duration</b>: 600 seconds</p>
+	<p><b>Cost</b>: 1,000 Mana - <b>Duration</b>: 20 seconds</p>
 	<p><b>Effect</b>: Increase the production of your least productive building based on the amount of the three most built ones.</p>
 	<p><b>Formula</b>: (25 * (x * y * z / (A + 3) ^ 6) ^ 0.9)%, where x, y and z are the number of your three most-built buildings and A is how many times you have ascended.</p>
 	<p><b>Additional Effect</b>: Multiplicatively increase Maximum Mana by 5% per spell tier.</p>

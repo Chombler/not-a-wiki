@@ -29,7 +29,7 @@
 	<br/>
 	<p><b>Faction Spell</b></p>
 	<p><b><img src="/realm/Factions/picks/LightningStrike.png" align="middle"> Lightning Strike</b></p>
-	<p><b>Cost</b>: 250 Mana - <b>Duration</b>: 150 seconds </p>
+	<p><b>Cost</b>: 250 Mana - <b>Duration</b>: 5 seconds </p>
 	<p><b>Effect</b>: Increase the production of a random building by 900% for each Iron Stronghold owned. Iron Strongholds count 75% more per spell tier for this bonus. Also increase Faction Coin find chance based on your current amount of gems.</p>
 	<p><b>Formula</b>: (50 + 2 * ln(1 + x) ^ 1.5)%, where x is your current amount of gems.</p>
 	<br/>

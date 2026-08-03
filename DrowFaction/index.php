@@ -30,7 +30,7 @@
 	<br/>
 	<p><b>Faction spell</b></p>
 	<p><b><img src="/realm/Factions/picks/ComboStrike.png" align="middle"> Combo Strike</b></p>
-	<p><b>Cost</b>: 800 Mana - <b>Duration</b>: 480 seconds</p>
+	<p><b>Cost</b>: 800 Mana - <b>Duration</b>: 16 seconds</p>
 	<p><b>Effect</b>: Increase the production of all buildings. The more spells cast, the more production is increased.</p>
 	<p><b>Formula</b>: (100 * x ^ 0.9)%, where x is the Combo Strike counter.</p>
 	<p><b>Note</b>: Fixed duration 16 seconds</p>
