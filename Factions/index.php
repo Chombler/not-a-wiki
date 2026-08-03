@@ -75,14 +75,14 @@
 <p>The Dwarves make the best masons, artisans and blacksmiths in all the realms. Their creations will outlast anything made by other races... except for beer, that is.</p>
 <p>The Dwarven faction focus on boosting production based on how many times you excavated this Reincarnation.</p>
 <p>Part of the Prestige Faction, the Dwarven Faction appears in addition to a good faction and enables the player to use all the 2 faction spells and 18 upgrades and from both the Good and Dwarven factions.</p>
-<p>The Dwarven faction cannot be combined with Evil or Neutral Factions, nor is there Research Tree for Dwarven.</p>
+<p>The Dwarven faction cannot be combined with Evil or Neutral Factions. Its Research is available after unlocking its Unique Building and the Secrets of the Underworld.</p>
 	" coords="184,64,238,118" shape="rect">
 	<area href="/realm/DrowFaction/" research="
 <p><b>Drow</b></p>
 <p>The Drows believe that any crime can go unpunished if nobody notices you did it. They value and praise perfect executions, and will reward those who plan accordingly.</p>
 <p>The Drow faction focus on boosting offline production, and boosting production based on offline production.</p>
 <p>Part of the Prestige Faction, the Drow Faction appears in addition to an Evil faction, this enables the player to use all the 2 faction spells and 18 upgrades and from both the Evil and Drow factions.</p>
-<p>The Drow faction cannot be combined with Good or Neutral Factions, nor is there Research Tree for Drow.</p>
+<p>The Drow faction cannot be combined with Good or Neutral Factions. Its Research is available after unlocking its Unique Building and the Secrets of the Underworld.</p>
 	" coords="244,64,298,118" shape="rect">
 	<area href="/realm/DragonFaction/" research="
 <p><b>Dragon</b></p>
@@ -190,7 +190,7 @@
 <p><b>Cost</b> 3,000 Drow Coins</p>
 <hr>
 <p><a href="/realm/DragonFaction"><img src="/realm/Factions/picks/DragonTradeTreaty.png"></a> Dragon</p>
-<p><b>Unlock Requirement</b>: Elder Dragon (only needs to be bought once)</p>
+<p><b>Unlock Requirement</b>: Dragon Tamer Trophy (only needs to be earned once)</p>
 <p><b>Requirement</b>: Proof of Neutrality, Alliance upgrade of the Neutral Base Faction</p>
 <p><b>Available</b>: R46-R99, R116-R219, R235+</p>
 <p><b>Cost</b>: 5 B (5e9) Dwarven & Drow Coins</p>
@@ -229,12 +229,12 @@
 <p>Astral Factions were added in v3.4, they are paired with the additional alignment unlocked in Ascension 2 and will be able to stack upon a base and prestige factions, for a total of three affiliations simultaneously.</p>
 <hr>
 <p><b>Faction Spell & Upgrades</b></p>
-<p>Each Faction has its own Faction specific spell and 3x3 Tier upgrades (3x4 for Mercenaries). The Tier upgrades only show up in order, so when you buy Tier 1 then Tier 2 will show up and then Tier 3, and hence cannot be bought before.</p>
+<p>Each standard Faction has its own Faction spell and three secondary upgrades in each tier. Base and Prestige Factions begin with three tiers and gain a fourth tier through their Ascension 2 Union; Astral Factions have four tiers. Mercenaries instead purchase configurable upgrade slots.</p>
+<p>Faction tiers unlock in order through their Treaty, Friendship Pact, Alliance, and—where available—Union upgrades.</p>
 <p>Each Faction also has its own symbol and color code.</p>
-<p>In the first column are the Tier 1 upgrades, in the second, Tier 2 and third, Tier 3 upgrades. </p>
-<p>The first colored upgrade of each tier cost Faction coins and they unlock the 3 following upgrades.</p>
+<p>The first colored upgrade of each tier costs Faction Coins and unlocks the three secondary upgrades that follow it.</p>
 <p>These upgrades are exclusive faction upgrades and cost usual coins.</p>
-<p>Early game, it is advised to quickly affiliate with each Faction at least once, because for each Faction, purchasing 12 faction upgrades (this includes faction treaty) once grants their Faction Champion trophy, which in turn rewards their exclusive and universal <a href="/realm/Heritages"><b>Heritage upgrade</b></a>.</p>
+<p>For each standard Faction, purchasing its initial 12 faction upgrades (the three tier unlocks and nine secondary upgrades) grants its Faction Champion trophy, which unlocks the corresponding universal <a href="/realm/Heritages"><b>Heritage upgrade</b></a>.</p>
 <p>Also, the quantity of bought faction upgrades is tracked throughout reincarnations and it is required to unlock Bloodline upgrades.</p>
 <p>PS: In order to simplify notation, instead of using the individual names of each Faction upgrade, we generally identify them numerically. e.g.: DD5 = Druid(2,3) means: In the 2nd Tier, the third secondary Tier upgrade, belonging to Druid. (which is an upgrade named Shapeshifting), more info about the terminology can be found <a href="/realm/Terminology/"><b>here</a></b>.</p>
 <?php include "../scripts/footer.html"; ?>
