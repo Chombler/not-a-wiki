@@ -108,8 +108,9 @@
 		<area href="#FairyChanting" research="
 	<p><b><img src='/realm/Factions/picks/FairyChanting.png' alt='Good' align='middle'> Fairy Chanting</b></p>
 	<p><b>Spell Type</b>: (Good/Chaos) Fairy Faction Spell</p>
-	<p><b>Cost</b>: 1,000 Mana - <b>Duration</b>: 10 seconds</p>
-	<p><b>Effect</b>: Increase the production of Farms, Inns and Blacksmiths by 50,000%.</p>
+	<p><b>Cost</b>: 800 Mana - <b>Duration</b>: 10 seconds</p>
+	<p><b>Effect</b>: Increase the production of Farms, Inns and Blacksmiths based on the number of those buildings built.</p>
+	<p><b>Formula</b>: (20,000 ^ (1 + 0.02 * x ^ 0.2))%, where x is the total Farms, Inns, and Blacksmiths built.</p>
 		" coords="70,10,124,64" shape="rect">
 		<area href="#MoonBlessing" research="
 	<p><b><img src='/realm/Factions/picks/MoonBlessing.png' alt='Good' align='middle'> Moon Blessing</b></p>
@@ -146,20 +147,20 @@
 		<area href="#NightTime" research="
 	<p><b><img src='/realm/Factions/picks/NightTime.png' alt='Evil' align='middle'> Night Time</b></p>
 	<p><b>Spell Type</b>: (Evil/Order) Undead Faction Spell</p>
-	<p><b>Cost</b>: 1,000 Mana - <b>Duration</b>: 20 seconds </p>
+	<p><b>Cost</b>: 800 Mana - <b>Duration</b>: 20 seconds </p>
 	<p><b>Effect</b>: The production of assistants is increased by 30% per Necropolis you own.</p>
 		" coords="10,70,64,124" shape="rect">
 		<area href="#HellfireBlast" research="
 	<p><b><img src='/realm/Factions/picks/HellfireBlast.png' alt='Evil' align='middle'> Hellfire Blast</b></p>
 	<p><b>Spell Type</b>: (Evil/Chaos) Demon Faction Spell</p>
-	<p><b>Cost</b>: 1,000 Mana - <b>Duration</b>: 20 seconds</p>
+	<p><b>Cost</b>: 900 Mana - <b>Duration</b>: 20 seconds</p>
 	<p><b>Effect</b>: Increase the production of Evil Fortresses and Hell Portals based on your amount of trophies.</p>
-	<p><b>Formula</b>: (round(200 * x ^ 0.8))%, where x is your amount of trophies.</p>
+	<p><b>Formula</b>: (120 * x ^ 0.8)%, where x is your amount of trophies.</p>
 		" coords="70,70,124,124" shape="rect">
 		<area href="#GoblinsGreed" research="
 	<p><b><img src='/realm/Factions/picks/GoblinsGreed.png' alt='Evil' align='middle'> Goblin's Greed</b></p>
 	<p><b>Spell Type</b>: (Evil/Balance) Goblin Faction Spell</p>
-	<p><b>Cost</b>: 800 Mana - <b>Duration</b>: 5 seconds</p>
+	<p><b>Cost</b>: 400 Mana - <b>Duration</b>: 8 seconds</p>
 	<p><b>Effect</b>: Instantly produces Faction Coins based on gems you own. Also increases production of all buildings based on the number of Faction Coins found in this Era.</p>
 	<p><b>Faction Coin Formula</b>: +(20 + ln(1 + x) ^ 3), where x is your current amount of gems.</p>
 	<p><b>Production Formula</b>: (0.75 * ln(1 + x) ^ 3.15)%, where x is the number of Faction Coins found in this Era.</p>
@@ -189,9 +190,9 @@
 		<area href="#LightningStrike" research="
 	<p><b><img src='/realm/Factions/picks/LightningStrike.png' alt='Neutral' align='middle'> Lightning Strike</b></p>
 	<p><b>Spell Type</b>: (Neutral/Order) Titan Faction Spell</p>
-	<p><b>Cost</b>: 600 Mana - <b>Duration</b>: 10 seconds </p>
-	<p><b>Effect</b>: The production of a random building is multiplied by 500% for each Iron Stronghold. Also multiplicatively increase Faction Coins find chance based on your current amount of gems.</p>
-	<p><b>Formula</b>: (10 + log10(1 + x) ^ 2)%, where x is your current amount of gems.</p>
+	<p><b>Cost</b>: 250 Mana - <b>Duration</b>: 5 seconds </p>
+	<p><b>Effect</b>: Increase the production of a random building by 900% for each Iron Stronghold. Also multiplicatively increase Faction Coin find chance based on Gems owned.</p>
+	<p><b>Formula</b>: (50 + 2 * ln(1 + x) ^ 1.5)%, where x is your current amount of Gems.</p>
 		" coords="10,130,64,184" shape="rect">
 		<area href="#Brainwave" research="
 	<p><b><img src='/realm/Factions/picks/Brainwave.png' alt='Neutral' align='middle'> Brainwave</b></p>
@@ -242,7 +243,7 @@
 		<area href="#TemporalFlux" research="
 	<p><b><img src='/realm/Factions/picks/TemporalFlux.png' alt='Order' align='middle'> Temporal Flux</b></p>
 	<p><b>Spell Type</b>: Order Alignment Spell (R100+)</p>
-	<p><b>Cost</b>: 5,000 Mana - <b>Duration</b>: 20 seconds</p>
+	<p><b>Cost</b>: 950 Mana - <b>Duration</b>: 20 seconds</p>
 	<p><b>Effect</b>: Increase Unique building production based on time spent this Era.</p>
 	<p><b>Effect</b>: Also multiplicatively increase Mana Regeneration based on time spent in this Era.</p>
 	<p><b>Formula</b>: (3.75 * (x / 60) ^ 0.825)%, where x is time spent in this Era.</p>
@@ -250,7 +251,7 @@
 		<area href="#Maelstrom" research="
 	<p><b><img src='/realm/Factions/picks/Maelstrom.png' alt='Chaos' align='middle'> Maelstrom</b></p>
 	<p><b>Spell Type</b>: Chaos Alignment Spell (R100+)</p>
-	<p><b>Cost</b>: 3,500 Mana - <b>Duration</b>: 20 seconds</p>
+	<p><b>Cost</b>: 700 Mana - <b>Duration</b>: 20 seconds</p>
 	<p><b>Effect</b>: Increase the production of three random buildings based on one of these stats in this Era, chosen at random: Mana produced, trophies unlocked, Faction Coins found or amount of assistants</p>
 	<p><b>Formula (Mana)</b>: (0.02 * (log10(1 + x)) ^ 5)%, where x is Mana produced this Era.</p>
 	<p><b>Formula (Trophies)</b>: (2.5 * x ^ 0.9)%, where x is trophies unlocked.</p>
@@ -260,7 +261,7 @@
 		<area href="#AllCreation" research="
 	<p><b><img src='/realm/Factions/picks/AllCreation.png' alt='Balance' align='middle'> All Creation</b></p>
 	<p><b>Spell Type</b>: Balance Alignment Spell (R100+)</p>
-	<p><b>Cost</b>: 6,000 Mana - <b>Duration</b>: 20 seconds</p>
+	<p><b>Cost</b>: 1,100 Mana - <b>Duration</b>: 20 seconds</p>
 	<p><b>Effect</b>: Increase production of all buildings based on your Mana Regeneration rate.</p>
 	<p><b>Formula</b>:  (0.15 * ln(1 + x) ^ 3 + 0.75 * x ^ 0.25)%, where x is your Mana Regeneration.</p>
 	<p><b>Effect</b>: Also multiplicatively increase Faction Coin find chance based on your Mana Regeneration rate.</p>
@@ -269,7 +270,7 @@
 		<area href="#Precognition" research="
 	<p><b><img src='/realm/Factions/picks/Precognition.png' alt='Order' align='middle'> Precognition</b></p>
 	<p><b>Spell Type</b>: (Order) Archon Faction Spell (R125+)</p>
-	<p><b>Cost</b>: 123,456 Mana - <b>Duration</b>: 60 seconds</p>
+	<p><b>Cost</b>: 123,456 Mana - <b>Duration</b>: 20 seconds</p>
 	<p><b>Effect</b>: Buildings, Assistants, Royal Exchanges, Spells cast and Clicks count more based on Mana produced in this Era.</p>
 	<p><b>Formula</b>: (ln(1 + x) ^ 1.25)%, where x is Mana produced in this Era.</p>
 	<p><b>Note</b>: Formula Improved to (1.25 * ln(1 + x) ^ 1.5)% with AR2.</p>
@@ -277,8 +278,8 @@
 		<area href="#LimitedWish" research="
 	<p><b><img src='/realm/Factions/picks/LimitedWish.png' alt='Chaos' align='middle'> Limited Wish</b></p>
 	<p><b>Spell Type</b>: (Chaos) Djinn Faction Spell (R125+)</p>
-	<p><b>Cost</b>: 888,888 mana - <b>Duration</b>: Fixed to 12 seconds</p>
-	<p><b>Effect</b>: Provide a random effect based on your chosen base alignment, for 12 seconds. The duration of the spell cannot be modified. Its power increases as you continue casting this spell.</p>
+	<p><b>Cost</b>: 800,000 Mana - <b>Duration</b>: Fixed to 6 seconds</p>
+	<p><b>Effect</b>: Provide a random effect based on your chosen base alignment, for 6 seconds. The duration of the spell cannot be modified. Its power increases as you continue casting this spell.</p>
 	<p><b>Formula (Production effect)</b>: (50 + 5 * ln(1 + x) ^ 1.75 * y)%, where x is Limited Wish activity time in this Era and y is a random number between 1 and Limited Wish casts this Era rolled on cast.</p>
 	<p><b>Formula (Non-Production effects)</b>: (25 + 2.5 * ln(1 + x) ^ 1.75 * y ^ 0.5 * (T + 1))%, where T is the spell tier.</p>
 	<p><b>Note</b>: Limited Wish casts count more based on spell tier: (10 * T ^ 2)%. Its cost decreases by 1% per minute up to 1 hour, then resets.</p>
@@ -346,7 +347,7 @@
 		<area href="#TwistingNether" research="
 	<p><b><img src='/realm/Factions/picks/TwistingNether.png' alt='Order' align='middle'> Twisting Nether</b></p>
 	<p><b>Spell Type</b>: Faction Spell (R220+)</p>
-	<p><b>Cost</b>: 1,000,000 Mana - <b>Duration</b>: 20 seconds</p>
+	<p><b>Cost</b>: 100,000 Mana - <b>Duration</b>: 20 seconds</p>
 	<p><b>Effect</b>: Lineage Levels count +1 more per Tier.</p>
 	<p><b>Note</b>: Twisting Nether counts as a faction spell, but has no alignments for upgrades such as Djinn Challenge 5.</p>
 		" coords="280,280,334,334" shape="rect">
@@ -780,7 +781,7 @@
 </div>
 <br>
 <p id="GemGrinder"><b><img src="/realm/Factions/picks/GemGrinder.png" alt="Neutral" align="middle"> Gem Grinder</b> (Proof of Neutrality)</p>
-<p><b>Cost</b>: 1000 Mana - <b>Duration</b>: 20 seconds </p>
+<p><b>Cost</b>: 1,000 Mana - <b>Duration</b>: 20 seconds </p>
 <p><b>Effect</b>: Increase production bonus from Gems</p>
 <p><b>Note</b>: Gem Grinder formula changed to work with Reincarnations and Ascensions.</p>
 <p><b>Tier Formula</b>: ((5000 * (1 + 0.1 * R)) ^ (0.8 ^ A)), where R is Reincarnation and A is Ascension</p>
@@ -807,8 +808,9 @@
 <hr>
 <b><center>Faction Spells</center></b>
 <p id="FairyChanting"><b><img src="/realm/Factions/picks/FairyChanting.png" alt="Good" align="middle"> Fairy Chanting</b> (Fairy)</p>
-<p>Cost</b>: 1000 Mana - <b>Duration</b>: 10 seconds </p>
-<p><b>Effect</b>: Increase the production of Farms, Inns and Blacksmiths by 50,000%</p>
+<p><b>Cost</b>: 800 Mana - <b>Duration</b>: 10 seconds </p>
+<p><b>Effect</b>: Increase the production of Farms, Inns and Blacksmiths based on the number of those buildings built.</p>
+<p><b>Formula</b>: (20,000 ^ (1 + 0.02 * x ^ 0.2))%, where x is the total Farms, Inns, and Blacksmiths built.</p>
 <p><b>Spell Trophy & Upgrade</b>: <b><img src="/realm/Factions/picks/FairyChoirSpellUpgrade.png" align="middle"> Fairy Choir</b></p>
 <p><b>Requirement</b>: Cast Fairy Chanting while having 45 or more assistants.</p>
 <p><b>Effect</b>: Triples your assistants while Fairy Chanting is active.</p>
@@ -869,8 +871,8 @@
 	</div>
 </div>
 <br>
-<<p id="GodsHand"><b><img src="/realm/Factions/picks/Godshand.png" alt="Good" align="middle"> God's Hand</b> (Angel)</p>
-<p><b>Cost</b>: 900 Mana - <b>Duration</b>: 20 seconds </p>
+<p id="GodsHand"><b><img src="/realm/Factions/picks/Godshand.png" alt="Good" align="middle"> God's Hand</b> (Angel)</p>
+<p><b>Cost</b>: 900 Mana - <b>Duration</b>: 10 seconds </p>
 <p><b>Effect</b>: Increase the production of all buildings by 120 times your Mana Regeneration rate.</p>
 <p><b>Spell Trophy & Upgrade</b>: <b><img src="/realm/Factions/picks/GodsRestSpellUpgrade.png" align="middle"> God's Rest</b></p>
 <p><b>Requirement</b>: Cast God's Hand on any Sunday.</p>
@@ -934,7 +936,7 @@
 </div>
 <br>
 <p id="GoblinsGreed"><b><img src="/realm/Factions/picks/GoblinsGreed.png" alt="Evil" align="middle"> Goblin's Greed</b> (Goblin)</p>
-<p><b>Cost</b>: 800 Mana - <b>Duration</b>: 5 seconds </p>
+<p><b>Cost</b>: 400 Mana - <b>Duration</b>: 8 seconds </p>
 <p><b>Effect</b>: Instantly produces Faction Coins based on gems you own. Also increases production of all buildings based on the number of Faction Coins found in this Era.</p>
 <p><b>Faction Coin Formula</b>: +(20 + ln(1 + x) ^ 3), where x is your current amount of gems.</p>
 <p><b>Production Formula</b>: (0.75 * ln(1 + x) ^ 3.15)%, where x is the number of Faction Coins found in this Era.</p>
@@ -967,7 +969,7 @@
 </div>
 <br>
 <p id="NightTime"><b><img src="/realm/Factions/picks/NightTime.png" alt="Evil" align="middle"> Night Time</b> (Undead)</p>
-<p><b>Cost</b>: 1000 Mana - <b>Duration</b>: 20 seconds </p>
+<p><b>Cost</b>: 800 Mana - <b>Duration</b>: 20 seconds </p>
 <p><b>Effect</b>: The production of assistants is increased by 30% per Necropolis you own.</p>
 <p><b>Spell Trophy & Upgrade</b>: <b><img src="/realm/Factions/picks/TrueNightSpellUpgrade.png" align="middle"> True Night</b></p>
 <p><b>Requirement</b>: Cast Night Time between 11 pm and 6 am.</p>
@@ -998,9 +1000,9 @@
 </div>
 <br>
 <p id="HellfireBlast"><b><img src="/realm/Factions/picks/HellfireBlast.png" alt="Evil" align="middle"> Hellfire Blast</b> (Demon)</p>
-<p><b>Cost</b>: 1000 Mana - <b>Duration</b>: 20 seconds</p>
+<p><b>Cost</b>: 900 Mana - <b>Duration</b>: 20 seconds</p>
 <p><b>Effect</b>: Increase the production of Evil Fortresses and Hell Portals based on your amount of trophies.</p>
-<p><b>Formula</b>: (round(200 * x ^ 0.8))%, where x is your Trophies Unlocked stat.</p>
+<p><b>Formula</b>: (120 * x ^ 0.8)%, where x is your Trophies Unlocked stat.</p>
 <p><b>Spell Trophy & Upgrade</b>: <b><img src="/realm/Factions/picks/HellRushSpellUpgrade.png" align="middle"> Hell Rush</b></p>
 <p><b>Requirement</b>: Cast the Demon spell Hellfire Blast in the first 60 seconds of a playtime.</p>
 <p><b>Effect</b>: Hellfire Blast also boosts Halls of Legends.</p>
@@ -1068,12 +1070,12 @@
 </div>
 <br>
 <p id="LightningStrike"><b><img src="/realm/Factions/picks/LightningStrike.png" alt="Neutral" align="middle"> Lightning Strike</b> (Titan)</p>
-<p><b>Cost</b>: 600 Mana - <b>Duration</b>: 10 seconds </p>
-<p><b>Effect</b>: The production of a random building is multiplied by 500% for each Iron Stronghold. Also multiplicatively increase Faction Coins find chance based on your current amount of gems.</p>
-<p><b>Formula</b>: (10 + log10(1 + x) ^ 2)%, where x is your current amount of gems.</p>
+<p><b>Cost</b>: 250 Mana - <b>Duration</b>: 5 seconds </p>
+<p><b>Effect</b>: Increase the production of a random building by 900% for each Iron Stronghold. Also multiplicatively increase Faction Coin find chance based on Gems owned.</p>
+<p><b>Formula</b>: (50 + 2 * ln(1 + x) ^ 1.5)%, where x is your current amount of gems.</p>
 <p><b>Spell Trophy & Upgrade</b>: <b><img src="/realm/Factions/picks/LightningStormSpellUpgrade.png" align="middle"> Lightning Storm</b></p>
 <p><b>Requirement</b>: Cast Lightning Strike 100 times in a single game.</p>
-<p><b>Effect</b>: Increase Lightning Strike bonus to 750% for each Iron Strongholds.</p>
+<p><b>Effect</b>: Increase Lightning Strike's per-building bonus from 900% to 1,350%.</p>
 <p><b>Cost</b>: 10 Dd (1e40), A1+ Free</p>
 <p><b>Challenge Upgrade</b>: <b><img src="/realm/Factions/picks/ThunderstormChallengeReward.png" align="middle"> Thunderstorm</b> (R25+)</p>
 <p><b>Effect</b>: Further increase Faction Coin find chance from Lightning Strike based on building tiers it hits.</p>
@@ -1136,7 +1138,7 @@
 </div>
 <br>
 <p id="GrandBalance"><b><img src="/realm/Factions/picks/GrandBalance.png" alt="Neutral" align="middle"> Grand Balance</b> (Druid)</p>
-<p><b>Cost</b>: 1000 Mana - <b>Duration</b>: 20 seconds</p>
+<p><b>Cost</b>: 1,000 Mana - <b>Duration</b>: 20 seconds</p>
 <p><b>Effect</b>: Increase the production of your least productive building based on the amount of the three most built ones.</p>
 <p><b>Formula</b>: (25 * (x * y * z / (A + 3) ^ 6) ^ 0.9) where x, y and z are the number of your three most-built buildings and A is Ascension.</p>
 <p><b>Spell Trophy & Upgrade</b>: <b><img src="/realm/Factions/picks/HallsofBalanceSpellUpgrade.png" align="middle"> Halls of Balance</b> (R25+)</p>
@@ -1299,7 +1301,7 @@
 <b><center>Ascension 2</b> (R125+)</center>
 <b><center>Astral Faction Spells</center></b>
 <p id="Precognition"><b><img src="/realm/Factions/picks/Precognition.png" alt="Order" align="middle"> Precognition</b> (Archon)</p>
-<p><b>Cost</b>: 123456 Mana - <b>Duration</b>: 60 seconds</p>
+<p><b>Cost</b>: 123456 Mana - <b>Duration</b>: 20 seconds</p>
 <p><b>Effect</b>: Buildings, Assistants, Royal Exchanges, Spells cast and Clicks count more based on Mana produced in this Era.</p>
 <p><b>Formula</b>: (ln(1 + x) ^ 1.25)%, where x is Mana produced in this Era.</p>
 <p><b>Note</b>: Formula Improved to (1.25 * ln(1 + x) ^ 1.5)% with AR2.</p>
@@ -1315,8 +1317,8 @@
 <p><b>Effect</b>: Precognition also makes Excavations, Artifacts, Reincarnations, Research points and Lineage levels count 15% more.</p>
 <br/>
 <p id="LimitedWish"><b><img src="/realm/Factions/picks/LimitedWish.png" alt="Chaos" align="middle"> Limited Wish</b> (Djinn)</p>
-<p><b>Cost</b>: 888888 mana - <b>Duration</b>: Fixed to 12 seconds</p>
-<p><b>Effect</b>: Provide a random effect based on your chosen base alignment, for 12 seconds. The duration of the spell cannot be modified. Its power increases as you continue casting this spell.</p>
+<p><b>Cost</b>: 800,000 Mana - <b>Duration</b>: Fixed to 6 seconds</p>
+<p><b>Effect</b>: Provide a random effect based on your chosen base alignment, for 6 seconds. The duration of the spell cannot be modified. Its power increases as you continue casting this spell.</p>
 <p><b>Formula (Production effect)</b>: (50 + 5 * ln(1 + x) ^ 1.75 * y)%, where x is Limited Wish activity time in this Era and y is a random number between 1 and Limited Wish casts this Era rolled on cast.</p>
 	<p><b>Formula (Non-Production effects)</b>: (25 + 2.5 * ln(1 + x) ^ 1.75 * y ^ 0.5 * (T + 1))%, where T is the spell tier.</p>
 	<p><b>Note</b>: Limited Wish casts count more based on spell tier: (10 * T ^ 2)%. Its cost decreases by 1% per minute up to 1 hour, then resets.</p>
@@ -1377,7 +1379,7 @@
 <hr>
 <p id="TwistingNether"><b><img src="/realm/Factions/picks/TwistingNether.png" alt="Twisting Nether" align="middle"> Twisting Nether</b></p>
 <p><b>Spell Type</b>: Faction Spell (R220+)</p>
-<p><b>Cost</b>: 1,000,000 Mana - <b>Duration</b>: 20 seconds</p>
+<p><b>Cost</b>: 100,000 Mana - <b>Duration</b>: 20 seconds</p>
 <p><b>Requirement</b>: Twisting Nether (Fairy/Undead) Legacy Combo</p>
 <p><b>Effect</b>: Lineage Levels count +1 more per Tier.</p>
 <p><b>Note</b>: Twisting Nether counts as a faction spell, but has no alignments for upgrades such as Djinn Challenge 5.</p>

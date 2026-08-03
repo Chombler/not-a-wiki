@@ -72,5 +72,31 @@
 	<hr>
 	<p><b>Spell Tier Unlocks</b>
 	<p><b>Unlock Requirement</b>: For ordinary spells, Tier N requires N - 1 hours of that spell's activity time accumulated during the current Reincarnation, plus a spell-specific statistic requirement. A tier cannot appear before its Ascension is reached, and the appropriate tier challenge must be completed.</p>
-	<p>Tier requirements are shown in each tier upgrade tooltip in game and include the spell-specific statistic listed there.</p>
+	<p>In the table below, <b>n = N - 1</b> for the tier being unlocked. These are the exact additional statistic requirements shown by the 4.3.15 tier-upgrade logic.</p>
+	<table class="numtable">
+		<tr><th>Spell</th><th>Additional requirement for Tier N</th></tr>
+		<tr><td>Call to Arms</td><td>((60,000 if below A4; 10,000 in A4+) / Ascension) * n buildings</td></tr>
+		<tr><td>Holy Light</td><td>200,000 * n clicks in this Reincarnation</td></tr>
+		<tr><td>Fairy Chanting</td><td>40,000 * n assistants</td></tr>
+		<tr><td>Moon Blessing</td><td>8e12 * n Faction Coins</td></tr>
+		<tr><td>God's Hand</td><td>500,000 * n Mana Regeneration</td></tr>
+		<tr><td>Diamond Pickaxe</td><td>4,000 * n excavation depth</td></tr>
+		<tr><td>Blood Frenzy</td><td>7,200 * n seconds of cumulative Evil-spell activity in this Reincarnation</td></tr>
+		<tr><td>Goblin's Greed</td><td>1,000,000 * n Tax Collection casts</td></tr>
+		<tr><td>Night Time</td><td>80,000 * n% offline bonus</td></tr>
+		<tr><td>Hellfire Blast</td><td>12 * n casts during the first 5 minutes of a new Era</td></tr>
+		<tr><td>Combo Strike</td><td>100 * n Combo Strike counter</td></tr>
+		<tr><td>Gem Grinder</td><td>1e30 * 10 ^ (3 * n) Gems</td></tr>
+		<tr><td>Lightning Strike</td><td>15,000 * n% Royal Exchange bonus</td></tr>
+		<tr><td>Grand Balance</td><td>200,000 * n Maximum Mana</td></tr>
+		<tr><td>Brainwave</td><td>3,600 * n seconds of Brainwave duration</td></tr>
+		<tr><td>Spiritual Surge</td><td>60 * n Reincarnations</td></tr>
+		<tr><td>Temporal Flux</td><td>300 * n seconds spent in this Era</td></tr>
+		<tr><td>All Creation</td><td>100 * n Royal Exchanges made</td></tr>
+		<tr><td>Maelstrom</td><td>4 * n active spells</td></tr>
+		<tr><td>Precognition</td><td>360 * n seconds of Precognition duration</td></tr>
+		<tr><td>Infinite Spiral</td><td>1.6e41 * n Faction Coins</td></tr>
+		<tr><td>Limited Wish</td><td>1e10 ^ (0.25 * (1 + n)) Maximum Mana</td></tr>
+	</table>
+	<p><b>Dragon's Breath</b> uses Reincarnation requirements instead of activity/statistic pairs: Tier 2 at R54, Tier 3 at R60, Tier 4 at R66, and Tier 5 at R72.</p>
 <?php include "../scripts/footer.html"; ?>
