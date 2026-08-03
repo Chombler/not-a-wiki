@@ -16,23 +16,23 @@
 				<p><b>Research Name</b>: Enchanting</p>
 				<p><b>Cost</b>: 750 Qag (7.5e125)</p>
 				<p><b>Effect</b>: Increase the production of Enchanted Fields based on mana produced in this Era.</p>
-				<p><b>Formula</b>: (0.75 * x ^ 0.75)%, where x is your mana produced this Era.</p>
+				<p><b>Formula</b>: (1.2 * x ^ 0.8)%, where x is Mana produced in this Era.</p>
 				<hr>
 				<p><b>S10</b> - For Angel</p>
 				<p><b>Research Name</b>: Channeling</p>
 				<p><b>Hint</b>: Open the Gates of Heaven.</p>
 				<p><b>Requirement</b>: 2,000 Heaven's Gate. (This Era)</p>
 				<p><b>Cost</b>: 28.83 Uqag (2.883e127)</p>
-				<p><b>Effect</b>: Increase the production of all other buildings based on the amount of Heaven's Domain you own.</p>
-				<p><b>Formula</b>: (110 * x)%, where x is the amount of Enchanted Fields you own.</p>
+				<p><b>Effect</b>: Increase the production of all other buildings based on the number of Heaven's Gates you own.</p>
+				<p><b>Formula</b>: (160 * x)%, where x is the number of Heaven's Gates you own.</p>
 				<hr>
 				<p><b>S30</b> - For All Factions</p>
 				<p><b>Research Name</b>: Vacuumancy</p>
 				<p><b>Requirement</b>: Have 4,000 Mana. (This Era)</p>
 				<p><b>Cost</b>: 95.88 Dqag (9.588e130)</p>
 				<p><b>Effect</b>: Increase Maximum Mana and Mana Regeneration rate based on time spent in this Era.</p>
-				<p><b>Maximum Mana Formula</b>: +(0.1 * x), where x is time spent in this Era.</p>
-				<p><b>Mana Regeneration Formula</b>: +(0.5 * x ^ 0.5), where x is time spent in this Era.</p>
+				<p><b>Maximum Mana Formula</b>: +(7 * x ^ 0.7), where x is time spent in this Era, in seconds.</p>
+				<p><b>Mana Regeneration Formula</b>: +(0.4 * x ^ 0.6), where x is time spent in this Era, in seconds.</p>
 				<hr>
 				<p><b>S50</b> - For Goblin</p>
 				<p><b>Research Name</b>: Conjuration</p>
@@ -48,8 +48,8 @@
 				<p><b>Hint</b>: I am a Research among Researches.</p>
 				<p><b>Requirement</b>: 600 Researches (Total)</p>
 				<p><b>Cost</b>: 1.544 Spqag (1.544e144)</p>
-				<p><b>Effect</b>: Increase Mana Regeneration based on the amount of research made.</p>
-				<p><b>Formula</b>: +floor(x ^ 0.5), where x is the amount of researches made.</p>
+				<p><b>Effect</b>: Increase Mana Regeneration based on Research points.</p>
+				<p><b>Formula</b>: +(2.5 * x ^ 0.5), where x is Research points.</p>
 				<hr>
 				<p><b>S135</b> - For All Factions</p>
 				<p><b>Research Name</b>: Augmentation</p>
@@ -64,13 +64,14 @@
 				<p><b>Requirement</b>: Research Inflame (D10) & Fusion (A105)</p>
 				<p><b>Cost</b>: 129.6 Noqag (1.296e152)</p>
 				<p><b>Effect</b>: Increase the production of the two highest building tiers based on your Mana Regeneration.</p>
-				<p><b>Formula</b>: (8 * x ^ 0.8)%, where x is your Mana Regeneration.</p>
+				<p><b>Formula</b>: (10 * (30 * x) ^ 0.6)%, where x is Mana Regeneration per second.</p>
 				<hr>
 				<p><b>S175</b> - For Elf</p>
 				<p><b>Research Name</b>: Empowered Luck</p>
 				<p><b>Requirement</b>: Research Blessing (D1) & Augmentation (S135)</p>
 				<p><b>Cost</b>: 3.273 UQig (3.273e156)</p>
-				<p><b>Effect</b>: Increase production of buildings by 36,000% for 20 seconds each time you trigger Elven Luck and increase the chance to trigger it by +24%.</p>
+				<p><b>Effect</b>: For 20 seconds after triggering Elven Luck, increase all-building production based on clicks made in this Era; also increase Elven Luck chance by 24%.</p>
+				<p><b>Formula</b>: (5000 * x ^ 0.25)%, where x is clicks made in this Era.</p>
 				<hr>
 				<p><b>S180</b> - For Fairy</p>
 				<p><b>Research Name</b>: Incantation</p>
@@ -113,7 +114,7 @@
 				<p><b>Requirement</b>: Secrets of the Ancients (as Faceless)</p>
 				<p><b>Cost</b>: 79.05 QiQig (7.905e169)</p>
 				<p><b>Effect</b>: Increase the production of Sunken Cities based on time spent affiliated with factions different than the Faceless.</p>
-				<p><b>Formula</b>: (round(0.3 * x ^ 0.7))%, where x is time spent as non-Faceless factions in this Reincarnation.</p>
+				<p><b>Formula</b>: (80 + 0.8 * x ^ 0.8)%, where x is time spent as non-Faceless factions.</p>
 				<hr>
 				<p><b>S270</b> - For All Factions</p>
 				<p><b>Research Name</b>: Runecarving</p>
@@ -121,15 +122,15 @@
 				<p><b>Requirement</b>: 500,000 clicks (This Era)</p>
 				<p><b>Cost</b>: 175.2 SxQig (1.752e173)</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on the amount of Gems you own.</p>
-				<p><b>Formula</b>: (1.25 * log10(1 + x) ^ 1.25)%, where x is the amount of Gems you own.</p>
+				<p><b>Formula</b>: (1.25 * (0.5 * ln(1 + x)) ^ 1.25)%, where x is Gems owned.</p>
 				<hr>
 				<p><b>S300</b> - For Titan</p>
 				<p><b>Research Name</b>: Chain Lightning</p>
 				<p><b>Hint</b>: I can feel the waves...</p>
-				<p><b>Requirement</b>: 25 Brainwaves (Faceless) (This R)</p>
+				<p><b>Requirement</b>: 8 Brainwave casts (This R)</p>
 				<p><b>Cost</b>: 33 OcQig (3.36e178)</p>
 				<p><b>Effect</b>: Lightning Strike duration will not be modified by other effects. While Lightning Strike is active, all non-target buildings have their production increased based on Lightning Strike activity time in this Era.</p>
-				<p><b>Formula</b>: (250 * (x / 20) ^ 0.9)%, where x is your Lightning Strike activity time this Era.</p>
+				<p><b>Formula</b>: (25 * x ^ 0.9)%, where x is Lightning Strike activity time in this Era, in seconds.</p>
 				<hr>
 				<p><b>S305</b> - For All Factions</p>
 				<p><b>Research Name</b>: Mesmerization</p>
@@ -159,23 +160,26 @@
 				<p><b>Research Name</b>: Capacity</p>
 				<p><b>Requirement</b>: Research Projection (S215) & Domination (W300)</p>
 				<p><b>Cost</b>: 13.66 QaSxg (1.366e196)</p>
-				<p><b>Effect</b>: Increase Maximum Mana based on the highest amount of spells cast in a single game.</p>
-				<p><b>Formula</b>: (1.2 * log10(x) ^ 4.8), where x is your Spell Cast (Max) stat in this Reincarnation.</p>
+				<p><b>Effect</b>: Artifacts and Trophies count more based on the highest number of spells cast in a single Era.</p>
+				<p><b>Formula</b>: (ln(1 + x) ^ 1.5)%, where x is the highest number of spells cast in a single Era.</p>
 				<hr>
 				<p><b>S525</b> - For Drow</p>
 				<p><b>Research Name</b>: Spellbinding</p>
 				<p><b>Hint</b>: Combo Breaker!</p>
-				<p><b>Requirement</b>: 14,400s (4 hour) Combo Strike Cast Time (This Era)</p>
+				<p><b>Requirement</b>: 3,600 seconds of Combo Strike activity time (This Era)</p>
 				<p><b>Cost</b>: 19.89 SxSxg (1.989e202)</p>
-				<p><b>Effect</b>: Passively grants the effects from Call to Arms while offline.</p>
+				<p><b>Effect</b>: Call to Arms counts more buildings based on time spent offline in this Reincarnation.</p>
+				<p><b>Formula</b>: (100 + 3 * x ^ 0.9)%, where x is time spent offline in this Reincarnation.</p>
+				<p><b>Effect</b>: Also increase Offline production based on Combo Strike activity time in this Reincarnation.</p>
+				<p><b>Formula</b>: (1.2 * x ^ 0.8)%, where x is Combo Strike activity time in this Reincarnation.</p>
 				<hr>
 				<p><b>S425</b> - For All Factions</p>
 				<p><b>Research Name</b>: Focus</p>
 				<p><b>Hint</b>: Cast! Cast more!</p>
-				<p><b>Requirement</b>: 25,000 spells cast (This Era)</p>
+				<p><b>Requirement</b>: 50,000 spells cast (This Era)</p>
 				<p><b>Cost</b>: 5.023 SpSxg (5.023e206)</p>
-				<p><b>Effect</b>: Increase the production of all buildings based on the times you cast your faction spell in this Era.</p>
-				<p><b>Formula</b>: (15 * x ^ 0.8)%, where x is the sum of Faction Spells Cast in this Era.</p>
+				<p><b>Effect</b>: Increase production bonus from Gems based on faction-spell activity time in this Era.</p>
+				<p><b>Formula</b>: +(1.2 * x ^ 0.6)%, where x is total faction-spell activity time in this Era.</p>
 				<hr>
 				<p><b>S475</b> - For All Factions</p>
 				<p><b>Research Name</b>: Heirlooms</p>
@@ -211,25 +215,26 @@
 				<hr>
 				<p><b>S1450</b> - For Neutral,Dragon</p>
 				<p><b>Research Name</b>: Spellstorm</p>
-				<p><b>Requirement</b>: Research S435, C1325, Any Neutral, Dragon</p>
+				<p><b>Requirement</b>: Research Spellbinding (S525) and Plasmation (C1325), Any Neutral, Dragon</p>
 				<p><b>Cost</b>: 4.041 Sxvg (4.041e81)</p>
-				<p><b>Effect</b>: Increase the production of Unique buildings based on the amount of active spells.</p>
-				<p><b>Formula</b>: (50 * x ^ 1.5)%, where x is number of active spells, counting tiers.</p>
+				<p><b>Effect</b>: Increase Unique Building production based on the duration of your longest spell.</p>
+				<p><b>Formula</b>: (2.5 * x ^ 0.85)%, where x is the duration of your longest spell, in seconds.</p>
 				<hr>
 				<p><b>S1500</b> - For Faceless,Dragon</p>
 				<p><b>Research Name</b>: Psionics</p>
 				<p><b>Hint</b>: I require assistance.</p>
-				<p><b>Requirement</b>: 1,000 Base Assistants, Research S545, E1325, as Faceless, Dragon</p>
+				<p><b>Requirement</b>: 500,000 Base Assistants, Research Hierarchy (S550) and Intimidation (E1325), as Faceless, Dragon</p>
 				<p><b>Cost</b>: 3.843 Spvg (3.843e84)</p>
-				<p><b>Effect</b>: Increase the production of Unique Buildings based on the amount of assistants you own.</p>
-				<p><b>Formula</b>: (8.5 * x ^ 0.85)%, where x is the amount of assistants you own.</p>
+				<p><b>Effect</b>: Increase triggered Tax Collections based on assistants owned.</p>
+				<p><b>Formula</b>: +floor(1 + 0.25 * ln(1 + x) ^ 1.25), where x is assistants owned.</p>
 				<hr>
 				<p><b>S2900</b> - For Mercenary</p>
 				<p><b>Research Name</b>: Scholarship</p>
 				<p><b>Hint</b>: More buildings for the Black Army!</p>
 				<p><b>Requirement</b>: 11,000 Merc Unique Buildings.</p>
 				<p><b>Cost</b>: 30.5 QaQig (3.05e166)</p>
-				<p><b>Effect</b>: Increases the production of Non-Unique buildings by 5% per Unique building.</p>
+				<p><b>Effect</b>: Increase Non-Unique building production based on Unique Buildings owned.</p>
+				<p><b>Formula</b>: (10 * x ^ 1.05)%, where x is Unique Buildings owned.</p>
 				<hr>
 				<p><b>S3200</b> - For All Factions</p>
 				<p><b>Research Name</b>: Manipulation</p>
@@ -250,7 +255,7 @@
 				<p><b>Requirement</b>: R177+, Forgotten Relic, Mana Loom artifact and upgrade</p>
 				<p><b>Effect</b>: Increase Maximum Mana additively and multiplicatively based on the activity time of your least used spell.</p>
 				<p><b>Additive</b>: +(1000 + 80 * x ^ 0.8), where x is the spell activity time of your least used spell in this Reincarnation.</p>
-				<p><b>Multiplicative</b>: (6 + 0.6 * x ^ 0.6)%, where x is the spell activity time of your least used spell in this Reincarnation.</p>
+				<p><b>Multiplicative</b>: (5.5 + 0.55 * x ^ 0.55)%, where x is the spell activity time of your least used spell in this Reincarnation.</p>
 				<hr>
 				<p><b>S5625</b> - For All Factions</p>
 				<p><b>Research Name</b>: Leylines</p>
@@ -298,13 +303,13 @@
 				<p><b>Research Name</b>: Necrodoomancy</p>
 				<p><b>Requirement</b>: R232+</p>
 				<p><b>Effect</b>: Reincarnations count more based on time spent as Undead in this Reincarnation.</p>
-				<p><b>Formula</b>: (0.5 * x ^ 0.5)%, where x is time spent as Undead in this Reincarnation.</p>
+				<p><b>Formula</b>: (20 + 0.4 * x ^ 0.4)%, where x is time spent as Undead in this Reincarnation.</p>
 				<hr>
 				<p><b>S13125</b> - All Factions</p>
 				<p><b>Research Name</b>: Fantasia</p>
 				<p><b>Requirement</b>: R239+</p>
 				<p><b>Effect</b>: Multiplicatively increase assistants based on Mana produced in this Era.</p>
-				<p><b>Formula</b>: (2 * ln(1 + x) ^ 2)%, where x is your Mana produced this Era.</p>
+				<p><b>Formula</b>: (ln(1 + x) ^ 2)%, where x is Mana produced in this Era.</p>
 				<hr>
 				<p><b>S13500</b> - For All Factions</p>
 				<p><b>Research Name</b>: Legerdemain</p>
