@@ -13,14 +13,15 @@
 	<br/>
 	<p><b>Faction spell</b></p>
 	<p><b><img src="/realm/Factions/picks/NightTime.png" align="middle"> Night Time</b></p>
-	<p><b>Cost</b>: 1,000 Mana - <b>Duration</b>: 20 seconds </p>
-	<p><b>Effect</b>: The production of assistants is increased by 30% per Necropolis you own.</p>
+	<p><b>Cost</b>: 800 Mana - <b>Duration</b>: 20 seconds</p>
+	<p><b>Effect</b>: Increase assistants' production by 50% per Necropolis owned.</p>
 	<br/>
 	<p><b>Spell Trophy & Upgrade</b></p>
 	<p><b><img src="/realm/Factions/picks/TrueNightSpellUpgrade.png" align="middle"> True Night</b></p>
 	<p><b>Requirement</b>: Cast Night Time between 11 PM and 6 AM (local time).</p>
 	<p><b>Cost</b>: 1 M (1e6), A1+ Free</p>
-	<p><b>Effect</b>: Increases Night Time's production of assistants to 40% per Necropolis.</p>
+	<p><b>Effect</b>: Increase Night Time's assistants-production bonus based on its activity time in this Reincarnation and make Offline time count 50% more.</p>
+	<p><b>Formula</b>: (0.4 * x ^ 0.6)%, where x is Night Time activity time in this Reincarnation.</p>
 	<hr>
 	<p><b>Tier 1 Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/UndeadTradeTreaty.png" align="middle"> Undead Trade Treaty</b></p>
@@ -30,37 +31,37 @@
 	<p><b><img src="/realm/Factions/picks/UndeadUpgrade1.png" align="middle"> The Walking Dead</b></p>
 	<p><b>Cost</b>: 50 M (5e7)</p>
 	<p><b>Effect</b>: Increase Faction Coin find chance additively based on assistants owned.</p>
-	<p><b>Formula</b>: +(ln(1 + x) ^ 1.75)%, where x is assistants owned.</p>
+	<p><b>Formula</b>: +(5 + 2.5 * ln(1 + x) ^ 1.75)%, where x is assistants owned.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/UndeadUpgrade2.png" align="middle"> Deadened Muscles</b></p>
 	<p><b>Cost</b>: 500 M (5e8)</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on the highest amount of Necropolises you built in this Reincarnation.</p>
-	<p><b>Formula</b>: (4 * x ^ 0.8)%, where x is the the highest amount of Necropolises you built in this Reincarnation.</p>
+	<p><b>Formula</b>: (40 + 4 * x ^ 0.8)%, where x is the highest amount of Necropolises built in this Reincarnation.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/UndeadUpgrade3.png" align="middle"> Death Temples</b></p>
 	<p><b>Cost</b>: 5 B (5e9)</p>
 	<p><b>Effect</b>: Increase Mana Regeneration additively based on the highest amount of Necropolises you built in this Reincarnation.</p>
-	<p><b>Formula</b>: +(x ^ 0.3), where x is the highest amount of Necropolises you built in this Reincarnation.</p>
+	<p><b>Formula</b>: +(3 + 1.5 * x ^ 0.5), where x is the highest amount of Necropolises built in this Reincarnation.</p>
 	<hr>
 	<p><b>Tier 2 Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/UndeadFriendshipPact.png" align="middle"> Undead Friendship Pact</b></p>
 	<p><b>Cost</b>: 100 Undead Coins</p>
 	<p><b>Effect</b>: Unlocks more Undead upgrades.</p>
 	<br/>
-	<p><b><img src="/realm/Factions/picks/UndeadUpgrade4.png" align="middle"> Unholy Rituals</b></p>
+	<p><b><img src="/realm/Factions/picks/UndeadUpgrade4.png" align="middle"> Undead Resilience</b></p>
 	<p><b>Cost</b>: 500 B (5e11)</p>
-	<p><b>Effect</b>: Increase offline production based on time spent being offline in this Reincarnation.</p>
-	<p><b>Formula</b>: (0.4 * x ^ 0.8)%, where x is your offline time this Reincarnation.</p>
+	<p><b>Effect</b>: Increase Night Time duration based on Undead Coins found in this Era.</p>
+	<p><b>Formula</b>: (5 + 1.5 * ln(1 + x) ^ 1.5)%, where x is Undead Coins found in this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/UndeadUpgrade5.png" align="middle"> Corpse Supply</b></p>
 	<p><b>Cost</b>: 5 T (5e12)</p>
-	<p><b>Effect</b>: Gain additional assistants based on time spent being offline in this Reincarnation.</p>
-	<p><b>Formula</b>: +(0.4 * x ^ 0.6), where x is the time spent offline in this Reincarnation.</p>
+	<p><b>Effect</b>: Gain assistants based on time spent in this Era.</p>
+	<p><b>Formula</b>: +(5 + 0.5 * x ^ 0.7), where x is time spent in this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/UndeadUpgrade6.png" align="middle"> Plagued Buildings</b></p>
 	<p><b>Cost</b>: 50 T (5e13)</p>
-	<p><b>Effect</b>: Increase the production of all buildings based on time spent in this Era.</p>
-	<p><b>Formula</b>: ((0.75 * x ^ 0.75)%, where x is time spent this Era.</p>
+	<p><b>Effect</b>: Increase all-building production based on the activity time of your most-used spell in this Era; offline time this Era is also added to Night Time activity.</p>
+	<p><b>Formula</b>: (25 + 2.5 * x ^ 0.75)%, where x is the most-used spell's activity time this Era.</p>
 	<hr>
 	<p><b>Tier 3 Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/UndeadAlliance.png" align="middle"> Undead Alliance</b></p>
@@ -69,22 +70,24 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/UndeadUpgrade7.png" align="middle"> Dead Fields</b></p>
 	<p><b>Cost</b>: 5 Qa (5e15)</p>
-	<p><b>Effect</b>: Buildings count 75% more.</p>
+	<p><b>Effect</b>: All Buildings and all spell activity times count 75% more.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/UndeadUpgrade8.png" align="middle"> Tireless Workers</b></p>
 	<p><b>Cost</b>: 50 Qa (5e16)</p>
-	<p><b>Effect</b>: Increase the production of assistants by 1500%.</p>
+	<p><b>Effect</b>: Increase assistants' production based on Mana Regeneration.</p>
+	<p><b>Formula</b>: (85 * (1.5 * ln(1 + 30 * x)) ^ 1.15)%, where x is Mana Regeneration per second.</p>
 	<br/>
-	<p><b><img src="/realm/Factions/picks/UndeadUpgrade9.png" align="middle"> Undead Resilience</b></p>
+	<p><b><img src="/realm/Factions/picks/UndeadUpgrade9.png" align="middle"> Unholy Rituals</b></p>
 	<p><b>Cost</b>: 500 Qa (5e17)</p>
-	<p><b>Effect</b>: Increases offline production based on Mana Regeneration.</p>
-	<p><b>Formula</b>: (125 * ln(1 + x) ^ 2.5)%, where x is your Mana Regeneration.</p>
+	<p><b>Effect</b>: Increase overall and Offline production based on time spent offline in this Era.</p>
+	<p><b>Overall Formula</b>: (50 + 9.5 * x ^ 0.95)%.</p>
+	<p><b>Offline Formula</b>: (50 + 7.5 * x ^ 0.75)%, where x is time spent offline this Era.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/UndeadHeritage.png" alt="Undead Heritage" align="middle"> Undead Heritage</b></p>
 	<p><b>Requirements</b>: Undead Champion Trophy</p>
 	<p><b>Cost</b>: 5000 Undead Coins</p>
-	<p><b>Effect</b>: You gain additional assistants based on the time spent in this Era.</p>
-	<p><b>Formula</b>: +(floor(1 + 1.6 * (x / 3600) ^ 0.6)), where x is time spent this Era.</p>
+	<p><b>Effect</b>: Increase Offline production based on time spent in this Era.</p>
+	<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent in this Era.</p>
 	<hr>
 	<p><b>Undead Research Requirements</b></p>
 	<p><b><img src="/realm/Factions/picks/UndercitiesQuestFactionUpgrade.png" align="middle"> Undercities Quest</b></p>
@@ -94,7 +97,7 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/UndercityFactionUpgrade.png" align="middle"> Undercity</b></p>
 	<p><b>Description</b>:Upgrade Necropolises To Undercities, boosting their production based on time spent in this Era and unlocking more unique perks for the building.</p>
-	<p><b>Formula</b>: (12 * (2.5 * x) ^ 0.75)%, where x is your Playtime (This Era) stat.</p>
+	<p><b>Formula</b>: (80 + 80 * x ^ 0.8)%, where x is time spent in this Era.</p>
 	<p><b>Requirements</b>: Buy "Undercities Quest"</p>
 	<p><b>Cost</b>: 10 Ttg (1e103)</p>
 	<p><b>Effect</b>: Also allows access to the Research Facilities.</p>
@@ -115,7 +118,7 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/FleshWorkshopQuest.png" alt="Flesh Workshop Quest" align="middle"> Flesh Workshop Quest</b></p>
 	<p><b>Description</b>: Heelloo... The dead need to rest... accumulate a high enough offline production to allow them their peace, and they'll be forever your servants.</p>
-	<p><b>Requirement</b>: 500,000% offline production bonus</p>
+	<p><b>Requirement</b>: 2,000% Offline production bonus</p>
 	<p><b>Cost</b>: 1 Ud (1e36) Emerald Coins</p>
 	<p><b>Effect</b>: Grants access to Unique Building.</p>
 	<br/>
@@ -137,32 +140,32 @@
 	<p><b>Requirement</b>: Flesh Workshop Unique Building</p>
 	<p><b>Cost</b>: 1 Qi (1e18) Undead Coins</p>
 	<p><b>Effect</b>: Grants access to Union Upgrades.</p>
-	<p><b>Effect (R111+)</b>: Increase the production of Unique Buildings based on your Offline production.</p>
-	<p><b>Formula</b>: (360 * ln(1 + x) ^ 2.8)%, where x is your Offline production.</p>
+	<p><b>Effect (R105+)</b>: Increase Unique Building production based on Offline production.</p>
+	<p><b>Formula</b>: (360 * ln(1 + x) ^ 3)%, where x is Offline production.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/UndeadUpgrade10.png" alt="Flesh Servants" align="middle"> Flesh Servants</b></p>
 	<p><b>Requirement</b>: Undead Union</p>
 	<p><b>Cost</b>: 1 Nod (1e60) Emerald Coins</p>
 	<p><b>Effect</b>: Mutiplicatively increase assistants based on the highest amount of Flesh Workshops you built in this Reincarnation.</p>
-	<p><b>Formula</b>: (1.3 * x ^ 0.7)%, where x is the highest amount of Flesh Workshops you built in this Reincarnation.</p>
+	<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is the highest amount of Flesh Workshops built in this Reincarnation.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/UndeadUpgrade11.png" alt="Eternal Servitude" align="middle"> Eternal Servitude</b></p>
 	<p><b>Requirement</b>: Undead Union</p>
 	<p><b>Cost</b>: 100 Qivg (1e80) Emerald Coins</p>
 	<p><b>Effect</b>: Increase the production of Unique buildings based on time spent in this Era.</p>
-	<p><b>Formula</b>: (x ^ 0.7)%, where x is time spent this Era.</p>
+	<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/UndeadUpgrade12.png" alt="Zombie Apocalypse" align="middle"> Zombie Apocalypse</b></p>
 	<p><b>Requirement</b>: Undead Union</p>
 	<p><b>Cost</b>: 100 Tg (1e95) Emerald Coins</p>
-	<p><b>Effect</b>: Gain assistants additively based on the total amount of time spent offline in this Reincarnation.</p>
-	<p><b>Formula</b>: +(21 * x ^ 0.7), where x is offline time in this Reincarnation.</p>
+	<p><b>Effect</b>: Increase Offline production based on the duration of your longest spell.</p>
+	<p><b>Formula</b>: (7 * x ^ 0.7)%, where x is the longest spell duration.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/AdvancedUndeadHeritage.png" align="middle"> Advanced Undead Heritage</b></p>
-	<p><b>Requirements</b>: Undead Master trophy and 6 hours activity time (This Era) of Night Time.</p>
+	<p><b>Requirements</b>: Undead Master trophy and 1 hour activity time (This Era) of Night Time.</p>
 	<p><b>Cost</b>: 1 Sp (1e24) Undead Coins</p>
-	<p><b>Effect</b>: Assistants count more based on your offline bonus.</p>
-	<p><b>Formula</b>: (0.025 * ln(1 + x) ^ 2)%, where x is offline bonus multiplier.</p>
+	<p><b>Effect</b>: Assistants count more based on time spent offline in this Reincarnation.</p>
+	<p><b>Formula</b>: (0.5 * x ^ 0.5)%, where x is time spent offline in this Reincarnation.</p>
 	<p><b>Note</b>: When using their lineage, Advanced Heritage powers are multiplied by the level of the lineage.</p>
-	<p><b>Formula</b>: *(1 + 0.3 * level)</p>
+	<p><b>Base lineage multiplier</b>: *(1 + 0.2 * matching Lineage level).</p>
 <?php include "../scripts/footer.html"; ?>
