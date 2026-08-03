@@ -16,7 +16,7 @@
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/LeetSecretTrophy.png&quot; align=&quot;middle&quot;><b> Leet</b></p>
 					<p><b>Requirement</b>: Have exactly 1337 Coins at any given time.</p>
-					<p><b>Cost</b>: 10 M (1e7), A1+ Free</p>
+					<p><b>Cost</b>: 1337 coins</p>
 					<p><b>Note</b>: This can be done at any R</p>
 					<p><b>Effect</b>: Increase the production of all buildings by 13.37%.</p>
 	" coords="3,43,57,97" shape="rect">
@@ -101,7 +101,7 @@
 					<p><b>Note</b>: This can be done at R0.(use Angels and all their upgrades)</p>
 	" coords="303,103,357,157" shape="rect">
 		<area research="
-	<p><img src=&quot;/realm/Factions/picks/SpeedrunSecretTrophy.png&quot; align=&quot;middle&quot;><b> Speedrun</b></p>
+	<p><img src=&quot;/realm/Factions/picks/SpeedrunSecretTrophy.png&quot; align=&quot;middle&quot;><b> Speed Run</b></p>
 					<p><b>Requirement</b>: Reach 1 M (1e6) coins in less than 5 minutes, without using Gem Power.</p>
 					<p><b>Cost</b>: 1 coins, A1+ Free</p>
 					<p><b>Effect</b>: Increase your base clicking reward by +1 M (1e6).</p>
@@ -140,7 +140,7 @@
 	<p><img src=&quot;/realm/Factions/picks/NeedaHeadStartSecretTrophy.png&quot; align=&quot;middle&quot;><b> Need a Head Start?</b></p>
 					<p><b>Requirement</b>: Don't do anything for 5 minutes after starting a new Era. Don't buy anything and don't click anything.</p>
 					<p><b>Cost</b>: Free</p>
-					<p><b>Effect</b>: Instantly adds 25 gold coins.</p>
+					<p><b>Effect</b>: Instantly adds 25 coins of the current Ascension currency.</p>
 					<p><b>Note</b>: This can be done at the start of any reincarnation or abdication.</p>
 	" coords="243,163,297,217" shape="rect">
 		<area research="
@@ -161,9 +161,8 @@
 		<area href="/realm/MercBuilds/#TrophyBuilds" target="" research="
 	<p><img src=&quot;/realm/Factions/picks/LuciferSecretTrophy.png&quot; align=&quot;middle&quot;><b> Lucifer</b></p>
 					<p><b>Requirement</b>: As a Good Mercenary, purchase only Evil mercenary faction upgrades or vice versa.</p>
-					<p><b>Cost</b>: 5 Qivg (5e78), A1, Free</p>
+					<p><b>Cost</b>: 5e64 coins</p>
 					<p><b>Effect</b>: Increases the production of all non-neutral buildings by 300%.</p>
-					<p><b>Effect</b>: A1, Increases the production of all non-neutral buildings by 14.9%.</p>
 					<p><b>Note</b>: This can be done at R3 with Merc Build <a target=&quot;_blank&quot; href=&quot;/realm/SpecialBuilds/&quot;><b>(Lucifer)</b></a></p>
 	" coords="3,223,57,277" shape="rect">
 		<area research="
@@ -178,7 +177,8 @@
 	<p><img src=&quot;/realm/Factions/picks/MercenarySpiritSecretTrophy.png&quot; align=&quot;middle&quot;><b> Mercenary Spirit</b></p>
 					<p><b>Requirement</b>: Reincarnate while playing as a Mercenary.</p>
 					<p><b>Cost</b>: 1 Ocd (1e57), A1, Free</p>
-					<p><b>Effect</b>: Increases the production of all buildings by 15% per reincarnation. (For Mercenary only)</p>
+					<p><b>Effect</b>: For Mercenaries only, increases the production of all buildings based on the activity time of your least-used spell in this Reincarnation. Improves as you Reincarnate more.</p>
+					<p><b>Formula</b>: (10 * x + 2 * y ^ 0.8)%, where x is your effective Reincarnation count and y is the activity time of your least-used eligible spell in this Reincarnation, in seconds.</p>
 					<p><b>Note</b>: This can be done at R3.</p>
 	" coords="123,223,177,277" shape="rect">
 		<area research="
@@ -263,7 +263,7 @@
 	<p><img src=&quot;/realm/Factions/picks/ThatExcavatedQuicklySecretTrophy.png&quot; align=&quot;middle&quot;><b> That Excavated Quickly</b></p>
 					<p><b>Requirement</b>: Excavate 1000 times in the first 30 seconds of a run (This Era)</p>
 					<p><b>Cost</b>: 1 Qag (1e123), A1+ Free</p>
-					<p><b>Effect</b>: Your chance to find Faction Coins with excavations is increased by an additional 5%.</p>
+					<p><b>Effect</b>: Increase the base Faction Coins found with excavations by +250.</p>
 					<p><b>Note</b>: Around R20, make sure to keep your excavations low until you have enough gems to excavate 1000 times - make a save file, abdicate, then try go for the trophy. Undo if necessary.</p>
 	" coords="63,343,117,397" shape="rect">
 		<area research="
@@ -283,9 +283,8 @@
 	<p><img src=&quot;/realm/Factions/picks/SuggestionMasterSecretTrophy.png&quot; align=&quot;middle&quot;><b> Suggestion Master</b></p>
 					<p><b>Requirement</b>: Open the changelog and ponder about what could be added in there for 3 minutes.</p>
 					<p><b>Cost</b>: 1000 coins, A1+ Free</p>
-					<p><b>Effect</b>: Increase the production of all buildings base on mysterious events.</p>
-					<p><b>Formula</b>: hotfix.patch%, where hotfix and patch are the 4th and 3rd elements of the game's version number.</p>
-					<p><b>Formula</b>: (10 * a) + b + (0.1 * d) * (0.01 * c)%, no A-nerf</p>
+					<p><b>Effect</b>: Increase the production of all buildings based on the current game version.</p>
+					<p><b>Formula</b>: (10 * a + b + 0.1 * c + 0.01 * d)%, using the four version components encoded by the game. The 4.3.15 source evaluates this bonus to 43.12%.</p>
 					<p><b>Note</b>: Click the Option tab and click the numbers in the bottom right corner and leave it open for 3 minutes.</p>
 	" coords="243,343,297,397" shape="rect">
 		<area research="
@@ -306,7 +305,7 @@
 					<p><b>Requirement</b>: 333 of each Royal Exchange, R40+</p>
 					<p><b>Cost</b>: 1 TTg (1e102), A2+, Free</p>
 					<p><b>Effect</b>: Increase Faction Coins generation while offline based on your Mana Regeneration.</p>
-					<p><b>Formula</b>: (300 * log10(1 + x)^3), where x is your offline Mana Regeneration.</p>
+					<p><b>Formula</b>: (300 * ln(1 + 30 * x) ^ 3)%, where x is your Mana Regeneration per second.</p>
 	" coords="3,403,57,457" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/StoicResistanceSecretTrophy.png&quot; align=&quot;middle&quot;><b> Stoic Resistance</b></p>
@@ -320,7 +319,7 @@
 					<p><b>Requirement</b>: Reach an Offline Bonus of at least 1 Qa (1e15) % (Post-Ascension is 1895%).</p>
 					<p><b>Cost</b>: 10 Noqag (1e151), A1+ Free</p>
 					<p><b>Effect</b>: Increase the production of all buildings based on offline bonus.</p>
-					<p><b>Formula</b>: (1.25 * log10(1+x) ^ 1.25)%, where x is the pre-A offline multiplier.</p>
+					<p><b>Formula</b>: (1.25 * ln(1 + x) ^ 1.25)%, where x is your Offline production multiplier.</p>
 	" coords="123,403,177,457" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/IronRushSecretTrophy.png&quot; align=&quot;middle&quot;><b> Iron Rush</b></p>
@@ -336,10 +335,9 @@
 	" coords="243,403,297,457" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/SpellCataclysmSecretTrophy.png&quot; align=&quot;middle&quot;><b> Spell Cataclysm</b></p>
-					<p><b>Requirement</b>: Have at least 4 spells active on tier 5 or higher, R42+</p>
+					<p><b>Requirement</b>: Have at least 6 spells active on tier 2 or higher.</p>
 					<p><b>Cost</b>: 640 Vg (6.4e65), A2+, Free</p>
 					<p><b>Effect</b>: Multiplicatively increase Maximum Mana by 25%.</p>
-					<p><b>Note</b>: Will require to be at least R55, if not R60.</p>
 	" coords="303,403,357,457" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/AdvisorInsightSecretTrophy.png&quot; align=&quot;middle&quot;><b> Advisor Insight</b></p>
@@ -351,8 +349,8 @@
 	<p><img src=&quot;/realm/Factions/picks/DragonTamerSecretTrophy.png&quot; align=&quot;middle&quot;><b> Dragon Tamer</b></p>
 					<p><b>Requirement</b>: Fully develop your Spiky Egg into an Elder Dragon, R46+.</p>
 					<p><b>Cost</b>: 100 Vg (1e65), A2+, Free</p>
-					<p><b>Effect</b>: Increase the production of all buildings by 200% and triples Faction Coin find chance.</p>
-					<p><b>Effect</b>: A2, Increase the production of all buildings by 11.6% and triples Faction Coin find chance.</p>
+					<p><b>Effect</b>: Increase the production of all buildings based on Reincarnations made and multiplicatively increase Faction Coin find chance by 100%.</p>
+					<p><b>Formula</b>: (3.5 * x ^ 0.95)%, where x is your effective Reincarnation count.</p>
 	" coords="3,463,57,517" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/HeldenSterbenNichtSecretTrophy.png&quot; align=&quot;middle&quot;><b> Helden Sterben Nicht</b></p>
@@ -370,65 +368,65 @@
 					<p><b>Requirement</b>: Have mana regeneration higher than max mana.</p>
 					<p><b>Cost</b>: 1 Td (1e42), A1+ Free</p>
 					<p><b>Effect</b>: Increase maximum mana based on spells cast in this Era.</p>
-					<p><b>Formula</b>: +(127 * (log10(1 + x)) ^ 2.7), where x is spells cast this Era.</p>
+					<p><b>Formula</b>: +75 * (0.5 * ln(1 + x)) ^ 2.5 Maximum Mana, where x is spells cast this Era.</p>
 	" coords="123,463,177,517" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/PrismaticManaTrophy.png&quot; align=&quot;middle&quot;><b> Prismatic Mana</b></p>
-					<p><b>Requirements</b>: R40+, Cast the same amount of Faction spells with all Vanilla and Neutral Factions with a minimum of 100 casts each(This R).</p>
-					<p><b>Cost</b>: 100 No (1e32), A2+, Free</p>
+					<p><b>Requirements</b>: A1+, R40+, cast the same amount of Faction spells with all Vanilla and Neutral Factions with a minimum of 100 casts each in this Reincarnation.</p>
+					<p><b>Cost</b>: 1e32 gems</p>
 					<p><b>Effect</b>: Multiplicatively increase Mana Regeneration by 25%.</p>
 					<p><b>Spells Needed</b>: Fairy Chanting, Moon Blessing, God's Hand, Goblin's Greed, Night Time, Hellfire Blast, Lightning Strike, Brainwave, Grand Balance (Does not need Dwarven, Drow nor Dragon spells)</p>
 					<p><b>Warning</b>: All Spells have to be exact same count, Tiered casting may go over the count you need.</p>
 	" coords="183,463,237,517" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/AutoclickerSecretTrophy.png&quot; align=&quot;middle&quot;><b> Autoclicker</b></p>
-					<p><b>Requirements</b>: Perform 40 autoclicks in 1 second, R60+</p>
+					<p><b>Requirements</b>: R60+, have at least 40 autoclick power.</p>
 					<p><b>Cost</b>: 100 Qaq (1e125), A2+, Free</p>
-					<p><b>Effect</b>: Multiply Faction Coin find chance by x5 for automatic clicks only.</p>
+					<p><b>Effect</b>: Increase clicking reward by 750%.</p>
 	" coords="243,463,297,517" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/ExchangeHighLordSecretTrophy.png&quot; align=&quot;middle&quot;><b> Exchange High Lord</b></p>
 					<p><b>Requirements</b>: 5000 Royal Exchanges</p>
 					<p><b>Cost</b>: 10 DQig (1e160), A2+, Free</p>
-					<p><b>Effect</b>: Increase royal exchange bonus by +250%.</p>
+					<p><b>Effect</b>: Increase Royal Exchange bonus by +1,000% and multiplicatively by 10%.</p>
 	" coords="303,463,357,517" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/GenealogistSecretTrophy.png&quot; align=&quot;middle&quot;><b> Genealogist</b></p>
-					<p><b>Requirements</b>: Have a total of 300 Lineage levels across all Lineage.</p>
-					<p><b>Cost</b>: 1 NoQig (1e180), A2+, Free</p>
+					<p><b>Requirements</b>: Have a total of 180 Lineage levels.</p>
+					<p><b>Cost</b>: 1e150 gems</p>
 					<p><b>Effect</b>: Increase the production of all buildings based on the total amount of lineage levels you have.</p>
-					<p><b>Formula</b>: (2.5 * x ^ 1.35)%, where x is total amount of lineage levels you have.</p>
+					<p><b>Formula</b>: (5 * x ^ 1.5)%, where x is the total amount of Lineage levels you have.</p>
 	" coords="363,463,417,517" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/HolyFrenzySecretTrophy.png&quot; align=&quot;middle&quot;><b> Holy Frenzy</b></p>
-					<p><b>Requirements</b>: A2+, In a single reincarnation, have a 3 day combined activity time of Holy Light and Blood Frenzy.</p>
+					<p><b>Requirements</b>: A2+, within a single Reincarnation, have a combined activity time of at least 1 day from Holy Light and Blood Frenzy.</p>
 					<p><b>Cost</b>: 100 Dc (1e35)</p>
 					<p><b>Effect</b>: While Blood Frenzy or Holy Light are active, increase the production of all buildings.</p>
-					<p><b>Formula</b>: (250 * T ^ 2)%, where T is active tier of Blood Frenzy or Holy Light.</p>
+					<p><b>Formula</b>: (250 * (1 + T) ^ 2)%, where T is the higher active tier of Blood Frenzy or Holy Light.</p>
 					<p><b>Effect (A4+ only)</b>: Also multiplicatively increase Faction Coin find chance by 500% while playing as any Good or Evil faction.</p>
 	" coords="3,523,57,577" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/UniformitySecretTrophy.png&quot; align=&quot;middle&quot;><b> Uniformity</b></p>
-					<p><b>Requirement</b>: A2+, Have no less than 3 days of playtime with at least 24 hours each Order, Chaos and Balance and have less than 1 minute of playtime between them. (This R)</p>
+					<p><b>Requirement</b>: A2+, in this Reincarnation, have at least 1 day of combined playtime with Order, Chaos and Balance and no more than 1 hour of difference between any pair of those alignment times.</p>
 					<p><b>Cost</b>: 100 Qid (1e50)</p>
 					<p><b>Effect</b>: Increases the production of all buildings based on time spent as least used alignment (this Reincarnation).</p>
-					<p><b>Formula</b>: (x ^ 0.75)%, where x is the time spent with your least used alignment (primary or secondary) in seconds.</p>
+					<p><b>Formula</b>: (50 + 0.5 * x ^ 0.5)%, where x is time spent as your least-used alignment in this Reincarnation, in seconds.</p>
 	" coords="63,523,117,577" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/ArtoftheCrowTrophy.png&quot; align=&quot;middle&quot;><b> Art of the Crow</b></p>
-					<p><b>Requirement</b>: Have any 6 complete Faction Artifact Sets.</p>
+					<p><b>Requirement</b>: Excavate 6 complete Faction Artifact Sets.</p>
 					<p><b>Effect</b>: Gives upgrade with the same name.</p>
 	" coords="123,523,177,577" shape="rect">
 		<area research="
 	<p><b><img src=&quot;/realm/Factions/picks/FactionRulerSecret.png&quot; align=&quot;middle&quot;> Faction Ruler</b></p>
 					<p><b>Requirements</b>: Unlock all the Advanced Heritages</p>
-					<p><b>Cost</b>: 120 Notg (1.2e122)</p>
+					<p><b>Cost</b>: 1e134 Faction Coins</p>
 					<p><b>Effect</b>: Double Advanced Heritage powers if they match any of your alignments (cumulative).</p>
 	" coords="183,523,237,577" shape="rect">
 		<area research="
 	<p><b><img src=&quot;/realm/Factions/picks/MadMasksSecretTrophy.png&quot; align=&quot;middle&quot;> MAD Masks</b></p>
 					<p><b>Requirement</b>: R125+, Find all fragments of the Makers, Archon and Djinn masks.</p>
-					<p><b>Cost</b>: 1 SpQag (1e144)</p>
+					<p><b>Cost</b>: 1e148 Faction Coins</p>
 					<p><b>Effect</b>: Gives upgrade with same name.</p>
 					<p><b>Effect</b>: Increase the production of all buildings based on the highest excavation count made in this Reincarnation.</p>
 					<p><b>Formula</b>: (1.5 * x ^ 0.6)%, where x is highest excavation count made in this Reincarnation.</p>
@@ -436,21 +434,21 @@
 		<area research="
 	<p><b><img src=&quot;/realm/Factions/picks/FutureLinkinSecretTrophy.png&quot; align=&quot;middle&quot;> Future Linkin</b></p>
 					<p><b>Requirement</b>: A2+, Abdicate with at least 100,000 Unique Buildings.</p>
-					<p><b>Cost</b>: 10 SpTg (1e115)</p>
+					<p><b>Cost</b>: 1e138 Faction Coins</p>
 					<p><b>Effect</b>: Gives upgrade with same name.</p>
-					<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on time spent in the last game session.</p>
-					<p><b>Formula</b>: (214 + 0.03 * x ^ 0.7)%, where x is time spent in last game in seconds.</p>
+					<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on time spent during your last Era.</p>
+					<p><b>Formula</b>: (214 + 0.03 * x ^ 0.7)%, where x is time spent during your last Era, in seconds.</p>
 	" coords="303,523,357,577" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/God'sFingers.png&quot; align=&quot;middle&quot;> <b>God's Fingers</b></p>
-					<p><b>Requirement</b>: R160+, Reach 100 M (1e8) automatic clicks in this Reincarnation.</p>
-					<p><b>Cost</b>: Free</p>
+					<p><b>Requirement</b>: A3+, reach 100 M (1e8) automatic clicks in this Reincarnation.</p>
+					<p><b>Cost</b>: 333 coins</p>
 					<p><b>Effect</b>: Gives Upgrade with same name.</p>
 					<p><b>Effect</b>: Clicks count 100% more and autoclicks 5 times per second.</p>
 	" coords="363,523,417,577" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/TrueHarlequin.png&quot; align=&quot;middle&quot;> <b>True Harlequin</b></p>
-					<p><b>Requirement</b>: R160+, As a Mercenary, purchase one upgrade from 15 different factions.</p>
+					<p><b>Requirement</b>: As a Mercenary, purchase one upgrade from 15 different factions.</p>
 					<p><b>Cost</b>: 1e152 (100 Noqag)
 					<p><b>Effect</b>: Gives Upgrade with same name.</p>
 					<p><b>Formula</b>: ((x * floor(1 + x / 5)) ^ 3)%, where x is the number of Factions with at least one of their upgrades being used (up to 216,000% maximum possible).</p>
@@ -1273,8 +1271,8 @@
 					<p><b>Cost</b>: (To Reincarnate to R150) 1.134 Dqag (1.134e129) Gems</p>
 	" coords="243,1303,297,1357" shape="rect">
 		<area research="
-	<p><img src=&quot;/realm/Factions/picks/ArchaeologyExpedition.png&quot; align=&quot;middle&quot;><b> Archaeology Expedition</b></p>
-					<p><b>Requirement</b>: You have funded an archaeology expedition to find relics of the Ancient Races. (Excavate for 1st time.)</p>
+	<p><img src=&quot;/realm/Factions/picks/ArchaeologyExpedition.png&quot; align=&quot;middle&quot;><b> Archeology Expedition</b></p>
+					<p><b>Requirement</b>: You have funded an archeology expedition to find relics of the Ancient Races.</p>
 	" coords="303,1303,357,1357" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/Clouded.png&quot; align=&quot;middle&quot;><b> Clouded</b></p>
@@ -1302,9 +1300,9 @@
 					<p><b>Note</b>: Not A-Nerfed.</p>
 	" coords="123,1363,177,1417" shape="rect">
 		<area research="
-	<p><img src=&quot;/realm/Factions/picks/EliteChallenger.png&quot; align=&quot;middle&quot;><b> Elite Challenger</b></p>
-					<p><b>Requirement</b>: Complete all the MAD Challenges, R153+</p>
-					<p><b>Cost</b>: 10</p>
+	<p><img src=&quot;/realm/Factions/picks/EliteChallenger.png&quot; align=&quot;middle&quot;><b> Astral Challenger</b></p>
+					<p><b>Requirement</b>: Complete all the MAD Challenges.</p>
+					<p><b>Cost</b>: 10 Faction Coins</p>
 					<p><b>Effect</b>: Increase the overall production of Astral Factions by 25%.</p>
 					<p><b>Note</b>: Not A-Nerfed.</p>
 	" coords="183,1363,237,1417" shape="rect">
@@ -1313,21 +1311,18 @@
 					<p><b>Requirement</b>: Research 600 times across all fields.</p>
 					<p><b>Cost</b>: 1 Tqag (1e132), A1+ Free</p>
 					<p><b>Effect</b>: Increase the overall production of Vanilla Factions by 100%.</p>
-					<p><b>Effect</b> A1: Increase the overall production of Vanilla Factions by 7.18%.</p>
 	" coords="243,1363,297,1417" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/IntermediateResearcherSecretTrophy.png&quot; align=&quot;middle&quot;><b> Intermediate Researcher</b></p>
 					<p><b>Requirement</b>: Research 1800 times across all fields.</p>
 					<p><b>Cost</b>: 1 QiQig (1e168), A1+ Free</p>
 					<p><b>Effect</b>: Increases the production of all Neutral Factions by 100%.</p>
-					<p><b>Effect</b>: A1: Increases the production of all Neutral Factions by 7.18%.</p>
 	" coords="303,1363,357,1417" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/ExpertResearcherSecretTrophy.png&quot; align=&quot;middle&quot;><b> Expert Researcher</b></p>
 					<p><b>Requirement</b>: Research 2750 times across all fields.</p>
 					<p><b>Cost</b>: 1 QiQig (1e168), A1+ Free</p>
 					<p><b>Effect</b>: Increase the overall production of Prestige Factions by 100%.</p>
-					<p><b>Effect</b>: A1: Increase the overall production of Prestige Factions by 7.18%.</p>
 	" coords="363,1363,417,1417" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/MasterResearcherSecretTrophy.png&quot; align=&quot;middle&quot;><b> Master Researcher</b></p>
@@ -1380,103 +1375,103 @@
 	" coords="363,1423,417,1477" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/NoviceCombinator.png&quot; align=&quot;middle&quot;> <b>Novice Combinator</b></p>
-					<p><b>Requirement</b>: R220+, Purchase Legacies from 4 different factions in a single game.</p>
+					<p><b>Requirement</b>: A4+, have 4 different factions involved in your Legacy upgrades.</p>
 					<p><b>Cost</b>: 1 Qavg (1e75)</p>
-					<p><b>Effect</b>: Increase the production of all buildings based on time spent with the least used alignment.</p>
-					<p><b>Formula</b>: (50 + 0.7 * x ^ 0.7)%, where x is time spent with your least used alignment.</p>
+					<p><b>Effect</b>: Multiplicatively increase Mana Regeneration based on time spent with the least-used alignment.</p>
+					<p><b>Formula</b>: (5 + 2.5 * x ^ 0.5)%, where x is time spent with your least-used alignment, in seconds.</p>
 	" coords="3,1483,57,1537" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/ExpertCombinator.png&quot; align=&quot;middle&quot;> <b>Expert Combinator</b></p>
-					<p><b>Requirement</b>: R220+, Purchase Legacies from 6 different factions in a single game.</p>
+					<p><b>Requirement</b>: A4+, have 5 different factions involved in your Legacy upgrades.</p>
 					<p><b>Cost</b>: 10 Dtg (1e100)</p>
-					<p><b>Effect</b>: Increase the production of all buildings based on time spent with the least used alignment.</p>
-					<p><b>Formula</b>: (50 + 0.7 * x ^ 0.7)%, where x is time spent with your least used alignment.</p>
+					<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on time spent with the least-used alignment.</p>
+					<p><b>Formula</b>: (30 + 0.6 * x ^ 0.6)%, where x is time spent with your least-used alignment, in seconds.</p>
 	" coords="63,1483,117,1537" shape="rect">
 	</map>
 	<map name="MagicTrophies-map">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/ManaDropletTrophy.png&quot; align=&quot;middle&quot;><b> Mana Droplet</b></p>
-					<p><b>Requirement</b>: Produce 200 mana (Total)</p>
+					<p><b>Requirement</b>: Produce 200 Mana.</p>
 					<p><b>Cost</b>: 10,000</p>
-					<p><b>Effect</b>: Increase Mana Regeneration by +0.50.</p>
+					<p><b>Effect</b>: Increase Mana Regeneration by +2.</p>
 	" coords="3,43,57,97" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/ManaRainTrophy.png&quot; align=&quot;middle&quot;><b> Mana Rain</b></p>
-					<p><b>Requirement</b>: Produce 2,000 mana (Total)</p>
+					<p><b>Requirement</b>: Produce 2,000 Mana.</p>
 					<p><b>Cost</b>: 20 M (2e7)</p>
-					<p><b>Effect</b>: Increase Mana Regeneration by +0.50.</p>
+					<p><b>Effect</b>: Increase Mana Regeneration by +2.</p>
 	" coords="63,43,117,97" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/ManaSurgeTrophy.png&quot; align=&quot;middle&quot;><b> Mana Surge</b></p>
-					<p><b>Requirement</b>: Produce 5,000 mana (Total)</p>
+					<p><b>Requirement</b>: Produce 5,000 Mana.</p>
 					<p><b>Cost</b>: 30 B (3e10)</p>
-					<p><b>Effect</b>: Increase Mana Regeneration by +0.50.</p>
+					<p><b>Effect</b>: Increase Mana Regeneration by +2.</p>
 	" coords="123,43,177,97" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/ManaFountainTrophy.png&quot; align=&quot;middle&quot;><b> Mana Fountain</b></p>
-					<p><b>Requirement</b>: Produce 10,000 mana (Total)</p>
+					<p><b>Requirement</b>: Produce 10,000 Mana.</p>
 					<p><b>Cost</b>: 40 T (4e13)</p>
-					<p><b>Effect</b>: Increase Mana Regeneration by +0.50.</p>
+					<p><b>Effect</b>: Increase Mana Regeneration by +2.</p>
 	" coords="183,43,237,97" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/ManaShowerTrophy.png&quot; align=&quot;middle&quot;><b> Mana Shower</b></p>
-					<p><b>Requirement</b>: Produce 20,000 mana (Total)</p>
+					<p><b>Requirement</b>: Produce 20,000 Mana.</p>
 					<p><b>Cost</b>: 50 Qa (5e16)</p>
-					<p><b>Effect</b>: Increase Mana Regeneration by +0.50.</p>
+					<p><b>Effect</b>: Increase Mana Regeneration by +2.</p>
 	" coords="243,43,297,97" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/ManaStreamTrophy.png&quot; align=&quot;middle&quot;><b> Mana Stream</b></p>
-					<p><b>Requirement</b>: Produce 100,000 mana (Total)</p>
+					<p><b>Requirement</b>: Produce 100,000 Mana.</p>
 					<p><b>Cost</b>: 60 Qi (6e19)</p>
-					<p><b>Effect</b>: Increase Mana Regeneration by +0.50.</p>
+					<p><b>Effect</b>: Increase Mana Regeneration by +2.</p>
 	" coords="303,43,357,97" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/ManaFloodTrophy.png&quot; align=&quot;middle&quot;><b> Mana Flood</b></p>
-					<p><b>Requirement</b>: Produce 200,000 mana (Total)</p>
+					<p><b>Requirement</b>: Produce 200,000 Mana.</p>
 					<p><b>Cost</b>: 70 Sx (7e22)</p>
-					<p><b>Effect</b>: Increase Mana Regeneration by +0.50.</p>
+					<p><b>Effect</b>: Increase Mana Regeneration by +2.</p>
 	" coords="363,43,417,97" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/ManaWaveTrophy.png&quot; align=&quot;middle&quot;><b> Mana Wave</b></p>
-					<p><b>Requirement</b>: Produce 20M (20e6) mana (Total), R40+</p>
-					<p><b>Cost</b>: 80 Sp (8e25)</p>
-					<p><b>Effect</b>: Increase Mana Regeneration by +50.00.</p>
+					<p><b>Requirement</b>: A1+, R40+, produce 20 B (2e10) Mana.</p>
+					<p><b>Cost</b>: 1e30 gems</p>
+					<p><b>Effect</b>: Increase Mana Regeneration by +250.</p>
 	" coords="3,103,57,157" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/ManaRiverTrophy.png&quot; align=&quot;middle&quot;><b> Mana River</b></p>
-					<p><b>Requirement</b>: Produce 1B (1e9) mana (Total), R40+</p>
-					<p><b>Cost</b>: 90 Oc (9e28)</p>
-					<p><b>Effect</b>: Increase Mana Regeneration by +50.00.</p>
+					<p><b>Requirement</b>: A1+, R40+, produce 2 T (2e12) Mana.</p>
+					<p><b>Cost</b>: 1e40 gems</p>
+					<p><b>Effect</b>: Increase Mana Regeneration by +250.</p>
 	" coords="63,103,117,157" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/ManaLakeTrophy.png&quot; align=&quot;middle&quot;><b> Mana Lake</b></p>
-					<p><b>Requirement</b>: Produce 20B (2e10) mana (Total), R40+</p>
-					<p><b>Cost</b>: 100 No (1e32)</p>
-					<p><b>Effect</b>: Increase Mana Regeneration by +50.00.</p>
+					<p><b>Requirement</b>: A1+, R40+, produce 200 T (2e14) Mana.</p>
+					<p><b>Cost</b>: 1e50 gems</p>
+					<p><b>Effect</b>: Increase Mana Regeneration by +250.</p>
 	" coords="123,103,177,157" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/ManaSeaTrophy.png&quot; align=&quot;middle&quot;><b> Mana Sea</b></p>
-					<p><b>Requirement</b>: Produce 1 T (1e12) mana (Total), R40+</p>
-					<p><b>Cost</b>: 12.5 Uqag No (1.25e127)</p>
-					<p><b>Effect</b>: Increase Mana Regeneration by +50.00.</p>
+					<p><b>Requirement</b>: A1+, R40+, produce 20 Qa (2e16) Mana.</p>
+					<p><b>Cost</b>: 1e125 gems</p>
+					<p><b>Effect</b>: Increase Mana Regeneration by +250.</p>
 	" coords="183,103,237,157" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/ManaOceanTrophy.png&quot; align=&quot;middle&quot;><b> Mana Ocean</b></p>
-					<p><b>Requirement</b>: Produce 2 T (2e12) mana (Total), R40+</p>
-					<p><b>Cost</b>: 150 Noqag (1.5e152)</p>
-					<p><b>Effect</b>: Increase Mana Regeneration by +50.00.</p>
+					<p><b>Requirement</b>: A1+, R40+, produce 2 Qi (2e18) Mana.</p>
+					<p><b>Cost</b>: 1e180 gems</p>
+					<p><b>Effect</b>: Increase Mana Regeneration by +250.</p>
 	" coords="243,103,297,157" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/ManaSpringTrophy.png&quot; align=&quot;middle&quot;><b> Mana Spring</b></p>
-					<p><b>Requirement</b>: R100+, Produce 100 T (1e14) mana (Total)</p>
-					<p><b>Cost</b>: 1 Sp (1e24)</p>
-					<p><b>Effect</b>: Increase Mana Regeneration by +100.00.</p>
+					<p><b>Requirement</b>: A2+, R100+, produce 20 Sx (2e22) Mana.</p>
+					<p><b>Cost</b>: 1e24 Faction Coins</p>
+					<p><b>Effect</b>: Increase Mana Regeneration by +250.</p>
 	" coords="303,103,357,157" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/ManaFalls.png&quot; align=&quot;middle&quot;><b> Mana Falls</b></p>
-					<p><b>Requirement</b>: R100+, Produce 200 Qi (2e20) mana (Total)</p>
-					<p><b>Cost</b>: 10 Dqag (1e130)</p>
-					<p><b>Effect</b>: Increase Mana Regeneration by +100.00.</p>
+					<p><b>Requirement</b>: A2+, R100+, produce 200 Sp (2e26) Mana.</p>
+					<p><b>Cost</b>: 1e130 Faction Coins</p>
+					<p><b>Effect</b>: Increase Mana Regeneration by +250.</p>
 	" coords="363,103,417,157" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/MagicUserTrophy.png&quot; align=&quot;middle&quot;><b> Magic User</b></p>
@@ -1544,10 +1539,10 @@
 	" coords="63,283,117,337" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/AutomaticCastingTrophy.png&quot; align=&quot;middle&quot;><b> Automatic Casting</b></p>
-					<p><b>Requirement</b>: 60,000 Mana Produced (Total this R)</p>
+					<p><b>Requirement</b>: Reach 50,000 Mana produced in this Reincarnation and purchase Automatic Casting.</p>
 					<p><b>Cost</b>: 100 B (1e11)</p>
 					<p><b>Effect</b>: Allows autocasting of spells. To activate it, use the buttons in the spell's tooltip or by CTRL+Clicking them. If you set a spell in Autocast mode, it will be fired automatically as soon as you have enough mana. If you have multiple spells in Autocast mode, the cheapest will be cast first. Later in the game, you will unlock more Autocasting options which will allow you to better manage your spells while idle.</p>
-					<p><b>Effect</b>: While offline, spells are not cast. Instead, increase your mana produced amount by 10 of your mana regeneration per second.</p>
+					<p><b>Effect</b>: While offline, spells are not cast. Instead, increase your Mana produced amount by 10% of your Mana Regeneration per second.</p>
 	" coords="123,283,177,337" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/ImprovedAutocastingTrophy.png&quot; align=&quot;middle&quot;><b> Improved Autocasting</b></p>
@@ -1600,15 +1595,15 @@
 					<p><b>Effect</b>: Allows you to manually reset spells with a 2 second cooldown per spell.</p>
 					<p><b>Note</b>: Can not reset spells with a fixed duration.</p>
 					<p><b>Note</b>: Only while offline, increase your mana produced amount by an additional 10% of your Mana Regeneration per second, and your spells cast amount multiplicatively based on your offline Mana Regeneration.</p>
-					<p><b>Formula</b>: (1000 * log10(1 + x)), where x is Mana Regeneration</p>
+					<p><b>Formula</b>: (500 * ln(1 + 30 * x))%, where x is your offline Mana Regeneration per second.</p>
 	" coords="123,343,177,397" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/TieredAutocastingTrophy.png&quot; align=&quot;middle&quot;><b> Tiered Autocasting</b></p>
-					<p><b>Requirement</b>: R40+, 200M Mana Produced (Total this R)</p>
+					<p><b>Requirement</b>: A1+, R42+, unlock and purchase Tiered Autocasting after Efficient Autocasting and its prerequisite Research upgrade.</p>
 					<p><b>Cost</b>: 100 Qid (1e50)</p>
 					<p><b>Effect</b>: Allows you to set the maximum tier you wish to autocast each spell to. In the spell tooltip, use the diamond icon to change its mode until you get to the desired maximum tier number. Spells will still follow their previous priority rules.</p>
-					<p><b>Effect</b>: Only while offline, increase mana produced by an additional 10% (for a total of 100%) of your mana regeneration per second and your spells cast amount multiplicatively based on your offline mana regeneration.</p>
-					<p><b>Formula</b>: (1000 * log10(1 + x))</p>
+					<p><b>Effect</b>: Only while offline, increase Mana produced by 10% of your Mana Regeneration per second and multiplicatively increase spells cast based on offline Mana Regeneration.</p>
+					<p><b>Formula</b>: (500 * ln(1 + 30 * x))%, where x is your offline Mana Regeneration per second.</p>
 	" coords="183,343,237,397" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/ArcaneBrilliance1Trophy.png&quot; align=&quot;middle&quot;><b> Arcane Brilliance 1</b></p>
@@ -1628,16 +1623,14 @@
 					<p><b>Requirement</b>: Unlock tier 5 for all spells</p>
 	" coords="3,403,57,457" shape="rect">
 		<area research="
-	<p><img src=&quot;/realm/Factions/picks/ArcaneBrilliance5Trophy.png&quot; align=&quot;middle&quot;><b> Arcane Brilliance 5</b></p>
-					<p><b>Requirement</b>: Unlock tier 6 for all spells</p>
+	<p><b>Arcane Brilliance 5</b></p><p><b>4.3.15 status</b>: Not present in the game registry; Arcane Brilliance ends at rank 4.</p>
 	" coords="63,403,117,457" shape="rect">
 		<area research="
-	<p><img src=&quot;/realm/Factions/picks/ArcaneBrilliance6Trophy.png&quot; align=&quot;middle&quot;><b> Arcane Brilliance 6</b></p>
-					<p><b>Requirement</b>: Unlock tier 7 for all spells</p>
+	<p><b>Arcane Brilliance 6</b></p><p><b>4.3.15 status</b>: Not present in the game registry; Arcane Brilliance ends at rank 4.</p>
 	" coords="123,403,177,457" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/CoinPillageSpellUpgrade.png&quot; align=&quot;middle&quot;><b> Coin Pillage</b></p>
-					<p><b>Requirement</b>: Cast 150 Tax Collections in less than 5 seconds.</p>
+					<p><b>Requirement</b>: Cast 120 Tax Collections in less than 5 seconds.</p>
 					<p><b>Cost</b>: 1 Dc (1e33), A1+ Free</p>
 					<p><b>Effect</b>: Tax Collection also finds 30 seconds worth of Faction Coins.</p>
 					<p><b>Note</b>: Default Spell</p>
@@ -1651,31 +1644,32 @@
 	" coords="243,403,297,457" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/SunBlessingSpellUpgrade.png&quot; align=&quot;middle&quot;><b> Sun Blessing</b></p>
-					<p><b>Requirement</b>: Activate the Moon Blessing spell after 6 am and before 1 pm (noon).</p>
+					<p><b>Requirement</b>: Cast Moon Blessing while having at least 5 Elven Luck triggers in this Era.</p>
 					<p><b>Cost</b>: 1 M (1e6)</p>
 					<p><b>Effect</b>: The treasure is autoclicked 15 times per second while Moon Blessing is active.</p>
 					<p><b>Note</b>: Elven Spell</p>
 	" coords="303,403,357,457" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/GodsRestSpellUpgrade.png&quot; align=&quot;middle&quot;><b> God's Rest</b></p>
-					<p><b>Requirement</b>: Cast God's Hand on any Sunday.</p>
+					<p><b>Requirement</b>: Cast God's Hand while having at least 1,500 Maximum Mana and 75 Mana Regeneration.</p>
 					<p><b>Cost</b>: 1 M (1e6)</p>
-					<p><b>Effect</b>: While this spell is active, you will find random Faction Coins based on your mana regen each time you cast an other spell.</p>
+					<p><b>Effect</b>: While God's Hand is active, each other spell cast gives random Faction Coins based on your Faction Coin find chance.</p>
+					<p><b>Formula</b>: floor(x ^ 1.1) Faction Coins, where x is Faction Coin find chance.</p>
 					<p><b>Note</b>: Angel Spell</p>
 	" coords="363,403,417,457" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/GreedDriveSpellUpgrade.png&quot; align=&quot;middle&quot;><b> Greed Drive</b></p>
-					<p><b>Requirement</b>: Goblin Spell: Cast 100 Goblin's Greed spells in a row in a single game. The chain is interrupted by casting different spells.</p>
+					<p><b>Requirement</b>: Cast Goblin's Greed while having at least 100 Royal Exchanges purchased.</p>
 					<p><b>Cost</b>: 1 M (1e6)</p>
-					<p><b>Effect</b>: Goblin's Greed cost 150 less mana.</p>
-					<p><b>Note</b>: Spell casts from the Goblin's Central Bank upgrade are included in the [stats], but they do not count for this trophy.</p>
+					<p><b>Effect</b>: While Goblin's Greed is active, Tax Collection costs 10% less Mana.</p>
 					<p><b>Note</b>: Goblin Spell</p>
 	" coords="3,463,57,517" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/TrueNightSpellUpgrade.png&quot; align=&quot;middle&quot;><b> True Night</b></p>
-					<p><b>Requirement</b>: Undead Spell: Activate the Night Time spell after 11 pm and before 6 am.</p>
+					<p><b>Requirement</b>: Cast Night Time while having at least 20,000% Offline production.</p>
 					<p><b>Cost</b>: 1 M (1e6)</p>
-					<p><b>Effect</b>: Increase Night Time boost to assistants production to 40% per Necropolis.</p>
+					<p><b>Effect</b>: Increase Night Time's assistant-production bonus based on its activity time in this Reincarnation and make Offline time count 50% more.</p>
+					<p><b>Formula</b>: (0.4 * x ^ 0.6)%, where x is Night Time activity time in this Reincarnation, in seconds.</p>
 					<p><b>Note</b>: Undead Spell</p>
 	" coords="63,463,117,517" shape="rect">
 		<area research="
@@ -1688,14 +1682,14 @@
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/LightningStormSpellUpgrade.png&quot; align=&quot;middle&quot;><b> Lightning Storm</b></p>
 					<p><b>Requirement</b>: Cast Lightning Strike 100 times in a single game.</p>
-					<p><b>Cost</b>: 10 Dd (1e40)</p>
-					<p><b>Effect</b>: Increase Lightning Strike multiplier to 750% per Iron Stronghold</p>
+					<p><b>Cost</b>: 1e35 coins</p>
+					<p><b>Effect</b>: Increase Lightning Strike multiplier by 50%.</p>
 					<p><b>Note</b>: Titan Spell</p>
 	" coords="183,463,237,517" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/HallsofBalanceSpellUpgrade.png&quot; align=&quot;middle&quot;><b> Halls of Balance</b></p>
 					<p><b>Requirement</b>: Have Grand Balance affect Hall of Legends</p>
-					<p><b>Cost</b>: 10 Dd (1e40)</p>
+					<p><b>Cost</b>: 1e35 coins</p>
 					<p><b>Effect</b>: Increase Grand Balance duration by 4 seconds and lower its cost by 200 mana</p>
 					<p><b>Note</b>: Druid Spell</p>
 					<p><b>Tip</b>: Buy at least 1 of everything and buy 0 Hall of Legends.</p>
@@ -1703,23 +1697,23 @@
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/FacelessOvermindSpellUpgrade.png&quot; align=&quot;middle&quot;><b> Faceless Overmind</b></p>
 					<p><b>Requirement</b>: Affiliate with the Faceless 5 times in a row. (Buy Faceless Trade Treaty 5x in a row)</p>
-					<p><b>Cost</b>: 10 Dd (1e40)</p>
-					<p><b>Effect</b>: Increase Brainwave tick to 3% per second</p>
+					<p><b>Cost</b>: 1e35 coins</p>
+					<p><b>Effect</b>: Increase Brainwave multiplier by 50%.</p>
 					<p><b>Note</b>: Faceless Spell</p>
 	" coords="303,463,357,517" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/MinedwarfSpellUpgrade.png&quot; align=&quot;middle&quot;><b> Minedwarf</b></p>
 					<p><b>Requirement</b>: Find 30,000 Faction Coins from Diamond Pickaxe in a single game.</p>
 					<p><b>Cost</b>: 100 Sxd (1e53), A1+ Free</p>
-					<p><b>Effect</b>: Increases Diamond Pickaxe bonus to Faction Coin find chance to 300%.</p>
+					<p><b>Effect</b>: Increase Diamond Pickaxe's bonus to Faction Coin find chance by 100%.</p>
 					<p><b>Note</b>: Dwarven Spell</p>
 	" coords="363,463,417,517" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/PerfectComboSpellUpgrade.png&quot; align=&quot;middle&quot;><b> Perfect Combo</b></p>
-					<p><b>Requirement</b>: Cast a chain of 100 Combo Strikes in a single game. The chain is interrupted by casting a different spell.</p>
+					<p><b>Requirement</b>: Cast a chain of 50 Combo Strikes in a single Era. The chain is interrupted by casting a different spell.</p>
 					<p><b>Cost</b>: 100 Sxd (1e53), A1+ Free</p>
-					<p><b>Effect</b>: Increases Combo Strike bonus.</p>
-					<p><b>Formula</b>: (40 * x ^ 0.9), where x is the number of times you have cast Combo Strike.</p>
+					<p><b>Effect</b>: Increase the Combo Strike counter based on your longest Era in this Reincarnation.</p>
+					<p><b>Formula</b>: +2.5 * x ^ 0.5 Combo Strike count, where x is your longest Era in this Reincarnation, in seconds.</p>
 					<p><b>Note</b>: Drow Spell</p>
 	" coords="3,523,57,577" shape="rect">
 		<area research="
@@ -1727,7 +1721,7 @@
 					<p><b>Requirement</b>: Cast Dragon's Breath while having at least 4 other active spells.</p>
 					<p><b>Cost</b>: 1.0e45</p>
 					<p><b>Effect</b>: Dragon's Breath multiplicatively increases Faction Coin find chance based on its duration.</p>
-					<p><b>Formula</b>: (6 * x ^ 0.6), where x is duration in seconds.</p>
+					<p><b>Formula</b>: (6 * x ^ 0.6)%, where x is Dragon's Breath duration in seconds.</p>
 	" coords="63,523,117,577" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/ChronoLoadingSpellUpgrade.png&quot; align=&quot;middle&quot;><b> Chrono Loading</b></p>
@@ -1735,21 +1729,21 @@
 					<p><b>Cost</b>: 10 Octg (1e118)</p>
 					<p><b>Effect</b>: A fraction of Precognition duration is added to time spent in this Era.</p>
 					<p><b>Effect</b>: Scale off invisible spell duration modifiers.</p>
-					<p><b>Formula</b>: (100 * ln(1 + x / 60) ^ 2.5), where x is its duration.</p>
+					<p><b>Formula</b>: 150 * ln(1 + x / 60) ^ 2 seconds, where x is Precognition duration in seconds.</p>
 					<p><b>Note</b>: Precognition raises regen itself. Make sure that you have 100 Qa (1e17) with it not active</p>
 	" coords="123,523,177,577" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/PersistentEntropySpellUpgrade.png&quot; align=&quot;middle&quot;><b> Persistent Entropy</b></p>
 					<p><b>Requirements</b>: R125+, Cast Limited Wish 100 times within 30 minutes of a new Era.</p>
 					<p><b>Cost</b>: 10 Octg (1e118)</p>
-					<p><b>Effect</b>: Also adds 150 casts to Limited wish formula.</p>
+					<p><b>Effect</b>: Give Limited Wish a headstart of 500 casts.</p>
 	" coords="183,523,237,577" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/RealityCraterSpellUpgrade.png&quot; align=&quot;middle&quot;><b> Reality Crater</b></p>
 					<p><b>Requirements</b>: R125+, Cast Infinite Spiral with at least 10 excavation resets this Era.</p>
 					<p><b>Cost</b>: 10 Octg (1e118)</p>
 					<p><b>Effect</b>: Infinite Spiral also reduces excavation cost multiplier based on assistants owned.</p>
-					<p><b>Formula</b>: (0.001 * log(1 + x)), where x is assistants owned.</p>
+					<p><b>Formula</b>: 0.0005 * ln(1 + x), where x is assistants owned.</p>
 	" coords="243,523,297,577" shape="rect">
 	</map>
 	<map name="BuildingTrophies-map">
