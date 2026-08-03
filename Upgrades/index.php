@@ -11,7 +11,7 @@
             <div class="autohide">
                 <p><img src="/realm/Factions/picks/GrindingDedication.png" align="middle"><b> Grinding Dedication</b></p>
                 <p><b>Requirement</b>: 7 Hours Playtime (Total)</p>
-                <p><b>Cost</b>: 1 Sx (1e21), A1+ Free</p>
+                <p><b>Cost</b>: 500 T (5e14), A1+ Free</p>
                 <p><b>Alignment</b>: Any</p>
                 <p><b>Effect</b>: Increase the production of all Neutral buildings by 100%.</p>
                 <hr>
@@ -33,11 +33,11 @@
                 <br/>
                 <p><img src="/realm/Factions/picks/HeroicAffirmation.png" align="middle"><b> Heroic Affirmation</b></p>
                 <p><b>Requirement</b>: 12000 Good buildings</p>
-                <p><b>Cost</b>: 100 Qaq (1e47), A1+ Free</p>
+                <p><b>Cost</b>: 100 Qag (1e125), A1+ Free</p>
                 <p><b>Alignment</b>: Good</p>
                 <p><b>Effect</b>: Increase the production of all Good buildings by 700%.</p>
                 <br/>
-                <p><img src="/realm/Factions/picks/HeroicProclamations.png" align="middle"><b> Heroic Proclamations</b></p>
+                <p><img src="/realm/Factions/picks/HeroicProclamations.png" align="middle"><b> Heroic Proclamation</b></p>
                 <p><b>Requirement</b>: Ascension 1+, 20000 Good buildings (16667 with Dwarf 5 on)</p>
                 <p><b>Cost</b>: 10 No (1e31), A2+ Free</p>
                 <p><b>Alignment</b>: Good</p>
@@ -61,11 +61,11 @@
                 <br/>
                 <p><img src="/realm/Factions/picks/VillainuosAffirmation.png" align="middle"><b> Villainous Affirmation</b></p>
                 <p><b>Requirement</b>: 12000 Evil buildings</p>
-                <p><b>Cost</b>: 100 Qaq (1e47), A1+ Free</p>
+                <p><b>Cost</b>: 100 Qag (1e125), A1+ Free</p>
                 <p><b>Alignment</b>: Evil</p>
                 <p><b>Effect</b>: Increase the production of all Evil buildings by 700%.</p>
                 <br/>
-                <p><img src="/realm/Factions/picks/VillainousProclamations.png" align="middle"><b> Villainous Proclamations</b></p>
+                <p><img src="/realm/Factions/picks/VillainousProclamations.png" align="middle"><b> Villainous Proclamation</b></p>
                 <p><b>Requirement</b>: Ascension 1+, 20000 Evil buildings (16667 with Dwarf 5 on)</p>
                 <p><b>Cost</b>: 10 No (1e31), A2+ Free</p>
                 <p><b>Alignment</b>: Evil</p>
@@ -78,7 +78,7 @@
                 <br/>
                 <p><img src="/realm/Factions/picks/TrueNeutrality.png" align="middle"><b> True Neutrality</b></p>
                 <p><b>Requirement</b>: 24 Hours Playtime as Neutral (Total)</p>
-                <p><b>Cost</b>: 500 T (5e14), A1+ Free</p>
+                <p><b>Cost</b>: 1 Sx (1e21), A1+ Free</p>
                 <p><b>Alignment</b>: Any</p>
                 <p><b>Effect</b>: Increase the production of all Neutral buildings by 100%.</p>
                 <br/>
@@ -100,7 +100,7 @@
                 <p><b>Alignment</b>: Any</p>
                 <p><b>Effect</b>: Increase the production of all Neutral buildings by 100%.</p>
                 <br/>
-                <p><img src="/realm/Factions/picks/NeutralProclamations.png" align="middle"><b> Neutral Proclamations</b></p>
+                <p><img src="/realm/Factions/picks/NeutralProclamations.png" align="middle"><b> Neutral Proclamation</b></p>
                 <p><b>Requirement</b>: 50000 Neutral buildings</p>
                 <p><b>Cost</b>: 16 Novg (1.6e91), A1+ Free</p>
                 <p><b>Alignment</b>: Any</p>
@@ -187,7 +187,7 @@
                 <p><b>Requirement</b>: 5 T (5e12) Coins by clicking (This Era)</p>
                 <p><b>Cost</b>: 150 T (1.5e14), A1+ Free</p>
                 <p><b>Alignment</b>: Any</p>
-                <p><b>Effect</b>: Pre Ascension, Increase clicking reward by 25% and the production of all buildings by 25%.</p>
+                <p><b>Effect</b>: Increase clicking reward by 25% and the production of all buildings by 25%.</p>
                 <br/>
                 <p><img src="/realm/Factions/picks/OverflowingTreasure.png" align="middle"><b> Overflowing Treasure</b></p>
                 <p><b>Requirement</b>: 5 Qa (5e15) Coins by clicking (This Era)</p>
@@ -233,23 +233,23 @@
                 <p><b>Cost</b>: 1 Coin</p>
                 <p><b>Alignment</b>: Any</p>
                 <p><b>Effect</b>: Unlocks the power of gems, each of which will Increase your overall production by 2% and slightly your chance of obtaining faction coins.</p>
-				<p><b>Formula</b>: +(floor((1.25 + y / 4) * ln(1 + x) ^ 0.9 / ln(10)))%, where x is the amount of gems you own and y the number of Gem Upgrades purchased.</p>
+				<p><b>Formula</b>: +(floor(0.5 * (1.25 + y / 4) * ln(1 + x) ^ 0.9))%, where x is the amount of Gems you own and y is the number of Gem Upgrades purchased.</p>
                 <hr>
                 <p><img src="/realm/Factions/picks/GemPotency.png" alt="" align="middle"> <b>Gem Potency</b></p>
                 <p><b>Requirement</b>: 1M (1e6) Gems</p>
-                <p><b>Cost</b>: 10 Sp (1e25)</p>
+                <p><b>Cost</b>: 10 Sp (1e25), A1+ Free</p>
                 <p><b>Alignment</b>: Any</p>
                 <p><b>Effect</b>: Gem production bonus is Increased by an additional 1%.</p>
                 <hr>
                 <p><img src="/realm/Factions/picks/GemSupremacy.png" alt="" align="middle"> <b>Gem Supremacy</b></p>
                 <p><b>Requirement</b>: 1 Dd (1e39) Gems</p>
-                <p><b>Cost</b>: 10 Dvg (1e70)</p>
+                <p><b>Cost</b>: 10 Dvg (1e70), A1+ Free</p>
                 <p><b>Alignment</b>: Any</p>
                 <p><b>Effect</b>: Gem production bonus is Increased by an additional 1%.</p>
                 <hr>
                 <p><img src="/realm/Factions/picks/GemSovereignty.png" alt="" align="middle"> <b>Gem Sovereignty</b></p>
                 <p><b>Requirement</b>: 1 Vg (1e63) Gems</p>
-                <p><b>Cost</b>: 10 Qitg (1e109)</p>
+                <p><b>Cost</b>: 10 Qitg (1e109), A1+ Free</p>
                 <p><b>Alignment</b>: Any</p>
                 <p><b>Effect</b>: Gem production bonus is Increased by an additional 1%</p>
                 <hr>
@@ -258,19 +258,19 @@
             <div class="autohide">
                 <p><img src="/realm/Factions/picks/AbsentRuler.png" alt="" align="middle"> <b>Absent Ruler</b></p>
                 <p><b>Requirement</b>: 12 consecutive hours offline</p>
-                <p><b>Cost</b>: 1 B (1e9)</p>
+                <p><b>Cost</b>: 1 B (1e9), A1+ Free</p>
                 <p><b>Alignment</b>: Any</p>
                 <p><b>Effect</b>: Increases offline production by 200%.</p>
                 <hr>
                 <p><img src="/realm/Factions/picks/MissingRuler.png" alt="" align="middle"> <b>Missing Ruler</b></p>
                 <p><b>Requirement</b>: 24 consecutive hours offline</p>
-                <p><b>Cost</b>: 1 Qi (1e18)</p>
+                <p><b>Cost</b>: 1 Qi (1e18), A1+ Free</p>
                 <p><b>Alignment</b>: Any</p>
                 <p><b>Effect</b>: Increases offline production by 500%.</p>
                 <hr>
                 <p><img src="/realm/Factions/picks/NonexistentRuler.png" alt="" align="middle"> <b>Nonexistent Ruler</b></p>
                 <p><b>Requirement</b>: 36 consecutive hours offline</p>
-                <p><b>Cost</b>: 10 Spd (1e55)</p>
+                <p><b>Cost</b>: 10 Spd (1e55), A1+ Free</p>
                 <p><b>Alignment</b>: Any</p>
                 <p><b>Effect</b>: Increases offline production by 1500%</p>
                 <hr>
@@ -278,22 +278,22 @@
             <p onclick="shohid($(this));"><b><a href="#" onclick="return false;">Assistant Upgrades</a></b></p>
             <div class="autohide">
                 <p><img src="/realm/Factions/picks/AssistantTradeUnion.png" align="middle"><b> Assistant Trade Union</b></p>
-                <p><b>Requirement</b>: 10 Assistants</p>
-                <p><b>Cost</b>: 150 Qi (1.5e20)</p>
+                <p><b>Requirement</b>: 20 Assistants</p>
+                <p><b>Cost</b>: 1 Qi (1e18), A1+ Free</p>
                 <p><b>Alignment</b>: Any</p>
-                <p><b>Effect</b>: Increase production of all buildings by 1% per Assistant.</p>
+                <p><b>Effect</b>: Increase production of all buildings by 5% per Assistant, additive with the other upgrades in this series.</p>
                 <hr>
                 <p><img src="/realm/Factions/picks/AssistantSyndicate.png" align="middle"><b> Assistant Syndicate</b></p>
                 <p><b>Requirement</b>: 100 Assistants</p>
-                <p><b>Cost</b>: 300 Qivg (3e80)</p>
+                <p><b>Cost</b>: 2 Ud (2e36), A1+ Free</p>
                 <p><b>Alignment</b>: Any</p>
-                <p><b>Effect</b>: Increase production of all buildings by 1% per Assistant.</p>
+                <p><b>Effect</b>: Increase production of all buildings by 5% per Assistant, additive with the other upgrades in this series.</p>
                 <hr>
                 <p><img src="/realm/Factions/picks/AssistantCartel.png" align="middle"><b> Assistant Cartel</b></p>
                 <p><b>Requirement</b>: 300 Assistants</p>
-                <p><b>Cost</b>: 5 Qitg (5e108)</p>
+                <p><b>Cost</b>: 3 Spd (3e54), A1+ Free</p>
                 <p><b>Alignment</b>: Any</p>
-                <p><b>Effect</b>: Increase production of all buildings by 1% per Assistant.</p>
+                <p><b>Effect</b>: Increase production of all buildings by 5% per Assistant, additive with the other upgrades in this series.</p>
                 <hr>
             </div>
         </div>
