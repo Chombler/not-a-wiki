@@ -29,56 +29,56 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/FairyUpgrade1.png" align="middle"> Pixie Dust Fertilizer</b></p>
 	<p><b>Cost</b>: 50 M (5e7)</p>
-	<p><b>Effect</b>: Increase the base production of Farms by +98.</p>
+	<p><b>Effect</b>: Increase the base production of Farms, Inns and Blacksmiths by +600.</p>
 	<p><b>Effect</b>: Reduces cost multiplier by 0.02; with no other reductions applying, the multiplier will be 1.13 instead of 1.15.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/FairyUpgrade2.png" align="middle"> Fairy Workers</b></p>
 	<p><b>Cost</b>: 500 M (5e8)</p>
-	<p><b>Effect</b>: Increase the production of Farms, Inns and Blacksmiths by 10,000%.</p>
+	<p><b>Effect</b>: Increase the production of Farms, Inns and Blacksmiths based on assistants owned.</p>
+	<p><b>Formula</b>: (5 * ln(1 + x) ^ 2.5)%, where x is assistants owned.</p>
 	<br/>
-	<p><b><img src="/realm/Factions/picks/FairyUpgrade3.png" align="middle"> Kind Hearts</b></p>
+	<p><b><img src="/realm/Factions/picks/FairyUpgrade3.png" align="middle"> Spellsmith</b></p>
 	<p><b>Cost</b>: 5 B (5e9)</p>
-	<p><b>Effect</b>: Increases maximum Mana additively based on Good buildings you own.</p>
-	<p><b>Formula</b>: +(1.3 * x ^ 0.7), where x is the amount of Good buildings you own.</p>
+	<p><b>Effect</b>: Increase Mana Regeneration based on Farms, Inns and Blacksmiths owned.</p>
+	<p><b>Formula</b>: +(3 * x ^ 0.3), where x is the total of those buildings.</p>
 	<hr>
 	<p><b>Tier 2 Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/FairyFriendshipPact.png" align="middle"> Fairies Friendship Pact</b></p>
 	<p><b>Cost</b>: 100 Fairy Coins</p>
 	<p><b>Effect</b>: Unlocks more Fairy Upgrades</p>
 	<br/>
-	<p><b><img src="/realm/Factions/picks/FairyUpgrade4.png" align="middle"> Fairy Cuisine</b></p>
+	<p><b><img src="/realm/Factions/picks/FairyUpgrade4.png" align="middle"> Starmetal Alloys</b></p>
 	<p><b>Cost</b>: 500 B (5e11)</p>
-	<p><b>Effect</b>: Increase the base production of Inns by +234 and reduce the building cost multiplier.</p>
-	<p><b>Effect</b>: Reduces cost multiplier by 0.02; with no other reductions applying, the multiplier will be 1.13 instead of 1.15.</p>
+	<p><b>Effect</b>: Autoclick once per second for each active spell.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/FairyUpgrade5.png" align="middle"> Golden Pots</b></p>
 	<p><b>Cost</b>: 5 T (5e12)</p>
-	<p><b>Effect</b>: Additively increase base clicking reward by 20% of the building production of Farms, Inns and Blacksmiths combined.</p>
+	<p><b>Effect</b>: Add 100% of Farms, Inns and Blacksmiths production to base clicking reward and increase Faction Coin find chance by +20%.</p>
 	<br/>
-	<p><b><img src="/realm/Factions/picks/FairyUpgrade6.png" align="middle"> Spellsmith</b></p>
+	<p><b><img src="/realm/Factions/picks/FairyUpgrade6.png" align="middle"> Swarm of Fairies</b></p>
 	<p><b>Cost</b>: 50 T (5e13)</p>
-	<p><b>Effect</b>: Blacksmiths also increase your Mana Regeneration.</p>
-	<p><b>Formula</b>: +(2.75 * x ^ 0.275), where x is the number of Blacksmiths you own.</p>
+	<p><b>Effect</b>: Gain assistants based on Farms, Inns and Blacksmiths owned.</p>
+	<p><b>Formula</b>: +(0.3 * x ^ 0.7), where x is the total of those buildings.</p>
 	<hr>
 	<p><b>Tier 3 Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/FairyAlliance.png" align="middle"> Fairies Alliance</b></p>
 	<p><b>Cost</b>: 500 Fairy Coins</p>
 	<p><b>Effect</b>: Unlocks more Fairy upgrades.</p>
 	<br/>
-	<p><b><img src="/realm/Factions/picks/FairyUpgrade7.png" align="middle"> Starmetal Alloys</b></p>
+	<p><b><img src="/realm/Factions/picks/FairyUpgrade7.png" align="middle"> Fairy Cuisine</b></p>
 	<p><b>Cost</b>: 5 Qa (5e15)</p>
-	<p><b>Effect</b>: Increase the base production of Blacksmiths by +580.</p>
-	<p><b>Effect</b>: Reduces cost multiplier by 0.02; with no other reductions applying, the multiplier will be 1.13 instead of 1.15.</p>
+	<p><b>Effect</b>: Additively increase Gem production bonus based on Fairy Chanting activity time in this Era.</p>
+	<p><b>Formula</b>: +(0.35 * x ^ 0.65)%, where x is Fairy Chanting activity time in this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/FairyUpgrade8.png" align="middle"> Rainbow Link</b></p>
 	<p><b>Cost</b>: 50 Qa (5e16)</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on the amount of Farms, Inns and Blacksmiths you own.</p>
-	<p><b>Formula</b>: (0.75 * x ^ 0.75)%, where x is the amount of Farms, Inns and Blacksmiths you own.</p>
+	<p><b>Formula</b>: (1.25 * x ^ 0.75)%, where x is Farms, Inns and Blacksmiths owned.</p>
 	<br/>
-	<p><b><img src="/realm/Factions/picks/FairyUpgrade9.png" align="middle"> Swarm of Fairies</b></p>
+	<p><b><img src="/realm/Factions/picks/FairyUpgrade9.png" align="middle"> Kind Hearts</b></p>
 	<p><b>Cost</b>: 500 Qa (5e17)</p>
-	<p><b>Effect</b>: You gain additional assistants based on the amount of Farms, Inns and Blacksmiths you own.</p>
-	<p><b>Formula</b>: +(1.2 * x ^ 0.6), where x is the number of Farms, Inns, and Blacksmiths you own.</p>
+	<p><b>Effect</b>: Additively increase Maximum Mana based on Good Buildings built.</p>
+	<p><b>Formula</b>: +(1.3 * x ^ 0.7), where x is Good Buildings built.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/FairyHeritage.png" alt="Fairy Heritage" align="middle"> Fairy Heritage</b></p>
 	<p><b>Cost</b>: 5,000 Fairy Coins</p>
@@ -116,7 +116,7 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/SwarmingTowerQuest.png" alt="Swarming Towers Quest" align="middle"> Swarming Towers Quest</b></p>
 	<p><b>Description</b>: Hey! [echoes a thousand times] Listen! [echoes again]. Then the overlapping voice of a thousand fairies fills your head with the desire of having more of their kind as assistants.</p>
-	<p><b>Requirement</b>: 200,000 Assistants</p>
+	<p><b>Requirement</b>: 1,000,000 Assistants</p>
 	<p><b>Cost</b>: 1 Ud (1e36) Emerald Coins</p>
 	<p><b>Effect</b>: Grants access to Unique Building.</p>
 	<br/>
@@ -128,7 +128,7 @@
 	<p><b>Unique Building</b></p>
 	<p><b><img src="/realm/Factions/picks/SwarmingTowersUniqueBuilding.png" alt="Swarming Towers" align="middle"></b></p>
 	<p>Upgrade Wizard Towers to Swarming Towers, boosting their production based on the amount of active spells and unlocking more unique perks for the building.</p>
-	<p><b>Formula</b>: (0.5 * x ^ 2.5)%, where x is the amount of active spells.</p>
+	<p><b>Formula</b>: (2.5 * x ^ 2.5)%, where x is active spells.</p>
 	<p><b>Effect</b>: Grants access to Fairies Union.</p>
 	<hr>
 	<p><b>Tier 4 Upgrades</b></p>
@@ -136,33 +136,32 @@
 	<p><b>Requirement</b>: Swarming Towers Unique Building</p>
 	<p><b>Cost</b>: 1 Qi (1e18) Fairy Coins</p>
 	<p><b>Effect</b>: Grants access to Union Upgrades.</p>
-	<p><b>Effect (R111+)</b>: Increase assistant production based on amount of Enchanted Fields, Inns and Blacksmiths if building count is even, or all other buildings if building count is odd.</p>
-	<p><b>Even Formula</b>: (6 * x ^ 0.6)%, where x is Enchanted Fields, Inns and Blacksmiths if amount of buildings is even.</p>
-	<p><b>Odd Formula</b>: (6 * x ^ 0.6)%, where x is T4-T11 Buildings if amount of buildings is odd.</p>
+	<p><b>Effect (R105+)</b>: Increase assistant production based on Farms, Inns and Blacksmiths if total Buildings built is even, or all other Buildings if it is odd.</p>
+	<p><b>Formula</b>: (13 * x ^ 0.65)%, where x is the selected building group.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/FairyUpgrade10.png" alt="Bubble Swarm" align="middle"> Bubble Swarm</b></p>
 	<p><b>Requirement</b>: Fairies Union</p>
 	<p><b>Cost</b>: 1 Nod (1e60) Emerald Coins</p>
 	<p><b>Effect</b>: Increase maximum mana based on the highest amount of Swarming Towers you made this Reincarnation.</p>
-	<p><b>Formula</b>: +(x ^ 1.05), where x is highest amount of Swarming Towers made this Reincarnation.</p>
+	<p><b>Formula</b>: +(2.5 * x ^ 1.5), where x is the highest amount of Swarming Towers built in this Reincarnation.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/FairyUpgrade11.png" alt="Pheromones" align="middle"> Pheromones</b></p>
 	<p><b>Requirement</b>: Fairies Union</p>
 	<p><b>Cost</b>: 100 Qivg (1e80) Emerald Coins</p>
-	<p><b>Effect</b>: Gain assistants additively based on time spent as Chaos this Reincarnation.</p>
-	<p><b>Formula</b>: +(80 * x ^ 0.8), where x is time spent as Chaos this Reincarnation.</p>
+	<p><b>Effect</b>: Multiplicatively increase assistants based on time spent as Chaos in this Reincarnation.</p>
+	<p><b>Formula</b>: (0.6 * x ^ 0.6)%, where x is time spent as Chaos in this Reincarnation.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/FairyUpgrade12.png" alt="Dream Catchers" align="middle"> Dream Catchers</b></p>
 	<p><b>Requirement</b>: Fairies Union</p>
 	<p><b>Cost</b>: 100 Tg (1e95) Emerald Coins</p>
 	<p><b>Effect</b>: Multiplicatively increase Mana Regeneration based on the amount of Chaos spells cast this Reincarnation.</p>
-	<p><b>Formula</b>: (1.2 * x ^ 0.8)%, where x is Chaos spells cast this Reincarnation.</p>
+	<p><b>Formula</b>: (0.01 * ln(1 + x) ^ 6)%, where x is Chaos spells cast in this Reincarnation.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/AdvancedFairyHeritage.png" align="middle"> Advanced Fairy Heritage</b></p>
-	<p><b>Requirements</b>: Fairy Master trophy and 6 hours activity time this Era of Fairy Chanting.</p>
+	<p><b>Requirements</b>: Fairy Master trophy and 1 hour activity time this Era of Fairy Chanting.</p>
 	<p><b>Cost</b>: 1 Sp (1e24) Fairy Coins</p>
 	<p><b>Effect</b>: Gain assistants based on amount of Farms, Inns and Blacksmiths (additive).</p>
 	<p><b>Formula</b>: +(2 * x ^ 0.8), where x is amount of Farms, Inns and Blacksmiths you own.</p>
 	<p><b>Note</b>: When using their lineage, Advanced Heritage powers are multiplied by the level of the lineage.</p>
-	<p><b>Formula</b>: *(1 + 0.3 * level)</p>
+	<p><b>Base lineage multiplier</b>: *(1 + 0.2 * matching Lineage level).</p>
 <?php include "../scripts/footer.html"; ?>
