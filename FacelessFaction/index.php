@@ -30,13 +30,14 @@
 	<br/>
 	<p><b>Faction spell</b></p>
 	<p><b><img src="/realm/Factions/picks/Brainwave.png" align="middle"> Brainwave</b></p>
-	<p><b>Effect</b>: Increase production of all buildings by a cumulative 2% for 10 minutes.</p>
+	<p><b>Cost</b>: 600 Mana - <b>Duration</b>: 18,000 seconds (5 hours)</p>
+	<p><b>Effect</b>: Increase production of all buildings by a cumulative 20% per second. Each spell tier adds 10 minutes of headstart time.</p>
 	<br/>
 	<p><b>Spell Trophy & Upgrade</b></p>
 	<p><b><img src="/realm/Factions/picks/FacelessOvermindSpellUpgrade.png" align="middle"> Faceless Overmind</b></p>
 	<p><b>Requirement</b>: Affiliate with the Faceless 5 times in a row.</p>
-	<p><b>Effect</b>: Increases Brainwave ticks to 3% per second.</p>
-	<p><b>Upgrade Cost</b>: 10 Dd (1e40), A1+ Free</p>
+	<p><b>Effect</b>: Increase the Brainwave multiplier by 50%, raising its base gain to 30% per second.</p>
+	<p><b>Upgrade Cost</b>: 100 Dc (1e35), A1+ Free</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/ProofofNeutralityFactionUpgrade.png" alt="ProofofNeutrality" align="middle"> Proof Of Neutrality</b></p>
 	<p><b>Type</b>: Alignment Upgrade</p>
@@ -53,17 +54,17 @@
 	<p><b><img src="/realm/Factions/picks/FacelessUpgrade1.png" align="middle"> Territorial Expanse</b></p>
 	<p><b>Cost</b>: 500 Qi (5e20)</p>
 	<p><b>Effect</b>: Increase the production of Citadels / Necropolises / Labyrinths (based on your Alignment) based on the amount of assistants you own.</p>
-	<p><b>Formula</b>: (50 * ln(1 + x) ^ 2.5)%, where x is the amount of assistants you own.</p>
+	<p><b>Formula</b>: (50 * ln(1 + x) ^ 3)%, where x is the amount of assistants you own.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/FacelessUpgrade2.png" align="middle"> Evolutive Mutation</b></p>
 	<p><b>Cost</b>: 5 Sx (5e21)</p>
 	<p><b>Effect</b>: Increase Faction Coin find chance based on the highest amount of Labyrinths you built in this Reincarnation.</p>
-	<p><b>Formula</b>: +floor(3 * x ^ 0.6)%, where x is the highest amount of Labyrinths you built in this Reincarnation.</p>
+	<p><b>Formula</b>: +(12 + 3 * x ^ 0.6)%, where x is the highest amount of Labyrinths you built in this Reincarnation.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/FacelessUpgrade3.png" align="middle"> Deep Memory</b></p>
 	<p><b>Cost</b>: 50 Sx (5e22)</p>
 	<p><b>Effect</b>: Multiplicatively increase assistants based on the time spent on your longest game session in this Reincarnation.</p>
-	<p><b>Formula</b>: (0.3 * x ^ 0.7)%, where x is your Playtime (Longest Session) stat this Reincarnation.</p>
+	<p><b>Formula</b>: (0.6 * x ^ 0.6)%, where x is the greater of your longest session this Reincarnation and your longest offline duration.</p>
 	<hr>
 	<p><b>Tier 2 Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/FacelessFriendshipPact.png" align="middle"> Faceless Friendship Pact</b></p>
@@ -73,17 +74,17 @@
 	<p><b><img src="/realm/Factions/picks/FacelessUpgrade4.png" align="middle"> Gold Synthesis</b></p>
 	<p><b>Cost</b>: 5 Sp (5e24)</p>
 	<p><b>Effect</b>: Increase the production of Neutral buildings based on the amount of coins owned.</p>
-	<p><b>Formula</b>: (0.2 * ln(1 + x) ^ 2)%, where x is the amount of coins owned.</p>
+	<p><b>Formula</b>: (0.5 * ln(1 + x) ^ 1.7)%, where x is the amount of coins owned.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/FacelessUpgrade5.png" align="middle"> Mitosis</b></p>
 	<p><b>Cost</b>: 50 Sp (5e25)</p>
 	<p><b>Effect</b>: Gain additional Faceless Assistants based on the amount of buildings you own.</p>
-	<p><b>Formula</b>: +floor(0.5 * x ^ 0.5), where x is the amount of buildings you own.</p>
+	<p><b>Formula</b>: +(x ^ 0.6), where x is the amount of buildings you own.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/FacelessUpgrade6.png" align="middle"> Overgrowth</b></p>
 	<p><b>Cost</b>: 500 Sp (5e26)</p>
 	<p><b>Effect</b>: Increases production based on the highest amount of buildings purchased in a single game in this Reincarnation.</p>
-	<p><b>Formula</b>: (0.8 * x ^ 0.8)%, where x is the highest amount of buildings purchased in a single game in this Reincarnation.</p>
+	<p><b>Formula</b>: (2 * x ^ 0.75)%, where x is the highest amount of buildings purchased in a single game in this Reincarnation.</p>
 	<hr>
 	<p><b>Tier 3 Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/FacelessAlliance.png" align="middle"> Faceless Alliance</b></p>
@@ -93,12 +94,12 @@
 	<p><b><img src="/realm/Factions/picks/FacelessUpgrade7.png" align="middle"> Magical Treasure</b></p>
 	<p><b>Cost</b>: 50 Oc (5e28)</p>
 	<p><b>Effect</b>: Increase mana regeneration based on the amount of assistants you own.</p>
-	<p><b>Formula</b>: +(2.5 * x ^ 0.5), where x is the amount of assistants you own.</p>
+	<p><b>Formula</b>: +(3 * x ^ 0.4), where x is the amount of assistants you own.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/FacelessUpgrade8.png" align="middle"> Abominations</b></p>
 	<p><b>Cost</b>: 500 Oc (5e29)</p>
 	<p><b>Effect</b>: Increase the production of assistants based on the amount of active spells.</p>
-	<p><b>Formula</b>: (20 * x ^ 0.9)%, where x is the amount of active spells.</p>
+	<p><b>Formula</b>: (20 * x ^ 0.8)%, where x is the amount of active spells.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/FacelessUpgrade9.png" align="middle"> Hive Mind</b></p>
 	<p><b>Cost</b>: 5 No (5e30)</p>
@@ -107,19 +108,19 @@
 	<hr>
 	<p><b><img src="/realm/Factions/picks/FacelessHeritage.png" alt="Faceless Heritage" align="middle"> Faceless Heritage</b></p>
 	<p><b>Requirement</b>: Faceless Champion Trophy</p>
-	<p><b>Cost</b>: 25,000 Fairy Coins, 25,000 Undead Coins</p>
+	<p><b>Cost</b>: 15,000 Fairy Coins, 15,000 Undead Coins</p>
 	<p><b>Effect</b>: Your production is increased based on the highest amount of buildings purchased in a single game.</p>
 	<p><b>Formula</b>: (0.25 * x ^ 0.75)%, where x is your Buildings Owned (Max) stat.</p>
 	<hr>
 	<p><b>Faceless Research Requirement</b></p>
 	<p><b><img src="/realm/Factions/picks/SunkenCitiesQuestFactionUpgrade.png" align="middle"> Sunken Cities Quest</b></p>
 	<p><b>Description</b>: C-uh'e sll'ha hrii nog nwyar. Kn'a wgah'n ph'sgn'wahl. (Those unpronounceable words with no apparent meaning have spoken directly to your mind: you have to build enough Labyrinths.</p>
-	<p><b>Requirement</b>: R22, 2000 Labyrinths</p>
+	<p><b>Requirement</b>: R24, 2,000 Labyrinths</p>
 	<p><b>Cost</b>: 10 Dtg (1e100)</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/SunkenCityFactionUpgrade.png" align="middle"> Sunken Cities</b></p>
 	<p>Upgrade Labyrinths to Sunken Cities, boosting their production based on time spent in your longest game session and unlocking more unique perks for the building.</p>
-	<p><b>Formula</b>: (75 * (x / 3600) ^ 0.9)%, where x is is your Playtime (Longest Session) stat.</p>
+	<p><b>Formula</b>: (75 + 7.5 * x ^ 0.75)%, where x is the greater of your longest Era in this Reincarnation and your longest offline duration.</p>
 	<p><b>Effect</b>: Also allows access to the Research Facilities (after completing Secrets of the Ancients).</p>
 	<p><b>Cost</b>: 10 Ttg (1e103)</p>
 	<br/>
@@ -145,7 +146,7 @@
 	<p><b>Unique Building</b></p>
 	<p><b><img src="/realm/Factions/picks/FacelessUniqueBuilding.png" align="middle"></b></p>
 	<p>Upgraded from Labyrinths</p>
-	<p>At R22, Faceless' Labyrinths can be upgraded to a Unique Building: Sunken Cities, which is required for some challenges and research quests.</p>
+	<p>At R24, Faceless' Labyrinths can be upgraded to a Unique Building: Sunken Cities, which is required for some challenges and research quests.</p>
 	<hr>
 	<p><b>Ascension 2 - R100+</b></p>
 	<p><b>Additional Alignment</b>: Chaos</p>
@@ -165,7 +166,7 @@
 	<p><b><img src="/realm/Factions/picks/ForbiddenLibraryUniqueBuilding.png" alt="Forbidden Library" align="middle"></b></p>
 	<p>Upgrade Monasteries to Forbidden Libraries, boosting production based on spells cast and unlocking more unique perks for the building.</p>
 	<p><b>Effect</b>: Increase production based on spells cast.</p>
-	<p><b>Formula</b>: (18 * (ln(1 + x) / ln(x % 10 + 2)) ^ 1.8)%, where x is spells cast.</p>
+	<p><b>Formula</b>: (30 * (ln(1 + x) / ln(x % 10 + 2)) ^ 3)%, where x is spells cast.</p>
 	<p><b>Effect</b>: Grants access to Faction Union.</p>
 	<hr>
 	<p><b>Tier 4 Upgrades</b></p>
@@ -173,32 +174,32 @@
 	<p><b>Requirement</b>: Forbidden Library Unique Building</p>
 	<p><b>Cost</b>: 1 Qi (1e18) Fairy and Undead Coins</p>
 	<p><b>Effect</b>: Grants access to Union Upgrades.</p>
-	<p><b>Effect (R111+)</b>: Increase assistants additively based on amount of time spent all time as a random faction. Updates every 3 minutes.</p>
-	<p><b>Formula</b>: +(65 * x ^ 0.5), where x is time spent all time with a given faction.</p>
+	<p><b>Effect (R105+)</b>: Multiplicatively increase assistants based on total time spent as a random faction. Updates every 3 minutes.</p>
+	<p><b>Formula</b>: (40 + 0.4 * x ^ 0.4)%, where x is total time spent with the selected faction.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/FacelessUpgrade10.png" alt="Primal Knowledge" align="middle"> Primal Knowledge</b></p>
 	<p><b>Requirement</b>: Faceless Union</p>
 	<p><b>Cost</b>: 1 Nod (1e60) Emerald Coins</p>
 	<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on the highest amount of Forbidden Libraries you built in this Reincarnation. Grows over time and resets every 15 minutes.</p>
-	<p><b>Formula</b>: ((t % 900) / 75 * x ^ 0.4)%, where t is time spent this Era, x is the highest amount of Forbidden Libraries you built in this Reincarnation.</p>
+	<p><b>Formula</b>: ((t % 900) / 60 * x ^ 0.6)%, where t is time spent this Era, x is the highest amount of Forbidden Libraries you built in this Reincarnation.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/FacelessUpgrade11.png" alt="Forbidden Language" align="middle"> Forbidden Language</b></p>
 	<p><b>Requirement</b>: Faceless Union</p>
 	<p><b>Cost</b>: 100 Qivg (1e80) Emerald Coins</p>
-	<p><b>Effect</b>: Increase spell durations based on the amount of Reincarnations made.</p>
-	<p><b>Formula</b>: (0.8 * x ^ 0.8)%, where x is the number of times you have reincarnated.</p>
+	<p><b>Effect</b>: Increase spell durations based on Brainwave casts this Reincarnation.</p>
+	<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is Brainwave casts this Reincarnation.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/FacelessUpgrade12.png" alt="Dimension Door" align="middle"> Dimension Door</b></p>
 	<p><b>Requirement</b>: Faceless Union</p>
 	<p><b>Cost</b>: 100 Tg (1e95) Emerald Coins</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on the highest amount of Maximum Mana you had in this Reincarnation.</p>
-	<p><b>Formula</b>: (2 * ln(1 + x) ^ 2)%, where x is highest Maximum Mana this Reincarnation.</p>
+	<p><b>Formula</b>: (2.25 * ln(1 + x) ^ 2.25)%, where x is highest Maximum Mana this Reincarnation.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/AdvancedFacelessHeritage.png" align="middle"> Advanced Faceless Heritage</b></p>
-	<p><b>Requirement</b>: Faceless Master trophy and 6 hours activity time (This Era) of Brainwave.</p>
+	<p><b>Requirement</b>: Faceless Master trophy and 1 hour of Brainwave activity time in this Era.</p>
 	<p><b>Cost</b>: 1 Sp (1e24) Fairy and Undead Coins</p>
 	<p><b>Effect</b>: Gain assistants based on the amount of Unique Buildings owned (additive).</p>
-	<p><b>Formula</b>: +(2.5 * x ^ 0.8), where x is Unique Buildings owned.</p>
+	<p><b>Formula</b>: +(2.25 * x ^ 0.8), where x is Unique Buildings owned.</p>
 	<p><b>Note</b>: When using their lineage, Advanced Heritage powers are multiplied by the level of the lineage.</p>
-	<p><b>Formula</b>: *(1 + 0.3 * level)</p>
+	<p><b>Formula</b>: *(1 + 0.2 * level)</p>
 <?php include "../scripts/footer.html"; ?>
