@@ -22,12 +22,12 @@
 	<p>The RP upgrade cost increases according to the following formulas (x is the number of to be invested RP).</p>
 	<p><b>A0 (1 - 780)</b>:<br> Coin cost: (1e123 * 1.5 ^ x)<br> Faction Coins: ((x + 1) ^ 3)</p>
 	<p><b>A1 (781 - 5000)</b>:<br> Coin cost: (1e42 * 1.147 ^ (x - 780))<br> Faction Coins: ((x + 1) ^ 3)</p>
-	<p><b>A3 (5001 - 7000)</b>:<br> Coin cost: (1e126 * 1.75 ^ (0.1 * (x - 5000)))<br> Faction Coins: ((x + 1) ^ 6.5)</p>
+	<p><b>A3 (5001 - 7000)</b>:<br> Coin cost: Free (the source charges no coins below 10,000 RP, while A3 caps at 7,000)<br> Faction Coins: ((x + 1) ^ 6.5)</p>
 	<p><b>A4 (7001 - 14000)</b>: Research Points below 10,000 have no coin cost. From 10,000 onward, the coin cost is (1.44 ^ (0.24 * (x - 10000))). Faction Coin cost is ((x + 1) ^ 6.5) below 10,000 and (1e-30 * 1.033 ^ (0.33 * x)) from 10,000 onward.</p>
 	<p><b><center>Research Slots/Budget</center></b></p>
 	<p><b>R16-R99 (A0, A1)</b>: You get a limited number of Research slots for each facility, depending on what upgrades you have you can have up to 6 slots for each facility.</p>
 	<p><b>R100-R159 (A2)</b>: You get 1 Research slot for each facility, and A0 and A1 research slot upgrades are removed, however, faction researches are free and take no slots.</p>
-	<p><b>R160-R219 (A3)</b>: Research slots change to a budget based on each research's point value. R170 power grants +3000, while each second Facility Upgrade grants a variable permanent amount based on the associated alignment times (see below). The budget can be further increased with Archon Bloodline.</p>
+	<p><b>R160-R219 (A3)</b>: Research slots change to a budget based on each research's point value. R170 Power grants 150 times Ascension plus 3.5 times (R - 159), which is +488.5 at R170 in A3. Each second Facility Upgrade grants a variable permanent amount based on associated alignment times (see below). The budget can be further increased with Archon Bloodline.</p>
 	<p><b>R220+ (A4)</b>: The A3 budget system remains, and each Trade Treaty, Friendship Pact, Alliance, and Union grants another +2000, for +8000 from faction affiliation upgrades.</p>
 	<p>Upon abdication, your purchased Research Points will persist, but your Research Upgrade Slots/Budget will reset so you can make different research builds each run.</p>
 	<div class="shlisting">
@@ -65,24 +65,24 @@
 				<p><b>Cost</b>: 250 Noqag (2.5e152)</p>
 				<p><b>Effect</b>: Increase Warfare upgrade slot by 1</p>
 				<br/>
-				<p><img src="/realm/Factions/picks/AncientDeviceSlotUpgrade.png" alt="Warfare" align="middle"> <b>Artifact-Ancient Device</b> (R24+)</p>
+				<p><img src="/realm/Factions/picks/AncientDeviceSlotUpgrade.png" alt="Research" align="middle"> <b>Ancient Device Power</b> (R24+)</p>
 				<p><b>Requirement</b>: Find the Ancient Device (Play a Neutral Faction, 2000+ Excavations, Unique Building.</p>
 				<p><b>Chance</b>: 0.2% per excavation</p>
 				<p><b>Cost</b>: 100 QiSxg (1e200)</p>
-				<p><b>Effect</b>: Provides 2 additional slots for Neutral researches(1 for each related Neutral Faction Facility you are playing).</p>
+				<p><b>Effect</b>: Provides 1 additional upgrade slot for each Research branch your faction has affinity to (2 slots for a Neutral faction).</p>
 				<p><b>Note</b>: Needs purchased for each Neutral research run.</p>
 				<br/>
-				<p><img src="/realm/Factions/picks/HornoftheKingsSlotUpgrade.png" alt="Warfare" align="middle"> <b>Artifact-Horn of the Kings</b> (R32+)</p>
+				<p><img src="/realm/Factions/picks/HornoftheKingsSlotUpgrade.png" alt="Craftsmanship" align="middle"> <b>Legacy of the Dwarven Kings</b> (R32+)</p>
 				<p><b>Requirement</b>: Find the Horn of the Kings (Have Dwarven Forges, 3250+ Excavations)</p>
 				<p><b>Chance</b>: 0.5% per Excavation</p>
-				<p><b>Cost</b>: 10 SxSpg (1e232), 10m Dwarven Coins</p>
+				<p><b>Cost</b>: 10 SxSpg (1e232), 100 M (1e8) Dwarven Coins</p>
 				<p><b>Effect</b>: Provides 3 additional slots for Dwarven research (+2 Craftsman slots, +1 to the Good faction's facility you are playing).</p>
 				<p><b>Note</b>: Needs purchased for each Prestige research run.</p>
 				<br/>
-				<p><img src="/realm/Factions/picks/FlameofBondelnarSlotUpgrade.png" alt="Warfare" align="middle"> <b>Artifact-Flame of Bondelnar</b> (R32+)</p>
+				<p><img src="/realm/Factions/picks/FlameofBondelnarSlotUpgrade.png" alt="Warfare" align="middle"> <b>Dark Light of Bondelnar</b> (R32+)</p>
 				<p><b>Requirement</b>: Find the Flame of Bondelnar (have Spider Sanctuaries, 3,000+ Excavations)</p>
 				<p><b>Chance</b>: 0.5% per Excavation</p>
-				<p><b>Cost</b>: 10 SxSpg (1e232), 10m Drow Coins</p>
+				<p><b>Cost</b>: 10 SxSpg (1e232), 100 M (1e8) Drow Coins</p>
 				<p><b>Effect</b>: Provides 3 additional slots for Drow research: (+2 Warfare slots, +1 to the Evil faction's facility you are playing).</p>
 				<p><b>Note</b>: Needs purchased for each Prestige research run.</p>
 				<br/>

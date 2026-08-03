@@ -5,11 +5,12 @@
 <head>
     <?php include "../scripts/header.html"; ?>
         <h6><img src="/realm/Factions/picks/ResearchTopPage.png"></h6>
-        <p><b><a href="/realm/Spellcraft" research="Spellcraft">Spellcraft</a></b></p>
-        <p><b><a href="/realm/Craftsmanship" research="Craftsmanship">Craftsmanship</a></b></p>
-        <p><b><a href="/realm/Divine" research="Divine">Divine</a></b></p>
-        <p><b><a href="/realm/Economics" research="Economics">Economics</a></b></p>
-        <p><b><a href="/realm/Alchemy" research="Alchemy">Alchemy</a></b></p>
-        <p><b><a href="/realm/Warfare" research="Warfare">Warfare</a></b></p>
-        <p><b><a href="/realm/Forbidden" research="Forbidden">Forbidden</a></b></p>
+        <p>Research Facilities hold upgrades for seven branches. Use the <a href="/realm/ResearchList/"><b>Research List</b></a> for complete branch entries or the <a href="/realm/Researchtree/"><b>Research Tree</b></a> for the interactive layout.</p>
+        <p><b><a href="/realm/ResearchList/">Spellcraft</a></b>: Fairy, Faceless, and Drow affinity.</p>
+        <p><b><a href="/realm/ResearchList/">Craftsmanship</a></b>: Elven, Titan, and Dwarven affinity.</p>
+        <p><b><a href="/realm/ResearchList/">Divine</a></b>: Angel, Faceless, and Dwarven affinity.</p>
+        <p><b><a href="/realm/ResearchList/">Economics</a></b>: Goblin, Druid, and Dwarven affinity.</p>
+        <p><b><a href="/realm/ResearchList/">Alchemy</a></b>: Undead, Druid, and Drow affinity.</p>
+        <p><b><a href="/realm/ResearchList/">Warfare</a></b>: Demon, Titan, and Drow affinity.</p>
+        <p><b><a href="/realm/ResearchList/">Forbidden</a></b>: Mercenary affinity; available after unlocking the Apeiron upgrade.</p>
         <?php include "../scripts/footer.html"; ?>

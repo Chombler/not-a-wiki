@@ -705,6 +705,7 @@
 				<p><b>Cost</b>: 4.151e144</p>
 				<p><b>Effect</b>: Increase chance to find faction coins based on the amount of total research points bought.</p>
 				<p><b>Formula</b>: +(5 * x ^ 0.75), where x is Research points.</p>
+				<p><b>Effect</b>: Also multiplicatively increase Faction Coin find chance by 50%.</p>
 				<hr>
 				<p><b>D175</b> - For Angel</p>
 				<p><b>Research Name</b>: Resurrection</p>
@@ -815,7 +816,7 @@
 				<p><b>Hint</b>: You should try everything at least once.</p>
 				<p><b>Requirement</b>: 1,800 seconds spent in each Good, Evil, and Neutral alignment in this Reincarnation</p>
 				<p><b>Cost</b>: 2.861e188</p>
-				<p><b>Effect</b>: Increase the production of all buildings based on the difference in time spent with the three alignments. A smaller difference produces a higher bonus.</p>
+				<p><b>Effect</b>: Increase the production of Non-Unique buildings based on time spent in your least-used alignment.</p>
 				<p><b>Formula</b>: (80 + 40 * x ^ 0.8)%, where x is time spent in your least-used alignment.</p>
 				<hr>
 				<p><b>D625</b> - For Good</p>
@@ -1103,7 +1104,7 @@
 				<p><b>Requirement</b>: Research Acquisition (E200) & Forgery (E225)</p>
 				<p><b>Cost</b>: 8.341e170</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on the amount of artifacts you found.</p>
-				<p><b>Formula</b>: round(50 * x ^ 1.1)%, where x is the amount of artifacts found.</p>
+				<p><b>Formula</b>: (50 * x ^ 1.1)%, where x is the amount of artifacts found.</p>
 				<hr>
 				<p><b>E350</b> - For Faceless</p>
 				<p><b>Research Name</b>: Repurpose</p>
@@ -1162,7 +1163,7 @@
 				<p><b>Hint</b>: Massive numismatics.</p>
 				<p><b>Requirement</b>: 1 T (1e12) Faction coins found this Era</p>
 				<p><b>Cost</b>: 1.051e67</p>
-				<p><b>Effect</b>: Removes 1 Ascension penalty for Royal Exchanges.</p>
+				<p><b>Effect</b>: Increase the Royal Market Ascension multiplier by 0.7.</p>
 				<hr>
 				<p><b>E1325</b> - For All Factions</p>
 				<p><b>Research Name</b>: Intimidation</p>
@@ -1856,7 +1857,7 @@
 				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R181+, Forgotten Relic, Battlefield artifact and upgrade, and 1e20 Max Mana.</p>
 				<p><b>Effect</b>: Time spent with Prestige Counts 500% more.</p>
-				<p><b>Effect</b>: Time spent with Astral factions Counts 1000% more.</p>
+				<p><b>Effect</b>: Time spent with Astral factions or Mercenaries counts 1000% more.</p>
 				<p><b>Effect</b>: While affiliated with your least-used faction, increase Faction Coin find chance by 500%.</p>
 				<hr>
 				<p><b>W10875</b> - For All Factions</p>

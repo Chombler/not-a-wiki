@@ -54,7 +54,7 @@
 	<hr>
 	<center><b>When using Mercenary</b></center>
 	<p><b>Note</b>: Astral Faction Upgrades can only be purchased with Mercenary Upgrade 4, 8, 12 and 16.</p>
-	<p><b>Note</b>: Elite spells can only be bought from the Mercenary Sorcery contract.</p>
+	<p><b>Note</b>: Astral spells can only be bought from the Mercenary Sorcery contract.</p>
 	<hr>
 	<p><b>Tier 1 Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/ArchonTradeTreaty.png" align="middle"> Archon Trade Treaty</b></p>
@@ -70,10 +70,9 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/ArchonUpgrade2.png" align="middle"> Energy Recharge</b></p>
 	<p><b>Cost</b>: 1e155 Coins</p>
-	<p><b>Effect</b>: Maximum Mana counts more based on the amount of time spent as Order in this Reincarnation.</p>
+	<p><b>Effect</b>: Multiplicatively increase Maximum Mana based on time spent as Order in this Reincarnation.</p>
 	<p><b>Formula</b>: (0.25 * x ^ 0.5)%, where x is time spent as Order this Reincarnation</p>
-	<p><b>Effect</b>: Also increase Precognition's base and scaling to (1.3 * ln(1 + x) ^ 1.25)%, and change its starting duration to 1 minute.</p>
-	<p><b>Precognition Formula</b>: (1.25 * ln(1 + x) ^ 1.5)%, where x is Mana produced in this Era.</p>
+	<p><b>Effect</b>: Also change Precognition's production formula to (1.3 * ln(1 + x) ^ 1.25)% and its starting duration to 1 minute, where x is Mana produced in this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/ArchonUpgrade3.png" align="middle"> Cosmic Resonance</b></p>
 	<p><b>Cost</b>: 1e157 Coins</p>

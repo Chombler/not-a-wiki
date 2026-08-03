@@ -66,7 +66,7 @@
 	<hr>
 	<center><b>When using Mercenary</b></center>
 	<p><b>Note</b>: Astral Faction Upgrades can only be purchased with Mercenary Upgrade 4, 8, 12 and 16.</p>
-	<p><b>Note</b>: Elite spells can only be bought from the Mercenary Sorcery contract.</p>
+	<p><b>Note</b>: Astral spells can only be bought from the Mercenary Sorcery contract.</p>
 	<hr>
 	<p><b>Tier 1 Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/DjinnTradeTreaty.png" align="middle"> Djinn Trade Treaty</b></p>

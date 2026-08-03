@@ -151,13 +151,13 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/UndeadUpgrade11.png" alt="Eternal Servitude" align="middle"> Eternal Servitude</b></p>
 	<p><b>Requirement</b>: Undead Union</p>
-	<p><b>Cost</b>: 100 Qivg (1e80) Emerald Coins</p>
+	<p><b>Cost</b>: 1 Qavg (1e75) Emerald Coins</p>
 	<p><b>Effect</b>: Increase the production of Unique buildings based on time spent in this Era.</p>
 	<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/UndeadUpgrade12.png" alt="Zombie Apocalypse" align="middle"> Zombie Apocalypse</b></p>
 	<p><b>Requirement</b>: Undead Union</p>
-	<p><b>Cost</b>: 100 Tg (1e95) Emerald Coins</p>
+	<p><b>Cost</b>: 1 Novg (1e90) Emerald Coins</p>
 	<p><b>Effect</b>: Increase Offline production based on the duration of your longest spell.</p>
 	<p><b>Formula</b>: (7 * x ^ 0.7)%, where x is the longest spell duration.</p>
 	<hr>

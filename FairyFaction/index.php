@@ -18,7 +18,7 @@
 	<br/>
 	<p><b>Spell Trophy & Upgrade</b></p>
 	<p><b><img src="/realm/Factions/picks/FairyChoirSpellUpgrade.png" align="middle"> Fairy Choir</b></p>
-	<p><b>Requirement</b>: Cast Fairy Chanting while having 45 or more assistants.</p>
+	<p><b>Requirement</b>: Cast Fairy Chanting while having 50 or more assistants.</p>
 	<p><b>Cost</b>: 1 M (1e6), A1+ Free</p>
 	<p><b>Effect</b>: Triples your assistants while Fairy Chanting is active.</p>
 	<hr>
@@ -147,13 +147,13 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/FairyUpgrade11.png" alt="Pheromones" align="middle"> Pheromones</b></p>
 	<p><b>Requirement</b>: Fairies Union</p>
-	<p><b>Cost</b>: 100 Qivg (1e80) Emerald Coins</p>
+	<p><b>Cost</b>: 1 Qavg (1e75) Emerald Coins</p>
 	<p><b>Effect</b>: Multiplicatively increase assistants based on time spent as Chaos in this Reincarnation.</p>
 	<p><b>Formula</b>: (0.6 * x ^ 0.6)%, where x is time spent as Chaos in this Reincarnation.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/FairyUpgrade12.png" alt="Dream Catchers" align="middle"> Dream Catchers</b></p>
 	<p><b>Requirement</b>: Fairies Union</p>
-	<p><b>Cost</b>: 100 Tg (1e95) Emerald Coins</p>
+	<p><b>Cost</b>: 1 Novg (1e90) Emerald Coins</p>
 	<p><b>Effect</b>: Multiplicatively increase Mana Regeneration based on the amount of Chaos spells cast this Reincarnation.</p>
 	<p><b>Formula</b>: (0.01 * ln(1 + x) ^ 6)%, where x is Chaos spells cast in this Reincarnation.</p>
 	<hr>

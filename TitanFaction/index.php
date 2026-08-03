@@ -188,13 +188,13 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/TitanUpgrade11.png" alt="Titanic Authority" align="middle"> Titanic Authority</b></p>
 	<p><b>Requirement</b>: Titan Union</p>
-	<p><b>Cost</b>: 100 Qivg (1e80) Emerald Coins</p>
+	<p><b>Cost</b>: 1 Qavg (1e75) Emerald Coins</p>
 	<p><b>Effect</b>: Increase the production of Unique Buildings based on the amount of Royal Exchanges you made.</p>
 	<p><b>Formula</b>: (0.6 * x ^ 0.6)%, where x is amount of Royal Exchanges bought.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/TitanUpgrade12.png" alt="Colossus Kingdom" align="middle"> Colossus Kingdom</b></p>
 	<p><b>Requirement</b>: Titan Union</p>
-	<p><b>Cost</b>: 100 Tg (1e95) Emerald Coins</p>
+	<p><b>Cost</b>: 1 Novg (1e90) Emerald Coins</p>
 	<p><b>Effect</b>: Multiplicatively increase assistants based on time spent as Order in this Reincarnation.</p>
 	<p><b>Formula</b>: (0.6 * x ^ 0.6)%, where x is time spent as Order in this Reincarnation.</p>
 	<hr>

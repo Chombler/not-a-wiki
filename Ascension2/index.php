@@ -14,7 +14,7 @@
 	<h6>New Alignments</h6>
 	<p><b><img src="/realm/Factions/picks/ProofofOrder.png" alt="Proof of Order" align="middle"> Proof of Order</b></p>
 	<p>Determine your rulership in an efficient and stable fashion, making the best out of well-planned strategies to let your realm grow even further.</p>
-	<p>Choosing this alignment will remove one Ascension penalties on all alignment spells and let you affiliate with the following factions.</p>
+	<p>Choosing this alignment removes one Ascension penalty from all alignment spells (Holy Light, Blood Frenzy, and Gem Grinder) and lets you affiliate with the following factions.</p>
 	<p><a href="/realm/AngelFaction"><b>Angel</b></a> (Good), <a href="/realm/UndeadFaction"><b>Undead</b></a> (Evil) or <a href="/realm/TitanFaction"><b>Titan</b></a> (Neutral)</p>
 	<p><b>Cost</b>: 1 Qa (1e15) Emerald Coins</p>
 	<br/>
@@ -23,7 +23,7 @@
 	<hr>
 	<p><b><img src="/realm/Factions/picks/ProofofChaos.png" alt="Proof of Chaos" align="middle"> Proof of Chaos</b></p>
 	<p>Resign your will to eternal entropy that forms and maintains the world itself, prospering in the glory of extreme bursts of random fortune.</p>
-	<p>Choosing this alignment will remove one Ascension penalties on all alignment spells and let you affiliate with the following factions.</p>
+	<p>Choosing this alignment removes one Ascension penalty from all alignment spells (Holy Light, Blood Frenzy, and Gem Grinder) and lets you affiliate with the following factions.</p>
 	<p><a href="/realm/FairyFaction"><b>Fairy</b></a> (Good), <a href="/realm/DemonFaction"><b>Demon</b></a> (Evil) or <a href="/realm/FacelessFaction"><b>Faceless</b></a> (Neutral)</p>
 	<p><b>Cost</b>: 1 Qa (1e15) Emerald Coins</p>
 	<br/>
@@ -32,7 +32,7 @@
 	<hr>
 	<p><b><img src="/realm/Factions/picks/ProofofBalance.png" alt="Proof of Balance" align="middle"> Proof of Balance</b></p>
 	<p>Avoid fixating yourself to the rules while not falling to madness as well, Take advantage of everything you can gather and maximize your gains with any possible means.</p>
-	<p>Choosing this alignment will remove one Ascension penalties on all alignment spells and let you affiliate with the following factions.</p>
+	<p>Choosing this alignment removes one Ascension penalty from all alignment spells (Holy Light, Blood Frenzy, and Gem Grinder) and lets you affiliate with the following factions.</p>
 	<p><a href="/realm/ElfFaction"><b>Elven</b></a> (Good), <a href="/realm/GoblinFaction"><b>Goblins</b></a> (Evil) or <a href="/realm/DruidFaction"><b>Druid</b></a> (Neutral)</p>
 	<p><b>Cost</b>: 1 Qa (1e15) Emerald Coins</p>
 	<br/>

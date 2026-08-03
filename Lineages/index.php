@@ -658,7 +658,7 @@
 	<p><b>Requirement</b>: R178+, Reach Lineage Level 60</p>
 	<p><b>Effect</b>: Lineage levels count 100% more.</p>
 	<hr>
-	<p><b>Elite Lineages - R130+</b></p>
+	<p><b>Astral Lineages - R130+</b></p>
 	<br/>
 	<H6 id="Archon">Archon</h6>
 	<p><b><img src="/realm/Factions/picks/ArchonLineage.png" align="middle"> Archon Lineage</b></p>

@@ -101,9 +101,11 @@
 		<area href="#GodsHand" research="
 	<p><b><img src='/realm/Factions/picks/Godshand.png' alt='Good' align='middle'> God's Hand</b></p>
 	<p><b>Spell Type</b>: (Good/Order) Angel Faction Spell</p>
-	<p><b>Cost</b>: 900 Mana - <b>Duration</b>: 20 seconds</p>
+	<p><b>Cost</b>: 900 Mana - <b>Duration</b>: 10 seconds</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on your Mana Regeneration rate.</p>
 	<p><b>Formula</b>: (10 * ln(1 + 30 * x) ^ 4)%, where x is your Mana Regeneration.</p>
+	<p><b>Effect</b>: Duration increases based on time spent as Good in this Reincarnation.</p>
+	<p><b>Formula</b>: +floor((0.5 + 0.05 * T) * y ^ (0.5 + 0.05 * T)) seconds, where T is God's Hand's tier and y is time spent as Good in this Reincarnation.</p>
 		" coords="10,10,64,64" shape="rect">
 		<area href="#FairyChanting" research="
 	<p><b><img src='/realm/Factions/picks/FairyChanting.png' alt='Good' align='middle'> Fairy Chanting</b></p>
@@ -121,6 +123,7 @@
 		" coords="130,10,184,64" shape="rect">
 		<area href="#HolyLight" research="
 	<p><b><img src='/realm/Factions/picks/HolyLight.png' alt='Good' align='middle'> Holy Light</b></p>
+	<p><b>Spell Tier Effect</b>: Multiplicatively increase Mana Regeneration by 10% per spell tier.</p>
 	<p><b>Spell Type</b>: Good Alignment Spell</p>
 	<p><b>Cost</b>: 900 Mana - <b>Duration</b>: 10 seconds</p>
 	<p><b>Effect</b>: Increase clicking reward by 1750%.</p>
@@ -167,6 +170,7 @@
 		" coords="130,70,184,124" shape="rect">
 		<area href="#BloodFrenzy" research="
 	<p><b><img src='/realm/Factions/picks/BloodFrenzy.png' alt='Evil' align='middle'> Blood Frenzy</b></p>
+	<p><b>Spell Tier Effect</b>: Multiplicatively increase Non-Unique building production by 500% per spell tier.</p>
 	<p><b>Spell Type</b>: Evil Alignment Spell</p>
 	<p><b>Cost</b>: 600 Mana - <b>Duration</b>: 20 seconds</p>
 	<p><b>Effect</b>: Increases the production of all Evil buildings by 1500%.</p>
@@ -202,6 +206,7 @@
 		" coords="70,130,124,184" shape="rect">
 		<area href="#GrandBalance" research="
 	<p><b><img src='/realm/Factions/picks/GrandBalance.png' alt='Neutral' align='middle'> Grand Balance</b></p>
+	<p><b>Spell Tier Effect</b>: Multiplicatively increase Maximum Mana by 5% per spell tier.</p>
 	<p><b>Spell Type</b>: (Neutral/Balance) Druid Faction Spell</p>
 	<p><b>Cost</b>: 1,000 Mana - <b>Duration</b>: 20 seconds</p>
 	<p><b>Effect</b>: Increase the production of your least productive building based on the amount of the three most built ones.</p>
@@ -209,6 +214,7 @@
 		" coords="130,130,184,184" shape="rect">
 		<area href="#GemGrinder" research="
 	<p><b><img src='/realm/Factions/picks/GemGrinder.png' alt='Neutral' align='middle'> Gem Grinder</b></p>
+	<p><b>Spell Tier Effect</b>: Multiplicatively increase Royal Exchange bonus by 10% per spell tier.</p>
 	<p><b>Spell Type</b>: Neutral Alignment Spell</p>
 	<p><b>Cost</b>: 1,000 Mana - <b>Duration</b>: 20 seconds </p>
 	<p><b>Effect</b>: Multiplicatively increase production bonus from Gems based on the amount of times you reincarnated and ascended.</p>
@@ -248,9 +254,14 @@
 	<p><b>Production Formula</b>: (x ^ 0.825)%, where x is time spent in this Era.</p>
 	<p><b>Effect</b>: Also multiplicatively increase Mana Regeneration based on time spent in this Era.</p>
 	<p><b>Mana Regeneration Formula</b>: (3.75 * (x / 60) ^ 0.825 * (T + 1))%, where x is time spent in this Era and T is the zero-based spell tier.</p>
+	<p><b>Archon Union Effect</b>: Also multiplicatively increase Maximum Mana based on time spent in this Era.</p>
+	<p><b>Maximum Mana Formula</b>: (0.375 * (x / 60) ^ 0.825 * (T + 1))%, where x is time spent in this Era and T is the zero-based spell tier.</p>
+	<p><b>Spell Tier Effect</b>: Mana produced counts 10% more per spell tier.</p>
+	<p><b>An Untimely Death Effect</b>: Also increase Offline production using the Unique Building production formula.</p>
 		" coords="10,190,64,244" shape="rect">
 		<area href="#Maelstrom" research="
 	<p><b><img src='/realm/Factions/picks/Maelstrom.png' alt='Chaos' align='middle'> Maelstrom</b></p>
+	<p><b>Spell Tier Effect</b>: Affect one additional random building per spell tier.</p>
 	<p><b>Spell Type</b>: Chaos Alignment Spell (R100+)</p>
 	<p><b>Cost</b>: 700 Mana - <b>Duration</b>: 20 seconds</p>
 	<p><b>Effect</b>: Increase the production of two random buildings based on one of these stats, chosen at random: Mana produced this Era, trophies unlocked, Faction Coins found this Era, or assistants.</p>
@@ -261,6 +272,7 @@
 		" coords="70,190,124,244" shape="rect">
 		<area href="#AllCreation" research="
 	<p><b><img src='/realm/Factions/picks/AllCreation.png' alt='Balance' align='middle'> All Creation</b></p>
+	<p><b>Spell Tier Effect</b>: Multiplicatively increase production bonus from Gems by 10% per spell tier.</p>
 	<p><b>Spell Type</b>: Balance Alignment Spell (R100+)</p>
 	<p><b>Cost</b>: 1,100 Mana - <b>Duration</b>: 20 seconds</p>
 	<p><b>Effect</b>: Increase production of all buildings based on your Mana Regeneration rate.</p>
@@ -270,6 +282,7 @@
 		" coords="130,190,184,244" shape="rect">
 		<area href="#Precognition" research="
 	<p><b><img src='/realm/Factions/picks/Precognition.png' alt='Order' align='middle'> Precognition</b></p>
+	<p><b>Spell Tier Effect</b>: Research Points count 10% more per spell tier.</p>
 	<p><b>Spell Type</b>: (Order) Archon Faction Spell (R125+)</p>
 	<p><b>Cost</b>: 123,456 Mana - <b>Duration</b>: 20 seconds</p>
 	<p><b>Effect</b>: Buildings, Assistants, Royal Exchanges, Spells cast and Clicks count more based on Mana produced in this Era.</p>
@@ -301,6 +314,7 @@
 		" coords="70,250,124,304" shape="rect">
 		<area href="#InfiniteSpiral" research="
 	<p><b><img src='/realm/Factions/picks/InfiniteSpiral.png' alt='Balance' align='middle'> Infinite Spiral</b></p>
+	<p><b>Spell Tier Effect</b>: Multiplicatively increase Offline bonus by 10% per spell tier.</p>
 	<p><b>Spell Type</b>: (Balance) Makers Faction Spell (R125+)</p>
 	<p><b>Cost</b>: 505,000 mana - <b>Duration</b>: 10 seconds</p>
 	<p><b>Effect</b>: Temporarily increase assistants based on Maximum Mana (multiplicatively).</p>
@@ -333,6 +347,7 @@
 		" coords="220,220,274,274" shape="rect">
 		<area href="#CalltoArms" research="
 	<p><b><img src='/realm/Factions/picks/CalltoArms.png' alt='Order' align='middle'> Call to Arms</b></p>
+	<p><b>Spell Tier Effect</b>: Buildings count 5% more per spell tier.</p>
 	<p><b>Spell Type</b>: Default Spell </p>
 	<p><b>Cost</b>: 400 Mana - <b>Duration</b>: 20 seconds </p>
 	<p><b>Effect</b>: Increase the production of all buildings based on the amount of buildings you own.</p>
@@ -340,6 +355,7 @@
 		" coords="280,220,334,274" shape="rect">
 		<area href="#SpiritualSurge" research="
 	<p><b><img src='/realm/Factions/picks/Spiritualsurge.png' alt='Order' align='middle'> Spiritual Surge</b></p>
+	<p><b>Spell Tier Effect</b>: Reincarnations count 5% more per spell tier.</p>
 	<p><b>Spell Type</b>: Default Spell (R14+)</p>
 	<p><b>Cost</b>: 2,500 Mana - <b>Duration</b>: 20 seconds </p>
 	<p><b>Effect</b>: Increase the production of all buildings based on the amount of times you reincarnated and ascended.</p>
@@ -407,8 +423,8 @@
 		<area href="#LightningStrike" research="
 	<p><b><img src='/realm/Factions/picks/LightningStormSpellUpgrade.png' align='middle'> Lightning Storm</b></p>
 	<p><b>Requirement</b>: Cast Lightning Strike 100 times in a single Era.</p>
-	<p><b>Cost</b>: 10 Dd (1e40), A1+ Free</p>
-	<p><b>Effect</b>: Increase Lightning Strike's per-building multiplier by 50% (from 900% to 1,350% per Iron Stronghold).</p>
+	<p><b>Cost</b>: 100 Dc (1e35), A1+ Free</p>
+	<p><b>Effect</b>: Increase Lightning Strike's multiplier by 50%.</p>
 		" coords="10,130,64,184" shape="rect">
 		<area href="#GrandBalance" research="
 	<p><b><img src='/realm/Factions/picks/HallsofBalanceSpellUpgrade.png' align='middle'> Halls of Balance</b></p>
@@ -419,13 +435,13 @@
 		<area href="#Brainwave" research="
 	<p><b><img src='/realm/Factions/picks/FacelessOvermindSpellUpgrade.png' align='middle'> Faceless Overmind</b></p>
 	<p><b>Requirement</b>: Affiliate with the Faceless 5 times in a row.</p>
-	<p><b>Cost</b>: 10 Dd (1e40), A1+ Free</p>
+	<p><b>Cost</b>: 100 Dc (1e35), A1+ Free</p>
 	<p><b>Effect</b>: Increases Brainwave ticks from 20% to 30% per second.</p>
 		" coords="130,130,184,184" shape="rect">
 		<area href="#DragonsBreath" research="
 	<p><b><img src='/realm/Factions/picks/DragonsRoarSpellUpgrade.png' align='middle'> Dragon's Roar</b></p>
 	<p><b>Requirement</b>: Cast Dragon's Breath while having at least 5 other active spells.</p>
-	<p><b>Cost</b>: 10 Dd (1e40), A2+ Free</p>
+	<p><b>Cost</b>: 1 Qad (1e45), A2+ Free</p>
 	<p><b>Effect</b>: Dragon's Breath multiplicatively increases Faction Coin find chance based on its duration.</p>
 	<p><b>Formula</b>: (6 * x ^ 0.6)%, where x is its duration.</p>
 		" coords="190,130,244,184" shape="rect">
@@ -552,6 +568,7 @@
 	<p><b>Cost</b>: 1 Dc (1e33), A1+ Free</p>
 	<br>
 	<p id="CalltoArms"><b><img src="/realm/Factions/picks/CalltoArms.png" alt="All Factions" align="middle"> Call to Arms</b> (All Factions)</p>
+<p><b>Spell Tier Effect</b>: Buildings count 5% more per spell tier.</p>
 	<p><b>Cost</b>: 400 Mana - <b>Duration</b>: 20 seconds </p>
 	<p><b>Effect</b>: Increase the production of all buildings based on the amount of buildings you own.</p>
 	<p><b>Formula</b>: (25 + (0.3 * x) ^ 0.975)%, where x is your Buildings Owned (This Era) stat.</p>
@@ -586,6 +603,7 @@
 	</div>
 	<br>
 	<p id="SpiritualSurge"><b><img src="/realm/Factions/picks/Spiritualsurge.png" alt="All Factions" align="middle"> Spiritual Surge</b> (All Factions, R14+)</p>
+<p><b>Spell Tier Effect</b>: Reincarnations count 5% more per spell tier.</p>
 	<p><b>Cost</b>: 2500 Mana - <b>Duration</b>: 20 seconds </p>
 	<p><b>Effect</b>: Increase the production of all buildings based on the amount of times you reincarnated and ascended.</p>
 <p><b>Formula</b>: (2500 * R ^ 0.9)%, where R is the number of times you have reincarnated.</p>
@@ -724,6 +742,7 @@
 <hr>
 <b><center>Alignment Spells</center></b>
 <p id="HolyLight"><b><img src="/realm/Factions/picks/HolyLight.png" alt="Good" align="middle"> Holy Light</b> (Proof of Good Deed)</p>
+<p><b>Spell Tier Effect</b>: Multiplicatively increase Mana Regeneration by 10% per spell tier.</p>
 <p><b>Cost</b>: 900 Mana - <b>Duration</b>: 10 seconds</p>
 <p><b>Effect</b>: Increase clicking reward by 1750%</p>
 <div class="shlisting">
@@ -744,6 +763,7 @@
 </div>
 <br>
 <p id="BloodFrenzy"><b><img src="/realm/Factions/picks/BloodFrenzy.png" alt="Evil" align="middle"> Blood Frenzy</b> (Proof of Evil Deed)</p>
+<p><b>Spell Tier Effect</b>: Multiplicatively increase Non-Unique building production by 500% per spell tier.</p>
 <p><b>Cost</b>: 600 Mana - <b>Duration</b>: 20 seconds </p>
 <p><b>Effect</b>: Increases the production of all Evil buildings by 1500%.</p>
 <div class="shlisting">
@@ -764,6 +784,7 @@
 </div>
 <br>
 <p id="GemGrinder"><b><img src="/realm/Factions/picks/GemGrinder.png" alt="Neutral" align="middle"> Gem Grinder</b> (Proof of Neutrality)</p>
+<p><b>Spell Tier Effect</b>: Multiplicatively increase Royal Exchange bonus by 10% per spell tier.</p>
 <p><b>Cost</b>: 1,000 Mana - <b>Duration</b>: 20 seconds </p>
 <p><b>Effect</b>: Increase production bonus from Gems</p>
 <p><b>Note</b>: Gem Grinder formula changed to work with Reincarnations and Ascensions.</p>
@@ -846,6 +867,8 @@
 <p><b>Cost</b>: 900 Mana - <b>Duration</b>: 10 seconds </p>
 <p><b>Effect</b>: Increase the production of all buildings based on your Mana Regeneration.</p>
 <p><b>Formula</b>: (10 * ln(1 + 30 * x) ^ 4)%, where x is your Mana Regeneration.</p>
+<p><b>Effect</b>: Duration increases based on time spent as Good in this Reincarnation.</p>
+<p><b>Formula</b>: +floor((0.5 + 0.05 * T) * y ^ (0.5 + 0.05 * T)) seconds, where T is God's Hand's tier and y is time spent as Good in this Reincarnation.</p>
 <p><b>Spell Trophy & Upgrade</b>: <b><img src="/realm/Factions/picks/GodsRestSpellUpgrade.png" align="middle"> God's Rest</b></p>
 <p><b>Requirement</b>: Cast God's Hand with at least 1,500 Maximum Mana and 75 Mana Regeneration.</p>
 <p><b>Effect</b>: Gives random Faction Coins based on your Faction Coin find chance for each other spell you cast while God's Hand is active.</p>
@@ -1021,8 +1044,8 @@
 <p><b>Formula</b>: (50 + 2 * ln(1 + x) ^ 1.5)%, where x is your current amount of gems.</p>
 <p><b>Spell Trophy & Upgrade</b>: <b><img src="/realm/Factions/picks/LightningStormSpellUpgrade.png" align="middle"> Lightning Storm</b></p>
 <p><b>Requirement</b>: Cast Lightning Strike 100 times in a single Era.</p>
-<p><b>Effect</b>: Increase Lightning Strike's per-building bonus from 900% to 1,350%.</p>
-<p><b>Cost</b>: 10 Dd (1e40), A1+ Free</p>
+<p><b>Effect</b>: Increase Lightning Strike's multiplier by 50%.</p>
+<p><b>Cost</b>: 100 Dc (1e35), A1+ Free</p>
 <p><b>Challenge Upgrade</b>: <b><img src="/realm/Factions/picks/ThunderstormChallengeReward.png" align="middle"> Thunderstorm</b> (R25+)</p>
 <p><b>Effect</b>: Increase Faction Coin find chance from Lightning Strike by 20% per building tier hit.</p>
 <p><b>Formula</b>: (20 * sum(T))%, where T is each building tier hit.</p>
@@ -1051,7 +1074,7 @@
 <p><b>Spell Trophy & Upgrade</b>: <b><img src="/realm/Factions/picks/FacelessOvermindSpellUpgrade.png" align="middle"> Faceless Overmind</b></p>
 <p><b>Requirement</b>: Affiliate with the Faceless 5 times in a row.</p>
 <p><b>Effect</b>: Increases Brainwave ticks from 20% to 30% per second.</p>
-<p><b>Cost</b>: 10 Dd (1e40), A1+ Free</p>
+<p><b>Cost</b>: 100 Dc (1e35), A1+ Free</p>
 <p><b>Challenge Upgrade</b>: <b><img src="/realm/Factions/picks/FocusedThoughtsChallengeReward.png" align="middle"> Focused Thoughts</b> (R25+)</p>
 <p><b>Effect</b>: Give Brainwave a 10-minute headstart, increasing based on its activity time in this Era.</p>
 <p><b>Formula</b>: 600 + 0.4 * x ^ 0.8 seconds, where x is Brainwave activity time in this Era.</p>
@@ -1076,6 +1099,7 @@
 </div>
 <br>
 <p id="GrandBalance"><b><img src="/realm/Factions/picks/GrandBalance.png" alt="Neutral" align="middle"> Grand Balance</b> (Druid)</p>
+<p><b>Spell Tier Effect</b>: Multiplicatively increase Maximum Mana by 5% per spell tier.</p>
 <p><b>Cost</b>: 1,000 Mana - <b>Duration</b>: 20 seconds</p>
 <p><b>Effect</b>: Increase the production of your least productive building based on the amount of the three most built ones.</p>
 <p><b>Formula</b>: (1 + round(25 * (x * y * z / (A + 3) ^ 6) ^ 0.9))%, where x, y and z are the three highest building counts and A is Ascension.</p>
@@ -1132,7 +1156,7 @@
 <p><b>Requirement</b>: Cast Dragon's Breath while having at least 5 other active spells.</p>
 <p><b>Effect</b>: Dragon's Breath multiplicatively increases Faction Coin find chance based on its duration.</p>
 <p><b>Formula</b>: (6 * x ^ 0.6)%, where x is its duration.</p>
-<p><b>Cost</b>: 10 Dd (1e40), A2+ Free</p>
+<p><b>Cost</b>: 1 Qad (1e45), A2+ Free</p>
 <p><b>Challenge Upgrade</b>: <b><img src="/realm/Factions/picks/PrismaticBreathChallengeReward.png" align="middle"> Prismatic Breath</b> (R63+)</p>
 <p><b>Effect</b>: Reincarnations count 5% more per active Dragon's Breath.</p>
 <div class="shlisting">
@@ -1195,6 +1219,10 @@
 <p><b>Production Formula</b>: (x ^ 0.825)%, where x is time spent in this Era.</p>
 <p><b>Effect</b>: Also multiplicatively increase Mana Regeneration based on time spent in this Era.</p>
 <p><b>Mana Regeneration Formula</b>: (3.75 * (x / 60) ^ 0.825 * (T + 1))%, where x is time in seconds this Era and T is the zero-based spell tier.</p>
+<p><b>Archon Union Effect</b>: Also multiplicatively increase Maximum Mana based on time spent in this Era.</p>
+<p><b>Maximum Mana Formula</b>: (0.375 * (x / 60) ^ 0.825 * (T + 1))%, where x is time in seconds this Era and T is the zero-based spell tier.</p>
+<p><b>Spell Tier Effect</b>: Mana produced counts 10% more per spell tier.</p>
+<p><b>An Untimely Death Effect</b>: Also increase Offline production using the Unique Building production formula.</p>
 <br/>
 <p><b><img src="/realm/Factions/picks/TemporalFluxTier2.png" alt="Temporal Flux" align="middle"> Tier 2</b> (R120+)</p>
 <p><b>Requirement</b>: Lantern of Guidance (Artifact)</p>
@@ -1202,6 +1230,7 @@
 <p><b>FC Cost</b>: 1 Sp (1e24) Angel, Undead, Dwarven and Drow Coins.</p>
 <br/>
 <p id="Maelstrom"><b><img src="/realm/Factions/picks/Maelstrom.png" alt="Maelstrom" align="middle"> Maelstrom</b> (Proof of Chaos)</p>
+<p><b>Spell Tier Effect</b>: Affect one additional random building per spell tier.</p>
 <p><b>Requirement</b>: Ascension 2</p>
 <p><b>Cost</b>: 700 Mana - <b>Duration</b>: 20 seconds</p>
 <p><b>Effect</b>: Increase the production of two random buildings based on one of these stats, chosen at random: Mana produced this Era, trophies unlocked, Faction Coins found this Era, or assistants.</p>
@@ -1216,6 +1245,7 @@
 <p><b>FC Cost</b>: 1 Sp (1e24) Fairy, Demon, Dwarven and Drow Coins.</p>
 <br/>
 <p id="AllCreation"><b><img src="/realm/Factions/picks/AllCreation.png" alt="All Creation" align="middle"> All Creation</b> (Proof Of Balance) </p>
+<p><b>Spell Tier Effect</b>: Multiplicatively increase production bonus from Gems by 10% per spell tier.</p>
 <p><b>Requirement</b>: Ascension 2</p>
 <p><b>Cost</b>: 1,100 Mana - <b>Duration</b>: 20 seconds</p>
 <p><b>Effect</b>: Increase production of all buildings based on your Mana Regeneration rate.</p>
@@ -1231,6 +1261,7 @@
 <b><center>Ascension 2</b> (R125+)</center>
 <b><center>Astral Faction Spells</center></b>
 <p id="Precognition"><b><img src="/realm/Factions/picks/Precognition.png" alt="Order" align="middle"> Precognition</b> (Archon)</p>
+<p><b>Spell Tier Effect</b>: Research Points count 10% more per spell tier.</p>
 <p><b>Cost</b>: 123456 Mana - <b>Duration</b>: 20 seconds</p>
 <p><b>Effect</b>: Buildings, Assistants, Royal Exchanges, Spells cast and Clicks count more based on Mana produced in this Era.</p>
 <p><b>Formula</b>: (0.65 * ln(1 + x) ^ 1.15)%, where x is Mana produced in this Era.</p>
@@ -1275,6 +1306,7 @@
 <p><b>Effect</b>: Production of all buildings effect of Limited Wish is active on every cast and is no longer a possible random outcome.</p>
 <br/>
 <p id="InfiniteSpiral"><b><img src="/realm/Factions/picks/InfiniteSpiral.png" alt="Infinite Spiral" align="middle"> Infinite Spiral</b> (Makers)</p>
+<p><b>Spell Tier Effect</b>: Multiplicatively increase Offline bonus by 10% per spell tier.</p>
 <p><b>Cost</b>: 505000 mana - <b>Duration</b>: 10 seconds</p>
 <p><b>Effect</b>: Temporarily increase assistants based on Maximum Mana (multiplicative).</p>
 <p><b>Formula</b>: (10 * ln(1 + x) ^ 1.25)%, where x is your Maximum Mana.</p>

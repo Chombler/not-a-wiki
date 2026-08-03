@@ -147,13 +147,13 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DemonUpgrade11.png" alt="Demonic Fury" align="middle"> Demonic Fury</b></p>
 	<p><b>Requirement</b>: Demons Union</p>
-	<p><b>Cost</b>: 100 Qivg (1e80) Emerald Coins</p>
+	<p><b>Cost</b>: 1 Qavg (1e75) Emerald Coins</p>
 	<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on least time spent between Evil and Chaos this Reincarnation.</p>
 	<p><b>Formula</b>: (25 + 0.25 * min(x, y) ^ 0.75)%, where x is Evil time and y is Chaos time this Reincarnation.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DemonUpgrade12.png" alt="Devastation" align="middle"> Devastation</b></p>
 	<p><b>Requirement</b>: Demons Union</p>
-	<p><b>Cost</b>: 100 Tg (1e95) Emerald Coins</p>
+	<p><b>Cost</b>: 1 Novg (1e90) Emerald Coins</p>
 	<p><b>Effect</b>: Increase production of three highest building tiers based on your Mana Regeneration.</p>
 	<p><b>Formula</b>: (2.5 * ln(1 + x) ^ 2.5)%, where x is your Mana Regeneration.</p>
 	<hr>

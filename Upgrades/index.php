@@ -110,21 +110,21 @@
                 <p>Determine your rulership in an efficient and stable fashion, making the best out of well-planned strategies to let your realm grow even further.</p>
                 <p><b>Requirement</b>: R100+</p>
                 <p><b>Cost</b>: 1 Qa (1e15) Emerald Coins, A3+ Free</p>
-                <p><b>Effect</b>: Choosing this alignment will remove an Ascension penalty on Blood Frenzy and Holy Light spells and let you affiliate with the following factions.</p>
+                <p><b>Effect</b>: Choosing this alignment removes one Ascension penalty from the alignment spells Holy Light, Blood Frenzy, and Gem Grinder, and lets you affiliate with the following factions.</p>
                 <p><b>Angel</b> (Good), <b>Undead</b> (Evil), and <b>Titans</b> (Neutral)</p>
                 <br/>
                 <p><img src="/realm/Factions/picks/ProofofChaos.png" alt="Proof of Chaos" align="middle"> <b>Proof of Chaos</b></p>
                 <p>Resign your will to eternal entropy that forms and maintains the world itself, prospering in the glory of extreme bursts of random fortune.</p>
                 <p><b>Requirement</b>: R100+</p>
                 <p><b>Cost</b>: 1 Qa (1e15) Emerald Coins, A3+ Free</p>
-                <p><b>Effect</b>: Choosing this alignment will remove an Ascension penalty on Blood Frenzy and Holy Light spells and let you affiliate with the following factions.</p>
+                <p><b>Effect</b>: Choosing this alignment removes one Ascension penalty from the alignment spells Holy Light, Blood Frenzy, and Gem Grinder, and lets you affiliate with the following factions.</p>
                 <p><b>Fairies</b> (Good), <b>Demons</b> (Evil), and <b>Faceless</b> (Neutral)</p>
                 <br/>
                 <p><img src="/realm/Factions/picks/ProofofBalance.png" alt="Proof of Balance" align="middle"> <b>Proof of Balance</b></p>
                 <p>Avoid fixating yourself to the rules while not falling to madness as well, Take advantage of everything you can gather and maximize your gains with any possible means.</p>
                 <p><b>Requirement</b>: R100+</p>
                 <p><b>Cost</b>: 1 Qa (1e15) Emerald Coins, A3+ Free</p>
-                <p><b>Effect</b>: Choosing this alignment will remove an Ascension penalty on Blood Frenzy and Holy Light spells and let you affiliate with the following factions.</p>
+                <p><b>Effect</b>: Choosing this alignment removes one Ascension penalty from the alignment spells Holy Light, Blood Frenzy, and Gem Grinder, and lets you affiliate with the following factions.</p>
                 <p><b>Elves</b> (Good), <b>Goblins</b> (Evil), and <b>Druid</b> (Neutral)</p>
             </div>
 			<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">Click Upgrades</a></b></p>

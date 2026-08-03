@@ -262,10 +262,9 @@
 			<p><b><img src="/realm/Factions/picks/ArchonUpgrade2.png" align="middle"> Energy Recharge</b></p>
 			<p><b>Mercenary Template</b>: AR2</p>
 			<p><b>Cost</b>: 1e155 Coins</p>
-			<p><b>Effect</b>: Maximum Mana counts more based on the amount of time spent as Order in this Reincarnation.</p>
+			<p><b>Effect</b>: Multiplicatively increase Maximum Mana based on time spent as Order in this Reincarnation.</p>
 			<p><b>Formula</b>: (0.25 * x ^ 0.5)%, where x is time spent as Order this Reincarnation</p>
-			<p><b>Effect</b>: Also increase Precognition's base and scaling to (1.3 * ln(1 + x) ^ 1.25)%, and change its starting duration to 1 minute.</p>
-			<p><b>Precognition Formula</b>: (1.25 * ln(1 + x) ^ 1.5)%, where x is Mana produced in this Era.</p>
+			<p><b>Effect</b>: Also change Precognition's production formula to (1.3 * ln(1 + x) ^ 1.25)% and its starting duration to 1 minute, where x is Mana produced in this Era.</p>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/ArchonUpgrade3.png" align="middle"> Cosmic Resonance</b></p>
 			<p><b>Mercenary Template</b>: AR3</p>
@@ -919,14 +918,14 @@
 			<p><b><img src="/realm/Factions/picks/FairyUpgrade11.png" alt="Pheromones" align="middle"> Pheromones</b></p>
 			<p><b>Mercenary Template</b>: FR11</p>
 			<p><b>Requirement</b>: Fairies Union</p>
-			<p><b>Cost</b>: 100 Qivg (1e80) Emerald Coins</p>
+			<p><b>Cost</b>: 1 Qavg (1e75) Emerald Coins</p>
 			<p><b>Effect</b>: Multiplicatively increase assistants based on time spent as Chaos in this Reincarnation.</p>
 			<p><b>Formula</b>: (0.6 * x ^ 0.6)%, where x is time spent as Chaos in this Reincarnation.</p>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/FairyUpgrade12.png" alt="Dream Catchers" align="middle"> Dream Catchers</b></p>
 			<p><b>Mercenary Template</b>: FR12</p>
 			<p><b>Requirement</b>: Fairies Union</p>
-			<p><b>Cost</b>: 100 Tg (1e95) Emerald Coins</p>
+			<p><b>Cost</b>: 1 Novg (1e90) Emerald Coins</p>
 			<p><b>Effect</b>: Multiplicatively increase Mana Regeneration based on the amount of Chaos spells cast this Reincarnation.</p>
 			<p><b>Formula</b>: (0.01 * ln(1 + x) ^ 6)%, where x is Chaos spells cast in this Reincarnation.</p>
 			<hr>
@@ -943,14 +942,14 @@
 			<br/>
 			<p><b><img src="/realm/Factions/picks/ElvenUpgrade11.png" alt="Camouflage" align="middle"> Camouflage</b></p>
 			<p><b>Mercenary Template</b>: EL11</p>
-			<p><b>Cost</b>: 100 Qivg (1e80) Emerald Coins</p>
+			<p><b>Cost</b>: 1 Qavg (1e75) Emerald Coins</p>
 			<p><b>Requirement</b>: Elven Union</p>
 			<p><b>Effect</b>: Assistants and Clicks count 1,000% more for all purposes and increase assistant production based on amount of assistants.</p>
 			<p><b>Formula</b>: (2 * ln(1 + x) ^ 2)%, where x is assistants owned.</p>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/ElvenUpgrade12.png" alt="Elven Discipline" align="middle"> Elven Discipline</b></p>
 			<p><b>Mercenary Template</b>: EL12</p>
-			<p><b>Cost</b>: 100 Tg (1e95) Emerald Coins</p>
+			<p><b>Cost</b>: 1 Novg (1e90) Emerald Coins</p>
 			<p><b>Requirement</b>: Elven Union</p>
 			<p><b>Effect</b>: Increase assistants additively and multiplicatively based on the amount of Faction Coins found in this Era.</p>
 			<p><b>Additive Formula</b>: +(150 * ln(1 + x) ^ 1.5), where x is Faction Coins found this Era.</p>
@@ -966,7 +965,7 @@
 			<br/>
 			<p><b><img src="/realm/Factions/picks/AngelUpgrade11.png" alt="Angelic Fortitude" align="middle"> Angelic Fortitude</b></p>
 			<p><b>Mercenary Template</b>: AN11</p>
-			<p><b>Cost</b>: 100 Qivg (1e80) Emerald Coins</p>
+			<p><b>Cost</b>: 1 Qavg (1e75) Emerald Coins</p>
 			<p><b>Requirement</b>: Angels Union</p>
 			<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on the sum of all your spells' activity time (this Reincarnation).</p>
 			<p><b>Formula</b>: (x ^ 0.7)%, where x is the sum of all your spells' activity time in this Reincarnation.</p>
@@ -974,12 +973,12 @@
 			<br/>
 			<p><b><img src="/realm/Factions/picks/AngelUpgrade12.png" alt="Seraphim Wings" align="middle"> Seraphim Wings</b></p>
 			<p><b>Mercenary Template</b>: AN12</p>
-			<p><b>Cost</b>: 100 Tg (1e95) Emerald Coins</p>
+			<p><b>Cost</b>: 1 Novg (1e90) Emerald Coins</p>
 			<p><b>Requirement</b>: Angels Union</p>
 			<p><b>Effect</b>: Multiplicatively increase maximum Mana, Mana Regeneration, Faction Coin find chance and assistants by 200%.</p>
 			<hr>
 			<h6>Goblin</h6>
-			<p><b><img src="/realm/Factions/picks/GoblinUpgrade10.png" alt="Fools Gems" align="middle"> Fools Gems</b></p>
+			<p><b><img src="/realm/Factions/picks/GoblinUpgrade10.png" alt="Fool's Gems" align="middle"> Fool's Gems</b></p>
 			<p><b>Mercenary Template</b>: GB10</p>
 			<p><b>Requirement</b>: Goblins Union</p>
 			<p><b>Cost</b>: 1 Nod (1e60) Emerald Coins</p>
@@ -989,14 +988,14 @@
 			<p><b><img src="/realm/Factions/picks/GoblinUpgrade11.png" alt="Money is Magic" align="middle"> Money is Magic</b></p>
 			<p><b>Mercenary Template</b>: GB11</p>
 			<p><b>Requirement</b>: Goblins Union</p>
-			<p><b>Cost</b>: 100 Qivg (1e80) Emerald Coins</p>
+			<p><b>Cost</b>: 1 Qavg (1e75) Emerald Coins</p>
 			<p><b>Effect</b>: Increase mana regeneration based on the amount of Tax Collections cast in this Era.</p>
 			<p><b>Formula</b>: (1.8 * ln(1 + x) ^ 1.8)%, where x is Tax Collections cast this Era.</p>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/GoblinUpgrade12.png" alt="Lousy Architecture" align="middle"> Lousy Architecture</b></p>
 			<p><b>Mercenary Template</b>: GB12</p>
 			<p><b>Requirement</b>: Goblins Union</p>
-			<p><b>Cost</b>: 100 Tg (1e95) Emerald Coins</p>
+			<p><b>Cost</b>: 1 Novg (1e90) Emerald Coins</p>
 			<p><b>Effect</b>: Reduce Non-Unique buildings cost multiplier by 0.01; with no other reductions applying, the multiplier will be 1.14 instead of 1.15.</p>
 			<p><b>Effect</b>: Increase Non-Unique buildings production based on the amount of buildings of the same tier.</p>
 			<p><b>Formula</b>: (x ^ 0.65)%, where x is the amount of buildings of the same tier.</p>
@@ -1012,14 +1011,14 @@
 			<p><b><img src="/realm/Factions/picks/UndeadUpgrade11.png" alt="Eternal Servitude" align="middle"> Eternal Servitude</b></p>
 			<p><b>Mercenary Template</b>: UD11</p>
 			<p><b>Requirement</b>: Undead Union</p>
-			<p><b>Cost</b>: 100 Qivg (1e80) Emerald Coins</p>
+			<p><b>Cost</b>: 1 Qavg (1e75) Emerald Coins</p>
 			<p><b>Effect</b>: Increase the production of Unique buildings based on time spent in this Era.</p>
 			<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent this Era.</p>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/UndeadUpgrade12.png" alt="Zombie Apocalypse" align="middle"> Zombie Apocalypse</b></p>
 			<p><b>Mercenary Template</b>: UD12</p>
 			<p><b>Requirement</b>: Undead Union</p>
-			<p><b>Cost</b>: 100 Tg (1e95) Emerald Coins</p>
+			<p><b>Cost</b>: 1 Novg (1e90) Emerald Coins</p>
 			<p><b>Effect</b>: Increase Offline production based on the duration of your longest spell.</p>
 			<p><b>Formula</b>: (7 * x ^ 0.7)%, where x is the longest spell duration.</p>
 			<hr>
@@ -1034,14 +1033,14 @@
 			<p><b><img src="/realm/Factions/picks/DemonUpgrade11.png" alt="Demonic Fury" align="middle"> Demonic Fury</b></p>
 			<p><b>Mercenary Template</b>: DM11</p>
 			<p><b>Requirement</b>: Demons Union</p>
-			<p><b>Cost</b>: 100 Qivg (1e80) Emerald Coins</p>
+			<p><b>Cost</b>: 1 Qavg (1e75) Emerald Coins</p>
 			<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on least time spent between Evil and Chaos this Reincarnation.</p>
 			<p><b>Formula</b>: (25 + 0.25 * min(x, y) ^ 0.75)%, where x is Evil time and y is Chaos time this Reincarnation.</p>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/DemonUpgrade12.png" alt="Devastation" align="middle"> Devastation</b></p>
 			<p><b>Mercenary Template</b>: DM12</p>
 			<p><b>Requirement</b>: Demons Union</p>
-			<p><b>Cost</b>: 100 Tg (1e95) Emerald Coins</p>
+			<p><b>Cost</b>: 1 Novg (1e90) Emerald Coins</p>
 			<p><b>Effect</b>: Increase production of three highest building tiers based on your Mana Regeneration.</p>
 			<p><b>Formula</b>: (2.5 * ln(1 + x) ^ 2.5)%, where x is your Mana Regeneration.</p>
 			<hr>
@@ -1056,14 +1055,14 @@
 			<p><b><img src="/realm/Factions/picks/TitanUpgrade11.png" alt="Titanic Authority" align="middle"> Titanic Authority</b></p>
 			<p><b>Mercenary Template</b>: TT11</p>
 			<p><b>Requirement</b>: Titan Union</p>
-			<p><b>Cost</b>: 100 Qivg (1e80) Emerald Coins</p>
+			<p><b>Cost</b>: 1 Qavg (1e75) Emerald Coins</p>
 			<p><b>Effect</b>: Increase the production of Unique Buildings based on the amount of Royal Exchanges you made.</p>
 			<p><b>Formula</b>: (0.6 * x ^ 0.6)%, where x is amount of Royal Exchanges bought.</p>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/TitanUpgrade12.png" alt="Colossus Kingdom" align="middle"> Colossus Kingdom</b></p>
 			<p><b>Mercenary Template</b>: TT12</p>
 			<p><b>Requirement</b>: Titan Union</p>
-			<p><b>Cost</b>: 100 Tg (1e95) Emerald Coins</p>
+			<p><b>Cost</b>: 1 Novg (1e90) Emerald Coins</p>
 			<p><b>Effect</b>: Multiplicatively increase assistants based on time spent as Order in this Reincarnation.</p>
 			<p><b>Formula</b>: (0.6 * x ^ 0.6)%, where x is time spent as Order in this Reincarnation.</p>
 			<hr>
@@ -1078,7 +1077,7 @@
 			<p><b><img src="/realm/Factions/picks/DruidUpgrade11.png" alt="Lunar Cycle" align="middle"> Lunar Cycle</b></p>
 			<p><b>Mercenary Template</b>: DD11</p>
 			<p><b>Requirement</b>: Druids Union</p>
-			<p><b>Cost</b>: 100 Qivg (1e80) Emerald Coins</p>
+			<p><b>Cost</b>: 1 Qavg (1e75) Emerald Coins</p>
 			<p><b>Effect</b>: Increase Maximum Mana additively based on time spent online in this Era.</p>
 			<p><b>Formula</b>: +(50 * x ^ 0.85), where x is time spent online in this Era.</p>
 			<p><b>Effect</b>: Increase Maximum Mana multiplicatively based on time spent offline in this Era.</p>
@@ -1087,7 +1086,7 @@
 			<p><b><img src="/realm/Factions/picks/DruidUpgrade12.png" alt="Grove Farming" align="middle"> Grove Farming</b></p>
 			<p><b>Mercenary Template</b>: DD12</p>
 			<p><b>Requirement</b>: Druids Union</p>
-			<p><b>Cost</b>: 100 Tg (1e95) Emerald Coins</p>
+			<p><b>Cost</b>: 1 Novg (1e90) Emerald Coins</p>
 			<p><b>Effect</b>: Increase the production of all buildings based on their tier. Middle tiers get better bonuses.</p>
 			<p><b>Formula</b>: (0.8 * ((6 - abs(6 - T)) ^ 4))%, where T is building tier.</p>
 			<hr>
@@ -1102,7 +1101,7 @@
 			<p><b><img src="/realm/Factions/picks/FacelessUpgrade11.png" alt="Forbidden Language" align="middle"> Forbidden Language</b></p>
 			<p><b>Mercenary Template</b>: FC11</p>
 			<p><b>Requirement</b>: Faceless Union</p>
-			<p><b>Cost</b>: 100 Qivg (1e80) Emerald Coins</p>
+			<p><b>Cost</b>: 1 Qavg (1e75) Emerald Coins</p>
 			<p><b>Effect</b>: Increase the production of all buildings based on Brainwave duration.</p>
 			<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is Brainwave duration in seconds.</p>
 			<p><b>Effect</b>: Also multiplicatively increase Brainwave's headstart by 100%.</p>
@@ -1110,7 +1109,7 @@
 			<p><b><img src="/realm/Factions/picks/FacelessUpgrade12.png" alt="Dimension Door" align="middle"> Dimension Door</b></p>
 			<p><b>Mercenary Template</b>: FC12</p>
 			<p><b>Requirement</b>: Faceless Union</p>
-			<p><b>Cost</b>: 100 Tg (1e95) Emerald Coins</p>
+			<p><b>Cost</b>: 1 Novg (1e90) Emerald Coins</p>
 			<p><b>Effect</b>: Increase the production of all buildings based on the highest amount of Maximum Mana you had in this Reincarnation.</p>
 			<p><b>Formula</b>: (2.25 * ln(1 + x) ^ 2.25)%, where x is highest Maximum Mana this Reincarnation.</p>
 			<hr>

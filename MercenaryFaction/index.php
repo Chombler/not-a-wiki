@@ -29,9 +29,10 @@
 	<p><b>Note</b>: Mercenaries in A3 can buy Dragon Upgrades with any Mercenary Upgrade with increased price.</p>
 	<br/>
 	<p><b>Note</b>: Astral Faction Upgrades can only be purchased with Mercenary Upgrade 4, 8, 12 and 16.</p>
-	<p><b>Note</b>: Elite spells can only be bought from the Sorcery contract.</p>
+	<p><b>Note</b>: Astral spells can only be bought from the Sorcery contract.</p>
 	<hr>
 	<p><b>Mercenary Tier Upgrades</b></p>
+	<p><b>Faction Coin cost rule</b>: A Mercenary slot does not have a fixed cost. For ordinary faction upgrades the cost is floor(u ^ 3 * s ^ 2.5) * 1,000 matching Faction Coins, where u is the selected upgrade's tier and s is the slot position within the Mercenary tier (1-4). Dragon choices use 10,000 * 10 ^ (2 * s) Dwarven and Drow Coins; Astral choices use 1e30 * 10 ^ (3 * s) Faction Coins of their affinity pair. A cost applies only to the selected upgrade's matching coin types.</p>
 	<p><b>Tier 1 Upgrades</b></p>
 	<p>The price of the tier upgrades cost Faction Coins of the upgrade's Faction. e.g.: For a Fairy spell or upgrade, it will cost Fairy Faction Coins. For a Druid spell or upgrade, it will cost Elven and Demon Faction Coins.</p>
 	<br/>
@@ -45,22 +46,22 @@
 	<p>The available choices will depend on the alignment you have chosen.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MercenaryUpgrade1.png" align="middle"> Mercenary Upgrade 1</b></p>
-	<p><b>Cost</b>: 1,500 Faction Coins</p>
+	<p><b>Faction Coin Cost</b>: Determined by the selected upgrade and slot position using the rule above.</p>
 	<p>Pick an available Tier 1 Upgrade from existing factions.</p>
 	<p>The available choices will depend on the alignment and spells you have chosen.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MercenaryUpgrade2.png" align="middle"> Mercenary Upgrade 2</b></p>
-	<p><b>Cost</b>: 3,000 Faction Coins</p>
+	<p><b>Faction Coin Cost</b>: Determined by the selected upgrade and slot position using the rule above.</p>
 	<p>Pick an available Tier 1 Upgrade from existing factions.</p>
 	<p>The available choices will depend on the alignment and spells you have chosen.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MercenaryUpgrade3.png" alt="MU3" align="middle"> Mercenary Upgrade 3</b></p>
-	<p><b>Cost</b>: 4,500 Faction Coins</p>
+	<p><b>Faction Coin Cost</b>: Determined by the selected upgrade and slot position using the rule above.</p>
 	<p>Pick an available Tier 1 Upgrade from existing factions.</p>
 	<p>The available choices will depend on the alignment and spells you have chosen.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MercenaryUpgrade4.png" alt="MU4" align="middle"> Mercenary Upgrade 4</b></p>
-	<p><b>Cost</b>: 6,000 Faction Coins</p>
+	<p><b>Faction Coin Cost</b>: Determined by the selected upgrade and slot position using the rule above.</p>
 	<p>Pick an available Tier 1 Upgrade from existing factions.</p>
 	<p>The available choices will depend on the alignment and spells you have chosen.</p>
 	<hr>
@@ -86,22 +87,22 @@
 	<p><b>Formula</b>: +(2.5 * x ^ 0.75) to Mana Regeneration and Faction Coin find chance, where x is time spent offline in this Reincarnation.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MercenaryUpgrade5.png" align="middle"> Mercenary Upgrade 5</b></p>
-	<p><b>Cost</b>: 3,000 Faction Coins</p>
+	<p><b>Faction Coin Cost</b>: Determined by the selected upgrade and slot position using the rule above.</p>
 	<p>Pick an available Tier 2 Upgrade from existing factions.</p>
 	<p>The available choices will depend on the alignment and spells you have chosen.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MercenaryUpgrade6.png" align="middle"> Mercenary Upgrade 6</b></p>
-	<p><b>Cost</b>: 6,000 Faction Coins</p>
+	<p><b>Faction Coin Cost</b>: Determined by the selected upgrade and slot position using the rule above.</p>
 	<p>Pick an available Tier 2 Upgrade from existing factions.</p>
 	<p>The available choices will depend on the alignment and spells you have chosen.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MercenaryUpgrade7.png" align="middle"> Mercenary Upgrade 7</b></p>
-	<p><b>Cost</b>: 10,500 Faction Coins</p>
+	<p><b>Faction Coin Cost</b>: Determined by the selected upgrade and slot position using the rule above.</p>
 	<p>Pick an available Tier 2 Upgrade from existing factions.</p>
 	<p>The available choices will depend on the alignment and spells you have chosen.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MercenaryUpgrade8.png" align="middle"> Mercenary Upgrade 8</b></p>
-	<p><b>Cost</b>: 13,500 Faction Coins</p>
+	<p><b>Faction Coin Cost</b>: Determined by the selected upgrade and slot position using the rule above.</p>
 	<p>Pick an available Tier 2 Upgrade from existing factions.</p>
 	<p>The available choices will depend on the alignment and spells you have chosen.</p>
 	<hr>
@@ -116,27 +117,27 @@
 	<p>The available choices will depend on the alignment and spells you have chosen.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MercenaryUpgrade9.png" align="middle"> Mercenary Upgrade 9</b></p>
-	<p><b>Cost</b>: 4,500 Faction Coins</p>
+	<p><b>Faction Coin Cost</b>: Determined by the selected upgrade and slot position using the rule above.</p>
 	<p>Pick an available Tier 3 Upgrade from existing factions.</p>
 	<p>The available choices will depend on the alignment and spells you have chosen.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MercenaryUpgrade10.png" align="middle"> Mercenary Upgrade 10</b></p>
-	<p><b>Cost</b>: 10,500 Faction Coins</p>
+	<p><b>Faction Coin Cost</b>: Determined by the selected upgrade and slot position using the rule above.</p>
 	<p>Pick an available Tier 3 Upgrade from existing factions.</p>
 	<p>The available choices will depend on the alignment and spells you have chosen.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MercenaryUpgrade11.png" align="middle"> Mercenary Upgrade 11</b></p>
-	<p><b>Cost</b>: 16,500 Faction Coins</p>
+	<p><b>Faction Coin Cost</b>: Determined by the selected upgrade and slot position using the rule above.</p>
 	<p>Pick an available Tier 3 Upgrade from existing factions.</p>
 	<p>The available choices will depend on the alignment and spells you have chosen.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MercenaryUpgrade12.png" align="middle"> Mercenary Upgrade 12</b></p>
-	<p><b>Cost</b>: 22,500 Faction Coins</p>
+	<p><b>Faction Coin Cost</b>: Determined by the selected upgrade and slot position using the rule above.</p>
 	<p>Pick an available Tier 3 Upgrade from existing factions.</p>
 	<p>The available choices will depend on the alignment and spells you have chosen.</p>
 	<hr>
 	<p><b>Other Upgrades</b></p>
-	<p>Following are upgrades rewarded from <a href="/realm/Secret/" title="Secret Trophies">Secret Trophies</a>.</p>
+	<p>Following are upgrades rewarded from <a href="/realm/TrophyPage/" title="Secret Trophies">Secret Trophies</a>.</p>
 	<p><b><img src="/realm/Factions/picks/MercenarySpiritSecretTrophy.png" align="middle"> Mercenary Spirit</b></p>
 	<p><b>Requirement</b>: Reincarnate while playing as a Mercenary</p>
 	<p><b>Cost</b>: 1 Ocd (1e57)</p>
@@ -315,24 +316,24 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MercenaryFourthContract.png" align="middle"> Mercenary Fourth Contract</b></p>
 	<p><b>Requirements</b>: R160+, Mercenary Duel purchased</p>
-	<p><b>Cost</b>: 100 Qid 1e50</p>
+	<p><b>Cost</b>: 10 Dtg (1e100)</p>
 	<p><b>Effect</b>: Unlocks Tier 4 Upgrades and increases Research budget in each branch by 1,000.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MercenaryUpgrade13.png" align="middle"> Mercenary Upgrade 13</b></p>
 	<p>You can purchase a tier 4 upgrade from any faction for an increased price.</p>
-	<p><b>Cost</b>: 7500 Faction Coins</p>
+	<p><b>Faction Coin Cost</b>: Determined by the selected upgrade and slot position using the rule above.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MercenaryUpgrade14.png" align="middle"> Mercenary Upgrade 14</b></p>
 	<p>You can purchase a tier 4 upgrade from any faction for an increased price.</p>
-	<p><b>Cost</b>: 16500 Faction Coins</p>
+	<p><b>Faction Coin Cost</b>: Determined by the selected upgrade and slot position using the rule above.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MercenaryUpgrade15.png" align="middle"> Mercenary Upgrade 15</b></p>
 	<p>You can purchase a tier 4 upgrade from any faction for an increased price.</p>
-	<p><b>Cost</b>: 24000 Faction Coins</p>
+	<p><b>Faction Coin Cost</b>: Determined by the selected upgrade and slot position using the rule above.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MercenaryUpgrade16.png" align="middle"> Mercenary Upgrade 16</b></p>
 	<p>You can purchase a tier 4 upgrade from any faction for an increased price.</p>
-	<p><b>Cost</b>: 33000 Faction Coins</p>
+	<p><b>Faction Coin Cost</b>: Determined by the selected upgrade and slot position using the rule above.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MercenaryBuildingContract.png" align="middle"> Mercenary Building Contract</b></p>
 	<p><b>Requirements</b>: R165+, Aligned with Mercs</p>
@@ -340,13 +341,19 @@
 	<p><b>Cost</b>: Free</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/ObsidianCrown.png" align="middle"> Obsidian Crown</b></p>
-	<p><b>Requirements</b>: R170+, Aligned with Mercs, 10 excavation resets (This Era)</p>
-	<p><b>Chance</b>: (x / 1000)%, where x is the number of free and ruby Excavation Resets this Era.</p>
+	<p><b>Requirements</b>: R170+, play as Mercenary.</p>
+	<p><b>Chance</b>: (x / 1000)%, where x is the number of free and Ruby Excavation Resets in this Reincarnation.</p>
 	<p><b>Effect</b>: Unlocks Mercenary Union Contract</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MercenaryUnionContract.png" align="middle"> Mercenary Union Contract</b></p>
 	<p><b>Requirements</b>: Obsidian Crown</p>
 	<p>You can purchase one Union Power from any faction, provided you meet the requisites. You will not be able to change it during the current Era.</p>
 	<p><b>Effect</b>: Increase Research budget in each branch by 400 times the number of upgrades purchased from the selected faction.</p>
+	<p><b>Cost</b>: Free</p>
+	<br/>
+	<p><b><img src="/realm/Factions/picks/MercenaryUnionContract.png" align="middle"> Mercenary Union Contract 2</b></p>
+	<p><b>Requirement</b>: Mercenary Challenge 4 and the normal Mercenary Union Contract requirements.</p>
+	<p>You can purchase a second Union Power from any faction, provided you meet its requirements. It persists until the current Era ends.</p>
+	<p><b>Effect</b>: Increase Research budget in each branch by 400 times the number of upgrades purchased from the second selected faction.</p>
 	<p><b>Cost</b>: Free</p>
 	<?php include "../scripts/footer.html"; ?>

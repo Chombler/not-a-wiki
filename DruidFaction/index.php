@@ -186,7 +186,7 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DruidUpgrade11.png" alt="Lunar Cycle" align="middle"> Lunar Cycle</b></p>
 	<p><b>Requirement</b>: Druids Union</p>
-	<p><b>Cost</b>: 100 Qivg (1e80) Emerald Coins</p>
+	<p><b>Cost</b>: 1 Qavg (1e75) Emerald Coins</p>
 	<p><b>Effect</b>: Increase Maximum Mana additively based on time spent online in this Era.</p>
 	<p><b>Formula</b>: +(50 * x ^ 0.85), where x is time spent online in this Era.</p>
 	<p><b>Effect</b>: Increase Maximum Mana multiplicatively based on time spent offline in this Era.</p>
@@ -194,7 +194,7 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DruidUpgrade12.png" alt="Grove Farming" align="middle"> Grove Farming</b></p>
 	<p><b>Requirement</b>: Druids Union</p>
-	<p><b>Cost</b>: 100 Tg (1e95) Emerald Coins</p>
+	<p><b>Cost</b>: 1 Novg (1e90) Emerald Coins</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on their tier. Middle tiers get better bonuses.</p>
 	<p><b>Formula</b>: (0.8 * ((6 - abs(6 - T)) ^ 4))%, where T is building tier.</p>
 	<hr>

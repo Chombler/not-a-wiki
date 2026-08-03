@@ -144,7 +144,7 @@
 	<p><b>Effect (R105+)</b>: Multiplicatively increase Faction Coin find chance based on spells cast in this Era.</p>
 	<p><b>Formula</b>: (2.25 * (0.5 * ln(1 + x)) ^ 2.25)%, where x is spells cast in this Era.</p>
 	<br/>
-	<p><b><img src="/realm/Factions/picks/GoblinUpgrade10.png" alt="Fools Gems" align="middle"> Fools Gems</b></p>
+	<p><b><img src="/realm/Factions/picks/GoblinUpgrade10.png" alt="Fool's Gems" align="middle"> Fool's Gems</b></p>
 	<p><b>Requirement</b>: Goblins Union</p>
 	<p><b>Cost</b>: 1 Nod (1e60) Emerald Coins</p>
 	<p><b>Effect</b>: Multiplicatively increase production bonus from Gems based on the highest amount of Slave Markets you own in this Reincarnation.</p>
@@ -152,13 +152,13 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/GoblinUpgrade11.png" alt="Money is Magic" align="middle"> Money is Magic</b></p>
 	<p><b>Requirement</b>: Goblins Union</p>
-	<p><b>Cost</b>: 100 Qivg (1e80) Emerald Coins</p>
+	<p><b>Cost</b>: 1 Qavg (1e75) Emerald Coins</p>
 	<p><b>Effect</b>: Increase mana regeneration based on the amount of Tax Collections cast in this Era.</p>
 	<p><b>Formula</b>: (1.8 * ln(1 + x) ^ 1.8)%, where x is Tax Collections cast this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/GoblinUpgrade12.png" alt="Lousy Architecture" align="middle"> Lousy Architecture</b></p>
 	<p><b>Requirement</b>: Goblins Union</p>
-	<p><b>Cost</b>: 100 Tg (1e95) Emerald Coins</p>
+	<p><b>Cost</b>: 1 Novg (1e90) Emerald Coins</p>
 	<p><b>Effect</b>: Reduce Non-Unique buildings cost multiplier by 0.01; with no other reductions applying, the multiplier will be 1.14 instead of 1.15.</p>
 	<p><b>Effect</b>: Increase Non-Unique buildings production based on the amount of buildings of the same tier.</p>
 	<p><b>Formula</b>: (x ^ 0.65)%, where x is the amount of buildings of the same tier.</p>

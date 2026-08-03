@@ -68,8 +68,8 @@
 	<br/>
 	<p><b>Spell Trophy &#38; Upgrade</b></p>
 	<p><b><img src="/realm/Factions/picks/DragonsRoarSpellUpgrade.png" align="middle"> Dragon's Roar</b></p>
-	<p><b>Requirement</b>: Cast Dragon's Breath while having at least 4 other active spells.</p>
-	<p><b>Cost</b>: 10 Dd (1e40), A2+ Free</p>
+	<p><b>Requirement</b>: Cast Dragon's Breath while having at least 5 other active spells.</p>
+	<p><b>Cost</b>: 1 Qad (1e45), A2+ Free</p>
 	<p><b>Effect</b>: Dragon's Breath multiplicatively increases Faction Coin find chance based on its duration.</p>
 	<p><b>Formula</b>: (6 * x ^ 0.6)%, where x is its duration.</p>
 	<hr>

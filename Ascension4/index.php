@@ -118,8 +118,8 @@
 	<p><b>All researches under 5000 points will be unavailable</b>.</p>
 	<p><b>Research Budget</b>: Budget is further increased by 2,000 for every Treaty, Friendship Pact, Alliance and Union bought from the Base Faction.</p>	
 	<p><b>Research Points</b>: Now capped at 14,000.</p>
-	<p><b>Coin Cost</b>: (1.4 ^ (0.1 * RP - 7000))</p>	
-	<p><b>Faction Coin Cost</b>: (10 * 1.15 ^ (0.03 * RP))</p>	
+	<p><b>Coin Cost</b>: No coin cost below 10,000 RP; from 10,000 onward, 1.44 ^ (0.24 * (RP - 10,000)).</p>
+	<p><b>Faction Coin Cost</b>: (RP + 1) ^ 6.5 below 10,000 RP; from 10,000 onward, 1e-30 * 1.033 ^ (0.33 * RP).</p>
 	<br/>	
 	<hr>
 	<p><b>New Upgrade: Legacy</b>.</p>

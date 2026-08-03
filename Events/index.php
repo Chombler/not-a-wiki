@@ -3,6 +3,49 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <?php include "../scripts/header.html"; ?>
+	<h5>Current Permanent Seasonal Feat Rewards</h5>
+	<p>Once unlocked, each upgrade below is available during any Seasonal Event. Values shown are the active Seasonal Event values encoded by version 4.3.15.</p>
+	<table class="table">
+		<tr><th>Upgrade</th><th>Effect during a Seasonal Event</th></tr>
+		<tr><td>Debt for Life</td><td>Increase Tax Collection worth by 10%.</td></tr>
+		<tr><td>Heat Core</td><td>Increase all spell durations by 10%.</td></tr>
+		<tr><td>Full-spectrum Color</td><td>Additively increase Faction Coin find chance by 25%.</td></tr>
+		<tr><td>Golden Bones</td><td>Additively increase production bonus from Gems by 10%.</td></tr>
+		<tr><td>Jingle Choir</td><td>Multiplicatively increase assistants by 10%.</td></tr>
+		<tr><td>Sweet Bedtime</td><td>Increase Inn base production by 14.</td></tr>
+		<tr><td>The Perfect Egg</td><td>Increase Tax Collection worth by 10.</td></tr>
+		<tr><td>Unwanted Truce</td><td>Increase Farm, Inn, and Blacksmith production by 25%.</td></tr>
+		<tr><td>Treachery</td><td>Trophies count 25% more.</td></tr>
+		<tr><td>Still Lightning</td><td>Autoclick 2 times per second.</td></tr>
+		<tr><td>Under the Rainbow</td><td>Increase Hall of Legends production by 25%.</td></tr>
+		<tr><td>Ghostbuster</td><td>Increase Offline production by 50%.</td></tr>
+		<tr><td>Underground Snow</td><td>Increase Good and Evil building production by 50%.</td></tr>
+		<tr><td>Until Death Do Us Part</td><td>Increase Offline production by 100%.</td></tr>
+		<tr><td>Platinum Egg</td><td>Multiplicatively increase assistants by 10%.</td></tr>
+		<tr><td>10 Years War</td><td>Increase Hall of Legends production by 25%.</td></tr>
+		<tr><td>Bribed Army</td><td>All buildings count 25% more for Call to Arms.</td></tr>
+		<tr><td>White Hot Magic</td><td>Multiplicatively increase Maximum Mana by 10%.</td></tr>
+		<tr><td>Stream of Dreams</td><td>Multiplicatively increase Offline bonus by 100%.</td></tr>
+		<tr><td>Mummy?</td><td>Increase Hall of Legends production by 100%.</td></tr>
+		<tr><td>Yule Offering</td><td>Increase Neutral building production by 50%.</td></tr>
+		<tr><td>Heart Blessing</td><td>Multiplicatively increase Faction Coin find chance by 15%.</td></tr>
+		<tr><td>Heavenly Omelette</td><td>Increase Unique Building production by 50%.</td></tr>
+		<tr><td>Hired Champions</td><td>Multiplicatively increase assistants by 25% for Good and Evil factions.</td></tr>
+		<tr><td>Underhanded Tactics</td><td>Increase Offline production bonus by 100%.</td></tr>
+	</table>
+	<h5>Current Temporary Event Purchases</h5>
+	<p>These source-registered upgrades exist only while their associated event is active; they are listed separately from permanent feat rewards.</p>
+	<table class="table">
+		<tr><th>Upgrade</th><th>Current effect</th></tr>
+		<tr><td>Valentine Assistant</td><td>Increase assistants by 1 per purchase, up to 500 purchases.</td></tr>
+		<tr><td>Valentine Mana Regeneration</td><td>Increase Mana Regeneration by 0.5 m/s per purchase, up to 500 purchases.</td></tr>
+		<tr><td>Valentine Max Mana</td><td>Increase Maximum Mana by 25 per purchase, up to 500 purchases.</td></tr>
+		<tr><td>Valentine Gem Bonus</td><td>Increase the Gem production bonus by 0.5% per purchase, up to 500 purchases.</td></tr>
+		<tr><td>Valentine Royal Trading</td><td>Increase the Royal Exchange production bonus by 1.5% per purchase, up to 500 purchases.</td></tr>
+		<tr><td>Fight the Goblin Army</td><td>Increase Maximum Mana and Mana Regeneration by 1% per completed fight; the repeatable event cost increases as floor((x + 1) ^ 0.85), where x is completed fights.</td></tr>
+		<tr><td>Fight the Goblin Army!</td><td>Starts a fight against the invading Goblin Army.</td></tr>
+	</table>
+	<hr>
 	<h6><img src="/realm/Factions/picks/EventsTopPage.png"></h6>
 	<p>Realm Grinder Events take place at annual festivals such as Thanksgiving, Christmas, Easter etc. Playing during an Event gives the players special one-time Trophies and temporary and/or permanent perks.</p>
 	<p>Temporary Event upgrades work only during their event; permanent feat rewards remain available afterward. Event items, resources (including current stack size), event spell casts, and quest/feat progress persist throughout Abdications, Reincarnations, and Ascensions while the event is active.</p>

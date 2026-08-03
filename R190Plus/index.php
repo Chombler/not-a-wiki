@@ -680,7 +680,7 @@
           <p><b>Faction</b>: Neutral/Balance Mercenary</p>
           <p><b>Bloodline</b>: Any</p>
           <p><b>A2950</b>: Makers</p>
-          <p><b>Artifact Set</b>: Matching your lineage, mercset for elite lineages</p>
+          <p><b>Artifact Set</b>: Matching your lineage, mercset for Astral lineages</p>
           <p>
             <button onclick="myFunction($(this))">Copy Build</button>
             <input type="text" value="EL7,AN4,AN5,AN11,DD3,UD7,TT10,DD6,FC2,FC3,DW7,UD10,DW12,AR8,MK1,MK6,SP:Dragon's Breath,SP:Infinite Spiral,UB:Dragon Pasture,UNN:DG,UNN:DW,S200,S5625,C175,C400,C5375,D275,D290,D200,D330,E135,E320,E5375,A120,A270,A305,A545,A1500,A2950,W275,W400,W1275,W1375,F5500">

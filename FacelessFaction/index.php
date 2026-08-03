@@ -187,14 +187,14 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/FacelessUpgrade11.png" alt="Forbidden Language" align="middle"> Forbidden Language</b></p>
 	<p><b>Requirement</b>: Faceless Union</p>
-	<p><b>Cost</b>: 100 Qivg (1e80) Emerald Coins</p>
+	<p><b>Cost</b>: 1 Qavg (1e75) Emerald Coins</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on Brainwave duration.</p>
 	<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is Brainwave duration in seconds.</p>
 	<p><b>Effect</b>: Also multiplicatively increase Brainwave's headstart by 100%.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/FacelessUpgrade12.png" alt="Dimension Door" align="middle"> Dimension Door</b></p>
 	<p><b>Requirement</b>: Faceless Union</p>
-	<p><b>Cost</b>: 100 Tg (1e95) Emerald Coins</p>
+	<p><b>Cost</b>: 1 Novg (1e90) Emerald Coins</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on the highest amount of Maximum Mana you had in this Reincarnation.</p>
 	<p><b>Formula</b>: (2.25 * ln(1 + x) ^ 2.25)%, where x is highest Maximum Mana this Reincarnation.</p>
 	<hr>

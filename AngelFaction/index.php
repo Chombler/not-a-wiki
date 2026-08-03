@@ -151,14 +151,14 @@
 	<p><b>Formula</b>: (1.5 * x ^ 0.5)%, where x is the highest amount of Holy Sites built in this Reincarnation.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/AngelUpgrade11.png" alt="Angelic Fortitude" align="middle"> Angelic Fortitude</b></p>
-	<p><b>Cost</b>: 100 Qivg (1e80) Emerald Coins</p>
+	<p><b>Cost</b>: 1 Qavg (1e75) Emerald Coins</p>
 	<p><b>Requirement</b>: Angels Union</p>
 	<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on the sum of all your spells' activity time (this Reincarnation).</p>
 	<p><b>Formula</b>: (x ^ 0.7)%, where x is the sum of all your spells' activity time in this Reincarnation.</p>
 	<p><b>Note</b>: Counts only the activity time of the spells you have in this Era available.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/AngelUpgrade12.png" alt="Seraphim Wings" align="middle"> Seraphim Wings</b></p>
-	<p><b>Cost</b>: 100 Tg (1e95) Emerald Coins</p>
+	<p><b>Cost</b>: 1 Novg (1e90) Emerald Coins</p>
 	<p><b>Requirement</b>: Angels Union</p>
 	<p><b>Effect</b>: Multiplicatively increase maximum Mana, Mana Regeneration, Faction Coin find chance and assistants by 200%.</p>
 	<hr>

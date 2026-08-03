@@ -151,13 +151,13 @@
 	<p><b>Effect</b>: When Elven Luck triggers, 5 automatic Tax Collections are cast.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/ElvenUpgrade11.png" alt="Camouflage" align="middle"> Camouflage</b></p>
-	<p><b>Cost</b>: 100 Qivg (1e80) Emerald Coins</p>
+	<p><b>Cost</b>: 1 Qavg (1e75) Emerald Coins</p>
 	<p><b>Requirement</b>: Elven Union</p>
 	<p><b>Effect</b>: Assistants and Clicks count 1,000% more for all purposes and increase assistant production based on amount of assistants.</p>
 	<p><b>Formula</b>: (2 * ln(1 + x) ^ 2)%, where x is assistants owned.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/ElvenUpgrade12.png" alt="Elven Discipline" align="middle"> Elven Discipline</b></p>
-	<p><b>Cost</b>: 100 Tg (1e95) Emerald Coins</p>
+	<p><b>Cost</b>: 1 Novg (1e90) Emerald Coins</p>
 	<p><b>Requirement</b>: Elven Union</p>
 	<p><b>Effect</b>: Increase assistants additively and multiplicatively based on the amount of Faction Coins found in this Era.</p>
 	<p><b>Additive Formula</b>: +(150 * ln(1 + x) ^ 1.5), where x is Faction Coins found this Era.</p>

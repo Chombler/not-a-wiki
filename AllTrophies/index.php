@@ -40,7 +40,7 @@
 					<p><b>Note</b>: This can be done at any R, The higher the R the easier it will be</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/LuckyNeutralSecretTrophy.png" align="middle"><b> Lucky Neutral</b></p>
-					<p><b>Requirement</b>: Spend 7777 minutes being Neutral across all reincarnations.(= 5d 9h 37m)</p>
+					<p><b>Requirement</b>: Spend 777 minutes being Neutral across all reincarnations (= 12h 57m).</p>
 					<p><b>Cost</b>: 30 No (3e31), A1+ Free</p>
 					<p><b>Effect</b>: Increase the production of Neutral buildings by 50%.</p>
 					<hr>
@@ -98,7 +98,7 @@
 					<p><b>Note</b>: Get the first 2 alignments at 24 hours then go to 3rd alignment and stay with it for 24 hours.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/BeardCarpetSecretTrophy.png" align="middle"><b> Beard Carpet</b></p>
-					<p><b>Requirement</b>: Have at least 1 km beards on your assistants (using Bearded Assistant faction upgrade).</p>
+					<p><b>Requirement</b>: Have at least 43 meters of beard on your assistants (using the Bearded Assistants faction upgrade).</p>
 					<p><b>Cost</b>: 3000, A1+ Free</p>
 					<p><b>Effect</b>: Increase assistants production by 10%.</p>
 					<p><b>Note</b>: This takes 1 day 3 hours and 47 minutes and can be done at R0.</p>
@@ -109,7 +109,7 @@
 					<p><b>Effect</b>: Increase maximum Mana by +250.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/FastForwardSecretTrophy.png" align="middle"><b> Fast Forward</b></p>
-					<p><b>Requirement</b>: Accumulate an offline time of at least 88 hours. The sum of all your offline reports counts towards this purpose.(3d 16h, This R)</p>
+					<p><b>Requirement</b>: Accumulate at least 8 hours offline in this Reincarnation. The sum of all offline reports counts.</p>
 					<p><b>Cost</b>: 8 Oc (8e27), A1+ Free</p>
 					<p><b>Effect</b>: Increase offline production by 200%.</p>
 					<p><b>Note</b>: This can be done at R0.</p>
@@ -131,13 +131,13 @@
 					<p><b>Cost</b>: 5 Qivg (5e78), A1, Free</p>
 					<p><b>Effect</b>: Increases the production of all buildings based on the number of different Factions involved in your Mercenary upgrades. Improves over time spent as your least-used alignment in this Reincarnation.</p>
 					<p><b>Formula</b>: (10 + x ^ 3 * (1 + 0.03 * y ^ 0.7))%, where x is the number of different Factions involved in your Mercenary upgrades and y is time spent as your least-used alignment in this Reincarnation, in seconds.</p>
-					<p><b>Note</b>: This can be done at R3 with Merc Build <a target="_blank" href="/realm/SpecialBuilds/"><b>(Harlequin)</b></a></p>
+					<p><b>Note</b>: See the <a target="_blank" href="/realm/MercBuilds/#TrophyBuilds"><b>Mercenary trophy builds</b></a>.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/LuciferSecretTrophy.png" align="middle"><b> Lucifer</b></p>
 					<p><b>Requirement</b>: As a Good Mercenary, purchase only Evil mercenary faction upgrades or vice versa.</p>
 					<p><b>Cost</b>: 5e64 coins</p>
 					<p><b>Effect</b>: Increases the production of all non-neutral buildings by 300%.</p>
-					<p><b>Note</b>: This can be done at R3 with Merc Build <a target="_blank" href="/realm/SpecialBuilds/"><b>(Lucifer)</b></a></p>
+					<p><b>Note</b>: See the <a target="_blank" href="/realm/MercBuilds/#TrophyBuilds"><b>Mercenary trophy builds</b></a>.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/MathematicianSecretTrophy.png" align="middle"><b> Mathematician</b></p>
 					<p><b>Requirement</b>: Have buildings amounts exactly equal to 2^tier from bottom to top, starting from 2^0 Halls of Legends up to 2^10 Farms. (1024 Farms, 512 Inns, 256 Blacksmiths, 128, 64, 32, 16, 8, 4, 2 and 1 Hall of Legends.) (Building count has to be exact)</p>
@@ -289,6 +289,8 @@
 					<hr>
 					<p><img src="/realm/Factions/picks/DoubleBottomTrophy.png" align="middle"><b> Double Bottom</b></p>
 					<p><b>Requirement</b>: Reset excavations for the first time.</p>
+					<p><b>Cost</b>: 1 Oc (1e27) in Ascension 1; free outside Ascension 1.</p>
+					<p><b>Effect</b>: Increase Offline production by 100%. This effect does not suffer Ascension penalties.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/AdvisorInsightSecretTrophy.png" align="middle"><b> Advisor Insight</b></p>
 					<p><b>Requirement</b>: Click the Hint button 100 times.</p>
@@ -1420,7 +1422,7 @@
 					<p><b>Note</b>: Default Spell</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/FairyChoirSpellUpgrade.png" align="middle"><b> Fairy Choir</b></p>
-					<p><b>Requirement</b>: Cast Fairy Chanting while having 45 or more assistants.</p>
+					<p><b>Requirement</b>: Cast Fairy Chanting while having 50 or more assistants.</p>
 					<p><b>Cost</b>: 1 M (1e6)</p>
 					<p><b>Effect</b>: Fairy Chanting triples your assistants for its duration.</p>
 					<p><b>Note</b>: Fairy Spell</p>
@@ -1490,7 +1492,7 @@
 					<p><b>Note</b>: Drow Spell</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/DragonsRoarSpellUpgrade.png" align="middle"><b> Dragon's Roar</b></p>
-					<p><b>Requirement</b>: Cast Dragon's Breath while having at least 4 other active spells.</p>
+					<p><b>Requirement</b>: Cast Dragon's Breath while having at least 5 other active spells.</p>
 					<p><b>Cost</b>: 1.0e45</p>
 					<p><b>Effect</b>: Dragon's Breath multiplicatively increases Faction Coin find chance based on its duration.</p>
 					<p><b>Formula</b>: (6 * x ^ 0.6)%, where x is Dragon's Breath duration in seconds.</p>

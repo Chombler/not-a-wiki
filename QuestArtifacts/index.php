@@ -44,7 +44,7 @@
 	<p><b><img src="/realm/Factions/picks/AncientDevice.png" align="middle"> Ancient Device</b></p>
 	<p><b>Description</b>: This strange Device seems to react to the Ancient Races magical capabilities. We may channel its power to increase their research potential!</p>
 	<p><b>Requirement</b>: Play any Neutral Faction, their Unique Building, 2000+ excavations.</p>
-	<p><b>Effect</b>: Provides 2 additional slots: 1 for each related to the Neutral Faction's Facility you are playing.</p>
+	<p><b>Effect</b>: Unlocks Ancient Device Power, which provides 1 additional slot for each Research branch the Neutral faction has affinity to (2 slots total).</p>
 	<p><b>Chance</b>: 0.2% </p>
 	<p><b>Cost</b>: 100 QiSxg (1e200)</p>
 	<p><b>Note</b>: Has no effect in R100+</p>
@@ -57,7 +57,7 @@
 	<p><b><img src="/realm/Factions/picks/HornoftheKings.png" align="middle"> Horn of the Kings</b></p>
 	<p><b>Description</b>: It is said that when this horn is blown, the voices of past Dwarven Kings can be heard in the Wind.</p>
 	<p><b>Requirement</b>: Dwarven Faction, Dwarven Forges, 3250+ Excavations</p>
-	<p><b>Effect</b>: Unlocks the upgrade Legacy of the Kings that adds 3 extra slots: 2 for Craftsmanship and 1 related to the Good Base Faction's facility you are playing.</p>
+	<p><b>Effect</b>: Unlocks Legacy of the Dwarven Kings, which adds 3 slots: 2 for Craftsmanship and 1 for the Good base faction's affinity.</p>
 	<p><b>Chance</b>: 0.5%</p>
 	<p><b>Cost</b></b>: 10 SxSpg (1e232) and 100 M (1e8) Dwarven Coins</p>
 	<p><b>Note</b>: Has no effect in R100+</p>

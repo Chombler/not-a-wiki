@@ -208,7 +208,7 @@ div#images div{
 <p><b>Step 2</b>: Unlocking Research</p>
 <p><b>Auto Casting</b>: Spiritual Surge on Silver everything else on Gold unless stated otherwise.</p>
 <p><b>2.1</b>: Buy at least up to 80 Research Points in each branch, use Goblin with Druid Bloodline (or Titan Bloodline if you're struggling with the coin cost).</p>
-<p><b>2.2</b>: <b>S30</b>: 4000 Max Mana, <b>E30</b>: 1000 royal exchanges this game, <b>E50</b>: 1000 royal exchanges as Goblin, <b>W25</b>: 1 Tqag (1e132) coins this game, Use Goblin with Druid Bloodline.</p>
+<p><b>2.2</b>: <b>S30</b>: 5,000 Maximum Mana, <b>E30</b>: 1,000 Royal Exchanges this Era, <b>E50</b>: 1,250 Royal Exchanges as Goblin, <b>W25</b>: 1 Tqag (1e132) coins this Era, Use Goblin with Druid Bloodline.</p>
 <p><b>2.3</b>: <b>C25</b>: 12K spells this R. Use Merc build below and read note (After spell count reached switch to Angel to unlock this research)</p>
 <p><b>Merc Build</b>
 <p><b>Alignment</b>: Good</p>
@@ -221,7 +221,7 @@ div#images div{
 <p><b>2.4</b>: <b>S10</b>: 2000 heaven's gates this game, <b>D50</b>: 15000 good buildings as Angels, Use Angel with Goblin Bloodline.</p>
 <p><b>2.5</b>: <b>D10</b>: 2000 Infernal Realms, Use Demon with Goblin Bloodline.</p>
 <p><b>2.6</b>: <b>E10</b>: 2000 Undercities, Use Undead with Goblin Bloodline.</p>
-<p><b>2.7</b>: <b>S30</b>: 4000 Mana, <b>S50</b>: 6000 max mana, <b>C10</b>: 2500 Farms, <b>C80</b>: 16K Good and Evil Buildings (Total, this game), <b>E80</b>: 9K Neutral Buildings, Use Fairy with Goblin Bloodline.</p>
+<p><b>2.7</b>: <b>S30</b>: 5,000 Maximum Mana, <b>S50</b>: 10,000 Maximum Mana, <b>C10</b>: 2,500 Farms, <b>C80</b>: 16K Good and Evil Buildings in this Era, <b>E80</b>: 9K Neutral Buildings, Use Fairy with Goblin Bloodline.</p>
 <hr>
 <p><b>Step 3</b>: Buy at least up to 105 Research Points in each branch, use Goblin with Druid or Titan Bloodline.</p>
 <p><b>3.1</b>: <b>A105</b>: 2750 Blacksmiths, Use Fairy with Goblin Bloodline.</p>
@@ -229,7 +229,7 @@ div#images div{
 <hr>
 <p><b>Step 4</b>: Buy at least up to 136 Research Points in each branch, use Goblin with Druid or Titan Bloodline.</p>
 <p><b>4.1</b>: <b>A120</b>: 6500 max mana, <b>W120</b>: 250 base assistants, Use Goblin with Druid Bloodline.</p>
-<p><b>4.2</b>: <b>C50</b>: 1 B (1e9) Faction Coins, <b>C105</b>: 25K clicks, <b>C120</b>: 200K clicks, <b>C135</b>: 250K Clicks this game as Elf, <b>E25</b>: 100 M (1e8) Faction Coins found this game, <b>W10</b>: 2000 Warrior Barracks, Use Elf with Elf Bloodline, After all upgrades and research bought autocast Moon Blessing and Call to Arms.</p>
+<p><b>4.2</b>: <b>C50</b>: 1 B (1e9) Faction Coins, <b>C105</b>: 25K clicks, <b>C120</b>: 100K clicks, <b>C135</b>: 100 Elven Luck triggers, <b>E25</b>: 100 M (1e8) Faction Coins found this Era, <b>W10</b>: 2,000 Warrior Barracks, Use Elf with Elf Bloodline, After all upgrades and research bought autocast Moon Blessing and Call to Arms.</p>
 <p><b>4.3</b>: <b>D135</b>: 250 m/s Mana Regen(as Angel) Use Angel with Druid Bloodline.</p>
 <p><b>4.4</b>: <b>E135</b>: 28,000 Total Buildings(as Goblin) Goblin with Goblin Bloodline.</p>
 <p><b>4.5</b>: <b>S135</b>: 4,000 Unique Buildings this game as Fairy, Use Fairy with Goblin Bloodline.</p>
