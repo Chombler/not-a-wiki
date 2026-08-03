@@ -54,9 +54,9 @@
 	<p>&quot;The Fairies are small and mighty, and they can turn little things into all you ever need. Speed is paramount and they do not tolerate cheating!&quot;</p>
 	<p><b>Requirements</b>: Fairy as Base Faction, Reincarnation 2+, Fairy Choir upgrade purchased.</p>
 	<p><b>Note</b>: Dwarven can be used but not required.</p>
-	<p><b>Challenge</b>: Only use Farms, Inns and Blacksmiths during a run where you buy all Fairy upgrades within 1 minute of a new game.(Abdication or Reincarnation)</p>
-	<p><b>Effect</b>: You gain assistants based on the amount of Fairy affiliated (faction upgrades, heritage, bloodline, research) upgrades you own.</p>
-	<p><b>Formula</b>: (2 * x), where x is amount of Fairy affiliated upgrades.</p>
+	<p><b>Challenge</b>: Buy all Fairy upgrades while using only Farms, Inns, and Blacksmiths within 1 minute of a new Era.</p>
+	<p><b>Effect</b>: Gain assistants based on Fairy Chanting activity time in this Era.</p>
+	<p><b>Formula</b>: +(25 + 15 * x ^ 0.25), where x is Fairy Chanting activity time in this Era.</p>
 	<p><b>Upgrade</b>: Works with Fairy</p>
 	<p><b>Tip</b>: Do excavations to quickly unlock all the fairy treaties and buy the fairy upgrades. Don't forget the Fairy Choir spell upgrade.</p>
 		" coords="64,44,118,98" shape="rect">
@@ -68,7 +68,7 @@
 	<p><b>Requirements</b>: Fairy as Base Faction, Reincarnation 8+, Fairy Bloodline, Fairy challenge 1 completed.</p>
 	<p><b>Note</b>: Dwarven can be used but not required.</p>
 	<p><b>Challenge</b>: Cast Fairy Chanting within 30 seconds of a new game with over 1000 Farms.(Abdication or Reincarnation)</p>
-	<p><b>Effect</b>: Tax collections give 10 more seconds worth of coins and Faction Coins.</p>
+	<p><b>Effect</b>: Increase Tax Collection worth by 10%.</p>
 	<p><b>Upgrade</b>: Works with Goblin</p>
 	<p><b>Tip 1</b>: This is easiest just before you reincarnate, Grab the Fairy and Dwarven upgrades as quickly as possible, buy 1k+ farms, and hit the spell.</p>
 	<p><b>Tip 2</b>: Don't forget to purchase the Bloodline within the time limit.</p>
@@ -80,9 +80,9 @@
 	<p>&quot;The Fairies have developed a taste for honey. Find out quickly if they have a queen!&quot;</p>
 	<p><b>Requirements</b>: Fairy as Base Faction, Reincarnation 18+, and Fairy Unique Building, Fairy challenge 2 completed.</p>
 	<p><b>Note</b>: Dwarven can <b>NOT</b> be used unless you can get Dwarven's Unique Building at R28+.</p>
-	<p><b>Challenge</b>:  Have Swarm of Fairies (Fairy 3,3) give 60 Assistants in under a minute of a new game.(Abdication or Reincarnation)</p>
-	<p><b>Effect</b>: Increase Mana Regeneration based on the number of buildings you own.</p>
-	<p><b>Formula</b>: (0.1 * x) ^ 0.225, where x is your Buildings Owned (This Era) stat.</p>
+	<p><b>Challenge</b>: Gain at least 150 Fairy assistants from Swarm of Fairies within 2 minutes of a new Era.</p>
+	<p><b>Effect</b>: Multiplicatively increase Mana Regeneration based on Farms, Inns, and Blacksmiths built.</p>
+	<p><b>Formula</b>: (0.5 * x) ^ 0.25%, where x is the combined number of Farms, Inns, and Blacksmiths built.</p>
 	<p><b>Upgrade</b>: Works with All</p>
 	<p><b>Tip 1</b>: (8190, total, of Farms, Inns and Blacksmiths and you don't have to buy the upgrade itself.)</p>
 	<p><b>Tip 2</b>: Use Goblin Bloodline.</p>
@@ -91,8 +91,8 @@
 		research="
 	<p><b>Elven Challenge Reward</b></p>
 	<p><b><img src='/realm/Factions/picks/StarBlessingChallengeReward.png' align='middle'> Star Blessing</b></p>
-	<p><b>Effect</b>: Automatic clicks from Sun Blessing always trigger Elven Luck.</p>
-	<p><b>Formula</b>: (R + 1) * x random faction coins, where x is FC chance.</p>
+	<p><b>Effect</b>: While Moon Blessing is active, progressively increase the Elven Luck triggered statistic each second.</p>
+	<p><b>Formula</b>: +floor(1 + t ^ 0.2) per second, where t is Moon Blessing's elapsed duration.</p>
 		" coords="4,142,58,196" shape="rect">
 	<area href="/realm/Elf/#ELC1" target=""
 		research="
@@ -101,9 +101,11 @@
 	<p>&quot;The elven council have asked you to provide proof of your loyalty to their cause. Hopefully you'll be quick and efficient enough to impress them.&quot;</p>
 	<p><b> Requirements</b>: Elves as Base Faction, Reincarnation 2+, Sun Blessing upgrade purchased.</p>
 	<p><b>Note</b>: Dwarven can be used but not required.</p>
-	<p><b>Challenge</b>: Get more than 400,000 Elven Coins in under 1 hour of a new game.</p>
+	<p><b>Challenge</b>: Find at least 100,000 Elven Coins within 1 hour of a new Era.</p>
 	<p><b>Effect</b>: Reduces Elven Exchange cost multiplier.</p>
 	<p><b>Effect</b>: Reduces cost multiplier by 0.025; with no other reductions applying, the multiplier will be 1.075 instead of 1.1.</p>
+	<p><b>Effect</b>: Clicks count more based on Elven Luck triggered in this Era.</p>
+	<p><b>Formula</b>: (10 + x ^ 0.5)%, where x is Elven Luck triggered in this Era.</p>
 	<p><b>Upgrade</b>: Works with Elven</p><p><b>Tip</b>: Don't forget to use excavations.</p>
 		" coords="64,142,118,196" shape="rect">
 	<area href="/realm/Elf/#ELC2" target=""
@@ -114,7 +116,8 @@
 	<p><b>Requirements</b>: Elves as Base Faction, Reincarnation 8+, Elven Bloodline, Elven challenge 1 completed.</p>
 	<p><b>Note</b>: Dwarven can be used but not required.</p>
 	<p><b>Challenge</b>: Gather 60,000 automatic clicks in less than 2 hours.</p>
-	<p><b>Effect</b>: Autoclicks once per second.</p>
+	<p><b>Effect</b>: Multiplicatively increase Mana Regeneration based on clicks made in this Era, and autoclick once per second.</p>
+	<p><b>Formula</b>: (x ^ 0.25)%, where x is clicks made in this Era.</p>
 	<p><b>Upgrade</b>: Works with Angel</p>
 	<p><b>Tip</b>: Buy all upgrades and auto cast Moon Blessing only. Takes about 1 hour 25 minutes.</p>
 		" coords="124,142,178,196" shape="rect">
@@ -125,8 +128,9 @@
 	<p>&quot;The elven council intends to use the light you've gathered as a weapon against their corrupt cousins, as soon as they detect weakness.&quot;</p>
 	<p><b> Requirements</b>: Elves as Base Faction, Reincarnation 18+, Elven Unique Building, Elven challenge 2 completed.</p>
 	<p><b>Note</b>: Dwarven can <b>NOT</b> be used unless you can get Dwarven's Unique Building at R28+.</p>
-	<p><b>Challenge</b>: Buy 150 Royal Exchange of each Faction, having 0 Drow Exchanges (~323,543,367 of each Faction Coin).</p>
-	<p><b>Effect</b>: Increase your Mana Regeneration by +0.85 m/s for every 100 Royal Exchanges purchased.</p>
+	<p><b>Challenge</b>: Buy at least 200 of each Royal Exchange while having 0 Drow Exchanges.</p>
+	<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on clicks made in this Era.</p>
+	<p><b>Formula</b>: (x ^ 0.25)%, where x is clicks made in this Era.</p>
 	<p><b>Upgrade</b>: Works with all</p>
 		" coords="184,142,238,196" shape="rect">
 	<area href="/realm/Angel/#ANCR" target=""
@@ -135,7 +139,7 @@
 	<p><b><img src='/realm/Factions/picks/GodsThroneChallengeReward.png' align='middle'> God's Throne</b></p>
 	<p><b>Effect</b>: Mana regeneration is increased by 50% while God's Hand is active.</p>
 	<p><b>Effect</b>: Also increases offline spell cast amount by multiplicatively based on your offline Mana Regeneration.</p>
-	<p><b>Formula</b>: (10 * log10(1 + x)), where x is offline Mana Regeneration.</p>
+	<p><b>Formula</b>: (5 * ln(1 + 30 * x))%, where x is offline Mana Regeneration.</p>
 		" coords="4,240,58,294" shape="rect">
 	<area href="/realm/Angel/#ANC1" target=""
 		research="
@@ -146,6 +150,7 @@
 	<p><b>Note</b>: Dwarven can be used but not required.</p>
 	<p><b>Challenge</b>: Cast 50 Holy Lights during daytime (between 6 AM and 6 PM local time) within 20 minutes of a new game.</p>
 	<p><b>Effect</b>: Reduce all spell costs by 10%.</p>
+	<p><b>Effect</b>: While Holy Light is active, increase the production of all buildings by 100%.</p>
 	<p><b>Upgrade</b>: Works with Angel</p>
 	<p><b>Tip</b>: Recommended +1 B (1E9) gems. You will need minimum Mana Regeneration of 60 m/s to get enough Holy Light autocasts. Avoid purchasing Angelic Dominance (3,2). If you have bloodlines (R7), choose the Druid Bloodline.</p>
 		" coords="64,240,118,294" shape="rect">
@@ -187,8 +192,8 @@
 	<p>&quot;The goblin king has revealed the secrets of his race's success. Patience and persistence.&quot;</p>
 	<p><b>Requirements</b>: Goblin as Base Faction, Reincarnation 2+, Greed Drive upgrade purchased.</p>
 	<p><b>Note</b>: Drow can be used but not required.</p>
-	<p><b>Challenge</b>: Have Goblin (3,3) Green Fingers Discount roll more than 1000 seconds worth of production.</p>
-	<p><b>Effect</b>: Goblin (3,3) Green Fingers Discount triggers every 2 minutes instead. Now also casts 10 Tax Collections upon triggering.</p>
+	<p><b>Challenge</b>: Have Green Fingers Discount roll more than 1,000 as its random base value.</p>
+	<p><b>Effect</b>: Green Fingers Discount triggers every 30 seconds and casts 10 Tax Collections upon triggering.</p>
 	<p><b>Note</b>: Tax Collections cast this way will not trigger upgrades such as GB7.</p>
 	<p><b>Note</b>: While Green Fingers Discount says it works offline, it does not work in the same way as online, and this challenge cannot be completed offline or when coming online based on the offline effect of Green Fingers Discount.</p>
 	<p><b>Note</b>: There's a 60% chance of getting it every time Green Fingers Discount triggers.</p>
@@ -201,8 +206,9 @@
 	<p>&quot;Goblin elites are used to unimaginable wealth. They will work for you after you bribe them generously and show them your worth.&quot;</p>
 	<p><b>Requirements</b>: Goblin as Base Faction, Reincarnation 8+, Goblin Bloodline, Goblin challenge 1 completed.</p>
 	<p><b>Note</b>: Drow can be used but not required.</p>
-	<p><b>Challenge</b>: Buy over 250 upgrades and 15,000 buildings.</p>
-	<p><b>Effect</b>: 25% of your purchased upgrades are added to your total trophy count for Hellfire Blast and Hall of Legends purposes.</p>
+	<p><b>Challenge</b>: Purchase at least 250 upgrades and 15,000 buildings.</p>
+	<p><b>Effect</b>: Multiplicatively increase production bonus from Gems based on Tax Collection casts in this Era.</p>
+	<p><b>Formula</b>: (2 * ln(1 + x) ^ 2)%, where x is Tax Collection casts in this Era.</p>
 	<p><b>Upgrade</b>: Works with Demon</p>
 		" coords="124,338,178,392" shape="rect">
 	<area href="/realm/Goblin/#GBC3" target=""
@@ -210,18 +216,18 @@
 	<p><b>Goblin Challenge 3</b></p>
 	<p><b><img src='/realm/Factions/picks/SmuggledJewelsChallenge.png' align='middle'> Smuggled Jewels</b></p>
 	<p>&quot;The goblin king wants a castle made of jewels all to himself.&quot;</p>
-	<p><b>Requirements</b>: Goblin as Base Faction, Reincarnation 18+, Goblin Unique Building.</p>
+	<p><b>Requirements</b>: Goblin as Base Faction, Reincarnation 18+, Goblin Unique Building, Goblin challenge 2 completed.</p>
 	<p><b>Note</b>: Drow can <b>NOT</b> be used unless you can get Drow's Unique Building at R28+.</p>
 	<p><b>Challenge</b>: Have at least 1 Qavg (1e75) gems in the abdication treasury while using Goblin Bloodline (post Ascension: 1 B (1e9) gems).</p>
-	<p><b>Effect</b>: Increase production bonus from Gems by +0.01% for each upgrade purchased.</p>
+	<p><b>Effect</b>: Each spell cast also casts a free Tax Collection, and triggered Tax Collections are multiplicatively increased by 25%.</p>
 	<p><b>Upgrade</b>: Works with All</p>
 		" coords="184,338,238,392" shape="rect">
 	<area href="/realm/Undead/#UDCR" target=""
 		research="
 	<p><b>Undead Challenge Reward</b></p>
 	<p><b><img src='/realm/Factions/picks/MidnightTimeChallengeReward.png' align='middle'> Midnight Time</b></p>
-	<p><b>Effect</b>: Increase Night Time assistant bonus based on time spent offline this Reincarnation.</p>
-	<p><b>Formula</b>: (0.2 * (x / 60) ^ 0.7)%, where x is your time spent offline this Reincarnation.</p>
+	<p><b>Effect</b>: Increase Night Time assistant bonus based on time spent in this Reincarnation.</p>
+	<p><b>Formula</b>: (0.25 * x ^ 0.75)%, where x is time spent in this Reincarnation.</p>
 		" coords="4,436,58,490" shape="rect">
 	<area href="/realm/Undead/#UDC1" target=""
 		research="
@@ -230,9 +236,9 @@
 	<p>&quot;The walking dead aren't very fond of a living being among their kind. Fortunately for you, an army of shambling corpses is slow to both think and move.&quot;</p>
 	<p><b>Requirements</b>: Undead as Base Faction, Reincarnation 2+, True Night upgrade purchased.</p>
 	<p><b>Note</b>: Drow can be used but not required.</p>
-	<p><b>Challenge</b>: Get 6 assistants via Undead Heritage.</p>
-	<p><b>Note</b>: This takes 6 hours, 40 minutes, 47 seconds.</p>
-	<p><b>Effect</b>: Undead Heritage works 5000% faster. (Effective x10.58 boost)</p>
+	<p><b>Challenge</b>: Reach at least 20,000% Offline production.</p>
+	<p><b>Effect</b>: Increase Mana Regeneration additively based on assistants owned and multiplicatively by 10%.</p>
+	<p><b>Formula</b>: +(4.5 * ln(1 + x) ^ 2), where x is assistants owned.</p>
 	<p><b>Upgrade</b>: Works with Undead</p>
 	<p><b>Tip</b>: Awarded if your playtime is at least 6h, 40m, 47s and you have True Night and the Undead Trade Treaty. You do not need to own the Heritage or have it unlocked.</p>
 	<p><b>Note</b>: No upgrades will reduce the time required.</p>
@@ -255,8 +261,8 @@
 	<p>&quot;The walking dead are prepared for a zombie invasion. Their last task for you is to loot the local cemeteries for possible equipment.&quot;</p>
 	<p><b>Requirements</b>: Undead as Base Faction, Reincarnation 18+, Undead Unique Building, Undead challenge 2 completed.</p>
 	<p><b>Note</b>: Drow can <b>NOT</b> be used unless you can get Drow's Unique Building at R28+.</p>
-	<p><b>Challenge</b>: Collect 100 M (1e8) Faction coins</p>
-	<p><b>Effect</b>: Multiplicatively increase your number of assistants by 10%.</p>
+	<p><b>Challenge</b>: Find at least 1 B (1e9) Faction Coins in this Era.</p>
+	<p><b>Effect</b>: Multiplicatively increase assistants and Offline production by 10%.</p>
 	<p><b>Upgrade</b>: Works with All</p>
 		" coords="184,436,238,490" shape="rect">
 	<area href="/realm/Demon/#DMCR" target=""
@@ -273,7 +279,7 @@
 	<p>&quot;The Princes of Hell wish to test your skills at gathering coins without outside help.&quot;</p>
 	<p><b>Requirements</b>: Demon as Base Faction, Reincarnation 2+, Hellfire Blast upgrade purchased.</p>
 	<p><b>Note</b>: Drow can be used but not required.</p>
-	<p><b>Challenge</b>: Collect 5000 Demon Coins without using Gem Power, Reincarnation Power, Researches or Excavations.</p>
+	<p><b>Challenge</b>: Find at least 2,000 Demon Coins without using Gem Power, Reincarnation Power, or Excavations.</p>
 	<p><b>Effect</b>: Increase the production of all buildings and Faction Coin find chance (additively) based on the amount of upgrades purchased. does not suffer from Ascension penalties.</p>
 	<p><b>Formula</b>: (x)% and +(x)%, where x is the amount of upgrades purchased.</p>
 	<p><b>Upgrade</b>: Works with Demon</p>
@@ -285,7 +291,7 @@
 	<p><b>Demon Challenge 2</b></p>
 	<p><b><img src='/realm/Factions/picks/LegendaryAnticsChallenge.png' align='middle'> Legendary Antics</b></p>
 	<p>&quot;The Princes of Hell demand a tribute, unleash the Beast by extorting every other faction in this realm. You should perform this task with haste, for they are well known for their impatience&quot;</p>
-	<p><b>Requirements</b>: Demon as Base Faction, Reincarnation 8+, Demon Bloodline.</p>
+	<p><b>Requirements</b>: Demon as Base Faction, Reincarnation 8+, Demon Bloodline, Demon challenge 1 completed.</p>
 	<p><b>Note</b>: Drow can be used but not required.</p>
 	<p><b>Challenge</b>: Have exactly 666 Royal Exchanges across all factions, with 0 Demon Exchanges, in under 666 seconds current playtime.</p>
 	<p><b>Effect</b>: Increase Maximum Mana by 6.66% of your number of Halls of Legends.</p>
@@ -297,9 +303,9 @@
 	<p><b>Demon Challenge 3</b></p>
 	<p><b><img src='/realm/Factions/picks/PassagetoTartarusChallenge.png' align='middle'> Passage to Tartarus</b></p>
 	<p>&quot;The Demon King has ordered you to prove your might to the entire realm.&quot;</p>
-	<p><b>Requirements</b>: Demon as Base Faction, Reincarnation 18+, Demon Unique Building</p>
+	<p><b>Requirements</b>: Demon as Base Faction, Reincarnation 18+, Demon Unique Building, Demon challenge 2 completed.</p>
 	<p><b>Note</b>: Drow can <b>NOT</b> be used unless you can get Drow's Unique Building at R28+.</p>
-	<p><b>Challenge</b>: Have at least 1750 Halls of Legends and 333 Trophies.</p>
+	<p><b>Challenge</b>: Own at least 2,500 Halls of Legends and 333 trophies.</p>
 	<p><b>Effect</b>: Increase the production of Non-Unique buildings based on the amount of unlocked trophies. does not suffer from Ascension penalties.</p>
 	 <p><b>Formula</b>: (0.8 * x ^ 0.8)%, where x is the amount of unlocked trophies.</p>
 	<p><b>Upgrade</b>: Works with All</p>
@@ -310,7 +316,7 @@
 	<p><b>Titan Challenge Reward</b></p>
 	<p><b><img src='/realm/Factions/picks/ThunderstormChallengeReward.png' align='middle'> Thunderstorm</b></p>
 	<p><b>Effect</b>: Further increase Faction Coin find chance from Lightning Strike based on building tiers it hits.</p>
-	<p><b>Formula</b>: (10 + log10(1 + x) ^ 2 * (1 + 0.2 * sum(T)))%, where x is your current amount of gems and T the Building Tier Lightning Strike hits.</p></p>
+	<p><b>Formula</b>: +0.2% per building tier hit by Lightning Strike (including additional tiers from applicable upgrades).</p>
 	<p><b>Note</b>: Lightning Strike can hit multiple tiers at once if you have C375 and/or Titan Perk 4.</p>
 		" coords="4,632,58,686" shape="rect">
 	<area href="/realm/Titan/#TTC1" target=""
@@ -320,7 +326,8 @@
 	<p>&quot;The mighty Titans have decided to give you and a dozen of you most loyal subjects a chance to prove your kingdom's economy is as strong as theirs.&quot;</p>
 	<p><b>Requirements</b>: Titan as Base Faction, Reincarnation 4+, Lightning Storm upgrade purchased, Angel and Goblin challenge 1 completed.</p>
 	<p><b>Challenge</b>: Have at least 13 assistants and have exactly 13 times that many Royal Exchanges (Total)</p>
-	<p><b>Effect</b>: You gain a free assistant for every 80 Royal Exchanges you bought</p>
+	<p><b>Effect</b>: Gain assistants based on Royal Exchanges bought.</p>
+	<p><b>Formula</b>: +(0.8 * x ^ 0.8), where x is Royal Exchanges bought.</p>
 	<p><b>Upgrade</b>: Works with Titan</p>
 	<p><b>Tip</b>: This can be done solely with building assistants where the 5th and 25th building upgrade gives 1 assistant each.</p>
 	<p><b>Note</b>: You can have more than 13 assistants so long as you have the required (13 x number of assistants).</p>
@@ -334,7 +341,7 @@
 	<p><b>Requirements</b>: Titan as Base Faction, Reincarnation 9+, Titan Bloodline, Angel and Goblin challenge 2 and Titan challenge 1 completed.</p>
 	<p><b>Challenge</b>: Click 80 times while having at least 3 active spells in a single session.</p>
 	<p><b>Effect</b>: Increases the production of buildings based on time spent not playing as Faceless in this Reincarnation. Does not suffer from Ascension penalties.</p>
-	<p><b>Formula</b>: (x ^ 0.7)%, where x is time spent not playing as Faceless this Reincarnation.</p>
+	<p><b>Formula</b>: (1.25 * x ^ 0.6)%, where x is time spent not playing as Faceless this Reincarnation.</p>
 	<p><b>Upgrade</b>: Works with Faceless</p>
 	<p><b>Tip</b>: This challenge does not need to be done within one spell combo. In addition, due to a bug, it counts one click per second if you have at least one assistant. It's possible to meet the condition without clicking the treasure at all while spells are active by casting 3 spells that last 20 seconds together 4 times.</p>
 		" coords="124,632,178,686" shape="rect">
@@ -345,8 +352,8 @@
 	<p>&quot;The mighty Titans are almost ready to accept you into their pantheon. They request that you gather enough offerings to mark your ascension.&quot;</p>
 	<p><b>Requirements</b>: Titan as Base Faction, Reincarnation 19+, 1000 excavations, Angel and Goblin challenge 3 and Titan challenge 2 completed.</p>
 	<p><b>Challenge</b>: Cast 80 Tax Collections within the active duration of a single Lightning Strike.</p>
-	<p><b>Effect</b>: Gain additional Maximum Mana based on the number of Faction Coins generated this Era.</p>
-	<p><b>Formula</b>: (round(2.5 * log10(1 + x)))%, where x is the number of Faction Coins Gained found in this Era.</p>
+	<p><b>Effect</b>: Multiplicatively increase Maximum Mana based on Faction Coins found in this Era.</p>
+	<p><b>Formula</b>: (1.25 * ln(1 + x))%, where x is Faction Coins found in this Era.</p>
 	<p><b>Upgrade</b>: Works with Druid</p>
 		" coords="184,632,238,686" shape="rect">
 	<area href="/realm/Titan/#TTC4" target=""
@@ -355,9 +362,9 @@
 	<p><b><img src='/realm/Factions/picks/StormofWealthChallenge.png' align='middle'> Storm of Wealth</b></p>
 	<p>&quot;The mighty Titans wish to cement their legendary status for perpetuity. You must focus on this task and no other to be able to join them.&quot;</p>
 	<p><b>Requirements</b>: Titan as Base Faction, Reincarnation 25+, Titan Unique Building, Titan challenge 3 completed.</p>
-	<p><b>Challenge</b>: Hit Halls of Legends with Lightning Strike 2 times in a row while having all building types and no researches.</p>
-	<p><b>Effect</b>: Increases production of all buildings based on Lightning Strike casts in this Reincarnation. does not suffer from Ascension penalties.</p>
-	<p><b>Formula</b>: (15 * x ^ 0.5)%, where x is Lightning Strike casts this Reincarnation.</p>
+	<p><b>Challenge</b>: Cast Lightning Strike while having at least 200 Angel Exchanges and 200 Goblin Exchanges without using any researches.</p>
+	<p><b>Effect</b>: Multiplicatively increase Royal Exchange bonus based on Halls of Legends built.</p>
+	<p><b>Formula</b>: (x ^ 0.5)%, where x is Halls of Legends built.</p>
 	<p><b>Upgrade</b>: Works with All</p>
 	<p><b>Tip</b>: Buy Olympian Hall, get enough Mana Regeneration from non-Research methods, set Lightning Strike on bronze (Ctrl+Shift). Wait. On average, it takes 132 strikes to get two in a row on HoLs.</p>
 		" coords="244,632,298,686" shape="rect">
@@ -366,7 +373,7 @@
 	<p><b>Druid Challenge Reward</b></p>
 	<p><b><img src='/realm/Factions/picks/PrimalBalanceChallengeReward.png' align='middle'> Primal Balance</b></p>
 	<p><b>Effect</b>: Grand Balance now affects extra buildings based on Mana produced in this Reincarnation.</p>
-	<p><b>Formula</b>: (0.00001 * x) ^ (0.2 - 0.025 * A), where x is Mana produced in this Reincarnation and A is how many times you have ascended.</p>
+	<p><b>Formula</b>: floor((x / 100,000) ^ (0.2 / (0.5 * A + 1))), where x is Mana produced in this Reincarnation and A is Ascensions.</p>
 	<p><b>Effect</b>: When the amount of additional targets exceeds 11, increase the production of all affected buildings based on the exceeding amount. Does not suffer from Ascension penalties.</p>
 	<p><b>Formula</b>: (3 * (x - 10) ^ 1.5)%, where x is the amount of additional targets.</p>
 		" coords="4,730,58,784" shape="rect">
@@ -378,7 +385,7 @@
 	<p><b>Requirements</b>: Druid as Base Faction, Reincarnation 4+, Halls of Balance upgrade purchased, Elven and Demon challenge 1 completed.</p>
 	<p><b>Challenge</b>: Make the building targeted by Grand Balance surpass 99.9% of your production.</p>
 	<p><b>Effect</b>: Gain assistants based on time spent in this Era.</p>
-	<p><b>Formula</b>: +(0.7 * x ^ 0.7), where x is time spent this Era.</p>
+	<p><b>Formula</b>: +(3 * x ^ 0.7), where x is time spent in this Era.</p>
 	<p><b>Upgrade</b>: Works with Druid</p>
 	<p><b>Tip</b>: Click image to see instructions</p>
 		" coords="64,730,118,784" shape="rect">
@@ -388,8 +395,8 @@
 	<p><b><img src='/realm/Factions/picks/BalancedCurrentChallenge.png' align='middle'> Balanced Current</b></p>
 	<p>&quot;Our sorcerers are desperately trying to stabilize the balance of the realm, this is your opportunity to gain their favor - and live another day.&quot;</p>
 	<p><b> Requirements</b>: Druid as Base Faction, Reincarnation 9+, Druid Bloodline, Elven and Demon challenge 2 and Druid challenge 1 completed.</p>
-	<p><b>Challenge</b>: Have exactly 1,500 of each building types for 15 full Grand Balance casts in this Era. (The 15 casts only counts after you have all the 1500 buildings.)</p>
-	<p><b>Effect</b>: Mana regeneration is increased by 1% for every 5000 buildings.</p>
+	<p><b>Challenge</b>: Cast Grand Balance 15 times while having exactly 1,500 of each building.</p>
+	<p><b>Effect</b>: Multiplicatively increase Mana Regeneration by 1% for every 1,000 buildings built.</p>
 	<p><b>Upgrade</b>: Works with Titan</p>
 		" coords="124,730,178,784" shape="rect">
 	<area href="/realm/Druid/#DDC3" target=""
@@ -399,7 +406,7 @@
 	<p>&quot;Pleased with your efforts, the elder Druids assigned you with an important task; empower our obelisks, sacred churches and sarcophaguses.&quot;</p>
 	<p><b>Requirements</b>: Druid as Base Faction, Reincarnation 19+, 1000 excavations, Elven and Demon challenge 3 and Druid challenge 2 completed.</p>
 	<p><b>Challenge</b>: Have Grand Balance target Stone Pillars, Monasteries and Ancient Pyramids in that order, for 3 casts of the Grand Balance spell.</p>
-	<p><b>Effect</b>: You gain 1.5 additional Maximum Mana for every 100 buildings.</p>
+	<p><b>Effect</b>: Gain 5 Maximum Mana for every 100 buildings built.</p>
 	<p><b>Upgrade</b>: Works with Faceless</p>
 	<p><b>Note</b>: The Grand Balance bonus needs to show at least 1% or the targets are invalid.</p> 
 	<p><b>Note</b>: Since Grand Balance can affect a tier with 0 buildings, you can target the wanted building tier this way:</p>
@@ -415,7 +422,7 @@
 	<p><b>Requirements</b>: Druid as Base Faction, Reincarnation 25+, Druid Unique Building, Druid challenge 3 completed.</p>
 	<p><b>Challenge</b>: Cast 13 Grand Balances in the first 5 minutes of a playthrough with 0 non-Druid researches.</p>
 	<p><b>Effect</b>: Increase Non-Unique buildings production based on the duration of your longest spell and buildings' tier. Gives the best bonus to the lowest tier. Does not suffer from Ascension penalties.</p>
-	 <p><b>Formula</b>: ((7 * x ^ 0.7) * (12 - T))%, where x is the duration of your longest spell, T is building tier.</b></p>
+	 <p><b>Formula</b>: (3 * x ^ 0.7 * (12 - T))%, where x is the duration of your longest spell and T is building tier.</p>
 	<p><b>Upgrade</b>: Works with All</b></p>
 	<p><b>Tips</b>: Do not buy Halls of Balance as it increases the spell duration. Make sure you have some excavations to buy the Heritages. (Angel Heritage and Angel 1 challenge both boost your m/s.) To achieve this, you need a min. of 50 m/s with Grand Balance continuously casting during 13 full casts. Reward given at 5 minute mark regardless of when achieved.</p>
 		" coords="244,730,298,784" shape="rect">
@@ -423,8 +430,8 @@
 		research="
 	<p><b>Faceless Challenge Reward</b></p>
 	<p><b><img src='/realm/Factions/picks/FocusedThoughtsChallengeReward.png' align='middle'> Focused Thoughts</b></p>
-	<p><b>Effect</b>: Give Brainwave a headstart based on its activity time in this Era, with a minimum of 1 minute.</p>
-	<p><b>Formula</b>: +1 second per 5 minutes of Brainwave active time this Era.</p>
+	<p><b>Effect</b>: Give Brainwave a 10-minute headstart, increasing based on its activity time in this Era.</p>
+	<p><b>Formula</b>: 600 + 0.4 * x ^ 0.8 seconds, where x is Brainwave activity time in this Era.</p>
 		" coords="4,828,58,882" shape="rect">
 	<area href="/realm/Faceless/#FCC1" target=""
 		research="
@@ -433,7 +440,7 @@
 	<p>&quot;You are always growing - but what to do when you can only start from a single cell with no means of survival?&quot;</p>
 	<p><b>Requirements</b>: Faceless as Base Faction, Reincarnation 4+, Faceless Overmind upgrade purchased, Fairy and Undead challenge 1 completed.</p>
 	<p><b>Challenge</b>: Have at least 125 assistants within 5 minutes of a new game.</p>
-	<p><b>Effect</b>: Gain an extra assistant every minute, resets every hour</p>
+	<p><b>Effect</b>: Gain 15 assistants every minute; resets every hour.</p>
 	<p><b>Upgrade</b>: Works with Faceless</p>
 		" coords="64,828,118,882" shape="rect">
 	<area href="/realm/Faceless/#FCC2" target=""
@@ -443,7 +450,8 @@
 	<p>&quot;Your Hive superiors have ordered you to setup a base without alerting any nearby enemies&quot;</p>
 	<p><b>Requirements</b>: Faceless as Base Faction, Reincarnation 9+, Faceless Bloodline, Fairy and Undead challenge 2 completed</p>
 	<p><b>Challenge</b>: Get to 6,500 Maximum Mana and 8,000 Buildings within 10 minutes of a new game.</p>
-	<p><b>Effect</b>: You gain +10 Maximum Mana for every 500 buildings.</p>
+	<p><b>Effect</b>: Gain Maximum Mana based on the highest number of buildings owned in this Reincarnation.</p>
+	<p><b>Formula</b>: +(6 * x ^ 0.6), where x is the highest number of buildings owned in this Reincarnation.</p>
 	<p><b>Upgrade</b>: Works with Druid</p>
 		" coords="124,828,178,882" shape="rect">
 	<area href="/realm/Faceless/#FCC3" target=""
@@ -452,9 +460,9 @@
 	<p><b><img src='/realm/Factions/picks/CyclopeanArmyChallenge.png' align='middle'> Cyclopean Army</b></p>
 	<p>&quot;Our enemies, the Outer Gods, have returned. Use mind control to enhance our forces and repel this threat.&quot;</p>
 	<p><b>Requirements</b>: Faceless as Base Faction, Reincarnation 19+, 1000 excavations, Fairy and Undead challenge 3 completed</p>
-	<p><b>Challenge</b>: Cast Call to Arms, Gem Grinder and Spiritual Surge during last 20 seconds of Brainwave.</p>
+	<p><b>Challenge</b>: Have Call to Arms, Gem Grinder, Spiritual Surge, and Brainwave active at the same time.</p>
 	<p><b>Effect</b>: Multiplicatively increase assistants based on your royal exchange bonus.</p>
-	<p><b>Formula</b>: (0.45 * x ^ 0.45)%, where x is your royal exchange bonus.</p>
+	<p><b>Formula</b>: (1.8 * x ^ 0.4)%, where x is your Royal Exchange bonus.</p>
 	<p><b>Upgrade</b>: Works with Titan</p>
 		" coords="184,828,238,882" shape="rect">
 	<area href="/realm/Faceless/#FCC4" target=""
@@ -462,11 +470,10 @@
 	<p><b>Faceless Challenge 4</b></p>
 	<p><b><img src='/realm/Factions/picks/OmnipresenceChallenge.png' align='middle'> Omnipresence</b></p>
 	<p>&quot;We are suffering attacks from another Hive. It's time to remind them the power of our master.&quot;</p>
-	<p><b>Requirements</b>: Faceless as Base Faction, Reincarnation 25+, Faceless Unique Building.</p>
-	<p><b>Challenge</b>: Get Hive Mind (FC9) bonus to at least 500%.</p>
+	<p><b>Requirements</b>: Faceless as Base Faction, Reincarnation 25+, Faceless Unique Building, Faceless challenge 3 completed.</p>
+	<p><b>Challenge</b>: Have a Hive Mind bonus of at least 100%.</p>
 	<p><b>Effect</b>: All factions receive 5% of your Hive Mind bonus. does not suffer from Ascension penalties.</p>
 	<p><b>Upgrade</b>: Works with All</p>
-	<p><b>Tip</b>: This is the equivalent of 2 days, 21 hours, 26 minutes and 40 seconds spent allied with Faceless.</p>
 		" coords="244,828,298,882" shape="rect">
 	<area href="/realm/Dwarf/#DNCR" target=""
 		research="
