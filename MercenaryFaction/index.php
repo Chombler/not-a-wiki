@@ -13,10 +13,10 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MercenaryTribute.png" align="middle"> Mercenary Tribute</b></p>
 	<p><b>Cost</b>: At least: 1 Nod (1e60) Coins</p>
-	<p><b>Cost</b>: At least: 100,000 of each Faction Coin</p>
+	<p><b>Cost</b>: At least: 50,000 of each applicable Faction Coin</p>
 	<p>(Price rises with time and is reset at Abdications.)</p>
 	<p><b>Coin Formula</b>: (1e60 * (ceil((1 + x)/60)) ^ 3.5), x is playtime in seconds</p>
-	<p><b>Faction Coin Formula</b>: (100000 * (ceil((1 + x)/60)) ^ 0.5), x is playtime in seconds</p>
+	<p><b>Faction Coin Formula</b>: (50,000 * (ceil((1 + x)/60)) ^ 0.5), x is playtime in seconds</p>
 	<p><b>In Game description</b></p>
 	<p>Pay the mercenaries tribute to unlock their powers. Be quick through, the price increases over time!</p>
 	<br/>
@@ -140,14 +140,15 @@
 	<p><b><img src="/realm/Factions/picks/MercenarySpiritSecretTrophy.png" align="middle"> Mercenary Spirit</b></p>
 	<p><b>Requirement</b>: Reincarnate while playing as a Mercenary</p>
 	<p><b>Cost</b>: 1 Ocd (1e57)</p>
-	<p><b>Effect</b>: Increase the production of all buildings by 15% per reincarnation.</p>
+	<p><b>Effect</b>: Increase the production of all buildings based on the activity time of your least-used spell in this Reincarnation, improving as you Reincarnate more. Mercenaries only.</p>
+	<p><b>Formula</b>: (10 * R + 2 * x ^ 0.8)%, where R is your Reincarnation number and x is the activity time of your least-used spell in this Reincarnation.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/HarlequinMercenaryUpgrade.png" alt="Harlequin" align="middle"> Harlequin</b></p>
 	<p><b>Requirement</b>: As a mercenary, purchase one upgrade for 11 different factions.</p>
 	<p><b>Note</b>: You can use <a target="_blank" target="_blank" href="/realm/MercBuilds/#TrophyBuilds"><b>Harlequin R3+ and KYE R12+</b></a> build to get <b>Harlequin</b>.</p>
 	<p><b>Cost</b>: 5 Qivg (5e78)</p>
-	<p><b>Effect</b>: Increase the production of all buildings based on the amount of different factions involved in your mercenary upgrades.</p>
-	<p><b>Formula</b>: (x ^ 3)%, where x is the number of different factions you've bought upgrades from.</p>
+	<p><b>Effect</b>: Increase the production of all buildings based on the amount of different factions involved in your Mercenary upgrades, improving over time spent as your least-used alignment in this Reincarnation.</p>
+	<p><b>Formula</b>: (10 + x ^ 3 * (1 + 0.03 * y ^ 0.7))%, where x is the number of different factions represented by your Mercenary upgrades and y is time spent as your least-used alignment in this Reincarnation.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/LuciferSecretTrophy.png" align="middle"> Lucifer</b></p>
 	<p><b>Requirement</b>: As a Good Mercenary, purchase only Evil mercenary faction upgrades or vice versa.</p>

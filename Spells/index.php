@@ -205,7 +205,7 @@
 	<p><b>Spell Type</b>: (Neutral/Balance) Druid Faction Spell</p>
 	<p><b>Cost</b>: 1,000 Mana - <b>Duration</b>: 20 seconds</p>
 	<p><b>Effect</b>: Increase the production of your least productive building based on the amount of the three most built ones.</p>
-	<p><b>Formula</b>: (25 * (x * y * z / (A + 3) ^ 6) ^ 0.9)%, where x, y and z are the number of your three most-built buildings and A is how many times you have ascended.</p>
+	<p><b>Formula</b>: (1 + round(25 * (x * y * z / (A + 3) ^ 6) ^ 0.9))%, where x, y and z are the number of your three most-built buildings and A is how many times you have ascended.</p>
 		" coords="130,130,184,184" shape="rect">
 		<area href="#GemGrinder" research="
 	<p><b><img src='/realm/Factions/picks/GemGrinder.png' alt='Neutral' align='middle'> Gem Grinder</b></p>
@@ -245,8 +245,9 @@
 	<p><b>Spell Type</b>: Order Alignment Spell (R100+)</p>
 	<p><b>Cost</b>: 950 Mana - <b>Duration</b>: 20 seconds</p>
 	<p><b>Effect</b>: Increase Unique building production based on time spent this Era.</p>
+	<p><b>Production Formula</b>: (x ^ 0.825)%, where x is time spent in this Era.</p>
 	<p><b>Effect</b>: Also multiplicatively increase Mana Regeneration based on time spent in this Era.</p>
-	<p><b>Formula</b>: (3.75 * (x / 60) ^ 0.825)%, where x is time spent in this Era.</p>
+	<p><b>Mana Regeneration Formula</b>: (3.75 * (x / 60) ^ 0.825 * (T + 1))%, where x is time spent in this Era and T is the zero-based spell tier.</p>
 		" coords="10,190,64,244" shape="rect">
 		<area href="#Maelstrom" research="
 	<p><b><img src='/realm/Factions/picks/Maelstrom.png' alt='Chaos' align='middle'> Maelstrom</b></p>
@@ -370,7 +371,7 @@
 	<p><b>Requirement</b>: Cast God's Hand with at least 1,500 Maximum Mana and 75 Mana Regeneration.</p>
 	<p><b>Cost</b>: 1 M (1e6), A1+ Free</p>
 	<p><b>Effect</b>: Gives random Faction Coins based on your Faction Coin find chance for each other spell you cast while God's Hand is active.</p>
-	<p><b>Formula</b>: (floor(x ^ 1.1), where x is Faction Coin find chance.</p>
+	<p><b>Formula</b>: floor(x ^ 1.1), where x is Faction Coin find chance.</p>
 		" coords="130,10,184,64" shape="rect">
 		<area href="#DiamondPickaxe" research="
 	<p><b><img src='/realm/Factions/picks/MinedwarfSpellUpgrade.png' align='middle'> Minedwarf</b></p>
@@ -848,7 +849,7 @@
 <p><b>Spell Trophy & Upgrade</b>: <b><img src="/realm/Factions/picks/GodsRestSpellUpgrade.png" align="middle"> God's Rest</b></p>
 <p><b>Requirement</b>: Cast God's Hand with at least 1,500 Maximum Mana and 75 Mana Regeneration.</p>
 <p><b>Effect</b>: Gives random Faction Coins based on your Faction Coin find chance for each other spell you cast while God's Hand is active.</p>
-<p><b>Formula</b>: (floor(x ^ 1.1), where x is Faction Coin find chance.</p>
+<p><b>Formula</b>: floor(x ^ 1.1), where x is Faction Coin find chance.</p>
 <p><b>Cost</b>: 1 M (1e6), A1+ Free</p>
 <p><b>Challenge Upgrade</b>: <b><img src="/realm/Factions/picks/GodsThroneChallengeReward.png" align="middle"> God's Throne</b> (R18+)</p>
 <p><b>Effect</b>: Mana Regeneration is multiplicatively increased by 50% while God's Hand is active.</p>
@@ -1189,10 +1190,11 @@
 <b><center>Secondary Alignment Spells</center></b>
 <p id="TemporalFlux"><b><img src="/realm/Factions/picks/TemporalFlux.png" alt="Temporal Flux" align="middle"> Temporal Flux</b> (Proof of Order)</p>
 <p><b>Requirement</b>: Ascension 2</p>
-<p><b>Cost</b>: 5000 Mana - <b>Duration</b>: 20 seconds</p>
+<p><b>Cost</b>: 950 Mana - <b>Duration</b>: 20 seconds</p>
 <p><b>Effect</b>: Increase Unique building production by time spent this Era.</p>
+<p><b>Production Formula</b>: (x ^ 0.825)%, where x is time spent in this Era.</p>
 <p><b>Effect</b>: Also multiplicatively increase Mana Regeneration based on time spent in this Era.</p>
-<p><b>Formula</b>: (3.75 * (x / 60) ^ 0.825)%, where x is time in seconds this Era.</p>
+<p><b>Mana Regeneration Formula</b>: (3.75 * (x / 60) ^ 0.825 * (T + 1))%, where x is time in seconds this Era and T is the zero-based spell tier.</p>
 <br/>
 <p><b><img src="/realm/Factions/picks/TemporalFluxTier2.png" alt="Temporal Flux" align="middle"> Tier 2</b> (R120+)</p>
 <p><b>Requirement</b>: Lantern of Guidance (Artifact)</p>
@@ -1201,7 +1203,7 @@
 <br/>
 <p id="Maelstrom"><b><img src="/realm/Factions/picks/Maelstrom.png" alt="Maelstrom" align="middle"> Maelstrom</b> (Proof of Chaos)</p>
 <p><b>Requirement</b>: Ascension 2</p>
-<p><b>Cost</b>: 3500 Mana - <b>Duration</b>: 20 seconds</p>
+<p><b>Cost</b>: 700 Mana - <b>Duration</b>: 20 seconds</p>
 <p><b>Effect</b>: Increase the production of two random buildings based on one of these stats, chosen at random: Mana produced this Era, trophies unlocked, Faction Coins found this Era, or assistants.</p>
 <p><b>Formula (Mana)</b>: (0.1 * ln(1 + x) ^ 5)%, where x is Mana produced this Era.</p>
 <p><b>Formula (Trophies)</b>: (5 * x ^ 0.9)%, where x is trophies unlocked.</p>
@@ -1215,7 +1217,7 @@
 <br/>
 <p id="AllCreation"><b><img src="/realm/Factions/picks/AllCreation.png" alt="All Creation" align="middle"> All Creation</b> (Proof Of Balance) </p>
 <p><b>Requirement</b>: Ascension 2</p>
-<p><b>Cost</b>: 6000 Mana - <b>Duration</b>: 20 seconds</p>
+<p><b>Cost</b>: 1,100 Mana - <b>Duration</b>: 20 seconds</p>
 <p><b>Effect</b>: Increase production of all buildings based on your Mana Regeneration rate.</p>
 <p><b>Formula</b>: (0.5 * ln(1 + 30 * x) ^ 3 + (30 * x) ^ 0.5)%, where x is your Mana Regeneration.</p>
 <p><b>Effect</b>: Also multiplicatively increase Faction Coin find chance based on your Mana Regeneration rate.</p>
