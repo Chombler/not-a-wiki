@@ -1553,14 +1553,14 @@
 				<p><b>Research Name</b>: Assault</p>
 				<p><b>Cost</b>: 750 Qag (7.50e125)</p>
 				<p><b>Effect</b>: Increase the production of Infernal Realms based on the amount of Hellfire Blasts cast in this Era.</p>
-				<p><b>Formula</b>: (30 * x ^ 0.7)%, where x is Hellfire Blasts Cast This Era.</p>
+				<p><b>Formula</b>: (160 + 80 * x ^ 0.8)%, where x is Hellfire Blasts cast in this Era.</p>
 				<hr>
 				<p><b>W10</b> - For Elf</p>
 				<p><b>Research Name</b>: Dueling</p>
 				<p><b>Hint</b>: Too many soldiers. More barracks!</p>
 				<p><b>Requirement</b>: 2000 Warrior Barracks</p>
 				<p><b>Cost</b>: 28.83 Uqag (2.883e127)</p>
-				<p><b>Effect</b>: Increase the production of all other buildings by 90% per Elven Training Grounds you own.</p>
+				<p><b>Effect</b>: Increase the production of all other buildings by 130% per Elven Training Ground you own.</p>
 				<hr>
 				<p><b>W25</b> - For Goblin</p>
 				<p><b>Research Name</b>: War Funds</p>
@@ -1568,7 +1568,7 @@
 				<p><b>Requirement</b>: 1 Tqag (1e132) Coins Gained (This Era)</p>
 				<p><b>Cost</b>: 12.63 Dqag (1.263e130)</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on the amount of Tax Collections cast in this Era.</p>
-				<p><b>Formula</b>: round(5 * x ^ 0.5)%, where x is Tax Collections Cast This Era.</p>
+				<p><b>Formula</b>: (10 * x ^ 0.4)%, where x is Tax Collections cast in this Era.</p>
 				<hr>
 				<p><b>W50</b> - For Undead</p>
 				<p><b>Research Name</b>: Exertion</p>
@@ -1576,7 +1576,7 @@
 				<p><b>Requirement</b>: 12 hours of Evil Play Time this R (Unlock as Demon)</p>
 				<p><b>Cost</b>: 318.8 Tqag (3.188e134)</p>
 				<p><b>Effect</b>: Increase faction coin find chance based on the number of Undercities you own.</p>
-				<p><b>Formula</b>: (floor(1.5 * x ^ 1.1))% where x is the number of Undercities you own.</p>
+				<p><b>Formula</b>: (2 * x ^ 1.2)%, where x is the number of Undercities you own.</p>
 				<hr>
 				<p><b>W120</b> - For All Factions</p>
 				<p><b>Research Name</b>: Betrayal</p>
@@ -1584,7 +1584,7 @@
 				<p><b>Requirement</b>: 250 base assistants</p>
 				<p><b>Cost</b>: 676 Spqag (6.76e146)</p>
 				<p><b>Effect</b>: Increase the production of non-unique buildings based on the amount of assistants you own.</p>
-				<p><b>Formula</b>: round(1.5 * x^1.5)%, where x is the amount of assistants you own.</p>
+				<p><b>Formula</b>: (9 * x ^ 0.9)%, where x is the amount of assistants you own.</p>
 				<hr>
 				<p><b>W135</b> - For All Factions</p>
 				<p><b>Research Name</b>: Rampage</p>
@@ -1599,14 +1599,14 @@
 				<p><b>Requirement</b>: Research War Funds (W25) & Rampage (W135)</p>
 				<p><b>Cost</b>: 129.6 Noqag (1.296e152)</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on the amount of assistants you own.</p>
-				<p><b>Formula</b>: round(32 * x ^ 0.75)%, where x is the amount of assistants you own.</p>
+				<p><b>Formula</b>: (15 * x ^ 0.5)%, where x is the amount of assistants you own.</p>
 				<hr>
 				<p><b>W175</b> - For Demon</p>
 				<p><b>Research Name</b>: Overwhelm</p>
 				<p><b>Requirement</b>: Research Assault (W1) & Invasion (W150)</p>
 				<p><b>Cost</b>: 3.273 Uqig (3.273e156)</p>
 				<p><b>Effect</b>: You gain additional assistants based on total amount of evil spells cast.</p>
-				<p><b>Formula</b>: +(10 + x ^ 0.9), where x is the amount of evil spells cast.</p>
+				<p><b>Formula</b>: +(9 + 0.9 * x ^ 0.9), where x is Evil spells cast in this Reincarnation.</p>
 				<hr>
 				<p><b>W180</b> - For All Factions</p>
 				<p><b>Research Name</b>: Formation</p>
@@ -1618,8 +1618,8 @@
 				<p><b>Research Name</b>: Crusade</p>
 				<p><b>Requirement</b>: Research Hallowing (D50) & Formation (W180)</p>
 				<p><b>Cost</b>: 82.65 Dqig (8.265e160)</p>
-				<p><b>Effect</b>: Gain additional assistants based on time spent as Good this R.</p>
-				<p><b>Formula</b>: floor(0.065 * x ^ 0.5), where x is your Time Spent Being Good (This R) stat.</p>
+				<p><b>Effect</b>: Multiplicatively increase Royal Exchange bonus based on Research Points.</p>
+				<p><b>Formula</b>: (2 * x ^ 0.6)%, where x is Research Points.</p>
 				<hr>
 				<p><b>W205</b> - For All Evil Factions</p>
 				<p><b>Research Name</b>: Berserking</p>
@@ -1627,7 +1627,7 @@
 				<p><b>Cost</b>: 627.6 Dqig (6.276e161)</p>
 				<p><b>Effect</b>: While Blood Frenzy is active, increase mana regeneration based on the amount of assistants you own.</p>
 				<p><b>Effect</b>: Also increases offline spell cast amount multiplicatively by 300%.</p>
-				<p><b>Formula</b>: floor(0.25 * x ^ 0.9), where x is your Assistants stat.</p>
+				<p><b>Formula</b>: +(3 * x ^ 0.45), where x is your Assistants stat.</p>
 				<hr>
 				<p><b>W225</b> - For Angel</p>
 				<p><b>Research Name</b>: Critical Strike</p>
@@ -1640,15 +1640,15 @@
 				<p><b>Research Name</b>: Swarming</p>
 				<p><b>Requirement</b>: Research Overwhelm (W175) & Berserking (W205)</p>
 				<p><b>Cost</b>: 52.7 Qiqig (5.27e169)</p>
-				<p><b>Effect</b>: Gain additional assistants based on the amount of trophies you unlocked.</p>
-				<p><b>Formula</b>: floor(x / 8), where x is the amount of trophies unlocked.</p>
+				<p><b>Effect</b>: Multiplicatively increase assistants by 10% and gain additional assistants based on trophies unlocked.</p>
+				<p><b>Formula</b>: +(x ^ 1.05), where x is the amount of trophies unlocked.</p>
 				<hr>
 				<p><b>W290</b> - For Titan</p>
 				<p><b>Research Name</b>: Athletics</p>
 				<p><b>Hint</b>: Too many legends! Need more room!</p>
 				<p><b>Requirement</b>: 3,000 Olympian Halls</p>
 				<p><b>Cost</b>: 3.039 SxQig (3.039e171)</p>
-				<p><b>Effect</b>: Increase the production of all other buildings by 100% per Olympian Hall you own.</p>
+				<p><b>Effect</b>: Increase the production of all other buildings by 200% per Olympian Hall you own.</p>
 				<hr>
 				<p><b>W300</b> - For Faceless</p>
 				<p><b>Research Name</b>: Domination</p>
@@ -1656,8 +1656,8 @@
 				<p><b>Requirement</b>: 300 Base Assistants (as Faceless)</p>
 				<p><b>Cost</b>: 1.331 SpQig (1.331e174)</p>
 				<p><b>Effect</b>: Increase Faction Coin find chance based on the highest amount of assistants you had in a single game.(This R)</p>
-				<p><b>Effect</b>: Also a 50% multiplicative Faction Coin find chance.</p>
-				<p><b>Formula</b>: (200 * x ^ 0.55), where x is your Assistants (Max) stat.</p>
+				<p><b>Effect</b>: Also increase Faction Coin find chance multiplicatively by 100%.</p>
+				<p><b>Formula</b>: +(100 * x ^ 0.5)%, where x is your highest assistants count in a single Era.</p>
 				<hr>
 				<p><b>W270</b> - For All Factions</p>
 				<p><b>Research Name</b>: Entrench</p>
@@ -1672,8 +1672,8 @@
 				<p><b>Hint</b>: Down all the way.</p>
 				<p><b>Requirement</b>: 2,650 Excavations</p>
 				<p><b>Cost</b>: 1.117 NoQig (1.117e180)</p>
-				<p><b>Effect</b>: Increase your clicking reward based on the amount of Excavations you made.</p>
-				<p><b>Formula</b>: round(10 * x ^ 0.75)%, where x is the amount of excavations made.</p>
+				<p><b>Effect</b>: Increase offline production based on Excavation depth.</p>
+				<p><b>Formula</b>: (10 * x ^ 0.9)%, where x is Excavation depth.</p>
 				<hr>
 				<p><b>W330</b> - For All Factions</p>
 				<p><b>Research Name</b>: Heroism</p>
@@ -1687,7 +1687,7 @@
 				<p><b>Requirement</b>: Research Creeping (A300) & Synthesis (A150).</p>
 				<p><b>Cost</b>: 21.42 USxg (2.142e187)</p>
 				<p><b>Effect</b>: Increase the production of all other buildings based on the production of your Stonehenge Circles.</p>
-				<p><b>Formula</b>: (75 * (log10(1 + x)) ^ 1.3))%, where x is the production of your Stonehenge Circles.</p>
+				<p><b>Formula</b>: (8 * ln(1 + x) ^ 1.8)%, where x is the production of your Stonehenge Circles.</p>
 				<hr>
 				<p><b>W400</b> - For All Factions</p>
 				<p><b>Research Name</b>: Siege</p>
@@ -1700,28 +1700,29 @@
 				<p><b>Requirement</b>: Secrets of the Underworld (as Drow)</p>
 				<p><b>Cost</b>: 103.7 QaSxg (1.037e197)</p>
 				<p><b>Effect</b>: Increase the production of Spider Sanctuaries based on offline Bonus</p>
-				<p><b>Formula</b>: (3.25 * log10(1 + x) ^ 3.25)%, where x is offline production bonus multiplier.</p>
+				<p><b>Formula</b>: (3.5 * ln(1 + x) ^ 3.5)%, where x is offline production bonus multiplier.</p>
 				<p><b>Note</b>: This research is treated as an A1 upgrade for A-nerf purposes.</p>
 				<hr>
 				<p><b>W600</b> - For Drow</p>
 				<p><b>Research Name</b>: Stalking</p>
 				<p><b>Requirement</b>: Research Exertion (W50) and Ambush (W501)</p>
 				<p><b>Cost</b>: 18.47 Uspg (1.847e217)</p>
-				<p><b>Effect</b>: Gain 1 assistant for every 100 seconds of Combo Strike activity time (This Era).</p>
+				<p><b>Effect</b>: Multiplicatively increase assistants based on Combo Strike activity time in this Reincarnation.</p>
+				<p><b>Formula</b>: (x ^ 0.6)%, where x is Combo Strike activity time in this Reincarnation.</p>
 				<hr>
 				<p><b>W625</b> - For Evil</p>
 				<p><b>Research Name</b>: Bloodlust</p>
 				<p><b>Requirement</b>: 129600s (1d 12hours) as Evil (This R), Research Berserking (W205) and Focus (S425)</p>
 				<p><b>Cost</b>: 140.2 USpg (1.402e218)</p>
-				<p><b>Effect</b>: Increase Blood Frenzy multiplier based on the amount of times you cast faction spell in this Era.</p>
-				<p><b>Formula</b>: (300 * floor(x ^ 0.3))%, where x is Faction Spells' Cast This Era.</p>
+				<p><b>Effect</b>: While Blood Frenzy is active, increase the production of all buildings based on faction spells cast in this Era.</p>
+				<p><b>Formula</b>: (15 * x ^ 0.75)%, where x is faction spells cast in this Era.</p>
 				<hr>
 				<p><b>W650</b> - For Dwarf</p>
 				<p><b>Research Name</b>: Resilience</p>
 				<p><b>Requirement</b>: Research Eternity (D330) and Mercy (D450)</p>
 				<p><b>Cost</b>: 204.2 TSpg (2.042e224)</p>
-				<p><b>Effect</b>: Increase clicking reward based on the amount of clicks made in this Era.</p>
-				<p><b>Formula</b>: (4 * x ^ 0.4)%, where x is your Treasure Clicks (This Era) stat.</p>
+				<p><b>Effect</b>: Multiplicatively increase assistants based on clicks made in this Era.</p>
+				<p><b>Formula</b>: (3.5 * x ^ 0.35)%, where x is clicks made in this Era.</p>
 				<hr>
 				<p><b>W700</b> - For Demon,Drow</p>
 				<p><b>Research Name</b>: Torture</p>
@@ -1743,16 +1744,16 @@
 				<p><b>Hint</b>: GUD? More like Evil.</p>
 				<p><b>Requirement</b>: 7 days spent as evil (across all Reincarnations)</p>
 				<p><b>Cost</b>: 137.8 Qavg (1.378e77)</p>
-				<p><b>Effect</b>: Increases Faction Coin find chance by a multiplicative 200%.</p>
+				<p><b>Effect</b>: Increases Faction Coin find chance multiplicatively by 160%.</p>
 				<p><b>Effect</b>: Increase the chance to find Faction Coins based on the amount of assistants you own.</p>
-				<p><b>Formula</b>: (100 * x ^ 0.5), where x is assistants.</p>
+				<p><b>Formula</b>: +(40 * x ^ 0.4)%, where x is assistants.</p>
 				<hr>
 				<p><b>W1400</b> - For Dragon</p>
 				<p><b>Research Name</b>: Cataclysm</p>
 				<p><b>Requirement</b>:  Research W400, A1200, Affiliated Dragon</p>
 				<p><b>Cost</b>: 4.249 Qivg (4.249e78)</p>
-				<p><b>Effect</b>: Increase maximum mana based on the amount of clicks made in this Era.</p>
-				<p><b>Formula</b>: +(650 * x ^ 0.35), where x is the amount of clicks made in this Era.</p>
+				<p><b>Effect</b>: Multiplicatively increase maximum mana based on clicks made in this Era.</p>
+				<p><b>Formula</b>: (25 + 0.5 * x ^ 0.5)%, where x is clicks made in this Era.</p>
 				<hr>
 				<p><b>W3050</b> - For Mercenary</p>
 				<p><b>Research Name</b>: Flanking</p>
@@ -1784,8 +1785,8 @@
 				<p><b>W5625</b> - For All Factions</p>
 				<p><b>Research Name</b>: Concealment</p>
 				<p><b>Requirement</b>: R179+, Forgotten Relic, Battlefield artifact and upgrade.</p>
-				<p><b>Effect</b>: Offline time counts more based on Mana Produced in this Era.</p>
-				<p><b>Effect</b>: (2 * ln(1 + x) ^ 2)%, where x is mana produced (This Era).</p>
+				<p><b>Effect</b>: Offline time counts 50% more and increase production bonus from Gems based on Mana produced in this Era.</p>
+				<p><b>Formula</b>: +(ln(1 + x) ^ 1.7)%, where x is Mana produced in this Era.</p>
 				<hr>
 				<p><b>W5875</b> - For All Factions</p>
 				<p><b>Research Name</b>: Patience</p>
@@ -1797,25 +1798,25 @@
 				<p><b>Research Name</b>: Revolution</p>
 				<p><b>Requirement</b>: R221+</p>
 				<p><b>Effect</b>: Gain assistants based on Royal Exchanges made.</p>
-				<p><b>Formula</b>: +(x ^ 0.75), where x is royal exchanges made.</p>
+				<p><b>Formula</b>: +(8 * x ^ 0.8), where x is Royal Exchanges made.</p>
 				<hr>
 				<p><b>W11125</b> - For All Factions</p>
 				<p><b>Research Name</b>: Vengeance</p>
 				<p><b>Requirement</b>: R223+</p>
 				<p><b>Effect</b>: Increase Offline production based on the duration of your longest spell.</p>
-				<p><b>Formula</b>: (5 + 1.5 * x ^ 0.5)%, where x is the duration of your longest spell.</p>
+				<p><b>Formula</b>: (25 + 2.5 * x ^ 0.75)%, where x is the duration of your longest spell.</p>
 				<hr>
 				<p><b>W11375</b> - For All Factions</p>
 				<p><b>Research Name</b>: Pacifism</p>
 				<p><b>Requirement</b>: R225+</p>
 				<p><b>Effect</b>: Increase all spells durations based on time spent in this Era.</p>
-				<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent this Era.</p>
+				<p><b>Formula</b>: (0.3 * x ^ 0.7)%, where x is time spent in this Era.</p>
 				<hr>
 				<p><b>W11625</b> - For All Factions</p>
 				<p><b>Research Name</b>: Eradication</p>
 				<p><b>Requirement</b>: R227+</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on time spent with the least used faction.</p>
-				<p><b>Formula</b>: (50 + x ^ 0.85)%, where x is time spent with the least used faction this R in seconds.</p>
+				<p><b>Formula</b>: (85 + 1.85 * x ^ 0.85)%, where x is time spent with the least-used faction in seconds.</p>
 				<hr>
 				<p><b>W11875</b> - For All Factions</p>
 				<p><b>Research Name</b>: Scouting</p>
@@ -1828,13 +1829,13 @@
 				<p><b>Research Name</b>: Raiding</p>
 				<p><b>Requirement</b>: R232+</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on the highest Combo Strike counter you had in this Reincarnation.</p>
-				<p><b>Formula</b>: (2.5 * x ^ 0.5)%, where x is the highest Combo Strike counter in this Reincarnation.</p>
+				<p><b>Formula</b>: (0.01 * ln(1 + x) ^ 5)%, where x is the highest Combo Strike counter in this Reincarnation.</p>
 				<hr>
 				<p><b>W13125</b> - For All Factions</p>
 				<p><b>Research Name</b>: Artillery</p>
 				<p><b>Requirement</b>: R239+</p>
-				<p><b>Effect</b>: Increase all spell duration based on the highest amount of spells cast in this Reincarnation.</p>
-				<p><b>Formula</b>: (2 * ln(1 + x) ^ 2)%, where x is the highest number of spells cast in a single run this Reincarnation.</p>
+				<p><b>Effect</b>: Increase triggered Tax Collections based on the highest amount of spells cast in this Reincarnation.</p>
+				<p><b>Formula</b>: +floor(1 + 0.5 * ln(1 + x) ^ 1.25), where x is the highest number of spells cast in a single run this Reincarnation.</p>
 				<hr>
 				<p><b>W13500</b> - For All Factions</p>
 				<p><b>Research Name</b>: Backfire</p>
