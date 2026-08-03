@@ -112,18 +112,18 @@
 		<area research="
 	<p><b><img src='/realm/Factions/picks/FlameofBondelnar.png' align='middle'> Flame of Bondelnar</b></p>
 	<p><b>Description</b>: The magical azure flame of Bondelnar constantly emanates a silent, yet subtle, evil aura.</p>
-	<p><b>Requirement</b>: Drow Faction, Spider Sanctuaries, 3250+ Excavations</p>
+	<p><b>Requirement</b>: Drow Faction, Spider Sanctuaries, 3000+ Excavations</p>
 	<p><b>Effect</b>: Unlocks the upgrade The Dark Light of Bondelnar that adds 3 extra slots: 2 for Warfare and 1 related to the Evil Base Faction's facility you are playing.</p>
 	<p><b>Chance</b>: 0.5%</p>
 	<p><b>Cost</b>: 10 SxSpg (1e232), 100 M (1e8) Drow Coins</p>
-	<p><b>Note</b>: Has no effect in R100+</p>	
+	<p><b>Note</b>: Has no effect in R100+</p>
 	" coords="183,103,236,156" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/SpikyRoughEggArtifact.png' align='middle'> Spiky Rough Egg</b></p>
 	<p><b>Description</b>: What a weird egg... it looks ages old, yet something alive is inside. Perhaps if you wait long enough, something will hatch?</p>
 	<p><b>Requirement</b>: R46+, 1500 Excavations</p>
-	<p><b>Chance</b>: 2%</p>
 	<p><b>Effect</b>: Unlocks the Hatch! Egg</p>
+	<p><b>Chance</b>: 2%</p>
 	" coords="243,103,296,156" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/ObsidianShardArtifact.png' align='middle'> Obsidian Shard</b></p>
@@ -133,83 +133,83 @@
 	" coords="303,103,356,156" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/FirstIronFragment.png' align='middle'> First Iron Fragment</b></p>
-	<p><b>Hint</b>: This one seems to require a lot of magical renewance.</p>
+	<p><b>Clue</b>: This one seems to require a lot of magical renewance.</p>
 	<p><b>Description</b>: It looks like a piece of an iron object. It's broken off on two sides.</p>
 	<p><b>Requirement</b>: R125+, Angel Faction, 12,500+ Excavations</p>
 	<p><b>Chance</b>: (log10(1 + x) ^ 3 / 100,000)%, where x is your Mana Regeneration.</p>
 	" coords="363,103,416,156" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/SecondIronFragment.png' align='middle'> Second Iron Fragment</b></p>
-	<p><b>Hint</b>: Found via extensive Royal Trading mandates.</p>
+	<p><b>Clue</b>: Found via extensive Royal Trading mandates.</p>
 	<p><b>Description</b>: It looks like a piece of an iron object. It's broken off on two sides.</p>
 	<p><b>Requirement</b>: R125+, Titan Faction, 12,500+ Excavations</p>
 	<p><b>Chance</b>: (x ^ 3 / 5,000,000,000 (5 B))%, where x is the individual Royal Exchange bonus.</p>
 	" coords="3,163,56,216" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/ThirdIronFragment.png' align='middle'> Third Iron Fragment</b></p>
-	<p><b>Hint</b>: Chances to find increase while not actively searching.</p>
+	<p><b>Clue</b>: Chances to find increase while not actively searching.</p>
 	<p><b>Description</b>: It looks like a piece of an iron object. It's broken off on two sides.</p>
 	<p><b>Requirement</b>: R125+, Undead Faction, 12,500+ Excavations</p>
 	<p><b>Chance</b>: ((log10(1 + x) - 2) ^ 3 / 500,000)%, where x is offline bonus.</p>
 	" coords="63,163,116,216" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/FirstCrystalFragment.png' align='middle'> First Crystal Fragment</b></p>
-	<p><b>Hint</b>: Assistants will lead the way.</p>
+	<p><b>Clue</b>: Assistants will lead the way.</p>
 	<p><b>Description</b>: A strange, glass-like material that appears to have been shattered into three pieces.</p>
 	<p><b>Requirement</b>: R125+, Fairy Faction, 12,500+ Excavations</p>
 	<p><b>Chance</b>: (x / 100,000,000,000 (100 B))%, where x is assistant count (including temporary assistants).</p>
 	" coords="123,163,176,216" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/SecondCrystalFragment.png' align='middle'> Second Crystal Fragment</b></p>
-	<p><b>Hint</b>: Are Faction Coins attracted to glass?</p>
+	<p><b>Clue</b>: Are Faction Coins attracted to glass?</p>
 	<p><b>Description</b>: A strange, glass-like material that appears to have been shattered into three pieces.</p>
 	<p><b>Requirement</b>: R125+, Faceless Faction, 12,500+ Excavations</p>
 	<p><b>Chance</b>: (log10(1 + x) ^ 3 / 2,500,000 (2.5 M))%, where x is Faction Coins found this Era.</p>
 	" coords="183,163,236,216" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/ThirdCrystalFragment.png' align='middle'> Third Crystal Fragment</b></p>
-	<p><b>Hint</b>: Also acts as a spell catalyst.</p>
+	<p><b>Clue</b>: Also acts as a spell catalyst.</p>
 	<p><b>Description</b>: A strange, glass-like material that appears to have been shattered into three pieces.</p>
 	<p><b>Requirement</b>: R125+, Demon Faction, 12,500+ Excavations</p>
 	<p><b>Chance</b>: (x / 50,000,000 (50 M))%, where x is evil spells cast this Reincarnation.</p>
 	" coords="243,163,296,216" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/FirstStoneFragment.png' align='middle'> First Stone Fragment</b></p>
-	<p><b>Hint</b>: Click to Carve.</p>
+	<p><b>Clue</b>: Click to Carve.</p>
 	<p><b>Description</b>: Made from stone so ancient it is unknown to the current world. Two parts seem to be missing.</p>
-	<p><b>Requirement</b>: R125, Elven Faction, 12,500+ Excavations</p>
+	<p><b>Requirement</b>: R125+, Elven Faction, 12,500+ Excavations</p>
 	<p><b>Chance</b>: (log10(1 + x) ^ 3 / 20,000)%, where x is the amount of clicks made in this Era.</p>
 	" coords="303,163,356,216" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/SecondStoneFragment.png' align='middle'> Second Stone Fragment</b></p>
-	<p><b>Hint</b>: Stone to stone, buildings to buildings.</p>
+	<p><b>Clue</b>: Stone to stone, buildings to buildings.</p>
 	<p><b>Description</b>: Made from stone so ancient it is unknown to the current world. Two parts seem to be missing.</p>
 	<p><b>Requirement</b>: R125+, Druid Faction, 12,500+ Excavations</p>
 	<p><b>Chance</b>: (x / 20,000,000 (20 M))%, where x is amount of buildings.</p>
 	" coords="363,163,416,216" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/ThirdStoneFragment.png' align='middle'> Third Stone Fragment</b></p>
-	<p><b>Hint</b>: Might be collected with taxes.</p>
+	<p><b>Clue</b>: Might be collected with taxes.</p>
 	<p><b>Description</b>: Made from stone so ancient it is unknown to the current world. Two parts seem to be missing.</p>
 	<p><b>Requirement</b>: R125+, Goblin Faction, 12,500+ Excavations</p>
 	<p><b>Chance</b>: (log10(1 + x) ^ 3 / 125,000)%, where x is Tax Collections cast in this Era.</p>
 	" coords="3,223,56,276" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/ObsidianCrown.png' align='middle'> Obsidian Crown</b></p>
-	<p><b>Hint</b>: Only the wisest turns over the same stone twice. Or more.</p>
+	<p><b>Clue</b>: Only the wisest turns over the same stone twice. Or more.</p>
 	<p><b>Description</b>: The legendary Black Crown of the Mercenary Lord. Some words are engraved into the inner circle at its base: &quot;Aran en Ilya, Silas en Quenta&quot;.</p>
-	<p><b>Requirement</b>: R170+, Mercenary Faction, 10 Excavation Resets (This Era)</p>
-	<p><b>Chance</b>: ((x - 10) / 1,000)%, x is the number of free and ruby excavation resets (This Era)</p>
+	<p><b>Requirement</b>: R170+, play as Mercenary, 10 excavation resets (This Era)</p>
 	<p><b>Effect</b>: Unlocks Mercenary Union Contract</p>
+	<p><b>Chance</b>: ((x - 10) / 1,000)%, x is the number of free and ruby excavation resets (This Era)</p>
 	" coords="63,223,116,276" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/ForgottenRelic.png' align='middle'> Forgotten Relic</b></p>
-	<p><b>Hint</b>: Research it!</p>
+	<p><b>Clue</b>: Research it!</p>
 	<p><b>Description</b>: Intricate leylines of mana cover the surface of this stone, moving and flailing endlessly to create ever-different patterns.</p>
-	<p><b>Requirement</b>: R175+</p>
-	<p><b>Chance</b>: (x ^ 2 / 100,000,000,000 (100 B))%, where x is spent Research budget.</p>
-	<p><b>Effect</b>: Unlocks Research Facility upgrades</p>
+	<p><b>Requirement</b>: R180+</p>
+	<p><b>Effect</b>: Unlocks Facility Research upgrades</p>
 	<p><b>Note</b>: Each Facility needs their respective artifact and this artifact to get their respective upgrade.</p>
+	<p><b>Chance</b>: ((2 * x) ^ 2 / 1,000,000,000 (1 B))%, where x is spent Research Budget.</p>
 	" coords="123,223,176,276" shape="rect">
 	</map>
 	<map name="LoreArtifacts-map">
@@ -413,7 +413,7 @@
 	<p><b>Hint</b>: Legacy from 50 generations ago.</p>
 	<p><b>Description</b>: A full plate made of hardened steel.</p>
 	<p><b>Requirement</b>: R5+, Mercenary Faction</p>
-	<p><b>Chance</b>: (x / 50)%, where x is the number of times you have reincarnated.</p>
+	<p><b>Chance</b>: (x / 50)%, where x is the amount of Reincarnation you made.</p>
 		" coords="363,223,416,276" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/BlackSword.png' align='middle'> Black Sword</b></p>
@@ -490,6 +490,7 @@
 	<p><b>Effect</b>: Increase the production of all buildings based on their tier.</p>
 	<p><b>Formula</b>: (3 * (2 * (11 - T)) ^ 3)%, where T is building tier.</p>
 	<p><b>Cost</b>: 1 M (1e6), A2+ free</p>
+	<p><b>Alignment</b>: Any</p>
 		" coords="3,343,56,396" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/FortuntTellerMachineArtifact.png' align='middle'> Fortune Teller Machine</b></p>
@@ -696,7 +697,7 @@
 	<p><b>Chance</b>: ((x ^ 2.5) / 2,500)%, where x is amount of consecutive days logged in.</p>
 	<p><b>Effect</b>: Awards an upgrade with the same name.</p>
 	<p><b>Effect</b>: Activates all Sun Force effects at once.</p>
-	<p><b>Cost</b>: 100 Qi (1e20), A3+ Free</p>	
+	<p><b>Cost</b>: 100 Qi (1e20), A3+ Free</p>
 		" coords="243,523,296,576" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/MercenaryInsigniaArtifact.png' align='middle'> Mercenary Insignia</b></p>
@@ -751,7 +752,7 @@
 	<p><b>Description</b>: An extremely accurate replica of a battle fought long ago.</p>
 	<p><b>Requirement</b>: R180+, Evil Alignment, 5,000+ Excavations</p>
 	<p><b>Chance</b>: (ln(1 + x) ^ 3 / 160,000)%, where x is amount of assistants you own.</p>
-	<p><b>Effect</b>: Awards an upgrade with same name</p>
+	<p><b>Effect</b>: Awards an upgrade with same name.</p>
 		" coords="243,583,296,636" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/Apeiron.png' align='middle'> Apeiron</b></p>
