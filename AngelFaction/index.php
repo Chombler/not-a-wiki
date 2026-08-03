@@ -13,16 +13,17 @@
 	<br/>
 	<p><b>Faction spell</b></p>
 	<p><b><img src="/realm/Factions/picks/Godshand.png" align="middle"> God's Hand</b></p>
-	<p><b>Cost</b>: 900 Mana - <b>Duration</b>: 20 seconds</p>
-	<p><b>Effect</b>: Increase the production of all buildings based on your Mana Regeneration rate.</p>
-	<p><b>Formula</b>: (120 * x)%, where x is your Mana Regeneration.</p>
+	<p><b>Cost</b>: 900 Mana - <b>Base Duration</b>: 10 seconds</p>
+	<p><b>Effect</b>: Increase all-building production based on Mana Regeneration; duration also increases with time spent as Good in this Reincarnation.</p>
+	<p><b>Production Formula</b>: (10 * ln(1 + x) ^ 4)%, where x is Mana Regeneration per second.</p>
+	<p><b>Duration bonus</b>: floor((0.5 + 0.05 * T) * y ^ (0.5 + 0.05 * T)), where T is spell tier and y is time spent as Good in this Reincarnation.</p>
 	<br/>
 	<p><b>Spell Trophy & Upgrade</b></p>
 	<p><b><img src="/realm/Factions/picks/GodsRestSpellUpgrade.png" align="middle"> God's Rest</b></p>
 	<p><b>Requirement</b>: Cast God's Hand on any Sunday (check on weekday is based on UTC time).</p>
 	<p><b>Cost</b>: 1 M (1e6), A1+ Free</p>
 	<p><b>Effect</b>: Gives random Faction Coins based on your Faction Coin find chance for each other spell you cast while God's Hand is active.</p>
-	<p><b>Formula</b>: (floor(x ^ 1.1), where x is Faction Coin find chance.</p>
+	<p><b>Formula</b>: floor(x ^ 1.1), where x is Faction Coin find chance.</p>
 	<hr>
 	<p><b>Tier 1 Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/AngelTradeTreaty.png" align="middle"> Angels Trade Treaty</b></p>
@@ -32,18 +33,17 @@
 	<p><b><img src="/realm/Factions/picks/AngelUpgrade1.png" align="middle"> Holy Bells</b></p>
 	<p><b>Cost</b>: 50 M (5e7)</p>
 	<p><b>Effect</b>: Increase Mana Regeneration based on the amount of buildings you own.</p>
-	<p><b>Formula</b>: +(1.6 * x ^ 0.4), where x is the amount of buildings you own.</p>
+	<p><b>Formula</b>: +x ^ 0.5, where x is Buildings built.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/AngelUpgrade2.png" align="middle"> Angelic Determination</b></p>
 	<p><b>Cost</b>: 500 M (5e8)</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on spells cast this Era.</p>
-	<p><b>Formula</b>: (4 * ln(1 + x) ^ 2)%, where x is spells cast this Era.</p>
-	<p><b>Effect</b>: Also increase Angel Coins found (from all sources) by 500%.</p>
+	<p><b>Formula</b>: (2 * ln(1 + x) ^ 3)%, where x is spells cast this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/AngelUpgrade3.png" align="middle"> Angel Feathers</b></p>
 	<p><b>Cost</b>: 5 B (5e9)</p>
 	<p><b>Effect</b>: Increase Faction Coin find chance additively based on the amount of active spells.</p>
-	<p><b>Formula</b>: +(10 * x)%, where x is the amount of active spells.</p>
+	<p><b>Formula</b>: +(4 + 4 * x)%, where x is active spells.</p>
 	<hr>
 	<p><b>Tier 2 Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/AngelFriendshipPact.png" align="middle"> Angels Friendship Pact</b></p>
@@ -63,7 +63,8 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/AngelUpgrade6.png" align="middle"> Archangel Feathers</b></p>
 	<p><b>Cost</b>: 50 T (5e13)</p>
-	<p><b>Effect</b>: Increase Mana Regeneration multiplicatively by 50%.</p>
+	<p><b>Effect</b>: Increase all-building production based on Mana Regeneration.</p>
+	<p><b>Formula</b>: (1.5 * ln(1 + 30 * x) ^ 3)%, where x is Mana Regeneration per second.</p>
 	<hr>
 	<p><b>Tier 3 Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/AngelAlliance.png" align="middle"> Angels Alliance</b></p>
@@ -73,16 +74,17 @@
 	<p><b><img src="/realm/Factions/picks/AngelUpgrade7.png" align="middle"> Magical Gates</b></p>
 	<p><b>Cost</b>: 5 Qa (5e15)</p>
 	<p><b>Effect</b>: Increase Maximum Mana based on time spent as Good in this Reincarnation.</p>
-	<p><b>Formula</b>: +(3.5 * x ^ 0.7), where x is time spent as Good this Reincarnation.</p>
+	<p><b>Formula</b>: +(15 + x ^ 0.7), where x is time spent as Good this Reincarnation.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/AngelUpgrade8.png" align="middle"> Angelic Dominance</b></p>
 	<p><b>Cost</b>: 50 Qa (5e16)</p>
-	<p><b>Effect</b>: Spell durations are increased by 50%.</p>
+	<p><b>Effect</b>: Additively increase Gem production bonus based on God's Hand activity time this Era and reduce all spell costs by 50%.</p>
+	<p><b>Formula</b>: +(0.3 * x ^ 0.7)%, where x is God's Hand activity time this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/AngelUpgrade9.png" align="middle"> Wings of Liberty</b></p>
 	<p><b>Cost</b>: 500 Qa (5e17)</p>
-	<p><b>Effect</b>: Increase the production of all buildings based on Mana Regeneration.</p>
-	<p><b>Formula</b>: (4 * ln(1 + x) ^ 2)%, where x is your Mana Regeneration.</p>
+	<p><b>Effect</b>: Increase all-building production based on the duration of your longest spell.</p>
+	<p><b>Formula</b>: (6 * x ^ 0.6)%, where x is the longest spell duration.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/AngelHeritage.png" alt="Angelic Heritage" align="middle"> Angelic Heritage</b></p>
 	<p><b>Cost</b>: 5000 Angel Coins</p>
@@ -96,8 +98,8 @@
 	<p><b>Cost</b>: 10 Dtg (1e100)</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/Heaven'sDomainFactionUpgrade.png" align="middle"> Heaven's Domain</b></p>
-	<p>Upgrade Heaven's Gate To Heaven's Domains, boosting their production based on the amount of spells affecting them and unlocking more unique perks for the building.</p>
-	<p><b>Formula</b>: (350 * x ^ 1.1)%, where x is the amount of spells affecting Heaven's Domain.</p>
+	<p>Upgrade Heaven's Gates to Heaven's Domains, boosting their production based on Mana Regeneration and unlocking more unique perks for the building.</p>
+	<p><b>Formula</b>: (7 * x ^ 0.7)%, where x is Mana Regeneration per second.</p>
 	<p><b>Note</b>: Required once throughout the entire game play and does not count towards the bought upgrade stat.</p>
 	<p><b>Effect</b>: Also allows access to the Research Facilities</p>
 	<p><b>Requirements</b>: Buy "Heaven's Domain Quest"</p>
@@ -120,7 +122,7 @@
 	<p><b><img src="/realm/Factions/picks/HolySiteQuest.png" alt="Holy Site Quest" align="middle"> Holy Site Quest</b></p>
 	<p><b>Description</b>: Welcome again, dearest ally. We need your help once more: improve your mana potency in this new era, and we'll reward you by blessing the ground you walk on.</p>
 	<p><b>Cost</b>: 1 Ud (1e36) Emerald Coins</p>
-	<p><b>Requirement</b>: 3 M (3e6) Mana Regeneration.</p>
+	<p><b>Requirement</b>: 1,000,000 Mana Regeneration.</p>
 	<p><b>Effect</b>: Grants access to Unique Building.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/HolySiteUniqueBuildingUpgrade.png" alt="Holy Site" align="middle"> Unique Building Upgrade</b></p>
@@ -131,7 +133,7 @@
 	<p><b>Unique Building</b></p>
 	<p><b><img src="/realm/Factions/picks/HolySiteUniqueBuilding.png" alt="Holy Site" align="middle"></b></p>
 	<p>Upgrade Cathedrals to Holy Sites, boosting their production based on time spent as Good and unlocking more unique perks for the building.</p>
-	<p><b>Formula</b>: (x ^ 0.85)%, where x is time spent as Good in this Reincarnation.</p>
+	<p><b>Formula</b>: (1.8 * x ^ 0.9)%, where x is time spent as Good in this Reincarnation.</p>
 	<p><b>Effect</b>: Grants access to Faction Union.</p>
 	<hr>
 	<p><b>Tier 4 Upgrades</b></p>
@@ -139,15 +141,14 @@
 	<p><b>Requirement</b>: Holy Sites Unique Building</p>
 	<p><b>Cost</b>: 1 Qi (1e18) Angel Coins</p>
 	<p><b>Effect</b>: Grants access to Union Upgrades.</p>
-	<p><b>Effect (R111+)</b>: Increase Mana Regeneration multiplicaively based on Mana produced in this Era.</p>
+	<p><b>Effect (R105+)</b>: Multiplicatively increase Mana Regeneration based on Mana produced in this Era.</p>
 	<p><b>Formula</b>: (2.5 * ln(1 + x) ^ 2.5)%, where x is Mana produced in this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/AngelUpgrade10.png" alt="Heaven's Brilliance" align="middle"> Heaven's Brilliance</b></p>
 	<p><b>Cost</b>: 1 Nod (1e60) Emerald Coins</p>
 	<p><b>Requirement</b>: Angels Union</p>
-	<p><b>Effect</b>: Increase the bonus multiplier for all spells at tier 7 and above based on the highest amount of Holy Sites you own in this Reincarnation. Gem Grinder and all Dragon's Breath effects are increased based on the highest amount of Holy Sites you own in this Reincarnation.</p>
-	<p><b>Formula</b>: +(0.025 * ln(1 + x)), where x is highest amount of Holy Sites owned in this Reincarnation.</p>
-	<p><b>Gem Grinder and Dragon's Breath Formula</b>: (0.65 * x ^ 0.65)%, where x is highest amount of Holy Sites owned in this Reincarnation.</p>
+	<p><b>Effect</b>: Multiplicatively increase Maximum Mana based on the highest amount of Holy Sites built in this Reincarnation.</p>
+	<p><b>Formula</b>: (1.5 * x ^ 0.5)%, where x is the highest amount of Holy Sites built in this Reincarnation.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/AngelUpgrade11.png" alt="Angelic Fortitude" align="middle"> Angelic Fortitude</b></p>
 	<p><b>Cost</b>: 100 Qivg (1e80) Emerald Coins</p>
@@ -163,9 +164,9 @@
 	<hr>
 	<p><b><img src="/realm/Factions/picks/AdvancedAngelHeritage.png" align="middle"> Advanced Angelic Heritage</b></p>
 	<p><b>Cost</b>: 1 Sp (1e24) Angel Coins</p>
-	<p><b>Requirements</b>: Angel Master trophy and 6 hours activity time (This Era) of God's Hand.</p>
+	<p><b>Requirements</b>: Angel Master trophy and 1 hour activity time (This Era) of God's Hand.</p>
 	<p><b>Effect</b>: Increase Mana Regeneration additively based on the amount of spells cast in this Era.</p>
 	<p><b>Formula</b>: +(5 * x ^ 0.25), where x is spells cast this Era.</p>
 	<p><b>Note</b>: When using their lineage, Advanced Heritage powers are multiplied by the level of the lineage.</p>
-	<p><b>Formula</b>: *(1 + 0.3 * level)</p>
+	<p><b>Base lineage multiplier</b>: *(1 + 0.2 * matching Lineage level).</p>
 <?php include "../scripts/footer.html"; ?>
