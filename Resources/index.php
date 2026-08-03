@@ -13,7 +13,7 @@
 <p><b>Coins</b>: Gold, Diamond, Emerald, Amethyst or Sapphire, depending on which Ascension you are on.
 <p><b>Faction Coins</b>: of eight different types, each related to a faction.
 <p><b>Gems</b>: gained when soft-resetting, abdicating.
-<p><b>Rubies</b>: enables ruby power, but also lets the player buy some premium items without using Kreds.
-<p><b>Kreds</b>: Kongregate's virtual money.
-<p>Coins, Gems and Rubies are visible in the bottom menubar. Faction coins are displayed at the bottom of the Upgrades tab, and Kreds are used only in the shop.
+<p><b>Rubies</b>: enable Ruby Power and can also be spent on certain premium upgrades.</p>
+<p><b>Kreds</b>: Kongregate's platform currency, available only on the Kongregate version.</p>
+<p>Coins, Gems and Rubies are visible in the bottom menubar. Faction Coins are displayed at the bottom of the Upgrades tab.</p>
 <?php include "../scripts/footer.html"; ?>

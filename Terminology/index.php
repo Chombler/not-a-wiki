@@ -217,8 +217,8 @@
         <p><b>AP</b>: Ancient Pyramid</p>
         <p><b>HoL</b>: Hall of Legends</p>
         <p><b>OH</b>: Olympian Hall (Titan's Unique building)</p>
-        <p><b>UB</b>: Unique Building (R16-R99)</p>
-        <p><b>UB2</b>: Unique Building 2 (R100+)</p>
+        <p><b>UB</b>: Unique Building</p>
+        <p><b>UB2</b>: Second Unique Building (R100+)</p>
         <br>
         <center><b>Building Abbreviations</b></center>
         <p><b>Mona</b>: Monastery</p>
