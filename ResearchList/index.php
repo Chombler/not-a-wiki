@@ -1573,7 +1573,7 @@
 				<p><b>W50</b> - For Undead</p>
 				<p><b>Research Name</b>: Exertion</p>
 				<p><b>Hint</b>: Bad times!</p>
-				<p><b>Requirement</b>: 12 hours of Evil Play Time this R (Unlock as Demon)</p>
+				<p><b>Requirement</b>: 1 hour of Evil play time this Reincarnation (unlock as Demon)</p>
 				<p><b>Cost</b>: 318.8 Tqag (3.188e134)</p>
 				<p><b>Effect</b>: Increase faction coin find chance based on the number of Undercities you own.</p>
 				<p><b>Formula</b>: (2 * x ^ 1.2)%, where x is the number of Undercities you own.</p>
@@ -1581,7 +1581,7 @@
 				<p><b>W120</b> - For All Factions</p>
 				<p><b>Research Name</b>: Betrayal</p>
 				<p><b>Hint</b>: How big of an army can you muster?</p>
-				<p><b>Requirement</b>: 250 base assistants</p>
+				<p><b>Requirement</b>: 500 base assistants</p>
 				<p><b>Cost</b>: 676 Spqag (6.76e146)</p>
 				<p><b>Effect</b>: Increase the production of non-unique buildings based on the amount of assistants you own.</p>
 				<p><b>Formula</b>: (9 * x ^ 0.9)%, where x is the amount of assistants you own.</p>
@@ -1610,7 +1610,7 @@
 				<hr>
 				<p><b>W180</b> - For All Factions</p>
 				<p><b>Research Name</b>: Formation</p>
-				<p><b>Requirement</b>: 1000 Call to Arms (This R), Research Dueling (W10) & Exertion (W50)</p>
+				<p><b>Requirement</b>: 150 Call to Arms casts this Reincarnation, Research Dueling (W10) & Exertion (W50)</p>
 				<p><b>Cost</b>: 24.85 Uqig (2.485e157)</p>
 				<p><b>Effect</b>: Each building counts 15 times for Call to Arms purposes.</p>
 				<hr>
@@ -1623,7 +1623,7 @@
 				<hr>
 				<p><b>W205</b> - For All Evil Factions</p>
 				<p><b>Research Name</b>: Berserking</p>
-				<p><b>Requirement</b>: 850 Blood Frenzy (This R), Research Rampage (W135) & Retribution (D150)</p>
+				<p><b>Requirement</b>: 200 Blood Frenzy casts this Reincarnation, Research Rampage (W135) & Retribution (D150)</p>
 				<p><b>Cost</b>: 627.6 Dqig (6.276e161)</p>
 				<p><b>Effect</b>: While Blood Frenzy is active, increase mana regeneration based on the amount of assistants you own.</p>
 				<p><b>Effect</b>: Also increases offline spell cast amount multiplicatively by 300%.</p>
@@ -1653,7 +1653,7 @@
 				<p><b>W300</b> - For Faceless</p>
 				<p><b>Research Name</b>: Domination</p>
 				<p><b>Hint</b>: How many people are required to throw a party?</p>
-				<p><b>Requirement</b>: 300 Base Assistants (as Faceless)</p>
+				<p><b>Requirement</b>: 5,000 Base Assistants (as Faceless)</p>
 				<p><b>Cost</b>: 1.331 SpQig (1.331e174)</p>
 				<p><b>Effect</b>: Increase Faction Coin find chance based on the highest amount of assistants you had in a single game.(This R)</p>
 				<p><b>Effect</b>: Also increase Faction Coin find chance multiplicatively by 100%.</p>
@@ -1670,7 +1670,7 @@
 				<p><b>W320</b> - For All Factions</p>
 				<p><b>Research Name</b>: Shattering</p>
 				<p><b>Hint</b>: Down all the way.</p>
-				<p><b>Requirement</b>: 2,650 Excavations</p>
+				<p><b>Requirement</b>: 2,600 Excavations</p>
 				<p><b>Cost</b>: 1.117 NoQig (1.117e180)</p>
 				<p><b>Effect</b>: Increase offline production based on Excavation depth.</p>
 				<p><b>Formula</b>: (10 * x ^ 0.9)%, where x is Excavation depth.</p>
@@ -1712,7 +1712,7 @@
 				<hr>
 				<p><b>W625</b> - For Evil</p>
 				<p><b>Research Name</b>: Bloodlust</p>
-				<p><b>Requirement</b>: 129600s (1d 12hours) as Evil (This R), Research Berserking (W205) and Focus (S425)</p>
+				<p><b>Requirement</b>: 5,400 seconds (1.5 hours) as Evil this Reincarnation, Research Berserking (W205) and Focus (S425)</p>
 				<p><b>Cost</b>: 140.2 USpg (1.402e218)</p>
 				<p><b>Effect</b>: While Blood Frenzy is active, increase the production of all buildings based on faction spells cast in this Era.</p>
 				<p><b>Formula</b>: (15 * x ^ 0.75)%, where x is faction spells cast in this Era.</p>
@@ -1726,7 +1726,7 @@
 				<hr>
 				<p><b>W700</b> - For Demon,Drow</p>
 				<p><b>Research Name</b>: Torture</p>
-				<p><b>Requirement</b>: 200 Drow Exchanges as Dromon, Research Soulrending (D245) and Stalking (W600)</p>
+				<p><b>Requirement</b>: 250 Drow Exchanges as Dromon, Research Soulrending (D245) and Stalking (W600)</p>
 				<p><b>Cost</b>: 39.16 QiSpg (3.916e229)</p>
 				<p><b>Effect</b>: Increase assistants production based on total time spent being Evil (This R). </p>
 				<p><b>Formula</b>: (8 * x ^ 0.8)%, where x is your Time Spent Being Evil stat.</p>
@@ -1734,7 +1734,7 @@
 				<p><b>W1275</b> - For All Factions</p>
 				<p><b>Research Name</b>: Authority</p>
 				<p><b>Hint</b>: How long does your Call to Arms last?</p>
-				<p><b>Requirement</b>: 43200s (12 hours) Call to Arms Cast Time (This Era).</p>
+				<p><b>Requirement</b>: 7,200 seconds (2 hours) Call to Arms activity time this Era.</p>
 				<p><b>Cost</b>: 152.4 Dvg (1.524e71)</p>
 				<p><b>Effect</b>: Increase the duration of all spells based on Call to Arms activity time in this Reincarnation.</p>
 				<p><b>Formula</b>: (x ^ 0.5)%, where x is Call to Arms active time This Reincarnation in seconds.</p>
@@ -1742,7 +1742,7 @@
 				<p><b>W1375</b> - For All Factions</p>
 				<p><b>Research Name</b>: Scavenging</p>
 				<p><b>Hint</b>: GUD? More like Evil.</p>
-				<p><b>Requirement</b>: 7 days spent as evil (across all Reincarnations)</p>
+				<p><b>Requirement</b>: 43,200 seconds (12 hours) spent as Evil across all Reincarnations.</p>
 				<p><b>Cost</b>: 137.8 Qavg (1.378e77)</p>
 				<p><b>Effect</b>: Increases Faction Coin find chance multiplicatively by 160%.</p>
 				<p><b>Effect</b>: Increase the chance to find Faction Coins based on the amount of assistants you own.</p>
@@ -1757,7 +1757,7 @@
 				<hr>
 				<p><b>W3050</b> - For Mercenary</p>
 				<p><b>Research Name</b>: Flanking</p>
-				<p><b>Requirement</b>: 50000 Base Assistants, (Authority W1275) and (Intimidation E1325).</p>
+				<p><b>Requirement</b>: 100 M (1e8) Base Assistants, Authority (W1275), and Intimidation (E1325).</p>
 				<p><b>Cost</b>: 809 SpQig (8.09e176)</p>
 				<p><b>Effect</b>: Increases the production of buildings one tier directly above or below a Unique Building based on the amount of assistants you own.</p>
 				<p><b>Formula</b>: (2 * x ^ 0.8)%, where x is assistants.</p>
@@ -1772,7 +1772,7 @@
 				<hr>
 				<p><b>W5125</b> - For All Factions</p>
 				<p><b>Research Name</b>: Sovereignty</p>
-				<p><b>Requirement</b>: R175+, Forgotten Relic, Battlefield artifact and upgrade.</p>
+				<p><b>Requirement</b>: R175+, Forgotten Relic, Battlefield artifact and upgrade, and 50,000 Halls of Legends.</p>
 				<p><b>Effect</b>: Increase the production of two highest tier buildings based on assistants you own.</p>
 				<p><b>Formula</b>: (0.5 * x ^ 0.25)%, where x is assistants.</p>
 				<hr>
@@ -1784,15 +1784,16 @@
 				<hr>
 				<p><b>W5625</b> - For All Factions</p>
 				<p><b>Research Name</b>: Concealment</p>
-				<p><b>Requirement</b>: R179+, Forgotten Relic, Battlefield artifact and upgrade.</p>
+				<p><b>Requirement</b>: R179+, Forgotten Relic, Battlefield artifact and upgrade, and 1 M (1e6) clicks this Reincarnation.</p>
 				<p><b>Effect</b>: Offline time counts 50% more and increase production bonus from Gems based on Mana produced in this Era.</p>
 				<p><b>Formula</b>: +(ln(1 + x) ^ 1.7)%, where x is Mana produced in this Era.</p>
 				<hr>
 				<p><b>W5875</b> - For All Factions</p>
 				<p><b>Research Name</b>: Patience</p>
-				<p><b>Requirement</b>: R181+, Forgotten Relic, Battlefield artifact and upgrade</p>
+				<p><b>Requirement</b>: R181+, Forgotten Relic, Battlefield artifact and upgrade, and 1e20 Max Mana.</p>
 				<p><b>Effect</b>: Time spent with Prestige Counts 500% more.</p>
 				<p><b>Effect</b>: Time spent with Astral factions Counts 1000% more.</p>
+				<p><b>Effect</b>: While affiliated with your least-used faction, increase Faction Coin find chance by 500%.</p>
 				<hr>
 				<p><b>W10875</b> - For All Factions</p>
 				<p><b>Research Name</b>: Revolution</p>
@@ -1802,44 +1803,44 @@
 				<hr>
 				<p><b>W11125</b> - For All Factions</p>
 				<p><b>Research Name</b>: Vengeance</p>
-				<p><b>Requirement</b>: R223+</p>
+				<p><b>Requirement</b>: R223+ and a Call to Arms duration of at least 600 seconds.</p>
 				<p><b>Effect</b>: Increase Offline production based on the duration of your longest spell.</p>
 				<p><b>Formula</b>: (25 + 2.5 * x ^ 0.75)%, where x is the duration of your longest spell.</p>
 				<hr>
 				<p><b>W11375</b> - For All Factions</p>
 				<p><b>Research Name</b>: Pacifism</p>
-				<p><b>Requirement</b>: R225+</p>
+				<p><b>Requirement</b>: R225+ and 7,200 seconds (2 hours) of Neutral time this Era.</p>
 				<p><b>Effect</b>: Increase all spells durations based on time spent in this Era.</p>
 				<p><b>Formula</b>: (0.3 * x ^ 0.7)%, where x is time spent in this Era.</p>
 				<hr>
 				<p><b>W11625</b> - For All Factions</p>
 				<p><b>Research Name</b>: Eradication</p>
-				<p><b>Requirement</b>: R227+</p>
+				<p><b>Requirement</b>: R227+ and an offline production multiplier of at least 100,000 (10,000,000%).</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on time spent with the least used faction.</p>
 				<p><b>Formula</b>: (85 + 1.85 * x ^ 0.85)%, where x is time spent with the least-used faction in seconds.</p>
 				<hr>
 				<p><b>W11875</b> - For All Factions</p>
 				<p><b>Research Name</b>: Scouting</p>
-				<p><b>Requirement</b>: R229+</p>
+				<p><b>Requirement</b>: R229+ and at least 5 Primal Balance targets.</p>
 				<p><b>Effect</b>: Buildings count more based on the maximum amount of Grand Balance targets you had in this Reincarnation.</p>
 				<p><b>Formula</b>: (x ^ 0.9)%, where x is the maximum amount of Grand Balance targets you had in this Reincarnation.</p>
 				<p><b>Note</b>: Amount of targets can be seen at Druid Challenge Reward, but needs an active Grand Balance to update.</p>
 				<hr>
 				<p><b>W12250</b> - For All Factions</p>
 				<p><b>Research Name</b>: Raiding</p>
-				<p><b>Requirement</b>: R232+</p>
+				<p><b>Requirement</b>: R232+ and a Combo Strike counter of at least 1 M (1e6).</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on the highest Combo Strike counter you had in this Reincarnation.</p>
 				<p><b>Formula</b>: (0.01 * ln(1 + x) ^ 5)%, where x is the highest Combo Strike counter in this Reincarnation.</p>
 				<hr>
 				<p><b>W13125</b> - For All Factions</p>
 				<p><b>Research Name</b>: Artillery</p>
-				<p><b>Requirement</b>: R239+</p>
+				<p><b>Requirement</b>: R239+ and at least 50 Triggered Tax Collection Power.</p>
 				<p><b>Effect</b>: Increase triggered Tax Collections based on the highest amount of spells cast in this Reincarnation.</p>
 				<p><b>Formula</b>: +floor(1 + 0.5 * ln(1 + x) ^ 1.25), where x is the highest number of spells cast in a single run this Reincarnation.</p>
 				<hr>
 				<p><b>W13500</b> - For All Factions</p>
 				<p><b>Research Name</b>: Backfire</p>
-				<p><b>Requirement</b>: R242+</p>
+				<p><b>Requirement</b>: R242+ and 1,800 seconds (30 minutes) with your least-used alignment this Reincarnation.</p>
 				<p><b>Effect</b>: Increase the production of Evil buildings based on time spent as Good, the production of Chaos buildings based on time spent as Order, and the production of Chaos Evil buildings as the sum of time spent as Good and Order. Also increases the production of Good and Order buildings based on Evil and Chaos in the same way.</p>
 				<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is the respective time stat in seconds.</p>
 				<p><b>Note</b>: Buildings only receive the highest effect (That is, if the building is Evil/Chaos, it only gets the Evil/Chaos bonus, not the Evil or the Chaos individual bonuses).</p>
