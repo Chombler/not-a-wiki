@@ -279,7 +279,9 @@
 	<p><b>Spell Type</b>: (Chaos) Djinn Faction Spell (R125+)</p>
 	<p><b>Cost</b>: 888,888 mana - <b>Duration</b>: Fixed to 12 seconds</p>
 	<p><b>Effect</b>: Provide a random effect based on your chosen base alignment, for 12 seconds. The duration of the spell cannot be modified. Its power increases as you continue casting this spell.</p>
-	<p><b>Formula</b>: (2.25 * (ln(1 + x) ^ 1.35) * y ^ 0.45)%, where x is Limited Wish activity time in this game and y is a random number between 1 and Limited Wish casts this game rolled on cast.</p>
+	<p><b>Formula (Production effect)</b>: (50 + 5 * ln(1 + x) ^ 1.75 * y)%, where x is Limited Wish activity time in this Era and y is a random number between 1 and Limited Wish casts this Era rolled on cast.</p>
+	<p><b>Formula (Non-Production effects)</b>: (25 + 2.5 * ln(1 + x) ^ 1.75 * y ^ 0.5 * (T + 1))%, where T is the spell tier.</p>
+	<p><b>Note</b>: Limited Wish casts count more based on spell tier: (10 * T ^ 2)%. Its cost decreases by 1% per minute up to 1 hour, then resets.</p>
 	<p><b>Possible Effects</b></p>
 	<p><b>1</b>: Increase the production of all buildings.</p>
 	<p><b>Good Alignment</b></p>
@@ -1315,7 +1317,9 @@
 <p id="LimitedWish"><b><img src="/realm/Factions/picks/LimitedWish.png" alt="Chaos" align="middle"> Limited Wish</b> (Djinn)</p>
 <p><b>Cost</b>: 888888 mana - <b>Duration</b>: Fixed to 12 seconds</p>
 <p><b>Effect</b>: Provide a random effect based on your chosen base alignment, for 12 seconds. The duration of the spell cannot be modified. Its power increases as you continue casting this spell.</p>
-<p><b>Formula</b>: (2.25 * (ln(1 + x) ^ 1.35) * y ^ 0.45)%, where x is Limited Wish activity time in this game and y is a random number between 1 and Limited Wish casts this game rolled on cast.</p>
+<p><b>Formula (Production effect)</b>: (50 + 5 * ln(1 + x) ^ 1.75 * y)%, where x is Limited Wish activity time in this Era and y is a random number between 1 and Limited Wish casts this Era rolled on cast.</p>
+	<p><b>Formula (Non-Production effects)</b>: (25 + 2.5 * ln(1 + x) ^ 1.75 * y ^ 0.5 * (T + 1))%, where T is the spell tier.</p>
+	<p><b>Note</b>: Limited Wish casts count more based on spell tier: (10 * T ^ 2)%. Its cost decreases by 1% per minute up to 1 hour, then resets.</p>
 <p><b>Possible Effects</b></p>
 <p><b>1</b>: Increase the production of all buildings.</p>
 <p><b>Good Alignment</b></p>
