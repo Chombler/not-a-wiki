@@ -108,14 +108,16 @@
 <p><b>Hint</b>: More buildings for the Black Army!</p>
 <p><b>Requirement</b>: 11000 Merc Unique Buildings.</p>
 <p><b>Cost</b>: 30.5 QaQig (3.05e166)</p>
-<p><b>Effect</b>: Increases the production of Non-Unique buildings by 5% per Unique building.</p>
+<p><b>Effect</b>: Increase Non-Unique building production based on Unique Buildings owned.</p>
+<p><b>Formula</b>: (10 * x ^ 1.05)%, where x is Unique Buildings owned.</p>
 <br/>
 <p><b>S3200 - For All Factions</b></p>
 <p><b>Research Name</b>: Manipulation</p>
 <p><b>Hint</b>: First spell, many served.</p>
 <p><b>Requirement</b>: 1B (1e9) Tax Collections (This R), (Calefaction A1325) and (Psionics S1500).</p>
 <p><b>Cost</b>: 695.7 Sxg (6.957e185)</p>
-<p><b>Effect</b>: Each active spell increases mana regen by an additional 8% (Share Benefits tiers also count).</p>
+<p><b>Effect</b>: Multiplicatively increase Mana Regeneration by 12% per active spell.</p>
+<p><b>Formula</b>: (12 * x)%, where x is active spells.</p>
 <p><b>Effect</b>: Also increases offline spell cast amount multiplicatively by 1200%.</p>
 <hr>
 <p><b>C3000 - For Mercenary</b></p>
@@ -129,17 +131,17 @@
 <p><b>C3100 - All Factions</b></p>
 <p><b>Research Name</b>: Engineering</p>
 <p><b>Hint</b>: Spend some quality time with the Mercenaries.</p>
-<p><b>Requirement</b>: 15 days Mercenary time spent (Across all R's).</p>
+<p><b>Requirement</b>: 12 days as Mercenary (across all Reincarnations).</p>
 <p><b>Cost</b>: 769.3 OcQig (7.693e179)</p>
-<p><b>Effect</b>: Increase maximum mana based on the total amount of clicks made (This R).</p>
-<p><b>Formula</b>: (65 * x ^ 0.35), where x is clicks made.</p>
+<p><b>Effect</b>: Increase Maximum Mana based on clicks made in this Reincarnation.</p>
+<p><b>Formula</b>: +(1.5 * x ^ 0.35), where x is clicks made in this Reincarnation.</p>
 <hr>
 <p><b>D2850 - For Mercenary</b></p>
 <p><b>Research Name</b>: Intervention</p>
 <p><b>Requirement</b>: Secrets of the Warriors.</p>
 <p><b>Cost</b>: 33.73 DQig (3.373e160)</p>
-<p><b>Effect</b>: Increases the production of Unique Building based on time spent with Mercenaries.</p>
-<p><b>Formula</b>: (10 * x ^ 0.7)%, where x is time spent with Mercenary.</p>
+<p><b>Effect</b>: Increase Unique Building production based on total time spent as Mercenary.</p>
+<p><b>Formula</b>: (80 + 2 * x ^ 0.8)%, where x is total time spent as Mercenary.</p>
 <br/>
 <p><b>D3350 - For All Factions</b></p>
 <p><b>Research Name</b>: Vampirism</p>
@@ -147,15 +149,15 @@
 <p><b>Requirement</b>: 100 Sp% (1e26%) offline bonus, (Intervention D2850) and (Upheaval W3150).</p>
 <p><b>Cost</b>: 598.3 TSxg (5.983e194)</p>
 <p><b>Effect</b>: Increase assistants additively and multiplicatively based on your Offline Bonus.</p>
-<p><b>Additive Formula</b>: (3.25 * log10(1 + x) ^ 2.25), where x is your Offline Bonus.</p>
-<p><b>Multiplicative Formula</b>: (0.05 * log10(1 + x) ^ 2), where x is your Offline Bonus.</p>
+<p><b>Additive Formula</b>: +(2.5 * ln(1 + x) ^ 2.5), where x is your Offline Bonus.</p>
+<p><b>Multiplicative Formula</b>: (0.2 * ln(1 + x) ^ 2)%, where x is your Offline Bonus.</p>
 <hr>
 <p><b>E3250 - For All Factions</b></p>
 <p><b>Research Name</b>: Hirelings</p>
 <p><b>Requirement</b>: (Intimidation E1325) and (Scholarship S2900).</p>
 <p><b>Cost</b>: 661.6 USxg (6.616e188)</p>
-<p><b>Effect</b>: Gives assistants based on the amount of coins you own.</p>
-<p><b>Formula</b>: (1.5 * ln(1 + x) ^ 1.5), where x is amount of coins you own.</p>
+<p><b>Effect</b>: Gain additional assistants based on Faction Coins found in this Era.</p>
+<p><b>Formula</b>: +(5 * ln(1 + x) ^ 2.5), where x is Faction Coins found in this Era.</p>
 <br/>
 <p><b>E3300 - For Mercenary</b></p>
 <p><b>Research Name</b>: Estates</p>
@@ -185,10 +187,10 @@
 <hr>
 <p><b>W3050 - For Mercenary</b></p>
 <p><b>Research Name</b>: Flanking</p>
-<p><b>Requirement</b>: 50000 Base Assistants, (Authority W1275) and (Intimidation E1325).</p>
+<p><b>Requirement</b>: 100 M (1e8) Base Assistants, Authority (W1275), and Intimidation (E1325).</p>
 <p><b>Cost</b>: 809 SpQig (8.09e176)</p>
 <p><b>Effect</b>: Increases the production of buildings one tier directly above or below a Unique Building based on the amount of assistants you own.</p>
-<p><b>Formula</b>: (2 * x ^ 0.8), where x is assistants.</p>
+<p><b>Formula</b>: (2 * x ^ 0.8)%, where x is assistants.</p>
 <br/>
 <p><b>W3150 - For All Factions</b></p>
 <p><b>Research Name</b>: Upheaval</p>
@@ -196,5 +198,5 @@
 <p><b>Requirement</b>: 60000 Farms, Inns and Blacksmiths.</p>
 <p><b>Cost</b>: 731.6 NoQig (7.316e182)</p>
 <p><b>Effect</b>: Increases the production of all buildings based on their tier, giving the highest bonus to the lowest.</p>
-<p><b>Formula</b>: (150 * (12 - T) ^ 2.15), where T is building tier.</p>
+<p><b>Formula</b>: (150 * (12 - T) ^ 2.15)%, where T is building tier.</p>
 <?php include "../scripts/footer.html"; ?>

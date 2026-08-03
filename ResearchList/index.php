@@ -847,7 +847,7 @@
 				<p><b>D3350</b> - For All Factions</p>
 				<p><b>Research Name</b>: Vampirism</p>
 				<p><b>Hint</b>: Sound the alarms, production has gone offline!</p>
-				<p><b>Requirement</b>: 100 Sp% (1e26%) offline bonus, (Intervention D2775) and (Upheaval W3150).</p>
+				<p><b>Requirement</b>: 100 Sp% (1e26%) offline bonus, Intervention (D2850), and Upheaval (W3150).</p>
 				<p><b>Cost</b>: 598.3 TSxg (5.983e194)</p>
 				<p><b>Effect</b>: Increase assistants additively and multiplicatively based on your Offline Bonus.</p>
 				<p><b>Additive Formula</b>: +(2.5 * ln(1 + x) ^ 2.5), where x is Offline Bonus.</p>
@@ -1146,7 +1146,7 @@
 				<hr>
 				<p><b>E3250</b> - For All</p>
 				<p><b>Research Name</b>: Hirelings</p>
-				<p><b>Requirement</b>: (Intimidation E1325) and (Scholarship S2875).</p>
+				<p><b>Requirement</b>: Intimidation (E1325) and Scholarship (S2900).</p>
 				<p><b>Cost</b>: 661.6 USxg (6.616e188)</p>
 				<p><b>Effect</b>: Gain additional assistants based on Faction Coins found in this Era.</p>
 				<p><b>Formula</b>: +(5 * ln(1 + x) ^ 2.5), where x is Faction Coins found in this Era.</p>
