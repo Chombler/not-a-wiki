@@ -63,8 +63,8 @@
 				<p><b>R7</b>: Bloodlines</p>
 				<p><b>R14</b>: New Spell (Spiritual Surge)</p>
 				<p><b>R16</b>: Vanilla Research</p>
-				<p><b>R23</b>: Neutral Research</p>
-				<p><b>R29</b>: Prestige Research</p>
+				<p><b>R24</b>: Neutral Research</p>
+				<p><b>R32</b>: Prestige Research</p>
 				<p><b>R40</b>: Ascension 1</p>
 				<p><b>R42</b>: Tiered Autocasting</p>
 				<p><b>R46</b>: Neutral Prestige (Dragons)</p>
@@ -84,6 +84,7 @@
 				<p><b>R180</b>: Forbidden Research, Research budget increase</p>
 				<p><b>R190-R206</b>: Mercenary Challenges</p>
 				<p><b>R220</b>: Ascension 4</p>
+				<p><b>R230</b>: Lineages and Perks reintroduced</p>
 				<p><b>R235</b>: Prestige Factions Reintroduced</p>
 				<p><b>R255</b>: Astral Factions Reintroduced</p>
 			</div>
