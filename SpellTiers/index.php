@@ -68,6 +68,31 @@
 	<p><b>Additional Effects</b>: Each tier upgrade has a spell-specific effect and, except for Dragon's Breath, also increases offline production based on Mana statistics. It also multiplicatively increases Faction Coins found while offline by 200% per tier, stacking additively with other sources.</p>
 	<p><b>Raw offline-production formula per tier upgrade</b>: (m ^ (2 / max(3, A)) + (30 * r) ^ (2 / max(3, A))) ^ 0.4%, where m is Maximum Mana, r is Mana Regeneration per second, and A is the current Ascension. Each upgrade's result is then subjected to the Ascension penalty assigned to that tier; the in-game tooltip shows the combined purchased bonus.</p>
 	<p><b>Note</b>: Offline bonuses from tier upgrades are assigned to the Ascension in which that tier becomes available. Dragon's Breath tier upgrades do not provide these offline bonuses.</p>
+	<table class="numtable">
+		<tr><th>Spell</th><th>Spell-specific tier-upgrade effect</th></tr>
+		<tr><td>Call to Arms</td><td>Buildings count more based on spell tier.</td></tr>
+		<tr><td>Holy Light</td><td>Multiplicatively increases Mana Regeneration based on spell tier.</td></tr>
+		<tr><td>Fairy Chanting</td><td>Increases duration based on spell tier.</td></tr>
+		<tr><td>Moon Blessing</td><td>While Sun Blessing is active, autoclicks 2 additional times per tier.</td></tr>
+		<tr><td>God's Hand</td><td>Increases the duration-growth coefficient based on spell tier.</td></tr>
+		<tr><td>Diamond Pickaxe</td><td>Multiplicatively increases Faction Coin find chance based on spell tier.</td></tr>
+		<tr><td>Blood Frenzy</td><td>Multiplicatively increases Non-Unique building production based on spell tier.</td></tr>
+		<tr><td>Goblin's Greed</td><td>Additively and multiplicatively increases triggered Tax Collections based on spell tier.</td></tr>
+		<tr><td>Night Time</td><td>Multiplicatively increases assistants based on spell tier.</td></tr>
+		<tr><td>Hellfire Blast</td><td>Makes Evil spells cast count more based on spell tier.</td></tr>
+		<tr><td>Combo Strike</td><td>Makes its cast statistic increase more when casting higher tiers.</td></tr>
+		<tr><td>Gem Grinder</td><td>Multiplicatively increases Royal Exchange bonus based on spell tier.</td></tr>
+		<tr><td>Lightning Strike</td><td>Makes Iron Strongholds count more based on spell tier.</td></tr>
+		<tr><td>Grand Balance</td><td>Multiplicatively increases Maximum Mana based on spell tier.</td></tr>
+		<tr><td>Brainwave</td><td>Increases headstart time based on spell tier.</td></tr>
+		<tr><td>Spiritual Surge</td><td>Makes Reincarnations count more based on spell tier.</td></tr>
+		<tr><td>Temporal Flux</td><td>Makes Mana produced count more based on spell tier.</td></tr>
+		<tr><td>All Creation</td><td>Multiplicatively increases production bonus from Gems based on spell tier.</td></tr>
+		<tr><td>Maelstrom</td><td>Affects one more random building per tier.</td></tr>
+		<tr><td>Precognition</td><td>Makes Research points count more based on spell tier.</td></tr>
+		<tr><td>Infinite Spiral</td><td>Multiplicatively increases Offline Bonus based on spell tier.</td></tr>
+		<tr><td>Limited Wish</td><td>Makes Limited Wish casts count more based on spell tier.</td></tr>
+	</table>
 	<br/>
 	<hr>
 	<p><b>Spell Tier Unlocks</b>
