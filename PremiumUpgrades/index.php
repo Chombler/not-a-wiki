@@ -51,6 +51,16 @@
     <p><b>Effects</b>: Increase mana regeneration by 10%.</p>
     <p><b>Effects</b>: Grants 100 Td (1e44) coins and 25000 Faction Coins for each unlocked faction upon any reset.</p>
     <hr>
+    <p><b>Gift of the Myths</b></p>
+    <p><b>Effects</b>: Increase all building production by 100%, provide +10 Mana Regeneration per second, multiplicatively increase Mana Regeneration by 25%, and add +1 to Triggered Tax Collections.</p>
+    <p><b>Note</b>: This is a permanent account-linked upgrade and can be disabled in Options.</p>
+    <hr>
+    <p><b>Gift of the Faithful</b></p>
+    <p><b>Effects per day counter</b>: Increase all building production by 10%, assistants multiplicatively by 4%, and Maximum Mana multiplicatively by 2%.</p>
+    <p><b>Effects while active</b>: Gain all Scry effects permanently and receive 1 Ruby per day upon logging in.</p>
+    <p><b>Day counter</b>: Increases by 1 on a day you log in and decreases by 1 on a day you do not. At the cap, further qualifying days become stacking grace days.</p>
+    <p><b>Duration</b>: Each purchase adds 30 days. The duration is unaffected by timewarps.</p>
+    <hr>
     <h5>Rubies</h5>
     <p><b>Note</b>: All Ruby upgrades have both an additive and a multiplicative bonus.</p>
     <p><b><img src="/realm/Factions/picks/Buy22Rubies.png" alt="Buy 22 Rubies" align="middle"> Buy 22 Rubies</b></p>

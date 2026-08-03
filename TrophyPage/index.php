@@ -1314,6 +1314,7 @@
 	" coords="183,343,237,397" shape="rect">
 		<area research="<img src=/realm/Factions/picks/ArcaneBrilliance1Trophy.png align=middle> </b>Arcane Brilliance 1</b>
 	<p><b>Requirement</b>: Unlock tier 2 for all spells</p>
+	<p><b>Effect</b>: Arcane Brilliance trophies unlock a 1e50-coin upgrade that multiplicatively increases Maximum Mana by (2 * A * max(0, U + 1 - S))%, where A is active spells, U is the highest Arcane Brilliance tier unlocked, and S is Ascensions.</p>
 	" coords="243,343,297,397" shape="rect">
 		<area research="<img src=/realm/Factions/picks/ArcaneBrilliance2Trophy.png align=middle> </b>Arcane Brilliance 2</b>
 	<p><b>Requirement</b>: Unlock tier 3 for all spells</p>
@@ -3679,7 +3680,8 @@
 		<p><b>Requirement</b>: Build 300,000 buildings in a single game.</p>
 		" coords="243,4843,297,4897" shape="rect">
 		<area research="The Architect
-		<p><b>Requirement</b>: Build 125,000 units of any individual building.</p>
+		<p><b>Requirement</b>: Build 100,000 units of any individual building.</p>
+		<p><b>Effect</b>: Unlocks a free upgrade that increases Faction Coins found with excavations by (x ^ 0.8)%, where x is buildings built.</p>
 		" coords="303,4843,357,4897" shape="rect">
 	</map>
 	<?php include "../scripts/footer.html"; ?>
