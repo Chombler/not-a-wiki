@@ -47,8 +47,8 @@
 	<br/>
 	<p><b>Faction spell</b></p>
 	<p><b><img src="/realm/Factions/picks/DragonsBreath.png" align="middle"> Dragon's Breath</b></p>
-	<p><b>Cost</b>: 1,500 Mana - <b>Duration</b>: 20 seconds</p>
-	<p><b>Effect</b>: Activates one of the following effects at random for 20 seconds.</p>
+	<p><b>Cost</b>: 1,500 Mana - <b>Duration</b>: 600 seconds</p>
+	<p><b>Effect</b>: Activates one of the following effects at random for 600 seconds.</p>
 	<p><b><font color="darkred">Red</font></b>: Increase the production of unique buildings based on the amount of Faction Coins found in this Era.</p>
 	<p><b><font color="darkred">Formula</font></b>: (1.75 * ln(1 + x) ^ 1.75)%, where x is the amount of Faction Coins found in this Era.</p>
 	<br>
@@ -161,7 +161,7 @@
 	<hr>
 	<p><b><img src="/realm/Factions/picks/DragonHeritage.png" alt="Dragon Heritage" align="middle"> Dragon Heritage</b></p>
 	<p><b>Requirements</b>: Dragons Champion Trophy</p>
-	<p><b>Cost</b>: 400 B (4e11) Dwarven and Drow coins</p>
+	<p><b>Cost</b>: 500 Qa (5e17) Dwarven and Drow Coins</p>
 	<p><b>Effect</b>: Increase assistants production based on time spent with Dragons in this Reincarnation.</p>
 	<p><b>Formula</b>: (0.7 * x ^ 0.85)%, where x is time spent with Dragons in this Reincarnation.</p>
 	<hr>
@@ -234,9 +234,10 @@
 	<p><b>Formula</b>: (10 * ln(1 + x) ^ 2)%, where x is your Maximum Mana.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/AdvancedDragonHeritage.png" align="middle"> Advanced Dragon Heritage</b></p>
-	<p><b>Requirement</b>: Dragon Master trophy and 6 hours activity time (This Era) of Dragon's Breath.</p>
+	<p><b>Requirement</b>: Dragon Master trophy and 1 hour of Dragon's Breath activity time in this Era.</p>
 	<p><b>Cost</b>: 1 Sp (1e24) Dwarven and Drow Coins</p>
-	<p><b>Effect</b>: The amount of active spells counts 5% more for all purposes.</p>
+	<p><b>Effect</b>: Increase triggered Tax Collections based on Artifacts found.</p>
+	<p><b>Formula</b>: +floor(1 + 0.05 * ln(1 + x) ^ 1.15), where x is Artifacts found.</p>
 	<p><b>Note</b>: When using their lineage, Advanced Heritage powers are multiplied by the level of the lineage.</p>
-	<p><b>Formula</b>: *(1 + 0.3 * level)</p>
+	<p><b>Formula</b>: *(1 + 0.2 * level)</p>
 <?php include "../scripts/footer.html"; ?>
