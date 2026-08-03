@@ -7,7 +7,7 @@
 		<h6><b>902 Total Trophies</b></h6>
 		<div class="category">
 			<div class="shelementwhole">
-				<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">Secret Trophies (64)</a></b></p>
+				<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">Secret Trophies (65)</a></b></p>
 				<div class="autohide">
 					<p><img src="/realm/Factions/picks/LeetSecretTrophy.png" align="middle"><b> Leet</b></p>
 					<p><b>Requirement</b>: Have exactly 1337 Coins at any given time.</p>
@@ -546,76 +546,88 @@
 					<p><b>Note</b>: This is done near the end of R3.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/FairyGrandChampionTrophy.png" align="middle"><b> Fairy Grand Champion</b></p>
-					<p><b>Requirement</b>: R60+, Upgrade Fairy Lineage to level 20 and purchase the first 3 Fairy Lineage perks.</p>
+					<p><b>Requirement</b>: R60+, Upgrade Fairy Lineage to level 25 and purchase the first 2 Fairy Lineage perks.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/ElvenGrandChampionTrophy.png" align="middle"><b> Elven Grand Champion</b></p>
-					<p><b>Requirement</b>: R60+, Upgrade Elven Lineage to level 20 and purchase the first 3 Elven Lineage perks.</p>
+					<p><b>Requirement</b>: R60+, Upgrade Elven Lineage to level 25 and purchase the first 2 Elven Lineage perks.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/AngelGrandChampionTrophy.png" align="middle"><b> Angel Grand Champion</b></p>
-					<p><b>Requirement</b>: R60+, Upgrade Angel Lineage to level 20 and purchase the first 3 Angel Lineage perks.</p>
+					<p><b>Requirement</b>: R60+, Upgrade Angel Lineage to level 25 and purchase the first 2 Angel Lineage perks.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/GoblinGrandChampionTrophy.png" align="middle"><b> Goblin Grand Champion</b></p>
-					<p><b>Requirement</b>: R60+, Upgrade Goblin Lineage to level 20 and purchase the first 3 Goblin Lineage perks.</p>
+					<p><b>Requirement</b>: R60+, Upgrade Goblin Lineage to level 25 and purchase the first 2 Goblin Lineage perks.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/UndeadGrandChampionTrophy.png" align="middle"><b> Undead Grand Champion</b></p>
-					<p><b>Requirement</b>: R60+, Upgrade Undead Lineage to level 20 and purchase the first 3 Undead Lineage perks.</p>
+					<p><b>Requirement</b>: R60+, Upgrade Undead Lineage to level 25 and purchase the first 2 Undead Lineage perks.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/DemonGrandChampionTrophy.png" align="middle"><b> Demon Grand Champion</b></p>
-					<p><b>Requirement</b>: R60+, Upgrade Demon Lineage to level 20 and purchase the first 3 Demon Lineage perks.</p>
+					<p><b>Requirement</b>: R60+, Upgrade Demon Lineage to level 25 and purchase the first 2 Demon Lineage perks.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/TitanGrandChampionTrophy.png" align="middle"><b> Titan Grand Champion</b></p>
-					<p><b>Requirement</b>: R60+, Upgrade Titan Lineage to level 20 and purchase the first 3 Titan Lineage perks.</p>
+					<p><b>Requirement</b>: R60+, Upgrade Titan Lineage to level 25 and purchase the first 2 Titan Lineage perks.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/DruidGrandChampionTrophy.png" align="middle"><b> Druid Grand Champion</b></p>
-					<p><b>Requirement</b>: R60+, Upgrade Druid Lineage to level 20 and purchase the first 3 Druid Lineage perks.</p>
+					<p><b>Requirement</b>: R60+, Upgrade Druid Lineage to level 25 and purchase the first 2 Druid Lineage perks.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/FacelessGrandChampionTrophy.png" align="middle"><b> Faceless Grand Champion</b></p>
-					<p><b>Requirement</b>: R60+, Upgrade Faceless Lineage to level 20 and purchase the first 3 Faceless Lineage perks.</p>
+					<p><b>Requirement</b>: R60+, Upgrade Faceless Lineage to level 25 and purchase the first 2 Faceless Lineage perks.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/DwarfGrandChampionTrophy.png" align="middle"><b> Dwarven Grand Champion</b></p>
-					<p><b>Requirement</b>: R60+, Upgrade Dwarven Lineage to level 20 and purchase the first 3 Dwarven Lineage perks.</p>
+					<p><b>Requirement</b>: R60+, Upgrade Dwarven Lineage to level 25 and purchase the first 2 Dwarven Lineage perks.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/DrowGrandChampionTrophy.png" align="middle"><b> Drow Grand Champion</b></p>
-					<p><b>Requirement</b>: R60+, Upgrade Drow Lineage to level 20 and purchase the first 3 Drow Lineage perks.</p>
+					<p><b>Requirement</b>: R60+, Upgrade Drow Lineage to level 25 and purchase the first 2 Drow Lineage perks.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/DragonGrandChampionTrophy.png" align="middle"><b> Dragon Grand Champion</b></p>
-					<p><b>Requirement</b>: R60+, Upgrade Dragon Lineage to level 20 and purchase the first 3 Dragon Lineage perks.</p>
+					<p><b>Requirement</b>: R60+, Upgrade Dragon Lineage to level 25 and purchase the first 2 Dragon Lineage perks.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/FairyMasterTrophy.png" align="middle"><b> Fairy Master</b></p>
-					<p><b>Requirement</b>: A2, Reach lineage level 30 and purchase all Fairy Upgrades.</p>
+					<p><b>Requirement</b>: A2+, purchase all Fairy Upgrades while Fairy Lineage is at least level 30.</p>
+					<p><b>Additional unlock</b>: 1 hour of activity time with the Fairy faction spell unlocks its Advanced Heritage.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/ElvenMasterTrophy.png" align="middle"><b> Elven Master</b></p>
-					<p><b>Requirement</b>: A2, Reach lineage level 30 and purchase all Elven Upgrades.</p>
+					<p><b>Requirement</b>: A2+, purchase all Elven Upgrades while Elven Lineage is at least level 30.</p>
+					<p><b>Additional unlock</b>: 1 hour of activity time with the Elven faction spell unlocks its Advanced Heritage.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/AngelMasterTrophy.png" align="middle"><b> Angel Master</b></p>
-					<p><b>Requirement</b>: A2, Reach lineage level 30 and purchase all Angel Upgrades.</p>
+					<p><b>Requirement</b>: A2+, purchase all Angel Upgrades while Angel Lineage is at least level 30.</p>
+					<p><b>Additional unlock</b>: 1 hour of activity time with the Angel faction spell unlocks its Advanced Heritage.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/GoblinMasterTrophy.png" align="middle"><b> Goblin Master</b></p>
-					<p><b>Requirement</b>: A2, Reach lineage level 30 and purchase all Goblin Upgrades.</p>
+					<p><b>Requirement</b>: A2+, purchase all Goblin Upgrades while Goblin Lineage is at least level 30.</p>
+					<p><b>Additional unlock</b>: 1 hour of activity time with the Goblin faction spell unlocks its Advanced Heritage.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/UndeadMasterTrophy.png" align="middle"><b> Undead Master</b></p>
-					<p><b>Requirement</b>: A2, Reach lineage level 30 and purchase all Undead Upgrades.</p>
+					<p><b>Requirement</b>: A2+, purchase all Undead Upgrades while Undead Lineage is at least level 30.</p>
+					<p><b>Additional unlock</b>: 1 hour of activity time with the Undead faction spell unlocks its Advanced Heritage.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/DemonMasterTrophy.png" align="middle"><b> Demon Master</b></p>
-					<p><b>Requirement</b>: A2, Reach lineage level 30 and purchase all Demon Upgrades.</p>
+					<p><b>Requirement</b>: A2+, purchase all Demon Upgrades while Demon Lineage is at least level 30.</p>
+					<p><b>Additional unlock</b>: 1 hour of activity time with the Demon faction spell unlocks its Advanced Heritage.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/TitanMasterTrophy.png" align="middle"><b> Titan Master</b></p>
-					<p><b>Requirement</b>: A2, Reach lineage level 30 and purchase all Titan Upgrades.</p>
+					<p><b>Requirement</b>: A2+, purchase all Titan Upgrades while Titan Lineage is at least level 30.</p>
+					<p><b>Additional unlock</b>: 1 hour of activity time with the Titan faction spell unlocks its Advanced Heritage.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/DruidMasterTrophy.png" align="middle"><b> Druid Master</b></p>
-					<p><b>Requirement</b>: A2, Reach lineage level 30 and purchase all Druid Upgrades.</p>
+					<p><b>Requirement</b>: A2+, purchase all Druid Upgrades while Druid Lineage is at least level 30.</p>
+					<p><b>Additional unlock</b>: 1 hour of activity time with the Druid faction spell unlocks its Advanced Heritage.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/FacelessMasterTrophy.png" align="middle"><b> Faceless Master</b></p>
-					<p><b>Requirement</b>: A2, Reach lineage level 30 and purchase all Faceless Upgrades.</p>
+					<p><b>Requirement</b>: A2+, purchase all Faceless Upgrades while Faceless Lineage is at least level 30.</p>
+					<p><b>Additional unlock</b>: 1 hour of activity time with the Faceless faction spell unlocks its Advanced Heritage.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/DwarvenMasterTrophy.png" align="middle"><b> Dwarven Master</b></p>
-					<p><b>Requirement</b>: A2, Reach lineage level 30 and purchase all Dwarven Upgrades.</p>
+					<p><b>Requirement</b>: A2+, purchase all Dwarven Upgrades while Dwarven Lineage is at least level 30.</p>
+					<p><b>Additional unlock</b>: 1 hour of activity time with the Dwarven faction spell unlocks its Advanced Heritage.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/DrowMasterTrophy.png" align="middle"><b> Drow Master</b></p>
-					<p><b>Requirement</b>: A2, Reach lineage level 30 and purchase all Drow Upgrades.</p>
+					<p><b>Requirement</b>: A2+, purchase all Drow Upgrades while Drow Lineage is at least level 30.</p>
+					<p><b>Additional unlock</b>: 1 hour of activity time with the Drow faction spell unlocks its Advanced Heritage.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/DragonMasterTrophy.png" align="middle"><b> Dragon Master</b></p>
-					<p><b>Requirement</b>: A2, Reach lineage level 30 and purchase all Dragon Upgrades.</p>
+					<p><b>Requirement</b>: A2+, purchase all Dragon Upgrades while Dragon Lineage is at least level 30.</p>
+					<p><b>Additional unlock</b>: 1 hour of activity time with the Dragon faction spell unlocks its Advanced Heritage.</p>
 				</div>
 			</div>
 			<div class="shelementwhole">
@@ -832,7 +844,7 @@
 					<p><b>Requirement</b>: Have 1 Assistant in a single game.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/AssistantGroup.png" align="middle"><b> Assistant Group</b></p>
-					<p><b>Requirement</b>: Have 10 Assistants in a single game.</p>
+					<p><b>Requirement</b>: Have 20 Assistants in a single game.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/AssistantCommando.png" align="middle"><b> Assistant Commando</b></p>
 					<p><b>Requirement</b>: Have 50 Assistants in a single game.</p>
@@ -1236,12 +1248,12 @@
 					<p><b>Cost</b>: 70 Sx (7e22)</p>
 					<p><b>Effect</b>: Increase Mana Regeneration by +2.</p>
 					<hr>
-					<p><b> Mana Squall</b></p>
+					<p><img src="/realm/Factions/picks/ManaSquallTrophy.png" align="middle"><b> Mana Squall</b></p>
 					<p><b>Requirement</b>: Produce 10 M (1e7) Mana.</p>
 					<p><b>Cost</b>: 8e25 coins</p>
 					<p><b>Effect</b>: Increase Mana Regeneration by +2.</p>
 					<hr>
-					<p><b> Mana Storm</b></p>
+					<p><img src="/realm/Factions/picks/ManaStormTrophy.png" align="middle"><b> Mana Storm</b></p>
 					<p><b>Requirement</b>: Produce 200 M (2e8) Mana.</p>
 					<p><b>Cost</b>: 9e28 coins</p>
 					<p><b>Effect</b>: Increase Mana Regeneration by +2.</p>
