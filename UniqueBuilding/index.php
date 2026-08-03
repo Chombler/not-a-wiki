@@ -175,8 +175,8 @@
 <hr>
 <p><b>Dragon</b></p>
 <p><img src="/realm/Factions/picks/DragonUniqueBuilding.png" alt="Unique building Dragon" align="middle"></p>
-<p>Upgrade Iron Stronghold to Wyrm's Den, boosting their production based on the total amount of Faction Coins you collected and unlocking more unique perks for the building.</p>
-<p><b>Formula</b>: (0.25 * ln(1 + x / 2 + y) ^ 5)%, where x is Faction Coins found this Era and y is Faction Coins found this Reincarnation.</p>
+<p>Upgrade Iron Stronghold to Wyrm's Den, boosting their production based on Faction Coins found in this Era and unlocking more unique perks for the building.</p>
+<p><b>Formula</b>: (0.25 * ln(1 + x) ^ 5)%, where x is Faction Coins found in this Era; Faction Coins found while offline count at half value during offline-gain calculation.</p>
 <p><b>Requirement</b>: Research, R46 + 4,500 Iron Strongholds</p>
 <br/>
 <p><b>Ascension 2 - R116+</b></p>
