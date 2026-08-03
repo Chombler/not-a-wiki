@@ -76,8 +76,8 @@
 				<p><b>Research Name</b>: Incantation</p>
 				<p><b>Requirement</b>: Research Enchanting (S1) & Mysticism (S105)</p>
 				<p><b>Cost</b>: 3.273 UQig (3.273e156)</p>
-				<p><b>Effect</b>: Increase Mana Regeneration based on the number of assistants you own.</p>
-				<p><b>Formula</b>: +(floor(16 * x ^ 0.6) / 10), where x is the number of assistants you own.</p>
+				<p><b>Effect</b>: Increase the production of all buildings based on Mana Regeneration.</p>
+				<p><b>Formula</b>: (50 + 3 * (30 * x) ^ 0.7)%, where x is your Mana Regeneration per second.</p>
 				<hr>
 				<p><b>S200</b> - For All Factions</p>
 				<p><b>Research Name</b>: Cryomancy</p>
@@ -199,7 +199,7 @@
 				<p><b>Requirement</b>: 200 Dwarf Exchanges (as Dwairy) (This Game), Research Mysticism(S105) & Illusion (S375)</p>
 				<p><b>Cost</b>: 39.16 QiSpg (3.916e229)</p>
 				<p><b>Effect</b>: Increase the production of Neutral buildings based on Maximum Mana.</p>
-				<p><b>Formula</b>: (0.5 * x ^ 0.95)%, where x is your Maximum Mana.</p>
+				<p><b>Formula</b>: (0.5 * x ^ 0.9)%, where x is your Maximum Mana.</p>
 				<hr>
 				<p><b>S1275</b> - For All Factions</p>
 				<p><b>Research Name</b>: Sequence</p>
@@ -886,7 +886,7 @@
 				<p><b>Research Name</b>: Viriditas</p>
 				<p><b>Requirement</b>: R223+</p>
 				<p><b>Effect</b>: Lineage levels count more based on the amount of Artifacts you excavated.</p>
-				<p><b>Formula</b>: (x ^ 0.75)%, where x is the amount of Artifacts you excavated.</p>
+				<p><b>Formula</b>: (x ^ 0.7)%, where x is the amount of Artifacts you found.</p>
 				<hr>
 				<p><b>D11375</b> - For All Factions</p>
 				<p><b>Research Name</b>: Rigor</p>
@@ -1083,7 +1083,7 @@
 				<p><b>Hint</b>: A Blacksmith army.</p>
 				<p><b>Requirement</b>: 5,000 Blacksmiths</p>
 				<p><b>Cost</b>: 787.7 QaSxg (7.877e197)</p>
-				<p><b>Effect</b>: Increase production of all other buildings by 75% per Dwarven Forge you own.</p>
+				<p><b>Effect</b>: Increase the production of all other buildings by 25% per Blacksmith you own.</p>
 				<hr>
 				<p><b>E460</b> - For All Factions</p>
 				<p><b>Research Name</b>: Inflation</p>
@@ -1091,7 +1091,7 @@
 				<p><b>Requirement</b>: 100 B (1e11) Faction Coins (Found this Game)</p>
 				<p><b>Cost</b>: 502.3 SpSxg (5.023e206)</p>
 				<p><b>Effect</b>: Increase Royal Exchange Bonus based on the amount of Faction Coins found in this game.</p>
-				<p><b>Formula</b>: +(floor(3.5 * log10(1 + x)))%, where x is the amount of Faction Coins found in this game.</p>
+				<p><b>Formula</b>: +(25 * x)%, where x is the amount of Blacksmiths you own.</p>
 				<hr>
 				<p><b>E480</b> - For All Factions</p>
 				<p><b>Research Name</b>: Undercutting</p>
@@ -1164,7 +1164,7 @@
 				<p><b>Research Name</b>: Whipround</p>
 				<p><b>Requirement</b>: R177+, Forgotten Relic, Vault artifact and upgrade.</p>
 				<p><b>Effect</b>: Increase Royal Exchange bonus additively and multiplicatively based on Tax Collections cast in this game.</p>
-				<p><b>Additive Formula</b>: +(x ^ 0.2), where x is the amount of Tax Collections cast this game.</p>
+				<p><b>Additive Formula</b>: +(x ^ 0.2)% additively and (0.5 * x ^ 0.15)% multiplicatively, where x is Tax Collections cast in this Era.</p>
 				<p><b>Multiplicative Formula</b>: (0.85 * x ^ 0.15)%, where x is Tax collections cast this game.</p>
 				<hr>
 				<p><b>E5625</b> - For All Factions</p>
@@ -1208,8 +1208,8 @@
 				<p><b>E11875</b> - For All Factions</p>
 				<p><b>Research Name</b>: Overworking</p>
 				<p><b>Requirement</b>: R229+</p>
-				<p><b>Effect</b>: Goblin's Greed casts additional Tax Collection per second based on the amount of assistants you have.</p>
-				<p><b>Formula</b>: +(1.5 * x ^ 0.5), where x is the amount of assistants you have.</p>
+				<p><b>Effect</b>: While Goblin's Greed is active, increase triggered Tax Collections based on assistants owned.</p>
+				<p><b>Formula</b>: +(1.5 * ln(1 + x) ^ 1.5), where x is the amount of assistants you have.</p>
 				<p><b>Note</b>: Catalyst can also trigger this effect.</p>
 				<hr>
 				<p><b>E12250</b> - For All Factions</p>
@@ -1268,8 +1268,8 @@
 				<p><b>Hint</b>: Regeneration magic.</p>
 				<p><b>Requirement</b>: 120 Mana Regen (as Undead)</p>
 				<p><b>Cost</b>: 318.8 Tqag (3.188e134)</p>
-				<p><b>Effect</b>: Heaven's Domains further increase your mana regeneration rate.</p>
-				<p><b>Formula</b>: (1.45 * x ^ 0.45), where x is the number of Heaven's Domains you own.</p>
+				<p><b>Effect</b>: Increase Heaven's Gate production when your Mana Regeneration is higher than Maximum Mana.</p>
+				<p><b>Formula</b>: (90 * (30 * R / M) ^ 0.9)% while 30 * R > M (otherwise 0), where R is Mana Regeneration per second and M is Maximum Mana.</p>
 				<hr>
 				<p><b>A55</b> - For All Factions</p>
 				<p><b>Research Name</b>: Refraction</p>
@@ -1344,7 +1344,7 @@
 				<p><b>Requirement</b>: 20 B (2e10) Faction Coins (This game)</p>
 				<p><b>Cost</b>: 175.2 SxQig (1.752e173)</p>
 				<p><b>Effect</b>: Increase the duration of all spells based on the amount of Faction Coins found in this game.</p>
-				<p><b>Formula</b>: (1.5 * ln(1 + x) ^ 1.5)%, where x is Factions Coins found (This game).</p>
+				<p><b>Formula</b>: (1.5 * ln(1 + x) ^ 1.5)%, where x is Faction Coins found in this Era.</p>
 				<hr>
 				<p><b>A300</b> - For Faceless</p>
 				<p><b>Research Name</b>: Creeping</p>
@@ -1507,7 +1507,7 @@
 				<p><b>Research Name</b>: Azoth</p>
 				<p><b>Requirement</b>: R225+</p>
 				<p><b>Effect</b>: Increase clicking reward based on Mana Regeneration.</p>
-				<p><b>Formula</b>: (2 * log10(1 + x) ^ 2)%, where x is Mana Regeneration</p>
+				<p><b>Formula</b>: (ln(1 + 30 * x) ^ 2)%, where x is Mana Regeneration per second</p>
 				<hr>
 				<p><b>A11625</b> - For All Factions</p>
 				<p><b>Research Name</b>: Anima Mundi</p>
