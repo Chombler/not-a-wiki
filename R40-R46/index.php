@@ -167,11 +167,11 @@
 				<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">R46 - Dragon unlock & Spell tiering</a></b></p>
 				<div class="autohide">
 					<p>Dragon unlock is an unskippable 2-day-long wait with nothing of significance to do. Thus, it is recommended that you use this time to tier some spells to a higher tier, which in turn drastically saves time on future Tierings in later Reincarnations.</p>
-					<p>Said spells are: Demon spells (all spells that are visible when you join Demon) and Elf spells, which you'll tier to Tier 3 and Tier 2 respectively according to the optimal Tiering plan at the bottom of the page.</p>
+					<p>Said spells are Demon spells (all spells visible when you join Demon) and Elf spells. In Ascension 1, ordinary spells can unlock Tier 2 only.</p>
 					<p>You tier Demon spells because you're already having a 12h headstart from dragon unlock stage 2.</p>
 					<p>And as for Elf spells, there are two main reasons:</p>
-					<p>1) You rarely ever want to stop Tiering below Tier 6: Any progress toward the next tier will reset upon reincarnating, so it's really wasteful to reincarnate without tiering all the way to Tier 6. But you only have the time to tier to Tier 2 in R46, so the tiering spell must be one of the lesser used spell, where it doesn't matter whether the spell is Tier 6 or Tier 2.</p>
-					<p>2) You want to avoid overlapping alignment, to tier as many spells as possible: Obviously you'd avoid an evil faction, you're already Tiering Demon. But you also won't want to Tier with a neutral faction yet. Since neutrals become very powerful after Dragon is unlocked, you should Tier them all the way to Tier 6 instead. So that leaves good factions as the only viable choice.</p>
+					<p>1) Tier 2 is the highest ordinary spell tier available in Ascension 1.</p>
+					<p>2) You want to avoid overlapping alignment to tier as many spells as possible. In Ascension 1, this means unlocking Tier 2 on the chosen spells.</p>
 					<p>There is only one faction sastifying both reasons - Elf.</p>
 					<p>So, for the most efficient use of your time, you should be spending most of your dragon unlock sitting as Demon and Elf as much as possible to build up their spells activity time.</p>
 					<p>Optionally, you can check the below section for specific calculations of your spell tiering process.</p>
@@ -184,16 +184,11 @@
 			<div class="shelementwhole">
 				<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">Detailed plan for R46 tiering</a></b></p>
 				<div class="autohide">
-					<p><b>Spell Tier requirement formula</b> (based on spell activity time this R):</p>
-					<p>(2 / 3) * 0.97 ^ (R - 35) * (0.4 + 0.1 * T) * (1 + T ^ 2) / (1 + 0.1 * U)<br>Where T is the Spell Tier you're aiming for, U is your additional unlocked tiers from all spells (Tier 1 does not count) and R is your Reincarnation.</p>
-					<p>Click <b><a target="_blank" href="https://www.desmos.com/calculator/easbpgto2s">here</a></b> for an online calculator.</p>
-					<p>Click <b><a target="_blank" href="https://dox4242.github.io/misc/tiers.html">here</a></b> to see your unlocked Tiers.</p>
+					<p><b>Spell Tier 2 requirement</b>: 1 hour of that spell's activity time in the current Reincarnation, its spell-specific statistic requirement, and the Tier 2 challenge. See the Spell Tiers reference for each statistic.</p>
 					<p>Additional information about <b><a target="_blank" href="/realm/Spells/">Spells and Spell Tiers</a></b>.</p>
 					<p><b>Step 1</b>: Start with Goblin until Spiky Rough Egg is excavated, then go to step 2. Switch back to Goblin (or Fairy, for stage 3) for completion when necessary.</p>
-					<p><b>Step 2</b>: Run Demon (all spells on autocast) until all of its spells hit Tier 2 (requires 1 day, 10 hours and 21 minutes of spell activity time this R).</p>
-					<p><b>Step 3</b>: Run Elf (all spells on autocast) until all of its spells hit at least Tier 2 (requires 20 hours and 13 minutes of spell activity time this R).</p>
-					<p><b>Step 4</b>: Run Demon again until all of its spells hit Tier 3 (requires a total of 1 day, 16 hours and 3 minutes of spell activity time this R).</p>
-					<p><b>Note</b>: Make sure you have Tier 3 in all Demon spells and Tier 2 in all Elf spells before Reincarnating, or you will lose progress toward these tiers.</p>
+					<p><b>Step 2</b>: Run Demon (all spells on autocast) until the desired spells meet their Tier 2 activity and statistic requirements.</p>
+					<p><b>Step 3</b>: Run Elf (all spells on autocast) until the desired spells meet their Tier 2 requirements.</p>
 					<br/>
 				</div>
 			</div>

@@ -224,7 +224,7 @@
 		</div>
 	</div>
 	<br/>
-	<p><b>Elite Challenges</b></p>
+	<p><b>Astral Challenges</b></p>
 	<div class="category">
 		<div class="shelementwhole">
 			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">Challenge 1s (R135)</a></b></p>
@@ -692,7 +692,7 @@
 					<div class="autohide">
 						<p><b>Author</b>: Meta</p>
 						<p><b>Range</b>: 1e120 (1 Notg) Gems+</p>
-						<p><b>Requirement</b>: Elite Challenge 4s Completed</p>
+						<p><b>Requirement</b>: Astral Challenge 4s Completed</p>
 						<p><b>Faction</b>: Elf</p>
 						<p><b>Bloodline</b>: Goblin</p>
 						<p><b>Artifact Set</b>: Faceless</p>
@@ -717,7 +717,7 @@
 					<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">Goblin lineage leveler (Most L45s)</a></b></p>
 					<div class="autohide">
 						<p><b>Author</b>: Meta</p>
-						<p><b>Requirements</b>: Elite Challenge 4s Completed, Goblin Lineage L45</p>
+						<p><b>Requirements</b>: Astral Challenge 4s Completed, Goblin Lineage L45</p>
 						<p><b>Range</b>: 1e120 (1 Notg) Gems+</p>
 						<p><b>Faction</b>: Goblin</p>
 						<p><b>Bloodline</b>: Any (except Drow and Makers)</p>
@@ -761,7 +761,7 @@
 					<div class="autohide">
 						<p><b>Author</b>: Meta</p>
 						<p><b>Range</b>: 1e120 (1 Notg) Gems+</p>
-						<p><b>Requirement</b>: Elite Challenge 4s Completed, Goblin L45</p>
+						<p><b>Requirement</b>: Astral Challenge 4s Completed, Goblin L45</p>
 						<p><b>Faction</b>: Elf</p>
 						<p><b>Bloodline</b>: Drow</p>
 						<p><b>Artifact Set</b>: Faceless</p>
@@ -786,7 +786,7 @@
 					<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">Makersline Undead (Makers L45)</a></b></p>
 					<div class="autohide">
 						<p><b>Author</b>: Wolfsblood</p>
-						<p><b>Requirements</b>: Elite Challenge 4s Completed, Goblin Lineage L45</p>
+						<p><b>Requirements</b>: Astral Challenge 4s Completed, Goblin Lineage L45</p>
 						<p><b>Range</b>: 1e120 (1 Notg) Gems+</p>
 						<p><b>Faction</b>: Undead</p>
 						<p><b>Bloodline</b>: Makers</p>

@@ -225,7 +225,7 @@ div#images div{
 <hr>
 <p><b>Step 3</b>: Buy at least up to 105 Research Points in each branch, use Goblin with Druid or Titan Bloodline.</p>
 <p><b>3.1</b>: <b>A105</b>: 2750 Blacksmiths, Use Fairy with Goblin Bloodline.</p>
-<p><b>3.2</b>: <b>D55</b>: 3 M (3e6) mana produced this game, <b>A55</b>: 25K spells this game, Use Angel with Druid Bloodline. (30 minutes run) (Everything Gold autocast with Tax Collection last until you have bought all researches available, then only Gold autocast Tax Collection)</p>
+<p><b>3.2</b>: <b>D55</b>: 3 M (3e6) Mana produced this Era, <b>A55</b>: 25K spells cast this Era. Use Angel with Druid Bloodline. (30 minutes run) (Everything Gold autocast with Tax Collection last until you have bought all researches available, then only Gold autocast Tax Collection)</p>
 <hr>
 <p><b>Step 4</b>: Buy at least up to 136 Research Points in each branch, use Goblin with Druid or Titan Bloodline.</p>
 <p><b>4.1</b>: <b>A120</b>: 6500 max mana, <b>W120</b>: 250 base assistants, Use Goblin with Druid Bloodline.</p>
@@ -243,6 +243,6 @@ div#images div{
 <p><b>Note</b>: Cast Hellfire Blast and Fairy Chanting on Bronze everything on Gold and no Tax Collection. (Just under 4 hour run)</p>
 <br/>
 <p><b>4.7</b>:  <b>W135</b>: 580 trophies, Use Demon with Elf Bloodline.</p>
-<p><b>4.8</b>: <b>D25</b>: 5 hours offline as Undead, <b>A50</b>: 120 m/s Mana Regen(as Undead), <b>A135</b>: 1 day play time this R, <b>W50</b>: 12 hours evil playtime this R, Use Undead with Druid Bloodline. (After 12 hours evil time switch to Demon to unlock W50)</p>
+<p><b>4.8</b>: <b>D25</b>: 5 hours offline as Undead, <b>A50</b>: 750 Mana Regeneration as Angel, <b>A135</b>: 1 day play time this Reincarnation, <b>W50</b>: 12 hours Evil playtime this Reincarnation. (After 12 hours Evil time switch to Demon to unlock W50.)</p>
 <p><b>Note</b>: <b>D25</b> and <b>W50</b> can wait until after R18 where you do vanilla challenges but needs to be done.</p>
  <?php include "../scripts/footer.html"; ?>

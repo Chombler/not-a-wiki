@@ -327,6 +327,6 @@
             </div>
         </div>
     </div>
-    <p><b>Important for R29</b>: Earth Core quest artifact and Secrets of the Underworld is required to unlock Prestige research. <b><font color="DarkRed">DO NOT reincarnate into R30 before you buy Secret of The Underworld.<font></b></p>
+    <p><b>Important for R32</b>: The Earth Core quest artifact and Secrets of the Underworld are required to unlock Prestige Research. <b><font color="DarkRed">Do not Reincarnate into R33 before buying Secrets of the Underworld.</font></b></p>
     <p>At e114 gems, Secrets of the Underworld becomes reachable, unlocking Prestige research, which is not covered in this guide.</p>
     <?php include "../scripts/footer.html"; ?>

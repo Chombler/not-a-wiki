@@ -5,7 +5,7 @@
 <?php include "../scripts/header.html"; ?>
 <h6><img src="/realm/Factions/picks/TopPageResearch.png" alt="Spellcraft" align="middle"></h6>
 <p><b>Optimal Tiering for R60-R75:</b></p>
-<p>R70: Titanline Fairy spells to Tier 6: 1 day 11 hours and 9 minutes (assuming optimal tiering)</p>
+<p>R70: Titanline Fairy spells can unlock Tier 2 after meeting each spell's activity and statistic requirements.</p>
 <br/>
 <div class="shlisting">
 	<p><b>Production Builds</b></p>

@@ -5,7 +5,7 @@
 <?php include "../scripts/header.html"; ?>
 <h6><img src="/realm/Factions/picks/TopPageResearch.png" alt="Spellcraft" align="middle"></h6>
 <p><b>Optimal Tiering for R47-R59:</b></p>
-<p>R55: Faceless spells to Tier 6: 3 days 10 hours and 33 minutes (assuming optimal tiering)</p>
+<p>R55: Faceless spells can unlock Tier 2 after meeting each spell's activity and statistic requirements.</p>
 <br/>
 <div class="shlisting">
 	<p><b>Production Builds</b></p>
@@ -100,7 +100,7 @@
 				<p>
 					<button onclick="myFunction($(this))">Copy Build</button>
 					<input type="text" value="S215,S305,S330,S500,S1450,S1500,C150,C340,C400,C1300,C1325,D260,D290,D320,D1125,D1275,D1375,E145,E320,E460,E1225,E1425,A105,A120,A150,A305,A400,W150,W180,W275,W400,W1375">
-					<b>Tier 6 spells</b>
+					<b>Tier 2 spells</b>
 				</p>
 				<p>S215,S250,S330,S500,S1450,S1500,</p>
 				<p>C150,C340,C400,C1300,C1325,</p>
@@ -108,7 +108,7 @@
 				<p>E145,E320,E460,E1225,E1425,</p>
 				<p>A105,A120,A150,A305,A400,</p>
 				<p>W150,W180,W275,W400,W1375</p>
-				<p><b>Note</b>: Swap S250->S305 if you have Tier 6 spells.</p>
+				<p><b>Note</b>: Swap S250->S305 if you have Tier 2 spells.</p>
 			</div>
 		</div>
 	</div>

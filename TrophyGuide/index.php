@@ -376,7 +376,7 @@
 							<td>
 								<center>Helden Sterben Nicht</p><img src="/realm/Factions/picks/HeldenSterbenNichtSecretTrophy.png"></td>
 							<td>5 Qavg (5e75)</p>A1+ Free</td>
-							<td>Join Mercenaries, then Undead, then Angels within 15 minutes since the beginning of a new game session.</td>
+							<td>Join Mercenaries, then Undead, then Angels within 15 minutes from the beginning of a new Era.</td>
 							<td>Multiplicatively increase Mana Regeneration and Maximum Mana by 15%.</td>
 							<td>After joining each stage wait about 10 seconds before Abdicating.You Abdicate or Reincarnate and the timer starts, from then you have 15 minutes total to join the three factions.</td>
 						</tr>
@@ -696,7 +696,7 @@
 							<td>
 								<center>That Excavated Quickly</p><img src="/realm/Factions/picks/ThatExcavatedQuicklySecretTrophy.png"></td>
 							<td>1 Qag (1e123)</p>A1+ Free</td>
-							<td>Excavate 1000 times in the first 30 seconds of a run (This Game)</td>
+							<td>Excavate 1000 times in the first 30 seconds of an Era.</td>
 							<td>Your chance to find Faction Coins with excavations is increased by an additional 5%.</td>
 							<td>Make sure to keep your excavations low until you have enough gems to excavate 1000 times - make a save file, abdicate, then try go for the trophy. Undo if necessary.</td>
 						</tr>

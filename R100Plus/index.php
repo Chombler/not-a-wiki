@@ -27,7 +27,7 @@
 					<p>E1,E225,E3250,</p>
 					<p>A10,A3400,</p>
 					<p>W25,W205</p>
-					<p><b>Note</b>: Needs Tier 7 spells & Holy Frenzy beyond 1e29 (100 Oc) Gems.</p>
+					<p><b>Note</b>: Needs Tier 3 spells and Holy Frenzy beyond 1e29 (100 Oc) Gems.</p>
 				</div>
 			</div>
 			<div class="shelementwhole">
@@ -35,7 +35,7 @@
 				<div class="autohide">
 					<p><b>Author</b>: Sad</p>
 					<p><b>Range</b>: 1e33 - 1e41 (1 Dc - 100 Dd) Gems</p>
-					<p><b>Requirements</b>: Tier 7 spells, Holy Frenzy</p>
+					<p><b>Requirements</b>: Tier 3 spells, Holy Frenzy</p>
 					<p><b>Faction</b>: Elf</p>
 					<p><b>Bloodline</b>: Goblin</p>
 					<p><b>Artifact Set</b>: Angel</p>

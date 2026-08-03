@@ -131,7 +131,7 @@
           <p><b>Note</b>: This build is the strongest found so far in R190-198, but is only functional if you have spent more than the usual amount of time in those Rs. Use this if you have been inactive in an R for a longer period.</p>
           <p><b>Note</b>: Switch DN2->DM2 when going for A5375.</p>
           <p><b>Note</b>: Buff F6000, Ziggurats (This R), Flesh Workshops (This R), Mana produced, Assistants.</p>
-          <p><b>Note</b>: Requires approximately 46.5 hours (This Game, including time from Chronos Loading, F6000, and DM4) to be able to afford A5375 (7-10h time this R depending on facless lineage level). Rs up to 198 can be finished by the previous build before DPE can afford A5375.</p>
+          <p><b>Note</b>: Requires approximately 46.5 hours (This Era, including time from Chronos Loading, F6000, and DM4) to be able to afford A5375 (7-10h time this R depending on facless lineage level). Rs up to 198 can be finished by the previous build before DPE can afford A5375.</p>
           <p><b>Note</b>: This build requires recasting spells occasionally, especially Fairy Chanting and Precognition.</p>
         </div>
       </div>
