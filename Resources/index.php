@@ -8,6 +8,7 @@
 <h6>Resources</h6>
 <p>Resources used in Realm Grinder:
 <p><b>Mana</b>: A magic liquid necessary to cast spells.
+<p>A new Era starts with 500 current Mana and 1,000 base Maximum Mana.</p>
 <h6>Currencies</h6>
 <p><b>Coins</b>: Gold, Diamond, Emerald, Amethyst or Sapphire, depending on which Ascension you are on.
 <p><b>Faction Coins</b>: of eight different types, each related to a faction.

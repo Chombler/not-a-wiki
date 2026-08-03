@@ -17,8 +17,8 @@
 <h6><img src="/realm/Factions/picks/Reset-Abdication.png" alt="Abdication" align="middle"></h6>
 <p>Abdicating is the first kind of soft reset in Realm Grinder. It allows you to cash in all the gems you have earned in order to boost your production.</p>
 <p>Abdicating will reset all buildings, upgrades and coins, but you will keep your trophies and be awarded with gems that will boost your production. Otherwise, you may also spend Rubies to gain Gems without resetting!</p>
-<p><b> Gems to Coins Formula</b>: n * (n + 1) * 5e11</br>[5e3 in A2, 5e26 in A4], where n is gems</p>
-<p><b> Coins to Gems Formula</b>: floor(((1 + 4 * n / 5e11</br>[5e3 in A2, 5e26 in A4]) ^ 0.5 - 1) / 2), where n is coins.</p>
+<p><b>Gems to Coins Formula</b>: n * (n + 1) * 5e11, where n is gems. This multiplier is used in every Ascension in 4.3.15.</p>
+<p><b>Coins to Gems Formula</b>: floor(((1 + 4 * n / 5e11) ^ 0.5 - 1) / 2), where n is coins.</p>
 <div id="GemCoinCostCalculator" class="calc">
   <table>
     <tr>
@@ -38,12 +38,6 @@
   </table>
   <script>
     function getGemForm(ascension) {
-		if (ascension == 4) {
-			return 5e26;
-		}
-		if (ascension == 2) {
-			return 5e3;
-		}
 		return 5e11;
     }
     function gemToCoin(mul) {
@@ -52,7 +46,7 @@
     }
     function coinToGem(mul) {
       var input = Number($('#CoinIn').val());
-      return Math.floor(Math.sqrt(input) / Math.sqrt(mul));
+      return Math.floor((Math.sqrt(1 + 4 * input / mul) - 1) / 2);
     }
     function calValues() {
       var mul = getGemForm($('#Ascension').val());
