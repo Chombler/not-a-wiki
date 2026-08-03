@@ -97,7 +97,7 @@
 				<p><b>Clue</b>: Attracted by amassed mana reserves.</p>
 				<p><b>Description</b>: Used to weave even the thinnest mana strings.</p>
 				<p><b>Requirement</b>: R180+, Chaos Alignment</p>
-				<p><b>Chance</b>: (log10(1 + x) ^ 3 / 50000)%, where x is mana produced (This Game)</p>
+				<p><b>Chance</b>: (log10(1 + x) ^ 3 / 50000)%, where x is mana produced (This Era)</p>
 				<p><b>Effect</b>: Unlocks upgrade with same name.</p>
 				<p><b>Upgrade Requirement</b>: Forgotten Relic, Mana Loom artifact and upgrade.</p>
 				<p><b>Upgrade Effect</b>: Expands the Spellcraft research facility, permanently increasing Spellcraft budget by +3000.</p>
@@ -108,7 +108,7 @@
 				<p><b>Clue</b>: Dig it manually.</p>
 				<p><b>Description</b>: Mass-production is the way to go.</p>
 				<p><b>Requirement</b>: R180+, Neutral Alignment</p>
-				<p><b>Chance</b>: (log10(1 + x) ^ 3 / 10000)%, where x is clicks (This Game)</p>
+				<p><b>Chance</b>: (log10(1 + x) ^ 3 / 10000)%, where x is clicks (This Era)</p>
 				<p><b>Effect</b>: Unlocks upgrade with same name.</p>
 				<p><b>Upgrade Requirement</b>: Forgotten Relic, Factory artifact and upgrade.</p>
 				<p><b>Upgrade Effect</b>: Expands the Craftsmanship research facility, permanently increasing Craftsmanship budget by +3000.</p>
@@ -315,8 +315,8 @@
 				<p><b>Cost</b>: 10 Dtg (1E100)</p>
 				<br/>
 				<p><b><img src="/realm/Factions/picks/Undeadr2.png" alt="Undercities" align="middle"> Undercities</b></p>
-				<p>Upgrade Necropolises To Undercities, boosting their production based on time spent in this game and unlocking more unique perks for the building.</p>
-				<p><b>Formula</b>: (10 * (2x)^0.75)%, where x is your Playtime (This Game) stat.</p>
+				<p>Upgrade Necropolises To Undercities, boosting their production based on time spent in this Era and unlocking more unique perks for the building.</p>
+				<p><b>Formula</b>: (10 * (2x)^0.75)%, where x is your Playtime (This Era) stat.</p>
 				<p><b>Requirement</b>: Buy "Undercities Quest"</p>
 				<p><b>Effect</b>: Grants access to the Research Facilities.</p>
 				<p><b>Cost</b>: 10 Ttg (1E103)</p>
@@ -441,7 +441,7 @@
 				<br/>
 				<p><b><img src="/realm/Factions/picks/Wyrm'sDenFactionUpgrade.png" align="middle"> Wyrm's Den</b></p>
 				<p>Upgrade Iron Stronghold to Wyrm's Den, boosting their production based on the total amount of Faction Coins you collected and unlocking more unique perks for the building.</p>
-				<p><b>Formula</b>: 0.065 * (ln(1 + (x / 2) + y)) ^ 3.65 where x is faction coins (This Game) and y is Faction Coins (This R)</p>
+				<p><b>Formula</b>: 0.065 * (ln(1 + (x / 2) + y)) ^ 3.65 where x is faction coins (This Era) and y is Faction Coins (This R)</p>
 				<p><b>Effect</b>: Unlocks Wyrm's Den Unique Building</p>
 				<p><b>Requirement</b>: Wyrm's Den Quest, Dragon's Trade Treaty</p>
 				<p><b>Cost</b>: 10 Nod (1.e61)</p>

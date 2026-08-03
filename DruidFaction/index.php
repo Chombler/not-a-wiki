@@ -24,7 +24,7 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DruidicRunestone.png" align="middle"> Druidic Runestone</b></p>
 	<p><b>Type</b>: Upgrade</p>
-	<p><b>Requirement</b>: 2 Fossilized Pieces of Bark, 1 M (1e6) Faction Coins (This Game)</p>
+	<p><b>Requirement</b>: 2 Fossilized Pieces of Bark, 1 M (1e6) Faction Coins (This Era)</p>
 	<p><b>Cost</b>: 1 No (1e30), 25,000 Elf Coins, 25,000 Demon Coins</p>
 	<br/>
 	<p><b>Faction spell</b></p>
@@ -59,8 +59,8 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DruidUpgrade2.png" align="middle"> Animal Companions</b></p>
 	<p><b>Cost</b>: 5 Sx (5e21)</p>
-	<p><b>Effect</b>: You instantly attract 3 Animal assistants and more will come based on the time spent in this game.</p>
-	<p><b>Formula</b>: +(3 + 1.75 * x ^ 0.5), where x is time spent in this game.</p>
+	<p><b>Effect</b>: You instantly attract 3 Animal assistants and more will come based on the time spent in this Era.</p>
+	<p><b>Formula</b>: +(3 + 1.75 * x ^ 0.5), where x is time spent in this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DruidUpgrade3.png" align="middle"> Natural Recycling</b></p>
 	<p><b>Cost</b>: 50 Sx (5e22)</p>
@@ -185,10 +185,10 @@
 	<p><b><img src="/realm/Factions/picks/DruidUpgrade11.png" alt="Lunar Cycle" align="middle"> Lunar Cycle</b></p>
 	<p><b>Requirement</b>: Druids Union</p>
 	<p><b>Cost</b>: 100 Qivg (1e80) Emerald Coins</p>
-	<p><b>Effect</b>: Increase Maximum Mana additively based on time spent online in this game.</p>
-	<p><b>Formula</b>: +(50 * x ^ 0.85), where x is time spent online in this game.</p>
-	<p><b>Effect</b>: Increase Maximum Mana multiplicatively based on time spent offline in this game.</p>
-	<p><b>Formula</b>: (0.5 * x ^ 0.5)%, where x is time spent offline in this game.</p>
+	<p><b>Effect</b>: Increase Maximum Mana additively based on time spent online in this Era.</p>
+	<p><b>Formula</b>: +(50 * x ^ 0.85), where x is time spent online in this Era.</p>
+	<p><b>Effect</b>: Increase Maximum Mana multiplicatively based on time spent offline in this Era.</p>
+	<p><b>Formula</b>: (0.5 * x ^ 0.5)%, where x is time spent offline in this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DruidUpgrade12.png" alt="Grove Farming" align="middle"> Grove Farming</b></p>
 	<p><b>Requirement</b>: Druids Union</p>
@@ -197,7 +197,7 @@
 	<p><b>Formula</b>: (0.8 * ((6 - abs(6 - T)) ^ 4))%, where T is building tier.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/AdvancedDruidHeritage.png" align="middle"> Advanced Druid Heritage</b></p>
-	<p><b>Requirement</b>: Druid Master trophy and 6 hours activity time (This Game) of Grand Balance.</p>
+	<p><b>Requirement</b>: Druid Master trophy and 6 hours activity time (This Era) of Grand Balance.</p>
 	<p><b>Cost</b>: 1 Sp (1e24) Elven and Demon Coins</p>
 	<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on the sum of all your spells durations.</p>
 	<p><b>Formula</b>: (9 * x ^ 0.3)%, where x is the sum of all your spell durations.</p>

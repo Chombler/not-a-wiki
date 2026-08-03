@@ -40,6 +40,6 @@
 	<hr>
 	<h6 id="FCCR"></h6><p><b>Faceless Challenge Reward</b></p>
 	<p><img src="/realm/Factions/picks/FocusedThoughtsChallengeReward.png" alt="Focused Thoughts" align="middle"> <b>Focused Thoughts</b></p>
-	<p><b>Effect</b>: Give Brainwave a headstart based on its activity time in this game, with a minimum of 1 minute.</p>
-	<p><b>Formula</b>: +1 second per 5 minutes of Brainwave active time this game.</p>
+	<p><b>Effect</b>: Give Brainwave a headstart based on its activity time in this Era, with a minimum of 1 minute.</p>
+	<p><b>Formula</b>: +1 second per 5 minutes of Brainwave active time this Era.</p>
 <?php include "../scripts/footer.html"; ?>

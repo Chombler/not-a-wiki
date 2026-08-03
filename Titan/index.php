@@ -30,8 +30,8 @@
 	<p>"The mighty Titans are almost ready to accept you into their pantheon. They request that you gather enough offerings to mark your ascension."</p>
 	<p><b>Requirements</b>: Titan as Base Faction, Reincarnation 19+, 1000 excavations, Angel and Goblin challenge 3 and Titan challenge 2 completed.</p>
 	<p><b>Challenge</b>: Cast 80 Tax Collections within the active duration of a single Lightning Strike.</p>
-	<p><b>Effect</b>: Gain additional Maximum Mana based on the number of Faction Coins generated this game.</p>
-	<p><b>Formula</b>: (round(2.5 * log10(1 + x)))%, where x is the number of Faction Coins Gained found in this game.</p>
+	<p><b>Effect</b>: Gain additional Maximum Mana based on the number of Faction Coins generated this Era.</p>
+	<p><b>Formula</b>: (round(2.5 * log10(1 + x)))%, where x is the number of Faction Coins Gained found in this Era.</p>
 	<p><b>Upgrade</b>: Works with Druid</p>
 	<hr>
 	<h6 id="TTC4"></h6><p><b>Titan Challenge 4</b></p>

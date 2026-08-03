@@ -19,7 +19,7 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/SturdyBeardMansQuest.png" align="middle"> Sturdy Bearded Man's Quest</b></p>
 	<p><b>Requirements</b>: Play a Good Alignment</p>
-	<p><b>Requirements</b>: Build 800 Inns, 7,000 Buildings Owned (This Game), 10,000 clicks (This Reincarnation)</p>
+	<p><b>Requirements</b>: Build 800 Inns, 7,000 Buildings Owned (This Era), 10,000 clicks (This Reincarnation)</p>
 	<p><b>Cost</b>: 10 Qad (1e46), 10,000 Fairy Coins, 10,000 Elven Coins, 10,000 Angel Coins</p>
 	<p><b>Effect</b>: Unlocks Underworld Diplomacy</p>
 	<p><b>Note</b>: Only needs to be done once and do not count towards the 'Bought Upgrades' stats.</p>
@@ -77,7 +77,7 @@
 	<p><b><img src="/realm/Factions/picks/DwarvenUpgrade6.png" align="middle"> Bearded Assistants</b></p>
 	<p><b>Cost</b>: 5 Sxd (5e51)</p>
 	<p><b>Effect</b>: Increase the production of assistants based on how long their beard is (it grows over time!).</p>
-	<p><b>Formula</b>: (x ^ 0.7)%, where x is time spent in this game.</p>
+	<p><b>Formula</b>: (x ^ 0.7)%, where x is time spent in this Era.</p>
 	<hr>
 	<p><b>Tier 3 Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/DwarvenAlliance.png" align="middle"> Dwarven Alliance</b></p>
@@ -86,8 +86,8 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DwarvenUpgrade7.png" align="middle"> Battlehammers</b></p>
 	<p><b>Cost</b>: 500 Sxd (5e53)</p>
-	<p><b>Effect</b>: Increase the production of all buildings based on the amount of Dwarven Coins found in this game.</p>
-	<p><b>Formula</b>: (2 * ln(1 + x) ^ 2))%, where x is the amount of Dwarven Coins found in this game.</p>
+	<p><b>Effect</b>: Increase the production of all buildings based on the amount of Dwarven Coins found in this Era.</p>
+	<p><b>Formula</b>: (2 * ln(1 + x) ^ 2))%, where x is the amount of Dwarven Coins found in this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DwarvenUpgrade8.png" align="middle"> Magic Resistance</b></p>
 	<p><b>Cost</b>: 5 Spd (5e54)</p>
@@ -193,7 +193,7 @@
 	<p><b>Formula</b>: (0.03 * max(x, y, z) ^ 0.7)%, where x, y & z is time spent as Order, Balance and Chaos in this Reincarnation respectively.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/AdvancedDwarvenHeritage.png" align="middle"> Advanced Dwarven Heritage</b></p>
-	<p><b>Requirement</b>: Dwarf Master trophy and 6 hours activity time (This Game) of Diamond Pickaxe.</p>
+	<p><b>Requirement</b>: Dwarf Master trophy and 6 hours activity time (This Era) of Diamond Pickaxe.</p>
 	<p><b>Cost</b>: 1 Sp (1e24) Dwarven Coins</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on the amount of current excavations and excavation resets. (This Reincarnation).</p>
 	<p><b>Formula</b>: (0.025 * (x * (1 + y + z)) ^ 0.65)%, where x is current excavations and y & z are free and ruby excavation resets done in this Reincarnation.</p>

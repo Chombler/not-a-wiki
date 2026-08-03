@@ -69,8 +69,8 @@
 <hr>
 <p><b>Undead</b></p>
 <p><img src="/realm/Factions/picks/UndeadUniqueBuilding.png" alt="Undercities" align="middle"></p>
-<p>Upgrade Necropolises To Undercities, boosting their production based on time spent in this game and unlocking more unique perks for the building.</p>
-<p><b>Formula:</b> (12 * (2.5 * x) ^ 0.75)%, where x is your Playtime this game.</p>
+<p>Upgrade Necropolises To Undercities, boosting their production based on time spent in this Era and unlocking more unique perks for the building.</p>
+<p><b>Formula:</b> (12 * (2.5 * x) ^ 0.75)%, where x is your Playtime this Era.</p>
 <p><b>Requirement</b>: Research, 1,750 Necropolises</p>
 <br/>
 <p><b>Ascension 2 - R100+</b></p>
@@ -136,10 +136,10 @@
 <br/>
 <p><b>Ascension 2 - R100+</b></p>
 <p><img src="/realm/Factions/picks/ForbiddenLibraryUniqueBuilding.png" alt="Forbidden Library" align="middle"></p>
-<p>Upgrade Monasteries to Forbidden Libraries, boosting production based on spells cast this game and unlocking more unique perks for the building.</p>
+<p>Upgrade Monasteries to Forbidden Libraries, boosting production based on spells cast this Era and unlocking more unique perks for the building.</p>
 <p><b>Effect</b>: Increase production based on spells cast.</p>
 <p><b>Effect</b>: Also grants access to Faction Union.</p>
-<p><b>Formula</b>: (18 * (ln(1 + x) / ln(x % 10 + 2)) ^ 1.8)%, where x is spells cast this game.</p>
+<p><b>Formula</b>: (18 * (ln(1 + x) / ln(x % 10 + 2)) ^ 1.8)%, where x is spells cast this Era.</p>
 <p><b>Alignment</b>: Neutral, Proof of Chaos</p>
 <p><b>Requirement</b>: A2, Forbidden Library Quest (5,000 Excavations)</p>
 <hr>
@@ -167,16 +167,16 @@
 <p><b>Ascension 2 - R116+</b></p>
 <p><img src="/realm/Factions/picks/BrothelUniqueBuilding.png" alt="Brothel" align="middle"></p>
 <p>Upgrade Inns to Brothels, boosting their production based on Royal Exchanges made and unlocking more unique perks for the buildings.</p>
-<p><b>Effect</b>: Increase production based on Royal Exchanges made this game.</p>
+<p><b>Effect</b>: Increase production based on Royal Exchanges made this Era.</p>
 <p><b>Effect</b>: Also grants access to Faction Union.</p>
-<p><b>Formula</b>: (10 * x ^ 1.05)%, where x is Royal Exchanges this game.</p>
+<p><b>Formula</b>: (10 * x ^ 1.05)%, where x is Royal Exchanges this Era.</p>
 <p><b>Alignment</b>: Evil-Drow, and Proof of Order, Balance, or Chaos</p>
-<p><b>Requirement</b>: R116+, Brothel Quest (1 B (1e9) spells cast this game)</p>
+<p><b>Requirement</b>: R116+, Brothel Quest (1 B (1e9) spells cast this Era)</p>
 <hr>
 <p><b>Dragon</b></p>
 <p><img src="/realm/Factions/picks/DragonUniqueBuilding.png" alt="Unique building Dragon" align="middle"></p>
 <p>Upgrade Iron Stronghold to Wyrm's Den, boosting their production based on the total amount of Faction Coins you collected and unlocking more unique perks for the building.</p>
-<p><b>Formula</b>: ((0.065 * (ln(1 + (x / 2) + y))) ^ 3.65)% where x is Faction Coins found this game and y is Faction Coins found this Reincarnation.</p>
+<p><b>Formula</b>: ((0.065 * (ln(1 + (x / 2) + y))) ^ 3.65)% where x is Faction Coins found this Era and y is Faction Coins found this Reincarnation.</p>
 <p><b>Requirement</b>: Research, R46 + 4,500 Iron Strongholds</p>
 <br/>
 <p><b>Ascension 2 - R116+</b></p>
@@ -214,7 +214,7 @@
 <p><img src="/realm/Factions/picks/PavillionUniqueBuilding.png"></b></p>
 <p>Upgrade Slave Pen/Warrior Barracks/Deep Mine to Pavilions, boosting their production based on spells cast in this Reincarnation and unlocking more unique perks for the building.</p>
 <p><b>Formula</b>: Formula: (10 * x ^ 0.5)%, where x is spells cast this Reincarnation.</p>
-<p><b>Requirement</b>: Pavilion Quest. (R130, 5 days of Chaos spells this game)</p>
+<p><b>Requirement</b>: Pavilion Quest. (R130, 5 days of Chaos spells this Era)</p>
 <hr>
 <p><b>Makers</b></p>
 <p><img src="/realm/Factions/picks/HallofOrigination.png"></b></p>

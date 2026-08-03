@@ -164,7 +164,7 @@
 	<p><b>Hint</b>: Are Faction Coins attracted to glass?</p>
 	<p><b>Description</b>: A strange, glass-like material that appears to have been shattered into three pieces.</p>
 	<p><b>Requirement</b>: R125+, Faceless Faction, 12,500+ Excavations</p>
-	<p><b>Chance</b>: (log10(1 + x) ^ 3 / 2,500,000 (2.5 M))%, where x is Faction Coins found this game.</p>
+	<p><b>Chance</b>: (log10(1 + x) ^ 3 / 2,500,000 (2.5 M))%, where x is Faction Coins found this Era.</p>
 	" coords="183,163,236,216" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/ThirdCrystalFragment.png' align='middle'> Third Crystal Fragment</b></p>
@@ -178,7 +178,7 @@
 	<p><b>Hint</b>: Click to Carve.</p>
 	<p><b>Description</b>: Made from stone so ancient it is unknown to the current world. Two parts seem to be missing.</p>
 	<p><b>Requirement</b>: R125, Elven Faction, 12,500+ Excavations</p>
-	<p><b>Chance</b>: (log10(1 + x) ^ 3 / 20,000)%, where x is the amount of clicks made in this game.</p>
+	<p><b>Chance</b>: (log10(1 + x) ^ 3 / 20,000)%, where x is the amount of clicks made in this Era.</p>
 	" coords="303,163,356,216" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/SecondStoneFragment.png' align='middle'> Second Stone Fragment</b></p>
@@ -192,14 +192,14 @@
 	<p><b>Hint</b>: Might be collected with taxes.</p>
 	<p><b>Description</b>: Made from stone so ancient it is unknown to the current world. Two parts seem to be missing.</p>
 	<p><b>Requirement</b>: R125+, Goblin Faction, 12,500+ Excavations</p>
-	<p><b>Chance</b>: (log10(1 + x) ^ 3 / 125,000)%, where x is Tax Collections cast in this game.</p>
+	<p><b>Chance</b>: (log10(1 + x) ^ 3 / 125,000)%, where x is Tax Collections cast in this Era.</p>
 	" coords="3,223,56,276" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/ObsidianCrown.png' align='middle'> Obsidian Crown</b></p>
 	<p><b>Hint</b>: Only the wisest turns over the same stone twice. Or more.</p>
 	<p><b>Description</b>: The legendary Black Crown of the Mercenary Lord. Some words are engraved into the inner circle at its base: &quot;Aran en Ilya, Silas en Quenta&quot;.</p>
-	<p><b>Requirement</b>: R170+, Mercenary Faction, 10 Excavation Resets (This game)</p>
-	<p><b>Chance</b>: ((x - 10) / 1,000)%, x is the number of free and ruby excavation resets (This game)</p>
+	<p><b>Requirement</b>: R170+, Mercenary Faction, 10 Excavation Resets (This Era)</p>
+	<p><b>Chance</b>: ((x - 10) / 1,000)%, x is the number of free and ruby excavation resets (This Era)</p>
 	<p><b>Effect</b>: Unlocks Mercenary Union Contract</p>
 	" coords="63,223,116,276" shape="rect">
 		<area research="
@@ -266,7 +266,7 @@
 	<p><b>Hint</b>: Can be captured when Chanting.</p>
 	<p><b>Description</b>: The essence of a melodic Fairy voice.</p>
 	<p><b>Requirement</b>: Fairy Faction (Not Dwarven)</p>
-	<p><b>Chance</b>: (x / 40,000)%, where x is the is the amount of Fairy Chantings cast this game.</p>
+	<p><b>Chance</b>: (x / 40,000)%, where x is the is the amount of Fairy Chantings cast this Era.</p>
 		" coords="363,43,416,96" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/LuckyClover.png' align='middle'> Lucky Clover</b></p>
@@ -280,7 +280,7 @@
 	<p><b>Hint</b>: Click your way to the treasure!</p>
 	<p><b>Description</b>: It's a small perfect replica of our gold-filled treasure.</p>
 	<p><b>Requirement</b>: Elven Faction (Not Dwarven)</p>
-	<p><b>Chance</b>: (x / 3,000,000 (3 M))%, where x is the amount of clicks made this game.</p>
+	<p><b>Chance</b>: (x / 3,000,000 (3 M))%, where x is the amount of clicks made this Era.</p>
 		" coords="63,103,116,156" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/Pillarfragment.png' align='middle'> Pillar Fragment</b></p>
@@ -308,7 +308,7 @@
 	<p><b>Hint</b>: Fill your pockets with extorted money.</p>
 	<p><b>Description</b>: Heavy and roomy. Definitely too big for just pocket change.</p>
 	<p><b>Requirement</b>: Goblin Faction (Not Drow)</p>
-	<p><b>Chance</b>: (x / 300,000)%, where x is Tax collections cast this game.</p>
+	<p><b>Chance</b>: (x / 300,000)%, where x is Tax collections cast this Era.</p>
 		" coords="303,103,356,156" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/RottenOrgan.png' align='middle'> Rotten Organ</b></p>
@@ -343,14 +343,14 @@
 	<p><b>Hint</b>: Struck by the lightning.</p>
 	<p><b>Description</b>: The granite representation of a giant wielding a lightning bolt in its fist. A foot appears to be missing.</p>
 	<p><b>Requirement</b>: Titan Faction (Not Dragon)</p>
-	<p><b>Chance</b>: (x / 1,000)%, where x is Lightning Strike casts this game.</p>
+	<p><b>Chance</b>: (x / 1,000)%, where x is Lightning Strike casts this Era.</p>
 		" coords="183,163,236,216" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/TitanShield.png' align='middle'> Titan Shield</b></p>
 	<p><b>Hint</b>: Don't fret it.</p>
 	<p><b>Description</b>: A gargantuan metal shield, twice as tall as a common human.</p>
-	<p><b>Requirement</b>: Titan Faction (Not Dragon), 10+ hours playtime (This game)</p>
-	<p><b>Chance</b>: (x / 180,000)%, where x is time played in this game.</p>
+	<p><b>Requirement</b>: Titan Faction (Not Dragon), 10+ hours playtime (This Era)</p>
+	<p><b>Chance</b>: (x / 180,000)%, where x is time played in this Era.</p>
 		" coords="243,163,296,216" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/GlyphTable.png' align='middle'> Glyph Table</b></p>
@@ -364,14 +364,14 @@
 	<p><b>Hint</b>: A Grand Balance performance.</p>
 	<p><b>Description</b>: A carved stone hovering above its pedestal.</p>
 	<p><b>Requirement</b>: Druid Faction (Not Dragon)</p>
-	<p><b>Chance</b>: (x / 30,000)%, where x is Grand Balance casts this game.</p>
+	<p><b>Chance</b>: (x / 30,000)%, where x is Grand Balance casts this Era.</p>
 		" coords="363,163,416,216" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/TranslucentGoo.png' align='middle'> Translucent Goo</b></p>
 	<p><b>Hint</b>: Byproduct of the Brain.</p>
 	<p><b>Description</b>: A completely odorless sticky substance with a diaphanous, unsettling glow.</p>
 	<p><b>Requirement</b>: Faceless Faction (Not Dragon)</p>
-	<p><b>Chance</b>: (x / 400)%, where x is Brainwave casts this game</p>
+	<p><b>Chance</b>: (x / 400)%, where x is Brainwave casts this Era</p>
 		" coords="3,223,56,276" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/Octopus-shapedHelmet.png' align='middle'> Octopus-shaped Helmet</b></p>
@@ -385,7 +385,7 @@
 	<p><b>Hint</b>: Click to throw.</p>
 	<p><b>Description</b>: Actually a heavy throwing hammer.</p>
 	<p><b>Requirement</b>: Dwarven Faction</p>
-	<p><b>Chance</b>: (x / 25,000)%, where x is the amount of clicks made in this game.</p>
+	<p><b>Chance</b>: (x / 25,000)%, where x is the amount of clicks made in this Era.</p>
 		" coords="123,223,176,276" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/StoneTankard.png' align='middle'> Stone Tankard</b></p>
@@ -398,7 +398,7 @@
 	<p><b><img src='/realm/Factions/picks/CeremonialDagger.png' align='middle'> Ceremonial Dagger</b></p>
 	<p><b>Hint</b>: Avoid hurting your fingers.</p>
 	<p><b>Description</b>: Its blade is unnaturally keen and sharp.</p>
-	<p><b>Requirement</b>: Drow Faction, 0 Treasure clicks this Game (including automatic clicks)</p>
+	<p><b>Requirement</b>: Drow Faction, 0 Treasure clicks this Era (including automatic clicks)</p>
 	<p><b>Chance</b>: 2%</p>
 		" coords="243,223,296,276" shape="rect">
 		<area research="
@@ -434,7 +434,7 @@
 	<p><b>Hint</b>: Take five deep breaths.</p>
 	<p><b>Description</b>: The extracted soul from an ancient dragon, wields the power to end the world in an instant. Also makes a good soup ingredient.</p>
 	<p><b>Requirement</b>: R50+, Dragon Faction, have 5 different Dragon Breath effects active simultaneously</p>
-	<p><b>Chance</b>: (x / 200,000)%, where x is Dragon's Breath casts this game.</p>
+	<p><b>Chance</b>: (x / 200,000)%, where x is Dragon's Breath casts this Era.</p>
 		" coords="123,283,176,336" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/VanillaFlavorJuice.png' align='middle'> Vanilla Flavor Juice</b></p>
@@ -443,7 +443,7 @@
 	<p><b>Requirement</b>: R16+, any Vanilla Faction, first 5 minutes of the game</p>
 	<p><b>Chance</b>: 20%</p>
 	<p><b>Effect</b>: Awards an upgrade of the same name.</p>
-	<p><b>Effect</b>: Increase the production of all buildings by 2,500% for the first 25 minutes (this game) for all Vanilla factions. Does not work while offline.</p>
+	<p><b>Effect</b>: Increase the production of all buildings by 2,500% for the first 25 minutes (this Era) for all Vanilla factions. Does not work while offline.</p>
 	<p><b>Cost</b>: 1 coin</p>
 	<p><b>Note</b>: Effect is nullified if you affiliate with Prestige.</b>
 		" coords="183,283,236,336" shape="rect">
@@ -454,7 +454,7 @@
 	<p><b>Requirement</b>: R22+, any Neutral Faction</p>
 	<p><b>Chance</b>: 10%</p>
 	<p><b>Effect</b>: Awards an upgrade named Chocolate Flavor Smoothie.</p>
-	<p><b>Effect</b>: Increase the production of all buildings by 2,500% for the first 15 minutes (this game) for all Neutral factions. Does not work while offline.</p>
+	<p><b>Effect</b>: Increase the production of all buildings by 2,500% for the first 15 minutes (this Era) for all Neutral factions. Does not work while offline.</p>
 	<p><b>Cost</b>: 1 coin</p>
 	<p><b>Note</b>: Effect is nullified if you affiliate with Prestige.</b>
 
@@ -546,7 +546,7 @@
 	<p><b>Hint</b>: A reward for the veteran challenger.</p>
 	<p><b>Description</b>: The warrior of a thousand battles, ultimate champion of the Realms.</p>
 	<p><b>Requirement</b>: R90+, Dragon Challenge 6</p>
-	<p><b>Chance</b>: (x / 1,000,000)%, where x is time spent in this game in seconds.</p>
+	<p><b>Chance</b>: (x / 1,000,000)%, where x is time spent in this Era in seconds.</p>
 	<p><b>Effect</b>: Passive effect: allows Mercenaries to benefit from all faction challenges of your primary alignment.</p>
 	<p><b>Note</b>: Does not grant elite challenges.</p>
 		" coords="363,343,416,396" shape="rect">
@@ -592,7 +592,7 @@
 	<p><b>Hint</b>: Not found on the first Excavation round.</p>
 	<p><b>Description</b>: Just slightly less precious than a raw Ruby.</p>
 	<p><b>Requirement</b>: R100+, Elven Faction, Lucky Clover and Mini-treasure artifacts, 2000+ Excavations</p>
-	<p><b>Chance</b>: (((3 * x) ^ 4.5) / 10,000)%, where x is free and ruby excavation resets (this game).</p>
+	<p><b>Chance</b>: (((3 * x) ^ 4.5) / 10,000)%, where x is free and ruby excavation resets (this Era).</p>
 		" coords="243,403,296,456" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/FossilizedWingArtifact.png' align='middle'> Fossilized Wing</b></p>
@@ -613,7 +613,7 @@
 	<p><b>Hint</b>: Quick! Quick! You have no time to waste!</p>
 	<p><b>Description</b>: Sealed since forever, yet you can hear a strange noise from within.</p>
 	<p><b>Requirement</b>: R100+, Undead Faction, Rotten Organ and Jaw Bone artifacts, 2000+ Excavations</p>
-	<p><b>Chance</b>: (1 / (30 + x ^ 1.5))%, where x is time spent in this game.</p>
+	<p><b>Chance</b>: (1 / (30 + x ^ 1.5))%, where x is time spent in this Era.</p>
 		" coords="3,463,56,516" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/CrystallizedLavaArtifact.png' align='middle'> Crystallized Lava</b></p>
@@ -685,7 +685,7 @@
 	<p><b>Hint</b>: The power of Creation may spark something new.</p>
 	<p><b>Description</b>: The spark of Creation, dimly shining from the bottom of its encasing crystal.</p>
 	<p><b>Requirement</b>: R120+, Proof of Balance</p>
-	<p><b>Chance</b>: (log10(1 + x) ^ 2 / 6,000)%, where x is the amount of Faction Coins collected this game.</p>
+	<p><b>Chance</b>: (log10(1 + x) ^ 2 / 6,000)%, where x is the amount of Faction Coins collected this Era.</p>
 	<p><b>Effect</b>: Unlocks Tier 2 All Creation</p>
 		" coords="183,523,236,576" shape="rect">
 		<area research="
@@ -710,7 +710,7 @@
 	<p><b>Hint</b>: Attracted by amassed mana reserves.</p>
 	<p><b>Description</b>: Used to weave even the thinnest mana strings.</p>
 	<p><b>Requirement</b>: R180+, Chaos Alignment</p>
-	<p><b>Chance</b>: (log10(x) ^ 3 / 50,000)%, where x is the amount of Mana produced in this game.</p>
+	<p><b>Chance</b>: (log10(x) ^ 3 / 50,000)%, where x is the amount of Mana produced in this Era.</p>
 	<p><b>Effect</b>: Awards upgrade with same name.</p>
 		" coords="363,523,416,576" shape="rect">
 		<area research="
@@ -718,7 +718,7 @@
 	<p><b>Hint</b>: Dig it manually.</p>
 	<p><b>Description</b>: Mass-production is the way to go.</p>
 	<p><b>Requirement</b>: R180+, Neutral Alignment</p>
-	<p><b>Chance</b>: (log10(x) ^ 3 / 10,000)%, where x is the amount of clicks made in this game.</p>
+	<p><b>Chance</b>: (log10(x) ^ 3 / 10,000)%, where x is the amount of clicks made in this Era.</p>
 	<p><b>Effect</b>: Awards upgrade with same name.</p>
 		" coords="3,583,56,636" shape="rect">
 		<area research="
@@ -766,7 +766,7 @@
 	<p><b>Hint</b>: Mana Wings!</p>
 	<p><b>Description</b>: And this is why Fairies don't need torches.</p>
 	<p><b>Requirement</b>: R220+, Fairy Faction, 10,000+ Excavations</p>
-	<p><b>Chance</b>: (log10(1 + x) / 8,000)%, where x is Mana produced this game.</p>
+	<p><b>Chance</b>: (log10(1 + x) / 8,000)%, where x is Mana produced this Era.</p>
 		" coords="363,583,416,636" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/SylvanMirrorArtifact.png' align='middle'> Sylvan Mirror</b></p>
@@ -787,7 +787,7 @@
 	<p><b>Hint</b>: Torment your subjects with taxes.</p>
 	<p><b>Description</b>: To remind your slaves who's in charge.</p>
 	<p><b>Requirement</b>: R220+, Goblin Faction, 10,000+ Excavations</p>
-	<p><b>Chance</b>: (log10(1 + x) / 8,000)%, where x is Tax Collection casts in this game.</p>
+	<p><b>Chance</b>: (log10(1 + x) / 8,000)%, where x is Tax Collection casts in this Era.</p>
 		" coords="123,643,176,696" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/BloodChaliceArtifact.png' align='middle'> Blood Chalice</b></p>
@@ -801,14 +801,14 @@
 	<p><b>Hint</b>: Evil wizardry.</p>
 	<p><b>Description</b>: Said to bring great luck to whom it possess...es.</p>
 	<p><b>Requirement</b>: R220+, Demon Faction, 10,000+ Excavations</p>
-	<p><b>Chance</b>: (x / 1,000,000)%, where x is Evil Spell Casts in this game.</p>
+	<p><b>Chance</b>: (x / 1,000,000)%, where x is Evil Spell Casts in this Era.</p>
 		" coords="243,643,296,696" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/FrozenLightningArtifact.png' align='middle'> Frozen Lightning</b></p>
 	<p><b>Hint</b>: Lightning never strikes the same place a couple million times. Maybe.</p>
 	<p><b>Description</b>: A sculpture representing the embodiment of Titanic power.</p>
 	<p><b>Requirement</b>: R220+, Titan Faction, 10,000+ Excavations</p>
-	<p><b>Chance</b>: (x / 1,000,000)%, where x is Lightning Strike activity time in this game.</p>
+	<p><b>Chance</b>: (x / 1,000,000)%, where x is Lightning Strike activity time in this Era.</p>
 		" coords="303,643,356,696" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/PrimalLeafArtifact.png' align='middle'> Primal Leaf</b></p>
@@ -822,7 +822,7 @@
 	<p><b>Hint</b>: Quality takes time.</p>
 	<p><b>Description</b>: High-quality, freshly produced Faceless ink.</p>
 	<p><b>Requirement</b>: R220+, Faceless Faction, 10,000+ Excavations</p>
-	<p><b>Chance</b>: (x / 10,000)%, where x is the longest game session this Reincarnation (but <b>not</b> this game).</p>
+	<p><b>Chance</b>: (x / 10,000)%, where x is the longest game session this Reincarnation (but <b>not</b> this Era).</p>
 		" coords="3,703,56,756" shape="rect">
 		<area research="
 	<p><b><img src='/realm/Factions/picks/DwarvenAnvilArtifact.png' align='middle'> Dwarven Anvil</b></p>

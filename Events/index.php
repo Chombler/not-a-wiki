@@ -567,7 +567,7 @@
 			<p><b>Halloween</b></p>
 			<p><b><img src='/realm/Factions/picks/SpectralSurge.png' align='middle'> Spectral Surge</b></p>
 			<p><b>Type</b>: Feat</p>
-			<p><b>Requirement</b>: Collect at least 480 of each resource in a single run.(This Game)</p>
+			<p><b>Requirement</b>: Collect at least 480 of each resource in a single run.(This Era)</p>
 			<p><b>Note</b>: If you unlock this feat, you will permanently unlock a new upgrade with the same name.</p>
 			<p><b>Effect</b>: Turn Spiritual Surge into Spectral Surge, and multiplies Spectral Surge base bonus by the Cumulative Event Bonus.</p>
 			<p><b>Note</b>: Once unlocked, it is available during any Seasonal Event.</p>
@@ -592,7 +592,7 @@
 			<p><b>Halloween</b></p>
 			<p><b><img src='/realm/Factions/picks/CurseoftheFallen.png' align='middle'> Curse of the Fallen</b></p>
 			<p><b>Type</b>: Feat</p>
-			<p><b>Requirement</b>: Have at least 2 hours of Holy Light activity time while using a level 50 Vampire. (BUGGED: check is 2 hours this game with any Vampire and only when Holy Light is cast).</p>
+			<p><b>Requirement</b>: Have at least 2 hours of Holy Light activity time while using a level 50 Vampire. (BUGGED: check is 2 hours this Era with any Vampire and only when Holy Light is cast).</p>
 			<p><b>Note</b>: If you unlock this feat, you will permanently unlock a new icon option for the spell.</p>
 			" coords="303,363,357,417" shape="rect">
 			<area research="
@@ -733,7 +733,7 @@
 			<p><b>Goblin Invasion</b></p>
 			<p><b><img src='/realm/Factions/picks/UnderaGreenSun.png' align='middle'> Under a Green Sun</b></p>
 			<p><b>Type</b>: Feat</p>
-			<p><b>Requirement</b>: Collect a stack of at least 720 Goblin Crowns while having at least 2 hours of Goblin's Greed activity time in this Reincarnation (BUGGED: check is 2 hours this game).</p>
+			<p><b>Requirement</b>: Collect a stack of at least 720 Goblin Crowns while having at least 2 hours of Goblin's Greed activity time in this Reincarnation (BUGGED: check is 2 hours this Era).</p>
 			<p><b>Note</b>: If you unlock this feat, you will permanently unlock a new icon option for the spell.</p>
 			" coords="123,543,177,597" shape="rect">
 			<area research="
@@ -1723,7 +1723,7 @@
 					<p><b>Effect</b>: If you unlock all of this event's feats, you will permanently unlock a new color option for the mana bar.</p>
 					<br/>
 					<p><b><img src="/realm/Factions/picks/SpectralSurge.png" alt="Halloween" align="middle"> Spectral Surge</b></p>
-					<p><b>Requirement</b>: Collect at least 480 of each resource in a single run.(This Game)</p>
+					<p><b>Requirement</b>: Collect at least 480 of each resource in a single run.(This Era)</p>
 					<p><b>Note</b>: If you unlock this feat, you will permanently unlock a new upgrade with the same name.</p>
 					<p><b>Effect</b>: Turn Spiritual Surge into Spectral Surge, and multiplies Spectral Surge base bonus by the Cumulative Event Bonus.</p>
 					<p><b>Note</b>: Once unlocked, it is available during any Seasonal Event.</p>
@@ -1742,7 +1742,7 @@
 					<p><b>Note</b>: This Feat is not needed to unlock new mana color.</p>
 					<br/>
 					<p><b><img src="/realm/Factions/picks/CurseoftheFallen.png" align="middle"> Curse of the Fallen</b></p>
-					<p><b>Requirement</b>: Have at least 2 hours of Holy Light activity time while using a level 50 Vampire. (BUGGED: check is 2 hours this game with any Vampire and only when Holy Light is cast).</p>
+					<p><b>Requirement</b>: Have at least 2 hours of Holy Light activity time while using a level 50 Vampire. (BUGGED: check is 2 hours this Era with any Vampire and only when Holy Light is cast).</p>
 					<p><b>Note</b>: If you unlock this feat, you will permanently unlock a new icon option for the spell.</p>
 					<hr>
 					<p><b><img src="/realm/Factions/picks/Vampire.png" alt="Vampire" align="middle"> Vampire</b></p>
@@ -1772,7 +1772,7 @@
 					<p><b><img src="/realm/Factions/picks/ShadowEmbrace.png" alt="ShadowEmbrace" align="middle"> Shadow Embrace</b></p>
 					<p><b>Requirement</b>: Level 10 Vampire Monster</p>
 					<p><b>Effect</b>: Increase the size of your assistant army based on the amount of Reincarnations you made for 20 seconds. Increases progressively as you continue casting this spell.</p>
-					<p><b>Formula</b>: +((R + 1) * x ^ 0.5), where x is amount of Shadow Embrace casts in this game and R is the amount of Reincarnation you made.</p>
+					<p><b>Formula</b>: +((R + 1) * x ^ 0.5), where x is amount of Shadow Embrace casts in this Era and R is the amount of Reincarnation you made.</p>
 					<hr>
 					<p><b><img src="/realm/Factions/picks/Ghost.png" alt="Ghost" align="middle"> Ghost</b></p>
 					<p><b>Kind</b>: Monster</p>
@@ -1789,9 +1789,9 @@
 					<p><b>Kind</b>: Monster</p>
 					<p><b>Level</b>: 25</p>
 					<p><b>Unlock / Price</b>: 660 Ectoplasm</p>
-					<p><b>Effect</b>: Multiplicatively increase Maximum Mana and Mana Regeneration based on clicks made in this game.</p>
-					<p><b>Formula</b>: Max Mana: (log10(1 + x) ^ 2.5)%, where x is clicks made this game.</p>
-					<p><b>Formula</b>: Mana Regeneration: (log10(1 + x) ^ 2.25)%, where x is clicks made this game.</p>
+					<p><b>Effect</b>: Multiplicatively increase Maximum Mana and Mana Regeneration based on clicks made in this Era.</p>
+					<p><b>Formula</b>: Max Mana: (log10(1 + x) ^ 2.5)%, where x is clicks made this Era.</p>
+					<p><b>Formula</b>: Mana Regeneration: (log10(1 + x) ^ 2.25)%, where x is clicks made this Era.</p>
 					<br/>
 					<p><b><img src="/realm/Factions/picks/Spectre.png" alt="Spectre" align="middle"> Spectre</b></p>
 					<p><b>Kind</b>: Monster</p>
@@ -1801,8 +1801,8 @@
 					<br/>
 					<p><b><img src="/realm/Factions/picks/WailoftheBanshee.png" alt="WailoftheBanshee" align="middle"> Wail of the Banshee</b></p>
 					<p><b>Requirement</b>: Level 10 Ghost Monster</p>
-					<p><b>Effect</b>: Increase the production of all buildings based on mana produced in this game and the amount of Reincarnations you made for 20 seconds.</p>
-					<p><b>Formula</b>: (0.2 * (R + 1) * x ^ 0.45)%, where R is reincarnation count and x is mana produced this game.</p>
+					<p><b>Effect</b>: Increase the production of all buildings based on mana produced in this Era and the amount of Reincarnations you made for 20 seconds.</p>
+					<p><b>Formula</b>: (0.2 * (R + 1) * x ^ 0.45)%, where R is reincarnation count and x is mana produced this Era.</p>
 					<hr>
 					<p><b><img src="/realm/Factions/picks/Skeleton.png" alt="Skeleton" align="middle"> Skeleton</b></p>
 					<p><b>Kind</b>: Monster</p>
@@ -1857,9 +1857,9 @@
 				<div class="autohide">
 					<p>The Idillium event will be starting on <b>Sep 23rd 2022, 12:01 PM UTC</b> and will end on <b>Sep 30th 2022, 6:59 PM UTC</b>.</p>
 					<p>The event will feature three Resources, <b>Crystal Prisms</b>, <b>Entropic Drops</b> and <b>Equilibrium Fragments</b>, They will appear in a random location of the game screen at a rate of 1 per minute, you can stack them for 16 hours, up to 960.</p>
-					<p>Being aligned with an elite faction will double the speed a resource is gained.</p>
+					<p>Being aligned with an Astral faction will double the speed a resource is gained.</p>
 					<p>You need 2814 resources of each (8442 total) to complete all quests.</p>
-					<p>Total time needed 5 days 20 hours and 42 minutes without elite factions or scrying.</p>
+					<p>Total time needed 5 days 20 hours and 42 minutes without Astral factions or scrying.</p>
 					<p>Which prism appears depends on what faction you are aligned with:</p>
 					<p>As Fairy, Demon or Faceless, Entropic Drop appears.</p>
 					<p>As Elven, Goblin or Druid, Equilibrium Fragment appears.</p>
@@ -1940,9 +1940,9 @@
 					<p><img src="/realm/Factions/picks/OrderRemnantPerk2.png" align="middle"> <b>Order Remnant Perk 2</b></p>
 					<p><b>Effect</b>: Grants Temporal Flux spell with a cost of 1000 mana.</p>
 					<p><img src="/realm/Factions/picks/TemporalFlux.png" align="middle"></p>
-					<p><b>Effect</b>: Increase Unique building production based on time spent in this game.</p>
-					<p><b>Effect</b>: Also multiplicatively increase Mana Regeneration based on time spent in this game.</p>
-					<p><b>Formula</b>: (3.5 * (x / 60) ^ 0.825)%, where x is time spent in this game this game.</p>
+					<p><b>Effect</b>: Increase Unique building production based on time spent in this Era.</p>
+					<p><b>Effect</b>: Also multiplicatively increase Mana Regeneration based on time spent in this Era.</p>
+					<p><b>Formula</b>: (3.5 * (x / 60) ^ 0.825)%, where x is time spent in this Era this Era.</p>
 					<p><b>Note</b>: Temporal Flux obtained this way cannot be tiered.</p>
 					<br>
 					<p><img src="/realm/Factions/picks/OrderRestoration3.png" align="middle"> <b>Order Restoration 3</b></p>
@@ -1966,11 +1966,11 @@
 					<p><img src="/realm/Factions/picks/ChaosRemnantPerk2.png" align="middle"> <b>Chaos Remnant Perk 2</b></p>
 					<p><b>Effect</b>: Grants Maelstrom spell with a cost of 1000 mana.</p>
 					<p><img src="/realm/Factions/picks/Maelstrom.png" align="middle"></p>
-					<p><b>Effect</b>: Increase the production of three random buildings based on one of these stats in this game, chosen at random: mana produced, trophies unlocked, Faction Coins found or amount of assistants.</p>
+					<p><b>Effect</b>: Increase the production of three random buildings based on one of these stats in this Era, chosen at random: mana produced, trophies unlocked, Faction Coins found or amount of assistants.</p>
 					<p><b>Formulas</b></p>
-					<p><b>Mana</b>: (0.02 * (log10(1 + x)) ^ 5)%, where x is mana produced this game.</p>
+					<p><b>Mana</b>: (0.02 * (log10(1 + x)) ^ 5)%, where x is mana produced this Era.</p>
 					<p><b>Trophy</b>: Formula (2.5 * x ^ 0.9)%, where x is trophies unlocked.</p>
-					<p><b>Faction Coins</b>: (0.01 * (log10(1 + x)) ^ 4)%, where x is faction coins found this game.</p>
+					<p><b>Faction Coins</b>: (0.01 * (log10(1 + x)) ^ 4)%, where x is faction coins found this Era.</p>
 					<p><b>Assistants</b>: (0.25 * (log10(1 + x)) ^ 5)%, where x is amount of assistants.</p>
 					<p><b>Note</b>: Maelstrom obtained this way cannot be tiered.</p>
 					<br>
@@ -2085,7 +2085,7 @@
 					<p><b>Unlock / Price</b>: Unlocked when aligned with Winterly</p>
 					<p><b>Mana Cost</b>: 1000</p>
 					<p><b>Effect</b>:Increase the production of all buildings based on Hailstorm activity time for 2m. Bonus provided increases progressively over the duration of the spell.</p>
-					<p><b>Formula</b>: (0.1 * x ^ 0.6 * (y * 30) ^ 1.1)%, where x is the Hailstorm activity time this game (in seconds), and y is the duration of the current Hailstorm (in seconds).</p>
+					<p><b>Formula</b>: (0.1 * x ^ 0.6 * (y * 30) ^ 1.1)%, where x is the Hailstorm activity time this Era (in seconds), and y is the duration of the current Hailstorm (in seconds).</p>
 					<br/>
 					<p><b><img src="/realm/Factions/picks/SummerFestival4.PNG" alt="Glaciality" align="middle"> Glaciality</b></p>
 					<p><b>Kind</b>: Upgrade</p>
@@ -2113,8 +2113,8 @@
 					<p><b>Kind</b>: Spell</p>
 					<p><b>Unlock / Price</b>: Unlocked when aligned with Summeraan</p>
 					<p><b>Mana Cost</b>: 300</p>
-					<p><b>Effect</b>: Increase the production of all buildings based on spells cast in this game for 12s.</p>
-					<p><b>Formula</b>: (5 * x ^ 0.85)%, where x is the number of spells cast this game.</p>
+					<p><b>Effect</b>: Increase the production of all buildings based on spells cast in this Era for 12s.</p>
+					<p><b>Formula</b>: (5 * x ^ 0.85)%, where x is the number of spells cast this Era.</p>
 					<p><b>Effect</b>: Also grants faction coins based on the amount of Flame Orbs collected in this event.</p>
 					<p><b>Formula</b>: (x * y ^ 1.1)%, where x is your faction coin chance, and y is the number of Flame Orbs collected in this event.</p>
 					<br/>
@@ -2127,8 +2127,8 @@
 					<p><b><img src="/realm/Factions/picks/SummerFestival2.PNG" alt="Eruption" align="middle"> Eruption</b></p>
 					<p><b>Kind</b>: Upgrade</p>
 					<p><b>Unlock / Price</b>: 1300 Flame Orbs</p>
-					<p><b>Effect</b>: Gain additional assistants based on the clicks made in this game.</p>
-					<p><b>Formula</b>: +(2 * log(1 + x ^ 2)), where x is the number of clicks made in this game.</p>
+					<p><b>Effect</b>: Gain additional assistants based on the clicks made in this Era.</p>
+					<p><b>Formula</b>: +(2 * log(1 + x ^ 2)), where x is the number of clicks made in this Era.</p>
 					<br/>
 					<p><b><img src="/realm/Factions/picks/SummerFestival3.PNG" alt="Burning Rage" align="middle"> Burning Rage</b></p>
 					<p><b>Kind</b>: Upgrade</p>
@@ -2325,7 +2325,7 @@
 					<p><b>Note</b>: Once unlocked, it is available during any Seasonal Event.</p>
 					<br/>
 					<p><b><img src="/realm/Factions/picks/UnderaGreenSun.png" align="middle"> Under a Green Sun</b></p>
-					<p><b>Requirement</b>: Collect a stack of at least 720 Goblin Crowns while having at least 2 hours of Goblin's Greed activity time in this Reincarnation (BUGGED: check is 2 hours this game).</p>
+					<p><b>Requirement</b>: Collect a stack of at least 720 Goblin Crowns while having at least 2 hours of Goblin's Greed activity time in this Reincarnation (BUGGED: check is 2 hours this Era).</p>
 					<p><b>Note</b>: If you unlock this feat, you will permanently unlock a new icon option for the spell.</p>
 					<hr>
 					<p><b>Shop Item</b></p>
@@ -3065,7 +3065,7 @@
 					<p><b>Effect</b>: If you unlock all of this event's feats, you will permanently unlock a new color option for the mana bar.</p>
 					<br/>
 					<p><b><img src="/realm/Factions/picks/SpectralSurge.png" alt="Halloween" align="middle"> Spectral Surge</b></p>
-					<p><b>Requirement</b>: Collect at least 480 of each resource in a single run.(This Game)</p>
+					<p><b>Requirement</b>: Collect at least 480 of each resource in a single run.(This Era)</p>
 					<p><b>Note</b>: If you unlock this feat, you will permanently unlock a new upgrade with the same name.</p>
 					<p><b>Effect</b>: Turn Spiritual Surge into Spectral Surge, and multiplies Spectral Surge base bonus by the Cumulative Event Bonus.</p>
 					<p><b>Note</b>: Once unlocked, it is available during any Seasonal Event.</p>
@@ -3110,7 +3110,7 @@
 					<p><b><img src="/realm/Factions/picks/ShadowEmbrace.png" alt="ShadowEmbrace" align="middle"> Shadow Embrace</b></p>
 					<p><b>Requirement</b>: Level 10 Vampire Monster</p>
 					<p><b>Effect</b>: Increase the size of your assistant army based on the amount of Reincarnations you made for 20 seconds. Increases progressively as you continue casting this spell.</p>
-					<p><b>Formula</b>: +((R + 1) * x ^ 0.5), where x is amount of Shadow Embrace casts in this game and R is the amount of Reincarnation you made.</p>
+					<p><b>Formula</b>: +((R + 1) * x ^ 0.5), where x is amount of Shadow Embrace casts in this Era and R is the amount of Reincarnation you made.</p>
 					<hr>
 					<p><b><img src="/realm/Factions/picks/Ghost.png" alt="Ghost" align="middle"> Ghost</b></p>
 					<p><b>Kind</b>: Monster</p>
@@ -3127,9 +3127,9 @@
 					<p><b>Kind</b>: Monster</p>
 					<p><b>Level</b>: 25</p>
 					<p><b>Unlock / Price</b>: 660 Ectoplasm</p>
-					<p><b>Effect</b>: Multiplicatively increase Maximum Mana and Mana Regeneration based on clicks made in this game.</p>
-					<p><b>Formula</b>: Max Mana: (log10(1 + x) ^ 2.5)%, where x is clicks made this game.</p>
-					<p><b>Formula</b>: Mana Regeneration: (log10(1 + x) ^ 2.25)%, where x is clicks made this game.</p>
+					<p><b>Effect</b>: Multiplicatively increase Maximum Mana and Mana Regeneration based on clicks made in this Era.</p>
+					<p><b>Formula</b>: Max Mana: (log10(1 + x) ^ 2.5)%, where x is clicks made this Era.</p>
+					<p><b>Formula</b>: Mana Regeneration: (log10(1 + x) ^ 2.25)%, where x is clicks made this Era.</p>
 					<br/>
 					<p><b><img src="/realm/Factions/picks/Spectre.png" alt="Spectre" align="middle"> Spectre</b></p>
 					<p><b>Kind</b>: Monster</p>
@@ -3139,8 +3139,8 @@
 					<br/>
 					<p><b><img src="/realm/Factions/picks/WailoftheBanshee.png" alt="WailoftheBanshee" align="middle"> Wail of the Banshee</b></p>
 					<p><b>Requirement</b>: Level 10 Ghost Monster</p>
-					<p><b>Effect</b>: Increase the production of all buildings based on mana produced in this game and the amount of Reincarnations you made for 20 seconds.</p>
-					<p><b>Formula</b>: (0.2 * (R + 1) * x ^ 0.45)%, where R is reincarnation count and x is mana produced this game.</p>
+					<p><b>Effect</b>: Increase the production of all buildings based on mana produced in this Era and the amount of Reincarnations you made for 20 seconds.</p>
+					<p><b>Formula</b>: (0.2 * (R + 1) * x ^ 0.45)%, where R is reincarnation count and x is mana produced this Era.</p>
 					<hr>
 					<p><b><img src="/realm/Factions/picks/Skeleton.png" alt="Skeleton" align="middle"> Skeleton</b></p>
 					<p><b>Kind</b>: Monster</p>
@@ -3195,9 +3195,9 @@
 				<div class="autohide">
 					<p>The Idillium event will be starting on <b>Sep 23rd 2021, 12:01 PM UTC</b> and will end on <b>Sep 30th 2021, 6:59 PM UTC</b>.</p>
 					<p>The event will feature three Resources, <b>Crystal Prisms</b>, <b>Entropic Drops</b> and <b>Equilibrium Fragments</b>, They will appear in a random location of the game screen at a rate of 1 per minute, you can stack them for 16 hours, up to 960.</p>
-					<p>Being aligned with an elite faction will double the speed a resource is gained.</p>
+					<p>Being aligned with an Astral faction will double the speed a resource is gained.</p>
 					<p>You need 2814 resources of each (8442 total) to complete all quests.</p>
-					<p>Total time needed 5 days 20 hours and 42 minutes without elite factions or scrying.</p>
+					<p>Total time needed 5 days 20 hours and 42 minutes without Astral factions or scrying.</p>
 					<p>Which prism appears depends on what faction you are aligned with:</p>
 					<p>As Fairy, Demon or Faceless, Entropic Drop appears.</p>
 					<p>As Elven, Goblin or Druid, Equilibrium Fragment appears.</p>
@@ -3278,9 +3278,9 @@
 					<p><img src="/realm/Factions/picks/OrderRemnantPerk2.png" align="middle"> <b>Order Remnant Perk 2</b></p>
 					<p><b>Effect</b>: Grants Temporal Flux spell with a cost of 1000 mana.</p>
 					<p><img src="/realm/Factions/picks/TemporalFlux.png" align="middle"></p>
-					<p><b>Effect</b>: Increase Unique building production based on time spent in this game.</p>
-					<p><b>Effect</b>: Also multiplicatively increase Mana Regeneration based on time spent in this game.</p>
-					<p><b>Formula</b>: (3.5 * (x / 60) ^ 0.825)%, where x is time spent in this game this game.</p>
+					<p><b>Effect</b>: Increase Unique building production based on time spent in this Era.</p>
+					<p><b>Effect</b>: Also multiplicatively increase Mana Regeneration based on time spent in this Era.</p>
+					<p><b>Formula</b>: (3.5 * (x / 60) ^ 0.825)%, where x is time spent in this Era this Era.</p>
 					<p><b>Note</b>: Temporal Flux obtained this way cannot be tiered.</p>
 					<br>
 					<p><img src="/realm/Factions/picks/OrderRestoration3.png" align="middle"> <b>Order Restoration 3</b></p>
@@ -3304,11 +3304,11 @@
 					<p><img src="/realm/Factions/picks/ChaosRemnantPerk2.png" align="middle"> <b>Chaos Remnant Perk 2</b></p>
 					<p><b>Effect</b>: Grants Maelstrom spell with a cost of 1000 mana.</p>
 					<p><img src="/realm/Factions/picks/Maelstrom.png" align="middle"></p>
-					<p><b>Effect</b>: Increase the production of three random buildings based on one of these stats in this game, chosen at random: mana produced, trophies unlocked, Faction Coins found or amount of assistants.</p>
+					<p><b>Effect</b>: Increase the production of three random buildings based on one of these stats in this Era, chosen at random: mana produced, trophies unlocked, Faction Coins found or amount of assistants.</p>
 					<p><b>Formulas</b></p>
-					<p><b>Mana</b>: (0.02 * (log10(1 + x)) ^ 5)%, where x is mana produced this game.</p>
+					<p><b>Mana</b>: (0.02 * (log10(1 + x)) ^ 5)%, where x is mana produced this Era.</p>
 					<p><b>Trophy</b>: Formula (2.5 * x ^ 0.9)%, where x is trophies unlocked.</p>
-					<p><b>Faction Coins</b>: (0.01 * (log10(1 + x)) ^ 4)%, where x is faction coins found this game.</p>
+					<p><b>Faction Coins</b>: (0.01 * (log10(1 + x)) ^ 4)%, where x is faction coins found this Era.</p>
 					<p><b>Assistants</b>: (0.25 * (log10(1 + x)) ^ 5)%, where x is amount of assistants.</p>
 					<p><b>Note</b>: Maelstrom obtained this way cannot be tiered.</p>
 					<br>
@@ -3419,7 +3419,7 @@
 					<p><b>Unlock / Price</b>: Unlocked when aligned with Winterly</p>
 					<p><b>Mana Cost</b>: 1000</p>
 					<p><b>Effect</b>:Increase the production of all buildings based on Hailstorm activity time for 2m. Bonus provided increases progressively over the duration of the spell.</p>
-					<p><b>Formula</b>: (0.1 * x ^ 0.6 * (y * 30) ^ 1.1)%, where x is the Hailstorm activity time this game (in seconds), and y is the duration of the current Hailstorm (in seconds).</p>
+					<p><b>Formula</b>: (0.1 * x ^ 0.6 * (y * 30) ^ 1.1)%, where x is the Hailstorm activity time this Era (in seconds), and y is the duration of the current Hailstorm (in seconds).</p>
 					<br/>
 					<p><b><img src="/realm/Factions/picks/SummerFestival4.PNG" alt="Glaciality" align="middle"> Glaciality</b></p>
 					<p><b>Kind</b>: Upgrade</p>
@@ -3447,8 +3447,8 @@
 					<p><b>Kind</b>: Spell</p>
 					<p><b>Unlock / Price</b>: Unlocked when aligned with Summeraan</p>
 					<p><b>Mana Cost</b>: 300</p>
-					<p><b>Effect</b>: Increase the production of all buildings based on spells cast in this game for 12s.</p>
-					<p><b>Formula</b>: (5 * x ^ 0.85)%, where x is the number of spells cast this game.</p>
+					<p><b>Effect</b>: Increase the production of all buildings based on spells cast in this Era for 12s.</p>
+					<p><b>Formula</b>: (5 * x ^ 0.85)%, where x is the number of spells cast this Era.</p>
 					<p><b>Effect</b>: Also grants faction coins based on the amount of Flame Orbs collected in this event.</p>
 					<p><b>Formula</b>: (x * y ^ 1.1)%, where x is your faction coin chance, and y is the number of Flame Orbs collected in this event.</p>
 					<br/>
@@ -3461,8 +3461,8 @@
 					<p><b><img src="/realm/Factions/picks/SummerFestival2.PNG" alt="Eruption" align="middle"> Eruption</b></p>
 					<p><b>Kind</b>: Upgrade</p>
 					<p><b>Unlock / Price</b>: 1300 Flame Orbs</p>
-					<p><b>Effect</b>: Gain additional assistants based on the clicks made in this game.</p>
-					<p><b>Formula</b>: +(2 * log(1 + x ^ 2)), where x is the number of clicks made in this game.</p>
+					<p><b>Effect</b>: Gain additional assistants based on the clicks made in this Era.</p>
+					<p><b>Formula</b>: +(2 * log(1 + x ^ 2)), where x is the number of clicks made in this Era.</p>
 					<br/>
 					<p><b><img src="/realm/Factions/picks/SummerFestival3.PNG" alt="Burning Rage" align="middle"> Burning Rage</b></p>
 					<p><b>Kind</b>: Upgrade</p>
@@ -4369,7 +4369,7 @@
 					<p><b>Effect</b>: If you unlock all of this event's feats, you will permanently unlock a new color option for the mana bar.</p>
 					<br/>
 					<p><b><img src="/realm/Factions/picks/SpectralSurge.png" alt="Halloween" align="middle"> Spectral Surge</b></p>
-					<p><b>Requirement</b>: Collect at least 480 of each resource in a single run.(This Game)</p>
+					<p><b>Requirement</b>: Collect at least 480 of each resource in a single run.(This Era)</p>
 					<p>If you unlock this feat, you will permanently unlock a new upgrade with the same name.</p>
 					<p><b>Effect</b>: Turn Spiritual Surge into Spectral Surge, and multiplies Spectral Surge base bonus by the Cumulative Event Bonus.</p>
 					<p><b>Note</b>: Once unlocked, it is available during any Seasonal Event.</p>
@@ -4407,7 +4407,7 @@
 					<p><b><img src="/realm/Factions/picks/ShadowEmbrace.png" alt="ShadowEmbrace" align="middle"> Shadow Embrace</b></p>
 					<p><b>Requirement</b>: Level 10 Vampire Monster</p>
 					<p><b>Effect</b>: Increase the size of your assistant army based on the amount of Reincarnations you made for 20 seconds. Increases progressively as you continue casting this spell.</p>
-					<p><b>Formula</b>: +((R + 1) * x ^ 0.5), where x is amount of Shadow Embrace casts in this game and R is the amount of Reincarnation you made.</p>
+					<p><b>Formula</b>: +((R + 1) * x ^ 0.5), where x is amount of Shadow Embrace casts in this Era and R is the amount of Reincarnation you made.</p>
 					<hr>
 					<p><b><img src="/realm/Factions/picks/Ghost.png" alt="Ghost" align="middle"> Ghost</b></p>
 					<p><b>Kind</b>: Monster</p>
@@ -4424,9 +4424,9 @@
 					<p><b>Kind</b>: Monster</p>
 					<p><b>Level</b>: 25</p>
 					<p><b>Unlock / Price</b>: 660 Ectoplasm</p>
-					<p><b>Effect</b>: Multiplicatively increase Maximum Mana and Mana Regeneration based on clicks made in this game.</p>
-					<p><b>Formula</b>: Max Mana: (log10(1 + x) ^ 2.5)%, where x is clicks made this game.</p>
-					<p><b>Formula</b>: Mana Regeneration: (log10(1 + x) ^ 2.25)%, where x is clicks made this game.</p>
+					<p><b>Effect</b>: Multiplicatively increase Maximum Mana and Mana Regeneration based on clicks made in this Era.</p>
+					<p><b>Formula</b>: Max Mana: (log10(1 + x) ^ 2.5)%, where x is clicks made this Era.</p>
+					<p><b>Formula</b>: Mana Regeneration: (log10(1 + x) ^ 2.25)%, where x is clicks made this Era.</p>
 					<br/>
 					<p><b><img src="/realm/Factions/picks/Spectre.png" alt="Spectre" align="middle"> Spectre</b></p>
 					<p><b>Kind</b>: Monster</p>
@@ -4436,8 +4436,8 @@
 					<br/>
 					<p><b><img src="/realm/Factions/picks/WailoftheBanshee.png" alt="WailoftheBanshee" align="middle"> Wail of the Banshee</b></p>
 					<p><b>Requirement</b>: Level 10 Ghost Monster</p>
-					<p><b>Effect</b>: Increase the production of all buildings based on mana produced in this game and the amount of Reincarnations you made for 20 seconds.</p>
-					<p><b>Formula</b>: (0.2 * (R + 1) * x ^ 0.45)%, where R is reincarnation count and x is mana produced this game.</p>
+					<p><b>Effect</b>: Increase the production of all buildings based on mana produced in this Era and the amount of Reincarnations you made for 20 seconds.</p>
+					<p><b>Formula</b>: (0.2 * (R + 1) * x ^ 0.45)%, where R is reincarnation count and x is mana produced this Era.</p>
 					<hr>
 					<p><b><img src="/realm/Factions/picks/Skeleton.png" alt="Skeleton" align="middle"> Skeleton</b></p>
 					<p><b>Kind</b>: Monster</p>
@@ -4492,9 +4492,9 @@
 				<div class="autohide">
 					<p>The Idillium event will be starting on <b>Sep 23rd 2020, 12:01 PM UTC</b> and will end on <b>Sep 30th 2020, 6:59 PM UTC</b>.</p>
 					<p>The event will feature three Resources, <b>Crystal Prisms</b>, <b>Entropic Drops</b> and <b>Equilibrium Fragments</b>, They will appear in a random location of the game screen at a rate of 1 per minute, you can stack them for 16 hours, up to 960.</p>
-					<p>Being aligned with an elite faction will double the speed a resource is gained.</p>
+					<p>Being aligned with an Astral faction will double the speed a resource is gained.</p>
 					<p>You need 2814 resources of each (8442 total) to complete all quests.</p>
-					<p>Total time needed 5 days 20 hours and 42 minutes without elite factions or scrying.</p>
+					<p>Total time needed 5 days 20 hours and 42 minutes without Astral factions or scrying.</p>
 					<p>Which prism appears depends on what faction you are aligned with:</p>
 					<p>As Fairy, Demon or Faceless, Entropic Drop appears.</p>
 					<p>As Elven, Goblin or Druid, Equilibrium Fragment appears.</p>
@@ -4575,8 +4575,8 @@
 					<p><img src="/realm/Factions/picks/OrderRemnantPerk2.png" align="middle"> <b>Order Remnant Perk 2</b></p>
 					<p><b>Effect</b>: Grants Temporal Flux spell with a cost of 1000 mana.</p>
 					<p><img src="/realm/Factions/picks/TemporalFlux.png" align="middle"></p>
-					<p><b>Effect</b>: Increase Unique building production based on time spent in this game.</p>
-					<p><b>Effect</b>: Also multiplicatively increase Mana Regeneration based on time spent in this game.</p>
+					<p><b>Effect</b>: Increase Unique building production based on time spent in this Era.</p>
+					<p><b>Effect</b>: Also multiplicatively increase Mana Regeneration based on time spent in this Era.</p>
 					<p><b>Note</b>: Temporal Flux obtained this way cannot be tiered.</p>
 					<br>
 					<p><img src="/realm/Factions/picks/OrderRestoration3.png" align="middle"> <b>Order Restoration 3</b></p>
@@ -4600,11 +4600,11 @@
 					<p><img src="/realm/Factions/picks/ChaosRemnantPerk2.png" align="middle"> <b>Chaos Remnant Perk 2</b></p>
 					<p><b>Effect</b>: Grants Maelstrom spell with a cost of 1000 mana.</p>
 					<p><img src="/realm/Factions/picks/Maelstrom.png" align="middle"></p>
-					<p><b>Effect</b>: Increase the production of three random buildings based on one of these stats in this game, chosen at random: mana produced, trophies unlocked, Faction Coins found or amount of assistants.</p>
+					<p><b>Effect</b>: Increase the production of three random buildings based on one of these stats in this Era, chosen at random: mana produced, trophies unlocked, Faction Coins found or amount of assistants.</p>
 					<p><b>Formulas</b></p>
-					<p><b>Mana</b>: (0.02 * (log10(1 + x)) ^ 5)%, where x is mana produced this game.</p>
+					<p><b>Mana</b>: (0.02 * (log10(1 + x)) ^ 5)%, where x is mana produced this Era.</p>
 					<p><b>Trophy</b>: Formula (2.5 * x ^ 0.9)%, where x is trophies unlocked.</p>
-					<p><b>Faction Coins</b>: (0.01 * (log10(1 + x)) ^ 4)%, where x is faction coins found this game.</p>
+					<p><b>Faction Coins</b>: (0.01 * (log10(1 + x)) ^ 4)%, where x is faction coins found this Era.</p>
 					<p><b>Assistants</b>: (0.25 * (log10(1 + x)) ^ 5)%, where x is amount of assistants.</p>
 					<p><b>Note</b>: Maelstrom obtained this way cannot be tiered.</p>
 					<br>
@@ -4708,7 +4708,7 @@
 					<p><b>Unlock / Price</b>: Unlocked when aligned with Winterly</p>
 					<p><b>Mana Cost</b>: 1000</p>
 					<p><b>Effect</b>:Increase the production of all buildings based on Hailstorm activity time for 2m. Bonus provided increases progressively over the duration of the spell.</p>
-					<p><b>Formula</b>: (0.1 * x ^ 0.6 * (y * 30) ^ 1.1)%, where x is the Hailstorm activity time this game (in seconds), and y is the duration of the current Hailstorm (in seconds).</p>
+					<p><b>Formula</b>: (0.1 * x ^ 0.6 * (y * 30) ^ 1.1)%, where x is the Hailstorm activity time this Era (in seconds), and y is the duration of the current Hailstorm (in seconds).</p>
 					<br/>
 					<p><b><img src="/realm/Factions/picks/SummerFestival4.PNG" alt="Glaciality" align="middle"> Glaciality</b></p>
 					<p><b>Kind</b>: Upgrade</p>
@@ -4736,8 +4736,8 @@
 					<p><b>Kind</b>: Spell</p>
 					<p><b>Unlock / Price</b>: Unlocked when aligned with Summeraan</p>
 					<p><b>Mana Cost</b>: 300</p>
-					<p><b>Effect</b>: Increase the production of all buildings based on spells cast in this game for 12s.</p>
-					<p><b>Formula</b>: (5 * x ^ 0.85)%, where x is the number of spells cast this game.</p>
+					<p><b>Effect</b>: Increase the production of all buildings based on spells cast in this Era for 12s.</p>
+					<p><b>Formula</b>: (5 * x ^ 0.85)%, where x is the number of spells cast this Era.</p>
 					<p><b>Effect</b>: Also grants faction coins based on the amount of Flame Orbs collected in this event.</p>
 					<p><b>Formula</b>: (x * y ^ 1.1)%, where x is your faction coin chance, and y is the number of Flame Orbs collected in this event.</p>
 					<br/>
@@ -4750,8 +4750,8 @@
 					<p><b><img src="/realm/Factions/picks/SummerFestival2.PNG" alt="Eruption" align="middle"> Eruption</b></p>
 					<p><b>Kind</b>: Upgrade</p>
 					<p><b>Unlock / Price</b>: 1300 Flame Orbs</p>
-					<p><b>Effect</b>: Gain additional assistants based on the clicks made in this game.</p>
-					<p><b>Formula</b>: +(2 * log(1 + x ^ 2)), where x is the number of clicks made in this game.</p>
+					<p><b>Effect</b>: Gain additional assistants based on the clicks made in this Era.</p>
+					<p><b>Formula</b>: +(2 * log(1 + x ^ 2)), where x is the number of clicks made in this Era.</p>
 					<br/>
 					<p><b><img src="/realm/Factions/picks/SummerFestival3.PNG" alt="Burning Rage" align="middle"> Burning Rage</b></p>
 					<p><b>Kind</b>: Upgrade</p>
@@ -5625,7 +5625,7 @@
 					<p><b>Effect</b>: If you unlock all of this event's feats, you will permanently unlock a new color option for the mana bar.</p>
 					<br/>
 					<p><b><img src="/realm/Factions/picks/SpectralSurge.png" alt="Halloween" align="middle"> Spectral Surge</b></p>
-					<p><b>Requirement</b>: Collect at least 480 of each resource in a single run.(This Game)</p>
+					<p><b>Requirement</b>: Collect at least 480 of each resource in a single run.(This Era)</p>
 					<p>If you unlock this feat, you will permanently unlock a new upgrade with the same name.</p>
 					<p><b>Effect</b>: Turn Spiritual Surge into Spectral Surge, and multiplies Spectral Surge base bonus by the Cumulative Event Bonus.</p>
 					<p><b>Note</b>: Once unlocked, it is available during any Seasonal Event.</p>
@@ -5658,7 +5658,7 @@
 					<p><b><img src="/realm/Factions/picks/ShadowEmbrace.png" alt="ShadowEmbrace" align="middle"> Shadow Embrace</b></p>
 					<p><b>Requirement</b>: Level 10 Vampire Monster</p>
 					<p><b>Effect</b>: Increase the size of your assistant army based on the amount of Reincarnations you made for 20 seconds. Increases progressively as you continue casting this spell.</p>
-					<p><b>Formula</b>: +((R + 1) * x ^ 0.5), where x is amount of Shadow Embrace casts in this game and R is the amount of Reincarnation you made.</p>
+					<p><b>Formula</b>: +((R + 1) * x ^ 0.5), where x is amount of Shadow Embrace casts in this Era and R is the amount of Reincarnation you made.</p>
 					<hr>
 					<p><b><img src="/realm/Factions/picks/Ghost.png" alt="Ghost" align="middle"> Ghost</b></p>
 					<p><b>Kind</b>: Monster</p>
@@ -5675,9 +5675,9 @@
 					<p><b>Kind</b>: Monster</p>
 					<p><b>Level</b>: 25</p>
 					<p><b>Unlock / Price</b>: 660 Ectoplasm</p>
-					<p><b>Effect</b>: Multiplicatively increase Maximum Mana and Mana Regeneration based on clicks made in this game.</p>
-					<p><b>Formula</b>: Max Mana: (log10(1 + x) ^ 2.5)%, where x is clicks made this game.</p>
-					<p><b>Formula</b>: Mana Regeneration: (log10(1 + x) ^ 2.25)%, where x is clicks made this game.</p>
+					<p><b>Effect</b>: Multiplicatively increase Maximum Mana and Mana Regeneration based on clicks made in this Era.</p>
+					<p><b>Formula</b>: Max Mana: (log10(1 + x) ^ 2.5)%, where x is clicks made this Era.</p>
+					<p><b>Formula</b>: Mana Regeneration: (log10(1 + x) ^ 2.25)%, where x is clicks made this Era.</p>
 					<br/>
 					<p><b><img src="/realm/Factions/picks/Spectre.png" alt="Spectre" align="middle"> Spectre</b></p>
 					<p><b>Kind</b>: Monster</p>
@@ -5687,7 +5687,7 @@
 					<br/>
 					<p><b><img src="/realm/Factions/picks/WailoftheBanshee.png" alt="WailoftheBanshee" align="middle"> Wail of the Banshee</b></p>
 					<p><b>Requirement</b>: Level 10 Ghost Monster</p>
-					<p><b>Effect</b>: Increase the production of all buildings based on mana produced in this game and the amount of Reincarnations you made for 20 seconds.</p>
+					<p><b>Effect</b>: Increase the production of all buildings based on mana produced in this Era and the amount of Reincarnations you made for 20 seconds.</p>
 					<p><b>Formula</b>: 0.2 * (R + 1) * x ^ 0.45, where R is reincarnation count and x is mana produced.</p>
 					<hr>
 					<p><b><img src="/realm/Factions/picks/Skeleton.png" alt="Skeleton" align="middle"> Skeleton</b></p>
@@ -5742,9 +5742,9 @@
 				<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">Idillium (Sep 23 - Sep 30, 2019)</a></b></p>
 				<div class="autohide">
 					<p>The event will feature three Resources, <b>Crystal Prisms</b>, <b>Entropic Drops</b> and <b>Equilibrium Fragments</b>, They will appear in a random location of the game screen at a rate of 1 per minute, you can stack them for 16 hours, up to 960.</p>
-					<p>Being aligned with an elite faction will double the speed a resource is gained.</p>
+					<p>Being aligned with an Astral faction will double the speed a resource is gained.</p>
 					<p>You need 2814 resources of each (8442 total) to complete all quests.</p>
-					<p>Total time needed 5 days 20 hours and 42 minutes without elite factions or scrying.</p>
+					<p>Total time needed 5 days 20 hours and 42 minutes without Astral factions or scrying.</p>
 					<p>Which prism appears depends on what faction you are aligned with:</p>
 					<p>As Fairy, Demon or Faceless, Entropic Drop appears.</p>
 					<p>As Elven, Goblin or Druid, Equilibrium Fragment appears.</p>
@@ -5825,8 +5825,8 @@
 					<p><img src="/realm/Factions/picks/OrderRemnantPerk2.png" align="middle"> <b>Order Remnant Perk 2</b></p>
 					<p><b>Effect</b>: Grants Temporal Flux spell with a cost of 1000 mana.</p>
 					<p><img src="/realm/Factions/picks/TemporalFlux.png" align="middle"></p>
-					<p><b>Effect</b>: Increase Unique building production based on time spent in this game.</p>
-					<p><b>Effect</b>: Also multiplicatively increase Mana Regeneration based on time spent in this game.</p>
+					<p><b>Effect</b>: Increase Unique building production based on time spent in this Era.</p>
+					<p><b>Effect</b>: Also multiplicatively increase Mana Regeneration based on time spent in this Era.</p>
 					<p><b>Note</b>: Temporal Flux obtained this way cannot be tiered.</p>
 					<br>
 					<p><img src="/realm/Factions/picks/OrderRestoration3.png" align="middle"> <b>Order Restoration 3</b></p>
@@ -5850,11 +5850,11 @@
 					<p><img src="/realm/Factions/picks/ChaosRemnantPerk2.png" align="middle"> <b>Chaos Remnant Perk 2</b></p>
 					<p><b>Effect</b>: Grants Maelstrom spell with a cost of 1000 mana.</p>
 					<p><img src="/realm/Factions/picks/Maelstrom.png" align="middle"></p>
-					<p><b>Effect</b>: Increase the production of three random buildings based on one of these stats in this game, chosen at random: mana produced, trophies unlocked, Faction Coins found or amount of assistants.</p>
+					<p><b>Effect</b>: Increase the production of three random buildings based on one of these stats in this Era, chosen at random: mana produced, trophies unlocked, Faction Coins found or amount of assistants.</p>
 					<p><b>Formulas</b></p>
-					<p><b>Mana</b>: (0.02 * (log10(1 + x)) ^ 5)%, where x is mana produced this game.</p>
+					<p><b>Mana</b>: (0.02 * (log10(1 + x)) ^ 5)%, where x is mana produced this Era.</p>
 					<p><b>Trophy</b>: Formula (2.5 * x ^ 0.9)%, where x is trophies unlocked.</p>
-					<p><b>Faction Coins</b>: (0.01 * (log10(1 + x)) ^ 4)%, where x is faction coins found this game.</p>
+					<p><b>Faction Coins</b>: (0.01 * (log10(1 + x)) ^ 4)%, where x is faction coins found this Era.</p>
 					<p><b>Assistants</b>: (0.25 * (log10(1 + x)) ^ 5)%, where x is amount of assistants.</p>
 					<p><b>Note</b>: Maelstrom obtained this way cannot be tiered.</p>
 					<br>
@@ -5952,7 +5952,7 @@
 					<p><b>Kind</b>: Spell</p>
 					<p><b>Unlock / Price</b>: Mana Cost:1000 (Unlocked when aligned with Winterly)</p>
 					<p><b>Effect</b>:Increase the production of all buildings based on Hailstorm activity time for 2m. Bonus provided increases progressively over the duration of the spell.</p>
-					<p><b>Formula</b>: (0.1 * x ^ 0.6 * (y * 30) ^ 1.1)%, where x is the Hailstorm activity time this game (in seconds), and y is the duration of the current Hailstorm (in seconds).</p>
+					<p><b>Formula</b>: (0.1 * x ^ 0.6 * (y * 30) ^ 1.1)%, where x is the Hailstorm activity time this Era (in seconds), and y is the duration of the current Hailstorm (in seconds).</p>
 					<br/>
 					<p><b><img src="/realm/Factions/picks/SummerFestival4.PNG" alt="Glaciality" align="middle"> Glaciality</b></p>
 					<p><b>Kind</b>: Upgrade</p>
@@ -5979,8 +5979,8 @@
 					<p><b><img src="/realm/Factions/picks/Heatwave.PNG" alt="Heatwave" align="middle"> Heatwave</b></p>
 					<p><b>Kind</b>: Spell</p>
 					<p><b>Unlock / Price</b>: Mana Cost:300 (Unlocked when aligned with Summeraan)</p>
-					<p><b>Effect</b>: Increase the production of all buildings based on spells cast in this game for 12s.</p>
-					<p><b>Formula</b>: (5 * x ^ 0.85)%, where x is the number of spells cast this game.</p>
+					<p><b>Effect</b>: Increase the production of all buildings based on spells cast in this Era for 12s.</p>
+					<p><b>Formula</b>: (5 * x ^ 0.85)%, where x is the number of spells cast this Era.</p>
 					<p><b>Effect</b>: Also grants faction coins based on the amount of Flame Orbs collected in this event.</p>
 					<p><b>Formula</b>: (x * y ^ 1.1)%, where x is your faction coin chance, and y is the number of Flame Orbs collected in this event.</p>
 					<br/>
@@ -5993,8 +5993,8 @@
 					<p><b><img src="/realm/Factions/picks/SummerFestival2.PNG" alt="Eruption" align="middle"> Eruption</b></p>
 					<p><b>Kind</b>: Upgrade</p>
 					<p><b>Unlock / Price</b>: 1300 Flame Orbs</p>
-					<p><b>Effect</b>: Gain additional assistants based on the clicks made in this game.</p>
-					<p><b>Formula</b>: +(2 * log(1 + x ^ 2)), where x is the number of clicks made in this game.</p>
+					<p><b>Effect</b>: Gain additional assistants based on the clicks made in this Era.</p>
+					<p><b>Formula</b>: +(2 * log(1 + x ^ 2)), where x is the number of clicks made in this Era.</p>
 					<br/>
 					<p><b><img src="/realm/Factions/picks/SummerFestival3.PNG" alt="Burning Rage" align="middle"> Burning Rage</b></p>
 					<p><b>Kind</b>: Upgrade</p>
@@ -6882,7 +6882,7 @@
 					<p><b><img src="/realm/Factions/picks/ShadowEmbrace.png" alt="ShadowEmbrace" align="middle"> Shadow Embrace</b></p>
 					<p><b>Requirement</b>: Level 10 Vampire Monster</p>
 					<p><b>Effect</b>: Increase the size of your assistant army based on the amount of Reincarnations you made for 20 seconds. Increases progressively as you continue casting this spell.</p>
-					<p><b>Formula</b>: +((R + 1) * x ^ 0.5), where x is amount of Shadow Embrace casts in this game and R is the amount of Reincarnation you made.</p>
+					<p><b>Formula</b>: +((R + 1) * x ^ 0.5), where x is amount of Shadow Embrace casts in this Era and R is the amount of Reincarnation you made.</p>
 					<hr>
 					<p><b><img src="/realm/Factions/picks/Ghost.png" alt="Ghost" align="middle"> Ghost</b></p>
 					<p><b>Kind</b>: Monster</p>
@@ -6899,9 +6899,9 @@
 					<p><b>Kind</b>: Monster</p>
 					<p><b>Level</b>: 25</p>
 					<p><b>Unlock / Price</b>: 660 Ectoplasm</p>
-					<p><b>Effect</b>: Multiplicatively increase Maximum Mana and Mana Regeneration based on clicks made in this game.</p>
-					<p><b>Formula</b>: Max Mana: (log10(1 + x) ^ 2.5)%, where x is clicks made this game.</p>
-					<p><b>Formula</b>: Mana Regeneration: (log10(1 + x) ^ 2.25)%, where x is clicks made this game.</p>
+					<p><b>Effect</b>: Multiplicatively increase Maximum Mana and Mana Regeneration based on clicks made in this Era.</p>
+					<p><b>Formula</b>: Max Mana: (log10(1 + x) ^ 2.5)%, where x is clicks made this Era.</p>
+					<p><b>Formula</b>: Mana Regeneration: (log10(1 + x) ^ 2.25)%, where x is clicks made this Era.</p>
 					<br/>
 					<p><b><img src="/realm/Factions/picks/Spectre.png" alt="Spectre" align="middle"> Spectre</b></p>
 					<p><b>Kind</b>: Monster</p>
@@ -6911,7 +6911,7 @@
 					<br/>
 					<p><b><img src="/realm/Factions/picks/WailoftheBanshee.png" alt="WailoftheBanshee" align="middle"> Wail of the Banshee</b></p>
 					<p><b>Requirement</b>: Level 10 Ghost Monster</p>
-					<p><b>Effect</b>: Increase the production of all buildings based on mana produced in this game and the amount of Reincarnations you made for 20 seconds.</p>
+					<p><b>Effect</b>: Increase the production of all buildings based on mana produced in this Era and the amount of Reincarnations you made for 20 seconds.</p>
 					<p><b>Formula</b>: 0.2 * (R + 1) * x ^ 0.45, where R is reincarnation count and x is mana produced.</p>
 					<hr>
 					<p><b><img src="/realm/Factions/picks/Skeleton.png" alt="Skeleton" align="middle"> Skeleton</b></p>
@@ -6975,7 +6975,7 @@
 					<p><b>Kind</b>: Spell</p>
 					<p><b>Unlock / Price</b>: Mana Cost:1000 (Unlocked when aligned with Winterly)</p>
 					<p><b>Effect</b>:Increase the production of all buildings based on Hailstorm activity time for 2m. Bonus provided increases progressively over the duration of the spell.</p>
-					<p><b>Formula</b>: 0.1 * x^0.6 * y^1.1 %, where x is the Hailstorm activity time this game (in seconds), and y is the duration of the current Hailstorm (in seconds).</p>
+					<p><b>Formula</b>: 0.1 * x^0.6 * y^1.1 %, where x is the Hailstorm activity time this Era (in seconds), and y is the duration of the current Hailstorm (in seconds).</p>
 					<br/>
 					<p><b><img src="/realm/Factions/picks/SummerFestival4.PNG" alt="Glaciality" align="middle"> Glaciality</b></p>
 					<p><b>Kind</b>: Upgrade</p>
@@ -7002,8 +7002,8 @@
 					<p><b><img src="/realm/Factions/picks/Heatwave.PNG" alt="Heatwave" align="middle"> Heatwave</b></p>
 					<p><b>Kind</b>: Spell</p>
 					<p><b>Unlock / Price</b>: Mana Cost:300 (Unlocked when aligned with Summeraan)</p>
-					<p><b>Effect</b>:Increase the production of all buildings based on spells cast in this game for 12s. Also grants faction coins based on the amount of Flame Orbs collected in this event.</p>
-					<p><b>Formula</b>: 5 * x^0.85%, where x is the number of spells cast this game, and x * y^1.1, where x is your faction coin chance, and y is the number of Flame Orbs collected in this event.</p>
+					<p><b>Effect</b>:Increase the production of all buildings based on spells cast in this Era for 12s. Also grants faction coins based on the amount of Flame Orbs collected in this event.</p>
+					<p><b>Formula</b>: 5 * x^0.85%, where x is the number of spells cast this Era, and x * y^1.1, where x is your faction coin chance, and y is the number of Flame Orbs collected in this event.</p>
 					<br/>
 					<p><b><img src="/realm/Factions/picks/SummerFestival1.PNG" alt="Sun Beams" align="middle"> Sun Beams</b></p>
 					<p><b>Kind</b>: Upgrade</p>
@@ -7014,8 +7014,8 @@
 					<p><b><img src="/realm/Factions/picks/SummerFestival2.PNG" alt="Eruption" align="middle"> Eruption</b></p>
 					<p><b>Kind</b>: Upgrade</p>
 					<p><b>Unlock / Price</b>: 1300 Flame Orbs</p>
-					<p><b>Effect</b>: Gain additional assistants based on the clicks made in this game.</p>
-					<p><b>Formula</b>: 2 * log (1 + x^2), where x is the number of clicks made in this game.</p>
+					<p><b>Effect</b>: Gain additional assistants based on the clicks made in this Era.</p>
+					<p><b>Formula</b>: 2 * log (1 + x^2), where x is the number of clicks made in this Era.</p>
 					<br/>
 					<p><b><img src="/realm/Factions/picks/SummerFestival3.PNG" alt="Burning Rage" align="middle"> Burning Rage</b></p>
 					<p><b>Kind</b>: Upgrade</p>
@@ -7768,7 +7768,7 @@
 					<p><b><img src="/realm/Factions/picks/ShadowEmbrace.png" alt="ShadowEmbrace" align="middle"> Shadow Embrace</b></p>
 					<p><b>Requirement</b>: Level 10 Vampire Monster</p>
 					<p><b>Effect</b>: Increase the size of your assistant army based on the amount of Reincarnations you made for 20 seconds. Increases progressively as you continue casting this spell.</p>
-					<p><b>Formula</b>: +((R + 1) * x ^ 0.5), where x is amount of Shadow Embrace casts in this game and R is the amount of Reincarnation you made.</p>
+					<p><b>Formula</b>: +((R + 1) * x ^ 0.5), where x is amount of Shadow Embrace casts in this Era and R is the amount of Reincarnation you made.</p>
 					<hr>
 					<p><b><img src="/realm/Factions/picks/Ghost.png" alt="Ghost" align="middle"> Ghost</b></p>
 					<p><b>Kind</b>: Monster</p>
@@ -7783,9 +7783,9 @@
 					<p><b>Kind</b>: Monster</p>
 					<p><b>Level</b>: 25</p>
 					<p><b>Unlock / Price</b>: 660 Ectoplasm</p>
-					<p><b>Effect</b>: Multiplicatively increase Maximum Mana and Mana Regeneration based on clicks made in this game.</p>
-					<p><b>Formula</b>: Max Mana: (log10(1 + x) ^ 2.5)%, where x is clicks made this game.</p>
-					<p><b>Formula</b>: Mana Regeneration: (log10(1 + x) ^ 2.25)%, where x is clicks made this game.</p>
+					<p><b>Effect</b>: Multiplicatively increase Maximum Mana and Mana Regeneration based on clicks made in this Era.</p>
+					<p><b>Formula</b>: Max Mana: (log10(1 + x) ^ 2.5)%, where x is clicks made this Era.</p>
+					<p><b>Formula</b>: Mana Regeneration: (log10(1 + x) ^ 2.25)%, where x is clicks made this Era.</p>
 					<p><b><img src="/realm/Factions/picks/Spectre.png" alt="Spectre" align="middle"> Spectre</b></p>
 					<p><b>Kind</b>: Monster</p>
 					<p><b>Level</b>: 50</p>
@@ -7793,8 +7793,8 @@
 					<p><b>Effect</b>: All productive clicks benefit from a 100 times greater Faction Coin find chance.</p>
 					<p><b><img src="/realm/Factions/picks/WailoftheBanshee.png" alt="WailoftheBanshee" align="middle"> Wail of the Banshee</b></p>
 					<p><b>Requirement</b>: Level 10 Ghost Monster</p>
-					<p><b>Effect</b>: Increase the production of all buildings based on mana produced in this game and the amount of Reincarnations you made for 20 seconds.</p>
-					<p><b>Formula</b>: (0.2 * (R + 1) * x ^ 0.45)%, where R is reincarnation count and x is mana produced this game.</p>
+					<p><b>Effect</b>: Increase the production of all buildings based on mana produced in this Era and the amount of Reincarnations you made for 20 seconds.</p>
+					<p><b>Formula</b>: (0.2 * (R + 1) * x ^ 0.45)%, where R is reincarnation count and x is mana produced this Era.</p>
 					<hr>
 					<p><b><img src="/realm/Factions/picks/Skeleton.png" alt="Skeleton" align="middle"> Skeleton</b></p>
 					<p><b>Kind</b>: Monster</p>
@@ -7846,7 +7846,7 @@
 					<p><b>Kind</b>: Spell</p>
 					<p><b>Unlock / Price</b>: Mana Cost:1000 (Unlocked when aligned with Winterly)</p>
 					<p><b>Effect</b>:Increase the production of all buildings based on Hailstorm activity time for 2m. Bonus provided increases progressively over the duration of the spell.</p>
-					<p><b>Formula</b>: 0.1 * x^0.6 * y^1.1 %, where x is the Hailstorm activity time this game (in seconds), and y is the duration of the current Hailstorm (in seconds).</p>
+					<p><b>Formula</b>: 0.1 * x^0.6 * y^1.1 %, where x is the Hailstorm activity time this Era (in seconds), and y is the duration of the current Hailstorm (in seconds).</p>
 					<hr>
 					<p><b><img src="/realm/Factions/picks/WinterlyAlliance.png" alt="Winterly Alliance" align="middle"> Winterly Alliance</b></p>
 					<p><b>Kind</b>: Upgrade</p>
@@ -7873,8 +7873,8 @@
 					<p><b><img src="/realm/Factions/picks/Heatwave.PNG" alt="Heatwave" align="middle"> Heatwave</b></p>
 					<p><b>Kind</b>: Spell</p>
 					<p><b>Unlock / Price</b>: Mana Cost:300 (Unlocked when aligned with Summeraan)</p>
-					<p><b>Effect</b>:Increase the production of all buildings based on spells cast in this game for 12s. Also grants faction coins based on the amount of Flame Orbs collected in this event.</p>
-					<p><b>Formula</b>: 5 * x^0.85%, where x is the number of spells cast this game, and x * y^1.1, where x is your faction coin chance, and y is the number of Flame Orbs collected in this event.</p>
+					<p><b>Effect</b>:Increase the production of all buildings based on spells cast in this Era for 12s. Also grants faction coins based on the amount of Flame Orbs collected in this event.</p>
+					<p><b>Formula</b>: 5 * x^0.85%, where x is the number of spells cast this Era, and x * y^1.1, where x is your faction coin chance, and y is the number of Flame Orbs collected in this event.</p>
 					<hr>
 					<p><b><img src="/realm/Factions/picks/SummeraanAlliance.png" alt="Summeraan Alliance" align="middle"> Summeraan Alliance</b></p>
 					<p><b>Kind</b>: Upgrade</p>
@@ -7890,8 +7890,8 @@
 					<p><b><img src="/realm/Factions/picks/SummerFestival2.PNG" alt="Eruption" align="middle"> Eruption</b></p>
 					<p><b>Kind</b>: Upgrade</p>
 					<p><b>Unlock / Price</b>: 1300 Flame Orbs</p>
-					<p><b>Effect</b>: Gain additional assistants based on the clicks made in this game.</p>
-					<p><b>Formula</b>: 2 * log (1 + x^2), where x is the number of clicks made in this game.</p>
+					<p><b>Effect</b>: Gain additional assistants based on the clicks made in this Era.</p>
+					<p><b>Formula</b>: 2 * log (1 + x^2), where x is the number of clicks made in this Era.</p>
 					<hr>
 					<p><b><img src="/realm/Factions/picks/SummerFestival3.PNG" alt="Burning Rage" align="middle"> Burning Rage</b></p>
 					<p><b>Kind</b>: Upgrade</p>
@@ -8555,7 +8555,7 @@
 					<p><b><img src="/realm/Factions/picks/ShadowEmbrace.png" alt="ShadowEmbrace" align="middle"> Shadow Embrace</b></p>
 					<p><b>Requirement</b>: level 10 Vampire Monster</p>
 					<p><b>Effect</b>: Increase the size of your assistant army based on the amount of Reincarnations you made for 20 seconds. Increases progressively as you continue casting this spell.</p>
-					<p><b>Formula</b>: +((R + 1) * x ^ 0.5), where x is amount of Shadow Embrace casts in this game and R is the amount of Reincarnation you made.</p>
+					<p><b>Formula</b>: +((R + 1) * x ^ 0.5), where x is amount of Shadow Embrace casts in this Era and R is the amount of Reincarnation you made.</p>
 					<hr>
 					<p><b><img src="/realm/Factions/picks/Ghost.png" alt="Ghost" align="middle"> Ghost</b></p>
 					<p><b>Kind</b>: Monster</p>
@@ -8578,8 +8578,8 @@
 					<p><b>Effect</b>: All productive clicks benefit from a 10 times greater Faction Coin find chance.</p>
 					<p><b><img src="/realm/Factions/picks/WailoftheBanshee.png" alt="WailoftheBanshee" align="middle"> Wail of the Banshee</b></p>
 					<p><b>Requirement</b>: Level 10 Ghost Monster</p>
-					<p><b>Effect</b>: Increase the production of all buildings based on mana produced in this game and the amount of Reincarnations you made for 20 seconds.</p>
-					<p><b>Formula</b>: (0.2 * (R + 1) * x ^ 0.45)%, where R is reincarnation count and x is mana produced this game.</p>
+					<p><b>Effect</b>: Increase the production of all buildings based on mana produced in this Era and the amount of Reincarnations you made for 20 seconds.</p>
+					<p><b>Formula</b>: (0.2 * (R + 1) * x ^ 0.45)%, where R is reincarnation count and x is mana produced this Era.</p>
 					<hr>
 					<p><b><img src="/realm/Factions/picks/Skeleton.png" alt="Skeleton" align="middle"> Skeleton</b></p>
 					<p><b>Kind</b>: Monster</p>
@@ -8630,7 +8630,7 @@
 						<p><b>Kind</b>: Spell</p>
 						<p><b>Unlock / Price</b>: Mana Cost:1000 (Unlocked when aligned with Winterly)</p>
 						<p><b>Effect</b>:Increase the production of all buildings based on Hailstorm activity time for 2m. Bonus provided increases progressively over the duration of the spell.</p>
-						<p><b>Formula</b>: 0.1 * x^0.6 * y^1.1 %, where x is the Hailstorm activity time this game (in seconds), and y is the duration of the current Hailstorm (in seconds).</p>
+						<p><b>Formula</b>: 0.1 * x^0.6 * y^1.1 %, where x is the Hailstorm activity time this Era (in seconds), and y is the duration of the current Hailstorm (in seconds).</p>
 						<hr>
 						<p><b><img src="/realm/Factions/picks/WinterlyAlliance.png" alt="Winterly Alliance" align="middle"> Winterly Alliance</b></p>
 						<p><b>Kind</b>: Upgrade</p>
@@ -8657,8 +8657,8 @@
 						<p><b><img src="/realm/Factions/picks/Heatwave.PNG" alt="Heatwave" align="middle"> Heatwave</b></p>
 						<p><b>Kind</b>: Spell</p>
 						<p><b>Unlock / Price</b>: Mana Cost:300 (Unlocked when aligned with Summeraan)</p>
-						<p><b>Effect</b>:Increase the production of all buildings based on spells cast in this game for 12s. Also grants faction coins based on the amount of Flame Orbs collected in this event.</p>
-						<p><b>Formula</b>: 5 * x^0.85%, where x is the number of spells cast this game, and x * y^1.1, where x is your faction coin chance, and y is the number of Flame Orbs collected in this event.</p>
+						<p><b>Effect</b>:Increase the production of all buildings based on spells cast in this Era for 12s. Also grants faction coins based on the amount of Flame Orbs collected in this event.</p>
+						<p><b>Formula</b>: 5 * x^0.85%, where x is the number of spells cast this Era, and x * y^1.1, where x is your faction coin chance, and y is the number of Flame Orbs collected in this event.</p>
 						<hr>
 						<p><b><img src="/realm/Factions/picks/SummeraanAlliance.png" alt="Summeraan Alliance" align="middle"> Summeraan Alliance</b></p>
 						<p><b>Kind</b>: Upgrade</p>
@@ -8674,8 +8674,8 @@
 						<p><b><img src="/realm/Factions/picks/SummerFestival2.PNG" alt="Eruption" align="middle"> Eruption</b></p>
 						<p><b>Kind</b>: Upgrade</p>
 						<p><b>Unlock / Price</b>: 1300 Flame Orbs</p>
-						<p><b>Effect</b>: Gain additional assistants based on the clicks made in this game.</p>
-						<p><b>Formula</b>: 2 * log (1 + x^2), where x is the number of clicks made in this game.</p>
+						<p><b>Effect</b>: Gain additional assistants based on the clicks made in this Era.</p>
+						<p><b>Formula</b>: 2 * log (1 + x^2), where x is the number of clicks made in this Era.</p>
 						<hr>
 						<p><b><img src="/realm/Factions/picks/SummerFestival3.PNG" alt="Burning Rage" align="middle"> Burning Rage</b></p>
 						<p><b>Kind</b>: Upgrade</p>

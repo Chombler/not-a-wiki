@@ -9,15 +9,15 @@
 	<p>"The Titan leader has approached you with an offer you cannot refuse: Use the help of your Draconic allies to guard his domain and lightning itself will enchant your riches."</p>
 	<p><b>Requirements</b>: Titan as Base Faction, Dragon as Prestige Faction, Reincarnations 48+, Dragon's Roar upgrade purchased, Titan, Druid, Faceless, Dwarven and Drow Challenge 1 completed.</p>
 	<p><b>Challenge</b>: Have 6,500 Halls of Legends.</p>
-	<p><b>Effect</b>: Multiplicatively increase Faction Coin chance based on Lightning Strike activity time in this game.</p>
-	<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is your Lightning Strike activity time in this game in seconds.</p>
+	<p><b>Effect</b>: Multiplicatively increase Faction Coin chance based on Lightning Strike activity time in this Era.</p>
+	<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is your Lightning Strike activity time in this Era in seconds.</p>
 	<p><b>Upgrade</b>: Works with Titan + Dragon</p>
 	<hr>
 	<h6 id="DGC2"></h6><p><b>Dragon Challenge 2</b></p>
 	<p><img src="/realm/Factions/picks/BarkscalesChallenge.png" alt="Barkscales" align="middle"> <b>Barkscales</b></p>
 	<p>"Unstable power flows through your workforce. Prove to the Dragonlords you can sustain and control every sip of it."</p>
 	<p><b>Requirements</b>: Druid as Base Faction, Dragon as Prestige Faction, Reincarnation 51+, Dragon Bloodline, Titan, Druid, Faceless, Dwarven and Drow Challenge 2 and Dragon Challenge 1 completed.</p>
-	<p><b>Challenge</b>: Generate at least 1e10 Mana in this game, Have Grand Balance affect 7 buildings.</p>
+	<p><b>Challenge</b>: Generate at least 1e10 Mana in this Era, Have Grand Balance affect 7 buildings.</p>
 	<p><b>Effect</b>: Increase Non-Unique Buildings production based on the amount of Grand Balance targets. Does not suffer from Ascension penalties.</p>
 	<p><b>Formula</b>: (20 * x ^ 2)%, where x is number of Grand Balance targets.</p>
 	<p><b>Effect</b>: Also reduces all Spell Tier upgrades costs based on Grand Balance activity time in this Reincarnation.</p>
@@ -57,7 +57,7 @@
 	<p><b>Requirements</b>: Titan, Druid or Faceless as Base Faction, Dragon as Prestige Faction, Reincarnation 63+, Dragon challenge 5 completed, 12,000 research points spent across all facilities.</p>
 	<p><b>Challenge</b>: Gather at least 2.5e18 faction coins, 1e141 diamond coins, 90,000 buildings, 2e10 Mana produced, 7,500 excavations, 6,000 assistants, 300,000 Maximum Mana and 175,000 Mana Regeneration.</p>
 	<p><b>Effect</b>: Production bonus from Gems is additively increased over time based on the amount of artifacts you own. Resets on Abdications.</p>
-	<p><b>Formula</b>: +(x ^ 0.8 * 0.8 * (t / 60) ^ 0.8)%, where x is artfiacts found and t is time spent this game in seconds.</p>
+	<p><b>Formula</b>: +(x ^ 0.8 * 0.8 * (t / 60) ^ 0.8)%, where x is artfiacts found and t is time spent this Era in seconds.</p>
 	<p><b>Upgrade</b>: Works with All</p>
 	<hr>
 	<h6 id="DGCR"></h6><p><b>Dragon Challenge Reward</b></p>

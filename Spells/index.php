@@ -160,9 +160,9 @@
 	<p><b><img src='/realm/Factions/picks/GoblinsGreed.png' alt='Evil' align='middle'> Goblin's Greed</b></p>
 	<p><b>Spell Type</b>: (Evil/Balance) Goblin Faction Spell</p>
 	<p><b>Cost</b>: 800 Mana - <b>Duration</b>: 5 seconds</p>
-	<p><b>Effect</b>: Instantly produces Faction Coins based on gems you own. Also increases production of all buildings based on the number of Faction Coins found in this game.</p>
+	<p><b>Effect</b>: Instantly produces Faction Coins based on gems you own. Also increases production of all buildings based on the number of Faction Coins found in this Era.</p>
 	<p><b>Faction Coin Formula</b>: +(20 + ln(1 + x) ^ 3), where x is your current amount of gems.</p>
-	<p><b>Production Formula</b>: (0.75 * ln(1 + x) ^ 3.15)%, where x is the number of Faction Coins found in this game.</p>
+	<p><b>Production Formula</b>: (0.75 * ln(1 + x) ^ 3.15)%, where x is the number of Faction Coins found in this Era.</p>
 		" coords="130,70,184,124" shape="rect">
 		<area href="#BloodFrenzy" research="
 	<p><b><img src='/realm/Factions/picks/BloodFrenzy.png' alt='Evil' align='middle'> Blood Frenzy</b></p>
@@ -174,8 +174,8 @@
 	<p><b><img src='/realm/Factions/picks/ComboStrike.png' alt='Evil' align='middle'> Combo Strike</b></p>
 	<p><b>Spell Type</b>: (Evil) Drow Faction Spell</p>
 	<p><b>Cost</b>: 800 Mana - <b>Duration</b>: Fixed to 16 seconds</p>
-	<p><b>Effect</b>: Increase the production of all buildings by a progressively higher value as you continue casting this spell (This game).</p>
-	<p><b>Formula</b>: (30 * (x ^ 0.9))%, where x is the number of times you have cast Combo Strike (This game).</p>
+	<p><b>Effect</b>: Increase the production of all buildings by a progressively higher value as you continue casting this spell (This Era).</p>
+	<p><b>Formula</b>: (30 * (x ^ 0.9))%, where x is the number of times you have cast Combo Strike (This Era).</p>
 		" coords="250,70,304,124" shape="rect">
 		<area href="#ReapInterests" research="
 	<p><b><img src='/realm/Factions/picks/ReapInterests.png' alt='Evil' align='middle'> Reap Interests</b></p>
@@ -243,18 +243,18 @@
 	<p><b><img src='/realm/Factions/picks/TemporalFlux.png' alt='Order' align='middle'> Temporal Flux</b></p>
 	<p><b>Spell Type</b>: Order Alignment Spell (R100+)</p>
 	<p><b>Cost</b>: 5,000 Mana - <b>Duration</b>: 20 seconds</p>
-	<p><b>Effect</b>: Increase Unique building production based on time spent this game.</p>
-	<p><b>Effect</b>: Also multiplicatively increase Mana Regeneration based on time spent in this game.</p>
-	<p><b>Formula</b>: (3.75 * (x / 60) ^ 0.825)%, where x is time spent in this game.</p>
+	<p><b>Effect</b>: Increase Unique building production based on time spent this Era.</p>
+	<p><b>Effect</b>: Also multiplicatively increase Mana Regeneration based on time spent in this Era.</p>
+	<p><b>Formula</b>: (3.75 * (x / 60) ^ 0.825)%, where x is time spent in this Era.</p>
 		" coords="10,190,64,244" shape="rect">
 		<area href="#Maelstrom" research="
 	<p><b><img src='/realm/Factions/picks/Maelstrom.png' alt='Chaos' align='middle'> Maelstrom</b></p>
 	<p><b>Spell Type</b>: Chaos Alignment Spell (R100+)</p>
 	<p><b>Cost</b>: 3,500 Mana - <b>Duration</b>: 20 seconds</p>
-	<p><b>Effect</b>: Increase the production of three random buildings based on one of these stats in this game, chosen at random: Mana produced, trophies unlocked, Faction Coins found or amount of assistants</p>
-	<p><b>Formula (Mana)</b>: (0.02 * (log10(1 + x)) ^ 5)%, where x is Mana produced this game.</p>
+	<p><b>Effect</b>: Increase the production of three random buildings based on one of these stats in this Era, chosen at random: Mana produced, trophies unlocked, Faction Coins found or amount of assistants</p>
+	<p><b>Formula (Mana)</b>: (0.02 * (log10(1 + x)) ^ 5)%, where x is Mana produced this Era.</p>
 	<p><b>Formula (Trophies)</b>: (2.5 * x ^ 0.9)%, where x is trophies unlocked.</p>
-	<p><b>Formula (Faction Coins)</b>: (0.01 * (log10(1 + x)) ^ 4)%, where x is faction coins found this game.</p>
+	<p><b>Formula (Faction Coins)</b>: (0.01 * (log10(1 + x)) ^ 4)%, where x is faction coins found this Era.</p>
 	<p><b>Formula (Assistants)</b>: (0.25 * (log10(1 + x)) ^ 5)%, where x is amount of assistants.</p>
 		" coords="70,190,124,244" shape="rect">
 		<area href="#AllCreation" research="
@@ -270,8 +270,8 @@
 	<p><b><img src='/realm/Factions/picks/Precognition.png' alt='Order' align='middle'> Precognition</b></p>
 	<p><b>Spell Type</b>: (Order) Archon Faction Spell (R125+)</p>
 	<p><b>Cost</b>: 123,456 Mana - <b>Duration</b>: 60 seconds</p>
-	<p><b>Effect</b>: Buildings, Assistants, Royal Exchanges, Spells cast and Clicks count more based on Mana produced in this game.</p>
-	<p><b>Formula</b>: (ln(1 + x) ^ 1.25)%, where x is Mana produced in this game.</p>
+	<p><b>Effect</b>: Buildings, Assistants, Royal Exchanges, Spells cast and Clicks count more based on Mana produced in this Era.</p>
+	<p><b>Formula</b>: (ln(1 + x) ^ 1.25)%, where x is Mana produced in this Era.</p>
 	<p><b>Note</b>: Formula Improved to (1.25 * ln(1 + x) ^ 1.5)% with AR2.</p>
 		" coords="10,250,64,304" shape="rect">
 		<area href="#LimitedWish" research="
@@ -433,7 +433,7 @@
 	<p><b>Requirement</b>: Cast Precognition with at least 100 Qa (1e17) Mana Regeneration.</p>
 	<p><b>Note</b>: Precognition raises regen itself. Make sure that you have 100 Qa (1e17) before being cast.</p>
 	<p><b>Cost</b>: 10 Octg (1e118), A3+ Free</p>
-	<p><b>Effect</b>: A fraction of Precognition's duration is added to time spent in this game.</p>
+	<p><b>Effect</b>: A fraction of Precognition's duration is added to time spent in this Era.</p>
 	<p><b>Formula</b>: (150 * ln(1 + x / 60) ^ 2), where x is its duration.</p>
 		" coords="10,190,64,244" shape="rect">
 		<area href="#LimitedWish" research="
@@ -444,7 +444,7 @@
 		" coords="70,190,124,244" shape="rect">
 		<area href="#InfiniteSpiral" research="
 	<p><b><img src='/realm/Factions/picks/RealityCraterSpellUpgrade.png' align='middle'> Reality Crater</b></p>
-	<p><b>Requirement</b>: R125+, Cast Infinite Spiral with at least 10 excavation resets this game.</p>
+	<p><b>Requirement</b>: R125+, Cast Infinite Spiral with at least 10 excavation resets this Era.</p>
 	<p><b>Cost</b>: 10 Octg (1e118), A3+ Free</p>
 	<p><b>Effect</b>: Infinite Spiral also reduces excavation cost multiplier based on assistants owned.</p>
 	<p><b>Formula</b>: -(0.001 * log(1 + x)), where x is assistants owned.</p>
@@ -491,7 +491,7 @@
 		" coords="130,70,184,124" shape="rect">
 		<area href="#ComboStrike" research="
 	<p><b><img src='/realm/Factions/picks/VersaltileComboChallengeReward.png' align='middle'> Versatile Combo</b></p>
-	<p><b>Effect</b>: Increase Combo Strike counter based on the amount of spells cast in this game, not including Tax Collection.</p>
+	<p><b>Effect</b>: Increase Combo Strike counter based on the amount of spells cast in this Era, not including Tax Collection.</p>
 	<p><b>New Combo Strike Counter Formula</b>: (x + y), where x is your Combo Strike cast count and y is every other spell (except tax collection and generic) cast count.</p>
 	<p><b>Effect</b>: Also increase offline spells cast amount multiplicatively based on your offline Mana Regeneration.</p>
 	<p><b>Formula</b>: (10 * log10(1 + x))%, where x is your offline Mana Regeneration.</p>
@@ -511,8 +511,8 @@
 		" coords="70,130,124,184" shape="rect">
 		<area href="#Brainwave" research="
 	<p><b><img src='/realm/Factions/picks/FocusedThoughtsChallengeReward.png' align='middle'> Focused Thoughts</b></p>
-	<p><b>Effect</b>: Give Brainwave a headstart based on its activity time in this game, with a minimum of 1 minute.</p>
-	<p><b>Formula</b>: +1 second per 5 minutes of Brainwave active time this game.</p>
+	<p><b>Effect</b>: Give Brainwave a headstart based on its activity time in this Era, with a minimum of 1 minute.</p>
+	<p><b>Formula</b>: +1 second per 5 minutes of Brainwave active time this Era.</p>
 		" coords="130,130,184,184" shape="rect">
 		<area href="#DragonsBreath" research="
 	<p><b><img src='/realm/Factions/picks/PrismaticBreathChallengeReward.png' align='middle'> Prismatic Breath</b></p>
@@ -533,7 +533,7 @@
 		<area href="#CalltoArms" research="
 	<p><b><img src='/realm/Factions/picks/WarcryChallengeReward.png' align='middle'> Warcry</b></p>
 	<p>Call to Arms gains additional effects based on your alignments, scaling off your Call to Arms strength.</p>
-	<p><b>Good</b>: Grants one maximum castable Call to Arms tier per ascension and removes one ascension penalty from Call to Arms. Tax Collection casts in this game now increases Call to Arms base bonus (this bonus will boost the other Warcry effect).</p>
+	<p><b>Good</b>: Grants one maximum castable Call to Arms tier per ascension and removes one ascension penalty from Call to Arms. Tax Collection casts in this Era now increases Call to Arms base bonus (this bonus will boost the other Warcry effect).</p>
 	<p><b>Evil</b>: Multiplicatively increase Tax Collection worth in seconds.</p>
 	<p><b>Neutral</b>: Multiplicatively increase Faction Coins find chance.</p>
 	<p><b>Order</b>: Increases all spell durations.</p>
@@ -557,8 +557,8 @@
 	<p><b>Formula</b>: (25 + (0.3 * x) ^ 0.975)%, where x is your Buildings Owned (This Era) stat.</p>
 	<p><b><img src='/realm/Factions/picks/WarcryChallengeReward.png' align='middle'> Warcry</b> (R206+)</p>	
 	<p>Call to Arms gains additional effects based on your alignments, scaling off your Call to Arms strength.</p>
-	<p><b>Good</b>: Grants one maximum castable Call to Arms tier per ascension and removes one ascension penalty from Call to Arms. Tax Collection casts in this game now increases Call to Arms base bonus (This bonus will boost the other Warcry effect. Stacks multiplicatively with W180, additively with C225 & R150 power).</p>
-	<p><b>Formula</b>: (1.5 * x ^ 0.5)%, where x is Tax Collection casts this game.</p>
+	<p><b>Good</b>: Grants one maximum castable Call to Arms tier per ascension and removes one ascension penalty from Call to Arms. Tax Collection casts in this Era now increases Call to Arms base bonus (This bonus will boost the other Warcry effect. Stacks multiplicatively with W180, additively with C225 & R150 power).</p>
+	<p><b>Formula</b>: (1.5 * x ^ 0.5)%, where x is Tax Collection casts this Era.</p>
 	<p><b>Evil</b>: Multiplicatively increase Tax Collection worth in seconds.</p>
 	<p><b>Formula</b>: (y ^ 0.35)%</p>
 	<p><b>Neutral</b>: Multiplicatively increase Faction Coins find chance.</p>
@@ -935,9 +935,9 @@
 <br>
 <p id="GoblinsGreed"><b><img src="/realm/Factions/picks/GoblinsGreed.png" alt="Evil" align="middle"> Goblin's Greed</b> (Goblin)</p>
 <p><b>Cost</b>: 800 Mana - <b>Duration</b>: 5 seconds </p>
-<p><b>Effect</b>: Instantly produces Faction Coins based on gems you own. Also increases production of all buildings based on the number of Faction Coins found in this game.</p>
+<p><b>Effect</b>: Instantly produces Faction Coins based on gems you own. Also increases production of all buildings based on the number of Faction Coins found in this Era.</p>
 <p><b>Faction Coin Formula</b>: +(20 + ln(1 + x) ^ 3), where x is your current amount of gems.</p>
-<p><b>Production Formula</b>: (0.75 * ln(1 + x) ^ 3.15)%, where x is the number of Faction Coins found in this game.</p>
+<p><b>Production Formula</b>: (0.75 * ln(1 + x) ^ 3.15)%, where x is the number of Faction Coins found in this Era.</p>
 <p><b>Spell Trophy & Upgrade</b>: <b><img src="/realm/Factions/picks/GreedDriveSpellUpgrade.png" align="middle"> Greed Drive</b></p>
 <p><b>Requirement</b>: Cast Goblin's Greed 100 times in a row and do not cast any other spell.</p>
 <p><b>Note</b>: The Goblin Central Bank upgrade does not interfere with getting this trophy.</p>
@@ -1033,15 +1033,15 @@
 <br>
 <p id="ComboStrike"><b><img src="/realm/Factions/picks/ComboStrike.png" alt="Evil" align="middle"> Combo Strike</b> (Drow)</p>
 <p><b>Cost</b>: 800 Mana - <b>Duration</b>: Fixed to 16 seconds</p>
-<p><b>Effect</b>: Increase the production of all buildings by a progressively higher value as you continue casting this spell (This game).</p>
-<p><b>Formula</b>: (30 * (x ^ 0.9))%, where x is the number of times you have cast Combo Strike (This game).</p>
+<p><b>Effect</b>: Increase the production of all buildings by a progressively higher value as you continue casting this spell (This Era).</p>
+<p><b>Formula</b>: (30 * (x ^ 0.9))%, where x is the number of times you have cast Combo Strike (This Era).</p>
 <p><b>Spell Trophy & Upgrade</b>: <b><img src="/realm/Factions/picks/PerfectComboSpellUpgrade.png" align="middle"> Perfect Combo</b></p>
 <p><b>Requirement</b>: Cast Combo Strike 100 times in a single game,The chain is interrupted by casting different spells.</p>
 <p><b>Effect</b>: Increases Combo Strike bonus.</p>
 <p><b>Formula</b>: (40 * (x ^ 0.9))%, where x is the number of times you have cast Combo Strike.</p>
 <p><b>Cost</b>: 100 Sxd (1e53), A1+ Free</p>
 <p><b>Challenge Upgrade</b>: <b><img src="/realm/Factions/picks/VersaltileComboChallengeReward.png" align="middle"> Versatile Combo</b> (R33+)</p>
-<p><b>Effect</b>: Increase Combo Strike counter based on the amount of spells cast in this game, not including Tax Collection.</p>
+<p><b>Effect</b>: Increase Combo Strike counter based on the amount of spells cast in this Era, not including Tax Collection.</p>
 <p><b>New Combo Strike Counter Formula</b>: (x + y), where x is your Combo Strike cast count and y is every other spell (except tax collection and generic) cast count.</p>
 <p><b>Effect</b>: Also increase offline spells cast amount multiplicatively based on your offline Mana Regeneration.</p>
 <p><b>Formula</b>: (10 * log10(1 + x))%, where x is your offline Mana Regeneration.</p>
@@ -1109,8 +1109,8 @@
 <p><b>Effect</b>: Increases Brainwave ticks to 3% per second.</p>
 <p><b>Cost</b>: 10 Dd (1e40), A1+ Free</p>
 <p><b>Challenge Upgrade</b>: <b><img src="/realm/Factions/picks/FocusedThoughtsChallengeReward.png" align="middle"> Focused Thoughts</b> (R25+)</p>
-<p><b>Effect</b>: Give Brainwave a headstart based on its activity time in this game, with a minimum of 1 minute.</p>
-<p><b>Formula</b>: +1 second per 5 minutes of Brainwave active time (This Game).</p>
+<p><b>Effect</b>: Give Brainwave a headstart based on its activity time in this Era, with a minimum of 1 minute.</p>
+<p><b>Formula</b>: +1 second per 5 minutes of Brainwave active time (This Era).</p>
 <br>
 <p><b>Tier Upgrade</b>: +10 minutes per tier of Brainwave past tier 1.</p>
 <div class="shlisting">
@@ -1260,9 +1260,9 @@
 <p id="TemporalFlux"><b><img src="/realm/Factions/picks/TemporalFlux.png" alt="Temporal Flux" align="middle"> Temporal Flux</b> (Proof of Order)</p>
 <p><b>Requirement</b>: Ascension 2</p>
 <p><b>Cost</b>: 5000 Mana - <b>Duration</b>: 20 seconds</p>
-<p><b>Effect</b>: Increase Unique building production by time spent this game.</p>
-<p><b>Effect</b>: Also multiplicatively increase Mana Regeneration based on time spent in this game.</p>
-<p><b>Formula</b>: (3.75 * (x / 60) ^ 0.825)%, where x is time in seconds this game.</p>
+<p><b>Effect</b>: Increase Unique building production by time spent this Era.</p>
+<p><b>Effect</b>: Also multiplicatively increase Mana Regeneration based on time spent in this Era.</p>
+<p><b>Formula</b>: (3.75 * (x / 60) ^ 0.825)%, where x is time in seconds this Era.</p>
 <br/>
 <p><b><img src="/realm/Factions/picks/TemporalFluxTier2.png" alt="Temporal Flux" align="middle"> Tier 2</b> (R120+)</p>
 <p><b>Requirement</b>: Lantern of Guidance (Artifact)</p>
@@ -1272,10 +1272,10 @@
 <p id="Maelstrom"><b><img src="/realm/Factions/picks/Maelstrom.png" alt="Maelstrom" align="middle"> Maelstrom</b> (Proof of Chaos)</p>
 <p><b>Requirement</b>: Ascension 2</p>
 <p><b>Cost</b>: 3500 Mana - <b>Duration</b>: 20 seconds</p>
-<p><b>Effect</b>: Increase the production of three random buildings based on one of these stats in this game, chosen at random: Mana produced, trophies unlocked, Faction Coins found or amount of assistants</p>
-<p><b>Formula (Mana)</b>: (0.02 * (log10(1 + x)) ^ 5)%, where x is Mana produced this game.</p>
+<p><b>Effect</b>: Increase the production of three random buildings based on one of these stats in this Era, chosen at random: Mana produced, trophies unlocked, Faction Coins found or amount of assistants</p>
+<p><b>Formula (Mana)</b>: (0.02 * (log10(1 + x)) ^ 5)%, where x is Mana produced this Era.</p>
 <p><b>Formula (Trophies)</b>: (2.5 * x ^ 0.9)%, where x is trophies unlocked.</p>
-<p><b>Formula (Faction Coins)</b>: (0.01 * (log10(1 + x)) ^ 4)%, where x is Faction Coins found this game.</p>
+<p><b>Formula (Faction Coins)</b>: (0.01 * (log10(1 + x)) ^ 4)%, where x is Faction Coins found this Era.</p>
 <p><b>Formula (Assistants)</b>: (0.25 * (log10(1 + x)) ^ 5)%, where x is amount of assistants.</p>
 <br/>
 <p><b><img src="/realm/Factions/picks/MaelstromSpellTier2.png" alt="Maelstrom" align="middle"> Tier 2</b> (R120+)</p>
@@ -1297,17 +1297,17 @@
 <p><b>FC Cost</b>: 1 Sp (1e24) Elven, Goblin, Dwarven and Drow Coins.</p>
 <hr>
 <b><center>Ascension 2</b> (R125+)</center>
-<b><center>Elite Faction Spells</center></b>
+<b><center>Astral Faction Spells</center></b>
 <p id="Precognition"><b><img src="/realm/Factions/picks/Precognition.png" alt="Order" align="middle"> Precognition</b> (Archon)</p>
 <p><b>Cost</b>: 123456 Mana - <b>Duration</b>: 60 seconds</p>
-<p><b>Effect</b>: Buildings, Assistants, Royal Exchanges, Spells cast and Clicks count more based on Mana produced in this game.</p>
-<p><b>Formula</b>: (ln(1 + x) ^ 1.25)%, where x is Mana produced in this game.</p>
+<p><b>Effect</b>: Buildings, Assistants, Royal Exchanges, Spells cast and Clicks count more based on Mana produced in this Era.</p>
+<p><b>Formula</b>: (ln(1 + x) ^ 1.25)%, where x is Mana produced in this Era.</p>
 <p><b>Note</b>: Formula Improved to (1.25 * ln(1 + x) ^ 1.5)% with AR2.</p>
 <br/>
 <p><b>Spell Trophy & Upgrade</b>: <b><img src="/realm/Factions/picks/ChronoLoadingSpellUpgrade.png" align="middle"> Chrono Loading</b></p>
 <p><b>Requirement</b>: R125+, Cast Precognition with at least 100 Qa (1e17) mana regeneration.</p>
 <p><b>Note</b>: Precognition raises regen itself. Make sure that you have 100 Qa (1e17) with it not active</p>
-<p><b>Effect</b>: A fraction of Precognition duration is added to time spent in this game.</p>
+<p><b>Effect</b>: A fraction of Precognition duration is added to time spent in this Era.</p>
 <p><b>Formula</b>: (150 * ln(1 + x / 60) ^ 2), where x is its duration.</p>
 <p><b>Effect</b>: Also scale off invisible spell duration modifiers.</p>
 <p><b>Cost</b>: 10 Octg (1e118), A3+ Free</p>
@@ -1352,7 +1352,7 @@
 <p><b>Formula</b>: (10 + 0.05 * (x * y) ^ 0.75)%, where x is excavations done this Reincarnation (NOT current excavation count), y is free and ruby Excavation Resets this Reincarnation</p>
 <br/>
 <p><b>Spell Trophy & Upgrade</b>: <b><img src="/realm/Factions/picks/RealityCraterSpellUpgrade.png" align="middle"> Reality Crater</b></p>
-<p><b>Requirement</b>: R125+, Cast Infinite Spiral with at least 10 excavation resets this game.</p>
+<p><b>Requirement</b>: R125+, Cast Infinite Spiral with at least 10 excavation resets this Era.</p>
 <p><b>Effect</b>: Infinite Spiral also reduces excavation cost multiplier based on assistants owned.</p>
 <p><b>Formula</b>: -(0.001 * log(1 + x)), where x is assistants owned.</p>
 <p><b>Cost</b>: 10 Octg (1e118), A3+ Free</p>

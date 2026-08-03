@@ -58,8 +58,8 @@
 			<p><b><img src="/realm/Factions/picks/AngelUpgrade2.png" align="middle"> Angelic Determination</b></p>
 			<p><b>Mercenary Template</b>: AN2</p>
 			<p><b>Cost</b>: 500 M (5e8)</p>
-			<p><b>Effect</b>: Increase the production of all buildings based on spells cast in this game.</p>
-			<p><b>Formula</b>: (4 * ln(1 + x) ^ 2)%, where x is Spells Cast (This Game) stat.</p>
+			<p><b>Effect</b>: Increase the production of all buildings based on spells cast in this Era.</p>
+			<p><b>Formula</b>: (4 * ln(1 + x) ^ 2)%, where x is Spells Cast (This Era) stat.</p>
 			<p><b>Effect</b>: Also increase Angel Coins found (from all sources) by 500%.</p>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/AngelUpgrade3.png" align="middle"> Angel Feathers</b></p>
@@ -72,8 +72,8 @@
 			<p><b><img src="/realm/Factions/picks/GoblinUpgrade1.png" align="middle"> Strong Currency</b></p>
 			<p><b>Mercenary Template</b>: GB1</p>
 			<p><b>Cost</b>: 50 M (5e7)</p>
-			<p><b>Effect</b>: Increase assistants based on Faction Coins found in this game.</p>
-			<p><b>Formula</b>: +(0.5 * ln(1 + x) ^ 2), where x is Faction Coins found this game.</p>
+			<p><b>Effect</b>: Increase assistants based on Faction Coins found in this Era.</p>
+			<p><b>Formula</b>: +(0.5 * ln(1 + x) ^ 2), where x is Faction Coins found this Era.</p>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/GoblinUpgrade2.png" align="middle"> Slave Trading</b></p>
 			<p><b>Mercenary Template</b>: GB2</p>
@@ -135,8 +135,8 @@
 			<p><b><img src="/realm/Factions/picks/TitanUpgrade2.png" align="middle"> Charged Clicks</b></p>
 			<p><b>Mercenary Template</b>: TT2</p>
 			<p><b>Cost</b>: 5 Sx (5e21)</p>
-			<p><b>Effect</b>: Multiplicatively increase Mana Regeneration based on clicks made in this game.</p>
-			<p><b>Formula</b>: (25 + 2.5 * log10(1 + x) ^ 2.5 + x ^ 0.25)%, where x is clicks made this game.</p>
+			<p><b>Effect</b>: Multiplicatively increase Mana Regeneration based on clicks made in this Era.</p>
+			<p><b>Formula</b>: (25 + 2.5 * log10(1 + x) ^ 2.5 + x ^ 0.25)%, where x is clicks made this Era.</p>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/TitanUpgrade3.png" align="middle"> Titan Obelisk</b></p>
 			<p><b>Mercenary Template</b>: TT3</p>
@@ -154,8 +154,8 @@
 			<p><b><img src="/realm/Factions/picks/DruidUpgrade2.png" align="middle"> Animal Companions</b></p>
 			<p><b>Mercenary Template</b>: DD2</p>
 			<p><b>Cost</b>: 5 Sx (5e21)</p>
-			<p><b>Effect</b>: You instantly attract 3 Animal assistants and more will come based on the time spent in this game.</p>
-			<p><b>Formula</b>: +(3 + 1.75 * x ^ 0.5), where x is time spent in this game.</p>
+			<p><b>Effect</b>: You instantly attract 3 Animal assistants and more will come based on the time spent in this Era.</p>
+			<p><b>Formula</b>: +(3 + 1.75 * x ^ 0.5), where x is time spent in this Era.</p>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/DruidUpgrade3.png" align="middle"> Natural Recycling</b></p>
 			<p><b>Mercenary Template</b>: DD3</p>
@@ -254,7 +254,7 @@
 			<p><b>Effect</b>: Maximum Mana counts more based on the amount of time spent as Order in this Reincarnation.</p>
 			<p><b>Formula</b>: (0.25 * x ^ 0.5)%, where x is time spent as Order in this Reincarnation.</p>
 			<p><b>Effect</b>: Also increase Precognition base, scaling, and changes its starting duration to 5 minutes.</p>
-			<p><b>Precognition Formula</b>: (1.25 * ln(1 + x) ^ 1.5)%, where x is Mana produced in this game.</p>
+			<p><b>Precognition Formula</b>: (1.25 * ln(1 + x) ^ 1.5)%, where x is Mana produced in this Era.</p>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/ArchonUpgrade3.png" align="middle"> Cosmic Resonance</b></p>
 			<p><b>Mercenary Template</b>: AR3</p>
@@ -266,8 +266,8 @@
 			<p><b><img src="/realm/Factions/picks/DjinnUpgrade1.png" align="middle"> The Desire Within</b></p>
 			<p><b>Mercenary Template</b>: DJ1</p>
 			<p><b>Cost</b>: 1 NoQag (1e150)</p>
-			<p><b>Effect</b>: Increase the production of all buildings based on spells of your current alignments cast in this game.</p>
-			<p><b>Formula</b>: (25 * ln(1 + x) ^ 2.5)%, where x is alignments spells cast in this game.</p>
+			<p><b>Effect</b>: Increase the production of all buildings based on spells of your current alignments cast in this Era.</p>
+			<p><b>Formula</b>: (25 * ln(1 + x) ^ 2.5)%, where x is alignments spells cast in this Era.</p>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/DjinnUpgrade2.png" align="middle"> Forbidden Will</b></p>
 			<p><b>Mercenary Template</b>: DJ2</p>
@@ -332,8 +332,8 @@
 			<p><b><img src="/realm/Factions/picks/ElvenUpgrade5.png" align="middle"> Elven Efficiency</b></p>
 			<p><b>Mercenary Template</b>: EL5</p>
 			<p><b>Cost</b>: 5 T (5e12)</p>
-			<p><b>Effect</b>: Increase Royal Exchange bonus based on Faction Coins found this game.</p>
-			<p><b>Formula</b>: +(2 * ln(1 + x) ^ 2)%, where x is Faction Coins found this game.</p>
+			<p><b>Effect</b>: Increase Royal Exchange bonus based on Faction Coins found this Era.</p>
+			<p><b>Formula</b>: +(2 * ln(1 + x) ^ 2)%, where x is Faction Coins found this Era.</p>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/ElvenUpgrade6.png" align="middle"> Secret Clicking Techniques</b></p>
 			<p><b>Mercenary Template</b>: EL6</p>
@@ -364,8 +364,8 @@
 			<p><b>Mercenary Template</b>: GB4</p>
 			<p><b>Cost</b>: 500 B (5e11)</p>
 			<p><b>Effect</b>: Production bonus from gems is increased by a multiplicative 150%.</p>
-			<p><b>Effect</b>: Also increase Offline production based on the amount of Tax Collection casts in this game.</p>
-			<p><b>Formula</b>: (log10(1 + x) ^ 2)%, where x is Tax Collection casts this game.</p>
+			<p><b>Effect</b>: Also increase Offline production based on the amount of Tax Collection casts in this Era.</p>
+			<p><b>Formula</b>: (log10(1 + x) ^ 2)%, where x is Tax Collection casts this Era.</p>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/GoblinUpgrade5.png" align="middle"> Goblin Economists</b></p>
 			<p><b>Mercenary Template</b>: GB5</p>
@@ -395,15 +395,15 @@
 			<p><b><img src="/realm/Factions/picks/UndeadUpgrade6.png" align="middle"> Plagued Buildings</b></p>
 			<p><b>Mercenary Template</b>: UD6</p>
 			<p><b>Cost</b>: 50 T (5e13)</p>
-			<p><b>Effect</b>: Increase the production of all buildings based on time spent in this game.</p>
-			<p><b>Formula</b>: (0.75 * x ^ 0.75)%, where x is time spent this game.</p>
+			<p><b>Effect</b>: Increase the production of all buildings based on time spent in this Era.</p>
+			<p><b>Formula</b>: (0.75 * x ^ 0.75)%, where x is time spent this Era.</p>
 			<hr>
 			<h6>Demon</h6>
 			<p><b><img src="/realm/Factions/picks/DemonUpgrade4.png" align="middle"> Lava Pits</b></p>
 			<p><b>Mercenary Template</b>: DM4</p>
 			<p><b>Cost</b>: 500 B (5e11)</p>
 			<p><b>Effect</b>: Increase the base production of Evil Fortresses by +200,000 and Hell Portals by +2,000,000.</p>
-			<p><b>Effect</b>: Your playtime in this game counts more by 6 additional hours.</p>
+			<p><b>Effect</b>: Your playtime in this Era counts more by 6 additional hours.</p>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/DemonUpgrade5.png" align="middle"> Demon Overseers</b></p>
 			<p><b>Mercenary Template</b>: DM5</p>
@@ -414,8 +414,8 @@
 			<p><b><img src="/realm/Factions/picks/DemonUpgrade6.png" align="middle"> Demonic Presence</b></p>
 			<p><b>Mercenary Template</b>: DM6</p>
 			<p><b>Cost</b>: 50 T (5e13)</p>
-			<p><b>Effect</b>: Increase Max Mana based on Evil spells cast in this game (Additve).</p>
-			<p><b>Formula</b>: +(6 * x ^ 0.4), where x is Evil spells cast this game.</p>
+			<p><b>Effect</b>: Increase Max Mana based on Evil spells cast in this Era (Additve).</p>
+			<p><b>Formula</b>: +(6 * x ^ 0.4), where x is Evil spells cast this Era.</p>
 			<hr>
 			<h6>Titan</h6>
 			<p><b><img src="/realm/Factions/picks/TitanUpgrade4.png" align="middle"> Titan Drill</b></p>
@@ -490,14 +490,14 @@
 			<p><b>Mercenary Template</b>: DN6</p>
 			<p><b>Cost</b>: 5 Sxd (5e51)</p>
 			<p><b>Effect</b>: Increase the production of assistants based on how long their beard is (it grows over time!).</p>
-			<p><b>Formula</b>: (x ^ 0.7)%, where x is time spent in this game.</p>
+			<p><b>Formula</b>: (x ^ 0.7)%, where x is time spent in this Era.</p>
 			<hr>
 			<h6>Drow</h6>
 			<p><b><img src="/realm/Factions/picks/DrowUpgrade4.png" align="middle"> Mana Addicts</b></p>
 			<p><b>Mercenary Template</b>: DW4</p>
 			<p><b>Cost</b>: 50 Qid (5e49)</p>
 			<p><b>Effect</b>: Mana Regeneration increases over time.</p>
-			<p><b>Formula</b>: +(2.5 + 0.25 * x ^ 0.5), where x is time spent in this game.</p>
+			<p><b>Formula</b>: +(2.5 + 0.25 * x ^ 0.5), where x is time spent in this Era.</p>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/DrowUpgrade5.png" align="middle"> Blood Sacrifices</b></p>
 			<p><b>Mercenary Template</b>: DW5</p>
@@ -528,8 +528,8 @@
 			<p><b><img src="/realm/Factions/picks/DragonUpgrade6.png" align="middle"> Sharp Claws</b></p>
 			<p><b>Mercenary Template</b>: DG6</p>
 			<p><b>Cost</b>: 5 Tvg (5e72 DC)</p>
-			<p><b>Effect</b>: Multiplicatively increase Royal Exchange Bonus and Faction Coin find chance based on Clicks made in this game.</p>
-			<p><b>Formula</b>: (0.8 * x ^ 0.35)%, where x is the number of Clicks this game.</p>
+			<p><b>Effect</b>: Multiplicatively increase Royal Exchange Bonus and Faction Coin find chance based on Clicks made in this Era.</p>
+			<p><b>Formula</b>: (0.8 * x ^ 0.35)%, where x is the number of Clicks this Era.</p>
 			<hr>
 			<h6>Archon</h6>
 			<p><b><img src="/realm/Factions/picks/ArchonUpgrade4.png" align="middle"> Constellation</b></p>
@@ -554,14 +554,14 @@
 			<p><b><img src="/realm/Factions/picks/DjinnUpgrade4.png" align="middle"> Aura of Magic</b></p>
 			<p><b>Mercenary Template</b>: DJ4</p>
 			<p><b>Cost</b>: 100 UQig (1e158)</p>
-			<p><b>Effect</b>: Increase non-unique building production based on Mana produced this game.</p>
-			<p><b>Formula</b>: (0.325 * x ^ 0.325)%, where x is Mana produced this game.</p>
+			<p><b>Effect</b>: Increase non-unique building production based on Mana produced this Era.</p>
+			<p><b>Formula</b>: (0.325 * x ^ 0.325)%, where x is Mana produced this Era.</p>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/DjinnUpgrade5.png" align="middle"> Spiritual Bindings</b></p>
 			<p><b>Mercenary Template</b>: DJ5</p>
 			<p><b>Cost</b>: 1 DQig (1e159)</p>
 			<p><b>Effect</b>: Multiplicatively increase assistants based on time spent offline.</p>
-			<p><b>Formula</b>: (0.65 * x ^ 0.5)%, where x is time spent offline this game.</p>
+			<p><b>Formula</b>: (0.65 * x ^ 0.5)%, where x is time spent offline this Era.</p>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/DjinnUpgrade6.png" align="middle"> Wild Surge</b></p>
 			<p><b>Mercenary Template</b>: DJ6</p>
@@ -579,8 +579,8 @@
 			<p><b><img src="/realm/Factions/picks/MakersUpgrade5.png" align="middle"> Treasure Mosaic</b></p>
 			<p><b>Mercenary Template</b>: MK5</p>
 			<p><b>Cost</b>: 1 DQig (1e159)</p>
-			<p><b>Effect</b>: Additionally increase Maximum Mana based on Faction Coins found in this game.</p>
-			<p><b>Formula</b>: +(27.5 * log10(1 + x) ^ 2.75), where x is Faction Coins found in this game.</p>
+			<p><b>Effect</b>: Additionally increase Maximum Mana based on Faction Coins found in this Era.</p>
+			<p><b>Formula</b>: +(27.5 * log10(1 + x) ^ 2.75), where x is Faction Coins found in this Era.</p>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/MakersUpgrade6.png" align="middle"> Art of Commerce</b></p>
 			<p><b>Mercenary Template</b>: MK6</p>
@@ -615,8 +615,8 @@
 			<p><b><img src="/realm/Factions/picks/ElvenUpgrade7.png" align="middle"> Elven Diplomacy</b></p>
 			<p><b>Mercenary Template</b>: EL7</p>
 			<p><b>Cost</b>: 5 Qa (5e15)</p>
-			<p><b>Effect</b>: Increase click count based on Faction Coins found in this game.</p>
-			<p><b>Formula</b>: (2 * ln(1 + x) ^ 2), where x is Faction Coins found in this game.</p>
+			<p><b>Effect</b>: Increase click count based on Faction Coins found in this Era.</p>
+			<p><b>Formula</b>: (2 * ln(1 + x) ^ 2), where x is Faction Coins found in this Era.</p>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/ElvenUpgrade8.png" align="middle"> Elven Luck</b></p>
 			<p><b>Mercenary Template</b>: EL8</p>
@@ -764,8 +764,8 @@
 			<p><b><img src="/realm/Factions/picks/DwarvenUpgrade7.png" align="middle"> Battlehammers</b></p>
 			<p><b>Mercenary Template</b>: DN7</p>
 			<p><b>Cost</b>: 500 Sxd (5e53)</p>
-			<p><b>Effect</b>: Increase the production of all buildings based on the amount of Dwarven Coins found in this game.</p>
-			<p><b>Formula</b>: (2 * ln(1 + x) ^ 2))%, where x is the amount of Dwarven Coins found in this game.</p>
+			<p><b>Effect</b>: Increase the production of all buildings based on the amount of Dwarven Coins found in this Era.</p>
+			<p><b>Formula</b>: (2 * ln(1 + x) ^ 2))%, where x is the amount of Dwarven Coins found in this Era.</p>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/DwarvenUpgrade8.png" align="middle"> Magic Resistance</b></p>
 			<p><b>Mercenary Template</b>: DN8</p>
@@ -795,16 +795,16 @@
 			<p><b><img src="/realm/Factions/picks/DrowUpgrade9.png" align="middle"> Blade Dance</b></p>
 			<p><b>Mercenary Template</b>: DW9</p>
 			<p><b>Cost</b>: 50 Spd (5e55)</p>
-			<p><b>Effect</b>: Increase the production of all buildings based on Combo Strike counter in this game.</p>
+			<p><b>Effect</b>: Increase the production of all buildings based on Combo Strike counter in this Era.</p>
 			<p><b>Formula</b>: (100 + 80 * x ^ 0.4)%, where x is your Combo Strike counter.</p>
 			<hr>
 			<h6>Dragon</h6>
 			<p><b><img src="/realm/Factions/picks/DragonUpgrade7.png" align="middle"> Ancient Hunger</b></p>
 			<p><b>Mercenary Template</b>: DG7</p>
 			<p><b>Cost</b>: 500 Tvg (5.0e74)</p>
-			<p><b>Effect</b>: Increase Maximum Mana additively and multiplicatively based on the amount of Faction Coins found in this game.</p>
-			<p><b>Formula (Additive)</b>: +(20 * ln(1 + x) ^ 2), where x is Faction Coins found this game.</p>
-			<p><b>Formula (Multiplicative)</b>: (0.75 * ln(1 + x) ^ 1.25)%, where x is Faction Coins found this game.</p>
+			<p><b>Effect</b>: Increase Maximum Mana additively and multiplicatively based on the amount of Faction Coins found in this Era.</p>
+			<p><b>Formula (Additive)</b>: +(20 * ln(1 + x) ^ 2), where x is Faction Coins found this Era.</p>
+			<p><b>Formula (Multiplicative)</b>: (0.75 * ln(1 + x) ^ 1.25)%, where x is Faction Coins found this Era.</p>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/DragonUpgrade8.png" align="middle"> Eternal Wisdom</b></p>
 			<p><b>Mercenary Template</b>: DG8</p>
@@ -873,8 +873,8 @@
 			<p><b><img src="/realm/Factions/picks/MakersUpgrade9.png" align="middle"> Structural Stability</b></p>
 			<p><b>Mercenary Template</b>: MK9</p>
 			<p><b>Cost</b>: 1 QaQig (1e165)</p>
-			<p><b>Effect</b>: Increase the production of building tiers directly above or below Unique Buildings based on spells cast in this game.</p>
-			<p><b>Formula</b>: (0.2 * x ^ 0.4)%, where x spells cast in this game.</p>
+			<p><b>Effect</b>: Increase the production of building tiers directly above or below Unique Buildings based on spells cast in this Era.</p>
+			<p><b>Formula</b>: (0.2 * x ^ 0.4)%, where x spells cast in this Era.</p>
 			<p><b>Note</b>: MK9 now works like W3150 ( ^ 2 bonus when able).</p>
 		</div>
 	</div>
@@ -926,9 +926,9 @@
 			<p><b>Mercenary Template</b>: EL12</p>
 			<p><b>Requirement</b>: A2+, Elven Union</p>
 			<p><b>Cost</b>: 100 Tg (1e95) Emerald Coins</p>
-			<p><b>Effect</b>: Increase assistants additively and multiplicatively based on the amount of Faction Coins found in this game.</p>
-			<p><b>Additive Formula</b>: +(50 * ln(1 + x) ^ 1.5), where x is Faction Coins found this game.</p>
-			<p><b>Multiplicative Formula</b>: (1.5 * log10(1 + x) ^ 1.5)%, where x is Faction Coins found this game.</p>
+			<p><b>Effect</b>: Increase assistants additively and multiplicatively based on the amount of Faction Coins found in this Era.</p>
+			<p><b>Additive Formula</b>: +(50 * ln(1 + x) ^ 1.5), where x is Faction Coins found this Era.</p>
+			<p><b>Multiplicative Formula</b>: (1.5 * log10(1 + x) ^ 1.5)%, where x is Faction Coins found this Era.</p>
 			<hr>
 			<h6>Angel</h6>
 			<p><b><img src="/realm/Factions/picks/AngelUpgrade10.png" align="middle"> Heaven's Brilliance</b></p>
@@ -945,7 +945,7 @@
 			<p><b>Cost</b>: 100 Qivg (1e80) Emerald Coins</p>
 			<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on the sum of all your spells' activity time (this Reincarnation).</p>
 			<p><b>Formula</b>: (x ^ 0.7)%, where x is the sum of all your spells' activity time in this Reincarnation.</p>
-			<p><b>Note</b>: Counts only the activity time of the spells you have in this game available.</p>
+			<p><b>Note</b>: Counts only the activity time of the spells you have in this Era available.</p>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/AngelUpgrade12.png" align="middle"> Seraphim Wings</b></p>
 			<p><b>Mercenary Template</b>: AN12</p>
@@ -965,8 +965,8 @@
 			<p><b>Mercenary Template</b>: GB11</p>
 			<p><b>Requirement</b>: A2+, Goblins Union</p>
 			<p><b>Cost</b>: 100 Qivg (1e80) Emerald Coins</p>
-			<p><b>Effect</b>: Increase mana regeneration based on the amount of Tax Collections cast in this game.</p>
-			<p><b>Formula</b>: (2 * ln(1 + x) ^ 2)%, where x is Tax Collections cast this game.</p>
+			<p><b>Effect</b>: Increase mana regeneration based on the amount of Tax Collections cast in this Era.</p>
+			<p><b>Formula</b>: (2 * ln(1 + x) ^ 2)%, where x is Tax Collections cast this Era.</p>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/GoblinUpgrade12.png" align="middle"> Lousy Architecture</b></p>
 			<p><b>Mercenary Template</b>: GB12</p>
@@ -988,8 +988,8 @@
 			<p><b>Mercenary Template</b>: UD11</p>
 			<p><b>Requirement</b>: A2+, Undead Union</p>
 			<p><b>Cost</b>: 100 Qivg (1e80) Emerald Coins</p>
-			<p><b>Effect</b>: Increase Unique buildings production based on time spent in this game.</p>
-			<p><b>Formula</b>: (x ^ 0.7)%, where x is time spent this game.</p>
+			<p><b>Effect</b>: Increase Unique buildings production based on time spent in this Era.</p>
+			<p><b>Formula</b>: (x ^ 0.7)%, where x is time spent this Era.</p>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/UndeadUpgrade12.png" align="middle"> Zombie Apocalypse</b></p>
 			<p><b>Mercenary Template</b>: UD12</p>
@@ -1054,10 +1054,10 @@
 			<p><b>Mercenary Template</b>: DD11</p>
 			<p><b>Requirement</b>: A2+, Druids Union</p>
 			<p><b>Cost</b>: 100 Qivg (1e80) Emerald Coins</p>
-			<p><b>Effect</b>: Increase Maximum Mana additively based on time spent online in this game.</p>
-			<p><b>Online Formula</b>: +(50 * x ^ 0.85), where x is time spent online in this game.</p>
-			<p><b>Effect</b>: Increase Maximum Mana multiplicatively based on time spent offline in this game.</p>
-			<p><b>Offline Formula</b>: (0.5 * x ^ 0.5)%, where x is time spent offline in this game.</p>
+			<p><b>Effect</b>: Increase Maximum Mana additively based on time spent online in this Era.</p>
+			<p><b>Online Formula</b>: +(50 * x ^ 0.85), where x is time spent online in this Era.</p>
+			<p><b>Effect</b>: Increase Maximum Mana multiplicatively based on time spent offline in this Era.</p>
+			<p><b>Offline Formula</b>: (0.5 * x ^ 0.5)%, where x is time spent offline in this Era.</p>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/DruidUpgrade12.png" align="middle"> Grove Farming</b></p>
 			<p><b>Mercenary Template</b>: DD12</p>
@@ -1072,7 +1072,7 @@
 			<p><b>Requirement</b>: A2+, Faceless Union</p>
 			<p><b>Cost</b>: 1 Nod (1e60) Emerald Coins</p>
 			<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on the highest amount of Forbidden Libraries you own in this Reincarnation. Grows over time and resets every 15 minutes.</p>
-			<p><b>Formula</b>: ((t % 900) / 75 * x ^ 0.4)%, where t is time spent this game, x is the highest amount of Forbidden Libraries owned this Reincarnation.</p></p>
+			<p><b>Formula</b>: ((t % 900) / 75 * x ^ 0.4)%, where t is time spent this Era, x is the highest amount of Forbidden Libraries owned this Reincarnation.</p></p>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/FacelessUpgrade11.png" align="middle"> Forbidden Language</b></p>
 			<p><b>Mercenary Template</b>: FC11</p>

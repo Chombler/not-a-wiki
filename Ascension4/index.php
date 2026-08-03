@@ -11,7 +11,7 @@
 	<p>Currency will change to Sapphire Coins, and all upgrades costing Amethyst Coins will be free to purchase.</p>
 	<p>All Ascension Penalties from Faction Upgrades and Advanced Heritages are completely removed in A4. Other production upgrades receive the Ascension penalty as usual. Building Cost multiplier is the same as in A0.</p>
 	<p><b><font color="darkred">When Ascending to Ascension 4, all Lineages will be set back to level 75 if higher. All Researches from A0 and A1 (Research number less than 5000) as well as normal Heritages will become inaccessible. This includes the Mercenary Badge.</font></b></p>
-	<p><b><font color="darkred">You will once more not be able to affiliate with Mercenary or Prestige Factions and Elite Factions. Make sure to have all trophies regarding them before ascending.</font></b></p>
+	<p><b><font color="darkred">You will once more not be able to affiliate with Mercenary or Prestige Factions and Astral Factions. Make sure to have all trophies regarding them before ascending.</font></b></p>
 	</br>
 	<p>Faction Coin Costs of Faction Treaties are increased in A4.</p>
 	<table class="numtable" style="color: black;">

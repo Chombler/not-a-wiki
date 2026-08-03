@@ -180,7 +180,7 @@
 	<p><b>Requirement</b>: Faceless Union</p>
 	<p><b>Cost</b>: 1 Nod (1e60) Emerald Coins</p>
 	<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on the highest amount of Forbidden Libraries you built in this Reincarnation. Grows over time and resets every 15 minutes.</p>
-	<p><b>Formula</b>: ((t % 900) / 75 * x ^ 0.4)%, where t is time spent this game, x is the highest amount of Forbidden Libraries you built in this Reincarnation.</p>
+	<p><b>Formula</b>: ((t % 900) / 75 * x ^ 0.4)%, where t is time spent this Era, x is the highest amount of Forbidden Libraries you built in this Reincarnation.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/FacelessUpgrade11.png" alt="Forbidden Language" align="middle"> Forbidden Language</b></p>
 	<p><b>Requirement</b>: Faceless Union</p>
@@ -195,7 +195,7 @@
 	<p><b>Formula</b>: (2 * ln(1 + x) ^ 2)%, where x is highest Maximum Mana this Reincarnation.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/AdvancedFacelessHeritage.png" align="middle"> Advanced Faceless Heritage</b></p>
-	<p><b>Requirement</b>: Faceless Master trophy and 6 hours activity time (This Game) of Brainwave.</p>
+	<p><b>Requirement</b>: Faceless Master trophy and 6 hours activity time (This Era) of Brainwave.</p>
 	<p><b>Cost</b>: 1 Sp (1e24) Fairy and Undead Coins</p>
 	<p><b>Effect</b>: Gain assistants based on the amount of Unique Buildings owned (additive).</p>
 	<p><b>Formula</b>: +(2.5 * x ^ 0.8), where x is Unique Buildings owned.</p>

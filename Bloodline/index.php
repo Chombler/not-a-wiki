@@ -12,7 +12,7 @@
 	<p><b>Trophy & Upgrade</b></p>
 	<p><b><img src="/realm/Factions/picks/BloodstreamSecretTrophy.png" alt="Bloodstream" align="middle"> Bloodstream</b></p>
 	<p>Bloodstream Secret Trophy requirement: Purchase 100 upgrades of each faction (Anything that is faction colored counts) (All Game)</p>
-	<p><b>In-game description</b>:Increase the production of all buildings based on the time spent as faction of the bloodline you are using. While you are Mercenary, a fraction of the total time spent as mercenary is added to your Bloodstream bonus based on the amount of mercenary upgrades purchased in this game from the faction of the bloodline you are using.</p>
+	<p><b>In-game description</b>:Increase the production of all buildings based on the time spent as faction of the bloodline you are using. While you are Mercenary, a fraction of the total time spent as mercenary is added to your Bloodstream bonus based on the amount of mercenary upgrades purchased in this Era from the faction of the bloodline you are using.</p>
 	<p><b>Cost</b>: 1Tg (1e93 coins), A1+ Free</p>
 	<p><b>Effect</b>: Increases the production of all buildings based on the total time allied with the faction bloodline you are playing. ('Time Spent Allied with' at the bottom of the stats)</p>
 	<p><b>Formula</b>: (0.1 * x ^ 0.65)%, where x is your (adjusted) time spent affiliated with the bloodline's faction.</p>
@@ -91,10 +91,10 @@
 		" coords="130,190,184,244" shape="rect">
 		<area href="#Archon" research="
 	<p><b><img src='/realm/Factions/picks/ArchonBloodline.png' align='middle'> Archon</b></p>
-	<p><b>Requirements</b>: Archon Unlocked, R130+</p><p><b>Effect</b>: Gain additional research slots based on time spent this game.</p>
+	<p><b>Requirements</b>: Archon Unlocked, R130+</p><p><b>Effect</b>: Gain additional research slots based on time spent this Era.</p>
 	<p><b>Formula</b>: (1 + floor(((1 + x / 16200) ^ 0.5 - 1) / 2)), where x is time spent in this Era (in seconds).</p>
 	<p><b>Note</b>: +1 research at start, +2 at 2 days, +3 at 6 days, +4 at 12 days.. (T >= N * (N - 1)), where T is time in days and N is amount of extra researches.</p>
-	<p><b>A3+ Effect</b>: You can purchase additional researches based on their research points cost. This budget increases with time spent in this game.</p>
+	<p><b>A3+ Effect</b>: You can purchase additional researches based on their research points cost. This budget increases with time spent in this Era.</p>
 	<p><b>A3+ Formula</b>: +(ln(1 + x) ^ 3), where x is time spent in this Era.</p>
 		" coords="10,250,64,304" shape="rect">
 		<area href="#Djinn" research="
@@ -103,7 +103,7 @@
 		" coords="70,250,124,304" shape="rect">
 		<area href="#Makers" research="
 	<p><b><img src='/realm/Factions/picks/MakersBloodline.png' align='middle'> Makers</b></p>
-	<p><b>Requirements</b>: Makers Unlocked, R130+</p><p><b>Effect</b>: Increase your Set power based on faction coins collected this game.</p>
+	<p><b>Requirements</b>: Makers Unlocked, R130+</p><p><b>Effect</b>: Increase your Set power based on faction coins collected this Era.</p>
 	<p><b>Formula</b>: (0.25 * ln(1 + x) ^ 1.35)%, where x is Faction Coins found in this Era.</p>
 		" coords="130,250,184,304" shape="rect">
 	</map>
@@ -167,10 +167,10 @@
 	<hr>
 	<p id="Archon"><b><img src="/realm/Factions/picks/ArchonBloodline.png" align="middle"> Archon</b></p>
 	<p><b>Requirements</b>: Archon Unlocked, R130+</p>
-	<p><b>Effect</b>: Gain additional research slots based on time spent this game.</p>
+	<p><b>Effect</b>: Gain additional research slots based on time spent this Era.</p>
 	<p><b>Formula</b>: (1 + floor(((1 + x / 16200) ^ 0.5 - 1) / 2)), where x is time spent in this Era (in seconds).</p>
 	<p><b>Note</b>: +1 research at start, +2 at 2 days, +3 at 6 days, +4 at 12 days.. (T >= N * (N - 1)) where T is time in days and N is amount of extra researches.</p>
-	<p><b>A3+ Effect</b>: You can purchase additional researches based on their research points cost. This budget increases with time spent in this game.</p>
+	<p><b>A3+ Effect</b>: You can purchase additional researches based on their research points cost. This budget increases with time spent in this Era.</p>
 	<p><b>A3+ Formula</b>: +(ln(1 + x) ^ 3), where x is time spent in this Era.</p>
 	<hr>
 	<p id="Djinn"><b><img src="/realm/Factions/picks/DjinnBloodline.png" align="middle"> Djinn</b></p>
@@ -186,6 +186,6 @@
 	<hr>
 	<p id="Makers"><b><img src="/realm/Factions/picks/MakersBloodline.png" align="middle"> Makers</b></p>
 	<p><b>Requirements</b>: Makers Unlocked, R130+</p>
-	<p><b>Effect</b>: Increase your Set power based on faction coins collected this game.</p>
+	<p><b>Effect</b>: Increase your Set power based on faction coins collected this Era.</p>
 	<p><b>Formula</b>: (0.25 * ln(1 + x) ^ 1.35)%, where x is Faction Coins found in this Era.</p>
 <?php include "../scripts/footer.html"; ?>

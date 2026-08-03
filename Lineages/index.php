@@ -7,7 +7,7 @@
 	<p><b>Requirement</b>: R60+</p>
 	<p>At R60 you will unlock Lineages, which gives you access to powerful upgrades based on your chosen Bloodline in the form of perks, and will even allow you to use the spell of other Factions, provided you complete the respective lineage challenge.</p>
 	<p>Lineages need 400 Royal Exchanges of the respective Faction plus their Bloodline to be used (needs to be bought every Abdication).</p>
-	<p><b>Note</b>: You can not use a Lineage if it matches your faction or its respective Prestige or Elite faction.</p>
+	<p><b>Note</b>: You can not use a Lineage if it matches your faction or its respective Prestige or Astral faction.</p>
 	<p><b>Note</b>: Levels only need to be bought once and persist through Abdications and Reincarnations. When ascending, Lineages are set back to a certain level (if higher) - (see <b><a target="_blank" href="/realm/Ascension/">Ascension</a></b> for more info).</p>
 	<p>There exist 15 different Lineages (1 for every faction except Mercenary, 12 before R130 and 3 more at R130+), with every Lineage having 5 perks plus a Faction Coin boost and in the process giving access to the Grand Champion Trophy.</p>
 	<p><b>Base Lineage</b>: Lineage based boost.</p>
@@ -385,8 +385,8 @@
 	<p><b>Level 30</b></p>
 	<p><b><img src="/realm/Factions/picks/UndeadPerk4.png" align="middle"> Undead Perk 4</b></p>
 	<p><b>Requirement</b>: R105+, Reach Lineage Level 30.</p>
-	<p><b>Effect</b>: Increase offline production based on Night Time activity time in this game.</p>
-	<p><b>Formula</b>: (7 * x ^ 0.7)%, where x is Night Time activity time this game.</p>
+	<p><b>Effect</b>: Increase offline production based on Night Time activity time in this Era.</p>
+	<p><b>Formula</b>: (7 * x ^ 0.7)%, where x is Night Time activity time this Era.</p>
 	<br/>
 	<p><b>Level 40</b></p>
 	<p><b><img src="/realm/Factions/picks/UndeadPerk5.png" align="middle"> Undead Perk 5</b></p>
@@ -477,8 +477,8 @@
 	<p><b>Level 5</b></p>
 	<p><b><img src="/realm/Factions/picks/DruidPerk1.png" align="middle"> Druid Perk 1</b></p>
 	<p><b>Requirement</b>: Reach Lineage Level 5</p>
-	<p><b>Effect</b>: Increases Non-Unique building production based on time spent in this game.</p>
-	<p><b>Formula</b>: (0.25 * x ^ 1.25)%, where x is time spent in this game.</p>
+	<p><b>Effect</b>: Increases Non-Unique building production based on time spent in this Era.</p>
+	<p><b>Formula</b>: (0.25 * x ^ 1.25)%, where x is time spent in this Era.</p>
 	<br/>
 	<p><b>Level 10</b></p>
 	<p><b>Effect</b>: x50 more Elven and Demon Faction Coin find chance.</p>
@@ -618,7 +618,7 @@
 	<p><b>Level 30</b></p>
 	<p><b><img src="/realm/Factions/picks/DrowPerk4.png" align="middle"> Drow Perk 4</b></p>
 	<p><b>Requirement</b>: R105+, Reach Lineage Level 30</p>
-	<p><b>Effect</b>: Combo Strike's combo bonus increases by 5% per 30 seconds spent this game.</p>
+	<p><b>Effect</b>: Combo Strike's combo bonus increases by 5% per 30 seconds spent this Era.</p>
 	<p><b>Effect</b>: While Combo Strike is active, increase the production of all buildings based on the current Combo Strike bonus.</p>
 	<p><b>Formula</b>: (2 * log10((x ^ 0.9) ^ T) ^ 2)%, where x is Combo Strike counter, and T is spell tier.</p>
 	<br/>
@@ -712,7 +712,7 @@
 	<p><b>Level 5</b></p>
 	<p><b><img src="/realm/Factions/picks/DjinnPerk1.png" align="middle"> Djinn Perk 1</b></p>
 	<p><b>Requirements</b>: Reach Lineage Level 5</p>
-	<p><b>Effect</b>: Catalyst casts in this game also increase Limited Wish counter for the purpose of increasing its bonus.</p>
+	<p><b>Effect</b>: Catalyst casts in this Era also increase Limited Wish counter for the purpose of increasing its bonus.</p>
 	<p><b>Effect</b>: All spells cost 25% less.</p>
 	<br/>
 	<p><b>Level 10</b></p>

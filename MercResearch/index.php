@@ -177,7 +177,7 @@
 <p><b>A3400 - For All Factions</p>
 <p><b>Research Name</b>: Chemistry</p>
 <p><b>Hint</b>: Get attracted to Faction Coins.</p>
-<p><b>Requirement</b>: 1 No (1e30) FC (Found this Game), (Customizing C3000) & (Manipulation S3200).</p>
+<p><b>Requirement</b>: 1 No (1e30) FC (Found this Era), (Customizing C3000) & (Manipulation S3200).</p>
 <p><b>Cost</b>: 894.5 QiQig (5.69e197)</p>
 <p><b>Effect</b>: Increases Faction Coin find chance based on the total amount of Lineage levels you have.</p>
 <p><b>Effect</b>: Also increases Faction Coin find chance by a multiplicative 300%.</p>

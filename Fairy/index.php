@@ -33,7 +33,7 @@
 	<p><b>Note</b>: Dwarven can <b>NOT</b> be used unless you can get Dwarven's Unique Building at R28+.</p>
 	<p><b>Challenge</b>:  Have Swarm of Fairies (Fairy 3,3) give 60 Assistants in under a minute of a new game.(Abdication or Reincarnation)</p>
 	<p><b>Effect</b>: Increase Mana Regeneration based on the number of buildings you own.</p>
-	<p><b>Formula</b>: +(0.1 * x) ^ 0.225, where x is your Buildings Owned (This Game) stat.</p>
+	<p><b>Formula</b>: +(0.1 * x) ^ 0.225, where x is your Buildings Owned (This Era) stat.</p>
 	<p><b>Upgrade</b>: Works with All</p>
 	<p><b>Tip 1</b>: (8190, total, of Farms, Inns and Blacksmiths and you don't have to buy the upgrade itself.)</p>
 	<p><b>Tip 2</b>: Use Goblin Bloodline.</p>

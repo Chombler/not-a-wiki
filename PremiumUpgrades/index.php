@@ -416,7 +416,7 @@
     <h5>One-Use Upgrades</h5>
     <p><b><img src="/realm/Factions/picks/Timewarp12Hours.png" alt="Timewarp 12 Hours" align="middle"> Timewarp 12 Hours</b>.</p>
     <p><b>Cost</b>: 4 Rubies</p>
-    <p><b>Effects</b>: Instantly gain 12 hours worth of production in both coins and faction coins. All timewarps count time as time (this game), (offline), and (total), allowing trophies and upgrades.</p>
+    <p><b>Effects</b>: Instantly gain 12 hours worth of production in both coins and faction coins. All timewarps count time as time (this Era), (offline), and (total), allowing trophies and upgrades.</p>
     <hr>
     <p><b><img src="/realm/Factions/picks/Timewarp1Day12Hours.png" alt="Timewarp 1 Day 12 Hours" align="middle"> Timewarp 1 Day 12 Hours</b>.</p>
     <p><b>Cost</b>: 8 Rubies</p>
@@ -429,5 +429,5 @@
     <hr>
     <p><b><img src="/realm/Factions/picks/GemConversion.png" alt="Gem Conversion" align="middle"> Gem Conversion</b>.</p>
     <p><b>Cost</b>: 12 Rubies</p>
-    <p><b>Effects</b>: Instantly add your new gems to your current total without Abdicating. (This is nice because you can keep your gold, upgrades, this game stats, and trophy progress without having to wait for gems.)</p>
+    <p><b>Effects</b>: Instantly add your new gems to your current total without Abdicating. (This is nice because you can keep your gold, upgrades, this Era stats, and trophy progress without having to wait for gems.)</p>
 <?php include "../scripts/footer.html"; ?>

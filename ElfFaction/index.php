@@ -54,8 +54,8 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/ElvenUpgrade5.png" align="middle"> Elven Efficiency</b></p>
 	<p><b>Cost</b>: 5 T (5e12)</p>
-	<p><b>Effect</b>: Increase Royal Exchange bonus based on Faction Coins found this game.</p>
-	<p><b>Formula</b>: +(2 * ln(1 + x) ^ 2)%, where x is Faction Coins found this game.</p>
+	<p><b>Effect</b>: Increase Royal Exchange bonus based on Faction Coins found this Era.</p>
+	<p><b>Formula</b>: +(2 * ln(1 + x) ^ 2)%, where x is Faction Coins found this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/ElvenUpgrade6.png" align="middle"> Secret Clicking Techniques</b></p>
 	<p><b>Cost</b>: 50 T (5e13)</p>
@@ -69,8 +69,8 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/ElvenUpgrade7.png" align="middle"> Elven Diplomacy</b></p>
 	<p><b>Cost</b>: 5 Qa (5e15)</p>
-	<p><b>Effect</b>: Clicks count more based on Faction Coins found this game.</p>
-	<p><b>Formula</b>: (2 * ln(1 + x) ^ 2)%, where x is Faction Coins found this game.</p>
+	<p><b>Effect</b>: Clicks count more based on Faction Coins found this Era.</p>
+	<p><b>Formula</b>: (2 * ln(1 + x) ^ 2)%, where x is Faction Coins found this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/ElvenUpgrade8.png" align="middle"> Elven Luck</b></p>
 	<p><b>Cost</b>: 50 Qa (5e16)</p>
@@ -160,13 +160,13 @@
 	<p><b><img src="/realm/Factions/picks/ElvenUpgrade12.png" alt="Elven Discipline" align="middle"> Elven Discipline</b></p>
 	<p><b>Cost</b>: 100 Tg (1e95) Emerald Coins</p>
 	<p><b>Requirement</b>: Elven Union</p>
-	<p><b>Effect</b>: Increase assistants additively and multiplicatively based on the amount of Faction Coins found in this game.</p>
-	<p><b>Formula</b>: +(50 * ln(1 + x) ^ 1.5), where x is Faction Coins found this game (additively).</p>
-	<p><b>Formula</b>: (1.5 * log10(1 + x) ^ 1.5)%, where x is Faction Coins found this game (multiplicatively).</p>
+	<p><b>Effect</b>: Increase assistants additively and multiplicatively based on the amount of Faction Coins found in this Era.</p>
+	<p><b>Formula</b>: +(50 * ln(1 + x) ^ 1.5), where x is Faction Coins found this Era (additively).</p>
+	<p><b>Formula</b>: (1.5 * log10(1 + x) ^ 1.5)%, where x is Faction Coins found this Era (multiplicatively).</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/AdvancedElvenHeritage.png" align="middle"> Advanced Elven Heritage</b></p>
 	<p><b>Cost</b>: 1 Sp (1e24) Elven Coins</p>
-	<p><b>Requirements</b>: Elven Master trophy and 6 hours activity time (This Game) of Moon Blessing.</p>
+	<p><b>Requirements</b>: Elven Master trophy and 6 hours activity time (This Era) of Moon Blessing.</p>
 	<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on the amount of clicks made in this Reincarnation.</p>
 	<p><b>Formula</b>: (0.25 * ln(1 + x) ^ 2)%, where x is amount of clicks this Reincarnation.</p>
 	<p><b>Note</b>: When using their lineage, Advanced Heritage powers are multiplied by the level of the lineage.</p>

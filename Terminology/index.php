@@ -68,7 +68,7 @@
         <center><b>Soft-Resets & Stats</b></center>
         <p><b>A Run</b>: refers to a game between abdications.</p>
         <p><b>A Session</b>: refers to a game between reincarnations.</p>
-        <p><b>This game and Current game</b>: started last abdication, and ends next abdication.</p>
+        <p><b>This Era and Current game</b>: started last abdication, and ends next abdication.</p>
         <p><b>Total</b>: refers to the current reincarnation.</p>
         <p><b>All-Time</b>: covers all reincarnations.</p>
         <hr>

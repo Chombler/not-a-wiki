@@ -499,7 +499,7 @@
 				<p><b>R111</b>: Union Effects</p>
 				<p><b>R116</b>: Prestige Factions Reintroduced</p>
 				<p><b>R120</b>: Second Alignment Spells Tier 2</p>
-				<p><b>R125</b>: Elite Factions (Archon, Djinn, and Makers)</p>
+				<p><b>R125</b>: Astral Factions (Archon, Djinn, and Makers)</p>
 				<p><b>R130</b>: Elite Unions and Lineages</p>
 				<p><b>R135-R153</b>: Elite Challenges</p>
 				<p><b>R160</b>: Ascension 3</p>

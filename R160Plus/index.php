@@ -201,7 +201,7 @@
                 <p><b>Faction</b>: Neutral/Balance Mercenary</p>
                 <p><b>Bloodline</b>: Fairy (first)</p>
                 <p><b>A2950</b>: Elf</p>
-                <p><b>Artifact Set</b>: Matching lineage; Dwarven for Elite factions</p>
+                <p><b>Artifact Set</b>: Matching lineage; Dwarven for Astral factions</p>
                 <p>
 					<button onclick="myFunction($(this))">Copy Build</button>
                     <input type="text" value="EL1,MK1,FC2,FC3,DG6,AN5,AR5,DD6,EL7,DG7,DW7,DJ9,EL11,UD10,DW12,AN12,SP:Dragon's Breath,SP:Infinite Spiral,UNN:DW,UB:Dragon Pasture,S400,S200,S5125,C5375,C400,C175,D275,D290,D200,D330,D3350,E5625,E320,A30,A120,A270,A305,A545,A2950,A1500,W275,W1275,W1375,W400,W1400,F5250">

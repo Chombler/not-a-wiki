@@ -137,7 +137,7 @@
 		<area href="/realm/MercBuilds/#TrophyBuilds" target="" research="<img src=/realm/Factions/picks/HarlequinSecretTrophy.png align=middle> <b>Harlequin</b></p>
 	<p><b>Requirement</b>: As a Mercenary, purchase one upgrade from 11 different factions.</p>
 	<p><b>Cost</b>: 5 Qivg (5e78), A1+ Free</p>
-	<p><b>Effect</b>: Increases the production of all buildings based on the number of upgrades bought this game from different Factions (A Nerfed).</p>
+	<p><b>Effect</b>: Increases the production of all buildings based on the number of upgrades bought this Era from different Factions (A Nerfed).</p>
 	<p><b>Formula</b>: (x ^ 3)%, where x is the number of Factions with at least one of their upgrades being used (up to 3375% maximum possible).</p>
 	<p><b>Note</b>: This can be done at R3 with Merc Build (Harlequin)</p>
 	<p><b>Note</b>: Click image to go to the Harlequin Build.</p>
@@ -166,7 +166,7 @@
 		<area research="<img src=/realm/Factions/picks/BloodstreamSecretTrophy.png align=middle> <b>Bloodstream</b></p>
 	<p><b>Requirement</b>: Purchase 100 upgrades of each faction (Anything that is faction colored counts) (All Game)</p>
 	<p><b>Cost</b>: 1 Tg (1e93), A1+ Free</p>
-	<p><b>Effect</b>: Increase the production of all buildings based on the time spent as faction of the bloodline you are using. While you are a mercenary, a fraction of the total time spent as mercenary is added to your Bloodstream bonus based on the amount of Mercenary upgrades purchased in this game from the faction of the bloodline you are using. (A Nerfed)</p>
+	<p><b>Effect</b>: Increase the production of all buildings based on the time spent as faction of the bloodline you are using. While you are a mercenary, a fraction of the total time spent as mercenary is added to your Bloodstream bonus based on the amount of Mercenary upgrades purchased in this Era from the faction of the bloodline you are using. (A Nerfed)</p>
 	<p><b>Formula</b>: (0.1 * x ^ 0.65)%, where x is your (adjusted) time spent affiliated with the bloodline's faction in seconds.</p>
 	<p><b>Note</b>: This can be done at R7</p>
 	" coords="183,223,237,277" shape="rect">
@@ -229,7 +229,7 @@
 	<p><b>Note</b>: Advised to do once you have Prestige Research.</p>
 	" coords="3,343,57,397" shape="rect">
 		<area research="<img src=/realm/Factions/picks/ThatExcavatedQuicklySecretTrophy.png align=middle> <b>That Excavated Quickly</b>
-	<p><b>Requirement</b>: Excavate 1000 times in the first 30 seconds of a run (This Game)</p>
+	<p><b>Requirement</b>: Excavate 1000 times in the first 30 seconds of a run (This Era)</p>
 	<p><b>Cost</b>: 1 Qag (1e123), A1+ Free</p>
 	<p><b>Effect</b>: Your chance to find Faction Coins with excavations is increased by an additional 5%.</p>
 	<p><b>Note</b>: Around R20, make sure to keep your excavations low until you have enough gems to excavate 1000 times - make a save file, abdicate, then try go for the trophy. Undo if necessary.</p>
@@ -259,7 +259,7 @@
 	<p><b>Note</b>: Can be done at any R.</p>
 	" coords="303,343,357,397" shape="rect">
 		<area research="<img src=/realm/Factions/picks/BecauseILiketoGrindSecretTrophy.png align=middle> <b>Because I Like to Grind</b>
-	<p><b>Requirement</b>: Spend at least 3 hours playing in this game.</p>
+	<p><b>Requirement</b>: Spend at least 3 hours playing in this Era.</p>
 	<p><b>Cost</b>: 1000 coins, A1+ Free</p>
 	<p><b>Effect</b>: Increase Royal Exchange bonus by an additional 1%.</p>
 	<p><b>Note</b>: Done at R0.</p>
@@ -325,8 +325,8 @@
 		<area research="<img src=/realm/Factions/picks/ManaWasteSecretTrophy.png align=middle> </b>Mana Waste</b>
 	<p><b>Requirement</b>: Have mana regeneration higher than max mana.</p>
 	<p>Cost : 1 Td (1e42), A1+ Free</p>
-	<p><b>Effect</b>: Increase Maximum Mana based on spells cast in this game.</p>
-	<p><b>Formula</b>: +(127 * (log10(1 + x)) ^ 2.7), where x is spells cast this game.</p>
+	<p><b>Effect</b>: Increase Maximum Mana based on spells cast in this Era.</p>
+	<p><b>Formula</b>: +(127 * (log10(1 + x)) ^ 2.7), where x is spells cast this Era.</p>
 	" coords="123,463,177,517" shape="rect">
 		<area research="<img src=/realm/Factions/picks/PrismaticManaTrophy.png align=middle> </b>Prismatic Mana</b>
 	<p><b>Requirements</b>: R40+, Cast the same amount of Faction spells with all Vanilla and Neutral Factions with a minimum of 100 casts.</p>
@@ -405,54 +405,54 @@
 		<area research="<img src=/realm/Factions/picks/TrueHarlequin.png align=middle> <b>True Harlequin</b>
 	<p><b>Requirement</b>: R160+, Mercenary Duel unlocked, As a Mercenary, purchase one upgrade from 15 different factions.</p>
 	<p><b>Cost</b>: 1e152 (100 Noqag)</p>
-	<p><b>Effect</b>: Increases the production of all buildings based on the number of upgrades bought this game from different Factions.</p>
+	<p><b>Effect</b>: Increases the production of all buildings based on the number of upgrades bought this Era from different Factions.</p>
 	<p><b>Formula</b>: ((x * floor(1 + x / 5)) ^ 3)%, where x is the number of Factions with at least one of their upgrades being used (up to 216,000% maximum possible).</p>	
 	<p><b>Note</b>: Upgrade only requires 5 different faction upgrades to be purchasable.</p> 
 	" coords="3,583,57,637" shape="rect">
 	</map>
 	<map name="AllegiancesTrophies-map">
 		<area research="<img src=/realm/Factions/picks/Fairy.png align=middle> <b>Fairy Champion</b>
-	<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this game (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+	<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 	<p><b>Note</b>: Can be done at R0.</p>
 	" coords="3,43,57,97" shape="rect">
 		<area research="<img src=/realm/Factions/picks/Elf.png align=middle> </b>Elven Champion</b>
-	<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this game (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+	<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 	<p><b>Note</b>: Can be done at R0.</p>
 	" coords="63,43,117,97" shape="rect">
 		<area research="<img src=/realm/Factions/picks/Angel.png align=middle> </b>Angel Champion</b>
-	<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this game (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+	<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 	<p><b>Note</b>: Can be done at R0.</p>
 	" coords="123,43,177,97" shape="rect">
 		<area research="<img src=/realm/Factions/picks/Goblin.png align=middle> </b>Goblin Champion</b>
-	<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this game (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+	<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 	<p><b>Note</b>: Can be done at R0.</p>
 	" coords="183,43,237,97" shape="rect">
 		<area research="<img src=/realm/Factions/picks/Undead.png align=middle> </b>Undead Champion</b>
-	<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this game (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+	<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 	<p><b>Note</b>: Can be done at R0.</p>
 	" coords="243,43,297,97" shape="rect">
 		<area research="<img src=/realm/Factions/picks/Demon.png align=middle> </b>Demon Champion</b>
-	<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this game (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+	<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 	<p><b>Note</b>: Can be done at R0.</p>
 	" coords="303,43,357,97" shape="rect">
 		<area research="<img src=/realm/Factions/picks/Titan.png align=middle> </b>Titan Champion</b>
-	<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this game (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+	<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 	<p><b>Note</b>: Can be done at R0.</p>
 	" coords="363,43,417,97" shape="rect">
 		<area research="<img src=/realm/Factions/picks/Druid.png align=middle> </b>Druid Champion</b>
-	<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this game (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+	<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 	<p><b>Note</b>: Can be done at R0.</p>
 	" coords="3,103,57,157" shape="rect">
 		<area research="<img src=/realm/Factions/picks/Faceless.png align=middle> </b>Faceless Champion</b>
-	<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this game (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+	<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 	<p><b>Note</b>: Can be done at R0.</p>
 	" coords="63,103,117,157" shape="rect">
 		<area research="<img src=/realm/Factions/picks/Dwarves.png align=middle> </b>Dwarven Champion</b>
-	<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this game (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+	<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 	<p><b>Note</b>: Can be done at R0.</p>
 	" coords="123,103,177,157" shape="rect">
 		<area research="<img src=/realm/Factions/picks/Drow.png align=middle> </b>Drow Champion</b>
-	<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this game (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+	<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 	<p><b>Note</b>: Can be done at R0.</p>
 	" coords="183,103,237,157" shape="rect">
 		<area research="<img src=/realm/Factions/picks/Mercenary.png align=middle> </b>Mercenary Champion</b>
@@ -463,19 +463,19 @@
 	<p><b>Tier 3 Upgrades</b>: Mercenary Third Contract, Mercenary Sorcery Contract, Mercenary Upgrades 9,10,11,12</p>
 	" coords="243,103,297,157" shape="rect">
 		<area research="<img src=/realm/Factions/picks/DragonChampionTrophy.png align=middle> </b>Dragon Champion</b>
-	<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this game (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+	<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 	<p><b>Note</b>: Can be done at R46+.</p>
 	" coords="303,103,357,157" shape="rect">
 		<area research="<img src=/realm/Factions/picks/ArchonChampion.png align=middle> </b>Archon Champion</b>
-	<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this game (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+	<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 	<p><b>Note</b>: Can be done at R125+.</p>
 	" coords="363,103,417,157" shape="rect">
 		<area research="<img src=/realm/Factions/picks/DjinnChampion.png align=middle> </b>Djinn Champion</b>
-	<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this game (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+	<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 	<p><b>Note</b>: Can be done at R125+.</p>
 	" coords="3,163,57,217" shape="rect">
 		<area research="<img src=/realm/Factions/picks/MakersChampion.png align=middle> </b>Makers Champion</b>
-	<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this game (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+	<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 	<p><b>Note</b>: Can be done at R125+.</p>
 	" coords="63,163,117,217" shape="rect">
 		<area research="<img src=/realm/Factions/picks/OathoftheMercenaries.png align=middle> </b>Mercenary Oath</b>
@@ -1056,7 +1056,7 @@
 		<area research="<img src=/realm/Factions/picks/EliteChallenger.png align=middle> </b>Elite Challenger</b>
 	<p><b>Requirement</b>: Complete all the MAD Challenges, R153+</p>
 	<p><b>Cost</b>: 10, A3+ Free</p>
-	<p><b>Effect</b>: Increase the overall production of Elite Factions by 25%.</p>
+	<p><b>Effect</b>: Increase the overall production of Astral Factions by 25%.</p>
 	" coords="183,1363,237,1417" shape="rect">
 		<area research="<img src=/realm/Factions/picks/NoviceResearcherSecretTrophy.png align=middle> </b>Novice Researcher</b>
 	<p><b>Requirement</b>: Research 600 times across all fields.</p>
@@ -1415,7 +1415,7 @@
 		<area research="<img src=/realm/Factions/picks/ChronoLoadingSpellUpgrade.png align=middle> Chrono Loading</b>
 	<p><b>Requirements</b>: R125+, Cast Precognition with at least 100 Qa (1e17) mana regeneration.</p>
 	<p><b>Cost</b>: 10 Octg (1e118), A3+ Free</p>
-	<p><b>Effect</b>: A fraction of Precognition duration is added to time spent in this game.</p>
+	<p><b>Effect</b>: A fraction of Precognition duration is added to time spent in this Era.</p>
 	<p><b>Effect</b>: Scale off invisible spell duration modifiers.</p>
 	<p><b>Formula</b>: (150 * ln(1 + x / 60) ^ 2), where x is its duration.</p>
 	<p><b>Note</b>: Precognition raises regen itself. Make sure that you have 1e17 with it not active.</p>
@@ -1426,7 +1426,7 @@
 	<p><b>Effect</b>: Also adds 150 casts to Limited wish formula.</p>
 	" coords="183,523,237,577" shape="rect">
 		<area research="<img src=/realm/Factions/picks/RealityCraterSpellUpgrade.png align=middle> Reality Crater</b></b>
-	<p><b>Requirements</b>: R125+, Cast Infinite Spiral with at least 10 excavation resets this game.</p>
+	<p><b>Requirements</b>: R125+, Cast Infinite Spiral with at least 10 excavation resets this Era.</p>
 	<p><b>Cost</b>: 10 Octg (1e118), A3+ Free</p>
 	<p><b>Effect</b>: Infinite Spiral also reduces excavation cost multiplier based on assistants owned.</p>
 	<p><b>Formula</b>: (0.001 * log(1 + x)), where x is assistants owned.</p>

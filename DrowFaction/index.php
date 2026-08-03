@@ -69,7 +69,7 @@
 	<p><b><img src="/realm/Factions/picks/DrowUpgrade4.png" align="middle"> Mana Addicts</b></p>
 	<p><b>Cost</b>: 50 Qid (5e49)</p>
 	<p><b>Effect</b>: Mana Regeneration increases over time.</p>
-	<p><b>Formula</b>: +(2.5 + 0.25 * x ^ 0.5), where x is time spent in this game.</p>
+	<p><b>Formula</b>: +(2.5 + 0.25 * x ^ 0.5), where x is time spent in this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DrowUpgrade5.png" align="middle"> Blood Sacrifices</b></p>
 	<p><b>Cost</b>: 500 Qid (5e50)</p>
@@ -98,13 +98,13 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DrowUpgrade9.png" align="middle"> Blade Dance</b></p>
 	<p><b>Cost</b>: 50 Spd (5e55)</p>
-	<p><b>Effect</b>: Increase the production of all buildings based on Combo Strike counter in this game.</p>
+	<p><b>Effect</b>: Increase the production of all buildings based on Combo Strike counter in this Era.</p>
 	<p><b>Formula</b>: (100 + 80 * x ^ 0.4)%, where x is your Combo Strike counter.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/DrowHeritage.png" alt="Drow Heritage" align="middle"> Drow Heritage</b></p>
 	<p><b>Requirements</b>: Drow Champion Trophy</p>
 	<p><b>Cost</b>: 75,000 Drow Coins</p>
-	<p><b>Effect</b>: Increase the production of assistants based on the amount of royal exchanges you purchased in this game.</p>
+	<p><b>Effect</b>: Increase the production of assistants based on the amount of royal exchanges you purchased in this Era.</p>
 	<p><b>Formula</b>: (2 * x ^ 0.8)%, where x is your Royal Exchanges Made stat.</p>
 	<hr>
 	<p><b>Drow Research Requirements</b></p>
@@ -150,7 +150,7 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/BrothelQuest.png" align="middle"> Brothel Quest</b></p>
 	<p><b>Description</b>: Yawn... Kivvil, your realm is starting to bore us. We need better places to have fun and Rest. Show us your spellcasting ability and we'll teach you a few new things about underworld fun.</p>
-	<p><b>Requirement</b>: 1 B (1e9) spells cast this game</p>
+	<p><b>Requirement</b>: 1 B (1e9) spells cast this Era</p>
 	<p><b>Cost</b>: 100 Vg (1e65)</p>
 	<p><b>Effect</b>: Grants access to Unique Building.</p>
 	<br/>
@@ -162,7 +162,7 @@
 	<p><b>Unique Building</b></p>
 	<p><b><img src="/realm/Factions/picks/BrothelUniqueBuilding.png" align="middle"></b></p>
 	<p><b>Effect</b>: Upgrade Inns to Brothels, boosting their production based on Royal Exchanges made and unlocking more unique perks for the buildings.</p>
-	<p><b>Formula</b>: (10 * x ^ 1.05)%, where x is Royal Exchanges purchased this game.</p>
+	<p><b>Formula</b>: (10 * x ^ 1.05)%, where x is Royal Exchanges purchased this Era.</p>
 	<p><b>Effect</b>: Grants access to Faction Union.</p>
 	<hr>
 	<p><b>Tier 4 Upgrades</b></p>
@@ -176,10 +176,10 @@
 	<br/>
 	<p><b>Proof of Chaos</b>: Increase the production of a specific building tier, depending on the amount of buildings you own, based on time spent offline in this Reincarnation.</p>
 	<p><b>Production Formula</b>: (0.666 * x ^ 0.666)%, where x is time spent offline in this Reincarnation.</p>
-	<p><b>Chosen Building Tier Formula</b>: (1 + x % 11), where x is total building count this game (unaffected by count more upgrades).</p>
+	<p><b>Chosen Building Tier Formula</b>: (1 + x % 11), where x is total building count this Era (unaffected by count more upgrades).</p>
 	<br/>
-	<p><b>Proof of Balance</b>: Multiplicatively Increase Maximum Mana based on Tax Collections cast this game.</p>
-	<p><b>Formula</b>: (0.05 * ln(1 + x) ^ 2.5)%, where x is Tax Collections cast this game.</p>
+	<p><b>Proof of Balance</b>: Multiplicatively Increase Maximum Mana based on Tax Collections cast this Era.</p>
+	<p><b>Formula</b>: (0.05 * ln(1 + x) ^ 2.5)%, where x is Tax Collections cast this Era.</p>
 	<br/>
 	<p><b>Union Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/DrowUpgrade10.png" align="middle"> Spider Clerics</b></p>
@@ -198,10 +198,10 @@
 	<p><b>Formula</b>: (1.75 * log10(1 + x) ^ 1.75)%, where x is your current amount of gems.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/AdvancedDrowHeritage.png" align="middle"> Advanced Drow Heritage</b></p>
-	<p><b>Requirement</b>: Drow Master trophy and 6 hours activity time (This Game) of Combo Strike.</p>
+	<p><b>Requirement</b>: Drow Master trophy and 6 hours activity time (This Era) of Combo Strike.</p>
 	<p><b>Cost</b>: 1 Sp (1e24) Drow Coins</p>
-	<p><b>Effect</b>: Increase the production of all buildings based on offline bonus and time spent in this game.</p>
-	<p><b>Formula</b>: (0.0008 * log10(1 + x) * y ^ 0.8)%, where x offline bonus and y is time spent this game.</p>
+	<p><b>Effect</b>: Increase the production of all buildings based on offline bonus and time spent in this Era.</p>
+	<p><b>Formula</b>: (0.0008 * log10(1 + x) * y ^ 0.8)%, where x offline bonus and y is time spent this Era.</p>
 	<p><b>Note</b>: When using their lineage, Advanced Heritage powers are multiplied by the level of the lineage.</p>
 	<p><b>Formula</b>: *(1 + 0.3 * level)</p>
 <?php include "../scripts/footer.html"; ?>

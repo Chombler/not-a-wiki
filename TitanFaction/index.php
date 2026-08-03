@@ -60,8 +60,8 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/TitanUpgrade2.png" alt="Charged Clicks" align="middle"> Charged Clicks</b></p>
 	<p><b>Cost</b>: 5 Sx (5e21)</p>
-	<p><b>Effect</b>: Multiplicatively increase Mana Regeneration based on clicks made in this game.</p>
-	<p><b>Formula</b>: (25 + 2.5 * log10(1 + x) ^ 2.5 + x ^ 0.25)%, where x is clicks made this game.</p>
+	<p><b>Effect</b>: Multiplicatively increase Mana Regeneration based on clicks made in this Era.</p>
+	<p><b>Formula</b>: (25 + 2.5 * log10(1 + x) ^ 2.5 + x ^ 0.25)%, where x is clicks made this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/TitanUpgrade3.png" alt="Titan Obelisk" align="middle"> Titan Obelisk</b></p>
 	<p><b>Cost</b>: 50 Sx (5e22)</p>
@@ -173,10 +173,10 @@
 	<p><b>Requirement</b>: Mountain Palace Unique Building</p>
 	<p><b>Cost</b>: 1 Qi (1e18) Angel and Goblin Coins</p>
 	<p><b>Effect</b>: Grants access to Union Upgrades.</p>
-	<p><b>Effect (R111+)</b>: Multiplicatively increase Faction Coin find chance based on time spent in this game.</p>
-	<p><b>Formula</b>: 50 * (x / 3600) ^ 0.85)%, where x is time spent in this game.</p>
-	<p><b>Effect (R111+)</b>: Also increase maximum Mana additively based on time spent in this game.</p>
-	<p><b>Formula</b>: +(20 * x ^ 0.75), where x is time spent in this game.</p>
+	<p><b>Effect (R111+)</b>: Multiplicatively increase Faction Coin find chance based on time spent in this Era.</p>
+	<p><b>Formula</b>: 50 * (x / 3600) ^ 0.85)%, where x is time spent in this Era.</p>
+	<p><b>Effect (R111+)</b>: Also increase maximum Mana additively based on time spent in this Era.</p>
+	<p><b>Formula</b>: +(20 * x ^ 0.75), where x is time spent in this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/TitanUpgrade10.png" alt="Giant Market" align="middle"> Giant Market</b></p>
 	<p><b>Requirement</b>: Titan Union</p>
@@ -197,7 +197,7 @@
 	<p><b>Formula</b>: +(25 * x ^ 0.7), where x time spent as Order in this Reincarnation.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/AdvancedTitanHeritage.png" align="middle"> Advanced Titan Heritage</b></p>
-	<p><b>Requirement</b>: Titan Master trophy 6 hours activity time (This Game) of Lightning Strike.</p>
+	<p><b>Requirement</b>: Titan Master trophy 6 hours activity time (This Era) of Lightning Strike.</p>
 	<p><b>Cost</b>: 1 Sp (1e24) Angel and Goblin Coins</p>
 	<p><b>Effect</b>: Increase Maximum Mana based on the amount of Royal Exchanges purchased.</p>
 	<p><b>Formula</b>: (0.85 * ln(1 + x) ^ 1.15)%, where x is Royal Exchanges purchased.</p>

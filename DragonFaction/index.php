@@ -142,7 +142,7 @@
 	<p><b><img src="/realm/Factions/picks/DragonUpgrade7.png" align="middle"> Ancient Hunger</b></p>
 	<p><b>Requirement</b>: Dragons Alliance</p>
 	<p><b>Cost</b>: 500 Tvg (5e74)</p>
-	<p><b>Effect</b>: Increase Maximum Mana additively and multiplicatively based on the amount of Faction Coins found in this game.</p>
+	<p><b>Effect</b>: Increase Maximum Mana additively and multiplicatively based on the amount of Faction Coins found in this Era.</p>
 	<p><b>Formula (Additive)</b>: +(15 * ln(1 + x) ^ 2.5), where x is Faction Coins found this Era.</p>
 	<p><b>Formula (Multiplicative)</b>: (0.5 * ln(1 + x) ^ 1.5)%, where x is Faction Coins found this Era.</p>
 	<br/>
@@ -234,7 +234,7 @@
 	<p><b>Formula</b>: (10 * ln(1 + x) ^ 2)%, where x is your Maximum Mana.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/AdvancedDragonHeritage.png" align="middle"> Advanced Dragon Heritage</b></p>
-	<p><b>Requirement</b>: Dragon Master trophy and 6 hours activity time (This Game) of Dragon's Breath.</p>
+	<p><b>Requirement</b>: Dragon Master trophy and 6 hours activity time (This Era) of Dragon's Breath.</p>
 	<p><b>Cost</b>: 1 Sp (1e24) Dwarven and Drow Coins</p>
 	<p><b>Effect</b>: The amount of active spells counts 5% more for all purposes.</p>
 	<p><b>Note</b>: When using their lineage, Advanced Heritage powers are multiplied by the level of the lineage.</p>

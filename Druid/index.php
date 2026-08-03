@@ -9,8 +9,8 @@
 	<p>"The ancient Druids request evidence that you are a servant of balance before your inclusion to their ranks."</p>
 	<p><b>Requirements</b>: Druid as Base Faction, Reincarnation 4+, Halls of Balance upgrade purchased, Elven and Demon challenge 1 completed.</p>
 	<p><b>Challenge</b>: Make the building targeted by Grand Balance surpass 99.9% of your production.</p>
-	<p><b>Effect</b>: Gain assistants based on time spent in this game.</p>
-	<p><b>Formula</b>: +(0.7 * x ^ 0.7), where x is time spent this game.</p>
+	<p><b>Effect</b>: Gain assistants based on time spent in this Era.</p>
+	<p><b>Formula</b>: +(0.7 * x ^ 0.7), where x is time spent this Era.</p>
 	<p><b>Upgrade</b>: Works with Druid</p>
 	<p><b>Tips</b>
 	<p>Buy the building upgrades of the amount before the arrow, then continue building without purchasing new building upgrades towards the amount after the arrow.</p>
@@ -32,7 +32,7 @@
 	<p><img src="/realm/Factions/picks/BalancedCurrentChallenge.png" alt="Balanced Current" align="middle"> <b>Balanced Current</b></p>
 	<p>"Our sorcerers are desperately trying to stabilize the balance of the realm, this is your opportunity to gain their favor - and live another day."</p>
 	<p><b> Requirements</b>: Druid as Base Faction, Reincarnation 9+, Druid Bloodline, Elven and Demon challenge 2 and Druid challenge 1 completed.</p>
-	<p><b>Challenge</b>: Have exactly 1,500 of each building types for 15 full Grand Balance casts in this game. (The 15 casts only counts after you have all the 1500 buildings.)</p>
+	<p><b>Challenge</b>: Have exactly 1,500 of each building types for 15 full Grand Balance casts in this Era. (The 15 casts only counts after you have all the 1500 buildings.)</p>
 	<p><b>Effect</b>: Mana regeneration is increased by 1% for every 5000 buildings.</p>
 	<p><b>Upgrade</b>: Works with Titan</p>
 	<hr>

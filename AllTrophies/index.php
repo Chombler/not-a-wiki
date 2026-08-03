@@ -129,7 +129,7 @@
 					<p><img src="/realm/Factions/picks/HarlequinSecretTrophy.png" align="middle"><b> Harlequin</b></p>
 					<p><b>Requirement</b>: As a Mercenary, purchase one upgrade from 11 different factions.</p>
 					<p><b>Cost</b>: 5 Qivg (5e78), A1, Free</p>
-					<p><b>Effect</b>: Increases the production of all buildings based on the number of upgrades bought this game from different Factions.</p>
+					<p><b>Effect</b>: Increases the production of all buildings based on the number of upgrades bought this Era from different Factions.</p>
 					<p><b>Formula</b>: (x ^ 3)%, where x is the number of Factions with at least one of their upgrades being used (up to 3375% maximum possible).</p>
 					<p><b>Note</b>: This can be done at R3 with Merc Build <a target="_blank" href="/realm/SpecialBuilds/"><b>(Harlequin)</b></a></p>
 					<hr>
@@ -220,7 +220,7 @@
 					<p><b>Note</b>: Advised to do once you have Prestige Research.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/ThatExcavatedQuicklySecretTrophy.png" align="middle"><b> That Excavated Quickly</b></p>
-					<p><b>Requirement</b>: Excavate 1000 times in the first 30 seconds of a run (This Game)</p>
+					<p><b>Requirement</b>: Excavate 1000 times in the first 30 seconds of a run (This Era)</p>
 					<p><b>Cost</b>: 1 Qag (1e123), A1+ Free</p>
 					<p><b>Effect</b>: Your chance to find Faction Coins with excavations is increased by an additional 5%.</p>
 					<p><b>Note</b>: Around R20, make sure to keep your excavations low until you have enough gems to excavate 1000 times - make a save file, abdicate, then try go for the trophy. Undo if necessary.</p>
@@ -251,7 +251,7 @@
 					<p><b>Note</b>: This can be done at any R.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/BecauseILiketoGrindSecretTrophy.png" align="middle"><b> Because I Like to Grind</b></p>
-					<p><b>Requirement</b>: Spend at least 3 hours playing in this game.</p>
+					<p><b>Requirement</b>: Spend at least 3 hours playing in this Era.</p>
 					<p><b>Cost</b>: 1000 coins, A1+ Free</p>
 					<p><b>Effect</b>: Increase Royal Exchange bonus by an additional 1%.</p>
 					<hr>
@@ -313,8 +313,8 @@
 					<p><img src="/realm/Factions/picks/ManaWasteSecretTrophy.png" align="middle"><b> Mana Waste</b></p>
 					<p><b>Requirement</b>: Have mana regeneration higher than max mana.</p>
 					<p><b>Cost</b>: 1 Td (1e42), A1+ Free</p>
-					<p><b>Effect</b>: Increase maximum mana based on spells cast in this game.</p>
-					<p><b>Formula</b>: +(127 * (log10(1 + x)) ^ 2.7), where x is spells cast this game.</p>
+					<p><b>Effect</b>: Increase maximum mana based on spells cast in this Era.</p>
+					<p><b>Formula</b>: +(127 * (log10(1 + x)) ^ 2.7), where x is spells cast this Era.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/PrismaticManaTrophy.png" align="middle"><b> Prismatic Mana</b></p>
 					<p><b>Requirements</b>: R40+, Cast the same amount of Faction spells with all Vanilla and Neutral Factions with a minimum of 100 casts each(This R).</p>
@@ -472,47 +472,47 @@
 				<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">Allegiances Trophies (41)</a></b></p>
 				<div class="autohide">
 					<p><img src="/realm/Factions/picks/Fairy.png" align="middle"><b> Fairy Champion</b></p>
-					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this game (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 					<p><b>Note</b>: This can be done at R0.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/Elf.png" align="middle"><b> Elven Champion</b></p>
-					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this game (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 					<p><b>Note</b>: This can be done at R0.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/Angel.png" align="middle"><b> Angel Champion</b></p>
-					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this game (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 					<p><b>Note</b>: This can be done at R0.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/Goblin.png" align="middle"><b> Goblin Champion</b></p>
-					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this game (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 					<p><b>Note</b>: This can be done at R0.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/Undead.png" align="middle"><b> Undead Champion</b></p>
-					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this game (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 					<p><b>Note</b>: This can be done at R0.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/Demon.png" align="middle"><b> Demon Champion</b></p>
-					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this game (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 					<p><b>Note</b>: This can be done at R0.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/Titan.png" align="middle"><b> Titan Champion</b></p>
-					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this game (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 					<p><b>Note</b>: This can be done at R0.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/Druid.png" align="middle"><b> Druid Champion</b></p>
-					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this game (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 					<p><b>Note</b>: This can be done at R0.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/Faceless.png" align="middle"><b> Faceless Champion</b></p>
-					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this game (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 					<p><b>Note</b>: This can be done at R0.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/Dwarves.png" align="middle"><b> Dwarven Champion</b></p>
-					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this game (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 					<p><b>Note</b>: This can be done at R0.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/Drow.png" align="middle"><b> Drow Champion</b></p>
-					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this game (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 					<p><b>Note</b>: This can be done at R0.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/Mercenary.png" align="middle"><b> Mercenary Champion</b></p>
@@ -523,19 +523,19 @@
 					<p><b>Tier 3 Upgrades</b>: Mercenary Third Contract, Mercenary Sorcery Contract, Mercenary Upgrades 9,10,11,12</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/DragonChampionTrophy.png" align="middle"><b> Dragon Champion</b></p>
-					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this game (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 					<p><b>Note</b>: This can be done at R46+.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/ArchonChampion.png" align="middle"><b> Archon Champion</b></p>
-					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this game (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 					<p><b>Note</b>: This can be done at R125+.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/DjinnChampion.png" align="middle"><b> Djinn Champion</b></p>
-					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this game (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 					<p><b>Note</b>: This can be done at R125+.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/MakersChampion.png" align="middle"><b> Makers Champion</b></p>
-					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this game (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 					<p><b>Note</b>: This can be done at R125+.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/OathoftheMercenaries.png" align="middle"><b> Mercenary Oath</b></p>
@@ -1122,7 +1122,7 @@
 					<p><img src="/realm/Factions/picks/EliteChallenger.png" align="middle"><b> Elite Challenger</b></p>
 					<p><b>Requirement</b>: Complete all the MAD Challenges, R153+</p>
 					<p><b>Cost</b>: 10</p>
-					<p><b>Effect</b>: Increase the overall production of Elite Factions by 25%.</p>
+					<p><b>Effect</b>: Increase the overall production of Astral Factions by 25%.</p>
 					<p><b>Note</b>: Not A-Nerfed.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/NoviceResearcherSecretTrophy.png" align="middle"><b> Novice Researcher</b></p>
@@ -1481,7 +1481,7 @@
 					<p><img src="/realm/Factions/picks/ChronoLoadingSpellUpgrade.png" align="middle"><b> Chrono Loading</b></p>
 					<p><b>Requirements</b>: R125+, Cast Precognition with at least 100 Qa (1e17) mana regeneration.</p>
 					<p><b>Cost</b>: 10 Octg (1e118)</p>
-					<p><b>Effect</b>: A fraction of Precognition duration is added to time spent in this game.</p>
+					<p><b>Effect</b>: A fraction of Precognition duration is added to time spent in this Era.</p>
 					<p><b>Effect</b>: Scale off invisible spell duration modifiers.</p>
 					<p><b>Formula</b>: (100 * ln(1 + x / 60) ^ 2.5), where x is its duration.</p>
 					<p><b>Note</b>: Precognition raises regen itself. Make sure that you have 100 Qa (1e17) with it not active</p>
@@ -1492,7 +1492,7 @@
 					<p><b>Effect</b>: Also adds 150 casts to Limited wish formula.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/RealityCraterSpellUpgrade.png" align="middle"><b> Reality Crater</b></p>
-					<p><b>Requirements</b>: R125+, Cast Infinite Spiral with at least 10 excavation resets this game.</p>
+					<p><b>Requirements</b>: R125+, Cast Infinite Spiral with at least 10 excavation resets this Era.</p>
 					<p><b>Cost</b>: 10 Octg (1e118)</p>
 					<p><b>Effect</b>: Infinite Spiral also reduces excavation cost multiplier based on assistants owned.</p>
 					<p><b>Formula</b>: (0.001 * log(1 + x)), where x is assistants owned.</p>

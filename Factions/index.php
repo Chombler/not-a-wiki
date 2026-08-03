@@ -25,7 +25,7 @@
 <p>Angels' ability with magic is unparalleled as they have the innate power to infuse mana into everything they touch.</p>
 <p>Affiliating yourself with the Angels faction will grant you nearly unlimited spell power and the ability to take advantage of it directly.</p>
 <p>Part of the Good Vanilla Factions, Angels empower mana and spells, and thus can help when aiming for the mana and spell trophy series.</p>
-<p>Their Bloodline increases Mana Regeneration based on spells cast this game.</p>
+<p>Their Bloodline increases Mana Regeneration based on spells cast this Era.</p>
 	" coords="124,4,178,58" shape="rect">
 	<area href="/realm/GoblinFaction/" research="
 <p><b>Goblin</b></p>
@@ -226,7 +226,7 @@
 <p>The Neutral Factions were added in the Ancient Races expansion, they cover a mixture both active and passive game-play and may offer faster advancement than Good and Evil factions. Neutral Factions are only available once you have reached billion gems and fulfilled certain requirements.</p>
 <p>Part of the Underworld expansion, Prestige Factions are purchased in "addition to" a Vanilla faction of the same alignment. They enable the player to combine the power from both the Vanilla and Prestige factions.</p>
 <p>Mercenaries were added in the After-life expansion as an ultimate powerhouse.</p>
-<p>Elite Factions were added in v3.4, they are paired with the additional alignment unlocked in Ascension 2 and will be able to stack upon a base and prestige factions, for a total of three affiliations simultaneously.</p>
+<p>Astral Factions were added in v3.4, they are paired with the additional alignment unlocked in Ascension 2 and will be able to stack upon a base and prestige factions, for a total of three affiliations simultaneously.</p>
 <hr>
 <p><b>Faction Spell & Upgrades</b></p>
 <p>Each Faction has its own Faction specific spell and 3x3 Tier upgrades (3x4 for Mercenaries). The Tier upgrades only show up in order, so when you buy Tier 1 then Tier 2 will show up and then Tier 3, and hence cannot be bought before.</p>

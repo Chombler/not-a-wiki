@@ -33,7 +33,7 @@
 	<p><b>Formula</b>: +(1.75 * ln(1 + x) ^ (1.75 + 0.5 * A)), where x is the amount of assistants you own and A is how many times you have ascended.</p>
 	<br/>
 	<p><img src="/realm/Factions/picks/SunForce12pm6pm.png" alt="SunForce12pm6pm" align="middle"><b><font color="red"> 12 PM - 6 PM</font></b></p>
-	<p><b>Effect</b>: Increase the production of all buildings based on the amount of Faction Coins you collected in this game.</p>
+	<p><b>Effect</b>: Increase the production of all buildings based on the amount of Faction Coins you collected in this Era.</p>
 	<p><b>Formula</b>: (ln(1 + x) ^ (3 + 3 * A))%, where x is your faction coins and A is how many times you have ascended.</p>
 	<br/>
 	<p><img src="/realm/Factions/picks/SunForce6pm12am.png" alt="SunForce6pm12am" align="middle"><b><font color="red"> 6 PM - 12 AM</font></b></p>

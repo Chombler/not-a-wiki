@@ -13,7 +13,7 @@
 	<p><b>Clue</b>: Click to Carve.</p>
 	<p><b>Description</b>: Made from stone so ancient it is unknown to the current world. Two parts seem to be missing.</p>
 	<p><b>Requirements</b>: R125+, 12,500+ Excavations, Play as Elven</p>
-	<p><b>Chance</b>: (log10(1 + x) ^ 3 / 20,000)%, where x is clicks this game</p>
+	<p><b>Chance</b>: (log10(1 + x) ^ 3 / 20,000)%, where x is clicks this Era</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/SecondStoneFragment.png" align="middle"> Second Stone Fragment</b></p>
 	<p><b>Clue</b>: Stone to stone, buildings to buildings.</p>
@@ -25,7 +25,7 @@
 	<p><b>Clue</b>: Might be collected with taxes.</p>
 	<p><b>Description</b>: Made from stone so ancient it is unknown to the current world. Two parts seem to be missing.</p>
 	<p><b>Requirements</b>: R125+, 12,500+ Excavations, Play as Goblin</p>
-	<p><b>Chance</b>: (log10(1 + x) ^ 3 / 125,000)%, where x is Tax Collections this game.</p>
+	<p><b>Chance</b>: (log10(1 + x) ^ 3 / 125,000)%, where x is Tax Collections this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MakersMask.png" align="middle"> Makers Mask</b></p>
 	<p><b>Requirement</b>: Find all 3 Stone Fragments.</p>
@@ -51,13 +51,13 @@
 	<br/>
 	<p><b>Spell Trophy & Upgrade</b></p>
 	<p><b><img src="/realm/Factions/picks/RealityCraterSpellUpgrade.png" align="middle"> Reality Crater</b></p>
-	<p><b>Requirement</b>: R125+, Cast Infinite Spiral with at least 10 excavation resets this game.</p>
+	<p><b>Requirement</b>: R125+, Cast Infinite Spiral with at least 10 excavation resets this Era.</p>
 	<p><b>Cost</b>: 10 Octg (1e118), A3+ Free</p>
 	<p><b>Effect</b>: Infinite Spiral also reduces excavation cost multiplier based on assistants owned.</p>
 	<p><b>Formula</b>: -(0.0005 * ln(1 + x)), where x is assistants owned.</p>
 	<hr>
 	<center><b>When using Mercenary</b></center>
-	<p><b>Note</b>: Elite Faction Upgrades can only be purchased with Mercenary Upgrade 4, 8, 12 and 16.</p>
+	<p><b>Note</b>: Astral Faction Upgrades can only be purchased with Mercenary Upgrade 4, 8, 12 and 16.</p>
 	<p><b>Note</b>: Elite spells can only be bought from the Mercenary Sorcery contract.</p>
 	<hr>
 	<p><b>Tier 1 Upgrades</b></p>
@@ -94,7 +94,7 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MakersUpgrade5.png" align="middle"> Treasure Mosaic</b></p>
 	<p><b>Cost</b>: 1 DQig (1e159)</p>
-	<p><b>Effect</b>: Additionally increase Maximum Mana based on Faction Coins found in this game.</p>
+	<p><b>Effect</b>: Additionally increase Maximum Mana based on Faction Coins found in this Era.</p>
 	<p><b>Formula</b>: +(27.5 * ln(1 + x) ^ 2.75), where x is Faction Coins found in this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MakersUpgrade6.png" align="middle"> Art of Commerce</b></p>
@@ -119,7 +119,7 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MakersUpgrade9.png" align="middle"> Structural Stability</b></p>
 	<p><b>Cost</b>: 1 QaQig (1e165)</p>
-	<p><b>Effect</b>: Increase the production of building tiers directly above or below Unique Buildings based on spells cast in this game.</p>
+	<p><b>Effect</b>: Increase the production of building tiers directly above or below Unique Buildings based on spells cast in this Era.</p>
 	<p><b>Formula</b>: (0.6 * x ^ 0.4)%, where x is spells cast in this Era.</p>
 	<p><b>Note</b>: If affected twice, stacks multiplicatively.</p>
 	<hr>

@@ -28,7 +28,7 @@
 	<p><b>Note</b>: In A1, Only 1 Dragon Upgrade per Mercenary tier.</p>
 	<p><b>Note</b>: Mercenaries in A3 can buy Dragon Upgrades with any Mercenary Upgrade with increased price.</p>
 	<br/>
-	<p><b>Note</b>: Elite Faction Upgrades can only be purchased with Mercenary Upgrade 4, 8, 12 and 16.</p>
+	<p><b>Note</b>: Astral Faction Upgrades can only be purchased with Mercenary Upgrade 4, 8, 12 and 16.</p>
 	<p><b>Note</b>: Elite spells can only be bought from the Sorcery contract.</p>
 	<hr>
 	<p><b>Mercenary Tier Upgrades</b></p>
@@ -71,8 +71,8 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/HolyCrusadersMercenaryUpgrade.png" alt="Holy Crusaders" align="middle"> Holy Crusaders (For Good Alignments)</b></p>
 	<p><b>Cost</b>: 25 Uvg (2.5e67)</p>
-	<p><b>Effect</b>: Gain additional Crusader Assistants based on the amount of spells cast in this game.</p>
-	<p><b>Formula</b>: (0.5 * ((1 + 0.8 * x) ^ (0.5 + 0.05 * A) - 1)), where x is amount of spells cast in this game and A is how many times you have ascended.</p>
+	<p><b>Effect</b>: Gain additional Crusader Assistants based on the amount of spells cast in this Era.</p>
+	<p><b>Formula</b>: (0.5 * ((1 + 0.8 * x) ^ (0.5 + 0.05 * A) - 1)), where x is amount of spells cast in this Era and A is how many times you have ascended.</p>
 	<p><b>Effect</b>: Increase clicking reward by 100% per active spell.</p>
 	<p><b>Formula</b>: ((x * 100) ^ (A + 1))%, where x is the amount of active spells you have and A is how many times you have ascended.</p>
 	<br/>
@@ -83,8 +83,8 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/TradeLordsMercenaryUpgrade.png" alt="Trade Lords" align="middle"> Trade Lords (For Neutral Alignments)</b></p>
 	<p><b>Cost</b>: 25 Uvg (2.5e67)</p>
-	<p><b>Effect</b>: When assistants finds a faction coin, they also find a Faction Coin for every other faction. Also increases Mana Regeneration based on Faction Coins gained in this game.</p>
-	<p><b>Formula</b>: (floor(10 * log10(1 + x ^ 1.5)) / 10), where x is the amount of Faction Coins gained this game.</p>
+	<p><b>Effect</b>: When assistants finds a faction coin, they also find a Faction Coin for every other faction. Also increases Mana Regeneration based on Faction Coins gained in this Era.</p>
+	<p><b>Formula</b>: (floor(10 * log10(1 + x ^ 1.5)) / 10), where x is the amount of Faction Coins gained this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MercenaryUpgrade5.png" align="middle"> Mercenary Upgrade 5</b></p>
 	<p><b>Cost</b>: 3,000 Faction Coins</p>
@@ -311,7 +311,7 @@
 	<p><b>Note</b>: 1 time purchase</p>
 	<p><b>Effect</b>: Unlocks Mercenary in Ascension 3</p>
 	<br/>
-	<p><b>Note</b>: Elite Faction Upgrades can only be purchased with Mercenary Upgrade 4, 8, 12 and 16</p>
+	<p><b>Note</b>: Astral Faction Upgrades can only be purchased with Mercenary Upgrade 4, 8, 12 and 16</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MercenaryFourthContract.png" align="middle"> Mercenary Fourth Contract</b></p>
 	<p><b>Requirements</b>: R160+, Mercenary Duel purchased</p>
@@ -340,8 +340,8 @@
 	<p><b>Cost</b>: Free</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/ObsidianCrown.png" align="middle"> Obsidian Crown</b></p>
-	<p><b>Requirements</b>: R170+, Aligned with Mercs, 10 excavation resets (This game)</p>
-	<p><b>Chance</b>: ((x - 10) / 1000)%, x is the number of free and ruby excavation resets (This game)</p>
+	<p><b>Requirements</b>: R170+, Aligned with Mercs, 10 excavation resets (This Era)</p>
+	<p><b>Chance</b>: ((x - 10) / 1000)%, x is the number of free and ruby excavation resets (This Era)</p>
 	<p><b>Effect</b>: Unlocks Mercenary Union Contract</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MercenaryUnionContract.png" align="middle"> Mercenary Union Contract</b></p>

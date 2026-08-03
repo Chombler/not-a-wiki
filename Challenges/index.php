@@ -24,7 +24,7 @@
 	<a href="/realm/Dwarf/"><b>Dwarven</b></a>
 	<a href="/realm/Drow/"><b>Drow</b></a>
 	<a href="/realm/Dragons/"><b>Dragons</b></a></p>
-	<p><b>Elite Factions</b>:
+	<p><b>Astral Factions</b>:
 	<a href="/realm/Archon/"><b>Archon</b></a>
 	<a href="/realm/Djinn/"><b>Djinn</b></a>
 	<a href="/realm/Makers/"><b>Makers</b></a></p>
@@ -36,7 +36,7 @@
 	<p><b>Vanilla Faction challenges</b>: Tier 1 upgrades boost the faction it belongs to. Tier 2 upgrades boosts another Faction. Last Tier upgrades are universal and boost basic perks. Completing all the challenges of a Faction rewards a spell upgrade. The last Tiers and Spell upgrades can be used also with Mercenaries, and their respective Factions, with or without Dwarven or Drow.</p>
 	<p><b>Neutral Faction challenges</b>: Tier 1 upgrades boost it's own faction, Tier 2 and Tier 3 upgrades boosts each other Neutral Faction, and Tier 4 upgrades are universal.</p>
 	<p><b>Prestige Faction challenges</b>: Tier 1 upgrades boost Dwarven-Angels or Drow-Demons, Tier 2 upgrades boost Dwarven-Fairies or Drow-Goblins, Tier 3 upgrades boost Dwarven-Elves or Drow-Undead, Tier 4 upgrades boost all Dwarven or all Drow, and Tier 5 upgrades are universal.</p>
-	<p><b>Elite Faction challenges</b>: Tier 1 upgrades boost Good, Tier 2 upgrades boost Evil, Tier 3 upgrades boost Neutral, Tier 4 upgrades boost Itself, and Tier 5 upgrades are universal.</p>
+	<p><b>Astral Faction challenges</b>: Tier 1 upgrades boost Good, Tier 2 upgrades boost Evil, Tier 3 upgrades boost Neutral, Tier 4 upgrades boost Itself, and Tier 5 upgrades are universal.</p>
 	<p>Once you have unlocked a challenge, the perks relative to the faction you are playing, being costless, will be turned on by default after the faction's spell upgrade and Challenge Power Upgrade has been purchased. </p>
 	<p><b><img src="/realm/Factions/picks/AllChallenges3.6.png" usemap="#AllChallenges-map">
 <map name="AllChallenges-map">
@@ -81,7 +81,7 @@
 	<p><b>Note</b>: Dwarven can <b>NOT</b> be used unless you can get Dwarven's Unique Building at R28+.</p>
 	<p><b>Challenge</b>:  Have Swarm of Fairies (Fairy 3,3) give 60 Assistants in under a minute of a new game.(Abdication or Reincarnation)</p>
 	<p><b>Effect</b>: Increase Mana Regeneration based on the number of buildings you own.</p>
-	<p><b>Formula</b>: (0.1 * x) ^ 0.225, where x is your Buildings Owned (This Game) stat.</p>
+	<p><b>Formula</b>: (0.1 * x) ^ 0.225, where x is your Buildings Owned (This Era) stat.</p>
 	<p><b>Upgrade</b>: Works with All</p>
 	<p><b>Tip 1</b>: (8190, total, of Farms, Inns and Blacksmiths and you don't have to buy the upgrade itself.)</p>
 	<p><b>Tip 2</b>: Use Goblin Bloodline.</p>
@@ -344,8 +344,8 @@
 	<p>&quot;The mighty Titans are almost ready to accept you into their pantheon. They request that you gather enough offerings to mark your ascension.&quot;</p>
 	<p><b>Requirements</b>: Titan as Base Faction, Reincarnation 19+, 1000 excavations, Angel and Goblin challenge 3 and Titan challenge 2 completed.</p>
 	<p><b>Challenge</b>: Cast 80 Tax Collections within the active duration of a single Lightning Strike.</p>
-	<p><b>Effect</b>: Gain additional Maximum Mana based on the number of Faction Coins generated this game.</p>
-	<p><b>Formula</b>: (round(2.5 * log10(1 + x)))%, where x is the number of Faction Coins Gained found in this game.</p>
+	<p><b>Effect</b>: Gain additional Maximum Mana based on the number of Faction Coins generated this Era.</p>
+	<p><b>Formula</b>: (round(2.5 * log10(1 + x)))%, where x is the number of Faction Coins Gained found in this Era.</p>
 	<p><b>Upgrade</b>: Works with Druid</p>
 		" coords="184,632,238,686" shape="rect">
 	<area href="/realm/Titan/#TTC4" target=""
@@ -376,8 +376,8 @@
 	<p>&quot;The ancient Druids request evidence that you are a servant of balance before your inclusion to their ranks.&quot;</p>
 	<p><b>Requirements</b>: Druid as Base Faction, Reincarnation 4+, Halls of Balance upgrade purchased, Elven and Demon challenge 1 completed.</p>
 	<p><b>Challenge</b>: Make the building targeted by Grand Balance surpass 99.9% of your production.</p>
-	<p><b>Effect</b>: Gain assistants based on time spent in this game.</p>
-	<p><b>Formula</b>: +(0.7 * x ^ 0.7), where x is time spent this game.</p>
+	<p><b>Effect</b>: Gain assistants based on time spent in this Era.</p>
+	<p><b>Formula</b>: +(0.7 * x ^ 0.7), where x is time spent this Era.</p>
 	<p><b>Upgrade</b>: Works with Druid</p>
 	<p><b>Tip</b>: Click image to see instructions</p>
 		" coords="64,730,118,784" shape="rect">
@@ -387,7 +387,7 @@
 	<p><b><img src='/realm/Factions/picks/BalancedCurrentChallenge.png' align='middle'> Balanced Current</b></p>
 	<p>&quot;Our sorcerers are desperately trying to stabilize the balance of the realm, this is your opportunity to gain their favor - and live another day.&quot;</p>
 	<p><b> Requirements</b>: Druid as Base Faction, Reincarnation 9+, Druid Bloodline, Elven and Demon challenge 2 and Druid challenge 1 completed.</p>
-	<p><b>Challenge</b>: Have exactly 1,500 of each building types for 15 full Grand Balance casts in this game. (The 15 casts only counts after you have all the 1500 buildings.)</p>
+	<p><b>Challenge</b>: Have exactly 1,500 of each building types for 15 full Grand Balance casts in this Era. (The 15 casts only counts after you have all the 1500 buildings.)</p>
 	<p><b>Effect</b>: Mana regeneration is increased by 1% for every 5000 buildings.</p>
 	<p><b>Upgrade</b>: Works with Titan</p>
 		" coords="124,730,178,784" shape="rect">
@@ -422,8 +422,8 @@
 		research="
 	<p><b>Faceless Challenge Reward</b></p>
 	<p><b><img src='/realm/Factions/picks/FocusedThoughtsChallengeReward.png' align='middle'> Focused Thoughts</b></p>
-	<p><b>Effect</b>: Give Brainwave a headstart based on its activity time in this game, with a minimum of 1 minute.</p>
-	<p><b>Formula</b>: +1 second per 5 minutes of Brainwave active time this game.</p>
+	<p><b>Effect</b>: Give Brainwave a headstart based on its activity time in this Era, with a minimum of 1 minute.</p>
+	<p><b>Formula</b>: +1 second per 5 minutes of Brainwave active time this Era.</p>
 		" coords="4,828,58,882" shape="rect">
 	<area href="/realm/Faceless/#FCC1" target=""
 		research="
@@ -532,7 +532,7 @@
 		research="
 	<p><b>Drow Challenge Reward</b></p>
 	<p><b><img src='/realm/Factions/picks/VersaltileComboChallengeReward.png' align='middle'> Versatile Combo</b></p>
-	<p><b>Effect</b>: Increase Combo Strike counter based on the amount of spells cast in this game. (Not including Tax Collection)</p>
+	<p><b>Effect</b>: Increase Combo Strike counter based on the amount of spells cast in this Era. (Not including Tax Collection)</p>
 	<p><b>New Combo Strike Counter Formula</b>: (x + y), where x is your Combo Strike cast count and y is every other spell (except tax collection and generic) cast count.</p>
 	<p><b>Effect</b>: Also increase offline spells cast amount multiplicatively based on your offline Mana Regeneration.</p>
 	<p><b>Formula</b>: (10 * log10(1 + x))%, where x is your offline Mana Regeneration.</p>
@@ -556,8 +556,8 @@
 	<p>&quot;The Spider Queen is not pleased with some of her worshippers. You must weed out the weak and sacrifice them at the temple altar.&quot;</p>
 	<p><b>Requirements</b>: Goblin as Base Faction, Drow as Prestige Faction, Reincarnation 11+, Drow Bloodline, Goblin, Demon and Undead challenge 2 and Drow challenge 1 completed.</p>
 	<p><b>Challenge</b>: Build 1750 Spider Sanctuaries (Dark Temples).</p>
-	<p><b>Effect</b>: Increase the production of all buildings based on Faction Coins found this game. Does not suffer from Ascension penalties.</p>
-	<p><b>Formula</b>: (log(1 + x) ^ 2)%, where x is the amount of Faction Coins found this game.</p>
+	<p><b>Effect</b>: Increase the production of all buildings based on Faction Coins found this Era. Does not suffer from Ascension penalties.</p>
+	<p><b>Formula</b>: (log(1 + x) ^ 2)%, where x is the amount of Faction Coins found this Era.</p>
 	<p><b>Upgrade</b>: Works with Goblin + Drow</p>
 		" coords="124,1024,178,1078" shape="rect">
 	<area href="/realm/Drow/#DWC3" target=""
@@ -566,9 +566,9 @@
 	<p><b><img src='/realm/Factions/picks/SorcerersPactChallenge.png' align='middle'> Sorcerer's Pact</b></p>
 	<p>&quot;A legion of interlopers have invaded our sanctuaries. Work yourselves into a rage and tear them apart.&quot;</p>
 	<p><b>Requirements</b>: Undead as Base Faction, Drow as Prestige Faction, Reincarnation 21+, 1750 excavations, Goblin, Demon and Undead challenge 3 and Drow challenge 2 completed.</p>
-	<p><b>Challenge</b>: Have at least 2 hours of activity time for both Blood Frenzy and Combo Strike.(This Game)</p>
-	<p><b>Effect</b>: Increases Offline Production based on time spent in this game. Does not suffer from Ascension penalties.</p>
-	<p><b>Formula</b>: (x ^ 0.7)%, where x is time spent this game.</p>
+	<p><b>Challenge</b>: Have at least 2 hours of activity time for both Blood Frenzy and Combo Strike.(This Era)</p>
+	<p><b>Effect</b>: Increases Offline Production based on time spent in this Era. Does not suffer from Ascension penalties.</p>
+	<p><b>Formula</b>: (x ^ 0.7)%, where x is time spent this Era.</p>
 	<p><b>Upgrade</b>: Works with Undead + Drow</p>
 	<p><b>Tip</b>: Run both spells at the same time, depending on Mana Regeneration it takes about 1 hour 15 minutes to complete the challenge.</p>
 		" coords="184,1024,238,1078" shape="rect">
@@ -579,7 +579,7 @@
 	<p>&quot;There is a civil war between 2 Spider Gods. Bolster our forces and wipe the weaklings off the face of the realm.&quot;</p>
 	<p><b>Requirements</b>: Any Evil as Base Faction, Drow as Prestige Faction, Reincarnation 27+, 2000 excavations, Drow Challenge 3 completed.</p>
 	<p><b>Challenge</b>: Cast Call to Arms with at least 30,000 buildings.</p>
-	<p><b>Effect</b>: Increase your Offline Time (This Game) based on spells cast in this Reincarnation.</p>
+	<p><b>Effect</b>: Increase your Offline Time (This Era) based on spells cast in this Reincarnation.</p>
 	<p><b>Formula</b>: (8 * log10(1 + x) ^ 4) where x is spells cast in this Reincarnation.</p>
 	<p><b>Upgrade</b>: Works with any Evil + Drow</p>
 		" coords="244,1024,298,1078" shape="rect">
@@ -589,7 +589,7 @@
 	<p><b><img src='/realm/Factions/picks/ShadowMirageChallenge.png' align='middle'> Shadow Mirage</b></p>
 	<p>&quot;It is time to emerge from the shadows. Our warriors will demonstrate their hard work and lead us to domination of the realm.&quot;</p>
 	<p><b>Requirements</b>: Any Evil as Base Faction, Drow as Prestige Faction, Reincarnation 33+, Drow Unique Building, Drow Challenge 4 completed.</p>
-	<p><b>Challenge</b>: Have at least 2 hours offline (This Game) and at least 360 charges of Combo Strike.</p>
+	<p><b>Challenge</b>: Have at least 2 hours offline (This Era) and at least 360 charges of Combo Strike.</p>
 	<p><b>Effect</b>: A fraction of your alignment spell bonus is applied passively.</p>
 	<p><b>Note</b>: &quot;Fraction&quot; is equal to 5%.</p>
 	<p><b>Upgrade</b>: Works with All</p>
@@ -607,8 +607,8 @@
 	<p>&quot;The Titan leader has approached you with an offer you cannot refuse: Use the help of your Draconic allies to guard his domain and lightning itself will enchant your riches.&quot;</p>
 	<p><b>Requirements</b>: Titan as Base Faction, Dragon as Prestige Faction, Reincarnations 48+, Dragon's Roar upgrade purchased, Titan, Druid, Faceless, Dwarven and Drow Challenge 1 completed.</p>
 	<p><b>Challenge</b>: Have 6,500 Halls of Legends.</p>
-	<p><b>Effect</b>: Multiplicatively increase Faction Coin chance based on Lightning Strike activity time in this game.</p>
-  <p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is your Lightning Strike activity time in this game in seconds.</p>
+	<p><b>Effect</b>: Multiplicatively increase Faction Coin chance based on Lightning Strike activity time in this Era.</p>
+  <p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is your Lightning Strike activity time in this Era in seconds.</p>
 	<p><b>Upgrade</b>: Works with Titan + Dragon</p>
 		" coords="64,1122,118,1176" shape="rect">
 	<area href="/realm/Dragons/#DGC2" target=""
@@ -617,7 +617,7 @@
 	<p><b><img src='/realm/Factions/picks/BarkscalesChallenge.png' align='middle'> Barkscales</b></p>
 	<p>&quot;Unstable power flows through your workforce. Prove to the Dragonlords you can sustain and control every sip of it.&quot;</p>
 	<p><b>Requirements</b>: Druid as Base Faction, Dragon as Prestige Faction, Reincarnation 51+, Dragon Bloodline, Titan, Druid, Faceless, Dwarven and Drow Challenge 2 and Dragon Challenge 1 completed.</p>
-	<p><b>Challenge</b>: Generate at least 1e10 Mana in this game, Have Grand Balance affect 7 buildings.</p>
+	<p><b>Challenge</b>: Generate at least 1e10 Mana in this Era, Have Grand Balance affect 7 buildings.</p>
 	<p><b>Effect</b>: Increase Non-Unique Buildings production based on the amount of Grand Balance targets. Does not suffer from Ascension penalties.</p>
 	<p><b>Formula</b>: (20 * x ^ 2)%, where x is number of Grand Balance targets.</p>
 	<p><b>Effect</b>: Also reduces all Spell Tier upgrades costs based on Grand Balance activity time in this Reincarnation.</p>
@@ -665,7 +665,7 @@
 	<p><b>Requirements</b>: Titan, Druid or Faceless as Base Faction, Dragon as Prestige Faction, Reincarnation 63+, Dragon challenge 5 completed, 12,000 research points spent across all facilities.</p>
 	<p><b>Challenge</b>: Gather at least 2.5e18 faction coins, 1e141 diamond coins, 90,000 buildings, 2e10 Mana produced, 7,500 excavations, 6,000 assistants, 300,000 Maximum Mana and 175,000 Mana Regeneration.</p>
 	<p><b>Effect</b>: Production bonus from Gems is additively increased over time based on the amount of artifacts you own. Resets on Abdications.</p>
-	<p><b>Formula</b>: +(x ^ 0.8 * 0.8 * (t / 60) ^ 0.8)%, where x is artfiacts found and t is time spent this game in seconds.</p>
+	<p><b>Formula</b>: +(x ^ 0.8 * 0.8 * (t / 60) ^ 0.8)%, where x is artfiacts found and t is time spent this Era in seconds.</p>
 	<p><b>Upgrade</b>: Works with All</p>
 		" coords="364,1122,418,1176" shape="rect">
 	<area href="/realm/Archon/#ARCR" target=""
@@ -679,7 +679,7 @@
 	<p><b>Archon Challenge 1</b></p>
 	<p><b><img src='/realm/Factions/picks/GodsPlanChallenge.png' align='middle'> God’s Plan</b></p>
 	<p>&quot;The ascended crusade wishes to test the strength of it's angelic understudies; perhaps a huge celestial army is worthy of their attention.&quot;</p>
-	<p><b>Requirements</b>: Angel as Base Faction, Archon as Elite Faction, Reincarnation 135+, Chrono Loading upgrade purchased.</p>
+	<p><b>Requirements</b>: Angel as Base Faction, Archon as Astral Faction, Reincarnation 135+, Chrono Loading upgrade purchased.</p>
 	<p><b>Challenge</b>: Have a Call to Arms bonus of at least 10 M (1e7)% and at least 200,000 Good buildings.</p>
 	<p><b>Effect</b>: Increase Mana Regeneration additively and multiplicatively based on the amount of Order buildings you own.</p>
 	<p><b>Additive</b>: +(0.2 * x ^ 2), where x is the amount of Order buildings you own.</p>
@@ -693,7 +693,7 @@
 	<p><b>Archon Challenge 2</b></p>
 	<p><b><img src='/realm/Factions/picks/AnUntimelyDeathChallenge.png' align='middle'> An Untimely Death</b></p>
 	<p>&quot;A glorious victory! May we reap the rewards of war with new undead adversaries to join our quest.&quot;</p>
-	<p><b>Requirements</b>: Undead as Base Faction, Archon as Elite Faction, Reincarnation 139+, Archon Bloodline active, Archon challenge 1 completed.</p>
+	<p><b>Requirements</b>: Undead as Base Faction, Archon as Astral Faction, Reincarnation 139+, Archon Bloodline active, Archon challenge 1 completed.</p>
 	<p><b>Challenge</b>: Have an Offline Bonus of at least 10 Sp (1e25)% while also having at least 100 B (1e11) assistants.</p>
 	<p><b>Effect</b>: Multiplicatively increase assistants based on Offline Bonus.</p>
 	<p><b>Formula</b>: (2 * log10(1 + x) ^ 2)%, where x is offline bonus multiplier.</p>
@@ -706,10 +706,10 @@
 	<p><b>Archon Challenge 3</b></p>
 	<p><b><img src='/realm/Factions/picks/TitanomachyChallenge.png' align='middle'> Titanomachy</b></p>
 	<p>&quot;Through mastery of life and death, the final venture of creator's assistance stands between total dominion of the higher planes.&quot;</p>
-	<p><b>Requirements</b>: Titan as Base Faction, Archon as Elite Faction, Reincarnation 143+, 25,000 excavations, Titan Set active, Archon challenge 2 completed.</p>
+	<p><b>Requirements</b>: Titan as Base Faction, Archon as Astral Faction, Reincarnation 143+, 25,000 excavations, Titan Set active, Archon challenge 2 completed.</p>
 	<p><b>Challenge</b>: Have an individual Royal Exchange bonus of at least 5000% within 5 minutes of a new game.</p>
 	<p><b>Effect</b>: Reduce Royal Exchange cost multiplier by -0.02 and multiplicatively increase Royal Exchange bonus by 100%.</p>
-	<p><b>Effect</b>: Multiplicatively increase time spent in this game based on Royal Exchanges bought.</p>
+	<p><b>Effect</b>: Multiplicatively increase time spent in this Era based on Royal Exchanges bought.</p>
 	<p><b>Formula</b>: (3 * ln(1 + x) ^ 1.3)%, where x is Royal Exchanges bought.</p>
 	<p><b>Effect</b>: Removes all Ascension penalties from Oversized Legends (TT9).</p>
 	<p><b>Upgrade</b>: Works with Titan + Dragon + Archon</p>
@@ -719,11 +719,11 @@
 	<p><b>Archon Challenge 4</b></p>
 	<p><b><img src='/realm/Factions/picks/TimeMergeChallenge.png' align='middle'> Time Merge</b></p>
 	<p>&quot;In order to satiate our campaign we need to delve deeper into the abstract. Behold, even time itself yields to the crusade.&quot;</p>
-	<p><b>Requirements</b>: Angel, Undead or Titan as Base Faction, Archon as Elite Faction, Reincarnations 148+, Archon Unique Building Purchased (Nexus), Archon challenge 3 completed.</p>
+	<p><b>Requirements</b>: Angel, Undead or Titan as Base Faction, Archon as Astral Faction, Reincarnations 148+, Archon Unique Building Purchased (Nexus), Archon challenge 3 completed.</p>
 	<p><b>Challenge</b>: Have a Temporal Flux bonus of at least 43,210%.</p>
-	<p><b>Effect</b>: 20% of Chaos and Balance time spent in this Reincarnation is added to time spent in this game.</p>
-	<p><b>Effect</b>: Increase Unique Building production based on time spent in this game.</p>
-	<p><b>Formula</b>: (8 * log10(1 + x) ^ 4)%, where x is time spent in this game.</p>
+	<p><b>Effect</b>: 20% of Chaos and Balance time spent in this Reincarnation is added to time spent in this Era.</p>
+	<p><b>Effect</b>: Increase Unique Building production based on time spent in this Era.</p>
+	<p><b>Formula</b>: (8 * log10(1 + x) ^ 4)%, where x is time spent in this Era.</p>
 	<p><b>Upgrade</b>: Works with any Archon combination</p>
 		" coords="244,1220,298,1274" shape="rect">
 	<area href="/realm/Archon/#ARC5" target=""
@@ -731,7 +731,7 @@
 	<p><b>Archon Challenge 5</b></p>
 	<p><b><img src='/realm/Factions/picks/PowerOverwhelmingChallenge.png' align='middle'> Power Overwhelming</b></p>
 	<p>&quot;All-powerful ruler, we've experienced all this worldline had to offer. Shall we bridge to another and continue?&quot;</p>
-	<p><b>Requirements</b>: Angel, Undead or Titan as Base Faction, Archon as Elite Faction, Reincarnations 153+, Have all Order Lineages at least level 45, Archon challenge 4 completed.</p>
+	<p><b>Requirements</b>: Angel, Undead or Titan as Base Faction, Archon as Astral Faction, Reincarnations 153+, Have all Order Lineages at least level 45, Archon challenge 4 completed.</p>
 	<p><b>Challenge</b>: Have a Precognition duration of at least 1 day, with a minimum of 315% bonus.</p>
 	<p><b>Effect</b>: The Advanced Heritage that matches your Lineage counts 50% (up from 30%) of its level. All others get 5% (up from 0%) of their respective Lineage level.</p>
 	<p><b>Upgrade</b>: Works with All</p>
@@ -747,7 +747,7 @@
 	<p><b>Djinn Challenge 1</b></p>
 	<p><b><img src='/realm/Factions/picks/MiniatureLampsChallenge.png' align='middle'> Miniature Lamps</b></p>
 	<p>&quot;In the beginning, we shared with the mortals mystical wishes to give them some entertaining tales to tell.&quot;</p>
-	<p><b>Requirements</b>: Fairy as Base Faction, Djinn as Elite Faction, Reincarnation 135+, Persistent Entropy upgrade purchased.</p>
+	<p><b>Requirements</b>: Fairy as Base Faction, Djinn as Astral Faction, Reincarnation 135+, Persistent Entropy upgrade purchased.</p>
 	<p><b>Challenge</b>: Reach 50,000 Enchanted Fields within 2 minutes of a new game.</p>
 	<p><b>Effect</b>: Maelstrom multiplicatively increases assistants based on lowest building tier targeted.</p>
 	<p><b>Formula</b>: ((12 - T) * 100)%, where T is tier of lowest maelstrom building targeted.</p>
@@ -760,10 +760,10 @@
 	<p><b>Djinn Challenge 2</b></p>
 	<p><b><img src='/realm/Factions/picks/IfritIgnitionChallenge.png' align='middle'> Ifrit Ignition</b></p>
 	<p>&quot;As the years passed through, this benevolence fell on deaf ears. The mortals decided to enslave us; dictate to us their every whim. How dare they command us to do their bidding, give them hell!&quot;</p>
-	<p><b>Requirements</b>: Demon as Base Faction, Djinn as Elite Faction, Reincarnation 139+, Djinn Bloodline active, Djinn challenge 1 completed.</p>
+	<p><b>Requirements</b>: Demon as Base Faction, Djinn as Astral Faction, Reincarnation 139+, Djinn Bloodline active, Djinn challenge 1 completed.</p>
 	<p><b>Challenge</b>: Have at least 66 B (6.6e10) Mana Produced within 6 hours of a new game.</p>
-	<p><b>Effect</b>: Limited Wish casts count more based on Hellfire Blast casts in this game.</p>
-	<p><b>Formula</b>: (0.8 * x ^ 0.8)%, where x is Hellfire Blast casts this game..</p>
+	<p><b>Effect</b>: Limited Wish casts count more based on Hellfire Blast casts in this Era.</p>
+	<p><b>Formula</b>: (0.8 * x ^ 0.8)%, where x is Hellfire Blast casts this Era..</p>
 	<p><b>Effect</b>: Each time you cast an Evil spell, you gain additional casts based on the amount of trophies you have.</p>
 	<p><b>Formula</b>: +(x ^ 0.7), where x is amount of trophies.</p>
 	<p><b>Note</b>: Applies only for real evil spells. Casts are added directly to the spell’s casts count and does not trigger upgrades such as GB7.</p>
@@ -774,7 +774,7 @@
 	<p><b>Djinn Challenge 3</b></p>
 	<p><b><img src='/realm/Factions/picks/IdentityShaperChallenge.png' align='middle'> Identity Shaper</b></p>
 	<p>&quot;Interesting, they're showing us some compassion. But it matters not, for we're still bound towards these vessels.&quot;</p>
-	<p><b>Requirements</b>: Faceless as Base Faction, Djinn as Elite Faction, Reincarnation 143+, 25,000 excavations, Faceless Set active, Djinn challenge 2 completed.</p>
+	<p><b>Requirements</b>: Faceless as Base Faction, Djinn as Astral Faction, Reincarnation 143+, 25,000 excavations, Faceless Set active, Djinn challenge 2 completed.</p>
 	<p><b>Challenge</b>: Have at least 2 B (2e9) base assistants within 5 minutes of a new game.</p>
 	<p><b>Effect</b>: Catalyst casts one additional spell.</p>
 	<p><b>Effect</b>: Catalyst also adds 100 casts per spell.</p>
@@ -786,7 +786,7 @@
 		research="
 	<p><b>Djinn Challenge 4</b></p><p><b><img src='/realm/Factions/picks/WorldlyDesiresChallenge.png' align='middle'> Worldly Desires</b></p>
 	<p>&quot;This generation decided that we should give them a few more wishes before they give in to our demands for a change.&quot;</p>
-	<p><b>Requirements</b>: Fairy, Demon or Faceless as Base Faction, Djinn as Elite Faction, Reincarnation 148+, Djinn Unique Building Purchased (Pavilion), Djinn challenge 3 completed.</p>
+	<p><b>Requirements</b>: Fairy, Demon or Faceless as Base Faction, Djinn as Astral Faction, Reincarnation 148+, Djinn Unique Building Purchased (Pavilion), Djinn challenge 3 completed.</p>
 	<p><b>Challenge</b>: Have a spell duration of at least 225 Days.</p>
 	<p><b>Effect</b>: Multiplicatively increase Assistants, production bonus from Gems and Maximum Mana by 88%, 88% and 888%, targets chosen randomly and refreshing every 88 seconds.</p>
 	<p><b>Upgrade</b>: Works with any Djinn combination</p>
@@ -796,7 +796,7 @@
 	<p><b>Djinn Challenge 5</b></p>
 	<p><b><img src='/realm/Factions/picks/AltarofWishesChallenge.png' align='middle'> Altar of Wishes</b></p>
 	<p>&quot;Freedom... at last. Onwards we go, to a better future. So long, mortals.&quot;</p>
-	<p><b>Requirements</b>: Fairy, Demon or Faceless as Base Faction, Djinn as Elite Faction, Reincarnations 153+, All Chaos Lineages at level 45, Djinn challenge 4 completed.</p>
+	<p><b>Requirements</b>: Fairy, Demon or Faceless as Base Faction, Djinn as Astral Faction, Reincarnations 153+, All Chaos Lineages at level 45, Djinn challenge 4 completed.</p>
 	<p><b>Challenge</b>: Cast all Chaos spells at least 88 times each in a single Reincarnation.</p>
 	<p><b>Spells</b>: Fairy Chanting, Hellfire Blast, Brainwave, Maelstrom, Limited Wish, Catalyst</p>
 	<p><b>Effect</b>: Multiplicatively increases one of your assets based on the amount of alignments tied to your faction spells.</p>
@@ -820,10 +820,10 @@
 	<p><b>Makers Challenge 1</b></p>
 	<p><b><img src='/realm/Factions/picks/SeedofLifeChallenge.png' align='middle'> Seed of Life</b></p>
 	<p>&quot;If you wish to make an apple pie from scratch, you must first invent the universe. And the apple tree, you will have to nurse.&quot;</p>
-	<p><b>Requirements</b>: Elves as Base Faction, Makers as Elite Faction, Reincarnation 135+, Reality Crater upgrade purchased.</p>
-	<p><b>Challenge</b>: Get 10 M (1e7) clicks in this Reincarnation and trigger Elven Luck at least 7777 times in this game.</p>
-	<p><b>Effect</b>: Multiplicatively increase assistants based on the amount of Elven Luck triggered in this game.</p>
-	<p><b>Formula</b>: (1.5 * x ^ 0.85)%, where x is Elven Lucks this game.</p>
+	<p><b>Requirements</b>: Elves as Base Faction, Makers as Astral Faction, Reincarnation 135+, Reality Crater upgrade purchased.</p>
+	<p><b>Challenge</b>: Get 10 M (1e7) clicks in this Reincarnation and trigger Elven Luck at least 7777 times in this Era.</p>
+	<p><b>Effect</b>: Multiplicatively increase assistants based on the amount of Elven Luck triggered in this Era.</p>
+	<p><b>Formula</b>: (1.5 * x ^ 0.85)%, where x is Elven Lucks this Era.</p>
 	<p><b>Effect</b>: Gain x8 Faction Coins from any source when they match your Faction, Bloodline or Set.</p>
 	<p><b>Formula</b>: *(8 ^ x), where x is number of faction/bloodline/set FC matches (+1 for full FC match, +½ for half FC match) (includes A2950 and Stoneheart).</p>
 	<p><b>Upgrade</b>: Works with Elven + Dwarven + Makers</p>
@@ -833,12 +833,12 @@
 	<p><b>Makers Challenge 2</b></p>
 	<p><b><img src='/realm/Factions/picks/ArtificialCurrencyChallenge.png' align='middle'> Artificial Currency</b></p>
 	<p>&quot;Extinction is the rule. Survival is the exception, which can only be achieved through subtle deception.&quot;</p>
-	<p><b>Requirements</b>: Goblin as Base Faction, Makers as Elite Faction,  Reincarnation 139+, Makers Bloodline active, Makers challenge 1 completed.</p>
+	<p><b>Requirements</b>: Goblin as Base Faction, Makers as Astral Faction,  Reincarnation 139+, Makers Bloodline active, Makers challenge 1 completed.</p>
 	<p><b>Challenge</b>: Get 100 Qad (1e47) Faction Coins with a minimum of 50 Excavation Resets in this Reincarnation.</p>
 	<p><b>Effect</b>: While Mana Regeneration is higher than Maximum Mana, each time you cast a spell, you also cast free Tax Collections based on the difference between them.</p>
 	<p><b>Formula</b>: +(((log10(1 + x)) ^ 2.5 - (log10(1 + y)) ^ 2.5) ^ 1.25), where x is Mana Regeneration, y is Maximum Mana.</p>
-	<p><b>Effect</b>: Production bonus from Gems is increased nultiplicatively based on Tax Collections cast in this game.</p>
-	<p><b>Formula</b>: (ln(1 + x) ^ 2)%, where x is number of Tax Collections cast in this game.</p>
+	<p><b>Effect</b>: Production bonus from Gems is increased nultiplicatively based on Tax Collections cast in this Era.</p>
+	<p><b>Formula</b>: (ln(1 + x) ^ 2)%, where x is number of Tax Collections cast in this Era.</p>
 	<p><b>Upgrade</b>: Works with Goblin + Drow + Makers</p>
 		" coords="124,1416,178,1470" shape="rect">
 	<area href="/realm/Makers/#MKC3" target=""
@@ -846,7 +846,7 @@
 	<p><b>Makers Challenge 3</b></p>
 	<p><b><img src='/realm/Factions/picks/PillarsofCreationChallenge.png' align='middle'> Pillars of Creation</b></p>
 	<p>&quot;We are like butterflies who flutter for a day and think it is forever. This can be accomplished when you sincerely endeavor.&quot;</p>
-	<p><b>Requirements</b>: Druid as Base Faction, Makers as Elite Faction, Reincarnation 143+, 25,000 excavations, Druid Set active, Makers challenge 2 completed.</p>
+	<p><b>Requirements</b>: Druid as Base Faction, Makers as Astral Faction, Reincarnation 143+, 25,000 excavations, Druid Set active, Makers challenge 2 completed.</p>
 	<p><b>Challenge</b>: Have at least 1 B (1e9) Maximum Mana and 25,000 of each building within 5 minutes of a new game.</p>
 	<p><b>Effect</b>: Assistants and Maximum Mana Infinite Spiral effects are also increased by Mana Regeneration.</p>
 	<p><b>Note</b>: The value of the variable in those formulas is multiplied by your Mana Regeneration.</p>
@@ -858,7 +858,7 @@
 	<p><b>Makers Challenge 4</b></p>
 	<p><b><img src='/realm/Factions/picks/StoneheartChallenge.png' align='middle'> Stoneheart</b></p>
 	<p>&quot;We are a way for the cosmos to know itself. Manipulate existence to plant an evocation of yourself.&quot;</p>
-	<p><b>Requirements</b>: Elves, Goblin or Druid as Base Faction, Makers as Elite Faction, Reincarnation 148+, Makers Unique Building, Makers challenge 3 completed.</p>
+	<p><b>Requirements</b>: Elves, Goblin or Druid as Base Faction, Makers as Astral Faction, Reincarnation 148+, Makers Unique Building, Makers challenge 3 completed.</p>
 	<p><b>Challenge</b>: Without using any Bloodline or Research, reach 30,000 Halls of Origination.</p>
 	<p><b>Effect</b>: Pick an additional Set. Increase Faction Coins found matching that Set by 1000%</p>
 	<p><b>Upgrade</b>: Works with any Makers combination</p>
@@ -868,10 +868,10 @@
 	<p><b>Makers Challenge 5</b></p>
 	<p><b><img src='/realm/Factions/picks/GreatestInventionChallenge.png' align='middle'> Greatest Invention</b></p>
 	<p>&quot;Somewhere, something incredible is waiting to be known. Sculpt from your boundless imagination and make it your own.&quot;</p>
-	<p><b>Requirements</b>: Elves, Goblin or Druid as Base Faction, Makers as Elite Faction, Reincarnation 153+, All Balance Lineages at level 45, Makers challenge 4 completed.</p>
+	<p><b>Requirements</b>: Elves, Goblin or Druid as Base Faction, Makers as Astral Faction, Reincarnation 153+, All Balance Lineages at level 45, Makers challenge 4 completed.</p>
 	<p><b>Challenge</b>: Have at least 1 T (1e12) assistants, 1 B (1e9) Maximum Mana and 20 Sx (2e22) Faction Coin find chance within 8 minutes of a new game.</p>
-	<p><b>Effect</b>: Multiplicatively increase Maximum Mana based on Faction Coins gained and Mana produced in this game; spells cast and clicks made in this Reincarnation.</p>
-	<p><b>Formula</b>: ((0.3 * log10(1 + a) + log10(1 + b) + log10(1 + c) + 3 * log10(1 + d)) ^ 1.5)%, a is Factions Coins (this game), b is Mana produced (this game), c is spells cast (this reincarnation), d is clicks made (this reincarnation)</p>
+	<p><b>Effect</b>: Multiplicatively increase Maximum Mana based on Faction Coins gained and Mana produced in this Era; spells cast and clicks made in this Reincarnation.</p>
+	<p><b>Formula</b>: ((0.3 * log10(1 + a) + log10(1 + b) + log10(1 + c) + 3 * log10(1 + d)) ^ 1.5)%, a is Factions Coins (this Era), b is Mana produced (this Era), c is spells cast (this reincarnation), d is clicks made (this reincarnation)</p>
 	<p><b>Upgrade</b>: Works with All</p>
 		" coords="304,1416,358,1470" shape="rect">
 	<area href="/realm/Mercenary/#MCCR" target=""
@@ -880,8 +880,8 @@
 	<p><b><img src='/realm/Factions/picks/WarcryChallengeReward.png' align='middle'> Warcry</b></p>
 	<p>Call to Arms gains additional effects based on your alignments, scaling off your Call to Arms strength.</p>
 	<p><b>General Formula</b>: y = 25 + (0.3 * x ^ 0.975) where x is building count.</p>
-	<p><b>Good</b>: Grants one maximum castable Call to Arms tier per ascension and removes one ascension penalty from Call to Arms. Tax Collection casts in this game now increases Call to Arms base bonus (This bonus will boost other Warcry effects. Stacks multiplicatively with W180, additively with C225 & R150 power).</p>
-	<p><b>Formula</b>: (1.5 * x ^ 0.5)%, where x is Tax Collection casts this game.</p>
+	<p><b>Good</b>: Grants one maximum castable Call to Arms tier per ascension and removes one ascension penalty from Call to Arms. Tax Collection casts in this Era now increases Call to Arms base bonus (This bonus will boost other Warcry effects. Stacks multiplicatively with W180, additively with C225 & R150 power).</p>
+	<p><b>Formula</b>: (1.5 * x ^ 0.5)%, where x is Tax Collection casts this Era.</p>
 	<p><b>Evil</b>: Multiplicatively increase Tax Collection worth in seconds.</p>
 	<p><b>Formula</b>: (y ^ 0.35)%</p>
 	<p><b>Neutral</b>: Multiplicatively increase Faction Coins find chance.</p>
@@ -946,7 +946,7 @@
 	<p><b>Mercenary Challenge 5</b></p>
 	<p><b><img src='/realm/Factions/picks/TheArtofWarChallenge.png' align='middle'> The Art of War</b></p>
 	<p>&quot;An expert Mercenary should learn by other cultures. That has been our call for generations. Now, it is your turn to answer that call.&quot;</p>
-	<p><b>Requirements</b>: R206, Any Mercenary, 18,000 Royal Exchanges made in this game, True Harlequin build.</p>
+	<p><b>Requirements</b>: R206, Any Mercenary, 18,000 Royal Exchanges made in this Era, True Harlequin build.</p>
 	<p><b>Challenge</b>: Have at least 1 day spent with every alignment in this Reincarnation; Have at least 600,000 buildings without using any research.</p>
 	<p><b>Effect</b>: Unique Buildings that match your Lineage and Set Factions or their Faction Coin affinity have their production increased based on the amount of time spent with each of those factions. Does not suffer from Ascension penalties.</p>
 	<p><b>Formula</b>: (x ^ 0.7)%, where x is time spent with the respective faction.</p>

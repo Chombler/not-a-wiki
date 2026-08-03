@@ -59,8 +59,8 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/UndeadUpgrade6.png" align="middle"> Plagued Buildings</b></p>
 	<p><b>Cost</b>: 50 T (5e13)</p>
-	<p><b>Effect</b>: Increase the production of all buildings based on time spent in this game.</p>
-	<p><b>Formula</b>: ((0.75 * x ^ 0.75)%, where x is time spent this game.</p>
+	<p><b>Effect</b>: Increase the production of all buildings based on time spent in this Era.</p>
+	<p><b>Formula</b>: ((0.75 * x ^ 0.75)%, where x is time spent this Era.</p>
 	<hr>
 	<p><b>Tier 3 Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/UndeadAlliance.png" align="middle"> Undead Alliance</b></p>
@@ -83,8 +83,8 @@
 	<p><b><img src="/realm/Factions/picks/UndeadHeritage.png" alt="Undead Heritage" align="middle"> Undead Heritage</b></p>
 	<p><b>Requirements</b>: Undead Champion Trophy</p>
 	<p><b>Cost</b>: 5000 Undead Coins</p>
-	<p><b>Effect</b>: You gain additional assistants based on the time spent in this game.</p>
-	<p><b>Formula</b>: +(floor(1 + 1.6 * (x / 3600) ^ 0.6)), where x is time spent this game.</p>
+	<p><b>Effect</b>: You gain additional assistants based on the time spent in this Era.</p>
+	<p><b>Formula</b>: +(floor(1 + 1.6 * (x / 3600) ^ 0.6)), where x is time spent this Era.</p>
 	<hr>
 	<p><b>Undead Research Requirements</b></p>
 	<p><b><img src="/realm/Factions/picks/UndercitiesQuestFactionUpgrade.png" align="middle"> Undercities Quest</b></p>
@@ -93,8 +93,8 @@
 	<p><b>Cost</b>: 10 Dtg (1e100)</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/UndercityFactionUpgrade.png" align="middle"> Undercity</b></p>
-	<p><b>Description</b>:Upgrade Necropolises To Undercities, boosting their production based on time spent in this game and unlocking more unique perks for the building.</p>
-	<p><b>Formula</b>: (12 * (2.5 * x) ^ 0.75)%, where x is your Playtime (This Game) stat.</p>
+	<p><b>Description</b>:Upgrade Necropolises To Undercities, boosting their production based on time spent in this Era and unlocking more unique perks for the building.</p>
+	<p><b>Formula</b>: (12 * (2.5 * x) ^ 0.75)%, where x is your Playtime (This Era) stat.</p>
 	<p><b>Requirements</b>: Buy "Undercities Quest"</p>
 	<p><b>Cost</b>: 10 Ttg (1e103)</p>
 	<p><b>Effect</b>: Also allows access to the Research Facilities.</p>
@@ -149,8 +149,8 @@
 	<p><b><img src="/realm/Factions/picks/UndeadUpgrade11.png" alt="Eternal Servitude" align="middle"> Eternal Servitude</b></p>
 	<p><b>Requirement</b>: Undead Union</p>
 	<p><b>Cost</b>: 100 Qivg (1e80) Emerald Coins</p>
-	<p><b>Effect</b>: Increase the production of Unique buildings based on time spent in this game.</p>
-	<p><b>Formula</b>: (x ^ 0.7)%, where x is time spent this game.</p>
+	<p><b>Effect</b>: Increase the production of Unique buildings based on time spent in this Era.</p>
+	<p><b>Formula</b>: (x ^ 0.7)%, where x is time spent this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/UndeadUpgrade12.png" alt="Zombie Apocalypse" align="middle"> Zombie Apocalypse</b></p>
 	<p><b>Requirement</b>: Undead Union</p>
@@ -159,7 +159,7 @@
 	<p><b>Formula</b>: +(21 * x ^ 0.7), where x is offline time in this Reincarnation.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/AdvancedUndeadHeritage.png" align="middle"> Advanced Undead Heritage</b></p>
-	<p><b>Requirements</b>: Undead Master trophy and 6 hours activity time (This Game) of Night Time.</p>
+	<p><b>Requirements</b>: Undead Master trophy and 6 hours activity time (This Era) of Night Time.</p>
 	<p><b>Cost</b>: 1 Sp (1e24) Undead Coins</p>
 	<p><b>Effect</b>: Assistants count more based on your offline bonus.</p>
 	<p><b>Formula</b>: (0.025 * ln(1 + x) ^ 2)%, where x is offline bonus multiplier.</p>

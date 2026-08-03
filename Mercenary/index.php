@@ -47,7 +47,7 @@
 	<h6 id="MCC5"></h6><p><b>Mercenary Challenge 5</b></p>
 	<p><b><img src="/realm/Factions/picks/TheArtofWarChallenge.png" align="middle"> The Art of War</b></p>
 	<p>An expert Mercenary should learn by other cultures. That has been our call for generations. Now, it is your turn to answer that call.</p>
-	<p><b>Requirements</b>: R206, Any Mercenary, 18,000 Royal Exchanges made in this game, True Harlequin build.</p>
+	<p><b>Requirements</b>: R206, Any Mercenary, 18,000 Royal Exchanges made in this Era, True Harlequin build.</p>
 	<p><b>Challenge</b>: Have at least 1 day spent with every alignment in this Reincarnation; Have at least 600,000 buildings without using any research.</p>
 	<p><b>Effect</b>: Unique Buildings that match your Lineage and Set Factions or their Faction Coin affinity have their production increased based on the amount of time spent with each of those factions. Does not suffer from Ascension penalties.</p>
 	<p><b>Formula</b>: (x ^ 0.7)%, where x is time spent with the respective faction.</p>
@@ -58,8 +58,8 @@
 	<p><b><img src="/realm/Factions/picks/WarcryChallengeReward.png" align="middle"> Warcry</b></p>
 	<p>Call to Arms gains additional effects based on your alignments, scaling off your Call to Arms strength.</p>
 	<p><b>General Formula</b>: y = 25 + (0.3 * x ^ 0.975) where x is building count.</p>
-	<p><b>Good</b>: Grants one maximum castable Call to Arms tier per ascension and removes one ascension penalty from Call to Arms. Tax Collection casts in this game now increases Call to Arms base bonus (This bonus will boost the other Warcry effect. Stacks multiplicatively with W180, additively with C225 & R150 power).</p>
-	<p><b>Formula</b>: (1.5 * x ^ 0.5)%, where x is Tax Collection casts this game.</p>
+	<p><b>Good</b>: Grants one maximum castable Call to Arms tier per ascension and removes one ascension penalty from Call to Arms. Tax Collection casts in this Era now increases Call to Arms base bonus (This bonus will boost the other Warcry effect. Stacks multiplicatively with W180, additively with C225 & R150 power).</p>
+	<p><b>Formula</b>: (1.5 * x ^ 0.5)%, where x is Tax Collection casts this Era.</p>
 	<p><b>Evil</b>: Multiplicatively increase Tax Collection worth in seconds.</p>
 	<p><b>Formula</b>: (y ^ 0.35)%</p>
 	<p><b>Neutral</b>: Multiplicatively increase Faction Coins find chance.</p>

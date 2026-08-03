@@ -106,7 +106,7 @@
 	<p><b>Clue</b>: Are Faction Coins attracted to glass?</p>
 	<p><b>Description</b>: A strange, glass-like material that appears to have been shattered into three pieces.</p>
 	<p><b>Requirement</b>: R125+, Faceless Faction, 12,500+ Excavations</p>
-	<p><b>Chance</b>: (log10(1 + x) ^ 3 / 2,500,000 (2.5 M))%, where x is Faction Coins found this game.</p>
+	<p><b>Chance</b>: (log10(1 + x) ^ 3 / 2,500,000 (2.5 M))%, where x is Faction Coins found this Era.</p>
 	<p><b><img src="/realm/Factions/picks/ThirdCrystalFragment.png" align="middle"> Third Crystal Fragment</b></p>
 	<p><b>Clue</b>: Also acts as a spell catalyst.</p>
 	<p><b>Description</b>: A strange, glass-like material that appears to have been shattered into three pieces.</p>
@@ -117,7 +117,7 @@
 	<p><b>Clue</b>: Click to Carve.</p>
 	<p><b>Description</b>: Made from stone so ancient it is unknown to the current world. Two parts seem to be missing.</p>
 	<p><b>Requirement</b>: R125, Elven Faction, 12,500+ Excavations</p>
-	<p><b>Chance</b>: (log10(1 + x) ^ 3 / 20,000)%, where x is the amount of clicks made in this game.</p>
+	<p><b>Chance</b>: (log10(1 + x) ^ 3 / 20,000)%, where x is the amount of clicks made in this Era.</p>
 	<p><b><img src="/realm/Factions/picks/SecondStoneFragment.png" align="middle"> Second Stone Fragment</b></p>
 	<p><b>Clue</b>: Stone to stone, buildings to buildings.</p>
 	<p><b>Description</b>: Made from stone so ancient it is unknown to the current world. Two parts seem to be missing.</p>
@@ -127,14 +127,14 @@
 	<p><b>Clue</b>: Might be collected with taxes.</p>
 	<p><b>Description</b>: Made from stone so ancient it is unknown to the current world. Two parts seem to be missing.</p>
 	<p><b>Requirement</b>: R125+, Goblin Faction, 12,500+ Excavations</p>
-	<p><b>Chance</b>: (log10(1 + x) ^ 3 / 125,000)%, where x is Tax Collections cast in this game.</p>
+	<p><b>Chance</b>: (log10(1 + x) ^ 3 / 125,000)%, where x is Tax Collections cast in this Era.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/ObsidianCrown.png" align="middle"> Obsidian Crown</b></p>
 	<p><b>Clue</b>: Only the wisest turns over the same stone twice. Or more.</p>
 	<p><b>Description</b>: The legendary Black Crown of the Mercenary Lord. Some words are engraved into the inner circle at its base: &quot;Aran en Ilya, Silas en Quenta&quot;.</p>
-	<p><b>Requirement</b>: R170+, play as Mercenary, 10 excavation resets (This game)</p>
+	<p><b>Requirement</b>: R170+, play as Mercenary, 10 excavation resets (This Era)</p>
 	<p><b>Effect</b>: Unlocks Mercenary Union Contract</p>
-	<p><b>Chance</b>: ((x - 10) / 1,000)%, x is the number of free and ruby excavation resets (This game)</p>
+	<p><b>Chance</b>: ((x - 10) / 1,000)%, x is the number of free and ruby excavation resets (This Era)</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/ForgottenRelic.png" align="middle"> Forgotten Relic</b></p>
 	<p><b>Clue</b>: Research it!</p>

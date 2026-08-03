@@ -195,8 +195,8 @@
 	<p><b>Formula</b>: (x ^ 0.6)%, where x is the number of Good Buildings you own.</p>
 	<p></p>
 	<p><b>Elven Efficiency</b></p>
-	<p><b>Effect</b>: Increase Royal Exchange bonus based on Faction Coins found this game.</p>
-	<p><b>Formula</b>: +(2 * ln(1 + x) ^ 2)%, where x is Faction Coins found this game.</p>
+	<p><b>Effect</b>: Increase Royal Exchange bonus based on Faction Coins found this Era.</p>
+	<p><b>Formula</b>: +(2 * ln(1 + x) ^ 2)%, where x is Faction Coins found this Era.</p>
 	<p></p>
 	<p><b>Secret Clicking Techniques</b></p>
 	<p><b>Effect</b>: Increase the production of all buildings based on Clicks total.</p>
@@ -205,8 +205,8 @@
 		<area research="
 	<p><img src='/realm/Factions/picks/ElvenUpgrade9.png' align='middle'><b> Elven Gold Legacy</b></p>
 	<p><b>Elven Diplomacy</b></p>
-	<p><b>Effect</b>: Clicks count more based on Faction Coins found this game.</p>
-	<p><b>Formula</b>: (2 * ln(1 + x) ^ 2)%, where x is Faction Coins found this game.</p>
+	<p><b>Effect</b>: Clicks count more based on Faction Coins found this Era.</p>
+	<p><b>Formula</b>: (2 * ln(1 + x) ^ 2)%, where x is Faction Coins found this Era.</p>
 	<p></p>
 	<p><b>Elven Luck</b></p>
 	<p><b>Effect</b>: Each time you click for money you have 1% chance to gain coins equal to 250000% of your production, also generating Faction Coins based on Reincarnation made.</p>
@@ -232,9 +232,9 @@
 	<p><b>Formula</b>: (2 * ln(1 + x) ^ 2)%, where x is assistants owned.</p>
 	<p></p>
 	<p><b>Elven Discipline</b></p>
-	<p><b>Effect</b>: Increase assistants additively and multiplicatively based on the amount of Faction Coins found in this game.</p>
-	<p><b>Formula</b>: +(50 * ln(1 + x) ^ 1.5), where x is Faction Coins found this game (additively).</p>
-	<p><b>Formula</b>: (1.5 * log10(1 + x) ^ 1.5)%, where x is Faction Coins found this game (multiplicatively).</p>
+	<p><b>Effect</b>: Increase assistants additively and multiplicatively based on the amount of Faction Coins found in this Era.</p>
+	<p><b>Formula</b>: +(50 * ln(1 + x) ^ 1.5), where x is Faction Coins found this Era (additively).</p>
+	<p><b>Formula</b>: (1.5 * log10(1 + x) ^ 1.5)%, where x is Faction Coins found this Era (multiplicatively).</p>
 		" coords="190,70,244,124" shape="rect">
 		<area research="
 	<p><img src='/realm/Factions/picks/AngelUpgrade3.png' align='middle'><b> Angel Bronze Legacy</b></p>
@@ -243,8 +243,8 @@
 	<p><b>Formula</b>: +(1.6 * x ^ 0.4), where x is the amount of buildings you own.</p>
 	<p></p>
 	<p><b>Angelic Determination</b></p>
-	<p><b>Effect</b>: Increase the production of all buildings based on spells cast this game.</p>
-	<p><b>Formula</b>: (4 * ln(1 + x) ^ 2)%, where x is spells cast this game.</p>
+	<p><b>Effect</b>: Increase the production of all buildings based on spells cast this Era.</p>
+	<p><b>Formula</b>: (4 * ln(1 + x) ^ 2)%, where x is spells cast this Era.</p>
 	<p><b>Effect</b>: Also increase Angel Coins found (from all sources) by 500%.</p>
 	<p></p>
 	<p><b>Angel Feathers</b></p>
@@ -287,7 +287,7 @@
 	<p><b>Angelic Fortitude</b></p>
 	<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on the sum of all your spells' activity time (this Reincarnation).</p>
 	<p><b>Formula</b>: (x ^ 0.7)%, where x is the sum of all your spells' activity time in this Reincarnation.</p>
-	<p><b>Note</b>: Counts only the activity time of the spells you have in this game available.</p>
+	<p><b>Note</b>: Counts only the activity time of the spells you have in this Era available.</p>
 	<p></p>
 	<p><b>Seraphim Wings</b></p>
 	<p><b>Effect</b>: Multiplicatively increase Maximum Mana, Mana Regeneration, Faction Coin find chance and assistants by 200%.</p>
@@ -295,8 +295,8 @@
 		<area research="
 	<p><img src='/realm/Factions/picks/GoblinUpgrade3.png' align='middle'><b> Goblin Bronze Legacy</b></p>
 	<p><b>Strong Currency</b></p>
-	<p><b>Effect</b>: Gain assistants additively based on the amount of Faction Coins found in this game.</p>
-	<p><b>Formula</b>: +(0.5 * ln(1 + x) ^ 2), where x is Faction Coins found this game.</p>
+	<p><b>Effect</b>: Gain assistants additively based on the amount of Faction Coins found in this Era.</p>
+	<p><b>Formula</b>: +(0.5 * ln(1 + x) ^ 2), where x is Faction Coins found this Era.</p>
 	<p></p>
 	<p><b>Slave Trading</b></p>
 	<p><b>Effect</b>: Increase the production of all buildings based on the amount of Evil buildings you own.</p>
@@ -310,8 +310,8 @@
 	<p><img src='/realm/Factions/picks/GoblinUpgrade6.png' align='middle'><b> Goblin Silver Legacy</b></p>
 	<p><b>Black Market</b></p>
 	<p><b>Effect</b>: Production bonus from gems is increased by a multiplicative 150%.</p>
-	<p><b>Effect</b>: Also increase offline production bonus based on the amount of Tax Collections cast this game.</p>
-	<p><b>Formula</b>: (log10(1 + x) ^ 2)%, where x is Tax Collection casts this game.</p>
+	<p><b>Effect</b>: Also increase offline production bonus based on the amount of Tax Collections cast this Era.</p>
+	<p><b>Formula</b>: (log10(1 + x) ^ 2)%, where x is Tax Collection casts this Era.</p>
 	<p></p>
 	<p><b>Goblin Economists</b></p>
 	<p><b>Effect</b>: Mutiplicatively increase Mana Regeneration based on based on Gold owned.</p>
@@ -341,8 +341,8 @@
 	<p><b>Formula</b>: (0.5 * x ^ 0.5)%, where x is the highest amount of Slave Markets you own this Reincarnation.</p>
 	<p></p>
 	<p><b>Money is Magic</b></p>
-	<p><b>Effect</b>: Increase mana regeneration based on the amount of Tax Collections cast in this game.</p>
-	<p><b>Formula</b>: (2 * ln(1 + x) ^ 2)%, where x is the amount of Tax Collections cast this game.</p>
+	<p><b>Effect</b>: Increase mana regeneration based on the amount of Tax Collections cast in this Era.</p>
+	<p><b>Formula</b>: (2 * ln(1 + x) ^ 2)%, where x is the amount of Tax Collections cast this Era.</p>
 	<p></p>
 	<p><b>Lousy Architecture</b></p>
 	<p><b>Effect</b>: Reduce Non-Unique buildings cost multiplier by 0.01; with no other reductions applying, the multiplier will be 1.14 instead of 1.15.</p>
@@ -374,8 +374,8 @@
 	<p><b>Formula</b>: +(0.4 * x ^ 0.6), where x is the time spent offline in this Reincarnation.</p>
 	<p></p>
 	<p><b>Plagued Buildings</b></p>
-	<p><b>Effect</b>: Increase the production of all buildings based on time spent in this game.</p>
-	<p><b>Formula</b>: (0.75 * x ^ 0.75)%, where x is time spent this game.</p>
+	<p><b>Effect</b>: Increase the production of all buildings based on time spent in this Era.</p>
+	<p><b>Formula</b>: (0.75 * x ^ 0.75)%, where x is time spent this Era.</p>
 		" coords="70,250,124,304" shape="rect">
 		<area research="
 	<p><img src='/realm/Factions/picks/UndeadUpgrade9.png' align='middle'><b> Undead Gold Legacy</b></p>
@@ -396,8 +396,8 @@
 	<p><b>Formula</b>: (1.3 * x ^ 0.7)%, where x is the highest amount of Flesh Workshops you built in this Reincarnation.</p>
 	<p></p>
 	<p><b>Eternal Servitude</b></p>
-	<p><b>Effect</b>: Increase the production of Unique buildings based on time spent in this game.</p>
-	<p><b>Formula</b>: (x ^ 0.7)%, where x is time spent this game.</p>
+	<p><b>Effect</b>: Increase the production of Unique buildings based on time spent in this Era.</p>
+	<p><b>Formula</b>: (x ^ 0.7)%, where x is time spent this Era.</p>
 	<p></p>
 	<p><b>Zombie Apocalypse</b></p>
 	<p><b>Effect</b>: Gain assistants additively based on the total amount of time spent offline in this Reincarnation.</p>
@@ -421,15 +421,15 @@
 	<p><img src='/realm/Factions/picks/DemonUpgrade6.png' align='middle'><b> Demon Silver Legacy</b></p>
 	<p><b>Lava Pits</b></p>
 	<p><b>Effect</b>: Increase the base production of Evil Fortresses by +200,000 and Hell Portals by +2,000,000.</p>
-	<p><b>Effect</b>: Your playtime in this game counts more by 6 additional hours.</p>
+	<p><b>Effect</b>: Your playtime in this Era counts more by 6 additional hours.</p>
 	<p></p>
 	<p><b>Demon Overseers</b></p>
 	<p><b>Effect</b>: Increase the production of the three highest building tiers based on the amount of Trophies you unlocked.</p>
 	<p><b>Formula</b>: (2 * x ^ 0.8)%, where x is the amount of trophies unlocked.</p>
 	<p></p>
 	<p><b>Demonic Presence</b></p>
-	<p><b>Effect</b>: Increase the maximum Mana additively based on Evil spells cast in this game (additive).</p>
-	<p><b>Formula</b>: +(6 * x ^ 0.4), where x is Evil spells cast this game.</p>
+	<p><b>Effect</b>: Increase the maximum Mana additively based on Evil spells cast in this Era (additive).</p>
+	<p><b>Formula</b>: +(6 * x ^ 0.4), where x is Evil spells cast this Era.</p>
 		" coords="70,310,124,364" shape="rect">
 		<area research="
 	<p><img src='/realm/Factions/picks/DemonUpgrade9.png' align='middle'><b> Demon Gold Legacy</b></p>
@@ -466,8 +466,8 @@
 	<p><b>Formula</b>: (6 * x ^ 0.6)%, where x is the amount of buildings built.</p>
 	<p></p>
 	<p><b>Charged Clicks</b></p>
-	<p><b>Effect</b>: Multiplicatively increase Mana Regeneration based on clicks made in this game.</p>
-	<p><b>Formula</b>: (25 + 2.5 * log10(1 + x) ^ 2.5 + x ^ 0.25)%, where x is clicks made this game.</p>
+	<p><b>Effect</b>: Multiplicatively increase Mana Regeneration based on clicks made in this Era.</p>
+	<p><b>Formula</b>: (25 + 2.5 * log10(1 + x) ^ 2.5 + x ^ 0.25)%, where x is clicks made this Era.</p>
 	<p></p>
 	<p><b>Titan Obelisk</b></p>
 	<p><b>Effect</b>: Increase Faction Coin find chance additively based on time spent as Neutral in this Reincarnation.</p>
@@ -520,8 +520,8 @@
 	<p><b>Formula</b>: (4000 * (12 - T))%, where T is building tier.</p>
 	<p></p>
 	<p><b>Animal Companions</b></p>
-	<p><b>Effect</b>: You instantly attract 3 Animal assistants and more will come based on the time spent in this game.</p>
-	<p><b>Formula</b>: (3 + 1.75 * x ^ 0.5), where x is time spent in this game.</p>
+	<p><b>Effect</b>: You instantly attract 3 Animal assistants and more will come based on the time spent in this Era.</p>
+	<p><b>Formula</b>: (3 + 1.75 * x ^ 0.5), where x is time spent in this Era.</p>
 	<p></p>
 	<p><b>Natural Recycling</b></p>
 	<p><b>Effect</b>: Increase Faction Coin find chance additively and multiplicatively based on the amount of the total buildings you own.</p>
@@ -562,10 +562,10 @@
 	<p><b>Formula</b>: (0.5 * x ^ 0.5)%, where x is the highest amount of Ziggurats built in this Reincarnation.</p>
 	<p></p>
 	<p><b>Lunar Cycle</b></p>
-	<p><b>Effect</b>: Increase Maximum Mana additively based on time spent online in this game.</p>
-	<p><b>Formula</b>: +(50 * x ^ 0.85), where x is time spent online in this game.</p>
-	<p><b>Effect</b>: Increase Maximum Mana multiplicatively based on time spent offline in this game.</p>
-	<p><b>Formula</b>: (0.5 * x ^ 0.5)%, where x is time spent offline in this game.</p>
+	<p><b>Effect</b>: Increase Maximum Mana additively based on time spent online in this Era.</p>
+	<p><b>Formula</b>: +(50 * x ^ 0.85), where x is time spent online in this Era.</p>
+	<p><b>Effect</b>: Increase Maximum Mana multiplicatively based on time spent offline in this Era.</p>
+	<p><b>Formula</b>: (0.5 * x ^ 0.5)%, where x is time spent offline in this Era.</p>
 	<p></p>
 	<p><b>Grove Farming</b></p>
 	<p><b>Effect</b>: Increase the production of all buildings based on their tier. Middle tiers get better bonuses.</p>
@@ -617,7 +617,7 @@
 	<p><img src='/realm/Factions/picks/FacelessUpgrade12.png' align='middle'><b> Faceless Diamond Legacy</b></p>
 	<p><b>Primal Knowledge</b></p>
 	<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on the highest amount of Forbidden Libraries you built in this Reincarnation. Grows over time and resets every 15 minutes.</p>
-	<p><b>Formula</b>: ((t % 900) / 75 * x ^ 0.4)%, where t is time spent this game, x is the highest amount of Forbidden Libraries you built in this Reincarnation.</p>
+	<p><b>Formula</b>: ((t % 900) / 75 * x ^ 0.4)%, where t is time spent this Era, x is the highest amount of Forbidden Libraries you built in this Reincarnation.</p>
 	<p></p>
 	<p><b>Forbidden Language</b></p>
 	<p><b>Effect</b>: Increase spell durations based on the amount of Reincarnations made.</p>
@@ -653,13 +653,13 @@
 	<p></p>
 	<p><b>Bearded Assistants</b></p>
 	<p><b>Effect</b>: Increase the production of assistants based on how long their beard is (it grows over time!).</p>
-	<p><b>Formula</b>: (x ^ 0.7)%, where x is time spent in this game.</p>
+	<p><b>Formula</b>: (x ^ 0.7)%, where x is time spent in this Era.</p>
 		" coords="70,550,124,604" shape="rect">
 	<area research="
 	<p><img src='/realm/Factions/picks/DwarvenUpgrade9.png' align='middle'><b> Dwarven Gold Legacy</b></p>
 	<p><b>Battlehammers</b></p>
-	<p><b>Effect</b>: Increase the production of all buildings based on the amount of Dwarven Coins found in this game.</p>
-	<p><b>Formula</b>: (2 * ln(1 + x) ^ 2))%, where x is the amount of Dwarven Coins found in this game.</p>
+	<p><b>Effect</b>: Increase the production of all buildings based on the amount of Dwarven Coins found in this Era.</p>
+	<p><b>Formula</b>: (2 * ln(1 + x) ^ 2))%, where x is the amount of Dwarven Coins found in this Era.</p>
 	<p></p>
 	<p><b>Magic Resistance</b></p>
 	<p><b>Effect</b>: Reduce Excavation cost multiplier.</p>
@@ -701,7 +701,7 @@
 	<p><img src='/realm/Factions/picks/DrowUpgrade6.png' align='middle'><b> Drow Silver Legacy</b></p>
 	<p><b>Mana Addicts</b></p>
 	<p><b>Effect</b>: Mana Regeneration increases over time.</p>
-	<p><b>Formula</b>: +(2.5 + 0.25 * x ^ 0.5), where x is time spent in this game.</p>
+	<p><b>Formula</b>: +(2.5 + 0.25 * x ^ 0.5), where x is time spent in this Era.</p>
 	<p></p>
 	<p><b>Blood Sacrifices</b></p>
 	<p><b>Effect</b>: Increase the production of all buildings based on the highest amount of Dark Temples you built in this Reincarnation.</p>
@@ -721,7 +721,7 @@
 	<p><b>Formula</b>: (0.6 * x ^ 0.6)%, where x is Royal Exchanges made.</p>
 	<p></p>
 	<p><b>Blade Dance</b></p>
-	<p><b>Effect</b>: Increase the production of all buildings based on Combo Strike counter in this game.</p>
+	<p><b>Effect</b>: Increase the production of all buildings based on Combo Strike counter in this Era.</p>
 	<p><b>Formula</b>: (100 + 80 * x ^ 0.4)%, where x is your Combo Strike counter.</p>
 		" coords="130,610,184,664" shape="rect">
 	<area research="
@@ -765,15 +765,15 @@
 	<p><b>Formula</b>: (5 * (x ^ 1.25))%, where x is amount of artifacts you found.</p>
 	<p></p>
 	<p><b>Sharp Claws</b></p>
-	<p><b>Effect</b>: Multiplicatively increase Royal Exchange Bonus and Faction Coin find chance based on clicks made in this game.</p>
-	<p><b>Formula</b>: (0.8 * x ^ 0.35)%, where x is the number of clicks this game.</p>
+	<p><b>Effect</b>: Multiplicatively increase Royal Exchange Bonus and Faction Coin find chance based on clicks made in this Era.</p>
+	<p><b>Formula</b>: (0.8 * x ^ 0.35)%, where x is the number of clicks this Era.</p>
 		" coords="70,670,124,724" shape="rect">
 	<area research="
 	<p><img src='/realm/Factions/picks/DragonUpgrade9.png' align='middle'><b> Dragon Gold Legacy</b></p>
 	<p><b>Ancient Hunger</b></p>
-	<p><b>Effect</b>: Increase Maximum Mana additively and multiplicatively based on the amount of Faction Coins found in this game.</p>
-	<p><b>Formula (Additive)</b>: +(20 * ln(1 + x) ^ 2), where x is Faction Coins found this game.</p>
-	<p><b>Formula (Multiplicative)</b>: (0.75 * ln(1 + x) ^ 1.25)%, where x is Faction Coins found this game.</p>
+	<p><b>Effect</b>: Increase Maximum Mana additively and multiplicatively based on the amount of Faction Coins found in this Era.</p>
+	<p><b>Formula (Additive)</b>: +(20 * ln(1 + x) ^ 2), where x is Faction Coins found this Era.</p>
+	<p><b>Formula (Multiplicative)</b>: (0.75 * ln(1 + x) ^ 1.25)%, where x is Faction Coins found this Era.</p>
 	<p></p>
 	<p><b>Eternal Wisdom</b></p>
 	<p><b>Effect</b>: Increase the production of all buildings based on Royal Exchange bonus.</p>
@@ -809,8 +809,8 @@
 		<area href="#EL-AN" research="
 	<p><img src='/realm/Factions/picks/SacredGlade.png' align='middle'><b> Sacred Glade</b></p>
 	<p><b>Requirement</b>: Elf Legacy, Angel Legacy</p>
-	<p><b>Effect</b>: Increase all spells duration based on clicks made in this game.</p>
-	<p><b>Formula</b>: (2.4 * x ^ 0.4)%, where x is the amount of clicks made in this game.</p>
+	<p><b>Effect</b>: Increase all spells duration based on clicks made in this Era.</p>
+	<p><b>Formula</b>: (2.4 * x ^ 0.4)%, where x is the amount of clicks made in this Era.</p>
 		" coords="70,10,124,64" shape="rect">
 		<area href="#AN-GB" research="
 	<p><img src='/realm/Factions/picks/GoldenHeaven.png' align='middle'><b> Golden Heaven</b></p>
@@ -847,8 +847,8 @@
 	<p><b>Requirement</b>: Elf Legacy, Demon Legacy</p>
 	<p><b>Effect</b>: Autoclicks per second based on the amount of Unique Buildings you own.</p>
 	<p><b>Formula</b>: +(1 + 1.5 * x ^ 0.2)%, where x is the amount of Unique Buildings you own.</p>
-	<p><b>Effect</b>: Also increases production of Unique Buildings based on Autoclicks this game.</p>
-	<p><b>Formula</b>: (2 * log10(1 + x) ^ 2)%, where x is Autoclicks made this game.</p>
+	<p><b>Effect</b>: Also increases production of Unique Buildings based on Autoclicks this Era.</p>
+	<p><b>Formula</b>: (2 * log10(1 + x) ^ 2)%, where x is Autoclicks made this Era.</p>
 	<p><b>Note</b>: 'Clicks count more' effects are <b>not</b> affecting this upgrade.</p>
 		" coords="70,130,124,184" shape="rect">
 		<area href="#AN-DM" research="
@@ -860,8 +860,8 @@
 		<area href="#EL-GB" research="
 	<p><img src='/realm/Factions/picks/GreedFactory.png' align='middle'><b> Greed Factory</b></p>
 	<p><b>Requirement</b>: Elf Legacy, Goblin Legacy</p>
-	<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on Tax Collections casts in this game.</p>
-	<p><b>Formula</b>: (2.5 * ln(1 + x) ^ 2.5)%, where x is the amount of Tax Collection casts in this game.</p>
+	<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on Tax Collections casts in this Era.</p>
+	<p><b>Formula</b>: (2.5 * ln(1 + x) ^ 2.5)%, where x is the amount of Tax Collection casts in this Era.</p>
 		" coords="10,190,64,244" shape="rect">
 		<area href="#FR-UD" research="
 	<p><img src='/realm/Factions/picks/TwistingNetherCombo.png' align='middle'><b> Twisting Nether</b></p>
@@ -930,13 +930,13 @@
 	<hr>
 	<p id="EL-AN"><img src="/realm/Factions/picks/SacredGlade.png" align="middle"><b> Sacred Glade</b></p>
 	<p><b>Requirement</b>: Elf Legacy, Angel Legacy</p>
-	<p><b>Effect</b>: Increase all spells duration based on clicks made in this game.</p>
-	<p><b>Formula</b>: (2.4 * x ^ 0.4)%, where x is the amount of clicks made in this game.</p>
+	<p><b>Effect</b>: Increase all spells duration based on clicks made in this Era.</p>
+	<p><b>Formula</b>: (2.4 * x ^ 0.4)%, where x is the amount of clicks made in this Era.</p>
 	<hr>
 	<p id="EL-GB"><img src="/realm/Factions/picks/GreedFactory.png" align="middle"><b> Greed Factory</b></p>
 	<p><b>Requirement</b>: Elf Legacy, Goblin Legacy</p>
-	<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on Tax Collections casts in this game.</p>
-	<p><b>Formula</b>: (2.5 * ln(1 + x) ^ 2.5)%, where x is the amount of Tax Collection casts in this game.</p>
+	<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on Tax Collections casts in this Era.</p>
+	<p><b>Formula</b>: (2.5 * ln(1 + x) ^ 2.5)%, where x is the amount of Tax Collection casts in this Era.</p>
 	<hr>
 	<p id="EL-UD"><img src="/realm/Factions/picks/SwampofSorrows.png" align="middle"><b> Swamp of Sorrows</b></p>
 	<p><b>Requirement</b>: Elf Legacy, Undead Legacy</p>
@@ -947,8 +947,8 @@
 	<p><b>Requirement</b>: Elf Legacy, Demon Legacy</p>
 	<p><b>Effect</b>: Autoclicks per second based on the amount of Unique Buildings you own.</p>
 	<p><b>Formula</b>: +(1 + 1.5 * x ^ 0.2)%, where x is the amount of Unique Buildings you own.</p>
-	<p><b>Effect</b>: Also increases production of Unique Buildings based on Autoclicks this game.</p>
-	<p><b>Formula</b>: (2 * log10(1 + x) ^ 2)%, where x is Autoclicks made this game.</p>
+	<p><b>Effect</b>: Also increases production of Unique Buildings based on Autoclicks this Era.</p>
+	<p><b>Formula</b>: (2 * log10(1 + x) ^ 2)%, where x is Autoclicks made this Era.</p>
 	<p><b>Note</b>: 'Clicks count more' effects are <b>not</b> affecting this upgrade.</p>
 	<hr>
 	<p id="AN-GB"><img src="/realm/Factions/picks/GoldenHeaven.png" align="middle"><b> Golden Heaven</b></p>

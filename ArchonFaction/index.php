@@ -40,8 +40,8 @@
 	<p><b>Faction spell</b></p>
 	<p><b><img src="/realm/Factions/picks/Precognition.png" align="middle"> Precognition</b></p>
 	<p><b>Cost</b>: 123,456 Mana - <b>Duration</b>: 60 seconds</p>
-	<p><b>Effect</b>: Buildings, Assistants, Royal Exchanges, Spells cast and Clicks count more based on Mana produced in this game.</p>
-	<p><b>Formula</b>: (ln(1 + x) ^ 1.25)%, where x is Mana produced in this game.</p>
+	<p><b>Effect</b>: Buildings, Assistants, Royal Exchanges, Spells cast and Clicks count more based on Mana produced in this Era.</p>
+	<p><b>Formula</b>: (ln(1 + x) ^ 1.25)%, where x is Mana produced in this Era.</p>
 	<p><b>Note</b>: Formula Improved to (1.25 * ln(1 + x) ^ 1.5)% with AR2.</p>
 	<br/>
 	<p><b>Spell Trophy & Upgrade</b></p>
@@ -49,11 +49,11 @@
 	<p><b>Requirement</b>: Cast Precognition with at least 100 Qa (1e17) Mana Regeneration.</p>
 	<p><b>Note</b>: Precognition raises regen itself. Make sure that you have 100 Qa (1e17) before being cast.</p>
 	<p><b>Cost</b>: 10 Octg (1e118), A3+ Free</p>
-	<p><b>Effect</b>: A fraction of Precognition's duration is added to time spent in this game.</p>
+	<p><b>Effect</b>: A fraction of Precognition's duration is added to time spent in this Era.</p>
 	<p><b>Formula</b>: (100 * ln(1 + x / 60) ^ 2.5), where x is its duration.</p>
 	<hr>
 	<center><b>When using Mercenary</b></center>
-	<p><b>Note</b>: Elite Faction Upgrades can only be purchased with Mercenary Upgrade 4, 8, 12 and 16.</p>
+	<p><b>Note</b>: Astral Faction Upgrades can only be purchased with Mercenary Upgrade 4, 8, 12 and 16.</p>
 	<p><b>Note</b>: Elite spells can only be bought from the Mercenary Sorcery contract.</p>
 	<hr>
 	<p><b>Tier 1 Upgrades</b></p>
@@ -73,7 +73,7 @@
 	<p><b>Effect</b>: Maximum Mana counts more based on the amount of time spent as Order in this Reincarnation.</p>
 	<p><b>Formula</b>: (0.25 * x ^ 0.5)%, where x is time spent as Order this Reincarnation</p>
 	<p><b>Effect</b>: Also increase Precognition base, scaling, and changes its starting duration to 5 minutes.</p>
-	<p><b>Precognition Formula</b>: (1.25 * ln(1 + x) ^ 1.5)%, where x is Mana produced in this game.</p>
+	<p><b>Precognition Formula</b>: (1.25 * ln(1 + x) ^ 1.5)%, where x is Mana produced in this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/ArchonUpgrade3.png" align="middle"> Cosmic Resonance</b></p>
 	<p><b>Cost</b>: 100 NoQag (1e152)</p>
@@ -149,7 +149,7 @@
 	<p><b>Cost</b>: 1 Dd (1e39) Angel and Undead Coins</p>
 	<p><b>Effect</b>: Grants access to Union Upgrades.</p>
 	<p><b>Effect</b>: Temporal Flux also increases Maximum Mana.</p>
-	<p><b>Formula</b>: (0.35 * (x / 60) ^ 0.825)%, where x is time spent in this game.</p>
+	<p><b>Formula</b>: (0.35 * (x / 60) ^ 0.825)%, where x is time spent in this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/ArchonUpgrade10.png" align="middle"> Purity of Form</b></p>
 	<p><b>Requirements</b>: Archon Union</p>

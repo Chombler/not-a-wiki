@@ -36,8 +36,8 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/AngelUpgrade2.png" align="middle"> Angelic Determination</b></p>
 	<p><b>Cost</b>: 500 M (5e8)</p>
-	<p><b>Effect</b>: Increase the production of all buildings based on spells cast this game.</p>
-	<p><b>Formula</b>: (4 * ln(1 + x) ^ 2)%, where x is spells cast this game.</p>
+	<p><b>Effect</b>: Increase the production of all buildings based on spells cast this Era.</p>
+	<p><b>Formula</b>: (4 * ln(1 + x) ^ 2)%, where x is spells cast this Era.</p>
 	<p><b>Effect</b>: Also increase Angel Coins found (from all sources) by 500%.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/AngelUpgrade3.png" align="middle"> Angel Feathers</b></p>
@@ -138,8 +138,8 @@
 	<p><b>Requirement</b>: Holy Sites Unique Building</p>
 	<p><b>Cost</b>: 1 Qi (1e18) Angel Coins</p>
 	<p><b>Effect</b>: Grants access to Union Upgrades.</p>
-	<p><b>Effect (R111+)</b>: Increase Mana Regeneration multiplicaively based on Mana produced in this game.</p>
-	<p><b>Formula</b>: (2.5 * ln(1 + x) ^ 2.5)%, where x is Mana produced in this game.</p>
+	<p><b>Effect (R111+)</b>: Increase Mana Regeneration multiplicaively based on Mana produced in this Era.</p>
+	<p><b>Formula</b>: (2.5 * ln(1 + x) ^ 2.5)%, where x is Mana produced in this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/AngelUpgrade10.png" alt="Heaven's Brilliance" align="middle"> Heaven's Brilliance</b></p>
 	<p><b>Cost</b>: 1 Nod (1e60) Emerald Coins</p>
@@ -153,7 +153,7 @@
 	<p><b>Requirement</b>: Angels Union</p>
 	<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on the sum of all your spells' activity time (this Reincarnation).</p>
 	<p><b>Formula</b>: (x ^ 0.7)%, where x is the sum of all your spells' activity time in this Reincarnation.</p>
-	<p><b>Note</b>: Counts only the activity time of the spells you have in this game available.</p>
+	<p><b>Note</b>: Counts only the activity time of the spells you have in this Era available.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/AngelUpgrade12.png" alt="Seraphim Wings" align="middle"> Seraphim Wings</b></p>
 	<p><b>Cost</b>: 100 Tg (1e95) Emerald Coins</p>
@@ -162,9 +162,9 @@
 	<hr>
 	<p><b><img src="/realm/Factions/picks/AdvancedAngelHeritage.png" align="middle"> Advanced Angelic Heritage</b></p>
 	<p><b>Cost</b>: 1 Sp (1e24) Angel Coins</p>
-	<p><b>Requirements</b>: Angel Master trophy and 6 hours activity time (This Game) of God's Hand.</p>
-	<p><b>Effect</b>: Increase Mana Regeneration additively based on the amount of spells cast in this game.</p>
-	<p><b>Formula</b>: +(5 * x ^ 0.25), where x is spells cast this game.</p>
+	<p><b>Requirements</b>: Angel Master trophy and 6 hours activity time (This Era) of God's Hand.</p>
+	<p><b>Effect</b>: Increase Mana Regeneration additively based on the amount of spells cast in this Era.</p>
+	<p><b>Formula</b>: +(5 * x ^ 0.25), where x is spells cast this Era.</p>
 	<p><b>Note</b>: When using their lineage, Advanced Heritage powers are multiplied by the level of the lineage.</p>
 	<p><b>Formula</b>: *(1 + 0.3 * level)</p>
 <?php include "../scripts/footer.html"; ?>

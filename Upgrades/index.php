@@ -166,31 +166,31 @@
                 <p><b>Effect</b>: Increase base clicking reward by 50B (5e10). While offline, generate 1 click per second.</p>
                 <br/>
                 <p><img src="/realm/Factions/picks/FilledTreasure.png" align="middle"><b> Filled Treasure</b></p>
-                <p><b>Requirement</b>: 5,000 Coins by clicking (This Game)</p>
+                <p><b>Requirement</b>: 5,000 Coins by clicking (This Era)</p>
                 <p><b>Cost</b>: 10,000, A1+ Free</p>
                 <p><b>Alignment</b>: Any</p>
                 <p><b>Effect</b>: Increase clicking reward by 25% and the production of all buildings by 25%.</p>
                 <br/>
                 <p><img src="/realm/Factions/picks/RichTreasure.png" align="middle"><b> Rich Treasure</b></p>
-                <p><b>Requirement</b>: 5 M (5e6) Coins by clicking (This Game)</p>
+                <p><b>Requirement</b>: 5 M (5e6) Coins by clicking (This Era)</p>
                 <p><b>Cost</b>: 50M (5e7), A1+ Free</p>
                 <p><b>Alignment</b>: Any</p>
                 <p><b>Effect</b>: Increase clicking reward by 25% and the production of all buildings by 25%.</p>
                 <br/>
                 <p><img src="/realm/Factions/picks/WealthyTreasure.png" align="middle"><b> Wealthy Treasure</b></p>
-                <p><b>Requirement</b>: 5 B (5e9) Coins by clicking (This Game)</p>
+                <p><b>Requirement</b>: 5 B (5e9) Coins by clicking (This Era)</p>
                 <p><b>Cost</b>: 100B (1e11), A1+ Free</p>
                 <p><b>Alignment</b>: Any</p>
                 <p><b>Effect</b>: Increase clicking reward by 25% and the production of all buildings by 25%.</p>
                 <br/>
                 <p><img src="/realm/Factions/picks/OpulentTreasure.png" align="middle"><b> Opulent Treasure</b></p>
-                <p><b>Requirement</b>: 5 T (5e12) Coins by clicking (This Game)</p>
+                <p><b>Requirement</b>: 5 T (5e12) Coins by clicking (This Era)</p>
                 <p><b>Cost</b>: 150 T (1.5e14), A1+ Free</p>
                 <p><b>Alignment</b>: Any</p>
                 <p><b>Effect</b>: Pre Ascension, Increase clicking reward by 25% and the production of all buildings by 25%.</p>
                 <br/>
                 <p><img src="/realm/Factions/picks/OverflowingTreasure.png" align="middle"><b> Overflowing Treasure</b></p>
-                <p><b>Requirement</b>: 5 Qa (5e15) Coins by clicking (This Game)</p>
+                <p><b>Requirement</b>: 5 Qa (5e15) Coins by clicking (This Era)</p>
                 <p><b>Cost</b>: 200 Qa (2e17), A1+ Free</p>
                 <p><b>Alignment</b>: Any</p>
                 <p><b>Effect</b>: Increase clicking reward by 25% and the production of all buildings by 25%.</p>

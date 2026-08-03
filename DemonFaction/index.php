@@ -51,7 +51,7 @@
 	<p><b><img src="/realm/Factions/picks/DemonUpgrade4.png" align="middle"> Lava Pits</b></p>
 	<p><b>Cost</b>: 500 B (5e11)</p>
 	<p><b>Effect</b>: Increase the base production of Evil Fortresses by +200,000 and Hell Portals by +2,000,000.</p>
-	<p><b>Effect</b>: Your playtime in this game counts more by 6 additional hours.</p>
+	<p><b>Effect</b>: Your playtime in this Era counts more by 6 additional hours.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DemonUpgrade5.png" align="middle"> Demon Overseers</b></p>
 	<p><b>Cost</b>: 5 T (5e12)</p>
@@ -60,8 +60,8 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DemonUpgrade6.png" align="middle"> Demonic Presence</b></p>
 	<p><b>Cost</b>: 50 T (5e13)</p>
-	<p><b>Effect</b>: Increase the maximum Mana additively based on Evil spells cast in this game (additive).</p>
-	<p><b>Formula</b>: +(6 * x ^ 0.4), where x is Evil spells cast this game.</p>
+	<p><b>Effect</b>: Increase the maximum Mana additively based on Evil spells cast in this Era (additive).</p>
+	<p><b>Formula</b>: +(6 * x ^ 0.4), where x is Evil spells cast this Era.</p>
 	<hr>
 	<p><b>Tier 3 Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/DemonAlliance.png" align="middle"> Demons Alliance</b></p>
@@ -136,8 +136,8 @@
 	<p><b>Requirement</b>: Burning Abyss Unique Building</p>
 	<p><b>Cost</b>: 1 Qi (1e18) Demon Coins</p>
 	<p><b>Effect</b>: Grants access to Union Upgrades.</p>
-	<p><b>Effect (R111+)</b>: A fraction of Non-Evil spells cast in this game count as Evil. Also Trophies count 100% more.</p>
-	<p><b>Formula</b>: (0.01 * x ^ 0.8), where x is Non-Evil spells cast this game.</p>
+	<p><b>Effect (R111+)</b>: A fraction of Non-Evil spells cast in this Era count as Evil. Also Trophies count 100% more.</p>
+	<p><b>Formula</b>: (0.01 * x ^ 0.8), where x is Non-Evil spells cast this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DemonUpgrade10.png" alt="Abyssal Furnace" align="middle"> Abyssal Furnace</b></p>
 	<p><b>Cost</b>: 1 Nod (1e60) Emerald Coins</p>
@@ -158,7 +158,7 @@
 	<p><b>Formula</b>: (2.5 * ln(1 + x) ^ 2.5)%, where x is your Mana Regeneration.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/AdvancedDemonHeritage.png" align="middle"> Advanced Demonic Heritage</b></p>
-	<p><b>Requirements</b>: Demon Master trophy and 6 hours activity time (This Game) of Hellfire Blast.</p>
+	<p><b>Requirements</b>: Demon Master trophy and 6 hours activity time (This Era) of Hellfire Blast.</p>
 	<p><b>Cost</b>: 1 Sp (1e24) Demon Coins</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on trophies unlocked.</p>
 	<p><b>Formula</b>: (0.25 * x ^ 0.75)%, where x is amount of trophies unlocked.</p>

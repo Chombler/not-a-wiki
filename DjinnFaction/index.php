@@ -19,7 +19,7 @@
 	<p><b>Clue</b>: Are Faction Coins attracted to glass?</p>
 	<p><b>Description</b>: A strange, glass-like material that appears to have been shattered into three pieces.</p>
 	<p><b>Requirements</b>: R125+, 12,500+ Excavations, Play as Faceless</p>
-	<p><b>Chance</b>: (log10(1 + x) ^ 3 / 2,500,000 (2.5 M))%, where x is Faction Coins this game.</p>
+	<p><b>Chance</b>: (log10(1 + x) ^ 3 / 2,500,000 (2.5 M))%, where x is Faction Coins this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/ThirdCrystalFragment.png" align="middle"> Third Crystal Fragment</b></p>
 	<p><b>Clue</b>: Also acts as a spell catalyst.</p>
@@ -41,7 +41,7 @@
 	<p><b><img src="/realm/Factions/picks/LimitedWish.png" align="middle"> Limited Wish</b></p>
 	<p><b>Cost</b>: 888,888 mana - <b>Duration</b>: Fixed to 12 seconds</p>
 	<p><b>Effect</b>: Provide a random effect based on your chosen base alignment, for 12 seconds. The duration of the spell cannot be modified. Its power increases as you continue casting this spell.</p>
-	<p><b>Formula</b>: (2.25 * (ln(1 + x) ^ 1.35) * y ^ 0.45)%, where x is Limited Wish activity time in this game and y is a random number between 1 and Limited Wish casts this game rolled on cast.</p>
+	<p><b>Formula</b>: (2.25 * (ln(1 + x) ^ 1.35) * y ^ 0.45)%, where x is Limited Wish activity time in this Era and y is a random number between 1 and Limited Wish casts this Era rolled on cast.</p>
 	<p><b>Possible Effects</b></p>
 	<p><b>1</b>: Increase the production of all buildings.</p>
 	<p><b>Good Alignment</b></p>
@@ -64,7 +64,7 @@
 	<p><b>Effect</b>: Adds 150 casts to Limited Wish's formula.</p>
 	<hr>
 	<center><b>When using Mercenary</b></center>
-	<p><b>Note</b>: Elite Faction Upgrades can only be purchased with Mercenary Upgrade 4, 8, 12 and 16.</p>
+	<p><b>Note</b>: Astral Faction Upgrades can only be purchased with Mercenary Upgrade 4, 8, 12 and 16.</p>
 	<p><b>Note</b>: Elite spells can only be bought from the Mercenary Sorcery contract.</p>
 	<hr>
 	<p><b>Tier 1 Upgrades</b></p>
@@ -76,8 +76,8 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DjinnUpgrade1.png" align="middle"> The Desire Within</b></p>
 	<p><b>Cost</b>: 1 NoQag (1e150)</p>
-	<p><b>Effect</b>: Increase the production of all buildings based on spells of your current alignments cast in this game.</p>
-	<p><b>Formula</b>: (25 * ln(1 + x) ^ 2.5)%, where x is alignments spells cast in this game.</p>
+	<p><b>Effect</b>: Increase the production of all buildings based on spells of your current alignments cast in this Era.</p>
+	<p><b>Formula</b>: (25 * ln(1 + x) ^ 2.5)%, where x is alignments spells cast in this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DjinnUpgrade2.png" align="middle"> Forbidden Will</b></p>
 	<p><b>Cost</b>: 10 NoQag (1e151)</p>
@@ -96,13 +96,13 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DjinnUpgrade4.png" align="middle"> Aura of Magic</b></p>
 	<p><b>Cost</b>: 100 UQig (1e158)</p>
-	<p><b>Effect</b>: Increase non-unique building production based on Mana produced this game.</p>
-	<p><b>Formula</b>: (0.325 * x ^ 0.325)%, where x is Mana produced this game.</p>
+	<p><b>Effect</b>: Increase non-unique building production based on Mana produced this Era.</p>
+	<p><b>Formula</b>: (0.325 * x ^ 0.325)%, where x is Mana produced this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DjinnUpgrade5.png" align="middle"> Spiritual Bindings</b></p>
 	<p><b>Cost</b>: 1 DQig (1e159)</p>
 	<p><b>Effect</b>: Multiplicatively increase assistants based on time spent offline.</p>
-	<p><b>Formula</b>: (0.65 * x ^ 0.5)%, where x is time spent offline in this game.</p>
+	<p><b>Formula</b>: (0.65 * x ^ 0.5)%, where x is time spent offline in this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DjinnUpgrade6.png" align="middle"> Wild Surge</b></p>
 	<p><b>Cost</b>: 10 DQig (1e160)</p>
@@ -139,7 +139,7 @@
 	<p><b>R130+</b></p>
 	<p><b><img src="/realm/Factions/picks/PavilionQuest.png" align="middle"> Pavilion Quest</b></p>
 	<p><b>Description</b>: Greetings. You will have the honor of hosting our people. Cover your realm in Chaos magic for us!</p>
-	<p><b>Requirements</b>: R130+, 5 days of chaos spell activity time this Game (combined).</p>
+	<p><b>Requirements</b>: R130+, 5 days of chaos spell activity time this Era (combined).</p>
 	<p><b>Cost</b>: 1 QaQig (1e165)</p>
 	<p><b>Note</b>: Chaos spells are: Maelstrom, Limited Wish, Catalyst, Hellfire Blast, Fairy Chanting and Brainwave.</p>
 	<br/>
