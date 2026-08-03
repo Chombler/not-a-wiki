@@ -20,7 +20,7 @@
 <p><b>Cost</b>: 100 Qag (1e125)</p>
 <p><b>Effect 1</b>: Allows access to Research Facilities</p>
 <p><b>Effect 2</b>: Upgrade Knights Jousts to Mercenary Camps, boosting their production based on the amount of Non-Unique buildings you own and unlocking more unique perks for the building.</p>
-<p><b>Formula</b>: (1.25 * (1 + x) ^ 1.05), where X is number of Non-Unique Buildings.</p>
+<p><b>Formula</b>: (1.25 * (1 + x) ^ 1.25)%, where x is Non-Unique Buildings built.</p>
 <p><b>Effect 3</b>: Unlocks Round Table</p>
 <br/>
 <p><img src="/realm/Factions/picks/RoundTable.png" alt="Round Table" align="middle"> <b>Round Table</b> (Spell Upgrade)</p>
@@ -52,7 +52,7 @@
 <p><b>Effect 1</b>: Allows access to Research Facilities</p>
 <p><b>Effect 2</b>: Upgrade Evil Fortresses to Tyrant Garrisons, boosting their production based on Offline Production Bonus and unlocking more unique perks for the building.</p>
 <p><b>Effect 3</b>: Unlocks Dark Covenant</p>
-<p><b>Formula</b>: ((log10(1 + x) ^ 3)%, where x is your offline production.</p>
+<p><b>Formula</b>: (85 + 8.5 * x ^ 0.85)%, where x is the Offline Production Bonus multiplier.</p>
 <br/>
 <p><img src="/realm/Factions/picks/ReapInterests.png" alt="Tyrant Garrison" align="middle"> <b>Evil</b></p>
 <p><b>Requirement</b>: Tyrant Garrison</p>
@@ -77,8 +77,8 @@
 <p><b>Requirement</b>: Mercenary Encampment Quest</p>
 <p><b>Cost</b>: 100 Qag (1e125)</p>
 <p><b>Effect 1</b>: Allows access to Research Facilities</p>
-<p><b>Effect 2</b>: Upgrade Inns to Freemason's Hall, Boosting their production based on the highest amount of assistants you had in a single game (This R) and unlocking more unique perks for the building.</p>
-<p><b>Formula</b>: (20 + 20 * x ^ 0.8)%, where x is the highest assistants you had in a single game this R.</p>
+<p><b>Effect 2</b>: Upgrade Inns to Freemason's Halls, boosting their production based on Faction Coins found in this Era and unlocking more unique perks for the building.</p>
+<p><b>Formula</b>: (60 + 60 * ln(1 + x) ^ 6)%, where x is Faction Coins found in this Era.</p>
 <p><b>Effect 3</b>: Unlocks Secret Exchange</p>
 <br/>
 <p><img src="/realm/Factions/picks/SecretExchange.png" alt="Secret Exchange" align="middle"> <b>Secret Exchange</b> (Spell Upgrade)</p>
@@ -92,14 +92,14 @@
 <p><b>Formula</b>: (2.5 * x ^ 2.5), where x is original Faction Coin chance.</p>
 <br/>
 <p><img src="/realm/Factions/picks/ObsidianShardArtifact.png" alt="Secrets of the Warriors" align="middle"> <b>Obsidian Shard</b></p>
-<p><b>Requirement</b>: 8000th Excavation as any Faction, R75+</p>
+<p><b>Requirement</b>: R75+ and the 1,500th Excavation as any Faction.</p>
 <p><b>Description</b>: Extremely hard and black as darkness itself, this material cannot apparently be carved or melted. It is a mystery how you can make this thing into a sword.</p>
 <p><b>Effect</b>: Unlocks Secrets of the Warriors</p>
 <br/>
 <p><img src="/realm/Factions/picks/SecretsoftheWarriors.png" alt="Secrets of the Warriors" align="middle"> <b>Secrets of the Warriors</b></p>
 <p><b>Requirement</b>: Obsidian Shard</p>
 <p><b>Cost</b>: 100 Qiqag (1e140) and 10 Qa (1e16) of every Faction Coin.</p>
-<p><b>Effect</b>: Unlocks Researches for Mercenaries and increases their production by 1000%.</p>
+<p><b>Effect</b>: Unlocks Researches for Mercenaries and increases their production by 10,000%.</p>
 <p><b>Effect</b>: Unlocks 3 Research Slots per branch.</p>
 <hr>
 <p><b>Research</b></p>
@@ -107,7 +107,7 @@
 <p><b>Research Name</b>: Scholarship</p>
 <p><b>Hint</b>: More buildings for the Black Army!</p>
 <p><b>Requirement</b>: 11000 Merc Unique Buildings.</p>
-<p><b>Cost</b>: 30.5 QaQig (3.05e166)</p>
+<p><b>Cost</b>: 2.174e162</p>
 <p><b>Effect</b>: Increase Non-Unique building production based on Unique Buildings owned.</p>
 <p><b>Formula</b>: (10 * x ^ 1.05)%, where x is Unique Buildings owned.</p>
 <br/>
@@ -115,7 +115,7 @@
 <p><b>Research Name</b>: Manipulation</p>
 <p><b>Hint</b>: First spell, many served.</p>
 <p><b>Requirement</b>: 1B (1e9) Tax Collections (This R), (Calefaction A1325) and (Psionics S1500).</p>
-<p><b>Cost</b>: 695.7 Sxg (6.957e185)</p>
+<p><b>Cost</b>: 2.563e179</p>
 <p><b>Effect</b>: Multiplicatively increase Mana Regeneration by 12% per active spell.</p>
 <p><b>Formula</b>: (12 * x)%, where x is active spells.</p>
 <p><b>Effect</b>: Also increases offline spell cast amount multiplicatively by 1200%.</p>
@@ -124,7 +124,7 @@
 <p><b>Research Name</b>: Customizing</p>
 <p><b>Hint</b>: Go into a deeper tunnel.</p>
 <p><b>Requirement</b>: 9000 Excavations as Mercenary.</p>
-<p><b>Cost</b>: 850.7 SxQig (8.507e173)</p>
+<p><b>Cost</b>: 1.066e168</p>
 <p><b>Effect</b>: Increases the production of all buildings based on the amount of artifacts you own.</p>
 <p><b>Formula</b>: (2 * x ^ 2), where X is artifacts you own.</p>
 <br/>
@@ -132,14 +132,14 @@
 <p><b>Research Name</b>: Engineering</p>
 <p><b>Hint</b>: Spend some quality time with the Mercenaries.</p>
 <p><b>Requirement</b>: 12 days as Mercenary (across all Reincarnations).</p>
-<p><b>Cost</b>: 769.3 OcQig (7.693e179)</p>
+<p><b>Cost</b>: 5.227e173</p>
 <p><b>Effect</b>: Increase Maximum Mana based on clicks made in this Reincarnation.</p>
 <p><b>Formula</b>: +(1.5 * x ^ 0.35), where x is clicks made in this Reincarnation.</p>
 <hr>
 <p><b>D2850 - For Mercenary</b></p>
 <p><b>Research Name</b>: Intervention</p>
 <p><b>Requirement</b>: Secrets of the Warriors.</p>
-<p><b>Cost</b>: 33.73 DQig (3.373e160)</p>
+<p><b>Cost</b>: 3.105e159</p>
 <p><b>Effect</b>: Increase Unique Building production based on total time spent as Mercenary.</p>
 <p><b>Formula</b>: (80 + 2 * x ^ 0.8)%, where x is total time spent as Mercenary.</p>
 <br/>
@@ -147,7 +147,7 @@
 <p><b>Research Name</b>: Vampirism</p>
 <p><b>Hint</b>: Sound the alarms, production has gone offline!</p>
 <p><b>Requirement</b>: 100 Sp% (1e26%) offline bonus, (Intervention D2850) and (Upheaval W3150).</p>
-<p><b>Cost</b>: 598.3 TSxg (5.983e194)</p>
+<p><b>Cost</b>: 8.799e187</p>
 <p><b>Effect</b>: Increase assistants additively and multiplicatively based on your Offline Bonus.</p>
 <p><b>Additive Formula</b>: +(2.5 * ln(1 + x) ^ 2.5), where x is your Offline Bonus.</p>
 <p><b>Multiplicative Formula</b>: (0.2 * ln(1 + x) ^ 2)%, where x is your Offline Bonus.</p>
@@ -155,7 +155,7 @@
 <p><b>E3250 - For All Factions</b></p>
 <p><b>Research Name</b>: Hirelings</p>
 <p><b>Requirement</b>: (Intimidation E1325) and (Scholarship S2900).</p>
-<p><b>Cost</b>: 661.6 USxg (6.616e188)</p>
+<p><b>Cost</b>: 1.795e182</p>
 <p><b>Effect</b>: Gain additional assistants based on Faction Coins found in this Era.</p>
 <p><b>Formula</b>: +(5 * ln(1 + x) ^ 2.5), where x is Faction Coins found in this Era.</p>
 <br/>
@@ -163,7 +163,7 @@
 <p><b>Research Name</b>: Estates</p>
 <p><b>Hint</b>: 50k shades of uniqueness.</p>
 <p><b>Requirement</b>: 45000 Unique buildings, (Hoarding E1225) and (Combination A2950).</p>
-<p><b>Cost</b>: 629.2 DSxg (6.292e191)</p>
+<p><b>Cost</b>: 1.257e185</p>
 <p><b>Effect</b>: Gives you all the Unique Buildings of your alignment.</p>
 <p><b>Effect</b>: Ascension 3: Gain all the Unique Buildings that match your alignments.</p>
 <hr>
@@ -171,7 +171,7 @@
 <p><b>Research Name</b>: Combination</p>
 <p><b>Hint</b>: Some lineage?</p>
 <p><b>Requirement</b>: All Lineages Level at 15.</p>
-<p><b>Cost</b>: 259 SxQig (2.59e173)</p>
+<p><b>Cost</b>: 1.522e165</p>
 <p><b>Effect</b>: Select an additional bloodline.</p>
 <p><b>Effect</b>: You also gain the base effect of its respective Lineage.</p>
 <p><b>Effect</b>: Combination Bloodline effects R60/R115 power.</p>
@@ -180,7 +180,7 @@
 <p><b>Research Name</b>: Chemistry</p>
 <p><b>Hint</b>: Get attracted to Faction Coins.</p>
 <p><b>Requirement</b>: 1 No (1e30) FC (Found this Era), (Customizing C3000) & (Manipulation S3200).</p>
-<p><b>Cost</b>: 894.5 QiQig (5.69e197)</p>
+<p><b>Cost</b>: 6.161e190</p>
 <p><b>Effect</b>: Increases Faction Coin find chance based on the total amount of Lineage levels you have.</p>
 <p><b>Effect</b>: Also increases Faction Coin find chance by a multiplicative 300%.</p>
 <p><b>Formula</b>: 3 * x ^ 2.25, where x is total Lineage levels.</p>
@@ -188,7 +188,7 @@
 <p><b>W3050 - For Mercenary</b></p>
 <p><b>Research Name</b>: Flanking</p>
 <p><b>Requirement</b>: 100 M (1e8) Base Assistants, Authority (W1275), and Intimidation (E1325).</p>
-<p><b>Cost</b>: 809 SpQig (8.09e176)</p>
+<p><b>Cost</b>: 7.464e170</p>
 <p><b>Effect</b>: Increases the production of buildings one tier directly above or below a Unique Building based on the amount of assistants you own.</p>
 <p><b>Formula</b>: (2 * x ^ 0.8)%, where x is assistants.</p>
 <br/>
@@ -196,7 +196,7 @@
 <p><b>Research Name</b>: Upheaval</p>
 <p><b>Hint</b>: More of the baseline production buildings!</p>
 <p><b>Requirement</b>: 60000 Farms, Inns and Blacksmiths.</p>
-<p><b>Cost</b>: 731.6 NoQig (7.316e182)</p>
+<p><b>Cost</b>: 3.66e176</p>
 <p><b>Effect</b>: Increases the production of all buildings based on their tier, giving the highest bonus to the lowest.</p>
 <p><b>Formula</b>: (150 * (12 - T) ^ 2.15)%, where T is building tier.</p>
 <?php include "../scripts/footer.html"; ?>

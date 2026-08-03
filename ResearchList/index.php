@@ -14,7 +14,7 @@
 			<div class="autohide">
 				<p><b>S1</b> - For Fairy</p>
 				<p><b>Research Name</b>: Enchanting</p>
-				<p><b>Cost</b>: 750 Qag (7.5e125)</p>
+				<p><b>Cost</b>: 7e122</p>
 				<p><b>Effect</b>: Increase the production of Enchanted Fields based on mana produced in this Era.</p>
 				<p><b>Formula</b>: (1.2 * x ^ 0.8)%, where x is Mana produced in this Era.</p>
 				<hr>
@@ -22,14 +22,14 @@
 				<p><b>Research Name</b>: Channeling</p>
 				<p><b>Hint</b>: Open the Gates of Heaven.</p>
 				<p><b>Requirement</b>: 2,000 Heaven's Gate. (This Era)</p>
-				<p><b>Cost</b>: 28.83 Uqag (2.883e127)</p>
+				<p><b>Cost</b>: 1.446e124</p>
 				<p><b>Effect</b>: Increase the production of all other buildings based on the number of Heaven's Gates you own.</p>
 				<p><b>Formula</b>: (160 * x)%, where x is the number of Heaven's Gates you own.</p>
 				<hr>
 				<p><b>S30</b> - For All Factions</p>
 				<p><b>Research Name</b>: Vacuumancy</p>
 				<p><b>Requirement</b>: Have 5,000 Maximum Mana. (This Era)</p>
-				<p><b>Cost</b>: 95.88 Dqag (9.588e130)</p>
+				<p><b>Cost</b>: 1.21e127</p>
 				<p><b>Effect</b>: Increase Maximum Mana and Mana Regeneration rate based on time spent in this Era.</p>
 				<p><b>Maximum Mana Formula</b>: +(7 * x ^ 0.7), where x is time spent in this Era, in seconds.</p>
 				<p><b>Mana Regeneration Formula</b>: +(0.4 * x ^ 0.6), where x is time spent in this Era, in seconds.</p>
@@ -38,7 +38,7 @@
 				<p><b>Research Name</b>: Conjuration</p>
 				<p><b>Hint</b>: Under a large blue pool...</p>
 				<p><b>Requirement</b>: Have 10,000 Maximum Mana. (This Era)</p>
-				<p><b>Cost</b>: 318.8 Tqag (3.188e134)</p>
+				<p><b>Cost</b>: 1.012e130</p>
 				<p><b>Effect</b>: Each time you cast a spell you also cast free Tax Collections based on the amount of Goblin Banks you own.</p>
 				<p><b>Effect</b>: Also increases offline spell cast amount multiplicatively by 150%.</p>
 				<p><b>Formula</b>: floor((x / 600) ^ 0.9), where x is the number of Goblin Banks you own.</p>
@@ -47,7 +47,7 @@
 				<p><b>Research Name</b>: Mysticism</p>
 				<p><b>Hint</b>: I am a Research among Researches.</p>
 				<p><b>Requirement</b>: 600 Researches (Total)</p>
-				<p><b>Cost</b>: 1.544 Spqag (1.544e144)</p>
+				<p><b>Cost</b>: 1.103e138</p>
 				<p><b>Effect</b>: Increase Mana Regeneration based on Research points.</p>
 				<p><b>Formula</b>: +(2.5 * x ^ 0.5), where x is Research points.</p>
 				<hr>
@@ -55,35 +55,35 @@
 				<p><b>Research Name</b>: Augmentation</p>
 				<p><b>Hint</b>: More Unique buildings will do the trick!</p>
 				<p><b>Requirement</b>: 3,000 Unique Buildings (This Era)</p>
-				<p><b>Cost</b>: 296 Ocqag (2.96e149)</p>
+				<p><b>Cost</b>: 2.668e142</p>
 				<p><b>Effect</b>: Increase the production of Unique Buildings based on Maximum Mana.</p>
 				<p><b>Formula</b>: round(2 * x^0.8)%, where x is your Maximum Mana.</p>
 				<hr>
 				<p><b>S150</b> - For All Factions</p>
 				<p><b>Research Name</b>: Pyromancy</p>
 				<p><b>Requirement</b>: Research Inflame (D10) & Fusion (A105)</p>
-				<p><b>Cost</b>: 129.6 Noqag (1.296e152)</p>
+				<p><b>Cost</b>: 4.151e144</p>
 				<p><b>Effect</b>: Increase the production of the two highest building tiers based on your Mana Regeneration.</p>
 				<p><b>Formula</b>: (10 * (30 * x) ^ 0.6)%, where x is Mana Regeneration per second.</p>
 				<hr>
 				<p><b>S175</b> - For Elf</p>
 				<p><b>Research Name</b>: Empowered Luck</p>
 				<p><b>Requirement</b>: Research Blessing (D1) & Augmentation (S135)</p>
-				<p><b>Cost</b>: 3.273 UQig (3.273e156)</p>
+				<p><b>Cost</b>: 1.868e148</p>
 				<p><b>Effect</b>: For 20 seconds after triggering Elven Luck, increase all-building production based on clicks made in this Era; also increase Elven Luck chance by 24%.</p>
 				<p><b>Formula</b>: (5000 * x ^ 0.25)%, where x is clicks made in this Era.</p>
 				<hr>
 				<p><b>S180</b> - For Fairy</p>
 				<p><b>Research Name</b>: Incantation</p>
 				<p><b>Requirement</b>: Research Enchanting (S1) & Mysticism (S105)</p>
-				<p><b>Cost</b>: 3.273 UQig (3.273e156)</p>
+				<p><b>Cost</b>: 1.005e149</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on Mana Regeneration.</p>
 				<p><b>Formula</b>: (50 + 3 * (30 * x) ^ 0.7)%, where x is your Mana Regeneration per second.</p>
 				<hr>
 				<p><b>S200</b> - For All Factions</p>
 				<p><b>Research Name</b>: Cryomancy</p>
 				<p><b>Requirement</b>: Research Conjuration (S50) and Refraction (A55)</p>
-				<p><b>Cost</b>: 82.65 DQig (8.265e160)</p>
+				<p><b>Cost</b>: 8.406e151</p>
 				<p><b>Effect</b>: Increase Spell Duration based on mana produced in this Era.</p>
 				<p><b>Formula</b>: (5 * ln(1 + x) ^ 1.5)%, where x is mana produced this Era.</p>
 				<hr>
@@ -91,28 +91,28 @@
 				<p><b>Research Name</b>: Projection</p>
 				<p><b>Hint</b>: How many of these are required for a seance?</p>
 				<p><b>Requirement</b>: 200 Spiritual Surge casts (Total this R), Research Channeling (S10) & Incantation (S180)</p>
-				<p><b>Cost</b>: 36.16 TQig (3.616e163)</p>
+				<p><b>Cost</b>: 1.308e154</p>
 				<p><b>Effect</b>: While Spiritual Surge is active, increase the production of all buildings based on the amount of active spells.</p>
 				<p><b>Formula</b>: (100 * (10 * x) ^ y)%, where x is active spells and y is Spiritual Surge tier.</p>
 				<hr>
 				<p><b>S225</b> - For Undead</p>
 				<p><b>Research Name</b>: Necromancy</p>
 				<p><b>Requirement</b>: Research Resurrection (D175) & Cryomancy (S200)</p>
-				<p><b>Cost</b>: 2.087 QaQig (2.087e165)</p>
+				<p><b>Cost</b>: 3.782e155</p>
 				<p><b>Effect</b>: Increase the production of assistants based on the amount of Necropolises you own.</p>
 				<p><b>Formula</b>: (round(5 * x ^ 0.75))%, where x is the number of Necropolises you own.</p>
 				<hr>
 				<p><b>S250</b> - For All Factions</p>
 				<p><b>Research Name</b>: Aeromancy</p>
 				<p><b>Requirement</b>: Research Weather Control (D225) & Explosives (A270)</p>
-				<p><b>Cost</b>: 52 QiQig (5.27e169)</p>
+				<p><b>Cost</b>: 1.702e159</p>
 				<p><b>Effect</b>: Increase the production of Unique Buildings based on mana produced in this Era.</p>
 				<p><b>Formula</b>: (round(0.5 * x ^ 0.58))%, where x mana produced this Era.</p>
 				<hr>
 				<p><b>S281</b> - For Faceless</p>
 				<p><b>Research Name</b>: Assimilation</p>
 				<p><b>Requirement</b>: Secrets of the Ancients (as Faceless)</p>
-				<p><b>Cost</b>: 79.05 QiQig (7.905e169)</p>
+				<p><b>Cost</b>: 5.767e163</p>
 				<p><b>Effect</b>: Increase the production of Sunken Cities based on time spent affiliated with factions different than the Faceless.</p>
 				<p><b>Formula</b>: (80 + 0.8 * x ^ 0.8)%, where x is time spent as non-Faceless factions.</p>
 				<hr>
@@ -120,7 +120,7 @@
 				<p><b>Research Name</b>: Runecarving</p>
 				<p><b>Hint</b>: Click your way through.</p>
 				<p><b>Requirement</b>: 20,000 clicks (This Era)</p>
-				<p><b>Cost</b>: 175.2 SxQig (1.752e173)</p>
+				<p><b>Cost</b>: 1.424e162</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on the amount of Gems you own.</p>
 				<p><b>Formula</b>: (1.25 * (0.5 * ln(1 + x)) ^ 1.25)%, where x is Gems owned.</p>
 				<hr>
@@ -128,7 +128,7 @@
 				<p><b>Research Name</b>: Chain Lightning</p>
 				<p><b>Hint</b>: I can feel the waves...</p>
 				<p><b>Requirement</b>: 8 Brainwave casts (This R)</p>
-				<p><b>Cost</b>: 33 OcQig (3.36e178)</p>
+				<p><b>Cost</b>: 3.447e166</p>
 				<p><b>Effect</b>: Lightning Strike duration will not be modified by other effects. While Lightning Strike is active, all non-target buildings have their production increased based on Lightning Strike activity time in this Era.</p>
 				<p><b>Formula</b>: (25 * x ^ 0.9)%, where x is Lightning Strike activity time in this Era, in seconds.</p>
 				<hr>
@@ -136,7 +136,7 @@
 				<p><b>Research Name</b>: Mesmerization</p>
 				<p><b>Hint</b>: Face not required for a long time.</p>
 				<p><b>Requirement</b>: 5 hours as Faceless (across all Reincarnations)</p>
-				<p><b>Cost</b>: 225.2 OcQig (2.252e179)</p>
+				<p><b>Cost</b>: 1.854e167</p>
 				<p><b>Effect</b>: Increase the production of all buildings by a fraction of your Offline Production Bonus.</p>
 				<p><b>Formula</b>: (ln(1 + x) ^ 2.5)%, where x is your Offline Production bonus as a multiplier.</p>
 				<p><b>Note</b>: This research is treated as an A1 upgrade for A-nerf purposes.</p>
@@ -144,14 +144,14 @@
 				<p><b>S330</b> - For All Factions</p>
 				<p><b>Research Name</b>: Reverberation</p>
 				<p><b>Requirement</b>: Research Cryomancy (S200) & Weather Control (D225)</p>
-				<p><b>Cost</b>: 6.443 Sxg (6.443e183)</p>
+				<p><b>Cost</b>: 8.341e170</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on the number of active spells you have. You must have at least 3 active spells to generate a bonus.</p>
 				<p><b>Formula</b>: (3000 * 2 ^ (x - 3))%, where x is the number of currently active spells (capped at 300 spells).</p>
 				<hr>
 				<p><b>S375</b> - For Faceless</p>
 				<p><b>Research Name</b>: Illusion</p>
 				<p><b>Requirement</b>: Research Reverberation (S330) & Mesmerization (S305)</p>
-				<p><b>Cost</b>: 541 DSxg (5.41e191)</p>
+				<p><b>Cost</b>: 3.14e177</p>
 				<p><b>Effect</b>: Brainwave also provides progressively more assistants over its duration.</p>
 				<p><b>Formula</b>: +(1 + 0.25 * (x + y) ^ 1.5), where x is Brainwave runtime in seconds and y is its headstart in seconds.</p>
 				<p><b>Note</b>: Those assistants do not count as base assistants and are not multiplied by upgrades that increase assistants count (such as FC3).</p>
@@ -159,7 +159,7 @@
 				<p><b>S400</b> - For All Factions</p>
 				<p><b>Research Name</b>: Capacity</p>
 				<p><b>Requirement</b>: Research Projection (S215) & Domination (W300)</p>
-				<p><b>Cost</b>: 13.66 QaSxg (1.366e196)</p>
+				<p><b>Cost</b>: 1.413e181</p>
 				<p><b>Effect</b>: Artifacts and Trophies count more based on the highest number of spells cast in a single Era.</p>
 				<p><b>Formula</b>: (ln(1 + x) ^ 1.5)%, where x is the highest number of spells cast in a single Era.</p>
 				<hr>
@@ -167,7 +167,7 @@
 				<p><b>Research Name</b>: Spellbinding</p>
 				<p><b>Hint</b>: Combo Breaker!</p>
 				<p><b>Requirement</b>: 3,600 seconds of Combo Strike activity time (This Era)</p>
-				<p><b>Cost</b>: 19.89 SxSxg (1.989e202)</p>
+				<p><b>Cost</b>: 2.607e199</p>
 				<p><b>Effect</b>: Call to Arms counts more buildings based on time spent offline in this Reincarnation.</p>
 				<p><b>Formula</b>: (100 + 3 * x ^ 0.9)%, where x is time spent offline in this Reincarnation.</p>
 				<p><b>Effect</b>: Also increase Offline production based on Combo Strike activity time in this Reincarnation.</p>
@@ -177,7 +177,7 @@
 				<p><b>Research Name</b>: Focus</p>
 				<p><b>Hint</b>: Cast! Cast more!</p>
 				<p><b>Requirement</b>: 50,000 spells cast (This Era)</p>
-				<p><b>Cost</b>: 5.023 SpSxg (5.023e206)</p>
+				<p><b>Cost</b>: 6.359e184</p>
 				<p><b>Effect</b>: Increase production bonus from Gems based on faction-spell activity time in this Era.</p>
 				<p><b>Formula</b>: +(1.2 * x ^ 0.6)%, where x is total faction-spell activity time in this Era.</p>
 				<hr>
@@ -185,7 +185,7 @@
 				<p><b>Research Name</b>: Heirlooms</p>
 				<p><b>Hint</b>: I wonder when will I have enough for my collection?</p>
 				<p><b>Requirement</b>: 40 Artifacts (as Drow)</p>
-				<p><b>Cost</b>: 5.554 Spg (5.554e213)</p>
+				<p><b>Cost</b>: 1.288e192</p>
 				<p><b>Effect</b>: Increase Maximum Mana and Mana Regeneration based on the amount of artifacts you own.</p>
 				<p><b>Maximum Mana Formula</b>: +(75 * x ^ 1.1), where x is the amount of artifacts you own.</p>
 				<p><b>Mana Regeneration Formula</b>: +(5 * x ^ 1.05), where x is the amount of artifacts you own.</p>
@@ -194,14 +194,14 @@
 				<p><b>Research Name</b>: Hierarchy</p>
 				<p><b>Hint</b>: I thirst for mana.</p>
 				<p><b>Requirement</b>: 10 M (1e7) mana produced (This Era)</p>
-				<p><b>Cost</b>: 466.3 DSpq (4.663e221)</p>
+				<p><b>Cost</b>: 1.173e203</p>
 				<p><b>Effect</b>: Increase the production of buildings based on mana produced in this Era, depending on their tiers. Gives better bonuses for lower tiers.</p>
 				<p><b>Formula</b>: (0.1 * x ^ 0.45 * (12 - T) ^ 2)%, where x is mana produced in this Era and T is building tier.</p>
 				<hr>
 				<p><b>S700</b> - For Fairy,Dwarf</p>
 				<p><b>Research Name</b>: Trickery</p>
 				<p><b>Requirement</b>: 250 Dwarven Exchanges as Dwairy (This Era), Research Mysticism (S105) & Illusion (S375)</p>
-				<p><b>Cost</b>: 39.16 QiSpg (3.916e229)</p>
+				<p><b>Cost</b>: 9.741e224</p>
 				<p><b>Effect</b>: Increase the production of Neutral buildings based on Maximum Mana.</p>
 				<p><b>Formula</b>: (0.5 * x ^ 0.9)%, where x is your Maximum Mana.</p>
 				<hr>
@@ -209,14 +209,14 @@
 				<p><b>Research Name</b>: Sequence</p>
 				<p><b>Hint</b>: Cast and cast and cast and cast!</p>
 				<p><b>Requirement</b>: 500,000 spells cast (This Era).</p>
-				<p><b>Cost</b>: 152.4 Dvg (1.524e71)</p>
+				<p><b>Cost</b>: 7.36e69</p>
 				<p><b>Effect</b>: Reduce spell cost for higher spell tiers.</p>
 				<p><b>Formula</b>: Reduces cost multiplier by 0.5; with no other reductions applying, the multiplier will be 1.5 instead of 2.</p>
 				<hr>
 				<p><b>S1450</b> - For Neutral,Dragon</p>
 				<p><b>Research Name</b>: Spellstorm</p>
 				<p><b>Requirement</b>: Research Spellbinding (S525) and Plasmation (C1325), Any Neutral, Dragon</p>
-				<p><b>Cost</b>: 4.041 Sxvg (4.041e81)</p>
+				<p><b>Cost</b>: 6.687e79</p>
 				<p><b>Effect</b>: Increase Unique Building production based on the duration of your longest spell.</p>
 				<p><b>Formula</b>: (2.5 * x ^ 0.85)%, where x is the duration of your longest spell, in seconds.</p>
 				<hr>
@@ -224,7 +224,7 @@
 				<p><b>Research Name</b>: Psionics</p>
 				<p><b>Hint</b>: I require assistance.</p>
 				<p><b>Requirement</b>: 500,000 Base Assistants, Research Hierarchy (S550) and Intimidation (E1325), as Faceless, Dragon</p>
-				<p><b>Cost</b>: 3.843 Spvg (3.843e84)</p>
+				<p><b>Cost</b>: 4.682e82</p>
 				<p><b>Effect</b>: Increase triggered Tax Collections based on assistants owned.</p>
 				<p><b>Formula</b>: +floor(1 + 0.25 * ln(1 + x) ^ 1.25), where x is assistants owned.</p>
 				<hr>
@@ -232,7 +232,7 @@
 				<p><b>Research Name</b>: Scholarship</p>
 				<p><b>Hint</b>: More buildings for the Black Army!</p>
 				<p><b>Requirement</b>: 11,000 Merc Unique Buildings.</p>
-				<p><b>Cost</b>: 30.5 QaQig (3.05e166)</p>
+				<p><b>Cost</b>: 2.174e162</p>
 				<p><b>Effect</b>: Increase Non-Unique building production based on Unique Buildings owned.</p>
 				<p><b>Formula</b>: (10 * x ^ 1.05)%, where x is Unique Buildings owned.</p>
 				<hr>
@@ -240,19 +240,21 @@
 				<p><b>Research Name</b>: Manipulation</p>
 				<p><b>Hint</b> First spell, many served.</p>
 				<p><b>Requirement</b>: 1 B (1e9) Tax Collections (This R), (Calefaction A1325) and (Psionics S1500).</p>
-				<p><b>Cost</b>: 695.7 Sxg (6.957e185)</p>
+				<p><b>Cost</b>: 2.563e179</p>
 				<p><b>Effect</b>: Multiplicatively increase Mana Regeneration by 12% per active spell.</p>
 				<p><b>Formula</b>: (12 * x)%, where x is active spells.</p>
 				<p><b>Effect</b>: Also increases offline spell cast amount multiplicatively by 1200%.</p></p>
 				<hr>
 				<p><b>S5125</b> - For All Factions</p>
 				<p><b>Research Name</b>: Spilling</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R175+, Forgotten Relic, Mana Loom artifact and upgrade, and 1 B (1e9) Mana produced</p>
 				<p><b>Effect</b>: Increase the production of buildings affected by at least 3 spells based on Mana Produced in this Era.</p>
 				<p><b>Formula</b>: (1.75 * ln(1 + x) ^ 1.75)%, where x is mana produced this Era.</p>
 				<hr>
 				<p><b>S5375</b> - For Chaos</p>
 				<p><b>Research Name</b>: Invocation</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R177+, Forgotten Relic, Mana Loom artifact and upgrade</p>
 				<p><b>Effect</b>: Increase Maximum Mana additively and multiplicatively based on the activity time of your least used spell.</p>
 				<p><b>Additive</b>: +(1000 + 80 * x ^ 0.8), where x is the spell activity time of your least used spell in this Reincarnation.</p>
@@ -260,60 +262,70 @@
 				<hr>
 				<p><b>S5625</b> - For All Factions</p>
 				<p><b>Research Name</b>: Leylines</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R179+, Forgotten Relic, Mana Loom artifact and upgrade, and 1 T (1e12) assistants</p>
 				<p><b>Effect</b>: Multiplicatively increase Mana Regeneration based on the amount of assistants you own.</p>
 				<p><b>Formula</b>: (0.75 * x ^ 0.25)%, where x is the amount of assistants you own.</p>
 				<hr>
 				<p><b>S5875</b> - For All Factions</p>
 				<p><b>Research Name</b>: Mirrors</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R181+, Forgotten Relic, Mana Loom artifact and upgrade, and 1 T (1e12) spells cast</p>
 				<p><b>Effect</b>: Multiplicatively increase Assistants based on Spell casts in this Era.</p>
 				<p><b>Formula</b>: (ln(1 + x) ^ 1.75)%, where x is spell casts this Era.</p>
 				<hr>
 				<p><b>S10875</b> - For All Factions</p>
 				<p><b>Research Name</b>: Encompass</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R221+</p>
 				<p><b>Effect</b>: Increase Maximum Mana based on the highest amount of Maximum Mana you had in this Reincarnation.</p>
 				<p><b>Formula</b>: +(15 * ln(1 + x) ^ 3), where x is your highest max mana this Reincarnation.</p>
 				<hr>
 				<p><b>S11125</b> - For All Factions</p>
 				<p><b>Research Name</b>: Multiplication</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R223+ and 10 B (1e10) Maximum Mana</p>
 				<p><b>Effect</b>: Spells cast count more based on Mana produced in this Era.</p>
 				<p><b>Formula</b>: (ln(1 + x) ^ 1.5)%, where x is Mana produced in this Era.</p>
 				<hr>
 				<p><b>S11375</b> - For All Factions</p>
 				<p><b>Research Name</b>: Concentration</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R225+ and 1 Qa (1e15) spells cast</p>
 				<p><b>Effect</b>: Increase the production of Unique buildings based on Spells cast in this Era.</p>
 				<p><b>Formula</b>: (ln(1 + x) ^ 2)%, where x is spell casts this Era.</p>
 				<hr>
 				<p><b>S11625</b> - For All Factions</p>
 				<p><b>Research Name</b>: Completeness</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R227+ and 900 Trophies</p>
 				<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on the amount of Trophies you unlocked.</p>
 				<p><b>Formula</b>: (1.5 * x ^ 0.5)%, where x is the amount of Trophies you unlocked.</p>
 				<hr>
 				<p><b>S11875</b> - For All Factions</p>
 				<p><b>Research Name</b>: Arcane Efficiency</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R229+ and 5,000 Unique Buildings</p>
 				<p><b>Effect</b>: While both Holy Light and Fairy Chanting are active, reduce the cost of all spells by 85%.</p>
 				<p><b>Note</b>: Catalyst can be used as one of the spells.</p>
 				<hr>
 				<p><b>S12250</b> - For All Factions</p>
 				<p><b>Research Name</b>: Necrodoomancy</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R232+ and 28,800 seconds of Offline time in this Reincarnation</p>
 				<p><b>Effect</b>: Reincarnations count more based on time spent as Undead in this Reincarnation.</p>
 				<p><b>Formula</b>: (20 + 0.4 * x ^ 0.4)%, where x is time spent as Undead in this Reincarnation.</p>
 				<hr>
 				<p><b>S13125</b> - All Factions</p>
 				<p><b>Research Name</b>: Fantasia</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R239+ and 1 Sx (1e21) Mana produced in this Reincarnation</p>
 				<p><b>Effect</b>: Multiplicatively increase assistants based on Mana produced in this Era.</p>
 				<p><b>Formula</b>: (ln(1 + x) ^ 2)%, where x is Mana produced in this Era.</p>
 				<hr>
 				<p><b>S13500</b> - For All Factions</p>
 				<p><b>Research Name</b>: Legerdemain</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R242+</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on Royal Exchange bonus.</p>
 				<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is your Royal Exchange bonus.</p>
@@ -325,7 +337,7 @@
 			<div class="autohide">
 				<p><b>C1</b> - For Elf</p>
 				<p><b>Research Name</b>: Dummy Targets</p>
-				<p><b>Cost</b>: 750 Qag (7.5e125)</p>
+				<p><b>Cost</b>: 7e122</p>
 				<p><b>Effect</b>: Increase Elven Training Grounds production based on the amount of Faction Coins you found.</p>
 				<p><b>Formula</b>: (3 * ln(1 + x) ^ 3)%, where x is your Faction Coins found this Era.</p>
 				<hr>
@@ -333,7 +345,7 @@
 				<p><b>Research Name</b>: Cultivation</p>
 				<p><b>Hint</b>: More farms, more crops!</p>
 				<p><b>Requirement</b>: 2500 Enchanted Fields</p>
-				<p><b>Cost</b>: 28.83 Uqag (2.883e127)</p>
+				<p><b>Cost</b>: 1.446e124</p>
 				<p><b>Effect</b>: Increases production of Blacksmith and Inn based on the amount of Enchanted Field you own.</p>
 				<p><b>Formula</b>: (70 * x)%, where x is the number of Enchanted Fields owned.</p>
 				<hr>
@@ -341,7 +353,7 @@
 				<p><b>Research Name</b>: Light Condenser</p>
 				<p><b>Hint</b>: I've cast a spell on you. Now you cast more.</p>
 				<p><b>Requirement</b>: 12,000 Spells cast (This R)</p>
-				<p><b>Cost</b>: 12.63 Dqag (1.263e130)</p>
+				<p><b>Cost</b>: 2.25e126</p>
 				<p><b>Effect</b>: Increase mana regeneration based on the amount of spells cast.</p>
 				<p><b>Formula</b>: +(20 * ln(1 + x) ^ 2), where x is spells cast in this Era.</p>
 				<hr>
@@ -349,7 +361,7 @@
 				<p><b>Research Name</b>: Refining</p>
 				<p><b>Hint</b>: Faction Coin treasury.</p>
 				<p><b>Requirement</b>: 1 B (1e9) Faction Coins (as Elf)</p>
-				<p><b>Cost</b>: 318.8 Tgag (3.188e134)</p>
+				<p><b>Cost</b>: 1.012e130</p>
 				<p><b>Effect</b>: Increase the production of Infernal Realms based on the amount of Demon Coins you found in this Era.</p>
 				<p><b>Formula</b>: (0.3 * ln(1 + x) ^ 3)%, where x is your Demon Coins gained this Era.</p>
 				<hr>
@@ -357,7 +369,7 @@
 				<p><b>Research Name</b>: Apprenticeship</p>
 				<p><b>Hint</b>: Shall i paint these buildings blue or red? I can't decide.</p>
 				<p><b>Requirement</b>: 16,000 Good and Evil buildings</p>
-				<p><b>Cost</b>: 61.13 Qiqag (6.113e139)</p>
+				<p><b>Cost</b>: 2.45e134</p>
 				<p><b>Effect</b>: Increase all-building production based on Faction Coins found in this Era, with the largest bonus applied to the least productive building.</p>
 				<p><b>Formula</b>: (7 * ln(1 + x) ^ 1.4)%, where x is Faction Coins found in this Era.</p>
 				<hr>
@@ -365,7 +377,7 @@
 				<p><b>Research Name</b>: Woodcraft</p>
 				<p><b>Hint</b>: 25k reiterations of the same movement.</p>
 				<p><b>Requirement</b>: 25,000 clicks (This Era)</p>
-				<p><b>Cost</b>: 1.544 Spqag (1.544e144)</p>
+				<p><b>Cost</b>: 1.103e138</p>
 				<p><b>Effect</b>: Increase the chance to find Faction Coins based on the amount of Unique Buildings you own.</p>
 				<p><b>Formula</b>: (x ^ 0.5)%, where x is Unique Buildings owned.</p>
 				<hr>
@@ -373,7 +385,7 @@
 				<p><b>Research Name</b>: Socketing</p>
 				<p><b>Hint</b>: Fingers crossed!</p>
 				<p><b>Requirement</b>: 100,000 clicks</p>
-				<p><b>Cost</b>: 676 Spqag (6.76e146)</p>
+				<p><b>Cost</b>: 1.715e140</p>
 				<p><b>Effect</b>: Increase clicking reward based on the amount of gems you own.</p>
 				<p><b>Formula</b>: (5 * ln(1 + x) ^ 1.5)%, where x is Gems owned.</p>
 				<hr>
@@ -381,41 +393,41 @@
 				<p><b>Research Name</b>: Reinforcing</p>
 				<p><b>Hint</b>: Green Fortune.</p>
 				<p><b>Requirement</b>: 100 Elven Luck triggers</p>
-				<p><b>Cost</b>: 296 Ocqag (2.96e149)</p>
+				<p><b>Cost</b>: 2.668e142</p>
 				<p><b>Effect</b>: Increase Non-Unique Building production based on clicks made in this Era.</p>
 				<p><b>Formula</b>: (40 * x ^ 0.4)%, where x is clicks made in this Era.</p>
 				<hr>
 				<p><b>C150</b> - For All Factions</p>
 				<p><b>Research Name</b>: Tinkering</p>
 				<p><b>Requirement</b>: Research Recycling (E10) & Reinforcing (C135)</p>
-				<p><b>Cost</b>: 129.6 Noqag (1.296e152)</p>
+				<p><b>Cost</b>: 4.151e144</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on the amount of total research points bought.</p>
 				<p><b>Formula</b>: (18 * x ^ 0.6)%, where x is Research points.</p>
 				<hr>
 				<p><b>C175</b> - For Goblin</p>
 				<p><b>Research Name</b>: Gemcutting</p>
 				<p><b>Requirement</b>: Research Refining (C50) & Socketing (C120)</p>
-				<p><b>Cost</b>: 3.273 Uqig (3.273e156)</p>
+				<p><b>Cost</b>: 1.868e148</p>
 				<p><b>Effect</b>: Increase the production bonus from gems based on the number of buildings you own.</p>
 				<p><b>Formula</b>: (0.25 * x ^ 0.5)%, where x is Buildings Owned in this Era.</p>
 				<hr>
 				<p><b>C200</b> - For All Factions</p>
 				<p><b>Research Name</b>: Journeymen</p>
 				<p><b>Requirement</b>: Research Apprenticeship (C80) & Bartering (E50).</p>
-				<p><b>Cost</b>: 82.65 Dqig (8.265e160)</p>
+				<p><b>Cost</b>: 8.406e151</p>
 				<p><b>Effect</b>: Increase the production of Unique Buildings based on time spent as that faction in this Reincarnation.</p>
 				<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent as the faction of the Unique Building in this Reincarnation.</p>
 				<hr>
 				<p><b>C225</b> - For Elf</p>
 				<p><b>Research Name</b>: Automatons</p>
 				<p><b>Requirement</b>: Research Dummy Targets (C1) & Vivification (A120).</p>
-				<p><b>Cost</b>: 2.087 Qaqig (2.087e165)</p>
+				<p><b>Cost</b>: 3.782e155</p>
 				<p><b>Effect</b>: Each Elven Training Grounds counts as 200 buildings for Call to Arms purposes.</p>
 				<hr>
 				<p><b>C250</b> - For All Factions</p>
 				<p><b>Research Name</b>: Magnetism</p>
 				<p><b>Requirement</b>: Research Tinkering (C150) & Critical Strike (W225).</p>
-				<p><b>Cost</b>: 52.7 Qiqig (5.27e169)</p>
+				<p><b>Cost</b>: 1.702e159</p>
 				<p><b>Effect</b>: Increase Faction Coin find chance based on time spent offline in this Reincarnation.</p>
 				<p><b>Formula</b>: +(9 * x ^ 0.9), where x is Offline Bonus.</p>
 				<p><b>Effect</b>: Also increase Faction Coin find chance by a multiplicative 50%.</p>
@@ -423,7 +435,7 @@
 				<p><b>C281</b> - For Titan</p>
 				<p><b>Research Name</b>: Architecture</p>
 				<p><b>Requirement</b>: Secrets of the Ancients (as Titan)</p>
-				<p><b>Cost</b>: 79.05 QiQig (79.05e168)</p>
+				<p><b>Cost</b>: 5.767e163</p>
 				<p><b>Effect</b>: Increase the production of Olympian Halls based on the amount of buildings you own.</p>
 				<p><b>Formula</b>: (80 * x ^ 0.8)%, where x is Buildings Owned in this Era.</p>
 				<hr>
@@ -431,7 +443,7 @@
 				<p><b>Research Name</b>: Weighting</p>
 				<p><b>Hint</b>: A lightning strike may hit the same target twice. Or hundreds of times.</p>
 				<p><b>Requirement</b>: 650 Lightning Strikes (This R)</p>
-				<p><b>Cost</b>: 33.6 OcQig (33.6e177)</p>
+				<p><b>Cost</b>: 3.447e166</p>
 				<p><b>Effect</b>: While Grand Balance hits Stone Pillars, increase its production by 2000%.</p>
 				<p><b>Formula</b>: (2000 ^ T)%, where T is Grand Balance tier.</p>
 				<p><b>Effect</b>: Also increase the production of every Grand Balance target based on maximum mana.</p>
@@ -441,34 +453,34 @@
 				<p><b>Research Name</b>: Golemcraft</p>
 				<p><b>Hint</b>: Titanic Patience.</p>
 				<p><b>Requirement</b>: 5 hours as Titans (across all Reincarnations)</p>
-				<p><b>Cost</b>: 255.2 OcQig (2.552e179)</p>
+				<p><b>Cost</b>: 1.854e167</p>
 				<p><b>Effect</b>: Multiplicatively increase Assistants based on time spent offline in this Reincarnation.</p>
 				<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent offline in this Reincarnation.</p>
 				<hr>
 				<p><b>C330</b> - For All Factions</p>
 				<p><b>Research Name</b>: Overload</p>
 				<p><b>Requirement</b>: Research Aeromancy (S250) & Critical Strike (W225)</p>
-				<p><b>Cost</b>: 6.443 Sxg (6.443e183)</p>
+				<p><b>Cost</b>: 8.341e170</p>
 				<p><b>Effect</b>: Increase mana regeneration based on the amount of research made.</p>
 				<p><b>Formula</b>: +(15 * x ^ 0.75), where x is Research points.</p>
 				<hr>
 				<p><b>C340</b> - For All Factions</p>
 				<p><b>Research Name</b>: Gem Duster</p>
 				<p><b>Requirement</b>: 200 Gem Grinder casts (This R), Sifting (E290) & Surveyorship (E270)</p>
-				<p><b>Cost</b>: 371.5 Sxg (3.715e185)</p>
+				<p><b>Cost</b>: 2.413e172</p>
 				<p><b>Effect</b>: Increase production bonus from gems based on the amount of Rubies you collected. (Multiplicative)</p>
 				<p><b>Formula</b>: floor(10 * x), where x is your Rubies Gained (All Time) stat.</p>
 				<hr>
 				<p><b>C375</b> - For Titan</p>
 				<p><b>Research Name</b>: Lightning Rod</p>
 				<p><b>Requirement</b>: Research Chain Lightning (S300) & Overload (C330)</p>
-				<p><b>Cost</b>: 541 DSxg (5.41e191)</p>
+				<p><b>Cost</b>: 3.14e177</p>
 				<p><b>Effect</b>: Olympian Halls are always hit by Lightning Strike in addition to the primary target. Olympian Halls can no longer be a primary target.</p>
 				<hr>
 				<p><b>C400</b> - For All Factions</p>
 				<p><b>Research Name</b>: Gravitation</p>
 				<p><b>Requirement</b>: Research Magnetism (C250) & Weighting (C300)</p>
-				<p><b>Cost</b>: 13.66 QaSxg (1.366e196)</p>
+				<p><b>Cost</b>: 1.413e181</p>
 				<p><b>Effect</b>: Increase Faction Coin find chance based on the amount of Faction Coins found in this Era.</p>
 				<p><b>Formula</b>: +floor(3.5 * ln(x + 1) ^ 3)%, where x is Faction Coins found in this Era.</p>
 				<p><b>Effect</b>: Also increase Faction Coin find chance by a multiplicative 100%.</p>
@@ -476,7 +488,7 @@
 				<p><b>C501</b> - For Dwarf</p>
 				<p><b>Research Name</b>: Metallurgy</p>
 				<p><b>Requirement</b>: Secrets of the Underworld (as Dwarf)</p>
-				<p><b>Cost</b>: 103.7 QaSxg (1.037e197)</p>
+				<p><b>Cost</b>: 8.112e195</p>
 				<p><b>Effect</b>: Increase the production of Dwarven Forges based on the Dwarven Forges you own.</p>
 				<p><b>Formula</b>: (60 * x ^ 0.8)%, where x is Dwarven Forges owned.</p>
 				<hr>
@@ -484,7 +496,7 @@
 				<p><b>Hint</b> Clickety</p>
 				<p><b>Research Name</b>: Distribution</p>
 				<p><b>Requirement</b>: 500,000 clicks (All Time)</p>
-				<p><b>Cost</b>: 502.3 SpSxg (5.023e206)</p>
+				<p><b>Cost</b>: 6.359e184</p>
 				<p><b>Effect</b>: Multiplicatively increase production bonus from Gems based on time spent with alignments different from your current alignment.</p>
 				<p><b>Formula</b>: (0.4 * x ^ 0.6)%, where x is the summed time spent in other alignments.</p>
 				<hr>
@@ -492,21 +504,21 @@
 				<p><b>Research Name</b>: Minecrafting</p>
 				<p><b>Hint</b>: Excavate to the bottom!</p>
 				<p><b>Requirement</b>: 3,000 excavations</p>
-				<p><b>Cost</b>: 5.554Spg (5.554e213)</p>
+				<p><b>Cost</b>: 1.288e192</p>
 				<p><b>Effect</b>: Increases production bonus from gems based on the amount of excavations you made.</p>
 				<p><b>Formula</b>: (3 * x ^ 0.35)%, where x is the amount of Excavations you made.</p>
 				<hr>
 				<p><b>C600</b> - For Dwarf</p>
 				<p><b>Research Name</b>: Blacksmithing</p>
 				<p><b>Requirement</b>: Research Reinforcing (C135) & Metallurgy (C501)</p>
-				<p><b>Cost</b>: 18.47 USpg (1.847e217)</p>
+				<p><b>Cost</b>: 2.376e210</p>
 				<p><b>Effect</b>: Increase Unique Building production based on Artifacts found.</p>
 				<p><b>Formula</b>: (x ^ 2)%, where x is Artifacts found.</p>
 				<hr>
 				<p><b>C700</b> - For Elf,Dwarf</p>
 				<p><b>Research Name</b>: Alloys</p>
 				<p><b>Requirement</b>: 250 Dwarven Exchanges as Dwelf, Fusion (A105), and Blacksmithing (C600)</p>
-				<p><b>Cost</b>: 39.16 QiSpg (3.916e229)</p>
+				<p><b>Cost</b>: 9.741e224</p>
 				<p><b>Effect</b>: Increase clicking reward based on your chance to find Faction Coins.</p>
 				<p><b>Formula</b>: (0.9 * x ^ 0.9)%, where x is chance to find Faction Coins.</p>
 				<p><b>Effect</b>: Autoclicks the treasure 10 times per second.</p>
@@ -516,7 +528,7 @@
 				<p><b>Research Name</b>: Scintillation</p>
 				<p><b>Hint</b>: Increase your magic potential.</p>
 				<p><b>Requirement</b>: 100,000 Maximum Mana, as any Neutral Dragon</p>
-				<p><b>Cost</b>: 4.698 Tvg (4.698e72)</p>
+				<p><b>Cost</b>: 1.948e71</p>
 				<p><b>Effect</b>: Increase production of buildings based on max mana and additive gem bonus. (Higher boost for lower gem bonus.)</p>
 				<p><b>Formula</b>: (1.5 * ln(1 + x) ^ (0.8 * ln(1 + y) ^ 0.5))%, where x is Maximum Mana and y is additive production bonus from Gems.</p>
 				<hr>
@@ -524,7 +536,7 @@
 				<p><b>Research Name</b>: Plasmation</p>
 				<p><b>Hint</b>: I've gotta take a Mana shower.</p>
 				<p><b>Requirement</b>: 50m (5e7) Mana Produced (This Era)</p>
-				<p><b>Cost</b>: 144.9 Tvg (1.449e74)</p>
+				<p><b>Cost</b>: 5.154e72</p>
 				<p><b>Effect</b>: Multiplicatively increase assistants based on Mana produced in this Era.</p>
 				<p><b>Formula</b>: (1.75 * ln(1 + x) ^ 1.75)%, where x is Mana produced in this Era.</p>
 				<hr>
@@ -532,7 +544,7 @@
 				<p><b>Research Name</b>: Gargantuaness</p>
 				<p><b>Hint</b>: Trading with the Dragons might prove risky, but rewarding.
 				<p><b>Requirement</b>: 4,000 Royal Exchanges, Inflation (E425), Solemnity (D1275), as Titan Dragon</p>
-				<p><b>Cost</b>: 3.843 Spvg (3.843e84)</p>
+				<p><b>Cost</b>: 4.682e82</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on total time spent as Neutral.</p>
 				<p><b>Formula</b>: (0.75 * x ^ 0.75)%, where x is combined Neutral time.</p>
 				<hr>
@@ -540,7 +552,7 @@
 				<p><b>Research Name</b>: Customizing</p>
 				<p><b>Hint</b>: Go into a deeper tunnel.</p>
 				<p><b>Requirement</b>: 9000 Excavations as Mercenary.</p>
-				<p><b>Cost</b>: 850.7 SxQig (8.507e173)</p>
+				<p><b>Cost</b>: 1.066e168</p>
 				<p><b>Effect</b>: Increases the production of all buildings based on the amount of artifacts you own.</p>
 				<p><b>Formula</b>: (2 * x ^ 2), where x is artifacts you own.</p>
 				<hr>
@@ -548,18 +560,20 @@
 				<p><b>Research Name</b>: Engineering</p>
 				<p><b>Hint</b>: Spend some quality time with the Mercenaries.</p>
 				<p><b>Requirement</b>: 12 days as Mercenary (across all Reincarnations)</p>
-				<p><b>Cost</b>: 769.3 OcQig (7.693e179)</p>
+				<p><b>Cost</b>: 5.227e173</p>
 				<p><b>Effect</b>: Increase Maximum Mana based on the total amount of clicks made in this Reincarnation.</p>
 				<p><b>Formula</b>: +(1.5 * x ^ 0.35), where x is clicks made in this Reincarnation.</p>
 				<hr>
 				<p><b>C5125</b> - For All Factions</p>
 				<p><b>Research Name</b>: Restauration</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R175+, Forgotten Relic, Factory artifact and upgrade, and 100 Autoclick power</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on assistants owned.</p>
 				<p><b>Formula</b>: (0.8 * x ^ 0.2)%, where x is assistants owned.</p>
 				<hr>
 				<p><b>C5375</b> - For Neutral</p>
 				<p><b>Research Name</b>: Manufacture</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R177+, Forgotten Relic, Factory artifact and upgrade,</p>
 				<p><b>Effect</b>: Increase Faction Coin Find Chance additively and multiplicatively based on clicks made in this Era.</p>
 				<p><b>Additive Formula</b>: +(7.5 * x ^ 0.5)%, where x is clicks made in this Era.</p>
@@ -567,41 +581,48 @@
 				<hr>
 				<p><b>C5625</b> - For All Factions</p>
 				<p><b>Research Name</b>: Discovery</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R179+, Forgotten Relic, Factory artifact and upgrade, and 25,000 excavation depth</p>
 				<p><b>Effect</b>: Trophies and Artifacts count more based on excavation depth.</p>
 				<p><b>Formula</b>: (0.5 * x ^ 0.5)%, where x is excavation depth.</p>
 				<hr>
 				<p><b>C5875</b> - For All Factions</p>
 				<p><b>Research Name</b>: Genuineness</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R181+, Forgotten Relic, Factory artifact and upgrade,</p>
 				<p><b>Effect</b>: Multiplicatively increase Maximum Mana based on lowest Lineage level.</p>
 				<p><b>Formula</b>: (50 + x ^ 0.95)%, where x is the lowest lineage.</p>
 				<hr>
 				<p><b>C10875</b> - For All Factions</p>
 				<p><b>Research Name</b>: Masterpiece</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R221+</p>
 				<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on excavation depth.</p>
 				<p><b>Formula</b>: (0.6 * x ^ 0.6)%, where x is excavation depth.</p>
 				<hr>
 				<p><b>C11125</b> - For All Factions</p>
 				<p><b>Research Name</b>: Installation</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R223+ and 20,000 Buildings Owned in this Era</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on their quantity.</p>
 				<p><b>Formula</b>: (1.3 * x ^ 0.7)%, where x is the amount of buildings of the same tier.</p>
 				<hr>
 				<p><b>C11375</b> - For All Factions</p>
 				<p><b>Research Name</b>: Exhibition</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R225+ and 7,200 seconds spent as Evil in this Reincarnation</p>
 				<p><b>Effect</b>: Trophies count more based on the amount of buildings you own.</p>
 				<p><b>Formula</b>: (x ^ 0.5)%, where x is total amount of buildings.</p>
 				<hr>
 				<p><b>C11625</b> - For All Factions</p>
 				<p><b>Research Name</b>: Motus Perpetuum</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R227+ and 100,000 clicks in this Era</p>
 				<p><b>Effect</b>: Multiplicatively increase Autoclick power by 100%.</p>
 				<hr>
 				<p><b>C11875</b> - For All Factions</p>
 				<p><b>Research Name</b>: Plating</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R229+ and 100 Autoclick power</p>
 				<p><b>Effect</b>: Unique Buildings count more for Call to Arms purposes based on Moon Blessing activity time in this Reincarnation.</p>
 				<p><b>Formula</b>: +(2 * x ^ 0.8), where x is Moon Blessing activity time in this Reincarnation.</p>
@@ -609,18 +630,21 @@
 				<hr>
 				<p><b>C12250</b> - For All Factions</p>
 				<p><b>Research Name</b>: Compression</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R232+ and 172,800 seconds of Brainwave duration</p>
 				<p><b>Effect</b>: Brainwave increases Faction Coin find chance progressively over its duration.</p>
 				<p><b>Formula</b>: +(1.5 * ((x + y) / 60) ^ 2.25)%, where x and y are Brainwave runtime and headstart in seconds.</p>
 				<hr>
 				<p><b>C13125</b> - For All Factions</p>
 				<p><b>Research Name</b>: Pottery</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R239+</p>
 				<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on the amount of active spells.</p>
 				<p><b>Formula</b>: (9 * x ^ 0.9)%, where x is the number of active spells.</p>
 				<hr>
 				<p><b>C13500</b> - For All Factions</p>
 				<p><b>Research Name</b>: Assembly Line</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R242+, Dwarven Bloodline, and 1 Qa (1e15) assistants</p>
 				<p><b>Effect</b>: Increase the production of Non-Unique buildings based on the amount of assistants you own.</p>
 				<p><b>Formula</b>: (0.75 * x ^ 0.25)%, where x is the number of assistants you own.</p>
@@ -631,7 +655,7 @@
 			<div class="autohide">
 				<p><b>D1</b> - For Angel</p>
 				<p><b>Research Name</b>: Blessing</p>
-				<p><b>Cost</b>: 750 Qag (7.50e125)</p>
+				<p><b>Cost</b>: 7e122</p>
 				<p><b>Effect</b>: Increase the production of Heaven's Domains based on total time spent with at least one active spell.</p>
 				<p><b>Formula</b>: (80 + 8 * x ^ 0.8)%, where x is total time spent with at least one active spell.</p>
 				<hr>
@@ -639,14 +663,14 @@
 				<p><b>Research Name</b>: Inflame</p>
 				<p><b>Hint</b>: Build a highway to hell.</p>
 				<p><b>Requirement</b>: 2,000 Infernal Realms</p>
-				<p><b>Cost</b>: 28.83 Uqag (2.883e127)</p>
+				<p><b>Cost</b>: 1.446e124</p>
 				<p><b>Effect</b>: Increase the production of all other buildings by 160% per Infernal Realm owned.</p>
 				<hr>
 				<p><b>D25</b> - For Undead</p>
 				<p><b>Research Name</b>: Cursing</p>
 				<p><b>Hint</b>: Spend some time in absence.</p>
 				<p><b>Requirement</b>: 3,600 seconds Offline</p>
-				<p><b>Cost</b>: 12.63 Dqag (1.263e130)</p>
+				<p><b>Cost</b>: 2.25e126</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on your offline production bonus.</p>
 				<p><b>Formula</b>: (ln(1 + x) ^ 2.5)%, where x is Offline Bonus as a multiplier.</p>
 				<p><b>Note</b>: This research is treated as an A1 upgrade for A-nerf purposes.</p>
@@ -655,7 +679,7 @@
 				<p><b>Research Name</b>: Hallowing</p>
 				<p><b>Hint</b>: Have you been good enough?</p>
 				<p><b>Requirement</b>: 15,000 Good Buildings(as Angel)</p>
-				<p><b>Cost</b>: 318.8 Tqag (3.188e134)</p>
+				<p><b>Cost</b>: 1.012e130</p>
 				<p><b>Effect</b>: Increase your chance to find Faction Coins based on the amount of Elven Training Grounds you own.</p>
 				<p><b>Formula</b>: (2 * x ^ 1.5)%, where x is Elven Training Grounds owned.</p>
 				<hr>
@@ -663,7 +687,7 @@
 				<p><b>Research Name</b>: Transfixion</p>
 				<p><b>Hint</b>: Massively produced blue energy.</p>
 				<p><b>Requirement</b>: Produce 3 M (3e6) Mana (This Era)</p>
-				<p><b>Cost</b>: 2.421 Qaqag (2.421e135)</p>
+				<p><b>Cost</b>: 5.445e130</p>
 				<p><b>Effect</b>: Increase clicking reward based on spell cast in this Era.</p>
 				<p><b>Formula</b>: (3 * x ^ 0.7)%, where x is your Spells Cast (This Era) stat.</p>
 				<hr>
@@ -671,42 +695,42 @@
 				<p><b>Research Name</b>: Illumination</p>
 				<p><b>Hint</b>: Blue regeneration combo.</p>
 				<p><b>Requirement</b>: 4,000 Mana Regeneration per second</p>
-				<p><b>Cost</b>: 296 Ocqag (2.96e149)</p>
+				<p><b>Cost</b>: 2.668e142</p>
 				<p><b>Effect</b>: Increases mana regeneration based on the amount of gems you own.</p>
 				<p><b>Formula</b>: +(5 + 0.05 * ln(1 + x) ^ 1.5), where x is Gems owned.</p>
 				<hr>
 				<p><b>D150</b> - For All Factions</p>
 				<p><b>Research Name</b>: Retribution</p>
 				<p><b>Requirement</b>: Research Betrayal (W120) & Transfixion (D55).</p>
-				<p><b>Cost</b>: 129.6 Noqag (1.296e152)</p>
+				<p><b>Cost</b>: 4.151e144</p>
 				<p><b>Effect</b>: Increase chance to find faction coins based on the amount of total research points bought.</p>
 				<p><b>Formula</b>: +(5 * x ^ 0.75), where x is Research points.</p>
 				<hr>
 				<p><b>D175</b> - For Angel</p>
 				<p><b>Research Name</b>: Resurrection</p>
 				<p><b>Requirement</b>: Research Blessing (D1) & Refraction (A55)</p>
-				<p><b>Cost</b>: 3.273 Uqig (3.273e156)</p>
+				<p><b>Cost</b>: 1.868e148</p>
 				<p><b>Effect</b>: You gain additional assistants based on God's Hands activity time. (This R)</p>
 				<p><b>Formula</b>: +(2.5 * x ^ 0.75), where x is God's Hand activity time in this Reincarnation.</p>
 				<hr>
 				<p><b>D200</b> - For All Factions</p>
 				<p><b>Research Name</b>: Transcendence</p>
 				<p><b>Requirement</b>: Research Resurrection (D175) & Illumination (D135)</p>
-				<p><b>Cost</b>: 82.65 Dqig (8.265e160)</p>
+				<p><b>Cost</b>: 8.406e151</p>
 				<p><b>Effect</b>: Decrease the cost of all spells by 20% and increase their duration by 20%.</p>
 				<hr>
 				<p><b>D205</b> - For All Good Factions</p>
 				<p><b>Research Name</b>: Communion</p>
 				<p><b>Hint</b>: Shine bright, Holy Light!</p>
 				<p><b>Requirement</b>: 333 Holy Light casts (Total this R), Gemcutting (C175), and Illumination (D135)</p>
-				<p><b>Cost</b>: 627.6 Dqig (6.276e161)</p>
+				<p><b>Cost</b>: 4.521e152</p>
 				<p><b>Effect</b>: Increase Holy Light duration based on time spent in this Era and multiplicatively increase Autoclick power by 10%.</p>
 				<p><b>Formula</b>: +(2 * x ^ 0.7) seconds, where x is time spent in this Era.</p>
 				<hr>
 				<p><b>D225</b> - For Fairy</p>
 				<p><b>Research Name</b>: Weather Control</p>
 				<p><b>Requirement</b>: Research Light Condenser (C25) & Vacuumancy (S30)</p>
-				<p><b>Cost</b>: 2.087 Qaqig (2.087e165)</p>
+				<p><b>Cost</b>: 3.782e155</p>
 				<p><b>Effect</b>: Increase the production of Enchanted Fields based on maximum mana.</p>
 				<p><b>Formula</b>: (2.5 * x ^ 0.8)%, where x is Maximum Mana.</p>
 				<hr>
@@ -714,14 +738,14 @@
 				<p><b>Research Name</b>: Sanctification</p>
 				<p><b>Hint</b>: Surgical Spirits.</p>
 				<p><b>Requirement</b>: 10,800 seconds of Spiritual Surge activity time (All Time), Soulweaving (A175), and Necromancy (S225)</p>
-				<p><b>Cost</b>: 6.94Qiqig (6.94e168)</p>
+				<p><b>Cost</b>: 3.165e158</p>
 				<p><b>Effect</b>: Increase the production of Unique Buildings based on the amount of Non-Unique Buildings you own.</p>
 				<p><b>Formula</b>: (2.5 * x ^ 0.55), where x is the amount of Non-Unique Buildings you own.</p>
 				<hr>
 				<p><b>D250</b> - For All Factions</p>
 				<p><b>Research Name</b>: Demonology</p>
 				<p><b>Requirement</b>: Research Transcendence (D200) & Pyromancy (S150)</p>
-				<p><b>Cost</b>: 52.7 Qiqig (5.27e169)</p>
+				<p><b>Cost</b>: 1.702e159</p>
 				<p><b>Effect</b>: Gain additional assistants based on the amount of Faction Coins found in this Era.</p>
 				<p><b>Formula</b>: floor(ln(1 + x) ^ 1.5), where x is your Faction Coins Gained (This Era) stat.</p>
 				<hr>
@@ -729,14 +753,14 @@
 				<p><b>Research Name</b>: Mutation</p>
 				<p><b>Hint</b>: Lost in the maze? Build your path.</p>
 				<p><b>Requirement</b>: 3,000 Sunken Cities</p>
-				<p><b>Cost</b>: 3.039 SxQig (3.039e171)</p>
+				<p><b>Cost</b>: 1.192e165</p>
 				<p><b>Effect</b>: Increase the production of all other buildings by 95% per Sunken Cities you own.</p>
 				<hr>
 				<p><b>D300</b> - For Druid</p>
 				<p><b>Research Name</b>: Meditation</p>
 				<p><b>Hint</b>: Maximum magical concentration.</p>
 				<p><b>Requirement</b>: Have 10,000 Mana (as Druid)</p>
-				<p><b>Cost</b>: 1.331 SpQig (1.331e174)</p>
+				<p><b>Cost</b>: 3.447e166</p>
 				<p><b>Effect</b>: Increase mana regeneration based on your current mana.</p>
 				<p><b>Effect</b>: Also increases offline spell cast amount multiplicatively by 300%.</p>
 				<p><b>Formula</b>: (0.35 * x ^0.35 + 0.035 * log(x) ^3.5), where x is max mana.</p>
@@ -745,7 +769,7 @@
 				<p><b>Research Name</b>: Transubstantiation</p>
 				<p><b>Hint</b>: A small buried stone.</p>
 				<p><b>Requirement</b>: 1 Rough Stone Artifact</p>
-				<p><b>Cost</b>: 582.7 SpQig (5.827e176)</p>
+				<p><b>Cost</b>: 1.424e162</p>
 				<p><b>Effect</b>: Each artifact you discover increases Maximum Mana additively and multiplicatively.</p>
 				<p><b>Additive Formula</b>: (50 * x ^1.1), where x is the number of artifacts found.</p>
 				<p><b>Multiplicative Formula</b>: (x ^ 0.95), where x is the number of artifacts found.</p>
@@ -754,27 +778,27 @@
 				<p><b>Research Name</b>: Deliverance</p>
 				<p><b>Hint</b>: High-rate mana transfusions.</p>
 				<p><b>Requirement</b>: 12,000 Mana Regeneration per second</p>
-				<p><b>Cost</b>: 1.117 NoQig (1.117e180)</p>
+				<p><b>Cost</b>: 2.884e169</p>
 				<p><b>Effect</b>: Increase assistants production based on mana regeneration.</p>
 				<p><b>Formula</b>: (20 * x ^ 0.8)%, where x is your Mana per Second stat.</p>
 				<hr>
 				<p><b>D330</b> - For All Factions</p>
 				<p><b>Research Name</b>: Eternity</p>
 				<p><b>Requirement</b>: Research Offering (E300) & Deliverance (D320)</p>
-				<p><b>Cost</b>: 6.443 Sxg (6.443e183)</p>
+				<p><b>Cost</b>: 8.341e170</p>
 				<p><b>Effect</b>: Double the duration of all faction spells.</p>
 				<hr>
 				<p><b>D350</b> - For Titan</p>
 				<p><b>Research Name</b>: Descent</p>
 				<p><b>Requirement</b>: Research Swarming (W250) & Heroism (W330)</p>
-				<p><b>Cost</b>: 21.42 USxg (2.142e187)</p>
+				<p><b>Cost</b>: 6.979e173</p>
 				<p><b>Effect</b>: Gain additional assistants based on the amount of Olympian Halls you own.</p>
 				<p><b>Formula</b>: (0.2 * x ^ 0.8)%, where x is Olympian Halls owned.</p>
 				<hr>
 				<p><b>D400</b> - For All Factions</p>
 				<p><b>Research Name</b>: Miracle</p>
 				<p><b>Requirement</b>: Research Communion (D205) & Transubstantiation (D270)</p>
-				<p><b>Cost</b>: 13.66 QaSxg (1.366e196)</p>
+				<p><b>Cost</b>: 1.413e181</p>
 				<p><b>Effect</b>: Increase a random building's production based on Mana produced in this Era; the target changes every 2 minutes. While offline, increase all-building production by 12,000%.</p>
 				<p><b>Formula</b>: (2.75 * ln(1 + x) ^ 2.75)%, where x is Mana produced in this Era.</p>
 				<hr>
@@ -782,7 +806,7 @@
 				<p><b>Research Name</b>: Devotion</p>
 				<p><b>Hint</b>: More diamond hits!</p>
 				<p><b>Requirement</b>: 3,600 seconds of Diamond Pickaxe activity time</p>
-				<p><b>Cost</b>: 19.89 SxSxg (1.989e202)</p>
+				<p><b>Cost</b>: 2.607e199</p>
 				<p><b>Effect</b>: Reduce Holy Light Mana cost by 50% and multiplicatively increase production bonus from Gems based on Holy Light duration.</p>
 				<p><b>Formula</b>: (6 + 0.6 * x ^ 0.6)%, where x is Holy Light duration in seconds.</p>
 				<hr>
@@ -790,7 +814,7 @@
 				<p><b>Research Name</b>: Mercy</p>
 				<p><b>Hint</b>: You should try everything at least once.</p>
 				<p><b>Requirement</b>: 1,800 seconds spent in each Good, Evil, and Neutral alignment in this Reincarnation</p>
-				<p><b>Cost</b>: 1.67 NoSxg (1.67e210)</p>
+				<p><b>Cost</b>: 2.861e188</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on the difference in time spent with the three alignments. A smaller difference produces a higher bonus.</p>
 				<p><b>Formula</b>: (80 + 40 * x ^ 0.8)%, where x is time spent in your least-used alignment.</p>
 				<hr>
@@ -798,28 +822,28 @@
 				<p><b>Research Name</b>: Purity</p>
 				<p><b>Hint</b>: Be patiently good.</p>
 				<p><b>Requirement</b>: 5,400 seconds spent as Good in this Reincarnation, Communion (D205), and Devotion (D525)</p>
-				<p><b>Cost</b>: 140.2 USpg (1.402e218)</p>
+				<p><b>Cost</b>: 1.069e214</p>
 				<p><b>Effect</b>: Increase Holy Light multiplier based on the amount of times you cast your faction spell in this Era.</p>
 				<p><b>Formula</b>: (15 * x ^ 0.75)%, where x is the relevant faction-spell statistic.</p>
 				<hr>
 				<p><b>D650</b> - For Drow</p>
 				<p><b>Research Name</b>: Ritualism</p>
 				<p><b>Requirement</b>: Research Necromancy(S225) and Heirlooms (S475)(as drow)</p>
-				<p><b>Cost</b>: 204.2 TSpq (2.042e224)</p>
+				<p><b>Cost</b>: 4.811e217</p>
 				<p><b>Effect</b>: Increase mana regeneration based on the amount of trophies you unlocked.</p>
 				<p><b>Formula</b>: +(1.5 * x ^ 0.85), where x is Trophies unlocked.</p>
 				<hr>
 				<p><b>D700</b> - For Angel,Dwarf</p>
 				<p><b>Research Name</b>: Dispelling</p>
 				<p><b>Requirement</b>: 250 Dwarven Exchanges as Dwangel, Shattering (W320), and Waste (A450)</p>
-				<p><b>Cost</b>: 39.16 QiSpg (3.916e229)</p>
+				<p><b>Cost</b>: 9.741e224</p>
 				<p><b>Effect</b>: Increase the production of Unique buildings based on Mana Regeneration.</p>
 				<p><b>Formula</b>: (2 * ln(1 + 30 * x) ^ 2)%, where x is Mana Regeneration per second.</p>
 				<hr>
 				<p><b>D1175</b> - For Neutral,Dragon</p>
 				<p><b>Research Name</b>: Oblation</p>
 				<p><b>Requirement</b>: Any Neutral,Build Dragons' Unique Building</p>
-				<p><b>Cost</b>: 177.2 Nod (1.772e62)</p>
+				<p><b>Cost</b>: 1.501e64</p>
 				<p><b>Effect</b>: Increase the production of Wyrm's Den based on Faction Coin find chance.</p>
 				<p><b>Formula</b>: (1.6 * x ^ 0.6)%, where x is Faction Coin find chance.</p>
 				<hr>
@@ -827,20 +851,20 @@
 				<p><b>Research Name</b>: Solemnity</p>
 				<p><b>Hint</b>: Urban development.</p>
 				<p><b>Requirement</b>: 80,000 Total Buildings</p>
-				<p><b>Cost</b>: 152.4 Dvg (1.524e71)</p>
+				<p><b>Cost</b>: 7.36e69</p>
 				<p><b>Effect</b>: Increase each building's production by 0.3% per building of the same type; Non-Unique buildings receive a 100-times larger bonus.</p>
 				<hr>
 				<p><b>D1375</b> - For All Factions</p>
 				<p><b>Research Name</b>: Soulrending</p>
 				<p><b>Hint</b>: Be good, wish for the best.</p>
 				<p><b>Requirement</b>: 43,200 seconds spent as Good (All Time)</p>
-				<p><b>Cost</b>: 137.8 Qavg (1.378e77)</p>
+				<p><b>Cost</b>: 3.609e75</p>
 				<p><b>Effect</b>: Reincarnations count 50% more.</p>
 				<hr>
 				<p><b>D2850</b> - For Mercenary</p>
 				<p><b>Research Name</b>: Intervention</p>
 				<p><b>Requirement</b>: Secrets of the Warriors.</p>
-				<p><b>Cost</b>: 33.73 DQig (3.373e160)</p>
+				<p><b>Cost</b>: 3.105e159</p>
 				<p><b>Effect</b>: Increases the production of Unique Building based on time spent with Mercenaries (All Time).</p>
 				<p><b>Formula</b>: (80 + 2 * x ^ 0.8)%, where x is time spent with Mercenary (All Time).</p>
 				<hr>
@@ -848,25 +872,28 @@
 				<p><b>Research Name</b>: Vampirism</p>
 				<p><b>Hint</b>: Sound the alarms, production has gone offline!</p>
 				<p><b>Requirement</b>: 100 Sp% (1e26%) offline bonus, Intervention (D2850), and Upheaval (W3150).</p>
-				<p><b>Cost</b>: 598.3 TSxg (5.983e194)</p>
+				<p><b>Cost</b>: 8.799e187</p>
 				<p><b>Effect</b>: Increase assistants additively and multiplicatively based on your Offline Bonus.</p>
 				<p><b>Additive Formula</b>: +(2.5 * ln(1 + x) ^ 2.5), where x is Offline Bonus.</p>
 				<p><b>Multiplicative Formula</b>: (0.2 * ln(1 + x) ^ 2)%, where x is Offline Bonus.</p>
 				<hr>
 				<p><b>D5125</b> - For All Factions</p>
 				<p><b>Research Name</b>: Selection</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R175+, Forgotten Relic, Mythos artifact and upgrade, and 1 Qi (1e18) Faction Coin find chance</p>
 				<p><b>Effect</b>: Increase the production of Unique buildings based on Clicks in this Era.</p>
 				<p><b>Formula</b>: (x ^ 0.5), where x is clicks this Era.</p>
 				<hr>
 				<p><b>D5375</b> - For Good</p>
 				<p><b>Research Name</b>: Zealotry</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R177+, Forgotten Relic, Mythos artifact and upgrade.</p>
 				<p><b>Effect</b>: Multiplicatively increase Mana Regeneration based on Royal Exchanges purchased in this Era.</p>
 				<p><b>Formula</b>: (0.75 * x ^ 0.75), where x is royal exchanges this Era.</p>
 				<hr>
 				<p><b>D5625</b> - For All Factions</p>
 				<p><b>Research Name</b>: Prophecy</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R179+, Forgotten Relic, Mythos artifact and upgrade, and 1,800 seconds in the least-used faction</p>
 				<p><b>Effect</b>: Empowers the effects of your faction's Set based on time spent with your least used faction. Lineage levels count more, by the same amount, for your faction’s Advanced Heritage.</p>
 				<p><b>Formula</b>: (50 + 0.25 * x ^ 0.5)%, where x is your least spent faction time.</p>
@@ -874,12 +901,14 @@
 				<hr>
 				<p><b>D5875</b> - For All Factions</p>
 				<p><b>Research Name</b>: Birthright</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R181+, Forgotten Relic, Mythos artifact and upgrade, and 10,000 Royal Exchanges</p>
 				<p><b>Effect</b>: Gain the Bloodline effects of your opposite alignment.</p>
 				<p><b>Note</b>: Only gain the effects of the Base Faction that matches both alignments. For Neutral and Balance the opposite is Neutral and Balance respectively.</p>
 				<hr>
 				<p><b>D10875</b> - For All Factions</p>
 				<p><b>Research Name</b>: Scriptures</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R221+</p>
 				<p><b>Effect</b>: Increase all spells’ durations based on time spent with their respective requirement.</p>
 				<p><b>Formula</b>: (0.3 * x ^ 0.7)%, where x is time spent with the faction or alignment of the spell, in seconds.</p>
@@ -889,35 +918,41 @@
 				<hr>
 				<p><b>D11125</b> - For All Factions</p>
 				<p><b>Research Name</b>: Viriditas</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R223+ and 100 Artifacts</p>
 				<p><b>Effect</b>: Lineage levels count more based on the amount of Artifacts you excavated.</p>
 				<p><b>Formula</b>: (x ^ 0.7)%, where x is the amount of Artifacts you found.</p>
 				<hr>
 				<p><b>D11375</b> - For All Factions</p>
 				<p><b>Research Name</b>: Rigor</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R225+ and 14,400 seconds of Spiritual Surge activity time in this Reincarnation</p>
 				<p><b>Effect</b>: Reincarnations count 100% more.</p>
 				<hr>
 				<p><b>D11625</b> - For All Factions</p>
 				<p><b>Research Name</b>: Compassion</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R227+ and 7,200 seconds spent as Chaos in this Reincarnation</p>
 				<p><b>Effect</b>: Increase the production of Non-Unique buildings based on time spent with your least used alignment in this Reincarnation.</p>
 				<p><b>Formula</b>: (50 + x ^ 0.75)%, where x is time spent as the least used alignment this R.</p>
 				<hr>
 				<p><b>D11875</b> - For All Factions</p>
 				<p><b>Research Name</b>: Virtues</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R229+, Titan Bloodline, and 1 T (1e12) Tax Collections cast in this Era</p>
 				<p><b>Effect</b>: Increase Tax Collection worth based on the highest amount of Mountain Palaces you built in this Reincarnation.</p>
 				<p><b>Formula</b>: (2.5 * x ^ 0.5)%, where x is the highest amount of Mountain Palaces 	built in this Reincarnation.</p>
 				<hr>
 				<p><b>D12250</b> - For All Factions</p>
 				<p><b>Research Name</b>: Enochian</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R232+, Angel Bloodline, and 7,200 seconds in the current Era</p>
 				<p><b>Effect</b>: Multiply Angel Coins found based on God's Hand activity time in this Reincarnation.</p>
 				<p><b>Formula</b>: *(10 + 0.7 * x ^ 0.7)%, where x is God's Hand activity time in this Reincarnation.</p>
 				<hr>
 				<p><b>D13125</b> - For All Factions</p>
 				<p><b>Research Name</b>: Asceticism</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R239+, 5 active Dragon's Breath colors</p>
 				<p><b>Effect</b>: Neutral Buildings also count as both Good and Evil buildings. Non-Unique buildings also count as Unique buildings.</p>
 				<p><b>Note</b>: Neutral Buildings in this instance refers to only Farms, Inns, Blacksmiths and Hall of Legends.</p>
@@ -927,6 +962,7 @@
 				<hr>
 				<p><b>D13500</b> - For All Factions</p>
 				<p><b>Research Name</b>: Afterlife</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R242+, Druid Bloodline, and 100 Sx (1e23) Mana Regeneration</p>
 				<p><b>Effect</b>: Multiplicatively increase Mana Regeneration based on the highest amount of Mana Regeneration you had in this Reincarnation.</p>
 				<p><b>Formula</b>: (2 * ln(1 + x) ^ 2)%, where x is the highest Mana Regeneration you had this Reincarnation.</p>
@@ -938,7 +974,7 @@
 			<div class="autohide">
 				<p><b>E1</b> - For Goblin</p>
 				<p><b>Research Name</b>: Coinage</p>
-				<p><b>Cost</b>: 750 Qag (7.50e125)</p>
+				<p><b>Cost</b>: 7e122</p>
 				<p><b>Effect</b>: Increase the production of Goblin Banks based on the amount of buildings you own.</p>
 				<p><b>Formula</b>: (2 * x ^ 0.8)%, where x is your Buildings Owned (This Era) stat.</p>
 				<hr>
@@ -946,14 +982,14 @@
 				<p><b>Research Name</b>: Recycling</p>
 				<p><b>Hint</b>: Nation of the dead.</p>
 				<p><b>Requirement</b>: 2,000 Undercities</p>
-				<p><b>Cost</b>: 28.83 Uqag (2.883e127)</p>
+				<p><b>Cost</b>: 1.446e124</p>
 				<p><b>Effect</b>: Increase the production of all other buildings by 140% per Undercity you own.</p>
 				<hr>
 				<p><b>E25</b> - For Elf</p>
 				<p><b>Research Name</b>: Commerce</p>
 				<p><b>Hint</b>: Colored wealth.</p>
 				<p><b>Requirement</b>: 100 M (1e8) Faction Coins (Found this Era)</p>
-				<p><b>Cost</b>: 12.63 Dqag (1.263e130)</p>
+				<p><b>Cost</b>: 2.25e126</p>
 				<p><b>Effect</b>: Gain additional assistants based on the amount of Royal Exchanges you purchased.</p>
 				<p><b>Formula</b>: +(4 * x ^ 0.7), where x is the amount of Royal Exchanges purchased.</p>
 				<hr>
@@ -961,7 +997,7 @@
 				<p><b>Research Name</b>: Diplomacy</p>
 				<p><b>Hint</b>: Exchange more.</p>
 				<p><b>Requirement</b>: 1,000 Exchanges (This Era)</p>
-				<p><b>Cost</b>: 95.88 Dqag (9.588e130)</p>
+				<p><b>Cost</b>: 1.21e127</p>
 				<p><b>Effect</b>: Increases Faction Coin find chance and Royal Exchange bonus based on time spent in this Era.</p>
 				<p><b>Faction Coin Chance Formula</b>: +(3 * x ^ 0.7)%, where x is time spent in this Era.</p>
 				<p><b>Royal Exchange Bonus Formula</b>: +(0.3 * x ^ 0.7)%, where x is time spent in this Era.</p>
@@ -970,14 +1006,14 @@
 				<p><b>Research Name</b>: Bartering</p>
 				<p><b>Hint</b>: Royalties earnings.</p>
 				<p><b>Requirement</b>: 1,250 Royal Exchanges</p>
-				<p><b>Cost</b>: 318.8 Tqag (3.188e134)</p>
+				<p><b>Cost</b>: 1.012e130</p>
 				<p><b>Effect</b>: Reduce Enchanted Field cost multiplier. Reduces cost multiplier by 0.02; with no other reductions applying, the multiplier will be 1.13 instead of 1.15.</p>
 				<hr>
 				<p><b>E80</b> - For Good/Evil</p>
 				<p><b>Research Name</b>: Common Business</p>
 				<p><b>Hint</b>: Neutral urbanistics.</p>
 				<p><b>Requirement</b>: 9,000 Neutral Buildings</p>
-				<p><b>Cost</b>: 61.13 Qiqag (6.113e139)</p>
+				<p><b>Cost</b>: 2.45e134</p>
 				<p><b>Effect</b>: Increase the production of Good and Evil buildings based on the amount of neutral buildings.</p>
 				<p><b>Formula</b>: (round((1.75 * x) ^ 0.8))%, where x is the number of neutral buildings you own.</p>
 				<hr>
@@ -985,48 +1021,48 @@
 				<p><b>Research Name</b>: Bribing</p>
 				<p><b>Hint</b>: Architectural advantage.</p>
 				<p><b>Requirement</b>: 24,000 Total Buildings (as Goblin)</p>
-				<p><b>Cost</b>: 296 Ocqag (2.96e149)</p>
+				<p><b>Cost</b>: 2.668e142</p>
 				<p><b>Effect</b>: Reduce the building cost multiplier for Unique Buildings. Reduces cost multiplier by 0.01; with no other reductions applying, the multiplier will be 1.14 instead of 1.15.</p>
 				<hr>
 				<p><b>E145</b> - For All Factions</p>
 				<p><b>Research Name</b>: Royal Demand</p>
 				<p><b>Hint</b>: Collect those taxes!</p>
 				<p><b>Requirement</b>: 50,000 Tax Collections (This R), Research Cultivation (C10) & Woodcraft (C105)</p>
-				<p><b>Cost</b>: 17.07 Noqag (1.707e151)</p>
+				<p><b>Cost</b>: 7.719e143</p>
 				<p><b>Effect</b>: Increase Tax Collection reward by 30 seconds of production.</p>
 				<hr>
 				<p><b>E400</b> - For All Factions</p>
 				<p><b>Research Name</b>: Investment</p>
 				<p><b>Requirement</b>: Research Bribing (E135) & Commerce (E25)</p>
-				<p><b>Cost</b>: 129.6 Noqag (1.296e152)</p>
+				<p><b>Cost</b>: 1.413e181</p>
 				<p><b>Effect</b>: Research points count more based on clicks made in this Era.</p>
 				<p><b>Formula</b>: (35 + x ^ 0.35)%, where x is clicks made in this Era.</p>
 				<hr>
 				<p><b>E200</b> - For All Factions</p>
 				<p><b>Research Name</b>: Acquisition</p>
 				<p><b>Requirement</b>: Research Investment (E400) & Common Business (E80)</p>
-				<p><b>Cost</b>: 82.65 Dqig (8.265e160)</p>
+				<p><b>Cost</b>: 8.406e151</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on your percentage of trophies unlocked.</p>
 				<p><b>Formula</b>: (round(0.0003 * (100 * x) ^ 3.35))%, where x is trophies unlocked / max trophies.</p>
 				<hr>
 				<p><b>E225</b> - For Goblin</p>
 				<p><b>Research Name</b>: Forgery</p>
 				<p><b>Requirement</b>: Research Coinage (E1) & Gilding (A50)</p>
-				<p><b>Cost</b>: 2.087 Qaqig (2.087e165)</p>
+				<p><b>Cost</b>: 3.782e155</p>
 				<p><b>Effect</b>: Increase the production of Evil Buildings based on the amount of Goblin Banks you own.</p>
 				<p><b>Formula</b>: (1.5 * x ^ 0.85)%, where x is the number of Goblin Banks you own.</p>
 				<hr>
 				<p><b>E230</b> - For Demon</p>
 				<p><b>Research Name</b>: Coercion</p>
 				<p><b>Requirement</b>: Research Exertion (W50) & Diplomacy (E30)</p>
-				<p><b>Cost</b>: 2.087 Qaqig (2.087e165)</p>
+				<p><b>Cost</b>: 2.034e156</p>
 				<p><b>Effect</b>: Increases trophy count based on time spent as Evil this Reincarnation.</p>
 				<p><b>Formula</b>: (25 + 0.25 * x ^ 0.5)%, where x is time spent as Evil this Reincarnation.</p>
 				<hr>
 				<p><b>E250</b> - For All Factions</p>
 				<p><b>Research Name</b>: Trade Routes</p>
 				<p><b>Requirement</b>: Research Forgery (E225) & Royal Demand (E145)</p>
-				<p><b>Cost</b>: 52.7 Qiqig (5.27e169)</p>
+				<p><b>Cost</b>: 1.702e159</p>
 				<p><b>Effect</b>: Increase mana regeneration based on the amount of Royal Exchanges you purchased.</p>
 				<p><b>Formula</b>: +(floor(10 * x ^ 0.55) / 10), where x is the amount of Royal Exchanges purchased.</p>
 				<hr>
@@ -1034,7 +1070,7 @@
 				<p><b>Research Name</b>: Sifting</p>
 				<p><b>Hint</b>: A lot of men-hirs.</p>
 				<p><b>Requirement</b>: 3,000 Stonehenge Circles</p>
-				<p><b>Cost</b>: 3.039 SxQig (3.039e171)</p>
+				<p><b>Cost</b>: 1.192e165</p>
 				<p><b>Effect</b>: Increase the production of all other buildings based on the amount of Stone Pillars you own.</p>
 				<p><b>Formula</b>: (200 * x)%, where x is the amount of Stone Pillars you own.</p>
 				<hr>
@@ -1042,7 +1078,7 @@
 				<p><b>Research Name</b>: Offering</p>
 				<p><b>Hint</b>: Offer Faction Coins, gain production.</p>
 				<p><b>Requirement</b>: 1,500 Royal Exchanges (as Titans)</p>
-				<p><b>Cost</b>: 175.2 SxQig (1.752e173)</p>
+				<p><b>Cost</b>: 3.447e166</p>
 				<p><b>Effect</b>: Increase mana regeneration based on your Royal Exchange Bonus.</p>
 				<p><b>Formula</b>: +(7 * x ^ 0.7), where x is your Royal Exchange Bonus.</p>
 				<hr>
@@ -1050,14 +1086,14 @@
 				<p><b>Research Name</b>: Surveyorship</p>
 				<p><b>Hint</b>: Take an interest in archeology.</p>
 				<p><b>Requirement</b>: 7 Artifacts</p>
-				<p><b>Cost</b>: 582.7 SpQig (5.827e176)</p>
+				<p><b>Cost</b>: 1.424e162</p>
 				<p><b>Effect</b>: Reduces Excavation cost multiplier by 0.02; with no other reductions applying, the multiplier will be 1.18 instead of 1.2.</p>
 				<hr>
 				<p><b>E320</b> - For All Factions</p>
 				<p><b>Research Name</b>: Smuggling</p>
 				<p><b>Hint</b>: You shouldn't abdicate so poorly.</p>
 				<p><b>Requirement</b>: Have twice as many Gems in Abdication Treasury</p>
-				<p><b>Cost</b>: 1.117 NoQig (1.117e180)</p>
+				<p><b>Cost</b>: 2.884e169</p>
 				<p><b>Effect</b>: Increase Faction Coin find chance based on the amount of Unique Buildings owned.</p>
 				<p><b>Effect</b>: Also increase FC chance find chance by a multiplicative 100%.</p>
 				<p><b>Formula</b>: +(5 * x ^ 0.9)%, where x is Unique Building owned</p>
@@ -1065,21 +1101,21 @@
 				<p><b>E330</b> - For All Factions</p>
 				<p><b>Research Name</b>: Collection</p>
 				<p><b>Requirement</b>: Research Acquisition (E200) & Forgery (E225)</p>
-				<p><b>Cost</b>: 6.443 Sxg (6.443e183)</p>
+				<p><b>Cost</b>: 8.341e170</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on the amount of artifacts you found.</p>
 				<p><b>Formula</b>: round(50 * x ^ 1.1)%, where x is the amount of artifacts found.</p>
 				<hr>
 				<p><b>E350</b> - For Faceless</p>
 				<p><b>Research Name</b>: Repurpose</p>
 				<p><b>Requirement</b>: Research Journeymen (C200) & Adaptation (A330)(as Faceless)</p>
-				<p><b>Cost</b>: 21.42 USxg (2.142e187)</p>
+				<p><b>Cost</b>: 6.979e173</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on the amount of Reincarnations you made.</p>
 				<p><b>Formula</b>: (round(2.5 * x ^ 2.25))%, where x is the amount of times you reincarnated.</p>
 				<hr>
 				<p><b>E150</b> - For All Factions</p>
 				<p><b>Research Name</b>: Conversion</p>
 				<p><b>Requirement</b>: Research Bribing (E135) & Commerce (E25)</p>
-				<p><b>Cost</b>: 13.66 QaSxg (1.366e196)</p>
+				<p><b>Cost</b>: 4.151e144</p>
 				<p><b>Effect</b>: Increase production bonus from Gems based on your Royal Exchange bonus.</p>
 				<p><b>Formula</b>: +(2.5 * floor(x ^ 0.5))%, where x is your Royal Exchange Bonus.</p>
 				<hr>
@@ -1087,14 +1123,14 @@
 				<p><b>Research Name</b>: Marketing</p>
 				<p><b>Hint</b>: A Blacksmith army.</p>
 				<p><b>Requirement</b>: 5,000 Blacksmiths</p>
-				<p><b>Cost</b>: 787.7 QaSxg (7.877e197)</p>
+				<p><b>Cost</b>: 1.676e197</p>
 				<p><b>Effect</b>: Increase the production of all other buildings by 25% per Blacksmith you own.</p>
 				<hr>
 				<p><b>E425</b> - For All Factions</p>
 				<p><b>Research Name</b>: Inflation</p>
 				<p><b>Hint</b>: Got enough Faction Coins?</p>
 				<p><b>Requirement</b>: 100 B (1e11) Faction Coins (Found this Era)</p>
-				<p><b>Cost</b>: 502.3 SpSxg (5.023e206)</p>
+				<p><b>Cost</b>: 6.359e184</p>
 				<p><b>Effect</b>: Increase Royal Exchange Bonus based on the amount of Faction Coins found in this Era.</p>
 				<p><b>Formula</b>: +(2 * ln(1 + x) ^ 2)%, where x is Faction Coins found in this Era.</p>
 				<hr>
@@ -1102,7 +1138,7 @@
 				<p><b>Research Name</b>: Undercutting</p>
 				<p><b>Hint</b>: Maximum magic resources required.</p>
 				<p><b>Requirement</b>: 40,000 Max Mana</p>
-				<p><b>Cost</b>: 1.67 NoSxg (1.67e210)</p>
+				<p><b>Cost</b>: 2.861e188</p>
 				<p><b>Effect</b>: Multiplicatively increase Mana Regeneration based on Gems owned.</p>
 				<p><b>Formula</b>: (0.5 * ln(1 + x) ^ 1.35)%, where x is Gems owned.</p>
 				<hr>
@@ -1110,14 +1146,14 @@
 				<p><b>Research Name</b>: Jewellery</p>
 				<p><b>Hint</b>: Special architecture.</p>
 				<p><b>Requirement</b>: 12000 Unique Buildings (as Dwarf)</p>
-				<p><b>Cost</b>: 731.4 NoSxg (7.314e212)</p>
+				<p><b>Cost</b>: 5.279e206</p>
 				<p><b>Effect</b>: Increase the production bonus from gems based on the amount of Spider Sanctuaries you own.</p>
 				<p><b>Formula</b>: +(4 * x ^ 0.8)%, where x is the amount of Spider Sanctuaries you own.</p>
 				<hr>
 				<p><b>E700</b> - For Goblin,Drow</p>
 				<p><b>Research Name</b>: Slavery</p>
 				<p><b>Requirement</b>: 250 Drow Exchanges as Droblin, Research Automatons (C225) and Undercutting (E450)</p>
-				<p><b>Cost</b>: 39.16 QiSpg (3.916e229)</p>
+				<p><b>Cost</b>: 9.741e224</p>
 				<p><b>Effect</b>: Increase assistants production based on the amount of Non-Unique buildings you own.</p>
 				<p><b>Formula</b>: +(0.4 * x ^ 0.8)%, where x is the amount of Non-Unique Buildings you own.</p>
 				<hr>
@@ -1125,14 +1161,14 @@
 				<p><b>Research Name</b>: Hoarding</p>
 				<p><b>Hint</b>: Massive numismatics.</p>
 				<p><b>Requirement</b>: 1 T (1e12) Faction coins found this Era</p>
-				<p><b>Cost</b>: 160.2 Uvg (1.602e68)</p>
+				<p><b>Cost</b>: 1.051e67</p>
 				<p><b>Effect</b>: Removes 1 Ascension penalty for Royal Exchanges.</p>
 				<hr>
 				<p><b>E1325</b> - For All Factions</p>
 				<p><b>Research Name</b>: Intimidation</p>
 				<p><b>Hint</b>: Unique wonders of the realm.</p>
 				<p><b>Requirement</b>: 18000 Unique Buildings</p>
-				<p><b>Cost</b>: 144.9 Tvg (1.449e74)</p>
+				<p><b>Cost</b>: 5.154e72</p>
 				<p><b>Effect</b>: Reduce Royal Exchange cost multiplier.</p>
 				<p><b>Formula</b>: Reduces multiplier by 0.025; with no other reductions applying, the multiplier will be 1.075 instead of 1.1.</p>
 				<hr>
@@ -1140,14 +1176,14 @@
 				<p><b>Research Name</b>: Rarity</p>
 				<p><b>Hint</b>: Be neutral. Be different. For a couple hours.</p>
 				<p><b>Requirement</b>: 8 hours playtime each with Titan, Druid, and Faceless + Research A545 & C1300</p>
-				<p><b>Cost</b>: 131 Qivg (1.31e80)</p>
+				<p><b>Cost</b>: 2.527e78</p>
 				<p><b>Effect</b>: Increase Gem Grinder bonus based on the amount of artifacts you found.</p>
 				<p><b>Formula</b>: (1.25 * x ^ 1.25)%, where x is artifacts found.</p>
 				<hr>
 				<p><b>E3250</b> - For All</p>
 				<p><b>Research Name</b>: Hirelings</p>
 				<p><b>Requirement</b>: Intimidation (E1325) and Scholarship (S2900).</p>
-				<p><b>Cost</b>: 661.6 USxg (6.616e188)</p>
+				<p><b>Cost</b>: 1.795e182</p>
 				<p><b>Effect</b>: Gain additional assistants based on Faction Coins found in this Era.</p>
 				<p><b>Formula</b>: +(5 * ln(1 + x) ^ 2.5), where x is Faction Coins found in this Era.</p>
 				<hr>
@@ -1155,30 +1191,34 @@
 				<p><b>Research Name</b>: Estates</p>
 				<p><b>Hint</b>: 50k shades of uniqueness.</p>
 				<p><b>Requirement</b>: 45000 Unique buildings, (Hoarding E1225) and (Combination A2950).</p>
-				<p><b>Cost</b>: 629.2 DSxg (6.292e191)</p>
+				<p><b>Cost</b>: 1.257e185</p>
 				<p><b>Effect</b>: Gives you all the Unique Buildings of your alignment.</p>
 				<p><b>Effect</b>: Ascension 3: Gain all the Unique Buildings that match your alignments.</p>
 				<hr>
 				<p><b>E5125</b> - For All Factions</p>
 				<p><b>Research Name</b>: Decentralization</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R175+, Forgotten Relic, Vault artifact and upgrade, and 500,000 total buildings.</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on the amount of buildings you own. Lower tiers get better bonuses.</p>
 				<p><b>Formula</b>: ((3 - 0.25 * T) ^ 4 * x ^ 0.6)%, where T is building tier and x is the number of (every) buildings you own.</p>
 				<hr>
 				<p><b>E5375</b> - For Balance</p>
 				<p><b>Research Name</b>: Whipround</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R177+, Forgotten Relic, Vault artifact and upgrade.</p>
 				<p><b>Effect</b>: Increase Royal Exchange bonus additively and multiplicatively based on Tax Collections cast in this Era.</p>
 				<p><b>Additive Formula</b>: +(x ^ 0.2)% additively and (0.5 * x ^ 0.15)% multiplicatively, where x is Tax Collections cast in this Era.</p>
 				<hr>
 				<p><b>E5625</b> - For All Factions</p>
 				<p><b>Research Name</b>: Loan Sharking</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R179+, Forgotten Relic, Vault artifact and upgrade, and 5e150 Gold.</p>
 				<p><b>Effect</b>: Tax Collection is worth more based on Gold owned.</p>
 				<p><b>Formula</b>: +((0.5 * ln(1 + x)) ^ 1.25) seconds, where x is your current amount of coins.</p>
 				<hr>
 				<p><b>E5875</b> - For All Factions</p>
 				<p><b>Research Name</b>: Prosperity</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R181+, Forgotten Relic, Vault artifact and upgrade, and at least 30 minutes activity time with the least-used faction spell in this Era.</p>
 				<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on your faction spell activity in this Era.</p>
 				<p><b>Formula</b>: (0.4 * x ^ 0.4)%, where x is your least used faction spell (This Era)</p>
@@ -1186,12 +1226,14 @@
 				<hr>
 				<p><b>E10875</b> - For All Factions</p>
 				<p><b>Research Name</b>: Rigmarole</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R221+</p>
 				<p><b>Effect</b>: Increase Royal Exchange bonus based on the highest amount of assistants you had in this Reincarnation (Additive).</p>
 				<p><b>Formula</b>: +(ln(1 + x) ^ 2)%, where x is your highest assistants count this Reincarnation.</p>
 				<hr>
 				<p><b>E11125</b> - For All Factions</p>
 				<p><b>Research Name</b>: Gray Friday</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R223+ and 20,000 Neutral Buildings.</p>
 				<p><b>Effect</b>: Reduce building cost multiplier and increase the production of all buildings based on Royal Exchange bonus.</p>
 				<p><b>Formula</b>: -0.02, with no other reductions applying, the multiplier will be 1.13 instead of 1.15.</p>
@@ -1199,18 +1241,21 @@
 				<hr>
 				<p><b>E11375</b> - For All Factions</p>
 				<p><b>Research Name</b>: Heist</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R225+ and 1e18 assistants.</p>
 				<p><b>Effect</b>: Increase production bonus of Gems based on the amount of assistants you have.</p>
 				<p><b>Formula</b>: +(2.25 * ln(1 + x) ^ 2.25)%, where x is the amount of assistants you have.</p>
 				<hr>
 				<p><b>E11625</b> - For All Factions</p>
 				<p><b>Research Name</b>: Surplus</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R227+ and enough Gems to meet the current Reincarnation requirement.</p>
 				<p><b>Effect</b>: Multiplicatively increase assistants based on the amount of Gems you have.</p>
 				<p><b>Formula</b>: (25 + 0.25 * ln(1 + x) ^ 1.5)%, where x is the amount of Gems you have.</p>
 				<hr>
 				<p><b>E11875</b> - For All Factions</p>
 				<p><b>Research Name</b>: Overworking</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R229+, the Slave Market upgrade, and 3,500 Slave Pens.</p>
 				<p><b>Effect</b>: While Goblin's Greed is active, increase triggered Tax Collections based on assistants owned.</p>
 				<p><b>Formula</b>: +(1.5 * ln(1 + x) ^ 1.5), where x is the amount of assistants you have.</p>
@@ -1218,18 +1263,21 @@
 				<hr>
 				<p><b>E12250</b> - For All Factions</p>
 				<p><b>Research Name</b>: Oilery</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R232+ and at least 30 minutes activity time with the least-used spell in this Reincarnation.</p>
 				<p><b>Effect</b>: While both Lightning Strike and Gem Grinder are active, multiplicatively increase the production bonus from Gems based on the duration of your longest spell.</p>
 				<p><b>Formula</b>: (0.8 * x ^ 0.8)%, where x is the duration of your longest spell.</p>
 				<hr>
 				<p><b>E13125</b> - For All Factions</p>
 				<p><b>Research Name</b>: Discount</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R239+ and at least 200 seconds of Tax Collection cost reduction.</p>
 				<p><b>Effect</b>: Reduce Royal Exchange, Excavation and Building cost multipliers.</p>
 				<p><b>Note</b>: Cost multiplier reduction is -0.02 for all three.</p>
 				<hr>
 				<p><b>E13500</b> - For All Factions</p>
 				<p><b>Research Name</b>: Recession</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R242+ and 1,000 total Lineage levels.</p>
 				<p><b>Effect</b>: Gain all Lineage base effects that match your alignments, up to a maximum of level 25.</p>
 				<p><b>Note</b>: This will reduce the level of all lineages you do not pick to 25 for the current run (including lineages that don't match your alignments), which will lower the effectiveness of upgrades based on those lineage levels.</p>
@@ -1241,7 +1289,7 @@
 			<div class="autohide">
 				<p><b>A1</b> - For Undead</p>
 				<p><b>Research Name</b>: Plague</p>
-				<p><b>Cost</b>: 750 Qag (7.50e125)</p>
+				<p><b>Cost</b>: 7e122</p>
 				<p><b>Effect</b>: Increase Undercity production based on assistants owned.</p>
 				<p><b>Formula</b>: (200 * x ^ 0.9)%, where x is assistants owned.</p>
 				<hr>
@@ -1249,21 +1297,21 @@
 				<p><b>Research Name</b>: Transmutation</p>
 				<p><b>Hint</b>: Too many witches, not enough houses!</p>
 				<p><b>Requirement</b>: 2250 Goblin Banks</p>
-				<p><b>Cost</b>: 28.83 Uqag (2.883e127)</p>
+				<p><b>Cost</b>: 1.446e124</p>
 				<p><b>Effect</b>: Increase the production of all other buildings by 90% per Goblin Bank owned.</p>
 				<hr>
 				<p><b>A25</b> - For Demon</p>
 				<p><b>Research Name</b>: Deflagration</p>
 				<p><b>Hint</b>: Hellfire!</p>
 				<p><b>Requirement</b>: 6,666 seconds of Hellfire Blast activity time</p>
-				<p><b>Cost</b>: 12.63 Dqag (1.263e130)</p>
+				<p><b>Cost</b>: 2.25e126</p>
 				<p><b>Effect</b>: Set Hellfire Blast duration to an unmodifiable 4 seconds, reduce its Mana cost by 400, and increase its effect by 1,600%.</p>
 				<hr>
 				<p><b>A30</b> - For Fairy</p>
 				<p><b>Research Name</b>: Delayed Reaction</p>
 				<p><b>Hint</b>: Fairy Greatest Hits.</p>
 				<p><b>Requirement</b>: 5,000 seconds of Fairy Chanting activity time</p>
-				<p><b>Cost</b>: 95.88 Dqag (9.588e130)</p>
+				<p><b>Cost</b>: 1.21e127</p>
 				<p><b>Effect</b>: Increases duration of Fairy Chanting based on the amount of Enchanted Fields, Inns and Blacksmiths you own and provides a progressively increasing bonus to the spell.</p>
 				<p><b>Additive Production increase formula</b>: floor(1000 * t ^ 1.5), where t is how long FC has been active in seconds.</p>
 				<p><b>Duration increase formula</b>: +(0.2 * x ^ 0.8) seconds, where x is the total Farms, Inns, and Blacksmiths owned.</p>
@@ -1272,7 +1320,7 @@
 				<p><b>Research Name</b>: Gilding</p>
 				<p><b>Hint</b>: Regeneration magic.</p>
 				<p><b>Requirement</b>: 750 Mana Regeneration per second (as Angel)</p>
-				<p><b>Cost</b>: 318.8 Tqag (3.188e134)</p>
+				<p><b>Cost</b>: 1.012e130</p>
 				<p><b>Effect</b>: Increase Heaven's Gate production when your Mana Regeneration is higher than Maximum Mana.</p>
 				<p><b>Formula</b>: (90 * (30 * R / M) ^ 0.9)% while 30 * R > M (otherwise 0), where R is Mana Regeneration per second and M is Maximum Mana.</p>
 				<hr>
@@ -1280,7 +1328,7 @@
 				<p><b>Research Name</b>: Refraction</p>
 				<p><b>Hint</b>: Iacta Incantatio.</p>
 				<p><b>Requirement</b>: Cast 25000 spells (This Era)</p>
-				<p><b>Cost</b>: 2.421 Qaqag (2.421e135)</p>
+				<p><b>Cost</b>: 5.445e130</p>
 				<p><b>Effect</b>: Improve offline production based on spells cast.</p>
 				<p><b>Formula</b>: round(5 * x ^ 0.85), where x is your Spells Cast (Total) stat.</p>
 				<hr>
@@ -1288,7 +1336,7 @@
 				<p><b>Research Name</b>: Fusion</p>
 				<p><b>Hint</b>: Blacksmith City.</p>
 				<p><b>Requirement</b>: 2750 Blacksmiths</p>
-				<p><b>Cost</b>: 1.544 Spqag (1.544e144)</p>
+				<p><b>Cost</b>: 1.103e138</p>
 				<p><b>Effect</b>: Increases the production of buildings based on the amount of Faction Coins found this Era.</p>
 				<p><b>Formula</b>: round(0.7 * ln ^ 3(1 + x))%, where x is your Faction Coins Gained (This Era) stat.</p>
 				<hr>
@@ -1296,7 +1344,7 @@
 				<p><b>Research Name</b>: Vivification</p>
 				<p><b>Hint</b>: Maximum Magic!</p>
 				<p><b>Requirement</b>: Have 15,000 Maximum Mana.</p>
-				<p><b>Cost</b>: 676 Spqag (6.76e146)</p>
+				<p><b>Cost</b>: 1.715e140</p>
 				<p><b>Effect</b>: Gain additional assistants based on max mana.</p>
 				<p><b>Formula</b>: +(x ^ 0.5), where x is Maximum Mana.</p>
 				<hr>
@@ -1304,42 +1352,42 @@
 				<p><b>Research Name</b>: Decay</p>
 				<p><b>Hint</b>: Spend some quality time.</p>
 				<p><b>Requirement</b>: 3,600 seconds of playtime in this Reincarnation</p>
-				<p><b>Cost</b>: 296 OcQag (9.6e149)</p>
+				<p><b>Cost</b>: 2.668e142</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on time spent in this Reincarnation.</p>
 				<p><b>Formula</b>: (0.3 * x ^ 0.7)%, where x is time spent in this Reincarnation, in seconds.</p>
 				<hr>
 				<p><b>A270</b> - For All Factions</p>
 				<p><b>Research Name</b>: Explosives</p>
 				<p><b>Requirement</b>: 20 B (2e10) Faction Coins found in this Era</p>
-				<p><b>Cost</b>: 129.6 Noqag (1.296e152)</p>
+				<p><b>Cost</b>: 1.424e162</p>
 				<p><b>Effect</b>: Increase the production of the building affected by the most spell effects based on excavation depth.</p>
 				<p><b>Formula</b>: (60 + 60 * x ^ 0.6)%, where x is excavation depth.</p>
 				<hr>
 				<p><b>A175</b> - For Undead</p>
 				<p><b>Research Name</b>: Soulweaving</p>
 				<p><b>Requirement</b>: Research Cursing (D25) & Reinforcing (C135)</p>
-				<p><b>Cost</b>: 3.273 Uqig (3.273e156)</p>
+				<p><b>Cost</b>: 1.868e148</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on the amount of times you Reincarnated.</p>
 				<p><b>Formula</b>: round(2.5 * x ^ 2.25)%, where x is the amount of times you reincarnated.</p>
 				<hr>
 				<p><b>A200</b> - For All Factions</p>
 				<p><b>Research Name</b>: Corrosion</p>
 				<p><b>Requirement</b>: Research Plague (A1) & Decay (A135)</p>
-				<p><b>Cost</b>: 82.65 Dqig (82.65e160)</p>
+				<p><b>Cost</b>: 8.406e151</p>
 				<p><b>Effect</b>: Increase clicking reward based on time spent in this Era.</p>
 				<p><b>Formula</b>: (3 * x ^ 0.7)%, where x is time spent in this Era, in seconds.</p>
 				<hr>
 				<p><b>A250</b> - For All Factions</p>
 				<p><b>Research Name</b>: Philosopher's Stone</p>
 				<p><b>Requirement</b>: Research Transmutation (A10) & Empowered Luck (S175)</p>
-				<p><b>Cost</b>: 52.7 Qiqig (5.27e169)</p>
+				<p><b>Cost</b>: 1.702e159</p>
 				<p><b>Effect</b>: Increase production bonus from gems based on the amount of research made.</p>
 				<p><b>Formula</b>: floor(x ^ 0.92 / 25)%, where x is Research points.</p>
 				<hr>
 				<p><b>A281</b> - For Druid</p>
 				<p><b>Research Name</b>: Infusion</p>
 				<p><b>Requirement</b>: Secrets of the Ancients (as Druids)</p>
-				<p><b>Cost</b>: 79.05 QiQig (7.905e169)</p>
+				<p><b>Cost</b>: 5.767e163</p>
 				<p><b>Effect</b>: Increase the production of Stonehenge Circles based on mana produced in this Era.</p>
 				<p><b>Formula</b>: (0.75 * x ^ 0.75)%, where x is Mana produced.</p>
 				<hr>
@@ -1347,7 +1395,7 @@
 				<p><b>Research Name</b>: Synthesis</p>
 				<p><b>Hint</b>: Faction Currency.</p>
 				<p><b>Requirement</b>: 20 B (2e10) Faction Coins (This Era)</p>
-				<p><b>Cost</b>: 175.2 SxQig (1.752e173)</p>
+				<p><b>Cost</b>: 4.151e144</p>
 				<p><b>Effect</b>: Increase the duration of all spells based on the amount of Faction Coins found in this Era.</p>
 				<p><b>Formula</b>: (1.5 * ln(1 + x) ^ 1.5)%, where x is Faction Coins found in this Era.</p>
 				<hr>
@@ -1355,7 +1403,7 @@
 				<p><b>Research Name</b>: Creeping</p>
 				<p><b>Hint</b>: Blue Production.</p>
 				<p><b>Requirement</b>: Produce 5M mana (This Era) as Druid</p>
-				<p><b>Cost</b>: 33 OcQig (3.36e178)</p>
+				<p><b>Cost</b>: 3.447e166</p>
 				<p><b>Effect</b>: Increase mana regeneration based on mana produced in this Era.</p>
 				<p><b>Formula</b>: (3.5 * ln(1 + x) ^ 1.5)%, where x is Mana produced.</p>
 				<hr>
@@ -1363,7 +1411,7 @@
 				<p><b>Research Name</b>: Engraving</p>
 				<p><b>Hint</b>: Druidic experience.</p>
 				<p><b>Requirement</b>: 5 hours as Druids (across all Reincarnations)</p>
-				<p><b>Cost</b>: 255.2 OcQig (2.552e179)</p>
+				<p><b>Cost</b>: 1.854e167</p>
 				<p><b>Effect</b>: Increase your chance to find Faction Coins based on the amount of spells cast in this Era.</p>
 				<p><b>Effect</b>: Also increase Faction Coins find chance by a multiplicative 100%.</p>
 				<p><b>Formula</b>: floor(3.5 * ln(1 + x) ^ 3.5)%, where x is your Spells Cast (This Era) stat.</p>
@@ -1371,21 +1419,21 @@
 				<p><b>A330</b> - For All Factions</p>
 				<p><b>Research Name</b>: Adaptation</p>
 				<p><b>Requirement</b>: Research Mutation (D290) & Meditation (D300)</p>
-				<p><b>Cost</b>: 6.443 Sxg (6.443e183)</p>
+				<p><b>Cost</b>: 8.341e170</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on time spent playing as other factions.</p>
 				<p><b>Formula</b>: (0.05 * (x - y) ^ 0.7)%, where x is All Time playtime and y is the highest All Time spent amongst your current factions.</p>
 				<hr>
 				<p><b>A375</b> - For Druid</p>
 				<p><b>Research Name</b>: Transfusion</p>
 				<p><b>Requirement</b>: Research Infusion (A281) & Engraving (A305)</p>
-				<p><b>Cost</b>: 541 DSxg (5.41e191)</p>
+				<p><b>Cost</b>: 3.14e177</p>
 				<p><b>Effect</b>: Gain additional assistants based on mana produced this Era.</p>
 				<p><b>Formula</b>: (3 * ln(1 + x) ^ 1.5)%, where x is Mana produced in this Era.</p>
 				<hr>
 				<p><b>A400</b> - For All Factions But Mercenary</p>
 				<p><b>Research Name</b>: Bloodspring</p>
 				<p><b>Requirement</b>: Research Assimilation (S281) & Transfusion (A375).</p>
-				<p><b>Cost</b>: 13.66 QaSxg (1.366e196)</p>
+				<p><b>Cost</b>: 1.413e181</p>
 				<p><b>Effect</b>: You get your faction's Bloodline effect for free. Bloodstream counts time spent with both factions.</p>
 				<p><b>Note</b>: Provides Prestige Bloodline for Astral Factions from R125 to R129, Astral bloodlines at R130+.</p>
 				<p><b>Note</b>: Does not work with two Bloodlines of the same type.</p>
@@ -1394,14 +1442,14 @@
 				<p><b>Research Name</b>: Poisons</p>
 				<p><b>Hint</b>: Evil Churches.</p>
 				<p><b>Requirement</b>: 4000 Sanctuaries</p>
-				<p><b>Cost</b>: 787.7 QaSxg (7.877e197)</p>
+				<p><b>Cost</b>: 1.676e197</p>
 				<p><b>Effect</b>: Increase the production of all other buildings by 95% per Spider Sanctuary you own.</p>
 				<hr>
 				<p><b>A450</b> - For All Factions</p>
 				<p><b>Research Name</b>: Waste</p>
 				<p><b>Hint</b>: Royal Trade Network.</p>
 				<p><b>Requirement</b>: 2000 Royal Exchanges</p>
-				<p><b>Cost</b>: 1.67 NoSxg (1.67e210)</p>
+				<p><b>Cost</b>: 2.861e188</p>
 				<p><b>Effect</b>: Increase offline production based on the amount of Royal Exchanges you purchased.</p>
 				<p><b>Formula</b>: 120 * x ^ 0.85, where x is your Royal Exchanges Made stat.</p>
 				<hr>
@@ -1409,7 +1457,7 @@
 				<p><b>Research Name</b>: Elixirs</p>
 				<p><b>Hint</b>: Never enough servitude.</p>
 				<p><b>Requirement</b>: 10,000 Base Assistants</p>
-				<p><b>Cost</b>: 731.4 NoSxg (7.314e212)</p>
+				<p><b>Cost</b>: 5.279e206</p>
 				<p><b>Effect</b>: Increase assistants production based on the amount of research made.</p>
 				<p><b>Formula</b>: (4.5 * x ^ 0.45)%, where x is Research points.</p>
 				<hr>
@@ -1417,14 +1465,14 @@
 				<p><b>Research Name</b>: Mineralogy</p>
 				<p><b>Hint</b>: Full Showcase.</p>
 				<p><b>Requirement</b>: 700 trophies</p>
-				<p><b>Cost</b>: 466.3 DSpg (4.663e221)</p>
+				<p><b>Cost</b>: 1.173e203</p>
 				<p><b>Effect</b>: Increase Non-Unique Building production based on spells cast in this Reincarnation.</p>
 				<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is spells cast.</p>
 				<hr>
 				<p><b>A700</b> - For Undead,Drow</p>
 				<p><b>Research Name</b>: Hexing</p>
 				<p><b>Requirement</b>: 250 Drow Exchanges as Drodead, Research Cursing (D25) and Poisons (A510)</p>
-				<p><b>Cost</b>: 39.16 QiSpg (3.916e229)</p>
+				<p><b>Cost</b>: 9.741e224</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on Mana produced in this Era.</p>
 				<p><b>Formula</b>: (5 * x ^ 0.55)%, where x is Mana produced in this Era.</p>
 				<hr>
@@ -1432,7 +1480,7 @@
 				<p><b>Research Name</b>: Melting</p>
 				<p><b>Hint</b>: Steel Stronghold.</p>
 				<p><b>Requirement</b>: 5000 Iron Stronghold, Any Neutral Dragon</p>
-				<p><b>Cost</b>: 5.195 Uvg (5.195e66)</p>
+				<p><b>Cost</b>: 3.972e65</p>
 				<p><b>Effect</b>: Increase the production of all other buildings by 135% per Iron Stronghold owned.</p>
 				<p><b>Formula</b>: (135 * x)%, where x is Iron Strongholds owned.</p>
 				<hr>
@@ -1440,7 +1488,7 @@
 				<p><b>Research Name</b>: Calefaction</p>
 				<p><b>Hint</b>: Excavate me out!</p>
 				<p><b>Requirement</b>: 4500 Excavations (This R)</p>
-				<p><b>Cost</b>: 144.9 Tvg (1.449e74)</p>
+				<p><b>Cost</b>: 5.154e72</p>
 				<p><b>Effect</b>: Increase mana regeneration based on the amount of excavations made.</p>
 				<p><b>Formula</b>: +(0.15 * x ^ 1.15), where x is excavation depth.</p>
 				<hr>
@@ -1448,7 +1496,7 @@
 				<p><b>Research Name</b>: Sublimation</p>
 				<p><b>Hint</b>: How long required to achieve a Grand Balance?</p>
 				<p><b>Requirement</b>: 3,600 seconds of Grand Balance activity time in a single Era, Dispelling (D700), Calefaction (A1325), Druid, Dragon</p>
-				<p><b>Cost</b>: 3.843 Spvg (3.843e84)</p>
+				<p><b>Cost</b>: 4.682e82</p>
 				<p><b>Effect</b>: Multiplicatively increase Mana Regeneration based on Unique Buildings built.</p>
 				<p><b>Formula</b>: (0.8 * x ^ 0.8)%, where x is Unique Buildings owned.</p>
 				<hr>
@@ -1456,7 +1504,7 @@
 				<p><b>Research Name</b>: Combination</p>
 				<p><b>Hint</b>: Some lineage?</p>
 				<p><b>Requirement</b>: All Lineages Level at 15.</p>
-				<p><b>Cost</b>: 259 SxQig (2.59e173)</p>
+				<p><b>Cost</b>: 1.522e165</p>
 				<p><b>Effect</b>: Select an additional bloodline.</p>
 				<p><b>Effect</b>: You also gain the base effect of its respective Lineage.</p>
 				<p><b>Effect</b>: Combination Bloodline effects R60/R115 power.</p>
@@ -1465,37 +1513,42 @@
 				<p><b>Research Name</b>: Chemistry</p>
 				<p><b>Hint</b>: Get attracted to Faction Coins.</p>
 				<p><b>Requirement</b>: 1 No (1e30) FC (Found this Era), (Customizing C3000) & (Manipulation S3200).</p>
-				<p><b>Cost</b>: 894.5 QiQig (5.69e197)</p>
+				<p><b>Cost</b>: 6.161e190</p>
 				<p><b>Effect</b>: Increases Faction Coin find chance based on the total amount of Lineage levels you have.</p>
 				<p><b>Effect</b>: Also increases Faction Coin find chance by a multiplicative 300%.</p>
 				<p><b>Formula</b>: 3 * x ^ 2.25, where x is total Lineage levels.</p>
 				<hr>
 				<p><b>A5125</b> - For All Factions</p>
 				<p><b>Research Name</b>: Putrefaction</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R175+, Forgotten Relic, Athanor artifact and upgrade, and a 7,200-second Era</p>
 				<p><b>Effect</b>: Increase the production of Non-Unique buildings based on the longest time spent without abdicating in this Reincarnation.</p>
 				<p><b>Formula</b>: (0.7 x ^ 0.7), where x is the longest time spent without abdicating (This R).</p>
 				<hr>
 				<p><b>A5375</b> - For Order</p>
 				<p><b>Research Name</b>: Albedo</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R177+, Forgotten Relic, Athanor artifact and upgrade.</p>
 				<p><b>Effect</b>: Increase all spells duration based on spell casts in this Era.</p>
 				<p><b>Formula</b>: (ln(1 + x) ^ 1.8)%, where x is spell casts this Era.</p>
 				<hr>
 				<p><b>A5625</b> - For All Factions</p>
 				<p><b>Research Name</b>: Reduction</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R179+, Forgotten Relic, Athanor artifact and upgrade, and an 86,400-second longest spell duration</p>
 				<p><b>Effect</b>: Reduce all spells cost based on their individual duration.</p>
 				<p><b>Formula</b>: Additive reduction: ((x/y) ^ 0.65), where x is duration and y is base duration.</p>
 				<hr>
 				<p><b>A5875</b> - For All Factions</p>
 				<p><b>Research Name</b>: Equivalence</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R181+, Forgotten Relic, Athanor artifact and upgrade, and 1e40 Faction Coins found in this Era</p>
 				<p><b>Effect</b>: Multiplicatively increase Royal Exchange bonus based on Faction Coin found in this Era.</p>
 				<p><b>Formula</b>: (0.5 * ln(1 + x) ^ 1.5)%, where x is Faction Coins found in this Era.</p>
 				<hr>
 				<p><b>A10875</b> - For All Factions</p>
 				<p><b>Research Name</b>: Toxicity</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R221+</p>
 				<p><b>Effect</b>: Multiplicatively increase mana regeneration based on time spent with the faction opposite to your current one, in this Reincarnation.</p>
 				<p><b>Formula</b>: (1.3 * x ^ 0.7)%, where x is time spent with opposite-alignment faction this R.</p>
@@ -1503,42 +1556,49 @@
 				<hr>
 				<p><b>A11125</b> - For All Factions</p>
 				<p><b>Research Name</b>: Alkahest</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R223+</p>
 				<p><b>Effect</b>: Clicks count more based on the amount of active spells.</p>
 				<p><b>Formula</b>: (x ^ 1.5)%, where x is the amount of active spells.</p>
 				<hr>
 				<p><b>A11375</b> - For All Factions</p>
 				<p><b>Research Name</b>: Azoth</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R225+ and 100 Qi (1e20) Mana Regeneration</p>
 				<p><b>Effect</b>: Increase clicking reward based on Mana Regeneration.</p>
 				<p><b>Formula</b>: (ln(1 + 30 * x) ^ 2)%, where x is Mana Regeneration per second</p>
 				<hr>
 				<p><b>A11625</b> - For All Factions</p>
 				<p><b>Research Name</b>: Anima Mundi</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R227+ and 10 T (1e13) Faction Coin find chance</p>
 				<p><b>Effect</b>: Multiplicatively increase Maximum Mana based on Faction Coins found in this Reincarnation.</p>
 				<p><b>Formula</b>: (0.2 * ln(1 + x) ^ 1.8)%, where x is Faction Coins found in this Reincarnation.</p>
 				<hr>
 				<p><b>A11875</b> - For All Factions</p>
 				<p><b>Research Name</b>: Liquefaction</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R229+, Demon Bloodline, and 7,200 seconds in the current Era</p>
 				<p><b>Effect</b>: Increase the production of the three highest building tiers based on Hellfire Blast activity time in this Reincarnation.</p>
 				<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is Hellfire Blast activity time in this Reincarnation.</p>
 				<hr>
 				<p><b>A12250</b> - For All Factions</p>
 				<p><b>Research Name</b>: Folgoration</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R232+ and 3 Excavation Resets in this Era</p>
 				<p><b>Effect</b>: While both Diamond Pickaxe and God's Hand are active, multiplicatively increase Mana Regeneration and Faction Coin find chance based on the amount of Excavations made in this Reincarnation, including resets.</p>
 				<p><b>Formula</b>: (15 + 3 * (x * (1 + y)) ^ 0.75)%, where x is excavation depth and y is free plus Ruby Excavation Resets in this Reincarnation.</p>
 				<hr>
 				<p><b>A13125</b> - For All Factions</p>
 				<p><b>Research Name</b>: Cinnabar</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R239+ and 7,200 seconds of Catalyst activity time in this Era</p>
 				<p><b>Effect</b>: All spells activity time counts more based on Tax Collection casts in this Era.</p>
 				<p><b>Formula</b>: (2 * ln(1 + x) ^ 2)%, where x is the number of Tax Collections cast this Era.</p>
 				<hr>
 				<p><b>A13500</b> - For All Factions</p>
 				<p><b>Research Name</b>: Lunafaction</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R242+ and 7,200 seconds spent as Balance in this Reincarnation</p>
 				<p><b>Effect</b>: All Balance spells can be cast up to 3 tier above their maximum. Increase Offline production based on time spent as Balance in this Reincarnation.</p>
 				<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent as Balance this Reincarnation.</p>
@@ -1551,7 +1611,7 @@
 			<div class="autohide">
 				<p><b>W1</b> - For Demon</p>
 				<p><b>Research Name</b>: Assault</p>
-				<p><b>Cost</b>: 750 Qag (7.50e125)</p>
+				<p><b>Cost</b>: 7e122</p>
 				<p><b>Effect</b>: Increase the production of Infernal Realms based on the amount of Hellfire Blasts cast in this Era.</p>
 				<p><b>Formula</b>: (160 + 80 * x ^ 0.8)%, where x is Hellfire Blasts cast in this Era.</p>
 				<hr>
@@ -1559,14 +1619,14 @@
 				<p><b>Research Name</b>: Dueling</p>
 				<p><b>Hint</b>: Too many soldiers. More barracks!</p>
 				<p><b>Requirement</b>: 2000 Warrior Barracks</p>
-				<p><b>Cost</b>: 28.83 Uqag (2.883e127)</p>
+				<p><b>Cost</b>: 1.446e124</p>
 				<p><b>Effect</b>: Increase the production of all other buildings by 130% per Elven Training Ground you own.</p>
 				<hr>
 				<p><b>W25</b> - For Goblin</p>
 				<p><b>Research Name</b>: War Funds</p>
 				<p><b>Hint</b>: Get rich.</p>
 				<p><b>Requirement</b>: 1 Tqag (1e132) Coins Gained (This Era)</p>
-				<p><b>Cost</b>: 12.63 Dqag (1.263e130)</p>
+				<p><b>Cost</b>: 2.25e126</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on the amount of Tax Collections cast in this Era.</p>
 				<p><b>Formula</b>: (10 * x ^ 0.4)%, where x is Tax Collections cast in this Era.</p>
 				<hr>
@@ -1574,7 +1634,7 @@
 				<p><b>Research Name</b>: Exertion</p>
 				<p><b>Hint</b>: Bad times!</p>
 				<p><b>Requirement</b>: 1 hour of Evil play time this Reincarnation (unlock as Demon)</p>
-				<p><b>Cost</b>: 318.8 Tqag (3.188e134)</p>
+				<p><b>Cost</b>: 1.012e130</p>
 				<p><b>Effect</b>: Increase faction coin find chance based on the number of Undercities you own.</p>
 				<p><b>Formula</b>: (2 * x ^ 1.2)%, where x is the number of Undercities you own.</p>
 				<hr>
@@ -1582,7 +1642,7 @@
 				<p><b>Research Name</b>: Betrayal</p>
 				<p><b>Hint</b>: How big of an army can you muster?</p>
 				<p><b>Requirement</b>: 500 base assistants</p>
-				<p><b>Cost</b>: 676 Spqag (6.76e146)</p>
+				<p><b>Cost</b>: 1.715e140</p>
 				<p><b>Effect</b>: Increase the production of non-unique buildings based on the amount of assistants you own.</p>
 				<p><b>Formula</b>: (9 * x ^ 0.9)%, where x is the amount of assistants you own.</p>
 				<hr>
@@ -1590,41 +1650,41 @@
 				<p><b>Research Name</b>: Rampage</p>
 				<p><b>Hint</b>: Light up those cups!</p>
 				<p><b>Requirement</b>: 580 Trophies (as Demon)</p>
-				<p><b>Cost</b>: 296 Ocqag (9.6e149)</p>
+				<p><b>Cost</b>: 2.668e142</p>
 				<p><b>Effect</b>: Increase maximum mana based on the number of trophies you have unlocked.</p>
 				<p><b>Formula</b>: floor(1.3 * x ^ 1.1), where x is the amount of trophies unlocked.</p>
 				<hr>
 				<p><b>W150</b> - For All Factions</p>
 				<p><b>Research Name</b>: Invasion</p>
 				<p><b>Requirement</b>: Research War Funds (W25) & Rampage (W135)</p>
-				<p><b>Cost</b>: 129.6 Noqag (1.296e152)</p>
+				<p><b>Cost</b>: 4.151e144</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on the amount of assistants you own.</p>
 				<p><b>Formula</b>: (15 * x ^ 0.5)%, where x is the amount of assistants you own.</p>
 				<hr>
 				<p><b>W175</b> - For Demon</p>
 				<p><b>Research Name</b>: Overwhelm</p>
 				<p><b>Requirement</b>: Research Assault (W1) & Invasion (W150)</p>
-				<p><b>Cost</b>: 3.273 Uqig (3.273e156)</p>
+				<p><b>Cost</b>: 1.868e148</p>
 				<p><b>Effect</b>: You gain additional assistants based on total amount of evil spells cast.</p>
 				<p><b>Formula</b>: +(9 + 0.9 * x ^ 0.9), where x is Evil spells cast in this Reincarnation.</p>
 				<hr>
 				<p><b>W180</b> - For All Factions</p>
 				<p><b>Research Name</b>: Formation</p>
 				<p><b>Requirement</b>: 150 Call to Arms casts this Reincarnation, Research Dueling (W10) & Exertion (W50)</p>
-				<p><b>Cost</b>: 24.85 Uqig (2.485e157)</p>
+				<p><b>Cost</b>: 1.005e149</p>
 				<p><b>Effect</b>: Each building counts 15 times for Call to Arms purposes.</p>
 				<hr>
 				<p><b>W200</b> - For All Factions</p>
 				<p><b>Research Name</b>: Crusade</p>
 				<p><b>Requirement</b>: Research Hallowing (D50) & Formation (W180)</p>
-				<p><b>Cost</b>: 82.65 Dqig (8.265e160)</p>
+				<p><b>Cost</b>: 8.406e151</p>
 				<p><b>Effect</b>: Multiplicatively increase Royal Exchange bonus based on Research Points.</p>
 				<p><b>Formula</b>: (2 * x ^ 0.6)%, where x is Research Points.</p>
 				<hr>
 				<p><b>W205</b> - For All Evil Factions</p>
 				<p><b>Research Name</b>: Berserking</p>
 				<p><b>Requirement</b>: 200 Blood Frenzy casts this Reincarnation, Research Rampage (W135) & Retribution (D150)</p>
-				<p><b>Cost</b>: 627.6 Dqig (6.276e161)</p>
+				<p><b>Cost</b>: 4.521e152</p>
 				<p><b>Effect</b>: While Blood Frenzy is active, increase mana regeneration based on the amount of assistants you own.</p>
 				<p><b>Effect</b>: Also increases offline spell cast amount multiplicatively by 300%.</p>
 				<p><b>Formula</b>: +(3 * x ^ 0.45), where x is your Assistants stat.</p>
@@ -1632,14 +1692,14 @@
 				<p><b>W225</b> - For Angel</p>
 				<p><b>Research Name</b>: Critical Strike</p>
 				<p><b>Requirement</b>: Research Dueling (W10) & Transfixion (D55)</p>
-				<p><b>Cost</b>: 2.087 Qaqig (2.087e165)</p>
+				<p><b>Cost</b>: 3.782e155</p>
 				<p><b>Effect</b>: Holy Light empowers Heaven’s Domains based on Holy Light activity time in this Reincarnation.</p>
 				<p><b>Formula</b>: (5 * x ^ 0.65)%, where x is Holy Light active time This Reincarnation in seconds.</p>
 				<hr>
 				<p><b>W250</b> - For All Factions</p>
 				<p><b>Research Name</b>: Swarming</p>
 				<p><b>Requirement</b>: Research Overwhelm (W175) & Berserking (W205)</p>
-				<p><b>Cost</b>: 52.7 Qiqig (5.27e169)</p>
+				<p><b>Cost</b>: 1.702e159</p>
 				<p><b>Effect</b>: Multiplicatively increase assistants by 10% and gain additional assistants based on trophies unlocked.</p>
 				<p><b>Formula</b>: +(x ^ 1.05), where x is the amount of trophies unlocked.</p>
 				<hr>
@@ -1647,14 +1707,14 @@
 				<p><b>Research Name</b>: Athletics</p>
 				<p><b>Hint</b>: Too many legends! Need more room!</p>
 				<p><b>Requirement</b>: 3,000 Olympian Halls</p>
-				<p><b>Cost</b>: 3.039 SxQig (3.039e171)</p>
+				<p><b>Cost</b>: 1.192e165</p>
 				<p><b>Effect</b>: Increase the production of all other buildings by 200% per Olympian Hall you own.</p>
 				<hr>
 				<p><b>W300</b> - For Faceless</p>
 				<p><b>Research Name</b>: Domination</p>
 				<p><b>Hint</b>: How many people are required to throw a party?</p>
 				<p><b>Requirement</b>: 5,000 Base Assistants (as Faceless)</p>
-				<p><b>Cost</b>: 1.331 SpQig (1.331e174)</p>
+				<p><b>Cost</b>: 3.447e166</p>
 				<p><b>Effect</b>: Increase Faction Coin find chance based on the highest amount of assistants you had in a single game.(This R)</p>
 				<p><b>Effect</b>: Also increase Faction Coin find chance multiplicatively by 100%.</p>
 				<p><b>Formula</b>: +(100 * x ^ 0.5)%, where x is your highest assistants count in a single Era.</p>
@@ -1663,7 +1723,7 @@
 				<p><b>Research Name</b>: Entrench</p>
 				<p><b>Hint</b>: Dig, dig, dig the hole.</p>
 				<p><b>Requirement</b>: 2,000 Excavations</p>
-				<p><b>Cost</b>: 582.7 SpQig (5.827e176)</p>
+				<p><b>Cost</b>: 1.424e162</p>
 				<p><b>Effect</b>: Increase the production of Unique buildings based on the amount of Excavations you made.</p>
 				<p><b>Formula</b>: round(15 * x ^ 0.8)%, where x is the amount of excavations made.</p>
 				<hr>
@@ -1671,34 +1731,34 @@
 				<p><b>Research Name</b>: Shattering</p>
 				<p><b>Hint</b>: Down all the way.</p>
 				<p><b>Requirement</b>: 2,600 Excavations</p>
-				<p><b>Cost</b>: 1.117 NoQig (1.117e180)</p>
+				<p><b>Cost</b>: 2.884e169</p>
 				<p><b>Effect</b>: Increase offline production based on Excavation depth.</p>
 				<p><b>Formula</b>: (10 * x ^ 0.9)%, where x is Excavation depth.</p>
 				<hr>
 				<p><b>W330</b> - For All Factions</p>
 				<p><b>Research Name</b>: Heroism</p>
 				<p><b>Requirement</b>: Research Crusade (W200) & Athletics (W290).</p>
-				<p><b>Cost</b>: 6.443 Sxg (6.443e183)</p>
+				<p><b>Cost</b>: 8.341e170</p>
 				<p><b>Effect</b>: Increase your click reward based on the amount of trophies you unlocked.</p>
 				<p><b>Formula</b>: round(2.5 * x)%, where x is the amount of trophies unlocked.</p>
 				<hr>
 				<p><b>W350</b> - For Druid</p>
 				<p><b>Research Name</b>: Survival</p>
 				<p><b>Requirement</b>: Research Creeping (A300) & Synthesis (A150).</p>
-				<p><b>Cost</b>: 21.42 USxg (2.142e187)</p>
+				<p><b>Cost</b>: 6.979e173</p>
 				<p><b>Effect</b>: Increase the production of all other buildings based on the production of your Stonehenge Circles.</p>
 				<p><b>Formula</b>: (8 * ln(1 + x) ^ 1.8)%, where x is the production of your Stonehenge Circles.</p>
 				<hr>
 				<p><b>W400</b> - For All Factions</p>
 				<p><b>Research Name</b>: Siege</p>
 				<p><b>Requirement</b>: Research Architecture (C281) & Entrench (W270).</p>
-				<p><b>Cost</b>: 13.66 QaSxg (1.366e196)</p>
+				<p><b>Cost</b>: 1.413e181</p>
 				<p><b>Effect</b>: Each building in the three highest building tiers count as 2 buildings for all purposes.</p>
 				<hr>
 				<p><b>W501</b> - For Drow</p>
 				<p><b>Research Name</b>: Ambush</p>
 				<p><b>Requirement</b>: Secrets of the Underworld (as Drow)</p>
-				<p><b>Cost</b>: 103.7 QaSxg (1.037e197)</p>
+				<p><b>Cost</b>: 8.112e195</p>
 				<p><b>Effect</b>: Increase the production of Spider Sanctuaries based on offline Bonus</p>
 				<p><b>Formula</b>: (3.5 * ln(1 + x) ^ 3.5)%, where x is offline production bonus multiplier.</p>
 				<p><b>Note</b>: This research is treated as an A1 upgrade for A-nerf purposes.</p>
@@ -1706,28 +1766,28 @@
 				<p><b>W600</b> - For Drow</p>
 				<p><b>Research Name</b>: Stalking</p>
 				<p><b>Requirement</b>: Research Exertion (W50) and Ambush (W501)</p>
-				<p><b>Cost</b>: 18.47 Uspg (1.847e217)</p>
+				<p><b>Cost</b>: 2.376e210</p>
 				<p><b>Effect</b>: Multiplicatively increase assistants based on Combo Strike activity time in this Reincarnation.</p>
 				<p><b>Formula</b>: (x ^ 0.6)%, where x is Combo Strike activity time in this Reincarnation.</p>
 				<hr>
 				<p><b>W625</b> - For Evil</p>
 				<p><b>Research Name</b>: Bloodlust</p>
 				<p><b>Requirement</b>: 5,400 seconds (1.5 hours) as Evil this Reincarnation, Research Berserking (W205) and Focus (S425)</p>
-				<p><b>Cost</b>: 140.2 USpg (1.402e218)</p>
+				<p><b>Cost</b>: 1.069e214</p>
 				<p><b>Effect</b>: While Blood Frenzy is active, increase the production of all buildings based on faction spells cast in this Era.</p>
 				<p><b>Formula</b>: (15 * x ^ 0.75)%, where x is faction spells cast in this Era.</p>
 				<hr>
 				<p><b>W650</b> - For Dwarf</p>
 				<p><b>Research Name</b>: Resilience</p>
 				<p><b>Requirement</b>: Research Eternity (D330) and Mercy (D450)</p>
-				<p><b>Cost</b>: 204.2 TSpg (2.042e224)</p>
+				<p><b>Cost</b>: 4.811e217</p>
 				<p><b>Effect</b>: Multiplicatively increase assistants based on clicks made in this Era.</p>
 				<p><b>Formula</b>: (3.5 * x ^ 0.35)%, where x is clicks made in this Era.</p>
 				<hr>
 				<p><b>W700</b> - For Demon,Drow</p>
 				<p><b>Research Name</b>: Torture</p>
 				<p><b>Requirement</b>: 250 Drow Exchanges as Dromon, Research Soulrending (D245) and Stalking (W600)</p>
-				<p><b>Cost</b>: 39.16 QiSpg (3.916e229)</p>
+				<p><b>Cost</b>: 9.741e224</p>
 				<p><b>Effect</b>: Increase assistants production based on total time spent being Evil (This R). </p>
 				<p><b>Formula</b>: (8 * x ^ 0.8)%, where x is your Time Spent Being Evil stat.</p>
 				<hr>
@@ -1735,7 +1795,7 @@
 				<p><b>Research Name</b>: Authority</p>
 				<p><b>Hint</b>: How long does your Call to Arms last?</p>
 				<p><b>Requirement</b>: 7,200 seconds (2 hours) Call to Arms activity time this Era.</p>
-				<p><b>Cost</b>: 152.4 Dvg (1.524e71)</p>
+				<p><b>Cost</b>: 7.36e69</p>
 				<p><b>Effect</b>: Increase the duration of all spells based on Call to Arms activity time in this Reincarnation.</p>
 				<p><b>Formula</b>: (x ^ 0.5)%, where x is Call to Arms active time This Reincarnation in seconds.</p>
 				<hr>
@@ -1743,7 +1803,7 @@
 				<p><b>Research Name</b>: Scavenging</p>
 				<p><b>Hint</b>: GUD? More like Evil.</p>
 				<p><b>Requirement</b>: 43,200 seconds (12 hours) spent as Evil across all Reincarnations.</p>
-				<p><b>Cost</b>: 137.8 Qavg (1.378e77)</p>
+				<p><b>Cost</b>: 3.609e75</p>
 				<p><b>Effect</b>: Increases Faction Coin find chance multiplicatively by 160%.</p>
 				<p><b>Effect</b>: Increase the chance to find Faction Coins based on the amount of assistants you own.</p>
 				<p><b>Formula</b>: +(40 * x ^ 0.4)%, where x is assistants.</p>
@@ -1751,14 +1811,14 @@
 				<p><b>W1400</b> - For Dragon</p>
 				<p><b>Research Name</b>: Cataclysm</p>
 				<p><b>Requirement</b>:  Research W400, A1200, Affiliated Dragon</p>
-				<p><b>Cost</b>: 4.249 Qivg (4.249e78)</p>
+				<p><b>Cost</b>: 9.549e76</p>
 				<p><b>Effect</b>: Multiplicatively increase maximum mana based on clicks made in this Era.</p>
 				<p><b>Formula</b>: (25 + 0.5 * x ^ 0.5)%, where x is clicks made in this Era.</p>
 				<hr>
 				<p><b>W3050</b> - For Mercenary</p>
 				<p><b>Research Name</b>: Flanking</p>
 				<p><b>Requirement</b>: 100 M (1e8) Base Assistants, Authority (W1275), and Intimidation (E1325).</p>
-				<p><b>Cost</b>: 809 SpQig (8.09e176)</p>
+				<p><b>Cost</b>: 7.464e170</p>
 				<p><b>Effect</b>: Increases the production of buildings one tier directly above or below a Unique Building based on the amount of assistants you own.</p>
 				<p><b>Formula</b>: (2 * x ^ 0.8)%, where x is assistants.</p>
 				<hr>
@@ -1766,30 +1826,34 @@
 				<p><b>Research Name</b>: Upheaval</p>
 				<p><b>Hint</b>: More of the baseline production buildings!</p>
 				<p><b>Requirement</b>: 60000 Farms, Inns and Blacksmiths.</p>
-				<p><b>Cost</b>: 731.6 NoQig (7.316e182)</p>
+				<p><b>Cost</b>: 3.66e176</p>
 				<p><b>Effect</b>: Increases the production of all buildings based on their tier, giving the highest bonus to the lowest.</p>
 				<p><b>Formula</b>: (150 * (12 - T) ^ 2.15)%, where T is building tier.</p>
 				<hr>
 				<p><b>W5125</b> - For All Factions</p>
 				<p><b>Research Name</b>: Sovereignty</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R175+, Forgotten Relic, Battlefield artifact and upgrade, and 50,000 Halls of Legends.</p>
 				<p><b>Effect</b>: Increase the production of two highest tier buildings based on assistants you own.</p>
 				<p><b>Formula</b>: (0.5 * x ^ 0.25)%, where x is assistants.</p>
 				<hr>
 				<p><b>W5375</b> - For Evil</p>
 				<p><b>Research Name</b>: Officers</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R177+, Forgotten Relic, Battlefield artifact and upgrade.</p>
 				<p><b>Effect</b>: Multiplactively increase assistants based on the amount of trophies unlocked.</p>
 				<p><b>Formula</b>: (2.5 * x ^ 0.5), where x is trophies.</p>
 				<hr>
 				<p><b>W5625</b> - For All Factions</p>
 				<p><b>Research Name</b>: Concealment</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R179+, Forgotten Relic, Battlefield artifact and upgrade, and 1 M (1e6) clicks this Reincarnation.</p>
 				<p><b>Effect</b>: Offline time counts 50% more and increase production bonus from Gems based on Mana produced in this Era.</p>
 				<p><b>Formula</b>: +(ln(1 + x) ^ 1.7)%, where x is Mana produced in this Era.</p>
 				<hr>
 				<p><b>W5875</b> - For All Factions</p>
 				<p><b>Research Name</b>: Patience</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R181+, Forgotten Relic, Battlefield artifact and upgrade, and 1e20 Max Mana.</p>
 				<p><b>Effect</b>: Time spent with Prestige Counts 500% more.</p>
 				<p><b>Effect</b>: Time spent with Astral factions Counts 1000% more.</p>
@@ -1797,30 +1861,35 @@
 				<hr>
 				<p><b>W10875</b> - For All Factions</p>
 				<p><b>Research Name</b>: Revolution</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R221+</p>
 				<p><b>Effect</b>: Gain assistants based on Royal Exchanges made.</p>
 				<p><b>Formula</b>: +(8 * x ^ 0.8), where x is Royal Exchanges made.</p>
 				<hr>
 				<p><b>W11125</b> - For All Factions</p>
 				<p><b>Research Name</b>: Vengeance</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R223+ and a Call to Arms duration of at least 600 seconds.</p>
 				<p><b>Effect</b>: Increase Offline production based on the duration of your longest spell.</p>
 				<p><b>Formula</b>: (25 + 2.5 * x ^ 0.75)%, where x is the duration of your longest spell.</p>
 				<hr>
 				<p><b>W11375</b> - For All Factions</p>
 				<p><b>Research Name</b>: Pacifism</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R225+ and 7,200 seconds (2 hours) of Neutral time this Era.</p>
 				<p><b>Effect</b>: Increase all spells durations based on time spent in this Era.</p>
 				<p><b>Formula</b>: (0.3 * x ^ 0.7)%, where x is time spent in this Era.</p>
 				<hr>
 				<p><b>W11625</b> - For All Factions</p>
 				<p><b>Research Name</b>: Eradication</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R227+ and an offline production multiplier of at least 100,000 (10,000,000%).</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on time spent with the least used faction.</p>
 				<p><b>Formula</b>: (85 + 1.85 * x ^ 0.85)%, where x is time spent with the least-used faction in seconds.</p>
 				<hr>
 				<p><b>W11875</b> - For All Factions</p>
 				<p><b>Research Name</b>: Scouting</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R229+ and at least 5 Primal Balance targets.</p>
 				<p><b>Effect</b>: Buildings count more based on the maximum amount of Grand Balance targets you had in this Reincarnation.</p>
 				<p><b>Formula</b>: (x ^ 0.9)%, where x is the maximum amount of Grand Balance targets you had in this Reincarnation.</p>
@@ -1828,18 +1897,21 @@
 				<hr>
 				<p><b>W12250</b> - For All Factions</p>
 				<p><b>Research Name</b>: Raiding</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R232+ and a Combo Strike counter of at least 1 M (1e6).</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on the highest Combo Strike counter you had in this Reincarnation.</p>
 				<p><b>Formula</b>: (0.01 * ln(1 + x) ^ 5)%, where x is the highest Combo Strike counter in this Reincarnation.</p>
 				<hr>
 				<p><b>W13125</b> - For All Factions</p>
 				<p><b>Research Name</b>: Artillery</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R239+ and at least 50 Triggered Tax Collection Power.</p>
 				<p><b>Effect</b>: Increase triggered Tax Collections based on the highest amount of spells cast in this Reincarnation.</p>
 				<p><b>Formula</b>: +floor(1 + 0.5 * ln(1 + x) ^ 1.25), where x is the highest number of spells cast in a single run this Reincarnation.</p>
 				<hr>
 				<p><b>W13500</b> - For All Factions</p>
 				<p><b>Research Name</b>: Backfire</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R242+ and 1,800 seconds (30 minutes) with your least-used alignment this Reincarnation.</p>
 				<p><b>Effect</b>: Increase the production of Evil buildings based on time spent as Good, the production of Chaos buildings based on time spent as Order, and the production of Chaos Evil buildings as the sum of time spent as Good and Order. Also increases the production of Good and Order buildings based on Evil and Chaos in the same way.</p>
 				<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is the respective time stat in seconds.</p>
@@ -1883,41 +1955,48 @@
 				<hr>
 				<p><b>F11000</b> - For All Factions</p>
 				<p><b>Research Name</b>: Godslaying</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R222+</p>
 				<p><b>Effect</b>: Active spells count more based on the sum of your Faction spells activity time.</p>
 				<p><b>Formula</b>: (0.5 * x ^ 0.5)%, where x is the sum of your current factions' spell activity time this Reincarnation.</p>
 				<hr>
 				<p><b>F11250</b> - For All Factions</p>
 				<p><b>Research Name</b>: Inanity</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R224+ and a maximum Excavation depth of 15,000 this Reincarnation.</p>
 				<p><b>Effect</b>: Excavations count more based on time spent offline in this Era.</p>
 				<p><b>Formula</b>: (x ^ 0.5)%, where x is time spent offline this Era.</p>
 				<hr>
 				<p><b>F11500</b> - For All Factions</p>
 				<p><b>Research Name</b>: Paradox</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R226+ and a Total Research Budget of 60,000.</p>
 				<p><b>Effect</b>: Gain the Set bonus of your opposite alignment.</p>
 				<p><b>Note</b>: Only gain the effects of the Base Faction that matches both alignments. For Neutral and Balance the opposite is Neutral and Balance respectively.</p>
 				<hr>
 				<p><b>F11750</b> - For All Factions</p>
 				<p><b>Research Name</b>: Relativity</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R228+ and 5,500 Royal Exchanges.</p>
 				<p><b>Effect</b>: You can purchase one Legacy of your choice for free.</p>
 				<p><b>Note</b>: This will not increase the cost of the normal Legacy.</p>
 				<hr>
 				<p><b>F12000</b> - For All Factions</p>
 				<p><b>Research Name</b>: Revelations</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R230+ and 1e33 Faction Coins found this Era.</p>
 				<p><b>Effect</b>: Allows the purchase of one additional Legacy Combo upgrade.</p>
 				<hr>
 				<p><b>F12500</b> - For All Factions</p>
 				<p><b>Research Name</b>: Avatars</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R234+ and at least 4 different Factions in your Legacies.</p>
 				<p><b>Effect</b>: Multiplactively increase assistants based on the amount of different Factions in your Legacies.</p>
 				<p><b>Formula</b>: (50 * x ^ 2.5)%, where x is the amount of different Factions in your Legacies.</p>
 				<hr>
 				<p><b>F13250</b> - For All Factions</p>
 				<p><b>Research Name</b>: Taboo</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R240+ and 10,800 seconds (3 hours) of Call to Arms activity time this Reincarnation.</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on the amount of faction upgrades different than your own.</p>
 				<p><b>Formula</b>: (1.2 * x ^ 1.2)%, where x is the number of faction upgrades you have that are not part of your faction.</p>
@@ -1925,6 +2004,7 @@
 				<br/>
 				<p><b>F13750</b> - For All Factions</p>
 				<p><b>Research Name</b>: The Unseen</p>
+				<p><b>Cost</b>: Free</p>
 				<p><b>Requirement</b>: R244+, the Forbidden Library upgrade, and 4,000 Monasteries.</p>
 				<p><b>Effect</b>: Increase Offline production based on the maximum amount of assistants you had in this Reincarnation.</p>
 				<p><b>Formula</b>: (2 * ln(1 + x) ^ 2)%, where x is the highest number of assistants you had this Reincarnation.</p>
