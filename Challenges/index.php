@@ -3,6 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <?php include "../scripts/header.html"; ?>
+	<p><b>Note</b>: Challenge rewards do not suffer from Ascension penalties.</p>
 	<h6><img src="/realm/Factions/picks/ChallengesTopPage.png"></h6>
 	<p>All challenges need that faction.</p>
 	<p>All challenge 2 need that faction and that bloodline.</p>
@@ -155,7 +156,7 @@
 	<p>&quot;The archangel leaders have entrusted you with a sacred mission:quickly harness enough magical power to become a beacon of magical selflessness. Extorting from the poor is forbidden.&quot;</p>
 	<p><b>Requirements</b>: Angel as Base Faction, Reincarnation 8+, Angel Bloodline, Angel challenge 1 completed.</p>
 	<p><b>Note</b>: Dwarven can be used but not required.</p>
-	<p><b>Challenge</b>: Generate 500,000 Mana in less than 3 hours without casting a single Tax Collection.</p>
+	<p><b>Challenge</b>: Have God's Hand spell duration of at least 3 minutes.</p>
 	<p><b>Effect</b>: Multiplicatively increases Maximum Mana by 30%.</p>
 	<p><b>Upgrade</b>: Works with Undead</p>
 	<p><b>Tip 1</b>: Avoid getting Angelic Wisdom (2,2) and Angelic Dominance (3,2) because they reduce your Mana-spent-per-second ability.</p>
@@ -168,9 +169,9 @@
 	<p>&quot;The fallen nephilim have noticed your abilities and have entrusted you with a secret mission: Spread false hope upon the legends of mortals.&quot;</p>
 	<p><b>Requirements</b>: Angel as Base Faction, Reincarnation 18+, Demon Bloodline, Angel Unique Building, Angel challenge 2 completed.</p>
 	<p><b>Note</b>: Dwarven can <b>NOT</b> be used unless you can get Dwarven's Unique Building at R28+.</p>
-	<p><b>Challenge</b>: Have 2000 Halls of Legends, and no good buildings.</p>
+	<p><b>Challenge</b>: Have 2,400 Halls of Legends and no Good buildings while using the Demon Bloodline.</p>
 	<p><b>Effect</b>: Increase the production of all Unique buildings based on your Mana Regeneration. Does not suffer from Ascension penalties.</p>
-	<p><b>Formula</b>: (2.5 * log10(1 + x) ^ 2.5)%, where x is your Mana Regeneration.</p>
+	<p><b>Formula</b>: (2 * ln(1 + 30 * x) ^ 2.5)%, where x is your Mana Regeneration.</p>
 	<p><b>Upgrade</b>: Works with All</p>
 		" coords="184,240,238,294" shape="rect">
 	<area href="/realm/Goblin/#GBCR" target=""
@@ -535,7 +536,7 @@
 	<p><b>Effect</b>: Increase Combo Strike counter based on the amount of spells cast in this Era. (Not including Tax Collection)</p>
 	<p><b>New Combo Strike Counter Formula</b>: (x + y), where x is your Combo Strike cast count and y is every other spell (except tax collection and generic) cast count.</p>
 	<p><b>Effect</b>: Also increase offline spells cast amount multiplicatively based on your offline Mana Regeneration.</p>
-	<p><b>Formula</b>: (10 * log10(1 + x))%, where x is your offline Mana Regeneration.</p>
+	<p><b>Formula</b>: (5 * ln(1 + 30 * x))%, where x is your offline Mana Regeneration.</p>
 		" coords="4,1024,58,1078" shape="rect">
 	<area href="/realm/Drow/#DWC1" target=""
 		research="
@@ -590,8 +591,8 @@
 	<p>&quot;It is time to emerge from the shadows. Our warriors will demonstrate their hard work and lead us to domination of the realm.&quot;</p>
 	<p><b>Requirements</b>: Any Evil as Base Faction, Drow as Prestige Faction, Reincarnation 33+, Drow Unique Building, Drow Challenge 4 completed.</p>
 	<p><b>Challenge</b>: Have at least 2 hours offline (This Era) and at least 360 charges of Combo Strike.</p>
-	<p><b>Effect</b>: A fraction of your alignment spell bonus is applied passively.</p>
-	<p><b>Note</b>: &quot;Fraction&quot; is equal to 5%.</p>
+	<p><b>Effect</b>: Multiplicatively increase triggered Tax Collections based on Royal Exchange bonus.</p>
+	<p><b>Formula</b>: (5 + 2 * x ^ 0.2)%, where x is Royal Exchange bonus.</p>
 	<p><b>Upgrade</b>: Works with All</p>
 		" coords="304,1024,358,1078" shape="rect">
 	<area href="/realm/Dragons/#DGCR" target=""
@@ -605,8 +606,8 @@
 	<p><b>Dragon Challenge 1</b></p>
 	<p><b><img src='/realm/Factions/picks/SkyMonarchChallenge.png' align='middle'> Sky Monarch</b></p>
 	<p>&quot;The Titan leader has approached you with an offer you cannot refuse: Use the help of your Draconic allies to guard his domain and lightning itself will enchant your riches.&quot;</p>
-	<p><b>Requirements</b>: Titan as Base Faction, Dragon as Prestige Faction, Reincarnations 48+, Dragon's Roar upgrade purchased, Titan, Druid, Faceless, Dwarven and Drow Challenge 1 completed.</p>
-	<p><b>Challenge</b>: Have 6,500 Halls of Legends.</p>
+	<p><b>Requirements</b>: Titan as Base Faction, Dragon as Prestige Faction, Reincarnation 53+, Dragon's Roar upgrade purchased, and Titan, Druid, Faceless, Dwarven and Drow Challenge 1 completed.</p>
+	<p><b>Challenge</b>: Have 10,000 Halls of Legends.</p>
 	<p><b>Effect</b>: Multiplicatively increase Faction Coin chance based on Lightning Strike activity time in this Era.</p>
   <p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is your Lightning Strike activity time in this Era in seconds.</p>
 	<p><b>Upgrade</b>: Works with Titan + Dragon</p>
@@ -616,12 +617,13 @@
 	<p><b>Dragon Challenge 2</b></p>
 	<p><b><img src='/realm/Factions/picks/BarkscalesChallenge.png' align='middle'> Barkscales</b></p>
 	<p>&quot;Unstable power flows through your workforce. Prove to the Dragonlords you can sustain and control every sip of it.&quot;</p>
-	<p><b>Requirements</b>: Druid as Base Faction, Dragon as Prestige Faction, Reincarnation 51+, Dragon Bloodline, Titan, Druid, Faceless, Dwarven and Drow Challenge 2 and Dragon Challenge 1 completed.</p>
-	<p><b>Challenge</b>: Generate at least 1e10 Mana in this Era, Have Grand Balance affect 7 buildings.</p>
+	<p><b>Requirements</b>: Druid as Base Faction, Dragon as Prestige Faction, Reincarnation 56+, Dragon Bloodline, Titan, Druid, Faceless, Dwarven and Drow Challenge 2 and Dragon Challenge 1 completed.</p>
+	<p><b>Challenge</b>: Produce at least 1 B (1e9) Mana in this Era and have Grand Balance target at least 5 buildings.</p>
 	<p><b>Effect</b>: Increase Non-Unique Buildings production based on the amount of Grand Balance targets. Does not suffer from Ascension penalties.</p>
-	<p><b>Formula</b>: (20 * x ^ 2)%, where x is number of Grand Balance targets.</p>
-	<p><b>Effect</b>: Also reduces all Spell Tier upgrades costs based on Grand Balance activity time in this Reincarnation.</p>
-	<p><b>Formula</b>: max(0 , (1 - x / 28) ^ 9), where x is Grand Balance activity time in days.</p>
+	<p><b>Formula</b>: (30 * min(11, x) ^ 3)%, where x is the number of Grand Balance targets.</p>
+	<p><b>Effect</b>: Also increase Maximum Mana and Mana Regeneration based on Grand Balance activity time in this Reincarnation.</p>
+	<p><b>Maximum Mana Formula</b>: +(300 * t ^ 0.7).</p>
+	<p><b>Mana Regeneration Formula</b>: +(30 * t ^ 0.7), where t is Grand Balance activity time in this Reincarnation.</p>
 	<p><b>Upgrade</b>: Works with Druid + Dragon</p>
 		" coords="124,1122,178,1176" shape="rect">
 	<area href="/realm/Dragons/#DGC3" target=""
@@ -629,10 +631,9 @@
 	<p><b>Dragon Challenge 3</b></p>
 	<p><b><img src='/realm/Factions/picks/SerpentQuellerChallenge.png' align='middle'> Serpent Queller</b></p>
 	<p>&quot;Legends tell of a terrible sea monster destroying ships and harbors. With your Dragon and Faceless allies you can finally form a powerful army to raid its underwater lair. Slaying the leviathan will not only earn your kingdom eternal glory, but will make the overseas emporium flourish once more.&quot;</p>
-	<p><b>Requirements</b>: Faceless as Base Faction, Dragon as Prestige Faction, Reincarnation 54+, Have 5500 Excavations, Titan, Druid, Faceless, Dwarven and Drow challenge 3 and Dragon challenge 2 completed.</p>
-	<p><b>Challenge</b>: Have a combined total of 8 days played as faceless and dragons with a minimum of 2 days as each one.</p>
-	<p><b>Effect</b>: Faction Coin find chance from Evolutive Mutation becomes multiplicative with increased effect.</p>
-	<p><b>Formula</b>: (3 * x ^ 0.65)%, where x is your amount of Sunken Cities.</p>
+	<p><b>Requirements</b>: Faceless as Base Faction, Dragon as Prestige Faction, Reincarnation 59+, 7,000 Excavations, Titan, Druid, Faceless, Dwarven and Drow Challenge 3, and Dragon Challenge 2 completed.</p>
+	<p><b>Challenge</b>: Have a combined 3 days of Faceless and Dragon playtime, with at least 1 day for each.</p>
+	<p><b>Effect</b>: Make Evolutive Mutation's Faction Coin find chance multiplicative, increase the effects of Evolutive Mutation and Deep Memory, and remove one Ascension penalty from Hive Mind.</p>
 	<p><b>Upgrade</b>: Works with Faceless + Dragon</p>
 		" coords="184,1122,238,1176" shape="rect">
 	<area href="/realm/Dragons/#DGC4" target=""
@@ -640,10 +641,12 @@
 	<p><b>Dragon Challenge 4</b></p>
 	<p><b><img src='/realm/Factions/picks/DraconstellationChallenge.png' align='middle'> Draconstellation</b></p>
 	<p>&quot;Centuries ago, the Dragon race managed to stockpile the absolute pinnacle of wealth. Scattered in the stars, help them establish a stronger connection with the void between the realms.&quot;</p>
-	<p><b>Requirements</b>: Titan, Druid or Faceless as Base Faction, Dragon as Prestige Faction, Reincarnation 57+, 46 Artifacts, Titan, Druid, Faceless, Dwarven and Drow challenge 4 and Dragon challenge 3 completed.</p>
-	<p><b>Challenge</b>: Have 8,000 Iron Strongholds and have at least 4 Dragon's Breaths active at the same time.</p>
+	<p><b>Requirements</b>: Dragon Faction, Reincarnation 62+, 46 Artifacts, Titan, Druid, Faceless, Dwarven and Drow Challenge 4, and Dragon Challenge 3 completed.</p>
+	<p><b>Challenge</b>: Have 12,000 Iron Strongholds and at least 3 Dragon's Breaths active at tier 3 or higher.</p>
 	<p><b>Effect</b>: Faction coins from excavations are increased based on the amount of artifacts you own.</p>
-	<p><b>Formula</b>: (x ^ 6)%, where x is number of artifacts.</p>
+	<p><b>Formula</b>: (x ^ 5)%, where x is the number of Artifacts.</p>
+	<p><b>Effect</b>: Also increase the production of all buildings based on Excavation Depth.</p>
+	<p><b>Formula</b>: (y ^ 0.8)%, where y is Excavation Depth.</p>
 	<p><b>Upgrade</b>: Works with any Neutral + Dragon</p>
 		" coords="244,1122,298,1176" shape="rect">
 	<area href="/realm/Dragons/#DGC5" target=""
@@ -651,10 +654,10 @@
 	<p><b>Dragon Challenge 5</b></p>
 	<p><b><img src='/realm/Factions/picks/AncientIncantationChallenge.png' align='middle'> Ancient Incantation</b></p>
 	<p>&quot;You have affiliated with many magical races in the past, but none as potent as the Dragons, whose very breath is among the strongest of forces. There might be some way for your wizards to exploit this.&quot;</p>
-	<p><b>Requirements</b>: Titan, Druid or Faceless as Base Faction, Dragon as Prestige Faction, Reincarnation 60+, Dragon Unique Building, Dwarven and Drow challenge 5 and Dragon challenge 4 completed.</p>
-	<p><b>Challenge</b>: Have 5 spells active at tier 5.</p>
+	<p><b>Requirements</b>: Dragon Faction, Reincarnation 65+, Dragon Unique Building, Dwarven and Drow Challenge 5, and Dragon Challenge 4 completed.</p>
+	<p><b>Challenge</b>: Have at least 12 active spells.</p>
 	<p><b>Effect</b>: Increase Tax Collection worth in seconds based on the amount of active spells.</p>
-	<p><b>Formula</b>: (30 * x ^ 0.8)%, where x is the number of active spells.</p>
+	<p><b>Formula</b>: (40 * x ^ 0.8)%, where x is the number of active spells.</p>
 	<p><b>Upgrade</b>: Works with Good + Dwarves, Evil + Drow or Neutral + Dragon</p>
 		" coords="304,1122,358,1176" shape="rect">
 	<area href="/realm/Dragons/#DGC6" target=""
@@ -662,10 +665,10 @@
 	<p><b>Dragon Challenge 6</b></p>
 	<p><b><img src='/realm/Factions/picks/DracometVaultChallenge.png' align='middle'> Dracomet Vault</b></p>
 	<p>&quot;This backwater world has been conquered. The Dragonlords strive for greater riches. Follow the Dragon King, soar through the heavens and claim the energy of the cosmos.&quot;</p>
-	<p><b>Requirements</b>: Titan, Druid or Faceless as Base Faction, Dragon as Prestige Faction, Reincarnation 63+, Dragon challenge 5 completed, 12,000 research points spent across all facilities.</p>
-	<p><b>Challenge</b>: Gather at least 2.5e18 faction coins, 1e141 diamond coins, 90,000 buildings, 2e10 Mana produced, 7,500 excavations, 6,000 assistants, 300,000 Maximum Mana and 175,000 Mana Regeneration.</p>
-	<p><b>Effect</b>: Production bonus from Gems is additively increased over time based on the amount of artifacts you own. Resets on Abdications.</p>
-	<p><b>Formula</b>: +(x ^ 0.8 * 0.8 * (t / 60) ^ 0.8)%, where x is artfiacts found and t is time spent this Era in seconds.</p>
+	<p><b>Requirements</b>: Dragon Faction, Reincarnation 68+, Dragon Challenge 5 completed, and 12,000 Research Points spent across all facilities.</p>
+	<p><b>Challenge</b>: Have at least 1e25 Faction Coins, 1e150 Diamond Coins, 120,000 Buildings, 2e10 Mana produced, 9,000 Excavation Depth, 1e7 Assistants, 1e7 Maximum Mana, and 2e7 Mana Regeneration.</p>
+	<p><b>Effect</b>: Multiplicatively increase production bonus from Gems over time based on Artifacts found and time spent in this Era.</p>
+	<p><b>Formula</b>: (0.03 * t ^ 0.6 * x ^ 0.9)%, where t is time spent in this Era and x is Artifacts found.</p>
 	<p><b>Upgrade</b>: Works with All</p>
 		" coords="364,1122,418,1176" shape="rect">
 	<area href="/realm/Archon/#ARCR" target=""
@@ -707,10 +710,10 @@
 	<p><b><img src='/realm/Factions/picks/TitanomachyChallenge.png' align='middle'> Titanomachy</b></p>
 	<p>&quot;Through mastery of life and death, the final venture of creator's assistance stands between total dominion of the higher planes.&quot;</p>
 	<p><b>Requirements</b>: Titan as Base Faction, Archon as Astral Faction, Reincarnation 143+, 25,000 excavations, Titan Set active, Archon challenge 2 completed.</p>
-	<p><b>Challenge</b>: Have an individual Royal Exchange bonus of at least 5000% within 5 minutes of a new game.</p>
+	<p><b>Challenge</b>: Have an individual Royal Exchange bonus of at least 10,000,000% within 5 minutes of a new Era.</p>
 	<p><b>Effect</b>: Reduce Royal Exchange cost multiplier by -0.02 and multiplicatively increase Royal Exchange bonus by 100%.</p>
-	<p><b>Effect</b>: Multiplicatively increase time spent in this Era based on Royal Exchanges bought.</p>
-	<p><b>Formula</b>: (3 * ln(1 + x) ^ 1.3)%, where x is Royal Exchanges bought.</p>
+	<p><b>Effect</b>: Additively increase Royal Exchange bonus based on Royal Exchanges purchased.</p>
+	<p><b>Formula</b>: +(0.3 * x ^ 0.7)%, where x is Royal Exchanges purchased.</p>
 	<p><b>Effect</b>: Removes all Ascension penalties from Oversized Legends (TT9).</p>
 	<p><b>Upgrade</b>: Works with Titan + Dragon + Archon</p>
 		" coords="184,1220,238,1274" shape="rect">
@@ -732,8 +735,8 @@
 	<p><b><img src='/realm/Factions/picks/PowerOverwhelmingChallenge.png' align='middle'> Power Overwhelming</b></p>
 	<p>&quot;All-powerful ruler, we've experienced all this worldline had to offer. Shall we bridge to another and continue?&quot;</p>
 	<p><b>Requirements</b>: Angel, Undead or Titan as Base Faction, Archon as Astral Faction, Reincarnations 153+, Have all Order Lineages at least level 45, Archon challenge 4 completed.</p>
-	<p><b>Challenge</b>: Have a Precognition duration of at least 1 day, with a minimum of 315% bonus.</p>
-	<p><b>Effect</b>: The Advanced Heritage that matches your Lineage counts 50% (up from 30%) of its level. All others get 5% (up from 0%) of their respective Lineage level.</p>
+	<p><b>Challenge</b>: Have a Precognition duration of at least 1 day, with a minimum bonus of 650%.</p>
+	<p><b>Effect</b>: The Advanced Heritage that matches your Lineage counts 30% of its level. All others count 3% of their respective Lineage level.</p>
 	<p><b>Upgrade</b>: Works with All</p>
 		" coords="304,1220,358,1274" shape="rect">
 	<area href="/realm/Djinn/#DJCR" target=""
@@ -775,11 +778,10 @@
 	<p><b><img src='/realm/Factions/picks/IdentityShaperChallenge.png' align='middle'> Identity Shaper</b></p>
 	<p>&quot;Interesting, they're showing us some compassion. But it matters not, for we're still bound towards these vessels.&quot;</p>
 	<p><b>Requirements</b>: Faceless as Base Faction, Djinn as Astral Faction, Reincarnation 143+, 25,000 excavations, Faceless Set active, Djinn challenge 2 completed.</p>
-	<p><b>Challenge</b>: Have at least 2 B (2e9) base assistants within 5 minutes of a new game.</p>
-	<p><b>Effect</b>: Catalyst casts one additional spell.</p>
-	<p><b>Effect</b>: Catalyst also adds 100 casts per spell.</p>
+	<p><b>Challenge</b>: Have at least 300 T (3e14) base assistants within 5 minutes of a new Era.</p>
+	<p><b>Effect</b>: Gain the Catalyst spell. Each cast also adds 100 to Catalyst's casts statistic.</p>
 	<p><b>Effect</b>: Increase the minimum value on which Limited Wish is based.</p>
-	<p><b>Formula</b>: (0.1 * x ^ 0.9), where x is research points spent.</p>
+	<p><b>Formula</b>: (0.1 * x ^ 0.9), where x is Research Budget spent.</p>
 	<p><b>Upgrade</b>: Works with Faceless + Dragon + Djinn</p>
 		" coords="184,1318,238,1372" shape="rect">
 	<area href="/realm/Djinn/#DJC4" target=""
@@ -813,7 +815,7 @@
 		research="
 	<p><b>Makers Challenge Reward</b></p>
 	<p><b><img src='/realm/Factions/picks/GaiasCradleChallengeReward.png' align='middle'> Gaia's Cradle</b></p>
-	<p><b>Effect</b>: All Infinite Spiral effects scale 15% faster.</p>
+	<p><b>Effect</b>: All Infinite Spiral effects scale 12% faster.</p>
 		" coords="4,1416,58,1470" shape="rect">
 	<area href="/realm/Makers/#MKC1" target=""
 		research="
@@ -898,11 +900,10 @@
 	<p><b>Mercenary Challenge 1</b></p>
 	<p><b><img src='/realm/Factions/picks/UnlimitedKnowledgeChallenge.png' align='middle'> Unlimited Knowledge</b></p>
 	<p>&quot;To the many, having unlimited knowledge would mean having unlimited power. To the few, it is only some of that knowledge that has unlimited potential.&quot;</p>
-	<p><b>Requirements</b>: R190, Chrono Loading, Nexus unique Building, 50000 research points used.</p>
-	<p><b>Challenge</b>: Have at least 1e25 Mana Regeneration without using any non-Order upgrade or effect except Challenges and Royal Exchanges.</p>
-	<p><b>Effect</b>: Gain all the faction bloodlines simultaneously.</p>
-	<p><b>Note</b>: This Challenge deactivates the bonus from R58/R115 power.</p>
-	<p><b>Tip</b>: Unaligned, Mercenary, Prestige and Order faction related upgrades are allowed. Upgrade alignment is determined by the background color of the upgrade.</p>
+	<p><b>Requirements</b>: R190, Order Mercenary, Chrono Loading, Nexus Unique Building, and 20,000 Research Points used.</p>
+	<p><b>Challenge</b>: Have at least 1e20 Mana Regeneration without using any Chaos or Balance upgrade or effect except Challenges and Royal Exchanges.</p>
+	<p><b>Effect</b>: Gain the Base, Prestige, and Astral Bloodlines for your alignments.</p>
+	<p><b>Tip</b>: Unaligned, Mercenary, Prestige, and Order faction-related upgrades are allowed. Upgrade alignment is determined by the background color of the upgrade.</p>
 	<p><b>In Game</b>: Click the challenge to view the Bloodline container</p>
 	<p><b>Upgrade</b>: Works with Order Mercenary</p>
 		" coords="64,1514,118,1568" shape="rect">
