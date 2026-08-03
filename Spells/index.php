@@ -138,9 +138,10 @@
 	<p><b>Effect</b>: Alters Tax Collection with new name and effect (still counts as Tax Collection for all purposes).</p>
 	<p><b>Effect</b>: Increases the production of all buildings and Faction Coin find chance based on this spell tier level.</p>
 	<p><b>Effect</b>: Also produce Tax Collection casts per second based on your Maximum Mana.</p>
-	<p><b>Formula (Production bonus)</b>: ((((1 + 0.01 * (120 + 1.25 * ln(1 + 90 + x) ^ 1.25)) ^ T) - 1) * 100)%, where x is Tax Collection worth in seconds and T the Share Benefits tier.</p>
-	<p><b>Formula (Faction Coin find chance multiplier)</b>: 120 ^ (0.25 * T)%, where T is Share Benefits.</p>
-	<p><b>Formula (Additional Tax Collection)</b>: +(0.01 * x * T), where x is Maximum Mana and T Share Benefits tier.</p>
+	<p><b>Formula (Production bonus)</b>: (m * (80 + 1.6 * ln(1 + x) ^ 1.6) ^ ((0.5 * T + 1) ^ 0.9))%, where x is Tax Collection worth in seconds, T the Share Benefits tier, and m is 100 below A3 (1 in A3+).</p>
+	<p><b>Formula (Faction Coin find chance)</b>: (100 * (3 + 0.1 * ln(1 + c)) ^ (T + 1))%, where c is your Triggered Tax Collections power and T the Share Benefits tier.</p>
+	<p><b>Formula (Tax Collection casts per second)</b>: +(0.00001 * c * x ^ 0.5 * M * (T + 1))/s, where c is Triggered Tax Collections power, x is Tax Collection worth in seconds, M is Maximum Mana and T the Share Benefits tier.</p>
+	<p><b>Note</b>: Can be cast up to 36 tiers (99 in A3+).</p>
 		" coords="310,10,364,64" shape="rect">
 		<area href="#NightTime" research="
 	<p><b><img src='/realm/Factions/picks/NightTime.png' alt='Evil' align='middle'> Night Time</b></p>
@@ -182,7 +183,7 @@
 	<p><b>Cost</b>: 200 Mana - <b>Duration</b>: None</p>
 	<p><b>Effect</b>: Alters Tax Collection with new name and effect (still counts as Tax Collection for all purposes).</p>
 	<p><b>Effect</b>: Additional casts of Reap Interests increase its seconds worth of production.</p>
-	<p><b>Formula</b>: *(50000 * log10(8 + 0.1 * x)), where x is amount of Reap Interests casts.</p>
+	<p><b>Formula</b>: Seconds worth = (T * ln(1 + x) ^ 4), where T is your Tax Collection worth in seconds and x is amount of Reap Interests casts.</p>
 	<p><b>Note</b>: Upgrades that cast free Tax Collection are treated as Reap Interests casts.</p>
 		" coords="310,70,364,124" shape="rect">
 		<area href="#LightningStrike" research="
@@ -217,15 +218,17 @@
 	<p><b>Spell Type</b>: (Neutral) Dragon Faction Spell (R46+)</p>
 	<p><b>Cost</b>: 1,500 Mana - <b>Duration</b>: 20 seconds</p>
 	<p><b>Effect</b>: Activates one of the following effects at random for 20 seconds.</p>
-	<p><b><font color='red'>Red</font></b>: Increase the production of unique buildings based on the amount of Faction Coins found in this game.</p>
-	<p><b><font color='red'>Formula</font></b>: (2 * (ln(1 + x) ^ 2)%, where x is the amount of Faction Coins found in this game.</p>
-	<p><b><font color='green'>Green</font></b>: Increase the production of all buildings based on the amount of spells cast in this game. Higher bonuses are provided to lower building tiers.</p>
-	<p><b><font color='green'>Formula</font></b>: (0.01 * x ^ 0.625 * (11 - T) ^ 5)%, where x is spells cast (this game) and T is the building tier. (1 for Farms, 11 for Hall of Legends).</p>
+	<p><b><font color='red'>Red</font></b>: Increase the production of unique buildings based on the amount of Faction Coins found in this Era.</p>
+	<p><b><font color='red'>Formula</font></b>: (1.75 * ln(1 + x) ^ 1.75)%, where x is the amount of Faction Coins found in this Era.</p>
+	<p><b><font color='green'>Green</font></b>: Increase the production of all buildings based on the amount of spells cast in this Era. Higher bonuses are provided to lower building tiers.</p>
+	<p><b><font color='green'>Formula</font></b>: (0.000001 * ln(1 + x) ^ 6 * (11 - T) ^ 5)%, where x is spells cast (this Era) and T is the building tier. (1 for Farms, 11 for Hall of Legends).</p>
 	<p><b><font color='blue'>Blue</font></b>: Multiplicatively increase your Mana Regeneration by 200%.</p>
 	<p><b><font color='white'>White</font></b>: Temporarily increase the amount of assistants based on time spent being Neutral in this Reincarnation.</p>
-	<p><b><font color='white'>Formula</font></b>: +(30 * x ^ 0.65), where x is time spent as Neutral this Reincarnation.</p>
-	<p><b><font color='grey'>Black</b></font>: Increase the production of all buildings based on Dragon's Breath activity time in this game.</p>
-	<p><b><font color='grey'>Formula</font></b>: (0.5 * x ^ 0.75)%, where x is Dragon's Breath activity time in this game.</p>
+	<p><b><font color='white'>Formula</font></b>: +(30 * x ^ 0.7), where x is time spent as Neutral this Reincarnation.</p>
+	<p><b><font color='grey'>Black</b></font>: Increase the production of all buildings based on Dragon's Breath activity time in this Era.</p>
+	<p><b><font color='grey'>Formula</font></b>: (30 + 0.85 * x ^ 0.85)%, where x is Dragon's Breath activity time in this Era.</p>
+	<p><b><font color='goldenrod'>Yellow</font></b> (A2+): Multiplicatively increases production bonus from Gems based on assistants owned.</p>
+	<p><b><font color='goldenrod'>Formula</font></b>: (1.75 * ln(1 + x) ^ 1.75)%, where x is assistants owned.</p>
 		" coords="250,130,304,184" shape="rect">
 		<area href="#AppraisalVantage" research="
 	<p><b><img src='/realm/Factions/picks/AppraisalVantage.png' alt='Neutral' align='middle'> Appraisal Vantage</b></p>
@@ -233,7 +236,7 @@
 	<p><b>Cost</b>: 200 Mana - <b>Duration</b>: None</p>
 	<p><b>Effect</b>: Alters Tax Collection with new name and effect (still counts as Tax Collection for all purposes).</p>
 	<p><b>Effect</b>: Generates additional Faction Coins based on the amount of assistants you own.</p>
-	<p><b>Formula</b>: +(x * y ^ 1.275), where x is assistants owned and y is Faction Coin find chance.</p>
+	<p><b>Formula</b>: +(x * T * y ^ 1.25), where x is assistants owned, T is Tax Collection worth in seconds and y is Faction Coin find chance.</p>
 	<p><b>Note</b>: Upgrades that cast free Tax Collection are treated as Appraisal Vantage casts.</p>
 		" coords="310,130,364,184" shape="rect">
 		<area href="#TemporalFlux" research="
@@ -1170,19 +1173,22 @@
 <p id="DragonsBreath"><b><img src="/realm/Factions/picks/DragonsBreath.png" alt="Neutral" align="middle"> Dragon's Breath</b> (Dragon, R46+)</p>
 <p><b>Cost</b>: 1500 Mana - <b>Duration</b>: 20 seconds</p>
 <p><b>Effect</b>: Activates one of the following effects at random for 20 seconds.</p>
-<p><b><font color="darkred">Red</font></b>: Increase the production of unique buildings based on the amount of Faction Coins found in this game.</p>
-<p><b><font color="darkred">Formula</font></b>: (2 * (ln(1 + x) ^ 2)%, where x is the amount of Faction Coins found in this game.</p>
+<p><b><font color="darkred">Red</font></b>: Increase the production of unique buildings based on the amount of Faction Coins found in this Era.</p>
+<p><b><font color="darkred">Formula</font></b>: (1.75 * ln(1 + x) ^ 1.75)%, where x is the amount of Faction Coins found in this Era.</p>
 <br>
-<p><b><font color="darkgreen">Green</font></b>: Increase the production of all buildings based on the amount of spells cast in this game. Higher bonuses are provided to lower building tiers.</p>
-<p><b><font color="darkgreen">Formula</font></b>: (0.01 * x ^ 0.625 * (11 - T) ^ 5)%, where x is spells cast (this game) and T is the building tier. (1 for Farms, 11 for Hall of Legends).</p>
+<p><b><font color="darkgreen">Green</font></b>: Increase the production of all buildings based on the amount of spells cast in this Era. Higher bonuses are provided to lower building tiers.</p>
+<p><b><font color="darkgreen">Formula</font></b>: (0.000001 * ln(1 + x) ^ 6 * (11 - T) ^ 5)%, where x is spells cast (this Era) and T is the building tier. (1 for Farms, 11 for Hall of Legends).</p>
 <br>
 <p><b><font color="darkblue">Blue</font></b>: Multiplicatively increase your Mana Regeneration by 200%.</p>
 <br>
-<p><b><font color="white">White</font></b>: Temporarily increase the amount of assistants based on total time spent being Neutral.</p>
-<p><b><font color="white">Formula</font></b>: +(30 * x ^ 0.65), where x is time spent as Neutral this Reincarnation</p>
+<p><b><font color="white">White</font></b>: Temporarily increase the amount of assistants based on time spent being Neutral in this Reincarnation.</p>
+<p><b><font color="white">Formula</font></b>: +(30 * x ^ 0.7), where x is time spent as Neutral this Reincarnation</p>
 <br>
-<p><b><font color="black">Black</b></font>: Increase the production of all buildings based on Dragon's Breath activity time.</p>
-<p><b><font color="black">Formula</font></b>: (0.5 * x ^ 0.75)%, where x is Dragon's Breath activity time.</p>
+<p><b><font color="black">Black</b></font>: Increase the production of all buildings based on Dragon's Breath activity time in this Era.</p>
+<p><b><font color="black">Formula</font></b>: (30 + 0.85 * x ^ 0.85)%, where x is Dragon's Breath activity time in this Era.</p>
+<br>
+<p><b><font color="goldenrod">Yellow</font></b> (A2+): Multiplicatively increases production bonus from Gems based on assistants owned.</p>
+<p><b><font color="goldenrod">Formula</font></b>: (1.75 * ln(1 + x) ^ 1.75)%, where x is assistants owned.</p>
 <br>
 <p><b>Spell Trophy & Upgrade</b>: <b><img src="/realm/Factions/picks/DragonsRoarSpellUpgrade.png" align="middle"> Dragon's Roar</b></p>
 <p><b>Requirement</b>: Cast Dragon's Breath while having at least 4 other active spells.</p>
@@ -1225,10 +1231,10 @@
 <p><b>Effect</b>: Alters Tax Collection with new name and effect (still counts as Tax Collection for all purposes).</p>
 <p><b>Effect</b>: Increases the production of all buildings and Faction Coin find chance based on this spell tier level.</p>
 <p><b>Effect</b>: Also produce Tax Collection casts per second based on your Maximum Mana.</p>
-<p><b>Formula (Production bonus)</b>: ((((1 + 0.01 * (120 + 1.25 * ln(1 + 90 + x) ^ 1.25)) ^ T) - 1) * 100)%, where x is Tax Collection worth in seconds and T the Share Benefits tier.</p>
-<p><b>Formula (Faction Coin find chance multiplier)</b>: 120 ^ (0.25 * T)%, where T is Share Benefits.</p>
-<p><b>Formula (Additional Tax Collection)</b>: +(0.01 * x * T), where x is Maximum Mana and T Share Benefits tier.</p>
-<p><b>Note</b>: Can be cast up to 36 tiers (Ascension 1) / 99 tiers (Ascension 3).</p>
+<p><b>Formula (Production bonus)</b>: (m * (80 + 1.6 * ln(1 + x) ^ 1.6) ^ ((0.5 * T + 1) ^ 0.9))%, where x is Tax Collection worth in seconds, T the Share Benefits tier, and m is 100 below A3 (1 in A3+).</p>
+<p><b>Formula (Faction Coin find chance)</b>: (100 * (3 + 0.1 * ln(1 + c)) ^ (T + 1))%, where c is your Triggered Tax Collections power and T the Share Benefits tier.</p>
+<p><b>Formula (Tax Collection casts per second)</b>: +(0.00001 * c * x ^ 0.5 * M * (T + 1))/s, where c is Triggered Tax Collections power, x is Tax Collection worth in seconds, M is Maximum Mana and T the Share Benefits tier.</p>
+<p><b>Note</b>: Can be cast up to 36 tiers (99 in A3+).</p>
 <p><b>Note</b>: Each tier costs x2/1.5 (with S1275) more mana than the previous one until Tier 40 - above x4/x2.25 than the previous one.<p>
 <p><b>Note</b>: Drains every second Mana equal to its current cost.</p>
 <p><b>Note</b>: Upgrades that cast free Tax Collection are disabled.</p>
@@ -1237,14 +1243,14 @@
 <p><b>Cost</b>: 200 Mana - <b>Duration</b>: 0 seconds</p>
 <p><b>Requirement</b>: Dark Covenant</p>
 <p><b>Effect</b>: Additional casts of Reap Interests increase its seconds worth of production.</p>
-<p><b>Formula</b>: *(50000 * log10(8 + 0.1 * x)), where x is amount of Reap Interests casts.</p>
+<p><b>Formula</b>: Seconds worth = (T * ln(1 + x) ^ 4), where T is your Tax Collection worth in seconds and x is amount of Reap Interests casts.</p>
 <p><b>Note</b>: Upgrades that cast free Tax Collection are treated as Reap Interests casts.</p>
 <br/>
 <p id="AppraisalVantage"><b><img src="/realm/Factions/picks/AppraisalVantage.png" alt="Freemason's Hall" align="middle"> Appraisal Vantage</b> (Neutral Mercenary)</p>
 <p><b>Cost</b>: 200 Mana - <b>Duration</b>: 0 seconds</p>
 <p><b>Requirement</b>: Secret Exchange</p>
 <p><b>Effect</b>: Generates additional Faction Coins based on the amount of assistants you own.</p>
-<p><b>Formula</b>: (x * y ^ 1.275), where x is assistants owned, y is Faction coin chance.</p>
+<p><b>Formula</b>: (x * T * y ^ 1.25), where x is assistants owned, T is Tax Collection worth in seconds and y is Faction Coin find chance.</p>
 <p><b>Note</b>: Upgrades that cast free Tax Collection are treated as Appraisal Vantage casts.</p>
 <hr>
 <b><center>Ascension 2</b> (R100+)</center>
