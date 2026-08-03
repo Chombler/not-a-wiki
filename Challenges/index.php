@@ -480,7 +480,7 @@
 	<p><b><img src='/realm/Factions/picks/EnchantedCrystalsChallenge.png' align='middle'> Enchanted Crystals</b></p>
 	<p>&quot;The dwarven lords have asked you to enchant their pickaxes.&quot;</p>
 	<p><b>Requirements</b>: Angel as Base Faction, Dwarves as Prestige Faction, Reincarnation 6+, Minedwarf upgrade purchased, Elven, Angel and Fairy challenge 1 completed.</p>
-	<p><b>Challenge</b>: Cast 20 Tax Collections while having at least 4 spells active.</p>
+	<p><b>Challenge</b>: Cast 750 Tax Collections while having at least 4 active spells.</p>
 	<p><b>Effect</b>: Reduce all spells' cost based on the amount of gems you own.</p>
 	<p><b>Formula</b>: (-0.05 * ln(1 + x ^ (1 + A / 10)))%, where x is your current gems and A is how many times you ascended.</p>
 	<p><b>Upgrade</b>: Good for Angel + Dwarven</p>
@@ -505,7 +505,7 @@
 	<p><b>Challenge</b>: Collect at least 100,000 Faction Coins with a single Tax Collection.</p>
 	<p><b>Effect</b>: Increase your Faction Coin find chance based on the amount of active spells.</p>
 	<p><b>Formula</b>: +(20 * x)%, where x is the amount of active spells.</p>
-	<p><b>Effect</b>: Also multiplicatively increase Faction Coin find chance by 25%.</p>
+	<p><b>Effect</b>: Also multiplicatively increase Faction Coin find chance by 150%.</p>
 	<p><b>Upgrade</b>: Works with Elven + Dwarven</p>
 		" coords="184,926,238,980" shape="rect">
 	<area href="/realm/Dwarf/#DNC4" target=""
@@ -515,8 +515,8 @@
 	<p>&quot;The dwarven lords are interested in training the troops into pious warriors. Begin the initiation as soon as possible.&quot;</p>
 	<p><b>Requirements</b>: Any Good as Base Faction, Dwarves as Prestige Faction, Reincarnation 27+, 2000 excavations, Dwarven Challenge 3 completed.</p>
 	<p><b>Challenge</b>: Have at least 3,000 Knights Jousts and as many Wizard Towers.</p>
-	<p><b>Effect</b>: Increase Holy Light bonus based on the combined amount of Knights Jousts and Wizard Towers you own.</p>
-	<p><b>Formula</b>: +(50 x ^ 0.35)%, where x is the number of Knight Jousts and Wizard Towers you own.</p>
+	<p><b>Effect</b>: While Holy Light is active, increase the production of all buildings based on the combined amount of Knights Jousts and Wizard Towers built.</p>
+	<p><b>Formula</b>: (5 * x ^ 0.3)%, where x is the combined number of Knights Jousts and Wizard Towers built.</p>
 	<p><b>Upgrade</b>: Works with any Good + Dwarven</p>
 		" coords="244,926,298,980" shape="rect">
 	<area href="/realm/Dwarf/#DNC5" target=""
@@ -526,7 +526,7 @@
 	<p>&quot;The dwarven lords have asked you to create underground tunnels connecting the allied factions.&quot;</p>
 	<p><b>Requirements</b>: Any Good as Base Faction, Dwarves as Prestige Faction, Reincarnation 33+, Dwarven Unique Building, Dwarven Challenge 4 completed.</p>
 	<p><b>Challenge</b>: Have 3250 (or 2500 if ascended) Excavations.</p>
-	<p><b>Effect</b>: All buildings count 20% more for all purposes.</p>
+	<p><b>Effect</b>: All buildings count 10% more for all purposes.</p>
 	<p><b>Upgrade</b>: Works with All</p>
 		" coords="304,926,358,980" shape="rect">
 	<area href="/realm/Drow/#DWCR" target=""
@@ -544,9 +544,9 @@
 	<p><b><img src='/realm/Factions/picks/OrganizedCrimeChallenge.png' alt='Organized Crime' align='middle'> Organized Crime</b></p>
 	<p>&quot;The mysterious drow wish for you to prove your murderous honor to them.&quot;</p>
 	<p><b>Requirements</b>: Demon as Base Faction, Drow as Prestige Faction, Reincarnation 6+, Perfect Combo upgrade purchased, Goblin, Demon and Undead challenge 1 completed.</p>
-	<p><b>Challenge</b>: Have Honor Among Killers with at least 500 trophies and 1000 Royal Exchanges bought.</p>
+	<p><b>Challenge</b>: Have at least 500 Trophies, 1,000 Royal Exchanges, and a Combo Strike counter of 250 in this Era.</p>
 	<p><b>Effect</b>: Increase Royal Exchange bonus based on the amount of unlocked trophies.</p>
-	<p><b>Formula</b>: +(0.2 * x ^ 0.8)%, where x is the amount of unlocked trophies.</p>
+	<p><b>Formula</b>: +(0.8 * x ^ 0.8)%, where x is the amount of unlocked Trophies.</p>
 	<p><b>Upgrade</b>: Works with Demon + Drow</p>
 	<p><b>Tip</b>: Use Elven Bloodline.</p>
 		" coords="64,1024,118,1078" shape="rect">
@@ -558,7 +558,7 @@
 	<p><b>Requirements</b>: Goblin as Base Faction, Drow as Prestige Faction, Reincarnation 11+, Drow Bloodline, Goblin, Demon and Undead challenge 2 and Drow challenge 1 completed.</p>
 	<p><b>Challenge</b>: Build 1750 Spider Sanctuaries (Dark Temples).</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on Faction Coins found this Era. Does not suffer from Ascension penalties.</p>
-	<p><b>Formula</b>: (log(1 + x) ^ 2)%, where x is the amount of Faction Coins found this Era.</p>
+	<p><b>Formula</b>: (ln(1 + x) ^ 2)%, where x is the amount of Faction Coins found this Era.</p>
 	<p><b>Upgrade</b>: Works with Goblin + Drow</p>
 		" coords="124,1024,178,1078" shape="rect">
 	<area href="/realm/Drow/#DWC3" target=""
@@ -567,9 +567,9 @@
 	<p><b><img src='/realm/Factions/picks/SorcerersPactChallenge.png' align='middle'> Sorcerer's Pact</b></p>
 	<p>&quot;A legion of interlopers have invaded our sanctuaries. Work yourselves into a rage and tear them apart.&quot;</p>
 	<p><b>Requirements</b>: Undead as Base Faction, Drow as Prestige Faction, Reincarnation 21+, 1750 excavations, Goblin, Demon and Undead challenge 3 and Drow challenge 2 completed.</p>
-	<p><b>Challenge</b>: Have at least 2 hours of activity time for both Blood Frenzy and Combo Strike.(This Era)</p>
-	<p><b>Effect</b>: Increases Offline Production based on time spent in this Era. Does not suffer from Ascension penalties.</p>
-	<p><b>Formula</b>: (x ^ 0.7)%, where x is time spent this Era.</p>
+	<p><b>Challenge</b>: Have at least 2 hours of combined Blood Frenzy and Combo Strike activity time in this Era.</p>
+	<p><b>Effect</b>: Increase offline gains of spell activity time and Faction Coins based on Offline production bonus.</p>
+	<p><b>Formula</b>: (0.05 * ln(1 + x) ^ 1.5)%, where x is Offline production bonus.</p>
 	<p><b>Upgrade</b>: Works with Undead + Drow</p>
 	<p><b>Tip</b>: Run both spells at the same time, depending on Mana Regeneration it takes about 1 hour 15 minutes to complete the challenge.</p>
 		" coords="184,1024,238,1078" shape="rect">
@@ -580,8 +580,8 @@
 	<p>&quot;There is a civil war between 2 Spider Gods. Bolster our forces and wipe the weaklings off the face of the realm.&quot;</p>
 	<p><b>Requirements</b>: Any Evil as Base Faction, Drow as Prestige Faction, Reincarnation 27+, 2000 excavations, Drow Challenge 3 completed.</p>
 	<p><b>Challenge</b>: Cast Call to Arms with at least 30,000 buildings.</p>
-	<p><b>Effect</b>: Increase your Offline Time (This Era) based on spells cast in this Reincarnation.</p>
-	<p><b>Formula</b>: (8 * log10(1 + x) ^ 4) where x is spells cast in this Reincarnation.</p>
+	<p><b>Effect</b>: Increase Offline production based on time spent in this Era.</p>
+	<p><b>Formula</b>: (2 * x ^ 0.8)%, where x is time spent in this Era.</p>
 	<p><b>Upgrade</b>: Works with any Evil + Drow</p>
 		" coords="244,1024,298,1078" shape="rect">
 	<area href="/realm/Drow/#DWC5" target=""
