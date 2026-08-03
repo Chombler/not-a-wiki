@@ -29,15 +29,16 @@
 	<br/>
 	<p><b>Faction spell</b></p>
 	<p><b><img src="/realm/Factions/picks/GrandBalance.png" align="middle"> Grand Balance</b></p>
-	<p><b>Cost</b>: 1,000 Mana - <b>Duration</b>: 20 seconds</p>
+	<p><b>Cost</b>: 1,000 Mana - <b>Duration</b>: 600 seconds</p>
 	<p><b>Effect</b>: Increase the production of your least productive building based on the amount of the three most built ones.</p>
 	<p><b>Formula</b>: (25 * (x * y * z / (A + 3) ^ 6) ^ 0.9)%, where x, y and z are the number of your three most-built buildings and A is how many times you have ascended.</p>
+	<p><b>Additional Effect</b>: Multiplicatively increase Maximum Mana by 5% per spell tier.</p>
 	<br/>
 	<p><b>Spell Trophy & Upgrade</b></p>
 	<p><b><img src="/realm/Factions/picks/HallsofBalanceSpellUpgrade.png" align="middle"> Halls of Balance</b></p>
 	<p><b>Requirement</b>: Have Grand Balance affect Hall of Legends.</p>
-	<p><b>Cost</b>: 10 Dd (1e40), A1+ Free</p>
-	<p><b>Effect</b>: Increases Grand Balance duration to 24 seconds and lower its cost by 200 mana.</p>
+	<p><b>Cost</b>: 100 Dc (1e35), A1+ Free</p>
+	<p><b>Effect</b>: Increase Grand Balance duration by 4 seconds and lower its cost by 200 Mana.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/ProofNeutralityFactionUpgrade.png" align="middle"> Proof Of Neutrality</b></p>
 	<p><b>Type</b>: Alignment Upgrade</p>
@@ -65,7 +66,8 @@
 	<p><b><img src="/realm/Factions/picks/DruidUpgrade3.png" align="middle"> Natural Recycling</b></p>
 	<p><b>Cost</b>: 50 Sx (5e22)</p>
 	<p><b>Effect</b>: Increase Faction Coin find chance additively and multiplicatively based on the amount of the total buildings you own.</p>
-	<p><b>Formula</b>: (0.4 x ^ 0.4)%, where x is total buildings built. (additively and multiplicatively)</p>
+	<p><b>Additive Formula</b>: +(6 * x ^ 0.6)%, where x is total buildings built.</p>
+	<p><b>Multiplicative Formula</b>: (0.5 * x ^ 0.5)%, where x is total buildings built.</p>
 	<hr>
 	<p><b>Tier 2 Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/DruidFriendshipPact.png" align="middle"> Druids Friendship Pact</b></p>
@@ -80,12 +82,12 @@
 	<p><b><img src="/realm/Factions/picks/DruidUpgrade5.png" align="middle"> Bardic Knowledge</b></p>
 	<p><b>Cost</b>: 50 Sp (5e25)</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on your Maximum Mana.</p>
-	<p><b>Formula</b>: (16 * ln(1 + x) ^ 2)%, where x is your Maximum Mana.</p>
+	<p><b>Formula</b>: (15 * ln(1 + x) ^ 2.5)%, where x is your Maximum Mana.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DruidUpgrade6.png" align="middle"> Shapeshifting</b></p>
 	<p><b>Cost</b>: 500 Sp (5e26)</p>
 	<p><b>Effect</b>: Increase Mana Regeneration additively based on the amount of assistants you own.</p>
-	<p><b>Formula</b>: +(1.3 * x ^ 0.7), where x is the amount of assistants you own.</p>
+	<p><b>Formula</b>: +(3 * x ^ 0.4), where x is the amount of assistants you own.</p>
 	<hr>
 	<p><b>Tier 3 Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/DruidAlliance.png" align="middle"> Druids Alliance</b></p>
@@ -100,7 +102,7 @@
 	<p><b><img src="/realm/Factions/picks/DruidUpgrade8.png" align="middle"> Earthly Soul</b></p>
 	<p><b>Cost</b>: 500 Oc (5e29)</p>
 	<p><b>Effect</b>: Increase Mana Regeneration additively based on the highest amount of Stone Pillars you built in this Reincarnation.</p>
-	<p><b>Formula</b>: +(x ^ 0.25), where x is the highest amount of Stone Pillars you built in this Reincarnation.</p>
+	<p><b>Formula</b>: +(1.35 * x ^ 0.35), where x is the highest amount of Stone Pillars you built in this Reincarnation.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DruidUpgrade9.png" align="middle"> Building Jungle</b></p>
 	<p><b>Cost</b>: 5 No (5e30)</p>
@@ -109,13 +111,13 @@
 	<hr>
 	<p><b><img src="/realm/Factions/picks/DruidHeritage.png" align="middle"> Druid Heritage</b></p>
 	<p><b>Requirement</b>: Druid Champion Trophy</p>
-	<p><b>Cost</b>: 25,000 Elven Coins, 25,000 Demon Coins</p>
+	<p><b>Cost</b>: 15,000 Elven Coins, 15,000 Demon Coins</p>
 	<p><b>Effect</b>: Increase maximum Mana by 1 every 15 buildings you own.</p>
 	<hr>
 	<p><b>Druid Research Requirement</b></p>
 	<p><b><img src="/realm/Factions/picks/StonehengeCirclesQuestFactionUpgrade.png" align="middle"> Stonehenge Circles Quest</b></p>
 	<p><b>Description</b>: Hello, friend. The balance of nature requires more magic to sustain it. Build enough Stone Pillars, we'll gather our elders to improve them.</p>
-	<p><b>Requirement</b>: R22, 2,000 Stone Pillars</p>
+	<p><b>Requirement</b>: R24, 2,000 Stone Pillars</p>
 	<p><b>Cost</b>: 10 Dtg (1e100)</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/StonehengeCircleFactionUpgrade.png" align="middle"> Stonehenge Circles</b></p>
@@ -165,7 +167,7 @@
 	<p><b><img src="/realm/Factions/picks/ZigguratUniqueBuilding.png" alt="Ziggurat" align="middle"></b></p>
 	<p>Upgrade Ancient Pyramids to Ziggurats, boosting their production based on lineage levels and unlocking more unique perks for the building.</p>
 	<p><b>Effect</b>: Increase production based on total Lineage levels.</p>
-	<p><b>Formula</b>: floor(x ^ 1.1)%, where x is total level of Lineages.</p>
+	<p><b>Formula</b>: (x ^ 1.2)%, where x is total level of Lineages.</p>
 	<p><b>Effect</b>: Also grants access to Faction Union.</p>
 	<hr>
 	<p><b>Tier 4 Upgrades</b></p>
@@ -173,14 +175,14 @@
 	<p><b>Requirement</b>: Ziggurat Unique Building</p>
 	<p><b>Cost</b>: 1 Qi (1e18) Elven and Demon Coins</p>
 	<p><b>Effect</b>: Grants access to Union Upgrades.</p>
-	<p><b>Effect (R111+)</b>: Increase the production of Non-Unique buildings based on your total Lineage level and the maximum amount of Grand Balance targets.</p>
-	<p><b>Formula</b>: (2.4 * x ^ 1.025 * y ^ 1.2)%, where x is total Lineage levels and y is amount of buildings targeted by Grand Balance (maximum is 11).</p>
+	<p><b>Effect (R105+)</b>: Increase the production of Non-Unique buildings based on your total Lineage level and the maximum amount of Grand Balance targets.</p>
+	<p><b>Formula</b>: (x * y ^ 1.25)%, where x is total Lineage levels and y is the maximum amount of buildings targeted by Grand Balance (capped at 11).</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DruidUpgrade10.png" alt="Building Vines" align="middle"> Building Vines</b></p>
 	<p><b>Requirement</b>: Druids Union</p>
 	<p><b>Cost</b>: 1 Nod (1e60) Emerald Coins</p>
 	<p><b>Effect</b>: Increase spell duration based on the highest amount of Ziggurats you built in this Reincarnation.</p>
-	<p><b>Formula</b>: (0.5 * x ^ 0.5)%, where x is the highest amount of Ziggurats built in this Reincarnation.</p>
+	<p><b>Formula</b>: (x ^ 0.5)%, where x is the highest amount of Ziggurats built in this Reincarnation.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DruidUpgrade11.png" alt="Lunar Cycle" align="middle"> Lunar Cycle</b></p>
 	<p><b>Requirement</b>: Druids Union</p>
@@ -197,10 +199,10 @@
 	<p><b>Formula</b>: (0.8 * ((6 - abs(6 - T)) ^ 4))%, where T is building tier.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/AdvancedDruidHeritage.png" align="middle"> Advanced Druid Heritage</b></p>
-	<p><b>Requirement</b>: Druid Master trophy and 6 hours activity time (This Era) of Grand Balance.</p>
+	<p><b>Requirement</b>: Druid Master trophy and 1 hour of Grand Balance activity time in this Era.</p>
 	<p><b>Cost</b>: 1 Sp (1e24) Elven and Demon Coins</p>
 	<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on the sum of all your spells durations.</p>
 	<p><b>Formula</b>: (9 * x ^ 0.3)%, where x is the sum of all your spell durations.</p>
 	<p><b>Note</b>: When using their lineage, Advanced Heritage powers are multiplied by the level of the lineage.</p>
-	<p><b>Formula</b>: *(1 + 0.3 * level)</p>
+	<p><b>Formula</b>: *(1 + 0.2 * level)</p>
 <?php include "../scripts/footer.html"; ?>
