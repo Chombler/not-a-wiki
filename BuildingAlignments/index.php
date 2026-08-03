@@ -61,7 +61,7 @@
 <p><b>Cost Formula for the x-th building in a tier</b>: (B * M ^ (x - 1)), where B is the cost of first building of that tier and M is the building cost multiplier.</p>
 <hr>
 <p><b>Building Cost Multiplier</b></p>
-<p>The base value of the building cost multiplier is 1.15, but can be reduced by upgrades that give a flat cost reduction (e.g. Gobline) and also depends on your Ascension.</p>
+<p>The base building cost multiplier is 1.15. Flat cost-multiplier reductions are applied first (for example, Goblin Bloodline), then the Ascension adjustment is applied.</p>
 <p><b>Building Cost Formula in A0 and A4</b>: (1 + 0.15 - C), where C is the sum of your flat cost reduction upgrades.</p>
 <p><b>Building Cost Formula in A1 - A3</b>: (1 + (0.15 - C) / (5 * A)), where C is the sum of your flat cost reduction upgrades and A is your Ascension.</p>
 <?php include "../scripts/footer.html"; ?>

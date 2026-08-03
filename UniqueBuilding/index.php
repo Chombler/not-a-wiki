@@ -18,9 +18,9 @@
 <p>Upgrade Wizard Towers to Swarming Towers, boosting their production based on the amount of active spells and unlocking more unique perks for the building.</p>
 <p><b>Effect</b>: Increase production based on the amount of active spells.</p>
 <p><b>Effect</b>: Also grants access to Faction Union.</p>
-<p><b>Formula</b>: (0.5 * x ^ 2.5)%, where x is active spells.</p>
+<p><b>Formula</b>: (2.5 * x ^ 2.5)%, where x is active spells.</p>
 <p><b>Alignment</b>: Good, Proof of Chaos</p>
-<p><b>Requirement</b>: A2, Swarming Towers Quest (200,000 assistants)</p>
+<p><b>Requirement</b>: A2, Swarming Tower Quest (1,000,000 assistants)</p>
 <hr>
 <p><b>Elf</b></p>
 <p><img src="/realm/Factions/picks/ElfUniqueBuilding.png" alt="Elven Training Grounds" align="middle"></p>
@@ -33,14 +33,14 @@
 <p>Upgrade Citadels to Arboreal Cities, boosting their production based on Faction Coin find chance and unlocking more unique perks for the building.</p>
 <p><b>Effect</b>: Increase production based on Faction Coin find chance.</p>
 <p><b>Effect</b>: Also grants access to Faction Union.</p>
-<p><b>Formula</b>: floor(20 * (ln(1 + x)) ^ 2)%, where x is Faction Coins find chance.</p>
+<p><b>Formula</b>: (20 * ln(1 + x) ^ 2)%, where x is Faction Coin find chance.</p>
 <p><b>Alignment</b>: Good, Proof of Balance</p>
-<p><b>Requirement</b>: A2, Arboreal City Quest (1e23 Elf Faction Coins found)</p>
+<p><b>Requirement</b>: A2, Arboreal City Quest (1e20 Elven Faction Coins found)</p>
 <hr>
 <p><b>Angel</b></p>
 <p><img src="/realm/Factions/picks/AngelUniqueBuilding.png" alt="Heaven's Domains" align="middle"></p>
-<p>Upgrade Heaven's Gate To Heaven's Domains, boosting their production based on the amount of spells affecting them and unlocking more unique perks for the building.</p>
-<p><b>Formula:</b> (350 * x ^ 1.1)%, where x is the amount of spells affecting Heaven's Domains.</p>
+<p>Upgrade Heaven's Gates to Heaven's Domains, boosting their production based on Mana Regeneration and unlocking more unique perks for the building.</p>
+<p><b>Formula:</b> (7 * x ^ 0.7)%, where x is Mana Regeneration per second.</p>
 <p><b>Requirement</b>: Research, 1,500 Heaven's Gates</p>
 <br/>
 <p><b>Ascension 2 - R100+</b></p>
@@ -48,14 +48,14 @@
 <p>Upgrade Cathedrals to Holy Sites, boosting their production based on time spent as good and unlocking more unique perks for the building.</p>
 <p><b>Effect</b>: Increase production based on time spent as good.</p>
 <p><b>Effect</b>: Also grants access to Faction Union.</p>
-<p><b>Formula</b>: (x ^ 0.85)%, where x is time in seconds as Good this Reincarnation.</p>
+<p><b>Formula</b>: (1.8 * x ^ 0.9)%, where x is time in seconds as Good this Reincarnation.</p>
 <p><b>Alignment</b>: Good, Proof of Order</p>
-<p><b>Requirement</b>: A2, Holy Site Quest (3M (3e6) Mana Regeneration)</p>
+<p><b>Requirement</b>: A2, Holy Site Quest (1,000,000 Mana Regeneration)</p>
 <hr>
 <p><b>Goblin</b></p>
 <p><img src="/realm/Factions/picks/GoblinUniqueBuilding.png" alt="Goblin Banks" align="middle"></p>
-<p>Upgrade Witch Conclaves To Goblin Banks, boosting their production based on the amount of gold you own and unlocking more unique perks for the building.</p>
-<p><b>Formula:</b> (650 + 10000 * (log10(1 + x)) ^ (3.1/(1 + 0.1 * (y + 1)))/30)))%, where x is your current amount of Coins and y is Ascension.</p>
+<p>Upgrade Witch Conclaves to Goblin Banks, boosting their base production based on Coins owned and unlocking more unique perks for the building.</p>
+<p><b>Formula:</b> +(2 * ln(1 + x) ^ (3 / (1 + 0.1 * (A + 1)))), where x is Coins owned and A is Ascension.</p>
 <p><b>Requirement</b>: Research, 1,750 Witch Conclaves</p>
 <br/>
 <p><b>Ascension 2 - R100+</b></p>
@@ -65,12 +65,12 @@
 <p><b>Effect</b>: Also grants access to Faction Union.</p>
 <p><b>Formula</b>: floor(0.25*x^0.75)%, where x is amount of assistants owned.</p>
 <p><b>Alignment</b>: Evil, Proof of Balance</p>
-<p><b>Requirement</b>: A2, Slave Market Quest (30,000 Neutral buildings)</p>
+<p><b>Requirement</b>: A2, Slave Market Quest (35,000 Neutral Buildings)</p>
 <hr>
 <p><b>Undead</b></p>
 <p><img src="/realm/Factions/picks/UndeadUniqueBuilding.png" alt="Undercities" align="middle"></p>
 <p>Upgrade Necropolises To Undercities, boosting their production based on time spent in this Era and unlocking more unique perks for the building.</p>
-<p><b>Formula:</b> (12 * (2.5 * x) ^ 0.75)%, where x is your Playtime this Era.</p>
+<p><b>Formula:</b> (80 + 80 * x ^ 0.8)%, where x is time spent in this Era.</p>
 <p><b>Requirement</b>: Research, 1,750 Necropolises</p>
 <br/>
 <p><b>Ascension 2 - R100+</b></p>
@@ -81,12 +81,12 @@
 <p><b>Effect</b>: Also grants access to Faction Union.</p>
 <p><b>Formula</b>: (35 * x ^ 0.65)%, where x is Mana Regeneration per second.</p>
 <p><b>Alignment</b>: Evil, Proof of Order</p>
-<p><b>Requirement</b>: A2, Flesh Workshop Quest (500,000% offline production bonus)</p>
+<p><b>Requirement</b>: A2, Flesh Workshop Quest (2,000% Offline production bonus)</p>
 <hr>
 <p><b>Demon</b></p>
 <p><img src="/realm/Factions/picks/DemonUniqueBuilding.png" alt="Infernal Realms" align="middle"></p>
 <p>Upgrade Hell Portals To Infernal Realms, boosting their production based on Trophies unlocked and unlocking more unique perks for the building.</p>
-<p><b>Formula:</b> (125 * x)%, where x is Trophy unlocked.</p>
+<p><b>Formula:</b> (40 * x)%, where x is Trophies unlocked.</p>
 <p><b>Requirement</b>: Research, 1,500 Hell Portals</p>
 <br/>
 <p><b>Ascension 2 - R100+</b></p>
@@ -101,7 +101,7 @@
 <p><b>Titan</b></p>
 <p><img src="/realm/Factions/picks/TitanUniqueBuilding.png" alt="Olympian Halls" align="middle"></p>
 <p>Upgrade Halls of Legend to Olympian Halls, boosting their production based on amount of Royal Exchanges you've purchased and unlocking more unique perks for the building.</p>
-<p><b>Formula</b>: (0.9 * x ^ 0.9)%, where x is the amount of Royal Exchanges made.</p>
+<p><b>Formula</b>: (6 * x ^ 1.2)%, where x is Royal Exchanges purchased.</p>
 <p><b>Requirement</b>: Research, 2,000 Halls of Legends</p>
 <br/>
 <p><b>Ascension 2 - R100+</b></p>
@@ -130,8 +130,8 @@
 <hr>
 <p><b>Faceless</b></p>
 <p><img src="/realm/Factions/picks/FacelessUniqueBuilding.png" alt="Sunken Cities" align="middle"></p>
-<p>Upgrade Labyrinths to Sunken Cities, boosting their production based on time spent in your longest game session and unlocking more unique perks for the building.</p>
-<p><b>Formula</b>: (75 * (x / 3600) ^ 0.9)%, where x is your Playtime (Longest Session) stat.</p>
+<p>Upgrade Labyrinths to Sunken Cities, boosting their production based on the longest Era in this Reincarnation and unlocking more unique perks for the building.</p>
+<p><b>Formula</b>: (75 + 7.5 * x ^ 0.75)%, where x is the longer of the current Era and longest completed Era in this Reincarnation.</p>
 <p><b>Requirement</b>: Research, 2,000 Labyrinths</p>
 <br/>
 <p><b>Ascension 2 - R100+</b></p>
@@ -139,7 +139,7 @@
 <p>Upgrade Monasteries to Forbidden Libraries, boosting production based on spells cast this Era and unlocking more unique perks for the building.</p>
 <p><b>Effect</b>: Increase production based on spells cast.</p>
 <p><b>Effect</b>: Also grants access to Faction Union.</p>
-<p><b>Formula</b>: (18 * (ln(1 + x) / ln(x % 10 + 2)) ^ 1.8)%, where x is spells cast this Era.</p>
+<p><b>Formula</b>: (30 * (ln(1 + x) / ln(x % 10 + 2)) ^ 3)%, where x is spells cast this Era.</p>
 <p><b>Alignment</b>: Neutral, Proof of Chaos</p>
 <p><b>Requirement</b>: A2, Forbidden Library Quest (5,000 Excavations)</p>
 <hr>
@@ -154,15 +154,15 @@
 <p>Upgrade Royal Castles to High Bastions, boosting their production based on clicks made in this Reincarnation and unlocking more unique perks for the building.</p>
 <p><b>Effect</b>: Increase production based on clicks made in this Reincarnation.</p>
 <p><b>Effect</b>: Also grants access to Faction Union.</p>
-<p><b>Formula</b>: (0.5 * x ^ 0.5)%, where x is clicks this Reincarnation.</p>
+<p><b>Formula</b>: (5 * x ^ 0.5)%, where x is clicks this Reincarnation.</p>
 <p><b>Alignment</b>: Good-Dwarf, and Proof of Order, Balance, or Chaos</p>
-<p><b>Requirement</b>: R116+, High Bastion Quest (5 free Excavation resets this Reincarnation)</p>
+<p><b>Requirement</b>: R116+, High Bastion Quest (3 Excavation Resets in this Reincarnation)</p>
 <hr>
 <p><b>Drow</b></p>
 <p><img src="/realm/Factions/picks/DrowUniqueBuilding.png" alt="Unique building drow" align="middle"></p>
-<p>Upgrade Dark Temples to Spider Sanctuaries, boosting their production based on time spent offline and unlocking more unique perks for the building.</p>
-<p><b>Formula</b>: (30 * x ^ 0.8)%, where x is your time spent offline (Total) stat.</p>
-<p><b>Requirement</b>: Research, 2,000 Dark Temples</p>
+<p>Upgrade Dark Temples to Spider Sanctuaries, boosting their production based on time spent offline in this Reincarnation and unlocking more unique perks for the building.</p>
+<p><b>Formula</b>: (45 * x ^ 0.9)%, where x is time spent offline in this Reincarnation.</p>
+<p><b>Requirement</b>: Research, 3,000 Dark Temples</p>
 <br/>
 <p><b>Ascension 2 - R116+</b></p>
 <p><img src="/realm/Factions/picks/BrothelUniqueBuilding.png" alt="Brothel" align="middle"></p>
@@ -176,7 +176,7 @@
 <p><b>Dragon</b></p>
 <p><img src="/realm/Factions/picks/DragonUniqueBuilding.png" alt="Unique building Dragon" align="middle"></p>
 <p>Upgrade Iron Stronghold to Wyrm's Den, boosting their production based on the total amount of Faction Coins you collected and unlocking more unique perks for the building.</p>
-<p><b>Formula</b>: ((0.065 * (ln(1 + (x / 2) + y))) ^ 3.65)% where x is Faction Coins found this Era and y is Faction Coins found this Reincarnation.</p>
+<p><b>Formula</b>: (0.25 * ln(1 + x / 2 + y) ^ 5)%, where x is Faction Coins found this Era and y is Faction Coins found this Reincarnation.</p>
 <p><b>Requirement</b>: Research, R46 + 4,500 Iron Strongholds</p>
 <br/>
 <p><b>Ascension 2 - R116+</b></p>
@@ -184,24 +184,24 @@
 <p>Upgrade Farm to Dragon Pastures, boosting their production based on your maximum Mana and unlocking more unique perks for the building.</p>
 <p><b>Effect</b>: Increase production based on your maximum Mana.</p>
 <p><b>Effect</b>: Also grants access to Faction Union.</p>
-<p><b>Formula</b>: (0.63 * x ^ 0.63)%, where x is your maximum Mana.</p>
+<p><b>Formula</b>: (0.65 * x ^ 0.65)%, where x is Maximum Mana.</p>
 <p><b>Alignment</b>: Neutral-Dragon, and Proof of Order, Balance, or Chaos</p>
-<p><b>Requirement</b>: R116+, Dragon Pasture Quest (42 active spells)</p>
+<p><b>Requirement</b>: R116+, Dragon Pasture Quest (25 active spells)</p>
 <hr>
 <p><b>Mercenary</b></p>
 <p><img src="/realm/Factions/picks/GoodMercUniqueBuilding.png" alt="GoodMerc" align="middle"> <b>Good Alignment</b></p>
 <p>Upgrade Knights Jousts to Mercenary Camps, boosting their production based on the amount of Non-Unique buildings you own and unlocking more unique perks for the building.</p>
-<p><b>Formula</b>: (1.5 * (1 + x))% where X is number of Non-Unique buildings.</p>
+<p><b>Formula</b>: (1.25 * (1 + x) ^ 1.25)%, where x is Non-Unique Buildings built.</p>
 <p><b>Requirement</b>: Mercenary, R75, 125,000 total buildings</p>
 <br/>
 <p><img src="/realm/Factions/picks/EvilMercUniqueBuilding.png" alt="EvilMerc" align="middle"> <b>Evil Alignment</b></p>
 <p>Upgrade Evil Fortresses to Tyrant Garrisons, boosting their production based on offline production bonus and unlocking more unique perks for the building.</p>
-<p><b>Formula</b>: ((log10(1 + x) ^ 3)%, where x is offline production bonus.</p>
+<p><b>Formula</b>: (85 + 8.5 * x ^ 0.85)%, where x is the Offline production bonus.</p>
 <p><b>Requirement</b>: Mercenary, R75, 125,000 total buildings</p>
 <br/>
 <p><img src="/realm/Factions/picks/NeutralMercUniqueBuilding.png" alt="NeutralMerc" align="middle"> <b>Neutral Alignment</b></p>
-<p>Upgrade Inns to Freemason's Hall, Boosting their production based on the highest amount of assistants you had in a single game this Reincarnation and unlocking more unique perks for the building.</p>
-<p><b>Formula</b>: (20 + 20 * x ^ 0.8)%, where x is the highest assistants you had in a single game this Reincarnation.</p>
+<p>Upgrade Inns to Freemason's Halls, boosting their production based on Faction Coins found in this Era and unlocking more unique perks for the building.</p>
+<p><b>Formula</b>: (60 + 60 * ln(1 + x) ^ 6)%, where x is Faction Coins found in this Era.</p>
 <p><b>Requirement</b>: Mercenary, R75, 125,000 total buildings</p>
 <hr>
 <p><b>Archon</b></p>
@@ -213,8 +213,8 @@
 <p><b>Djinn</b></p>
 <p><img src="/realm/Factions/picks/PavillionUniqueBuilding.png"></b></p>
 <p>Upgrade Slave Pen/Warrior Barracks/Deep Mine to Pavilions, boosting their production based on spells cast in this Reincarnation and unlocking more unique perks for the building.</p>
-<p><b>Formula</b>: Formula: (10 * x ^ 0.5)%, where x is spells cast this Reincarnation.</p>
-<p><b>Requirement</b>: Pavilion Quest. (R130, 5 days of Chaos spells this Era)</p>
+<p><b>Formula</b>: (12 * x ^ 0.6)%, where x is spells cast this Reincarnation.</p>
+<p><b>Requirement</b>: Pavilion Quest (R130+, 1 day of Chaos-spell activity time)</p>
 <hr>
 <p><b>Makers</b></p>
 <p><img src="/realm/Factions/picks/HallofOrigination.png"></b></p>
