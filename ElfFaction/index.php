@@ -74,9 +74,9 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/ElvenUpgrade8.png" align="middle"> Elven Luck</b></p>
 	<p><b>Cost</b>: 50 Qa (5e16)</p>
-	<p><b>Effect</b>: Each time you click for money you have 1% chance to gain coins equal to 250000% of your production, also generating Faction Coins based on Reincarnation made.</p>
-	<p><b>Formula (Production)</b>: (2500 * (x + y)), where x is the production of all buildings, and y is the production of one assistant.</p>
-	<p><b>Formula (Faction Coins)</b>: (x * (R + 1)) of a random type, where x is Faction Coin chance and R is the number of times you have reincarnated.</p>
+	<p><b>Effect</b>: Each time you click for money you have 1% chance to gain coins equal to 10000% of your production (increased by your Autoclick power), also generating Faction Coins based on Reincarnations made. Manual clicks give more coins.</p>
+	<p><b>Formula (Production)</b>: (100 * (x + y) * (1 + 0.01 * A)), where x is the production of all buildings, y is the production of one assistant, and A is your Autoclick power bonus (from Wooden Dice).</p>
+	<p><b>Formula (Faction Coins)</b>: (x * (R + 1) * (1 + 0.01 * A)) of a random type, where x is Faction Coin chance, R is the number of times you have reincarnated, and A is your Autoclick power bonus.</p>
 	<p><b>Effect</b>: Assistants have the same chance to trigger Elven Luck once every second. Elven Lucks triggered this way have their coin reward multiplied by the amount of assistants you have.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/ElvenUpgrade9.png" align="middle"> Sylvan Treasure Frills</b></p>

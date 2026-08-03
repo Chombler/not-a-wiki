@@ -462,7 +462,7 @@
 				<p><img src="/realm/Factions/picks/SecretsoftheWarriors.png" alt="Secrets of the Warriors" align="middle"> <b>Secrets of the Warriors</b></p>
 				<p><b>Requirement</b>: Obsidian Shard</p>
 				<p><b>Cost</b>: 100 Qiqag (1e140) and 10 Qa (1e16) of every Faction Coin.</p>
-				<p><b>Effect</b>: Unlocks Researches for Mercenaries and increases their production by 1000%.</p>
+				<p><b>Effect</b>: Unlocks Researches for Mercenaries and increases their production by 10000%.</p>
 				<br/>
 				<p><img src="/realm/Factions/picks/MercenaryEncampmentQuest.png" alt="Mercenary Encampment Quest" align="middle"> <b>Mercenary Encampment Quest</b></p>
 				<p>We salute you, commander. Your strategical skills had not gone unnoticed within our ranks. We have decided to offer you a chance to establish a formal encampment within your boundaries... Build more structures to strengthen our city.</p>
