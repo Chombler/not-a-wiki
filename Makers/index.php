@@ -4,10 +4,11 @@
 <head>
 <?php include "../scripts/header.html"; ?>
 	<h6><a href="/realm/Challenges/"><img src="/realm/Factions/picks/ChallengesTopPage.png"></h6></a>
-	<h6 id="MKC1"></h6><p><b>Makers Challenge 1</b></p>
-	<p><b><img src="/realm/Factions/picks/SeedofLifeChallenge.png" align="middle"> Seed of Life</b></p>
-	<p>"If you wish to make an apple pie from scratch, you must first invent the universe. And the apple tree, you will have to nurse."</p>
-	<p><b>Requirements</b>: Elven as Base Faction, Makers as Astral Faction, Reincarnation 135+, Reality Crater upgrade purchased.</p>
+	<h6 id="MKC1"></h6>
+	<p><b>Makers Challenge 1</b></p>
+	<p><b><img src='/realm/Factions/picks/SeedofLifeChallenge.png' align='middle'> Seed of Life</b></p>
+	<p>&quot;If you wish to make an apple pie from scratch, you must first invent the universe. And the apple tree, you will have to nurse.&quot;</p>
+	<p><b>Requirements</b>: Elves as Base Faction, Makers as Astral Faction, Reincarnation 135+, Reality Crater upgrade purchased.</p>
 	<p><b>Challenge</b>: Get 10 M (1e7) clicks in this Reincarnation and trigger Elven Luck at least 7777 times in this Era.</p>
 	<p><b>Effect</b>: Multiplicatively increase assistants based on the amount of Elven Luck triggered in this Era.</p>
 	<p><b>Formula</b>: (1.5 * x ^ 0.85)%, where x is Elven Lucks this Era.</p>
@@ -15,45 +16,50 @@
 	<p><b>Formula</b>: *(8 ^ x), where x is number of faction/bloodline/set FC matches (+1 for full FC match, +½ for half FC match) (includes A2950 and Stoneheart).</p>
 	<p><b>Upgrade</b>: Works with Elven + Dwarven + Makers</p>
 	<hr>
-	<h6 id="MKC2"></h6><p><b>Makers Challenge 2</b></p>
-	<p><b><img src="/realm/Factions/picks/ArtificialCurrencyChallenge.png" align="middle"> Artificial Currency</b></p>
-	<p>"Extinction is the rule. Survival is the exception, which can only be achieved through subtle deception."</p>
-	<p><b>Requirements</b>: Goblin as Base Faction, Makers as Astral Faction, Reincarnation 139+, Makers Bloodline active, Makers challenge 1 completed.</p>
-	<p><b>Challenge</b>: Get 100 Qad (1e47) Faction Coins with a minimum of 50 free and ruby Excavation Resets in this Reincarnation.</p>
+	<h6 id="MKC2"></h6>
+	<p><b>Makers Challenge 2</b></p>
+	<p><b><img src='/realm/Factions/picks/ArtificialCurrencyChallenge.png' align='middle'> Artificial Currency</b></p>
+	<p>&quot;Extinction is the rule. Survival is the exception, which can only be achieved through subtle deception.&quot;</p>
+	<p><b>Requirements</b>: Goblin as Base Faction, Makers as Astral Faction,  Reincarnation 139+, Makers Bloodline active, Makers challenge 1 completed.</p>
+	<p><b>Challenge</b>: Find 1e40 Faction Coins in this Era with at least 3 Excavation Resets in this Reincarnation.</p>
 	<p><b>Effect</b>: While Mana Regeneration is higher than Maximum Mana, each time you cast a spell, you also cast free Tax Collections based on the difference between them.</p>
-	<p><b>Formula</b>: +((log10(1 + x) ^ 2.5 - log10(1 + y) ^ 2.5) ^ 1.25), where x is Mana Regeneration, y is Maximum Mana.</p>
-	<p><b>Effect</b>: Production bonus from Gems is increased multiplicatively based on Tax Collections cast in this Era.</p>
+	<p><b>Formula</b>: +(((log10(1 + x)) ^ 2.5 - (log10(1 + y)) ^ 2.5) ^ 1.25), where x is Mana Regeneration, y is Maximum Mana.</p>
+	<p><b>Effect</b>: Production bonus from Gems is increased nultiplicatively based on Tax Collections cast in this Era.</p>
 	<p><b>Formula</b>: (ln(1 + x) ^ 2)%, where x is number of Tax Collections cast in this Era.</p>
 	<p><b>Upgrade</b>: Works with Goblin + Drow + Makers</p>
 	<hr>
-	<h6 id="MKC3"></h6><p><b>Makers Challenge 3</b></p>
-	<p><b><img src="/realm/Factions/picks/PillarsofCreationChallenge.png" align="middle"> Pillars of Creation</b></p>
-	<p>"We are like butterflies who flutter for a day and think it is forever. This can be accomplished when you sincerely endeavor."</p>
+	<h6 id="MKC3"></h6>
+	<p><b>Makers Challenge 3</b></p>
+	<p><b><img src='/realm/Factions/picks/PillarsofCreationChallenge.png' align='middle'> Pillars of Creation</b></p>
+	<p>&quot;We are like butterflies who flutter for a day and think it is forever. This can be accomplished when you sincerely endeavor.&quot;</p>
 	<p><b>Requirements</b>: Druid as Base Faction, Makers as Astral Faction, Reincarnation 143+, 25,000 excavations, Druid Set active, Makers challenge 2 completed.</p>
-	<p><b>Challenge</b>: Have at least 1 B (1e9) Maximum Mana and 25,000 of each building within 5 minutes of a new game.</p>
-	<p><b>Effect</b>: Assistants and Maximum Mana Infinite Spiral effects are also increased by Mana Regeneration.</p>
+	<p><b>Challenge</b>: Have at least 12 T (1.2e13) Maximum Mana and 30,000 of each building within 5 minutes of a new Era.</p>
+	<p><b>Effect</b>: The assistants effect from Infinite Spiral is also increased by Mana Regeneration.</p>
 	<p><b>Note</b>: The value of the variable in those formulas is multiplied by your Mana Regeneration.</p>
-	<p><b>Effect</b>: Your Lineage levels count double for your base lineage effect and all advanced heritages are doubled.</p>
+	<p><b>Effect</b>: Lineage levels count 50% more for the base lineage effect and increase all Advanced Heritage bonuses by 50%.</p>
 	<p><b>Upgrade</b>: Works with Druid + Dragon + Makers</p>
 	<hr>
-	<h6 id="MKC4"></h6><p><b>Makers Challenge 4</b></p>
-	<p><b><img src="/realm/Factions/picks/StoneheartChallenge.png" align="middle"> Stoneheart</b></p>
-	<p>"We are a way for the cosmos to know itself. Manipulate existence to plant an evocation of yourself."</p>
+	<h6 id="MKC4"></h6>
+	<p><b>Makers Challenge 4</b></p>
+	<p><b><img src='/realm/Factions/picks/StoneheartChallenge.png' align='middle'> Stoneheart</b></p>
+	<p>&quot;We are a way for the cosmos to know itself. Manipulate existence to plant an evocation of yourself.&quot;</p>
 	<p><b>Requirements</b>: Elves, Goblin or Druid as Base Faction, Makers as Astral Faction, Reincarnation 148+, Makers Unique Building, Makers challenge 3 completed.</p>
 	<p><b>Challenge</b>: Without using any Bloodline or Research, reach 30,000 Halls of Origination.</p>
 	<p><b>Effect</b>: Pick an additional Set. Increase Faction Coins found matching that Set by 1000%</p>
 	<p><b>Upgrade</b>: Works with any Makers combination</p>
 	<hr>
-	<h6 id="MKC5"></h6><p><b>Makers Challenge 5</b></p>
-	<p><b><img src="/realm/Factions/picks/GreatestInventionChallenge.png" align="middle"> Greatest Invention</b></p>
-	<p>"Somewhere, something incredible is waiting to be known. Sculpt from your boundless imagination and make it your own."</p>
+	<h6 id="MKC5"></h6>
+	<p><b>Makers Challenge 5</b></p>
+	<p><b><img src='/realm/Factions/picks/GreatestInventionChallenge.png' align='middle'> Greatest Invention</b></p>
+	<p>&quot;Somewhere, something incredible is waiting to be known. Sculpt from your boundless imagination and make it your own.&quot;</p>
 	<p><b>Requirements</b>: Elves, Goblin or Druid as Base Faction, Makers as Astral Faction, Reincarnation 153+, All Balance Lineages at level 45, Makers challenge 4 completed.</p>
-	<p><b>Challenge</b>: Have at least 1 T (1e12) assistants, 1 B (1e9) Maximum Mana and 20 Sx (2e22) Faction Coin find chance within 8 minutes of a new game.</p>
-	<p><b>Effect</b>: Multiplicatively increase Maximum Mana based on Faction Coins gained and mana produced in this Era; spells cast and clicks made in this Reincarnation.</p>
-	<p><b>Formula</b>: ((0.3 * log10(1 + a) + log10(1 + b) + log10(1 + c) + 3 * log10(1 + d)) ^ 1.5)%, a is Factions Coins (this Era), b is Mana produced (this Era), c is spells cast (this reincarnation), d is clicks made (this reincarnation)</p>
+	<p><b>Challenge</b>: Have at least 1 T (1e12) assistants, 100 M (1e8) Maximum Mana and 2e20% Faction Coin find chance within 8 minutes of a new Era.</p>
+	<p><b>Effect</b>: Multiplicatively increase Maximum Mana based on Faction Coins gained and Mana produced in this Era; spells cast and clicks made in this Reincarnation.</p>
+	<p><b>Formula</b>: (0.4 * (0.3 * ln(1 + a) + ln(1 + b) + ln(1 + c) + 4 * ln(1 + d)) ^ 1.4)%, where a is Faction Coins found this Era, b is Mana produced this Era, c is spells cast this Reincarnation, and d is clicks made this Reincarnation.</p>
 	<p><b>Upgrade</b>: Works with All</p>
 	<hr>
-	<h6 id="MKCR"></h6><p><b>Makers Challenge Reward</b></p>
-	<p><b><img src="/realm/Factions/picks/GaiasCradleChallengeReward.png" align="middle"> Gaia's Cradle</b></p>
-	<p><b>Effect</b>: All Infinite Spiral effects scale 15% faster.</p>
+	<h6 id="MKCR"></h6>
+	<p><b>Makers Challenge Reward</b></p>
+	<p><b><img src='/realm/Factions/picks/GaiasCradleChallengeReward.png' align='middle'> Gaia's Cradle</b></p>
+	<p><b>Effect</b>: All Infinite Spiral effects scale 12% faster.</p>
 <?php include "../scripts/footer.html"; ?>
