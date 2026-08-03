@@ -217,7 +217,7 @@
 	<p><b><img src="/realm/Factions/picks/AncientCocoaBeanArtifacts.png" align="middle"> Ancient Cocoa Bean</b></p>
 	<p><b>Hint</b>: True Neutral Flavor.</p>
 	<p><b>Description</b>: Despite being centuries old, it still smells like top-quality cocoa.</p>
-	<p><b>Requirement</b>: R22+, any Neutral Faction</p>
+	<p><b>Requirement</b>: R24+, any Neutral Faction</p>
 	<p><b>Chance</b>: 10%</p>
 	<p><b>Effect</b>: Awards an upgrade named Chocolate Flavor Smoothie.</p>
 	<p><b>Effect</b>: Increase the production of all buildings by 2,500% for the first 15 minutes (this Era) for all Neutral factions. Does not work while offline.</p>
@@ -304,10 +304,10 @@
 	<p><b><img src="/realm/Factions/picks/VeteranFigurineArtifact.png" align="middle"> Veteran Figurine</b></p>
 	<p><b>Hint</b>: A reward for the veteran challenger.</p>
 	<p><b>Description</b>: The warrior of a thousand battles, ultimate champion of the Realms.</p>
-	<p><b>Requirement</b>: R90+, Dragon Challenge 6</p>
+	<p><b>Requirement</b>: R85+, Dracomet Vault (Dragon Challenge 6)</p>
 	<p><b>Chance</b>: (x / 1,000,000)%, where x is time spent in this Era in seconds.</p>
-	<p><b>Effect</b>: Passive effect: allows Mercenaries to benefit from all faction challenges of your primary alignment.</p>
-	<p><b>Note</b>: Does not grant elite challenges.</p>
+	<p><b>Effect</b>: Passive effect: allows Mercenaries to benefit from all faction challenges.</p>
+	<p><b>Note</b>: This effect does not function in Ascension 3 or later.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/WallChunkArtifact.png" align="middle"> Wall Chunk</b></p>
 	<p><b>Hint</b>: More Ascension...</p>
@@ -323,7 +323,7 @@
 	<p><b>Hint</b>: Raise your chances.</p>
 	<p><b>Description</b>: You know all too well this does not exist, yet it fills you with hope and optimism.</p>
 	<p><b>Requirement</b>: R100+</p>
-	<p><b>Chance</b>: (log10(x) / 100)%, where x is your Faction Coin find chance.</p>
+	<p><b>Chance</b>: (ln(1 + x) / 200)%, where x is your Faction Coin find chance.</p>
 	<p><b>Effect</b>: Awards an upgrade of the same name.</p>
 	<p><b>Effect</b>: Increase Faction Coin find chance by a multiplicative 200%.</p>
 	<p><b>Cost</b>: 1 Sx (1e21), A3+ Free</p>
@@ -413,22 +413,22 @@
 	<p><b>Hint</b>: Massive mana flows can offer guidance.</p>
 	<p><b>Description</b>: Follow the guiding light, o wonderer, for it shall bring you fortune.</p>
 	<p><b>Requirement</b>: R120+, Proof of Order</p>
-	<p><b>Chance</b>: (x / 10,000,000,000 (10 B))%, where x is your Mana Regeneration.</p>
-	<p><b>Effect</b>: Unlocks Tier 2 Temporal Flux</p>
+	<p><b>Chance</b>: (ln(30 * x) ^ 3 / 234,567)%, where x is your Mana Regeneration.</p>
+	<p><b>Effect</b>: Unlocks the Lantern of Guidance upgrade for 1e136 coins. It increases all building production by (4 * (30 * x) ^ 0.2)%, raised to the power of 1.5 while affiliated with an Order faction, where x is Mana Regeneration.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/OilLampArtifact.png" align="middle"> Oil Lamp</b></p>
 	<p><b>Hint</b>: Chaos magic burns brightly.</p>
 	<p><b>Description</b>: Rub it, polish it. And remember to express your desires precisely, lest you want to face dire consequences.</p>
 	<p><b>Requirement</b>: R120+, Proof of Chaos</p>
-	<p><b>Chance</b>: (min(x, y, z) / 86,400,000 (86.4 M))%, where x is Fairy Chanting spell activity time, y is Hellfire Blast spell activity time, and z is Brainwave spell activity time (All Time).</p>
-	<p><b>Effect</b>: Unlocks Tier 2 Maelstrom</p>
+	<p><b>Chance</b>: (min(x, y, z) / 6,480,000 (6.48 M))%, where x is Fairy Chanting spell activity time, y is Hellfire Blast spell activity time, and z is Brainwave spell activity time (All Time).</p>
+	<p><b>Effect</b>: Unlocks the Oil Lamp upgrade for 1e136 coins. It increases all building production by (9 * x ^ 0.2)%, raised to the power of 1.5 while affiliated with a Chaos faction, where x is Maximum Mana.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/SparkofLifeArtifact.png" align="middle"> Spark of Life</b></p>
 	<p><b>Hint</b>: The power of Creation may spark something new.</p>
 	<p><b>Description</b>: The spark of Creation, dimly shining from the bottom of its encasing crystal.</p>
 	<p><b>Requirement</b>: R120+, Proof of Balance</p>
-	<p><b>Chance</b>: (log10(1 + x) ^ 2 / 6,000)%, where x is the amount of Faction Coins collected this Era.</p>
-	<p><b>Effect</b>: Unlocks Tier 2 All Creation</p>
+	<p><b>Chance</b>: (ln(1 + x) ^ 2 / 240,000)%, where x is the amount of Faction Coins collected this Era.</p>
+	<p><b>Effect</b>: Unlocks the Spark of Life upgrade for 1e136 coins. It increases all building production by (x ^ 0.2)%, raised to the power of 1.5 while affiliated with a Balance faction, where x is Faction Coin find chance.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/PlanetaryForceArtifact.png" align="middle"> Planetary Force</b></p>
 	<p><b>Hint</b>: Try every day for better luck! Missing a day is the same as breaking a mirror, you know.</p>
@@ -448,22 +448,22 @@
 	<p><b><img src="/realm/Factions/picks/ManaLoom.png" align="middle"> Mana Loom</b></p>
 	<p><b>Hint</b>: Attracted by amassed mana reserves.</p>
 	<p><b>Description</b>: Used to weave even the thinnest mana strings.</p>
-	<p><b>Requirement</b>: R180+, Chaos Alignment</p>
-	<p><b>Chance</b>: (log10(x) ^ 3 / 50,000)%, where x is the amount of Mana produced in this Era.</p>
+	<p><b>Requirement</b>: R180+, Chaos Alignment, 5,000+ Excavations</p>
+	<p><b>Chance</b>: (ln(1 + x) ^ 3 / 400,000)%, where x is the amount of Mana produced in this Era.</p>
 	<p><b>Effect</b>: Awards upgrade with same name.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/Factory.png" align="middle"> Factory</b></p>
 	<p><b>Hint</b>: Dig it manually.</p>
 	<p><b>Description</b>: Mass-production is the way to go.</p>
-	<p><b>Requirement</b>: R180+, Neutral Alignment</p>
-	<p><b>Chance</b>: (log10(x) ^ 3 / 10,000)%, where x is the amount of clicks made in this Era.</p>
+	<p><b>Requirement</b>: R180+, Neutral Alignment, 5,000+ Excavations</p>
+	<p><b>Chance</b>: (ln(1 + x) ^ 3 / 80,000)%, where x is the amount of clicks made in this Era.</p>
 	<p><b>Effect</b>: Awards upgrade with same name.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/Mythos.png" align="middle"> Mythos</b></p>
 	<p><b>Hint</b>: Spells get sad when not used for a long time.</p>
 	<p><b>Description</b>: Accurate historical list of every existing or non-existing deity.</p>
-	<p><b>Requirement</b>: R180+, Good Alignment</p>
-	<p><b>Chance</b>: (x / 4,320,000 (4.32 M)%, where x is the activity time in this Reincarnation of your least used spell (excluding Share Benefits, Catalyst and Event spells).</p>
+	<p><b>Requirement</b>: R180+, Good Alignment, 5,000+ Excavations</p>
+	<p><b>Chance</b>: (x / 2,160,000 (2.16 M))%, where x is the activity time in this Reincarnation of your least used spell (excluding Share Benefits, Catalyst and Event spells).</p>
 	<p><b>Effect</b>: Awards upgrade with same name.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/Vault.png" align="middle"> Vault</b></p>
@@ -483,8 +483,8 @@
 	<p><b><img src="/realm/Factions/picks/Battlefield.png" align="middle"> Battlefield</b></p>
 	<p><b>Hint</b>: Would you think an army is enough to excavate this?</p>
 	<p><b>Description</b>: An extremely accurate replica of a battle fought long ago.</p>
-	<p><b>Requirement</b>: R180+, Evil Alignment</p>
-	<p><b>Chance</b>: (log10(1 + x) ^ 3 / 20,000)%, where x is amount of assistants you own.</p>
+	<p><b>Requirement</b>: R180+, Evil Alignment, 5,000+ Excavations</p>
+	<p><b>Chance</b>: (ln(1 + x) ^ 3 / 160,000)%, where x is amount of assistants you own.</p>
 	<p><b>Effect</b>: Awards an upgrade with same name.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/Apeiron.png" align="middle"> Apeiron</b></p>
@@ -539,8 +539,8 @@
 	<p><b><img src="/realm/Factions/picks/PrimalLeafArtifact.png" align="middle"> Primal Leaf</b></p>
 	<p><b>Hint</b>: Huuuuge blue ball.</p>
 	<p><b>Description</b>: Druid Catalyst for channeling the power of nature.</p>
-	<p><b>Requirement</b>: R220+, Druid Faction, 10,000+ Excavations</p>
-	<p><b>Chance</b>: (log10(1 + x) / 8,000)%, where x is the highest Maximum Mana in this Reincarnation.</p>
+	<p><b>Requirement</b>: R225+, Druid Faction, Ascension 4+, 10,000+ Excavations</p>
+	<p><b>Chance</b>: (ln(1 + x) / 16,000)%, where x is the highest Maximum Mana in this Reincarnation.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/TheBlackestInkArtifact.png" align="middle"> The Blackest Ink</b></p>
 	<p><b>Hint</b>: Quality takes time.</p>
@@ -551,8 +551,8 @@
 	<p><b><img src="/realm/Factions/picks/DwarvenAnvilArtifact.png" align="middle"> Dwarven Anvil</b></p>
 	<p><b>Hint</b>: Dwarven clicks!</p>
 	<p><b>Description</b>: Every dwarven child is required to bring this to school every day.</p>
-	<p><b>Requirement</b>: R235+, Dwarven Faction, 10,000+ Excavations</p>
-	<p><b>Chance</b>: (log10(1 + x) / 10,000)%, where x is your number of clicks in this Reincarnation.</p>
+	<p><b>Requirement</b>: R235+, Dwarven Faction, Ascension 4+, 10,000+ Excavations</p>
+	<p><b>Chance</b>: (ln(1 + x) / 20,000)%, where x is your number of clicks in this Reincarnation.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/StilettoHeelArtifact.png" align="middle"> Stiletto Heel</b></p>
 	<p><b>Hint</b>: A drow trade.</p>
@@ -563,6 +563,6 @@
 	<p><b><img src="/realm/Factions/picks/EyeOfTheDragonArtifact.png" align="middle"> Eye Of The Dragon</b></p>
 	<p><b>Hint</b>: Draconic Assistants.</p>
 	<p><b>Description</b>: The ultimate thrill of the fight.</p>
-	<p><b>Requirement</b>: R235+, Dragon Faction, 10,000+ Excavations</p>
-	<p><b>Chance</b>: (log10(1 + x) / 10,000)%, where x is the highest amount of assistants you had in this Reincarnation.</p>
+	<p><b>Requirement</b>: R235+, Dragon Faction, Ascension 4+, 10,000+ Excavations</p>
+	<p><b>Chance</b>: (ln(1 + x) / 20,000)%, where x is the highest amount of assistants you had in this Reincarnation.</p>
 <?php include "../scripts/footer.html"; ?>
