@@ -60,9 +60,9 @@
 						<tr>
 							<td>
 								<center>Need a Head Start!</p><img src="/realm/Factions/picks/NeedaHeadStartSecretTrophy.png"></td>
-							<td>Free</td>
+							<td>1337 coins</td>
 							<td>Don’t do anything for 5 minutes after abdicating or reincarnating.</td>
-							<td>Instantly adds 25 coins.</td>
+							<td>Instantly adds 25 coins of the current Ascension currency.</td>
 							<td></td>
 						</tr>
 						<tr>
@@ -70,7 +70,7 @@
 								<center>Suggestion Master</p><img src="/realm/Factions/picks/SuggestionMasterSecretTrophy.png"></td>
 							<td>1000 coins</p>A1+ Free</td>
 							<td>Keep the changelog open for 3 minutes before closing it.</td>
-							<td>Increase the production of all buildings based on mysterious events.</td>
+							<td>Increase the production of all buildings based on the current game version.</p>Formula: (10 * a + b + 0.1 * c + 0.01 * d)%, which evaluates to 43.12% in version 4.3.15.</td>
 							<td>Click the bottom right gear icon in game (options) then click the numbers in the bottom right cornor.</td>
 						</tr>
 						<tr>
@@ -132,25 +132,25 @@
 							<td>
 								<center>God's Rest</p><img src="/realm/Factions/picks/GodsRestTrophy.png"></td>
 							<td>1 M (1e6)</p>A1+ Free</td>
-							<td>Cast God’s Hand on any Sunday.</td>
-							<td>While this spell is active, you will find random Faction Coins based on your Mana Regeneration each time you cast another spell.</td>
-							<td>(Angel spell) (based on your local time)</td>
+							<td>Cast God's Hand while having at least 1,500 Maximum Mana and 75 Mana Regeneration.</td>
+							<td>While God's Hand is active, each other spell cast gives floor(x ^ 1.1) random Faction Coins, where x is Faction Coin find chance.</td>
+							<td>Angel spell</td>
 						</tr>
 						<tr>
 							<td>
 								<center>Sun Blessing</p><img src="/realm/Factions/picks/SunBlessingTrophy.png"></td>
 							<td>1 M (1e6)</p>A1+ Free</td>
-							<td>Cast Moon Blessing between 6 am and 1 pm (noon).</td>
+							<td>Cast Moon Blessing while having at least 5 Elven Luck triggers in this Era.</td>
 							<td>The treasure is autoclicked 15 times per second while Moon Blessing is active.</td>
-							<td>(Elf spell) (based on your local time)</td>
+							<td>Elven spell</td>
 						</tr>
 						<tr>
 							<td>
 								<center>True Night</p><img src="/realm/Factions/picks/TrueNightTrophy.png"></td>
 							<td>1 M (1e6)</p>A1+ Free</td>
-							<td>Cast Night Time between 11 pm and 6 am.</td>
-							<td>Increase Night Time boost to assistants production to 40% per Necropolis.</td>
-							<td>(Undead spell) (based on your local time)</td>
+							<td>Cast Night Time while having at least 20,000% Offline production.</td>
+							<td>Increase Night Time's assistant-production bonus by (0.4 * x ^ 0.6)%, where x is its activity time this Reincarnation, and make Offline time count 50% more.</td>
+							<td>Undead spell</td>
 						</tr>
 						<tr>
 							<td>
@@ -312,16 +312,16 @@
 							<td>
 								<center>Greed Drive</p><img src="/realm/Factions/picks/GreedDriveTrophy.png"></td>
 							<td>1 M (1e6)</p>A1+ Free</td>
-							<td>Cast 100 Goblin’s Greed while not casting any other spell in a single game. The chain is interrupted by casting different spells.</td>
-							<td>Goblin’s Greed cost 150 less mana.</td>
+							<td>Cast Goblin's Greed while having at least 100 Royal Exchanges purchased.</td>
+							<td>While Goblin's Greed is active, Tax Collection costs 10% less Mana.</td>
 							<td>Goblin spell</p>The Goblin's Central Bank upgrade (For each TC cast, you get a free TC) does not count, even though it is counted as an extra spell-cast in the stats.</td>
 						</tr>
 						<tr>
 							<td>
 								<center>Lightning Storm</p><img src="/realm/Factions/picks/LightningStormTrophy.png"></td>
-							<td>10 D (1e40)</p>A1+ Free</td>
+							<td>1e35 coins</p>A1+ Free</td>
 							<td>Cast Lightning Strike 100 times in a single game.</td>
-							<td>Increase Lightning Strike to 750% per Iron Stronghold.</td>
+							<td>Increase Lightning Strike multiplier by 50%.</td>
 							<td>Titan spell</td>
 						</tr>
 					</tbody>
@@ -352,7 +352,7 @@
 							<td>
 								<center>Coin Pillage</p><img src="/realm/Factions/picks/CoinPillageTrophy.png"></td>
 							<td>1 Dc (1e33)</p>A1+ Free</td>
-							<td>Cast 150 Tax Collections in less than 5 seconds.</td>
+							<td>Cast 120 Tax Collections in less than 5 seconds.</td>
 							<td>Tax Collection also finds 30 seconds worth of Faction Coins.</td>
 							<td>Use the <a href="/realm/MercBuilds/"><b>Mana Mania</b></a> build.</td>
 						</tr>
@@ -369,7 +369,7 @@
 								<center>Mana Waste</p><img src="/realm/Factions/picks/ManaWasteSecretTrophy.png"></td>
 							<td>1 Td (1e42)</p>A1+ Free</td>
 							<td>Have mana regeneration higher than max mana.</td>
-							<td>Increase Maximum Mana based on spells cast in this game.</p>Formula: +(127 * log10(1 + x) ^ 2.7)</td>
+							<td>Increase Maximum Mana based on spells cast in this Era.</p>Formula: +75 * (0.5 * ln(1 + x)) ^ 2.5, where x is spells cast this Era.</td>
 							<td>Use the <a href="/realm/MercBuilds/"><b>Mana Mania</b></a> build.</td>
 						</tr>
 						<tr>
@@ -383,9 +383,9 @@
 						<tr>
 							<td>
 								<center>Lucifer</p><img src="/realm/Factions/picks/LuciferSecretTrophy.png"></td>
-							<td>50 Vg (5e64)</p>A1+ Free</td>
+							<td>5e64 coins</td>
 							<td>As a Good Mercenary, purchase only Evil faction upgrades or vice versa.</td>
-							<td>Increase the production of non-neutral mercenary buildings by 300%.</p>A1, 14.9%</td>
+							<td>Increase the production of all non-neutral buildings by 300%.</td>
 							<td>Use the <a href="/realm/MercBuilds/"><b>Lucifer R3+</b></a> build</td>
 						</tr>
 						<tr>
@@ -393,7 +393,7 @@
 								<center>Harlequin</p><img src="/realm/Factions/picks/HarlequinSecretTrophy.png"></td>
 							<td>5 Qivg (5e78)</p>A1 Free</td>
 							<td>As a Mercenary, purchase one upgrade from 11 different factions.</td>
-							<td>Increases the production of all buildings based on the number of upgrades bought this game from different Factions.</p>Formula: (x^3)%</td>
+							<td>Increase all-building production based on different Factions involved in your Mercenary upgrades and time spent as your least-used alignment.</p>Formula: (10 + x ^ 3 * (1 + 0.03 * y ^ 0.7))%, where x is the number of different Factions and y is the least-used alignment time this Reincarnation, in seconds.</td>
 							<td>Use the <a href="/realm/MercBuilds/"><b>Harley Quinn R3+</b></a> build</td>
 						</tr>
 						<tr>
@@ -697,7 +697,7 @@
 								<center>That Excavated Quickly</p><img src="/realm/Factions/picks/ThatExcavatedQuicklySecretTrophy.png"></td>
 							<td>1 Qag (1e123)</p>A1+ Free</td>
 							<td>Excavate 1000 times in the first 30 seconds of an Era.</td>
-							<td>Your chance to find Faction Coins with excavations is increased by an additional 5%.</td>
+							<td>Increase the base Faction Coins found with excavations by +250.</td>
 							<td>Make sure to keep your excavations low until you have enough gems to excavate 1000 times - make a save file, abdicate, then try go for the trophy. Undo if necessary.</td>
 						</tr>
 				</table>
@@ -871,7 +871,7 @@
 								<center>Van!shment</p><img src="/realm/Factions/picks/Van!shmentSecretTrophy.png"></td>
 							<td>10 Noqag (1e151)</p>A1+ Free</td>
 							<td>Reach an Offline Bonus of at least 1Qa%.</p>A1: 1895%.</p>A2: 34.9%</td>
-							<td>Increase the production of all buildings based on offline bonus.</p>Formula: (1.25 * log10(1 + x) ^ 1.25)%, where x is the pre-A offline multiplier.</td>
+							<td>Increase the production of all buildings based on offline bonus.</p>Formula: (1.25 * ln(1 + x) ^ 1.25)%, where x is your Offline production multiplier.</td>
 							<td></td>
 						</tr>
 				</table>
@@ -935,8 +935,8 @@
 						<tr>
 							<td>
 								<center>Prismatic Mana</p><img src="/realm/Factions/picks/PrismaticManaTrophy.png"></td>
-							<td>100 No (1e32)</p>A2 Free</td>
-							<td>R40+, Cast the same amount of Faction spells with all Vanilla and Neutral Factions with a minimum of 100 casts(This R).</td>
+							<td>1e32 gems</p>A2 Free</td>
+							<td>A1+, R40+, cast the same amount of Faction spells with all Vanilla and Neutral Factions, with a minimum of 100 casts each in this Reincarnation.</td>
 							<td>Multiplicatively increase Mana Regeneration by 25%.</td>
 							<td>All Spells have to be exact same count, Tiered casting may go over the count you need.</p>Spells Needed: Fairy Chanting, Moon Blessing, God's Hand, Goblin's Greed, Night Time, Hellfire Blast, Lightning Strike, Brainwave, Grand Balance</p>Does not need Dwarf, Drow nor Dragon spells.</td>
 						</tr>
@@ -953,7 +953,7 @@
 								<center>Triple Weirdness</p><img src="/realm/Factions/picks/TripleWeirdnessSecretTrophy.png"></td>
 							<td>1 TTg (1e102)</p>A2+ Free</td>
 							<td>Have exactly 333 of each Royal Exchange type.</td>
-							<td>Increase Faction Coins generation while offline based on your Mana Regeneration.</p>Formula</b>: (300 * log10(1 + x) ^ 3), where x is your offline Mana Regeneration.</td>
+							<td>Increase Faction Coins generation while offline based on your Mana Regeneration.</p>Formula: (300 * ln(1 + 30 * x) ^ 3)%, where x is your Mana Regeneration per second.</td>
 							<td></td>
 						</tr>
 						<tr>
@@ -962,7 +962,7 @@
 							<td>3.2 Dc (3.2e33), A2+: Free</td>
 							<td>Produce 150 M (1.5e8) mana. (Total this R)</td>
 							<td>Allows you to manually reset spells with a 2 second cooldown per spell.</p>Only while offline, increase your mana produced amount by an additional 10% of your Mana Regeneration per second, and your spells cast amount multiplicatively based on your offline Mana Regeneration.</p>
-								<p>Formula: (1000 * log10(1 + x))%, where x is Mana Regeneration</p>
+								<p>Formula: (500 * ln(1 + 30 * x))%, where x is your offline Mana Regeneration per second.</p>
 								<p>Can not reset spells with a fixed duration.</p>
 							</td>
 							<td>This trophy is available to unlock from R40.</td>
@@ -972,7 +972,7 @@
 								<center>Tiered Autocasting</p><img src="/realm/Factions/picks/TieredAutocastingTrophy.png"></td>
 							<td>100 Qid (1e50), A2+ Free</td>
 							<td>Produce 200 M (2e8) mana. (Total this R)</td>
-							<td>Allows you to set the maximum tier you wish to autocast each spell to.</p>Only while offline, increase mana produced by an additional 10% (for a total of 100%) of your mana regeneration per second and your spells cast amount and your spells cast amount multiplicatively based on your offline mana regeneration.</p>Formula: (1000 * log10(1 + x))%</td>
+							<td>Allows you to set the maximum tier you wish to autocast each spell to.</p>Only while offline, increase Mana produced by 10% of your Mana Regeneration per second and multiplicatively increase spells cast based on offline Mana Regeneration.</p>Formula: (500 * ln(1 + 30 * x))%, where x is your offline Mana Regeneration per second.</td>
 							<td>This trophy is available to unlock from R40. The upgrade unlocks at R42.</td>
 						</tr>
 				</table>
@@ -1026,7 +1026,7 @@
 								<center>Dragon Tamer</p><img src="/realm/Factions/picks/DragonTamerSecretTrophy.png"></td>
 							<td>100 Vg (1.e65)</p>A2+ Free</td>
 							<td>Fully develop your Spiky Egg into an Elder Dragon.</td>
-							<td>Increase the production of all buildings by 200% and triples Faction Coin find chance.</td>
+							<td>Increase the production of all buildings by (3.5 * x ^ 0.95)%, where x is your effective Reincarnation count, and multiplicatively increase Faction Coin find chance by 100%.</td>
 							<td>Get to at least 1 No (1e30) gems to finish the Dragon</p> you can use <a href="/realm/R40-R46/">these</a> builds</td>
 						</tr>
 				</table>
@@ -1114,7 +1114,7 @@
 							<td>
 								<center>Spell Cataclysm</p><img src="/realm/Factions/picks/SpellCataclysmSecretTrophy.png"></td>
 							<td>640 Vg (6.4e65)</p>A2 Free</td>
-							<td>Have at least 4 spells active on tier 5 or higher, R42+</td>
+							<td>Have at least 6 spells active on tier 2 or higher.</td>
 							<td>Multiplicatively increase Maximum Mana by 25%.</td>
 							<td></td>
 						</tr>
@@ -1123,7 +1123,7 @@
 								<center>Exchange High Lord</p><img src="/realm/Factions/picks/ExchangeHighLordSecretTrophy.png"></td>
 							<td>10 DQig (1e160)</p>A2+ Free</td>
 							<td>5000 Royal Exchanges</td>
-							<td>Increase royal exchange bonus by +250%.</td>
+							<td>Increase Royal Exchange bonus by +1,000% and multiplicatively by 10%.</td>
 							<td>Actually useless before R68, but it's a trivial unlock.</td>
 						</tr>
 				</table>
@@ -1180,16 +1180,16 @@
 							<td>
 								<center>Autoclicker</p><img src="/realm/Factions/picks/AutoclickerSecretTrophy.png"></td>
 							<td>100 Qaq (1e125)</p>A2+ Free</td>
-							<td>Perform 40 autoclicks in 1 second, R60+</td>
-							<td>Multiply Faction Coin find chance by x5 for automatic clicks only.</td>
+							<td>R60+, have at least 40 autoclick power.</td>
+							<td>Increase clicking reward by 750%.</td>
 							<td></td>
 						</tr>
 						<tr>
 							<td>
 								<center>Genealogist</p><img src="/realm/Factions/picks/GenealogistSecretTrophy.png"></td>
-							<td>1 NoQig (1e180)</p>A2+ Free</td>
-							<td>Have a total of 300 Lineage levels across all Lineage.</td>
-							<td>Increase the production of all buildings based on the total amount of lineage levels you have.</p>Formula: (2.5 * x ^ 1.35)%</td>
+							<td>1e150 gems</p>A2+ Free</td>
+							<td>Have a total of 180 Lineage levels.</td>
+							<td>Increase the production of all buildings based on total Lineage levels.</p>Formula: (5 * x ^ 1.5)%</td>
 							<td></td>
 						</tr>
 				</table>
@@ -1278,16 +1278,16 @@
 							<td>
 								<center>Holy Frenzy</p><img src="/realm/Factions/picks/HolyFrenzySecretTrophy.png"></td>
 							<td>100 Dc (1e35)</td>
-							<td>In a single reincarnation, have a 3 day combined activity time of Holy Light and Blood Frenzy.</td>
-							<td>While Blood Frenzy or Holy Light are active, increase the production of all buildings.</p>Formula: (250 * T ^ 2)%, where T is active tier of Blood Frenzy or Holy Light.</td>
+							<td>A2+, within a single Reincarnation, have a combined activity time of at least 1 day from Holy Light and Blood Frenzy.</td>
+							<td>While Blood Frenzy or Holy Light are active, increase production by (250 * (1 + T) ^ 2)%, where T is their higher active tier. In A4+, also multiplicatively increase Faction Coin find chance by 500% while playing as a Good or Evil faction.</td>
 							<td></td>
 						</tr>
 						<tr>
 							<td>
 								<center>Uniformity</p><img src="/realm/Factions/picks/UniformitySecretTrophy.png"></td>
 							<td>100 Qid (1e50)</td>
-							<td>Have no less than 3 days of playtime this R with at least 24 hours each Order, Chaos and Balance and have less than 1 minute of playtime between them. (This R)</td>
-							<td>Increases the production of all buildings based on time spent as least used alignment (this Reincarnation).</p>Formula: (x ^ 0.75)%, where x is the time spent with your least used alignment (primary or secondary) in seconds.</td>
+							<td>A2+, in this Reincarnation, have at least 1 day of combined playtime with Order, Chaos and Balance and no more than 1 hour of difference between any pair.</td>
+							<td>Increase production based on the least-used alignment.</p>Formula: (50 + 0.5 * x ^ 0.5)%, where x is its time in this Reincarnation, in seconds.</td>
 							<td></td>
 						</tr>
 					</tbody>
@@ -1313,7 +1313,7 @@
 							<td>
 								<center>Art of the Crow</p><img src="/realm/Factions/picks/ArtoftheCrowTrophy.png"></td>
 							<td>1 Qavg (1e75)</td>
-							<td>Have any 6 complete Faction Artifact Sets.</td>
+							<td>Excavate 6 complete Faction Artifact Sets.</td>
 							<td>
 								</p>Order Effect: Multiplicatively increase max mana.
 								</p>Chaos Effect: Multiplicatively increase assistants.
@@ -1349,15 +1349,15 @@
 						<tr>
 							<td>
 								<center>Future Linkin</p><img src="/realm/Factions/picks/FutureLinkinSecretTrophy.png"></td>
-							<td>10 Sptg (1e115)</td>
+							<td>1e138 Faction Coins</td>
 							<td>Abdicate with at least 100,000 Unique Buildings.</td>
-							<td>Multiplicatively increase Faction Coin find chance based on time spent in the last game session.</p>Formula: (214 + 0.03 * x ^ 0.7)%, where x is time spent in last game in seconds.</td>
+							<td>Multiplicatively increase Faction Coin find chance based on time spent during your last Era.</p>Formula: (214 + 0.03 * x ^ 0.7)%, where x is time spent during your last Era, in seconds.</td>
 							<td>Goblinline Dwairy with E50,E135</td>
 						</tr>
 						<tr>
 							<td>
 								<center>Faction Ruler</p><img src="/realm/Factions/picks/FactionRulerSecret.png"></td>
-							<td>120 Notg (1.2e122)</td>
+							<td>1e134 Faction Coins</td>
 							<td>Unlock all the Advanced Heritages.</td>
 							<td>Double Advanced Heritage powers if they match any of your alignments (cumulative).</td>
 							<td></td>
@@ -1384,7 +1384,7 @@
 						<tr>
 							<td>
 								<center>MAD Masks</p><img src="/realm/Factions/picks/MadMasksSecretTrophy.png"></td>
-							<td>1 SpQag (1e144)</td>
+							<td>1e148 Faction Coins</td>
 							<td>Find all fragments of the Makers, Archon and Djinn masks.</td>
 							<td>Increase the production of all buildings based on the highest excavation count made in this Reincarnation.</p>Formula: (1.5 * x ^ 0.6)%, where x is highest excavation count made in this Reincarnation.</td>
 							<td></td>
@@ -1416,8 +1416,8 @@
 						<tr>
 							<td>
 								<center>God's Fingers</p><img src="/realm/Factions/picks/God'sFingers.png"></td>
-							<td>Free</td>
-							<td>Reach 100 M (1e8) automatic clicks in this Reincarnation.</td>
+							<td>333 coins</td>
+							<td>A3+, reach 100 M (1e8) automatic clicks in this Reincarnation.</td>
 							<td>Clicks count 100% more and autoclicks 5 times per second.</td>
 							<td></td>
 						</tr>
@@ -1484,8 +1484,8 @@
 							<td>
 								<center>Novice Combinator</p><img src="/realm/Factions/picks/NoviceCombinator.png"></td>
 							<td>1 Qavg (1e75)</td>
-							<td>Purchase Legacies from 4 different factions in a single game.</td>
-							<td>Increase the production of all buildings based on time spent with the least used alignment.</p>Formula: (50 + 0.7 * x ^ 0.7)%, where x is time spent with your least used alignment.</td>
+							<td>A4+, have 4 different factions involved in your Legacy upgrades.</td>
+							<td>Multiplicatively increase Mana Regeneration based on the least-used alignment.</p>Formula: (5 + 2.5 * x ^ 0.5)%, where x is its time in this Reincarnation, in seconds.</td>
 							<td></td>
 						</tr>
 					</tbody>
@@ -1511,8 +1511,8 @@
 							<td>
 								<center>Expert Combinator</p><img src="/realm/Factions/picks/ExpertCombinator.png"></td>
 							<td>10 Dtg (1e100)</td>
-							<td>Purchase Legacies from 6 different factions in a single game.</td>
-							<td>Increase the production of all buildings based on time spent with the least used alignment.</p>Formula: (50 + 0.7 * x ^ 0.7)%, where x is time spent with your least used alignment.</td>
+							<td>A4+, have 5 different factions involved in your Legacy upgrades.</td>
+							<td>Multiplicatively increase Faction Coin find chance based on the least-used alignment.</p>Formula: (30 + 0.6 * x ^ 0.6)%, where x is its time in this Reincarnation, in seconds.</td>
 							<td></td>
 						</tr>
 					</tbody>
