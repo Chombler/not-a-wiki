@@ -13,10 +13,10 @@
 	<br/>
 	<p><b>Faction spell</b></p>
 	<p><b><img src="/realm/Factions/picks/GoblinsGreed.png" align="middle"> Goblin's Greed</b></p>
-	<p><b>Cost</b>: 800 Mana - <b>Duration</b>: 5 seconds</p>
+	<p><b>Cost</b>: 400 Mana - <b>Duration</b>: 8 seconds</p>
 	<p><b>Effect</b>: Instantly produces Faction Coins based on gems you own. Also increases production of all buildings based on the number of Faction Coins found in this Era.</p>
-	<p><b>Faction Coin Formula</b>: +(20 + ln(1 + x) ^ 3), where x is your current amount of gems.</p>
-	<p><b>Production Formula</b>: (0.75 * ln(1 + x) ^ 3.15)%, where x is the number of Faction Coins found in this Era.</p>
+	<p><b>Faction Coin Formula</b>: +(80 + 2.25 * ln(10 + x) ^ 2.25), where x is Gems owned.</p>
+	<p><b>Production Formula</b>: (30 + 3 * ln(1 + x) ^ 3)%, where x is Faction Coins found in this Era.</p>
 	<br/>
 	<p><b>Spell Trophy & Upgrade</b></p>
 	<p><b><img src="/realm/Factions/picks/GreedDriveSpellUpgrade.png" align="middle"> Greed Drive</b></p>
@@ -33,38 +33,37 @@
 	<p><b><img src="/realm/Factions/picks/GoblinUpgrade1.png" align="middle"> Strong Currency</b></p>
 	<p><b>Cost</b>: 50 M (5e7)</p>
 	<p><b>Effect</b>: Gain assistants additively based on the amount of Faction Coins found in this Era.</p>
-	<p><b>Formula</b>: +(0.5 * ln(1 + x) ^ 2), where x is Faction Coins found this Era.</p>
+	<p><b>Formula</b>: +(1.25 * ln(1 + x) ^ 1.5), where x is Faction Coins found this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/GoblinUpgrade2.png" align="middle"> Slave Trading</b></p>
 	<p><b>Cost</b>: 500 M (5e8)</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on the amount of Evil buildings you own.</p>
-	<p><b>Formula</b>: (2 * x ^ 0.7)%, where x is the amount of Evil buildings you own</p>
+	<p><b>Formula</b>: (3 * x ^ 0.7)%, where x is Evil Buildings built.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/GoblinUpgrade3.png" align="middle"> Cheap Materials</b></p>
 	<p><b>Cost</b>: 5 B (5e9)</p>
 	<p><b>Effect</b>: Tax Collection is worth more seconds additively based on the amount of buildings you own.</p>
-	<p><b>Formula</b>: +(x ^ 0.5), where x is the amount of buildings you own.</p>
+	<p><b>Formula</b>: +(1.5 * x ^ 0.5), where x is Buildings built.</p>
 	<hr>
 	<p><b>Tier 2 Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/GoblinFriendshipPact.png" align="middle"> Goblins Friendship Pact</b></p>
 	<p><b>Cost</b>: 100 Goblin Coins</p>
 	<p><b>Effect</b>: Unlocks more Goblin Upgrades.</p>
 	<br/>
-	<p><b><img src="/realm/Factions/picks/GoblinUpgrade4.png" align="middle"> Black Market</b></p>
+	<p><b><img src="/realm/Factions/picks/GoblinUpgrade4.png" align="middle"> Fool's Gold</b></p>
 	<p><b>Cost</b>: 500 B (5e11)</p>
-	<p><b>Effect</b>: Production bonus from gems is increased by a multiplicative 150%.</p>
-	<p><b>Effect</b>: Also increase offline production bonus based on the amount of Tax Collections cast this Era.</p>
-	<p><b>Formula</b>: (log10(1 + x) ^ 2)%, where x is Tax Collection casts this Era.</p>
+	<p><b>Effect</b>: Additively increase Faction Coin find chance based on the highest amount of Witch Conclaves built in this Reincarnation.</p>
+	<p><b>Formula</b>: +(2 * x ^ 0.6)%, where x is that highest amount.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/GoblinUpgrade5.png" align="middle"> Goblin Economists</b></p>
 	<p><b>Cost</b>: 5 T (5e12)</p>
 	<p><b>Effect</b>: Mutiplicatively increase Mana Regeneration based on Gold owned.</p>
-	<p><b>Formula</b>: ((0.75 * log10(1 + x) ^ 1.25)%, where x is Gold owned.</p>
+	<p><b>Formula</b>: (15 + 0.5 * ln(1 + x) ^ 1.25)%, where x is Coins owned.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/GoblinUpgrade6.png" align="middle"> Hobgoblin Gladiators</b></p>
 	<p><b>Cost</b>: 50 T (5e13)</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on the worth in seconds of your Tax Collection spell.</p>
-	<p><b>Formula</b>: (12 * ln(1 + x) ^ 3)%, where x is the seconds of your Tax Collection.</p>
+	<p><b>Formula</b>: (4 * ln(1 + x) ^ 2)%, where x is Tax Collection worth in seconds.</p>
 	<hr>
 	<p><b>Tier 3 Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/GoblinAlliance.png" align="middle"> Goblins Alliance</b></p>
@@ -73,23 +72,24 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/GoblinUpgrade7.png" align="middle"> Goblin Central Bank</b></p>
 	<p><b>Cost</b>: 5 Qa (5e15)</p>
-	<p><b>Effect</b>: Whenever you cast a spell, also cast a Tax Collection for free.</p>
+	<p><b>Effect</b>: Each spell cast also casts free Tax Collections based on Maximum Mana.</p>
+	<p><b>Formula</b>: 1 + floor(1.5 * ln(1 + x / 1,000) ^ 1.5), where x is Maximum Mana.</p>
 	<br/>
-	<p><b><img src="/realm/Factions/picks/GoblinUpgrade8.png" align="middle"> Fool's Gold</b></p>
+	<p><b><img src="/realm/Factions/picks/GoblinUpgrade8.png" align="middle"> Black Market</b></p>
 	<p><b>Cost</b>: 50 Qa (5e16)</p>
-	<p><b>Effect</b>: Increase Faction Coin find chance based on the highest amount of Witch Conclaves you own this Reincarnation.</p>
-	<p><b>Formula</b>: floor(2 * x ^ 0.6)%, where x is the highest amount of Witch Conclaves you own this Reincarnation.</p>
+	<p><b>Effect</b>: Multiplicatively increase Gem production bonus based on Gems owned and increase Offline production based on Tax Collections cast this Era.</p>
+	<p><b>Gem Formula</b>: (100 + 2 * ln(1 + x))%, where x is Gems owned.</p>
+	<p><b>Offline Formula</b>: ln(1 + y) ^ 2%, where y is Tax Collections cast this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/GoblinUpgrade9.png" align="middle"> Green Fingers Discount</b></p>
 	<p><b>Cost</b>: 500 Qa (5e17)</p>
-	<p><b>Effect</b>: Gain coins randomly every 10 minutes. Also works while being offline.</p>
-	<p><b>Formula</b>: (randRange(1 , 2500) * x), where x is your total (buildings + assistants) coin production per second, <b>including spells</b>.</p>
+	<p><b>Effect</b>: Gain a random coin payout every 120 seconds (30 seconds with its later upgrade), including while offline. The payout scales with total production and time spent in this Reincarnation.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/GoblinHeritage.png" alt="Goblin Heritage" align="middle"> Goblin Heritage</b></p>
 	<p><b>Requirements</b>: Goblin Champion Trophy</p>
 	<p><b>Cost</b>: 5000 Goblin Coins</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on the amount of Gems you own.</p>
-	<p><b>Formula</b>: (floor(7.5 * log10(1 + x)))%, where x is the amount of Gems you own.</p>
+	<p><b>Formula</b>: (3.75 * ln(1 + x))%, where x is Gems owned.</p>
 	<hr>
 	<p><b>Goblin Research Requirements</b></p>
 	<p><b><img src="/realm/Factions/picks/GoblinBankQuestFactionUpgrade.png" align="middle"> Goblin Bank Quest</b></p>
@@ -99,10 +99,10 @@
 	<p><b>Note</b>: Required once throughout the entire game play and does not count towards the bought upgrade stat.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/GoblinBankFactionUpgrade.png" align="middle"> Goblin Bank</b></p>
-	<p>Upgrade Witch Conclaves To Goblin Banks, boosting their production based on the amount of gold you own and unlocking more unique perks for the building.</p>
+	<p>Upgrade Witch Conclaves to Goblin Banks, boosting their base production based on Coins owned and unlocking more unique perks for the building.</p>
 	<p><b>Requirements</b>: Buy "Goblin Banks Quest"</p>
 	<p><b>Cost</b>: 10 Ttg (1e103)</p>
-	<p><b>Effect</b>: (floor(log10(1 + x) ^ (3.1 / (1.1 + 0.1 * A))))% where x is your current amount of Coins and A is Ascension.</p>
+	<p><b>Effect</b>: Add +(2 * ln(1 + x) ^ (3 / (1 + 0.1 * (A + 1)))) base production, where x is Coins owned and A is Ascension.</p>
 	<p><b>Effect</b>: Also allows access to the Research Facilities.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/ExchequerFactionUpgrade.png" align="middle"> Exchequer</b></p>
@@ -120,7 +120,7 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/SlaveMarketQuest.png" alt="Slave Market Quest" align="middle"> Slave Market Quest</b></p>
 	<p><b>Description</b>: Time is money, friend! The markets are expanding, we need new places to sell our slaves to! Build more Neutral buildings for us, will you?</p>
-	<p><b>Requirement</b>: 30,000 Neutral buildings.</p>
+	<p><b>Requirement</b>: 35,000 Neutral Buildings.</p>
 	<p><b>Cost</b>: 1 Ud (1e36) Emerald Coins</p>
 	<p><b>Effect</b>: Grants access to Unique Building.</p>
 	<br/>
@@ -133,7 +133,7 @@
 	<p><b><img src="/realm/Factions/picks/SlaveMarketUniqueBuilding.png" alt="Slave Market" align="middle"></b></p>
 	<p>Upgrade Slave Pens to Slave Markets, boosting their production based on assistants and unlocking more unique perks for the building.</p>
 	<p><b>Effect</b>: Increase production based on assistants.</p>
-	<p><b>Formula</b>: (floor(0.25 * x ^ 0.75))%, where x is amount of assistants.</p>
+	<p><b>Formula</b>: (0.25 * x ^ 0.75)%, where x is assistants owned.</p>
 	<p><b>Effect</b>: Grants access to Faction Union.</p>
 	<hr>
 	<p><b>Tier 4 Upgrades</b></p>
@@ -141,20 +141,20 @@
 	<p><b>Requirement</b>: Slave Market Unique Building</p>
 	<p><b>Cost</b>: 1 Qi (1e18) Goblin Coins</p>
 	<p><b>Effect</b>: Grants access to Union Upgrades.</p>
-	<p><b>Effect (R111+)</b>: Multiplicatively increase Faction Coins find chance based on spells cast in this Era.</p>
-	<p><b>Formula</b>: (2.25 * log10(1 + x) ^ 2.25)%, where x is spells cast in this Era.</p>
+	<p><b>Effect (R105+)</b>: Multiplicatively increase Faction Coin find chance based on spells cast in this Era.</p>
+	<p><b>Formula</b>: (2.25 * (0.5 * ln(1 + x)) ^ 2.25)%, where x is spells cast in this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/GoblinUpgrade10.png" alt="Fools Gems" align="middle"> Fools Gems</b></p>
 	<p><b>Requirement</b>: Goblins Union</p>
 	<p><b>Cost</b>: 1 Nod (1e60) Emerald Coins</p>
 	<p><b>Effect</b>: Multiplicatively increase production bonus from Gems based on the highest amount of Slave Markets you own in this Reincarnation.</p>
-	<p><b>Formula</b>: (0.5 * x ^ 0.5)%, where x is the highest amount of Slave Markets you own this Reincarnation.</p>
+	<p><b>Formula</b>: (0.3 * x ^ 0.7)%, where x is the highest amount of Slave Markets built in this Reincarnation.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/GoblinUpgrade11.png" alt="Money is Magic" align="middle"> Money is Magic</b></p>
 	<p><b>Requirement</b>: Goblins Union</p>
 	<p><b>Cost</b>: 100 Qivg (1e80) Emerald Coins</p>
 	<p><b>Effect</b>: Increase mana regeneration based on the amount of Tax Collections cast in this Era.</p>
-	<p><b>Formula</b>: (2 * ln(1 + x) ^ 2)%, where x is the amount of Tax Collections cast this Era.</p>
+	<p><b>Formula</b>: (1.8 * ln(1 + x) ^ 1.8)%, where x is Tax Collections cast this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/GoblinUpgrade12.png" alt="Lousy Architecture" align="middle"> Lousy Architecture</b></p>
 	<p><b>Requirement</b>: Goblins Union</p>
@@ -164,10 +164,10 @@
 	<p><b>Formula</b>: (x ^ 0.65)%, where x is the amount of buildings of the same tier.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/AdvancedGoblinHeritage.png" align="middle"> Advanced Goblin Heritage</b></p>
-	<p><b>Requirements</b>: Goblin Master trophy and 6 hours activity time (This Era) of Goblin's Greed.</p>
+	<p><b>Requirements</b>: Goblin Master trophy and 1 hour activity time (This Era) of Goblin's Greed.</p>
 	<p><b>Cost</b>: 1 Sp (1e24) Goblin Coins</p>
 	<p><b>Effect</b>: Tax Collections are worth more seconds of production based on Gems owned. (multiplicative).</p>
-	<p><b>Formula</b>: (0.25 * log10(1 + x) ^ 0.95)%, where x is gems owned.</p>
+	<p><b>Formula</b>: (0.15 * ln(1 + x) ^ 0.95)%, where x is Gems owned.</p>
 	<p><b>Note</b>: When using their lineage, Advanced Heritage powers are multiplied by the level of the lineage.</p>
-	<p><b>Formula</b>: *(1 + 0.3 * level)</p>
+	<p><b>Base lineage multiplier</b>: *(1 + 0.2 * matching Lineage level).</p>
 <?php include "../scripts/footer.html"; ?>
