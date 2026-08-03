@@ -469,14 +469,14 @@
 	<p><b><img src="/realm/Factions/picks/Vault.png" align="middle"> Vault</b></p>
 	<p><b>Hint</b>: Show your prowess as a Royal Trader.</p>
 	<p><b>Description</b>: Never a place could be more secure.</p>
-	<p><b>Requirement</b>: R180+, Balance Alignment</p>
+	<p><b>Requirement</b>: R180+, Balance Alignment, 5,000+ Excavations</p>
 	<p><b>Chance</b>: (x / 100,000,000 (100 M))%, where x is Royal Exchange Bonus.</p>
 	<p><b>Effect</b>: Awards upgrade with same name.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/Athanor.png" align="middle"> Athanor</b></p>
 	<p><b>Hint</b>: Archemy.</p>
 	<p><b>Description</b>: The legendary oven that could smelt souls into matter.</p>
-	<p><b>Requirement</b>: R180+, Order Alignment</p>
+	<p><b>Requirement</b>: R180+, Order Alignment, 5,000+ Excavations</p>
 	<p><b>Chance</b>: (x / 1,000,000 (1 M))%, where x is Alchemy research points.</p>
 	<p><b>Effect</b>: Awards upgrade with same name.</p>
 	<hr>
@@ -497,44 +497,44 @@
 	<p><b><img src="/realm/Factions/picks/GlowingWingArtifact.png" align="middle"> Glowing Wing</b></p>
 	<p><b>Hint</b>: Mana Wings!</p>
 	<p><b>Description</b>: And this is why Fairies don't need torches.</p>
-	<p><b>Requirement</b>: R220+, Fairy Faction, 10,000+ Excavations</p>
-	<p><b>Chance</b>: (log10(1 + x) / 8,000)%, where x is Mana produced this Era.</p>
+	<p><b>Requirement</b>: R225+, Fairy Faction, Ascension 4+, 10,000+ Excavations</p>
+	<p><b>Chance</b>: (ln(1 + x) / 8,000)%, where x is Mana produced this Era.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/SylvanMirrorArtifact.png" align="middle"> Sylvan Mirror</b></p>
 	<p><b>Hint</b>: Pay a barber with Faction Coins.</p>
 	<p><b>Description</b>: An Elf with messy hair is not an Elf, by their own laws.</p>
-	<p><b>Requirement</b>: R220+, Elven Faction, 10,000+ Excavations</p>
-	<p><b>Chance</b>: (log10(1 + x) / 8,000)%, where x is your Faction Coin find chance.</p>
+	<p><b>Requirement</b>: R225+, Elven Faction, Ascension 4+, 10,000+ Excavations</p>
+	<p><b>Chance</b>: (ln(1 + x) / 8,000)%, where x is your Faction Coin find chance.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/SolidCloudArtifact.png" align="middle"> Solid Cloud</b></p>
 	<p><b>Hint</b>: A cloud of spells.</p>
 	<p><b>Description</b>: Angels have the power to save your life! And make a backup of it on the internet.</p>
-	<p><b>Requirement</b>: R220+, Angel Faction, 10,000+ Excavations</p>
-	<p><b>Chance</b>: (x / 40,000)%, where x is the amount of active spells (Active Spells count more multipliers <b>do not</b> count).</p>
+	<p><b>Requirement</b>: R225+, Angel Faction, Ascension 4+, 10,000+ Excavations</p>
+	<p><b>Chance</b>: (x / 20,000)%, where x is the number of active spells, including additional spell tiers.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/OrcFangNecklaceArtifact.png" align="middle"> Orc Fang Necklace</b></p>
 	<p><b>Hint</b>: Torment your subjects with taxes.</p>
 	<p><b>Description</b>: To remind your slaves who's in charge.</p>
-	<p><b>Requirement</b>: R220+, Goblin Faction, 10,000+ Excavations</p>
-	<p><b>Chance</b>: (log10(1 + x) / 8,000)%, where x is Tax Collection casts in this Era.</p>
+	<p><b>Requirement</b>: R225+, Goblin Faction, Ascension 4+, 10,000+ Excavations</p>
+	<p><b>Chance</b>: (ln(1 + x) / 8,000)%, where x is Tax Collection casts in this Era.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/BloodChaliceArtifact.png" align="middle"> Blood Chalice</b></p>
 	<p><b>Hint</b>: Pour a bottle of Frenzy.</p>
 	<p><b>Description</b>: The healthiest vampire breakfast.</p>
-	<p><b>Requirement</b>: R220+, Undead Faction, 10,000+ Excavations</p>
+	<p><b>Requirement</b>: R225+, Undead Faction, Ascension 4+, 10,000+ Excavations</p>
 	<p><b>Chance</b>: (x / 10,000)%, where x is Blood Frenzy's duration (The duration when it was cast).</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/DemonTailArtifact.png" align="middle"> Demon Tail</b></p>
 	<p><b>Hint</b>: Evil wizardry.</p>
 	<p><b>Description</b>: Said to bring great luck to whom it possess...es.</p>
-	<p><b>Requirement</b>: R220+, Demon Faction, 10,000+ Excavations</p>
-	<p><b>Chance</b>: (x / 1,000,000)%, where x is Evil Spell Casts in this Era.</p>
+	<p><b>Requirement</b>: R225+, Demon Faction, Ascension 4+, 10,000+ Excavations</p>
+	<p><b>Chance</b>: (x / 100,000)%, where x is Evil Spell Casts in this Era.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/FrozenLightningArtifact.png" align="middle"> Frozen Lightning</b></p>
 	<p><b>Hint</b>: Lightning never strikes the same place a couple million times. Maybe.</p>
 	<p><b>Description</b>: A sculpture representing the embodiment of Titanic power.</p>
-	<p><b>Requirement</b>: R220+, Titan Faction, 10,000+ Excavations</p>
-	<p><b>Chance</b>: (x / 1,000,000)%, where x is Lightning Strike activity time in this Era.</p>
+	<p><b>Requirement</b>: R225+, Titan Faction, Ascension 4+, 10,000+ Excavations</p>
+	<p><b>Chance</b>: (x / 100,000)%, where x is Lightning Strike activity time in this Era.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/PrimalLeafArtifact.png" align="middle"> Primal Leaf</b></p>
 	<p><b>Hint</b>: Huuuuge blue ball.</p>
@@ -545,8 +545,8 @@
 	<p><b><img src="/realm/Factions/picks/TheBlackestInkArtifact.png" align="middle"> The Blackest Ink</b></p>
 	<p><b>Hint</b>: Quality takes time.</p>
 	<p><b>Description</b>: High-quality, freshly produced Faceless ink.</p>
-	<p><b>Requirement</b>: R220+, Faceless Faction, 10,000+ Excavations</p>
-	<p><b>Chance</b>: (x / 10,000)%, where x is the longest game session this Reincarnation (but <b>not</b> this Era).</p>
+	<p><b>Requirement</b>: R225+, Faceless Faction, Ascension 4+, 10,000+ Excavations</p>
+	<p><b>Chance</b>: (x / 8,000)%, where x is the longest game session this Reincarnation (but <b>not</b> this Era).</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/DwarvenAnvilArtifact.png" align="middle"> Dwarven Anvil</b></p>
 	<p><b>Hint</b>: Dwarven clicks!</p>
@@ -557,7 +557,7 @@
 	<p><b><img src="/realm/Factions/picks/StilettoHeelArtifact.png" align="middle"> Stiletto Heel</b></p>
 	<p><b>Hint</b>: A drow trade.</p>
 	<p><b>Description</b>: Drow make the most beautiful underground females.</p>
-	<p><b>Requirement</b>: R235+, Drow Faction, 10,000+ Excavations</p>
+	<p><b>Requirement</b>: R235+, Drow Faction, Ascension 4+, 10,000+ Excavations</p>
 	<p><b>Chance</b>: (x / 10,000)%, where x is the number of Royal Exchanges you have.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/EyeOfTheDragonArtifact.png" align="middle"> Eye Of The Dragon</b></p>
