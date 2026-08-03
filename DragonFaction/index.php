@@ -49,19 +49,22 @@
 	<p><b><img src="/realm/Factions/picks/DragonsBreath.png" align="middle"> Dragon's Breath</b></p>
 	<p><b>Cost</b>: 1,500 Mana - <b>Duration</b>: 20 seconds</p>
 	<p><b>Effect</b>: Activates one of the following effects at random for 20 seconds.</p>
-	<p><b><font color="darkred">Red</font></b>: Increase the production of unique buildings based on the amount of Faction Coins found in this game.</p>
-	<p><b><font color="darkred">Formula</font></b>: (2 * (ln(1 + x) ^ 2)%, where x is the amount of Faction Coins found in this game.</p>
+	<p><b><font color="darkred">Red</font></b>: Increase the production of unique buildings based on the amount of Faction Coins found in this Era.</p>
+	<p><b><font color="darkred">Formula</font></b>: (1.75 * ln(1 + x) ^ 1.75)%, where x is the amount of Faction Coins found in this Era.</p>
 	<br>
-	<p><b><font color="darkgreen">Green</font></b>: Increase the production of all buildings based on the amount of spells cast in this game. Higher bonuses are provided to lower building tiers.</p>
-	<p><b><font color="darkgreen">Formula</font></b>: (0.01 * x ^ 0.625 * (11 - T) ^ 5)%, where x is spells cast (this game) and T is the building tier. (1 for Farms, 11 for Hall of Legends).</p>
+	<p><b><font color="darkgreen">Green</font></b>: Increase the production of all buildings based on the amount of spells cast in this Era. Higher bonuses are provided to lower building tiers.</p>
+	<p><b><font color="darkgreen">Formula</font></b>: (0.000001 * ln(1 + x) ^ 6 * (11 - T) ^ 5)%, where x is spells cast (this Era) and T is the building tier. (1 for Farms, 11 for Hall of Legends).</p>
 	<br>
 	<p><b><font color="darkblue">Blue</font></b>: Multiplicatively increase your Mana Regeneration by 200%.</p>
 	<br>
 	<p><b><font color="white">White</font></b>: Temporarily increase the amount of assistants based on time spent being Neutral in this Reincarnation.</p>
 	<p><b><font color="white">Formula</font></b>: +(30 * x ^ 0.7), where x is time spent as Neutral this Reincarnation.</p>
 	<br>
-	<p><b><font color="black">Black</b></font>: Increase the production of all buildings based on Dragon's Breath activity time in this game.</p>
-	<p><b><font color="black">Formula</font></b>: (0.5 * x ^ 0.75)%, where x is Dragon's Breath activity time in this game.</p>
+	<p><b><font color="black">Black</b></font>: Increase the production of all buildings based on Dragon's Breath activity time in this Era.</p>
+	<p><b><font color="black">Formula</font></b>: (30 + 0.85 * x ^ 0.85)%, where x is Dragon's Breath activity time in this Era.</p>
+	<br>
+	<p><b><font color="goldenrod">Yellow</font></b> (A2+): Multiplicatively increases production bonus from Gems based on assistants owned.</p>
+	<p><b><font color="goldenrod">Formula</font></b>: (1.75 * ln(1 + x) ^ 1.75)%, where x is assistants owned.</p>
 	<br/>
 	<p><b>Spell Trophy &#38; Upgrade</b></p>
 	<p><b><img src="/realm/Factions/picks/DragonsRoarSpellUpgrade.png" align="middle"> Dragon's Roar</b></p>
@@ -84,19 +87,24 @@
 	<p><b>Requirement</b>: Dragons Trade Treaty</p>
 	<p><b>Cost</b>: 5 Uvg (5e66)</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on the amount of time spent as Neutral in this Reincarnation. Effect is increased on Stone Pillars, Labyrinths and Hall Of Legends.</p>
-	<p><b>Formula</b>: ((x / 60) ^ 0.5)%, where x is time spent as Neutral this Reincarnation. This is multiplied by 10 on Stone Pillars, Labyrinths and Hall of Legends.</p>
+	<p><b>Formula</b>: (0.3 * x ^ 0.7)%, where x is time spent as Neutral this Reincarnation (offline time counts half).</p>
+	<p><b>Formula (Stone Pillars, Labyrinths, Halls of Legends)</b>: (7.5 * x ^ 0.75)%</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DragonUpgrade2.png" align="middle"> Iron Flight</b></p>
 	<p><b>Requirement</b>: Dragons Trade Treaty</p>
 	<p><b>Cost</b>: 50 Uvg (5e67)</p>
-	<p><b>Effect</b>: Increase the production of Iron Stronghold by 200% per spell affecting it.</p>
-	<p><b>Note</b>: Each instance of spell effects count as one spell (represented by the spell effect icons on the building icons). This includes Red, Green & Black Breath, A150 and D400.</p>
+	<p><b>Effect</b>: Increase the production of Iron Stronghold based on Offline production and the number of spells affecting it.</p>
+	<p><b>Formula</b>: (s * ln(1 + x) ^ 3)%, where s is the number of spells affecting it and x is your Offline production.</p>
+	<p><b>Effect</b>: Also reduces spell tier cost scaling for Dragon's Breath higher tiers.</p>
+	<p><b>Note</b>: Each instance of spell effects count as one spell (represented by the spell effect icons on the building icons).</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DragonUpgrade3.png" align="middle"> Imposing Presence</b></p>
 	<p><b>Requirement</b>: Dragons Trade Treaty</p>
 	<p><b>Cost</b>: 500 Uvg (5e68)</p>
 	<p><b>Effect</b>: Increase Mana Regeneration additively based on the amount of Neutral buildings you own.</p>
-	<p><b>Formula</b>: +(0.5 * x ^ 0.5), where x is the number of Neutral buildings owned.</p>
+	<p><b>Formula</b>: +(0.7 * x ^ 0.7), where x is the number of Neutral buildings owned.</p>
+	<p><b>Effect</b>: Also increases assistants multiplicatively while White Breath is active, based on time spent as Dragons.</p>
+	<p><b>Formula</b>: (75 + 1.25 * ln(1 + x) ^ 1.25)%, where x is time spent as Dragons this Reincarnation.</p>
 	<hr>
 	<p><b>Tier 2 Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/DragonFriendshipPact.png" align="middle"> Dragons Friendship Pact</b></p>
@@ -108,9 +116,9 @@
 	<p><b>Requirement</b>: Dragons Friendship Pact</p>
 	<p><b>Cost</b>: 50 Dvg (5e70)</p>
 	<p><b>Effect</b>: Increase assistants additively and multiplicatively, and their production, based on time spent affiliated with Dragons.</p>
-	<p><b>Formula (Additive)</b>: +(50 * x ^ 0.5), where x is time spent as Dragons (All Time).</p>
-	<p><b>Formula (Multiplicative)</b>: (0.5 * x ^ 0.25)%, where x is time spent as Dragons (All Time).</p>
-	<p><b>Formula (Production)</b>: (0.7 * x ^ 0.3)%, where x is time spent as Dragons (All Time).</p>
+	<p><b>Formula (Additive)</b>: +(5 * x ^ 0.5), where x is time spent as Dragons (All Time).</p>
+	<p><b>Formula (Multiplicative)</b>: (0.6 * x ^ 0.4)%, where x is time spent as Dragons (All Time).</p>
+	<p><b>Formula (Production)</b>: (0.8 * x ^ 0.4)%, where x is time spent as Dragons (All Time).</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DragonUpgrade5.png" align="middle"> Bountiful Hoard</b></p>
 	<p><b>Requirement</b>: Dragons Friendship Pact</p>
@@ -121,8 +129,9 @@
 	<p><b><img src="/realm/Factions/picks/DragonUpgrade6.png" align="middle"> Sharp Claws</b></p>
 	<p><b>Requirement</b>: Dragons Friendship Pact</p>
 	<p><b>Cost</b>: 5 Tvg (5e72)</p>
-	<p><b>Effect</b>: Multiplicatively increase Royal Exchange Bonus and Faction Coin find chance based on clicks made in this game.</p>
-	<p><b>Formula</b>: (0.8 * x ^ 0.35)%, where x is the number of clicks this game.</p>
+	<p><b>Effect</b>: Multiplicatively increase Royal Exchange Bonus and Faction Coin find chance based on clicks made in this Era.</p>
+	<p><b>Formula (Royal Exchange)</b>: (x ^ 0.5)%, where x is the number of clicks this Era.</p>
+	<p><b>Formula (Faction Coin chance)</b>: (0.8 * x ^ 0.4)%, where x is the number of clicks this Era.</p>
 	<hr>
 	<p><b>Tier 3 Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/DragonAlliance.png" align="middle"> Dragons Alliance</b></p>
@@ -134,26 +143,27 @@
 	<p><b>Requirement</b>: Dragons Alliance</p>
 	<p><b>Cost</b>: 500 Tvg (5e74)</p>
 	<p><b>Effect</b>: Increase Maximum Mana additively and multiplicatively based on the amount of Faction Coins found in this game.</p>
-	<p><b>Formula (Additive)</b>: +(20 * ln(1 + x) ^ 2), where x is Faction Coins found this game.</p>
-	<p><b>Formula (Multiplicative)</b>: (0.75 * ln(1 + x) ^ 1.25)%, where x is Faction Coins found this game.</p>
+	<p><b>Formula (Additive)</b>: +(15 * ln(1 + x) ^ 2.5), where x is Faction Coins found this Era.</p>
+	<p><b>Formula (Multiplicative)</b>: (0.5 * ln(1 + x) ^ 1.5)%, where x is Faction Coins found this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DragonUpgrade8.png" align="middle"> Eternal Wisdom</b></p>
 	<p><b>Requirement</b>: Dragons Alliance</p>
 	<p><b>Cost</b>: 5 Qavg (5e75)</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on Royal Exchange bonus.</p>
-	<p><b>Formula</b>: (1.5 * x ^ 0.95)%, where x is individual Royal Exchange bonus.</p>
+	<p><b>Formula</b>: (1.5 * x ^ 0.75)%, where x is individual Royal Exchange bonus.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DragonUpgrade9.png" align="middle"> Chromatic Scales</b></p>
 	<p><b>Requirement</b>: Dragons Alliance</p>
 	<p><b>Cost</b>: 50 Qavg (5e76)</p>
-	<p><b>Effect</b>: Increase the production of all buildings based on the amount of active Dragon's Breath effects.</p>
-	<p><b>Formula</b>: (100 * (x ^ 2))%, where x is amount of active Dragon's Breath effects.</p>
+	<p><b>Effect</b>: Increase the production of all buildings based on your Dragon's Breath tier, while Dragon's Breath is active.</p>
+	<p><b>Formula</b>: (250 * (T + 1) ^ 2)%, where T is your Dragon's Breath tier.</p>
+	<p><b>Effect</b>: Also increase Offline production by 100%.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/DragonHeritage.png" alt="Dragon Heritage" align="middle"> Dragon Heritage</b></p>
 	<p><b>Requirements</b>: Dragons Champion Trophy</p>
 	<p><b>Cost</b>: 400 B (4e11) Dwarven and Drow coins</p>
 	<p><b>Effect</b>: Increase assistants production based on time spent with Dragons in this Reincarnation.</p>
-	<p><b>Formula</b>: (0.3 * x ^ 0.7)%, where x is time spent with Dragons in this Reincarnation.</p>
+	<p><b>Formula</b>: (0.7 * x ^ 0.85)%, where x is time spent with Dragons in this Reincarnation.</p>
 	<hr>
 	<p><b>Dragons Research Requirements</b></p>
 	<p><b><img src="/realm/Factions/picks/Wyrm'sDenQuestFactionUpgrade.png" align="middle"> Wyrm's Den Quest</b></p>
@@ -164,7 +174,7 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/Wyrm'sDenFactionUpgrade.png" align="middle"> Wyrm's Den</b></p>
 	<p>Upgrade Iron Stronghold to Wyrm's Den, boosting their production based on the total amount of Faction Coins you collected and unlocking more unique perks for the building.</p>
-	<p><b>Formula</b>: (0.065 * (ln(1 + (x / 2) + y)) ^ 3.65) where x is faction coins (This Game) and y is Faction Coins (This R)</p>
+	<p><b>Formula</b>: (0.25 * ln(1 + x) ^ 5)%, where x is Faction Coins found in this Era (offline finds count half).</p>
 	<p><b>Requirement</b>: R46 + 4500 Iron Strongholds</p>
 	<p><b>Cost</b>: 10 Nod (1e61)</p>
 	<p><b>Effect</b>: Unlocks Wyrm's Den Unique Building</p>
@@ -190,7 +200,7 @@
 	<p><b>Unique Building</b></p>
 	<p><b><img src="/realm/Factions/picks/DragonPastureUniqueBuilding.png" align="middle"></b></p>
 	<p><b>Effect</b>: Upgrade Farm to Dragon Pastures, boosting their production based on your max mana and unlocking more unique perks for the building.</p>
-	<p><b>Formula</b>: (0.63 * x ^ 0.63)%, where x is your Maximum Mana.</p>
+	<p><b>Formula</b>: (0.65 * x ^ 0.65)%, where x is your Maximum Mana.</p>
 	<p><b>Effect</b>: Grants access to Faction Union.</p>
 	<hr>
 	<p><b>Tier 4 Upgrades</b></p>
@@ -200,11 +210,11 @@
 	<p><b>Effect</b>: Grants access to Union Upgrades.</p>
 	<p><b>Effect (based on Alignment)</b>:</p>
 	<p><b>Proof of Order</b>: Increase the production of all buildings based on time spent as Order this Reincarnation.</p>
-	<p><b>Formula</b>: (3 * x ^ 0.7)%, where x is time spent as Order this Reincarnation.</p>
+	<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent as Order this Reincarnation.</p>
 	<br/>
 	<p><b>Proof of Chaos</b>: Increase the production of Unique or Non-Unique buildings based on the amount of assistants you own. Target buildings depend on floor(ln(1+x)) where x is FC chance (even for Unique, odd for Non-Unique).</p>
-	<p><b>Formula (Unique)</b>: (0.9 * x ^ 0.35)%, where x is assistants owned.</p>
-	<p><b>Formula (Non-Unique)</b>: (2.7 * x ^ 0.35)%, where x is assistants owned.</p>
+	<p><b>Formula (Unique)</b>: (2 * x ^ 0.3)%, where x is assistants owned.</p>
+	<p><b>Formula (Non-Unique)</b>: (6 * x ^ 0.3)%, where x is assistants owned.</p>
 	<br/>
 	<p><b>Proof of Balance</b>: Multiplicatively increase Maximum Mana based on your current Lineage level.</p>
 	<p><b>Formula</b>: (8 * x ^ 0.8)%, where x is your current Lineage level.</p>
@@ -212,18 +222,16 @@
 	<p><b><img src="/realm/Factions/picks/DragonUpgrade10.png" align="middle"> Fang Food</b></p>
 	<p><b>Cost</b>: 10 Dtg (1e100)</p>
 	<p><b>Effect</b>: Multiplicatively increase Mana Regeneration and Assistants based on the highest amount of Dragon Pastures you built in this Reincarnation.</p>
-	<p><b>Formula</b>: (0.5 * x ^ 0.5)%, where x is the highest amount of Dragon Pastures owned in this Reincarnation.</p>
+	<p><b>Formula</b>: (0.6 * x ^ 0.6)%, where x is the highest amount of Dragon Pastures owned in this Reincarnation.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DragonUpgrade11.png" align="middle"> Wyrm's Rest</b></p>
 	<p><b>Cost</b>: 100 Qitg (1e110)</p>
-	<p><b>Effect</b>: Remove 1 Ascension penalty from Royal Exchange bonus. Also gives Dragon's Breath White Breath a multiplicative effect on Assistants based on time spent as Dragons.</p>
-	<p><b>Formula</b>: (1.25 * ln(1 + x) ^ 1.25)%, where x is time spent as Dragon this Reincarnation.</p>
-	<p><b>Note</b>: The multiplicative White Breath effect stacks multiplicatively with extra White Breaths.</p>
+	<p><b>Effect</b>: Increase the Ascension multiplier for Royal Market bonus by 0.7.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DragonUpgrade12.png" align="middle"> Draconic Supremacy</b></p>
 	<p><b>Cost</b>: 1 Notg (1e120)</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on Maximum Mana.</p>
-	<p><b>Formula</b>: (20 * ln(1 + x) ^ 2)%, where x is your Maximum Mana.</p>
+	<p><b>Formula</b>: (10 * ln(1 + x) ^ 2)%, where x is your Maximum Mana.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/AdvancedDragonHeritage.png" align="middle"> Advanced Dragon Heritage</b></p>
 	<p><b>Requirement</b>: Dragon Master trophy and 6 hours activity time (This Game) of Dragon's Breath.</p>
