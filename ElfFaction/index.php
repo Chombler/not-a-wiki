@@ -15,7 +15,7 @@
 	<p><b><img src="/realm/Factions/picks/MoonBlessing.png" align="middle"> Moon Blessing</b></p>
 	<p><b>Cost</b>: 700 Mana - <b>Duration</b>: 20 seconds</p>
 	<p><b>Effect</b>: Increases the production of all buildings based on on the amount of clicks made in this Reincarnation.</p>
-	<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is the amount of clicks made in this Reincarnation.</p>
+	<p><b>Formula</b>: (1.3 * x ^ 0.7)%, where x is clicks made in this Reincarnation.</p>
 	<br/>
 	<p><b>Spell Trophy & Upgrade</b></p>
 	<p><b><img src="/realm/Factions/picks/SunBlessingSpellUpgrade.png" align="middle"> Sun Blessing</b></p>
@@ -30,17 +30,16 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/ElvenUpgrade1.png" align="middle"> Elven Mint</b></p>
 	<p><b>Cost</b>: 50 M (5e7)</p>
-	<p><b>Effect</b>: The base chance to find Faction Coins is increased by a multiplicative 150%.</p>
+	<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance by 100% and autoclick 3 times per second.</p>
 	<br/>
-	<p><b><img src="/realm/Factions/picks/ElvenUpgrade2.png" align="middle"> Elven Treasure Casing</b></p>
+	<p><b><img src="/realm/Factions/picks/ElvenUpgrade2.png" align="middle"> Sylvan Treasure Frills</b></p>
 	<p><b>Cost</b>: 500 M (5e8)</p>
-	<p><b>Effect</b>: Increase base clicking reward by +25,000 per Trophy unlocked, and increase chance to find Faction Coins based on the amount of Trophies you unlocked.</p>
-	<p><b>Formula</b>: +((1 + 0.1 * x) ^ 0.95)%, where x is the amount of Trophies unlocked.</p>
+	<p><b>Effect</b>: Add 50% of total building production to base clicking reward.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/ElvenUpgrade3.png" align="middle"> Ancient Clicking Arts</b></p>
 	<p><b>Cost</b>: 5 B (5e9)</p>
 	<p><b>Effect</b>: Increase Mana Regeneration based on the amount of clicks made in this Reincarnation.</p>
-	<p><b>Formula</b>: +(2 * log10(1 + x) ^ 1.25), where x is the amount of clicks made in this Reincarnation.</p>
+	<p><b>Formula</b>: +(0.75 * ln(1 + x) ^ 1.5), where x is clicks made in this Reincarnation.</p>
 	<hr>
 	<p><b>Tier 2 Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/ElvenFriendshipPact.png" align="middle"> Elven Friendship Pact</b></p>
@@ -49,18 +48,18 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/ElvenUpgrade4.png" align="middle"> Elven Emissary</b></p>
 	<p><b>Cost</b>: 500 B (5e11)</p>
-	<p><b>Effect</b>: Increase clicking reward based on the amount of Good buildings you own, and assistants find 3 times as many Faction Coins.</p>
-	<p><b>Formula</b>: (x ^ 0.6)%, where x is the number of Good Buildings you own.</p>
+	<p><b>Effect</b>: Increase clicking reward based on Good Buildings built and increase offline Faction Coin gains by 200%.</p>
+	<p><b>Formula</b>: (1.4 * x ^ 0.6)%, where x is Good Buildings built.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/ElvenUpgrade5.png" align="middle"> Elven Efficiency</b></p>
 	<p><b>Cost</b>: 5 T (5e12)</p>
 	<p><b>Effect</b>: Increase Royal Exchange bonus based on Faction Coins found this Era.</p>
-	<p><b>Formula</b>: +(2 * ln(1 + x) ^ 2)%, where x is Faction Coins found this Era.</p>
+	<p><b>Formula</b>: +(1.75 * ln(1 + x) ^ 1.75)%, where x is Faction Coins found this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/ElvenUpgrade6.png" align="middle"> Secret Clicking Techniques</b></p>
 	<p><b>Cost</b>: 50 T (5e13)</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on the amount of clicks made in this Reincarnation.</p>
-	<p><b>Formula</b>: (2 * x ^ 0.4)%, where x is the amount of clicks made in this Reincarnation.</p>
+	<p><b>Formula</b>: (1.5 * x ^ 0.5)%, where x is clicks made in this Reincarnation.</p>
 	<hr>
 	<p><b>Tier 3 Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/ElvenAlliance.png" align="middle"> Elven Alliance</b></p>
@@ -70,7 +69,7 @@
 	<p><b><img src="/realm/Factions/picks/ElvenUpgrade7.png" align="middle"> Elven Diplomacy</b></p>
 	<p><b>Cost</b>: 5 Qa (5e15)</p>
 	<p><b>Effect</b>: Clicks count more based on Faction Coins found this Era.</p>
-	<p><b>Formula</b>: (2 * ln(1 + x) ^ 2)%, where x is Faction Coins found this Era.</p>
+	<p><b>Formula</b>: (1.5 * ln(1 + x) ^ 1.15)%, where x is Faction Coins found this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/ElvenUpgrade8.png" align="middle"> Elven Luck</b></p>
 	<p><b>Cost</b>: 50 Qa (5e16)</p>
@@ -79,14 +78,15 @@
 	<p><b>Formula (Faction Coins)</b>: (x * (R + 1) * (1 + 0.01 * A)) of a random type, where x is Faction Coin chance, R is the number of times you have reincarnated, and A is your Autoclick power bonus.</p>
 	<p><b>Effect</b>: Assistants have the same chance to trigger Elven Luck once every second. Elven Lucks triggered this way have their coin reward multiplied by the amount of assistants you have.</p>
 	<br/>
-	<p><b><img src="/realm/Factions/picks/ElvenUpgrade9.png" align="middle"> Sylvan Treasure Frills</b></p>
+	<p><b><img src="/realm/Factions/picks/ElvenUpgrade9.png" align="middle"> Elven Treasure Casing</b></p>
 	<p><b>Cost</b>: 500 Qa (5e17)</p>
-	<p><b>Effect</b>: Additively increase base clicking reward by 50% of your building production.</p>
+	<p><b>Effect</b>: Additively increase Faction Coin find chance based on Trophies unlocked.</p>
+	<p><b>Formula</b>: +(10 + 2.5 * x ^ 0.95)%, where x is Trophies unlocked.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/ElvenHeritage.png" alt="Elven Heritage" align="middle"> Elven Heritage</b></p>
 	<p><b>Cost</b>: 5000 Elven Coins</p>
 	<p><b>Requirements</b>: Elven Champion Trophy</p>
-	<p><b>Effect</b>: Increase your chance to find Faction Coins by 5% and increase your Click reward based on your chance to find Faction Coins.</p>
+	<p><b>Effect</b>: Increase Faction Coin find chance by +5%, increase clicking reward based on Faction Coin find chance, and autoclick once per second.</p>
 	<p><b>Formula</b>: (2 * ln(1 + x) ^ 2)%, where x is your Faction Coin find chance.</p>
 	<hr>
 	<p><b>Elven Research Requirements</b></p>
@@ -118,7 +118,7 @@
 	<p><b><img src="/realm/Factions/picks/ArborealCityQuest.png" alt="Arboreal City Quest" align="middle"> Arboreal City Quest</b></p>
 	<p><b>Description</b>: Hello again, mellonamin. It is time for the Elves to have their place to live. Collect enough Elven Faction coins, and we'll start to build a true green city!</p>
 	<p><b>Cost</b>: 1 Ud (1e36) Emerald Coins</p>
-	<p><b>Requirement</b>: 1e23 Elf Faction Coins found.</p>
+	<p><b>Requirement</b>: 1e20 Elven Faction Coins found.</p>
 	<p><b>Effect</b>: Grants access to Unique Building.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/ArborealCityUniqueBuildingUpgrade.png" alt="Arboreal City" align="middle"> Unique Building Upgrade</b></p>
@@ -130,7 +130,7 @@
 	<p><b><img src="/realm/Factions/picks/ArborealCityUniqueBuilding.png" alt="Arboreal City" align="middle"></b></p>
 	<p>Upgrade Citadels to Arboreal Cities, boosting their production based on Faction Coin find chance and unlocking more unique perks for the building.</p>
 	<p><b>Effect</b>: Increase production based on Faction Coin find chance.</p>
-	<p><b>Formula</b>: floor(20 * (ln(1 + x)) ^ 2)%, where x is FC chance</p>
+	<p><b>Formula</b>: (20 * ln(1 + x) ^ 2)%, where x is Faction Coin find chance.</p>
 	<p><b>Effect</b>: Grants access to Faction Union.</p>
 	<hr>
 	<p><b>Tier 4 Upgrades</b></p>
@@ -138,7 +138,7 @@
 	<p><b>Requirement</b>: Arboreal City Unique Building</p>
 	<p><b>Cost</b>: 1 Qi (1e18) Elven Coins</p>
 	<p><b>Effect</b>: Grants access to Union Upgrades.</p>
-	<p><b>Effect (R111+)</b>: Increase click production based on Faction Coins found this Reincarnation. Also autoclicks 10 times per second (same offline).</p>
+	<p><b>Effect (R105+)</b>: Increase clicking reward based on Faction Coins found this Reincarnation and autoclick 10 times per second.</p>
 	<p><b>Formula</b>: (2 * ln(1 + x) ^ 2)%, where x is your Faction Coins found this Reincarnation.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/ElvenUpgrade10.png" alt="Wooden Dices" align="middle"> Wooden Dice</b></p>
@@ -146,10 +146,9 @@
 	<p><b>Requirement</b>: Elven Union</p>
 	<p><b>Effect</b>: Increase Elven Luck chance to activate and its effects based on the highest amount of Arboreal Cities you made this Reincarnation.</p>
 	<p><b>Elven Luck Formula</b>: +(x ^ 0.4)%, where x is highest amount of Arboreal Cities this Reincarnation.</p>
-	<p><b>Production Formula</b>: (40 * x ^ 0.8)%, where x is highest amount of Arboreal Cities this Reincarnation.</p>
+	<p><b>Production Formula</b>: (80 * x ^ 0.8)%, where x is highest amount of Arboreal Cities this Reincarnation.</p>
 	<p><b>Faction Coin Formula</b>: +(7.5 * x ^ 0.75)%, where x is highest amount of Arboreal Cities this Reincarnation.</p>
-	<p><b>Effect</b>: When Elven Luck triggers, 100,000 automatic Tax Collections are cast.</p>
-	<p><b>Effect</b>: Also removes two Ascension penalties from Elven Luck.</p>
+	<p><b>Effect</b>: When Elven Luck triggers, 5 automatic Tax Collections are cast.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/ElvenUpgrade11.png" alt="Camouflage" align="middle"> Camouflage</b></p>
 	<p><b>Cost</b>: 100 Qivg (1e80) Emerald Coins</p>
@@ -161,14 +160,14 @@
 	<p><b>Cost</b>: 100 Tg (1e95) Emerald Coins</p>
 	<p><b>Requirement</b>: Elven Union</p>
 	<p><b>Effect</b>: Increase assistants additively and multiplicatively based on the amount of Faction Coins found in this Era.</p>
-	<p><b>Formula</b>: +(50 * ln(1 + x) ^ 1.5), where x is Faction Coins found this Era (additively).</p>
-	<p><b>Formula</b>: (1.5 * log10(1 + x) ^ 1.5)%, where x is Faction Coins found this Era (multiplicatively).</p>
+	<p><b>Additive Formula</b>: +(150 * ln(1 + x) ^ 1.5), where x is Faction Coins found this Era.</p>
+	<p><b>Multiplicative Formula</b>: (1.5 * ln(1 + x) ^ 1.5)%.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/AdvancedElvenHeritage.png" align="middle"> Advanced Elven Heritage</b></p>
 	<p><b>Cost</b>: 1 Sp (1e24) Elven Coins</p>
-	<p><b>Requirements</b>: Elven Master trophy and 6 hours activity time (This Era) of Moon Blessing.</p>
-	<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on the amount of clicks made in this Reincarnation.</p>
-	<p><b>Formula</b>: (0.25 * ln(1 + x) ^ 2)%, where x is amount of clicks this Reincarnation.</p>
+	<p><b>Requirements</b>: Elven Master trophy and 1 hour activity time (This Era) of Moon Blessing.</p>
+	<p><b>Effect</b>: Multiplicatively increase autoclick power based on Faction Coins found this Era.</p>
+	<p><b>Formula</b>: (0.2 * ln(1 + x) ^ 0.8)%, where x is Faction Coins found this Era.</p>
 	<p><b>Note</b>: When using their lineage, Advanced Heritage powers are multiplied by the level of the lineage.</p>
-	<p><b>Formula</b>: *(1 + 0.3 * level)</p>
+	<p><b>Base lineage multiplier</b>: *(1 + 0.2 * matching Lineage level).</p>
 <?php include "../scripts/footer.html"; ?>
