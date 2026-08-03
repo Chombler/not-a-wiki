@@ -33,10 +33,10 @@
 	<p><b>Effect</b>: Increase the production of Royal Castles / Evil Fortresses / Iron Strongholds (based on your Alignment) based on the amount of assistants you own.</p>
 	<p><b>Formula</b>: (6 * ln(1 + x) ^ 3)%, where x is the amount of assistants you own.</p>
 	<br/>
-	<p><b><img src="/realm/Factions/picks/DemonUpgrade2.png" align="middle"> Devil Tyrant</b></p>
+	<p><b><img src="/realm/Factions/picks/DemonUpgrade2.png" align="middle"> Infernal Magic</b></p>
 	<p><b>Cost</b>: 500 M (5e8)</p>
-	<p><b>Effect</b>: The three highest building tiers count more based on time spent as Evil in this Reincarnation.</p>
-	<p><b>Formula</b>: (1.2 * x ^ 0.4)%, where x is time spent as Evil this Reincarnation.</p>
+	<p><b>Effect</b>: Increase Mana Regeneration based on the number of building tier 10 owned.</p>
+	<p><b>Formula</b>: +(3 + 1.5 * x ^ 0.5), where x is the number of building tier 10 owned.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DemonUpgrade3.png" align="middle"> Evil Conquerors</b></p>
 	<p><b>Cost</b>: 5 B (5e9)</p>
@@ -50,8 +50,7 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DemonUpgrade4.png" align="middle"> Lava Pits</b></p>
 	<p><b>Cost</b>: 500 B (5e11)</p>
-	<p><b>Effect</b>: Increase the base production of Evil Fortresses by +200,000 and Hell Portals by +2,000,000.</p>
-	<p><b>Effect</b>: Your playtime in this Era counts more by 6 additional hours.</p>
+	<p><b>Effect</b>: Increase the base production of building tier 9 by +900,000 and building tier 10 by +8,800,000.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DemonUpgrade5.png" align="middle"> Demon Overseers</b></p>
 	<p><b>Cost</b>: 5 T (5e12)</p>

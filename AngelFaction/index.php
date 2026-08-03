@@ -52,13 +52,14 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/AngelUpgrade4.png" align="middle"> Guardian Angels</b></p>
 	<p><b>Cost</b>: 500 B (5e11)</p>
-	<p><b>Effect</b>: Spell casts count 100% more.</p>
+	<p><b>Effect</b>: Increase the base production of building tier 8 by +98,000 and increase its production based on its quantity.</p>
+	<p><b>Formula</b>: (40 + 40 * x ^ 0.4)%, where x is the number of building tier 8 owned.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/AngelUpgrade5.png" align="middle"> Angelic Wisdom</b></p>
 	<p><b>Cost</b>: 5 T (5e12)</p>
-	<p><b>Effect</b>: Decrease the cost of all spells by 50%.</p>
-	<p><b>Effect</b>: Also increases offline spell cast amount by multiplicatively based on your offline Mana Regeneration.</p>
-	<p><b>Formula</b>: (10 * log10(1 + x))%, where x is your offline Mana Regeneration.</p>
+	<p><b>Effect</b>: Increase spell durations and Mana Regeneration multiplicatively by 50%.</p>
+	<p><b>Effect</b>: Also multiplicatively increase offline spell casts based on offline Mana Regeneration.</p>
+	<p><b>Formula</b>: (5 * ln(1 + 30 * x))%, where x is offline Mana Regeneration per second.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/AngelUpgrade6.png" align="middle"> Archangel Feathers</b></p>
 	<p><b>Cost</b>: 50 T (5e13)</p>
