@@ -29,15 +29,15 @@
 	<br/>
 	<p><b>Faction Spell</b></p>
 	<p><b><img src="/realm/Factions/picks/LightningStrike.png" align="middle"> Lightning Strike</b></p>
-	<p><b>Cost</b>: 600 Mana - <b>Duration</b>: 10 seconds </p>
-	<p><b>Effect</b>: The production of a random building is multiplied by 500% for each Iron Stronghold. Also multiplicatively increase Faction Coins find chance based on your current amount of gems.</p>
-	<p><b>Formula</b>: (10 + log10(1 + x) ^ 2)%, where x is your current amount of gems.</p>
+	<p><b>Cost</b>: 250 Mana - <b>Duration</b>: 150 seconds </p>
+	<p><b>Effect</b>: Increase the production of a random building by 900% for each Iron Stronghold owned. Iron Strongholds count 75% more per spell tier for this bonus. Also increase Faction Coin find chance based on your current amount of gems.</p>
+	<p><b>Formula</b>: (50 + 2 * ln(1 + x) ^ 1.5)%, where x is your current amount of gems.</p>
 	<br/>
 	<p><b>Spell Trophy & Upgrade</b></p>
 	<p><b><img src="/realm/Factions/picks/LightningStormSpellUpgrade.png" align="middle"> Lightning Storm</b></p>
-	<p><b>Requirement</b>: Cast Lightning Strike 100 times in a single game.</p>
-	<p><b>Cost</b>: 10 Dd (1e40), A1+ Free</p>
-	<p><b>Effect</b>: Increase Lightning Strike bonus to 750% for each Iron Stronghold.</p>
+	<p><b>Requirement</b>: Cast Lightning Strike 100 times in a single Era.</p>
+	<p><b>Cost</b>: 100 Dc (1e35), A1+ Free</p>
+	<p><b>Effect</b>: Increase the Lightning Strike multiplier by 50%.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/ProofofNeutralityFactionUpgrade.png" alt="Proof of Neutrality" align="middle"> Proof Of Neutrality</b></p>
 	<p><b>Type</b>: Alignment Upgrade</p>
@@ -56,17 +56,18 @@
 	<p><b><img src="/realm/Factions/picks/TitanUpgrade1.png" alt="Colossal Forge" align="middle"> Colossal Forge</b></p>
 	<p><b>Cost</b>: 500 Qi (5e20)</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on the amount of buildings you own.</p>
-	<p><b>Formula</b>: (6 * x ^ 0.6)%, where x is the amount of buildings built.</p>
+	<p><b>Formula</b>: (6.25 * x ^ 0.625)%, where x is the amount of buildings built.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/TitanUpgrade2.png" alt="Charged Clicks" align="middle"> Charged Clicks</b></p>
 	<p><b>Cost</b>: 5 Sx (5e21)</p>
-	<p><b>Effect</b>: Multiplicatively increase Mana Regeneration based on clicks made in this Era.</p>
-	<p><b>Formula</b>: (25 + 2.5 * log10(1 + x) ^ 2.5 + x ^ 0.25)%, where x is clicks made this Era.</p>
+	<p><b>Effect</b>: Increase Mana Regeneration additively and multiplicatively based on clicks made in this Era.</p>
+	<p><b>Additive Formula</b>: +(1 + 0.5 * (ln(1 + x) ^ 1.35 + x ^ 0.15)), where x is clicks made this Era.</p>
+	<p><b>Multiplicative Formula</b>: (0.5 * ln(1 + x) ^ 2.5 + x ^ 0.25)%, where x is clicks made this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/TitanUpgrade3.png" alt="Titan Obelisk" align="middle"> Titan Obelisk</b></p>
 	<p><b>Cost</b>: 50 Sx (5e22)</p>
 	<p><b>Effect</b>: Increase Faction Coin find chance additively based on time spent as Neutral in this Reincarnation.</p>
-	<p><b>Formula</b>: +(3 * x ^ 0.7)%, where x is time spent as Neutral in this Reincarnation.</p>
+	<p><b>Formula</b>: +(6 + 6 * x ^ 0.6)%, where x is time spent as Neutral in this Reincarnation.</p>
 	<hr>
 	<p><b>Tier 2 Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/TitanFriendshipPact.png" alt="Titan Friendship Pact" align="middle"> Titans Friendship Pact</b></p>
@@ -75,12 +76,12 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/TitanUpgrade4.png" alt="Titan Drill" align="middle"> Titan Drill</b></p>
 	<p><b>Cost</b>: 5 Sp (5e24)</p>
-	<p><b>Effect</b>: Increase the base production of Warrior Barracks / Slave Pens / Deep Mines by +9635, and Cathedrals / Dark Temples / Monasteries by +98000 (based on your Alignment). Also increase production of those building tiers by 1000%.</p>
+	<p><b>Effect</b>: Increase the base production of Warrior Barracks / Slave Pens / Deep Mines by +19635, and Cathedrals / Dark Temples / Monasteries by +98000 (based on your Alignment). Also increase production of those building tiers by 2500%.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/TitanUpgrade5.png" alt="Charged Structures" align="middle"> Charged Structures</b></p>
 	<p><b>Cost</b>: 50 Sp (5e25)</p>
-	<p><b>Effect</b>: Increase the production of all buildings based on the amount of active spells.</p>
-	<p><b>Formula</b>: (15 * x)%, where x is the amount of active spells.</p>
+	<p><b>Effect</b>: Increase the production of all buildings based on Lightning Strike activity time in this Era.</p>
+	<p><b>Formula</b>: (70 + 70 * x ^ 0.3)%, where x is Lightning Strike activity time in this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/TitanUpgrade6.png" alt="Titan Sized Walls" align="middle"> Titan Sized Walls</b></p>
 	<p><b>Cost</b>: 500 Sp (5e26)</p>
@@ -94,7 +95,8 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/TitanUpgrade7.png" alt="Cyclopean Strength" align="middle"> Cyclopean Strength</b></p>
 	<p><b>Cost</b>: 50 Oc (5e28)</p>
-	<p><b>Effect</b>: Assistants count 200% more, and increase their production by 200%.</p>
+	<p><b>Effect</b>: Assistants count 200% more, and increase their production based on time spent as Titan in this Reincarnation.</p>
+	<p><b>Formula</b>: (30 + 1.3 * x ^ 0.7)%, where x is time spent as Titan in this Reincarnation.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/TitanUpgrade8.png" alt="Heavy Coins" align="middle"> Heavy Coins</b></p>
 	<p><b>Cost</b>: 500 Oc (5e29)</p>
@@ -104,22 +106,22 @@
 	<p><b>Cost</b>: 5 No (5e30)</p>
 	<p><b>Effect</b>: Reduce Hall of Legends building cost multiplier by 0.01; with no other reductions applying, the multiplier will be 1.14 instead of 1.15.</p>
 	<p><b>Effect</b>: Also increase the production of assistants based on the amount of Halls of Legends built.</p>
-	<p><b>Formula</b>: (6 * x ^ 0.6)%, where x is the amount of Hall of Legends built.</p>
+	<p><b>Formula</b>: (3 * x ^ 0.9)%, where x is the amount of Hall of Legends built.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/TitanHeritage.png" alt="Titan Heritage" align="middle"> Titan Heritage</b></p>
 	<p><b>Requirement</b>: Titan Champion Trophy</p>
-	<p><b>Cost</b>: 25,000 Angel Coins, 25,000 Goblin Coins</p>
+	<p><b>Cost</b>: 15,000 Angel Coins, 15,000 Goblin Coins</p>
 	<p><b>Effect</b>: Increase Royal Exchanges production bonus by an additional 15% each.</p>
 	<hr>
 	<p><b>Titan Research Requirement</b></p>
 	<p><b><img src="/realm/Factions/picks/OlympianHallsQuestFactionUpgrade.png" align="middle"> Olympian Hall Quest</b></p>
 	<p><b>Description</b>: Khaire, ruler. More of our people will join your cause if you build enough Hall of Legends. Our architects will take care of expanding them to accommodate the almighty Titans.</p>
-	<p><b>Requirement</b>: R22 + 2,000 Halls of Legends.</p>
+	<p><b>Requirement</b>: R24 + 2,000 Halls of Legends.</p>
 	<p><b>Cost</b>: 10 Dtg (1e100)</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/OlympianHallsFactionUpgrade.png" align="middle"> Olympian Halls</b></p>
 	<p>Upgrade Halls of Legend to Olympian Halls, boosting their production based on Royal Exchanges you purchased and unlocking more unique perks for the building.</p>
-	<p><b>Formula</b>: (0.9 * x ^ 0.9)%, where x is the amount of Royal Exchanges purchased.</p>
+	<p><b>Formula</b>: (6 * x ^ 1.2)%, where x is the amount of Royal Exchanges purchased.</p>
 	<p><b>Cost</b>: 10 Ttg (1e103)</p>
 	<p><b>Effect</b>: Also allows access to the Research Facilities (after completing Secrets of the Ancients).</p>
 	<br/>
@@ -145,7 +147,7 @@
 	<br/>
 	<p><b>Unique Building</b></p>
 	<p><b><img src="/realm/Factions/picks/TitanUniqueBuilding.png" align="middle"></b></p>
-	<p>At R22, the Titan's Hall Of Legends building can be upgraded to a Unique Building: Olympian Halls, which is required for some challenges and research quests.</p>
+	<p>At R24, the Titan's Hall Of Legends building can be upgraded to a Unique Building: Olympian Halls, which is required for some challenges and research quests.</p>
 	<hr>
 	<p><b>Ascension 2 - R100+</b></p>
 	<p><b>Additional Alignment</b>: Order</p>
@@ -173,9 +175,9 @@
 	<p><b>Requirement</b>: Mountain Palace Unique Building</p>
 	<p><b>Cost</b>: 1 Qi (1e18) Angel and Goblin Coins</p>
 	<p><b>Effect</b>: Grants access to Union Upgrades.</p>
-	<p><b>Effect (R111+)</b>: Multiplicatively increase Faction Coin find chance based on time spent in this Era.</p>
+	<p><b>Effect (R105+)</b>: Multiplicatively increase Faction Coin find chance based on time spent in this Era.</p>
 	<p><b>Formula</b>: 50 * (x / 3600) ^ 0.85)%, where x is time spent in this Era.</p>
-	<p><b>Effect (R111+)</b>: Also increase maximum Mana additively based on time spent in this Era.</p>
+	<p><b>Effect (R105+)</b>: Also increase maximum Mana additively based on time spent in this Era.</p>
 	<p><b>Formula</b>: +(20 * x ^ 0.75), where x is time spent in this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/TitanUpgrade10.png" alt="Giant Market" align="middle"> Giant Market</b></p>
@@ -188,19 +190,19 @@
 	<p><b>Requirement</b>: Titan Union</p>
 	<p><b>Cost</b>: 100 Qivg (1e80) Emerald Coins</p>
 	<p><b>Effect</b>: Increase the production of Unique Buildings based on the amount of Royal Exchanges you made.</p>
-	<p><b>Formula</b>: (x ^ 0.6)%, where x is amount of Royal Exchanges bought.</p>
+	<p><b>Formula</b>: (0.6 * x ^ 0.6)%, where x is amount of Royal Exchanges bought.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/TitanUpgrade12.png" alt="Colossus Kingdom" align="middle"> Colossus Kingdom</b></p>
 	<p><b>Requirement</b>: Titan Union</p>
 	<p><b>Cost</b>: 100 Tg (1e95) Emerald Coins</p>
-	<p><b>Effect</b>: Gain assistants based on time spent as Order in this Reincarnation.</p>
-	<p><b>Formula</b>: +(25 * x ^ 0.7), where x time spent as Order in this Reincarnation.</p>
+	<p><b>Effect</b>: Multiplicatively increase assistants based on time spent as Order in this Reincarnation.</p>
+	<p><b>Formula</b>: (0.6 * x ^ 0.6)%, where x is time spent as Order in this Reincarnation.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/AdvancedTitanHeritage.png" align="middle"> Advanced Titan Heritage</b></p>
-	<p><b>Requirement</b>: Titan Master trophy 6 hours activity time (This Era) of Lightning Strike.</p>
+	<p><b>Requirement</b>: Titan Master trophy and 1 hour of Lightning Strike activity time in this Era.</p>
 	<p><b>Cost</b>: 1 Sp (1e24) Angel and Goblin Coins</p>
 	<p><b>Effect</b>: Increase Maximum Mana based on the amount of Royal Exchanges purchased.</p>
 	<p><b>Formula</b>: (0.85 * ln(1 + x) ^ 1.15)%, where x is Royal Exchanges purchased.</p>
-	<p><b>Note</b>: When using their lineage, Advanced Heritage powers are multiplied by the level of the lineage.</p>
-	<p><b>Formula</b>: *(1 + 0.3 * level)</p>
+	<p><b>Note</b>: When using the matching Titan lineage, Advanced Heritage powers are multiplied based on its level.</p>
+	<p><b>Formula</b>: *(1 + 0.2 * level)</p>
 <?php include "../scripts/footer.html"; ?>
