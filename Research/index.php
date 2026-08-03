@@ -5,7 +5,7 @@
 <?php include "../scripts/header.html"; ?>
 	<h6><img src="/realm/Factions/picks/ResearchTopPage.png"></h6>
 	<p>All Researches can be found here: <b><a href="/realm/Researchtree"> Research Tree</a></b> or <b><a href="/realm/ResearchList"> Research List</a></b>.</p>
-	<p>Research was implemented in the Secrets expansion series (Secrets of the Realm, Secrets of the ancients, Secrets of the underworld) bringing "secret" powers to enhance each mythical faction. Overtaking the Mercenaries, it is accessible from R16 for Vanilla, R23 for Neutral, R29 for Prestige Factions, and R75 for Mercenary.</p>
+	<p>Research was implemented in the Secrets expansion series (Secrets of the Realm, Secrets of the Ancients, Secrets of the Underworld), bringing "secret" powers to enhance each mythical faction. It is accessible from R16 for Vanilla factions, R24 for Neutral factions, R32 for Prestige factions, and R75 for Mercenaries.</p>
 	<p>Enter the Research Facilities to improve your grinding potential.</p>
 	<p>There you will be able to advance your research progress, unlock and buy special upgrades which will boost all your abilities hugely.</p>
 	<p>Your research points in each branch are limited by the amount of Reincarnations you have.</p>
@@ -28,8 +28,8 @@
 	<p><b><center>Research Slots/Budget</center></b></p>
 	<p><b>R16-R99 (A0, A1)</b>: You get a limited number of Research slots for each facility, depending on what upgrades you have you can have up to 6 slots for each facility.</p>
 	<p><b>R100-R159 (A2)</b>: You get 1 Research slot for each facility, and A0 and A1 research slot upgrades are removed, however, faction researches are free and take no slots.</p>
-	<p><b>R160-R219 (A3)</b>: The research slots change to a budget based on each research's point value and starts at 0, increasable by R170 power (+3000) and a 2nd Facility Upgrade (+3000) to a total of 6000. The budget can be further increased with Archon Bloodline (+500 and more).</p>
-	<p><b>R220+ (A4)</b>: The budget system from A3 is the same, but each Trade Treaty, Friendship Pact, Alliance and Union will also give +2000 each to the budget, for a total of +8000 currently (14,000 in total).</p>
+	<p><b>R160-R219 (A3)</b>: Research slots change to a budget based on each research's point value. R170 power grants +3000, while each second Facility Upgrade grants a variable permanent amount based on the associated alignment times (see below). The budget can be further increased with Archon Bloodline.</p>
+	<p><b>R220+ (A4)</b>: The A3 budget system remains, and each Trade Treaty, Friendship Pact, Alliance, and Union grants another +2000, for +8000 from faction affiliation upgrades.</p>
 	<p>Upon abdication, your purchased Research Points will persist, but your Research Upgrade Slots/Budget will reset so you can make different research builds each run.</p>
 	<div class="shlisting">
 		<div class="shelementwhole">
@@ -80,82 +80,88 @@
 				<p><b>Note</b>: Needs purchased for each Prestige research run.</p>
 				<br/>
 				<p><img src="/realm/Factions/picks/FlameofBondelnarSlotUpgrade.png" alt="Warfare" align="middle"> <b>Artifact-Flame of Bondelnar</b> (R29+)</p>
-				<p><b>Requirement</b>: R29, Find the Flame of Bondelnar (Have Spider Sanctuaries, 3250+ Excavations)</p>
+				<p><b>Requirement</b>: R29, Find the Flame of Bondelnar (have Spider Sanctuaries, 3000+ Excavations)</p>
 				<p><b>Cost</b>: 10 SxSpg (1e232), 10m Drow Coins</p>
 				<p><b>Effect</b>: Provides 3 additional slots for Drow research: (+2 Warfare slots, +1 to the Evil faction's facility you are playing).</p>
 				<p><b>Note</b>: Needs purchased for each Prestige research run.</p>
 				<br/>
-				<p><img src="/realm/Factions/picks/ForgottenRelic.png" align=middle> <b>Artifact-Forgotten Relic</b> (R175+)</p>
+				<p><img src="/realm/Factions/picks/ForgottenRelic.png" align=middle> <b>Artifact-Forgotten Relic</b> (R180+)</p>
 				<p><b>Clue</b>: Research it!</p>
 				<p><b>Description</b>: Intricate leylines of mana cover the surface of this stone, moving and flailing endlessly to create ever-different patterns.</p>
-				<p><b>Requirement</b>: R175+</p>
+				<p><b>Requirement</b>: R180+</p>
 				<p><b>Effect</b>: Unlocks Facility Research upgrades</p>
 				<p><b>Note</b>: Each Facility needs their respective artifact and this artifact to get their respective upgrade.</p>
-				<p><b>Chance</b>: (x ^ 2 / 100,000,000,000)%, where x is spent Research points.</p>
+				<p><b>Chance</b>: ((2 * x) ^ 2 / 1,000,000,000)%, where x is spent Research Budget.</p>
 				<br/>
 				<p><img src="/realm/Factions/picks/ManaLoom.png" align="middle"> <b>Artifact-Mana Loom</b> (R180+)</p>
 				<p><b>Clue</b>: Attracted by amassed mana reserves.</p>
 				<p><b>Description</b>: Used to weave even the thinnest mana strings.</p>
-				<p><b>Requirement</b>: R180+, Chaos Alignment</p>
-				<p><b>Chance</b>: (log10(1 + x) ^ 3 / 50000)%, where x is mana produced (This Era)</p>
+				<p><b>Requirement</b>: R180+, Chaos Alignment, 5,000+ Excavations</p>
+				<p><b>Chance</b>: (ln(1 + x) ^ 3 / 400,000)%, where x is Mana produced in this Era.</p>
 				<p><b>Effect</b>: Unlocks upgrade with same name.</p>
 				<p><b>Upgrade Requirement</b>: Forgotten Relic, Mana Loom artifact and upgrade.</p>
-				<p><b>Upgrade Effect</b>: Expands the Spellcraft research facility, permanently increasing Spellcraft budget by +3000.</p>
+				<p><b>Upgrade Effect</b>: Expands the Spellcraft research facility, permanently increasing its budget based on Good and Chaos faction time.</p>
+				<p><b>Formula</b>: +(500 + ln(1 + sqrt((x + 1) * (y + 1))) ^ 3), where x and y are the associated alignment times.</p>
 				<p><b>Upgrade Cost</b>: 10 Dtg (1e100), 1 Qid (1e48) Fairy Coins</p>
 				<p><b>Note</b>: Upgrade only needs to be bought once.</p>
 				<br>
 				<p><img src="/realm/Factions/picks/Factory.png" align="middle"> <b>Artifact-Factory</b> (R180+)</p>
 				<p><b>Clue</b>: Dig it manually.</p>
 				<p><b>Description</b>: Mass-production is the way to go.</p>
-				<p><b>Requirement</b>: R180+, Neutral Alignment</p>
-				<p><b>Chance</b>: (log10(1 + x) ^ 3 / 10000)%, where x is clicks (This Era)</p>
+				<p><b>Requirement</b>: R180+, Neutral Alignment, 5,000+ Excavations</p>
+				<p><b>Chance</b>: (ln(1 + x) ^ 3 / 80,000)%, where x is clicks made in this Era.</p>
 				<p><b>Effect</b>: Unlocks upgrade with same name.</p>
 				<p><b>Upgrade Requirement</b>: Forgotten Relic, Factory artifact and upgrade.</p>
-				<p><b>Upgrade Effect</b>: Expands the Craftsmanship research facility, permanently increasing Craftsmanship budget by +3000.</p>
+				<p><b>Upgrade Effect</b>: Expands the Craftsmanship research facility, permanently increasing its budget based on Good and Balance faction time.</p>
+				<p><b>Formula</b>: +(500 + ln(1 + sqrt((x + 1) * (y + 1))) ^ 3), where x and y are the associated alignment times.</p>
 				<p><b>Upgrade Cost</b>: 10 Dtg (1e100), 1 Qid (1e48) Elven Coins</p>
 				<p><b>Note</b>: Upgrade only needs to be bought once.</p>
 				<br>
 				<p><img src="/realm/Factions/picks/Mythos.png" align="middle"> <b>Artifact-Mythos</b> (R180+)</p>
 				<p><b>Clue</b>: Spells get sad when not used for a long time.</p>
 				<p><b>Description</b>: Accurate historical list of every existing or non-existing deity.</p>
-				<p><b>Requirement</b>: R180+, Good Alignment</p>
-				<p><b>Chance</b>: (x / 4,320,000)%, where x is minimum spell activity time. (This Reincarnation)</p>
+				<p><b>Requirement</b>: R180+, Good Alignment, 5,000+ Excavations</p>
+				<p><b>Chance</b>: (x / 2,160,000)%, where x is the activity time in this Reincarnation of your least-used spell (excluding Share Benefits, Catalyst, and Event spells).</p>
 				<p><b>Effect</b>: Unlocks upgrade with same name.</p>
 				<p><b>Upgrade Requirement</b>: Forgotten Relic, Mythos artifact and upgrade.</p>
-				<p><b>Upgrade Effect</b>: Expands the Divine research facility, permanently increasing Divine budget by +3000.</p>
+				<p><b>Upgrade Effect</b>: Expands the Divine research facility, permanently increasing its budget based on Good and Order faction time.</p>
+				<p><b>Formula</b>: +(500 + ln(1 + sqrt((x + 1) * (y + 1))) ^ 3), where x and y are the associated alignment times.</p>
 				<p><b>Upgrade Cost</b>: 10 Dtg (1e100), 1 Qid (1e48) Angel Coins</p>
 				<p><b>Note</b>: Upgrade only needs to be bought once.</p>
 				<br>
 				<p><img src="/realm/Factions/picks/Vault.png" align="middle"> <b>Artifact-Vault</b> (R180+)</p>
 				<p><b>Clue</b>: Show your prowess as a Royal Trader.</p>
 				<p><b>Description</b>: Never a place could be more secure.</p>
-				<p><b>Requirement</b>: R180+, Balance Alignment</p>
+				<p><b>Requirement</b>: R180+, Balance Alignment, 5,000+ Excavations</p>
 				<p><b>Chance</b>: (x / 100,000,000)%, where x is Royal Exchange Bonus.</p>
 				<p><b>Effect</b>: Unlocks upgrade with same name.</p>
 				<p><b>Upgrade Requirement</b>: Forgotten Relic, Vault artifact and upgrade.</p>
-				<p><b>Upgrade Effect</b>: Expands the Economics research facility, permanently increasing Economics budget by +3000.</p>
+				<p><b>Upgrade Effect</b>: Expands the Economics research facility, permanently increasing its budget based on Evil and Balance faction time.</p>
+				<p><b>Formula</b>: +(500 + ln(1 + sqrt((x + 1) * (y + 1))) ^ 3), where x and y are the associated alignment times.</p>
 				<p><b>Upgrade Cost</b>: 10 Dtg (1e100), 1 Qid (1e48) Goblin Coins</p>
 				<p><b>Note</b>: Upgrade only needs to be bought once.</p>
 				<br>
 				<p><img src="/realm/Factions/picks/Athanor.png" align="middle"> <b>Artifact-Athanor</b> (R180+)</p>
 				<p><b>Clue</b>: Archemy.</p>
 				<p><b>Description</b>: The legendary oven that could smelt souls into matter.</p>
-				<p><b>Requirement</b>: R180+, Order Alignment</p>
+				<p><b>Requirement</b>: R180+, Order Alignment, 5,000+ Excavations</p>
 				<p><b>Chance</b>: (x / 1,000,000)%, where x is Alchemy Research Points.</p>
 				<p><b>Effect</b>: Unlocks upgrade with same name.</p>
 				<p><b>Upgrade Requirement</b>: Forgotten Relic, Athanor artifact and upgrade.</p>
-				<p><b>Upgrade Effect</b>: Expands the Alchemy research facility, permanently increasing Alchemy budget by +3000.</p>
+				<p><b>Upgrade Effect</b>: Expands the Alchemy research facility, permanently increasing its budget based on Evil and Order faction time.</p>
+				<p><b>Formula</b>: +(500 + ln(1 + sqrt((x + 1) * (y + 1))) ^ 3), where x and y are the associated alignment times.</p>
 				<p><b>Upgrade Cost</b>: 10 Dtg (1e100), 1 Qid (1e48) Undead Coins</p>
 				<p><b>Note</b>: Upgrade only needs to be bought once.</p>
 				<br>
 				<p><img src="/realm/Factions/picks/Battlefield.png" align="middle"> <b>Artifact-Battlefield</b> (R180+)</p>
 				<p><b>Clue</b>: Would you think an army is enough to excavate this?</p>
 				<p><b>Description</b>: An extremely accurate replica of a battle fought long ago.</p>
-				<p><b>Requirement</b>: R180+, Evil Alignment</p>
-				<p><b>Chance</b>: (log10(1 + x) ^ 3 / 20,000), where x is the number of Assistants. (base and temporary, not invisible)</p>
+				<p><b>Requirement</b>: R180+, Evil Alignment, 5,000+ Excavations</p>
+				<p><b>Chance</b>: (ln(1 + x) ^ 3 / 160,000)%, where x is the number of Assistants.</p>
 				<p><b>Effect</b>: Unlocks upgrade with same name.</p>
 				<p><b>Upgrade Requirement</b>: Forgotten Relic, Battlefield artifact and upgrade.</p>
-				<p><b>Upgrade Effect</b>: Expands the Warfare research facility, permanently increasing Warfare budget by +3000.</p>
+				<p><b>Upgrade Effect</b>: Expands the Warfare research facility, permanently increasing its budget based on Evil and Chaos faction time.</p>
+				<p><b>Formula</b>: +(500 + ln(1 + sqrt((x + 1) * (y + 1))) ^ 3), where x and y are the associated alignment times.</p>
 				<p><b>Upgrade Cost</b>: 10 Dtg (1e100), 1 Qid (1e48) Demon Coins</p>
 				<p><b>Note</b>: Upgrade only needs to be bought once.</p>
 				<br>
