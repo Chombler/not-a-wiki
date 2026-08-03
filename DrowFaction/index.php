@@ -30,8 +30,9 @@
 	<br/>
 	<p><b>Faction spell</b></p>
 	<p><b><img src="/realm/Factions/picks/ComboStrike.png" align="middle"> Combo Strike</b></p>
+	<p><b>Cost</b>: 800 Mana - <b>Duration</b>: 480 seconds</p>
 	<p><b>Effect</b>: Increase the production of all buildings. The more spells cast, the more production is increased.</p>
-	<p><b>Formula</b>: (30 * x ^ 0.9)%, where x is the number of times you have cast Combo Strike.</p>
+	<p><b>Formula</b>: (100 * x ^ 0.9)%, where x is the Combo Strike counter.</p>
 	<p><b>Note</b>: Fixed duration 16 seconds</p>
 	<br/>
 	<p><b>Spell Trophy & Upgrade</b></p>
@@ -39,7 +40,7 @@
 	<p><b>Requirement</b>: Cast Combo Strike 100 times in a single game. The chain is interrupted by casting different spells.</p>
 	<p><b>Cost</b>: 100 Sxd (1e53), A1+ Free</p>
 	<p><b>Effect</b>: Increases Combo Strike bonus.</p>
-	<p><b>Formula</b>: (40 * (x ^ 0.9))%, where x is the number of times you have cast Combo Strike.</p>
+	<p><b>Formula</b>: (140 * x ^ 0.9)%, where x is the Combo Strike counter.</p>
 	<hr>
 	<p><b>Tier 1 Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/DrowTradeTreaty.png" align="middle"> Drow Trade Treaty</b></p>
@@ -49,17 +50,17 @@
 	<p><b><img src="/realm/Factions/picks/DrowUpgrade1.png" align="middle"> Underworld Tyranny</b></p>
 	<p><b>Cost</b>: 5 Qad (5e45)</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on your total time spent being Evil in this Reincarnation.</p>
-	<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent being Evil in this Reincarnation.</p>
+	<p><b>Formula</b>: (1.3 * x ^ 0.7)%, where x is time spent being Evil in this Reincarnation.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DrowUpgrade2.png" align="middle"> Honor Among Killers</b></p>
 	<p><b>Cost</b>: 50 Qad (5e46)</p>
 	<p><b>Effect</b>: Increase Faction Coin find chance based on the amount of assistants you own.(Additive)</p>
-	<p><b>Formula</b>:  +(100 + 0.5 * x ^ 0.5)%, where x is the amount of assistants you own.</p>
+	<p><b>Formula</b>: +(100 + 10 * x ^ 0.5)%, where x is the amount of assistants you own.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DrowUpgrade3.png" align="middle"> Shadow Advance</b></p>
 	<p><b>Cost</b>: 500 Qad (5e47)</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on Maximum Mana.</p>
-	<p><b>Formula</b>: (2 * log10(1 + x) ^ 2))%, where x is your Maximum Mana.</p>
+	<p><b>Formula</b>: (7.5 * ln(1 + x) ^ 2.5)%, where x is your Maximum Mana.</p>
 	<hr>
 	<p><b>Tier 2 Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/DrowFriendshipPact.png" align="middle"> Drow Friendship Pact</b></p>
@@ -69,12 +70,12 @@
 	<p><b><img src="/realm/Factions/picks/DrowUpgrade4.png" align="middle"> Mana Addicts</b></p>
 	<p><b>Cost</b>: 50 Qid (5e49)</p>
 	<p><b>Effect</b>: Mana Regeneration increases over time.</p>
-	<p><b>Formula</b>: +(2.5 + 0.25 * x ^ 0.5), where x is time spent in this Era.</p>
+	<p><b>Formula</b>: +(3 + 0.3 * x ^ 0.7), where x is time spent in this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DrowUpgrade5.png" align="middle"> Blood Sacrifices</b></p>
 	<p><b>Cost</b>: 500 Qid (5e50)</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on the highest amount of Dark Temples you built in this Reincarnation.</p>
-	<p><b>Formula</b>: (3 * x)%, where x is the highest amount of Dark Temples you built in this Reincarnation.</p>
+	<p><b>Formula</b>: (1.5 * x ^ 0.95)%, where x is the highest amount of Dark Temples you built in this Reincarnation.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DrowUpgrade6.png" align="middle"> Blackmail</b></p>
 	<p><b>Cost</b>: 5 Sxd (5e51)</p>
@@ -94,12 +95,12 @@
 	<p><b><img src="/realm/Factions/picks/DrowUpgrade8.png" align="middle"> Professional Assassins</b></p>
 	<p><b>Cost</b>: 5 Spd (5e54)</p>
 	<p><b>Effect</b>: Multiplicatively increase production bonus from Gems based on the amount of Royal Exchanges you made.</p>
-	<p><b>Formula</b>: (0.6 * x ^ 0.6)%, where x is Royal Exchanges made.</p>
+	<p><b>Formula</b>: (5 * x ^ 0.5)%, where x is Royal Exchanges made.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DrowUpgrade9.png" align="middle"> Blade Dance</b></p>
 	<p><b>Cost</b>: 50 Spd (5e55)</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on Combo Strike counter in this Era.</p>
-	<p><b>Formula</b>: (100 + 80 * x ^ 0.4)%, where x is your Combo Strike counter.</p>
+	<p><b>Formula</b>: (60 + 60 * x ^ 0.6)%, where x is your Combo Strike counter.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/DrowHeritage.png" alt="Drow Heritage" align="middle"> Drow Heritage</b></p>
 	<p><b>Requirements</b>: Drow Champion Trophy</p>
@@ -110,7 +111,7 @@
 	<p><b>Drow Research Requirements</b></p>
 	<p><b><img src="/realm/Factions/picks/SpiderSanctuaryQuestFactionUpgrade.png" align="middle"> Spider Sanctuary Quest</b></p>
 	<p><b>Description</b>: Kivvil. Our Valsharess requires more places to worship the almighty Spider Queen. Build enough Dark Temples, and our priestesses will consecrate them.</p>
-	<p><b>Requirement</b>: R28 + 2,000 Dark Temples</p>
+	<p><b>Requirement</b>: R32 + 3,000 Dark Temples</p>
 	<p><b>Cost</b>: 10 Sxg (1e184)</p>
 	<p><b>Effect</b>: Unlocks Spider Sanctuary</p>
 	<br/>
@@ -119,7 +120,7 @@
 	<p><b>Requirements</b>: Spider Sanctuary Quest</p>
 	<p><b>Cost</b>: 10 USxg (1e187)</p>
 	<p><b>Effect</b>: Unlocks Drow Unique Buildings.</p>
-	<p><b>Formula</b>: (32 * x ^ 0.8)%, where x is your Time Spent Offline (Total) stat.</p>
+	<p><b>Formula</b>: (45 * x ^ 0.9)%, where x is time spent offline in this Reincarnation.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/EarthCoreArtifactFactionUpgrade.png" align="middle"> Earth Core Artifact</b></p>
 	<p><b>Description</b>: This piece of molten rock is continuously shifting its shape, responding to mysterious energy sources.</p>
@@ -144,7 +145,7 @@
 	<p><b>Unique Building</b></p>
 	<p><b><img src="/realm/Factions/picks/DrowUniqueBuilding.png" alt="Unique building Drow" align="middle"></b></p>
 	<p>Upgraded from Dark Temples</p>
-	<p>At R28, Drow's Dark temples building can be upgraded to a Unique Building: Spider Sanctuary, which is required for some challenges and research quests.</p>
+	<p>At R32, Drow's Dark Temples building can be upgraded to a Unique Building: Spider Sanctuary, which is required for some challenges and research quests.</p>
 	<hr>
 	<p><b>Ascension 2 - R116+</b></p>
 	<br/>
@@ -185,7 +186,7 @@
 	<p><b><img src="/realm/Factions/picks/DrowUpgrade10.png" align="middle"> Spider Clerics</b></p>
 	<p><b>Cost</b>: 10 Dtg (1e100)</p>
 	<p><b>Effect</b>: Increase Royal Exchange bonus based on the highest amount of Brothels you built in this Reincarnation (Additive).</p>
-	<p><b>Formula</b>: +(1.75 * x ^ 0.75)%, where x is the highest amount of Brothels you built in this Reincarnation.</p>
+	<p><b>Formula</b>: +(4 * x ^ 0.8)%, where x is the highest amount of Brothels you built in this Reincarnation.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DrowUpgrade11.png" align="middle"> Ancillae Obscurae</b></p>
 	<p><b>Cost</b>: 100 Qitg (1e110)</p>
@@ -195,13 +196,13 @@
 	<p><b><img src="/realm/Factions/picks/DrowUpgrade12.png" align="middle"> Crystal Servants</b></p>
 	<p><b>Cost</b>: 1 Notg (1e120)</p>
 	<p><b>Effect</b>: Multiplicatively gain assistants based on current gem amount.</p>
-	<p><b>Formula</b>: (1.75 * log10(1 + x) ^ 1.75)%, where x is your current amount of gems.</p>
+	<p><b>Formula</b>: (2 * ln(1 + x) ^ 1.5)%, where x is your current amount of gems.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/AdvancedDrowHeritage.png" align="middle"> Advanced Drow Heritage</b></p>
-	<p><b>Requirement</b>: Drow Master trophy and 6 hours activity time (This Era) of Combo Strike.</p>
+	<p><b>Requirement</b>: Drow Master trophy and 1 hour of Combo Strike activity time in this Era.</p>
 	<p><b>Cost</b>: 1 Sp (1e24) Drow Coins</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on offline bonus and time spent in this Era.</p>
-	<p><b>Formula</b>: (0.0008 * log10(1 + x) * y ^ 0.8)%, where x offline bonus and y is time spent this Era.</p>
+	<p><b>Formula</b>: (0.2 * ln(1 + x) * y ^ 0.4)%, where x is offline bonus and y is time spent in this Era.</p>
 	<p><b>Note</b>: When using their lineage, Advanced Heritage powers are multiplied by the level of the lineage.</p>
-	<p><b>Formula</b>: *(1 + 0.3 * level)</p>
+	<p><b>Formula</b>: *(1 + 0.2 * level)</p>
 <?php include "../scripts/footer.html"; ?>
