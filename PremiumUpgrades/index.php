@@ -7,15 +7,15 @@
     <p>Premium Upgrades are available to purchase for Kreds, Kongregate's premium currency, that can be purchased for real money in the "Shop" tab. Some of these give permanent bonuses that persist as long as you are logged into your Kongregate account, while others are one-time boosts.</p>
     <p>Premium Upgrades can be purchased on steam for real money in the "Shop".</p>
     <h5>Permanent Upgrades</h5>
-    <p>These upgrades persist through Abdications, Reincarnations, and even hard resets They are linked to your Kongregate account and you must be logged in for them to work.</p>
+    <p>These upgrades persist through Abdications, Reincarnations, and even hard resets. They are linked to the platform account used to purchase them and that account must be active for them to work.</p>
     <p>The Gift bonuses can be turned off in the options (which can be necessary to unlock some Secret Trophies).</p>
     <p><b>Note</b>: All bonuses are multiplicative with each other.</p>
     <p><b>Note</b>: All gifts are multiplicative.</p>
-    <p><b>Note</b>: All 3 gifts = 8.41x production bonus.</p>
+    <p><b>Note</b>: All 3 gifts = x3.75 production bonus.</p>
     <p><b>Note</b>: All 3 gifts = 10% mana regeneration.</p>
     <p><b>Note</b>: All 3 gifts = x1.26 Faction Coin chance.</p>
     <p><b>Note</b>: All 3 gifts =  x42.875 offline bonus.</p>
-    <p><b>Note</b>: All 3 gifts =  +0.5 additive mana regeneration.</p>
+    <p><b>Note</b>: All 3 gifts = +2 additive mana regeneration.</p>
     <p><b>Note</b>: All 3 gifts =  +2 clicks per second.</p>
     <p><b>Note</b>: Each gift gives 250% offline production.</p>
     <hr>
@@ -28,7 +28,7 @@
     <p><b>Effects</b>: Increase clicking reward by 15%.</p>
     <p><b>Effects</b>: Increase Faction Coin chance additively and multiplicatively by 5%.</p>
     <p><b>Effects</b>: Increase offline gains by 250%.</p>
-    <p><b>Effects</b>: Provides 0.50 mana per second.</p>
+    <p><b>Effects</b>: Provides +2 mana per second.</p>
     <p><b>Effects</b>: Grants +25,000 gold and +20 faction coins of each unlocked faction after every abdication or hard reset. (in other words, you can immediately join the Vanilla Faction of your choice after abdicating.)</p>
     <p><b>Effects</b>: Buying this upgrade unlocks a better upgrade.</p>
     <hr>
