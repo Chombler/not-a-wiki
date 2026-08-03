@@ -17,463 +17,40 @@
 	<p>Hovering over it (<u>in game</u>) located under the <u>Upgrade</u> tab will reveal all the details about your reincarnation perks.</p>
 	<p><b>Requirements</b></p>
 	<p>The first Reincarnation requires 1 Oc (1e27) Gems. The 1,000x-per-level progression applies only in Ascension 0; later Ascensions use their own rebased progression.</p>
+	<p><b>Gem requirement</b>: In Ascension 0, Reincarnating from R to R + 1 requires 1e27 * 1,000 ^ R Gems. In later Ascensions it requires 1e27 * 100 ^ (R - S), where S is 40, 100, 160, or 220 for Ascensions 1 through 4 respectively.</p>
+	<p><b>Coins represented by Gems</b>: In every Ascension, n Gems represent n * (n + 1) * 5e11 Coins.</p>
 	<p>Along the way, try to get all the Trophies and Artifacts you can get at each progress level.</p>
 	<br/>
-	<div id="ReiCosCal">
-		<table style="width:98%">
-			<tr>
-				<th align="right" style="line-height: 1.6;">
-					Complete List of benefits for Reincarnation: <input id="ReiCosRei" style="max-width: 15%; float:right;" type="number" min="0" max="279" value="0"><br/>
-					<span id="R10"> Time this Reincarnation (hours): <input id="R10TimeTot" style="max-width: 15%; float:right;" type="number" min="0" max="876000" value="0"><br/></span>
-					<span id="R20"> Buildings of a certain tier: <input id="R20SpecBui" style="max-width: 15%; float:right;" type="number" min="0" max="9999999" value="0"><br/></span>
-					<span id="R60"> (Active) Druid Lineage Level: <input id="R60DDLin" style="max-width: 15%; float:right;" type="number" min="0" max="150" value="0"><br/></span>
-					<span id="R63"> Prismatic Breath <input id="R63PB" style="width: unset" type="checkbox"></span>
-					<span id="R139"> Undead Perk 5 <input id="R139UDP5" style="width: unset" type="checkbox"></span>
-					<span id="R153"> Omniscience <input id="R153Omni" style="width: unset" type="checkbox"></span>
-					<span id="R225"> D11375 <input id="R225D11375" style="width: unset" type="checkbox"><br/></span>
-					<span id="R232"> S12250 - Undead time this Reincarnation (hours): <input id="R232S12250" style="max-width: 15%; float:right;" type="number" min="0" max="876000" value="0"></span>
-				</th>
-			</tr>
-			<tr>
-				<td id="Ben">
-					<p id="R1AllBuiPro"></p>
-					<p id="R1OffPro"></p>
-					<p id="R1FCChaMul"></p>
-					<p id="R1MpS"></p>
-					<p id="R2GemPro"></p>
-					<p id="R5Ass"></p>
-					<p id="R10AllBuiPro"></p>
-					<p id="R12MaxMan"></p>
-					<p id="R20ProEacBui"></p>
-					<p id="R25RE"></p>
-					<p id="R41UniBuiPro"></p>
-					<p id="R45MaxMan"></p>
-					<p id="R50FCChaAdd"></p>
-					<p id="R58FCChaMul"></p>
-					<p id="R85AssPerR"></p>
-					<p id="R90AddResSlo"></p>
-					<p id="R100ManRegPerR"></p>
-					<p id="R108ProdUBTimeDiff"></p>
-					<p id="R115FCChaMul"></p>
-					<p id="R120NEMPro"></p>
-					<p id="R150CTABoost"></p>
-					<p id="R170ResBudget"></p>
-					<p id="R190NEMPro"></p>
-					<p id="R210NEMPro"></p>
-					<p id="R230NEMPro"></p>
-					<p id="RNex"></p>
-					<p id="RUnl"></p>
-				</td>
-			</tr>
-		</table>
-		<script>
-			function Runl(unl) {
-				$('#RUnl').html('The next Reincarnation unlocks <b>' + unl + '</b>.');
-				$('#RUnl').css('display', 'block');
-			}
-			function GetANerfValue(bonus, reqR, asc) {
-				// R40 and R100 have A-nerfs, so if reqR is >= 40, don't A-nerf twice, but only once
-				if (reqR >= 40)  {asc -= 1;}
-				if (reqR >= 100) {asc -= 1;}
-				if (reqR >= 160) {asc -= 1;}
-				if (reqR >= 220) {asc -= 1;}
-				return (Math.pow(1 + bonus / 100, Math.pow(0.1, asc)) - 1) * 100;
-			}
-			// Array of "tuples" containing:
-			//  * Req R
-			//  * element to put data in
-			//  * whether it's A-nerfed
-			//  * decimals of precision (for bonus text)
-			//  * function to calculate bonus (rNum -> bonusValue)
-			//  * function to create bonus text (rNum -> bonus (already toFixed) -> string)
-			var RBenefits = [
-				[ 1, 999, '#R1AllBuiPro', true, 0
-				, function(rei) {return 50 * rei;}
-				, function(rei, bonus) {return 'Production of all buildings is increased by ' + bonus + '%.';}
-				],
-				[ 1, 999, '#R1OffPro', true, 0
-				, function(rei) {return 500 * rei;}
-				, function(rei, bonus) {return 'Offline production is increased by ' + bonus + '%.';}
-				],
-				[ 1, 999, '#R1FCChaMul', false, 0
-				, function(rei) {return 10 * rei;}
-				, function(rei, bonus) {return 'Faction coin chance is increased by +' + bonus + '%.';}
-				],
-				[ 1, 999, '#R1MpS', false, 0
-				, function(rei) {return 2 * rei;}
-				, function(rei, bonus) {return 'Mana regeneration is increased by +' + bonus + '.';}
-				],
-				[ 2, 999, '#R2GemPro', false, 1
-				, function(rei) {return 0.2 * rei;}
-				, function(rei, bonus) {return 'Gem production is increased by +' + bonus + '%.';}
-				],
-				[ 5, 999, '#R5Ass', true, 0
-				, function(rei) {return 2 * rei;}
-				, function(rei, bonus) {return 'Add ' + Math.floor(0.5 * rei) + ' assistants and their production is increased by ' + bonus + '%.';}
-				],
-				[ 10, 999, '#R10AllBuiPro', true, 0
-				, function(rei) {return Math.pow(rei, 1.75) * Math.pow(parseInt($('#R10TimeTot').val()), 0.65);}
-				, function(rei, bonus) {return 'Production of all buildings is increased by ' + bonus + '%.';}
-				],
-				[ 12, 999, '#R12MaxMan', false, 0
-				, function(rei) {return 35 * rei;}
-				, function(rei, bonus) {return 'Maximum mana is increased by +' + bonus + '.';}
-				],
-				[ 20, 999, '#R20ProEacBui', true, 0
-				, function(rei) {return 0.01 * rei * parseInt($('#R20SpecBui').val());}
-				, function(rei, bonus) {return 'Given buildings\' production is increased by ' + bonus + '%.';}
-				],
-				[ 25, 999, '#R25RE', false, 1
-				, function(rei) {return 0.5 * rei;}
-				, function(rei, bonus) {return 'Royal Exchange bonus is increased by +' + bonus + '%.';}
-				],
-				[ 41, 999, '#R41UniBuiPro', true, 0
-				, function(rei) {return 1200 * Math.pow(rei, 1.15);}
-				, function(rei, bonus) {return 'Unique Buildings\' production is increased by ' + bonus + '%.';}
-				],
-				[ 45, 999, '#R45MaxMan', false, 0
-				, function(rei) {return 70 * Math.pow(rei, 1.25);}
-				, function(rei, bonus) {return 'Maximum mana is increased by +' + bonus + '. Total increase is +' + ((70 * Math.pow(rei, 1.25)) + 35 * rei).toFixed(0) + '.';}
-				],
-				[ 50, 999, '#R50FCChaAdd', false, 0
-				, function(rei) {return 2.5 * Math.pow(rei, 1.1);}
-				, function(rei, bonus) {return 'Faction coin chance is multiplicatively increased by ' + bonus + '%.';}
-				],
-				[ 58, 999, '#R58FCChaMul', false, 0
-				, function(rei) {return Math.floor(1.2 * Math.pow(rei, 1.05));}
-				, function(rei, bonus) {return 'Faction coin chance is increased ' + bonus + ' times if they match your Faction or Bloodline.';}
-				],
-				[ 85, 999, '#R85AssPerR', false, 0
-				, function(rei) {return rei;}
-				, function(rei, bonus) {return 'Add ' + Math.floor(4 * bonus) + ' additional Assistants. Total bonus is '+ Math.floor(5 * bonus) + ' additional assistants.';}
-				],
-				[ 90, 100, '#R90AddResSlo', false, 0
-				, function(rei) {return 0;}
-				, function(rei, bonus) {return 'You gain 1 additional Research slot for each branch.';}
-				],
-				[ 100, 999, '#R100ManRegPerR', false, 0
-				, function(rei) {return rei;}
-				, function(rei, bonus) {return 'Multiplicatively increase Mana Regeneration by ' + bonus + '%.';}
-				],
-				[ 108, 999, '#R108ProdUBTimeDiff', false, 0
-				, function(rei) {return rei;}
-				, function(rei, bonus) {return 'Increase the production of Unique Buildings based on the difference of time spent as their respective faction against your most most used faction this Reincarnation.';}
-				],
-				[ 115, 999, '#R115FCChaMul', false, 0
-				, function(rei) {return Math.floor(1.2 * Math.pow(rei, 1.05));}
-				, function(rei, bonus) {return 'Faction coin chance is increased ' + bonus + ' times if they match your Faction, Bloodline or Artifact Set.';}
-				],
-				[ 120, 999, '#R120NEMPro', true, 0
-				, function(rei) {return 150 * rei;}
-				, function(rei, bonus) {return 'Increase the production of all buildings based on Reincarnations made by ' + bonus + '%.';}
-				],
-				[ 150, 999, '#R150CTABoost', false, 0
-				, function(rei) {return rei;}
-				, function(rei, bonus) {return 'Unique Buildings count ' + bonus + ' times more for Call to Arms purposes.';}
-				],
-				[ 170, 999, '#R170ResBudget', false, 0
-				, function(rei) {return rei;}
-				, function(rei, bonus) {return 'Increases research budget by 3,000 in each branch.';}
-				],
-				[ 190, 999, '#R190NEMPro', true, 1
-				, function(rei) {return 150 * rei;}
-				, function(rei, bonus) {return 'Increase the production of all buildings based on Reincarnations made by ' + bonus + '%.';}
-				],				
-				[ 210, 999, '#R210NEMPro', true, 1
-				, function(rei) {return 300 * rei;}
-				, function(rei, bonus) {return 'Increase the production of all buildings based on Reincarnations made by ' + bonus + '%.';}
-				],
-				[ 230, 999, '#R230NEMPro', true, 1
-				, function(rei) {return 10 * rei;}
-				, function(rei, bonus) {return 'While playing as your least used alignment in this Reincarnation, increase the production of all buildings based on Reincarnations made by ' + bonus + '%.';}
-				],				
-			];
-			function CalRBen() {
-				var rei = parseInt($('#ReiCosRei').val());
-				//get Ascension# for Prodnerf
-				if (rei > 39){
-					var asc = 1;
-				}
-				if (rei > 99){
-					var asc = 2;
-				}
-				if (rei > 159){
-					var asc = 3;
-				}
-				if (rei > 219){
-					var asc = 4;
-				}
-				// Boosted R num - Prismatic Breath (and stuff?)
-				var reiEff = rei;
-				if (parseInt($('#R60DDLin').val()) > 0) {
-					reiEff += parseInt($('#R60DDLin').val()) * 2;
-				}
-				if ($('#R63PB').is(':checked')) {
-					reiEff *= 1.5;
-				}
-				if ($('#R139UDP5').is(':checked')) {
-					reiEff *= 2;
-				}
-				if ($('#R153Omni').is(':checked')) {
-					reiEff *= 1.15;
-				}
-				if ($('#R225D11375').is(':checked')) {
-					reiEff *= 2;
-				}
-				if (parseInt($('#R232S12250').val()) > 0 ) {
-					reiEff *= 1 + 0.005 * Math.pow(parseInt($('#R232S12250').val()) * 3600,0.5);
-				}
-				// Reincarnation Perks
-				var arrLen = RBenefits.length;
-				for (var i = 0; i < arrLen; ++i) {
-					var benefit = RBenefits[i];
-
-					var reqR         = benefit[0];
-					var maxR         = benefit[1]
-					var htmlElem     = benefit[2];
-					var doANerf      = benefit[3];
-					var decimalCount = benefit[4];
-					var bonusFun     = benefit[5];
-					var textFun      = benefit[6];
-
-					if (rei >= reqR && rei < maxR) {
-						var bonus = bonusFun(reiEff);
-						if (rei >= 40 && doANerf === true) {
-							bonus = GetANerfValue(bonus, reqR, asc);
-						}
-						$(htmlElem).text(textFun(reiEff, bonus.toFixed(decimalCount)));
-						$(htmlElem).css('display', 'block');
-					} else {
-						$(htmlElem).css('display', 'none');
-					}
-				}
-				// Hide/show inputs based on R
-				if (rei >= 10) {
-					$('#R10').css('display', 'block');
-				} else {
-					$('#R10').css('display', 'none');
-				}
-				if (rei >= 20) {
-					$('#R20').css('display', 'block');
-				} else {
-					$('#R20').css('display', 'none');
-				}
-				if (rei >= 60) {
-					$('#R60').css('display', 'block');
-				} else {
-					$('#R60').css('display', 'none');
-				}
-				if (rei >= 63) {
-					$('#R63').css('display', 'inline');
-				} else {
-					$('#R63').css('display', 'none');
-				}
-				if (rei >= 139) {
-					$('#R139').css('display', 'inline');
-				} else {
-					$('#R139').css('display', 'none');
-				}
-				if (rei >= 153) {
-					$('#R153').css('display', 'inline');
-				} else {
-					$('#R153').css('display', 'none');
-				}
-				if (rei >= 225) {
-					$('#R225').css('display', 'inline');
-				} else {
-					$('#R225').css('display', 'none');
-				}
-				if (rei >= 232) {
-					$('#R232').css('display', 'block');
-				} else {
-					$('#R232').css('display', 'none');
-				}
-				//Gem Costs for next R
-				var nextR = rei + 1;
-				if (rei < 40) {
-					$('#RNex').html('To Reincarnate to R' + nextR.toFixed(0) + ', you need <b>1e' + (24 + nextR * 3).toFixed(0) + '</b> gems.');
-				} else if (rei < 100){
-					$('#RNex').html('To Reincarnate to R' + nextR.toFixed(0) + ', you need <b>1.778e' + (nextR * 2 - 62).toFixed(0) + '</b> gems.');
-				} else if (rei < 160){
-					$('#RNex').html('To Reincarnate to R' + nextR.toFixed(0) + ', you need <b>' + (Math.pow(1e27,0.75) * Math.pow((nextR-1) , (nextR - 101))).toExponential(4) + '</b> gems.');
-				} else if (rei < 220){
-					$('#RNex').html('To Reincarnate to R' + nextR.toFixed(0) + ', you need <b>1e' + (25 + (nextR - 160) * 2) + '</b> gems.');
-				} else {
-					$('#RNex').html('To Reincarnate to R' + nextR.toFixed(0) + ', you need <b>1e' + (16 + (nextR - 220) * 2).toFixed(0) + '</b> gems.');
-				}
-				//Unlocks next R
-				switch (rei + 1) {
-					case 2:
-						Runl('Vanilla Challenges');
-						break;
-					case 3:
-						Runl('Mercenaries');
-						break;
-					case 4:
-						Runl('Neutral Challenges');
-						break;
-					case 6:
-						Runl('Prestige Challenges');
-						break;
-					case 7:
-						Runl('Bloodlines');
-						break;
-					case 16:
-						Runl('Vanilla Research');
-						break;
-					case 23:
-						Runl('Neutral Research');
-						break;
-					case 29:
-						Runl('Prestige Research');
-						break;
-					case 40:
-						Runl('Ascension 1');
-						break;
-					case 42:
-						Runl('Tiered Autocasting');
-						break;
-					case 46:
-						Runl('Neutral Prestige (Dragons)');
-						break;
-					case 47:
-						Runl('Neutral Prestige Research');
-						break;
-					case 48:
-						Runl('Dragon Challenges');
-						break;
-					case 60:
-						Runl('Lineages');
-						break;
-					case 75:
-						Runl('Mercenary Research');
-						break;
-					case 100:
-						Runl('Ascension 2 and Second Alignments');
-						break;
-					case 111:
-						Runl('Union Upgrades')
-						break;
-					case 116:
-						Runl('Prestige Factions')
-						break;
-					case 120:
-						Runl('A2 Spells Tier 2')
-						break;
-					case 125:
-						Runl('Archon, Djinn, and Makers Factions');
-						break;
-					case 130:
-						Runl('Archon, Djinn, and Makers Bloodlines, Lineages and Unions');
-						break;
-					case 135:
-						Runl('Archon, Djinn and Makers Challenges');
-						break;
-					case 160:
-						Runl('Ascension 3');
-						break;
-					case 165:
-						Runl('Mercenary Building Contract');
-						break;
-					case 170:
-						Runl('Mercenary Union Contract');
-						break;
-					case 180:
-						Runl('Forbidden Research');
-						break;	
-					case 190:
-						Runl('Mercenary Challenges');
-						break;	
-					case 220:
-						Runl('Ascension 4');
-						break;
-					default:
-						$('#RUnl').css('display', 'none');
-						break;
-				}
-			}
-			$('#ReiCosRei, #R10TimeTot, #R20SpecBui, #R60DDLin, #R63PB, #R139UDP5, #R153Omni, #R225D11375, #R232S12250').on('input', CalRBen);
-			CalRBen();
-		</script>
-	</div>
+	<h5>Current Reincarnation Powers (4.3.15)</h5>
+	<p>For powers unlocked after Ascension 0, x is rebased to the start of that Ascension: x = R - 39 in Ascension 1, R - 99 in Ascension 2, R - 159 in Ascension 3, and R - 219 in Ascension 4. Effects use effective Reincarnations after applicable count-more bonuses.</p>
+	<table class="numtable">
+	<tr><th>Unlock</th><th>Current effect</th></tr>
+	<tr><td>R1</td><td>+50% all-building production, +500% offline production, +10% Faction Coin find chance, and +2 Mana Regeneration per effective R.</td></tr>
+	<tr><td>R2</td><td>+0.2% production bonus from Gems per effective R.</td></tr>
+	<tr><td>R5</td><td>+1 assistant and +2% assistant production per effective R.</td></tr>
+	<tr><td>R10</td><td>All-building production increases over time by x ^ 1.75 * h ^ 0.65%, where h is hours this Reincarnation.</td></tr>
+	<tr><td>R12</td><td>+35 Maximum Mana per effective R.</td></tr>
+	<tr><td>R20</td><td>Each building gains +0.01% production per effective R per building of its own type.</td></tr>
+	<tr><td>R25</td><td>+0.5% Royal Exchange bonus per effective R.</td></tr>
+	<tr><td>R43</td><td>+70 * x ^ 1.25 Maximum Mana.</td></tr>
+	<tr><td>R46</td><td>+10 * x% all-building production.</td></tr>
+	<tr><td>R50</td><td>Multiplicatively increase Faction Coin find chance by 1.5 * x ^ 0.95%.</td></tr>
+	<tr><td>R58</td><td>Multiply matching Faction or Bloodline Faction Coins found by 1.2 * x ^ 1.05.</td></tr>
+	<tr><td>R70</td><td>Autoclick floor(x ^ 0.5) times per second.</td></tr>
+	<tr><td>R75</td><td>Mercenaries gain an additional Research slot in two alignment-dependent branches.</td></tr>
+	<tr><td>R80</td><td>Gain 4 * x assistants.</td></tr>
+	<tr><td>R90</td><td>In Ascension 1, gain one additional Research slot in each branch.</td></tr>
+	<tr><td>R101</td><td>Multiplicatively increase Mana Regeneration by 2 * x%.</td></tr>
+	<tr><td>R107</td><td>Unique Building production increases by 50 + 0.15 * d ^ 0.85%, where d is the difference between the most-used faction time and that building affinity faction time this Reincarnation.</td></tr>
+	<tr><td>R115</td><td>Multiply matching Faction, Bloodline, or Artifact Set Faction Coins found by 1.2 * (x + 1) ^ 1.05.</td></tr>
+	<tr><td>R120</td><td>Increase all-building production by 25 * x%.</td></tr>
+	<tr><td>R150</td><td>Unique Buildings count x times more for Call to Arms.</td></tr>
+	<tr><td>R170</td><td>Increase each Research branch budget by 450 + 3.5 * x.</td></tr>
+	<tr><td>R200</td><td>Increase all-building production by 150 * x%.</td></tr>
+	<tr><td>R220</td><td>Multiplicatively increase Mana Regeneration and Faction Coin find chance by 500 * x ^ 0.5% each.</td></tr>
+	</table>
 	<br/>
 	<div class="shlisting">
-		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">Reincarnation Perks</a></b></p>
-			<div class="autohide">
-				<p><b>x in formulas is the amount of times you reincarnated.</b></p>
-				<p><b>1st Reincarnation and up</b></p>
-				<p><b>Effect</b>: Increase Production by (50 * x)%</p>
-				<p><b>Effect</b>: Increase Offline production by (500 * x)%.</p>
-				<p><b>Effect</b>: Increase FC chance by +(10 * x)%.</p>
-				<p><b>Effect</b>: Increase Mana Regeneration by +(2 * x).</p>
-				<br/>
-				<p><b>2nd Reincarnation and up</b></p>
-				<p><b>Effect</b>: Increase Gem production bonus by +(0.2 * x)%.</p>
-				<br/>
-				<p><b>5th Reincarnation and up</b></p>
-				<p><b>Effect</b>: Increase Assistants by +x and assistant production is increased by (2 * x)%.</p>
-				<br/>
-				<p><b>10th Reincarnation and up</b></p>
-				<p><b>Effect</b>: Increase Production of all buildings by (x ^ 1.75 * (t / 3600) ^ 0.65)%, where t is time spent in this Reincarnation.</p>
-				<br/>
-				<p><b>12th Reincarnation and up</b></p>
-				<p><b>Effect</b>: Increase Maximum mana by +(35 * x).</p>
-				<br/>
-				<p><b>20th Reincarnation and up</b></p>
-				<p><b>Effect</b>: Increase Production of each building by (0.01 * x * b)%, where b is amount of specific building. (e.g. R20 with 2,000 Farms and 1,000 Blacksmiths is (0.01 * 20 * 2000)% = 400% bonus to Farms and (0.01 * 20 * 1000)% = 200% bonus to Blacksmiths)</p>
-				<br/>
-				<p><b>25th Reincarnation and up</b></p>
-				<p><b>Effect</b>: Increase Royal Exchange Bonus by +(0.5 * x)%.</p>
-				<br/>
-				<p><b>41st Reincarnation and up</b></p>
-				<p><b>Effect</b>: Increase Production of Unique Buildings by (1200 * (x ^ 1.15))%.</p>
-				<br/>
-				<p><b>45th Reincarnation and up</b></p>
-				<p><b>Effect</b>: Increase Maximum Mana by +(70 * x ^ 1.25).</p>
-				<br/>
-				<p><b>50th Reincarnation and up</b></p>
-				<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance by (2.5 * x ^ 1.1)%.</p>
-				<br/>
-				<p><b>58th Reincarnation and up</b></p>
-				<p><b>Effect</b>: Increase FC chance multiplicatively by *(1.2 * x ^ 1.05) if they match your Faction or Bloodline.</p>
-				<br/>
-				<p><b>85th Reincarnation and up</b></p>
-				<p><b>Effect</b>: Increase Assistants by +(4 * x).</p>
-				<br/>
-				<p><b>90th Reincarnation and up</b></p>
-				<p><b>Effect</b>: You gain 1 additional Research slot for each branch.</p>
-				<br/>
-				<p><b>100th Reincarnation and up</b></p>
-				<p><b>Effect</b>: Multiplicatively increase Mana Regeneration by x%.</p>
-				<br/>
-				<p><b>108th Reincarnation and up</b></p>
-				<p><b>Effect</b>: Increase the production of Unique Buildings based on the difference of time spent as their respective faction against your most used faction in this reincarnation.</p>
-				<p><b>Formula</b>: (0.15 * (x - y) ^ 0.75)%, where x is highest faction time and y is faction time of the Unique Building affinity</p>
-				<br/>
-				<p><b>115th Reincarnation and up</b></p>
-				<p><b>Effect</b>: Increase FC chance multiplicatively by *(1.2 * x ^ 1.05) if they match your Faction or Bloodline or Artifact set (Stacks multiplicatively with R58 power)</p>
-				<br/>
-				<p><b>120th Reincarnation and up</b></p>
-				<p><b>Effect</b>: Increase the production of all buildings by (150 * x)%.</p>
-				<br/>
-				<p><b>150th Reincarnation and up</b></p>
-				<p><b>Effect</b>: Unique Buildings count more for Call to Arms purposes by *(1 + x).</p>
-				<br/>
-				<p><b>170th Reincarnation and up</b></p>
-				<p><b>Effect</b>: Increases research budget by +3,000 in each branch.</p>
-				<br/>
-				<p><b>190th Reincarnation and up</b></p>
-				<p><b>Effect</b>: Increase the production of all buildings by (150 * x)%.</p>
-				<br/>
-				<p><b>210th Reincarnation and up</b></p>
-				<p><b>Effect</b>: Increase the production of all buildings by (300 * x)%.</p>
-				<br/>
-				<p><b>230th Reincarnation and up</b></p>
-				<p><b>Effect</b>: While playing as your least used alignment in this Reincarnation, increase the production of all buildings by (10 * x)%.</p>
-				<br/>
-			</div>
-		</div>
 		<div class="shelementwhole">
 			<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">Reincarnation Unlocks</a></b></p>
 			<div class="autohide">
@@ -498,7 +75,6 @@
 				<p><b>R100</b>: Ascension 2, New Alignments</p>
 				<p><b>R111</b>: Union Effects</p>
 				<p><b>R116</b>: Prestige Factions Reintroduced</p>
-				<p><b>R120</b>: Second Alignment Spells Tier 2</p>
 				<p><b>R125</b>: Astral Factions (Archon, Djinn, and Makers)</p>
 				<p><b>R130</b>: Astral Unions and Lineages</p>
 				<p><b>R135-R153</b>: Astral Challenges</p>
@@ -529,7 +105,7 @@
 				<p>All Faction coin stats</p>
 				<p>Click upgrades (50k clicks, 100k clicks)</p>
 				<p>All the "Magic" section of stats page.</p>
-				<p><b>At second Ascension (R100), Access to prestige factions and Mercenaries is lost !</b></p>
+				<p><b>At Ascension 2 (R100), access to Prestige factions and Mercenaries is temporarily lost; Prestige factions return at R116, while Mercenaries return during Ascension 3.</b></p>
 				<hr>
 				<p><b>Kept or Gained at Reincarnation</b></p>
 				<p>All Trophies (and their associated unlocks)</p>
@@ -541,7 +117,7 @@
 				<p>Research quests</p>
 				<p>Researches completed</p>
 				<p>Completed Faction quests</p>
-				<p>Gained research points if above R16. # gained is equal to the new R#, At R100 research points are capped at 5000.</p>
+				<p>Gained Research points where applicable for the current Research system.</p>
 				<p>Reincarnation Power (Upgrade)</p>
 			</div>
 		</div>
@@ -550,83 +126,63 @@
 			<div class="autohide">
 				<p><b><img src="/realm/Factions/picks/1Reincarnation.png" alt="1 Reincarnation" align="middle"> 1 Reincarnation</b></p>
 				<p><b>Requirement</b>: Reincarnate 1 time</p>
-				<p><b>Cost</b>: (To Reincarnate to R1) 1 Oc (1e27) Gems</p>
 				<hr>
 				<p><b><img src="/realm/Factions/picks/3Reincarnations.png" alt="3 Reincarnations" align="middle"> 3 Reincarnations</b></p>
 				<p><b>Requirement</b>: Reincarnate 3 times</p>
-				<p><b>Cost</b>: (To Reincarnate to R3) 1 Dc (1e33) Gems</p>
 				<hr>
 				<p><b><img src="/realm/Factions/picks/7Reincarnations.png" alt="7 Reincarnations" align="middle"> 5 Reincarnations</b></p>
 				<p><b>Requirement</b>: Reincarnate 5 times</p>
-				<p><b>Cost</b>: (To Reincarnate to R5) 1 Dd (1e39) Gems</p>
 				<hr>
 				<p><b><img src="/realm/Factions/picks/7Reincarnations.png" alt="7 Reincarnations" align="middle"> 7 Reincarnations</b></p>
 				<p><b>Requirement</b>: Reincarnate 7 times</p>
-				<p><b>Cost</b>: (To Reincarnate to R7) 1 Qad (1e45) Gems</p>
 				<hr>
 				<p><b><img src="/realm/Factions/picks/10Reincarnations.png" alt="10 Reincarnations" align="middle"> 10 Reincarnations</b></p>
 				<p><b>Requirement</b>: Reincarnate 10 times</p>
-				<p><b>Cost</b>: (To Reincarnate to R10) 1 Spd (1e54) Gems</p>
 				<hr>
 				<p><b><img src="/realm/Factions/picks/12Reincarnations.png" alt="12 Reincarnations" align="middle"> 12 Reincarnations</b></p>
 				<p><b>Requirement</b>: Reincarnate 12 times</p>
-				<p><b>Cost</b>: (To Reincarnate to R12) 1 Nod (1e60) Gems</p>
 				<hr>
 				<p><b><img src="/realm/Factions/picks/15Reincarnations.png" alt="15 Reincarnations" align="middle"> 15 Reincarnations</b></p>
 				<p><b>Requirement</b>: Reincarnate 15 times</p>
-				<p><b>Cost</b>: (To Reincarnate to R15) 1 Dvg (1e69) Gems</p>
 				<hr>
 				<p><b><img src="/realm/Factions/picks/20Reincarnations.png" alt="20 Reincarnations" align="middle"> 20 Reincarnations</b></p>
 				<p><b>Requirement</b>: Reincarnate 20 times</p>
-				<p><b>Cost</b>: (To Reincarnate to R20) 1 Spvg (1e84) Gems</p>
 				<hr>
 				<p><b><img src="/realm/Factions/picks/25Reincarnations.png" alt="25 Reincarnations" align="middle"> 25 Reincarnations</b></p>
 				<p><b>Requirement</b>: Reincarnate 25 times</p>
-				<p><b>Cost</b>: (To Reincarnate to R25) 1 Dtg (1e99) Gems</p>
 				<hr>
 				<p><b><img src="/realm/Factions/picks/30Reincarnations.png" alt="30 Reincarnations" align="middle"> 30 Reincarnations</b></p>
 				<p><b>Requirement</b>: Reincarnate 30 times</p>
-				<p><b>Cost</b>: (To Reincarnate to R30) 1 Sptg (1e114) Gems</p>
 				<hr>
 				<p><b><img src="/realm/Factions/picks/35Reincarnations.png" alt="35 Reincarnations" align="middle"> 35 Reincarnations</b></p>
 				<p><b>Requirement</b>: Reincarnate 35 times</p>
-				<p><b>Cost</b>: (To Reincarnate to R35) 1 Dqag (1e129) Gems</p>
 				<hr>
 				<p><b><img src="/realm/Factions/picks/40Reincarnations.png" alt="40 Reincarnations" align="middle"> 40 Reincarnations</b></p>
 				<p><b>Requirement</b>: Reincarnate 40 times</p>
-				<p><b>Cost</b>: (To Reincarnate to R40) 1 Spqag (1e144) Gems</p>
 				<hr>
 				<p><b><img src="/realm/Factions/picks/45Reincarnations.png" alt="45 Reincarnations" align="middle"> 45 Reincarnations</b></p>
 				<p><b>Requirement</b>: Reincarnate 45 times</p>
-				<p><b>Cost</b>: (To Reincarnate to R45) 17.78 Oc Sp (1.778e28) Gems</p>
 				<hr>
 				<p><b><img src="/realm/Factions/picks/50Reincarnations.png" alt="50 Reincarnations" align="middle"> 50 Reincarnations</b></p>
 				<p><b>Requirement</b>: Reincarnate 50 times</p>
-				<p><b>Cost</b>: (To Reincarnate to R50) 177.8 Ud (1.778e38) Gems</p>
 				<hr>
 				<p><b><img src="/realm/Factions/picks/60Reincarnations.png" alt="60 Reincarnations" align="middle"> 60 Reincarnations</b></p>
 				<p><b>Requirement</b>: Reincarnate 60 times</p>
-				<p><b>Cost</b>: (To Reincarnate to R60) 17.78 Ocd (1.778e58) Gems</p>
 				<hr>
 				<p><b><img src="/realm/Factions/picks/70Reincarnations.png" alt="70 Reincarnations" align="middle"> 70 Reincarnations</b></p>
 				<p><b>Requirement</b>: Reincarnate 70 times</p>
-				<p><b>Cost</b>: (To Reincarnate to R70) 17.78 Qivg (1.778e70) Gems</p>
 				<hr>
 				<p><b><img src="/realm/Factions/picks/85Reincarnations.png" alt="85 Reincarnations" align="middle"> 85 Reincarnations</b></p>
 				<p><b>Requirement</b>: Reincarnate 85 times</p>
-				<p><b>Cost</b>: (To Reincarnate to R85) 1.778 Qitg (1.778e108) Gems</p>
 				<hr>
 				<p><b><img src="/realm/Factions/picks/100Reincarnations.png" alt="100 Reincarnations" align="middle"> 100 Reincarnations</b></p>
 				<p><b>Requirement</b>: Reincarnate 100 times</p>
-				<p><b>Cost</b>: (To Reincarnate to R100) 1.778 Qiqag (1.778e138) Gems</p>
 				<hr>
 				<p><b><img src="/realm/Factions/picks/125Reincarnations.png" alt="125 Reincarnations" align="middle"> 125 Reincarnations</b></p>
 				<p><b>Requirement</b>: Reincarnate 125 times</p>
-				<p><b>Cost</b>: (To Reincarnate to R125) 31.05 Dvg (3.105e70) Gems</p>
 				<hr>
 				<p><b><img src="/realm/Factions/picks/150Reincarnations.png" alt="150 Reincarnations" align="middle"> 150 Reincarnations</b></p>
 				<p><b>Requirement</b>: Reincarnate 150 times</p>
-				<p><b>Cost</b>: (To Reincarnate to R150) 1.134 Dqag (1.134e129) Gems</p>
 			</div>
 		</div>
 	</div>
