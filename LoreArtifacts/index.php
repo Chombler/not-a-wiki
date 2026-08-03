@@ -58,7 +58,7 @@
 	<p><b>Hint</b>: Can be captured when Chanting.</p>
 	<p><b>Description</b>: The essence of a melodic Fairy voice.</p>
 	<p><b>Requirement</b>: Fairy Faction (Not Dwarven)</p>
-	<p><b>Chance</b>: (x / 40,000)%, where x is the is the amount of Fairy Chantings cast this Era.</p>
+	<p><b>Chance</b>: (x ^ 1.5 / 100,000)%, where x is the amount of Fairy Chanting casts this Era.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/LuckyClover.png" alt="Smiley face" align="middle"> Lucky Clover</b></p>
 	<p><b>Hint</b>: Requires extreme amounts of luck!</p>
@@ -81,8 +81,8 @@
 	<p><b><img src="/realm/Factions/picks/DivineSword.png" alt="Smiley face" align="middle"> Divine Sword</b></p>
 	<p><b>Hint</b>: Only found by dedicated Angel allies.</p>
 	<p><b>Description</b>: The shining golden sword of an Archangel. Its hilt feels pleasantly warm to the pure of heart and burning hot for the villain.</p>
-	<p><b>Requirement</b>: Angel Faction (Not Dwarven), 3+ consecutive Angels affiliations in this Reincarnation.</p>
-	<p><b>Chance</b>: (x / 60)%, where x is the amount of consecutive times affiliated with Angels in this Reincarnation.</p>
+	<p><b>Requirement</b>: Angel Faction (Not Dwarven), at least 4 hours spent as Angel in this Reincarnation.</p>
+	<p><b>Chance</b>: (x / 86,400)%, where x is time spent as Angel in this Reincarnation, in seconds.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/AncientCoinPiece.png" alt="Artifacts" align="middle"> Ancient Coin Piece</b></p>
 	<p><b>Hint</b>: Rarely found among other special coins.</p>
@@ -105,8 +105,8 @@
 	<p><b><img src="/realm/Factions/picks/JawBone.png" alt="Artifacts" align="middle"> Jaw Bone</b></p>
 	<p><b>Hint</b>: Needs some time off.</p>
 	<p><b>Description</b>: A jaw, missing more than half of its teeth.</p>
-	<p><b>Requirement</b>: Undead Faction (Not Drow), 24h+ offline time (this Reincarnation)</p>
-	<p><b>Chance</b>: (x / 864,000)%, where x is offline time in seconds this Reincarnation.</p>
+	<p><b>Requirement</b>: Undead Faction (Not Drow), at least 1 hour of Night Time activity in this Reincarnation.</p>
+	<p><b>Chance</b>: (x / 36,000)%, where x is Night Time activity in this Reincarnation, in seconds.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/DemonicFigurine.png" alt="Artifacts" align="middle"> Demonic Figurine</b></p>
 	<p><b>Hint</b>: Look for the trophies of the beast.</p>
@@ -117,8 +117,8 @@
 	<p><b><img src="/realm/Factions/picks/DemonHorn.png" alt="Artifacts" align="middle"> Demon Horn</b></p>
 	<p><b>Hint</b>: Only found by dedicated Demon allies.</p>
 	<p><b>Description</b>: Still blazing with the flames of Hell. Handle with care.</p>
-	<p><b>Requirement</b>: Demon Faction (Not Drow), 3+ consecutive Demon affiliations in this Reincarnation.</p>
-	<p><b>Chance</b>: (x / 60)%, where x is the amount of consecutive times affiliated with Demons this Reincarnation.</p>
+	<p><b>Requirement</b>: Demon Faction (Not Drow), at least 4 hours spent as Demon in this Reincarnation.</p>
+	<p><b>Chance</b>: (x / 86,400)%, where x is time spent as Demon in this Reincarnation, in seconds.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/HugeTitanStatue.png" alt="Artifacts" align="middle"> Huge Titan Statue</b></p>
 	<p><b>Hint</b>: Struck by the lightning.</p>
@@ -332,7 +332,7 @@
 	<p><b>Hint</b>: Really, raise your chances.</p>
 	<p><b>Description</b>: The silver sands contained within seem to never stop flowing.</p>
 	<p><b>Requirement</b>: R100+</p>
-	<p><b>Chance</b>: (x / 5,000,000,000,000,000 (5 QA))%, where x your Faction Coin find chance.</p>
+	<p><b>Chance</b>: (ln(1 + x) ^ 1.5 / 5,000)%, where x is your Faction Coin find chance.</p>
 	<p><b>Effect</b>: Awards an upgrade of the same name.</p>
 	<p><b>Note</b>: Click image for details</p>
 	<p><b>Note</b>: For more details about Lineage Level cost see <b><a target="_blank" href="/realm/Lineages/#LineageCost">Lineage</a></b> page.</p>
@@ -383,13 +383,13 @@
 	<p><b>Hint</b>: Found in the remains of druidic ancestors.</p>
 	<p><b>Description</b>: Despite being torn from its source tree, it keeps growing buds and leaves.</p>
 	<p><b>Requirement</b>: R100+, Druid Faction, Glyph Table and Stone of Balance artifacts, 2000+ Excavations</p>
-	<p><b>Chance</b>: ((x ^ 3) / 2,000,000 (2M))%, where x is level of Druid Lineage.</p>
+	<p><b>Chance</b>: (x ^ 3 / 1,000,000 (1 M))%, where x is the level of Druid Lineage.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/NightmareFigmentArtifact.png" align="middle"> Nightmare Figment</b></p>
 	<p><b>Hint</b>: A strong and quick brain is required.</p>
 	<p><b>Description</b>: An unshaped, ephemeral substance which is politely trying to corrupt your mind.</p>
 	<p><b>Requirement</b>: R100+, Faceless Faction, Translucent Goo and Octupus-shaped Helmet artifacts, 2000+ Excavations</p>
-	<p><b>Chance</b>: ((x ^ 1.5) / 20,000,000 (20M))%, where x is Brainwave's headstart time.</p>
+	<p><b>Chance</b>: (x ^ 1.5 / 1,000,000 (1 M))%, where x is Brainwave's headstart time.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/BeardHair.png" align="middle"> Beard Hair</b></p>
 	<p><b>Hint</b>: It requires a lot of beard samples to get the perfect hair.</p>
@@ -565,4 +565,10 @@
 	<p><b>Description</b>: The ultimate thrill of the fight.</p>
 	<p><b>Requirement</b>: R235+, Dragon Faction, Ascension 4+, 10,000+ Excavations</p>
 	<p><b>Chance</b>: (ln(1 + x) / 20,000)%, where x is the highest amount of assistants you had in this Reincarnation.</p>
+	<hr>
+	<p><b><img src="/realm/Factions/picks/MaskOfScorchRahArtifact.png" align="middle"> Mask of Scorch'Rah</b></p>
+	<p><b>Hint</b>: The time has come...</p>
+	<p><b>Description</b>: An otherworldly, ever-burning mask that continuously shifts burn marks over its surface.</p>
+	<p><b>Requirement</b>: A4+, R255+, 50,000+ Excavations and at least 4 Legacy upgrades purchased.</p>
+	<p><b>Chance</b>: (x / 1,000,000)%, where x is time spent in this Era, in seconds.</p>
 <?php include "../scripts/footer.html"; ?>

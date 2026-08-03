@@ -38,7 +38,7 @@
 	<hr>
 	<p><b><img src="/realm/Factions/picks/KeytotheLostCity.png" align="middle"> Key to the Lost City</b></p>
 	<p><b>Description</b>: Despite being thousands of years old, it's still shiny.</p>
-	<p><b>Requirement</b>: R23+, 1500th Excavation</p>
+	<p><b>Requirement</b>: R24+, 1500th Excavation</p>
 	<p><b>Effect</b>: Part of the Neutral research quest</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/AncientDevice.png" align="middle"> Ancient Device</b></p>
@@ -101,7 +101,7 @@
 	<p><b>Clue</b>: Assistants will lead the way.</p>
 	<p><b>Description</b>: A strange, glass-like material that appears to have been shattered into three pieces.</p>
 	<p><b>Requirement</b>: R125+, Fairy Faction, 12,500+ Excavations</p>
-	<p><b>Chance</b>: (x / 100,000,000,000 (100 B))%, where x is assistant count (including temporary assistants).</p>
+	<p><b>Chance</b>: (x / 1,000,000,000,000 (1 T))%, where x is assistant count (including temporary assistants).</p>
 	<p><b><img src="/realm/Factions/picks/SecondCrystalFragment.png" align="middle"> Second Crystal Fragment</b></p>
 	<p><b>Clue</b>: Are Faction Coins attracted to glass?</p>
 	<p><b>Description</b>: A strange, glass-like material that appears to have been shattered into three pieces.</p>
