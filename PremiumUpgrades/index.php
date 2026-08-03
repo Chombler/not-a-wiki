@@ -93,31 +93,31 @@
                 <p><b>Ruby Assistant</b></p>
                 <p><b>Cost</b>: 1 Ruby (+ 1 for every time this upgrade has been purchased)</p>
                 <p><b>Unlock Requirements</b>: Unlocked by Ruby Power</p>
-                <p><b>Effect</b>: Adds 1 assistant</p>
+                <p><b>Effect</b>: Additively gain +1 Assistant and multiplicatively increase Assistants by 1% per purchase.</p>
                 <p>Persists through Abdications and Reincarnations</p>
                 <hr>
                 <p><b>Ruby Mana Regeneration</b></p>
                 <p><b>Cost</b>: 1 Ruby (+ 1 for every time this upgrade has been purchased)</p>
                 <p><b>Unlock Requirements</b>: Unlocked by Ruby Power</p>
-                <p><b>Effect</b>: Adds 0.5 mana regen</p>
+                <p><b>Effect</b>: Additively gain +1 Mana Regeneration and multiplicatively increase Mana Regeneration by 1% per purchase.</p>
                 <p>Persists through Abdications and Reincarnations</p>
                 <hr>
                 <p><b>Ruby Max Mana</b></p>
                 <p><b>Cost</b>: 1 Ruby (+ 1 for every time this upgrade has been purchased)</p>
                 <p><b>Unlock Requirements</b>: Unlocked by Ruby Power</p>
-                <p><b>Effect</b>: Adds 25 mana</p>
+                <p><b>Effect</b>: Additively gain +100 Maximum Mana and multiplicatively increase Maximum Mana by 1% per purchase.</p>
                 <p>Persists through Abdications and Reincarnations</p>
                 <hr>
                 <p><b>Ruby Gem Bonus</b></p>
                 <p><b>Cost</b>: 1 Ruby (+ 1 for every time this upgrade has been purchased)</p>
                 <p><b>Unlock Requirements</b>: Unlocked by Ruby Power</p>
-                <p><b>Effect</b>: Adds 0.5% to the gem production bonus</p>
+                <p><b>Effect</b>: Additively and multiplicatively increase Gem production bonus by 1% per purchase.</p>
                 <p>Persists through Abdications and Reincarnations</p>
                 <hr>
                 <p><b>Ruby Royal Trading</b></p>
                 <p><b>Cost</b>: 1 Ruby (+ 1 for every time this upgrade has been purchased)</p>
                 <p><b>Unlock Requirements</b>: Unlocked by Ruby Power</p>
-                <p><b>Effect</b>: Adds 1.5% to the royal exchange production bonus</p>
+                <p><b>Effect</b>: Additively and multiplicatively increase Royal Exchange production bonus by 2% per purchase.</p>
                 <p>Persists through Abdications and Reincarnations</p>
                 <hr>
                 <p><img src="/realm/Factions/picks/RubyTier1.png" alt="" align="middle"> <b>Ruby Tier: 1</b></p>

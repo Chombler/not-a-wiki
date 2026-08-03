@@ -173,7 +173,7 @@
 				<p><b>Effect</b>: Unlocks upgrade with same name.</p>
 				<p><b>Upgrade Effect</b>: Unlocks new Research Facility at R180.</p>
 				<p><b>Upgrade Description</b>: Take advantage of the most ancient and secret arts to empower your production beyonds known limits.</p>
-				<p><b>Upgrade Description</b>: Unlock the Forbidden research facility and increase Mercenary production by 100%, plus an additional bonus based on Forbidden research point. These upgrades will persist through abdications and reincarnations, providing a permanent bonus to all factions affected.</p>
+				<p><b>Upgrade Description</b>: Unlock the Forbidden Research Facility and increase Mercenary production by 100%, plus the normal facility bonus based on Forbidden Research Points. The facility persists through Abdications and Reincarnations.</p>
 				<p><b>Upgrade Cost</b>: 1 Qatg (1e105), 100 Qid (1e50) Dwarven and Drow Coins</p>
 				<p><b>Note</b>: Upgrade only needs to be bought once.</p>
 			</div>
