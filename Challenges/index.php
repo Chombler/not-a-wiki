@@ -690,11 +690,11 @@
 	<p><b><img src='/realm/Factions/picks/GodsPlanChallenge.png' align='middle'> God’s Plan</b></p>
 	<p>&quot;The ascended crusade wishes to test the strength of it's angelic understudies; perhaps a huge celestial army is worthy of their attention.&quot;</p>
 	<p><b>Requirements</b>: Angel as Base Faction, Archon as Astral Faction, Reincarnation 135+, Chrono Loading upgrade purchased.</p>
-	<p><b>Challenge</b>: Have a Call to Arms bonus of at least 10 M (1e7)% and at least 200,000 Good buildings.</p>
+	<p><b>Challenge</b>: Have a Call to Arms bonus of at least 1,500% and at least 150,000 Good buildings.</p>
 	<p><b>Effect</b>: Increase Mana Regeneration additively and multiplicatively based on the amount of Order buildings you own.</p>
-	<p><b>Additive</b>: +(0.2 * x ^ 2), where x is the amount of Order buildings you own.</p>
+	<p><b>Additive</b>: +(x ^ 2), where x is the amount of Order buildings you own.</p>
 	<p><b>Multiplicative</b>: (0.5 * x ^ 0.5)%, where x is the amount of Order buildings you own.</p>
-	<p><b>Effect</b>: Precognition also increases Seraphim Wings and God's Hand bonus, by double its value</p>
+	<p><b>Effect</b>: Precognition also increases Seraphim Wings and God's Hand bonus by three times its value.</p>
 	<p><b>Effect</b>: Removes all Ascension penalties from Wings of Liberty (AN9).</p>
 	<p><b>Upgrade</b>: Works with Angel + Dwarven + Archon</p>
 		" coords="64,1220,118,1274" shape="rect">
@@ -704,11 +704,11 @@
 	<p><b><img src='/realm/Factions/picks/AnUntimelyDeathChallenge.png' align='middle'> An Untimely Death</b></p>
 	<p>&quot;A glorious victory! May we reap the rewards of war with new undead adversaries to join our quest.&quot;</p>
 	<p><b>Requirements</b>: Undead as Base Faction, Archon as Astral Faction, Reincarnation 139+, Archon Bloodline active, Archon challenge 1 completed.</p>
-	<p><b>Challenge</b>: Have an Offline Bonus of at least 10 Sp (1e25)% while also having at least 100 B (1e11) assistants.</p>
+	<p><b>Challenge</b>: Have Offline production of at least 1e20% while also having at least 100 B (1e11) assistants.</p>
 	<p><b>Effect</b>: Multiplicatively increase assistants based on Offline Bonus.</p>
-	<p><b>Formula</b>: (2 * log10(1 + x) ^ 2)%, where x is offline bonus multiplier.</p>
-	<p><b>Effect</b>: Temporal Flux also increases Offline Bonus (same Formula as production bonus).</p>
-	<p><b>Effect</b>: Removes all Ascension penalties from Undead Resilience (UD9).</p>
+	<p><b>Formula</b>: (2.5 * ln(1 + x) ^ 2.5)%, where x is Offline production.</p>
+	<p><b>Effect</b>: Temporal Flux also increases Offline production and gains 1 tier.</p>
+	<p><b>Effect</b>: Removes all Ascension penalties from Unholy Rituals.</p>
 	<p><b>Upgrade</b>: Works with Undead + Drow + Archon</p>
 		" coords="124,1220,178,1274" shape="rect">
 	<area href="/realm/Archon/#ARC3" target=""
@@ -730,10 +730,10 @@
 	<p><b><img src='/realm/Factions/picks/TimeMergeChallenge.png' align='middle'> Time Merge</b></p>
 	<p>&quot;In order to satiate our campaign we need to delve deeper into the abstract. Behold, even time itself yields to the crusade.&quot;</p>
 	<p><b>Requirements</b>: Angel, Undead or Titan as Base Faction, Archon as Astral Faction, Reincarnations 148+, Archon Unique Building Purchased (Nexus), Archon challenge 3 completed.</p>
-	<p><b>Challenge</b>: Have a Temporal Flux bonus of at least 43,210%.</p>
-	<p><b>Effect</b>: 20% of Chaos and Balance time spent in this Reincarnation is added to time spent in this Era.</p>
+	<p><b>Challenge</b>: Have a Temporal Flux bonus of at least 432%.</p>
+	<p><b>Effect</b>: 10% of time spent as Chaos and Balance in this Reincarnation is added to time spent in this Era.</p>
 	<p><b>Effect</b>: Increase Unique Building production based on time spent in this Era.</p>
-	<p><b>Formula</b>: (8 * log10(1 + x) ^ 4)%, where x is time spent in this Era.</p>
+	<p><b>Formula</b>: (9 * ln(1 + x) ^ 3)%, where x is time spent in this Era.</p>
 	<p><b>Upgrade</b>: Works with any Archon combination</p>
 		" coords="244,1220,298,1274" shape="rect">
 	<area href="/realm/Archon/#ARC5" target=""
@@ -762,7 +762,7 @@
 	<p><b>Effect</b>: Maelstrom multiplicatively increases assistants based on lowest building tier targeted.</p>
 	<p><b>Formula</b>: ((12 - T) * 100)%, where T is tier of lowest maelstrom building targeted.</p>
 	<p><b>Effect</b>: Fairy Chanting produces Limited Wish casts every second based on Maximum Mana. Casts provided increase progressively over Fairy Chanting's runtime (time since last cast).</p>
-	<p><b>Formula</b>: +((x ^ 0.5) * T * y / 2,000), where x is Maximum Mana, T is Fairy Chanting tier and y is Fairy Chanting runtime.</p>
+	<p><b>Formula</b>: +(0.0025 * x ^ 0.25 * (T + 1) * floor(y)), where x is Maximum Mana, T is Fairy Chanting tier and y is Fairy Chanting elapsed duration in seconds.</p>
 	<p><b>Upgrade</b>: Works with Fairy + Dwarves + Djinn</p>
 		" coords="64,1318,118,1372" shape="rect">
 	<area href="/realm/Djinn/#DJC2" target=""
@@ -772,10 +772,10 @@
 	<p>&quot;As the years passed through, this benevolence fell on deaf ears. The mortals decided to enslave us; dictate to us their every whim. How dare they command us to do their bidding, give them hell!&quot;</p>
 	<p><b>Requirements</b>: Demon as Base Faction, Djinn as Astral Faction, Reincarnation 139+, Djinn Bloodline active, Djinn challenge 1 completed.</p>
 	<p><b>Challenge</b>: Have at least 66 B (6.6e10) Mana Produced within 6 hours of a new game.</p>
-	<p><b>Effect</b>: Limited Wish casts count more based on Hellfire Blast casts in this Era.</p>
-	<p><b>Formula</b>: (0.8 * x ^ 0.8)%, where x is Hellfire Blast casts this Era..</p>
-	<p><b>Effect</b>: Each time you cast an Evil spell, you gain additional casts based on the amount of trophies you have.</p>
-	<p><b>Formula</b>: +(x ^ 0.7), where x is amount of trophies.</p>
+	<p><b>Effect</b>: Increase Maximum Mana based on trophies unlocked.</p>
+	<p><b>Formula</b>: +(0.8 * x ^ 0.8), where x is trophies unlocked.</p>
+	<p><b>Effect</b>: Each time you cast an Evil or Chaos spell, gain additional casts based on trophies unlocked.</p>
+	<p><b>Formula</b>: +(0.35 * x ^ 0.7), where x is trophies unlocked.</p>
 	<p><b>Note</b>: Applies only for real evil spells. Casts are added directly to the spell’s casts count and does not trigger upgrades such as GB7.</p>
 	<p><b>Upgrade</b>: Works with Demon + Drow + Djinn</p>
 		" coords="124,1318,178,1372" shape="rect">
@@ -809,7 +809,7 @@
 	<p><b>Challenge</b>: Cast all Chaos spells at least 88 times each in a single Reincarnation.</p>
 	<p><b>Spells</b>: Fairy Chanting, Hellfire Blast, Brainwave, Maelstrom, Limited Wish, Catalyst</p>
 	<p><b>Effect</b>: Multiplicatively increases one of your assets based on the amount of alignments tied to your faction spells.</p>
-	<p><b>Formula</b>: (50 ^ (1 + 0.25 * x))%, where x is amount of spells with a given alignment.</p>
+	<p><b>Formula</b>: (45 ^ (1 + 0.25 * x))%, where x is the number of spells with a given alignment.</p>
 	<p><b>Good</b>: Assistants</p>
 	<p><b>Evil</b>: Trophy Count</p>
 	<p><b>Neutral</b>: Production Bonus from Gems</p>
@@ -843,7 +843,7 @@
 	<p><b><img src='/realm/Factions/picks/ArtificialCurrencyChallenge.png' align='middle'> Artificial Currency</b></p>
 	<p>&quot;Extinction is the rule. Survival is the exception, which can only be achieved through subtle deception.&quot;</p>
 	<p><b>Requirements</b>: Goblin as Base Faction, Makers as Astral Faction,  Reincarnation 139+, Makers Bloodline active, Makers challenge 1 completed.</p>
-	<p><b>Challenge</b>: Get 100 Qad (1e47) Faction Coins with a minimum of 50 Excavation Resets in this Reincarnation.</p>
+	<p><b>Challenge</b>: Find 1e40 Faction Coins in this Era with at least 3 Excavation Resets in this Reincarnation.</p>
 	<p><b>Effect</b>: While Mana Regeneration is higher than Maximum Mana, each time you cast a spell, you also cast free Tax Collections based on the difference between them.</p>
 	<p><b>Formula</b>: +(((log10(1 + x)) ^ 2.5 - (log10(1 + y)) ^ 2.5) ^ 1.25), where x is Mana Regeneration, y is Maximum Mana.</p>
 	<p><b>Effect</b>: Production bonus from Gems is increased nultiplicatively based on Tax Collections cast in this Era.</p>
@@ -856,10 +856,10 @@
 	<p><b><img src='/realm/Factions/picks/PillarsofCreationChallenge.png' align='middle'> Pillars of Creation</b></p>
 	<p>&quot;We are like butterflies who flutter for a day and think it is forever. This can be accomplished when you sincerely endeavor.&quot;</p>
 	<p><b>Requirements</b>: Druid as Base Faction, Makers as Astral Faction, Reincarnation 143+, 25,000 excavations, Druid Set active, Makers challenge 2 completed.</p>
-	<p><b>Challenge</b>: Have at least 1 B (1e9) Maximum Mana and 25,000 of each building within 5 minutes of a new game.</p>
-	<p><b>Effect</b>: Assistants and Maximum Mana Infinite Spiral effects are also increased by Mana Regeneration.</p>
+	<p><b>Challenge</b>: Have at least 12 T (1.2e13) Maximum Mana and 30,000 of each building within 5 minutes of a new Era.</p>
+	<p><b>Effect</b>: The assistants effect from Infinite Spiral is also increased by Mana Regeneration.</p>
 	<p><b>Note</b>: The value of the variable in those formulas is multiplied by your Mana Regeneration.</p>
-	<p><b>Effect</b>: Your Lineage levels count double for your base lineage effect and all advanced heritages are doubled.</p>
+	<p><b>Effect</b>: Lineage levels count 50% more for the base lineage effect and increase all Advanced Heritage bonuses by 50%.</p>
 	<p><b>Upgrade</b>: Works with Druid + Dragon + Makers</p>
 		" coords="184,1416,238,1470" shape="rect">
 	<area href="/realm/Makers/#MKC4" target=""
@@ -878,9 +878,9 @@
 	<p><b><img src='/realm/Factions/picks/GreatestInventionChallenge.png' align='middle'> Greatest Invention</b></p>
 	<p>&quot;Somewhere, something incredible is waiting to be known. Sculpt from your boundless imagination and make it your own.&quot;</p>
 	<p><b>Requirements</b>: Elves, Goblin or Druid as Base Faction, Makers as Astral Faction, Reincarnation 153+, All Balance Lineages at level 45, Makers challenge 4 completed.</p>
-	<p><b>Challenge</b>: Have at least 1 T (1e12) assistants, 1 B (1e9) Maximum Mana and 20 Sx (2e22) Faction Coin find chance within 8 minutes of a new game.</p>
+	<p><b>Challenge</b>: Have at least 1 T (1e12) assistants, 100 M (1e8) Maximum Mana and 2e20% Faction Coin find chance within 8 minutes of a new Era.</p>
 	<p><b>Effect</b>: Multiplicatively increase Maximum Mana based on Faction Coins gained and Mana produced in this Era; spells cast and clicks made in this Reincarnation.</p>
-	<p><b>Formula</b>: ((0.3 * log10(1 + a) + log10(1 + b) + log10(1 + c) + 3 * log10(1 + d)) ^ 1.5)%, a is Factions Coins (this Era), b is Mana produced (this Era), c is spells cast (this reincarnation), d is clicks made (this reincarnation)</p>
+	<p><b>Formula</b>: (0.4 * (0.3 * ln(1 + a) + ln(1 + b) + ln(1 + c) + 4 * ln(1 + d)) ^ 1.4)%, where a is Faction Coins found this Era, b is Mana produced this Era, c is spells cast this Reincarnation, and d is clicks made this Reincarnation.</p>
 	<p><b>Upgrade</b>: Works with All</p>
 		" coords="304,1416,358,1470" shape="rect">
 	<area href="/realm/Mercenary/#MCCR" target=""
@@ -888,15 +888,14 @@
 	<p><b>Mercenary Challenge Reward</b></p>
 	<p><b><img src='/realm/Factions/picks/WarcryChallengeReward.png' align='middle'> Warcry</b></p>
 	<p>Call to Arms gains additional effects based on your alignments, scaling off your Call to Arms strength.</p>
-	<p><b>General Formula</b>: y = 25 + (0.3 * x ^ 0.975) where x is building count.</p>
-	<p><b>Good</b>: Grants one maximum castable Call to Arms tier per ascension and removes one ascension penalty from Call to Arms. Tax Collection casts in this Era now increases Call to Arms base bonus (This bonus will boost other Warcry effects. Stacks multiplicatively with W180, additively with C225 & R150 power).</p>
+	<p><b>General Formula</b>: y = 25 + (0.3 * x) ^ 0.975, where x is building count.</p>
+	<p><b>Good</b>: Call to Arms gains 1 tier. Tax Collection casts in this Era are added as a base for its bonus.</p>
 	<p><b>Formula</b>: (1.5 * x ^ 0.5)%, where x is Tax Collection casts this Era.</p>
 	<p><b>Evil</b>: Multiplicatively increase Tax Collection worth in seconds.</p>
 	<p><b>Formula</b>: (y ^ 0.35)%</p>
 	<p><b>Neutral</b>: Multiplicatively increase Faction Coins find chance.</p>
 	<p><b>Formula</b>: (0.35 * y ^ 0.35)</p>
-	<p><b>Order</b>: Increases all spell durations.</p>
-	<p><b>Formula</b>: (2.5 * ln(1 + y))</p>
+	<p><b>Order</b>: Autoclick floor(1.25 * ln(1 + y) ^ 1.25) times per second and increase all spell durations by 500%.</p>
 	<p><b>Chaos</b>: Multiplicatively increase assistants (Temporary).</p>
 	<p><b>Formula</b>: (0.35 * y ^ 0.35)</p>
 	<p><b>Balance</b>: Increases Royal Exchange Bonus multiplicatively and makes them count more.</p>
@@ -920,7 +919,7 @@
 	<p><b><img src='/realm/Factions/picks/TheSourceofMagicChallenge.png' align='middle'> The Source of Magic</b></p>
 	<p>&quot;The Realm may have fallen to chaos, but there are still contracts that must be completed. What better way to complete those contracts than to embrace madness itself.&quot;</p>
 	<p><b>Requirements</b>: R194, Chaos Mercenary, Two Chaos Bloodlines, 4 Chaos spells.</p>
-	<p><b>Challenge</b>: Have at least 100 spell tiers active within 5 minutes of a new game.</p>
+	<p><b>Challenge</b>: Have at least 65 spell tiers active within 5 minutes of a new Era.</p>
 	<p><b>Effect</b>: Gain the Chaos Madness spell.</p>
 	<p><b><img src='/realm/Factions/picks/ChaosMadness.png' align='middle'> Chaos Madness</b></p>
 	<p><b>Cost</b>: 500,000 Mana - <b>Duration</b>: Fixed to 20 seconds</p>
@@ -935,7 +934,7 @@
 	<p>&quot;The best armies in the realm are those that are well-rounded: able to take on any kind of enemy that approaches.&quot;</p>
 	<p><b>Requirements</b>: R198, Balance Mercenary, 40,000 deepest Excavations made in this Reincarnation, Mercenary Set.</p>
 	<p><b>Challenge</b>: Have assistants, Maximum Mana, Mana Regeneration and Faction Coin chance fall within the same order of magnitude while above 1e12.</p>
-	<p><b>Effect</b>: Gain all the faction sets simultaneously.</p>
+	<p><b>Effect</b>: Gain the Base and Prestige Sets for your alignments.</p>
 	<p><b>In Game</b>: Click the challenge to view the Set container</p>
 	<p><b>Upgrade</b>: Works with Balance Mercenary</p>
 		" coords="184,1514,238,1568" shape="rect">
@@ -945,7 +944,7 @@
 	<p><b><img src='/realm/Factions/picks/ReturnoftheKingChallenge.png' align='middle'> Return of the King</b></p>
 	<p>&quot;The Mercenary Lord has returned, with newfound knowledge and power. Another challenge awaits you...&quot;</p>
 	<p><b>Requirements</b>: R202, Any Mercenary, All lineages level 75.</p>
-	<p><b>Challenge</b>: Have exactly one assistant and reach a total of 1e60 Faction Coins within 5 minutes of a new game.</p>
+	<p><b>Challenge</b>: Have exactly one assistant and reach a total of 1e40 Faction Coins within 10 minutes of a new Era.</p>
 	<p><b>Effect</b>: You can pick one additional Union Power.</p>
 	<p><b>Upgrade</b>: Works with Any Mercenary</p>
 		" coords="244,1514,298,1568" shape="rect">
@@ -954,8 +953,8 @@
 	<p><b>Mercenary Challenge 5</b></p>
 	<p><b><img src='/realm/Factions/picks/TheArtofWarChallenge.png' align='middle'> The Art of War</b></p>
 	<p>&quot;An expert Mercenary should learn by other cultures. That has been our call for generations. Now, it is your turn to answer that call.&quot;</p>
-	<p><b>Requirements</b>: R206, Any Mercenary, 18,000 Royal Exchanges made in this Era, True Harlequin build.</p>
-	<p><b>Challenge</b>: Have at least 1 day spent with every alignment in this Reincarnation; Have at least 600,000 buildings without using any research.</p>
+	<p><b>Requirements</b>: R206, Any Mercenary, 15,000 Royal Exchanges made in this Era, at least one upgrade from each of 15 different factions, and at least 1 day spent with every alignment in this Reincarnation.</p>
+	<p><b>Challenge</b>: Have at least 500,000 buildings without using any research.</p>
 	<p><b>Effect</b>: Unique Buildings that match your Lineage and Set Factions or their Faction Coin affinity have their production increased based on the amount of time spent with each of those factions. Does not suffer from Ascension penalties.</p>
 	<p><b>Formula</b>: (x ^ 0.7)%, where x is time spent with the respective faction.</p>
 	<p><b>Note</b>: Works similarly to R58 and R115 powers, so a Fairy Unique building will also earn half a bonus from Djinn faction.</p>
