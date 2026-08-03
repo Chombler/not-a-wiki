@@ -520,8 +520,8 @@
 	<p><b>Research Name</b>: Journeymen</p>
 	<p><b>Requirement</b>: Research Apprenticeship (C80) & Bartering (E50).</p>
 	<p><b>Cost</b>: 8.406e151</p>
-	<p><b>Effect</b>: Increase the production of Unique Buildings based on time spent as that faction in this Reincarnation.</p>
-	<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent as the faction of the Unique Building in this Reincarnation.</p>
+	<p><b>Effect</b>: Increase the production of Unique Buildings based on time spent with their alignment or alignments in this Reincarnation.</p>
+	<p><b>Formula</b>: (25 + 1.25 * x ^ 0.75)%, where x is time spent with the alignment or combined alignments of the Unique Building in this Reincarnation.</p>
 	" coords="170,254,210,294" shape="rect">
 		<area research="<p><b>C225</b> - For Elf</p>
 	<p><b>Research Name</b>: Automatons</p>
@@ -1913,8 +1913,8 @@
 	<p><b>Hint</b>: More of the baseline production buildings!</p>
 	<p><b>Requirement</b>: 60000 Farms, Inns and Blacksmiths.</p>
 	<p><b>Cost</b>: 3.66e176</p>
-	<p><b>Effect</b>: Increases the production of all buildings based on their tier, giving the highest bonus to the lowest.</p>
-	<p><b>Formula</b>: (150 * (12 - T) ^ 2.15)%, where T is building tier.</p>
+	<p><b>Effect</b>: Increase the production of all buildings based on time spent with your least-used alignment in this Reincarnation and their tier, giving the highest bonus to the lowest tier.</p>
+	<p><b>Formula</b>: (0.5 * (60 + x) ^ 0.75 * (12 - T) ^ 2.15)%, where x is time spent with your least-used alignment in this Reincarnation and T is building tier.</p>
 	" coords="128,1178,168,1218" shape="rect">
 		<area research="<p><b>W5125</b> - For All Factions</p>
 	<p><b>Research Name</b>: Sovereignty</p>
@@ -2000,7 +2000,7 @@
 	<p><b>Cost</b>: Free</p>
 	<p><b>Requirement</b>: R242+ and 1,800 seconds (30 minutes) with your least-used alignment this Reincarnation.</p>
 	<p><b>Effect</b>: Increase the production of Evil buildings based on time spent as Good, the production of Chaos buildings based on time spent as Order, and the production of Chaos Evil buildings as the sum of time spent as Good and Order. Also increases the production of Good and Order buildings based on Evil and Chaos in the same way.</p>
-	<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is the respective time stat in seconds.</p>
+	<p><b>Formula</b>: (0.75 * x ^ 0.75)%, where x is the respective time stat in seconds.</p>
 	<p><b>Note</b>: Buildings only receive the highest effect (That is, if the building is Evil/Chaos, it only gets the Evil/Chaos bonus, not the Evil or the Chaos individual bonuses).</p>
 	<p><b>Note</b>: The Good/Evil alignment of a building applies normally, while the Order/Chaos alignment of a building only applies to Base Faction's Unique Buildings (both UB1 and UB2) and Elite Unique Buildings</p>
 	" coords="212,1220,254,1260" shape="rect">
