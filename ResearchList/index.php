@@ -940,14 +940,14 @@
 				<p><b>Research Name</b>: Coinage</p>
 				<p><b>Cost</b>: 750 Qag (7.50e125)</p>
 				<p><b>Effect</b>: Increase the production of Goblin Banks based on the amount of buildings you own.</p>
-				<p><b>Formula</b>: (0.85 * x ^ 0.85)%, where x is your Buildings Owned (This Era) stat.</p>
+				<p><b>Formula</b>: (2 * x ^ 0.8)%, where x is your Buildings Owned (This Era) stat.</p>
 				<hr>
 				<p><b>E10</b> - For Undead</p>
 				<p><b>Research Name</b>: Recycling</p>
 				<p><b>Hint</b>: Nation of the dead.</p>
 				<p><b>Requirement</b>: 2,000 Undercities</p>
 				<p><b>Cost</b>: 28.83 Uqag (2.883e127)</p>
-				<p><b>Effect</b>: Increase the production of all other buildings by 95% per Undercity you own.</p>
+				<p><b>Effect</b>: Increase the production of all other buildings by 140% per Undercity you own.</p>
 				<hr>
 				<p><b>E25</b> - For Elf</p>
 				<p><b>Research Name</b>: Commerce</p>
@@ -955,7 +955,7 @@
 				<p><b>Requirement</b>: 100 M (1e8) Faction Coins (Found this Era)</p>
 				<p><b>Cost</b>: 12.63 Dqag (1.263e130)</p>
 				<p><b>Effect</b>: Gain additional assistants based on the amount of Royal Exchanges you purchased.</p>
-				<p><b>Formula</b>: +(floor((1 + 6 * x) ^ 0.5 - 1)), where x is the amount of Royal Exchanges purchased.</p>
+				<p><b>Formula</b>: +(4 * x ^ 0.7), where x is the amount of Royal Exchanges purchased.</p>
 				<hr>
 				<p><b>E30</b> - For All Factions</p>
 				<p><b>Research Name</b>: Diplomacy</p>
@@ -963,13 +963,13 @@
 				<p><b>Requirement</b>: 1,000 Exchanges (This Era)</p>
 				<p><b>Cost</b>: 95.88 Dqag (9.588e130)</p>
 				<p><b>Effect</b>: Increases Faction Coin find chance and Royal Exchange bonus based on time spent in this Era.</p>
-				<p><b>Faction Coin Chance Formula</b>: +(floor(1.5 * (x / 60) ^ 1.05))%, where x is time spent in this Era.</p>
-				<p><b>Royal Exchange Bonus Formula</b>: +(floor((x / 60) ^ 0.6))%, where x is time spent in this Era.</p>
+				<p><b>Faction Coin Chance Formula</b>: +(3 * x ^ 0.7)%, where x is time spent in this Era.</p>
+				<p><b>Royal Exchange Bonus Formula</b>: +(0.3 * x ^ 0.7)%, where x is time spent in this Era.</p>
 				<hr>
 				<p><b>E50</b> - For Fairy</p>
 				<p><b>Research Name</b>: Bartering</p>
 				<p><b>Hint</b>: Royalties earnings.</p>
-				<p><b>Requirement</b>: 1,000 Exchanges(as Goblin)</p>
+				<p><b>Requirement</b>: 1,250 Royal Exchanges</p>
 				<p><b>Cost</b>: 318.8 Tqag (3.188e134)</p>
 				<p><b>Effect</b>: Reduce Enchanted Field cost multiplier. Reduces cost multiplier by 0.02; with no other reductions applying, the multiplier will be 1.13 instead of 1.15.</p>
 				<hr>
@@ -984,7 +984,7 @@
 				<p><b>E135</b> - For All Factions</p>
 				<p><b>Research Name</b>: Bribing</p>
 				<p><b>Hint</b>: Architectural advantage.</p>
-				<p><b>Requirement</b>: 28,000 Total Buildings(as Goblin)</p>
+				<p><b>Requirement</b>: 24,000 Total Buildings (as Goblin)</p>
 				<p><b>Cost</b>: 296 Ocqag (2.96e149)</p>
 				<p><b>Effect</b>: Reduce the building cost multiplier for Unique Buildings. Reduces cost multiplier by 0.01; with no other reductions applying, the multiplier will be 1.14 instead of 1.15.</p>
 				<hr>
@@ -999,12 +999,12 @@
 				<p><b>Research Name</b>: Investment</p>
 				<p><b>Requirement</b>: Research Bribing (E135) & Commerce (E25)</p>
 				<p><b>Cost</b>: 129.6 Noqag (1.296e152)</p>
-				<p><b>Effect</b>: Increase the production of all buildings based on the amount of coins you own.</p>
-				<p><b>Formula</b>: (round(ln(1 + x) ^ 1.25))%, where x is the amount of gold you own.</p>
+				<p><b>Effect</b>: Research points count more based on clicks made in this Era.</p>
+				<p><b>Formula</b>: (35 + x ^ 0.35)%, where x is clicks made in this Era.</p>
 				<hr>
 				<p><b>E200</b> - For All Factions</p>
 				<p><b>Research Name</b>: Acquisition</p>
-				<p><b>Requirement</b>: Research Investment (E400)  Common Business (E80)</p>
+				<p><b>Requirement</b>: Research Investment (E400) & Common Business (E80)</p>
 				<p><b>Cost</b>: 82.65 Dqig (8.265e160)</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on your percentage of trophies unlocked.</p>
 				<p><b>Formula</b>: (round(0.0003 * (100 * x) ^ 3.35))%, where x is trophies unlocked / max trophies.</p>
@@ -1021,7 +1021,7 @@
 				<p><b>Requirement</b>: Research Exertion (W50) & Diplomacy (E30)</p>
 				<p><b>Cost</b>: 2.087 Qaqig (2.087e165)</p>
 				<p><b>Effect</b>: Increases trophy count based on time spent as Evil this Reincarnation.</p>
-				<p><b>Formula</b>: (0.25 * x ^ 0.5)%, where x is time spent as Evil this Reincarnation.</p>
+				<p><b>Formula</b>: (25 + 0.25 * x ^ 0.5)%, where x is time spent as Evil this Reincarnation.</p>
 				<hr>
 				<p><b>E250</b> - For All Factions</p>
 				<p><b>Research Name</b>: Trade Routes</p>
@@ -1036,15 +1036,15 @@
 				<p><b>Requirement</b>: 3,000 Stonehenge Circles</p>
 				<p><b>Cost</b>: 3.039 SxQig (3.039e171)</p>
 				<p><b>Effect</b>: Increase the production of all other buildings based on the amount of Stone Pillars you own.</p>
-				<p><b>Formula</b>: (100 * x)%, where x is the amount of Stone Pillars you own.</p>
+				<p><b>Formula</b>: (200 * x)%, where x is the amount of Stone Pillars you own.</p>
 				<hr>
 				<p><b>E300</b> - For Titan</p>
 				<p><b>Research Name</b>: Offering</p>
 				<p><b>Hint</b>: Offer Faction Coins, gain production.</p>
-				<p><b>Requirement</b>: 1,250 Royal Exchanges(as Titans)</p>
+				<p><b>Requirement</b>: 1,500 Royal Exchanges (as Titans)</p>
 				<p><b>Cost</b>: 175.2 SxQig (1.752e173)</p>
 				<p><b>Effect</b>: Increase mana regeneration based on your Royal Exchange Bonus.</p>
-				<p><b>Formula</b>: +(x ^ 0.95), where x is your Royal Exchange Bonus.</p>
+				<p><b>Formula</b>: +(7 * x ^ 0.7), where x is your Royal Exchange Bonus.</p>
 				<hr>
 				<p><b>E270</b> - For All Factions</p>
 				<p><b>Research Name</b>: Surveyorship</p>
@@ -1078,7 +1078,7 @@
 				<hr>
 				<p><b>E150</b> - For All Factions</p>
 				<p><b>Research Name</b>: Conversion</p>
-				<p><b>Requirement</b>: Research Philosopher's Stone (A250) & Repurpose (E350).</p>
+				<p><b>Requirement</b>: Research Bribing (E135) & Commerce (E25)</p>
 				<p><b>Cost</b>: 13.66 QaSxg (1.366e196)</p>
 				<p><b>Effect</b>: Increase production bonus from Gems based on your Royal Exchange bonus.</p>
 				<p><b>Formula</b>: +(2.5 * floor(x ^ 0.5))%, where x is your Royal Exchange Bonus.</p>
@@ -1096,15 +1096,15 @@
 				<p><b>Requirement</b>: 100 B (1e11) Faction Coins (Found this Era)</p>
 				<p><b>Cost</b>: 502.3 SpSxg (5.023e206)</p>
 				<p><b>Effect</b>: Increase Royal Exchange Bonus based on the amount of Faction Coins found in this Era.</p>
-				<p><b>Formula</b>: +(25 * x)%, where x is the amount of Blacksmiths you own.</p>
+				<p><b>Formula</b>: +(2 * ln(1 + x) ^ 2)%, where x is Faction Coins found in this Era.</p>
 				<hr>
 				<p><b>E450</b> - For All Factions</p>
 				<p><b>Research Name</b>: Undercutting</p>
 				<p><b>Hint</b>: Maximum magic resources required.</p>
-				<p><b>Requirement</b>: 15000 max mana</p>
+				<p><b>Requirement</b>: 40,000 Max Mana</p>
 				<p><b>Cost</b>: 1.67 NoSxg (1.67e210)</p>
-				<p><b>Effect</b>: Increase the production of Non-Unique Buildings based on Spells cast in this Reincarnation.</p>
-				<p><b>Formula</b>: (0.65 * x ^ 0.65)%, where x the amount of Spells cast in this Reincarnation.</p>
+				<p><b>Effect</b>: Multiplicatively increase Mana Regeneration based on Gems owned.</p>
+				<p><b>Formula</b>: (0.5 * ln(1 + x) ^ 1.35)%, where x is Gems owned.</p>
 				<hr>
 				<p><b>E575</b> - For Drow</p>
 				<p><b>Research Name</b>: Jewellery</p>
@@ -1112,14 +1112,14 @@
 				<p><b>Requirement</b>: 12000 Unique Buildings (as Dwarf)</p>
 				<p><b>Cost</b>: 731.4 NoSxg (7.314e212)</p>
 				<p><b>Effect</b>: Increase the production bonus from gems based on the amount of Spider Sanctuaries you own.</p>
-				<p><b>Formula</b>: +(0.06 * x ^ 0.8)%, where x is the amount of Spider Sanctuaries you own.</p>
+				<p><b>Formula</b>: +(4 * x ^ 0.8)%, where x is the amount of Spider Sanctuaries you own.</p>
 				<hr>
 				<p><b>E700</b> - For Goblin,Drow</p>
 				<p><b>Research Name</b>: Slavery</p>
-				<p><b>Requirement</b>: 200 Drow Exchanges as Droblin, Research Automatons(C225) and Undercutting (E450)</p>
+				<p><b>Requirement</b>: 250 Drow Exchanges as Droblin, Research Automatons (C225) and Undercutting (E450)</p>
 				<p><b>Cost</b>: 39.16 QiSpg (3.916e229)</p>
-				<p><b>Effect</b>: Gain additional assistants based on the amount of Non-Unique buildings you own.</p>
-				<p><b>Formula</b>: +(0.1 * x ^ 0.8), where x is the amount of Non-Unique Buildings you own.</p>
+				<p><b>Effect</b>: Increase assistants production based on the amount of Non-Unique buildings you own.</p>
+				<p><b>Formula</b>: +(0.4 * x ^ 0.8)%, where x is the amount of Non-Unique Buildings you own.</p>
 				<hr>
 				<p><b>E1225</b> - For Neutral,Dragon</p>
 				<p><b>Research Name</b>: Hoarding</p>
@@ -1148,8 +1148,8 @@
 				<p><b>Research Name</b>: Hirelings</p>
 				<p><b>Requirement</b>: (Intimidation E1325) and (Scholarship S2875).</p>
 				<p><b>Cost</b>: 661.6 USxg (6.616e188)</p>
-				<p><b>Effect</b>: Gives assistants based on the amount of coins you own.</p>
-				<p><b>Formula</b>: +(1.5 * ln(1 + x) ^ 1.5), where x is amount of coins you own.</p>
+				<p><b>Effect</b>: Gain additional assistants based on Faction Coins found in this Era.</p>
+				<p><b>Formula</b>: +(5 * ln(1 + x) ^ 2.5), where x is Faction Coins found in this Era.</p>
 				<hr>
 				<p><b>E3300</b> - For Mercenary</p>
 				<p><b>Research Name</b>: Estates</p>
@@ -1161,7 +1161,7 @@
 				<hr>
 				<p><b>E5125</b> - For All Factions</p>
 				<p><b>Research Name</b>: Decentralization</p>
-				<p><b>Requirement</b>: R175+, Forgotten Relic, Vault artifact and upgrade.</p>
+				<p><b>Requirement</b>: R175+, Forgotten Relic, Vault artifact and upgrade, and 500,000 total buildings.</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on the amount of buildings you own. Lower tiers get better bonuses.</p>
 				<p><b>Formula</b>: ((3 - 0.25 * T) ^ 4 * x ^ 0.6)%, where T is building tier and x is the number of (every) buildings you own.</p>
 				<hr>
@@ -1170,17 +1170,16 @@
 				<p><b>Requirement</b>: R177+, Forgotten Relic, Vault artifact and upgrade.</p>
 				<p><b>Effect</b>: Increase Royal Exchange bonus additively and multiplicatively based on Tax Collections cast in this Era.</p>
 				<p><b>Additive Formula</b>: +(x ^ 0.2)% additively and (0.5 * x ^ 0.15)% multiplicatively, where x is Tax Collections cast in this Era.</p>
-				<p><b>Multiplicative Formula</b>: (0.85 * x ^ 0.15)%, where x is Tax collections cast this Era.</p>
 				<hr>
 				<p><b>E5625</b> - For All Factions</p>
 				<p><b>Research Name</b>: Loan Sharking</p>
-				<p><b>Requirement</b>: R179+, Forgotten Relic, Vault artifact and upgrade.</p>
+				<p><b>Requirement</b>: R179+, Forgotten Relic, Vault artifact and upgrade, and 5e150 Gold.</p>
 				<p><b>Effect</b>: Tax Collection is worth more based on Gold owned.</p>
-				<p><b>Formula</b>: +(log10(1 + x) ^ 1.5), where x is your current amount of coins.</p>
+				<p><b>Formula</b>: +((0.5 * ln(1 + x)) ^ 1.25) seconds, where x is your current amount of coins.</p>
 				<hr>
 				<p><b>E5875</b> - For All Factions</p>
 				<p><b>Research Name</b>: Prosperity</p>
-				<p><b>Requirement</b>: R181+, Forgotten Relic, Vault artifact and upgrade.</p>
+				<p><b>Requirement</b>: R181+, Forgotten Relic, Vault artifact and upgrade, and at least 30 minutes activity time with the least-used faction spell in this Era.</p>
 				<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on your faction spell activity in this Era.</p>
 				<p><b>Formula</b>: (0.4 * x ^ 0.4)%, where x is your least used faction spell (This Era)</p>
 				<p><b>Note</b>: Only checks the base faction spell of your faction(s). On mercs, scales off Share Benefits and the two chosen Faction Spells.</p>
@@ -1193,45 +1192,45 @@
 				<hr>
 				<p><b>E11125</b> - For All Factions</p>
 				<p><b>Research Name</b>: Gray Friday</p>
-				<p><b>Requirement</b>: R223+</p>
+				<p><b>Requirement</b>: R223+ and 20,000 Neutral Buildings.</p>
 				<p><b>Effect</b>: Reduce building cost multiplier and increase the production of all buildings based on Royal Exchange bonus.</p>
 				<p><b>Formula</b>: -0.02, with no other reductions applying, the multiplier will be 1.13 instead of 1.15.</p>
 				<p><b>Formula</b>: (1.2 * x ^ 0.8)%, where x is your Royal Exchange bonus.</p>
 				<hr>
 				<p><b>E11375</b> - For All Factions</p>
 				<p><b>Research Name</b>: Heist</p>
-				<p><b>Requirement</b>: R225+</p>
+				<p><b>Requirement</b>: R225+ and 1e18 assistants.</p>
 				<p><b>Effect</b>: Increase production bonus of Gems based on the amount of assistants you have.</p>
 				<p><b>Formula</b>: +(2.25 * ln(1 + x) ^ 2.25)%, where x is the amount of assistants you have.</p>
 				<hr>
 				<p><b>E11625</b> - For All Factions</p>
 				<p><b>Research Name</b>: Surplus</p>
-				<p><b>Requirement</b>: R227+</p>
+				<p><b>Requirement</b>: R227+ and enough Gems to meet the current Reincarnation requirement.</p>
 				<p><b>Effect</b>: Multiplicatively increase assistants based on the amount of Gems you have.</p>
 				<p><b>Formula</b>: (25 + 0.25 * ln(1 + x) ^ 1.5)%, where x is the amount of Gems you have.</p>
 				<hr>
 				<p><b>E11875</b> - For All Factions</p>
 				<p><b>Research Name</b>: Overworking</p>
-				<p><b>Requirement</b>: R229+</p>
+				<p><b>Requirement</b>: R229+, the Slave Market upgrade, and 3,500 Slave Pens.</p>
 				<p><b>Effect</b>: While Goblin's Greed is active, increase triggered Tax Collections based on assistants owned.</p>
 				<p><b>Formula</b>: +(1.5 * ln(1 + x) ^ 1.5), where x is the amount of assistants you have.</p>
 				<p><b>Note</b>: Catalyst can also trigger this effect.</p>
 				<hr>
 				<p><b>E12250</b> - For All Factions</p>
 				<p><b>Research Name</b>: Oilery</p>
-				<p><b>Requirement</b>: R232+</p>
+				<p><b>Requirement</b>: R232+ and at least 30 minutes activity time with the least-used spell in this Reincarnation.</p>
 				<p><b>Effect</b>: While both Lightning Strike and Gem Grinder are active, multiplicatively increase the production bonus from Gems based on the duration of your longest spell.</p>
 				<p><b>Formula</b>: (0.8 * x ^ 0.8)%, where x is the duration of your longest spell.</p>
 				<hr>
 				<p><b>E13125</b> - For All Factions</p>
 				<p><b>Research Name</b>: Discount</p>
-				<p><b>Requirement</b>: R239+</p>
-				<p><b>Effect</b>: Reduce Royal Exchange, Excavation and Building cost multipliers. All spells cost 50% less mana to cast.</p>
+				<p><b>Requirement</b>: R239+ and at least 200 seconds of Tax Collection cost reduction.</p>
+				<p><b>Effect</b>: Reduce Royal Exchange, Excavation and Building cost multipliers.</p>
 				<p><b>Note</b>: Cost multiplier reduction is -0.02 for all three.</p>
 				<hr>
 				<p><b>E13500</b> - For All Factions</p>
 				<p><b>Research Name</b>: Recession</p>
-				<p><b>Requirement</b>: R242+</p>
+				<p><b>Requirement</b>: R242+ and 1,000 total Lineage levels.</p>
 				<p><b>Effect</b>: Gain all Lineage base effects that match your alignments, up to a maximum of level 25.</p>
 				<p><b>Note</b>: This will reduce the level of all lineages you do not pick to 25 for the current run (including lineages that don't match your alignments), which will lower the effectiveness of upgrades based on those lineage levels.</p>
 				<hr>	
