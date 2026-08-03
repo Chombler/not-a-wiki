@@ -66,10 +66,10 @@
         <hr>
         <center><b>Terminology</b></center>
         <center><b>Soft-Resets & Stats</b></center>
-        <p><b>A Run</b>: refers to a game between abdications.</p>
-        <p><b>A Session</b>: refers to a game between reincarnations.</p>
-        <p><b>This Era and Current game</b>: started last abdication, and ends next abdication.</p>
-        <p><b>Total</b>: refers to the current reincarnation.</p>
+        <p><b>An Era (formerly “This Game”)</b>: starts at an Abdication and ends at the next Abdication.</p>
+        <p><b>A Reincarnation</b>: starts when reincarnating and ends at the next Reincarnation.</p>
+        <p><b>This Era</b>: the current Era.</p>
+        <p><b>This Reincarnation</b>: the current Reincarnation.</p>
         <p><b>All-Time</b>: covers all reincarnations.</p>
         <hr>
         <center><b>Commonly Used Abbreviations</b></center>
@@ -174,11 +174,11 @@
         <p><b>SS</b>: Spiritual Surge</p>
         <p><b>HL</b>: Holy Light</p>
         <p><b>BF</b>: Blood Frenzy</p>
-        <p><b>GG</b>: Gem Grinder</p>
+        <p><b>Gem Grinder</b>: usually written in full to avoid confusion with Goblin's Greed.</p>
         <p><b>FC</b>: Fairy Chanting (Not to be confused with Faction Coins)</p>
         <p><b>MB</b>: Moon Blessing</p>
         <p><b>GH</b>: God's Hand</p>
-        <p><b>GG</b>: Goblin's Greed</p>
+        <p><b>Goblin's Greed</b>: usually written in full to avoid confusion with Gem Grinder.</p>
         <p><b>NT</b>: Night Time</p>
         <p><b>HB-HFB</b>: Hellfire Blast</p>
         <p><b>LS</b>: Lightning Strike</p>
