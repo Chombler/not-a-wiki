@@ -35,20 +35,20 @@
 <p><b>Coins to Gems Formula</b>:<br>floor(((1 + 4 * n / 5e11) ^ 0.5 - 1) / 2), where n is coins.</p>
 <hr>
 <p><b>First Ascension</b>: (R40 - R99)</p>
-<p><b>Gem Requirement</b>: 1e27 ^ 0.75 * 100 ^ (R - 40)</p>
+<p><b>Gem Requirement</b>: 1e27 * 100 ^ (R - 40)</p>
 <p><b>Gems to Coins Formula</b>: n * (n + 1) * 5e11, where n is gems.</p>
 <p><b>Coins to Gems Formula</b>:<br>floor(((1 + 4 * n / 5e11) ^ 0.5 - 1) / 2), where n is coins.</p>
 <hr>
 <p><b>Second Ascension</b>: (R100 - R159)</p>
-<p><b>Gem Requirement</b>: 1e27 ^ 0.75 * R ^ (R - 100)</p>
-<p><b>Gems to Coins Formula</b>: n * (n + 1) * 5e3, where n is gems.</p>
-<p><b>Coins to Gems Formula</b>:<br>floor(((1 + 4 * n / 5e3) ^ 0.5 - 1) / 2), where n is coins.</p>
+<p><b>Gem Requirement</b>: 1e27 * 100 ^ (R - 100)</p>
+<p><b>Gems to Coins Formula</b>: n * (n + 1) * 5e11, where n is gems.</p>
+<p><b>Coins to Gems Formula</b>:<br>floor(((1 + 4 * n / 5e11) ^ 0.5 - 1) / 2), where n is coins.</p>
 <p>When Ascending for the second time, the following will take effect, alongside normal Ascension Changes:</p>
 <p>
  - Mercenaries and Prestige Factions will become inaccessible (prestige return in R116).<br>
  - All Lineage levels will be reset back to 25 (if higher).<br>
  - Research is limited to one per branch (not counting Faction specific ones).<br>
- - Tier 7 Spells will become obtainable (see <b><a target="" href="/realm/Spells/">Spells Page</b></a> for time required).<br>
+ - Spell Tier 3 will become obtainable (see <b><a target="" href="/realm/Spells/">Spells Page</b></a> for requirements).<br>
  - Secondary Alignments and Spells will become available.</p>
 <p>For more information, see <b><a target="" href="/realm/Ascension2/">Ascension 2</b></a>.</p>
 <hr>
@@ -62,12 +62,12 @@
  - Research is changed to a Budget System. The cost of each research upgrade is equal to its number. Budget Size starts at 0 and can be increased with Archon Bloodline or later Upgrades.</p>
 <hr>
 <p><b>Fourth Ascension</b>: (R220 - R279)</p>
-<p><b>Gem Requirement</b>: 1e18 * 100 ^ (R - 220)</p>
-<p><b>Gems to Coins Formula</b>: n * (n + 1) * 5e26, where n is gems.</p>
-<p><b>Coins to Gems Formula</b>:<br>floor(((1 + 4 * n / 5e26) ^ 0.5 - 1) / 2), where n is coins.</p>
+<p><b>Gem Requirement</b>: 1e27 * 100 ^ (R - 220)</p>
+<p><b>Gems to Coins Formula</b>: n * (n + 1) * 5e11, where n is gems.</p>
+<p><b>Coins to Gems Formula</b>:<br>floor(((1 + 4 * n / 5e11) ^ 0.5 - 1) / 2), where n is coins.</p>
 <p>When Ascending for the fourth time, the following will take effect, alongside normal Ascension Changes:</p>
 <p>
- - Mercenaries, Prestige and Astral Factions will become inaccessible (prestige return in R240).<br>
+ - Mercenaries, Prestige and Astral Factions will become inaccessible (Prestige returns at R235 and Astral at R255).<br>
  - All Lineage levels will be reset back to 75 (if higher).<br>
  - All Research Upgrades from A0 and A1 are removed.<br>
  - All Normal Heritages are removed.<br>

@@ -35,9 +35,9 @@
 	<p>To be able to do more excavations within a Reincarnation you can do an Excavation Reset, which also sets the counter back to zero. There are two options:<br>Ruby Reset and Free Reset.</p>
 	<p><b>Ruby Cost for Ruby Reset</b>: (floor(x / 3000) + 1), where x is the number of excavations.</p>
 	<p><b>Note</b>: Not recommended. It is better to spend rubies in ruby power, unless you have very specific reason to spend them on a reset.</p>
-	<p><b>Free Reset Requirement Formula</b>: (2000 + 50 * R + 500 * x), where R is the number of times you have reincarnated and x is the amount of Free Resets already done this Reincarnation.</p>
-	<p><b>Note</b>: When doing a Free Reset, you will lose all gold on hand and receive a 90% production penalty until you abdicate or reincarnate.</p>
-	<p><b>Note</b>: Free Resets are not available until around R30, since the requirement is too high for lower stages.</p>
+	<p><b>Free Reset Availability</b>: Ascension 1 and higher.</p>
+	<p><b>Free Reset Coin Requirement Formula</b>: (G * (G + 1) / 2) * 10 ^ (3 * x - d), where G is the Gems required for the current Reincarnation, x is the number of Excavation Resets made in this Reincarnation and d is any order-of-magnitude reduction from upgrades.</p>
+	<p><b>Note</b>: Resetting no longer removes coins, rewards or Rubies and no longer applies a production penalty. The requirement for the next reset increases.</p>
 	<p><b>Note</b>: Each ruby found from excavation is a single all-time reward. No matter how the counter is set back to zero, you cannot find the same ruby again.</p>
 	<hr>
 	<p><img src="/realm/Factions/picks/QuestArtifacts.png" usemap="#QuestArtifacts-map"></p>

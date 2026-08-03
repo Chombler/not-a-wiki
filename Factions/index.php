@@ -120,7 +120,7 @@
 <p>- <b>Neutral</b>: includes Titan, Druid and Faceless</p>
 <p>- <b>Prestige</b>: includes Dwarven, Drow and much later on, Dragon</p>
 <p>- <b>Mercenary</b></p>
-<p>- <b>Elite</b>: includes Archon, Djinn and Makers.</p>
+<p>- <b>Astral</b>: includes Archon, Djinn and Makers.</p>
 </br>
 <p>The Vanilla Factions show up by default but the others first need to be unlocked. Once unlocked they will stay unlocked throughout all Abdications and Reincarnations.</p>
 <p>To affiliate with a Faction, you first need to choose their Alignment.</p>
@@ -205,19 +205,19 @@
 <p><a href="/realm/ArchonFaction"><img src="/realm/Factions/picks/ArchonTradeTreaty.png"></a> Archon</p>
 <p><b>Unlock Requirement</b>: Archon Quest (only needs to be bought once)</p>
 <p><b>Requirement</b>: Proof of Order, Union upgrades of both Base & Prestige Faction</p>
-<p><b>Available</b>: R125-R219</p>
+<p><b>Available</b>: R125-R219, R255+</p>
 <p><b>Cost</b>: 1 Oc (1e27) Angel & Undead Coins</p>
 <hr>
 <p><a href="/realm/DjinnFaction"><img src="/realm/Factions/picks/DjinnTradeTreaty.png"></a> Djinn</p>
 <p><b>Unlock Requirement</b>: Djinn Quest (only needs to be bought once)</p>
 <p><b>Requirement</b>: Proof of Chaos, Union upgrades of both Base & Prestige Faction</p>
-<p><b>Available</b>: R125-R219</p>
+<p><b>Available</b>: R125-R219, R255+</p>
 <p><b>Cost</b>: 1 Oc (1e27) Fairy & Demon Coins</p>
 <hr>
 <p><a href="/realm/MakersFaction"><img src="/realm/Factions/picks/MakersTradeTreaty.png"></a> Makers</p>
 <p><b>Unlock Requirement</b>: Makers Quest (only needs to be bought once)</p>
 <p><b>Requirement</b>: Proof of Balance, Union upgrades of both Base & Prestige Faction</p>
-<p><b>Available</b>: R125-R219</p>
+<p><b>Available</b>: R125-R219, R255+</p>
 <p><b>Cost</b>: 1 Oc (1e27) Elven & Goblin Coins</p>
 <hr>
 <p><b>Historical Background</b></p>

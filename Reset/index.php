@@ -67,7 +67,7 @@
 </br>
 <h6><img src="/realm/Factions/picks/Reset-Reincarnate.png" alt="Reincarnate" align="middle"></h6>
 <p>Reincarnation was introduced in the Underworld Expansion. In terms of game-play, it is a second kind of soft reset where players can trade in all of their gems and have most of their stats reset for other bonuses.</p>
-<p>Reincarnation can only be performed for the first time when the user reaches 1 Oc (1e27) gems. Each subsequent reincarnation costs 1,000 times more gems.</p>
+<p>Reincarnation can only be performed for the first time when the user reaches 1 Oc (1e27) gems. In Ascension 0, each subsequent Reincarnation costs 1,000 times more gems; later Ascensions use their own rebased requirements.</p>
 <p><b><a target="" href="/realm/Reincarnation/">More about Reincarnation</b></a></p>
 </br>
 <h6><img src="/realm/Factions/picks/Reset-Ascend.png" alt="Ascend" align="middle"></h6>

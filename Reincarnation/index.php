@@ -500,8 +500,8 @@
 				<p><b>R116</b>: Prestige Factions Reintroduced</p>
 				<p><b>R120</b>: Second Alignment Spells Tier 2</p>
 				<p><b>R125</b>: Astral Factions (Archon, Djinn, and Makers)</p>
-				<p><b>R130</b>: Elite Unions and Lineages</p>
-				<p><b>R135-R153</b>: Elite Challenges</p>
+				<p><b>R130</b>: Astral Unions and Lineages</p>
+				<p><b>R135-R153</b>: Astral Challenges</p>
 				<p><b>R160</b>: Ascension 3</p>
 				<p><b>R160-R170</b>: Mercenary Reintroduced</p>
 				<p><b>R170</b>: Research budget increase</p>
@@ -509,6 +509,7 @@
 				<p><b>R190-R206</b>: Mercenary Challenges</p>
 				<p><b>R220</b>: Ascension 4</p>
 				<p><b>R235</b>: Prestige Factions Reintroduced</p>
+				<p><b>R255</b>: Astral Factions Reintroduced</p>
 			</div>
 		</div>
 		<div class="shelementwhole">
