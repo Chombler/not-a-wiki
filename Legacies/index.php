@@ -309,19 +309,19 @@
 	<p><img src='/realm/Factions/picks/GoldenHeaven.png' align='middle'><b> Golden Heaven</b></p>
 	<p><b>Requirement</b>: Angel Legacy, Goblin Legacy</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on Gold owned.</p>
-	<p><b>Formula</b>: (log10(1 + x) ^ 2)%, where x is the current amount of Gold you own.</p>
+	<p><b>Formula</b>: (0.25 * ln(1 + x) ^ 2)%, where x is the current amount of Gold you own.</p>
 		" coords="130,10,184,64" shape="rect">
-		<area href="#FR-AN" research="
+		<area href="#FR-UD" research="
 	<p><img src='/realm/Factions/picks/DreamRealm.png' align='middle'><b> Dream Realm</b></p>
-	<p><b>Requirement</b>: Fairy Legacy, Angel Legacy</p>
-	<p><b>Effect</b>: Increase Mana Regeneration based on time spent as Good in this Reincarnation.</p>
-	<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent as Good in this Reincarnation.</p>
+	<p><b>Requirement</b>: Fairy Legacy, Undead Legacy</p>
+	<p><b>Effect</b>: Increase Mana Regeneration based on time spent as Good and Evil in this Reincarnation.</p>
+	<p><b>Formula</b>: (0.75 * (x + y) ^ 0.75)%, where x and y are time spent as Good and Evil respectively in this Reincarnation.</p>
 		" coords="10,70,64,124" shape="rect">
 		<area href="#EL-UD" research="
 	<p><img src='/realm/Factions/picks/SwampofSorrows.png' align='middle'><b> Swamp of Sorrows</b></p>
 	<p><b>Requirement</b>: Elf Legacy, Undead Legacy</p>
 	<p><b>Effect</b>: Activity time of all spells counts more based on Maximum Mana.</p>
-	<p><b>Formula</b>: (2 * ln(1 + x) ^ 2.25)%, where x is your Maximum Mana.</p>
+	<p><b>Formula</b>: (1.45 * ln(1 + x) ^ 1.45)%, where x is your Maximum Mana.</p>
 		" coords="70,70,124,124" shape="rect">
 		<area href="#AN-UD" research="
 	<p><img src='/realm/Factions/picks/DarkSanctum.png' align='middle'><b> Dark Sanctum</b></p>
@@ -338,17 +338,17 @@
 		<area href="#EL-DM" research="
 	<p><img src='/realm/Factions/picks/ForbiddenGrove.png' align='middle'><b> Forbidden Grove</b></p>
 	<p><b>Requirement</b>: Elf Legacy, Demon Legacy</p>
-	<p><b>Effect</b>: Autoclicks per second based on the amount of Unique Buildings you own.</p>
-	<p><b>Formula</b>: +(1 + 1.5 * x ^ 0.2)%, where x is the amount of Unique Buildings you own.</p>
-	<p><b>Effect</b>: Also increases production of Unique Buildings based on Autoclicks this Era.</p>
-	<p><b>Formula</b>: (2 * log10(1 + x) ^ 2)%, where x is Autoclicks made this Era.</p>
+	<p><b>Effect</b>: Autoclicks per second based on the amount of Non-Unique Buildings you own.</p>
+	<p><b>Formula</b>: +(1 + 1.5 * x ^ 0.2), where x is the amount of Non-Unique Buildings you own.</p>
+	<p><b>Effect</b>: Also multiplicatively increases the production bonus from Gems based on Autoclicks this Era.</p>
+	<p><b>Formula</b>: (2 * ln(1 + x) ^ 2)%, where x is Autoclicks made this Era.</p>
 	<p><b>Note</b>: 'Clicks count more' effects are <b>not</b> affecting this upgrade.</p>
 		" coords="70,130,124,184" shape="rect">
 		<area href="#AN-DM" research="
 	<p><img src='/realm/Factions/picks/EternalBattlefield.png' align='middle'><b> Eternal Battlefield</b></p>
 	<p><b>Requirement</b>: Angel Legacy, Demon Legacy</p>
 	<p><b>Effect</b>: Increase the production of Evil Buildings based on time spent as Good in this Reincarnation, and vice-versa. Does not affect Neutral Buildings</p>
-	<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent as Good/Evil in this Reincarnation.</p>
+	<p><b>Formula</b>: (0.8 * x ^ 0.8)%, where x is time spent as Good/Evil in this Reincarnation.</p>
 		" coords="130,130,184,184" shape="rect">
 		<area href="#EL-GB" research="
 	<p><img src='/realm/Factions/picks/GreedFactory.png' align='middle'><b> Greed Factory</b></p>
@@ -356,9 +356,9 @@
 	<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on Tax Collections casts in this Era.</p>
 	<p><b>Formula</b>: (2.5 * ln(1 + x) ^ 2.5)%, where x is the amount of Tax Collection casts in this Era.</p>
 		" coords="10,190,64,244" shape="rect">
-		<area href="#FR-UD" research="
+		<area href="#FR-AN" research="
 	<p><img src='/realm/Factions/picks/TwistingNetherCombo.png' align='middle'><b> Twisting Nether</b></p>
-	<p><b>Requirement</b>: Fairy Legacy, Undead Legacy</p>
+	<p><b>Requirement</b>: Fairy Legacy, Angel Legacy</p>
 	<p><b>Effect</b>: Gain a new spell with the same name (20 seconds duration, 1 M (1e6) Mana Cost, can be cast up to Tier 99). While active, increases Lineage Level by +1 per Tier.</p>
 	<p><img src='/realm/Factions/picks/TwistingNether.png' align='middle'></p>
 	<p><b>Note</b>: The Lineage Level increase is only a 'count more' effect and does not affect base lineage in any way.</p>
@@ -375,7 +375,7 @@
 	<p><img src='/realm/Factions/picks/HomunculusLab.png' align='middle'><b> Homunculus Lab</b></p>
 	<p><b>Requirement</b>: Goblin Legacy, Undead Legacy</p>
 	<p><b>Effect</b>: Increase Research Budget based on the least time spent between Order and Balance in this Reincarnation.</p>
-	<p><b>Formula</b>: +(75 + ln(1 + min(x , y)) ^ 3.25), where x and y is time spent as Order and Balance respectively in this Reincarnation.</p>
+	<p><b>Formula</b>: +min(3000, 50 + 1.15 * ln(1 + min(x, y)) ^ 3.15), where x and y are time spent as Order and Balance respectively in this Reincarnation.</p>
 	<p><b>Effect</b>: Also increase the production of all buildings based on unspent research budget.</p>
 	<p><b>Formula</b>: (1.3 * x ^ 0.7)%, where x is the sum of your unspent research budget across all branches.</p>
 		" coords="10,250,64,304" shape="rect">
@@ -383,13 +383,13 @@
 	<p><img src='/realm/Factions/picks/FrozenWastes.png' align='middle'><b> Frozen Wastes</b></p>
 	<p><b>Requirement</b>: Undead Legacy, Demon Legacy</p>
 	<p><b>Effect</b>: Increase Offline Production based on time spent offline in this Reincarnation.</p>
-	<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent offline in this Reincarnation.</p>
+	<p><b>Formula</b>: (0.9 * x ^ 0.9)%, where x is time spent offline in this Reincarnation.</p>
 		" coords="70,250,124,304" shape="rect">
 		<area href="#GB-DM" research="
 	<p><img src='/realm/Factions/picks/CorruptionZone.png' align='middle'><b> Corruption Zone</b></p>
 	<p><b>Requirement</b>: Goblin Legacy, Demon Legacy</p>
-	<p><b>Effect</b>: Increase the production of Non-Unique buildings based on the duration of your longest spell.</p>
-	<p><b>Formula</b>: (0.8 * x ^ 0.8)%, where x is the duration of your longest spell.</p></p>
+	<p><b>Effect</b>: Increase triggered Tax Collections based on Trophies unlocked.</p>
+	<p><b>Formula</b>: +floor(0.2 * x ^ 0.6), where x is the number of Trophies unlocked.</p>
 		" coords="130,250,184,304" shape="rect">
 	</map>
 	<hr>
@@ -398,18 +398,18 @@
 	<p><b>Effect</b>: Increase the production of all buildings based on the amount of assistants you own.</p>
 	<p><b>Formula</b>: (2 * ln(1 + x) ^ 2)%, where x is the amount of assistants you own.</p>
 	<hr>
-	<p id="FR-AN"><img src="/realm/Factions/picks/DreamRealm.png" align="middle"><b> Dream Realm</b></p>
-	<p><b>Requirement</b>: Fairy Legacy, Angel Legacy</p>
-	<p><b>Effect</b>: Increase Mana Regeneration based on time spent as Good in this Reincarnation.</p>
-	<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent as Good in this Reincarnation.</p>
+	<p id="FR-UD"><img src="/realm/Factions/picks/DreamRealm.png" align="middle"><b> Dream Realm</b></p>
+	<p><b>Requirement</b>: Fairy Legacy, Undead Legacy</p>
+	<p><b>Effect</b>: Increase Mana Regeneration based on time spent as Good and Evil in this Reincarnation.</p>
+	<p><b>Formula</b>: (0.75 * (x + y) ^ 0.75)%, where x and y are time spent as Good and Evil respectively in this Reincarnation.</p>
 	<hr>
 	<p id="FR-GB"><img src="/realm/Factions/picks/ArtifactCaveau.png" align="middle"><b> Artifact Caveau</b></p>
 	<p><b>Requirement</b>: Fairy Legacy, Goblin Legacy</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on artifacts found.</p>
 	<p><b>Formula</b>: (x ^ 0.95)%, where x is the number of artifacts found.</p>
 	<hr>
-	<p id="FR-UD"><img src="/realm/Factions/picks/TwistingNetherCombo.png" align="middle"><b> Twisting Nether</b></p>
-	<p><b>Requirement</b>: Fairy Legacy, Undead Legacy</p>
+	<p id="FR-AN"><img src="/realm/Factions/picks/TwistingNetherCombo.png" align="middle"><b> Twisting Nether</b></p>
+	<p><b>Requirement</b>: Fairy Legacy, Angel Legacy</p>
 	<p><b>Effect</b>: Gain a new spell with the same name (20 seconds duration, 1 M (1e6) Mana Cost, can be cast up to Tier 99). While active, increases Lineage Level by +1 per Tier.</p>
 	<p><img src="/realm/Factions/picks/TwistingNether.png" align="middle"></p>
 	<p><b>Note</b>: The Lineage Level increase is only a "count more" effect and does not affect base lineage in any way.</p>
@@ -434,20 +434,20 @@
 	<p id="EL-UD"><img src="/realm/Factions/picks/SwampofSorrows.png" align="middle"><b> Swamp of Sorrows</b></p>
 	<p><b>Requirement</b>: Elf Legacy, Undead Legacy</p>
 	<p><b>Effect</b>: Activity time of all spells counts more based on Maximum Mana.</p>
-	<p><b>Formula</b>: (2 * ln(1 + x) ^ 2.25)%, where x is your Maximum Mana.</p>
+	<p><b>Formula</b>: (1.45 * ln(1 + x) ^ 1.45)%, where x is your Maximum Mana.</p>
 	<hr>
 	<p id="EL-DM"><img src="/realm/Factions/picks/ForbiddenGrove.png" align="middle"><b> Forbidden Grove</b></p>
 	<p><b>Requirement</b>: Elf Legacy, Demon Legacy</p>
-	<p><b>Effect</b>: Autoclicks per second based on the amount of Unique Buildings you own.</p>
-	<p><b>Formula</b>: +(1 + 1.5 * x ^ 0.2)%, where x is the amount of Unique Buildings you own.</p>
-	<p><b>Effect</b>: Also increases production of Unique Buildings based on Autoclicks this Era.</p>
-	<p><b>Formula</b>: (2 * log10(1 + x) ^ 2)%, where x is Autoclicks made this Era.</p>
+	<p><b>Effect</b>: Autoclicks per second based on the amount of Non-Unique Buildings you own.</p>
+	<p><b>Formula</b>: +(1 + 1.5 * x ^ 0.2), where x is the amount of Non-Unique Buildings you own.</p>
+	<p><b>Effect</b>: Also multiplicatively increases the production bonus from Gems based on Autoclicks this Era.</p>
+	<p><b>Formula</b>: (2 * ln(1 + x) ^ 2)%, where x is Autoclicks made this Era.</p>
 	<p><b>Note</b>: 'Clicks count more' effects are <b>not</b> affecting this upgrade.</p>
 	<hr>
 	<p id="AN-GB"><img src="/realm/Factions/picks/GoldenHeaven.png" align="middle"><b> Golden Heaven</b></p>
 	<p><b>Requirement</b>: Angel Legacy, Goblin Legacy</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on Gold owned.</p>
-	<p><b>Formula</b>: (log10(1 + x) ^ 2)%, where x is the current amount of Gold you own.</p>
+	<p><b>Formula</b>: (0.25 * ln(1 + x) ^ 2)%, where x is the current amount of Gold you own.</p>
 	<hr>
 	<p id="AN-UD"><img src="/realm/Factions/picks/DarkSanctum.png" align="middle"><b> Dark Sanctum</b></p>
 	<p><b>Requirement</b>: Angel Legacy, Undead Legacy</p>
@@ -457,22 +457,22 @@
 	<p id="AN-DM"><img src="/realm/Factions/picks/EternalBattlefield.png" align="middle"><b> Eternal Battlefield</b></p>
 	<p><b>Requirement</b>: Angel Legacy, Demon Legacy</p>
 	<p><b>Effect</b>: Increase the production of Evil Buildings based on time spent as Good in this Reincarnation, and vice-versa. Does not affect Neutral Buildings</p>
-	<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent as Good/Evil in this Reincarnation.</p>
+	<p><b>Formula</b>: (0.8 * x ^ 0.8)%, where x is time spent as Good/Evil in this Reincarnation.</p>
 	<hr>
 	<p id="GB-UD"><img src="/realm/Factions/picks/HomunculusLab.png" align="middle"><b> Homunculus Lab</b></p>
 	<p><b>Requirement</b>: Goblin Legacy, Undead Legacy</p>
 	<p><b>Effect</b>: Increase Research Budget based on the least time spent between Order and Balance in this Reincarnation.</p>
-	<p><b>Formula</b>: +(75 + ln(1 + min(x , y)) ^ 3.25)%, where x and y is time spent as Order and Balance respectively in this Reincarnation.</p>
+	<p><b>Formula</b>: +min(3000, 50 + 1.15 * ln(1 + min(x, y)) ^ 3.15), where x and y are time spent as Order and Balance respectively in this Reincarnation.</p>
 	<p><b>Effect</b>: Also increase the production of all buildings based on unspent research budget.</p>
 	<p><b>Formula</b>: (1.3 * x ^ 0.7)%, where x is the sum of your unspent research budget across all branches.</p>
 	<hr>
 	<p id="GB-DM"><img src="/realm/Factions/picks/CorruptionZone.png" align="middle"><b> Corruption Zone</b></p>
 	<p><b>Requirement</b>: Goblin Legacy, Demon Legacy</p>
-	<p><b>Effect</b>: Increase the production of Non-Unique buildings based on the duration of your longest spell.</p>
-	<p><b>Formula</b>: (0.8 * x ^ 0.8)%, where x is the duration of your longest spell.</p>
+	<p><b>Effect</b>: Increase triggered Tax Collections based on Trophies unlocked.</p>
+	<p><b>Formula</b>: +floor(0.2 * x ^ 0.6), where x is the number of Trophies unlocked.</p>
 	<hr>
 	<p id="UD-DM"><img src="/realm/Factions/picks/FrozenWastes.png" align="middle"><b> Frozen Wastes</b></p>
 	<p><b>Requirement</b>: Undead Legacy, Demon Legacy</p>
 	<p><b>Effect</b>: Increase Offline Production based on time spent offline in this Reincarnation.</p>
-	<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent offline in this Reincarnation.</p>
+	<p><b>Formula</b>: (0.9 * x ^ 0.9)%, where x is time spent offline in this Reincarnation.</p>
 <?php include "../scripts/footer.html"; ?>
