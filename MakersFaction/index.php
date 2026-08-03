@@ -41,18 +41,20 @@
 	<p><b><img src="/realm/Factions/picks/InfiniteSpiral.png" align="middle"> Infinite Spiral</b></p>
 	<p><b>Cost</b>: 505,000 mana - <b>Duration</b>: 10 seconds</p>
 	<p><b>Effect</b>: Temporarily increase assistants based on Maximum Mana (multiplicatively).</p>
-	<p><b>Formula</b>: (10 * ln(1 + x) ^ 1.25)%, where x is Maximum Mana.</p>
+	<p><b>Formula</b>: (10 * ln(1 + x) ^ 1.25 * (T + 1))%, where x is Maximum Mana and T is the spell tier.</p>
 	<p><b>Effect</b>: Multiplicatively increase Maximum Mana based on Faction Coin find chance.</p>
-	<p><b>Formula</b>: (1.5 * log10(1 + x) ^ 1.5)%, where x is Faction Coin find chance.</p>
-	<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on Excavations made, including resets, in this Reincarnation.</p>
-	<p><b>Formula</b>: (10 + 0.05 * (x * y) ^ 0.75)%, where x is excavations done this Reincarnation (<b>not</b> current excavation count), y is free and ruby Excavation Resets this Reincarnation.</p>
+	<p><b>Formula</b>: (1.5 * ln(1 + x) ^ 1.5 * (T + 1))%, where x is Faction Coin find chance and T is the spell tier.</p>
+	<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on Excavation depth.</p>
+	<p><b>Formula</b>: (10 + 0.1 * x ^ 0.75 * (T + 1))%, where x is your Excavation depth and T is the spell tier.</p>
+	<p><b>Effect</b>: Increase the production of all buildings by (10 * T)% each second, up to its maximum duration, where T is the spell tier.</p>
+	<p><b>Note</b>: The Makers Challenge Reward increases the exponents of these formulas by 12%.</p>
 	<br/>
 	<p><b>Spell Trophy & Upgrade</b></p>
 	<p><b><img src="/realm/Factions/picks/RealityCraterSpellUpgrade.png" align="middle"> Reality Crater</b></p>
 	<p><b>Requirement</b>: R125+, Cast Infinite Spiral with at least 10 excavation resets this game.</p>
 	<p><b>Cost</b>: 10 Octg (1e118), A3+ Free</p>
 	<p><b>Effect</b>: Infinite Spiral also reduces excavation cost multiplier based on assistants owned.</p>
-	<p><b>Formula</b>: -(0.001 * log(1 + x)), where x is assistants owned.</p>
+	<p><b>Formula</b>: -(0.0005 * ln(1 + x)), where x is assistants owned.</p>
 	<hr>
 	<center><b>When using Mercenary</b></center>
 	<p><b>Note</b>: Elite Faction Upgrades can only be purchased with Mercenary Upgrade 4, 8, 12 and 16.</p>
@@ -78,7 +80,7 @@
 	<p><b><img src="/realm/Factions/picks/MakersUpgrade3.png" align="middle"> Infinite Improvements</b></p>
 	<p><b>Cost</b>: 100 NoQag (1e152)</p>
 	<p><b>Effect</b>: Increase the production of All Buildings based on time spent as Balance.</p>
-	<p><b>Formula</b>: (0.3 * x ^ 0.7)%, where x is time spent as balance this Reincarnation.</p>
+	<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent as Balance this Reincarnation.</p>
 	<hr>
 	<p><b>Tier 2 Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/MakersFriendshipPact.png" align="middle"> Makers Friendship Pact</b></p>
@@ -93,12 +95,12 @@
 	<p><b><img src="/realm/Factions/picks/MakersUpgrade5.png" align="middle"> Treasure Mosaic</b></p>
 	<p><b>Cost</b>: 1 DQig (1e159)</p>
 	<p><b>Effect</b>: Additionally increase Maximum Mana based on Faction Coins found in this game.</p>
-	<p><b>Formula</b>: +(27.5 * log10(1 + x) ^ 2.75), where x is Faction Coins found in this game.</p>
+	<p><b>Formula</b>: +(27.5 * ln(1 + x) ^ 2.75), where x is Faction Coins found in this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MakersUpgrade6.png" align="middle"> Art of Commerce</b></p>
 	<p><b>Cost</b>: 10 DQig (1e160)</p>
 	<p><b>Effect</b>: Multiplicatively increase Royal Exchange bonus based on their quantity.</p>
-	<p><b>Formula</b>: (0.2 * x ^ 0.6)%, where x is Royal Exchanges made.</p>
+	<p><b>Formula</b>: (0.3 * x ^ 0.6)%, where x is Royal Exchanges made.</p>
 	<hr>
 	<p><b>Tier 3 Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/MakersAlliance.png" align="middle"> Makers Alliance</b></p>
@@ -107,8 +109,8 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MakersUpgrade7.png" align="middle"> Stonecarving</b></p>
 	<p><b>Cost</b>: 10 TQig (1e163)</p>
-	<p><b>Effect</b>: Increase the production of all buildings based on excavations made in this Reincarnation, including resets.</p>
-	<p><b>Formula</b>: (250 + 0.5 * (x * (y + z)) ^ 0.5)%, where x is excavations done this Reincarnation (NOT current excavation count) and y & z are free and ruby excavation resets done in this Reincarnation.</p>
+	<p><b>Effect</b>: Increase the production of all buildings based on Excavation depth.</p>
+	<p><b>Formula</b>: (25 + 2.5 * x ^ 0.5)%, where x is your Excavation depth.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MakersUpgrade8.png" align="middle"> Past Trade</b></p>
 	<p><b>Cost</b>: 100 TQig (1e164)</p>
@@ -118,13 +120,13 @@
 	<p><b><img src="/realm/Factions/picks/MakersUpgrade9.png" align="middle"> Structural Stability</b></p>
 	<p><b>Cost</b>: 1 QaQig (1e165)</p>
 	<p><b>Effect</b>: Increase the production of building tiers directly above or below Unique Buildings based on spells cast in this game.</p>
-	<p><b>Formula</b>: (0.2 * x ^ 0.4)%, where x spells cast in this game.</p>
+	<p><b>Formula</b>: (0.6 * x ^ 0.4)%, where x is spells cast in this Era.</p>
 	<p><b>Note</b>: If affected twice, stacks multiplicatively.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/MakersHeritage.png" align="middle"> Makers Heritage</b></p>
 	<p><b>Cost</b>: 1 Ud (1e36) Elven and Goblin Coins</p>
-	<p><b>Effect</b>: Multiplicatively increase maximum mana based on Tax Collections cast in this game.</p>
-	<p><b>Formula</b>: (2 * log10(1 + x) ^ 1.75)%, where x is Tax Collections cast this game.</p>
+	<p><b>Effect</b>: Multiplicatively increase Maximum Mana based on Tax Collections cast in this Era.</p>
+	<p><b>Formula</b>: (ln(1 + x) ^ 1.75)%, where x is Tax Collections cast this Era.</p>
 	<hr>
 	<p><b>R130+</b></p>
 	<p><b><img src="/realm/Factions/picks/HallofOriginationQuest.png" align="middle"> Hall of Origination Quest</b></p>
@@ -153,17 +155,20 @@
 	<p><b><img src="/realm/Factions/picks/MakersUpgrade10.png" align="middle"> Valuable Antiquity</b></p>
 	<p><b>Requirements</b>: Makers Union</p>
 	<p><b>Cost</b>: 100 QiQig (1e170)</p>
-	<p><b>Effect</b>: Artifacts count more based on time spent in this Reincarnation.</p>
-	<p><b>Formula</b>: (0.4 * x ^ 0.4)%, where x is time spent in this Reincarnation.</p>
+	<p><b>Effect</b>: Multiplicatively increase triggered Tax Collections based on Artifacts found.</p>
+	<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is Artifacts found.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MakersUpgrade11.png" align="middle"> Bedrock Foundations</b></p>
 	<p><b>Requirements</b>: Makers Union</p>
 	<p><b>Cost</b>: 1 SxQig (1e171)</p>
-	<p><b>Effect</b>: Increase the base production of all buildings by +1000 per building tier.</p>
+	<p><b>Effect</b>: Increase the base production of each building based on their tier.</p>
+	<p><b>Formula</b>: +(10 ^ (0.75 * T) / 30) base production per second, where T is the building tier.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MakersUpgrade12.png" align="middle"> Reality Marble</b></p>
 	<p><b>Requirements</b>: Makers Union</p>
 	<p><b>Cost</b>: 10 SxQig (1e172)</p>
-	<p><b>Effect</b>: Gain assistants based on clicks made in this Reincarnation.</p>
-	<p><b>Formula</b>: +(2.5 * x ^ 0.5), where x is clicks made this Reincarnation.</p>
+	<p><b>Effect</b>: Multiplicatively increase assistants based on clicks made in this Reincarnation.</p>
+	<p><b>Formula</b>: (1.25 * ln(1 + x) ^ 1.25)%, where x is clicks made this Reincarnation.</p>
+	<p><b>Effect</b>: Also makes Artifacts count more based on clicks made in this Reincarnation.</p>
+	<p><b>Formula</b>: (0.5 * x ^ 0.25)%, where x is clicks made this Reincarnation.</p>
 <?php include "../scripts/footer.html"; ?>
