@@ -655,7 +655,7 @@
 			<p><b>Anniversary - Blood War</b></p>
 			<p><b><img src='/realm/Factions/picks/FieldsofConflict.png' align='middle'> Fields of Conflict</b></p>
 			<p><b>Type</b>: Feat</p>
-			<p><b>Requirement</b>: Collect a stack of at least 720 of any resource while having at least 20,000 clicks in the current game.</p>
+			<p><b>Requirement</b>: Collect a stack of at least 720 of any resource while having at least 20,000 clicks in the current Era.</p>
 			<p><b>Note</b>: If you unlock this feat, you will permanently unlock a new upgrade with the same name.</p>
 			<p><b>Effect</b>: Autoclicks 2 times per second.</p>
 			<p><b>Note</b>: Once unlocked, it is available during any Seasonal Event.</p>
@@ -1112,7 +1112,7 @@
 					<br/>
 					<p><b><img src="/realm/Factions/picks/FieldsofConflict.png" align='middle'> Fields of Conflict</b></p>
 					<p><b>Type</b>: Feat</p>
-					<p><b>Requirement</b>: Collect a stack of at least 720 of any resource while having at least 20,000 clicks in the current game.</p>
+					<p><b>Requirement</b>: Collect a stack of at least 720 of any resource while having at least 20,000 clicks in the current Era.</p>
 					<p><b>Note</b>: If you unlock this feat, you will permanently unlock a new upgrade with the same name.</p>
 					<p><b>Effect</b>: Autoclicks 2 times per second.</p>
 					<p><b>Note</b>: Once unlocked, it is available during any Seasonal Event.</p>

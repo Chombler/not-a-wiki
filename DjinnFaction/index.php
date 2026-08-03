@@ -60,7 +60,7 @@
 	<br/>
 	<p><b>Spell Trophy & Upgrade</b></p>
 	<p><b><img src="/realm/Factions/picks/PersistentEntropySpellUpgrade.png" align="middle"> Persistent Entropy</b></p>
-	<p><b>Requirement</b>: Cast Limited Wish 100 times within 30 minutes of a new game.</p>
+	<p><b>Requirement</b>: Cast Limited Wish 100 times within 30 minutes of a new Era.</p>
 	<p><b>Cost</b>: 10 Octg (1e118), A3+ Free</p>
 	<p><b>Effect</b>: Adds 150 casts to Limited Wish's formula.</p>
 	<hr>

@@ -19,7 +19,7 @@
 	<p><b><img src='/realm/Factions/picks/BiasedArchitetureChallenge.png' align='middle'> Biased Architecture</b></p>
 	<p>&quot;The dwarven lords have asked you to provide their people with ale. Hurry up, the dwarves are getting thirsty!&quot;</p>
 	<p><b>Requirements</b>: Fairy as Base Faction, Dwarves as Prestige Faction, Reincarnation 11+, Dwarven Bloodline, Elven, Angel and Fairy challenge 2 and Dwarven challenge 1 completed.</p>
-	<p><b>Challenge</b>: Build 2,250 Inns within 2 minutes of a new game.</p>
+	<p><b>Challenge</b>: Build 2,250 Inns within 2 minutes of a new Era.</p>
 	<p><b>Effect</b>: Reduce Farms, Inn and Blacksmith cost multipliers.</p>
 	<p><b>Effect</b>: Reduces cost multiplier by 0.01; with no other reductions applying, the multiplier will be 1.14 instead of 1.15.</p>
 	<p><b>Upgrade</b>: Works with Fairy + Dwarven</p>

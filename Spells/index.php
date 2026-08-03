@@ -438,7 +438,7 @@
 		" coords="10,190,64,244" shape="rect">
 		<area href="#LimitedWish" research="
 	<p><b><img src='/realm/Factions/picks/PersistentEntropySpellUpgrade.png' align='middle'> Persistent Entropy</b></p>
-	<p><b>Requirement</b>: Cast Limited Wish 100 times within 30 minutes of a new game.</p>
+	<p><b>Requirement</b>: Cast Limited Wish 100 times within 30 minutes of a new Era.</p>
 	<p><b>Cost</b>: 10 Octg (1e118), A3+ Free</p>
 	<p><b>Effect</b>: Adds 150 casts to Limited Wish's formula.</p>
 		" coords="70,190,124,244" shape="rect">
@@ -1336,7 +1336,7 @@
 <p><b>4</b>: Multiplicatively increase Faction Coin find chance.</p>
 <br/>
 <p><b>Spell Trophy & Upgrade</b>: <b><img src="/realm/Factions/picks/PersistentEntropySpellUpgrade.png" align="middle"> Persistent Entropy</b></p>
-<p><b>Requirement</b>: R125+, Cast Limited Wish 100 times within 30 minutes of a new game.</p>
+<p><b>Requirement</b>: R125+, Cast Limited Wish 100 times within 30 minutes of a new Era.</p>
 <p><b>Effect</b>: Adds 150 casts to Limited wish formula.</p>
 <p><b>Cost</b>: 10 Octg (1e118), A3+ Free</p>
 <p><b>Challenge Upgrade</b>: <b><img src="/realm/Factions/picks/FullWishChallengeReward.png" align="middle"> Full Wish</b> (R153+)</p>

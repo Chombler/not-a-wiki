@@ -22,7 +22,7 @@
 	<p>&quot;Our farmers' crops are not growing. Perhaps a little quick-magic can change that.&quot;</p>
 	<p><b>Requirements</b>: Fairy as Base Faction, Reincarnation 8+, Fairy Bloodline, Fairy challenge 1 completed.</p>
 	<p><b>Note</b>: Dwarven can be used but not required.</p>
-	<p><b>Challenge</b>: Cast Fairy Chanting within 30 seconds of a new game with over 1000 Farms.(Abdication or Reincarnation)</p>
+	<p><b>Challenge</b>: Cast Fairy Chanting within 30 seconds of a new Era with over 1,000 Farms.</p>
 	<p><b>Effect</b>: Increase Tax Collection worth by 10%.</p>
 	<p><b>Upgrade</b>: Works with Goblin</p>
 	<p><b>Tip 1</b>: This is easiest just before you reincarnate, Grab the Fairy and Dwarven upgrades as quickly as possible, buy 1k+ farms, and hit the spell.</p>

@@ -67,7 +67,7 @@
 	<p>&quot;Our farmers' crops are not growing. Perhaps a little quick-magic can change that.&quot;</p>
 	<p><b>Requirements</b>: Fairy as Base Faction, Reincarnation 8+, Fairy Bloodline, Fairy challenge 1 completed.</p>
 	<p><b>Note</b>: Dwarven can be used but not required.</p>
-	<p><b>Challenge</b>: Cast Fairy Chanting within 30 seconds of a new game with over 1000 Farms.(Abdication or Reincarnation)</p>
+	<p><b>Challenge</b>: Cast Fairy Chanting within 30 seconds of a new Era with over 1,000 Farms.</p>
 	<p><b>Effect</b>: Increase Tax Collection worth by 10%.</p>
 	<p><b>Upgrade</b>: Works with Goblin</p>
 	<p><b>Tip 1</b>: This is easiest just before you reincarnate, Grab the Fairy and Dwarven upgrades as quickly as possible, buy 1k+ farms, and hit the spell.</p>
@@ -148,7 +148,7 @@
 	<p>&quot;The blazing seraphim have entrusted you with a sacred mission: Purify the denizens of the realm with the most holy of lights. Hurry up, corruption is spreading fast.&quot;</p>
 	<p><b>Requirements</b>: Angel as Base Faction, Reincarnation 2+, God's Rest upgrade purchased.</p>
 	<p><b>Note</b>: Dwarven can be used but not required.</p>
-	<p><b>Challenge</b>: Cast 50 Holy Lights during daytime (between 6 AM and 6 PM local time) within 20 minutes of a new game.</p>
+	<p><b>Challenge</b>: Cast 50 Holy Lights during daytime (between 6 AM and 6 PM local time) within 20 minutes of a new Era.</p>
 	<p><b>Effect</b>: Reduce all spell costs by 10%.</p>
 	<p><b>Effect</b>: While Holy Light is active, increase the production of all buildings by 100%.</p>
 	<p><b>Upgrade</b>: Works with Angel</p>
@@ -439,7 +439,7 @@
 	<p><b><img src='/realm/Factions/picks/RecruitmentChallenge.png' align='middle'> Recruitment</b></p>
 	<p>&quot;You are always growing - but what to do when you can only start from a single cell with no means of survival?&quot;</p>
 	<p><b>Requirements</b>: Faceless as Base Faction, Reincarnation 4+, Faceless Overmind upgrade purchased, Fairy and Undead challenge 1 completed.</p>
-	<p><b>Challenge</b>: Have at least 125 assistants within 5 minutes of a new game.</p>
+	<p><b>Challenge</b>: Have at least 125 assistants within 5 minutes of a new Era.</p>
 	<p><b>Effect</b>: Gain 15 assistants every minute; resets every hour.</p>
 	<p><b>Upgrade</b>: Works with Faceless</p>
 		" coords="64,828,118,882" shape="rect">
@@ -449,7 +449,7 @@
 	<p><b><img src='/realm/Factions/picks/MysticMazeChallenge.png' align='middle'> Mystic Maze</b></p>
 	<p>&quot;Your Hive superiors have ordered you to setup a base without alerting any nearby enemies&quot;</p>
 	<p><b>Requirements</b>: Faceless as Base Faction, Reincarnation 9+, Faceless Bloodline, Fairy and Undead challenge 2 completed</p>
-	<p><b>Challenge</b>: Get to 6,500 Maximum Mana and 8,000 Buildings within 10 minutes of a new game.</p>
+	<p><b>Challenge</b>: Have at least 6,500 Maximum Mana and 8,000 buildings within 10 minutes of a new Era.</p>
 	<p><b>Effect</b>: Gain Maximum Mana based on the highest number of buildings owned in this Reincarnation.</p>
 	<p><b>Formula</b>: +(6 * x ^ 0.6), where x is the highest number of buildings owned in this Reincarnation.</p>
 	<p><b>Upgrade</b>: Works with Druid</p>
@@ -498,7 +498,7 @@
 	<p><b><img src='/realm/Factions/picks/BiasedArchitetureChallenge.png' align='middle'> Biased Architecture</b></p>
 	<p>&quot;The dwarven lords have asked you to provide their people with ale. Hurry up, the dwarves are getting thirsty!&quot;</p>
 	<p><b>Requirements</b>: Fairy as Base Faction, Dwarves as Prestige Faction, Reincarnation 11+, Dwarven Bloodline, Elven, Angel and Fairy challenge 2 and Dwarven challenge 1 completed.</p>
-	<p><b>Challenge</b>: Build 2,250 Inns within 2 minutes of a new game.</p>
+	<p><b>Challenge</b>: Build 2,250 Inns within 2 minutes of a new Era.</p>
 	<p><b>Effect</b>: Reduce Farms, Inn and Blacksmith cost multipliers.</p>
 	<p><b>Effect</b>: Reduces cost multiplier by 0.01; with no other reductions applying, the multiplier will be 1.14 instead of 1.15.</p>
 	<p><b>Upgrade</b>: Works with Fairy + Dwarven</p>
@@ -758,7 +758,7 @@
 	<p><b><img src='/realm/Factions/picks/MiniatureLampsChallenge.png' align='middle'> Miniature Lamps</b></p>
 	<p>&quot;In the beginning, we shared with the mortals mystical wishes to give them some entertaining tales to tell.&quot;</p>
 	<p><b>Requirements</b>: Fairy as Base Faction, Djinn as Astral Faction, Reincarnation 135+, Persistent Entropy upgrade purchased.</p>
-	<p><b>Challenge</b>: Reach 50,000 Enchanted Fields within 2 minutes of a new game.</p>
+	<p><b>Challenge</b>: Build 50,000 Enchanted Fields within 2 minutes of a new Era.</p>
 	<p><b>Effect</b>: Maelstrom multiplicatively increases assistants based on lowest building tier targeted.</p>
 	<p><b>Formula</b>: ((12 - T) * 100)%, where T is tier of lowest maelstrom building targeted.</p>
 	<p><b>Effect</b>: Fairy Chanting produces Limited Wish casts every second based on Maximum Mana. Casts provided increase progressively over Fairy Chanting's runtime (time since last cast).</p>
@@ -771,7 +771,7 @@
 	<p><b><img src='/realm/Factions/picks/IfritIgnitionChallenge.png' align='middle'> Ifrit Ignition</b></p>
 	<p>&quot;As the years passed through, this benevolence fell on deaf ears. The mortals decided to enslave us; dictate to us their every whim. How dare they command us to do their bidding, give them hell!&quot;</p>
 	<p><b>Requirements</b>: Demon as Base Faction, Djinn as Astral Faction, Reincarnation 139+, Djinn Bloodline active, Djinn challenge 1 completed.</p>
-	<p><b>Challenge</b>: Have at least 66 B (6.6e10) Mana Produced within 6 hours of a new game.</p>
+	<p><b>Challenge</b>: Produce at least 66 B (6.6e10) Mana within 6 hours of a new Era.</p>
 	<p><b>Effect</b>: Increase Maximum Mana based on trophies unlocked.</p>
 	<p><b>Formula</b>: +(0.8 * x ^ 0.8), where x is trophies unlocked.</p>
 	<p><b>Effect</b>: Each time you cast an Evil or Chaos spell, gain additional casts based on trophies unlocked.</p>

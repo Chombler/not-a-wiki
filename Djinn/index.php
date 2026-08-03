@@ -9,7 +9,7 @@
 	<p><b><img src='/realm/Factions/picks/MiniatureLampsChallenge.png' align='middle'> Miniature Lamps</b></p>
 	<p>&quot;In the beginning, we shared with the mortals mystical wishes to give them some entertaining tales to tell.&quot;</p>
 	<p><b>Requirements</b>: Fairy as Base Faction, Djinn as Astral Faction, Reincarnation 135+, Persistent Entropy upgrade purchased.</p>
-	<p><b>Challenge</b>: Reach 50,000 Enchanted Fields within 2 minutes of a new game.</p>
+	<p><b>Challenge</b>: Build 50,000 Enchanted Fields within 2 minutes of a new Era.</p>
 	<p><b>Effect</b>: Maelstrom multiplicatively increases assistants based on lowest building tier targeted.</p>
 	<p><b>Formula</b>: ((12 - T) * 100)%, where T is tier of lowest maelstrom building targeted.</p>
 	<p><b>Effect</b>: Fairy Chanting produces Limited Wish casts every second based on Maximum Mana. Casts provided increase progressively over Fairy Chanting's runtime (time since last cast).</p>
@@ -21,7 +21,7 @@
 	<p><b><img src='/realm/Factions/picks/IfritIgnitionChallenge.png' align='middle'> Ifrit Ignition</b></p>
 	<p>&quot;As the years passed through, this benevolence fell on deaf ears. The mortals decided to enslave us; dictate to us their every whim. How dare they command us to do their bidding, give them hell!&quot;</p>
 	<p><b>Requirements</b>: Demon as Base Faction, Djinn as Astral Faction, Reincarnation 139+, Djinn Bloodline active, Djinn challenge 1 completed.</p>
-	<p><b>Challenge</b>: Have at least 66 B (6.6e10) Mana Produced within 6 hours of a new game.</p>
+	<p><b>Challenge</b>: Produce at least 66 B (6.6e10) Mana within 6 hours of a new Era.</p>
 	<p><b>Effect</b>: Increase Maximum Mana based on trophies unlocked.</p>
 	<p><b>Formula</b>: +(0.8 * x ^ 0.8), where x is trophies unlocked.</p>
 	<p><b>Effect</b>: Each time you cast an Evil or Chaos spell, gain additional casts based on trophies unlocked.</p>

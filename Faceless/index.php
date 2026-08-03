@@ -9,7 +9,7 @@
 	<p><b><img src='/realm/Factions/picks/RecruitmentChallenge.png' align='middle'> Recruitment</b></p>
 	<p>&quot;You are always growing - but what to do when you can only start from a single cell with no means of survival?&quot;</p>
 	<p><b>Requirements</b>: Faceless as Base Faction, Reincarnation 4+, Faceless Overmind upgrade purchased, Fairy and Undead challenge 1 completed.</p>
-	<p><b>Challenge</b>: Have at least 125 assistants within 5 minutes of a new game.</p>
+	<p><b>Challenge</b>: Have at least 125 assistants within 5 minutes of a new Era.</p>
 	<p><b>Effect</b>: Gain 15 assistants every minute; resets every hour.</p>
 	<p><b>Upgrade</b>: Works with Faceless</p>
 	<hr>
@@ -18,7 +18,7 @@
 	<p><b><img src='/realm/Factions/picks/MysticMazeChallenge.png' align='middle'> Mystic Maze</b></p>
 	<p>&quot;Your Hive superiors have ordered you to setup a base without alerting any nearby enemies&quot;</p>
 	<p><b>Requirements</b>: Faceless as Base Faction, Reincarnation 9+, Faceless Bloodline, Fairy and Undead challenge 2 completed</p>
-	<p><b>Challenge</b>: Get to 6,500 Maximum Mana and 8,000 Buildings within 10 minutes of a new game.</p>
+	<p><b>Challenge</b>: Have at least 6,500 Maximum Mana and 8,000 buildings within 10 minutes of a new Era.</p>
 	<p><b>Effect</b>: Gain Maximum Mana based on the highest number of buildings owned in this Reincarnation.</p>
 	<p><b>Formula</b>: +(6 * x ^ 0.6), where x is the highest number of buildings owned in this Reincarnation.</p>
 	<p><b>Upgrade</b>: Works with Druid</p>

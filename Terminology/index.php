@@ -83,6 +83,9 @@
         <p><b>R#</b>: Number of times reincarnated (eg: R12 = 12th reincarnation)</p>
         <p><b>FC</b>: Faction Coin</p>
         <p><b>RE</b>: Royal Exchange</p>
+        <p><b>Royal Market</b>: The interface container for Royal Exchanges and its separate Royal Market bonus.</p>
+        <p><b>Triggered Tax Collections Power</b>: The aggregate stat combining additive and multiplicative effects that make spells cast free Tax Collections.</p>
+        <p><b>Clicks per Second</b>: The aggregate stat combining automatic-click effects; multiplicative modifiers apply to this total.</p>
         <p><b>RP</b>: Research Point</p>
         <p><b>RUS</b>: Research Upgrade Slot</p>
         <p><b>m/s or mps</b>: Mana per Second</p>

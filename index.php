@@ -44,7 +44,7 @@
 <p>Angels' ability with magic is unparalleled as they have the innate power to infuse mana into everything they touch.</p>
 <p>Affiliating yourself with the Angels faction will grant you nearly unlimited spell power and the ability to take advantage of it directly.</p>
 <p>Part of the Good Vanilla Factions, Angels empower mana and spells, and thus can help when aiming for the mana and spell trophy series.</p>
-<p>Their Bloodline increases Mana Regeneration based on spells cast this game.</p>
+<p>Their Bloodline increases Mana Regeneration based on spells cast in this Era.</p>
 	" coords="124,4,178,58" shape="rect">
 	<area href="/realm/GoblinFaction/" research="
 <p><b>Goblin</b></p>

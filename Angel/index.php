@@ -10,7 +10,7 @@
 	<p>&quot;The blazing seraphim have entrusted you with a sacred mission: Purify the denizens of the realm with the most holy of lights. Hurry up, corruption is spreading fast.&quot;</p>
 	<p><b>Requirements</b>: Angel as Base Faction, Reincarnation 2+, God's Rest upgrade purchased.</p>
 	<p><b>Note</b>: Dwarven can be used but not required.</p>
-	<p><b>Challenge</b>: Cast 50 Holy Lights during daytime (between 6 AM and 6 PM local time) within 20 minutes of a new game.</p>
+	<p><b>Challenge</b>: Cast 50 Holy Lights during daytime (between 6 AM and 6 PM local time) within 20 minutes of a new Era.</p>
 	<p><b>Effect</b>: Reduce all spell costs by 10%.</p>
 	<p><b>Effect</b>: While Holy Light is active, increase the production of all buildings by 100%.</p>
 	<p><b>Upgrade</b>: Works with Angel</p>

@@ -123,7 +123,7 @@
 	<p><b>Note</b>: This can be done at R0.
 	" coords="183,163,237,217" shape="rect">
 		<area research="<img src=/realm/Factions/picks/NeedaHeadStartSecretTrophy.png align=middle> <b>Need a Head Start?</b></p>
-	<p><b>Requirement</b>: Don't do anything for 5 minutes after starting a new game or after abdicating. Don't buy anything and don't click anything</p>
+	<p><b>Requirement</b>: Don't do anything for 5 minutes after starting a new Era. Don't buy anything and don't click anything.</p>
 	<p><b>Cost</b>: Free</p>
 	<p><b>Effect</b>: Instantly adds 25 gold coins.</p>
 	<p><b>Note</b>: This can be done at the start of any reincarnation or abdication.</p>
@@ -1422,7 +1422,7 @@
 	<p><b>Note</b>: Precognition raises regen itself. Make sure that you have 1e17 with it not active.</p>
 	" coords="123,523,177,577" shape="rect">
 		<area research="<img src=/realm/Factions/picks/PersistentEntropySpellUpgrade.png align=middle> Persistent Entropy</b>
-	<p><b>Requirements</b>: R125+, Cast Limited Wish 100 times within 30 minutes of a new game.</p>
+	<p><b>Requirements</b>: R125+, Cast Limited Wish 100 times within 30 minutes of a new Era.</p>
 	<p><b>Cost</b>: 10 Octg (1e118), A3+ Free</p>
 	<p><b>Effect</b>: Also adds 150 casts to Limited wish formula.</p>
 	" coords="183,523,237,577" shape="rect">
