@@ -154,8 +154,8 @@
 	<p><img src=&quot;/realm/Factions/picks/HarlequinSecretTrophy.png&quot; align=&quot;middle&quot;><b> Harlequin</b></p>
 					<p><b>Requirement</b>: As a Mercenary, purchase one upgrade from 11 different factions.</p>
 					<p><b>Cost</b>: 5 Qivg (5e78), A1, Free</p>
-					<p><b>Effect</b>: Increases the production of all buildings based on the number of upgrades bought this Era from different Factions.</p>
-					<p><b>Formula</b>: (x ^ 3)%, where x is the number of Factions with at least one of their upgrades being used (up to 3375% maximum possible).</p>
+					<p><b>Effect</b>: Increases the production of all buildings based on the number of different Factions involved in your Mercenary upgrades. Improves over time spent as your least-used alignment in this Reincarnation.</p>
+					<p><b>Formula</b>: (10 + x ^ 3 * (1 + 0.03 * y ^ 0.7))%, where x is the number of different Factions involved in your Mercenary upgrades and y is time spent as your least-used alignment in this Reincarnation, in seconds.</p>
 					<p><b>Note</b>: This can be done at R3 with Merc Build <a target=&quot;_blank&quot; href=&quot;/realm/SpecialBuilds/&quot;><b>(Harlequin)</b></a></p>
 	" coords="363,163,417,217" shape="rect">
 		<area href="/realm/MercBuilds/#TrophyBuilds" target="" research="
