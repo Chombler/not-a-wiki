@@ -1853,79 +1853,79 @@
 			<div class="autohide">
 				<p><b>F5250</b> - For All Factions</p>
 				<p><b>Research Name</b>: Dreamwalking</p>
-				<p><b>Requirement</b>: R176+, Forgotten Relic, Apeiron artifact and upgrade.</p>
+				<p><b>Requirement</b>: R176+, Forgotten Relic, Apeiron artifact and upgrade, and 1e20 Mana Regeneration.</p>
 				<p><b>Cost</b>: Free</p>
 				<p><b>Effect</b>: Increase Offline Bonus based on time spent offline in this Reincarnation.</p>
-				<p><b>Formula</b>: (0.7 * x ^ 0.7), where x is offline time (This R).</p>
+				<p><b>Formula</b>: (2 * x ^ 0.8)%, where x is offline time this Reincarnation.</p>
 				<hr>
 				<p><b>F5500</b> - For All Factions</p>
 				<p><b>Research Name</b>: Gathering</p>
-				<p><b>Requirement</b>: R178+, Forgotten Relic, Apeiron artifact and upgrade.</p>
+				<p><b>Requirement</b>: R178+, Forgotten Relic, Apeiron artifact and upgrade, and 2 Excavation Resets.</p>
 				<p><b>Cost</b>: Free</p>
 				<p><b>Effect</b>: Additively increase production bonus from Gems based on your Faction Coin find chance.</p>
-				<p><b>Formula</b>: (2.5 * log10(1 + x) ^ 2.5), where x is faction coin find chance.</p>
+				<p><b>Formula</b>: (2.5 * (0.5 * ln(1 + x)) ^ 2.5)%, where x is Faction Coin find chance.</p>
 				<hr>
 				<p><b>F5750</b> - For All Factions</p>
 				<p><b>Research Name</b>: Corruption</p>
-				<p><b>Requirement</b>: R180+, Forgotten Relic, Apeiron artifact and upgrade.</p>
+				<p><b>Requirement</b>: R180+, Forgotten Relic, Apeiron artifact and upgrade, and 250,000 Unique Buildings.</p>
 				<p><b>Cost</b>: Free</p>
 				<p><b>Effect</b>: Gain the base Union effect of your opposite Alignment.</p>
 				<p><b>Note</b>: Only gain the effects of the Base Faction that matches both alignments. For Neutral and Balance the opposite is Neutral and Balance respectively.</p>
 				<hr>
 				<p><b>F6000</b> - For All Factions</p>
 				<p><b>Research Name</b>: Inevitability</p>
-				<p><b>Requirement</b>: R182+, Forgotten Relic, Apeiron artifact and upgrade.</p>
+				<p><b>Requirement</b>: R182+, Forgotten Relic, Apeiron artifact and upgrade, and 3,600 seconds (1 hour) spent as Mercenary.</p>
 				<p><b>Cost</b>: Free</p>
 				<p><b>Effect</b>: Increase your next time head start based on time spent in this Era.</p>
 				<p><b>Note</b>: Capped at time spent in your current Reincarnation.</p>
 				<p><b>Note</b>: Does not count when  Reincarnating.</p>
-				<p><b>Formula</b>: (x ^ 0.75), where x is time spent (This Era).</p>
+				<p><b>Formula</b>: (10 * x ^ 0.5) seconds, where x is time spent in this Era.</p>
 				<hr>
 				<p><b>F11000</b> - For All Factions</p>
 				<p><b>Research Name</b>: Godslaying</p>
 				<p><b>Requirement</b>: R222+</p>
 				<p><b>Effect</b>: Active spells count more based on the sum of your Faction spells activity time.</p>
-				<p><b>Formula</b>: (0.575 * x ^ 0.575)%, where x is your current faction(s)’ faction spell activity time this R in seconds.</p>
+				<p><b>Formula</b>: (0.5 * x ^ 0.5)%, where x is the sum of your current factions' spell activity time this Reincarnation.</p>
 				<hr>
 				<p><b>F11250</b> - For All Factions</p>
 				<p><b>Research Name</b>: Inanity</p>
-				<p><b>Requirement</b>: R224+</p>
+				<p><b>Requirement</b>: R224+ and a maximum Excavation depth of 15,000 this Reincarnation.</p>
 				<p><b>Effect</b>: Excavations count more based on time spent offline in this Era.</p>
-				<p><b>Formula</b>: (0.9 * x ^ 0.45)%, where x is time spent offline this Era.</p>
+				<p><b>Formula</b>: (x ^ 0.5)%, where x is time spent offline this Era.</p>
 				<hr>
 				<p><b>F11500</b> - For All Factions</p>
 				<p><b>Research Name</b>: Paradox</p>
-				<p><b>Requirement</b>: R226+</p>
+				<p><b>Requirement</b>: R226+ and a Total Research Budget of 60,000.</p>
 				<p><b>Effect</b>: Gain the Set bonus of your opposite alignment.</p>
 				<p><b>Note</b>: Only gain the effects of the Base Faction that matches both alignments. For Neutral and Balance the opposite is Neutral and Balance respectively.</p>
 				<hr>
 				<p><b>F11750</b> - For All Factions</p>
 				<p><b>Research Name</b>: Relativity</p>
-				<p><b>Requirement</b>: R228+</p>
+				<p><b>Requirement</b>: R228+ and 5,500 Royal Exchanges.</p>
 				<p><b>Effect</b>: You can purchase one Legacy of your choice for free.</p>
 				<p><b>Note</b>: This will not increase the cost of the normal Legacy.</p>
 				<hr>
 				<p><b>F12000</b> - For All Factions</p>
 				<p><b>Research Name</b>: Revelations</p>
-				<p><b>Requirement</b>: R230+</p>
+				<p><b>Requirement</b>: R230+ and 1e33 Faction Coins found this Era.</p>
 				<p><b>Effect</b>: Allows the purchase of one additional Legacy Combo upgrade.</p>
 				<hr>
 				<p><b>F12500</b> - For All Factions</p>
 				<p><b>Research Name</b>: Avatars</p>
-				<p><b>Requirement</b>: R234+</p>
+				<p><b>Requirement</b>: R234+ and at least 4 different Factions in your Legacies.</p>
 				<p><b>Effect</b>: Multiplactively increase assistants based on the amount of different Factions in your Legacies.</p>
 				<p><b>Formula</b>: (50 * x ^ 2.5)%, where x is the amount of different Factions in your Legacies.</p>
 				<hr>
 				<p><b>F13250</b> - For All Factions</p>
 				<p><b>Research Name</b>: Taboo</p>
-				<p><b>Requirement</b>: R240+</p>
+				<p><b>Requirement</b>: R240+ and 10,800 seconds (3 hours) of Call to Arms activity time this Reincarnation.</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on the amount of faction upgrades different than your own.</p>
 				<p><b>Formula</b>: (1.2 * x ^ 1.2)%, where x is the number of faction upgrades you have that are not part of your faction.</p>
 				<p><b>Note</b>: Faction upgrades in this instance refers to only the main 12 faction upgrades (that you get via Legacies). Lineage Perks, Advanced Heritages and such are not counted toward this research.</p>
 				<br/>
 				<p><b>F13750</b> - For All Factions</p>
 				<p><b>Research Name</b>: The Unseen</p>
-				<p><b>Requirement</b>: R244+</p>
+				<p><b>Requirement</b>: R244+, the Forbidden Library upgrade, and 4,000 Monasteries.</p>
 				<p><b>Effect</b>: Increase Offline production based on the maximum amount of assistants you had in this Reincarnation.</p>
 				<p><b>Formula</b>: (2 * ln(1 + x) ^ 2)%, where x is the highest number of assistants you had this Reincarnation.</p>
 			</div>
