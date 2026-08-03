@@ -5,51 +5,13 @@
 <?php include "../scripts/header.html"; ?>
 	<h6><img src="/realm/Factions/picks/EventsTopPage.png"></h6>
 	<p>Realm Grinder Events take place at annual festivals such as Thanksgiving, Christmas, Easter etc. Playing during an Event gives the players special one-time Trophies and temporary and/or permanent perks.</p>
-	<p>All Event perks work only during the event. All event items, resources (including current stack size), event spell casts and unlock progress for quest and feats persist during the event, throughout Abdications, Reincarnations and Ascensions.</p>
-	<p><b>Note: All Events are based on UTC Time.</a></b>
+	<p>Temporary Event upgrades work only during their event; permanent feat rewards remain available afterward. Event items, resources (including current stack size), event spell casts, and quest/feat progress persist throughout Abdications, Reincarnations, and Ascensions while the event is active.</p>
+	<p><b>Note: Event schedules use UTC.</b></p>
 	<p><b>Current UTC time:</b></p>
 	<p id="currentTime">
 	</p>
-	<p><b>Event will start in</b></p>
-	<p id="start">
-	</p>
-	<p><b>Event will end in</b></p>
-	<p id="end">
-	</p>
 	<script>
-		var currentTime = new Date().getTime();
-		var countDownDate1 = new Date("May 18, 2023 12:01:00 UTC").getTime();
-		var countDownDate2 = new Date("May 22, 2023 18:59:00 UTC").getTime();
-		var x = setInterval(function() {
-			var now = new Date().getTime();
-			var distance = countDownDate1 - now;
-			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-			if (distance < 0) {
-				document.getElementById("start").innerHTML = "Started";
-			}
-			else
-			{
-				document.getElementById("start").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-			}
-
-			var now = new Date().getTime();
-			var distance = countDownDate2 - now;
-			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-			if (distance < 0) {
-				document.getElementById("end").innerHTML = "Last Event has ended";
-				document.getElementById("start").innerHTML = "To be announced";
-			}
-			else
-			{
-				document.getElementById("end").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-			}
-
+		setInterval(function() {
 			document.getElementById("currentTime").innerHTML = new Date().toUTCString();
 		}, 1000);
 	</script>
@@ -592,7 +554,7 @@
 			<p><b>Halloween</b></p>
 			<p><b><img src='/realm/Factions/picks/CurseoftheFallen.png' align='middle'> Curse of the Fallen</b></p>
 			<p><b>Type</b>: Feat</p>
-			<p><b>Requirement</b>: Have at least 2 hours of Holy Light activity time while using a level 50 Vampire. (BUGGED: check is 2 hours this Era with any Vampire and only when Holy Light is cast).</p>
+			<p><b>Requirement</b>: Cast Holy Light while using a Vampire after reaching 2 hours of Holy Light activity time in this Era.</p>
 			<p><b>Note</b>: If you unlock this feat, you will permanently unlock a new icon option for the spell.</p>
 			" coords="303,363,357,417" shape="rect">
 			<area research="
@@ -648,7 +610,7 @@
 			<p><b>Type</b>: Feat</p>
 			<p><b>Requirement</b>: Collect a stack of at least 720 of any resource while Blood Frenzy and Call to Arms are active simultaneously.</p>
 			<p><b>Note</b>: If you unlock this feat, you will permanently unlock a new upgrade with the same name.</p>
-			<p><b>Effect</b>: Increase assistants by 10%.</p>
+			<p><b>Effect</b>: Multiplicatively increase Assistants by 10%.</p>
 			<p><b>Note</b>: Once unlocked, it is available during any Seasonal Event.</p>
 			" coords="303,423,357,477" shape="rect">
 			<area research="
@@ -733,7 +695,7 @@
 			<p><b>Goblin Invasion</b></p>
 			<p><b><img src='/realm/Factions/picks/UnderaGreenSun.png' align='middle'> Under a Green Sun</b></p>
 			<p><b>Type</b>: Feat</p>
-			<p><b>Requirement</b>: Collect a stack of at least 720 Goblin Crowns while having at least 2 hours of Goblin's Greed activity time in this Reincarnation (BUGGED: check is 2 hours this Era).</p>
+			<p><b>Requirement</b>: Collect a stack of at least 720 Goblin Crowns after reaching 2 hours of Goblin's Greed activity time in this Era.</p>
 			<p><b>Note</b>: If you unlock this feat, you will permanently unlock a new icon option for the spell.</p>
 			" coords="123,543,177,597" shape="rect">
 			<area research="
@@ -988,7 +950,7 @@
 	<hr>
 	<p><b>Events</b></p>
 	<div class="shlisting">
-		<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">2023 Events</a></b></p>
+		<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">Historical 2022 Events</a></b></p>
 		<div class="category autohide">
 			<div class="shelementwhole">
 				<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">7th Anniversary - Blood War (May 17 - May 21, 2022)</a></b></p>
@@ -1093,7 +1055,7 @@
 					<p><b>Requirement</b>: Collect at least 480 Lava Stones with a single click while affiliated with the Demons</p>
 					<br/>
 					<p><b><img src="/realm/Factions/picks/Indifference2018.png" alt="Indifference" align="middle"> Indifference</b></p>
-					<p><b>Requirement</b>: Collect at least 480 Lava Stones with a single click or Holy Symbols while affiliated with a Neutral faction</p>
+					<p><b>Requirement</b>: Collect at least 480 of either Event resource with a single click while affiliated with a Neutral faction.</p>
 					<br/>
 					<p><b><img src="/realm/Factions/picks/WorldRestoration.png" alt="World Restoration" align="middle"> World Restoration</b></p>
 					<p><b>Requirement</b>: Have the same amount of Holy Symbols and Lava Stone at any given time, while having at least 1400.(Total)</p>
@@ -1104,7 +1066,7 @@
 					<p><b><img src="/realm/Factions/picks/FrenziedArmy2021.png" alt="Frenzied Army" align="middle"> Frenzied Army</b></p>
 					<p><b>Requirement</b>: Collect a stack of at least 720 of any resource while Blood Frenzy and Call to Arms are active simultaneously.</p>
 					<p><b>Note</b>: If you unlock this feat, you will permanently unlock a new upgrade with the same name.</p>
-					<p><b>Effect</b>: Increase assistants by 10%.</p>
+					<p><b>Effect</b>: Multiplicatively increase Assistants by 10%.</p>
 					<br/>
 					<p><b><img src="/realm/Factions/picks/PlanarTax.png" align="middle"> Planar Tax</b></p>
 					<p><b>Requirement</b>: Collect a stack of at least 720 of any resource in a game with at least 1000 Tax Collection casts.</p>
