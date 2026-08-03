@@ -33,7 +33,7 @@
 	<p><b>Effect</b>: Increase the production of Non-Unique buidings by 10,000% and gain +50,000 assistants.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MakersQuest.png" align="middle"> Makers Quest</b></p>
-	<p><b>Requirements</b>: R125+, Collect all 3 Stone Fragments and accumulate 1 day of All Creation activity time in this Reincarnation.</p>
+	<p><b>Requirements</b>: R125+, Collect all 3 Stone Fragments and accumulate 3 hours of All Creation activity time in this Reincarnation.</p>
 	<p><b>Cost</b>: 1 Ocqag (1e147)</p>
 	<p><b>Effect</b>: Unlocks Makers Faction</p>
 	<br/>

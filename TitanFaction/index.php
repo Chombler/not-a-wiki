@@ -176,7 +176,7 @@
 	<p><b>Cost</b>: 1 Qi (1e18) Angel and Goblin Coins</p>
 	<p><b>Effect</b>: Grants access to Union Upgrades.</p>
 	<p><b>Effect (R105+)</b>: Multiplicatively increase Faction Coin find chance based on time spent in this Era.</p>
-	<p><b>Formula</b>: 50 * (x / 3600) ^ 0.85)%, where x is time spent in this Era.</p>
+	<p><b>Formula</b>: (50 * (x / 3600) ^ 0.85)%, where x is time spent in this Era.</p>
 	<p><b>Effect (R105+)</b>: Also increase maximum Mana additively based on time spent in this Era.</p>
 	<p><b>Formula</b>: +(20 * x ^ 0.75), where x is time spent in this Era.</p>
 	<br/>

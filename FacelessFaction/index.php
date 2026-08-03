@@ -60,11 +60,13 @@
 	<p><b>Cost</b>: 5 Sx (5e21)</p>
 	<p><b>Effect</b>: Increase Faction Coin find chance based on the highest amount of Labyrinths you built in this Reincarnation.</p>
 	<p><b>Formula</b>: +(12 + 3 * x ^ 0.6)%, where x is the highest amount of Labyrinths you built in this Reincarnation.</p>
+	<p><b>With Serpent Queller</b>: The bonus becomes multiplicative and uses (12 + 3 * x ^ 0.65)%.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/FacelessUpgrade3.png" align="middle"> Deep Memory</b></p>
 	<p><b>Cost</b>: 50 Sx (5e22)</p>
 	<p><b>Effect</b>: Multiplicatively increase assistants based on the time spent on your longest game session in this Reincarnation.</p>
 	<p><b>Formula</b>: (0.6 * x ^ 0.6)%, where x is the greater of your longest session this Reincarnation and your longest offline duration.</p>
+	<p><b>With Serpent Queller</b>: The formula becomes (x ^ 0.7)%.</p>
 	<hr>
 	<p><b>Tier 2 Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/FacelessFriendshipPact.png" align="middle"> Faceless Friendship Pact</b></p>
@@ -186,8 +188,9 @@
 	<p><b><img src="/realm/Factions/picks/FacelessUpgrade11.png" alt="Forbidden Language" align="middle"> Forbidden Language</b></p>
 	<p><b>Requirement</b>: Faceless Union</p>
 	<p><b>Cost</b>: 100 Qivg (1e80) Emerald Coins</p>
-	<p><b>Effect</b>: Increase spell durations based on Brainwave casts this Reincarnation.</p>
-	<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is Brainwave casts this Reincarnation.</p>
+	<p><b>Effect</b>: Increase the production of all buildings based on Brainwave duration.</p>
+	<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is Brainwave duration in seconds.</p>
+	<p><b>Effect</b>: Also multiplicatively increase Brainwave's headstart by 100%.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/FacelessUpgrade12.png" alt="Dimension Door" align="middle"> Dimension Door</b></p>
 	<p><b>Requirement</b>: Faceless Union</p>

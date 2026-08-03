@@ -106,7 +106,7 @@
 	<p><b>Requirements</b>: Drow Champion Trophy</p>
 	<p><b>Cost</b>: 75,000 Drow Coins</p>
 	<p><b>Effect</b>: Increase the production of assistants based on the amount of royal exchanges you purchased in this Era.</p>
-	<p><b>Formula</b>: (2 * x ^ 0.8)%, where x is your Royal Exchanges Made stat.</p>
+	<p><b>Formula</b>: (3 * x ^ 0.7)%, where x is your Royal Exchanges Made stat.</p>
 	<hr>
 	<p><b>Drow Research Requirements</b></p>
 	<p><b><img src="/realm/Factions/picks/SpiderSanctuaryQuestFactionUpgrade.png" align="middle"> Spider Sanctuary Quest</b></p>
@@ -176,7 +176,7 @@
 	<p><b>Formula</b>: (0.1 * x ^ 0.85)%, where x is your Maximum Mana.</p>
 	<br/>
 	<p><b>Proof of Chaos</b>: Increase the production of a specific building tier, depending on the amount of buildings you own, based on time spent offline in this Reincarnation.</p>
-	<p><b>Production Formula</b>: (0.666 * x ^ 0.666)%, where x is time spent offline in this Reincarnation.</p>
+	<p><b>Production Formula</b>: (100 + 3 * x ^ 0.87)%, where x is time spent offline in this Reincarnation.</p>
 	<p><b>Chosen Building Tier Formula</b>: (1 + x % 11), where x is total building count this Era (unaffected by count more upgrades).</p>
 	<br/>
 	<p><b>Proof of Balance</b>: Multiplicatively Increase Maximum Mana based on Tax Collections cast this Era.</p>
