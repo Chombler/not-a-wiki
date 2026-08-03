@@ -432,7 +432,7 @@
 	<p><b>Note</b>: Precognition raises regen itself. Make sure that you have 100 Qa (1e17) before being cast.</p>
 	<p><b>Cost</b>: 10 Octg (1e118), A3+ Free</p>
 	<p><b>Effect</b>: A fraction of Precognition's duration is added to time spent in this game.</p>
-	<p><b>Formula</b>: (100 * ln(1 + x / 60) ^ 2.5), where x is its duration.</p>
+	<p><b>Formula</b>: (150 * ln(1 + x / 60) ^ 2), where x is its duration.</p>
 		" coords="10,190,64,244" shape="rect">
 		<area href="#LimitedWish" research="
 	<p><b><img src='/realm/Factions/picks/PersistentEntropySpellUpgrade.png' align='middle'> Persistent Entropy</b></p>
@@ -1306,7 +1306,7 @@
 <p><b>Requirement</b>: R125+, Cast Precognition with at least 100 Qa (1e17) mana regeneration.</p>
 <p><b>Note</b>: Precognition raises regen itself. Make sure that you have 100 Qa (1e17) with it not active</p>
 <p><b>Effect</b>: A fraction of Precognition duration is added to time spent in this game.</p>
-<p><b>Formula</b>: (100 * ln(1 + x / 60) ^ 2.5), where x is its duration.</p>
+<p><b>Formula</b>: (150 * ln(1 + x / 60) ^ 2), where x is its duration.</p>
 <p><b>Effect</b>: Also scale off invisible spell duration modifiers.</p>
 <p><b>Cost</b>: 10 Octg (1e118), A3+ Free</p>
 <p><b>Challenge Upgrade</b>: <b><img src="/realm/Factions/picks/OmniscienceChallengeReward.png" align="middle"> Omniscience</b> (R153+)</p>

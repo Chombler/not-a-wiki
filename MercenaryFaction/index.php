@@ -198,7 +198,7 @@
 	<p><b>Cost</b>: 100 Qag (1e125)</p>
 	<p><b>Effect 1</b>: Allows access to Research Facilities</p>
 	<p><b>Effect 2</b>: Upgrade Evil Fortresses to Tyrant Garrisons, boosting their production based on Offline Production Bonus and unlocking more unique perks for the building.</p>
-	<p><b>Formula</b>: ((log10(1 + x) ^ 3)%, where x is your Offline Production Bonus.</p>
+	<p><b>Formula</b>: (85 + 8.5 * x ^ 0.85)%, where x is your Offline Production Bonus.</p>
 	<p><b>Effect 3</b>: Unlocks Dark Covenant</p>
 	<br/>
 	<p><img src="/realm/Factions/picks/DarkCovenant.png" alt="Dark Covenant" align="middle"> <b>Dark Covenant</b> (Spell Upgrade)</p>
@@ -212,8 +212,8 @@
 	<p><b>Requirement</b>: Mercenary Encampment Quest</p>
 	<p><b>Cost</b>: 100 Qag (1e125)</p>
 	<p><b>Effect 1</b>: Allows access to Research Facilities</p>
-	<p><b>Effect 2</b>: Upgrade Inns to Freemason's Hall, boosting their production based on the highest amount of assistants you had in a single game in this Reincarnation and unlocking more unique perks for the building.</p>
-	<p><b>Formula</b>: (20 + 20 * x ^ 0.8)%, where x is the highest assistants you had in a single game in this Reincarnation.</p>
+	<p><b>Effect 2</b>: Upgrade Inns to Freemason's Hall, boosting their production based on Faction Coins you found in this Era and unlocking more unique perks for the building.</p>
+	<p><b>Formula</b>: (60 + 60 * ln(1 + x) ^ 6)%, where x is Faction Coins found in this Era.</p>
 	<p><b>Effect 3</b>: Unlocks Secret Exchange</p>
 	<br/>
 	<p><img src="/realm/Factions/picks/SecretExchange.png" alt="Secret Exchange" align="middle"> <b>Secret Exchange</b> (Spell Upgrade)</p>
