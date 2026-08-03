@@ -274,7 +274,7 @@
 		<area research="<p><b>S135</b> - For All Factions</p>
 	<p><b>Research Name</b>: Augmentation</p>
 	<p><b>Hint</b>: More Unique buildings will do the trick!</p>
-	<p><b>Requirement</b>: 4000 Unique Buildings (as Fairy) (This Era)</p>
+	<p><b>Requirement</b>: 3,000 Unique Buildings (This Era)</p>
 	<p><b>Cost</b>: 296 Ocqag (2.96e149)</p>
 	<p><b>Effect</b>: Increase the production of Unique Buildings based on Maximum mana.</p>
 	<p><b>Formula</b>: round(2 * x^0.8)%, where x is your Maximum mana.</p>
@@ -1123,12 +1123,12 @@
 	" coords="128,590,168,630" shape="rect">
 		<area research="<p><b>D13125</b> - For All Factions</p>
 	<p><b>Research Name</b>: Asceticism</p>
-	<p><b>Requirement</b>: R239+</p>
+	<p><b>Requirement</b>: R239+, 5 active Dragon's Breath colors</p>
 	<p><b>Effect</b>: Neutral Buildings also count as both Good and Evil buildings. Non-Unique buildings also count as Unique buildings.</p>
 	<p><b>Note</b>: Neutral Buildings in this instance refers to only Farms, Inns, Blacksmiths and Hall of Legends.</p>
 	<p><b>Note</b>: The effect on Unique Buildings is only applied to effects that specifically check for Unique Buildings, such as Lineage Perk 3s. The Non-Unique Buildings will still only count as Non-Unique when it comes to building modifiers, such as E135. Essentially, effects that are '...based on the amount of Unique Buildings' are now '...based on your total amount of buildings'.</p>
 	<p><b>Effect</b>: When you spend time with a faction, you also gain a fraction of that time spent with all factions.</p>
-	<p><b>Note</b>: You gain 0.1 second of playtime for each faction (including Mercenary and Elites) every second. This does not include your current Faction(s), which gain time normally. This effect works both offline and in time warps. Time gained is added as real stat.</p>
+	<p><b>Note</b>: You gain 0.1 second of playtime for each faction (including Mercenary and Astral factions) every second. This does not include your current Faction(s), which gain time normally. This effect works both offline and in time warps. Time gained is added as real stat.</p>
 	" coords="170,590,210,630" shape="rect">
 		<area research="<p><b>D13500</b> - For All Factions</p>
 	<p><b>Research Name</b>: Afterlife</p>
@@ -1466,7 +1466,7 @@
 		<area research="<p><b>A50</b> - For Angel</p>
 	<p><b>Research Name</b>: Gilding</p>
 	<p><b>Hint</b>: Regeneration magic.</p>
-	<p><b>Requirement</b>: 120 Mana Regen (as Undead)</p>
+	<p><b>Requirement</b>: 750 Mana Regeneration per second (as Angel)</p>
 	<p><b>Cost</b>: 318.8 Tqag (3.188e134)</p>
 	<p><b>Effect</b>: Heaven's Domains further increase your mana regeneration rate.</p>
 	<p><b>Formula</b>: (1.45 * x ^ 0.45), where x is the number of Heaven's Domains you own.</p>
