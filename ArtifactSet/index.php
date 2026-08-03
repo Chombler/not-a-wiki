@@ -13,11 +13,11 @@
 		<area href="#Fairy" target="" research="
 		<p><b><img src='/realm/Factions/picks/FairySet.png' align='middle'> Fairy Set</b></p>
 		<p><b>Requirement</b>: R100+, Pink Carrot, Bottled Voice, Silk Cloth</p>
-		<p><b>Effect</b>: Farms, Inns and Blacksmiths count more based on the amount of time spent with Fairies in this Reincarnation.</p>
-		<p><b>Formula</b>: (2 * ln(1 + x) ^ 1.5)%, where x is time spent with Fairies in this Reincarnation.</p>
-		<p><b>Second Effect Requirement</b>: R225+, Glowing Wing</p>
 		<p><b>Effect</b>: Multiplicatively increase Maximum Mana based on the amount of Good Buildings owned.</p>
 		<p><b>Formula</b>: (x ^ 0.5)%, where x is the amount of Good Buildings you own.</p>
+		<p><b>Second Effect Requirement</b>: R225+, Glowing Wing</p>
+		<p><b>Effect</b>: Farms, Inns and Blacksmiths count more based on the amount of time spent with Fairies in this Reincarnation.</p>
+		<p><b>Formula</b>: (2 * ln(1 + x) ^ 1.5)%, where x is time spent with Fairies in this Reincarnation.</p>
 		" coords="10,10,64,64" shape="rect">
 		<area href="#Elven" target="" research="
 		<p><b><img src='/realm/Factions/picks/ElvenSet.png' align='middle'> Elven Set</b></p>
@@ -121,7 +121,7 @@
 		<area href="#Mercenary" target="" research="
 		<p><b><img src='/realm/Factions/picks/MercenarySet.png' align='middle'> Mercenary Set</b></p>
 		<p><b>Requirement</b>: R160+, Steel Plate, Black Sword, Mercenary Insignia</p>
-		<p><b>Effect</b>: Allows you to pick the same lineage as your faction including Prestige/Astral lineage of same alignment.</p>
+		<p><b>Effect</b>: Allows you to pick the same lineage as your faction.</p>
 		<p><b>Effect</b>: Lineage levels count 25% more.</p>
 		" coords="10,250,64,304" shape="rect">
 	</map>
@@ -129,11 +129,11 @@
 	<H6 id="Fairy"></h6>
 	<p><b><img src="/realm/Factions/picks/FairySet.png" align="middle"> Fairy Set</b></p>
 	<p><b>Requirement</b>: R100+, Pink Carrot, Bottled Voice, Silk Cloth</p>
-	<p><b>Effect</b>: Farms, Inns and Blacksmiths count more based on the amount of time spent with Fairies in this Reincarnation.</p>
-	<p><b>Formula</b>: (2 * ln(1 + x) ^ 1.5)%, where x is time spent with Fairies in this Reincarnation.</p>
-	<p><b>Second Effect Requirement</b>: R225+, Glowing Wing</p>
 	<p><b>Effect</b>: Multiplicatively increase Maximum Mana based on the amount of Good Buildings owned.</p>
 	<p><b>Formula</b>: (x ^ 0.5)%, where x is the amount of Good Buildings you own.</p>
+	<p><b>Second Effect Requirement</b>: R225+, Glowing Wing</p>
+	<p><b>Effect</b>: Farms, Inns and Blacksmiths count more based on the amount of time spent with Fairies in this Reincarnation.</p>
+	<p><b>Formula</b>: (2 * ln(1 + x) ^ 1.5)%, where x is time spent with Fairies in this Reincarnation.</p>
 	<br/>
 	<H6 id="Elven"></h6>
 	<p><b><img src="/realm/Factions/picks/ElvenSet.png" align="middle"> Elven Set</b></p>
@@ -237,7 +237,7 @@
 	<H6 id="Mercenary"></h6>
 	<p><b><img src="/realm/Factions/picks/MercenarySet.png" align="middle"> Mercenary Set</b></p>
 	<p><b>Requirement</b>: R160+, Steel Plate, Black Sword, Mercenary Insignia</p>
-	<p><b>Effect</b>: Allows you to pick the same lineage as your faction including Prestige/Astral lineage of same alignment.</p>
+	<p><b>Effect</b>: Allows you to pick the same lineage as your faction.</p>
 	<p><b>Effect</b>: Lineage levels count 25% more.</p>
 	<br/>
 <?php include "../scripts/footer.html"; ?>
