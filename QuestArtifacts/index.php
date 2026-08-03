@@ -64,7 +64,7 @@
 	<hr>
 	<p><b><img src="/realm/Factions/picks/FlameofBondelnar.png" align="middle"> Flame of Bondelnar</b></p>
 	<p><b>Description</b>: The magical azure flame of Bondelnar constantly emanates a silent, yet subtle, evil aura.</p>
-	<p><b>Requirement</b>: Drow Faction, Spider Sanctuaries, 3250+ Excavations</p>
+	<p><b>Requirement</b>: Drow Faction, Spider Sanctuaries, 3000+ Excavations</p>
 	<p><b>Effect</b>: Unlocks the upgrade The Dark Light of Bondelnar that adds 3 extra slots: 2 for Warfare and 1 related to the Evil Base Faction's facility you are playing.</p>
 	<p><b>Chance</b>: 0.5%</p>
 	<p><b>Cost</b>: 10 SxSpg (1e232), 100 M (1e8) Drow Coins</p>
@@ -116,7 +116,7 @@
 	<p><b><img src="/realm/Factions/picks/FirstStoneFragment.png" align="middle"> First Stone Fragment</b></p>
 	<p><b>Clue</b>: Click to Carve.</p>
 	<p><b>Description</b>: Made from stone so ancient it is unknown to the current world. Two parts seem to be missing.</p>
-	<p><b>Requirement</b>: R125, Elven Faction, 12,500+ Excavations</p>
+	<p><b>Requirement</b>: R125+, Elven Faction, 12,500+ Excavations</p>
 	<p><b>Chance</b>: (log10(1 + x) ^ 3 / 20,000)%, where x is the amount of clicks made in this Era.</p>
 	<p><b><img src="/realm/Factions/picks/SecondStoneFragment.png" align="middle"> Second Stone Fragment</b></p>
 	<p><b>Clue</b>: Stone to stone, buildings to buildings.</p>
@@ -139,8 +139,8 @@
 	<p><b><img src="/realm/Factions/picks/ForgottenRelic.png" align="middle"> Forgotten Relic</b></p>
 	<p><b>Clue</b>: Research it!</p>
 	<p><b>Description</b>: Intricate leylines of mana cover the surface of this stone, moving and flailing endlessly to create ever-different patterns.</p>
-	<p><b>Requirement</b>: R175+</p>
+	<p><b>Requirement</b>: R180+</p>
 	<p><b>Effect</b>: Unlocks Facility Research upgrades</p>
 	<p><b>Note</b>: Each Facility needs their respective artifact and this artifact to get their respective upgrade.</p>
-	<p><b>Chance</b>: (x ^ 2 / 100,000,000,000 (100 B))%, where x is spent Research budget.</p>
+	<p><b>Chance</b>: ((2 * x) ^ 2 / 1,000,000,000 (1 B))%, where x is spent Research Budget.</p>
 <?php include "../scripts/footer.html"; ?>

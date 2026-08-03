@@ -268,14 +268,14 @@
 	<p><b><img src="/realm/Factions/picks/DawnstoneArtifact.png" align="middle"> Dawnstone</b></p>
 	<p><b>Hint</b>: Relic of the Dawn hours.</p>
 	<p><b>Description</b>: Only found during sunrise hours. Emits a faint glow.</p>
-	<p><b>Requirement</b>: R16+, between 5:00 AM and 8:00 AM (Your local time)</p>
+	<p><b>Requirement</b>: R16+, between 5:00 AM and 11:59 AM (your local time)</p>
 	<p><b>Chance</b>: (x / 10,000)%, where x is your Excavation count.</p>
 	<p><b>Effect</b>: With Both the Dawnstone and Duskstone artifacts, awards the Sun Force upgrade.</p>
 	<p><b>Note</b>: Click image for details</p>
 	<p><b><img src="/realm/Factions/picks/DuskstoneArtifact.png" align="middle"> Duskstone</b></p>
 	<p><b>Hint</b>: Relic of the Dusk hours.</p>
 	<p><b>Description</b>: Only found during sunset hours. Absorbs light in a small radius.</p>
-	<p><b>Requirement</b>: R16+, between 6:00 PM and 9:00 PM (Your local time)</p>
+	<p><b>Requirement</b>: R16+, between 6:00 PM and 8:59 PM (your local time)</p>
 	<p><b>Chance</b>: (x / 10,000)%, where x is your Excavation count.</p>
 	<p><b>Effect</b>: With Both the Dawnstone and Duskstone artifacts, awards the Sun Force upgrade.</p>
 	<p><b>Note</b>: Click image for details</p>
@@ -433,8 +433,8 @@
 	<p><b><img src="/realm/Factions/picks/PlanetaryForceArtifact.png" align="middle"> Planetary Force</b></p>
 	<p><b>Hint</b>: Try every day for better luck! Missing a day is the same as breaking a mirror, you know.</p>
 	<p><b>Description</b>: Planets aligning seem to affect your realm in different ways...</p>
-	<p><b>Requirement</b>: R100+</p>
-	<p><b>Chance</b>: ((x ^ 2.5) / 5,000)%, where x is amount of consecutive days logged in.</p>
+	<p><b>Requirement</b>: R100+, Ascension 2+, Dawnstone and Duskstone</p>
+	<p><b>Chance</b>: ((x ^ 2.5) / 2,500)%, where x is amount of consecutive days logged in.</p>
 	<p><b>Effect</b>: Awards an upgrade with the same name.</p>
 	<p><b>Effect</b>: Activates all Sun Force effects at once.</p>
 	<p><b>Cost</b>: 100 Qi (1e20), A3+ Free</p>	
