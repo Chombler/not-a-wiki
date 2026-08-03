@@ -71,20 +71,19 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/HolyCrusadersMercenaryUpgrade.png" alt="Holy Crusaders" align="middle"> Holy Crusaders (For Good Alignments)</b></p>
 	<p><b>Cost</b>: 25 Uvg (2.5e67)</p>
-	<p><b>Effect</b>: Gain additional Crusader Assistants based on the amount of spells cast in this Era.</p>
-	<p><b>Formula</b>: (0.5 * ((1 + 0.8 * x) ^ (0.5 + 0.05 * A) - 1)), where x is amount of spells cast in this Era and A is how many times you have ascended.</p>
-	<p><b>Effect</b>: Increase clicking reward by 100% per active spell.</p>
-	<p><b>Formula</b>: ((x * 100) ^ (A + 1))%, where x is the amount of active spells you have and A is how many times you have ascended.</p>
+	<p><b>Effect</b>: Increase assistants additively and multiplicatively based on spells cast in this Era.</p>
+	<p><b>Additive Formula</b>: +(2 * x ^ 0.5), where x is spells cast in this Era.</p>
+	<p><b>Multiplicative Formula</b>: (2 * ln(1 + x) ^ 1.2)%, where x is spells cast in this Era.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/HeresiarchsMercenaryUpgrade.png" alt="Heresiarchs" align="middle"> Heresiarchs (For Evil Alignments)</b></p>
 	<p><b>Cost</b>: 25 Uvg (2.5e67)</p>
-	<p><b>Effect</b>: Increase the production of Evil buildings based on your most built Evil building.</p>
-	<p><b>Formula</b>: (1.2 * x ^ 0.8), where x is the number of your most-built evil building you own. (A-Nerfed)</p>
+	<p><b>Effect</b>: Multiplicatively increase Mana Regeneration based on the combined activity time of Evil spells in this Reincarnation.</p>
+	<p><b>Formula</b>: (30 + 0.7 * x ^ 0.7)%, where x is combined Evil spell activity time in this Reincarnation.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/TradeLordsMercenaryUpgrade.png" alt="Trade Lords" align="middle"> Trade Lords (For Neutral Alignments)</b></p>
 	<p><b>Cost</b>: 25 Uvg (2.5e67)</p>
-	<p><b>Effect</b>: When assistants finds a faction coin, they also find a Faction Coin for every other faction. Also increases Mana Regeneration based on Faction Coins gained in this Era.</p>
-	<p><b>Formula</b>: (floor(10 * log10(1 + x ^ 1.5)) / 10), where x is the amount of Faction Coins gained this Era.</p>
+	<p><b>Effect</b>: Increase Mana Regeneration and Faction Coin find chance additively based on time spent offline in this Reincarnation.</p>
+	<p><b>Formula</b>: +(2.5 * x ^ 0.75) to Mana Regeneration and Faction Coin find chance, where x is time spent offline in this Reincarnation.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MercenaryUpgrade5.png" align="middle"> Mercenary Upgrade 5</b></p>
 	<p><b>Cost</b>: 3,000 Faction Coins</p>
@@ -182,7 +181,7 @@
 	<p><b>Cost</b>: 100 Qag (1e125)</p>
 	<p><b>Effect 1</b>: Allows access to Research Facilities</p>
 	<p><b>Effect 2</b>: Upgrade Knights Jousts to Mercenary Camps, boosting their production based on the amount of Non-Unique buildings you own and unlocking more unique perks for the building.</p>
-	<p><b>Formula</b>: (1.25 * (1 + x) ^ 1.05), where X is number of Non-Unique Buildings.</p>
+	<p><b>Formula</b>: (1.25 * (1 + x) ^ 1.25)%, where x is the number of Non-Unique Buildings.</p>
 	<p><b>Effect 3</b>: Unlocks Round Table</p>
 	<br/>
 	<p><img src="/realm/Factions/picks/RoundTable.png" alt="Round Table" align="middle"> <b>Round Table</b> (Spell Upgrade)</p>
@@ -237,19 +236,19 @@
 	<p><img src="/realm/Factions/picks/GoodMercUniqueBuilding.png" alt="Mercenary Camp" align="middle"> <b>Mercenary Camp</b></p>
 	<p>Upgraded from Knights Jousts</p>
 	<p>Upgrade Knights Jousts to Mercenary Camps, boosting their production based on the amount of Non-Unique buildings you own and unlocking more unique perks for the building.</p>
-	<p><b>Formula</b>: (1.5 * (1 + x)) where X is number of Non-Unique Buildings.</p>
+	<p><b>Formula</b>: (1.25 * (1 + x) ^ 1.25)%, where x is the number of Non-Unique Buildings.</p>
 	<br/>
 	<p><b>Evil</b></p>
 	<p><img src="/realm/Factions/picks/EvilMercUniqueBuilding.png" alt="Tyrant Garrison" align="middle"> <b>Tyrant Garrison Upgrade</b></p>
 	<p>Upgraded from Evil Fortresses</p>
 	<p>Upgrade Evil Fortresses to Tyrant Garrisons, boosting their production based on Offline Production Bonus and unlocking more unique perks for the building.</p>
-	<p><b>Formula</b>:  ((log10(1 + x) ^ 3)%, where x is your offline production.</p>
+	<p><b>Formula</b>: (85 + 8.5 * x ^ 0.85)%, where x is your Offline production bonus.</p>
 	<br/>
 	<p><b>Neutral</b></p>
 	<p><img src="/realm/Factions/picks/NeutralMercUniqueBuilding.png" alt="Freemason's Hall" align="middle"> <b>Freemason's Hall</b></p>
 	<p>Upgraded from Inns</p>
-	<p>Upgrade Inns to Freemason's Hall, Boosting their production based on the highest amount of assistants you had in a single game in this Reincarnation and unlocking more unique perks for the building.</p>
-	<p><b>Formula</b>: (20 + 20 * x ^ 0.8)%, where x is the highest amount of assistants you had in a single game in this Reincarnation.</p>
+	<p>Upgrade Inns to Freemason's Halls, boosting their production based on Faction Coins found in this Era and unlocking more unique perks for the building.</p>
+	<p><b>Formula</b>: (60 + 60 * ln(1 + x) ^ 6)%, where x is Faction Coins found in this Era.</p>
 	<hr>
 	<p><b>Faction Spell</b>: Modified Tax Collection</p>
 	<p><img src="/realm/Factions/picks/ShareBenefits.png" alt="SB" align="middle"> <b>Good</b></p>
@@ -257,10 +256,10 @@
 	<p><b>Requirement</b>: Round Table</p>
 	<p><b>Effect</b>: Alters Tax Collection with new name and effect (still counts as Tax Collection for all purposes).</p>
 	<p><b>Effect</b>: Increases the production of all buildings and Faction Coin find chance based on this spell tier level.</p>
-	<p><b>Effect</b>: Also produce Tax Collection casts per second based on your Maximum Mana.</p>
-	<p><b>Formula (Production bonus)</b>: ((((1 + 0.01 * (120 + 1.25 * ln(1 + 90 + x) ^ 1.25)) ^ T) - 1) * 100)%, where x is Tax Collection worth in seconds and T the Share Benefits tier.</p>
-	<p><b>Formula (Faction Coin find chance multiplier)</b>: 120 ^ (0.25 * T)%, where T is Share Benefits.</p>
-	<p><b>Formula (Additional Tax Collection)</b>: +(0.01 * x * T), where x is Maximum Mana and T Share Benefits tier.</p>
+	<p><b>Effect</b>: Also produce Tax Collection casts per second based on Maximum Mana, Tax Collection worth, and triggered Tax Collections.</p>
+	<p><b>Formula (Production bonus)</b>: A2: 100 * (80 + 1.6 * ln(1 + w) ^ 1.6) ^ ((0.5 * T + 1) ^ 0.9)%; in A3 the leading factor is 1 instead of 100, where w is Tax Collection worth in seconds and T is the zero-based Share Benefits tier.</p>
+	<p><b>Formula (Faction Coin find chance)</b>: 100 * (3 + 0.1 * ln(1 + r)) ^ (T + 1)%, where r is triggered Tax Collections.</p>
+	<p><b>Formula (Additional Tax Collections per second)</b>: 0.00001 * r * w ^ 0.5 * m * (T + 1), where r is triggered Tax Collections, w is Tax Collection worth, and m is Maximum Mana.</p>
 	<p><b>Note</b>: Can be cast up to 36 tiers (Ascension 1) / 99 tiers (Ascension 3).</p>
 	<p><b>Note</b>: Each tier costs x2/1.5 (with S1275) more mana than the previous one until Tier 40 - above x4/x2.25 than the previous one.<p>
 	<p><b>Note</b>: Drains every second Mana equal to its current cost.</p>
@@ -270,14 +269,14 @@
 	<p><b>Cost</b>: 200 Mana - <b>Duration</b>: 0 seconds</p>
 	<p><b>Requirement</b>: Dark Covenant</p>
 	<p><b>Effect</b>: Additional casts of Reap Interests increase its seconds worth of production.</p>
-	<p><b>Formula</b>: *(50000 * log10(8 + 0.1 * x)), where x is amount of Reap Interests casts.</p>
+	<p><b>Formula</b>: w * ln(1 + x) ^ 4 seconds, where w is Tax Collection worth and x is Reap Interests casts.</p>
 	<p><b>Note</b>: Upgrades that cast free Tax Collection are treated as Reap Interests casts.</p>
 	<br/>
 	<p><img src="/realm/Factions/picks/AppraisalVantage.png" alt="AV" align="middle"> <b>Neutral</b></p>
 	<p><b>Cost</b>: 200 Mana - <b>Duration</b>: 0 seconds</p>
 	<p><b>Requirement</b>: Secret Exchange</p>
 	<p><b>Effect</b>: Generates additional Faction Coins based on the amount of assistants you own.</p>
-	<p><b>Formula</b>: (x * y ^ 1.275), where x is assistants owned, y is Faction coin chance.</p>
+	<p><b>Formula</b>: x * w * y ^ 1.25, where x is assistants owned, w is Tax Collection worth, and y is Faction Coin find chance.</p>
 	<p><b>Note</b>: Upgrades that cast free Tax Collection are treated as Appraisal Vantage casts.</p>
 	<br/>
 	<p><b>Extras</b></p>
@@ -307,7 +306,7 @@
 	<p id="MercenaryDuel"><b>Ascension 3 (R160+)</b></p>
 	<p><b><img src="/realm/Factions/picks/MercenaryDuel.png" align="middle"> Mercenary Duel</b></p>
 	<p><b>In-game description</b>: The Mercenary Lord has challenged you to a duel of skills. Complete the following tasks in a single Reincarnation to show your ability as a ruler.</p>
-	<p><b>Requirements</b>: R160+, 1 Qi (1e18) Spells cast, 10 M (1e7) Clicks, 10 Vg (1e64) Faction Coins, 350000 Buildings (MAX), 100 Qa (1e17) Assistants (MAX)</p>
+	<p><b>Requirements</b>: R160+, 100 Qi (1e20) Spells cast, 5 M (5e6) Clicks, 100 Qid (1e50) Faction Coins, 350,000 Buildings (MAX), and 10 Qa (1e16) Assistants (MAX)</p>
 	<p><b>Note</b>: 1 time purchase</p>
 	<p><b>Effect</b>: Unlocks Mercenary in Ascension 3</p>
 	<br/>
@@ -316,7 +315,7 @@
 	<p><b><img src="/realm/Factions/picks/MercenaryFourthContract.png" align="middle"> Mercenary Fourth Contract</b></p>
 	<p><b>Requirements</b>: R160+, Mercenary Duel purchased</p>
 	<p><b>Cost</b>: 100 Qid 1e50</p>
-	<p><b>Effect</b>: Unlocks Tier 4 Upgrades</p>
+	<p><b>Effect</b>: Unlocks Tier 4 Upgrades and increases Research budget in each branch by 1,000.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MercenaryUpgrade13.png" align="middle"> Mercenary Upgrade 13</b></p>
 	<p>You can purchase a tier 4 upgrade from any faction for an increased price.</p>
@@ -336,16 +335,17 @@
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MercenaryBuildingContract.png" align="middle"> Mercenary Building Contract</b></p>
 	<p><b>Requirements</b>: R165+, Aligned with Mercs</p>
-	<p>You can purchase one Ascension 2 Unique Building from any faction, provided you meet the requisites. You will not be able to change it during the current run.</p>
+	<p>You can purchase one Ascension 2 Unique Building from any faction, provided you meet the requisites. You will not be able to change it during the current Era.</p>
 	<p><b>Cost</b>: Free</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/ObsidianCrown.png" align="middle"> Obsidian Crown</b></p>
 	<p><b>Requirements</b>: R170+, Aligned with Mercs, 10 excavation resets (This Era)</p>
-	<p><b>Chance</b>: ((x - 10) / 1000)%, x is the number of free and ruby excavation resets (This Era)</p>
+	<p><b>Chance</b>: (x / 1000)%, where x is the number of free and ruby Excavation Resets this Era.</p>
 	<p><b>Effect</b>: Unlocks Mercenary Union Contract</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MercenaryUnionContract.png" align="middle"> Mercenary Union Contract</b></p>
 	<p><b>Requirements</b>: Obsidian Crown</p>
-	<p>You can purchase one Union Power from any faction, provided you meet the requisites. You will not be able to change it during the current run.</p>
+	<p>You can purchase one Union Power from any faction, provided you meet the requisites. You will not be able to change it during the current Era.</p>
+	<p><b>Effect</b>: Increase Research budget in each branch by 400 times the number of upgrades purchased from the selected faction.</p>
 	<p><b>Cost</b>: Free</p>
 	<?php include "../scripts/footer.html"; ?>
