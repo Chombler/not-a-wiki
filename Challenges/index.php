@@ -423,6 +423,7 @@
 	<p><b>Challenge</b>: Cast 13 Grand Balances in the first 5 minutes of a playthrough with 0 non-Druid researches.</p>
 	<p><b>Effect</b>: Increase Non-Unique buildings production based on the duration of your longest spell and buildings' tier. Gives the best bonus to the lowest tier. Does not suffer from Ascension penalties.</p>
 	 <p><b>Formula</b>: (3 * x ^ 0.7 * (12 - T))%, where x is the duration of your longest spell and T is building tier.</p>
+	<?php echo realm_tier_table('overflowing-magic'); ?>
 	<p><b>Upgrade</b>: Works with All</b></p>
 	<p><b>Tips</b>: Do not buy Halls of Balance as it increases the spell duration. Make sure you have some excavations to buy the Heritages. (Angel Heritage and Angel 1 challenge both boost your m/s.) To achieve this, you need a min. of 50 m/s with Grand Balance continuously casting during 13 full casts. Reward given at 5 minute mark regardless of when achieved.</p>
 		" coords="244,730,298,784" shape="rect">
@@ -761,6 +762,7 @@
 	<p><b>Challenge</b>: Build 50,000 Enchanted Fields within 2 minutes of a new Era.</p>
 	<p><b>Effect</b>: Maelstrom multiplicatively increases assistants based on lowest building tier targeted.</p>
 	<p><b>Formula</b>: ((12 - T) * 100)%, where T is tier of lowest maelstrom building targeted.</p>
+	<?php echo realm_tier_table('maelstrom', 'Multiplier by lowest targeted building'); ?>
 	<p><b>Effect</b>: Fairy Chanting produces Limited Wish casts every second based on Maximum Mana. Casts provided increase progressively over Fairy Chanting's runtime (time since last cast).</p>
 	<p><b>Formula</b>: +(0.0025 * x ^ 0.25 * (T + 1) * floor(y)), where x is Maximum Mana, T is Fairy Chanting tier and y is Fairy Chanting elapsed duration in seconds.</p>
 	<p><b>Upgrade</b>: Works with Fairy + Dwarves + Djinn</p>

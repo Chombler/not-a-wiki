@@ -488,6 +488,7 @@
 		<p><b>Effect</b>: Awards an upgrade of the same name.</p>
 		<p><b>Effect</b>: Increase the production of all buildings based on their tier.</p>
 		<p><b>Formula</b>: (3 * (2 * (11 - T)) ^ 3)%, where T is building tier.</p>
+		<?php echo realm_tier_table('wall-fragment'); ?>
 		<p><b>Cost</b>: 1 M (1e6), A2+ free</p>
 		<p><b>Alignment</b>: Any</p>
 	" coords="3,343,56,396" shape="rect">
@@ -562,6 +563,7 @@
 		<p><b>Effect</b>: Awards an upgrade of the same name.</p>
 		<p><b>Effect</b>: Increase the production of all buildings based on their tier.</p>
 		<p><b>Formula</b>: (30,000 * (11 - T) ^ 3.5)%, where T is building tier.</p>
+		<?php echo realm_tier_table('wall-chunk'); ?>
 		<p><b>Cost</b>: 1 Sx (1e21), A3+ Free</p>
 	" coords="3,403,56,456" shape="rect">
 		<area research="

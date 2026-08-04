@@ -197,6 +197,7 @@
 <p><b>Hint</b>: More of the baseline production buildings!</p>
 <p><b>Requirement</b>: 60000 Farms, Inns and Blacksmiths.</p>
 <p><b>Cost</b>: 3.66e176</p>
-<p><b>Effect</b>: Increases the production of all buildings based on their tier, giving the highest bonus to the lowest.</p>
-<p><b>Formula</b>: (150 * (12 - T) ^ 2.15)%, where T is building tier.</p>
+<p><b>Effect</b>: Increases the production of all buildings based on time spent with your least-used alignment in this Reincarnation and their tier, giving the highest bonus to the lowest tier.</p>
+<p><b>Formula</b>: (0.5 * (60 + x) ^ 0.75 * (12 - T) ^ 2.15)%, where x is time spent with your least-used alignment in this Reincarnation and T is building tier.</p>
+<?php echo realm_tier_table('upheaval'); ?>
 <?php include "../scripts/footer.html"; ?>

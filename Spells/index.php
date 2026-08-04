@@ -229,6 +229,7 @@
 	<p><b><font color='red'>Formula</font></b>: (1.75 * ln(1 + x) ^ 1.75)%, where x is the amount of Faction Coins found in this Era.</p>
 	<p><b><font color='green'>Green</font></b>: Increase the production of all buildings based on the amount of spells cast in this Era. Higher bonuses are provided to lower building tiers.</p>
 	<p><b><font color='green'>Formula</font></b>: (0.000001 * ln(1 + x) ^ 6 * (11 - T) ^ 5)%, where x is spells cast (this Era) and T is the building tier. (1 for Farms, 11 for Hall of Legends).</p>
+	<?php echo realm_tier_table('dragons-breath-green', "Green Dragon's Breath bonus by building"); ?>
 	<p><b><font color='blue'>Blue</font></b>: Multiplicatively increase your Mana Regeneration by 200%.</p>
 	<p><b><font color='white'>White</font></b>: Temporarily increase the amount of assistants based on time spent being Neutral in this Reincarnation.</p>
 	<p><b><font color='white'>Formula</font></b>: +(30 * x ^ 0.7), where x is time spent as Neutral this Reincarnation.</p>
@@ -1140,6 +1141,7 @@
 <br>
 <p><b><font color="darkgreen">Green</font></b>: Increase the production of all buildings based on the amount of spells cast in this Era. Higher bonuses are provided to lower building tiers.</p>
 <p><b><font color="darkgreen">Formula</font></b>: (0.000001 * ln(1 + x) ^ 6 * (11 - T) ^ 5)%, where x is spells cast (this Era) and T is the building tier. (1 for Farms, 11 for Hall of Legends).</p>
+<?php echo realm_tier_table('dragons-breath-green', "Green Dragon's Breath bonus by building"); ?>
 <br>
 <p><b><font color="darkblue">Blue</font></b>: Multiplicatively increase your Mana Regeneration by 200%.</p>
 <br>

@@ -197,6 +197,7 @@
 				<p><b>Cost</b>: 1.173e203</p>
 				<p><b>Effect</b>: Increase the production of buildings based on mana produced in this Era, depending on their tiers. Gives better bonuses for lower tiers.</p>
 				<p><b>Formula</b>: (0.1 * x ^ 0.45 * (12 - T) ^ 2)%, where x is mana produced in this Era and T is building tier.</p>
+				<?php echo realm_tier_table('hierarchy'); ?>
 				<hr>
 				<p><b>S700</b> - For Fairy,Dwarf</p>
 				<p><b>Research Name</b>: Trickery</p>
@@ -1202,6 +1203,7 @@
 				<p><b>Requirement</b>: R175+, Forgotten Relic, Vault artifact and upgrade, and 500,000 total buildings.</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on the amount of buildings you own. Lower tiers get better bonuses.</p>
 				<p><b>Formula</b>: ((3 - 0.25 * T) ^ 4 * x ^ 0.6)%, where T is building tier and x is the number of (every) buildings you own.</p>
+				<?php echo realm_tier_table('decentralization'); ?>
 				<hr>
 				<p><b>E5375</b> - For Balance</p>
 				<p><b>Research Name</b>: Whipround</p>
@@ -1830,6 +1832,7 @@
 				<p><b>Cost</b>: 3.66e176</p>
 				<p><b>Effect</b>: Increase the production of all buildings based on time spent with your least-used alignment in this Reincarnation and their tier, giving the highest bonus to the lowest tier.</p>
 				<p><b>Formula</b>: (0.5 * (60 + x) ^ 0.75 * (12 - T) ^ 2.15)%, where x is time spent with your least-used alignment in this Reincarnation and T is building tier.</p>
+				<?php echo realm_tier_table('upheaval'); ?>
 				<hr>
 				<p><b>W5125</b> - For All Factions</p>
 				<p><b>Research Name</b>: Sovereignty</p>

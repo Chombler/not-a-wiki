@@ -171,6 +171,7 @@
 <p><b>Cost</b>: 1 Td (1e42), A1, Free</p>
 <p><b>Effect</b>: Increases the production of all buildings based on their tier.</p>
 <p><b>Formula</b>: (10 * (12 - T))%, where T is building tier.</p>
+<?php echo realm_tier_table('mathematician'); ?>
 <p><b>Note</b>: This can be done at the end of R0 just before reincarnating.</p>
 	" coords="63,223,117,277" shape="rect">
 		<area research="

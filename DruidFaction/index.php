@@ -57,6 +57,7 @@
 	<p><b>Cost</b>: 500 Qi (5e20)</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on their tier, giving the best bonus to the lowest.</p>
 	<p><b>Formula</b>: (4000 * (12 - T))%, where T is building tier.</p>
+	<?php echo realm_tier_table('druidic-vocabulary'); ?>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DruidUpgrade2.png" align="middle"> Animal Companions</b></p>
 	<p><b>Cost</b>: 5 Sx (5e21)</p>
@@ -98,6 +99,7 @@
 	<p><b>Cost</b>: 50 Oc (5e28)</p>
 	<p><b>Effect</b>: Increase the production of Non-Unique buildings based on their tier, giving the best bonus to the lowest.</p>
 	<p><b>Formula</b>: (12 * 1.8 ^ (12 - T))%, where T is building tier.</p>
+	<?php echo realm_tier_table('mabinogion'); ?>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DruidUpgrade8.png" align="middle"> Earthly Soul</b></p>
 	<p><b>Cost</b>: 500 Oc (5e29)</p>
@@ -197,6 +199,7 @@
 	<p><b>Cost</b>: 1 Novg (1e90) Emerald Coins</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on their tier. Middle tiers get better bonuses.</p>
 	<p><b>Formula</b>: (0.8 * ((6 - abs(6 - T)) ^ 4))%, where T is building tier.</p>
+	<?php echo realm_tier_table('grove-farming'); ?>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/AdvancedDruidHeritage.png" align="middle"> Advanced Druid Heritage</b></p>
 	<p><b>Requirement</b>: Druid Master trophy and 1 hour of Grand Balance activity time in this Era.</p>

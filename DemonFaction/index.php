@@ -144,6 +144,7 @@
 	<p><b>Requirement</b>: Demons Union</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on the highest amount of Burning Abysses you built in this Reincarnation. Higher tiers get better bonuses.</p>
 	<p><b>Formula</b>: (0.5 * T ^ 1.5 * x ^ 0.5)%, where x is the highest amount of Burning Abysses built in this Reincarnation and T is Building tier.</p>
+	<?php echo realm_tier_table('abyssal-furnace'); ?>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/DemonUpgrade11.png" alt="Demonic Fury" align="middle"> Demonic Fury</b></p>
 	<p><b>Requirement</b>: Demons Union</p>

@@ -164,6 +164,7 @@
 	<p><b>Cost</b>: 1e185 Coins</p>
 	<p><b>Effect</b>: Increase the base production of each building based on their tier.</p>
 	<p><b>Formula</b>: +(10 ^ (0.75 * T) / 30) base production per second, where T is the building tier.</p>
+	<?php echo realm_tier_table('bedrock-foundations'); ?>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MakersUpgrade12.png" align="middle"> Reality Marble</b></p>
 	<p><b>Requirements</b>: Makers Union</p>

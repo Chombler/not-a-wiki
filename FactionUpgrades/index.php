@@ -150,6 +150,7 @@
 			<p><b>Cost</b>: 500 Qi (5e20)</p>
 			<p><b>Effect</b>: Increase the production of all buildings based on their tier, giving the best bonus to the lowest.</p>
 			<p><b>Formula</b>: (4000 * (12 - T))%, where T is building tier.</p>
+			<?php echo realm_tier_table('druidic-vocabulary'); ?>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/DruidUpgrade2.png" align="middle"> Animal Companions</b></p>
 			<p><b>Mercenary Template</b>: DD2</p>
@@ -749,6 +750,7 @@
 			<p><b>Cost</b>: 50 Oc (5e28)</p>
 			<p><b>Effect</b>: Increase the production of Non-Unique buildings based on their tier, giving the best bonus to the lowest.</p>
 			<p><b>Formula</b>: (12 * 1.8 ^ (12 - T))%, where T is building tier.</p>
+			<?php echo realm_tier_table('mabinogion'); ?>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/DruidUpgrade8.png" align="middle"> Earthly Soul</b></p>
 			<p><b>Mercenary Template</b>: DD8</p>
@@ -1029,6 +1031,7 @@
 			<p><b>Requirement</b>: Demons Union</p>
 			<p><b>Effect</b>: Increase the production of all buildings based on the highest amount of Burning Abysses you built in this Reincarnation. Higher tiers get better bonuses.</p>
 			<p><b>Formula</b>: (0.5 * T ^ 1.5 * x ^ 0.5)%, where x is the highest amount of Burning Abysses built in this Reincarnation and T is Building tier.</p>
+			<?php echo realm_tier_table('abyssal-furnace'); ?>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/DemonUpgrade11.png" alt="Demonic Fury" align="middle"> Demonic Fury</b></p>
 			<p><b>Mercenary Template</b>: DM11</p>
@@ -1089,6 +1092,7 @@
 			<p><b>Cost</b>: 1 Novg (1e90) Emerald Coins</p>
 			<p><b>Effect</b>: Increase the production of all buildings based on their tier. Middle tiers get better bonuses.</p>
 			<p><b>Formula</b>: (0.8 * ((6 - abs(6 - T)) ^ 4))%, where T is building tier.</p>
+			<?php echo realm_tier_table('grove-farming'); ?>
 			<hr>
 			<h6>Faceless</h6>
 			<p><b><img src="/realm/Factions/picks/FacelessUpgrade10.png" alt="Primal Knowledge" align="middle"> Primal Knowledge</b></p>
@@ -1225,6 +1229,7 @@
 			<p><b>Cost</b>: 1e185 Coins</p>
 			<p><b>Effect</b>: Increase the base production of each building based on their tier.</p>
 			<p><b>Formula</b>: +(10 ^ (0.75 * T) / 30) base production per second, where T is the building tier.</p>
+			<?php echo realm_tier_table('bedrock-foundations'); ?>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/MakersUpgrade12.png" align="middle"> Reality Marble</b></p>
 			<p><b>Mercenary Template</b>: MK12</p>

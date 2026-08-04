@@ -54,6 +54,7 @@
 	<br>
 	<p><b><font color="darkgreen">Green</font></b>: Increase the production of all buildings based on the amount of spells cast in this Era. Higher bonuses are provided to lower building tiers.</p>
 	<p><b><font color="darkgreen">Formula</font></b>: (0.000001 * ln(1 + x) ^ 6 * (11 - T) ^ 5)%, where x is spells cast (this Era) and T is the building tier. (1 for Farms, 11 for Hall of Legends).</p>
+	<?php echo realm_tier_table('dragons-breath-green', "Green Dragon's Breath bonus by building"); ?>
 	<br>
 	<p><b><font color="darkblue">Blue</font></b>: Multiplicatively increase your Mana Regeneration by 200%.</p>
 	<br>
