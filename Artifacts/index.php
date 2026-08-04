@@ -212,6 +212,13 @@
 		<p><b>Note</b>: Each Facility needs their respective artifact and this artifact to get their respective upgrade.</p>
 		<p><b>Chance</b>: ((2 * x) ^ 2 / 1,000,000,000 (1 B))%, where x is spent Research Budget.</p>
 	" coords="123,223,176,276" shape="rect">
+		<area research="
+	<p><b><img src=&quot;/realm/Factions/picks/MaskOfScorchRahArtifact.png&quot; align=&quot;middle&quot;> Mask of Scorch'Rah</b></p>
+		<p><b>Hint</b>: The time has come...</p>
+		<p><b>Description</b>: An otherworldly, ever-burning mask that continuously shifts burn marks over its surface.</p>
+		<p><b>Requirement</b>: A4+, R255+, 50,000+ Excavations and at least 4 Legacy upgrades purchased.</p>
+		<p><b>Chance</b>: (x / 1,000,000)%, where x is time spent in this Era, in seconds.</p>
+	" coords="183,223,236,276" shape="rect">
 	</map>
 	<map name="LoreArtifacts-map">
 		<area research="
@@ -852,13 +859,5 @@
 		<p><b>Requirement</b>: R235+, Dragon Faction, Ascension 4+, 10,000+ Excavations</p>
 		<p><b>Chance</b>: (ln(1 + x) / 20,000)%, where x is the highest amount of assistants you had in this Reincarnation.</p>
 	" coords="183,703,236,756" shape="rect">
-
-		<area research="
-	<p><b><img src=&quot;/realm/Factions/picks/MaskOfScorchRahArtifact.png&quot; align=&quot;middle&quot;> Mask of Scorch'Rah</b></p>
-		<p><b>Hint</b>: The time has come...</p>
-		<p><b>Description</b>: An otherworldly, ever-burning mask that continuously shifts burn marks over its surface.</p>
-		<p><b>Requirement</b>: A4+, R255+, 50,000+ Excavations and at least 4 Legacy upgrades purchased.</p>
-		<p><b>Chance</b>: (x / 1,000,000)%, where x is time spent in this Era, in seconds.</p>
-	" coords="243,703,296,756" shape="rect">
 	</map>
 <?php include "../scripts/footer.html"; ?>

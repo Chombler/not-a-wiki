@@ -567,10 +567,4 @@
 	<p><b>Description</b>: The ultimate thrill of the fight.</p>
 	<p><b>Requirement</b>: R235+, Dragon Faction, Ascension 4+, 10,000+ Excavations</p>
 	<p><b>Chance</b>: (ln(1 + x) / 20,000)%, where x is the highest amount of assistants you had in this Reincarnation.</p>
-	<hr>
-	<p><b><img src="/realm/Factions/picks/MaskOfScorchRahArtifact.png" align="middle"> Mask of Scorch'Rah</b></p>
-	<p><b>Hint</b>: The time has come...</p>
-	<p><b>Description</b>: An otherworldly, ever-burning mask that continuously shifts burn marks over its surface.</p>
-	<p><b>Requirement</b>: A4+, R255+, 50,000+ Excavations and at least 4 Legacy upgrades purchased.</p>
-	<p><b>Chance</b>: (x / 1,000,000)%, where x is time spent in this Era, in seconds.</p>
 <?php include "../scripts/footer.html"; ?>

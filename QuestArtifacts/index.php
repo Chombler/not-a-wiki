@@ -5,7 +5,7 @@
 <?php include "../scripts/header.html"; ?>
 	<h6><img src="/realm/Factions/picks/ArcheologyTopPage.png"></h6>
 	<p><b>Quest Artifacts <a href="/realm/LoreArtifacts" research="Lore Artifact page">Lore Artifacts</a></b></p>
-	<p>There are 24 Quest Artifacts that unlock other Factions, Research and Research Slots.</p>
+	<p>There are 25 Quest Artifacts that unlock other Factions, Research and Research Slots.</p>
 	<p><b><img src="/realm/Factions/picks/AncientStoneSlab1.png" align="middle"> Ancient Stoneslab 1</b></p>
 	<p><b>Description</b>: We discovered an ancient stone slab written in old scriptures. It appears to say something about Halls of Legends.</p>
 	<p><b>Requirement</b>: 5th Excavation</p>
@@ -144,4 +144,10 @@
 	<p><b>Effect</b>: Unlocks Facility Research upgrades</p>
 	<p><b>Note</b>: Each Facility needs their respective artifact and this artifact to get their respective upgrade.</p>
 	<p><b>Chance</b>: ((2 * x) ^ 2 / 1,000,000,000 (1 B))%, where x is spent Research Budget.</p>
+	<hr>
+	<p><b><img src="/realm/Factions/picks/MaskOfScorchRahArtifact.png" align="middle"> Mask of Scorch'Rah</b></p>
+	<p><b>Hint</b>: The time has come...</p>
+	<p><b>Description</b>: An otherworldly, ever-burning mask that continuously shifts burn marks over its surface.</p>
+	<p><b>Requirement</b>: A4+, R255+, 50,000+ Excavations and at least 4 Legacy upgrades purchased.</p>
+	<p><b>Chance</b>: (x / 1,000,000)%, where x is time spent in this Era, in seconds.</p>
 <?php include "../scripts/footer.html"; ?>
