@@ -66,7 +66,7 @@
 	<p>Reverse Autocasting and Tiered Autocasting are separate, independent upgrades; Tiered Autocasting does not require Reverse Autocasting.</p>
 	<p>The Spell Tier upgrades need to be unlocked once (see chapter below), but they need to be purchased in every abdication and cost Diamond Coins (free in A2+) and Faction Coins.</p>
 	<p><b>Additional Effects</b>: Each tier upgrade has a spell-specific effect and, except for Dragon's Breath, also increases offline production based on Mana statistics. It also multiplicatively increases Faction Coins found while offline by 200% per tier, stacking additively with other sources.</p>
-	<p><b>Raw offline-production formula per tier upgrade</b>: (m ^ (2 / max(3, A)) + (30 * r) ^ (2 / max(3, A))) ^ 0.4%, where m is Maximum Mana, r is Mana Regeneration per second, and A is the current Ascension. Each upgrade's result is then subjected to the Ascension penalty assigned to that tier; the in-game tooltip shows the combined purchased bonus.</p>
+	<p><b>Raw offline-production formula per tier upgrade</b>: (m ^ (2 / max(3, A)) + r ^ (2 / max(3, A))) ^ 0.4%, where m is Maximum Mana, r is Mana Regeneration per second, and A is the current Ascension. Each upgrade's result is then subjected to the Ascension penalty assigned to that tier; the in-game tooltip shows the combined purchased bonus.</p>
 	<p><b>Note</b>: Offline bonuses from tier upgrades are assigned to the Ascension in which that tier becomes available. Dragon's Breath tier upgrades do not provide these offline bonuses.</p>
 	<table class="numtable">
 		<tr><th>Spell</th><th>Spell-specific tier-upgrade effect</th></tr>

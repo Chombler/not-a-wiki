@@ -77,7 +77,7 @@
 		<area href="#Dwarf" research="
 	<p><b><img src='/realm/Factions/picks/DwarvenBloodline.png' align='middle'> Dwarf</b></p>
 	<p><b>Effect</b>: Increase the base production of each building based on Excavation depth. Bonus increases with building tier.</p>
-	<p><b>Formula</b>: +(ln(1 + x) ^ 1.75 * 10 ^ ((1.25 * T) ^ 0.75) / 30) base production per second, where x is Excavation depth and T is the building tier.</p>
+	<p><b>Formula</b>: +(ln(1 + x) ^ 1.75 * 10 ^ ((1.25 * T) ^ 0.75)) base production per second, where x is current Excavation depth and T is the building tier.</p>
 	<?php echo realm_tier_table('dwarf-bloodline'); ?>
 		" coords="10,190,64,244" shape="rect">
 		<area href="#Drow" research="
@@ -156,7 +156,7 @@
 	<hr>
 	<p id="Dwarf"><b><img src="/realm/Factions/picks/DwarvenBloodline.png" alt="Dwarf" align="middle"> Dwarf</b></p>
 	<p><b>Effect</b>: Increase the base production of each building based on Excavation depth. Bonus increases with building tier.</p>
-	<p><b>Formula</b>: +(ln(1 + x) ^ 1.75 * 10 ^ ((1.25 * T) ^ 0.75) / 30) base production per second, where x is Excavation depth and T is the building tier.</p>
+	<p><b>Formula</b>: +(ln(1 + x) ^ 1.75 * 10 ^ ((1.25 * T) ^ 0.75)) base production per second, where x is current Excavation depth and T is the building tier.</p>
 	<?php echo realm_tier_table('dwarf-bloodline'); ?>
 	<hr>
 	<p id="Drow"><b><img src="/realm/Factions/picks/DrowBloodline.png" alt="Drow" align="middle"> Drow</b></p>

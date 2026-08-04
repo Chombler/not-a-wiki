@@ -45,8 +45,8 @@ function realm_tier_value($kind, $tier)
         case 'grove-farming': return array(0.8 * pow(6 - abs(6 - $tier), 4), '%');
         case 'overflowing-magic': return array(3 * (12 - $tier), ' × x^0.7%');
         case 'abyssal-furnace': return array(0.5 * pow($tier, 1.5), ' × x^0.5%');
-        case 'bedrock-foundations': return array(pow(10, 0.75 * $tier) / 30, ' base production/s');
-        case 'dwarf-bloodline': return array(pow(10, pow(1.25 * $tier, 0.75)) / 30, ' × ln(1 + x)^1.75 base production/s');
+        case 'bedrock-foundations': return array(pow(10, 0.75 * $tier), ' base production/s');
+        case 'dwarf-bloodline': return array(pow(10, pow(1.25 * $tier, 0.75)), ' × ln(1 + x)^1.75 base production/s');
         case 'hierarchy': return array(0.1 * pow(12 - $tier, 2), ' × x^0.45%');
         case 'decentralization': return array(pow(3 - 0.25 * $tier, 4), ' × x^0.6%');
         case 'upheaval': return array(0.5 * pow(12 - $tier, 2.15), ' × (60 + x)^0.75%');

@@ -1416,7 +1416,7 @@
 	<p><b>Requirement</b>: 750 Mana Regeneration per second (as Angel)</p>
 	<p><b>Cost</b>: 1.012e130</p>
 	<p><b>Effect</b>: Increase Heaven's Gate production when your Mana Regeneration is higher than Maximum Mana.</p>
-	<p><b>Formula</b>: (90 * (30 * R / M) ^ 0.9)% while 30 * R > M (otherwise 0), where R is Mana Regeneration per second and M is Maximum Mana.</p>
+	<p><b>Formula</b>: (90 * (R / M) ^ 0.9)% while R > M (otherwise 0), where R is Mana Regeneration per second and M is Maximum Mana.</p>
 	" coords="254,842,294,882" shape="rect">
 		<area research="<p><b>A55</b> - For All Factions</p>
 	<p><b>Research Name</b>: Refraction</p>
