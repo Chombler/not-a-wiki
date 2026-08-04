@@ -103,7 +103,7 @@
 	<p><b>Chance</b>: (x / 500)%, where x is the amount of assistants you own.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/JawBone.png" alt="Artifacts" align="middle"> Jaw Bone</b></p>
-	<p><b>Hint</b>: Needs some time off.</p>
+	<p><b>Hint</b>: Needs some time in the night.</p>
 	<p><b>Description</b>: A jaw, missing more than half of its teeth.</p>
 	<p><b>Requirement</b>: Undead Faction (Not Drow), at least 1 hour of Night Time activity in this Reincarnation.</p>
 	<p><b>Chance</b>: (x / 36,000)%, where x is Night Time activity in this Reincarnation, in seconds.</p>
@@ -364,7 +364,7 @@
 	<p><b>Chance</b>: (x / 500,000)%, where x is the amount of Slave Pens you own (Building count multipliers <b>do not</b> count).</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/DustyCoffinArtifact.png" align="middle"> Dusty Coffin</b></p>
-	<p><b>Hint</b>: Quick! Quick! You have no time to waste!</p>
+	<p><b>Hint</b>: The undead have patience.</p>
 	<p><b>Description</b>: Sealed since forever, yet you can hear a strange noise from within.</p>
 	<p><b>Requirement</b>: R100+, Undead Faction, Rotten Organ and Jaw Bone artifacts, 2000+ Excavations</p>
 	<p><b>Chance</b>: (x / 2,592,000 (2.592 M))%, where x is Undead playtime without abdicating, in seconds.</p>
@@ -462,7 +462,7 @@
 	<p><b>Effect</b>: Awards upgrade with same name.</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/Mythos.png" align="middle"> Mythos</b></p>
-	<p><b>Hint</b>: Spells get sad when not used for a long time.</p>
+	<p><b>Hint</b>: Spells become happy when used for a long time.</p>
 	<p><b>Description</b>: Accurate historical list of every existing or non-existing deity.</p>
 	<p><b>Requirement</b>: R180+, Good Alignment, 5,000+ Excavations</p>
 	<p><b>Chance</b>: (x / 2,160,000 (2.16 M))%, where x is the activity time in this Reincarnation of your least used spell (excluding Share Benefits, Catalyst and Event spells).</p>

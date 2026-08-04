@@ -71,6 +71,7 @@
 	<p><b>Note</b>: Has no effect in R100+</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/SpikyRoughEggArtifact.png" align="middle"> Spiky Rough Egg</b></p>
+	<p><b>Hint</b>: Excavate deeper around eggs.</p>
 	<p><b>Description</b>: What a weird egg... it looks ages old, yet something alive is inside. Perhaps if you wait long enough, something will hatch?</p>
 	<p><b>Requirement</b>: R46+, 1500 Excavations</p>
 	<p><b>Effect</b>: Unlocks the Hatch! Egg</p>

@@ -120,6 +120,7 @@
 	" coords="183,103,236,156" shape="rect">
 		<area research="
 	<p><b><img src=&quot;/realm/Factions/picks/SpikyRoughEggArtifact.png&quot; align=&quot;middle&quot;> Spiky Rough Egg</b></p>
+		<p><b>Hint</b>: Excavate deeper around eggs.</p>
 		<p><b>Description</b>: What a weird egg... it looks ages old, yet something alive is inside. Perhaps if you wait long enough, something will hatch?</p>
 		<p><b>Requirement</b>: R46+, 1500 Excavations</p>
 		<p><b>Effect</b>: Unlocks the Hatch! Egg</p>
@@ -319,7 +320,7 @@
 	" coords="363,103,416,156" shape="rect">
 		<area research="
 	<p><b><img src=&quot;/realm/Factions/picks/JawBone.png&quot; alt=&quot;Artifacts&quot; align=&quot;middle&quot;> Jaw Bone</b></p>
-		<p><b>Hint</b>: Needs some time off.</p>
+		<p><b>Hint</b>: Needs some time in the night.</p>
 		<p><b>Description</b>: A jaw, missing more than half of its teeth.</p>
 		<p><b>Requirement</b>: Undead Faction (Not Drow), at least 1 hour of Night Time activity in this Reincarnation.</p>
 		<p><b>Chance</b>: (x / 36,000)%, where x is Night Time activity in this Reincarnation, in seconds.</p>
@@ -616,7 +617,7 @@
 	" coords="363,403,416,456" shape="rect">
 		<area research="
 	<p><b><img src=&quot;/realm/Factions/picks/DustyCoffinArtifact.png&quot; align=&quot;middle&quot;> Dusty Coffin</b></p>
-		<p><b>Hint</b>: Quick! Quick! You have no time to waste!</p>
+		<p><b>Hint</b>: The undead have patience.</p>
 		<p><b>Description</b>: Sealed since forever, yet you can hear a strange noise from within.</p>
 		<p><b>Requirement</b>: R100+, Undead Faction, Rotten Organ and Jaw Bone artifacts, 2000+ Excavations</p>
 		<p><b>Chance</b>: (x / 2,592,000 (2.592 M))%, where x is Undead playtime without abdicating, in seconds.</p>
@@ -729,7 +730,7 @@
 	" coords="3,583,56,636" shape="rect">
 		<area research="
 	<p><b><img src=&quot;/realm/Factions/picks/Mythos.png&quot; align=&quot;middle&quot;> Mythos</b></p>
-		<p><b>Hint</b>: Spells get sad when not used for a long time.</p>
+		<p><b>Hint</b>: Spells become happy when used for a long time.</p>
 		<p><b>Description</b>: Accurate historical list of every existing or non-existing deity.</p>
 		<p><b>Requirement</b>: R180+, Good Alignment, 5,000+ Excavations</p>
 		<p><b>Chance</b>: (x / 2,160,000 (2.16 M))%, where x is the activity time in this Reincarnation of your least used spell (excluding Share Benefits, Catalyst and Event spells).</p>
