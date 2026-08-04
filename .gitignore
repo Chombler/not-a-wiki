@@ -12,4 +12,5 @@ error_log
 */xindexx.php
 SiteMap/sitemap*
 _ad.log
-
+_site/
+__pycache__/
