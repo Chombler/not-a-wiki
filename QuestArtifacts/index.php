@@ -86,7 +86,7 @@
 	<p><b>Clue</b>: This one seems to require a lot of magical renewance.</p>
 	<p><b>Description</b>: It looks like a piece of an iron object. It's broken off on two sides.</p>
 	<p><b>Requirement</b>: R125+, Ascension 2+, Angel Faction, 5,000+ Excavations</p>
-	<p><b>Chance</b>: (ln(1 + 30 * x) ^ 3 / 1,000,000 (1 M))%, where x is Mana Regeneration per tick; 30 * x is nominal Mana Regeneration per second.</p>
+	<p><b>Chance</b>: (ln(1 + 30 * x) ^ 3 / 1,000,000 (1 M))%, where x is Mana Regeneration per tick; 30 * x is Mana Regeneration (mana/s).</p>
 	<p><b><img src="/realm/Factions/picks/SecondIronFragment.png" align="middle"> Second Iron Fragment</b></p>
 	<p><b>Clue</b>: Found via extensive Royal Trading mandates.</p>
 	<p><b>Description</b>: It looks like a piece of an iron object. It's broken off on two sides.</p>

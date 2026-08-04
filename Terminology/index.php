@@ -12,7 +12,7 @@
         <p>Below is a list of acronyms, terms, and shortcuts used in Realm Grinder.</p>
         <br/>
         <p><b>Chombler's G00F's Not a Wiki</b>: CGNaW (formerly G00F's Not a Wiki, or NaW)</p>
-		<p><b>Mana Regeneration formula units</b>: When a formula based on Mana Regeneration uses <b>30 * x</b>, x is the internal Mana Regeneration per tick. One tick is nominally 1/30th of a second, so 30 * x is the nominal Mana Regeneration per second.</p>
+		<p><b>Mana Regeneration formula units</b>: When a formula based on Mana Regeneration uses <b>30 * x</b>, x is the internal Mana Regeneration per tick. The game displays 30 * x on the mana orb as Mana Regeneration (mana/s).</p>
         <br/>
         <center><b>Hot Keys / Shortcuts</b></center>
         <br/>

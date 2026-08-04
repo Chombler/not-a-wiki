@@ -363,13 +363,13 @@
 			<p><b>Cost</b>: 5 T (5e12)</p>
 			<p><b>Effect</b>: Increase spell durations and Mana Regeneration multiplicatively by 50%.</p>
 			<p><b>Effect</b>: Also multiplicatively increase offline spell casts based on offline Mana Regeneration.</p>
-			<p><b>Formula</b>: (5 * ln(1 + 30 * x))%, where x is offline Mana Regeneration per tick; 30 * x is nominal offline Mana Regeneration per second.</p>
+			<p><b>Formula</b>: (5 * ln(1 + 30 * x))%, where x is offline Mana Regeneration per tick; 30 * x is offline Mana Regeneration (mana/s).</p>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/AngelUpgrade6.png" align="middle"> Archangel Feathers</b></p>
 			<p><b>Mercenary Template</b>: AN6</p>
 			<p><b>Cost</b>: 50 T (5e13)</p>
 			<p><b>Effect</b>: Increase all-building production based on Mana Regeneration.</p>
-			<p><b>Formula</b>: (1.5 * ln(1 + 30 * x) ^ 3)%, where x is Mana Regeneration per tick; 30 * x is nominal Mana Regeneration per second.</p>
+			<p><b>Formula</b>: (1.5 * ln(1 + 30 * x) ^ 3)%, where x is Mana Regeneration per tick; 30 * x is Mana Regeneration (mana/s).</p>
 			<hr>
 			<h6>Goblin</h6>
 			<p><b><img src="/realm/Factions/picks/GoblinUpgrade4.png" align="middle"> Fool's Gold</b></p>
@@ -697,7 +697,7 @@
 			<p><b>Mercenary Template</b>: UD8</p>
 			<p><b>Cost</b>: 50 Qa (5e16)</p>
 			<p><b>Effect</b>: Increase assistants' production based on Mana Regeneration.</p>
-			<p><b>Formula</b>: (85 * (1.5 * ln(1 + 30 * x)) ^ 1.15)%, where x is Mana Regeneration per tick; 30 * x is nominal Mana Regeneration per second.</p>
+			<p><b>Formula</b>: (85 * (1.5 * ln(1 + 30 * x)) ^ 1.15)%, where x is Mana Regeneration per tick; 30 * x is Mana Regeneration (mana/s).</p>
 			<br/>
 			<p><b><img src="/realm/Factions/picks/UndeadUpgrade9.png" align="middle"> Unholy Rituals</b></p>
 			<p><b>Mercenary Template</b>: UD9</p>

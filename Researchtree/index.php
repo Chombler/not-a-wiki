@@ -174,7 +174,7 @@
 	<p><b>Requirement</b>: Research Inflame (D10) & Fusion (A105)</p>
 	<p><b>Cost</b>: 4.151e144</p>
 	<p><b>Effect</b>: Increase the production of the two highest building tiers based on your Mana Regeneration.</p>
-	<p><b>Formula</b>: (10 * (30 * x) ^ 0.6)%, where x is Mana Regeneration per tick; 30 * x is nominal Mana Regeneration per second.</p>
+	<p><b>Formula</b>: (10 * (30 * x) ^ 0.6)%, where x is Mana Regeneration per tick; 30 * x is Mana Regeneration (mana/s).</p>
 	" coords="338,2,378,42" shape="rect">
 		<area research="<p><b>S175</b> - For Elf</p>
 	<p><b>Research Name</b>: Empowered Luck</p>
@@ -188,7 +188,7 @@
 	<p><b>Requirement</b>: Research Enchanting (S1) & Mysticism (S105)</p>
 	<p><b>Cost</b>: 1.005e149</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on Mana Regeneration.</p>
-	<p><b>Formula</b>: (50 + 3 * (30 * x) ^ 0.7)%, where x is Mana Regeneration per tick; 30 * x is nominal Mana Regeneration per second.</p>
+	<p><b>Formula</b>: (50 + 3 * (30 * x) ^ 0.7)%, where x is Mana Regeneration per tick; 30 * x is Mana Regeneration (mana/s).</p>
 	" coords="380,2,420,42" shape="rect">
 		<area research="<p><b>S200</b> - For All Factions</p>
 	<p><b>Research Name</b>: Cryomancy</p>
@@ -941,7 +941,7 @@
 	<p><b>Requirement</b>: 250 Dwarven Exchanges as Dwangel, Shattering (W320), and Waste (A450)</p>
 	<p><b>Cost</b>: 9.741e224</p>
 	<p><b>Effect</b>: Increase the production of Unique buildings based on Mana Regeneration.</p>
-	<p><b>Formula</b>: (2 * ln(1 + 30 * x) ^ 2)%, where x is Mana Regeneration per tick; 30 * x is nominal Mana Regeneration per second.</p>
+	<p><b>Formula</b>: (2 * ln(1 + 30 * x) ^ 2)%, where x is Mana Regeneration per tick; 30 * x is Mana Regeneration (mana/s).</p>
 	" coords="338,506,378,546" shape="rect">
 		<area research="<p><b>D1175</b> - For Neutral,Dragon</p>
 	<p><b>Research Name</b>: Oblation</p>
@@ -1660,7 +1660,7 @@
 	<p><b>Cost</b>: Free</p>
 	<p><b>Requirement</b>: R225+ and 100 Qi (1e20) Mana Regeneration</p>
 	<p><b>Effect</b>: Increase clicking reward based on Mana Regeneration.</p>
-	<p><b>Formula</b>: (ln(1 + 30 * x) ^ 2)%, where x is Mana Regeneration per tick; 30 * x is nominal Mana Regeneration per second.</p>
+	<p><b>Formula</b>: (ln(1 + 30 * x) ^ 2)%, where x is Mana Regeneration per tick; 30 * x is Mana Regeneration (mana/s).</p>
 	" coords="2,1010,42,1050" shape="rect">
 		<area research="<p><b>A11625</b> - For All Factions</p>
 	<p><b>Research Name</b>: Anima Mundi</p>

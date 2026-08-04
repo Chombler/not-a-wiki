@@ -4,7 +4,7 @@
 <head>
 <?php include "../scripts/header.html"; ?>
 	<h5>Current Permanent Seasonal Feat Rewards</h5>
-	<p>Once unlocked, each upgrade below is available during any Seasonal Event. Values shown are the active Seasonal Event values encoded by version 4.3.15.</p>
+	<p>Once unlocked, each upgrade below is available during any Seasonal Event. Values shown are current as of game version 4.3.12.</p>
 	<table class="table">
 		<tr><th>Upgrade</th><th>Effect during a Seasonal Event</th></tr>
 		<tr><td>Debt for Life</td><td>Increase Tax Collection worth by 10%.</td></tr>

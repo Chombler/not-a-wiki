@@ -415,8 +415,8 @@
 	<p><b>Hint</b>: Massive mana flows can offer guidance.</p>
 	<p><b>Description</b>: Follow the guiding light, o wonderer, for it shall bring you fortune.</p>
 	<p><b>Requirement</b>: R120+, Proof of Order</p>
-	<p><b>Chance</b>: (ln(30 * x) ^ 3 / 234,567)%, where x is Mana Regeneration per tick; 30 * x is nominal Mana Regeneration per second.</p>
-	<p><b>Effect</b>: Unlocks the Lantern of Guidance upgrade for 1e136 coins. It increases all building production by (4 * (30 * x) ^ 0.2)%, raised to the power of 1.5 while affiliated with an Order faction, where x is Mana Regeneration per tick; 30 * x is nominal Mana Regeneration per second.</p>
+	<p><b>Chance</b>: (ln(30 * x) ^ 3 / 234,567)%, where x is Mana Regeneration per tick; 30 * x is Mana Regeneration (mana/s).</p>
+	<p><b>Effect</b>: Unlocks the Lantern of Guidance upgrade for 1e136 coins. It increases all building production by (4 * (30 * x) ^ 0.2)%, raised to the power of 1.5 while affiliated with an Order faction, where x is Mana Regeneration per tick; 30 * x is Mana Regeneration (mana/s).</p>
 	<hr>
 	<p><b><img src="/realm/Factions/picks/OilLampArtifact.png" align="middle"> Oil Lamp</b></p>
 	<p><b>Hint</b>: Chaos magic burns brightly.</p>

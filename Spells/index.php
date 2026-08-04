@@ -103,7 +103,7 @@
 	<p><b>Spell Type</b>: (Good/Order) Angel Faction Spell</p>
 	<p><b>Cost</b>: 900 Mana - <b>Duration</b>: 10 seconds</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on your Mana Regeneration rate.</p>
-	<p><b>Formula</b>: (10 * ln(1 + 30 * x) ^ 4)%, where x is Mana Regeneration per tick; 30 * x is nominal Mana Regeneration per second.</p>
+	<p><b>Formula</b>: (10 * ln(1 + 30 * x) ^ 4)%, where x is Mana Regeneration per tick; 30 * x is Mana Regeneration (mana/s).</p>
 	<p><b>Effect</b>: Duration increases based on time spent as Good in this Reincarnation.</p>
 	<p><b>Formula</b>: +floor((0.5 + 0.05 * T) * y ^ (0.5 + 0.05 * T)) seconds, where T is God's Hand's tier and y is time spent as Good in this Reincarnation.</p>
 		" coords="10,10,64,64" shape="rect">
@@ -277,9 +277,9 @@
 	<p><b>Spell Type</b>: Balance Alignment Spell (R100+)</p>
 	<p><b>Cost</b>: 1,100 Mana - <b>Duration</b>: 20 seconds</p>
 	<p><b>Effect</b>: Increase production of all buildings based on your Mana Regeneration rate.</p>
-	<p><b>Formula</b>: (0.5 * ln(1 + 30 * x) ^ 3 + (30 * x) ^ 0.5)%, where x is Mana Regeneration per tick; 30 * x is nominal Mana Regeneration per second.</p>
+	<p><b>Formula</b>: (0.5 * ln(1 + 30 * x) ^ 3 + (30 * x) ^ 0.5)%, where x is Mana Regeneration per tick; 30 * x is Mana Regeneration (mana/s).</p>
 	<p><b>Effect</b>: Also multiplicatively increase Faction Coin find chance based on your Mana Regeneration rate.</p>
-	<p><b>Formula</b>: (4.5 * ln(1 + 30 * x) ^ 2.25 + 12.5 * (30 * x) ^ 0.125)%, where x is Mana Regeneration per tick; 30 * x is nominal Mana Regeneration per second.</p>
+	<p><b>Formula</b>: (4.5 * ln(1 + 30 * x) ^ 2.25 + 12.5 * (30 * x) ^ 0.125)%, where x is Mana Regeneration per tick; 30 * x is Mana Regeneration (mana/s).</p>
 		" coords="130,190,184,244" shape="rect">
 		<area href="#Precognition" research="
 	<p><b><img src='/realm/Factions/picks/Precognition.png' alt='Order' align='middle'> Precognition</b></p>
@@ -487,7 +487,7 @@
 	<p><b><img src='/realm/Factions/picks/GodsThroneChallengeReward.png' align='middle'> God's Throne</b></p>
 	<p><b>Effect</b>: Mana Regeneration is multiplicatively increased by 50% while God's Hand is active.</p>
 	<p><b>Effect</b>: Also increase offline spells cast amount multiplicatively based on your offline Mana Regeneration.</p>
-	<p><b>Formula</b>: (5 * ln(1 + 30 * x))%, where x is offline Mana Regeneration per tick; 30 * x is nominal offline Mana Regeneration per second.</p>
+	<p><b>Formula</b>: (5 * ln(1 + 30 * x))%, where x is offline Mana Regeneration per tick; 30 * x is offline Mana Regeneration (mana/s).</p>
 		" coords="130,10,184,64" shape="rect">
 		<area href="#DiamondPickaxe" research="
 	<p><b><img src='/realm/Factions/picks/IronGripChallengeReward.png' align='middle'> Iron Grip</b></p>
@@ -511,7 +511,7 @@
 	<p><b>Effect</b>: Increase Combo Strike counter based on the amount of spells cast in this Era, not including Tax Collection.</p>
 	<p><b>New Combo Strike Counter Formula</b>: (x + y), where x is your Combo Strike cast count and y is every other spell (except tax collection and generic) cast count.</p>
 	<p><b>Effect</b>: Also increase offline spells cast amount multiplicatively based on your offline Mana Regeneration.</p>
-	<p><b>Formula</b>: (5 * ln(1 + 30 * x))%, where x is offline Mana Regeneration per tick; 30 * x is nominal offline Mana Regeneration per second.</p>
+	<p><b>Formula</b>: (5 * ln(1 + 30 * x))%, where x is offline Mana Regeneration per tick; 30 * x is offline Mana Regeneration (mana/s).</p>
 		" coords="190,70,244,124" shape="rect">
 		<area href="#LightningStrike" research="
 	<p><b><img src='/realm/Factions/picks/ThunderstormChallengeReward.png' align='middle'> Thunderstorm</b></p>
@@ -867,7 +867,7 @@
 <p id="GodsHand"><b><img src="/realm/Factions/picks/Godshand.png" alt="Good" align="middle"> God's Hand</b> (Angel)</p>
 <p><b>Cost</b>: 900 Mana - <b>Duration</b>: 10 seconds </p>
 <p><b>Effect</b>: Increase the production of all buildings based on your Mana Regeneration.</p>
-<p><b>Formula</b>: (10 * ln(1 + 30 * x) ^ 4)%, where x is Mana Regeneration per tick; 30 * x is nominal Mana Regeneration per second.</p>
+<p><b>Formula</b>: (10 * ln(1 + 30 * x) ^ 4)%, where x is Mana Regeneration per tick; 30 * x is Mana Regeneration (mana/s).</p>
 <p><b>Effect</b>: Duration increases based on time spent as Good in this Reincarnation.</p>
 <p><b>Formula</b>: +floor((0.5 + 0.05 * T) * y ^ (0.5 + 0.05 * T)) seconds, where T is God's Hand's tier and y is time spent as Good in this Reincarnation.</p>
 <p><b>Spell Trophy & Upgrade</b>: <b><img src="/realm/Factions/picks/GodsRestSpellUpgrade.png" align="middle"> God's Rest</b></p>
@@ -878,7 +878,7 @@
 <p><b>Challenge Upgrade</b>: <b><img src="/realm/Factions/picks/GodsThroneChallengeReward.png" align="middle"> God's Throne</b> (R18+)</p>
 <p><b>Effect</b>: Mana Regeneration is multiplicatively increased by 50% while God's Hand is active.</p>
 <p><b>Effect</b>: Also increase offline spells cast amount multiplicatively based on your offline Mana Regeneration.</p>
-<p><b>Formula</b>: (5 * ln(1 + 30 * x))%, where x is offline Mana Regeneration per tick; 30 * x is nominal offline Mana Regeneration per second.</p>
+<p><b>Formula</b>: (5 * ln(1 + 30 * x))%, where x is offline Mana Regeneration per tick; 30 * x is offline Mana Regeneration (mana/s).</p>
 <div class="shlisting">
 	<div class="shelementwhole">
 		<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">God's Hand Tier Upgrades</a></b> (R46+, limited by Ascension)</p>
@@ -1020,7 +1020,7 @@
 <p><b>Effect</b>: Increase Combo Strike counter based on the amount of spells cast in this Era, not including Tax Collection.</p>
 <p><b>New Combo Strike Counter Formula</b>: (x + y), where x is your Combo Strike cast count and y is every other spell (except tax collection and generic) cast count.</p>
 <p><b>Effect</b>: Also increase offline spells cast amount multiplicatively based on your offline Mana Regeneration.</p>
-<p><b>Formula</b>: (5 * ln(1 + 30 * x))%, where x is offline Mana Regeneration per tick; 30 * x is nominal offline Mana Regeneration per second.</p>
+<p><b>Formula</b>: (5 * ln(1 + 30 * x))%, where x is offline Mana Regeneration per tick; 30 * x is offline Mana Regeneration (mana/s).</p>
 <div class="shlisting">
 	<div class="shelementwhole">
 		<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">Combo Strike Tier Upgrades</a></b> (R44+, limited by Ascension)</p>
@@ -1251,9 +1251,9 @@
 <p><b>Requirement</b>: Ascension 2</p>
 <p><b>Cost</b>: 1,100 Mana - <b>Duration</b>: 20 seconds</p>
 <p><b>Effect</b>: Increase production of all buildings based on your Mana Regeneration rate.</p>
-<p><b>Formula</b>: (0.5 * ln(1 + 30 * x) ^ 3 + (30 * x) ^ 0.5)%, where x is Mana Regeneration per tick; 30 * x is nominal Mana Regeneration per second.</p>
+<p><b>Formula</b>: (0.5 * ln(1 + 30 * x) ^ 3 + (30 * x) ^ 0.5)%, where x is Mana Regeneration per tick; 30 * x is Mana Regeneration (mana/s).</p>
 <p><b>Effect</b>: Also multiplicatively increase Faction Coin find chance based on your Mana Regeneration rate.</p>
-<p><b>Formula</b>: (4.5 * ln(1 + 30 * x) ^ 2.25 + 12.5 * (30 * x) ^ 0.125)%, where x is Mana Regeneration per tick; 30 * x is nominal Mana Regeneration per second.</p>
+<p><b>Formula</b>: (4.5 * ln(1 + 30 * x) ^ 2.25 + 12.5 * (30 * x) ^ 0.125)%, where x is Mana Regeneration per tick; 30 * x is Mana Regeneration (mana/s).</p>
 <br/>
 <p><b><img src="/realm/Factions/picks/AllCreationSpellTier2.png" alt="All Creation" align="middle"> Tier 2</b> (R120+)</p>
 <p><b>Requirement</b>: Spark of Life (Artifact)</p>
