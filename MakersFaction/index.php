@@ -30,7 +30,7 @@
 	<p><b><img src="/realm/Factions/picks/MakersMask.png" align="middle"> Makers Mask</b></p>
 	<p><b>Requirement</b>: Find all 3 Stone Fragments.</p>
 	<p><b>Cost</b>: 10 Dqag (1e130)</p>
-	<p><b>Effect</b>: Increase the production of Non-Unique buidings by 10,000% and gain +50,000 assistants.</p>
+	<p><b>Effect</b>: Increase the production of Non-Unique buildings by 10,000% and gain +50,000 assistants.</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/MakersQuest.png" align="middle"> Makers Quest</b></p>
 	<p><b>Requirements</b>: R125+, Collect all 3 Stone Fragments and accumulate 3 hours of All Creation activity time in this Reincarnation.</p>

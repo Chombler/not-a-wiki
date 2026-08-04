@@ -57,7 +57,7 @@
 					<p><b>Note</b>: Do <b>not</b> autocast Tax Collections once you purchased EL10, Mana is needed for the other spells.</p>
 					<p><b>Note</b>: At e38 (100 Ud) Gems+, swap to S400 and D1375.</p>
 					<p><b>Note</b>: Recommended to buff Uniformity (100%+) and TTC4 (400%+).</p>
-					<p><b>Note</b>: Takes aprox. 10 minutes for SS7.</p>
+					<p><b>Note</b>: Takes approx. 10 minutes for SS7.</p>
 					<p><b>Note</b>: Profits from manual clicking.</p>
 				</div>
 			</div>

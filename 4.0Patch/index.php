@@ -1534,7 +1534,7 @@
 	<p><b>New Formula</b>: (0.5 * x ^ 0.5)%, where x is the amount of Unique Buildings you own.</p>
 <br/>
 <p><b>Archon Perk 3</b></p>
-	<p><b>Effect</b>: Multiplicatively increase Mana Regneration based on the amount of Unique Buildings you own.</p>
+	<p><b>Effect</b>: Multiplicatively increase Mana Regeneration based on the amount of Unique Buildings you own.</p>
 	<p><b>Old Formula</b>: (3 * x / 1,000)%, where x is the amount of Unique Buildings you own.</p>
 	<p><b>New Formula</b>: (0.5 * x ^ 0.5)%, where x is the amount of Unique Buildings you own.</p>
 <br/>
@@ -1678,8 +1678,8 @@
 	<p><b>New Formula</b>: (1.5 * x ^ 0.5)%, where x is Royal Exchanges made.</p>
 <br/>
 <p><b>Makers Mask</b></p>
-	<p><b>Old Effect</b>: Increase the production of Non-Unique buidings by 10,000% and gain +1 M (1e6) assistants.</p>
-	<p><b>New Effect</b>: Increase the production of Non-Unique buidings by 10,000% and gain +50,000 assistants.</p>
+	<p><b>Old Effect</b>: Increase the production of Non-Unique buildings by 10,000% and gain +1 M (1e6) assistants.</p>
+	<p><b>New Effect</b>: Increase the production of Non-Unique buildings by 10,000% and gain +50,000 assistants.</p>
 <br/>
 <p><b>Secrets of the Underworld</b> (Prestige Research Unlock)</p>
 	<p><b>Old Coins Cost</b>: 100 QiSxg (1e200) Coins.</p>

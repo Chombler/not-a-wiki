@@ -1619,7 +1619,7 @@
 <p><b>Requirement</b>: 20 M (2e7) Mana Produced (Total this R)</p>
 <p><b>Cost</b>: 500 Qad (5e47)</p>
 <p><b>Effect</b>: Allows you to set a minimum amount of mana before starting to Autocast.</p>
-<p><b>Note</b>: You can activate the Contingency Autocast by CTRL+Clicking the Mana Bowl/Mana Bar. A golden arrow will appear. By sliding it you will set a minimum amount of mana below which spells won't be cast. Once your mana reaches the threshold, spells will follow the priority rules. The contingency loop will break when you can't cast a spell, at which point the cycle will reset. CTRL+Clicking agani to disable Contingency Autocasting.</p>
+<p><b>Note</b>: You can activate the Contingency Autocast by CTRL+Clicking the Mana Bowl/Mana Bar. A golden arrow will appear. By sliding it you will set a minimum amount of mana below which spells won't be cast. Once your mana reaches the threshold, spells will follow the priority rules. The contingency loop will break when you can't cast a spell, at which point the cycle will reset. CTRL+Clicking again to disable Contingency Autocasting.</p>
 <p><b>Effect</b>: Only while offline, increase your spells cast amount by an additional 2 per minute.</p>
 	" coords="63,343,117,397" shape="rect">
 		<area research="

@@ -1240,8 +1240,8 @@
                     <p><b>New Effect</b>: Increase Maximum Mana by 150%.</p>
                     <br/>
                     <p><b><img src="/realm/Factions/picks/MakersMask.png" align="middle"> Makers Mask</b></p>
-                    <p><b>Effect</b>: Increase the production of Non-Unique buidings by 10000%.</p>
-                    <p><b>New Effect</b>: Increase the production of Non-Unique buidings by 10000% and gain 1 M (1e6) assistants.</p>
+                    <p><b>Effect</b>: Increase the production of Non-Unique buildings by 10000%.</p>
+                    <p><b>New Effect</b>: Increase the production of Non-Unique buildings by 10000% and gain 1 M (1e6) assistants.</p>
                     <hr>
                     <p><b>Research Changes</b></p>
                     <p><b>RP Production</b></p>

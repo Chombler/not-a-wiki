@@ -686,7 +686,7 @@
 	<p><b>Level 35 (R130+)</b></p>
 	<p><b><img src="/realm/Factions/picks/ArchonPerk3.png" align="middle"> Archon Perk 3</b></p>
 	<p><b>Requirement</b>: R130+, Reach Lineage Level 35</p>
-	<p><b>Effect</b>: Multiplicatively increase Mana Regneration based on the amount of Unique Buildings you own.</p>
+	<p><b>Effect</b>: Multiplicatively increase Mana Regeneration based on the amount of Unique Buildings you own.</p>
 	<p><b>Formula</b>: (0.5 * x ^ 0.5)%, where x is the amount of Unique Buildings you own.</p>
 	<br/>
 	<p><b>Level 48 (R151+)</b></p>

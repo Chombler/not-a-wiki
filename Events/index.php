@@ -510,7 +510,7 @@
 			<p><b>Summer Festival</b></p>
 			<p><b><img src='/realm/Factions/picks/LateSpringtime.png' align='middle'> Late Springtime</b></p>
 			<p><b>Type</b>: Feat</p>
-			<p><b>Requirement</b>: While affliated with the Fairies, collect a stack of 720 Orbs.</p>
+			<p><b>Requirement</b>: While affiliated with the Fairies, collect a stack of 720 Orbs.</p>
 			<p><b>Note</b>: If you unlock this feat, you will permanently unlock a new cosmetic shape for your coin particles.</p>
 			" coords="3,303,57,357" shape="rect">
 			<area research="
@@ -2187,7 +2187,7 @@
 					<p><b>Note</b>: Once unlocked, it is available during any Seasonal Event.</p>
 					<br/>
 					<p><b><img src="/realm/Factions/picks/LateSpringtime.png" alt="Late Springtime" align="middle"> Late Springtime</b></p>
-					<p><b>Unlock</b>: While affliated with the Fairies, collect a stack of 720 Orbs.</p>
+					<p><b>Unlock</b>: While affiliated with the Fairies, collect a stack of 720 Orbs.</p>
 					<p><b>Note</b>: If you unlock this feat, you will permanently unlock a new cosmetic shape for your coin particles.</p>
 					<br/>
 					<p><b><img src="/realm/Factions/picks/SearingSummer.png" align="middle"> Searing Summer</b></p>
@@ -3521,7 +3521,7 @@
 					<p><b>Note</b>: Once unlocked, it is available during any Seasonal Event.</p>
 					<br/>
 					<p><b><img src="/realm/Factions/picks/LateSpringtime.png" alt="Late Springtime" align="middle"> Late Springtime</b></p>
-					<p><b>Unlock</b>: While affliated with the Fairies, collect a stack of 720 Orbs.</p>
+					<p><b>Unlock</b>: While affiliated with the Fairies, collect a stack of 720 Orbs.</p>
 					<p><b>Note</b>: If you unlock this feat, you will permanently unlock a new cosmetic shape for your coin particles.</p>
 					<br/>
 					<p><b><img src="/realm/Factions/picks/SearingSummer.png" align="middle"> Searing Summer</b></p>
@@ -4810,7 +4810,7 @@
 					<p><b>Note</b>: Once unlocked, it is available during any Seasonal Event.</p>
 					<br/>
 					<p><b><img src="/realm/Factions/picks/LateSpringtime.png" alt="Late Springtime" align="middle"> Late Springtime</b></p>
-					<p><b>Unlock</b>: While affliated with the Fairies, collect a stack of 720 Orbs.</p>
+					<p><b>Unlock</b>: While affiliated with the Fairies, collect a stack of 720 Orbs.</p>
 					<p><b>Note</b>: If you unlock this feat, you will permanently unlock a new cosmetic shape for your coin particles.</p>
 					<br/>
 					<hr>
