@@ -111,7 +111,7 @@ body {
     overflow: auto;
     width: 760px;
     height: 159px;
-    background-image: url(http://musicfamily.org/realm/Factions/picks/RealmGrinderHeader.png);
+    background-image: url(/realm/Factions/picks/RealmGrinderHeader.png);
 }
 
 #navbox {
@@ -206,7 +206,7 @@ h7 {
 }
 
 #leftbox {
-    background-image: url(http://musicfamily.org/realm/Factions/picks/RealmGrinderGameRL.png);
+    background-image: url(/realm/Factions/picks/RealmGrinderGameRL.png);
     background-repeat: no-repeat;
     background-position: center top;
     text-align: left;
