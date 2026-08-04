@@ -59,12 +59,12 @@
 	<p><b>Cost</b>: 5 T (5e12)</p>
 	<p><b>Effect</b>: Increase spell durations and Mana Regeneration multiplicatively by 50%.</p>
 	<p><b>Effect</b>: Also multiplicatively increase offline spell casts based on offline Mana Regeneration.</p>
-	<p><b>Formula</b>: (5 * ln(1 + 30 * x))%, where x is offline Mana Regeneration per tick; 30 * x is offline Mana Regeneration (mana/s).</p>
+	<p><b>Formula</b>: (5 * ln(1 + x))%, where x is offline Mana Regeneration (mana/s).</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/AngelUpgrade6.png" align="middle"> Archangel Feathers</b></p>
 	<p><b>Cost</b>: 50 T (5e13)</p>
 	<p><b>Effect</b>: Increase all-building production based on Mana Regeneration.</p>
-	<p><b>Formula</b>: (1.5 * ln(1 + 30 * x) ^ 3)%, where x is Mana Regeneration per tick; 30 * x is Mana Regeneration (mana/s).</p>
+	<p><b>Formula</b>: (1.5 * ln(1 + x) ^ 3)%, where x is Mana Regeneration (mana/s).</p>
 	<hr>
 	<p><b>Tier 3 Upgrades</b></p>
 	<p><b><img src="/realm/Factions/picks/AngelAlliance.png" align="middle"> Angels Alliance</b></p>

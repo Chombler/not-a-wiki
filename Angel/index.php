@@ -36,7 +36,7 @@
 	<p><b>Note</b>: Dwarven can <b>NOT</b> be used unless you can get Dwarven's Unique Building at R28+.</p>
 	<p><b>Challenge</b>: Have 2,400 Halls of Legends and no Good buildings while using the Demon Bloodline.</p>
 	<p><b>Effect</b>: Increase the production of all Unique buildings based on your Mana Regeneration. Does not suffer from Ascension penalties.</p>
-	<p><b>Formula</b>: (2 * ln(1 + 30 * x) ^ 2.5)%, where x is Mana Regeneration per tick; 30 * x is Mana Regeneration (mana/s).</p>
+	<p><b>Formula</b>: (2 * ln(1 + x) ^ 2.5)%, where x is Mana Regeneration (mana/s).</p>
 	<p><b>Upgrade</b>: Works with All</p>
 	<hr>
 	<h6 id="ANCR"></h6>
@@ -44,5 +44,5 @@
 	<p><b><img src='/realm/Factions/picks/GodsThroneChallengeReward.png' align='middle'> God's Throne</b></p>
 	<p><b>Effect</b>: Mana regeneration is increased by 50% while God's Hand is active.</p>
 	<p><b>Effect</b>: Also increases offline spell cast amount by multiplicatively based on your offline Mana Regeneration.</p>
-	<p><b>Formula</b>: (5 * ln(1 + 30 * x))%, where x is offline Mana Regeneration per tick; 30 * x is offline Mana Regeneration (mana/s).</p>
+	<p><b>Formula</b>: (5 * ln(1 + x))%, where x is offline Mana Regeneration (mana/s).</p>
 <?php include "../scripts/footer.html"; ?>

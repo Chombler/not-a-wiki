@@ -75,7 +75,7 @@
 	<p><b><img src="/realm/Factions/picks/UndeadUpgrade8.png" align="middle"> Tireless Workers</b></p>
 	<p><b>Cost</b>: 50 Qa (5e16)</p>
 	<p><b>Effect</b>: Increase assistants' production based on Mana Regeneration.</p>
-	<p><b>Formula</b>: (85 * (1.5 * ln(1 + 30 * x)) ^ 1.15)%, where x is Mana Regeneration per tick; 30 * x is Mana Regeneration (mana/s).</p>
+	<p><b>Formula</b>: (85 * (1.5 * ln(1 + x)) ^ 1.15)%, where x is Mana Regeneration (mana/s).</p>
 	<br/>
 	<p><b><img src="/realm/Factions/picks/UndeadUpgrade9.png" align="middle"> Unholy Rituals</b></p>
 	<p><b>Cost</b>: 500 Qa (5e17)</p>
