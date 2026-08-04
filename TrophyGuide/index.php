@@ -42,7 +42,7 @@
 						<tr><td>
 								<center>Need a Head Start!</p><img src="/realm/Factions/picks/NeedaHeadStartSecretTrophy.png"></td><td>Cost : Free</td><td>Requirement : Don&#39;t do anything for 5 minutes after starting a new Era. Don&#39;t buy anything and don&#39;t click anything.</td><td>Effect : Instantly adds 25 coins of the current Ascension currency.</td><td></td></tr>
 						<tr><td>
-								<center>Suggestion Master</p><img src="/realm/Factions/picks/SuggestionMasterSecretTrophy.png"></td><td>Cost : 1000 coins, A1+ Free</td><td>Requirement : Open the changelog and ponder about what could be added in there for 3 minutes.</td><td>Effect : Increase the production of all buildings based on the current game version.<br>Formula : (10 * a + b + 0.1 * c + 0.01 * d)%, using the four version components encoded by the game. The 4.3.15 source evaluates this bonus to 43.12%.</td><td>Click the bottom right gear icon in game (options) then click the numbers in the bottom right cornor.</td></tr>
+								<center>Suggestion Master</p><img src="/realm/Factions/picks/SuggestionMasterSecretTrophy.png"></td><td>Cost : 1000 coins, A1+ Free</td><td>Requirement : Open the changelog and ponder about what could be added in there for 3 minutes.</td><td>Effect : Increase the production of all buildings based on the current game version.<br>Formula : (10 * a + b + 0.1 * c + 0.01 * d)%, using the four version components encoded by the game. Version 4.3.12 evaluates this bonus to 43.12%.</td><td>Click the bottom right gear icon in game (options) then click the numbers in the bottom right cornor.</td></tr>
 						<tr>
 							<td>
 								<center>glho kohhl snod</p><img src="/realm/Factions/picks/glhokohhlsnodSecretTrophy.png"></td>

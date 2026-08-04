@@ -241,7 +241,7 @@
 					<p><b>Requirement</b>: Open the changelog and ponder about what could be added in there for 3 minutes.</p>
 					<p><b>Cost</b>: 1000 coins, A1+ Free</p>
 					<p><b>Effect</b>: Increase the production of all buildings based on the current game version.</p>
-					<p><b>Formula</b>: (10 * a + b + 0.1 * c + 0.01 * d)%, using the four version components encoded by the game. The 4.3.15 source evaluates this bonus to 43.12%.</p>
+					<p><b>Formula</b>: (10 * a + b + 0.1 * c + 0.01 * d)%, using the four version components encoded by the game. Version 4.3.12 evaluates this bonus to 43.12%.</p>
 					<p><b>Note</b>: Click the Option tab and click the numbers in the bottom right corner and leave it open for 3 minutes.</p>
 					<hr>
 					<p><img src="/realm/Factions/picks/Rule'disSecretTrophy.png" align="middle"><b> Rule'dis</b></p>

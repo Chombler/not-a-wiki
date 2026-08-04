@@ -97,7 +97,7 @@
 	<hr>
 	<p><b>Spell Tier Unlocks</b>
 	<p><b>Unlock Requirement</b>: For ordinary spells, Tier N requires N - 1 hours of that spell's activity time accumulated during the current Reincarnation, plus a spell-specific statistic requirement. A tier cannot appear before its Ascension is reached, and the appropriate tier challenge must be completed.</p>
-	<p>In the table below, <b>n = N - 1</b> for the tier being unlocked. These are the exact additional statistic requirements shown by the 4.3.15 tier-upgrade logic.</p>
+	<p>In the table below, <b>n = N - 1</b> for the tier being unlocked. These are the exact additional statistic requirements shown by the current v4.3.12 tier-upgrade logic.</p>
 	<table class="numtable">
 		<tr><th>Spell</th><th>Additional requirement for Tier N</th></tr>
 		<tr><td>Call to Arms</td><td>((60,000 if below A4; 10,000 in A4+) / Ascension) * n buildings</td></tr>

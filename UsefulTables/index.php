@@ -4,7 +4,7 @@
 <head>
 <?php include "../scripts/header.html"; ?>
 <p><b>Useful Tables</b></p>
-<p>The obsolete Animal Companions and God's Finger tables have been removed. The table below is generated from the Realm Grinder 4.3.15 Primal Balance formula.</p>
+<p>The obsolete Animal Companions and God's Finger tables have been removed. The table below is generated from the current Realm Grinder v4.3.12 Primal Balance formula.</p>
 <hr>
 <a id="PrimalBalance"></a>
 <center><table class="numtable">

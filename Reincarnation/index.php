@@ -21,7 +21,7 @@
 	<p><b>Coins represented by Gems</b>: In every Ascension, n Gems represent n * (n + 1) * 5e11 Coins.</p>
 	<p>Along the way, try to get all the Trophies and Artifacts you can get at each progress level.</p>
 	<br/>
-	<h5>Current Reincarnation Powers (4.3.15)</h5>
+	<h5>Current Reincarnation Powers (4.3.12)</h5>
 	<p>For powers unlocked after Ascension 0, x is rebased to the start of that Ascension: x = R - 39 in Ascension 1, R - 99 in Ascension 2, R - 159 in Ascension 3, and R - 219 in Ascension 4. Effects use effective Reincarnations after applicable count-more bonuses.</p>
 	<table class="numtable">
 	<tr><th>Unlock</th><th>Current effect</th></tr>
@@ -84,6 +84,7 @@
 				<p><b>R180</b>: Forbidden Research, Research budget increase</p>
 				<p><b>R190-R206</b>: Mercenary Challenges</p>
 				<p><b>R220</b>: Ascension 4</p>
+				<p><b>R225</b>: Artifact Sets reintroduced</p>
 				<p><b>R230</b>: Lineages and Perks reintroduced</p>
 				<p><b>R235</b>: Prestige Factions Reintroduced</p>
 				<p><b>R255</b>: Astral Factions Reintroduced</p>
@@ -107,6 +108,8 @@
 				<p>Click upgrades (50k clicks, 100k clicks)</p>
 				<p>All the "Magic" section of stats page.</p>
 				<p><b>At Ascension 2 (R100), access to Prestige factions and Mercenaries is temporarily lost; Prestige factions return at R116, while Mercenaries return during Ascension 3.</b></p>
+				<p><b>At Ascension 3 (R160), all Researches numbered below 405 become inaccessible.</b></p>
+				<p><b>At Ascension 4 (R220), access to Artifact Sets is temporarily lost until R225, and access to Lineages and their Perks is lost until R230. Bloodlines remain available.</b></p>
 				<hr>
 				<p><b>Kept or Gained at Reincarnation</b></p>
 				<p>All Trophies (and their associated unlocks)</p>

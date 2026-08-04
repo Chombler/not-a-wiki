@@ -59,6 +59,7 @@
 <p>When Ascending for the third time, the following will take effect, alongside normal Ascension Changes:</p>
 <p>
  - All Lineage levels will be reset back to 50 (if higher).<br> 
+ - All Researches numbered below 405 become inaccessible.<br>
  - Research is changed to a Budget System. The cost of each research upgrade is equal to its number. Budget Size starts at 0 and can be increased with Archon Bloodline or later Upgrades.</p>
 <hr>
 <p><b>Fourth Ascension</b>: (R220 - R279)</p>
@@ -69,6 +70,8 @@
 <p>
  - Mercenaries, Prestige and Astral Factions will become inaccessible (Prestige returns at R235 and Astral at R255).<br>
  - All Lineage levels will be reset back to 75 (if higher).<br>
+ - Artifact Sets become inaccessible until R225.<br>
+ - Lineages and their Perks become inaccessible until R230; Bloodlines remain available.<br>
  - All Research Upgrades from A0 and A1 are removed.<br>
  - All Normal Heritages are removed.<br>
  - All Ascension Penalties from Faction Upgrades and Advanced Heritages are completely removed in A4.<br>

@@ -27,7 +27,7 @@
 	<p>The <b>excavation cost multiplier</b> is equal to:<br/>
 	   - A0: (1 + 0.2 - C), where C is the sum of your flat cost reduction upgrades (such as DN8 or E290).<br/>
 	   - A1+: (1 + (0.2 - C) / (5 * A)), where C is the sum of your flat cost reduction upgrades and A is the number of times you have ascended.</p>
-	<p>Every excavation awards Faction Coins in 4.3.15.</p>
+	<p>Every excavation awards Faction Coins as of version 4.3.12.</p>
 	<p><b>Base Faction Coin Reward Formula</b>: (250 + floor(0.5 * x ^ 1.05)) ^ (1 + 0.35 * A), where x is current excavation depth and A is Ascensions. Applicable upgrades modify the base before the Ascension exponent.</p>
 	<p><b>Note</b>: Every time you reincarnate or ascend, your excavation counter will be set back to zero.</p>
 	<hr>
