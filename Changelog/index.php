@@ -3,7 +3,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <?php include "../scripts/header.html"; ?>
 	<p>The patch notes, or changelogs, can also be accessed by clicking the Version Number on bottom right corner of the ingame options window.</p>
+	<p><b>Current coverage</b>: Complete through the changelog embedded in the v4.3.15 client. The latest embedded changelog entry is v4.3.12; client/package hotfix numbers may be higher without adding a separate changelog entry.</p>
 	<div class="shlisting">
+		<?php include "recent-4.3.php"; ?>
 		<div class="shelementwhole">
 			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.2.12, May 9, 2023, Blood War Event</a></b></p>
 			<div class="autohide">
