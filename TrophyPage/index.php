@@ -305,7 +305,7 @@
 <p><b>Requirement</b>: 333 of each Royal Exchange, R40+</p>
 <p><b>Cost</b>: 1 TTg (1e102), A2+, Free</p>
 <p><b>Effect</b>: Increase Faction Coins generation while offline based on your Mana Regeneration.</p>
-<p><b>Formula</b>: (300 * ln(1 + 30 * x) ^ 3)%, where x is your Mana Regeneration per second.</p>
+<p><b>Formula</b>: (300 * ln(1 + 30 * x) ^ 3)%, where x is Mana Regeneration per tick; 30 * x is nominal Mana Regeneration per second.</p>
 	" coords="3,403,57,457" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/StoicResistanceSecretTrophy.png&quot; align=&quot;middle&quot;><b> Stoic Resistance</b></p>
@@ -1644,7 +1644,7 @@
 <p><b>Effect</b>: Allows you to manually reset spells with a 2 second cooldown per spell.</p>
 <p><b>Note</b>: Can not reset spells with a fixed duration.</p>
 <p><b>Note</b>: Only while offline, increase your mana produced amount by an additional 10% of your Mana Regeneration per second, and your spells cast amount multiplicatively based on your offline Mana Regeneration.</p>
-<p><b>Formula</b>: (500 * ln(1 + 30 * x))%, where x is your offline Mana Regeneration per second.</p>
+<p><b>Formula</b>: (500 * ln(1 + 30 * x))%, where x is offline Mana Regeneration per tick; 30 * x is nominal offline Mana Regeneration per second.</p>
 	" coords="243,343,297,397" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/TieredAutocastingTrophy.png&quot; align=&quot;middle&quot;><b> Tiered Autocasting</b></p>
@@ -1652,7 +1652,7 @@
 <p><b>Cost</b>: 100 Qid (1e50)</p>
 <p><b>Effect</b>: Allows you to set the maximum tier you wish to autocast each spell to. In the spell tooltip, use the diamond icon to change its mode until you get to the desired maximum tier number. Spells will still follow their previous priority rules.</p>
 <p><b>Effect</b>: Only while offline, increase Mana produced by 10% of your Mana Regeneration per second and multiplicatively increase spells cast based on offline Mana Regeneration.</p>
-<p><b>Formula</b>: (500 * ln(1 + 30 * x))%, where x is your offline Mana Regeneration per second.</p>
+<p><b>Formula</b>: (500 * ln(1 + 30 * x))%, where x is offline Mana Regeneration per tick; 30 * x is nominal offline Mana Regeneration per second.</p>
 	" coords="303,343,357,397" shape="rect">
 		<area research="
 	<p><img src=&quot;/realm/Factions/picks/ArcaneBrilliance1Trophy.png&quot; align=&quot;middle&quot;><b> Arcane Brilliance 1</b></p>

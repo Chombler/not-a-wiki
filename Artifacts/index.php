@@ -136,7 +136,7 @@
 		<p><b>Clue</b>: This one seems to require a lot of magical renewance.</p>
 		<p><b>Description</b>: It looks like a piece of an iron object. It's broken off on two sides.</p>
 		<p><b>Requirement</b>: R125+, Ascension 2+, Angel Faction, 5,000+ Excavations</p>
-		<p><b>Chance</b>: (ln(1 + 30 * x) ^ 3 / 1,000,000 (1 M))%, where x is your Mana Regeneration.</p>
+		<p><b>Chance</b>: (ln(1 + 30 * x) ^ 3 / 1,000,000 (1 M))%, where x is Mana Regeneration per tick; 30 * x is nominal Mana Regeneration per second.</p>
 	" coords="363,103,416,156" shape="rect">
 		<area research="
 	<p><b><img src=&quot;/realm/Factions/picks/SecondIronFragment.png&quot; align=&quot;middle&quot;> Second Iron Fragment</b></p>
@@ -673,8 +673,8 @@
 		<p><b>Hint</b>: Massive mana flows can offer guidance.</p>
 		<p><b>Description</b>: Follow the guiding light, o wonderer, for it shall bring you fortune.</p>
 		<p><b>Requirement</b>: R120+, Proof of Order</p>
-		<p><b>Chance</b>: (ln(30 * x) ^ 3 / 234,567)%, where x is your Mana Regeneration.</p>
-		<p><b>Effect</b>: Unlocks the Lantern of Guidance upgrade for 1e136 coins. It increases all building production by (4 * (30 * x) ^ 0.2)%, raised to the power of 1.5 while affiliated with an Order faction, where x is Mana Regeneration.</p>
+		<p><b>Chance</b>: (ln(30 * x) ^ 3 / 234,567)%, where x is Mana Regeneration per tick; 30 * x is nominal Mana Regeneration per second.</p>
+		<p><b>Effect</b>: Unlocks the Lantern of Guidance upgrade for 1e136 coins. It increases all building production by (4 * (30 * x) ^ 0.2)%, raised to the power of 1.5 while affiliated with an Order faction, where x is Mana Regeneration per tick; 30 * x is nominal Mana Regeneration per second.</p>
 	" coords="63,523,116,576" shape="rect">
 		<area research="
 	<p><b><img src=&quot;/realm/Factions/picks/OilLampArtifact.png&quot; align=&quot;middle&quot;> Oil Lamp</b></p>

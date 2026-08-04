@@ -139,7 +139,7 @@
 	<p><b><img src='/realm/Factions/picks/GodsThroneChallengeReward.png' align='middle'> God's Throne</b></p>
 	<p><b>Effect</b>: Mana regeneration is increased by 50% while God's Hand is active.</p>
 	<p><b>Effect</b>: Also increases offline spell cast amount by multiplicatively based on your offline Mana Regeneration.</p>
-	<p><b>Formula</b>: (5 * ln(1 + 30 * x))%, where x is offline Mana Regeneration.</p>
+	<p><b>Formula</b>: (5 * ln(1 + 30 * x))%, where x is offline Mana Regeneration per tick; 30 * x is nominal offline Mana Regeneration per second.</p>
 		" coords="4,240,58,294" shape="rect">
 	<area href="/realm/Angel/#ANC1" target=""
 		research="
@@ -176,7 +176,7 @@
 	<p><b>Note</b>: Dwarven can <b>NOT</b> be used unless you can get Dwarven's Unique Building at R28+.</p>
 	<p><b>Challenge</b>: Have 2,400 Halls of Legends and no Good buildings while using the Demon Bloodline.</p>
 	<p><b>Effect</b>: Increase the production of all Unique buildings based on your Mana Regeneration. Does not suffer from Ascension penalties.</p>
-	<p><b>Formula</b>: (2 * ln(1 + 30 * x) ^ 2.5)%, where x is your Mana Regeneration.</p>
+	<p><b>Formula</b>: (2 * ln(1 + 30 * x) ^ 2.5)%, where x is Mana Regeneration per tick; 30 * x is nominal Mana Regeneration per second.</p>
 	<p><b>Upgrade</b>: Works with All</p>
 		" coords="184,240,238,294" shape="rect">
 	<area href="/realm/Goblin/#GBCR" target=""
@@ -543,7 +543,7 @@
 	<p><b>Effect</b>: Increase Combo Strike counter based on the amount of spells cast in this Era. (Not including Tax Collection)</p>
 	<p><b>New Combo Strike Counter Formula</b>: (x + y), where x is your Combo Strike cast count and y is every other spell (except tax collection and generic) cast count.</p>
 	<p><b>Effect</b>: Also increase offline spells cast amount multiplicatively based on your offline Mana Regeneration.</p>
-	<p><b>Formula</b>: (5 * ln(1 + 30 * x))%, where x is your offline Mana Regeneration.</p>
+	<p><b>Formula</b>: (5 * ln(1 + 30 * x))%, where x is offline Mana Regeneration per tick; 30 * x is nominal offline Mana Regeneration per second.</p>
 		" coords="4,1024,58,1078" shape="rect">
 	<area href="/realm/Drow/#DWC1" target=""
 		research="

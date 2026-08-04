@@ -4,7 +4,7 @@
 <head>
 <?php include "scripts/header.html"; ?>
 <a id="rightbox " href="https://discord.gg/cq6zmQX"></a>
-<p>Welcome to <b>G00F's Not a Wiki</b> Realm Grinder <font face="Comic sans MS" size="3">"G00FBALL"</font> style without all the wiki adverts.
+<p>Welcome to <b>Chombler's G00F's Not a Wiki</b>, preserving the Realm Grinder information collected in <font face="Comic sans MS" size="3">"G00FBALL"</font> style without all the wiki adverts.
 <p><b><a target="_blank" href="https://discord.gg/cq6zmQX">Realm Grinder Chat on Discord</a></b></p>
 <p><b><a target="_blank" href="https://www.divinegames.it/discuss/viewforum.php?id=26">Realm Grinder Forum on DivineGames.it</a></b></p>
 <p><b><a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1118498519">In-Depth Guide to R0 Starting Realm Grinder</a></b> by RogueFireWolf</p>

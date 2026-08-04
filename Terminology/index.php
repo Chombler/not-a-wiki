@@ -5,13 +5,14 @@
 <head>
     <?php include "../scripts/header.html"; ?>
         <br/>
-        <h6>G00F's Not a Wiki</h6>
+        <h6>Chombler's G00F's Not a Wiki</h6>
         <br/>
         <br/>
         <br/>
         <p>Below is a list of acronyms, terms, and shortcuts used in Realm Grinder.</p>
         <br/>
-        <p><b>G00F's Not a Wiki</b>: NaW</p>
+        <p><b>Chombler's G00F's Not a Wiki</b>: CGNaW (formerly G00F's Not a Wiki, or NaW)</p>
+		<p><b>Mana Regeneration formula units</b>: When a formula based on Mana Regeneration uses <b>30 * x</b>, x is the internal Mana Regeneration per tick. One tick is nominally 1/30th of a second, so 30 * x is the nominal Mana Regeneration per second.</p>
         <br/>
         <center><b>Hot Keys / Shortcuts</b></center>
         <br/>
