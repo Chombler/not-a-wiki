@@ -1,7 +1,9 @@
 <!-- Releases below are transcribed from the changelog embedded in the 4.3.15 client. -->
 		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.3.12</a></b></p>
+			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.3.12, Jun 29, 2026, Goblin Invasion Event</a></b></p>
 			<div class="autohide">
+				<p><b>Global Reminder</b>: The Goblin Invasion Event runs from Jul 7th 2026, 12.01 PM UTC to Jul 14th 2026, 6.59 PM UTC.</p>
+				<p><b>Official announcement</b>: <a href="https://www.divinegames.it/discuss/viewtopic.php?id=395&amp;p=8" target="_blank">Divine Games Developers' Diary</a></p>
 				<p>ADDED A NEW GOBLIN INVASION FEAT, unlocking a new upgrade.</p>
 				<p>Cocoa Bean artifact requirements changed to R24.</p>
 				<p>Fixed some obsolete upgrade requirements.</p>
@@ -9,8 +11,10 @@
 			</div>
 		</div>
 		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.3.11</a></b></p>
+			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.3.11, May 4, 2026, Blood War Event</a></b></p>
 			<div class="autohide">
+				<p><b>Global Reminder</b>: The Blood War Event runs from May 15th 2026, 12.01 PM UTC to May 21st 2026, 6.59 PM UTC.</p>
+				<p><b>Official announcement</b>: <a href="https://www.divinegames.it/discuss/viewtopic.php?id=395&amp;p=8" target="_blank">Divine Games Developers' Diary</a></p>
 				<p>ADDED A NEW BLOOD WAR FEAT, unlocking a new upgrade.</p>
 				<p>C600 no longer requires Diamond Pickaxe to be available.</p>
 				<p>Stoic Resistance reworked to be similar to &quot;Need a Head Start?&quot; giving more coins on purchase.</p>
@@ -19,15 +23,19 @@
 			</div>
 		</div>
 		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.3.10</a></b></p>
+			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.3.10, Mar 17, 2026, Easter Event</a></b></p>
 			<div class="autohide">
+				<p><b>Global Reminder</b>: The Easter Event runs from Apr 3rd 2026, 12.01 PM UTC to Apr 10th 2026, 6.59 PM UTC.</p>
+				<p><b>Official announcement</b>: <a href="https://www.divinegames.it/discuss/viewtopic.php?id=395&amp;p=8" target="_blank">Divine Games Developers' Diary</a></p>
 				<p>ADDED A NEW EASTER FEAT, unlocking a new upgrade.</p>
 				<p>Rebalanced some upgrade requirements across all the game stages.</p>
 			</div>
 		</div>
 		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.3.9</a></b></p>
+			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.3.9, Feb 3, 2026, Valentine Event</a></b></p>
 			<div class="autohide">
+				<p><b>Global Reminder</b>: The Valentine Event runs from Feb 12th 2026, 1.01 PM UTC to Feb 17th 2026, 7.59 PM UTC.</p>
+				<p><b>Official announcement</b>: <a href="https://www.divinegames.it/discuss/viewtopic.php?id=395&amp;p=8" target="_blank">Divine Games Developers' Diary</a></p>
 				<p>ADDED A NEW VALENTINE FEAT, unlocking a new upgrade.</p>
 				<p>Quests for second Unique Buildings now can be done by base+prestige combinations.</p>
 				<p>A0 Neutral Research moved to R24.</p>
@@ -43,8 +51,10 @@
 			</div>
 		</div>
 		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.3.8</a></b></p>
+			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.3.8, Dec 8, 2025, Christmas Event</a></b></p>
 			<div class="autohide">
+				<p><b>Global Reminder</b>: The Christmas Event runs from Dec 21st 2025, 1.01 PM UTC to Jan 4th 2026, 7.59 PM UTC.</p>
+				<p><b>Official announcement</b>: <a href="https://www.divinegames.it/discuss/viewtopic.php?id=395&amp;p=8" target="_blank">Divine Games Developers' Diary</a></p>
 				<p>ADDED A NEW CHRISTMAS FEAT, unlocking a new upgrade.</p>
 				<p>Fixed a bug with Gift of the Faithful not interrupting the third Scry bonus when disabled</p>
 				<p>Fixed Buy All Upgrades tutorial at 1000 Gems as intended.</p>
@@ -52,8 +62,10 @@
 			</div>
 		</div>
 		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.3.7</a></b></p>
+			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.3.7, Nov 18, 2025, New Gifts and Mobile UI Update</a></b></p>
 			<div class="autohide">
+				<p><b>Global Reminder</b>: The recurring Thanksgiving Event runs from Nov 26th 2025, 1.01 PM UTC to Nov 30th 2025, 7.59 PM UTC.</p>
+				<p><b>Official announcement</b>: <a href="https://www.divinegames.it/discuss/viewtopic.php?id=395&amp;p=8" target="_blank">Divine Games Developers' Diary</a></p>
 				<p>NEW GIFTS ADDED. Gift of the Myths and Gift of the Faithful. Both are independent from other Gifts. Myths is aimed at new players, increasing production and mana regen; Faithful is a monthly Gift providing all Scry bonuses at once, granting daily Rubies and other increasing bonuses as you keep logging in.</p>
 				<p>MOBILE UI CHANGES. You can now opt to tap upgrades to see their tooltip, and use a button to purchase them. Useful when you want to learn about new stuff. In the in-game Options menu, you can disable this new feature to switch to the previous tap-buy behavior.</p>
 				<p>UPDATED LOCALIZATIONS for all languages.</p>
@@ -69,21 +81,27 @@
 			</div>
 		</div>
 		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.3.6</a></b></p>
+			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.3.6, Oct 21, 2025, Halloween Event</a></b></p>
 			<div class="autohide">
+				<p><b>Global Reminder</b>: The Halloween Event runs from Oct 28th 2025, 1.01 PM UTC to Nov 4th 2025, 7.59 PM UTC.</p>
+				<p><b>Official announcement</b>: <a href="https://www.divinegames.it/discuss/viewtopic.php?id=395&amp;p=8" target="_blank">Divine Games Developers' Diary</a></p>
 				<p>ADDED A NEW HALLOWEEN FEAT, unlocking a new upgrade.</p>
 			</div>
 		</div>
 		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.3.5</a></b></p>
+			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.3.5, Sep 15, 2025, Idillium Event</a></b></p>
 			<div class="autohide">
+				<p><b>Global Reminder</b>: The Idillium Event runs from Sep 23rd 2025, 12.01 PM UTC to Sep 30th 2025, 6.59 PM UTC.</p>
+				<p><b>Official announcement</b>: <a href="https://www.divinegames.it/discuss/viewtopic.php?id=395&amp;p=8" target="_blank">Divine Games Developers' Diary</a></p>
 				<p>ADDED A NEW IDILLIUM FEAT, unlocking a new upgrade.</p>
 				<p>Call To Arms tier upgrade requirements decreased in A4.</p>
 			</div>
 		</div>
 		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.3.4</a></b></p>
+			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.3.4, Aug 18, 2025, Summer Festival Event</a></b></p>
 			<div class="autohide">
+				<p><b>Global Reminder</b>: The Summer Festival Event runs from Aug 21st 2025, 12.01 PM UTC to Aug 28th 2025, 6.59 PM UTC.</p>
+				<p><b>Official announcement</b>: <a href="https://www.divinegames.it/discuss/viewtopic.php?id=395&amp;p=8" target="_blank">Divine Games Developers' Diary</a></p>
 				<p>ADDED A NEW SUMMER FESTIVAL FEAT, unlocking a new upgrade.</p>
 				<p>DGC4 building req increased.</p>
 				<p>DGC6 most reqs increased.</p>
@@ -100,8 +118,10 @@
 			</div>
 		</div>
 		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.3.3</a></b></p>
+			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.3.3, Jul 2, 2025, Goblin Invasion Event</a></b></p>
 			<div class="autohide">
+				<p><b>Global Reminder</b>: The Goblin Invasion Event runs from Jul 7th 2025, 12.01 PM UTC to Jul 11th 2025, 6.59 PM UTC.</p>
+				<p><b>Official announcement</b>: <a href="https://www.divinegames.it/discuss/viewtopic.php?id=395&amp;p=8" target="_blank">Divine Games Developers' Diary</a></p>
 				<p>ADDED A NEW GOBLIN INVASION FEAT, unlocking a new upgrade.</p>
 				<p>Improved Template windows for Mercenaries and Researches: now you can ADD or EDIT template strings manually from the interface. Buttons and template rows size increased.</p>
 				<p>Limited Wish had production and non-production effects swapped unintendedly, now fixed and adjusted values accordingly.</p>
@@ -121,8 +141,10 @@
 			</div>
 		</div>
 		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.3.2</a></b></p>
+			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.3.2, May 13, 2025, Blood War Event</a></b></p>
 			<div class="autohide">
+				<p><b>Global Reminder</b>: The Blood War Event runs from May 16th 2025, 12.01 PM UTC to May 20th 2025, 6.59 PM UTC.</p>
+				<p><b>Official announcement</b>: <a href="https://www.divinegames.it/discuss/viewtopic.php?id=395&amp;p=8" target="_blank">Divine Games Developers' Diary</a></p>
 				<p>ADDED A NEW BLOOD WAR FEAT, unlocking a new upgrade.</p>
 				<p>R107 power starting value and scaling increased.</p>
 				<p>R120 power effect increased.</p>
@@ -154,8 +176,10 @@
 			</div>
 		</div>
 		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.3.1</a></b></p>
+			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.3.1, Apr 14, 2025, Easter Event</a></b></p>
 			<div class="autohide">
+				<p><b>Global Reminder</b>: The Easter Event runs from Apr 17th 2025, 12.01 PM UTC to Apr 24th 2025, 6.59 PM UTC.</p>
+				<p><b>Official announcement</b>: <a href="https://www.divinegames.it/discuss/viewtopic.php?id=395&amp;p=8" target="_blank">Divine Games Developers' Diary</a></p>
 				<p>ADDED A NEW EASTER FEAT, unlocking a new upgrade.</p>
 				<p>Fixed logs in TT6, A11375, E11875, ANC3, spark of life, primal leaf, dwarven anvil, eye of the dragon, excavated mirage, factory, battlefield and mana loom artifacts, gem power&#039;s FCC bonus.</p>
 				<p>Fixed Share Benefits tier formula (check for balance as it is +1 to exponent).</p>
@@ -174,8 +198,9 @@
 			</div>
 		</div>
 		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.3.0</a></b></p>
+			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.3.0, Mar 26, 2025, Major Overhaul Update</a></b></p>
 			<div class="autohide">
+				<p><b>Official announcement</b>: <a href="https://www.divinegames.it/discuss/viewtopic.php?id=395&amp;p=8" target="_blank">Divine Games Developers' Diary</a></p>
 				<p><b>NEW</b></p>
 				<p>Added Lineage Perk 6s in Ascension 3.</p>
 				<p>Building upgrade series are now removed starting from Ascension 3.</p>
@@ -217,92 +242,122 @@
 			</div>
 		</div>
 		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.2.27</a></b></p>
+			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.2.27, Feb 5, 2025, Valentine Event</a></b></p>
 			<div class="autohide">
+				<p><b>Global Reminder</b>: The Valentine Event runs from Feb 13th 2025, 1.01 PM UTC to Feb 17th 2025, 7.59 PM UTC.</p>
+				<p><b>Official announcement</b>: <a href="https://www.divinegames.it/discuss/viewtopic.php?id=395&amp;p=7" target="_blank">Divine Games Developers' Diary</a></p>
 				<p>ADDED A NEW VALENTINE FEAT, unlocking a new upgrade.</p>
 			</div>
 		</div>
 		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.2.26</a></b></p>
+			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.2.26, Dec 10, 2024, Christmas Event</a></b></p>
 			<div class="autohide">
+				<p><b>Global Reminder</b>: The Christmas Event runs from Dec 20th 2024, 1.01 PM UTC to Jan 4th 2025, 7.59 PM UTC.</p>
+				<p><b>Official announcement</b>: <a href="https://www.divinegames.it/discuss/viewtopic.php?id=395&amp;p=7" target="_blank">Divine Games Developers' Diary</a></p>
 				<p>ADDED A NEW CHRISTMAS FEAT, unlocking a new upgrade.</p>
 			</div>
 		</div>
 		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.2.25</a></b></p>
+			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.2.25, Oct 17, 2024, Halloween Event</a></b></p>
 			<div class="autohide">
+				<p><b>Global Reminder</b>: The Halloween Event runs from Oct 28th 2024, 1.01 PM UTC to Nov 4th 2024, 7.59 PM UTC.</p>
+				<p><b>Official announcement</b>: <a href="https://www.divinegames.it/discuss/viewtopic.php?id=395&amp;p=7" target="_blank">Divine Games Developers' Diary</a></p>
 				<p>ADDED A NEW HALLOWEEN FEAT, unlocking a new upgrade.</p>
 			</div>
 		</div>
 		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.2.24</a></b></p>
+			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.2.24, Sep 11, 2024, Idillium Event</a></b></p>
 			<div class="autohide">
+				<p><b>Global Reminder</b>: The Idillium Event runs from Sep 23rd 2024, 12.01 PM UTC to Sep 30th 2024, 6.59 PM UTC.</p>
+				<p><b>Official announcement</b>: <a href="https://www.divinegames.it/discuss/viewtopic.php?id=395&amp;p=7" target="_blank">Divine Games Developers' Diary</a></p>
 				<p>ADDED A NEW IDILLIUM FEAT, unlocking a new upgrade.</p>
 			</div>
 		</div>
 		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.2.23</a></b></p>
+			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.2.23, Aug 12, 2024, Summer Festival Event</a></b></p>
 			<div class="autohide">
+				<p><b>Global Reminder</b>: The Summer Festival Event runs from Aug 16th 2024, 12.01 PM UTC to Aug 23rd 2024, 6.59 PM UTC.</p>
+				<p><b>Official announcement</b>: <a href="https://www.divinegames.it/discuss/viewtopic.php?id=395&amp;p=7" target="_blank">Divine Games Developers' Diary</a></p>
 				<p>ADDED A NEW SUMMER FESTIVAL FEAT, unlocking a new upgrade.</p>
 			</div>
 		</div>
 		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.2.22</a></b></p>
+			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.2.22, Jul 9, 2024, Goblin Invasion Event</a></b></p>
 			<div class="autohide">
+				<p><b>Global Reminder</b>: The Goblin Invasion Event runs from Jul 12th 2024, 12.01 PM UTC to Jul 16th 2024, 6.59 PM UTC.</p>
+				<p><b>Official announcement</b>: <a href="https://www.divinegames.it/discuss/viewtopic.php?id=395&amp;p=7" target="_blank">Divine Games Developers' Diary</a></p>
 				<p>ADDED A NEW GOBLIN INVASION FEAT, unlocking a new upgrade.</p>
 			</div>
 		</div>
 		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.2.21</a></b></p>
+			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.2.21, May 28, 2024, Blood War Event Hotfix and Rerun</a></b></p>
 			<div class="autohide">
+				<p><b>Global Reminder</b>: The rerun of the Blood War Event runs from Jun 10th 2024, 12.01 PM UTC to Jun 14th 2024, 6.59 PM UTC.</p>
+				<p><b>Official announcement</b>: <a href="https://www.divinegames.it/discuss/viewtopic.php?id=395&amp;p=7" target="_blank">Divine Games Developers' Diary</a></p>
 				<p>Fixed an issue with the Blood War event not granting the correct event resource.</p>
 			</div>
 		</div>
 		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.2.20</a></b></p>
+			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.2.20, May 14, 2024, Blood War Event</a></b></p>
 			<div class="autohide">
+				<p><b>Global Reminder</b>: The Blood War Event runs from May 17th 2024, 12.01 PM UTC to May 21st 2024, 6.59 PM UTC.</p>
+				<p><b>Official announcement</b>: <a href="https://www.divinegames.it/discuss/viewtopic.php?id=395&amp;p=7" target="_blank">Divine Games Developers' Diary</a></p>
 				<p>ADDED A NEW BLOOD WAR FEAT, unlocking a new upgrade.</p>
 			</div>
 		</div>
 		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.2.19</a></b></p>
+			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.2.19, Mar 25, 2024, Easter Event</a></b></p>
 			<div class="autohide">
+				<p><b>Global Reminder</b>: The Easter Event runs from Mar 29th 2024, 1.01 PM UTC to Apr 5th 2024, 6.59 PM UTC.</p>
+				<p><b>Official announcement</b>: <a href="https://www.divinegames.it/discuss/viewtopic.php?id=395&amp;p=7" target="_blank">Divine Games Developers' Diary</a></p>
 				<p>ADDED A NEW EASTER FEAT, unlocking a new upgrade.</p>
 			</div>
 		</div>
 		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.2.18</a></b></p>
+			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.2.18, Feb 9, 2024, Valentine Event</a></b></p>
 			<div class="autohide">
+				<p><b>Global Reminder</b>: The Valentine Event runs from Feb 12th 2024, 12.01 PM UTC to Feb 16th 2024, 7.59 PM UTC.</p>
+				<p><b>Official announcement</b>: <a href="https://www.divinegames.it/discuss/viewtopic.php?id=395&amp;p=7" target="_blank">Divine Games Developers' Diary</a></p>
 				<p>ADDED A NEW VALENTINE FEAT, unlocking a new upgrade.</p>
 			</div>
 		</div>
 		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.2.17</a></b></p>
+			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.2.17, Dec 18, 2023, Christmas Event</a></b></p>
 			<div class="autohide">
+				<p><b>Global Reminder</b>: The Christmas Event runs from Dec 21st 2023, 12.01 PM UTC to Jan 5th 2024, 7.59 PM UTC.</p>
+				<p><b>Official announcement</b>: <a href="https://www.divinegames.it/discuss/viewtopic.php?id=395&amp;p=7" target="_blank">Divine Games Developers' Diary</a></p>
 				<p>ADDED A NEW CHRISTMAS FEAT, unlocking a new upgrade.</p>
 			</div>
 		</div>
 		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.2.16</a></b></p>
+			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.2.16, Oct 16, 2023, Halloween Event</a></b></p>
 			<div class="autohide">
+				<p><b>Global Reminder</b>: The Halloween Event runs from Oct 27th 2023, 12.01 PM UTC to Nov 3rd 2023, 7.59 PM UTC.</p>
+				<p><b>Official announcement</b>: <a href="https://www.divinegames.it/discuss/viewtopic.php?id=395&amp;p=7" target="_blank">Divine Games Developers' Diary</a></p>
 				<p>ADDED A NEW HALLOWEEN FEAT, unlocking a new upgrade.</p>
 			</div>
 		</div>
 		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.2.15</a></b></p>
+			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.2.15, Sep 18, 2023, Idillium Event</a></b></p>
 			<div class="autohide">
+				<p><b>Global Reminder</b>: The Idillium Event runs from Sep 21st 2023, 12.01 PM UTC to Sep 28th 2023, 6.59 PM UTC.</p>
+				<p><b>Official announcement</b>: <a href="https://www.divinegames.it/discuss/viewtopic.php?id=395&amp;p=7" target="_blank">Divine Games Developers' Diary</a></p>
 				<p>ADDED A NEW IDILLIUM FEAT, unlocking a new upgrade.</p>
 			</div>
 		</div>
 		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.2.14</a></b></p>
+			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.2.14, Jul 31, 2023, Summer Festival Event</a></b></p>
 			<div class="autohide">
+				<p><b>Global Reminder</b>: The Summer Festival Event runs from Aug 16th 2023, 12.01 PM UTC to Aug 23rd 2023, 6.59 PM UTC.</p>
+				<p><b>Official announcement</b>: <a href="https://www.divinegames.it/discuss/viewtopic.php?id=395&amp;p=7" target="_blank">Divine Games Developers' Diary</a></p>
 				<p>ADDED A NEW SUMMER FESTIVAL FEAT, unlocking a new upgrade.</p>
 			</div>
 		</div>
 		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.2.13</a></b></p>
+			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">v4.2.13, Jul 4, 2023, Goblin Invasion Event</a></b></p>
 			<div class="autohide">
+				<p><b>Global Reminder</b>: The Goblin Invasion Event runs from Jul 6th 2023, 12.01 PM UTC to Jul 10th 2023, 6.59 PM UTC.</p>
+				<p><b>Official announcement</b>: <a href="https://www.divinegames.it/discuss/viewtopic.php?id=395&amp;p=7" target="_blank">Divine Games Developers' Diary</a></p>
 				<p>ADDED A NEW GOBLIN INVASION FEAT, unlocking a new upgrade.</p>
 			</div>
 		</div>
