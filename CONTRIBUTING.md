@@ -1,4 +1,4 @@
-# Contributing to Chombler's G00F's Not a Wiki
+# Contributing to Realm Grinder Reference
 
 This is a community-maintained Realm Grinder reference. Corrections, missing
 exceptions, clearer explanations, and updated game information are welcome.

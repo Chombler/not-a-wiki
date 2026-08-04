@@ -7,7 +7,7 @@ if ($pageKey === 'not-a-wiki') {
 }
 
 $pageLabels = array(
-    'Home' => "Chombler's G00F's Not a Wiki",
+    'Home' => 'Realm Grinder Reference',
     'BuildingAlignments' => 'Buildings',
     'BuildingUpgrades' => 'Building Upgrades',
     'FactionUpgrades' => 'Faction Upgrades',
@@ -24,7 +24,7 @@ $pageLabels = array(
     'Changes' => 'Latest Major Patch',
 );
 $pageTitle = isset($pageLabels[$pageKey]) ? $pageLabels[$pageKey] : preg_replace('/(?<!^)([A-Z])/', ' $1', $pageKey);
-$siteName = "Chombler's G00F's Not a Wiki";
+$siteName = 'Realm Grinder Reference';
 $documentTitle = $pageKey === 'Home' ? $siteName : $pageTitle . ' · ' . $siteName;
 $sourcePath = $pageKey === 'Home' ? 'index.php' : $pageKey . '/index.php';
 $editUrl = 'https://github.com/chombler/not-a-wiki/edit/local-4.3.15/' . $sourcePath;
@@ -78,11 +78,11 @@ function shohid(element) {
 <a class="skip-link" href="#main-content">Skip to content</a>
 <div class="site-shell">
     <header class="site-header">
-        <a class="site-brand" href="/realm" aria-label="Chombler's G00F's Not a Wiki home">
+        <a class="site-brand" href="/realm" aria-label="Realm Grinder Reference home">
             <img src="/realm/Factions/picks/RealmGrinderHeader.png" alt="Realm Grinder">
             <span>
-                <strong>Chombler's G00F's Not a Wiki</strong>
-                <small>Game reference</small>
+                <strong>Reference</strong>
+                <small>Community wiki</small>
             </span>
         </a>
         <div class="site-status">

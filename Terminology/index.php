@@ -5,13 +5,13 @@
 <head>
     <?php include "../scripts/header.html"; ?>
         <br/>
-        <h6>Chombler's G00F's Not a Wiki</h6>
+        <h6>Realm Grinder Reference</h6>
         <br/>
         <br/>
         <br/>
         <p>Below is a list of acronyms, terms, and shortcuts used in Realm Grinder.</p>
         <br/>
-        <p><b>Chombler's G00F's Not a Wiki</b>: CGNaW (formerly G00F's Not a Wiki, or NaW)</p>
+        <p><b>Realm Grinder Reference</b>: RGR</p>
 		<p><b>Mana Regeneration formula units</b>: In formulas based on Mana Regeneration, x is Mana Regeneration (mana/s), matching the value displayed on the mana orb.</p>
         <br/>
         <center><b>Hot Keys / Shortcuts</b></center>
