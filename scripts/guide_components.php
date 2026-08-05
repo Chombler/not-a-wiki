@@ -13,9 +13,23 @@ function guide_credit($author = '', $updatedBy = '', $source = '', $version = ''
     $author = trim($author) !== '' ? $author : 'Uncredited community source';
     echo '<footer class="build-credit"><span><strong>Original build:</strong> ' . htmlspecialchars($author) . '</span>';
     if (trim($updatedBy) !== '') echo '<span><strong>Updated by:</strong> ' . htmlspecialchars($updatedBy) . '</span>';
-    if (trim($source) !== '') echo '<span><strong>Source:</strong> ' . htmlspecialchars($source) . '</span>';
-    if (trim($version) !== '') echo '<span><strong>Version:</strong> ' . htmlspecialchars($version) . '</span>';
+    if (trim($source) !== '' || trim($version) !== '') {
+        echo '<details class="build-credit-details"><summary>Provenance</summary><span>';
+        if (trim($source) !== '') echo '<strong>Source:</strong> ' . htmlspecialchars($source);
+        if (trim($source) !== '' && trim($version) !== '') echo ' · ';
+        if (trim($version) !== '') echo '<strong>Version:</strong> ' . htmlspecialchars($version);
+        echo '</span></details>';
+    }
     echo '</footer>';
+}
+
+function guide_view_switcher($id, $progressionLabel = 'Progression', $lookupLabel = 'Build lookup') {
+    echo '<section class="guide-view-switcher" data-guide-view-switcher="' . htmlspecialchars($id) . '">';
+    echo '<div><span class="guide-view-eyebrow">Choose how to read this guide</span><strong data-guide-view-description>Follow the era in order with context, requirements, and play notes.</strong></div>';
+    echo '<div class="guide-view-options" role="group" aria-label="Guide view">';
+    echo '<button type="button" class="is-active" data-guide-view="progression" aria-pressed="true">' . htmlspecialchars($progressionLabel) . '</button>';
+    echo '<button type="button" data-guide-view="lookup" aria-pressed="false">' . htmlspecialchars($lookupLabel) . '</button>';
+    echo '</div></section>';
 }
 
 function guide_filter($id, $label, $placeholder, $target) {

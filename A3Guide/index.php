@@ -121,12 +121,17 @@ function render_a3_build_index($builds) {
     foreach ($builds as $build) {
         $type = guide_build_type($build['name']);
         if ($type === 'Build') $type = $build['type'];
-        echo '<article class="guide-build-card" data-guide-entry><h3>' . a3_inline($build['name']) . '<span class="guide-entry-type">' . htmlspecialchars($type) . '</span></h3><dl class="build-facts">';
-        foreach (array('Range', 'Faction', 'Bloodline', 'Lineage', 'Set', 'Stoneheart', 'Requirement') as $label) {
+        $factLabels = array('Range', 'Faction', 'Bloodline', 'Lineage', 'Set', 'Stoneheart', 'Requirement');
+        $hasFacts = false;
+        foreach ($factLabels as $label) if (!empty($build['facts'][$label])) $hasFacts = true;
+        echo '<article class="guide-build-card' . ($hasFacts ? '' : ' has-no-facts') . '" data-guide-entry><h3>' . a3_inline($build['name']) . '<span class="guide-entry-type">' . htmlspecialchars($type) . '</span></h3><dl class="build-facts">';
+        foreach ($factLabels as $label) {
             if (!empty($build['facts'][$label])) echo '<div><dt>' . htmlspecialchars($label) . '</dt><dd>' . a3_inline($build['facts'][$label]) . '</dd></div>';
         }
         echo '</dl>';
+        echo '<div class="guide-build-configs">';
         foreach ($build['codes'] as $code) echo '<div class="source-build-code"><code>' . htmlspecialchars($code) . '</code><button type="button" data-copy-build="' . htmlspecialchars($code, ENT_QUOTES) . '">Copy</button></div>';
+        echo '</div>';
         guide_credit(isset($build['facts']['Author']) ? $build['facts']['Author'] : '', isset($build['facts']['Updated by']) ? $build['facts']['Updated by'] : '', 'A3 community build document', '4.3.11');
         echo '</article>';
     }
@@ -148,10 +153,12 @@ $a3Builds = a3_extract_builds($a3Source);
         <a href="#source-status">Source status</a>
         <a href="#progression-overview">Overview</a>
         <a href="#research-budget">Research budget</a>
-        <a href="#build-index">Build index</a>
-        <a href="#a3-reference">Full A3 guide</a>
+        <a href="#build-index">Build lookup</a>
+        <a href="#a3-reference">Progression guide</a>
     </nav>
 </div>
+
+<?php guide_view_switcher('a3'); ?>
 
 <?php guide_source_status('4.3.11', 'R160–R219 progression, production, buffs, unlocks, artifacts, trophies, and Mercenary challenges', '/realm/content/A3/a3-reference-v4.3.11.md', 'Markdown source'); ?>
 
@@ -183,13 +190,13 @@ $a3Builds = a3_extract_builds($a3Source);
     </table></div>
 </section>
 
-<section class="guide-section" id="build-index">
-    <div class="guide-section-heading"><div><span><?php echo count($a3Builds); ?> entries · <?php echo $a3CopyCount; ?> copyable strings</span><h2>A3 build index</h2></div></div>
+<section class="guide-section" id="build-index" data-guide-view-content="lookup" hidden>
+    <div class="guide-section-heading"><div><span><?php echo count($a3Builds); ?> entries · <?php echo $a3CopyCount; ?> copyable strings</span><h2>A3 build lookup</h2></div></div>
     <?php guide_filter('a3-build-filter', 'Filter A3 builds', 'Try R180, trophy, Mercenary, Fairy…', '#a3-build-index'); ?>
-    <div class="guide-build-index" id="a3-build-index"><?php render_a3_build_index($a3Builds); ?></div>
+    <div class="guide-build-index guide-build-index--long" id="a3-build-index"><?php render_a3_build_index($a3Builds); ?></div>
 </section>
 
-<section class="guide-section a2-guide" id="a3-reference">
+<section class="guide-section a2-guide" id="a3-reference" data-guide-view-content="progression">
     <div class="guide-section-heading">
         <div><span>Detailed source · v4.3.11</span><h2>A3 progression and builds</h2></div>
         <a href="/realm/content/A3/a3-reference-v4.3.11.md">Markdown source</a>

@@ -122,12 +122,17 @@ function render_a4_build_index($builds) {
     foreach ($builds as $build) {
         $type = guide_build_type($build['name']);
         if ($type === 'Build') $type = $build['type'];
-        echo '<article class="guide-build-card" data-guide-entry><h3>' . a4_inline($build['name']) . '<span class="guide-entry-type">' . htmlspecialchars($type) . '</span></h3><dl class="build-facts">';
-        foreach (array('Range', 'Faction', 'Bloodline', 'Lineage', 'Set', 'Requirement') as $label) {
+        $factLabels = array('Range', 'Faction', 'Bloodline', 'Lineage', 'Set', 'Requirement');
+        $hasFacts = false;
+        foreach ($factLabels as $label) if (!empty($build['facts'][$label])) $hasFacts = true;
+        echo '<article class="guide-build-card' . ($hasFacts ? '' : ' has-no-facts') . '" data-guide-entry><h3>' . a4_inline($build['name']) . '<span class="guide-entry-type">' . htmlspecialchars($type) . '</span></h3><dl class="build-facts">';
+        foreach ($factLabels as $label) {
             if (!empty($build['facts'][$label])) echo '<div><dt>' . htmlspecialchars($label) . '</dt><dd>' . a4_inline($build['facts'][$label]) . '</dd></div>';
         }
         echo '</dl>';
+        echo '<div class="guide-build-configs">';
         foreach ($build['codes'] as $code) echo '<div class="source-build-code"><code>' . htmlspecialchars($code) . '</code><button type="button" data-copy-build="' . htmlspecialchars($code, ENT_QUOTES) . '">Copy</button></div>';
+        echo '</div>';
         guide_credit(isset($build['facts']['Author']) ? $build['facts']['Author'] : '', isset($build['facts']['Updated by']) ? $build['facts']['Updated by'] : '', 'A4 community build document', '4.3.11');
         echo '</article>';
     }
@@ -149,10 +154,12 @@ $a4Builds = a4_extract_builds($a4CurrentSource);
     <nav class="guide-jump" aria-label="A4 guide sections">
         <a href="#source-status">Source status</a>
         <a href="#research-budget">Research budget</a>
-        <a href="#build-index">Build index</a>
-        <a href="#a4-builds">Full guide</a>
+        <a href="#build-index">Build lookup</a>
+        <a href="#a4-builds">Progression guide</a>
     </nav>
 </div>
+
+<?php guide_view_switcher('a4'); ?>
 
 <?php guide_source_status('4.3.11', 'R220–R279 progression and post-completion endgame buff builds', '/realm/content/A4/a4-builds-v4.3.11.md', 'Markdown source', 'May 5, 2026'); ?>
 <section class="guide-section guide-source-note">
@@ -184,13 +191,13 @@ $a4Builds = a4_extract_builds($a4CurrentSource);
     </div>
 </section>
 
-<section class="guide-section" id="build-index">
-    <div class="guide-section-heading"><div><span><?php echo count($a4Builds); ?> structured entries · <?php echo $a4BuildCount; ?> distinct research strings</span><h2>A4 build index</h2></div></div>
+<section class="guide-section" id="build-index" data-guide-view-content="lookup" hidden>
+    <div class="guide-section-heading"><div><span><?php echo count($a4Builds); ?> structured entries · <?php echo $a4BuildCount; ?> distinct research strings</span><h2>A4 build lookup</h2></div></div>
     <?php guide_filter('a4-build-filter', 'Filter A4 builds', 'Try R255, excavations, Fairy, buff…', '#a4-build-index'); ?>
-    <div class="guide-build-index" id="a4-build-index"><?php render_a4_build_index($a4Builds); ?></div>
+    <div class="guide-build-index guide-build-index--long" id="a4-build-index"><?php render_a4_build_index($a4Builds); ?></div>
 </section>
 
-<section class="guide-section a2-guide" id="a4-builds">
+<section class="guide-section a2-guide" id="a4-builds" data-guide-view-content="progression">
     <div class="guide-section-heading"><div><span>Maintained guide · v4.3.11</span><h2>A4 progression and endgame builds</h2></div><a href="/realm/content/A4/a4-builds-v4.3.11.md">Markdown source</a></div>
     <div class="a2-guide-body a4-guide-body guide-detail-source"><?php render_a4_reference($a4CurrentSource); ?></div>
 </section>
