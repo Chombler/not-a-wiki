@@ -4,9 +4,13 @@ Guide content stays in plain Markdown or text so community contributors can find
 
 Ascension guides are build-centered references. Organize ordinary production builds under their Reincarnation range. Put task builds under a plainly named purpose section such as `Unlock builds`, `Max buildings`, or `Challenges`.
 
-Every Ascension page is one linear reference document. Put orientation and major milestones first, the searchable build list next, and optional long-form or background material afterward in ordinary expandable sections. Do not require readers to choose a page mode before they can find information.
+Each Ascension landing page is a short route index: plot or orientation, major milestones, and chronological links to its Reincarnation-range pages. Do not place the full Ascension build collection on the landing page.
+
+Each range page is one linear reference document. Put range goals first, followed by its searchable build list. The shared renderer selects entries from the canonical Ascension source, so contributors update the existing JSON or Markdown rather than copying a build into a second file.
 
 Build summaries identify the build and its purpose. Opening one reveals metadata, configuration, notes, credit, and copy controls. Put range-wide advice before the affected build group and build-specific instructions inside the build entry; do not duplicate the same prose elsewhere on the page.
+
+Start a new range page when available systems, immediate goals, or the recommended production route changes materially. Do not split at an arbitrary round number merely to make ranges equal in size. Builds that remain useful across several ranges belong on the Ascension's special-purpose page.
 
 Each `##` or `###` build heading becomes one compact expandable entry. Everything between that heading and the next heading stays with the build, so requirements, variants, and execution notes remain together.
 

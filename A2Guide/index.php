@@ -104,8 +104,7 @@ $templateData = json_decode(base64_decode($templateSource), true);
     <nav class="guide-jump" aria-label="A2 guide sections">
         <a href="#source-status">Source status</a>
         <a href="#plot">Plot</a>
-        <a href="#template-index">Build index</a>
-        <a href="#build-guide">Detailed guide</a>
+        <a href="#progression-ranges">Reincarnation ranges</a>
     </nav>
 </div>
 
@@ -121,6 +120,8 @@ $templateData = json_decode(base64_decode($templateSource), true);
         <figcaption>Recommended production route across A2, with lineage, artifact-set, astral unlock, and challenge milestones.</figcaption>
     </figure>
 </section>
+
+<?php require_once __DIR__ . '/../scripts/range_guide.php'; render_ascension_routes('A2'); include "../scripts/footer.html"; return; ?>
 
 <section class="guide-section" id="template-index">
     <div class="guide-section-heading">

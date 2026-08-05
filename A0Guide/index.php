@@ -49,10 +49,7 @@ $templateSource = base64_encode(json_encode($templateData, JSON_UNESCAPED_SLASHE
     <nav class="guide-jump" aria-label="A0 guide sections">
         <a href="#source-status">Source status</a>
         <a href="#plot">Plot</a>
-        <a href="#builds">Builds</a>
-        <a href="#templates">Template import</a>
-        <a href="#r0-walkthrough">R0 walkthrough</a>
-        <a href="#a0-walkthrough">R1–R39 walkthrough</a>
+        <a href="#progression-ranges">Reincarnation ranges</a>
     </nav>
 </div>
 
@@ -68,6 +65,8 @@ $templateSource = base64_encode(json_encode($templateData, JSON_UNESCAPED_SLASHE
         <figcaption>Recommended production route by reincarnation and gem range. Stripes indicate Dwarf or Drow prestige factions. Plot by ensteffahn for game version 4.3.11.</figcaption>
     </figure>
 </section>
+
+<?php require_once __DIR__ . '/../scripts/range_guide.php'; render_ascension_routes('A0'); include "../scripts/footer.html"; return; ?>
 
 <section class="guide-section" id="builds">
     <div class="guide-section-heading">

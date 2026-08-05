@@ -259,21 +259,12 @@ foreach ($a3Groups as $group) $a3BuildCount += count($group['builds']);
     <p>A build-centered A3 reference. Start with your Reincarnation range, then open only the production route, unlock, challenge, or specialized build you need.</p>
     <nav class="guide-jump" aria-label="A3 guide sections">
         <a href="#progression-overview">Progression</a>
-        <a href="#a3-builds">Builds</a>
-        <a href="#research-budget">Research budget</a>
-        <a href="#source-status">Source and contribution</a>
+        <a href="#progression-ranges">Reincarnation ranges</a>
     </nav>
 </div>
 
 <section class="guide-section a3-at-a-glance" id="progression-overview">
     <div class="guide-section-heading"><div><span>Start here</span><h2>A3 progression</h2></div></div>
-    <div class="guide-stage-grid">
-        <a href="#r160-r171-early-production"><strong>R160–R171</strong><span>Early faction production</span></a>
-        <a href="#r172-r180-late-faction-production"><strong>R172–R180</strong><span>Late faction production and Mercenary preparation</span></a>
-        <a href="#r181-r219-mercenary-production"><strong>R181–R219</strong><span>Mercenary production</span></a>
-        <a href="#unlocks-artifacts-and-trophies"><strong>Unlocks</strong><span>Artifacts, trophies, and research</span></a>
-        <a href="#mercenary-challenges"><strong>Challenges</strong><span>Mercenary Challenge builds</span></a>
-    </div>
     <aside class="guide-milestones">
         <strong>Major milestones</strong>
         <span><b>R165</b> Prestige factions</span><span><b>R172</b> Astral factions and Mercenary Duel</span><span><b>R180</b> Facility artifacts and L75 lineages</span><span><b>R190–206</b> Mercenary Challenges</span><span><b>Before A4</b> All research and required trophies</span>
@@ -287,6 +278,8 @@ foreach ($a3Groups as $group) $a3BuildCount += count($group['builds']);
         <a href="https://docs.google.com/document/d/1xVXiP3R2WtRH9gwUfoo8mkKiYuQQgg8W8J6eMFcDNeQ/edit?tab=t.0" target="_blank" rel="noopener"><strong>Patch 4.3 notes</strong><span>External community document</span></a>
     </div>
 </section>
+
+<?php require_once __DIR__ . '/../scripts/range_guide.php'; render_ascension_routes('A3'); include "../scripts/footer.html"; return; ?>
 
 <section class="guide-section" id="a3-builds">
     <div class="guide-section-heading"><div><span><?php echo $a3BuildCount; ?> maintained entries</span><h2>A3 builds</h2></div><a href="https://github.com/chombler/not-a-wiki/edit/local-4.3.15/content/A3/a3-reference-v4.3.11.md" target="_blank" rel="noopener">Edit Markdown source</a></div>

@@ -158,8 +158,7 @@ $a4Builds = a4_extract_builds($a4CurrentSource);
     <nav class="guide-jump" aria-label="A4 guide sections">
         <a href="#source-status">Source status</a>
         <a href="#research-budget">Research budget</a>
-        <a href="#build-index">Build lookup</a>
-        <a href="#a4-builds">Progression guide</a>
+        <a href="#progression-ranges">Reincarnation ranges</a>
     </nav>
 </div>
 
@@ -192,6 +191,8 @@ $a4Builds = a4_extract_builds($a4CurrentSource);
         <span><strong>Economics</strong>Evil + Balance</span><span><strong>Alchemy</strong>Evil + Order</span><span><strong>Warfare</strong>Evil + Chaos</span>
     </div>
 </section>
+
+<?php require_once __DIR__ . '/../scripts/range_guide.php'; render_ascension_routes('A4'); include "../scripts/footer.html"; return; ?>
 
 <section class="guide-section" id="build-index">
     <div class="guide-section-heading"><div><span><?php echo count($a4Builds); ?> structured entries · <?php echo $a4BuildCount; ?> distinct research strings</span><h2>A4 build lookup</h2></div></div>

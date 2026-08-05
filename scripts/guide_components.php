@@ -44,7 +44,16 @@ function guide_compact_build($name, $type, $template, $facts = array(), $notes =
         echo '</dl>';
     }
     if (trim($notes) !== '') echo '<p class="build-entry-note">' . htmlspecialchars($notes) . '</p>';
-    if (trim($template) !== '') echo '<div class="source-build-code"><code>' . htmlspecialchars($template) . '</code><button type="button" data-copy-build="' . htmlspecialchars($template, ENT_QUOTES) . '">Copy build</button></div>';
+    if (trim($template) !== '') {
+        $tokens = array_values(array_filter(array_map('trim', explode(',', $template)), 'strlen'));
+        $research = array_values(array_filter($tokens, function ($token) { return preg_match('/^[SCDEAWF]\d+$/', $token); }));
+        $setup = array_values(array_filter($tokens, function ($token) { return !preg_match('/^[SCDEAWF]\d+$/', $token); }));
+        if ($research && $setup) {
+            echo '<div class="guide-combined-template"><div class="guide-template-segment"><strong>Mercenary upgrades and setup</strong><code>' . htmlspecialchars(implode(',', $setup)) . '</code></div><div class="guide-template-segment"><strong>Researches</strong><code>' . htmlspecialchars(implode(',', $research)) . '</code></div><div class="guide-template-actions"><button type="button" data-copy-build="' . htmlspecialchars(implode(',', $setup), ENT_QUOTES) . '">Copy setup</button><button type="button" data-copy-build="' . htmlspecialchars(implode(',', $research), ENT_QUOTES) . '">Copy researches</button><button type="button" data-copy-build="' . htmlspecialchars($template, ENT_QUOTES) . '">Copy full build</button></div></div>';
+        } else {
+            echo '<div class="source-build-code"><code>' . htmlspecialchars($template) . '</code><button type="button" data-copy-build="' . htmlspecialchars($template, ENT_QUOTES) . '">Copy build</button></div>';
+        }
+    }
     guide_credit($author, '', $source, $version);
     echo '</div></details>';
 }

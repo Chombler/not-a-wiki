@@ -27,8 +27,13 @@ $pageLabels = array(
     'A2Guide' => 'Ascension 2 Guide',
     'A3Guide' => 'Ascension 3 Guide',
     'A4Guide' => 'Ascension 4 Guide',
+    'A3SpecialBuilds' => 'A3 Special-purpose Builds',
+    'A4PostA4' => 'Post-A4 Builds',
 );
 $pageTitle = isset($pageLabels[$pageKey]) ? $pageLabels[$pageKey] : preg_replace('/(?<!^)([A-Z])/', ' $1', $pageKey);
+if (preg_match('/^(A[0-4])R(\d+)-R?(\d+)$/', $pageKey, $rangePage)) {
+    $pageTitle = $rangePage[1] . ' R' . $rangePage[2] . '–R' . $rangePage[3] . ' Guide';
+}
 $siteName = 'Realm Grinder Reference';
 $documentTitle = $pageKey === 'Home' ? $siteName : $pageTitle . ' · ' . $siteName;
 $guideSourcePaths = array(
@@ -37,8 +42,14 @@ $guideSourcePaths = array(
     'A2Guide' => 'content/A2/a2-builds-v4.3.9.md',
     'A3Guide' => 'content/A3/a3-reference-v4.3.11.md',
     'A4Guide' => 'content/A4/a4-builds-v4.3.11.md',
+    'A3SpecialBuilds' => 'content/A3/a3-reference-v4.3.11.md',
+    'A4PostA4' => 'content/A4/a4-builds-v4.3.11.md',
 );
 $sourcePath = $pageKey === 'Home' ? 'index.php' : (isset($guideSourcePaths[$pageKey]) ? $guideSourcePaths[$pageKey] : $pageKey . '/index.php');
+if (preg_match('/^(A[0-4])R\d+-R?\d+$/', $pageKey, $rangeSource)) {
+    $rangeSources = array('A0' => 'content/A0/builds.json', 'A1' => 'content/A1/templates.json', 'A2' => 'content/A2/a2-builds-v4.3.9.md', 'A3' => 'content/A3/a3-reference-v4.3.11.md', 'A4' => 'content/A4/a4-builds-v4.3.11.md');
+    $sourcePath = $rangeSources[$rangeSource[1]];
+}
 $editUrl = 'https://github.com/chombler/not-a-wiki/edit/local-4.3.15/' . $sourcePath;
 ?>
 <meta charset="UTF-8">
@@ -49,7 +60,7 @@ $editUrl = 'https://github.com/chombler/not-a-wiki/edit/local-4.3.15/' . $source
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="/realm/scripts/jquery.style-my-tooltips.js"></script>
-<script src="/realm/scripts/guide.js?v=20260805-linear-guides" defer></script>
+<script src="/realm/scripts/guide.js?v=20260805-range-guides" defer></script>
 <title><?php echo htmlspecialchars($documentTitle); ?></title>
 <script>
 document.addEventListener('DOMContentLoaded', function () {

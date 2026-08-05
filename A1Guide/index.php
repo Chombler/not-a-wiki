@@ -41,12 +41,7 @@ $templateSource = base64_encode(json_encode($templateData, JSON_UNESCAPED_SLASHE
     <nav class="guide-jump" aria-label="A1 guide sections">
         <a href="#source-status">Source status</a>
         <a href="#plot">Plot</a>
-        <a href="#build-index">Build index</a>
-        <a href="#research-builds">Research builds</a>
-        <a href="#mercenary-builds">Mercenary builds</a>
-        <a href="#templates">Template import</a>
-        <a href="#progression-notes">Progression notes</a>
-        <a href="#offline-mechanics">Offline mechanics</a>
+        <a href="#progression-ranges">Reincarnation ranges</a>
     </nav>
 </div>
 
@@ -62,6 +57,8 @@ $templateSource = base64_encode(json_encode($templateData, JSON_UNESCAPED_SLASHE
         <figcaption>Recommended production route across Ascension 1. The lower notes mark important unlocks, trophies, and goals before A2.</figcaption>
     </figure>
 </section>
+
+<?php require_once __DIR__ . '/../scripts/range_guide.php'; render_ascension_routes('A1'); include "../scripts/footer.html"; return; ?>
 
 <section class="guide-section" id="build-index">
     <div class="guide-section-heading"><div><span><?php echo count($templateData['research']) + count($templateData['mercenary']); ?> copy-ready entries</span><h2>A1 build index</h2></div><a href="/realm/content/A1/templates.json">Build source</a></div>
