@@ -1,0 +1,93 @@
+R0 Guide
+
+1) First Era
+
+At the start of the first Era it is useful to get the Speedrun Trophy. The requirement is to get 1M coins in 5 mins (don't buy gem power if this isn't your first Era).
+Here's a quick guide how to do it easily - abdicate before starting the attempt to reset the time (don't be afraid to abdicate without getting anything, this is a completely normal thing to do).
+
+Speedrun Guide: 
+Get 25 Farms, cast 1 Tax Collection (TC) and wait for the 2nd Farm Upgrade.
+Get 10 Inns and the upgrade, cast 1 more TC and get Mana Droplet.
+Wait for the 25k coins to go Evil, then buy a few Slave Pens and Orcish Arenas. Cast the Blood Frenzy Spell, keep buying more evil buildings and their upgrades and you should get to 1M coins.
+
+Now that you have Speedrun you should be able to get a lot more coins. Switch to "buy max" buildings (directly below shop) to buy buildings more easily.
+Go Undead and buy their first upgrade "The Walking Dead" (UD1) to get more Faction Coins (FC). Next 2 more Trophies: Go to options and import "glho kohhl snod". After that click the version number and wait on the changelog screen for 3 mins.
+Some important things for this Era (and future Eras):
+
+Royal Exchanges: Keep buying these to increase your production! For now buy everything except the ones from your Faction (Undead), you'll need those to buy upgrades.
+
+Buildings: Keep buying all of these to buff the Call to Arms (CtA) spell, among other things. Focus on your most productive building(s). For Undead specifically also focus on Necropolis, since there are some upgrades benefiting from those (also look out for those kind of upgrades in other Factions).
+
+Clicking: Clicking will generally not be very useful to increase production past the very beginning. Do remember to click every once in a while though (if you don't have any autoclick sources yet), to unlock the treasure series upgrades!
+
+Spells: These will be your main way of speeding up progression right now. Doing spell combos (casting several spells at once) is a very important way to increase your production. 
+Your first spell combo will just be Blood Frenzy (BF) + 2 TCs. Once you have Death Temples (UD3) also add in CtA.
+Once you have a good amount of Halls of Legends (HoL), Night Time (NT) will be stronger than BF, so use that instead (still use CtA). 
+You'll notice that due to Undead Resilience (UD4) NT will be longer than CtA. This is an important observation to maximize spell combos. Cast NT first, wait until it is at 20s (or slightly below), then cast CtA (and TCs after).
+Towards the end of the Era you'll be able to cast the ultimate spell combo: NT first, then CtA and BF, followed by TCs. This will also give you the Spell Fury Trophy. Do this a few times and abdicate with about 100k gems. 
+In future Eras try out some different spell combos and see what works well!
+
+You now unlocked buy all upgrades and buy all buildings. Buy all upgrades can also buy Royal Exchanges if you enable that option (though this isn't recommended to do yet).
+
+
+2) Vanilla Faction Eras
+
+The base 6 Factions you have access to right now are called Vanilla Factions. The goal of this section is to unlock Neutral Factions.
+
+In the second Era you should go Fairies to get some of the good building Trophies and also get some gems.
+
+Some Trophies you can get in this and the following Eras:
+
+Building Hater: 100k coins without buildings - extremely easy
+Unitary: buy exactly one of each building
+Need a Head Start?: do nothing for 5 mins at the start of an Era
+Assistant Squasher: click the assistant icons in the background 100 times
+Advisor Insight: click the advisor button (bottom right) 100 times
+Leet: have exactly 1337 coins - don't buy buildings, buy Building Hater, then Sturdy Treasure and Assistant Squasher, stop clicking above 1330 coins
+Rule 'Dis: quickly abdicate 10 times in a row (without doing anything else)
+
+For the next few Eras use Demons to gain gems. At 1e9 gems you unlock Excavations. Do 50. This will give 6 Artifacts and 1 Ruby. 
+Spend all your rubies in Ruby Upgrades. Your first one should go to gems for a nice production boost. 
+
+The 6 Artifacts are hints for the 3 new Factions:
+Titan - 300 HoLs
+Druids - 1 Million FC this Era
+Faceless - 36h all time play time - don't worry about unlocking them for now, you won't need them in the first Reincarnation(s).
+
+You'll have gotten some Faction Champion Trophies and Faction Spell Upgrade Trophies (Fairy Choir etc.) by now. These unlock upgrades, which will become more important soon.
+Therefore go Goblin and Angel and buy all their upgrades to get their Champion Trophies - don't worry about gems. Angels take a bit :(
+Now go Elf. This gives Grand Diplomat. Get 300 HoLs and wait for the Titan unlock (save your Angel and Goblin FC!). Also buy all 6 Heritages for Faction Grinder and get Sun Blessing during this run (by clicking a bit if necessary) - with this Moon Blessing (MB) will be useful to get clicks (and FC). 
+
+At some point you'll get basic Autocasting. This isn't super useful right now, but can be used to cast 1-2 spells while not actively playing.
+
+
+3) Neutral Faction Eras
+
+You'll now use Titans until about e20 gems. The beginning of each Era will take a bit, this is normal. Once you have Titans, use Lightning Strike (LS) to get more FC. LS hits a random building each time. Pay attention to what it targets and only do a spell combo on a good target. 
+Also note that Titan's mana regen depends on clicks. Elf Heritage gives some, but manual clicking is useful. The ideal spell combo (if possible) is Gem Grinder, then CtA, wait to 5s, cast LS and 1-2 TCs.
+
+At some point you should also do a longer Titan run to unlock Druids (and Lightning Storm). When you do that is up to you, later it's faster but it also helps with progression. After this quickly get Druid Heritage (it gives max mana!).
+
+Excavations: At 100 you'll unlock lore artifacts, at 150 is a 2nd ruby (use it on max mana), at 200 you get new faction unlocks, at 300 is a 3rd ruby (use it on mana regen for now) - this will be your last Era in this section. 
+Ideally you get the Scarab of Fortune (2nd Lore Artifact) in this section, but if not that's also fine.
+
+
+4) Prestige Faction Eras
+
+Go Fairies and unlock Dwarves (autocast Fairy Chanting for FC, don't get the Good Exchanges or Heritages). If you don't have 10k clicks yet quickly go Elves first. After getting Dwarves immediately abdicate without getting gems.
+Respec your rubies (this is always free!) and get two points in max mana. Now go Angel + Dwarf. The goal of this run is to get the 7500 spell casts for the Drow unlock, but you'll also get a lot of gems.
+After buying Magical Gates (AN7) you should get God's Rest (or be extremely close to it). Use it to significantly increase your FC gain (it will still take a bit). 
+Getting 750 HoLs will massively increase your production. After getting Dwarven Champion you can just idle with TC on autocast until 7500 spells (or play active to get more gems).
+
+Once you have the spells abdicate and use Goblins to unlock Drow. You can respec your rubies into something normal again. Keep using Goblin + Drow to get to the end of the first Reincarnation (e27 gems). 
+Also get the Perfect Combo Trophy at some point (and Exchange Master if you didn't get it accidentally yet). 
+Before reincarnating quickly get Premeditation (850 Dark Temples without Drow) and use Fairies to get Mathematician (have 1 HoL, 2 Heaven's Gates, 4 Royal Castles etc. all the way to 1024 Farms).
+Finally max your Excavations and maybe get another Artifact, then reincarnate.
+
+
+OPTIONAL: Don't reincarnate yet. Instead continue with Goblins until e31 gems. Now go Angel (+ Dwarf). Respec rubies into mana regen. DO NOT buy any max mana upgrades. Buy everything else. The goal is to get Mana Waste (more mana regen than max mana). 
+
+The next goal is Mana Matrix (exactly 4767 max mana). Abdicate and go Druids (alternatively you can also try to get it in the current Era). Respec rubies into max mana (& regen). Don't completely max out your buildings yet (keep them around 800-900). 
+Buy all max mana upgrades, use Earthly Bond (DD4) and Mana Waste to get to about 4750 max mana, then buy buildings (not Stone Pillars) 10 at a time to get to exactly 4767 max mana.
+
+Finally go Goblin. Use Mana Waste to get about 4.2k Max Mana. Cast Goblins Greed, wait 2 seconds, then autocast TC. You should get Coin Pillage, a very powerful upgrade. Now you can reincarnate (you can respec your rubies again).

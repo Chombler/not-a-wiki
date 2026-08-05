@@ -115,11 +115,11 @@
     <div class="reference-panel-title">
         <img src="/realm/Factions/picks/MercenaryTopPage.png" alt="">
         <h2 id="guides-heading">Guides &amp; builds</h2>
-        <span class="section-status">Sources being collected</span>
+        <span class="section-status">A0 available</span>
     </div>
-    <p class="guide-preview-note">Reserved for current, versioned community guides. Existing outdated build pages are not linked here.</p>
+    <p class="guide-preview-note">Current, versioned community guides. Additional Ascension sources are still being collected.</p>
     <div class="guide-placeholder-grid">
-        <div class="guide-placeholder"><strong>A0 plot</strong><span>R0–R39</span><small>4.3 source pending</small></div>
+        <a class="guide-placeholder guide-placeholder-link" href="/realm/A0Guide"><strong>A0 guide</strong><span>R0–R39 walkthrough, plot &amp; builds</span><small>Available now</small></a>
         <div class="guide-placeholder"><strong>A1 plot</strong><span>R40–R99</span><small>4.3 source pending</small></div>
         <div class="guide-placeholder"><strong>A2 plot</strong><span>R100–R159</span><small>4.3 source pending</small></div>
         <div class="guide-placeholder"><strong>Progression builds</strong><span>Indexed by R range</span><small>Discord pins being collected</small></div>

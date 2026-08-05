@@ -1,0 +1,360 @@
+A0 GUIDE
+
+
+
+This guide will assume you're playing on PC in a few places, but 99% should also apply to mobile players.
+
+PART 1: R1-R3 Early Rs
+
+This is a continuation of the R0 guide, therefore it assumes you used it, including getting coin pillage at the end (I'll also quickly mention what to do if you didn't get it).
+
+So it assumes having the following secret trophies:
+Leet, Unitary, Building Hater, Grand Diplomat, Exchange Master,
+Assistant Squasher, Rewind, Faction Grinder, Spellfury, Speed Run,
+Premeditation, Need A Head Start?, Realm Digger,
+Mathematician, Unlimited Mana,
+glho kohhl snod, (Mana Matrix), Suggestion Master, Rule 'dis,
+Advisor Insight, (Mana Waste)
+
+If you're missing any of these, try to get them in R1.
+
+Additional secret trophies that are gotten at some point by just playing the game are (you might have some of these already):
+Lucky Neutral, Perfectly Good, Diabolical Evil, Master Archeologist, Beard Carpet (longer era as Dwarf),
+Fast Forward, Because I Like To Grind
+
+Finally there's Equality: Spend at least 8h with good, evil and neutral each, while the difference between them should be at most 1h.
+This is a useful achievement you can get in any R where you can't really play for a day, but the guide will not assume that you have it.
+
+
+If you don't have Coin Pillage, R1-R3 are played like a much faster R0, you can folow the A0plot for faction recommendations (the plot is also generally useful to quickly see what builds to use when). Of course you can also get Coin Pillage in R1.
+The plot also has a "what to do offline section". The first two (5h Druid and 5h Faceless) are relevant for A0, so definitely do those at some point!
+
+If you do have Coin Pillage, the entire R can be done with Demon:
+
+0-e10 gems: Here it is fastest to do mini runs where you don't wait for Demon Alliance (since it costs 500 FC) and just abdicate after one or two spell combos.
+e10-e17 gems: Now we can get coin pillage. Demon Alliance and the vanilla heritages (for 5k) are worth getting, but nothing else.
+e17+ gems: Now we can get Drow. Buy all Drow upgrades and neutral heritages. Prestige heritages are a bit too expensive to be worth yet.
+
+
+R2: We unlock challenges! Ignore most of these for now, only do Demon Challenge 1 at the end of the R:
+You're not allowed to buy gem or R power, so this is a good point to disable "buy all upgrades" in options, so you can still use buy all. Just buy all Demon upgrades, then wait a few minutes to get the FC.
+
+With that challenge you'll see a significant speedup.
+Additionally you'll get access to Dwarf/Drow FC immediately in R3. This is slightly annoying as getting Demons takes a bit longer, but makes up for it in general QoL.
+
+Get to e34 gems, then unlock mercs. With Coin Pillage this is easily done while grinding gems with Demons, without it go the slower route with Goblins.
+This is the end of this part.
+
+
+
+PART 2: Lore Artifacts
+
+This is an intermezzo to show which artifacts you should go for. If I give approximate chances I will give them in per mille (1 in 1k), this might be slightly unusual, but since you can do about 1k excavations in early Rs this shows the difficulty of the artifact and how many you can expect to get per R.
+For the exact chance you will have to check in game anyway.
+The external tool "lara crypt" will not be used in this guide, but you can of course use it for yourself to make grinding artifacts easier. It is generally recommend to export before doing excavations though, so you have the option to go back if you missed.
+
+You'll probably have noticed by now that Demons really don't need any excavations to get to the Mercenary range (~e33 gems), so this is a good point to go for artifacts (in additon to the end of Rs of course).
+
+1) Global Artifacts (the first 5):
+Rough Stone: 2% chance in any era where you excavate, hopefully you get this one accidentally at some point as grinding for it is a bit annoying (but of course possible - be at low excavations and spam abdicate). Not needed until about R25.
+Scarab of Fortune: Already covered in the R0 guide, useful and not very hard to get.
+Chocolate Cookie: Cookie Clicker reference, the easiest artifact
+Fossilized Rodent: 0.05 per 1h this R (assuming 7 clicks per second, standard during offline time). This artifact is important as it gives a good upgrade, but there is no fast way to get it. At least it is always available, so you can probably get it with a smaller chance than some of the other artifacts.
+As a rough rule of thumb you have about a 50% chance of getting it every day you play past the very early Rs (if you don't grind for it). If you know your current R is going to be long anyway (overnight etc.) it might be a good idea to not use your excavations early for a better chance at this artifact.
+Power Orb: 3-10, pretty easy, especially with mercs
+
+The next 24 artifacts are faction specific, 2 per faction, in order of the champion trophies (fairies to mercs). I will order them by difficulty (the first artifact is generally eaiser):
+
+Druid 1: easy, needs the same amount of each building to be available
+Drow 1: easy, needs no clicks this era (clicks can be temporarily disabled in options)
+Goblin 1: trivial in R3+ (one of the few artifacts to realistically reach 100% find chance)
+Faceless 2: 5-10
+Fairy 1: 2.5-5
+Angel 1: 2.5-5
+Undead 1: 1-4
+Merc 1: 1-3
+Dwarf 1: 30 per hour (with Elf)
+Dwarf 2: 0.5-1
+Elf 1: trivial in R19
+Goblin 2: based on spell casts, doable in mid A0, easy in late A0
+Demon 1: easy, but the requirement puts it in late A0
+Titan 1: 6 per hour
+Merc 2: 0.6 per hour (all-time) req: 100 merc affiliations (can be spammed at high gems)
+
+starting here, consider not doing these in A0
+Angel 2: 0.4 per hour (all-time) (min 4h)
+Demon 2: 0.4 per hour (all-time) (min 4h)
+Undead 2: 1 per hour (min 1h) - based on Night Time activity time
+Fairy 2: 0.7 after 1h (non-linear)
+Elf 2: 0.25 per hour
+Titan 2: 0.2 per hour (min 2h)
+Drow 2: 0.008 per hour (all-time) (min 1d) - based on offline time, so very easy to increase, but still probably not recommended for A0
+Faceless 1: 0.15 per hour - do this in A1!
+Druid 2: 0.06 per hour - do this in A1!
+
+R16+ Artifacts:
+Fortune Teller Machine: 1 (no faction)
+Dawnstone/Duskstone: about 1, main difficulty is that they're only available in the morning/evening, their upgrade is useful, but not necessary
+
+The remaining artifacts will be explicity covered in this guide (or are A1+).
+
+
+
+PART 3: R3-R15 Mercs
+
+At this point it makes sense to copy the A0templates.txt and import it into your game to get (almost) all of the builds that will be used in this guide.
+
+How to read templates: Templates can just be imported, but it still makes sense to understand what they mean (click the edit button of any template to see its template code).
+Mercs are allowed to choose 12 faction upgrades and 2 faction spells. The spells should be pretty self explanatory. The faction upgrades are abbreviated by a code - two letters for the faction, one number for the upgrade number:
+
+FR - Fairy
+EL - Elf
+AN - Angel
+GB - Goblin
+UD - Undead
+DM - Demon
+TT - Titan
+DD - Druid
+FC - Faceless
+DN - Dwarf
+DW - Drow
+(these will also sometimes be used later in the guide, learning them makes a lot of sense)
+
+The number goes from 1 to 9 and just counts through the 9 faction upgrades of each faction (obviously going from cheapest to most expensive).
+
+Each merc upgrade costs faction coins (and sometimes coins), 1k for the first and over 1M for the last. Any merc build will rely on the merc upgrades themselves giving more FC to afford later merc upgrades - you will not be able to import merc builds in one go!
+
+
+Go neutral merc. The first build you should run is the coin pillage one (even if you already have it). It will also unlock Harlequin. Stay in the build for a few minutes to get a good amount of gems and also get Exchange Lord (1500 Royal Exchanges).
+Next run the Lucifer build. Finally run the autocasting build to get all autocasting trophies up to efficient autocasting (this takes like half an hour). 
+From now on any time you have a lot of mana regen you can use the bronze preset next to the mana pool and it'll just autocast all the spells for you.
+Get Mana Matrix if you haven't already (there are a lot of ways to do it, one of them is covered in the R0 guide).
+Finally get Helden Sterben Nicht - abdicate and join Merc, Undead, Angel in that order. The trophy can be a bit finicky, so stay in each era for a few seconds to make sure the game registers it. If it didn't work just try again.
+
+
+For grinding gems in the merc range use the Mana Fairies build (low gems is more than strong enough for now). You can use the power of mercs to get a few generic trophies now or just continue reincarnating. 
+When reincarnating to R4 make sure to reincarnate WHILE being merc to get Mercenary Spirit (if you missed it just do it next R, but don't forget about it!).
+
+The R4 challenges can be ignored. R6 unlockes prestige challenges. DWC1 (Drow Challenge 1) is for Demon, so somewhat relevant. The reward isn't needed at all, but more importantly this challenge takes a bit, unless Perfect Combo is buffed. So do this challenge after your next overnight run.
+Probably wait until R7 though, because that's when you unlock BLOODLINES.
+
+Rs were already quite fast before, but now you'll get some of the fastest Rs in the entire game. Elfline (Elf Bloodline) is the most useful general purpose bloodline to massively increase the amount of FC you get. 
+Runs will now be faster than ever and you'll also be able to afford more upgrades during your Demons runs, effectively making them way stronger. Mana Fairies uses Facelessline to maximize production, but for the very first merc era it is a good idea to still use Elfline for an easy start 
+(the low gem build isn't really needed anymore, Elfline can use the high gem build immediately and once you switch to Facelessline you probably want the high gem build for more power anyway).
+
+Unless you're speedrunning you'll have unlocked Faceless by now. Obviously get Faceless Heritage, it will be quite useful for the last few merc Rs.
+
+The next few Rs unlock some more R powers, you can completely ignore any new Challenges you unlock for a while (feel free to do them though if you think they're easy).
+In R12 you unlock a new artifact: Know Your Enemy, Part I. When entering mercs start with the Coin Pillage build like in R3 to get it. Also around this R Mana Fairies starts to slow down, so it makes sense switching to Necro Lightning at high gems (technically Mana Fairies can work the whole way though).
+For Necro Lightning you need two buffs every R: First go offline for about 5 mins to buff Trade Lords (this is the neutral specific merc upgrade). After that run the Evil Building buff build really quick to increase the values of UD2 and DW5. 
+The build has Lightning Strike, so it can be a bit annoying to use. Only do a spell combo when it targets Farms or Inns.
+You should be able to get past R15 without major issues.
+
+
+
+PART 4: R16-R23 Resarch
+
+One of the first things you should get in R16 is the Vanilla Flavour Juice artifact as Demon (it's very easy). This buffs specifically vanilla (not prestige!) factions, so avoid buying Drow until they are actually useful (you can treat this as a small practice for later).
+Keep your excavations low, at about e50 gems use the evil buildings buff build to get the Voodoo Doll artifact. If you miss (unlikely) try again at higher gems or next R. Use mercs to get back up to about e72 gems. This is the last R you'll need Necro Lightning.
+
+We'll use Vanilla Factions a lot now, so it's a good idea to do some challenges. Do at least the very fast ones (FRC1, FRC2, ELC1, UDC1, UDC2). Also once you get GBC1 (this is random) do GBC2.
+
+Unlocking Research:
+Getting to R16 gave the ability to unlock Research. But making Research actually viable for production will require many, many small indivdual unlocks:
+
+Step 1: Unlocking Research Facilities:
+Go to Fairy, ELf, Angel, Goblin, Undead and Demon to unlock their unique building and reseach facility. Don't go Dwarf/Drow! Unlocking each facility also gives a massive 100k% production boost for that faction! After unlocking each facility immediately abdicate, don't go into the research tab yet.
+
+Step 2: Upgrading Research Facilities with Goblins:
+Go FCGB (short notation for Facelessline Goblin, Bloodline Faction is always written first). Now take a look at the research tab. We have 6 facilities, each of them can be upgraded 136 times, with increasing costs. You can use the buy all button at the top to quickly upgrade all facilities.
+As you upgrade them, researches will start appearing on the right. Researches can have 4 different symbols:
+nothing: unlocked and available (greyed out if you can't afford it yet)
+x: unlocked, but not available for the current faction
+!: not unlocked, but can be unlocked with the current faction (it will show the unlock requirement)
+?: not unlockad and not unlockable with the current faction
+
+Each era you can buy up to 4 researches in each facility. Currently this isn't really a restriction, so just buy every research you can for now.
+
+The goal of this first era is to get all facilities to at least 80. Then abdicate and choose GBGB (Gobline Goblin). This should give enough buildings to unlock C80 and E80, two useful researches.
+Research Naming Convention: This is quite easy, researches are named after the first letter of their facility (S,C,D,E,A,W), followed by their number. Template codes also use this system.
+
+Go back to FCGB. You should now be able to level facilities up to 120, also unlocking novice researcher on the way. Quickly abdicate and go UDGB to unlock W120. This is a boost to non-unique buildings (anything except Goblin Banks), therefore we switch to Dwarfline, since that buffs them better.
+Go DNGB and max out all facilities.
+
+Step 3: Unlocking ALL the researches
+- go DDAN to unlock D55 & A55 (and also S10, D50)
+- go GBFR to unlock A105 & S135 (and C10)
+- go DDUN to unlock A50 & A10 (and probably A135)
+- do DDEL to unlock E25 & C50 (and W10)
+- go FCFR to unlock S50
+- go DDGB to unlock E50
+- go DDDM to unlock D10
+
+Now the only researches left should be the timewalls. We will get (almost) all of them in one merc run:
+Evil, Elfline - FR4,EL1,EL8,AN1,AN5,GB5,DN4,SP:Hellfire Blast,SP:Fairy Chanting (the remaining upgrades don't matter)
+Run the build for about 2h, at least 1h offline. Go DM, UD & FR to actually unlock the researches. Then go Elf. You might still need some clicks/Elven Lucks. In that case now is a great time to do ELC2 (it takes 50 min), otherwise you can delay it to R18.
+Now you have unlocked every research and you're able to use the R16 FCGB build for production. Remember that Vanilla Flavor Juice gives a 2500% boost, but only in the first 5 mins. Therefore the typical run length for a vanilla research prodcution build is 5 mins (or less). 
+A couple 5 min runs should get you to R gems.
+
+R17: Also remember that getting the research facilities gave a massive 100k% prod boost (only to vanilla factions!). With that even a maxed out Drow faction gives barely more production than just pure Demons. 
+Therefore we'll just completely skip Drow and only run Demons until mercs (this is once again a significant speedup).
+With all research unlocked, we can now enter research at e66 gems already (you can use the R17 DNGB build immediately), which is easy to get with Mana Fairies at this point.
+
+Each R the research point limit for the facilities is raised, giving access to more and more researches each R. The new R17 researches just auto unlock, since their only requirement is having some previous researches unlocked (which we already did).
+With these new researches R17 shouldn't take that long.
+The end of R17 is a good time to do DMC2. Setting up some research build should allow you to buy 100 exchanges each pretty easily, so just buy 6*100 + 66 (while skipping demon exchanges obviously).
+
+R18: No researches unlock this R, but we have a lot of challenges to do! Get to about e75 gems, then do DMC3 with GBDM. This is a pretty simple challenge with a good reward that allows you to get back up to e78 gems easier.
+Now at e78 do GBC3 (just with the normal R17 build). This gives a very nice reward, especially for non-Goblins (effectively doubling TCs for them). Do ANC1 if you didn't do that yet (just a 10 min timewall), then do ANC2, which is pretty fast now with A150 available.
+Next do UDC3, ELC3, FRC3 (all with druidline), they are pretty easy. You'll have probably noticed that doing the final challenges also unlocks an upgrade for the faction spells. 
+Goblin's Greed in particular is now based on FC this R, meaning we can buff it! (this is only really relevant for R18 as we'll stop using Goblins for a while after that).
+The best way to get FC at this point is still mercs, use this build (doesn't have to be run long):
+Neutral, Elfline - EL1,AN1,AN8,GB3,GB5,GB7,UD7,DD3,DD4,FC5,DN4,DW7,SP:Lightning Strike,SP:Fairy Chanting
+
+With that buff grind to e80 gems, where we can do the last challenge, ANC3. Buying Heaven's Domains are not allowed, so a lot of researches are useless. Use this build:
+S30,S105,S150,C25,C80,C120,C150,D55,D135,D150,E30,E145,E150,A105,A120,A135,A150,W120,W135,W150
+
+The reward will only be useful next R, but getting the trophy for all vanilla challenges still gives 25% prod.
+1-2 more 5 min runs should get to R gems.
+Also at this point the Faction Run trophy is quite doable (1.5M FC in 5 min without gem power or spells). The simplest way is with Elfline Demon, basically just set up the build and wait (takes about 4 min).
+
+R19: With all those challenges giving global bonuses, things are even faster now, especially mercs, since both faction spells gained a significant boost.
+Continue using the R17 DNGB build for low gems for 1-2 more Rs, until the R20+ build outperforms it.
+
+Cycle through the factions to unlock the new research. W180 is still left: 150 CtAs. Waiting for those takes quite a bit, but there is a faster way to do it: abdication spam (I promise this is the only major research unlock where this is recommended). 
+Since you can immediately cast CtA in a fresh abdication this is actually quite fast. Make RG as small as possible to minimize necessary movement, then constantly abdicate while pressing 2 to cast CtAs.
+
+S175 is quite a powerful research, which is why we switch to Elves now. Also with a 25% Elven Luck chance the Lucky Clover artifact is pretty much free now. Elf research is quite a unique build as regen is low and we actually will get the majority of coins from Elven Luck, not TC.
+Normal spells should stay on bronze, but TC is better on silver, so we constantly have all spells active for Elven Luck.
+
+R19 and R20 are a bit slow, manual clicking in the 5th minute for more Elven Lucks can speed things up, otherwise doing a longer run to increase overall click count is also fine (but not optimal).
+
+R20: basically the same as R19, around this point is a good time to do That Excavated Quickly (1k excavations in the first 30s of an era). Don't get D205 or W205 yet.
+
+R21: E230 is very strong, so we switch to Demons. Use Demons to get W205 & S215. Also buy A25 and keep casting Hellfire Blast. This buffs Demons enough to make the rest of the R reasonable (otherwise this is one of the slower Rs).
+
+R22: We get some strong researches, so things finally speed up again. We switch to Undead, using 1 of the 5 min to buff UD9 is worth it, but only do this close to R gems, as it's more trouble than it's worth otherwise.
+
+R23: same as R22, at some point you should spend 15 min as ELEL to unlock S270 (this or next R). Alternatively it will also unlock if you just go offline for an hour.
+
+
+PART 5: R24-31 Neutral Research
+
+R24: At low gems quickly go neutral to unlock the Ancient Cocoa Bean artifact. Get to e87 gems and get 1500 excavations for the Key to the Lost City. Use DDTT to unlock neutral research.
+Use the R24 DDTT build to unlock E300, this unlocks Businessman, the first of 6 secret trophies which gives extra research slots (we'll get all 6 this R).
+After E300 you can also get W290.
+
+Now go UDFC. Just importing the Titan build for some reasonable researches is enough to unlock W300. Also manually buy E135, so you can get D290.
+Spam abdicate for S300 (thankfully it's only 8 casts). This will also get Faceless Overmind if you don't have that yet.
+
+Fianlly go GBDD with E135 to quickly get E290 & D300 (just fill up with researches from the R26 Druid build).
+
+Now some neutral challenges:
+
+TTC1 is a bit annoying, it's easiest to only buy: gem power, Elfline, Assistant Squasher + 6 building upgrades for exactly 13 assistants, coin pillage and lightning storm. Buy exactly 169 = 8*20 + 9 Royal Exchanges.
+
+DDC1 probably auto completed at some point (otherwise try to balance the buildings a bit, the challenge is pretty easy), also do DDC2.
+
+FCC1-3 are all very easy.
+
+Now we can use Titans to gain gems. No need to rush, we want to get C300 anyway.
+Some things to note: 
+- Ancient Cocoa Bean works for 15 mins, so longer production runs are viable now.
+- We'll have to deal with Lightning Strike RNG for this and the next R.
+- Try to get Ancient Device (available after 2k excavations), swap in the research E270 (for E30) to excavate more (this would also be a decent point to go for the first Titan artifact). 
+If you get lucky you can buy C200 early, otherwise you only get it after unlocking the extra research slot through C300. If you didn't get it, try again next R.
+
+If you reach R gems before C300, do TTC2 and TTC3 while waiting (TTC2 counts autoclicks, so no need to click).
+
+R25: Use DDAN to unlock D320. Get to reasonably high gems, then do TTC4 with ELTT (takes about 10 min).
+Then do DDC3: buy max all buildings before Stone Pillars, cast Grand Balance once, repeat for the other two.
+DDC4 is pretty simple, just be reasonably fast and don't buy Halls of Balance to keep Grand Balance at 20s!
+Hopefully you've got the 5h Druid and Faceless times by now, so you unlock A305 and S305. If not do these ASAP. C305 doesn't really matter right now, but you should unlock it eventually.
+At R gems you can swap E320 -> E270 to unlock W320.
+
+R26: We have to unlock A300 now. It is now a bit faster with C330, but not much. Use DDDD, buy every mana regen and max mana research (in particular D300). The unlock takes about 10 min. Don't get C340 yet.
+Druids are now better for production. Their final challenge reward (Primal Balance) is extremely important for this. It needs 3.2M mana produced to target 3 buildings, which is an important milestone. In this R this is already done through the A300 unlock. 
+In the next two Rs make sure you get it while running Mana Fairies (it's pretty quick).
+
+Hopefully you have Ancient Device by now, if not keep trying. Currently the extra research slots it gives are pretty weak (E250 & A200 for R26 Druids) so you should be good a few more Rs without it.
+
+R28: The 400 researches are quite strong (especially S400 & A400), so this R should be quick. C400 is a great FC research.
+
+R29: E425 is a big Royal Exchange boost, so we go back to Titans (now without RNG!).
+Get S425 with low gem Goblins.
+
+R30: Get E450 with FCDD (the R28 researches are enough), ignore D450. E450 is another strong research, carrying us all the way to prestige research.
+At this point you should definitely have the 666 trophies required for the first Demon artifact, so get that.
+You can also get the Van!shment trophy now (1e15% offline production): Go Undead and get A55, A480 and W320. Go offline for a bit to buff UD9 if necessary.
+
+
+
+PART 6: Prestige Research
+
+R32: At 2750 excavations you get Earth Core. Get around e118 gems, then use Fairyline Fairy + Dwarf (not research!) to unlock Prestige Research.
+The Goblin build works immediately and gets you to R gems and beyond (yes prestige research is that strong).
+Go for the two new quest artifacts, Flame of Bondelnar (3k+ excavs) and Horn of the Kings (3.25k+ excavs). For the Horn you can use the R36+ Fairy build. Swap out E330/E200 for E270 to get more excavations.
+You have a few Rs to get these, but there's also a good chance you get both in R32 already. After getting Flame you can also use the Goblin build with Flame to push gems even higher.
+
+This is also a good place to do DNC1-4 (they are all trivial). I assume you have DWC2 completed, don't do DWC3 yet.
+
+R33: Low gems change dramatically now. With prestige research Drow are really strong, so we switch to Elfline Goblin simply because that's the fastest to set up. Also you'll pretty quickly get enough regen to use autocasting, which is nice.
+Don't switch to mercs. Around e50 gems use Faceline for more production. You'll soon be able to buy some researches from FCGB low gem. Around e80 gems switch to the other FCGB build.
+At e90 gems you'll get No Recruiting for free. Get DNC5 at the end of the R. You can ignore any new research unlocks for now.
+
+R35: We finally have all the timewall researches, so it's unlocking time! Do a long Undead run and unlock DWC3-5, W625 and S525. 
+Next use FCFR to unlock D205, C340, D525, D625 (and D400 + E575). Finally spend some time as neutral to unlock D450.
+
+Hopefully you have Horn and Flame by now, the builds will assume you do. At high gems you'll now switch to Fairies, since they are stronger.
+
+R36: We want to get the final two secret trophies of A0 now:
+1. Stoic Resistance (1e27 gems in the first abdication) - if you screw something up try again next R
+The best combination for this is actually Dwarfline Undead (though unsurprisingly Demons also work pretty well).
+Keep excavating to buff Dwarfline. Buy all Heritages, then all Drow upgrades (this shouldn't take long).
+Go offline for about 10 min to buff UD9 and UD6, only autocast Night Time to maximize offline activity time.
+After getting Planned Autocasting you can just use the silver autocast preset for the final part of the run.
+The goal is 5e65 coins, the last major upgrade is Blackguards to buff Evil Fortresses.
+The run takes about 20 minutes.
+
+2. Iron Rush (725 Iron Strongholds in 5 mins without gem or reincarnation power)
+Do this at the end of the R. Do a very quick neutral run to increase neutral building counts.
+Turn off buy all upgrades in options so you can use buy all.
+Get Undeadline, use Stoic Resistance to afford neutral. Buy as many building upgrades as possible to get more assistants, click a few times for coins. You can also cast a few spells (never cast Gem Grinder). Having Faction Run completed is important to get the Faction Coins for a neutral faction quickly enough.
+Go Druid. This will speed things up significantly. Keep buying stuff, you should be able to get e40 coins without any issues. Casting a few spells to speed things up is again optional, but save up mana.
+Finally do one massive spell combo. Keep casting TCs while buying buildings and upgrades and you should get to 725 Iron Strongholds before the spells end.
+
+You should now have 47 secret trophies, every secret trophy that is possible in A0, except Equality.
+
+R37: One final research for every faction is added, they should be easy to get (but aren't used right now).
+Now you should have every research unlocked, except maybe C305.
+
+The final Rs are just about grinding gems, getting a bit slower every R, but not that slow.
+
+
+
+PART 7: Beyond A0
+
+Ascension will massively reduce numbers, raising all production multipliers to the power of 0.1. Building and excavation counts will be adjusted to have similar values in R40 compared to R39.
+
+It also does a few subtle things:
+- free resets! You will now be able to reset excavations without spending rubies (try it out, you'll get a trophy!). You can do about 5 resets every R before they get too expensive (the cost resets every R, but also depends on the R).
+- Reverse Autocasting can now be unlocked, allowing you to cancel spells (using R + click), making spell cycling and casting goals much faster
+- Dragon unlock! In the first few Rs of A1 you will work on unlocking Dragons, the neutral prestige faction. Doing the different stages of the Dragon unlock will also unlock more and more spell tiers, another new A1 mechanic.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
