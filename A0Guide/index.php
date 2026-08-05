@@ -56,11 +56,8 @@ $templateSource = base64_encode(json_encode($templateData, JSON_UNESCAPED_SLASHE
     </nav>
 </div>
 
-<?php guide_view_switcher('a0'); ?>
-
 <?php guide_source_status('4.3.11', 'R0–R39 progression, production, trophies, research, and walkthroughs', '/realm/content/A0/a0-guide.txt', 'Progression source'); ?>
 
-<div data-guide-view-content="progression">
 <section class="guide-section" id="plot">
     <div class="guide-section-heading">
         <div><span>Overview</span><h2>Ascension 0 progression plot</h2></div>
@@ -72,18 +69,7 @@ $templateSource = base64_encode(json_encode($templateData, JSON_UNESCAPED_SLASHE
     </figure>
 </section>
 
-<section class="guide-section walkthrough" id="r0-walkthrough">
-    <div class="guide-section-heading"><div><span>First reincarnation</span><h2>R0 walkthrough</h2></div><a href="/realm/content/A0/r0-guide.txt">Plain-text source</a></div>
-    <div class="guide-detail-source"><?php render_guide_text(__DIR__ . '/../content/A0/r0-guide.txt'); ?></div>
-</section>
-
-<section class="guide-section walkthrough" id="a0-walkthrough">
-    <div class="guide-section-heading"><div><span>Full Ascension 0 route</span><h2>R1–R39 walkthrough</h2></div><a href="/realm/content/A0/a0-guide.txt">Plain-text source</a></div>
-    <div class="guide-detail-source"><?php render_guide_text(__DIR__ . '/../content/A0/a0-guide.txt'); ?></div>
-</section>
-</div>
-
-<section class="guide-section" id="builds" data-guide-view-content="lookup" hidden>
+<section class="guide-section" id="builds">
     <div class="guide-section-heading">
         <div><span>Search and copy</span><h2>A0 build index</h2></div>
         <a href="/realm/content/A0/builds.json">Build source</a>
@@ -116,13 +102,23 @@ $templateSource = base64_encode(json_encode($templateData, JSON_UNESCAPED_SLASHE
     </div>
 </section>
 
-<section class="guide-section" id="templates" data-guide-view-content="lookup" hidden>
+<section class="guide-section" id="templates">
     <div class="guide-section-heading"><div><span>Game import</span><h2>Complete A0 template bundle</h2></div></div>
-    <p>This single import contains every research and Mercenary template listed above. Copy it and use the game's template import.</p>
+    <details class="guide-reference-details"><summary>Open the complete game-import bundle</summary><div><p>This single import contains every research and Mercenary template listed above. Copy it and use the game's template import.</p>
     <div class="template-import">
         <textarea id="a0-template-source" readonly aria-label="Complete A0 template import string"><?php echo htmlspecialchars($templateSource); ?></textarea>
         <button type="button" class="copy-template" data-template-target="a0-template-source">Copy complete template bundle</button>
-    </div>
+    </div></div></details>
+</section>
+
+<section class="guide-section walkthrough" id="r0-walkthrough">
+    <div class="guide-section-heading"><div><span>First reincarnation</span><h2>R0 walkthrough</h2></div><a href="/realm/content/A0/r0-guide.txt">Plain-text source</a></div>
+    <details class="guide-reference-details"><summary>Open the complete R0 walkthrough</summary><div class="guide-detail-source"><?php render_guide_text(__DIR__ . '/../content/A0/r0-guide.txt'); ?></div></details>
+</section>
+
+<section class="guide-section walkthrough" id="a0-walkthrough">
+    <div class="guide-section-heading"><div><span>Full Ascension 0 route</span><h2>R1–R39 walkthrough</h2></div><a href="/realm/content/A0/a0-guide.txt">Plain-text source</a></div>
+    <details class="guide-reference-details"><summary>Open the complete R1–R39 walkthrough</summary><div class="guide-detail-source"><?php render_guide_text(__DIR__ . '/../content/A0/a0-guide.txt'); ?></div></details>
 </section>
 
 <?php include "../scripts/footer.html"; ?>
