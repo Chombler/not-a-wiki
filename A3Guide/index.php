@@ -23,9 +23,31 @@ function a3_inline($text) {
 }
 
 function a3_copy_code($line) {
-    if (preg_match('/((?:S\d+)(?:,\s*[SCDEAWF]\d+){1,})/', $line, $match)) return rtrim($match[1], ',');
-    if (strpos($line, 'SP:') !== false && substr_count($line, ',') >= 5) return rtrim(trim($line), ',');
-    return null;
+    $tokens = array_values(array_filter(array_map('trim', explode(',', trim($line))), 'strlen'));
+    if (count($tokens) < 2) return null;
+    foreach ($tokens as $token) {
+        if (!preg_match('/^(?:[A-Z]{1,3}\d+|(?:SP|UB|UNN|MA):[^,]+)$/', $token)) return null;
+    }
+    return implode(',', $tokens);
+}
+
+function a3_is_research_token($token) {
+    return preg_match('/^[SCDEAWF]\d+$/', $token) === 1;
+}
+
+function a3_render_configuration($code, $combined) {
+    $tokens = array_values(array_filter(array_map('trim', explode(',', $code)), 'strlen'));
+    $research = array_values(array_filter($tokens, 'a3_is_research_token'));
+    $setup = array_values(array_filter($tokens, function ($token) { return !a3_is_research_token($token); }));
+    if ($combined && $setup && $research) {
+        echo '<div class="guide-combined-template">';
+        echo '<div class="guide-template-segment"><strong>Mercenary upgrades and setup</strong><code>' . htmlspecialchars(implode(',', $setup)) . '</code></div>';
+        echo '<div class="guide-template-segment"><strong>Researches</strong><code>' . htmlspecialchars(implode(',', $research)) . '</code></div>';
+        echo '<div class="guide-template-actions"><button type="button" data-copy-build="' . htmlspecialchars(implode(',', $setup), ENT_QUOTES) . '">Copy setup</button><button type="button" data-copy-build="' . htmlspecialchars(implode(',', $research), ENT_QUOTES) . '">Copy researches</button><button type="button" data-copy-build="' . htmlspecialchars($code, ENT_QUOTES) . '">Copy full build</button></div></div>';
+        return;
+    }
+    $label = $research && !$setup ? 'Copy researches' : 'Copy build';
+    echo '<div class="source-build-code"><code>' . htmlspecialchars($code) . '</code><button type="button" data-copy-build="' . htmlspecialchars($code, ENT_QUOTES) . '">' . $label . '</button></div>';
 }
 
 function a3_heading($line) {
@@ -126,7 +148,9 @@ function a3_render_lines($lines) {
         echo '<p>' . implode('<br>', array_map('a3_inline', $paragraph)) . '</p>';
         $paragraph = array();
     };
-    foreach ($lines as $rawLine) {
+    $lineCount = count($lines);
+    for ($index = 0; $index < $lineCount; $index++) {
+        $rawLine = $lines[$index];
         $line = trim($rawLine);
         if ($line === '') { $flush(); continue; }
         if ($line === '---') { $flush(); continue; }
@@ -135,13 +159,30 @@ function a3_render_lines($lines) {
             echo '<p class="guide-bullet">' . a3_inline($match[1]) . '</p>';
             continue;
         }
+        $configurationHeading = null;
+        if (preg_match('/^(Upgrades & Researches|Researches & Upgrades|Researches|Secondary Researches|Full Research import|Mobile)(.*?)[,:]$/i', $line)) {
+            $configurationHeading = rtrim($line, ':,');
+        }
+        if ($configurationHeading !== null) {
+            $flush();
+            echo '<h4>' . a3_inline($configurationHeading) . '</h4>';
+            $parts = array();
+            while ($index + 1 < $lineCount) {
+                $candidate = a3_copy_code(trim($lines[$index + 1]));
+                if ($candidate === null) break;
+                $parts[] = $candidate;
+                $index++;
+            }
+            if ($parts) {
+                $combined = preg_match('/^(?:Upgrades & Researches|Researches & Upgrades|Mobile)/i', $configurationHeading) === 1;
+                a3_render_configuration(implode(',', $parts), $combined);
+            }
+            continue;
+        }
         $code = a3_copy_code($line);
         if ($code !== null) {
             $flush();
-            $prefix = trim(substr($line, 0, max(0, strpos($line, $code))));
-            echo '<div class="source-build-code">';
-            if ($prefix !== '') echo '<span>' . a3_inline($prefix) . '</span>';
-            echo '<code>' . htmlspecialchars($code) . '</code><button type="button" data-copy-build="' . htmlspecialchars($code, ENT_QUOTES) . '">Copy</button></div>';
+            a3_render_configuration($code, false);
             continue;
         }
         if (preg_match('/^Variant:\s*(.+)$/i', $line, $variant)) {
@@ -149,7 +190,7 @@ function a3_render_lines($lines) {
             echo '<h4>' . a3_inline($variant[1]) . '</h4>';
             continue;
         }
-        if (preg_match('/^(Gameplay Notes|Notable Buffs|Researches|Upgrades & Researches|Secondary Researches|Mobile)(.*):$/i', $line)) {
+        if (preg_match('/^(Gameplay Notes|Notable Buffs)(.*):$/i', $line)) {
             $flush();
             echo '<h4>' . a3_inline(rtrim($line, ':')) . '</h4>';
             continue;
