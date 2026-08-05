@@ -3,6 +3,7 @@
 <head>
 <?php include "../scripts/header.html"; ?>
 <?php
+require_once __DIR__ . '/../scripts/guide_components.php';
 function a4_inline($text) {
     $text = preg_replace('/\\\\([>+\-=.!*()#~\[\]])/', '$1', trim($text));
     $text = preg_replace('/\[([^\]]+)\]\(\)/', '$1', $text);
@@ -79,12 +80,67 @@ function render_a4_reference($source) {
     $flush();
 }
 
+function a4_extract_builds($source) {
+    $builds = array();
+    $current = null;
+    $category = 'Build';
+    $flush = function () use (&$builds, &$current) {
+        if ($current && $current['codes']) $builds[] = $current;
+        $current = null;
+    };
+    foreach (preg_split('/\R/', $source) as $rawLine) {
+        $line = trim($rawLine);
+        if (preg_match('/^#\s+(?:\*\*)?(.*?)(?:\*\*)?\s*$/', $line, $section)) {
+            $flush();
+            $category = guide_section_type($section[1], $category);
+            continue;
+        }
+        if (preg_match('/^\*\*(.+?)\*\*\s*$/', $line, $heading) || preg_match('/^\\##\s+(.+?)(?:\s+\{#.*\})?$/', $line, $heading)) {
+            $flush();
+            $current = array('name' => trim(str_replace(array('~~', '\\'), '', $heading[1])), 'type' => $category, 'facts' => array(), 'codes' => array());
+            continue;
+        }
+        if (!$current) continue;
+        if (preg_match('/^(Author|Authors|Original Author|Range|Faction|Bloodline|Lineage|Set|Requirements?|Requirement):\s*(.*)$/i', $line, $fact)) {
+            $label = strtolower($fact[1]);
+            if ($label === 'author' || $label === 'authors' || $label === 'original author') $label = 'Author';
+            else $label = ucfirst(rtrim($label, 's'));
+            $value = trim($fact[2]);
+            if ($label === 'Author' && preg_match('/^(.*?),?\s+(?:updated(?: for [^ ]+)?|modified) by\s+(.+)$/i', $value, $credit)) {
+                $current['facts']['Author'] = trim($credit[1], ', ');
+                $current['facts']['Updated by'] = trim($credit[2]);
+            } else $current['facts'][$label] = $value;
+        }
+        $code = a4_research_code($line);
+        if ($code !== null && !in_array($code, $current['codes'], true)) $current['codes'][] = $code;
+    }
+    $flush();
+    return $builds;
+}
+
+function render_a4_build_index($builds) {
+    foreach ($builds as $build) {
+        $type = guide_build_type($build['name']);
+        if ($type === 'Build') $type = $build['type'];
+        echo '<article class="guide-build-card" data-guide-entry><h3>' . a4_inline($build['name']) . '<span class="guide-entry-type">' . htmlspecialchars($type) . '</span></h3><dl class="build-facts">';
+        foreach (array('Range', 'Faction', 'Bloodline', 'Lineage', 'Set', 'Requirement') as $label) {
+            if (!empty($build['facts'][$label])) echo '<div><dt>' . htmlspecialchars($label) . '</dt><dd>' . a4_inline($build['facts'][$label]) . '</dd></div>';
+        }
+        echo '</dl>';
+        foreach ($build['codes'] as $code) echo '<div class="source-build-code"><code>' . htmlspecialchars($code) . '</code><button type="button" data-copy-build="' . htmlspecialchars($code, ENT_QUOTES) . '">Copy</button></div>';
+        guide_credit(isset($build['facts']['Author']) ? $build['facts']['Author'] : '', isset($build['facts']['Updated by']) ? $build['facts']['Updated by'] : '', 'A4 community build document', '4.3.11');
+        echo '</article>';
+    }
+}
+
 $a4SourcePath = __DIR__ . '/../content/A4/a4-builds-v4.3.11.md';
 $a4FullSource = file_get_contents($a4SourcePath);
 $a4Parts = preg_split('/^# Archived Full Builds List.*$/m', $a4FullSource, 2);
 $a4CurrentSource = $a4Parts[0];
+$a4CurrentSource = preg_replace('/\A.*?^# Progression and Unlock Builds \(R220-R279\)\s*$/ms', '', $a4CurrentSource);
 preg_match_all('/((?:S\d+)(?:,\s*[SCDEAWF]\d+){2,})/', $a4CurrentSource, $a4Codes);
 $a4BuildCount = count(array_unique(array_map(function ($code) { return rtrim($code, ','); }, $a4Codes[1])));
+$a4Builds = a4_extract_builds($a4CurrentSource);
 ?>
 
 <div class="guide-intro">
@@ -93,16 +149,13 @@ $a4BuildCount = count(array_unique(array_map(function ($code) { return rtrim($co
     <nav class="guide-jump" aria-label="A4 guide sections">
         <a href="#source-status">Source status</a>
         <a href="#research-budget">Research budget</a>
-        <a href="#a4-builds">Builds</a>
+        <a href="#build-index">Build index</a>
+        <a href="#a4-builds">Full guide</a>
     </nav>
 </div>
 
-<section class="guide-section" id="source-status">
-    <div class="guide-section-heading"><div><span>Version and coverage</span><h2>A4 source status</h2></div></div>
-    <aside class="build-info" aria-labelledby="a4-version-title">
-        <strong id="a4-version-title">Build source: v4.3.11</strong>
-        <p>The supplied community document was updated May 5, 2026 and covers progression through R279 plus post-completion buff builds. This page exposes <?php echo $a4BuildCount; ?> distinct research strings with one-click copy controls.</p>
-    </aside>
+<?php guide_source_status('4.3.11', 'R220–R279 progression and post-completion endgame buff builds', '/realm/content/A4/a4-builds-v4.3.11.md', 'Markdown source', 'May 5, 2026'); ?>
+<section class="guide-section guide-source-note">
     <p class="guide-coverage-note">The duplicate “Archived Full Builds List” is intentionally omitted from the rendered guide. It remains in the <a href="/realm/content/A4/a4-builds-v4.3.11.md">Markdown source</a> for historical reference.</p>
 </section>
 
@@ -131,35 +184,15 @@ $a4BuildCount = count(array_unique(array_map(function ($code) { return rtrim($co
     </div>
 </section>
 
-<section class="guide-section a2-guide" id="a4-builds">
-    <div class="guide-section-heading"><div><span>Maintained guide · v4.3.11</span><h2>A4 progression and endgame builds</h2></div><a href="/realm/content/A4/a4-builds-v4.3.11.md">Markdown source</a></div>
-    <div class="a2-guide-body a4-guide-body"><?php render_a4_reference($a4CurrentSource); ?></div>
+<section class="guide-section" id="build-index">
+    <div class="guide-section-heading"><div><span><?php echo count($a4Builds); ?> structured entries · <?php echo $a4BuildCount; ?> distinct research strings</span><h2>A4 build index</h2></div></div>
+    <?php guide_filter('a4-build-filter', 'Filter A4 builds', 'Try R255, excavations, Fairy, buff…', '#a4-build-index'); ?>
+    <div class="guide-build-index" id="a4-build-index"><?php render_a4_build_index($a4Builds); ?></div>
 </section>
 
-<script>
-document.addEventListener('click', function (event) {
-    var button = event.target.closest('[data-copy-build]');
-    if (!button) return;
-    var value = button.getAttribute('data-copy-build');
-    function legacyCopy() {
-        var field = document.createElement('textarea');
-        field.value = value;
-        field.setAttribute('readonly', '');
-        field.style.position = 'fixed';
-        field.style.opacity = '0';
-        document.body.appendChild(field);
-        field.select();
-        document.execCommand('copy');
-        field.remove();
-    }
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(value).catch(legacyCopy);
-    } else {
-        legacyCopy();
-    }
-    button.textContent = 'Copied';
-    window.setTimeout(function () { button.textContent = 'Copy'; }, 1200);
-});
-</script>
+<section class="guide-section a2-guide" id="a4-builds">
+    <div class="guide-section-heading"><div><span>Maintained guide · v4.3.11</span><h2>A4 progression and endgame builds</h2></div><a href="/realm/content/A4/a4-builds-v4.3.11.md">Markdown source</a></div>
+    <div class="a2-guide-body a4-guide-body guide-detail-source"><?php render_a4_reference($a4CurrentSource); ?></div>
+</section>
 
 <?php include "../scripts/footer.html"; ?>

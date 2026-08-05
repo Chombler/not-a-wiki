@@ -3,6 +3,7 @@
 <head>
 <?php include "../scripts/header.html"; ?>
 <?php
+require_once __DIR__ . '/../scripts/guide_components.php';
 function clean_a2_markdown($text) {
     $text = preg_replace('/\\\\([>+\-!<])/', '$1', $text);
     $text = str_replace(array('**', '\\~'), array('', '~'), $text);
@@ -14,6 +15,7 @@ function render_a2_guide($path) {
     $paragraph = array();
     $collectingResearch = false;
     $awaitingMobile = false;
+    $inGuide = false;
     $flush = function () use (&$paragraph) {
         if (!$paragraph) return;
         echo '<p>' . nl2br(htmlspecialchars(implode("\n", $paragraph))) . '</p>';
@@ -22,6 +24,10 @@ function render_a2_guide($path) {
     foreach ($lines as $rawLine) {
         $line = trim($rawLine);
         if (preg_match('/^#\s+\*\*All Templates\*\*/', $line)) break;
+        if (!$inGuide) {
+            if (preg_match('/^#\s+\*\*R100-R109\*\*/', $line)) $inGuide = true;
+            else continue;
+        }
         if ($line === '' || preg_match('/^\s*-{3,}\s*$/', str_replace('\\', '', $line))) {
             $flush();
             continue;
@@ -96,11 +102,14 @@ $templateData = json_decode(base64_decode($templateSource), true);
     <p class="guide-kicker">Ascension 2 · R100–R159</p>
     <p>Production, buff, unlock, lineage, and challenge builds for A2. The supplied build reference is explicitly versioned for game version 4.3.9.</p>
     <nav class="guide-jump" aria-label="A2 guide sections">
+        <a href="#source-status">Source status</a>
         <a href="#plot">Plot</a>
         <a href="#template-index">Build index</a>
         <a href="#build-guide">Detailed guide</a>
     </nav>
 </div>
+
+<?php guide_source_status('4.3.9', 'R100–R159 production, buffs, unlocks, lineages, and challenges', '/realm/content/A2/a2-builds-v4.3.9.md', 'Markdown source'); ?>
 
 <section class="guide-section" id="plot">
     <div class="guide-section-heading">
@@ -121,14 +130,14 @@ $templateData = json_decode(base64_decode($templateSource), true);
         <strong id="a2-index-info">Using this index</strong>
         <p>Use these rows for quick template imports. The detailed guide below contains required sets, prerequisites, targeting instructions, swaps, and notable buffs.</p>
     </aside>
-    <label class="build-filter-label" for="a2-build-filter">Filter A2 builds</label>
-    <input class="build-filter" id="a2-build-filter" type="search" placeholder="Try R139, challenge, lineage…" autocomplete="off">
+    <?php guide_filter('a2-build-filter', 'Filter A2 builds', 'Try R139, challenge, lineage…', '#a2-build-list'); ?>
     <div class="research-build-list" id="a2-build-list">
     <?php foreach ($templateData['research'] as $build) { ?>
-        <article class="research-build-row" data-build-row>
-            <h4><?php echo htmlspecialchars($build['text']); ?></h4>
+        <article class="research-build-row" data-guide-entry>
+            <h4><?php echo htmlspecialchars($build['text']); ?><span class="guide-entry-type"><?php echo htmlspecialchars(guide_build_type($build['text'])); ?></span></h4>
             <code><?php echo htmlspecialchars($build['tp']); ?></code>
             <button type="button" class="copy-build" data-build="<?php echo htmlspecialchars($build['tp']); ?>">Copy</button>
+            <?php guide_credit('', '', 'A2 Builds Master Reference', '4.3.9'); ?>
         </article>
     <?php } ?>
     </div>
@@ -139,28 +148,9 @@ $templateData = json_decode(base64_decode($templateSource), true);
         <div><span>Detailed source · v4.3.9</span><h2>A2 builds master reference</h2></div>
         <a href="/realm/content/A2/a2-builds-v4.3.9.md">Markdown source</a>
     </div>
-    <div class="a2-guide-body">
+    <div class="a2-guide-body guide-detail-source">
         <?php render_a2_guide($guidePath); ?>
     </div>
 </section>
-
-<script>
-document.addEventListener('click', function (event) {
-    var button = event.target.closest('.copy-build');
-    if (!button) return;
-    navigator.clipboard.writeText(button.getAttribute('data-build')).then(function () {
-        var original = button.textContent;
-        button.textContent = 'Copied';
-        window.setTimeout(function () { button.textContent = original; }, 1200);
-    });
-});
-
-document.getElementById('a2-build-filter').addEventListener('input', function (event) {
-    var query = event.target.value.toLowerCase().trim();
-    document.querySelectorAll('#a2-build-list [data-build-row]').forEach(function (row) {
-        row.hidden = query && row.textContent.toLowerCase().indexOf(query) === -1;
-    });
-});
-</script>
 
 <?php include "../scripts/footer.html"; ?>

@@ -31,7 +31,14 @@ $pageLabels = array(
 $pageTitle = isset($pageLabels[$pageKey]) ? $pageLabels[$pageKey] : preg_replace('/(?<!^)([A-Z])/', ' $1', $pageKey);
 $siteName = 'Realm Grinder Reference';
 $documentTitle = $pageKey === 'Home' ? $siteName : $pageTitle . ' · ' . $siteName;
-$sourcePath = $pageKey === 'Home' ? 'index.php' : $pageKey . '/index.php';
+$guideSourcePaths = array(
+    'A0Guide' => 'content/A0/builds.json',
+    'A1Guide' => 'content/A1/templates.json',
+    'A2Guide' => 'content/A2/a2-builds-v4.3.9.md',
+    'A3Guide' => 'content/A3/a3-reference-v4.3.11.md',
+    'A4Guide' => 'content/A4/a4-builds-v4.3.11.md',
+);
+$sourcePath = $pageKey === 'Home' ? 'index.php' : (isset($guideSourcePaths[$pageKey]) ? $guideSourcePaths[$pageKey] : $pageKey . '/index.php');
 $editUrl = 'https://github.com/chombler/not-a-wiki/edit/local-4.3.15/' . $sourcePath;
 ?>
 <meta charset="UTF-8">
@@ -42,6 +49,7 @@ $editUrl = 'https://github.com/chombler/not-a-wiki/edit/local-4.3.15/' . $source
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="/realm/scripts/jquery.style-my-tooltips.js"></script>
+<script src="/realm/scripts/guide.js" defer></script>
 <title><?php echo htmlspecialchars($documentTitle); ?></title>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
@@ -78,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (main && toc && tocList) {
         var headings = Array.prototype.slice.call(main.querySelectorAll('h2, h3'))
             .filter(function (heading) {
-                return !heading.closest('.build-card, .research-build-row, .reference-panel-title, .autohide');
+                return !heading.closest('[data-guide-entry], .build-card, .research-build-row, .guide-build-card, .guide-detail-source, .build-group-title, .reference-panel-title, .autohide');
             });
         var h2Count = headings.filter(function (heading) { return heading.tagName === 'H2'; }).length;
         if (headings.length > 28 && h2Count > 1) {

@@ -3,6 +3,7 @@
 <head>
 <?php include "../scripts/header.html"; ?>
 <?php
+require_once __DIR__ . '/../scripts/guide_components.php';
 function render_guide_text($path) {
     $lines = file($path, FILE_IGNORE_NEW_LINES);
     $paragraph = array();
@@ -35,14 +36,18 @@ function render_guide_text($path) {
     $flush();
 }
 
-$templateSource = trim(file_get_contents(__DIR__ . '/../content/A0/templates.txt'));
-$buildData = require __DIR__ . '/../content/A0/builds.php';
+$buildData = json_decode(file_get_contents(__DIR__ . '/../content/A0/builds.json'), true);
+$templateData = array('research' => array(), 'mercenary' => array());
+foreach ($buildData['research'] as $build) $templateData['research'][] = array('text' => $build['title'], 'tp' => $build['template']);
+foreach ($buildData['mercenary'] as $build) $templateData['mercenary'][] = array('text' => $build['title'], 'tp' => $build['template']);
+$templateSource = base64_encode(json_encode($templateData, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE));
 ?>
 
 <div class="guide-intro">
     <p class="guide-kicker">Pre-Ascension · R0–R39</p>
     <p>A current community progression route for Ascension 0. Use the plot for orientation, the walkthrough for unlock order, and the build index for importable templates.</p>
     <nav class="guide-jump" aria-label="A0 guide sections">
+        <a href="#source-status">Source status</a>
         <a href="#plot">Plot</a>
         <a href="#builds">Builds</a>
         <a href="#templates">Template import</a>
@@ -51,6 +56,8 @@ $buildData = require __DIR__ . '/../content/A0/builds.php';
     </nav>
 </div>
 
+<?php guide_source_status('4.3.11', 'R0–R39 progression, production, trophies, research, and walkthroughs', '/realm/content/A0/a0-guide.txt', 'Progression source'); ?>
+
 <section class="guide-section" id="plot">
     <div class="guide-section-heading">
         <div><span>Overview</span><h2>Ascension 0 progression plot</h2></div>
@@ -58,26 +65,26 @@ $buildData = require __DIR__ . '/../content/A0/builds.php';
     </div>
     <figure class="progression-plot">
         <a href="/realm/content/A0/a0plot.png" target="_blank"><img src="/realm/content/A0/a0plot.png" alt="Pre-Ascension production guide chart showing recommended factions and builds from R0 through R39, gem ranges, trophies, challenges, artifacts, and offline-time goals"></a>
-        <figcaption>Recommended production route by reincarnation and gem range. Stripes indicate Dwarf or Drow prestige factions. Plot supplied for game version 4.3.11.</figcaption>
+        <figcaption>Recommended production route by reincarnation and gem range. Stripes indicate Dwarf or Drow prestige factions. Plot by ensteffahn for game version 4.3.11.</figcaption>
     </figure>
 </section>
 
 <section class="guide-section" id="builds">
     <div class="guide-section-heading">
-        <div><span>Copy-ready</span><h2>A0 builds</h2></div>
+        <div><span>Search and copy</span><h2>A0 build index</h2></div>
+        <a href="/realm/content/A0/builds.json">Build source</a>
     </div>
-    <div class="build-notes">
-        <article><h3>Mana Fairies <small>1e33–1e72 gems</small></h3><p><b>Authors:</b> krobbi, ensteffahn · Good Mercenary · Faceless bloodline at R7+</p><p>Use the low-gem version for a quick setup. The high-gem version trades setup ease for production.</p></article>
-        <article><h3>Necro Lightning <small>1e60–1e72 gems</small></h3><p><b>Author:</b> MinimumGateway · Neutral Mercenary · Fairy bloodline</p><p>Requires at least five minutes offline this R. Around 1e60 gems, run the Evil Buildings Buff build for about one minute. Wait for Lightning Strike to target Farms or Inns before casting the combo.</p></article>
-    </div>
-
+    <?php guide_filter('a0-build-filter', 'Filter A0 builds', 'Try R24, production, trophy, Fairy…', '#a0-build-index'); ?>
+    <div id="a0-build-index">
     <h3 class="build-group-title">Mercenary and trophy builds</h3>
     <div class="build-card-grid">
     <?php foreach ($buildData['mercenary'] as $build) { ?>
-        <article class="build-card">
-            <h4><?php echo htmlspecialchars($build[0]); ?></h4>
-            <p><?php echo htmlspecialchars($build[1]); ?></p>
-            <div class="build-code"><code><?php echo htmlspecialchars($build[2]); ?></code><button type="button" class="copy-build" data-build="<?php echo htmlspecialchars($build[2]); ?>">Copy</button></div>
+        <article class="build-card" data-guide-entry>
+            <h4><?php echo htmlspecialchars($build['title']); ?><span class="guide-entry-type"><?php echo htmlspecialchars($build['type']); ?></span></h4>
+            <p><?php echo htmlspecialchars($build['details']); ?></p>
+            <?php if (!empty($build['notes'])) { ?><p><?php echo htmlspecialchars($build['notes']); ?></p><?php } ?>
+            <div class="build-code"><code><?php echo htmlspecialchars($build['template']); ?></code><button type="button" class="copy-build" data-build="<?php echo htmlspecialchars($build['template']); ?>">Copy</button></div>
+            <?php guide_credit($build['author'], '', 'A0 community build compilation', '4.3.11'); ?>
         </article>
     <?php } ?>
     </div>
@@ -95,12 +102,14 @@ $buildData = require __DIR__ . '/../content/A0/builds.php';
     </div>
     <div class="research-build-list">
     <?php foreach ($buildData['research'] as $build) { ?>
-        <article class="research-build-row">
-            <h4><?php echo htmlspecialchars($build[0]); ?></h4>
-            <code><?php echo htmlspecialchars($build[1]); ?></code>
-            <button type="button" class="copy-build" data-build="<?php echo htmlspecialchars($build[1]); ?>">Copy</button>
+        <article class="research-build-row" data-guide-entry>
+            <h4><?php echo htmlspecialchars($build['title']); ?><span class="guide-entry-type"><?php echo htmlspecialchars($build['type']); ?></span></h4>
+            <code><?php echo htmlspecialchars($build['template']); ?></code>
+            <button type="button" class="copy-build" data-build="<?php echo htmlspecialchars($build['template']); ?>">Copy</button>
+            <?php guide_credit($build['author'], '', 'A0 community research compilation', '4.3.11'); ?>
         </article>
     <?php } ?>
+    </div>
     </div>
 </section>
 
@@ -109,33 +118,18 @@ $buildData = require __DIR__ . '/../content/A0/builds.php';
     <p>This single import contains every research and Mercenary template listed above. Copy it and use the game's template import.</p>
     <div class="template-import">
         <textarea id="a0-template-source" readonly aria-label="Complete A0 template import string"><?php echo htmlspecialchars($templateSource); ?></textarea>
-        <button type="button" class="copy-template">Copy complete template bundle</button>
+        <button type="button" class="copy-template" data-template-target="a0-template-source">Copy complete template bundle</button>
     </div>
 </section>
 
 <section class="guide-section walkthrough" id="r0-walkthrough">
     <div class="guide-section-heading"><div><span>First reincarnation</span><h2>R0 walkthrough</h2></div><a href="/realm/content/A0/r0-guide.txt">Plain-text source</a></div>
-    <?php render_guide_text(__DIR__ . '/../content/A0/r0-guide.txt'); ?>
+    <div class="guide-detail-source"><?php render_guide_text(__DIR__ . '/../content/A0/r0-guide.txt'); ?></div>
 </section>
 
 <section class="guide-section walkthrough" id="a0-walkthrough">
     <div class="guide-section-heading"><div><span>Full Ascension 0 route</span><h2>R1–R39 walkthrough</h2></div><a href="/realm/content/A0/a0-guide.txt">Plain-text source</a></div>
-    <?php render_guide_text(__DIR__ . '/../content/A0/a0-guide.txt'); ?>
+    <div class="guide-detail-source"><?php render_guide_text(__DIR__ . '/../content/A0/a0-guide.txt'); ?></div>
 </section>
-
-<script>
-document.addEventListener('click', function (event) {
-    var button = event.target.closest('.copy-build, .copy-template');
-    if (!button) return;
-    var value = button.classList.contains('copy-template')
-        ? document.getElementById('a0-template-source').value
-        : button.getAttribute('data-build');
-    navigator.clipboard.writeText(value).then(function () {
-        var original = button.textContent;
-        button.textContent = 'Copied';
-        window.setTimeout(function () { button.textContent = original; }, 1200);
-    });
-});
-</script>
 
 <?php include "../scripts/footer.html"; ?>

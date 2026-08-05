@@ -3,6 +3,7 @@
 <head>
 <?php include "../scripts/header.html"; ?>
 <?php
+require_once __DIR__ . '/../scripts/guide_components.php';
 function render_a1_notes($path) {
     $lines = file($path, FILE_IGNORE_NEW_LINES);
     $paragraph = array();
@@ -30,15 +31,17 @@ function render_a1_notes($path) {
     $flush();
 }
 
-$templateSource = trim(file_get_contents(__DIR__ . '/../content/A1/templates.txt'));
-$templateData = json_decode(base64_decode($templateSource), true);
+$templateData = json_decode(file_get_contents(__DIR__ . '/../content/A1/templates.json'), true);
+$templateSource = base64_encode(json_encode($templateData, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE));
 ?>
 
 <div class="guide-intro">
     <p class="guide-kicker">Ascension 1 · R40–R99</p>
     <p>A1 production routes, Dragon progression, research builds, Mercenary support builds, and the complete game-import template bundle.</p>
     <nav class="guide-jump" aria-label="A1 guide sections">
+        <a href="#source-status">Source status</a>
         <a href="#plot">Plot</a>
+        <a href="#build-index">Build index</a>
         <a href="#research-builds">Research builds</a>
         <a href="#mercenary-builds">Mercenary builds</a>
         <a href="#templates">Template import</a>
@@ -46,6 +49,8 @@ $templateData = json_decode(base64_decode($templateSource), true);
         <a href="#offline-mechanics">Offline mechanics</a>
     </nav>
 </div>
+
+<?php guide_source_status('4.3.11', 'R40–R99 progression, Dragon unlocks, research, Mercenary builds, and offline mechanics', '/realm/content/A1/research-notes.txt', 'Community source'); ?>
 
 <section class="guide-section" id="plot">
     <div class="guide-section-heading">
@@ -58,6 +63,11 @@ $templateData = json_decode(base64_decode($templateSource), true);
     </figure>
 </section>
 
+<section class="guide-section" id="build-index">
+    <div class="guide-section-heading"><div><span><?php echo count($templateData['research']) + count($templateData['mercenary']); ?> copy-ready entries</span><h2>A1 build index</h2></div><a href="/realm/content/A1/templates.json">Build source</a></div>
+    <?php guide_filter('a1-build-filter', 'Filter A1 builds', 'Try R65, Dragon, production, buff…', '#a1-build-groups'); ?>
+</section>
+<div id="a1-build-groups">
 <section class="guide-section" id="research-builds">
     <div class="guide-section-heading">
         <div><span><?php echo count($templateData['research']); ?> templates</span><h2>A1 research builds</h2></div>
@@ -66,14 +76,13 @@ $templateData = json_decode(base64_decode($templateSource), true);
         <strong id="a1-notation-title">Build notation</strong>
         <p>Bloodline and faction abbreviations precede the purpose in each label. For example, <code>DNGB</code> means Dwarfline Goblin. Rows marked as notes contain progression reminders rather than complete builds.</p>
     </aside>
-    <label class="build-filter-label" for="a1-build-filter">Filter research builds</label>
-    <input class="build-filter" id="a1-build-filter" type="search" placeholder="Try R65, Dragon, production…" autocomplete="off">
     <div class="research-build-list" id="a1-research-list">
     <?php foreach ($templateData['research'] as $build) { ?>
-        <article class="research-build-row" data-build-row>
-            <h4><?php echo htmlspecialchars($build['text']); ?></h4>
+        <article class="research-build-row" data-guide-entry>
+            <h4><?php echo htmlspecialchars($build['text']); ?><span class="guide-entry-type"><?php echo htmlspecialchars(guide_build_type($build['text'])); ?></span></h4>
             <code><?php echo htmlspecialchars($build['tp']); ?></code>
             <button type="button" class="copy-build" data-build="<?php echo htmlspecialchars($build['tp']); ?>">Copy</button>
+            <?php guide_credit('', '', 'A1 community compilation (ensteffahn, tonberry pancakes, draig121)', '4.3.11'); ?>
         </article>
     <?php } ?>
     </div>
@@ -83,15 +92,17 @@ $templateData = json_decode(base64_decode($templateSource), true);
     <div class="guide-section-heading">
         <div><span><?php echo count($templateData['mercenary']); ?> templates</span><h2>A1 Mercenary and support builds</h2></div>
     </div>
-    <div class="build-card-grid">
+    <div class="build-card-grid" id="a1-merc-list">
     <?php foreach ($templateData['mercenary'] as $build) { ?>
-        <article class="build-card">
-            <h4><?php echo htmlspecialchars($build['text']); ?></h4>
+        <article class="build-card" data-guide-entry>
+            <h4><?php echo htmlspecialchars($build['text']); ?><span class="guide-entry-type"><?php echo htmlspecialchars(guide_build_type($build['text'])); ?></span></h4>
             <div class="build-code"><code><?php echo htmlspecialchars($build['tp']); ?></code><button type="button" class="copy-build" data-build="<?php echo htmlspecialchars($build['tp']); ?>">Copy</button></div>
+            <?php guide_credit('', '', 'A1 community compilation (ensteffahn, tonberry pancakes, draig121)', '4.3.11'); ?>
         </article>
     <?php } ?>
     </div>
 </section>
+</div>
 
 <section class="guide-section" id="templates">
     <div class="guide-section-heading"><div><span>Game import</span><h2>Complete A1 template bundle</h2></div></div>
@@ -104,37 +115,16 @@ $templateData = json_decode(base64_decode($templateSource), true);
 
 <section class="guide-section source-notes" id="progression-notes">
     <div class="guide-section-heading"><div><span>Community source</span><h2>A1 progression and build notes</h2></div><a href="/realm/content/A1/research-notes.txt">Plain-text source</a></div>
-    <div class="source-notes-body">
+    <div class="source-notes-body guide-detail-source">
         <?php render_a1_notes(__DIR__ . '/../content/A1/research-notes.txt'); ?>
     </div>
 </section>
 
 <section class="guide-section source-notes" id="offline-mechanics">
     <div class="guide-section-heading"><div><span>Background reading</span><h2>Offline spell activity mechanics</h2></div><a href="/realm/content/A1/offline-notes.txt">Plain-text source</a></div>
-    <div class="source-notes-body">
+    <div class="source-notes-body guide-detail-source">
         <?php render_a1_notes(__DIR__ . '/../content/A1/offline-notes.txt'); ?>
     </div>
 </section>
-
-<script>
-document.addEventListener('click', function (event) {
-    var button = event.target.closest('.copy-build, .copy-template');
-    if (!button) return;
-    var target = button.getAttribute('data-template-target');
-    var value = target ? document.getElementById(target).value : button.getAttribute('data-build');
-    navigator.clipboard.writeText(value).then(function () {
-        var original = button.textContent;
-        button.textContent = 'Copied';
-        window.setTimeout(function () { button.textContent = original; }, 1200);
-    });
-});
-
-document.getElementById('a1-build-filter').addEventListener('input', function (event) {
-    var query = event.target.value.toLowerCase().trim();
-    document.querySelectorAll('[data-build-row]').forEach(function (row) {
-        row.hidden = query && row.textContent.toLowerCase().indexOf(query) === -1;
-    });
-});
-</script>
 
 <?php include "../scripts/footer.html"; ?>
