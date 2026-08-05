@@ -121,7 +121,7 @@
         <a class="guide-placeholder guide-placeholder-link" href="/realm/A0Guide"><strong>A0 guide</strong><span>R0–R39 walkthrough, plot &amp; builds</span></a>
         <a class="guide-placeholder guide-placeholder-link" href="/realm/A1Guide"><strong>A1 guide</strong><span>R40–R99 plot, research &amp; builds</span></a>
         <a class="guide-placeholder guide-placeholder-link" href="/realm/A2Guide"><strong>A2 guide</strong><span>R100–R159 plot, challenges &amp; builds</span></a>
-        <a class="guide-placeholder guide-placeholder-link" href="/realm/A3Guide"><strong>A3 reference</strong><span>R160–R219 roadmap &amp; research budget</span></a>
+        <a class="guide-placeholder guide-placeholder-link" href="/realm/A3Guide"><strong>A3 guide</strong><span>R160–R219 progression, unlocks &amp; builds</span></a>
         <a class="guide-placeholder guide-placeholder-link" href="/realm/A4Guide"><strong>A4 guide</strong><span>R220+ progression &amp; endgame builds</span></a>
     </div>
 </section>
