@@ -1321,6 +1321,23 @@ body,
     border-top-color: #555;
 }
 
+.placeholder-nav-item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 5px;
+    padding: 4px 8px;
+    border-bottom: 1px solid #292929;
+    color: #aaa;
+    font-size: 12px;
+}
+
+.placeholder-nav-item small {
+    align-self: center;
+    color: #81714e;
+    font-size: 9px;
+    white-space: nowrap;
+}
+
 .site-main {
     width: min(100%, var(--content-width));
     padding: 18px clamp(14px, 3vw, 34px) 48px;
@@ -1485,7 +1502,8 @@ hr {
 
 .start-panel,
 .reference-panel,
-.faction-index {
+.faction-index,
+.guide-preview {
     border: 2px ridge #838383;
     background: #181818;
 }
@@ -1588,6 +1606,64 @@ hr {
     margin-top: 12px;
 }
 
+.guide-preview {
+    margin-top: 12px;
+}
+
+.section-status {
+    margin-left: auto;
+    padding: 2px 5px;
+    border: 1px solid #725f35;
+    background: #211d14;
+    color: #c9a75c;
+    font-size: 9px;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+}
+
+.guide-preview-note,
+.site-main .guide-preview-note {
+    max-width: none;
+    margin: 0;
+    padding: 6px 9px;
+    border-bottom: 1px solid #484848;
+    color: #aaa;
+    font-size: 11px;
+}
+
+.guide-placeholder-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.guide-placeholder {
+    display: grid;
+    gap: 1px;
+    min-width: 0;
+    padding: 7px 9px;
+    border-left: 1px solid #555;
+}
+
+.guide-placeholder:first-child {
+    border-left: 0;
+}
+
+.guide-placeholder strong {
+    color: #ddd;
+    font: 700 13px Georgia, "Times New Roman", serif;
+}
+
+.guide-placeholder span {
+    color: #aaa;
+    font-size: 11px;
+}
+
+.guide-placeholder small {
+    color: #a88c50;
+    font-size: 9px;
+    text-transform: uppercase;
+}
+
 .faction-links {
     display: grid;
     grid-template-columns: 2fr 1.2fr .8fr;
@@ -1637,8 +1713,18 @@ hr {
     }
 
     .start-links,
-    .reference-directory {
+    .reference-directory,
+    .guide-placeholder-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .guide-placeholder:nth-child(3) {
+        border-left: 0;
+        border-top: 1px solid #555;
+    }
+
+    .guide-placeholder:nth-child(4) {
+        border-top: 1px solid #555;
     }
 
     .start-links a:nth-child(3) {
@@ -1704,7 +1790,8 @@ hr {
     .start-links,
     .reference-directory,
     .reference-link-list,
-    .faction-links {
+    .faction-links,
+    .guide-placeholder-grid {
         grid-template-columns: 1fr;
     }
 
@@ -1719,6 +1806,18 @@ hr {
 
     .start-links a:first-child,
     .faction-links > div:first-child {
+        border-top: 0;
+    }
+
+    .guide-placeholder,
+    .guide-placeholder:first-child,
+    .guide-placeholder:nth-child(3),
+    .guide-placeholder:nth-child(4) {
+        border: 0;
+        border-top: 1px solid #444;
+    }
+
+    .guide-placeholder:first-child {
         border-top: 0;
     }
 
