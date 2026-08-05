@@ -163,16 +163,6 @@
 				<p><b>Effect</b>: Artifacts and Trophies count more based on the highest number of spells cast in a single Era.</p>
 				<p><b>Formula</b>: (ln(1 + x) ^ 1.5)%, where x is the highest number of spells cast in a single Era.</p>
 				<hr>
-				<p><b>S525</b> - For Drow</p>
-				<p><b>Research Name</b>: Spellbinding</p>
-				<p><b>Hint</b>: Combo Breaker!</p>
-				<p><b>Requirement</b>: 3,600 seconds of Combo Strike activity time (This Era)</p>
-				<p><b>Cost</b>: 2.607e199</p>
-				<p><b>Effect</b>: Call to Arms counts more buildings based on time spent offline in this Reincarnation.</p>
-				<p><b>Formula</b>: (100 + 3 * x ^ 0.9)%, where x is time spent offline in this Reincarnation.</p>
-				<p><b>Effect</b>: Also increase Offline production based on Combo Strike activity time in this Reincarnation.</p>
-				<p><b>Formula</b>: (1.2 * x ^ 0.8)%, where x is Combo Strike activity time in this Reincarnation.</p>
-				<hr>
 				<p><b>S425</b> - For All Factions</p>
 				<p><b>Research Name</b>: Focus</p>
 				<p><b>Hint</b>: Cast! Cast more!</p>
@@ -189,6 +179,16 @@
 				<p><b>Effect</b>: Increase Maximum Mana and Mana Regeneration based on the amount of artifacts you own.</p>
 				<p><b>Maximum Mana Formula</b>: +(75 * x ^ 1.1), where x is the amount of artifacts you own.</p>
 				<p><b>Mana Regeneration Formula</b>: +(5 * x ^ 1.05), where x is the amount of artifacts you own.</p>
+				<hr>
+				<p><b>S525</b> - For Drow</p>
+				<p><b>Research Name</b>: Spellbinding</p>
+				<p><b>Hint</b>: Combo Breaker!</p>
+				<p><b>Requirement</b>: 3,600 seconds of Combo Strike activity time (This Era)</p>
+				<p><b>Cost</b>: 2.607e199</p>
+				<p><b>Effect</b>: Call to Arms counts more buildings based on time spent offline in this Reincarnation.</p>
+				<p><b>Formula</b>: (100 + 3 * x ^ 0.9)%, where x is time spent offline in this Reincarnation.</p>
+				<p><b>Effect</b>: Also increase Offline production based on Combo Strike activity time in this Reincarnation.</p>
+				<p><b>Formula</b>: (1.2 * x ^ 0.8)%, where x is Combo Strike activity time in this Reincarnation.</p>
 				<hr>
 				<p><b>S550</b> - For All Factions</p>
 				<p><b>Research Name</b>: Hierarchy</p>

@@ -230,9 +230,6 @@
 	<p><b>Requirement</b>: R69+, Reach Lineage Level 9</p>
 	<p><b>Effect</b>: Fairy Bloodline and Fairy Chanting also affect Hall of Legends.</p>
 	<br/>
-	<p><b>Level 10</b></p>
-	<p><b>Effect</b>: x100 Fairy Faction Coins find chance.</p>
-	<br/>
 	<p><b>Level 22 (R82+)</b></p>
 	<p><b><img src="/realm/Factions/picks/FairyPerk2.png" align="middle"> Fairy Perk 2</b></p>
 	<p><b>Requirement</b>: R82+, Reach Lineage Level 22</p>
@@ -267,9 +264,6 @@
 	<p><b>Requirement</b>: R62+, Reach Lineage Level 2</p>
 	<p><b>Effect</b>: Increase all-building production by (30 + 3 * x)%, where x is Elven Luck triggers in this Era, and gain the Elven Luck upgrade.</p>
 	<br/>
-	<p><b>Level 10</b></p>
-	<p><b>Effect</b>: x100 Elven Faction Coin find chance.</p>
-	<br/>
 	<p><b>Level 16 (R76+)</b></p>
 	<p><b><img src="/realm/Factions/picks/ElvenPerk2.png" align="middle"> Elven Perk 2</b></p>
 	<p><b>Requirement</b>: R76+, Reach Lineage Level 16</p>
@@ -301,9 +295,6 @@
 	<p><b><img src="/realm/Factions/picks/AngelPerk1.png" align="middle"> Angel Perk 1</b></p>
 	<p><b>Requirement</b>: R68+, Reach Lineage Level 8</p>
 	<p><b>Effect</b>: Reduce Faction spell costs by 200 and reduce higher-tier cost scaling for all spells.</p>
-	<br/>
-	<p><b>Level 10</b></p>
-	<p><b>Effect</b>: x100 Angel Faction Coin find chance.</p>
 	<br/>
 	<p><b>Level 24 (R84+)</b></p>
 	<p><b><img src="/realm/Factions/picks/AngelPerk2.png" align="middle"> Angel Perk 2</b></p>
@@ -337,9 +328,6 @@
 	<p><b><img src="/realm/Factions/picks/GoblinPerk1.png" align="middle"> Goblin Perk 1</b></p>
 	<p><b>Requirement</b>: R70+, Reach Lineage Level 10</p>
 	<p><b>Effect</b>: Non-Unique Buildings gain all production bonuses that affect Unique Buildings.</p>
-	<br/>
-	<p><b>Level 10</b></p>
-	<p><b>Effect</b>: x100 Goblin Faction Coin find chance.</p>
 	<br/>
 	<p><b>Level 13 (R73+)</b></p>
 	<p><b><img src="/realm/Factions/picks/GoblinPerk2.png" align="middle"> Goblin Perk 2</b></p>
@@ -375,9 +363,6 @@
 	<p><b>Effect</b>: Reduce Spiritual Surge Mana cost by 90% and grant it +1 tier.</p>
 	<p><b>Effect</b>: Increase offline production by d ^ 0.6% and offline Mana/spell-cast gains by 0.6 * d ^ 0.6%, where d is Spiritual Surge duration.</p>
 	<br/>
-	<p><b>Level 10</b></p>
-	<p><b>Effect</b>: x100 Undead Faction Coin find chance.</p>
-	<br/>
 	<p><b>Level 23 (R83+)</b></p>
 	<p><b><img src="/realm/Factions/picks/UndeadPerk2.png" align="middle"> Undead Perk 2</b></p>
 	<p><b>Requirement</b>: R83+, Reach Lineage Level 23</p>
@@ -412,9 +397,6 @@
 	<p><b>Requirement</b>: R63+, Reach Lineage Level 3</p>
 	<p><b>Effect</b>: Base Faction spells gain +1 tier and all Evil spell costs are reduced by 20%.</p>
 	<br/>
-	<p><b>Level 10</b></p>
-	<p><b>Effect</b>: x100 Demon Faction Coin find chance.</p>
-	<br/>
 	<p><b>Level 18 (R78+)</b></p>
 	<p><b><img src="/realm/Factions/picks/DemonPerk2.png" align="middle"> Demon Perk 2</b></p>
 	<p><b>Requirement</b>: R78+, Reach Lineage Level 18</p>
@@ -448,9 +430,6 @@
 	<p><b>Requirement</b>: R61+, Reach Lineage Level 1</p>
 	<p><b>Effect</b>: Reduce the cost multiplier of the affected low- and high-tier buildings by 0.02 and increase their production by (7 * x ^ 0.7)%, where x is Royal Exchanges made.</p>
 	<br/>
-	<p><b>Level 10</b></p>
-	<p><b>Effect</b>: x50 more Angel and Goblin Faction Coin find chance.</p>
-	<br/>
 	<p><b>Level 14 (R74+)</b></p>
 	<p><b><img src="/realm/Factions/picks/TitanPerk2.png" align="middle"> Titan Perk 2</b></p>
 	<p><b>Requirement</b>: R74+, Reach Lineage Level 14</p>
@@ -483,9 +462,6 @@
 	<p><b>Requirement</b>: R65+, Reach Lineage Level 5</p>
 	<p><b>Effect</b>: Increases Non-Unique building production based on time spent in this Era.</p>
 	<p><b>Formula</b>: (1.5 * x ^ 1.5)%, where x is time spent in this Era.</p>
-	<br/>
-	<p><b>Level 10</b></p>
-	<p><b>Effect</b>: x50 more Elven and Demon Faction Coin find chance.</p>
 	<br/>
 	<p><b>Level 20 (R80+)</b></p>
 	<p><b><img src="/realm/Factions/picks/DruidPerk2.png" align="middle"> Druid Perk 2</b></p>
@@ -523,9 +499,6 @@
 	<p><b>Requirement</b>: R64+, Reach Lineage Level 4</p>
 	<p><b>Effect</b>: Faceless Bloodline counts all Mana produced in this Reincarnation and increases Mana Regeneration by +(3 * x ^ 0.6), where x is assistants owned.</p>
 	<br/>
-	<p><b>Level 10</b></p>
-	<p><b>Effect</b>: x50 more Fairy and Undead Faction Coin find chance.</p>
-	<br/>
 	<p><b>Level 17 (R77+)</b></p>
 	<p><b><img src="/realm/Factions/picks/FacelessPerk2.png" align="middle"> Faceless Perk 2</b></p>
 	<p><b>Requirement</b>: R77+, Reach Lineage Level 17</p>
@@ -557,9 +530,6 @@
 	<p><b><img src="/realm/Factions/picks/DwarvenPerk1.png" align="middle"> Dwarven Perk 1</b></p>
 	<p><b>Requirement</b>: R72+, Reach Lineage Level 12</p>
 	<p><b>Effect</b>: Increase all-building production by (6.5 * x ^ 0.65)%, where x is Excavation Depth.</p>
-	<br/>
-	<p><b>Level 10</b></p>
-	<p><b>Effect</b>: x100 Dwarven Faction Coin find chance.</p>
 	<br/>
 	<p><b>Level 15 (R75+)</b></p>
 	<p><b><img src="/realm/Factions/picks/DwarvenPerk2.png" align="middle"> Dwarven Perk 2</b></p>
@@ -593,9 +563,6 @@
 	<p><b><img src="/realm/Factions/picks/DrowPerk1.png" align="middle"> Drow Perk 1</b></p>
 	<p><b>Requirement</b>: R67+, Reach Lineage Level 7</p>
 	<p><b>Effect</b>: Time spent counts 100% more. Multiplicatively increase Maximum Mana by (2 * ln(1 + x) ^ 2)%, where x is your all-time maximum Combo Strike counter.</p>
-	<br/>
-	<p><b>Level 10</b></p>
-	<p><b>Effect</b>: x100 Drow Faction Coin find chance.</p>
 	<br/>
 	<p><b>Level 19 (R79+)</b></p>
 	<p><b><img src="/realm/Factions/picks/DrowPerk2.png" align="middle"> Drow Perk 2</b></p>
@@ -633,9 +600,6 @@
 	<p><b>Requirement</b>: R71+, Reach Lineage Level 11</p>
 	<p><b>Effect</b>: Dragon Bloodline increases the production of Unique Buildings by 1.75% per building of the same type.</p>
 	<br/>
-	<p><b>Level 10</b></p>
-	<p><b>Effect</b>: x50 more Dwarven and Drow Faction Coin find chance.</p>
-	<br/>
 	<p><b>Level 21 (R81+)</b></p>
 	<p><b><img src="/realm/Factions/picks/DragonPerk2.png" align="middle"> Dragon Perk 2</b></p>
 	<p><b>Requirement</b>: R81+, Reach Lineage Level 21</p>
@@ -672,10 +636,6 @@
 	<p><b>Effect</b>: While using Archon Bloodline, increase Astral Unique Building production based on Maximum Mana.</p>
 	<p><b>Formula</b>: (0.3 * x ^ 0.7)%, where x is Maximum Mana.</p>
 	<br/>
-	<p><b>Level 10</b></p>
-	<p><b>Requirements</b>: Reach Lineage Level 10</p>
-	<p><b>Effect</b>: x50 more Angel and Undead Faction Coin find chance.</p>
-	<br/>
 	<p><b>Level 25 (R130+)</b></p>
 	<p><b><img src="/realm/Factions/picks/ArchonPerk2.png" align="middle"> Archon Perk 2</b></p>
 	<p><b>Requirement</b>: R130+, Reach Lineage Level 25</p>
@@ -710,10 +670,6 @@
 	<p><b>Requirement</b>: R130+, Reach Lineage Level 10</p>
 	<p><b>Effect</b>: While using Djinn Bloodline, multiplicatively increase Maximum Mana by (0.7 * x ^ 0.7)%, where x is Catalyst activity time in this Reincarnation.</p>
 	<br/>
-	<p><b>Level 10</b></p>
-	<p><b>Requirements</b>: Reach Lineage Level 10</p>
-	<p><b>Effect</b>: x50 more Fairy and Demon Faction Coin find chance.</p>
-	<br/>
 	<p><b>Level 25 (R130+)</b></p>
 	<p><b><img src="/realm/Factions/picks/DjinnPerk2.png" align="middle"> Djinn Perk 2</b></p>
 	<p><b>Requirement</b>: R130+, Reach Lineage Level 25</p>
@@ -746,10 +702,6 @@
 	<p><b><img src="/realm/Factions/picks/MakersPerk1.png" align="middle"> Makers Perk 1</b></p>
 	<p><b>Requirement</b>: R130+, Reach Lineage Level 10</p>
 	<p><b>Effect</b>: Reduce the Free Excavation Reset requirement by 3 orders of magnitude. Also increase assistants by (0.75 * x ^ 0.75)%, where x is time spent offline in this Reincarnation.</p>
-	<br/>
-	<p><b>Level 10</b></p>
-	<p><b>Requirements</b>: Reach Lineage Level 10</p>
-	<p><b>Effect</b>: x50 more Elven and Goblin Faction Coin find chance.</p>
 	<br/>
 	<p><b>Level 25 (R130+)</b></p>
 	<p><b><img src="/realm/Factions/picks/MakersPerk2.png" align="middle"> Makers Perk 2</b></p>

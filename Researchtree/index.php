@@ -273,6 +273,23 @@
 	<p><b>Effect</b>: Artifacts and Trophies count more based on the highest number of spells cast in a single Era.</p>
 	<p><b>Formula</b>: (ln(1 + x) ^ 1.5)%, where x is the highest number of spells cast in a single Era.</p>
 	" coords="128,86,168,126" shape="rect">
+		<area research="<p><b>S425</b> - For All Factions</p>
+	<p><b>Research Name</b>: Focus</p>
+	<p><b>Hint</b>: Cast! Cast more!</p>
+	<p><b>Requirement</b>: 50,000 spells cast (This Era)</p>
+	<p><b>Cost</b>: 6.359e184</p>
+	<p><b>Effect</b>: Increase production bonus from Gems based on faction-spell activity time in this Era.</p>
+	<p><b>Formula</b>: +(1.2 * x ^ 0.6)%, where x is total faction-spell activity time in this Era.</p>
+	" coords="170,86,210,126" shape="rect">
+		<area research="<p><b>S475</b> - For All Factions</p>
+	<p><b>Research Name</b>: Heirlooms</p>
+	<p><b>Hint</b>: I wonder when will I have enough for my collection?</p>
+	<p><b>Requirement</b>: 40 Artifacts (as Drow)</p>
+	<p><b>Cost</b>: 1.288e192</p>
+	<p><b>Effect</b>: Increase Maximum Mana and Mana Regeneration based on the amount of artifacts you own.</p>
+	<p><b>Maximum Mana Formula</b>: +(75 * x ^ 1.1), where x is the amount of artifacts you own.</p>
+	<p><b>Mana Regeneration Formula</b>: +(5 * x ^ 1.05), where x is the amount of artifacts you own.</p>
+	" coords="212,86,252,126" shape="rect">
 		<area research="<p><b>S525</b> - For Drow</p>
 	<p><b>Research Name</b>: Spellbinding</p>
 	<p><b>Hint</b>: Combo Breaker!</p>
@@ -282,23 +299,6 @@
 	<p><b>Formula</b>: (100 + 3 * x ^ 0.9)%, where x is time spent offline in this Reincarnation.</p>
 	<p><b>Effect</b>: Also increase Offline production based on Combo Strike activity time in this Reincarnation.</p>
 	<p><b>Formula</b>: (1.2 * x ^ 0.8)%, where x is Combo Strike activity time in this Reincarnation.</p>
-	" coords="170,86,210,126" shape="rect">
-		<area research="<p><b>S425</b> - For All Factions</p>
-	<p><b>Research Name</b>: Focus</p>
-	<p><b>Hint</b>: Cast! Cast more!</p>
-	<p><b>Requirement</b>: 50,000 spells cast (This Era)</p>
-	<p><b>Cost</b>: 6.359e184</p>
-	<p><b>Effect</b>: Increase production bonus from Gems based on faction-spell activity time in this Era.</p>
-	<p><b>Formula</b>: +(1.2 * x ^ 0.6)%, where x is total faction-spell activity time in this Era.</p>
-	" coords="212,86,252,126" shape="rect">
-		<area research="<p><b>S475</b> - For All Factions</p>
-	<p><b>Research Name</b>: Heirlooms</p>
-	<p><b>Hint</b>: I wonder when will I have enough for my collection?</p>
-	<p><b>Requirement</b>: 40 Artifacts (as Drow)</p>
-	<p><b>Cost</b>: 1.288e192</p>
-	<p><b>Effect</b>: Increase Maximum Mana and Mana Regeneration based on the amount of artifacts you own.</p>
-	<p><b>Maximum Mana Formula</b>: +(75 * x ^ 1.1), where x is the amount of artifacts you own.</p>
-	<p><b>Mana Regeneration Formula</b>: +(5 * x ^ 1.05), where x is the amount of artifacts you own.</p>
 	" coords="254,86,294,126" shape="rect">
 		<area research="<p><b>S550</b> - For All Factions</p>
 	<p><b>Research Name</b>: Hierarchy</p>
