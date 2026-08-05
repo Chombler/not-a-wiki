@@ -254,6 +254,7 @@ $a3BuildCount = 0;
 foreach ($a3Groups as $group) $a3BuildCount += count($group['builds']);
 ?>
 
+<?php require_once __DIR__ . '/../scripts/range_guide.php'; render_guide_pager('A3Guide'); ?>
 <div class="guide-intro">
     <p class="guide-kicker">Ascension 3 · R160–R219</p>
     <p>A build-centered A3 reference. Start with your Reincarnation range, then open only the production route, unlock, challenge, or specialized build you need.</p>

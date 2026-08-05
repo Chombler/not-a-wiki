@@ -35,6 +35,7 @@ $templateData = json_decode(file_get_contents(__DIR__ . '/../content/A1/template
 $templateSource = base64_encode(json_encode($templateData, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE));
 ?>
 
+<?php require_once __DIR__ . '/../scripts/range_guide.php'; render_guide_pager('A1Guide'); ?>
 <div class="guide-intro">
     <p class="guide-kicker">Ascension 1 · R40–R99</p>
     <p>A1 production routes, Dragon progression, research builds, Mercenary support builds, and the complete game-import template bundle.</p>

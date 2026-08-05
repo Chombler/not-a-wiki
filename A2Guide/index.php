@@ -98,6 +98,7 @@ $templateSource = isset($templateMatch[1]) ? $templateMatch[1] : '';
 $templateData = json_decode(base64_decode($templateSource), true);
 ?>
 
+<?php require_once __DIR__ . '/../scripts/range_guide.php'; render_guide_pager('A2Guide'); ?>
 <div class="guide-intro">
     <p class="guide-kicker">Ascension 2 · R100–R159</p>
     <p>Production, buff, unlock, lineage, and challenge builds for A2. The supplied build reference is explicitly versioned for game version 4.3.9.</p>

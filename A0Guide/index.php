@@ -43,6 +43,7 @@ foreach ($buildData['mercenary'] as $build) $templateData['mercenary'][] = array
 $templateSource = base64_encode(json_encode($templateData, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE));
 ?>
 
+<?php require_once __DIR__ . '/../scripts/range_guide.php'; render_guide_pager('A0Guide'); ?>
 <div class="guide-intro">
     <p class="guide-kicker">Pre-Ascension · R0–R39</p>
     <p>A current community progression route for Ascension 0. Use the plot for orientation, the walkthrough for unlock order, and the build index for importable templates.</p>

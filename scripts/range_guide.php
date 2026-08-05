@@ -108,8 +108,8 @@ function render_range_guide($config) {
     if (!empty($config['sectionMatch'])) {
         $entries = array_values(array_filter($entries, function ($entry) use ($config) { return stripos(isset($entry['section']) ? $entry['section'] : '', $config['sectionMatch']) !== false; }));
     }
-    echo '<div class="guide-intro"><p class="guide-kicker">' . htmlspecialchars($config['era'] . ' · ' . $config['range']) . '</p><p>' . htmlspecialchars($config['summary']) . '</p><nav class="guide-jump"><a href="/realm/' . htmlspecialchars($config['landing']) . '">Ascension overview</a><a href="#builds">Builds</a></nav></div>';
     render_guide_pager(basename(getcwd()));
+    echo '<div class="guide-intro"><p class="guide-kicker">' . htmlspecialchars($config['era'] . ' · ' . $config['range']) . '</p><p>' . htmlspecialchars($config['summary']) . '</p><nav class="guide-jump"><a href="/realm/' . htmlspecialchars($config['landing']) . '">Ascension overview</a><a href="#builds">Builds</a></nav></div>';
     if (!empty($config['milestones'])) { echo '<aside class="guide-milestones"><strong>Goals for this range</strong>'; foreach ($config['milestones'] as $goal) echo '<span>' . htmlspecialchars($goal) . '</span>'; echo '</aside>'; }
     echo '<section class="guide-section" id="builds"><div class="guide-section-heading"><div><span>' . count($entries) . ' applicable entries</span><h2>' . htmlspecialchars($config['range'] . ' builds') . '</h2></div><a href="' . htmlspecialchars($config['sourceHref']) . '">Edit source</a></div>';
     guide_filter(strtolower($config['era']) . '-' . $config['start'] . '-filter', 'Filter these builds', 'Production, unlock, faction…', '#range-builds');
@@ -121,7 +121,6 @@ function render_range_guide($config) {
 
 function render_ascension_routes($era) {
     require __DIR__ . '/range_page_configs.php';
-    render_guide_pager($era . 'Guide');
     echo '<section class="guide-section" id="progression-ranges"><div class="guide-section-heading"><div><span>Choose your current range</span><h2>' . htmlspecialchars($era) . ' progression</h2></div></div><div class="guide-stage-grid">';
     foreach ($rangePageConfigs as $key => $config) {
         if ($config['era'] !== $era) continue;

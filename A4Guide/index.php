@@ -152,6 +152,7 @@ $a4BuildCount = count(array_unique(array_map(function ($code) { return rtrim($co
 $a4Builds = a4_extract_builds($a4CurrentSource);
 ?>
 
+<?php require_once __DIR__ . '/../scripts/range_guide.php'; render_guide_pager('A4Guide'); ?>
 <div class="guide-intro">
     <p class="guide-kicker">Ascension 4 · R220+</p>
     <p>Current progression, unlock, production, buff, and endgame builds for Ascension 4, plus a compact reference for every A4 research-budget source.</p>
