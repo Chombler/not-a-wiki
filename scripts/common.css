@@ -2276,6 +2276,50 @@ hr {
     line-height: 1.35;
 }
 
+.guide-pager {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin: 10px 0;
+    border: 1px solid #4b4538;
+    background: #111;
+}
+
+.guide-pager a {
+    display: grid;
+    gap: 2px;
+    min-width: 0;
+    padding: 8px 10px;
+    color: #d8c47f;
+    text-decoration: none;
+}
+
+.guide-pager a + a {
+    border-left: 1px solid #4b4538;
+}
+
+.guide-pager a:hover {
+    background: #201e19;
+}
+
+.guide-pager span {
+    color: #888;
+    font-size: 9px;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+}
+
+.guide-pager strong {
+    overflow: hidden;
+    font: 700 12px Georgia, "Times New Roman", serif;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.guide-pager-next {
+    border-left: 1px solid #4b4538;
+    text-align: right;
+}
+
 .guide-milestones {
     display: flex;
     flex-wrap: wrap;
