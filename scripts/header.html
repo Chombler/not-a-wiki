@@ -56,7 +56,7 @@ $editUrl = 'https://github.com/chombler/not-a-wiki/edit/local-4.3.15/' . $source
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Current Realm Grinder reference information, formulas, unlocks, factions, artifacts, research, trophies, and progression.">
 <link rel="shortcut icon" href="/realm/scripts/favicon.ico">
-<link rel="stylesheet" type="text/css" href="/realm/scripts/common.css?v=20260805-persistent-footer">
+<link rel="stylesheet" type="text/css" href="/realm/scripts/common.css?v=20260805-range-sidebar">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="/realm/scripts/jquery.style-my-tooltips.js"></script>
@@ -218,11 +218,21 @@ function shohid(element) {
                 <section class="progression-group guides-preview-group">
                     <h2>Guides &amp; builds</h2>
                     <ul>
-                        <li><a href="/realm/A0Guide">A0 guide &amp; builds</a></li>
-                        <li><a href="/realm/A1Guide">A1 guide &amp; builds</a></li>
-                        <li><a href="/realm/A2Guide">A2 guide &amp; builds</a></li>
-                        <li><a href="/realm/A3Guide">A3 progression &amp; builds</a></li>
-                        <li><a href="/realm/A4Guide">A4 progression &amp; endgame builds</a></li>
+                        <li class="guide-nav-era"><a href="/realm/A0Guide">Ascension 0</a><ul class="guide-range-nav">
+                            <li><a href="/realm/A0R0-R15">R0–R15</a></li><li><a href="/realm/A0R16-R29">R16–R29</a></li><li><a href="/realm/A0R30-R39">R30–R39</a></li>
+                        </ul></li>
+                        <li class="guide-nav-era"><a href="/realm/A1Guide">Ascension 1</a><ul class="guide-range-nav">
+                            <li><a href="/realm/A1R40-R59">R40–R59</a></li><li><a href="/realm/A1R60-R74">R60–R74</a></li><li><a href="/realm/A1R75-R99">R75–R99</a></li>
+                        </ul></li>
+                        <li class="guide-nav-era"><a href="/realm/A2Guide">Ascension 2</a><ul class="guide-range-nav">
+                            <li><a href="/realm/A2R100-R115">R100–R115</a></li><li><a href="/realm/A2R116-R124">R116–R124</a></li><li><a href="/realm/A2R125-R138">R125–R138</a></li><li><a href="/realm/A2R139-R159">R139–R159</a></li>
+                        </ul></li>
+                        <li class="guide-nav-era"><a href="/realm/A3Guide">Ascension 3</a><ul class="guide-range-nav">
+                            <li><a href="/realm/A3R160-R180">R160–R180</a></li><li><a href="/realm/A3R181-R189">R181–R189</a></li><li><a href="/realm/A3R190-R205">R190–R205</a></li><li><a href="/realm/A3R206-R219">R206–R219</a></li><li><a href="/realm/A3SpecialBuilds">Special-purpose</a></li>
+                        </ul></li>
+                        <li class="guide-nav-era"><a href="/realm/A4Guide">Ascension 4</a><ul class="guide-range-nav">
+                            <li><a href="/realm/A4R220-R229">R220–R229</a></li><li><a href="/realm/A4R230-R254">R230–R254</a></li><li><a href="/realm/A4R255-R279">R255–R279</a></li><li><a href="/realm/A4PostA4">Post-A4</a></li>
+                        </ul></li>
                     </ul>
                 </section>
                 <section class="progression-group progression-group-secondary">

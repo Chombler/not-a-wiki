@@ -1391,6 +1391,28 @@ body,
     color: #f2cf72;
 }
 
+.progression-nav .guide-nav-era > a {
+    color: #e0c77e;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 700;
+}
+
+.progression-nav .guide-range-nav {
+    margin: 0 0 5px 8px;
+    border-left: 1px solid #494233;
+}
+
+.progression-nav .guide-range-nav a {
+    padding: 3px 7px 3px 10px;
+    border-bottom-color: #242424;
+    color: #aaa;
+    font-size: 10px;
+}
+
+.progression-nav .guide-range-nav a:hover {
+    color: #f2cf72;
+}
+
 .progression-group-secondary {
     margin-top: 12px;
     border-top-color: #555;
