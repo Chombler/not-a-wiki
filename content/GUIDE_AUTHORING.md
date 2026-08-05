@@ -45,5 +45,7 @@ NOTABLE BUFFS:
 
 - Keep setup instructions in gameplay order.
 - Use one canonical, single-line import string. Let the site wrap it visually instead of adding a duplicate mobile template.
+- Configuration-only builds may omit `TEMPLATE` and `RESEARCHES`; explain the required faction, bloodline, set, and execution instead. Do not use a dummy import such as `S1`.
+- Milestones, reminders, and routing advice belong in progression notes, not in the searchable build index.
 - Put background mechanics in the relevant reference section rather than repeating them on every build.
 - Keep archival builds in the source history or an explicitly labeled archive, not in the current build index.

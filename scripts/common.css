@@ -2177,6 +2177,14 @@ hr {
     margin: 0;
 }
 
+.site-main .research-build-row .build-config-note {
+    grid-column: 2 / -1;
+    max-width: none;
+    margin: 0;
+    color: #b9b09c;
+    font-size: 10px;
+}
+
 .guide-entry-type {
     display: inline-block;
     margin-left: 5px;

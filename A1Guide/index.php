@@ -74,7 +74,7 @@ $templateSource = base64_encode(json_encode($templateData, JSON_UNESCAPED_SLASHE
     </div>
     <aside class="build-info" aria-labelledby="a1-notation-title">
         <strong id="a1-notation-title">Build notation</strong>
-        <p>Bloodline and faction abbreviations precede the purpose in each label. For example, <code>DNGB</code> means Dwarfline Goblin. Rows marked as notes contain progression reminders rather than complete builds.</p>
+        <p>Bloodline and faction abbreviations precede the purpose in each label. For example, <code>DNGB</code> means Dwarfline Goblin. Remove range-specific templates after leaving their listed reincarnation range; milestone reminders remain in the progression notes and plot.</p>
     </aside>
     <div class="research-build-list" id="a1-research-list">
     <?php foreach ($templateData['research'] as $build) { ?>

@@ -124,7 +124,7 @@ $templateData = json_decode(base64_decode($templateSource), true);
 
 <section class="guide-section" id="template-index">
     <div class="guide-section-heading">
-        <div><span><?php echo count($templateData['research']); ?> templates · source v4.3.9</span><h2>A2 build index</h2></div>
+        <div><span><?php echo count($templateData['research']); ?> builds · source v4.3.9</span><h2>A2 build index</h2></div>
     </div>
     <aside class="build-info" aria-labelledby="a2-index-info">
         <strong id="a2-index-info">Using this index</strong>
@@ -133,10 +133,15 @@ $templateData = json_decode(base64_decode($templateSource), true);
     <?php guide_filter('a2-build-filter', 'Filter A2 builds', 'Try R139, challenge, lineage…', '#a2-build-list'); ?>
     <div class="research-build-list" id="a2-build-list">
     <?php foreach ($templateData['research'] as $build) { ?>
+        <?php $buildTitle = trim($build['tp']) === 'S1' ? 'MKC4 — configuration-only challenge' : $build['text']; ?>
         <article class="research-build-row" data-guide-entry>
-            <h4><?php echo htmlspecialchars($build['text']); ?><span class="guide-entry-type"><?php echo htmlspecialchars(guide_build_type($build['text'])); ?></span></h4>
+            <h4><?php echo htmlspecialchars($buildTitle); ?><span class="guide-entry-type"><?php echo htmlspecialchars(guide_build_type($buildTitle)); ?></span></h4>
+            <?php if (trim($build['tp']) === 'S1') { ?>
+            <p class="build-config-note">Configuration-only build; no research template is required. See MKC4 in the detailed guide for faction, set, and execution notes.</p>
+            <?php } else { ?>
             <code><?php echo htmlspecialchars($build['tp']); ?></code>
             <button type="button" class="copy-build" data-build="<?php echo htmlspecialchars($build['tp']); ?>">Copy</button>
+            <?php } ?>
             <?php guide_credit('', '', 'A2 Builds Master Reference', '4.3.9'); ?>
         </article>
     <?php } ?>
