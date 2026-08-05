@@ -39,6 +39,25 @@ function guide_filter($id, $label, $placeholder, $target) {
     echo '<span data-guide-filter-count aria-live="polite"></span></div>';
 }
 
+function guide_compact_build($name, $type, $template, $facts = array(), $notes = '', $author = '', $source = '', $version = '') {
+    $summary = array();
+    foreach (array('Range', 'Faction', 'Bloodline') as $label) {
+        if (!empty($facts[$label])) $summary[] = $facts[$label];
+    }
+    echo '<details class="guide-build-entry" data-guide-entry><summary><span class="guide-build-summary-main"><strong>' . htmlspecialchars($name) . '</strong><span class="guide-entry-type">' . htmlspecialchars($type) . '</span></span>';
+    if ($summary) echo '<span class="guide-build-summary-meta">' . htmlspecialchars(implode(' · ', $summary)) . '</span>';
+    echo '</summary><div class="guide-build-entry-body">';
+    if ($facts) {
+        echo '<dl class="build-facts">';
+        foreach ($facts as $label => $value) if (trim($value) !== '') echo '<div><dt>' . htmlspecialchars($label) . '</dt><dd>' . htmlspecialchars($value) . '</dd></div>';
+        echo '</dl>';
+    }
+    if (trim($notes) !== '') echo '<p class="build-entry-note">' . htmlspecialchars($notes) . '</p>';
+    if (trim($template) !== '') echo '<div class="source-build-code"><code>' . htmlspecialchars($template) . '</code><button type="button" data-copy-build="' . htmlspecialchars($template, ENT_QUOTES) . '">Copy build</button></div>';
+    guide_credit($author, '', $source, $version);
+    echo '</div></details>';
+}
+
 function guide_build_type($label) {
     $lower = strtolower($label);
     $types = array('production' => 'Production', 'prod' => 'Production', 'buff' => 'Buff', 'unlock' => 'Unlock', 'challenge' => 'Challenge', 'mcc' => 'Challenge', 'trophy' => 'Trophy', 'lineage' => 'Lineage', 'excav' => 'Excavation', 'spell' => 'Spell');

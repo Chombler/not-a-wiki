@@ -2448,6 +2448,14 @@ hr {
     margin-bottom: 8px;
 }
 
+.build-entry-note {
+    max-width: 76ch;
+    margin: 4px 0 8px;
+    color: #c5c5c5;
+    font-size: 11px;
+    line-height: 1.45;
+}
+
 .guide-build-notes h4,
 .site-main .guide-build-notes h4 {
     margin: 10px 0 4px;

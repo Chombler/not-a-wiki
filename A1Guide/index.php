@@ -50,8 +50,11 @@ $templateSource = base64_encode(json_encode($templateData, JSON_UNESCAPED_SLASHE
     </nav>
 </div>
 
+<?php guide_view_switcher('a1'); ?>
+
 <?php guide_source_status('4.3.11', 'R40–R99 progression, Dragon unlocks, research, Mercenary builds, and offline mechanics', '/realm/content/A1/research-notes.txt', 'Community source'); ?>
 
+<div data-guide-view-content="progression">
 <section class="guide-section" id="plot">
     <div class="guide-section-heading">
         <div><span>Overview</span><h2>Ascension 1 progression plot</h2></div>
@@ -63,42 +66,41 @@ $templateSource = base64_encode(json_encode($templateData, JSON_UNESCAPED_SLASHE
     </figure>
 </section>
 
+<section class="guide-section source-notes" id="progression-notes">
+    <div class="guide-section-heading"><div><span>Community source</span><h2>A1 progression and build notes</h2></div><a href="/realm/content/A1/research-notes.txt">Plain-text source</a></div>
+    <div class="source-notes-body guide-detail-source"><?php render_a1_notes(__DIR__ . '/../content/A1/research-notes.txt'); ?></div>
+</section>
+
+<section class="guide-section source-notes" id="offline-mechanics">
+    <div class="guide-section-heading"><div><span>Background reading</span><h2>Offline spell activity mechanics</h2></div><a href="/realm/content/A1/offline-notes.txt">Plain-text source</a></div>
+    <div class="source-notes-body guide-detail-source"><?php render_a1_notes(__DIR__ . '/../content/A1/offline-notes.txt'); ?></div>
+</section>
+</div>
+
+<div data-guide-view-content="lookup" hidden>
 <section class="guide-section" id="build-index">
     <div class="guide-section-heading"><div><span><?php echo count($templateData['research']) + count($templateData['mercenary']); ?> copy-ready entries</span><h2>A1 build index</h2></div><a href="/realm/content/A1/templates.json">Build source</a></div>
     <?php guide_filter('a1-build-filter', 'Filter A1 builds', 'Try R65, Dragon, production, buff…', '#a1-build-groups'); ?>
 </section>
 <div id="a1-build-groups">
-<section class="guide-section" id="research-builds">
-    <div class="guide-section-heading">
-        <div><span><?php echo count($templateData['research']); ?> templates</span><h2>A1 research builds</h2></div>
-    </div>
+<section class="guide-build-group" id="research-builds">
+    <header><div><span><?php echo count($templateData['research']); ?> templates</span><h3>A1 research builds</h3></div></header>
     <aside class="build-info" aria-labelledby="a1-notation-title">
         <strong id="a1-notation-title">Build notation</strong>
         <p>Bloodline and faction abbreviations precede the purpose in each label. For example, <code>DNGB</code> means Dwarfline Goblin. Remove range-specific templates after leaving their listed reincarnation range; milestone reminders remain in the progression notes and plot.</p>
     </aside>
-    <div class="research-build-list" id="a1-research-list">
+    <div class="guide-build-entries" id="a1-research-list">
     <?php foreach ($templateData['research'] as $build) { ?>
-        <article class="research-build-row" data-guide-entry>
-            <h4><?php echo htmlspecialchars($build['text']); ?><span class="guide-entry-type"><?php echo htmlspecialchars(guide_build_type($build['text'])); ?></span></h4>
-            <code><?php echo htmlspecialchars($build['tp']); ?></code>
-            <button type="button" class="copy-build" data-build="<?php echo htmlspecialchars($build['tp']); ?>">Copy</button>
-            <?php guide_credit('', '', 'A1 community compilation (ensteffahn, tonberry pancakes, draig121)', '4.3.11'); ?>
-        </article>
+        <?php guide_compact_build($build['text'], guide_build_type($build['text']), $build['tp'], array(), '', '', 'A1 community compilation (ensteffahn, tonberry pancakes, draig121)', '4.3.11'); ?>
     <?php } ?>
     </div>
 </section>
 
-<section class="guide-section" id="mercenary-builds">
-    <div class="guide-section-heading">
-        <div><span><?php echo count($templateData['mercenary']); ?> templates</span><h2>A1 Mercenary and support builds</h2></div>
-    </div>
-    <div class="build-card-grid" id="a1-merc-list">
+<section class="guide-build-group" id="mercenary-builds">
+    <header><div><span><?php echo count($templateData['mercenary']); ?> templates</span><h3>A1 Mercenary and support builds</h3></div></header>
+    <div class="guide-build-entries" id="a1-merc-list">
     <?php foreach ($templateData['mercenary'] as $build) { ?>
-        <article class="build-card" data-guide-entry>
-            <h4><?php echo htmlspecialchars($build['text']); ?><span class="guide-entry-type"><?php echo htmlspecialchars(guide_build_type($build['text'])); ?></span></h4>
-            <div class="build-code"><code><?php echo htmlspecialchars($build['tp']); ?></code><button type="button" class="copy-build" data-build="<?php echo htmlspecialchars($build['tp']); ?>">Copy</button></div>
-            <?php guide_credit('', '', 'A1 community compilation (ensteffahn, tonberry pancakes, draig121)', '4.3.11'); ?>
-        </article>
+        <?php guide_compact_build($build['text'], guide_build_type($build['text']), $build['tp'], array(), '', '', 'A1 community compilation (ensteffahn, tonberry pancakes, draig121)', '4.3.11'); ?>
     <?php } ?>
     </div>
 </section>
@@ -112,19 +114,6 @@ $templateSource = base64_encode(json_encode($templateData, JSON_UNESCAPED_SLASHE
         <button type="button" class="copy-template" data-template-target="a1-template-source">Copy complete template bundle</button>
     </div>
 </section>
-
-<section class="guide-section source-notes" id="progression-notes">
-    <div class="guide-section-heading"><div><span>Community source</span><h2>A1 progression and build notes</h2></div><a href="/realm/content/A1/research-notes.txt">Plain-text source</a></div>
-    <div class="source-notes-body guide-detail-source">
-        <?php render_a1_notes(__DIR__ . '/../content/A1/research-notes.txt'); ?>
-    </div>
-</section>
-
-<section class="guide-section source-notes" id="offline-mechanics">
-    <div class="guide-section-heading"><div><span>Background reading</span><h2>Offline spell activity mechanics</h2></div><a href="/realm/content/A1/offline-notes.txt">Plain-text source</a></div>
-    <div class="source-notes-body guide-detail-source">
-        <?php render_a1_notes(__DIR__ . '/../content/A1/offline-notes.txt'); ?>
-    </div>
-</section>
+</div>
 
 <?php include "../scripts/footer.html"; ?>

@@ -4,6 +4,13 @@ Guide content stays in plain Markdown or text so community contributors can find
 
 Ascension guides are build-centered references. Organize ordinary production builds under their Reincarnation range. Put task builds under a plainly named purpose section such as `Unlock builds`, `Max buildings`, or `Challenges`.
 
+Every Ascension page uses the same two reading modes:
+
+- `Progression` preserves the plot, era route, milestones, mechanics, and execution advice in play order.
+- `Build lookup` presents searchable, collapsed entries. The summary identifies the build and its purpose; opening it reveals metadata, configuration, notes, credit, and copy controls.
+
+Do not duplicate prose between the two modes. Put range-wide advice in progression and build-specific instructions inside the build entry.
+
 Each `##` or `###` build heading becomes one compact expandable entry. Everything between that heading and the next heading stays with the build, so requirements, variants, and execution notes remain together.
 
 Use this field order for each build. Field names are case-insensitive. Omit fields that do not apply; do not leave empty fields.

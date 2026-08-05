@@ -109,8 +109,11 @@ $templateData = json_decode(base64_decode($templateSource), true);
     </nav>
 </div>
 
+<?php guide_view_switcher('a2'); ?>
+
 <?php guide_source_status('4.3.9', 'R100–R159 production, buffs, unlocks, lineages, and challenges', '/realm/content/A2/a2-builds-v4.3.9.md', 'Markdown source'); ?>
 
+<div data-guide-view-content="progression">
 <section class="guide-section" id="plot">
     <div class="guide-section-heading">
         <div><span>Overview</span><h2>Ascension 2 progression plot</h2></div>
@@ -122,7 +125,16 @@ $templateData = json_decode(base64_decode($templateSource), true);
     </figure>
 </section>
 
-<section class="guide-section" id="template-index">
+<section class="guide-section a2-guide" id="build-guide">
+    <div class="guide-section-heading">
+        <div><span>Detailed source · v4.3.9</span><h2>A2 builds master reference</h2></div>
+        <a href="/realm/content/A2/a2-builds-v4.3.9.md">Markdown source</a>
+    </div>
+    <div class="a2-guide-body guide-detail-source"><?php render_a2_guide($guidePath); ?></div>
+</section>
+</div>
+
+<section class="guide-section" id="template-index" data-guide-view-content="lookup" hidden>
     <div class="guide-section-heading">
         <div><span><?php echo count($templateData['research']); ?> builds · source v4.3.9</span><h2>A2 build index</h2></div>
     </div>
@@ -131,30 +143,12 @@ $templateData = json_decode(base64_decode($templateSource), true);
         <p>Use these rows for quick template imports. The detailed guide below contains required sets, prerequisites, targeting instructions, swaps, and notable buffs.</p>
     </aside>
     <?php guide_filter('a2-build-filter', 'Filter A2 builds', 'Try R139, challenge, lineage…', '#a2-build-list'); ?>
-    <div class="research-build-list" id="a2-build-list">
+    <div class="guide-build-entries" id="a2-build-list">
     <?php foreach ($templateData['research'] as $build) { ?>
         <?php $buildTitle = trim($build['tp']) === 'S1' ? 'MKC4 — configuration-only challenge' : $build['text']; ?>
-        <article class="research-build-row" data-guide-entry>
-            <h4><?php echo htmlspecialchars($buildTitle); ?><span class="guide-entry-type"><?php echo htmlspecialchars(guide_build_type($buildTitle)); ?></span></h4>
-            <?php if (trim($build['tp']) === 'S1') { ?>
-            <p class="build-config-note">Configuration-only build; no research template is required. See MKC4 in the detailed guide for faction, set, and execution notes.</p>
-            <?php } else { ?>
-            <code><?php echo htmlspecialchars($build['tp']); ?></code>
-            <button type="button" class="copy-build" data-build="<?php echo htmlspecialchars($build['tp']); ?>">Copy</button>
-            <?php } ?>
-            <?php guide_credit('', '', 'A2 Builds Master Reference', '4.3.9'); ?>
-        </article>
+        <?php $configurationOnly = trim($build['tp']) === 'S1'; ?>
+        <?php guide_compact_build($buildTitle, guide_build_type($buildTitle), $configurationOnly ? '' : $build['tp'], array(), $configurationOnly ? 'Configuration-only build; no research template is required. See MKC4 in the progression guide for faction, set, and execution notes.' : 'Open the progression guide for prerequisites, sets, targeting instructions, swaps, and notable buffs.', '', 'A2 Builds Master Reference', '4.3.9'); ?>
     <?php } ?>
-    </div>
-</section>
-
-<section class="guide-section a2-guide" id="build-guide">
-    <div class="guide-section-heading">
-        <div><span>Detailed source · v4.3.9</span><h2>A2 builds master reference</h2></div>
-        <a href="/realm/content/A2/a2-builds-v4.3.9.md">Markdown source</a>
-    </div>
-    <div class="a2-guide-body guide-detail-source">
-        <?php render_a2_guide($guidePath); ?>
     </div>
 </section>
 

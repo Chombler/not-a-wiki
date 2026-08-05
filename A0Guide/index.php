@@ -56,8 +56,11 @@ $templateSource = base64_encode(json_encode($templateData, JSON_UNESCAPED_SLASHE
     </nav>
 </div>
 
+<?php guide_view_switcher('a0'); ?>
+
 <?php guide_source_status('4.3.11', 'R0–R39 progression, production, trophies, research, and walkthroughs', '/realm/content/A0/a0-guide.txt', 'Progression source'); ?>
 
+<div data-guide-view-content="progression">
 <section class="guide-section" id="plot">
     <div class="guide-section-heading">
         <div><span>Overview</span><h2>Ascension 0 progression plot</h2></div>
@@ -69,27 +72,32 @@ $templateSource = base64_encode(json_encode($templateData, JSON_UNESCAPED_SLASHE
     </figure>
 </section>
 
-<section class="guide-section" id="builds">
+<section class="guide-section walkthrough" id="r0-walkthrough">
+    <div class="guide-section-heading"><div><span>First reincarnation</span><h2>R0 walkthrough</h2></div><a href="/realm/content/A0/r0-guide.txt">Plain-text source</a></div>
+    <div class="guide-detail-source"><?php render_guide_text(__DIR__ . '/../content/A0/r0-guide.txt'); ?></div>
+</section>
+
+<section class="guide-section walkthrough" id="a0-walkthrough">
+    <div class="guide-section-heading"><div><span>Full Ascension 0 route</span><h2>R1–R39 walkthrough</h2></div><a href="/realm/content/A0/a0-guide.txt">Plain-text source</a></div>
+    <div class="guide-detail-source"><?php render_guide_text(__DIR__ . '/../content/A0/a0-guide.txt'); ?></div>
+</section>
+</div>
+
+<section class="guide-section" id="builds" data-guide-view-content="lookup" hidden>
     <div class="guide-section-heading">
         <div><span>Search and copy</span><h2>A0 build index</h2></div>
         <a href="/realm/content/A0/builds.json">Build source</a>
     </div>
     <?php guide_filter('a0-build-filter', 'Filter A0 builds', 'Try R24, production, trophy, Fairy…', '#a0-build-index'); ?>
     <div id="a0-build-index">
-    <h3 class="build-group-title">Mercenary and trophy builds</h3>
-    <div class="build-card-grid">
+    <section class="guide-build-group"><header><div><span><?php echo count($buildData['mercenary']); ?> entries</span><h3>Mercenary and trophy builds</h3></div></header>
+    <div class="guide-build-entries">
     <?php foreach ($buildData['mercenary'] as $build) { ?>
-        <article class="build-card" data-guide-entry>
-            <h4><?php echo htmlspecialchars($build['title']); ?><span class="guide-entry-type"><?php echo htmlspecialchars($build['type']); ?></span></h4>
-            <p><?php echo htmlspecialchars($build['details']); ?></p>
-            <?php if (!empty($build['notes'])) { ?><p><?php echo htmlspecialchars($build['notes']); ?></p><?php } ?>
-            <div class="build-code"><code><?php echo htmlspecialchars($build['template']); ?></code><button type="button" class="copy-build" data-build="<?php echo htmlspecialchars($build['template']); ?>">Copy</button></div>
-            <?php guide_credit($build['author'], '', 'A0 community build compilation', '4.3.11'); ?>
-        </article>
+        <?php guide_compact_build($build['title'], $build['type'], $build['template'], array('Faction' => $build['details']), isset($build['notes']) ? $build['notes'] : '', $build['author'], 'A0 community build compilation', '4.3.11'); ?>
     <?php } ?>
-    </div>
+    </div></section>
 
-    <h3 class="build-group-title">Research production builds</h3>
+    <section class="guide-build-group"><header><div><span><?php echo count($buildData['research']); ?> entries</span><h3>Research production builds</h3></div></header>
     <aside class="build-info" aria-labelledby="faction-notation-title">
         <strong id="faction-notation-title">Faction notation</strong>
         <p>The first pair is the bloodline and the second is the faction. For example, <code>FCGB</code> means Faceless-line Goblin.</p>
@@ -100,36 +108,21 @@ $templateSource = base64_encode(json_encode($templateData, JSON_UNESCAPED_SLASHE
         <p><b>R32–35:</b> With Flame of Bondelnar, add E225, W180, and W400.</p>
         <p><b>Excavations:</b> Swap one research for E270 when excavating for Dwarven Horn or Flame of Bondelnar.</p>
     </div>
-    <div class="research-build-list">
+    <div class="guide-build-entries">
     <?php foreach ($buildData['research'] as $build) { ?>
-        <article class="research-build-row" data-guide-entry>
-            <h4><?php echo htmlspecialchars($build['title']); ?><span class="guide-entry-type"><?php echo htmlspecialchars($build['type']); ?></span></h4>
-            <code><?php echo htmlspecialchars($build['template']); ?></code>
-            <button type="button" class="copy-build" data-build="<?php echo htmlspecialchars($build['template']); ?>">Copy</button>
-            <?php guide_credit($build['author'], '', 'A0 community research compilation', '4.3.11'); ?>
-        </article>
+        <?php guide_compact_build($build['title'], $build['type'], $build['template'], array(), '', $build['author'], 'A0 community research compilation', '4.3.11'); ?>
     <?php } ?>
-    </div>
+    </div></section>
     </div>
 </section>
 
-<section class="guide-section" id="templates">
+<section class="guide-section" id="templates" data-guide-view-content="lookup" hidden>
     <div class="guide-section-heading"><div><span>Game import</span><h2>Complete A0 template bundle</h2></div></div>
     <p>This single import contains every research and Mercenary template listed above. Copy it and use the game's template import.</p>
     <div class="template-import">
         <textarea id="a0-template-source" readonly aria-label="Complete A0 template import string"><?php echo htmlspecialchars($templateSource); ?></textarea>
         <button type="button" class="copy-template" data-template-target="a0-template-source">Copy complete template bundle</button>
     </div>
-</section>
-
-<section class="guide-section walkthrough" id="r0-walkthrough">
-    <div class="guide-section-heading"><div><span>First reincarnation</span><h2>R0 walkthrough</h2></div><a href="/realm/content/A0/r0-guide.txt">Plain-text source</a></div>
-    <div class="guide-detail-source"><?php render_guide_text(__DIR__ . '/../content/A0/r0-guide.txt'); ?></div>
-</section>
-
-<section class="guide-section walkthrough" id="a0-walkthrough">
-    <div class="guide-section-heading"><div><span>Full Ascension 0 route</span><h2>R1–R39 walkthrough</h2></div><a href="/realm/content/A0/a0-guide.txt">Plain-text source</a></div>
-    <div class="guide-detail-source"><?php render_guide_text(__DIR__ . '/../content/A0/a0-guide.txt'); ?></div>
 </section>
 
 <?php include "../scripts/footer.html"; ?>
