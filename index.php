@@ -115,14 +115,14 @@
     <div class="reference-panel-title">
         <img src="/realm/Factions/picks/MercenaryTopPage.png" alt="">
         <h2 id="guides-heading">Guides &amp; builds</h2>
-        <span class="section-status">A0 available</span>
     </div>
-    <p class="guide-preview-note">Current, versioned community guides. Additional Ascension sources are still being collected.</p>
+    <p class="guide-preview-note">Current, versioned community guides for each Ascension.</p>
     <div class="guide-placeholder-grid">
         <a class="guide-placeholder guide-placeholder-link" href="/realm/A0Guide"><strong>A0 guide</strong><span>R0–R39 walkthrough, plot &amp; builds</span></a>
         <a class="guide-placeholder guide-placeholder-link" href="/realm/A1Guide"><strong>A1 guide</strong><span>R40–R99 plot, research &amp; builds</span></a>
         <a class="guide-placeholder guide-placeholder-link" href="/realm/A2Guide"><strong>A2 guide</strong><span>R100–R159 plot, challenges &amp; builds</span></a>
         <a class="guide-placeholder guide-placeholder-link" href="/realm/A3Guide"><strong>A3 reference</strong><span>R160–R219 roadmap &amp; research budget</span></a>
+        <a class="guide-placeholder guide-placeholder-link" href="/realm/A4Guide"><strong>A4 guide</strong><span>R220+ progression &amp; endgame builds</span></a>
     </div>
 </section>
 

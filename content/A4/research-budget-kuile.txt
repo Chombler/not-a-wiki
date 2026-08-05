@@ -1,0 +1,19 @@
+A4 Research Budget Sources in 4.3
+Source: kuile, Realm Grinder Discord, 2025-04-16
+
+Base faction trade treaty: 5000
+Base faction union: 5000
+R170 power: 600 + 3.5 * R, where R is current Reincarnation - 159. R is modified by effects that increase Reincarnation count.
+Research facilities: 500 + ln(((1 + x) * (1 + y)) ^ 0.5) ^ 3, using time spent in each alignment this Reincarnation:
+- Spellcraft: Good, Chaos
+- Craftsmanship: Good, Balance
+- Divine: Good, Order
+- Economics: Evil, Balance
+- Alchemy: Evil, Order
+- Warfare: Evil, Chaos
+Forbidden facility: 500 + 0.75 * ln(1 + (x * y) ^ 0.5) ^ 3, where x is the greater of Good and Evil time, and y is the greatest of Order, Chaos, and Balance time this Reincarnation.
+Archon Bloodline: ln(1 + x) ^ 3, where x is time spent this Era.
+Goblin Lineage Perk 6: 4 * x ^ 0.5, where x is Tax Collection worth in seconds, capped at 3000.
+Dwarf Lineage Perk 6: 0.6 * x ^ 0.6, where x is excavation depth, capped at 3000.
+Faceless Set 2: ln(1 + x) ^ 1.5, where x is faction coins found this Era, capped at 3000.
+Goblin/Undead Legacy Combo: 50 + 1.15 * ln(1 + min(x, y)) ^ 3.15, where x and y are time spent as Order and Balance respectively this Reincarnation, capped at 3000.

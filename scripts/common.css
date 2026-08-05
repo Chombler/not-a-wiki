@@ -1226,6 +1226,10 @@ table {
 }
 
 @media (max-width: 620px) {
+    .a4-facility-grid {
+        grid-template-columns: 1fr;
+    }
+
     .site-header {
         min-height: 4.15rem;
     }
@@ -1708,7 +1712,59 @@ hr {
 
 .guide-placeholder-grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.a4-budget-table-wrap {
+    overflow-x: auto;
+}
+
+.a4-budget-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+.a4-budget-table th,
+.a4-budget-table td {
+    padding: 7px 9px;
+    border: 1px solid #4b473e;
+    text-align: left;
+    vertical-align: top;
+}
+
+.a4-budget-table th {
+    background: #29251d;
+    color: #d7bd82;
+}
+
+.a4-budget-table code {
+    white-space: nowrap;
+}
+
+.a4-facility-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    border: 1px solid #4b473e;
+}
+
+.a4-facility-grid span {
+    display: grid;
+    gap: 2px;
+    padding: 7px 9px;
+    border-right: 1px solid #4b473e;
+    border-bottom: 1px solid #4b473e;
+    color: #aaa;
+    font-size: 11px;
+}
+
+.a4-facility-grid strong {
+    color: #ddd;
+}
+
+.a4-guide-body h2 {
+    margin-top: 26px;
+    border-bottom: 1px solid #665733;
 }
 
 .guide-placeholder {
@@ -2323,6 +2379,15 @@ hr {
 
     .guide-placeholder:nth-child(4) {
         border-top: 1px solid #555;
+    }
+
+    .guide-placeholder:nth-child(5) {
+        border-left: 0;
+        border-top: 1px solid #555;
+    }
+
+    .a4-facility-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .start-links a:nth-child(3) {
