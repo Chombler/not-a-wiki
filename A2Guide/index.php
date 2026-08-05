@@ -109,11 +109,8 @@ $templateData = json_decode(base64_decode($templateSource), true);
     </nav>
 </div>
 
-<?php guide_view_switcher('a2'); ?>
-
 <?php guide_source_status('4.3.9', 'R100–R159 production, buffs, unlocks, lineages, and challenges', '/realm/content/A2/a2-builds-v4.3.9.md', 'Markdown source'); ?>
 
-<div data-guide-view-content="progression">
 <section class="guide-section" id="plot">
     <div class="guide-section-heading">
         <div><span>Overview</span><h2>Ascension 2 progression plot</h2></div>
@@ -125,16 +122,7 @@ $templateData = json_decode(base64_decode($templateSource), true);
     </figure>
 </section>
 
-<section class="guide-section a2-guide" id="build-guide">
-    <div class="guide-section-heading">
-        <div><span>Detailed source · v4.3.9</span><h2>A2 builds master reference</h2></div>
-        <a href="/realm/content/A2/a2-builds-v4.3.9.md">Markdown source</a>
-    </div>
-    <div class="a2-guide-body guide-detail-source"><?php render_a2_guide($guidePath); ?></div>
-</section>
-</div>
-
-<section class="guide-section" id="template-index" data-guide-view-content="lookup" hidden>
+<section class="guide-section" id="template-index">
     <div class="guide-section-heading">
         <div><span><?php echo count($templateData['research']); ?> builds · source v4.3.9</span><h2>A2 build index</h2></div>
     </div>
@@ -150,6 +138,14 @@ $templateData = json_decode(base64_decode($templateSource), true);
         <?php guide_compact_build($buildTitle, guide_build_type($buildTitle), $configurationOnly ? '' : $build['tp'], array(), $configurationOnly ? 'Configuration-only build; no research template is required. See MKC4 in the progression guide for faction, set, and execution notes.' : 'Open the progression guide for prerequisites, sets, targeting instructions, swaps, and notable buffs.', '', 'A2 Builds Master Reference', '4.3.9'); ?>
     <?php } ?>
     </div>
+</section>
+
+<section class="guide-section a2-guide" id="build-guide">
+    <div class="guide-section-heading">
+        <div><span>Detailed source · v4.3.9</span><h2>A2 progression and execution notes</h2></div>
+        <a href="/realm/content/A2/a2-builds-v4.3.9.md">Markdown source</a>
+    </div>
+    <details class="guide-reference-details"><summary>Open the complete progression and execution notes</summary><div class="a2-guide-body guide-detail-source"><?php render_a2_guide($guidePath); ?></div></details>
 </section>
 
 <?php include "../scripts/footer.html"; ?>

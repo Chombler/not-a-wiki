@@ -163,8 +163,6 @@ $a4Builds = a4_extract_builds($a4CurrentSource);
     </nav>
 </div>
 
-<?php guide_view_switcher('a4'); ?>
-
 <?php guide_source_status('4.3.11', 'R220–R279 progression and post-completion endgame buff builds', '/realm/content/A4/a4-builds-v4.3.11.md', 'Markdown source', 'May 5, 2026'); ?>
 <section class="guide-section guide-source-note">
     <p class="guide-coverage-note">The duplicate “Archived Full Builds List” is intentionally omitted from the rendered guide. It remains in the <a href="/realm/content/A4/a4-builds-v4.3.11.md">Markdown source</a> for historical reference.</p>
@@ -195,15 +193,15 @@ $a4Builds = a4_extract_builds($a4CurrentSource);
     </div>
 </section>
 
-<section class="guide-section" id="build-index" data-guide-view-content="lookup" hidden>
+<section class="guide-section" id="build-index">
     <div class="guide-section-heading"><div><span><?php echo count($a4Builds); ?> structured entries · <?php echo $a4BuildCount; ?> distinct research strings</span><h2>A4 build lookup</h2></div></div>
     <?php guide_filter('a4-build-filter', 'Filter A4 builds', 'Try R255, excavations, Fairy, buff…', '#a4-build-index'); ?>
     <div class="guide-build-entries" id="a4-build-index"><?php render_a4_build_index($a4Builds); ?></div>
 </section>
 
-<section class="guide-section a2-guide" id="a4-builds" data-guide-view-content="progression">
+<section class="guide-section a2-guide" id="a4-builds">
     <div class="guide-section-heading"><div><span>Maintained guide · v4.3.11</span><h2>A4 progression and endgame builds</h2></div><a href="/realm/content/A4/a4-builds-v4.3.11.md">Markdown source</a></div>
-    <div class="a2-guide-body a4-guide-body guide-detail-source"><?php render_a4_reference($a4CurrentSource); ?></div>
+    <details class="guide-reference-details"><summary>Open the complete progression and execution notes</summary><div class="a2-guide-body a4-guide-body guide-detail-source"><?php render_a4_reference($a4CurrentSource); ?></div></details>
 </section>
 
 <?php include "../scripts/footer.html"; ?>

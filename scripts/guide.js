@@ -50,41 +50,6 @@
     }
     document.querySelectorAll('[data-guide-filter]').forEach(initializeFilter);
 
-    document.querySelectorAll('[data-guide-view-switcher]').forEach(function (switcher) {
-        var buttons = Array.prototype.slice.call(switcher.querySelectorAll('[data-guide-view]'));
-        var description = switcher.querySelector('[data-guide-view-description]');
-        var contents = Array.prototype.slice.call(document.querySelectorAll('[data-guide-view-content]'));
-        var labels = {
-            progression: 'Follow the era in order with context, requirements, and play notes.',
-            lookup: 'Search and copy a known build without reading the full progression guide.'
-        };
-        function selectView(view) {
-            buttons.forEach(function (button) {
-                var active = button.getAttribute('data-guide-view') === view;
-                button.classList.toggle('is-active', active);
-                button.setAttribute('aria-pressed', active ? 'true' : 'false');
-            });
-            contents.forEach(function (content) {
-                content.hidden = content.getAttribute('data-guide-view-content') !== view;
-            });
-            if (description) description.textContent = labels[view];
-        }
-        buttons.forEach(function (button) {
-            button.addEventListener('click', function () { selectView(button.getAttribute('data-guide-view')); });
-        });
-        document.addEventListener('click', function (event) {
-            var link = event.target.closest('a[href^="#"]');
-            if (!link) return;
-            var target = document.querySelector(link.getAttribute('href'));
-            var viewContent = target && target.closest('[data-guide-view-content]');
-            if (viewContent) selectView(viewContent.getAttribute('data-guide-view-content'));
-        });
-        var hashTarget = location.hash && document.querySelector(location.hash);
-        var hashContent = hashTarget && hashTarget.closest('[data-guide-view-content]');
-        selectView(hashContent ? hashContent.getAttribute('data-guide-view-content') : 'progression');
-        if (hashContent) window.requestAnimationFrame(function () { hashTarget.scrollIntoView(); });
-    });
-
     document.addEventListener('DOMContentLoaded', function () {
       var intro = document.querySelector('.guide-intro');
       var toc = document.getElementById('page-toc-list');

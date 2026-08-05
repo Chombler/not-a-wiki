@@ -23,15 +23,6 @@ function guide_credit($author = '', $updatedBy = '', $source = '', $version = ''
     echo '</footer>';
 }
 
-function guide_view_switcher($id, $progressionLabel = 'Progression', $lookupLabel = 'Build lookup') {
-    echo '<section class="guide-view-switcher" data-guide-view-switcher="' . htmlspecialchars($id) . '">';
-    echo '<div><span class="guide-view-eyebrow">Choose how to read this guide</span><strong data-guide-view-description>Follow the era in order with context, requirements, and play notes.</strong></div>';
-    echo '<div class="guide-view-options" role="group" aria-label="Guide view">';
-    echo '<button type="button" class="is-active" data-guide-view="progression" aria-pressed="true">' . htmlspecialchars($progressionLabel) . '</button>';
-    echo '<button type="button" data-guide-view="lookup" aria-pressed="false">' . htmlspecialchars($lookupLabel) . '</button>';
-    echo '</div></section>';
-}
-
 function guide_filter($id, $label, $placeholder, $target) {
     echo '<div class="guide-filter-bar">';
     echo '<label for="' . htmlspecialchars($id) . '">' . htmlspecialchars($label) . '</label>';

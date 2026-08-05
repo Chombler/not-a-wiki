@@ -50,11 +50,8 @@ $templateSource = base64_encode(json_encode($templateData, JSON_UNESCAPED_SLASHE
     </nav>
 </div>
 
-<?php guide_view_switcher('a1'); ?>
-
 <?php guide_source_status('4.3.11', 'R40–R99 progression, Dragon unlocks, research, Mercenary builds, and offline mechanics', '/realm/content/A1/research-notes.txt', 'Community source'); ?>
 
-<div data-guide-view-content="progression">
 <section class="guide-section" id="plot">
     <div class="guide-section-heading">
         <div><span>Overview</span><h2>Ascension 1 progression plot</h2></div>
@@ -66,18 +63,6 @@ $templateSource = base64_encode(json_encode($templateData, JSON_UNESCAPED_SLASHE
     </figure>
 </section>
 
-<section class="guide-section source-notes" id="progression-notes">
-    <div class="guide-section-heading"><div><span>Community source</span><h2>A1 progression and build notes</h2></div><a href="/realm/content/A1/research-notes.txt">Plain-text source</a></div>
-    <div class="source-notes-body guide-detail-source"><?php render_a1_notes(__DIR__ . '/../content/A1/research-notes.txt'); ?></div>
-</section>
-
-<section class="guide-section source-notes" id="offline-mechanics">
-    <div class="guide-section-heading"><div><span>Background reading</span><h2>Offline spell activity mechanics</h2></div><a href="/realm/content/A1/offline-notes.txt">Plain-text source</a></div>
-    <div class="source-notes-body guide-detail-source"><?php render_a1_notes(__DIR__ . '/../content/A1/offline-notes.txt'); ?></div>
-</section>
-</div>
-
-<div data-guide-view-content="lookup" hidden>
 <section class="guide-section" id="build-index">
     <div class="guide-section-heading"><div><span><?php echo count($templateData['research']) + count($templateData['mercenary']); ?> copy-ready entries</span><h2>A1 build index</h2></div><a href="/realm/content/A1/templates.json">Build source</a></div>
     <?php guide_filter('a1-build-filter', 'Filter A1 builds', 'Try R65, Dragon, production, buff…', '#a1-build-groups'); ?>
@@ -114,6 +99,15 @@ $templateSource = base64_encode(json_encode($templateData, JSON_UNESCAPED_SLASHE
         <button type="button" class="copy-template" data-template-target="a1-template-source">Copy complete template bundle</button>
     </div>
 </section>
-</div>
+
+<section class="guide-section source-notes" id="progression-notes">
+    <div class="guide-section-heading"><div><span>Community source</span><h2>A1 progression and build notes</h2></div><a href="/realm/content/A1/research-notes.txt">Plain-text source</a></div>
+    <details class="guide-reference-details"><summary>Open the complete progression notes</summary><div class="source-notes-body guide-detail-source"><?php render_a1_notes(__DIR__ . '/../content/A1/research-notes.txt'); ?></div></details>
+</section>
+
+<section class="guide-section source-notes" id="offline-mechanics">
+    <div class="guide-section-heading"><div><span>Background reading</span><h2>Offline spell activity mechanics</h2></div><a href="/realm/content/A1/offline-notes.txt">Plain-text source</a></div>
+    <details class="guide-reference-details"><summary>Open the offline-mechanics reference</summary><div class="source-notes-body guide-detail-source"><?php render_a1_notes(__DIR__ . '/../content/A1/offline-notes.txt'); ?></div></details>
+</section>
 
 <?php include "../scripts/footer.html"; ?>

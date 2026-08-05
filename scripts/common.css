@@ -2131,59 +2131,6 @@ hr {
     padding-top: 4px;
 }
 
-.guide-view-switcher {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #554a32;
-    background: #171611;
-}
-
-.guide-view-switcher > div:first-child {
-    display: grid;
-    gap: 3px;
-}
-
-.guide-view-eyebrow {
-    color: #9d9279;
-    font-size: 9px;
-    font-weight: 700;
-    letter-spacing: .06em;
-    text-transform: uppercase;
-}
-
-.guide-view-switcher strong {
-    color: #d5d0c4;
-    font-size: 11px;
-    font-weight: 400;
-}
-
-.guide-view-options {
-    display: flex;
-    flex: 0 0 auto;
-}
-
-.guide-view-options button {
-    padding: 7px 10px;
-    border: 1px solid #665c43;
-    background: #25231d;
-    color: #bcb39f;
-    font: 700 10px Arial, sans-serif;
-    text-transform: uppercase;
-}
-
-.guide-view-options button + button {
-    border-left: 0;
-}
-
-.guide-view-options button.is-active {
-    background: #66532b;
-    color: #fff1bd;
-}
-
 .guide-build-index {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2991,15 +2938,6 @@ hr {
 
     .guide-build-index--long .guide-build-card {
         display: block;
-    }
-
-    .guide-view-switcher {
-        align-items: stretch;
-        flex-direction: column;
-    }
-
-    .guide-view-options button {
-        flex: 1 1 50%;
     }
 
     .guide-stage-grid {
