@@ -232,6 +232,7 @@ Gameplay Notes:
 
 ### **Max Flesh Workshops**
 
+Purpose: Building target
 Faction: Undead
 Bloodline: Goblin
 Set: Angel
@@ -241,6 +242,7 @@ S425,C425
 
 ### **Max Swarming Towers**
 
+Purpose: Building target
 Faction: Fairy
 Bloodline: Goblin
 Set: Angel
@@ -256,6 +258,7 @@ Gameplay Notes:
 
 # **Lineages**
 
+Purpose: Lineage leveling
 Author: Apollo
 Range: R180+, e67+ gems
 Faction: Neutral/Chaos Mercenary
@@ -276,6 +279,7 @@ Gameplay Notes:
 
 # **Spells Cast**
 
+Purpose: Buff
 Author: Apollo
 Range: R180, e67+ gems
 Faction: Good/Balance Mercenary

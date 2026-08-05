@@ -30,6 +30,7 @@
         var root = document.querySelector(input.getAttribute('data-guide-filter-target'));
         if (!root) return;
         var rows = Array.prototype.slice.call(root.querySelectorAll('[data-guide-entry]'));
+        var groups = Array.prototype.slice.call(root.querySelectorAll('.guide-build-group'));
         var count = input.parentElement.querySelector('[data-guide-filter-count]');
         function update() {
             var query = input.value.toLowerCase().trim();
@@ -38,6 +39,9 @@
                 var show = !query || row.textContent.toLowerCase().indexOf(query) !== -1;
                 row.hidden = !show;
                 if (show) visible++;
+            });
+            groups.forEach(function (group) {
+                group.hidden = !!query && !group.querySelector('[data-guide-entry]:not([hidden])');
             });
             if (count) count.textContent = query ? visible + ' of ' + rows.length : rows.length + ' entries';
         }
