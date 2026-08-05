@@ -119,7 +119,7 @@
     </div>
     <p class="guide-preview-note">Current, versioned community guides. Additional Ascension sources are still being collected.</p>
     <div class="guide-placeholder-grid">
-        <a class="guide-placeholder guide-placeholder-link" href="/realm/A0Guide"><strong>A0 guide</strong><span>R0–R39 walkthrough, plot &amp; builds</span><small>Available now</small></a>
+        <a class="guide-placeholder guide-placeholder-link" href="/realm/A0Guide"><strong>A0 guide</strong><span>R0–R39 walkthrough, plot &amp; builds</span></a>
         <div class="guide-placeholder"><strong>A1 plot</strong><span>R40–R99</span><small>4.3 source pending</small></div>
         <div class="guide-placeholder"><strong>A2 plot</strong><span>R100–R159</span><small>4.3 source pending</small></div>
         <div class="guide-placeholder"><strong>Progression builds</strong><span>Indexed by R range</span><small>Discord pins being collected</small></div>
