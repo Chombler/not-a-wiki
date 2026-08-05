@@ -1290,6 +1290,7 @@ body,
 
 .site-shell {
     width: min(100%, 108rem);
+    padding-bottom: 52px;
     background: #171717;
     border-right: 1px solid #454545;
     border-left: 1px solid #454545;
@@ -1511,6 +1512,12 @@ hr {
 }
 
 .site-footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    z-index: 480;
+    width: min(100%, 108rem);
+    transform: translateX(-50%);
     min-height: 52px;
     padding: 9px 14px;
     border-top: 3px ridge #777;
@@ -2884,6 +2891,16 @@ hr {
 }
 
 @media (max-width: 900px) {
+    .site-shell {
+        padding-bottom: 0;
+    }
+
+    .site-footer {
+        position: static;
+        width: auto;
+        transform: none;
+    }
+
     .site-sidebar {
         top: 68px;
     }
