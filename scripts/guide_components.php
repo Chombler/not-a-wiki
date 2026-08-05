@@ -1,14 +1,4 @@
 <?php
-function guide_source_status($version, $coverage, $sourceHref, $sourceLabel = 'Source file', $updated = '') {
-    echo '<section class="guide-section guide-source-status" id="source-status">';
-    echo '<div class="guide-section-heading"><div><span>Version and provenance</span><h2>Guide status</h2></div>';
-    echo '<a href="' . htmlspecialchars($sourceHref) . '">' . htmlspecialchars($sourceLabel) . '</a></div>';
-    echo '<dl class="guide-status-grid"><div><dt>Game version</dt><dd>' . htmlspecialchars($version) . '</dd></div>';
-    if ($updated !== '') echo '<div><dt>Source updated</dt><dd>' . htmlspecialchars($updated) . '</dd></div>';
-    echo '<div><dt>Coverage</dt><dd>' . htmlspecialchars($coverage) . '</dd></div></dl>';
-    echo '<p class="guide-contribute-note">Contributing? Edit the source above and follow the <a href="/realm/content/GUIDE_AUTHORING.md">shared build format</a>. Preserve original credit and list later changes separately.</p></section>';
-}
-
 function guide_credit($author = '', $updatedBy = '', $source = '', $version = '') {
     $author = trim($author) !== '' ? $author : 'Uncredited community source';
     echo '<footer class="build-credit"><span><strong>Original build:</strong> ' . htmlspecialchars($author) . '</span>';

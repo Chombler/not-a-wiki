@@ -318,6 +318,5 @@ foreach ($a3Groups as $group) $a3BuildCount += count($group['builds']);
     </details>
 </section>
 
-<?php guide_source_status('4.3.11', 'R160–R219 progression, production, buffs, unlocks, artifacts, trophies, and Mercenary challenges', 'https://github.com/chombler/not-a-wiki/edit/local-4.3.15/content/A3/a3-reference-v4.3.11.md', 'Edit guide source'); ?>
 
 <?php include "../scripts/footer.html"; ?>

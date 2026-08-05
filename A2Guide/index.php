@@ -102,13 +102,10 @@ $templateData = json_decode(base64_decode($templateSource), true);
     <p class="guide-kicker">Ascension 2 · R100–R159</p>
     <p>Production, buff, unlock, lineage, and challenge builds for A2. The supplied build reference is explicitly versioned for game version 4.3.9.</p>
     <nav class="guide-jump" aria-label="A2 guide sections">
-        <a href="#source-status">Source status</a>
         <a href="#plot">Plot</a>
         <a href="#progression-ranges">Reincarnation ranges</a>
     </nav>
 </div>
-
-<?php guide_source_status('4.3.9', 'R100–R159 production, buffs, unlocks, lineages, and challenges', '/realm/content/A2/a2-builds-v4.3.9.md', 'Markdown source'); ?>
 
 <section class="guide-section" id="plot">
     <div class="guide-section-heading">

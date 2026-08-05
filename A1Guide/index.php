@@ -39,13 +39,10 @@ $templateSource = base64_encode(json_encode($templateData, JSON_UNESCAPED_SLASHE
     <p class="guide-kicker">Ascension 1 · R40–R99</p>
     <p>A1 production routes, Dragon progression, research builds, Mercenary support builds, and the complete game-import template bundle.</p>
     <nav class="guide-jump" aria-label="A1 guide sections">
-        <a href="#source-status">Source status</a>
         <a href="#plot">Plot</a>
         <a href="#progression-ranges">Reincarnation ranges</a>
     </nav>
 </div>
-
-<?php guide_source_status('4.3.11', 'R40–R99 progression, Dragon unlocks, research, Mercenary builds, and offline mechanics', '/realm/content/A1/research-notes.txt', 'Community source'); ?>
 
 <section class="guide-section" id="plot">
     <div class="guide-section-heading">

@@ -156,13 +156,11 @@ $a4Builds = a4_extract_builds($a4CurrentSource);
     <p class="guide-kicker">Ascension 4 · R220+</p>
     <p>Current progression, unlock, production, buff, and endgame builds for Ascension 4, plus a compact reference for every A4 research-budget source.</p>
     <nav class="guide-jump" aria-label="A4 guide sections">
-        <a href="#source-status">Source status</a>
         <a href="#research-budget">Research budget</a>
         <a href="#progression-ranges">Reincarnation ranges</a>
     </nav>
 </div>
 
-<?php guide_source_status('4.3.11', 'R220–R279 progression and post-completion endgame buff builds', '/realm/content/A4/a4-builds-v4.3.11.md', 'Markdown source', 'May 5, 2026'); ?>
 <section class="guide-section guide-source-note">
     <p class="guide-coverage-note">The duplicate “Archived Full Builds List” is intentionally omitted from the rendered guide. It remains in the <a href="/realm/content/A4/a4-builds-v4.3.11.md">Markdown source</a> for historical reference.</p>
 </section>

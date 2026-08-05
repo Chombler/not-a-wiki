@@ -47,13 +47,10 @@ $templateSource = base64_encode(json_encode($templateData, JSON_UNESCAPED_SLASHE
     <p class="guide-kicker">Pre-Ascension · R0–R39</p>
     <p>A current community progression route for Ascension 0. Use the plot for orientation, the walkthrough for unlock order, and the build index for importable templates.</p>
     <nav class="guide-jump" aria-label="A0 guide sections">
-        <a href="#source-status">Source status</a>
         <a href="#plot">Plot</a>
         <a href="#progression-ranges">Reincarnation ranges</a>
     </nav>
 </div>
-
-<?php guide_source_status('4.3.11', 'R0–R39 progression, production, trophies, research, and walkthroughs', '/realm/content/A0/a0-guide.txt', 'Progression source'); ?>
 
 <section class="guide-section" id="plot">
     <div class="guide-section-heading">

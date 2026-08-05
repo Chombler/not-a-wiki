@@ -108,7 +108,7 @@ function render_range_guide($config) {
     if (!empty($config['sectionMatch'])) {
         $entries = array_values(array_filter($entries, function ($entry) use ($config) { return stripos(isset($entry['section']) ? $entry['section'] : '', $config['sectionMatch']) !== false; }));
     }
-    echo '<div class="guide-intro"><p class="guide-kicker">' . htmlspecialchars($config['era'] . ' · ' . $config['range']) . '</p><p>' . htmlspecialchars($config['summary']) . '</p><nav class="guide-jump"><a href="/realm/' . htmlspecialchars($config['landing']) . '">Ascension overview</a><a href="#builds">Builds</a><a href="#source-status">Source</a></nav></div>';
+    echo '<div class="guide-intro"><p class="guide-kicker">' . htmlspecialchars($config['era'] . ' · ' . $config['range']) . '</p><p>' . htmlspecialchars($config['summary']) . '</p><nav class="guide-jump"><a href="/realm/' . htmlspecialchars($config['landing']) . '">Ascension overview</a><a href="#builds">Builds</a></nav></div>';
     render_guide_pager(basename(getcwd()));
     if (!empty($config['milestones'])) { echo '<aside class="guide-milestones"><strong>Goals for this range</strong>'; foreach ($config['milestones'] as $goal) echo '<span>' . htmlspecialchars($goal) . '</span>'; echo '</aside>'; }
     echo '<section class="guide-section" id="builds"><div class="guide-section-heading"><div><span>' . count($entries) . ' applicable entries</span><h2>' . htmlspecialchars($config['range'] . ' builds') . '</h2></div><a href="' . htmlspecialchars($config['sourceHref']) . '">Edit source</a></div>';
@@ -116,7 +116,6 @@ function render_range_guide($config) {
     echo '<div class="guide-build-entries" id="range-builds">';
     foreach ($entries as $entry) guide_compact_build($entry['name'], $entry['type'], $entry['code'], $entry['facts'], $entry['notes'], $entry['author'], $config['sourceLabel'], $config['version']);
     echo '</div></section>';
-    guide_source_status($config['version'], $config['range'] . ' progression and applicable builds', $config['sourceHref'], 'Canonical source');
     render_guide_pager(basename(getcwd()));
 }
 
