@@ -1943,15 +1943,38 @@ hr {
     font-size: 10px;
 }
 
-.build-legend {
-    margin: 0;
-    padding: 6px 9px;
-    border-bottom: 1px solid #444;
-    color: #aaa;
-    font-size: 10px;
+.build-info {
+    display: grid;
+    grid-template-columns: 130px minmax(0, 1fr);
+    gap: 10px;
+    align-items: start;
+    margin: 9px;
+    padding: 8px 10px;
+    border: 1px solid #66572f;
+    border-left: 4px solid #c9a75c;
+    background: #201d15;
 }
 
-.site-main .build-legend,
+.build-info > strong {
+    color: #dfc77e;
+    font-size: 10px;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+}
+
+.site-main .build-info p {
+    max-width: none;
+    margin: 0;
+    color: #c8c2b3;
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+.build-info code {
+    color: #f0d98e;
+    font-weight: 700;
+}
+
 .site-main .research-build-notes p,
 .site-main .build-card p {
     max-width: none;
@@ -2197,5 +2220,10 @@ hr {
 
     .research-build-row h4 {
         grid-column: 1 / -1;
+    }
+
+    .build-info {
+        grid-template-columns: 1fr;
+        gap: 3px;
     }
 }

@@ -83,7 +83,10 @@ $buildData = require __DIR__ . '/../content/A0/builds.php';
     </div>
 
     <h3 class="build-group-title">Research production builds</h3>
-    <p class="build-legend"><b>Faction notation:</b> the first pair is the bloodline and the second is the faction—for example, FCGB is Faceless-line Goblin.</p>
+    <aside class="build-info" aria-labelledby="faction-notation-title">
+        <strong id="faction-notation-title">Faction notation</strong>
+        <p>The first pair is the bloodline and the second is the faction. For example, <code>FCGB</code> means Faceless-line Goblin.</p>
+    </aside>
     <div class="research-build-notes">
         <p><b>R22–23:</b> Going offline for one minute each era is recommended once the build slows down.</p>
         <p><b>R26–28:</b> Dwarfline Druid requires Druid Challenge 4. Produce 3.2e6 mana for Primal Balance +2 while running Mana Fairies.</p>

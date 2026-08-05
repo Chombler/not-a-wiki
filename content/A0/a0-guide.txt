@@ -26,7 +26,7 @@ Finally there's Equality: Spend at least 8h with good, evil and neutral each, wh
 This is a useful achievement you can get in any R where you can't really play for a day, but the guide will not assume that you have it.
 
 
-If you don't have Coin Pillage, R1-R3 are played like a much faster R0, you can folow the A0plot for faction recommendations (the plot is also generally useful to quickly see what builds to use when). Of course you can also get Coin Pillage in R1.
+If you don't have Coin Pillage, R1-R3 are played like a much faster R0, you can follow the A0plot for faction recommendations (the plot is also generally useful to quickly see what builds to use when). Of course you can also get Coin Pillage in R1.
 The plot also has a "what to do offline section". The first two (5h Druid and 5h Faceless) are relevant for A0, so definitely do those at some point!
 
 If you do have Coin Pillage, the entire R can be done with Demon:
@@ -53,7 +53,7 @@ This is an intermezzo to show which artifacts you should go for. If I give appro
 For the exact chance you will have to check in game anyway.
 The external tool "lara crypt" will not be used in this guide, but you can of course use it for yourself to make grinding artifacts easier. It is generally recommend to export before doing excavations though, so you have the option to go back if you missed.
 
-You'll probably have noticed by now that Demons really don't need any excavations to get to the Mercenary range (~e33 gems), so this is a good point to go for artifacts (in additon to the end of Rs of course).
+You'll probably have noticed by now that Demons really don't need any excavations to get to the Mercenary range (~e33 gems), so this is a good point to go for artifacts (in addition to the end of Rs of course).
 
 1) Global Artifacts (the first 5):
 Rough Stone: 2% chance in any era where you excavate, hopefully you get this one accidentally at some point as grinding for it is a bit annoying (but of course possible - be at low excavations and spam abdicate). Not needed until about R25.
@@ -63,7 +63,7 @@ Fossilized Rodent: 0.05 per 1h this R (assuming 7 clicks per second, standard du
 As a rough rule of thumb you have about a 50% chance of getting it every day you play past the very early Rs (if you don't grind for it). If you know your current R is going to be long anyway (overnight etc.) it might be a good idea to not use your excavations early for a better chance at this artifact.
 Power Orb: 3-10, pretty easy, especially with mercs
 
-The next 24 artifacts are faction specific, 2 per faction, in order of the champion trophies (fairies to mercs). I will order them by difficulty (the first artifact is generally eaiser):
+The next 24 artifacts are faction specific, 2 per faction, in order of the champion trophies (fairies to mercs). I will order them by difficulty (the first artifact is generally easier):
 
 Druid 1: easy, needs the same amount of each building to be available
 Drow 1: easy, needs no clicks this era (clicks can be temporarily disabled in options)
@@ -96,7 +96,7 @@ R16+ Artifacts:
 Fortune Teller Machine: 1 (no faction)
 Dawnstone/Duskstone: about 1, main difficulty is that they're only available in the morning/evening, their upgrade is useful, but not necessary
 
-The remaining artifacts will be explicity covered in this guide (or are A1+).
+The remaining artifacts will be explicitly covered in this guide (or are A1+).
 
 
 
@@ -152,7 +152,7 @@ You should be able to get past R15 without major issues.
 
 
 
-PART 4: R16-R23 Resarch
+PART 4: R16-R23 Research
 
 One of the first things you should get in R16 is the Vanilla Flavour Juice artifact as Demon (it's very easy). This buffs specifically vanilla (not prestige!) factions, so avoid buying Drow until they are actually useful (you can treat this as a small practice for later).
 Keep your excavations low, at about e50 gems use the evil buildings buff build to get the Voodoo Doll artifact. If you miss (unlikely) try again at higher gems or next R. Use mercs to get back up to about e72 gems. This is the last R you'll need Necro Lightning.
@@ -160,10 +160,10 @@ Keep your excavations low, at about e50 gems use the evil buildings buff build t
 We'll use Vanilla Factions a lot now, so it's a good idea to do some challenges. Do at least the very fast ones (FRC1, FRC2, ELC1, UDC1, UDC2). Also once you get GBC1 (this is random) do GBC2.
 
 Unlocking Research:
-Getting to R16 gave the ability to unlock Research. But making Research actually viable for production will require many, many small indivdual unlocks:
+Getting to R16 gave the ability to unlock Research. But making Research actually viable for production will require many, many small individual unlocks:
 
 Step 1: Unlocking Research Facilities:
-Go to Fairy, ELf, Angel, Goblin, Undead and Demon to unlock their unique building and reseach facility. Don't go Dwarf/Drow! Unlocking each facility also gives a massive 100k% production boost for that faction! After unlocking each facility immediately abdicate, don't go into the research tab yet.
+Go to Fairy, ELf, Angel, Goblin, Undead and Demon to unlock their unique building and research facility. Don't go Dwarf/Drow! Unlocking each facility also gives a massive 100k% production boost for that faction! After unlocking each facility immediately abdicate, don't go into the research tab yet.
 
 Step 2: Upgrading Research Facilities with Goblins:
 Go FCGB (short notation for Facelessline Goblin, Bloodline Faction is always written first). Now take a look at the research tab. We have 6 facilities, each of them can be upgraded 136 times, with increasing costs. You can use the buy all button at the top to quickly upgrade all facilities.
@@ -193,7 +193,7 @@ Step 3: Unlocking ALL the researches
 Now the only researches left should be the timewalls. We will get (almost) all of them in one merc run:
 Evil, Elfline - FR4,EL1,EL8,AN1,AN5,GB5,DN4,SP:Hellfire Blast,SP:Fairy Chanting (the remaining upgrades don't matter)
 Run the build for about 2h, at least 1h offline. Go DM, UD & FR to actually unlock the researches. Then go Elf. You might still need some clicks/Elven Lucks. In that case now is a great time to do ELC2 (it takes 50 min), otherwise you can delay it to R18.
-Now you have unlocked every research and you're able to use the R16 FCGB build for production. Remember that Vanilla Flavor Juice gives a 2500% boost, but only in the first 5 mins. Therefore the typical run length for a vanilla research prodcution build is 5 mins (or less). 
+Now you have unlocked every research and you're able to use the R16 FCGB build for production. Remember that Vanilla Flavor Juice gives a 2500% boost, but only in the first 5 mins. Therefore the typical run length for a vanilla research production build is 5 mins (or less).
 A couple 5 min runs should get you to R gems.
 
 R17: Also remember that getting the research facilities gave a massive 100k% prod boost (only to vanilla factions!). With that even a maxed out Drow faction gives barely more production than just pure Demons. 
@@ -247,7 +247,7 @@ After E300 you can also get W290.
 Now go UDFC. Just importing the Titan build for some reasonable researches is enough to unlock W300. Also manually buy E135, so you can get D290.
 Spam abdicate for S300 (thankfully it's only 8 casts). This will also get Faceless Overmind if you don't have that yet.
 
-Fianlly go GBDD with E135 to quickly get E290 & D300 (just fill up with researches from the R26 Druid build).
+Finally go GBDD with E135 to quickly get E290 & D300 (just fill up with researches from the R26 Druid build).
 
 Now some neutral challenges:
 
@@ -340,8 +340,6 @@ It also does a few subtle things:
 - free resets! You will now be able to reset excavations without spending rubies (try it out, you'll get a trophy!). You can do about 5 resets every R before they get too expensive (the cost resets every R, but also depends on the R).
 - Reverse Autocasting can now be unlocked, allowing you to cancel spells (using R + click), making spell cycling and casting goals much faster
 - Dragon unlock! In the first few Rs of A1 you will work on unlocking Dragons, the neutral prestige faction. Doing the different stages of the Dragon unlock will also unlock more and more spell tiers, another new A1 mechanic.
-
-
 
 
 
