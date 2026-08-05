@@ -1,0 +1,136 @@
+ensteffahn — 4/12/25, 6:46 PM
+R40-48+ Dwarfline Goblin
+S50,S200,S330,S400,S475,C80,C120,C150,C340,C400,D55,D200,D250,D320,D650,E80,E330,E425,E450,E575,E700,A10,A105,A150,A400,A510,W25,W120,W180,W205,W250,W400,W600
+Note: the build works fine without flame of bondelnar (get Drow before importing), swap E80 > E290 to excavate for it (don't forget about free resets)
+
+Dragon unlock: ⁠ascension-1⁠ 
+tonberry pancakes — 2/11/26, 11:49 AM
+Drakeling: do the first hour with mercs to get Goblins Greed T2 as well (so use GG & HfB)
+
+Dragon:
+Druidline Fairy
+S105,S180,S200,S330,S400,S475,C105,C150,C250,C330,C340,C400,C475,D150,D200,D250,D270,D330,E145,E320,E400,E450,E510,A30,A150,A305,A400,A575,W120,W180,W250,W400,W650
+
+Elder Dragon:
+Undeadline Titan
+S200,S215,S330,S400,S475,C105,C250,C330,C340,C375,C400,D150,D200,D250,D270,D350,E145,E300,E320,E425,E450,A120,A150,A250,A305,A400,W120,W135,W180,W200,W250,W400
+tonberry pancakes — 2/11/26, 2:24 PM
+Dragon build Megapost
+
+A1 Plot: ⁠ascension-1⁠
+
+general note: most important Dragon's Breath Color:
+Red for unique buildings
+Green for non-unique buildings
+
+Faction recommendations:
+R48-60: Titan
+R61-64: Faceless
+R65-73: Druid
+R74+: Faceless
+Feel free to try out the different builds though and use what you like!
+
+Dragon Challenges:
+1: Gobline Titan S135,S200,S215,S330,S400,C105,C340,C375,C400,C1300,C1325,D250,D350,D1175,D1275,D1375,E135,E150,E300,E425,E1225,A105,A150,A270,A305,A400,W180,W200,W250,W290,W400,W1375
+2: S200,S215,S330,S400,S550,C105,C330,C340,C400,C1325,D250,D270,D300,D1275,D1375,E145,E150,E425,E450,E1225,E1425,A120,A150,A305,A375,A1200,A1500,W180,W200,W250,W1375,W1400
+Bloodline options: dwarf for production (DG7), Faceless for max mana, Dragon to complete the challenge (the final 1e9 mana)
+4: Titanline Faceless S200,S215,S330,S400,S1450,S1500,C105,C305,C340,C1300,C1325,D250,D290,D320,D1175,D1275,D1375,E135,E150,E425,E450,E1225,A150,A300,A305,A400,A1325,W180,W200,W300,W400,W1375
+5: use Angel Bloodline
+6: ⁠ascension-1⁠
+
+check list for things that might be missing by R65 (this is where things start slowing down):
+Dragon Challenge 3
+all T2 spells
+Trophies: Genealogist, Autoclicker, Spell Cataclysm, Colorful Autocasting, Prismatic Mana, Exchange High Lord, Iron Rush
+
+Demonline Demon (Drow Perk 1 buff) - ignore this if you just got dragons
+S215,S330,S400,S525,S1275,C105,C150,C340,C400,C1325,D250,D270,D650,D1275,D1375,E135,E230,E320,E450,E575,A25,A305,A400,A550,A1325,W120,W175,W180,W200,W250,W400,W600,W1375
+Note: should be run exactly once (in R67 or a bit earlier), for about an hour
+Lineage Leveler (Pre-Mercs)
+Faction: Titan
+
+S30,S105,S200,S400,S475,C105,C250,C330,C375,C400,C1325,D150,D250,D270,D350,D1375,E145,E300,E320,E425,E450,A120,A150,A250,A305,A1325,W135,W200,W250,W400,W1375,W1400
+If you have some offline time, do C330 -> C305
+
+Start with Undeadline first
+Make sure Lightning Strike hits a high tier building other than Halls e.g. Ancient Pyramids or Wyrm's Dens
+
+For Dragonline, use Goblins
+For Titanline, use Faceless
+It's not necessary for those two to be fully optimised, level 11-12 is enough for genealogist
+all merc research builds (R75-99)
+
+Merc Research unlock (e80 gems recommended):
+UB unlock: Neutral Merc Gobline FR1,FR5,GB3,GB5,GB7,TT9,DN2,DN4,DW7,DG3,DG4,DG7,SP:Lightning Strike,SP:Dragon's Breath
+secrets: Neutral Merc Dwarfline FR5,GB3,GB5,GB7,UD7,TT2,DD3,DN4,DW7,DG2,DG4,DG7,SP:Fairy Chanting,SP:Dragon's Breath
+
+R77+ merc starter (works at e75 gems)
+Neutral Dwarfline A2950: Fairy
+FR4,EL2,GB3,GB5,GB7,UD7,DD3,DN4,DW7,DG2,DG4,DG7,SP:Fairy Chanting,SP:Dragon's Breath,S200,S330,S400,S1450,S3200,C340,C700,C1300,C1325,C3000,C3100,D250,D700,D1275,D2850,D3350,E150,E300,E425,E1225,E3250,A30,A150,A375,A575,A2950,A3400,W180,W200,W300,W1400,W3150
+Note: use this to get enough gems for the production builds
+Note: R90 gives an extra research slot, this build already contains extra researches, but they won't be used until then
+
+General Note:
+merc builds can be buffed by:
+dragon time (DGH)
+min alignment time (W3150)
+offline time (C305, S435)
+longest era (FC3)
+max assistants (W275)
+
+(more builds in the following posts)
+R75: Use Faceless, but remember to get the Know Your Enemy 2 artifact this R (do an excavation reset if needed)
+
+R76-81 Evil Gobline 
+FR1,FR5,GB3,GB7,UD7,FC3,FC5,DN4,DW7,DG2,DG4,DG7,MA:DM7,SP:Fairy Chanting,SP:Dragon's Breath,S200,S400,S1450,S2900,C305,C700,C1300,C1325,D250,D700,D1275,D2850,E150,E230,E300,E425,E1225,A30,A150,A375,A575,W120,W180,W200,W300,W400
+R77: C305 > C3000, A375 > A2950 (Fairy)
+R79: W120 > W3150
+R81: FR1,FR5,EL5,GB3,GB7,UD7,FC3,DN4,DW7,DG2,DG4,DG7,MA:DM7,SP:Fairy Chanting,SP:Dragon's Breath,S200,S400,S1450,S2900,C700,C1300,C1325,C3000,D250,D700,D1275,D2850,E300,E575,E1225,E3250,E3300,A30,A150,A575,A2950,W180,W200,W300,W400,W3150
+
+R82-89 Neutral Fairyline A2950:Undead 
+FR1,EL2,EL5,GB3,GB7,UD7,DD6,DN4,DW7,DG2,DG5,DG7,SP:Dragon's Breath,SP:Grand Balance,S200,S400,S2900,S3200,C340,C700,C1300,C1325,C3000,D250,D350,D700,D1275,E150,E1225,E3250,E3300,A30,A375,A575,A1200,A2950,W200,W300,W3050,W3150
+req: primal balance 10
+
+R90+ Good Mercs Fairyline A2950: Undead
+FR1,FR4,FR5,GB3,GB9,UD7,FC3,DN4,DW2,DW7,DG6,DG7,MA:EL7,SP:Dragon's Breath,SP:Grand Balance,S200,S330,S400,S1275,S1500,S2900,C700,C1300,C1325,C3000,C3100,D250,D270,D625,D700,D1275,D1375,E150,E300,E425,E1225,E3300,A30,A150,A375,A575,A2950,W200,W650,W1400,W3050,W3150
+req: primal balance 10
+no RNG version: GB9 > GB7, S1500 > S215
+autoclicker version: GB9 > EL8, S200 > S175
+W300 buff (for lineages):
+Good Merc Undeadline 
+FR4,GB3,GB5,GB7,UD7,FC3,DN2,DN4,DW7,DG3,DG4,DG7,MA:EL7,SP:Fairy Chanting,SP:Combo Strike,S200,S330,S400,S1275,S1500,C105,C305,C700,C1325,D205,D250,D270,D300,D1375,E135,E320,E400,E1225,A305,A375,A575,A1500,W300,W600,W650,W1400
+
+lineage leveler:
+Neutral Merc (Undeadline first)
+FR4,EL1,GB5,GB7,TT7,DD3,FC3,DN4,DW7,DG2,DG4,DG7,SP:Dragon's Breath,SP:Lightning Strike,S200,S400,S475,S1500,C105,C250,C375,C400,C1325,D150,D250,D270,D1375,E300,E320,E425,E450,A120,A150,A305,A375,A575,W650,W1375,W1400
+Note: if done at R77, swap A120 -> Undead A2950 for the other lineages
+
+E3300 unlock build:
+Gobline Fairy
+S180,S200,S215,S330,S400,S550,C10,C80,C105,C120,C340,C400,C1325,D250,D320,D330,D1275,D1375,E50,E135,E145,E450,E510,A30,A150,A250,A575,A1325,W120,W180,W250,W650,W1375
+
+D3350 unlock build:
+Evil Merc Druidline A2950: Angel
+EL1,EL7,AN5,GB3,GB5,GB7,UD7,TT2,DN2,DN4,DG6,DG7,MA:DM7,SP:God's Hand,SP:Moon Blessing,S200,S400,S1500,S3200,C400,C700,C1325,C3100,D270,D300,D700,D1375,E300,E400,E425,E450,E3300,A300,A575,A1500,A2950,W200,W300,W320,W400,W1400
+Note: much easier after Veteran Figurine
+
+Primal Balance 10 buff build (R82+):
+PB+10 buff build Good Angeline A2950:Fairy
+FR1,FR4,AN5,GB3,GB5,GB7,UD7,TT2,DN4,DN9,DG3,DG7,MA:EL7,SP:Fairy Chanting,SP:Dragon's Breath,S200,S400,S1275,S1500,S2900,S3200,C225,C700,C1325,C3000,C3100,D200,D250,D270,D300,D330,D3350,E50,E135,E400,E1225,E3300,A30,A150,A575,A2950,A3400,W300,W1275,W1375,W1400,W3050
+Note: Can also get Mana Lake in a longer run in R90+
+draig121 — 6/23/26, 4:02 PM
+Stuck on r95->r99?? You can:
+
+Use this build:
+Evil,merc,bloodline should be faceless and angel(A2950)
+
+EL1,EL4,EL7,AN5,GB3,UD7,DM4,TT7,DD3,FC3,DN4,DG8,MA:DW7,SP:Dragon's Breath,SP:God's Hand
+
+merc: 
+S200,S525,S1450,S1500,S3200,C250,C305,C1300,C1325,C3100,D300,D700,D1275,D1375,D2850,E135,E145,E425,E450,E3250,E3300,A120,A300,A575,A1500,A2950,W180,W205,W400,W1375,W1400,W3050
+
+Take the lineage spell as faceless spell(brainwave)
+
+Build created by me. 
+All The spell tiers should be 2, 5 for the dragon, 
+Autocast everything with tax collection at the number 9. 

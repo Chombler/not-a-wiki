@@ -1,0 +1,41 @@
+Cyden the illiterate — 6/14/20, 5:05 AM
+don't type for a few sec pls
+(it's gonna be quite long)
+bruh
+How offline works in RG (and offline spell tier leveling) 
+Basic info: offline is triggered when the game is closed for at least 1 minute, and capped at 30 full days (after that the game will only shows "more than a month" without actually calculating any further than 30 days). During this time, no spells are casted
+When you go back from offline to online, the game will calculate your offline gains in the following order: production -> faction coins (FC) -> time -> mana -> spell casts -> clicks -> spell time -> event resources. 
+Offline production & FCs is quite simple. You gain however much coin/second you have online (no spells or upgrades that don't work offline running) times your offline production (pc: hover over the hourglass icon; mobile: hold your coin amount) for every second you spend offline. And similarly, your FC gain offline is equal to your FC/second by assistants (assistants * FC chance * assistant's FC multiplier (like Elf's 4th "Elven Emissary") ) times offline FC chance (as far as I know is only triple weirdness). This, for most of the time, is quite useless since FCs gotten via TC (with Coin Pillage) or excavation is much better in a much shorter period of time. 
+Offline clicks: Read the description of upgrades that autoclick for you (like elf bloodline), if you see "Also generates the same amount of clicks while offline" then that upgrade ... well... works offline! Notable example of click sources that don't work offline is Moon Blessing (elf's spell) with Sun Blessing upgrade, since as you know: spells don't work offline. But to compensate, the "___ Treasure" upgrade series - from "Sturdy Treasure" (costing 500 coins) to "Eternal Treasure" (costing 5 Qa / 5e16 coins) - will each give you 1 click/second only when offline, for a total of 6 cps. 
+Offline time: this step is simply for calculating how long you've been offline, then increase upgrades that scales with time (think Drow's 4th "Mana Addict") in accordance. 
+Offline event resources: virtually no differences from online.
+Then, it's mana-related stuff, this will involve a bit of calculating but i'll try to keep this simple:
+Spells do not work offline, put Call to Arm on autocast and go offline for as long as you want, it won't get casted a single time. Instead, spells & mana work in an entirely different way offline, depending on your bought autocast: Basic, Improved, Masterful, Priority, Contigency, Planned, Efficient, Reverse and Tiered (the last two is R40+) 
+Offline mana produced: With Basic (autocast), you produce 10% of your online regen whenever you go offline, for example: if you have 1000 m/s while online (again with not spells running), 100 mana will be added to your "Mana Produced" stat for each second offline. This improves to 25% / 60% / 70% / 80% / 90% / 100% if you have Improved / Masterful / Planned / Efficient / Reverse / Tiered respectively. Your mana produced per second is still capped by your max mana. 
+Offline regen: Exactly the same as offline mana produced, but does not get capped by max mana. This is not an actual ingame stat, and is mainly used for calculation purposes 
+Offline spell cast: Again, spells do not work offline. Instead, starting from Priority you increase your spell cast count (you can view it by hovering/holding your ingame mana bar) by 1 per minute, improves to 3 / 5 / 7 with Contigency / Planned / Efficient. That amount is then increased multiplicatively by these factors (also stacks multiplicatively with each other):
+
+1000 * log10(1 + x)% via Reverse autocast
+1000 * log10(1 + x)% via Tiered autocast
+10 * log10(1 + x)% via Angel's 5th "Angelic Wisdom"
+10 * log10(1 + x)% via Angel's challenge reward "God's Throne"
+10 * log10(1 + x)% via Drow's challenge reward "Versatile Combo"
+150% via Research S50 "Conjuration"
+300% via Research D275 "Meditation"
+1200% via Research S3200 "Manipulation"
+(Where x is your offline regen).
+
+Note that the spell cast that increase is only the generic spell cast stats (shown above), specific spell cast like Call to Arm cast or Tax Collection cast will not increase. 
+Offline spell activity time: Masterful allows you to gain spell activity time offline following the formula: 
+x = 100 * [Offline regen] * [Spell dur] / ([# of autocasted spells excluding TC] * [Spell cost] ^ 1.5).
+
+Apply for each individual spell, offline regen is equal to regen with no spells active, duration in seconds, and tier (R42+) is irrelevant.
+
+"x" is the percentage of activity time the spell will get when you go offline. To put it another way, when you're offline, x% of the time you spent offline is added to the spell's activity time. Capped at 100% for obvious reason.
+
+For example, if you get x=63 for Gems Grinder, x=16 for Spiritual Surge and then go offline for 8 hours, you will get 5 hours 2 minutes 24 seconds (63% of 8 hours) of Gems Grinder time and 1 hour 16 minutes 48 seconds (16% of 8 hours) of Spiritual Surge time.
+
+TL/DR:
+Offline <= online, Have enough regen and offline = online
+YOU WILL STILL NOT GAIN SPELL CAST COUNT FOR ANY OF THESE SPELLS OFFLINE 
+k, I'm done
