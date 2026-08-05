@@ -121,7 +121,7 @@
     <div class="guide-placeholder-grid">
         <a class="guide-placeholder guide-placeholder-link" href="/realm/A0Guide"><strong>A0 guide</strong><span>R0–R39 walkthrough, plot &amp; builds</span></a>
         <a class="guide-placeholder guide-placeholder-link" href="/realm/A1Guide"><strong>A1 guide</strong><span>R40–R99 plot, research &amp; builds</span></a>
-        <div class="guide-placeholder"><strong>A2 plot</strong><span>R100–R159</span><small>4.3 source pending</small></div>
+        <a class="guide-placeholder guide-placeholder-link" href="/realm/A2Guide"><strong>A2 guide</strong><span>R100–R159 plot, challenges &amp; builds</span></a>
         <div class="guide-placeholder"><strong>Progression builds</strong><span>Indexed by R range</span><small>Discord pins being collected</small></div>
     </div>
 </section>

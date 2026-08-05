@@ -24,6 +24,7 @@ $pageLabels = array(
     'Changes' => 'Latest Major Patch',
     'A0Guide' => 'Ascension 0 Guide',
     'A1Guide' => 'Ascension 1 Guide',
+    'A2Guide' => 'Ascension 2 Guide',
 );
 $pageTitle = isset($pageLabels[$pageKey]) ? $pageLabels[$pageKey] : preg_replace('/(?<!^)([A-Z])/', ' $1', $pageKey);
 $siteName = 'Realm Grinder Reference';
@@ -198,7 +199,7 @@ function shohid(element) {
                     <ul>
                         <li><a href="/realm/A0Guide">A0 guide &amp; builds</a></li>
                         <li><a href="/realm/A1Guide">A1 guide &amp; builds</a></li>
-                        <li class="placeholder-nav-item"><span>A2 plot</span><small>4.3 source pending</small></li>
+                        <li><a href="/realm/A2Guide">A2 guide &amp; builds</a></li>
                         <li class="placeholder-nav-item"><span>Progression builds</span><small>being collected</small></li>
                     </ul>
                 </section>

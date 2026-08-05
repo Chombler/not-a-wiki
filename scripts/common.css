@@ -2093,6 +2093,110 @@ hr {
     line-height: 1.45;
 }
 
+.a2-guide-body {
+    padding: 4px 12px 14px;
+}
+
+.a2-guide-body > h2 {
+    margin: 24px -3px 10px;
+    padding: 7px 8px;
+    border: 1px solid #666;
+    background: linear-gradient(#343434, #222);
+    font-size: 18px;
+}
+
+.a2-guide-body > h3 {
+    margin: 18px 0 7px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #655633;
+    color: #dfc77e;
+    font: 700 15px Georgia, "Times New Roman", serif;
+}
+
+.a2-guide-body > h4 {
+    margin: 16px 0 5px;
+    color: #ddd;
+    font-size: 13px;
+}
+
+.a2-guide-body > h5 {
+    margin: 10px 0 3px;
+    color: #a9986a;
+    font-size: 9px;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+}
+
+.site-main .a2-guide-body > p {
+    max-width: 96ch;
+}
+
+.site-main .build-metadata {
+    display: grid;
+    grid-template-columns: 90px minmax(0, 1fr);
+    gap: 8px;
+    max-width: 70ch;
+    margin: 0;
+    padding: 3px 6px;
+    border-bottom: 1px solid #303030;
+    background: #171717;
+}
+
+.build-metadata strong {
+    color: #999;
+    font-size: 9px;
+    letter-spacing: .05em;
+}
+
+.build-metadata span {
+    color: #ddd;
+    font-size: 11px;
+}
+
+.site-main .guide-bullet {
+    position: relative;
+    margin: 2px 0;
+    padding-left: 14px;
+    color: #d1d1d1;
+    font-size: 12px;
+}
+
+.guide-bullet::before {
+    position: absolute;
+    left: 2px;
+    content: "•";
+    color: #b39755;
+}
+
+.guide-bullet-1 {
+    margin-left: 16px !important;
+}
+
+.guide-bullet-2,
+.guide-bullet-3 {
+    margin-left: 32px !important;
+}
+
+.guide-format-row {
+    display: grid;
+    grid-template-columns: minmax(150px, .65fr) minmax(0, 1.35fr);
+    gap: 10px;
+    padding: 6px 8px;
+    border-bottom: 1px solid #3e3e3e;
+    background: #151515;
+}
+
+.guide-format-row code {
+    overflow-wrap: anywhere;
+    color: #dbc478;
+    font-size: 10px;
+}
+
+.guide-format-row span {
+    color: #bbb;
+    font-size: 11px;
+}
+
 .template-import textarea {
     box-sizing: border-box;
     width: 100%;
@@ -2303,6 +2407,11 @@ hr {
     }
 
     .build-info {
+        grid-template-columns: 1fr;
+        gap: 3px;
+    }
+
+    .guide-format-row {
         grid-template-columns: 1fr;
         gap: 3px;
     }
