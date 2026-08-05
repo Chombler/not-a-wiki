@@ -35,7 +35,7 @@ Dragon Challenges:
 2: S200,S215,S330,S400,S550,C105,C330,C340,C400,C1325,D250,D270,D300,D1275,D1375,E145,E150,E425,E450,E1225,E1425,A120,A150,A305,A375,A1200,A1500,W180,W200,W250,W1375,W1400
 Bloodline options: dwarf for production (DG7), Faceless for max mana, Dragon to complete the challenge (the final 1e9 mana)
 4: Titanline Faceless S200,S215,S330,S400,S1450,S1500,C105,C305,C340,C1300,C1325,D250,D290,D320,D1175,D1275,D1375,E135,E150,E425,E450,E1225,A150,A300,A305,A400,A1325,W180,W200,W300,W400,W1375
-5: use Angel Bloodline
+5: At R65, use Angel Bloodline
 6: ⁠ascension-1⁠
 
 check list for things that might be missing by R65 (this is where things start slowing down):
