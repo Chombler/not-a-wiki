@@ -67,6 +67,57 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     }
+
+    var main = document.getElementById('main-content');
+    var toc = document.getElementById('page-toc');
+    var tocList = document.getElementById('page-toc-list');
+    if (main && toc && tocList) {
+        var headings = Array.prototype.slice.call(main.querySelectorAll('h2, h3'))
+            .filter(function (heading) {
+                return !heading.closest('.build-card, .research-build-row, .reference-panel-title, .autohide');
+            });
+        var h2Count = headings.filter(function (heading) { return heading.tagName === 'H2'; }).length;
+        if (headings.length > 28 && h2Count > 1) {
+            headings = headings.filter(function (heading) { return heading.tagName === 'H2'; });
+        }
+        var usedIds = {};
+        var tocLinksById = {};
+        headings.forEach(function (heading, index) {
+            var base = heading.id || heading.textContent.toLowerCase()
+                .replace(/[^a-z0-9]+/g, '-')
+                .replace(/^-|-$/g, '') || 'section-' + (index + 1);
+            var id = base;
+            var suffix = 2;
+            while (usedIds[id] || (document.getElementById(id) && document.getElementById(id) !== heading)) {
+                id = base + '-' + suffix++;
+            }
+            usedIds[id] = true;
+            heading.id = id;
+            var item = document.createElement('li');
+            if (heading.tagName === 'H3') item.className = 'page-toc-subsection';
+            var link = document.createElement('a');
+            link.href = '#' + id;
+            link.textContent = heading.textContent.trim();
+            tocLinksById[id] = link;
+            item.appendChild(link);
+            tocList.appendChild(item);
+        });
+        toc.hidden = false;
+        if (headings.length) {
+            if ('IntersectionObserver' in window) {
+                var links = tocList.querySelectorAll('a');
+                var observer = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (!entry.isIntersecting) return;
+                        links.forEach(function (link) { link.removeAttribute('aria-current'); });
+                        var active = tocLinksById[entry.target.id];
+                        if (active) active.setAttribute('aria-current', 'location');
+                    });
+                }, { rootMargin: '-15% 0px -75% 0px' });
+                headings.forEach(function (heading) { observer.observe(heading); });
+            }
+        }
+    }
 });
 
 function shohid(element) {
@@ -163,7 +214,7 @@ function shohid(element) {
             </nav>
         </aside>
 
-        <main class="site-main" id="main-content">
+        <main class="site-main" id="main-content" tabindex="-1">
             <?php if ($pageKey !== 'Home') { ?>
             <div class="page-utility">
                 <span class="page-context">Realm Grinder reference</span>
