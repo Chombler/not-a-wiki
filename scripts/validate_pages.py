@@ -18,7 +18,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--site", type=Path, default=Path("_site"))
     parser.add_argument("--base-path", default="/not-a-wiki")
-    parser.add_argument("--expected-pages", type=int, default=111)
+    parser.add_argument("--expected-pages", type=int, default=112)
     return parser.parse_args()
 
 
