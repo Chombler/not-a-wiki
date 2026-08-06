@@ -764,12 +764,40 @@ h7 {
     display: none;
 }
 
+.autohide:not([hidden]) {
+    display: block;
+}
+
+.shelementwhole > p:first-child[role="button"] {
+    position: relative;
+    padding-right: 2rem !important;
+    cursor: pointer;
+}
+
+.shelementwhole > p:first-child[role="button"]::after {
+    content: "▸";
+    position: absolute;
+    top: 50%;
+    right: .7rem;
+    transform: translateY(-50%);
+}
+
+.shelementwhole > p:first-child[role="button"][aria-expanded="true"]::after {
+    content: "▾";
+}
+
+.shelementwhole > p:first-child[role="button"]:focus-visible,
+details > summary:focus-visible {
+    outline: 3px solid var(--focus, #d8c47f);
+    outline-offset: 2px;
+}
+
 .autohide, .category {
     padding-left: 3%;
 }
 
 p {
-	word-break: break-word;
+	overflow-wrap: break-word;
 }
 
 /* Modern community shell -------------------------------------------------- */
@@ -1213,6 +1241,22 @@ img {
 table {
     max-width: 100%;
     border-collapse: collapse;
+}
+
+.site-main caption {
+    padding: .45rem .7rem;
+    color: var(--text);
+    font-weight: 700;
+    text-align: left;
+}
+
+.site-main tbody tr:nth-child(even) {
+    background: color-mix(in srgb, var(--panel-raised) 32%, transparent);
+}
+
+.site-main table:not(.imgtable):focus-within {
+    outline: 2px solid var(--focus, #d8c47f);
+    outline-offset: 2px;
 }
 
 .site-main table:not(.imgtable) {
