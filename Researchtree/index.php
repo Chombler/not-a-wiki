@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <?php include "../scripts/header.html"; ?>
-	<h6><img src="/realm/Factions/picks/ResearchTopPage.png"></h6>
+	<h6 class="page-corner-art"><img src="/realm/Factions/picks/ResearchTopPage.png" alt="Research"></h6>
 	<div id="calrps">
 		<style>
 			th, td {
@@ -13,13 +13,6 @@
 				background-color: #b3bcc6;
 			}
 		</style>
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
 		<table style="border-collapse: collapse">
 			<tr>
 				<th colspan="4">Maximum Research Points and Next-Point Cost Per Reincarnation</th>

@@ -4,11 +4,6 @@
 
 <head>
     <?php include "../scripts/header.html"; ?>
-        <br/>
-        <h6>Realm Grinder Reference</h6>
-        <br/>
-        <br/>
-        <br/>
         <p>Below is a list of acronyms, terms, and shortcuts used in Realm Grinder.</p>
         <br/>
         <p><b>Realm Grinder Reference</b>: RGR</p>
