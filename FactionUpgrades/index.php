@@ -3,9 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <?php include "../scripts/header.html"; ?>
-<br/>
 <h6><img src="/realm/Factions/picks/UpgradesTopPage.png" alt="Spellcraft" align="middle"></h6>
-<br/>
 <p><b>This page was put together for Mercenary builds.</b></p>
 <br/>
 <div class="shlisting">

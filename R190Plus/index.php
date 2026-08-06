@@ -4,7 +4,6 @@
   <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
   <?php include "../scripts/header.html"; ?>
   <h6><img src="/realm/Factions/picks/TopPageResearch.png" alt="Spellcraft" align="middle"></h6>
-  <br/>
   <div class="shlisting">
     <p><b>Production Builds</b></p>
     <div class="category">

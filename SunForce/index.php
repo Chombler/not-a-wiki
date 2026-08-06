@@ -4,7 +4,6 @@
 <head>
 <?php include "../scripts/header.html"; ?>
 	<h6><img src="/realm/Factions/picks/TopPageUpgrade.png" alt="Sun Force" align="middle"></h6>
-	<h6>Sun Force</h6>
 	<p>Obtained by excavating both the Dawnstone and Duskstone lore artifacts. It has different effects depending on the time of day.</p>
 	<p>Sun Force is unavailable starting in Ascension 4.</p>
 	<p>At R100+ in Ascension 2 or Ascension 3, you can find Planetary Force, which activates all Sun Force effects at once. See details below.</p>

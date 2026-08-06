@@ -4,7 +4,6 @@
 <head>
 <?php include "../scripts/header.html"; ?>
 	<h6><img src="/realm/Factions/picks/ReincarnationTopPage.png" alt="Spellcraft" align="middle"></h6>
-	<br/>
 	<p>Reincarnation was introduced in the Underworld Expansion. In terms of game-play, it's a second kind of soft reset where players can trade in all of their gems and have most of their stats reset for other bonuses.</p>
 	<p><b>Reincarnation Power</b></p>
 	<p>When you reincarnate the first time, you will automatically be awarded the</p>

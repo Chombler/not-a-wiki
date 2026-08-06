@@ -4,7 +4,6 @@
 <head>
 <?php include "../scripts/header.html"; ?>
 <h6><img src="/realm/Factions/picks/ResearchTopPage.png"></h6></a>
-<br/>
 <p>All Unique Buildings are only available with <b>Research</b></p>
 <h5>The Unique Buildings</h5>
 <p><b>Fairy</b></p>

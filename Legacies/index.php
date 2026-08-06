@@ -4,8 +4,6 @@
 <head>
 <?php include "../scripts/header.html"; ?>
 	<h6><img src="/realm/Factions/picks/LegacyBanner.png"></h6>
-	<p></p>
-	<h6>Legacies</h6>
 	<p><b>Requirement</b>: Ascension 4 (R220+)</p>
 	<p>This set of upgrade appears with no other unlock requirement.</p>
 	<p>With each Legacy Container you can choose a Legacy (equal to the set of 3 faction upgrades of the same tier) that doesn't match your current faction.</p>

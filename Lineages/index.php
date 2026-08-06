@@ -3,7 +3,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <?php include "../scripts/header.html"; ?>
-	<h6>Lineages</h6>
 	<p><b>Requirement</b>: R60+</p>
 	<p><b>Ascension 4 requirement</b>: Lineages become available again at R230.</p>
 	<p>At R60 you will unlock Lineages, which gives you access to powerful upgrades based on your chosen Bloodline in the form of perks, and will even allow you to use the spell of other Factions, provided you complete the respective lineage challenge.</p>

@@ -53,7 +53,6 @@
 	</style>
 	<?php include "../scripts/header.html"; ?>
 	<h6><img src="/realm/Factions/picks/SpellsTopPage.png"></h6>
-	<br/>
 	<p>Spells are an active component of the game mechanics that boost production. They require mana to be cast and <b>only work while playing online</b>.</p>
 	<p>Their duration, mana cost and effect bonus can be altered by getting specific Faction, Heritage, Challenge, or Research upgrades. Different aspects of the spells can also be used in other upgrades (while a spell is active, the number of spell casts, based on mana produced, etc.).</p>
 	<p>The trick to use spells efficiently relies on finding the best setting: Which spell combination to cast, at what timing, with which automatic-casting tool, and where to set the contingency arrow. Like for upgrades, these choices can make a crucial difference for your game progress.</p>

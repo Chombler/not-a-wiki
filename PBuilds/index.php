@@ -4,7 +4,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 <?php include "../scripts/header.html"; ?>
 	<h6><img src="/realm/Factions/picks/TopPageResearch.png" alt="Prestige Research" align="middle"></h6>
-	<br/>
 	<p><b>Before Reincarnation 30</b>: Make absolutely sure the Prestige Unique Building is unlocked and the <b><font color="Red">SECRET OF THE UNDERWORLD</font></b> quest is bought before reincarnating to R30.</p>
 	<p><b>Note</b>: Factions order is Angel > Mercenary > Fairy/Dwarf Research > Angel/Dwarf Research(R36-39)</p>
 	<div class="shlisting">

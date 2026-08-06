@@ -3,9 +3,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <?php include "../scripts/header.html"; ?>
-<br> 
-<br> 
-<h6>Resources</h6>
 <p>Resources used in Realm Grinder:
 <p><b>Mana</b>: A magic liquid necessary to cast spells.
 <p>A new Era starts with 500 current Mana and 1,000 base Maximum Mana.</p>
