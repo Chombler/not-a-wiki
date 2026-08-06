@@ -178,6 +178,19 @@ function shohid(element) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.site-main table:not(.imgtable)').forEach(function (table) {
+        if (table.parentElement && table.parentElement.classList.contains('table-scroll')) return;
+
+        var wrapper = document.createElement('div');
+        var caption = table.querySelector('caption');
+        wrapper.className = 'table-scroll';
+        wrapper.setAttribute('role', 'region');
+        wrapper.setAttribute('tabindex', '0');
+        wrapper.setAttribute('aria-label', caption && caption.textContent.trim() || 'Scrollable data table');
+        table.parentNode.insertBefore(wrapper, table);
+        wrapper.appendChild(table);
+    });
+
     document.querySelectorAll('.shelementwhole > p:first-child + .autohide').forEach(function (panel, index) {
         var trigger = panel.previousElementSibling;
         if (!trigger) return;
