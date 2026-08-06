@@ -3418,3 +3418,83 @@ hr {
         border-left: 0;
     }
 }
+
+/* Readability-focused typography ---------------------------------------- */
+body,
+.dropdown,
+button,
+input,
+select,
+textarea {
+    font-family: Verdana, Geneva, Tahoma, system-ui, sans-serif;
+}
+
+body,
+.dropdown {
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+.site-main :is(h1, h2, h3, h4, h5, h6),
+.site-brand strong,
+.progression-nav h2,
+.reference-home-header h1,
+.reference-panel-title h2,
+.guide-section-heading h2,
+.guide-build-card h3,
+.start-links strong,
+.guide-placeholder strong {
+    font-family: Verdana, Geneva, Tahoma, system-ui, sans-serif !important;
+}
+
+#rightcolumn p,
+.site-main p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.page-toc h2 {
+    color: #c8c8c8;
+    font: 700 12px/1.3 Verdana, Geneva, Tahoma, system-ui, sans-serif;
+}
+
+.page-toc a {
+    padding: 5px 6px;
+    color: #c8c8c8;
+    font: 600 14px/1.4 Verdana, Geneva, Tahoma, system-ui, sans-serif;
+}
+
+.page-toc .page-toc-subsection a {
+    padding-left: 16px;
+    color: #aaa;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.page-toc .page-toc-top {
+    color: #cdb474;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+html[data-theme="ledger"] .page-toc h2 {
+    border-color: #8b7d63;
+    color: #3c3328;
+}
+
+html[data-theme="ledger"] .page-toc a,
+html[data-theme="ledger"] .page-toc .page-toc-subsection a {
+    color: #433a30;
+}
+
+html[data-theme="ledger"] .page-toc a:hover,
+html[data-theme="ledger"] .page-toc a[aria-current="location"] {
+    border-left-color: #634a7c;
+    background: #b9aa8e;
+    color: #39204f;
+}
+
+html[data-theme="ledger"] .page-toc .page-toc-top {
+    border-color: #8b7d63;
+    color: #5c4218;
+}
