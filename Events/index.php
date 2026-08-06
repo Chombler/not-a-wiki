@@ -14,12 +14,6 @@
 		updateEventClock();
 		setInterval(updateEventClock, 1000);
 	</script>
-	<nav class="events-jump" aria-label="Events page sections">
-		<a href="#current-event-upgrades">Current upgrades</a>
-		<a href="#event-reference">Event reference</a>
-		<a href="#seasonal-upgrades">Seasonal upgrades</a>
-		<a href="#event-archive">Event archive</a>
-	</nav>
 	<h2 id="current-event-upgrades">Current event upgrades</h2>
 	<h3>Permanent seasonal feat rewards</h3>
 	<p>Once unlocked, each upgrade below is available during any Seasonal Event. Values shown are current as of game version 4.3.12.</p>
