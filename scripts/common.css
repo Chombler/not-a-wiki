@@ -3498,3 +3498,194 @@ html[data-theme="ledger"] .page-toc .page-toc-top {
     border-color: #8b7d63;
     color: #5c4218;
 }
+
+/* Arcane Ledger guide palette ------------------------------------------- */
+html[data-theme="ledger"] :is(
+    .guide-intro,
+    .guide-section,
+    .guide-build-entry,
+    .guide-build-entry-body,
+    .guide-combined-template,
+    .guide-reference-details,
+    .source-build-code,
+    .research-build-row,
+    .build-card
+) {
+    border-color: #8b7d63;
+    background: #d7cdb7;
+    color: #29251f;
+}
+
+html[data-theme="ledger"] :is(
+    .guide-section-heading,
+    .guide-build-group > header,
+    .build-group-title,
+    .guide-stage-grid a,
+    .guide-pager,
+    .guide-milestones,
+    .guide-template-actions,
+    .build-metadata,
+    .guide-format-row,
+    .source-attribution
+) {
+    border-color: #8b7d63;
+    background: #c6b99f;
+    color: #332c23;
+}
+
+html[data-theme="ledger"] :is(
+    .guide-group-note,
+    .guide-combined-template,
+    .guide-reference-details,
+    .source-build-code,
+    .guide-build-entry-body
+) {
+    background: #e2d8c3;
+}
+
+html[data-theme="ledger"] :is(
+    .guide-build-card,
+    .guide-build-entry,
+    .guide-build-entry-body,
+    .guide-combined-template,
+    .guide-template-segment,
+    .guide-template-actions,
+    .guide-reference-details,
+    .guide-reference-details > div,
+    .guide-build-group,
+    .guide-build-group > header,
+    .guide-group-note,
+    .guide-stage-grid,
+    .guide-stage-grid a,
+    .guide-pager,
+    .guide-pager a,
+    .guide-milestones,
+    .research-build-notes,
+    .research-build-notes p,
+    .research-build-row,
+    .source-build-code,
+    .build-metadata,
+    .guide-format-row,
+    .a3-source-links,
+    .a3-source-links a
+) {
+    border-color: rgba(91, 74, 49, .46) !important;
+}
+
+html[data-theme="ledger"] :is(
+    .guide-section-heading h2,
+    .guide-build-group > header h3,
+    .guide-build-summary-main strong,
+    .guide-build-card h3,
+    .build-card h4,
+    .research-build-row h4,
+    .a3-source-links strong
+) {
+    color: #3b284d !important;
+}
+
+html[data-theme="ledger"] :is(
+    .guide-kicker,
+    .build-group-title,
+    .guide-milestones > strong,
+    .guide-build-notes h4,
+    .guide-template-segment strong,
+    .guide-reference-details > summary,
+    .source-attribution strong,
+    .build-info > strong,
+    .build-credit strong
+) {
+    color: #5c4012 !important;
+}
+
+html[data-theme="ledger"] :is(
+    .guide-section-heading span,
+    .progression-plot figcaption,
+    .build-notes h3 small,
+    .guide-build-summary-meta,
+    .guide-build-group > header span,
+    .guide-pager span,
+    .guide-stage-grid span,
+    .build-credit,
+    .source-attribution span,
+    .a3-source-links span,
+    .build-metadata strong,
+    .guide-filter-bar label,
+    .guide-filter-bar span
+) {
+    color: #53493b !important;
+}
+
+html[data-theme="ledger"] :is(
+    .guide-group-note,
+    .guide-build-notes p,
+    .guide-reference-details p,
+    .guide-stage-summary,
+    .research-build-notes p,
+    .guide-format-row span,
+    .build-metadata span,
+    .guide-build-entry-body .build-entry-note,
+    .build-facts dd
+) {
+    color: #332e26 !important;
+}
+
+html[data-theme="ledger"] :is(
+    .guide-template-segment code,
+    .source-build-code code,
+    .research-build-row code,
+    .build-code code,
+    .guide-format-row code
+) {
+    color: #3f2e57 !important;
+}
+
+html[data-theme="ledger"] :is(
+    .guide-build-entry > summary:hover,
+    .guide-stage-grid a:hover,
+    .guide-pager a:hover
+) {
+    background: #b9aa8e;
+}
+
+html[data-theme="ledger"] :is(
+    .guide-template-actions button,
+    .copy-build,
+    .copy-template,
+    [data-copy-build]
+) {
+    border-color: #7f7159;
+    background: #bfb095;
+    color: #30271e;
+}
+
+html[data-theme="ledger"] :is(
+    .guide-template-actions button:hover,
+    .copy-build:hover,
+    .copy-template:hover,
+    [data-copy-build]:hover
+) {
+    background: #aa997a;
+    color: #251b2e;
+}
+
+html[data-theme="ledger"] :is(
+    .guide-filter-bar input,
+    .guide-build-search
+) {
+    border-color: #84765e;
+    background: #eee5d2;
+    color: #29251f;
+}
+
+html[data-theme="ledger"] .guide-pager a {
+    color: #4d315f;
+}
+
+html[data-theme="ledger"] .guide-milestones b {
+    color: #332818;
+}
+
+html[data-theme="ledger"] .guide-build-entry > summary::before {
+    color: #674d23;
+}
