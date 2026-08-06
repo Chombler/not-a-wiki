@@ -3259,14 +3259,13 @@ hr {
 /* Tables keep native table layout; this container owns responsive overflow. */
 .site-main .table-scroll {
     position: relative;
-    width: 100%;
+    width: fit-content;
     max-width: 100%;
     margin: .65rem 0 1rem;
     overflow-x: auto;
     border: 2px ridge #777;
     background: var(--panel-bg);
     overscroll-behavior-inline: contain;
-    scrollbar-gutter: stable;
 }
 
 .site-main .table-scroll:focus-visible {
@@ -3276,9 +3275,9 @@ hr {
 
 .site-main .table-scroll > table:not(.imgtable) {
     display: table;
-    width: 100%;
-    min-width: 100%;
-    max-width: none;
+    width: max-content;
+    min-width: 0;
+    max-width: 100%;
     margin: 0;
     overflow: visible;
     border: 0 !important;
@@ -3293,6 +3292,7 @@ hr {
 
     .site-main .table-scroll > table:not(.imgtable) {
         width: max-content;
+        max-width: none;
     }
 }
 
