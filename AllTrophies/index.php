@@ -1519,8 +1519,9 @@
 					<hr>
 				</div>
 			</div>
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">Building Trophies (566)</a></b></p>
-			<div class="category autohide">
+			<div class="shelementwhole">
+				<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">Building Trophies (566)</a></b></p>
+				<div class="category autohide">
 				<div class="shelementwhole">
 					<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">Farms (22)</a></b></p>
 					<div class="autohide">
@@ -3349,6 +3350,7 @@
 						<p><b>Requirements</b>: Build 100,000 units of any individual building.</p>
 						<p><b>Effect</b>: Unlocks a free upgrade that increases Faction Coins found with excavations by (x ^ 0.8)%, where x is buildings built.</p>
 					</div>
+				</div>
 				</div>
 			</div>
 		</div>

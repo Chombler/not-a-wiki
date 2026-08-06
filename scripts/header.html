@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', function () {
         wrapper.appendChild(table);
     });
 
-    document.querySelectorAll('.shelementwhole > p:first-child + .autohide').forEach(function (panel, index) {
+    document.querySelectorAll('[onclick*="shohid"] + .autohide').forEach(function (panel, index) {
         var trigger = panel.previousElementSibling;
         if (!trigger) return;
 
