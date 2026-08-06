@@ -1751,7 +1751,7 @@ body,
 
 .site-main {
     width: min(100%, var(--content-width));
-    padding: 18px clamp(14px, 3vw, 34px) 48px;
+    padding: 18px clamp(14px, 3vw, 34px) 16px;
 }
 
 .page-utility {
