@@ -26,11 +26,11 @@ html[data-theme="ledger"] {
     --line: #8a7d65;
     --line-strong: #695d48;
     --text: #29251f;
-    --text-muted: #675f52;
-    --brand: #634a7c;
-    --brand-bright: #4f356b;
+    --text-muted: #53493b;
+    --brand: #5b217a;
+    --brand-bright: #401453;
     --gold: #8b6424;
-    --link: #553773;
+    --link: #5b217a;
     --success: #356345;
     color-scheme: light;
 }
@@ -3688,4 +3688,150 @@ html[data-theme="ledger"] .guide-milestones b {
 
 html[data-theme="ledger"] .guide-build-entry > summary::before {
     color: #674d23;
+}
+
+/* Arcane Ledger contrast and accent corrections ------------------------- */
+html[data-theme="ledger"] a:hover,
+html[data-theme="ledger"] #rightcolumn a:hover,
+html[data-theme="ledger"] .progression-nav a:hover {
+    color: #401453;
+}
+
+html[data-theme="ledger"] :is(
+    .guide-section-heading h2,
+    .guide-build-group > header h3,
+    .guide-build-summary-main strong,
+    .guide-build-card h3,
+    .a3-source-links strong
+) {
+    color: #5b217a !important;
+}
+
+html[data-theme="ledger"] :is(
+    .site-brand small,
+    .site-status a,
+    .site-footer,
+    .page-filter-label,
+    .page-utility
+) {
+    color: #433a30;
+}
+
+html[data-theme="ledger"] :is(
+    .placeholder-nav-item small,
+    .reference-status dt,
+    .reference-link-list span,
+    .guide-placeholder span,
+    .a4-facility-grid span,
+    .guide-preview-note,
+    .site-main .guide-preview-note,
+    .faction-links strong,
+    .guide-section-heading span,
+    .progression-plot figcaption,
+    .build-notes h3 small,
+    .site-main .guide-contribute-note,
+    .guide-filter-bar label,
+    .guide-filter-bar span,
+    .build-filter-label,
+    .build-credit
+) {
+    color: #53493b !important;
+}
+
+html[data-theme="ledger"] :is(
+    .placeholder-nav-item small,
+    .reference-status dt,
+    .reference-link-list span,
+    .guide-placeholder small,
+    .faction-links strong,
+    .guide-section-heading span,
+    .build-notes h3 small,
+    .site-main .guide-contribute-note,
+    .guide-filter-bar label,
+    .build-filter-label,
+    .build-credit
+) {
+    font-size: 11px;
+}
+
+html[data-theme="ledger"] :is(
+    .progression-plot figcaption,
+    .guide-preview-note,
+    .site-main .guide-preview-note,
+    .a4-facility-grid span
+) {
+    font-size: 12px;
+}
+
+html[data-theme="ledger"] .guide-placeholder small {
+    display: inline-block;
+    width: fit-content;
+    padding: 2px 5px;
+    color: #5c4012;
+}
+
+html[data-theme="ledger"] .guide-entry-type {
+    padding: 2px 6px;
+    border-color: #936ba4;
+    background: #dcc6e5;
+    color: #4f1f6b;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .025em;
+}
+
+html[data-theme="ledger"] :is(
+    .section-status,
+    .guide-placeholder small
+) {
+    border-color: #9a793d;
+    background: #e3d3ac;
+    color: #5c4012;
+}
+
+html[data-theme="ledger"] .section-status {
+    padding: 3px 6px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+html[data-theme="ledger"] :is(
+    .guide-template-segment code,
+    .source-build-code code,
+    .research-build-row code,
+    .build-code code,
+    .guide-format-row code,
+    code
+) {
+    color: #4f1f6b !important;
+}
+
+html[data-theme="ledger"] :is(
+    .guide-pager a,
+    .guide-jump a,
+    .guide-section-heading > a
+) {
+    color: #5b217a;
+}
+
+html[data-theme="ledger"] :is(
+    .guide-pager a:hover,
+    .guide-jump a:hover,
+    .guide-section-heading > a:hover
+) {
+    color: #401453;
+}
+
+@media (max-width: 1180px) {
+    html[data-theme="ledger"] .guide-mobile-jump {
+        color: #53493b;
+        font-size: 11px;
+    }
+
+    html[data-theme="ledger"] .guide-mobile-jump select {
+        border-color: #84765e;
+        background: #eee5d2;
+        color: #29251f;
+        font: 12px Verdana, Geneva, Tahoma, system-ui, sans-serif;
+    }
 }
