@@ -1,15 +1,8 @@
 <?php
-function guide_credit($author = '', $updatedBy = '', $source = '', $version = '') {
+function guide_credit($author = '', $updatedBy = '') {
     $author = trim($author) !== '' ? $author : 'Uncredited community source';
     echo '<footer class="build-credit"><span><strong>Original build:</strong> ' . htmlspecialchars($author) . '</span>';
     if (trim($updatedBy) !== '') echo '<span><strong>Updated by:</strong> ' . htmlspecialchars($updatedBy) . '</span>';
-    if (trim($source) !== '' || trim($version) !== '') {
-        echo '<details class="build-credit-details"><summary>Provenance</summary><span>';
-        if (trim($source) !== '') echo '<strong>Source:</strong> ' . htmlspecialchars($source);
-        if (trim($source) !== '' && trim($version) !== '') echo ' · ';
-        if (trim($version) !== '') echo '<strong>Version:</strong> ' . htmlspecialchars($version);
-        echo '</span></details>';
-    }
     echo '</footer>';
 }
 
@@ -44,7 +37,7 @@ function guide_compact_build($name, $type, $template, $facts = array(), $notes =
             echo '<div class="source-build-code"><code>' . htmlspecialchars($template) . '</code><button type="button" data-copy-build="' . htmlspecialchars($template, ENT_QUOTES) . '">Copy build</button></div>';
         }
     }
-    guide_credit($author, '', $source, $version);
+    guide_credit($author);
     echo '</div></details>';
 }
 

@@ -137,7 +137,7 @@ function render_a4_build_index($builds) {
         echo '<div class="guide-build-configs">';
         foreach ($build['codes'] as $code) echo '<div class="source-build-code"><code>' . htmlspecialchars($code) . '</code><button type="button" data-copy-build="' . htmlspecialchars($code, ENT_QUOTES) . '">Copy</button></div>';
         echo '</div>';
-        guide_credit(isset($build['facts']['Author']) ? $build['facts']['Author'] : '', isset($build['facts']['Updated by']) ? $build['facts']['Updated by'] : '', 'A4 community build document', '4.3.11');
+        guide_credit(isset($build['facts']['Author']) ? $build['facts']['Author'] : '', isset($build['facts']['Updated by']) ? $build['facts']['Updated by'] : '');
         echo '</div></details>';
     }
 }

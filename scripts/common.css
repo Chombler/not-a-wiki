@@ -2146,20 +2146,6 @@ hr {
     text-transform: uppercase;
 }
 
-.build-credit-details {
-    color: #8f8775;
-}
-
-.build-credit-details summary {
-    cursor: pointer;
-    color: #9d9279;
-}
-
-.build-credit-details span {
-    display: block;
-    padding-top: 4px;
-}
-
 .guide-build-index {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));

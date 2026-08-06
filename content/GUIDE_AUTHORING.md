@@ -81,7 +81,6 @@ Do not create an apparent build entry for general advice. Keep reminders, milest
 - `UPDATED BY` records later balance, version, or routing changes.
 - Do not credit a transcriber, document owner, or AI as the original author.
 - If the original author is genuinely unknown, use `Uncredited community source`.
-- Keep the game version and source date accurate at the page level.
 
 ## Writing rules
 

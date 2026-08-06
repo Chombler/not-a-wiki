@@ -222,7 +222,7 @@ function a3_render_build($build) {
     echo '</dl><div class="guide-build-notes">';
     a3_render_lines($build['body']);
     echo '</div>';
-    guide_credit(isset($facts['Author']) ? $facts['Author'] : '', isset($facts['Updated By']) ? $facts['Updated By'] : '', 'A3 community build document', '4.3.11');
+    guide_credit(isset($facts['Author']) ? $facts['Author'] : '', isset($facts['Updated By']) ? $facts['Updated By'] : '');
     echo '</div></details>';
 }
 
