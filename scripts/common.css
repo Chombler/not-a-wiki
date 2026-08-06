@@ -3212,6 +3212,34 @@ hr {
     }
 }
 
+html[data-theme="ledger"] .guide-stage-grid {
+    border-color: #8b7d63 !important;
+}
+
+html[data-theme="ledger"] .guide-stage-grid a {
+    border-color: #8b7d63 !important;
+    background: #e2d8c3;
+    color: #29251f;
+}
+
+html[data-theme="ledger"] .guide-stage-grid strong {
+    color: #5b217a;
+}
+
+html[data-theme="ledger"] .guide-stage-grid span {
+    color: #433a30 !important;
+    font-size: 12px;
+    line-height: 1.45;
+}
+
+html[data-theme="ledger"] .guide-stage-grid a:hover {
+    background: #dcc6e5;
+}
+
+html[data-theme="ledger"] .guide-stage-grid a:hover strong {
+    color: #401453;
+}
+
 @media (max-width: 900px) {
     .site-shell {
         padding-bottom: 0;
