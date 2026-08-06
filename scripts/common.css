@@ -3314,6 +3314,20 @@ hr {
     }
 }
 
+.site-main .table-scroll > table:not(.imgtable) > tbody > tr {
+    transition: background-color 120ms ease-out;
+}
+
+.site-main .table-scroll > table:not(.imgtable) > tbody > tr:hover {
+    background-color: color-mix(in srgb, var(--panel-raised) 72%, var(--panel-bg));
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .site-main .table-scroll > table:not(.imgtable) > tbody > tr {
+        transition: none;
+    }
+}
+
 html[data-theme="ledger"] .guide-stage-grid {
     border-color: #8b7d63 !important;
 }
