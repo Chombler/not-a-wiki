@@ -3,7 +3,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <?php include "../scripts/header.html"; ?>
-	<h5>Current Permanent Seasonal Feat Rewards</h5>
+	<h6><img src="/realm/Factions/picks/EventsTopPage.png" alt="Events"></h6>
+	<p>Realm Grinder events take place during annual festivals such as Valentine, Easter, the Blood War, and Christmas. Participating can award event resources, temporary upgrades, permanent feat rewards, and cumulative bonuses.</p>
+	<p>Event progress persists through Abdications, Reincarnations, and Ascensions while the event is active. Temporary upgrades expire with their event; permanent feat rewards remain unlocked.</p>
+	<p><b>Event schedules use UTC.</b> Current UTC time: <time id="currentTime">Loading…</time></p>
+	<script>
+		function updateEventClock() {
+			document.getElementById("currentTime").textContent = new Date().toUTCString();
+		}
+		updateEventClock();
+		setInterval(updateEventClock, 1000);
+	</script>
+	<nav class="events-jump" aria-label="Events page sections">
+		<a href="#current-event-upgrades">Current upgrades</a>
+		<a href="#event-reference">Event reference</a>
+		<a href="#seasonal-upgrades">Seasonal upgrades</a>
+		<a href="#event-archive">Event archive</a>
+	</nav>
+	<h2 id="current-event-upgrades">Current event upgrades</h2>
+	<h3>Permanent seasonal feat rewards</h3>
 	<p>Once unlocked, each upgrade below is available during any Seasonal Event. Values shown are current as of game version 4.3.12.</p>
 	<table class="table">
 		<tr><th>Upgrade</th><th>Effect during a Seasonal Event</th></tr>
@@ -33,7 +51,7 @@
 		<tr><td>Hired Champions</td><td>Multiplicatively increase assistants by 25% for Good and Evil factions.</td></tr>
 		<tr><td>Underhanded Tactics</td><td>Increase Offline production bonus by 100%.</td></tr>
 	</table>
-	<h5>Current Temporary Event Purchases</h5>
+	<h3>Temporary event purchases</h3>
 	<p>These source-registered upgrades exist only while their associated event is active; they are listed separately from permanent feat rewards.</p>
 	<table class="table">
 		<tr><th>Upgrade</th><th>Current effect</th></tr>
@@ -45,20 +63,8 @@
 		<tr><td>Fight the Goblin Army</td><td>Increase Maximum Mana and Mana Regeneration by 1% per completed fight; the repeatable event cost increases as floor((x + 1) ^ 0.85), where x is completed fights.</td></tr>
 		<tr><td>Fight the Goblin Army!</td><td>Starts a fight against the invading Goblin Army.</td></tr>
 	</table>
-	<hr>
-	<h6><img src="/realm/Factions/picks/EventsTopPage.png"></h6>
-	<p>Realm Grinder Events take place at annual festivals such as Thanksgiving, Christmas, Easter etc. Playing during an Event gives the players special one-time Trophies and temporary and/or permanent perks.</p>
-	<p>Temporary Event upgrades work only during their event; permanent feat rewards remain available afterward. Event items, resources (including current stack size), event spell casts, and quest/feat progress persist throughout Abdications, Reincarnations, and Ascensions while the event is active.</p>
-	<p><b>Note: Event schedules use UTC.</b></p>
-	<p><b>Current UTC time:</b></p>
-	<p id="currentTime">
-	</p>
-	<script>
-		setInterval(function() {
-			document.getElementById("currentTime").innerHTML = new Date().toUTCString();
-		}, 1000);
-	</script>
-	<br/>
+	<h2 id="event-reference">Event reference</h2>
+	<p>The tables and panels below summarize cumulative event bonuses, the in-game Event Panel, and cosmetic rewards.</p>
 	<a id="Events"></a>
 	<center>
 		<table class="numtable">
@@ -923,8 +929,9 @@
 	<br>
 	<p><b>Requirement</b>: If you unlock certain event feats, you will permanently unlock a new color option for the mana bowl or new coin particles from that event.</p>
 	<p>Once unlocked these can be changed in the Event tab. (Only while no event is going on)</p>
-	<hr>
-	<div class="shlisting">
+	<h2 id="seasonal-upgrades">Seasonal upgrade archive</h2>
+	<p>These older permanent rewards are retained as a historical reference. Current source-registered rewards are summarized at the top of this page.</p>
+	<div class="shlisting events-seasonal-list">
 		<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">Seasonal Event Upgrades</a></b></p>
 		<div class="category autohide">
 			<div class="shelementwhole">
@@ -990,9 +997,9 @@
 			</div>
 		</div>
 	</div>
-	<hr>
-	<p><b>Events</b></p>
-	<div class="shlisting">
+	<h2 id="event-archive">Event archive</h2>
+	<p>Open a year, then an individual event, to view its quests, feats, upgrades, and original schedule.</p>
+	<div class="shlisting events-archive-list">
 		<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">Historical 2022 Events</a></b></p>
 		<div class="category autohide">
 			<div class="shelementwhole">
