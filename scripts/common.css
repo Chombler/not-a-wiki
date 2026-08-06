@@ -2,6 +2,276 @@ a.tooltips {
   position: relative;
   display: inline;
 }
+
+/* Arcane Ledger ---------------------------------------------------------- */
+.theme-toggle {
+    padding: 3px 7px;
+    border: 1px solid #777;
+    border-radius: 2px;
+    background: #252525;
+    color: #ddd;
+    font: inherit;
+    cursor: pointer;
+}
+
+.theme-toggle:hover {
+    color: #f2cf72;
+}
+
+html[data-theme="ledger"] {
+    --page-bg: #8f8674;
+    --shell-bg: #d8cfba;
+    --panel-bg: #d0c5ad;
+    --panel-raised: #c3b69c;
+    --line: #8a7d65;
+    --line-strong: #695d48;
+    --text: #29251f;
+    --text-muted: #675f52;
+    --brand: #634a7c;
+    --brand-bright: #4f356b;
+    --gold: #8b6424;
+    --link: #553773;
+    --success: #356345;
+    color-scheme: light;
+}
+
+html[data-theme="ledger"] body,
+html[data-theme="ledger"] .dropdown {
+    background:
+        radial-gradient(circle at 50% -10%, rgba(111, 81, 139, .22), transparent 34rem),
+        repeating-linear-gradient(90deg, rgba(255, 255, 255, .018) 0 1px, transparent 1px 5px),
+        var(--page-bg);
+    color: var(--text);
+}
+
+html[data-theme="ledger"] .site-shell {
+    border-color: #6d624f;
+    background: var(--shell-bg);
+    box-shadow: 0 0 28px rgba(31, 25, 18, .5);
+}
+
+html[data-theme="ledger"] .site-header,
+html[data-theme="ledger"] .site-footer {
+    border-color: #766b58;
+    background: #b9ad94;
+}
+
+html[data-theme="ledger"] .site-sidebar,
+html[data-theme="ledger"] .page-toc-inner {
+    border-color: #766b58;
+    background: #c7bda7;
+}
+
+html[data-theme="ledger"] .site-brand strong,
+html[data-theme="ledger"] .page-title,
+html[data-theme="ledger"] .site-main > h1,
+html[data-theme="ledger"] .site-main h2,
+html[data-theme="ledger"] .reference-home-header h1,
+html[data-theme="ledger"] .reference-panel-title h2,
+html[data-theme="ledger"] .site-main .reference-panel-title h2,
+html[data-theme="ledger"] .guide-section-heading h2,
+html[data-theme="ledger"] .build-card h4,
+html[data-theme="ledger"] .research-build-row h4,
+html[data-theme="ledger"] .a4-facility-grid strong,
+html[data-theme="ledger"] .guide-placeholder strong,
+html[data-theme="ledger"] .contribution-note strong,
+html[data-theme="ledger"] .guide-status-grid dd {
+    color: #2b251d;
+}
+
+html[data-theme="ledger"] #rightcolumn,
+html[data-theme="ledger"] #rightcolumn p,
+html[data-theme="ledger"] .site-main,
+html[data-theme="ledger"] .site-main p,
+html[data-theme="ledger"] .build-facts dd {
+    color: var(--text);
+}
+
+html[data-theme="ledger"] a,
+html[data-theme="ledger"] #rightcolumn a:link,
+html[data-theme="ledger"] #rightcolumn a:visited,
+html[data-theme="ledger"] .reference-link-list a,
+html[data-theme="ledger"] .start-links a {
+    color: var(--link);
+}
+
+html[data-theme="ledger"] a:hover,
+html[data-theme="ledger"] #rightcolumn a:hover,
+html[data-theme="ledger"] .progression-nav a:hover {
+    color: #39204f;
+}
+
+html[data-theme="ledger"] .site-brand small,
+html[data-theme="ledger"] .site-status a,
+html[data-theme="ledger"] .page-filter-label,
+html[data-theme="ledger"] .page-utility,
+html[data-theme="ledger"] .reference-home-header p,
+html[data-theme="ledger"] .start-links span,
+html[data-theme="ledger"] .guide-preview-note,
+html[data-theme="ledger"] .site-main .guide-preview-note,
+html[data-theme="ledger"] .guide-placeholder span,
+html[data-theme="ledger"] .faction-links strong,
+html[data-theme="ledger"] .contribution-note,
+html[data-theme="ledger"] .guide-section-heading span,
+html[data-theme="ledger"] .progression-plot figcaption,
+html[data-theme="ledger"] .build-notes h3 small,
+html[data-theme="ledger"] .site-main .guide-contribute-note,
+html[data-theme="ledger"] .guide-filter-bar label,
+html[data-theme="ledger"] .build-credit {
+    color: var(--text-muted);
+}
+
+html[data-theme="ledger"] .version-badge,
+html[data-theme="ledger"] .theme-toggle {
+    border-color: #766747;
+    background: #d1c3a5;
+    color: #392f22;
+}
+
+html[data-theme="ledger"] .theme-toggle:hover {
+    background: #ddd1b8;
+    color: var(--brand);
+}
+
+html[data-theme="ledger"] .page-filter,
+html[data-theme="ledger"] .guide-filter-bar input {
+    border-color: #8b7f69;
+    background: #e5dcc8;
+    color: var(--text);
+}
+
+html[data-theme="ledger"] .progression-nav h2,
+html[data-theme="ledger"] .reference-panel-title,
+html[data-theme="ledger"] .guide-section-heading,
+html[data-theme="ledger"] .site-main th,
+html[data-theme="ledger"] .shelementwhole > p:first-child {
+    border-color: #887a60;
+    background: linear-gradient(#c4b79c, #aa9d83);
+    color: #352d23;
+}
+
+html[data-theme="ledger"] .progression-nav a,
+html[data-theme="ledger"] .placeholder-nav-item,
+html[data-theme="ledger"] .progression-nav .guide-range-nav a {
+    border-color: rgba(93, 81, 61, .28);
+    color: #433a30;
+}
+
+html[data-theme="ledger"] .progression-nav a:hover {
+    background: #b9aa8e;
+}
+
+html[data-theme="ledger"] .progression-nav .guide-nav-era > a,
+html[data-theme="ledger"] .guide-build-card h3,
+html[data-theme="ledger"] .site-main .guide-build-card h3,
+html[data-theme="ledger"] .guide-kicker,
+html[data-theme="ledger"] .site-main .guide-kicker,
+html[data-theme="ledger"] .build-credit strong {
+    color: #6a4b18;
+}
+
+html[data-theme="ledger"] .page-title,
+html[data-theme="ledger"] .site-main > h1,
+html[data-theme="ledger"] .reference-home-header,
+html[data-theme="ledger"] hr,
+html[data-theme="ledger"] .site-main h2 {
+    border-color: #8b7d63;
+}
+
+html[data-theme="ledger"] .site-main table:not(.imgtable),
+html[data-theme="ledger"] .shelementwhole,
+html[data-theme="ledger"] .reference-status,
+html[data-theme="ledger"] .start-panel,
+html[data-theme="ledger"] .reference-panel,
+html[data-theme="ledger"] .faction-index,
+html[data-theme="ledger"] .guide-preview,
+html[data-theme="ledger"] .guide-intro,
+html[data-theme="ledger"] .guide-section,
+html[data-theme="ledger"] .guide-build-entry,
+html[data-theme="ledger"] .research-build-row,
+html[data-theme="ledger"] .build-card {
+    border-color: #8b7d63;
+    background: #d7cdb7;
+}
+
+html[data-theme="ledger"] .site-main th,
+html[data-theme="ledger"] .site-main td,
+html[data-theme="ledger"] .reference-status div,
+html[data-theme="ledger"] .start-links a,
+html[data-theme="ledger"] .reference-link-list li,
+html[data-theme="ledger"] .guide-preview-note,
+html[data-theme="ledger"] .guide-placeholder,
+html[data-theme="ledger"] .faction-links > div,
+html[data-theme="ledger"] .guide-section-heading,
+html[data-theme="ledger"] .build-notes article,
+html[data-theme="ledger"] .build-card,
+html[data-theme="ledger"] .guide-build-card,
+html[data-theme="ledger"] .guide-status-grid dt,
+html[data-theme="ledger"] .guide-status-grid dd {
+    border-color: rgba(99, 84, 60, .42) !important;
+}
+
+html[data-theme="ledger"] .reference-status,
+html[data-theme="ledger"] .section-status,
+html[data-theme="ledger"] .guide-jump a,
+html[data-theme="ledger"] .guide-section-heading > a,
+html[data-theme="ledger"] .build-info {
+    background: #c9b995;
+}
+
+html[data-theme="ledger"] .section-status,
+html[data-theme="ledger"] .guide-jump a,
+html[data-theme="ledger"] .guide-section-heading > a,
+html[data-theme="ledger"] .build-info {
+    border-color: #8c6b31;
+    color: #604313;
+}
+
+html[data-theme="ledger"] .build-group-title {
+    border-color: #8b7d63;
+    background: #b9aa8e;
+    color: #5f4317;
+}
+
+html[data-theme="ledger"] .build-code code,
+html[data-theme="ledger"] .research-build-row code,
+html[data-theme="ledger"] .source-build-code code,
+html[data-theme="ledger"] .guide-template-segment code,
+html[data-theme="ledger"] code {
+    color: #43325c;
+}
+
+html[data-theme="ledger"] .copy-build,
+html[data-theme="ledger"] .copy-template,
+html[data-theme="ledger"] [data-copy-build] {
+    border-color: #84765e;
+    background: #c6b99f;
+    color: #30291f;
+}
+
+html[data-theme="ledger"] .build-info > strong,
+html[data-theme="ledger"] .build-info code,
+html[data-theme="ledger"] .guide-status-grid dt,
+html[data-theme="ledger"] .build-facts dt {
+    color: #684b1c;
+}
+
+html[data-theme="ledger"] .site-main .build-info p {
+    color: #40382d;
+}
+
+html[data-theme="ledger"] #s-m-t-tooltip {
+    border-color: #675a47;
+    background: #e2d7c1;
+    color: #27221c;
+    box-shadow: 4px 5px 0 rgba(52, 43, 30, .35);
+}
+
+@media (max-width: 860px) {
+    .theme-toggle {
+        order: 3;
+    }
+}
 a.tooltips span {
   position: absolute;
   width:140px;

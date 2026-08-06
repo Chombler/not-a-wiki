@@ -55,8 +55,15 @@ $editUrl = 'https://github.com/chombler/not-a-wiki/edit/local-4.3.15/' . $source
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Current Realm Grinder reference information, formulas, unlocks, factions, artifacts, research, trophies, and progression.">
+<script>
+(function () {
+    var savedTheme = null;
+    try { savedTheme = localStorage.getItem('realm-reference-theme'); } catch (error) {}
+    document.documentElement.dataset.theme = savedTheme === 'night' ? 'night' : 'ledger';
+}());
+</script>
 <link rel="shortcut icon" href="/realm/scripts/favicon.ico">
-<link rel="stylesheet" type="text/css" href="/realm/scripts/common.css?v=20260805-guide-pager">
+<link rel="stylesheet" type="text/css" href="/realm/scripts/common.css?v=20260806-arcane-ledger">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="/realm/scripts/jquery.style-my-tooltips.js"></script>
@@ -74,6 +81,23 @@ document.addEventListener('DOMContentLoaded', function () {
         menuButton.addEventListener('click', function () {
             var isOpen = sidebar.classList.toggle('is-open');
             menuButton.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+    }
+
+    var themeButton = document.querySelector('.theme-toggle');
+    if (themeButton) {
+        var updateThemeButton = function () {
+            var night = document.documentElement.dataset.theme === 'night';
+            themeButton.textContent = night ? 'Arcane Ledger' : 'Castle Night';
+            themeButton.setAttribute('aria-pressed', night ? 'true' : 'false');
+            themeButton.title = night ? 'Switch to the Arcane Ledger theme' : 'Switch to the Castle Night theme';
+        };
+        updateThemeButton();
+        themeButton.addEventListener('click', function () {
+            var theme = document.documentElement.dataset.theme === 'night' ? 'ledger' : 'night';
+            document.documentElement.dataset.theme = theme;
+            try { localStorage.setItem('realm-reference-theme', theme); } catch (error) {}
+            updateThemeButton();
         });
     }
 
@@ -164,6 +188,7 @@ function shohid(element) {
             <span class="version-badge">Game version 4.3.12</span>
             <a href="/realm/Changes">Latest changes</a>
             <a href="https://github.com/chombler/not-a-wiki" target="_blank" rel="noopener">GitHub</a>
+            <button class="theme-toggle" type="button" aria-pressed="false">Castle Night</button>
         </div>
         <button class="site-menu-button" type="button" aria-expanded="false" aria-controls="site-sidebar">Browse</button>
     </header>
