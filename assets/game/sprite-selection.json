@@ -1,6 +1,12 @@
 {
   "sprites": [
     {
+      "sprite_name": "black_GoldTrim",
+      "kind": "ui",
+      "entity": "icon-frame",
+      "role": "frame"
+    },
+    {
       "sprite_name": "BuyFairyUpgradesTrophy",
       "kind": "trophy",
       "entity": "fairy-champion",

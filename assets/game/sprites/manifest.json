@@ -3,6 +3,28 @@
   "source": "Realm Grinder v4.3.15 desktop TexturePacker atlases",
   "sprites": [
     {
+      "key": "black-gold-trim",
+      "path": "assets/game/sprites/black-gold-trim.png",
+      "sprite_name": "black_GoldTrim",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1121,
+        "y": 718,
+        "width": 20,
+        "height": 20
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 20,
+        "height": 20
+      },
+      "kind": "ui",
+      "entity": "icon-frame",
+      "role": "frame"
+    },
+    {
       "key": "buy-fairy-upgrades-trophy",
       "path": "assets/game/sprites/buy-fairy-upgrades-trophy.png",
       "sprite_name": "BuyFairyUpgradesTrophy",

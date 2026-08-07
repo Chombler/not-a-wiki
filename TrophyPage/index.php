@@ -479,32 +479,32 @@
 	</map>
 	<map name="AllegiancesTrophies-map">
 		<area research="
-	<p><img src=&quot;/realm/assets/game/sprites/buy-fairy-upgrades-trophy.png&quot; align=&quot;middle&quot;><b> Fairy Champion</b></p>
+	<p><span class=&quot;game-icon-frame&quot;><img src=&quot;/realm/assets/game/sprites/buy-fairy-upgrades-trophy.png&quot; alt=&quot;&quot;></span><b> Fairy Champion</b></p>
 <p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 <p><b>Note</b>: This can be done at R0.</p>
 	" coords="3,43,57,97" shape="rect">
 		<area research="
-	<p><img src=&quot;/realm/assets/game/sprites/buy-elven-upgrades-trophy.png&quot; align=&quot;middle&quot;><b> Elven Champion</b></p>
+	<p><span class=&quot;game-icon-frame&quot;><img src=&quot;/realm/assets/game/sprites/buy-elven-upgrades-trophy.png&quot; alt=&quot;&quot;></span><b> Elven Champion</b></p>
 <p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 <p><b>Note</b>: This can be done at R0.</p>
 	" coords="63,43,117,97" shape="rect">
 		<area research="
-	<p><img src=&quot;/realm/assets/game/sprites/buy-angel-upgrades-trophy.png&quot; align=&quot;middle&quot;><b> Angel Champion</b></p>
+	<p><span class=&quot;game-icon-frame&quot;><img src=&quot;/realm/assets/game/sprites/buy-angel-upgrades-trophy.png&quot; alt=&quot;&quot;></span><b> Angel Champion</b></p>
 <p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 <p><b>Note</b>: This can be done at R0.</p>
 	" coords="123,43,177,97" shape="rect">
 		<area research="
-	<p><img src=&quot;/realm/assets/game/sprites/buy-goblin-upgrades-trophy.png&quot; align=&quot;middle&quot;><b> Goblin Champion</b></p>
+	<p><span class=&quot;game-icon-frame&quot;><img src=&quot;/realm/assets/game/sprites/buy-goblin-upgrades-trophy.png&quot; alt=&quot;&quot;></span><b> Goblin Champion</b></p>
 <p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 <p><b>Note</b>: This can be done at R0.</p>
 	" coords="183,43,237,97" shape="rect">
 		<area research="
-	<p><img src=&quot;/realm/assets/game/sprites/buy-undead-upgrades-trophy.png&quot; align=&quot;middle&quot;><b> Undead Champion</b></p>
+	<p><span class=&quot;game-icon-frame&quot;><img src=&quot;/realm/assets/game/sprites/buy-undead-upgrades-trophy.png&quot; alt=&quot;&quot;></span><b> Undead Champion</b></p>
 <p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 <p><b>Note</b>: This can be done at R0.</p>
 	" coords="243,43,297,97" shape="rect">
 		<area research="
-	<p><img src=&quot;/realm/assets/game/sprites/buy-demon-upgrades-trophy.png&quot; align=&quot;middle&quot;><b> Demon Champion</b></p>
+	<p><span class=&quot;game-icon-frame&quot;><img src=&quot;/realm/assets/game/sprites/buy-demon-upgrades-trophy.png&quot; alt=&quot;&quot;></span><b> Demon Champion</b></p>
 <p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 <p><b>Note</b>: This can be done at R0.</p>
 	" coords="303,43,357,97" shape="rect">
