@@ -1,40 +1,40 @@
 {
   "sprites": [
     {
-      "sprite_name": "Fairy Symbol",
-      "kind": "faction",
-      "entity": "fairy",
-      "role": "symbol"
+      "sprite_name": "BuyFairyUpgradesTrophy",
+      "kind": "trophy",
+      "entity": "fairy-champion",
+      "role": "icon"
     },
     {
-      "sprite_name": "Elven Symbol",
-      "kind": "faction",
-      "entity": "elven",
-      "role": "symbol"
+      "sprite_name": "BuyElvenUpgradesTrophy",
+      "kind": "trophy",
+      "entity": "elven-champion",
+      "role": "icon"
     },
     {
-      "sprite_name": "Angel Symbol",
-      "kind": "faction",
-      "entity": "angel",
-      "role": "symbol"
+      "sprite_name": "BuyAngelUpgradesTrophy",
+      "kind": "trophy",
+      "entity": "angel-champion",
+      "role": "icon"
     },
     {
-      "sprite_name": "Goblin Symbol",
-      "kind": "faction",
-      "entity": "goblin",
-      "role": "symbol"
+      "sprite_name": "BuyGoblinUpgradesTrophy",
+      "kind": "trophy",
+      "entity": "goblin-champion",
+      "role": "icon"
     },
     {
-      "sprite_name": "Undead Symbol",
-      "kind": "faction",
-      "entity": "undead",
-      "role": "symbol"
+      "sprite_name": "BuyUndeadUpgradesTrophy",
+      "kind": "trophy",
+      "entity": "undead-champion",
+      "role": "icon"
     },
     {
-      "sprite_name": "Demon Symbol",
-      "kind": "faction",
-      "entity": "demon",
-      "role": "symbol"
+      "sprite_name": "BuyDemonUpgradesTrophy",
+      "kind": "trophy",
+      "entity": "demon-champion",
+      "role": "icon"
     }
   ]
 }

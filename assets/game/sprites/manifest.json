@@ -3,125 +3,15 @@
   "source": "Realm Grinder v4.3.15 desktop TexturePacker atlases",
   "sprites": [
     {
-      "key": "fairy-symbol",
-      "path": "assets/game/sprites/fairy-symbol.png",
-      "sprite_name": "Fairy Symbol",
+      "key": "buy-fairy-upgrades-trophy",
+      "path": "assets/game/sprites/buy-fairy-upgrades-trophy.png",
+      "sprite_name": "BuyFairyUpgradesTrophy",
       "atlas_xml": "realmgrinder_new0.xml",
       "atlas_image": "realmgrinder_new0.png",
       "region": {
-        "x": 328,
-        "y": 723,
-        "width": 50,
-        "height": 43
-      },
-      "frame": {
-        "x": 0,
-        "y": -3,
-        "width": 50,
-        "height": 50
-      },
-      "kind": "faction",
-      "entity": "fairy",
-      "role": "symbol"
-    },
-    {
-      "key": "elven-symbol",
-      "path": "assets/game/sprites/elven-symbol.png",
-      "sprite_name": "Elven Symbol",
-      "atlas_xml": "realmgrinder_new0.xml",
-      "atlas_image": "realmgrinder_new0.png",
-      "region": {
-        "x": 345,
-        "y": 1180,
-        "width": 44,
-        "height": 50
-      },
-      "frame": {
-        "x": -3,
-        "y": 0,
-        "width": 50,
-        "height": 50
-      },
-      "kind": "faction",
-      "entity": "elven",
-      "role": "symbol"
-    },
-    {
-      "key": "angel-symbol",
-      "path": "assets/game/sprites/angel-symbol.png",
-      "sprite_name": "Angel Symbol",
-      "atlas_xml": "realmgrinder_new0.xml",
-      "atlas_image": "realmgrinder_new0.png",
-      "region": {
-        "x": 2,
-        "y": 1516,
-        "width": 50,
-        "height": 50
-      },
-      "frame": {
-        "x": 0,
-        "y": 0,
-        "width": 50,
-        "height": 50
-      },
-      "kind": "faction",
-      "entity": "angel",
-      "role": "symbol"
-    },
-    {
-      "key": "goblin-symbol",
-      "path": "assets/game/sprites/goblin-symbol.png",
-      "sprite_name": "Goblin Symbol",
-      "atlas_xml": "realmgrinder_new1.xml",
-      "atlas_image": "realmgrinder_new1.png",
-      "region": {
-        "x": 1724,
-        "y": 390,
-        "width": 38,
-        "height": 50
-      },
-      "frame": {
-        "x": -6,
-        "y": 0,
-        "width": 50,
-        "height": 50
-      },
-      "kind": "faction",
-      "entity": "goblin",
-      "role": "symbol"
-    },
-    {
-      "key": "undead-symbol",
-      "path": "assets/game/sprites/undead-symbol.png",
-      "sprite_name": "Undead Symbol",
-      "atlas_xml": "realmgrinder_new1.xml",
-      "atlas_image": "realmgrinder_new1.png",
-      "region": {
-        "x": 185,
-        "y": 1005,
-        "width": 38,
-        "height": 49
-      },
-      "frame": {
-        "x": -6,
-        "y": -1,
-        "width": 50,
-        "height": 50
-      },
-      "kind": "faction",
-      "entity": "undead",
-      "role": "symbol"
-    },
-    {
-      "key": "demon-symbol",
-      "path": "assets/game/sprites/demon-symbol.png",
-      "sprite_name": "Demon Symbol",
-      "atlas_xml": "realmgrinder_new1.xml",
-      "atlas_image": "realmgrinder_new1.png",
-      "region": {
-        "x": 603,
-        "y": 277,
-        "width": 47,
+        "x": 1252,
+        "y": 1817,
+        "width": 48,
         "height": 49
       },
       "frame": {
@@ -130,9 +20,119 @@
         "width": 50,
         "height": 50
       },
-      "kind": "faction",
-      "entity": "demon",
-      "role": "symbol"
+      "kind": "trophy",
+      "entity": "fairy-champion",
+      "role": "icon"
+    },
+    {
+      "key": "buy-elven-upgrades-trophy",
+      "path": "assets/game/sprites/buy-elven-upgrades-trophy.png",
+      "sprite_name": "BuyElvenUpgradesTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1152,
+        "y": 1868,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "elven-champion",
+      "role": "icon"
+    },
+    {
+      "key": "buy-angel-upgrades-trophy",
+      "path": "assets/game/sprites/buy-angel-upgrades-trophy.png",
+      "sprite_name": "BuyAngelUpgradesTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 852,
+        "y": 1725,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "angel-champion",
+      "role": "icon"
+    },
+    {
+      "key": "buy-goblin-upgrades-trophy",
+      "path": "assets/game/sprites/buy-goblin-upgrades-trophy.png",
+      "sprite_name": "BuyGoblinUpgradesTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1252,
+        "y": 1868,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "goblin-champion",
+      "role": "icon"
+    },
+    {
+      "key": "buy-undead-upgrades-trophy",
+      "path": "assets/game/sprites/buy-undead-upgrades-trophy.png",
+      "sprite_name": "BuyUndeadUpgradesTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1452,
+        "y": 1766,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "undead-champion",
+      "role": "icon"
+    },
+    {
+      "key": "buy-demon-upgrades-trophy",
+      "path": "assets/game/sprites/buy-demon-upgrades-trophy.png",
+      "sprite_name": "BuyDemonUpgradesTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1002,
+        "y": 1864,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "demon-champion",
+      "role": "icon"
     }
   ]
 }

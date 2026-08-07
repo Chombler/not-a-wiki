@@ -38,6 +38,8 @@ def parse_args() -> argparse.Namespace:
 
 def normalized_key(name: str) -> str:
     ascii_name = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode()
+    ascii_name = re.sub(r"([a-z0-9])([A-Z])", r"\1-\2", ascii_name)
+    ascii_name = re.sub(r"([A-Z]+)([A-Z][a-z])", r"\1-\2", ascii_name)
     return re.sub(r"[^a-z0-9]+", "-", ascii_name.lower()).strip("-")
 
 
@@ -86,6 +88,14 @@ def main() -> None:
     manifest_entries = []
     atlas_cache: dict[Path, Image.Image] = {}
     output.mkdir(parents=True, exist_ok=True)
+
+    expected_paths = {
+        output / f"{normalized_key(selection['sprite_name'])}.png"
+        for selection in selections
+    }
+    for existing in output.glob("*.png"):
+        if existing not in expected_paths:
+            existing.unlink()
 
     for selection in selections:
         sprite_name = selection["sprite_name"]
