@@ -476,27 +476,27 @@
 			<div class="shelementwhole">
 				<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">Allegiances Trophies (41)</a></b></p>
 				<div class="autohide">
-					<p><img src="/realm/Factions/picks/Fairy.png" align="middle"><b> Fairy Champion</b></p>
+					<p><img src="/realm/assets/game/sprites/fairy-symbol.png" align="middle"><b> Fairy Champion</b></p>
 					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 					<p><b>Note</b>: This can be done at R0.</p>
 					<hr>
-					<p><img src="/realm/Factions/picks/Elf.png" align="middle"><b> Elven Champion</b></p>
+					<p><img src="/realm/assets/game/sprites/elven-symbol.png" align="middle"><b> Elven Champion</b></p>
 					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 					<p><b>Note</b>: This can be done at R0.</p>
 					<hr>
-					<p><img src="/realm/Factions/picks/Angel.png" align="middle"><b> Angel Champion</b></p>
+					<p><img src="/realm/assets/game/sprites/angel-symbol.png" align="middle"><b> Angel Champion</b></p>
 					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 					<p><b>Note</b>: This can be done at R0.</p>
 					<hr>
-					<p><img src="/realm/Factions/picks/Goblin.png" align="middle"><b> Goblin Champion</b></p>
+					<p><img src="/realm/assets/game/sprites/goblin-symbol.png" align="middle"><b> Goblin Champion</b></p>
 					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 					<p><b>Note</b>: This can be done at R0.</p>
 					<hr>
-					<p><img src="/realm/Factions/picks/Undead.png" align="middle"><b> Undead Champion</b></p>
+					<p><img src="/realm/assets/game/sprites/undead-symbol.png" align="middle"><b> Undead Champion</b></p>
 					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 					<p><b>Note</b>: This can be done at R0.</p>
 					<hr>
-					<p><img src="/realm/Factions/picks/Demon.png" align="middle"><b> Demon Champion</b></p>
+					<p><img src="/realm/assets/game/sprites/demon-symbol.png" align="middle"><b> Demon Champion</b></p>
 					<p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
 					<p><b>Note</b>: This can be done at R0.</p>
 					<hr>

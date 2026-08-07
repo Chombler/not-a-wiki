@@ -4,6 +4,27 @@ The editable wiki remains in its legacy PHP-template format. GitHub Pages cannot
 execute PHP, so `scripts/build_pages.py` renders every `index.php`, copies static
 assets, and rewrites the historical `/realm` URL prefix for this project site.
 
+## Current-game sprites
+
+Current Realm Grinder artwork is stored once per atlas sprite in
+`assets/game/sprites/`. Exact atlas names and crop/frame metadata live in the
+generated `manifest.json`; semantic selection metadata lives in
+`assets/game/sprite-selection.json`. Wiki-authored images belong under
+`assets/wiki/`, not in the generated sprite directory.
+
+To regenerate the selected sprites from a locally installed v4.3.15 client:
+
+```sh
+python3 -m pip install -r scripts/requirements-assets.txt
+python3 scripts/extract_game_sprites.py \
+  --game-assets "/path/to/RealmGrinderDesktop.app/Contents/Resources/images"
+```
+
+The extractor reconstructs trimmed TexturePacker frames and fails on missing
+sprites, ambiguous selected atlas names, or normalized filename collisions.
+When the game repeats an exact sprite name across atlases, add `atlas_xml` to
+that sprite's selection entry to disambiguate it.
+
 Build and validate locally:
 
 ```sh

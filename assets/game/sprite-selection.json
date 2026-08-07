@@ -1,0 +1,40 @@
+{
+  "sprites": [
+    {
+      "sprite_name": "Fairy Symbol",
+      "kind": "faction",
+      "entity": "fairy",
+      "role": "symbol"
+    },
+    {
+      "sprite_name": "Elven Symbol",
+      "kind": "faction",
+      "entity": "elven",
+      "role": "symbol"
+    },
+    {
+      "sprite_name": "Angel Symbol",
+      "kind": "faction",
+      "entity": "angel",
+      "role": "symbol"
+    },
+    {
+      "sprite_name": "Goblin Symbol",
+      "kind": "faction",
+      "entity": "goblin",
+      "role": "symbol"
+    },
+    {
+      "sprite_name": "Undead Symbol",
+      "kind": "faction",
+      "entity": "undead",
+      "role": "symbol"
+    },
+    {
+      "sprite_name": "Demon Symbol",
+      "kind": "faction",
+      "entity": "demon",
+      "role": "symbol"
+    }
+  ]
+}
