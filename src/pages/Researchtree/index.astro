@@ -1,0 +1,85 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import { researchTooltip } from '../../lib/research';
+
+const research = await getCollection('research');
+const tree = await getEntry('researchTree', 'nodes');
+if (!tree) throw new Error('Research Tree layout is missing');
+const byCode = new Map(research.map((entry) => [entry.data.code, entry.data]));
+const treeCodes = new Set(tree.data.nodes.map((node) => node.code));
+const missingFacts = tree.data.nodes.filter((node) => !byCode.has(node.code));
+const missingNodes = research.filter((entry) => !treeCodes.has(entry.data.code));
+if (missingFacts.length || missingNodes.length || treeCodes.size !== tree.data.nodes.length) {
+  throw new Error(`Research Tree mismatch: ${missingFacts.length} unknown nodes, ${missingNodes.length} missing nodes, ${tree.data.nodes.length - treeCodes.size} duplicates`);
+}
+
+const facilities = [
+  ['Spellcraft', 'Delve into the arcane mysteries of Spellcraft, discovering new ways to produce and use mana.', 'Fairy, Faceless, and Drow production.', '4,3,83,82'],
+  ['Craftsmanship', 'Learn how to use tools and experience to improve your production by mastering Craftsmanship.', 'Elven, Titan, and Dwarven production.', '4,213,83,292'],
+  ['Divine', 'Harness the power of the eternals, increasing your spell affinity and bestowing Divine power on all your productivity.', 'Angel, Faceless, and Dwarven production.', '4,423,83,503'],
+  ['Economics', 'Exploit your resources with Economics knowledge, taking maximum advantage of your properties and turning time into money.', 'Goblin, Druid, and Dwarven production.', '4,633,83,712'],
+  ['Alchemy', 'Tap the near-unlimited sources of Alchemy to improve your production and benefit from all your assets.', 'Undead, Druid, and Drow production.', '4,843,83,922'],
+  ['Warfare', 'Use strategical prowess and manpower to manipulate the production system in your favor.', 'Demon, Titan, and Drow production.', '4,1053,83,1132'],
+  ['Forbidden', 'Take advantage of the most ancient and secret arts to empower your production beyond known limits.', 'Mercenary production.', '4,1263,83,1342'],
+] as const;
+const facilityTooltip = ([name, description, increases]: typeof facilities[number]) =>
+  `<p><center>${name} Research Facility</center></p><p>${description}</p><p>Increases: ${increases}</p><p>Pointing to this in game shows the available Slots (R16–R159) or Points (R160+) and your total research points.</p>`;
+const legends = [
+  ['Unlocked Upgrade (X): You cannot use this upgrade with the faction you are playing. You may hide these icons in the game options.', '296,170,335,209'],
+  ['Locked Upgrade (?): You cannot unlock this upgrade with the faction you are playing.', '338,170,377,209'],
+  ['Available Upgrade (!): You can unlock this upgrade with the faction you are playing. Its tooltip shows your unlock progress.', '380,170,419,209'],
+] as const;
+const base = import.meta.env.BASE_URL;
+---
+
+<SiteLayout title="Research Tree" sourcePath="src/content/research-tree/nodes.yaml">
+  <h6 class="page-corner-art"><img src={`${base}Factions/picks/ResearchTopPage.png`} alt="Research" /></h6>
+  <div id="calrps">
+    <table style="border-collapse: collapse">
+      <tr><th colspan="4">Maximum Research Points and Next-Point Cost Per Reincarnation</th></tr>
+      <tr class="calc"><th>Reincarnation</th><th>Research Points</th><th>Cost in Coins</th><th>Cost in Faction Coins</th></tr>
+      <tr class="calc">
+        <td><input id="reinc" type="number" min="16" max="246" value="16" /></td>
+        <td id="rp"></td><td id="Coins"></td><td id="FC"></td>
+      </tr>
+    </table>
+  </div>
+  <p><b>For R100–R174: research points are capped at 5000.</b></p>
+  <p><b>For R175–R219: research points are capped at 7000.</b></p>
+  <p><b>For R246+: research points are capped at 14000.</b></p>
+  <p>Information about how Research Slots and Budget work can be found at <b><a href={`${base}Research`}>Research</a></b>.</p>
+  <p><b>All Researches in Text Version</b>: <b><a href={`${base}ResearchList`}>Research List</a></b>.</p>
+  <hr />
+  <p><img src={`${base}Factions/picks/ResearchTreeA4.png`} usemap="#ResearchTreeA4-map" class="centerimg" alt="Research Tree" /></p>
+  <map name="ResearchTreeA4-map">
+    {facilities.map((facility) => <area data-research={facilityTooltip(facility)} coords={facility[3]} shape="rect" />)}
+    {tree.data.nodes.map((node) => <area data-research={researchTooltip(byCode.get(node.code)!)} coords={node.coords} shape="rect" />)}
+    {legends.map(([tooltip, coords]) => <area data-research={tooltip} coords={coords} shape="rect" />)}
+  </map>
+  <script is:inline>
+    function calculateResearchCost() {
+      var reincarnation = parseInt(document.getElementById('reinc').value, 10);
+      var points = reincarnation >= 220
+        ? Math.min(14000, 5000 + (reincarnation - 174) * 125)
+        : reincarnation >= 175
+          ? Math.min(7000, 5000 + (reincarnation - 174) * 125)
+          : Math.min(5000, reincarnation * (reincarnation + 1) / 2);
+      var coinCost = reincarnation >= 220
+        ? (points < 10000 ? 0 : Math.pow(1.44, 0.24 * (points - 10000)))
+        : reincarnation >= 100
+          ? 1e126 * Math.pow(1.75, 0.1 * (points - 5000))
+          : reincarnation >= 40
+            ? 1e42 * Math.pow(1.147, points - 780)
+            : 1e123 * Math.pow(1.5, points);
+      var factionCoinCost = points >= 10000
+        ? 1e-30 * Math.pow(1.033, 0.33 * points)
+        : points >= 5000 ? Math.pow(points + 1, 6.5) : Math.pow(points + 1, 3);
+      document.getElementById('rp').textContent = points + (points === 14000 ? ' (Maxed)' : '');
+      document.getElementById('Coins').textContent = coinCost === 0 ? 'Free' : coinCost.toExponential(3);
+      document.getElementById('FC').textContent = factionCoinCost.toExponential(3);
+    }
+    calculateResearchCost();
+    document.getElementById('reinc').addEventListener('input', calculateResearchCost);
+  </script>
+</SiteLayout>

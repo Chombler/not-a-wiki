@@ -20,4 +20,14 @@ const research = defineCollection({
   }),
 });
 
-export const collections = { research };
+const researchTree = defineCollection({
+  loader: glob({ pattern: '*.yaml', base: './src/content/research-tree' }),
+  schema: z.object({
+    nodes: z.array(z.object({
+      code: z.string().regex(/^[SCDEAWF]\d+$/),
+      coords: z.string().regex(/^\d+,\d+,\d+,\d+$/),
+    })),
+  }),
+});
+
+export const collections = { research, researchTree };

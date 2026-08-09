@@ -1,37 +1,19 @@
 ---
+import { tierRows, type TierTableKind } from '../lib/tierTables';
+
 interface Props {
-  kind: 'hierarchy' | 'apprenticeship' | 'decentralization' | 'upheaval';
+  kind: TierTableKind;
   heading: string;
 }
 
 const { kind, heading } = Astro.props;
-const buildings = [
-  'Farm', 'Inn', 'Blacksmith', 'Warrior Barracks / Slave Pen / Deep Mine',
-  "Knight's Joust / Orcish Arena / Stone Pillars", 'Wizard Tower / Witch Conclave / Alchemist Lab',
-  'Cathedral / Dark Temple / Monastery', 'Citadel / Necropolis / Labyrinth',
-  'Royal Castle / Evil Fortress / Iron Stronghold', "Heaven's Gate / Hell Portal / Ancient Pyramid",
-  'Hall of Legends',
-];
-const values = {
-  hierarchy: (tier: number) => [0.1 * (12 - tier) ** 2, ' × x^0.45%'],
-  apprenticeship: (tier: number) => [1.4 ** (12 - tier), ' × B'],
-  decentralization: (tier: number) => [(3 - 0.25 * tier) ** 4, ' × x^0.6%'],
-  upheaval: (tier: number) => [0.5 * (12 - tier) ** 2.15, ' × (60 + x)^0.75%'],
-} satisfies Record<Props['kind'], (tier: number) => [number, string]>;
-const format = (value: number) => {
-  if (Math.abs(value) >= 1000) return value.toLocaleString('en-US', { maximumFractionDigits: 2 });
-  return Number(value.toFixed(8)).toString();
-};
+const rows = tierRows(kind);
 ---
 
 <table class="numtable tier-table">
   <caption><b>{heading}</b></caption>
   <thead><tr><th>Tier</th><th>Building</th><th>Bonus / formula</th></tr></thead>
   <tbody>
-    {buildings.map((building, index) => {
-      const tier = index + 1;
-      const [value, suffix] = values[kind](tier);
-      return <tr><td>{tier}</td><td>{building}</td><td>{format(value)}{suffix}</td></tr>;
-    })}
+    {rows.map((row) => <tr><td>{row.tier}</td><td>{row.building}</td><td>{row.value}</td></tr>)}
   </tbody>
 </table>

@@ -1,0 +1,530 @@
+# Visual layout only. Research facts live in ../research/.
+nodes:
+  - code: S1
+    coords: "86,2,126,42"
+  - code: S10
+    coords: "128,2,168,42"
+  - code: S30
+    coords: "212,2,252,42"
+  - code: S50
+    coords: "170,2,210,42"
+  - code: S105
+    coords: "254,2,294,42"
+  - code: S135
+    coords: "296,2,336,42"
+  - code: S150
+    coords: "338,2,378,42"
+  - code: S175
+    coords: "86,44,126,84"
+  - code: S180
+    coords: "380,2,420,42"
+  - code: S200
+    coords: "170,44,210,84"
+  - code: S215
+    coords: "128,44,168,84"
+  - code: S225
+    coords: "212,44,252,84"
+  - code: S250
+    coords: "254,44,294,84"
+  - code: S281
+    coords: "296,44,336,84"
+  - code: S270
+    coords: "338,44,378,84"
+  - code: S300
+    coords: "380,44,420,84"
+  - code: S305
+    coords: "2,86,42,126"
+  - code: S330
+    coords: "44,86,84,126"
+  - code: S375
+    coords: "86,86,126,126"
+  - code: S400
+    coords: "128,86,168,126"
+  - code: S425
+    coords: "170,86,210,126"
+  - code: S475
+    coords: "212,86,252,126"
+  - code: S525
+    coords: "254,86,294,126"
+  - code: S550
+    coords: "296,86,336,126"
+  - code: S700
+    coords: "338,86,378,126"
+  - code: S1275
+    coords: "380,86,420,126"
+  - code: S1450
+    coords: "2,128,42,168"
+  - code: S1500
+    coords: "44,128,84,168"
+  - code: S2900
+    coords: "86,128,126,168"
+  - code: S3200
+    coords: "128,128,168,168"
+  - code: S5125
+    coords: "170,128,210,168"
+  - code: S5375
+    coords: "212,128,252,168"
+  - code: S5625
+    coords: "254,128,294,168"
+  - code: S5875
+    coords: "296,128,336,168"
+  - code: S10875
+    coords: "338,128,378,168"
+  - code: S11125
+    coords: "380,128,420,168"
+  - code: S11375
+    coords: "2,170,42,210"
+  - code: S11625
+    coords: "44,170,84,210"
+  - code: S11875
+    coords: "86,170,126,210"
+  - code: S12250
+    coords: "128,170,168,210"
+  - code: S13125
+    coords: "170,170,210,210"
+  - code: S13500
+    coords: "212,170,254,210"
+  - code: C1
+    coords: "86,212,126,252"
+  - code: C10
+    coords: "128,212,168,252"
+  - code: C25
+    coords: "170,212,210,252"
+  - code: C50
+    coords: "212,212,252,252"
+  - code: C80
+    coords: "254,212,294,252"
+  - code: C105
+    coords: "296,212,336,252"
+  - code: C120
+    coords: "338,212,378,252"
+  - code: C135
+    coords: "380,212,420,252"
+  - code: C150
+    coords: "86,254,126,294"
+  - code: C175
+    coords: "128,254,168,294"
+  - code: C200
+    coords: "170,254,210,294"
+  - code: C225
+    coords: "212,254,252,294"
+  - code: C250
+    coords: "254,254,294,294"
+  - code: C281
+    coords: "296,254,336,294"
+  - code: C300
+    coords: "338,254,378,294"
+  - code: C305
+    coords: "380,254,420,294"
+  - code: C330
+    coords: "2,296,42,336"
+  - code: C340
+    coords: "44,296,84,336"
+  - code: C375
+    coords: "86,296,126,336"
+  - code: C400
+    coords: "128,296,168,336"
+  - code: C501
+    coords: "170,296,210,336"
+  - code: C425
+    coords: "212,296,252,336"
+  - code: C475
+    coords: "254,296,294,336"
+  - code: C600
+    coords: "296,296,336,336"
+  - code: C700
+    coords: "338,296,378,336"
+  - code: C1300
+    coords: "380,296,420,336"
+  - code: C1325
+    coords: "2,338,42,378"
+  - code: C1500
+    coords: "44,338,84,378"
+  - code: C3000
+    coords: "86,338,126,378"
+  - code: C3100
+    coords: "128,338,168,378"
+  - code: C5125
+    coords: "170,338,210,378"
+  - code: C5375
+    coords: "212,338,252,378"
+  - code: C5625
+    coords: "254,338,294,378"
+  - code: C5875
+    coords: "296,338,336,378"
+  - code: C10875
+    coords: "338,338,378,378"
+  - code: C11125
+    coords: "380,338,420,378"
+  - code: C11375
+    coords: "2,380,42,420"
+  - code: C11625
+    coords: "44,380,84,420"
+  - code: C11875
+    coords: "86,380,126,420"
+  - code: C12250
+    coords: "128,380,168,420"
+  - code: C13125
+    coords: "170,380,210,420"
+  - code: C13500
+    coords: "212,380,252,420"
+  - code: D1
+    coords: "86,422,126,462"
+  - code: D10
+    coords: "128,422,168,462"
+  - code: D25
+    coords: "170,422,210,462"
+  - code: D50
+    coords: "212,422,252,462"
+  - code: D55
+    coords: "254,422,294,462"
+  - code: D135
+    coords: "296,422,336,462"
+  - code: D150
+    coords: "338,422,378,462"
+  - code: D175
+    coords: "86,464,126,504"
+  - code: D200
+    coords: "128,464,168,504"
+  - code: D205
+    coords: "380,422,420,462"
+  - code: D225
+    coords: "170,464,210,504"
+  - code: D245
+    coords: "212,464,252,504"
+  - code: D250
+    coords: "254,464,294,504"
+  - code: D290
+    coords: "296,464,336,504"
+  - code: D300
+    coords: "338,464,378,504"
+  - code: D270
+    coords: "380,464,420,504"
+  - code: D320
+    coords: "2,506,42,546"
+  - code: D330
+    coords: "44,506,84,546"
+  - code: D350
+    coords: "86,506,126,546"
+  - code: D400
+    coords: "128,506,168,546"
+  - code: D525
+    coords: "170,506,210,546"
+  - code: D450
+    coords: "212,506,252,546"
+  - code: D625
+    coords: "254,506,294,546"
+  - code: D650
+    coords: "296,506,336,546"
+  - code: D700
+    coords: "338,506,378,546"
+  - code: D1175
+    coords: "380,506,420,546"
+  - code: D1275
+    coords: "2,548,42,588"
+  - code: D1375
+    coords: "44,548,84,588"
+  - code: D2850
+    coords: "86,548,126,588"
+  - code: D3350
+    coords: "128,548,168,588"
+  - code: D5125
+    coords: "170,548,210,588"
+  - code: D5375
+    coords: "212,548,252,588"
+  - code: D5625
+    coords: "254,548,294,588"
+  - code: D5875
+    coords: "296,548,336,588"
+  - code: D10875
+    coords: "338,548,378,588"
+  - code: D11125
+    coords: "380,548,420,588"
+  - code: D11375
+    coords: "2,590,42,630"
+  - code: D11625
+    coords: "44,590,84,630"
+  - code: D11875
+    coords: "86,590,126,630"
+  - code: D12250
+    coords: "128,590,168,630"
+  - code: D13125
+    coords: "170,590,210,630"
+  - code: D13500
+    coords: "212,590,254,630"
+  - code: E1
+    coords: "86,632,126,672"
+  - code: E10
+    coords: "128,632,168,672"
+  - code: E25
+    coords: "170,632,210,672"
+  - code: E30
+    coords: "212,632,252,672"
+  - code: E50
+    coords: "254,632,294,672"
+  - code: E80
+    coords: "296,632,336,672"
+  - code: E135
+    coords: "380,632,420,672"
+  - code: E145
+    coords: "338,632,378,672"
+  - code: E400
+    coords: "128,716,168,756"
+  - code: E200
+    coords: "128,674,168,714"
+  - code: E225
+    coords: "170,674,210,714"
+  - code: E230
+    coords: "212,674,252,714"
+  - code: E250
+    coords: "254,674,294,714"
+  - code: E290
+    coords: "296,674,336,714"
+  - code: E300
+    coords: "338,674,378,714"
+  - code: E270
+    coords: "380,674,420,714"
+  - code: E320
+    coords: "2,716,42,756"
+  - code: E330
+    coords: "44,716,84,756"
+  - code: E350
+    coords: "86,716,126,756"
+  - code: E150
+    coords: "86,674,126,714"
+  - code: E510
+    coords: "170,716,210,756"
+  - code: E425
+    coords: "212,716,252,756"
+  - code: E450
+    coords: "254,716,294,756"
+  - code: E575
+    coords: "296,716,336,756"
+  - code: E700
+    coords: "338,716,378,756"
+  - code: E1225
+    coords: "380,716,420,756"
+  - code: E1325
+    coords: "2,758,42,798"
+  - code: E1425
+    coords: "44,758,84,798"
+  - code: E3250
+    coords: "128,758,168,798"
+  - code: E3300
+    coords: "86,758,126,798"
+  - code: E5125
+    coords: "170,758,210,798"
+  - code: E5375
+    coords: "212,758,252,798"
+  - code: E5625
+    coords: "254,758,294,798"
+  - code: E5875
+    coords: "296,758,336,798"
+  - code: E10875
+    coords: "338,758,378,798"
+  - code: E11125
+    coords: "380,758,420,798"
+  - code: E11375
+    coords: "2,800,42,840"
+  - code: E11625
+    coords: "44,800,84,840"
+  - code: E11875
+    coords: "86,800,126,840"
+  - code: E12250
+    coords: "128,800,168,840"
+  - code: E13125
+    coords: "170,800,210,840"
+  - code: E13500
+    coords: "212,800,252,840"
+  - code: A1
+    coords: "86,842,126,882"
+  - code: A10
+    coords: "128,842,168,882"
+  - code: A25
+    coords: "212,842,252,882"
+  - code: A30
+    coords: "170,842,210,882"
+  - code: A50
+    coords: "254,842,294,882"
+  - code: A55
+    coords: "296,842,336,882"
+  - code: A105
+    coords: "338,842,378,882"
+  - code: A120
+    coords: "380,842,420,882"
+  - code: A135
+    coords: "86,884,126,924"
+  - code: A270
+    coords: "338,884,378,924"
+  - code: A175
+    coords: "170,884,210,924"
+  - code: A200
+    coords: "212,884,252,924"
+  - code: A250
+    coords: "254,884,294,924"
+  - code: A281
+    coords: "296,884,336,924"
+  - code: A150
+    coords: "128,884,168,924"
+  - code: A300
+    coords: "380,884,420,924"
+  - code: A305
+    coords: "2,926,42,966"
+  - code: A330
+    coords: "44,926,84,966"
+  - code: A375
+    coords: "86,926,126,966"
+  - code: A400
+    coords: "128,926,168,966"
+  - code: A510
+    coords: "170,926,210,966"
+  - code: A450
+    coords: "212,926,252,966"
+  - code: A575
+    coords: "254,926,294,966"
+  - code: A550
+    coords: "296,926,336,966"
+  - code: A700
+    coords: "338,926,378,966"
+  - code: A1200
+    coords: "380,926,420,966"
+  - code: A1325
+    coords: "2,968,42,1008"
+  - code: A1500
+    coords: "44,968,84,1008"
+  - code: A2950
+    coords: "86,968,126,1008"
+  - code: A3400
+    coords: "128,968,168,1008"
+  - code: A5125
+    coords: "170,968,210,1008"
+  - code: A5375
+    coords: "212,968,252,1008"
+  - code: A5625
+    coords: "254,968,294,1008"
+  - code: A5875
+    coords: "296,968,336,1008"
+  - code: A10875
+    coords: "338,968,378,1008"
+  - code: A11125
+    coords: "380,968,420,1008"
+  - code: A11375
+    coords: "2,1010,42,1050"
+  - code: A11625
+    coords: "44,1010,84,1050"
+  - code: A11875
+    coords: "86,1010,126,1050"
+  - code: A12250
+    coords: "128,1010,168,1050"
+  - code: A13125
+    coords: "170,1010,210,1050"
+  - code: A13500
+    coords: "212,1010,252,1050"
+  - code: W1
+    coords: "86,1052,126,1092"
+  - code: W10
+    coords: "128,1052,168,1092"
+  - code: W25
+    coords: "170,1052,210,1092"
+  - code: W50
+    coords: "212,1052,252,1092"
+  - code: W120
+    coords: "254,1052,294,1092"
+  - code: W135
+    coords: "296,1052,336,1092"
+  - code: W150
+    coords: "170,1094,210,1134"
+  - code: W175
+    coords: "128,1094,168,1134"
+  - code: W180
+    coords: "338,1052,378,1092"
+  - code: W200
+    coords: "380,1052,420,1092"
+  - code: W205
+    coords: "86,1094,126,1134"
+  - code: W225
+    coords: "212,1094,252,1134"
+  - code: W250
+    coords: "254,1094,294,1134"
+  - code: W290
+    coords: "296,1094,336,1134"
+  - code: W300
+    coords: "338,1094,378,1134"
+  - code: W270
+    coords: "380,1094,420,1134"
+  - code: W320
+    coords: "2,1136,42,1176"
+  - code: W330
+    coords: "44,1136,84,1176"
+  - code: W350
+    coords: "86,1136,126,1176"
+  - code: W400
+    coords: "128,1136,168,1176"
+  - code: W501
+    coords: "170,1136,210,1176"
+  - code: W600
+    coords: "212,1136,252,1176"
+  - code: W625
+    coords: "254,1136,294,1176"
+  - code: W650
+    coords: "296,1136,336,1176"
+  - code: W700
+    coords: "338,1136,378,1176"
+  - code: W1275
+    coords: "380,1136,420,1176"
+  - code: W1375
+    coords: "2,1178,42,1218"
+  - code: W1400
+    coords: "44,1178,84,1218"
+  - code: W3050
+    coords: "86,1178,126,1218"
+  - code: W3150
+    coords: "128,1178,168,1218"
+  - code: W5125
+    coords: "170,1178,210,1218"
+  - code: W5375
+    coords: "212,1178,252,1218"
+  - code: W5625
+    coords: "254,1178,294,1218"
+  - code: W5875
+    coords: "296,1178,336,1218"
+  - code: W10875
+    coords: "338,1178,378,1218"
+  - code: W11125
+    coords: "380,1178,420,1218"
+  - code: W11375
+    coords: "2,1220,42,1260"
+  - code: W11625
+    coords: "44,1220,84,1260"
+  - code: W11875
+    coords: "86,1220,126,1260"
+  - code: W12250
+    coords: "128,1220,168,1260"
+  - code: W13125
+    coords: "170,1220,210,1260"
+  - code: W13500
+    coords: "212,1220,254,1260"
+  - code: F5250
+    coords: "86,1262,126,1302"
+  - code: F5500
+    coords: "128,1262,168,1302"
+  - code: F5750
+    coords: "170,1262,210,1302"
+  - code: F6000
+    coords: "212,1262,252,1302"
+  - code: F11000
+    coords: "254,1262,294,1302"
+  - code: F11250
+    coords: "296,1262,336,1302"
+  - code: F11500
+    coords: "338,1262,378,1302"
+  - code: F11750
+    coords: "380,1262,420,1302"
+  - code: F12000
+    coords: "86,1304,126,1344"
+  - code: F12500
+    coords: "128,1304,168,1344"
+  - code: F13250
+    coords: "170,1304,210,1344"
+  - code: F13750
+    coords: "212,1304,252,1344"

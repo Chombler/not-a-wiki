@@ -12,7 +12,10 @@
   window.shohid = showHide;
 
   document.addEventListener('DOMContentLoaded', function () {
-    if (window.jQuery) window.jQuery('[research]').style_my_tooltips();
+    if (window.jQuery) {
+      window.jQuery('[research]').style_my_tooltips();
+      window.jQuery('[data-research]').style_my_tooltips({ attribute: 'data-research' });
+    }
 
     var menuButton = document.querySelector('.site-menu-button');
     var sidebar = document.querySelector('.site-sidebar');
