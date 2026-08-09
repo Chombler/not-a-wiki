@@ -1,0 +1,13 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import homeContent from '../page-content/home.html?raw';
+
+const base = import.meta.env.BASE_URL;
+const renderedHome = homeContent
+  .replaceAll('/realm/', base)
+  .replaceAll('/realm"', `${base}"`);
+---
+
+<SiteLayout home sourcePath="src/page-content/home.html">
+  <Fragment set:html={renderedHome} />
+</SiteLayout>

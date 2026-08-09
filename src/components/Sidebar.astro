@@ -1,0 +1,30 @@
+---
+import { navigation } from '../data/navigation';
+
+const base = import.meta.env.BASE_URL;
+const url = (path: string) => `${base}${path}`;
+---
+
+<aside class="site-sidebar" id="site-sidebar">
+  <label class="page-filter-label" for="page-filter">Find a reference page</label>
+  <input id="page-filter" class="page-filter" type="search" placeholder="Filter pages…" autocomplete="off" />
+  <nav class="progression-nav" aria-label="Realm Grinder progression">
+    {navigation.map((group) => (
+      <section class:list={['progression-group', group.className]}>
+        <h2>{group.label}</h2>
+        <ul>
+          {group.items.map((item) => (
+            <li class:list={{ 'guide-nav-era': Boolean(item.children) }}>
+              <a href={url(item.href)}>{item.label}</a>
+              {item.children && (
+                <ul class="guide-range-nav">
+                  {item.children.map((child) => <li><a href={url(child.href)}>{child.label}</a></li>)}
+                </ul>
+              )}
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+  </nav>
+</aside>

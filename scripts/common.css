@@ -27,7 +27,7 @@ a.tooltips {
     inset: 0;
     z-index: 0;
     border: 9px solid transparent;
-    border-image: url("/realm/assets/game/sprites/black-gold-trim.png") 9 fill / 9px;
+    border-image: url("../assets/game/sprites/black-gold-trim.png") 9 fill / 9px;
     content: "";
     pointer-events: none;
 }
@@ -410,7 +410,7 @@ body {
     overflow: auto;
     width: 760px;
     height: 159px;
-    background-image: url(/realm/Factions/picks/RealmGrinderHeader.png);
+    background-image: url(../Factions/picks/RealmGrinderHeader.png);
 }
 
 #navbox {
@@ -505,7 +505,7 @@ h7 {
 }
 
 #leftbox {
-    background-image: url(/realm/Factions/picks/RealmGrinderGameRL.png);
+    background-image: url(../Factions/picks/RealmGrinderGameRL.png);
     background-repeat: no-repeat;
     background-position: center top;
     text-align: left;

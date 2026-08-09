@@ -10,7 +10,7 @@ from pathlib import Path
 
 
 TEXT_SUFFIXES = {".css", ".html", ".js", ".json", ".svg", ".txt", ".xml"}
-IGNORED_PARTS = {".git", ".github", "__pycache__", "_site"}
+IGNORED_PARTS = {".astro", ".git", ".github", "__pycache__", "_site", "dist", "node_modules"}
 
 
 def parse_args() -> argparse.Namespace:

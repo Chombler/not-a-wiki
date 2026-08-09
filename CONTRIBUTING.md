@@ -8,7 +8,22 @@ exceptions, clearer explanations, and updated game information are welcome.
 Every rendered reference page has an **Edit this page on GitHub** link near its
 title. That link opens the canonical source file for the page.
 
-Most pages follow a deliberately simple pattern:
+The site is being migrated from PHP templates to Astro. A migrated page links
+to its source under `src/`; a page not yet migrated still links to its existing
+PHP source. Both are intentionally kept directly editable during the
+transition.
+
+Astro pages follow this structure:
+
+```text
+src/pages/                 Public routes and page composition
+src/page-content/          Human-authored page bodies
+src/data/                  Navigation and other shared site data
+src/components/            Reusable presentation components
+src/layouts/               Shared page shells
+```
+
+Legacy pages follow this deliberately simple pattern:
 
 ```text
 Artifacts/index.php
@@ -17,8 +32,9 @@ FairyFaction/index.php
 ResearchList/index.php
 ```
 
-The homepage is `index.php`. Shared navigation and presentation live in
-`scripts/header.html`, `scripts/footer.html`, and `scripts/common.css`.
+The migrated homepage content is `src/page-content/home.html`. Shared Astro
+navigation lives in `src/data/navigation.ts`; shared presentation remains in
+`scripts/common.css` while the migration is in progress.
 
 Edit the source files directly. Do not edit `_site/`; it is generated for
 GitHub Pages and is replaced by every build.
@@ -35,7 +51,22 @@ GitHub Pages and is replaced by every build.
 
 ## Preview and validate locally
 
-You need PHP and Python 3. From the repository root, run:
+For migrated Astro pages, install Node.js and run:
+
+```sh
+npm install
+npm run dev
+```
+
+The local site is available under `http://localhost:4321/realm/`. Before
+opening a pull request, also run:
+
+```sh
+npm run build
+BASE_PATH=/not-a-wiki npm run build
+```
+
+For a legacy PHP page, you also need PHP and Python 3. Run:
 
 ```sh
 python3 scripts/build_pages.py --base-path ''

@@ -1,0 +1,94 @@
+---
+import Sidebar from '../components/Sidebar.astro';
+import '../../scripts/common.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  sourcePath?: string;
+  home?: boolean;
+}
+
+const {
+  title = 'Realm Grinder Reference',
+  description = 'Current Realm Grinder reference information, formulas, unlocks, factions, artifacts, research, trophies, and progression.',
+  sourcePath,
+  home = false,
+} = Astro.props;
+const base = import.meta.env.BASE_URL;
+const url = (path = '') => `${base}${path}`;
+const documentTitle = home ? 'Realm Grinder Reference' : `${title} · Realm Grinder Reference`;
+const editUrl = sourcePath ? `https://github.com/chombler/not-a-wiki/edit/codex/modernization-first-pass/${sourcePath}` : undefined;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <link rel="shortcut icon" href={url('scripts/favicon.ico')} />
+    <title>{documentTitle}</title>
+    <script is:inline>
+      (() => {
+        let savedTheme = null;
+        try { savedTheme = localStorage.getItem('realm-reference-theme'); } catch (_) {}
+        document.documentElement.dataset.theme = savedTheme === 'night' ? 'night' : 'ledger';
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="site-brand" href={url()} aria-label="Realm Grinder Reference home">
+          <img src={url('Factions/picks/RealmGrinderHeader.png')} alt="Realm Grinder" />
+          <span><strong>Reference</strong><small>Community wiki</small></span>
+        </a>
+        <div class="site-status">
+          <span class="version-badge">Game version 4.3.12</span>
+          <a href={url('Changes')}>Latest changes</a>
+          <a href="https://github.com/chombler/not-a-wiki" target="_blank" rel="noopener">GitHub</a>
+          <button class="theme-toggle" type="button" aria-pressed="false">Castle Night</button>
+        </div>
+        <button class="site-menu-button" type="button" aria-expanded="false" aria-controls="site-sidebar">Browse</button>
+      </header>
+
+      <div class="site-layout">
+        <Sidebar />
+        <main class="site-main" id="main-content" tabindex="-1">
+          {!home && (
+            <>
+              <div class="page-utility">
+                <span class="page-context">Realm Grinder reference</span>
+                {editUrl && <a class="edit-page-link" href={editUrl} target="_blank" rel="noopener">Edit this page on GitHub</a>}
+              </div>
+              <h1 class="page-title">{title}</h1>
+            </>
+          )}
+          <slot />
+        </main>
+        <aside class="page-toc" id="page-toc" aria-labelledby="page-toc-title" hidden>
+          <div class="page-toc-inner">
+            <h2 id="page-toc-title">On this page</h2>
+            <ol id="page-toc-list"><li><a href="#main-content">Overview</a></li></ol>
+            <a class="page-toc-top" href="#main-content">Back to top</a>
+          </div>
+        </aside>
+      </div>
+      <footer class="site-footer">
+        <div><strong>Realm Grinder Reference</strong><p>A community-maintained Realm Grinder reference.</p></div>
+        <nav aria-label="Footer">
+          <a href={url('Contributors')}>Credits</a>
+          <a href="https://discord.gg/cq6zmQX" target="_blank" rel="noopener">Realm Grinder Discord</a>
+          <a href="https://github.com/chombler/not-a-wiki/blob/codex/modernization-first-pass/CONTRIBUTING.md" target="_blank" rel="noopener">How to contribute</a>
+          <a href="https://github.com/chombler/not-a-wiki" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+      </footer>
+    </div>
+    <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script is:inline src={url('scripts/jquery.style-my-tooltips.js')}></script>
+    <script is:inline src={url('scripts/guide.js')} defer></script>
+    <script is:inline src={url('scripts/site.js')} defer></script>
+  </body>
+</html>
