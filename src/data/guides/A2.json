@@ -1,0 +1,458 @@
+[
+  {
+    "name": "R100-109 prod 0-e24 FCGBDM",
+    "type": "Production",
+    "code": "S50,S3200,C175,C1325,D250,E1,E225,E3250,A10,A3400,W25,W1375",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R100-109 prod e24-e32 DGGBUD",
+    "type": "Production",
+    "code": "S50,S1275,C175,C1325,D250,E1,E225,E3250,A10,A3400,W25,W205",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R100-109 prod e28-e41 DDFRAN",
+    "type": "Production",
+    "code": "S1,S180,S200,C10,C1325,D225,D250,E50,E3250,A30,A400,W1375",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R100-109 spells e31+ FCGBUD",
+    "type": "Spell",
+    "code": "S50,S3200,C175,C3100,D270,E1,E225,E3250,A10,A1325,W25,W1375",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R100-109 unlock ANDMDD",
+    "type": "Unlock",
+    "code": "S200,C50,C400,D10,D200,E230,E1325,A25,A150,W1,W175,W1275",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R105-109 unlock e36+ FCUDDM",
+    "type": "Unlock",
+    "code": "S225,S3200,C3100,D25,D250,E10,E3250,A1,A175,A400,W50,W1375",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R108-109 buildings e41+ GBFRAN",
+    "type": "Build",
+    "code": "S1,S180,S3200,C10,C400,D225,D250,E50,E135,A30,A400,W1375",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R108-109 prod e41-e45 DGFRAN",
+    "type": "Production",
+    "code": "S1,S180,S3200,C10,C1325,D225,D250,E50,E3250,A30,A400,W1375",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R110-114 prod 0-e55 DDFCDD",
+    "type": "Production",
+    "code": "S200,S281,S375,S1450,S1500,C1300,C1325,D250,D290,D1175,E350,E1225,E3250,A150,A300,A1200,W300,W1275,W1400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R110-114 unlock e45+ UDELEL",
+    "type": "Unlock",
+    "code": "S175,S3200,C1,C225,C501,C600,C700,C1325,D50,D250,D525,E25,E510,E3250,A150,A575,W10,W250,W650",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R110-115 unlock e45+ FCUDUD",
+    "type": "Unlock",
+    "code": "S225,S525,S3200,C1325,D25,D250,D650,E10,E575,E3250,A1,A175,A400,A510,A700,W50,W501,W600,W1375",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R110-124 spells e48+ UDANFR",
+    "type": "Spell",
+    "code": "S10,S3200,C25,C330,C501,C600,D1,D175,D270,D525,D700,E450,E510,A50,A575,A3400,W225,W400,W650",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R110-125 excavations DGELFR",
+    "type": "Excavation",
+    "code": "S175,S400,C1,C225,C501,C600,C700,C3100,D50,D250,D525,E25,E270,E510,A400,A575,W10,W400,W650",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R110-134 lineage ??FCDN",
+    "type": "Lineage",
+    "code": "S281,S375,S1450,S1500,S3200,C1325,C1300,D250,D290,D1175,E350,E1225,E3250,A300,A1200,A3400,W200,W300,W1400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R112-159 prod 0-e50 UDFCDN",
+    "type": "Production",
+    "code": "S281,S375,S1450,S1500,S3200,C1300,C1325,D250,D290,D1175,E350,E1225,E3250,A300,A400,A1200,W200,W300,W1400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R115 unlock e45+ UDFRAN",
+    "type": "Unlock",
+    "code": "S1,S180,S700,S3200,C10,C501,C600,C1325,D225,D250,D525,E50,E510,E3250,A30,A575,A3400,W250,W650",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R115-124 lineage e67+ DGFRAN",
+    "type": "Lineage",
+    "code": "S1,S180,S200,S700,C10,C305,C501,C600,D225,D250,D525,E50,E510,E3250,A30,A150,A575,W650,W1375",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R115-124 lineage e70+ FCGBDN",
+    "type": "Lineage",
+    "code": "S50,S525,S1275,C175,C305,D250,D650,E1,E225,E575,E700,E3250,A10,A510,A3400,W25,W200,W501,W600",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R115-129 assistants e64+ FRUDDN",
+    "type": "Build",
+    "code": "S225,S525,S3200,C305,D25,D250,D650,E10,E575,E3250,A1,A175,A400,A510,A700,W50,W200,W501,W600",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R115-129 prod e40-e85 FRFCDN",
+    "type": "Production",
+    "code": "S200,S281,S375,S1450,S1500,C1300,C1325,D250,D290,D1175,E350,E425,E1225,A300,A400,A1200,W200,W300,W1400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R115-129 spells e64+ FCANFR",
+    "type": "Spell",
+    "code": "S10,S3200,C25,C501,C600,C3100,D1,D175,D270,D525,D700,E450,E510,A50,A120,A575,W225,W400,W650",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R125 unlock e70+ FCUDUD",
+    "type": "Unlock",
+    "code": "S225,S525,S3200,C3100,D25,D250,D650,E10,E575,E3250,A1,A150,A175,A510,A700,W50,W501,W600,W1375",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R125 unlock e70+ FRTTTT",
+    "type": "Unlock",
+    "code": "S200,S300,S1450,C281,C375,C1300,C1325,C1500,D250,D350,D1175,E300,E425,E1225,A1200,A3400,W200,W290,W1400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R125 unlock e85 FRDDDN",
+    "type": "Unlock",
+    "code": "S400,S1450,C300,C1300,C1325,D250,D300,D1175,E290,E425,E1225,A281,A375,A400,A1200,A1500,W350,W1375,W1400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R125 unlock GBDMDG",
+    "type": "Unlock",
+    "code": "S525,S1275,C50,C3100,D10,D270,D650,E230,E450,E575,A25,A510,A1325,W1,W135,W175,W501,W600,W700",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R125-129 prod e75-e85 FRTTDG",
+    "type": "Production",
+    "code": "S300,S400,S1450,C281,C375,C1300,C1325,C1500,D250,D350,D1175,E300,E425,E1225,A400,A1200,W290,W1375,W1400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R130 unlock e90 DDANAN",
+    "type": "Unlock",
+    "code": "S10,S400,S3200,C25,C400,C501,C600,C3100,D1,D175,D270,D525,D700,D1375,E400,E450,E510,A50,A400,A575,A120,W225,W650,W1375,W400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R130-134 spells FCANFR",
+    "type": "Spell",
+    "code": "S10,S3200,S400,C25,C501,C600,C1325,C3100,D1,D175,D250,D270,D525,D700,E450,E510,E400,A50,A400,A575,A120,W225,W650,W1375,W400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R130-159 prod e45-e103 FRTTDG",
+    "type": "Production",
+    "code": "S200,S300,S1450,S400,C281,C375,C1300,C1325,C1500,C340,D250,D350,D1175,D270,E300,E425,E1225,E150,A400,A1200,A150,W290,W1375,W1400,W200",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R135 challenge e85+ FRANDN",
+    "type": "Challenge",
+    "code": "S10,S200,S400,C25,C400,C501,C600,C1325,D1,D175,D250,D270,D525,D700,E150,E510,E425,A50,A400,A575,A150,W180,W200,W225,W650",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R135 challenge e90+ GBFRAN",
+    "type": "Challenge",
+    "code": "S1,S180,S700,S3200,C10,C501,C600,C1325,D225,D250,D525,E50,E135,E510,A30,A575,A3400,W650,W1375",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R135 challenge TTELAN",
+    "type": "Challenge",
+    "code": "S175,S200,C1,C225,C501,C600,C700,C1325,D50,D330,D525,E25,E510,E3250,A150,A575,W10,W650,W1375",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R135-138 assistants e95+ UDFRDN",
+    "type": "Build",
+    "code": "S1,S180,S700,S3200,C10,C501,C600,C1325,D225,D250,D525,E50,E425,A30,A120,A575,W200,W650",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R135-138 prod e90-e103 ARFCFC",
+    "type": "Production",
+    "code": "S200,S281,S375,S400,S1450,S1500,C305,C1300,C1325,D250,D270,D290,D1175,E150,E350,E1225,E1425,A150,A300,A400,A1200,W200,W300,W1275,W1400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R135-159 clicks e92+ ELANDN",
+    "type": "Build",
+    "code": "S10,S200,S400,C25,C501,C600,C1325,C3100,D1,D175,D250,D525,D700,D205,E510,E3250,E150,A50,A400,A150,A575,W225,W650,W1375,W200",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R135-159 lineage DGFRDN",
+    "type": "Lineage",
+    "code": "S1,S180,S200,S700,C10,C501,C600,C1325,D225,D250,D525,E50,E510,E3250,A30,A150,A575,W650,W1375",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R135-159 lineage e85+ ??FCFC",
+    "type": "Lineage",
+    "code": "S200,S281,S375,S1450,S1500,C305,C1300,D250,D290,D1175,E145,E350,E1225,A150,A300,A1200,W300,W1275,W1400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R135-159 lineage FCFRFR",
+    "type": "Lineage",
+    "code": "S1,S180,S400,S700,C10,C501,C600,C1325,D225,D250,D525,E50,E145,E510,A30,A120,A575,W650,W1375",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R135-159 spells e90+ DJANFR",
+    "type": "Spell",
+    "code": "S10,S400,S200,C25,C400,C501,C600,C3100,D1,D175,D270,D525,D700,D205,E400,E510,E425,A50,A400,A575,A150,W225,W400,W650,W1275",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R135-159 spells FCANFR",
+    "type": "Spell",
+    "code": "S10,S400,S200,C25,C501,C600,C1325,C3100,D1,D175,D250,D525,D700,D270,E510,E3250,E400,A50,A400,A575,A150,W225,W650,W1375,W1275",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R139 challenge e102+ MKGBDN",
+    "type": "Challenge",
+    "code": "S50,S525,S3200,C175,C1325,D250,D650,E1,E225,E575,E700,E3250,A10,A510,A3400,W25,W205,W501,W600",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R139 challenge e105+ ARUDUD",
+    "type": "Challenge",
+    "code": "S200,S400,S525,C1325,C3100,D25,D270,D330,D650,E10,E450,E575,E3250,A1,A150,A175,A510,A700,A3400,W50,W205,W501,W600,W1275",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R139 challenge e95+ DJDMAN",
+    "type": "Challenge",
+    "code": "S400,S525,C50,C3100,D10,D270,D650,E230,E575,E3250,A25,A510,A3400,W1,W135,W175,W501,W600,W700",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R139-159 assistants e95+ FRUDUD",
+    "type": "Build",
+    "code": "S200,S225,S525,S1275,C1325,C305,D25,D250,D650,D3350,E10,E450,E575,E135,A1,A175,A400,A510,A700,A150,W50,W205,W250,W501,W600",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R139-159 excavations e97+ ARELDN",
+    "type": "Excavation",
+    "code": "S175,S400,S3200,C1,C225,C501,C600,C700,C1325,C3100,D50,D250,D270,D525,E25,E270,E510,E450,A120,A400,A575,W10,W200,W400,W650",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R139-159 lineage DJUDUD",
+    "type": "Lineage",
+    "code": "S200,S225,S525,S1275,C305,C1325,D25,D250,D650,D3350,E10,E450,E575,E145,A1,A175,A400,A510,A700,A120,W50,W205,W501,W600,W1375",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R139-159 offline e85+ DJUDAN",
+    "type": "Build",
+    "code": "S200,S225,S400,S525,C1325,C3100,D25,D250,D650,D1375,E10,E575,E3250,E450,A1,A175,A400,A510,A700,A150,W50,W501,W600,W1375,W1275",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R139-159 prod e95-e145 ARDMDM",
+    "type": "Production",
+    "code": "S400,S525,S3200,C50,C305,C1325,D10,D250,D650,D3350,E150,E230,E450,E575,A25,A150,A400,A510,W1,W135,W175,W205,W501,W600,W700",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R143 challenge e113+ FCDDDD",
+    "type": "Challenge",
+    "code": "S400,S1450,C300,C1300,C3100,D270,D300,D1175,E135,E290,E1225,A281,A375,A400,A1200,A1500,W350,W1375,W1400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R143 challenge e95+ ANTTTT",
+    "type": "Challenge",
+    "code": "S200,S300,S400,S1450,C281,C375,C400,C1300,C1325,C1500,D250,D330,D350,D1175,E300,E400,E425,E1225,A400,A150,A1200,W200,W290,W1275,W1400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R143 challenge e95+ UDFCFC",
+    "type": "Challenge",
+    "code": "S281,S375,S1450,S1500,S3200,C1300,C1325,D250,D290,D1175,E350,E450,E1225,A150,A300,A1200,W250,W300,W1400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R148 challenge e100+ ANFRAN",
+    "type": "Challenge",
+    "code": "S1,S180,S200,S700,C10,C400,C501,C600,D225,D330,D525,E50,E510,E3250,A30,A150,A575,W650,W1275",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R148 challenge e120+ XXGBAN",
+    "type": "Challenge",
+    "code": "",
+    "facts": [],
+    "notes": "Configuration-only build; consult the source notes for its setup.",
+    "author": ""
+  },
+  {
+    "name": "R148-150 challenge ANUDUD",
+    "type": "Challenge",
+    "code": "S200,S225,S525,S3200,C305,C1325,D25,D200,D330,D650,E10,E450,E575,E3250,A1,A175,A400,A510,A700,A150,W50,W205,W501,W600,W1275",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R153 challenge e100+ DWDDFCDN",
+    "type": "Challenge",
+    "code": "S200,S1450,C300,C1300,C1325,D250,D300,D1175,E290,E425,E1225,A150,A281,A375,A1200,A1500,W350,W1375,W1400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R153 challenge e90+ DJANFR",
+    "type": "Challenge",
+    "code": "S10,S400,S200,C25,C400,C501,C600,C3100,D1,D175,D270,D525,D700,D330,E400,E510,E425,A50,A400,A575,A150,W225,W400,W650,W1275",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R159 unlock e148 GBFRAN",
+    "type": "Unlock",
+    "code": "S1,S180,S200,S700,C10,C305,C501,C600,D225,D525,D3350,E50,E135,E510,A30,A150,A575,W650,W1275",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  }
+]

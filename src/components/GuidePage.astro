@@ -1,0 +1,54 @@
+---
+import GuidePager from './GuidePager.astro';
+import GuideBuildEntry from './GuideBuildEntry.astro';
+import { entriesFor, landingData, rangeConfigs, type GuideEra } from '../data/guides';
+import a3Source from '../../content/A3/a3-reference-v4.3.11.md?raw';
+const { route } = Astro.props as { route: string };
+const base = import.meta.env.BASE_URL;
+const config = rangeConfigs[route];
+const era = (route.match(/^A[0-4]/)?.[0] ?? 'A0') as GuideEra;
+const landing = route.endsWith('Guide');
+const info = landingData[era];
+const entries = config ? entriesFor(config) : [];
+const ranges = Object.entries(rangeConfigs).filter(([, value]) => value.era === era);
+const a3Roadmap = a3Source
+  .match(/## \*\*A3 Roadmap\*\*([\s\S]*?)## \*\*Research budget in A3\*\*/)?.[1]
+  ?.trim().split(/\n\s*\n/).map((block) => block.replace(/\\([.*+=-])/g, '$1').replace(/^\*\*|\*\*$/g, '').replace(/^\*\s+/gm, '• ')) ?? [];
+const a3Milestones = [
+  ['R165', 'Prestige factions'], ['R172', 'Astral factions and Mercenary Duel'], ['R180', 'Facility artifacts and L75 lineages'],
+  ['R190–206', 'Mercenary Challenges'], ['Before A4', 'All research and required trophies'],
+];
+const a4Budget = [
+  ['Faction trade treaty', '5,000', 'Base value'],
+  ['Faction union', '5,000', 'Base value'],
+  ['R170 power', '600 + 3.5 × R', 'R = current Reincarnation − 159, including effects that increase Reincarnation count'],
+  ['Standard research facility', '500 + ln(√((1 + x)(1 + y)))³', 'Its two associated alignment times; see below'],
+  ['Forbidden facility', '500 + 0.75 × ln(1 + √(xy))³', 'x: greater of Good/Evil time; y: greatest of Order/Chaos/Balance time'],
+  ['Archon Bloodline', 'ln(1 + x)³', 'x: time spent this Era'],
+  ['Goblin Lineage Perk 6', '4√x, capped at 3,000', 'x: Tax Collection worth in seconds'],
+  ['Dwarf Lineage Perk 6', '0.6 × x^0.6, capped at 3,000', 'x: excavation depth'],
+  ['Faceless Set 2', 'ln(1 + x)^1.5, capped at 3,000', 'x: faction coins found this Era'],
+  ['Goblin/Undead Legacy Combo', '50 + 1.15 × ln(1 + min(x, y))^3.15, capped at 3,000', 'x: Order time; y: Balance time'],
+];
+---
+<GuidePager current={route} />
+{landing ? (
+  <>
+    <div class="guide-intro"><p class="guide-kicker">{info.kicker}</p><p>{info.summary}</p></div>
+    {info.plot && <section class="guide-section" id="plot"><div class="guide-section-heading"><div><span>Overview</span><h2>{era} progression plot</h2></div><a href={`${base}${info.plot}`} target="_blank">Open full size</a></div><figure class="progression-plot"><a href={`${base}${info.plot}`} target="_blank"><img src={`${base}${info.plot}`} alt={info.alt} /></a><figcaption>{info.caption}</figcaption></figure></section>}
+    {era === 'A3' && <section class="guide-section a3-at-a-glance" id="progression-overview"><div class="guide-section-heading"><div><span>Start here</span><h2>A3 progression</h2></div></div><aside class="guide-milestones"><strong>Major milestones</strong>{a3Milestones.map(([range, goal]) => <span><b>{range}</b> {goal}</span>)}</aside><details class="guide-reference-details"><summary>Complete milestone roadmap</summary><div class="guide-detail-source">{a3Roadmap.map((block) => <p>{block}</p>)}</div></details><div class="a3-source-links"><a href="https://i.imgur.com/KOmAgQO.png" target="_blank" rel="noopener"><strong>A3 progression plot</strong><span>Partially outdated; check the guide’s gem ranges</span></a><a href="https://docs.google.com/document/d/1xVXiP3R2WtRH9gwUfoo8mkKiYuQQgg8W8J6eMFcDNeQ/edit?tab=t.0" target="_blank" rel="noopener"><strong>Patch 4.3 notes</strong><span>External community document</span></a></div></section>}
+    {era === 'A4' && <><section class="guide-section guide-source-note"><p class="guide-coverage-note">The duplicate “Archived Full Builds List” is intentionally omitted from the rendered guide. It remains in the <a href={`${base}content/A4/a4-builds-v4.3.11.md`}>Markdown source</a> for historical reference.</p></section><section class="guide-section" id="research-budget"><div class="guide-section-heading"><div><span>Mechanics reference · 4.3</span><h2>A4 research-budget sources</h2></div><a href={`${base}content/A4/research-budget-kuile.txt`}>Text source</a></div><p class="guide-coverage-note">Compiled by Kuile on April 16, 2025. Unless stated otherwise, alignment time is measured this Reincarnation. <code>ln</code> is the natural logarithm.</p><div class="a4-budget-table-wrap"><table class="a4-budget-table"><thead><tr><th>Source</th><th>Research budget</th><th>Input</th></tr></thead><tbody>{a4Budget.map(([source, budget, input]) => <tr><td>{source}</td><td><code>{budget}</code></td><td>{input}</td></tr>)}</tbody></table></div><h3>Research facility alignments</h3><div class="a4-facility-grid"><span><strong>Spellcraft</strong>Good + Chaos</span><span><strong>Craftsmanship</strong>Good + Balance</span><span><strong>Divine</strong>Good + Order</span><span><strong>Economics</strong>Evil + Balance</span><span><strong>Alchemy</strong>Evil + Order</span><span><strong>Warfare</strong>Evil + Chaos</span></div></section></>}
+    <section class="guide-section" id="progression-ranges"><div class="guide-section-heading"><div><span>Choose your current range</span><h2>{era} progression</h2></div></div><div class="guide-stage-grid">{ranges.map(([key, range]) => <a href={`${base}${key}`}><strong>{range.range}</strong><span>{range.summary}</span></a>)}</div></section>
+  </>
+) : config ? (
+  <>
+    <div class="guide-intro"><p class="guide-kicker">{config.era} · {config.range}</p><p>{config.summary}</p><nav class="guide-jump"><a href={`${base}${config.landing}`}>Ascension overview</a><a href="#builds">Builds</a></nav></div>
+    {config.milestones?.length > 0 && <aside class="guide-milestones"><strong>Goals for this range</strong>{config.milestones.map((goal) => <span>{goal}</span>)}</aside>}
+    <section class="guide-section" id="builds">
+      <div class="guide-section-heading"><div><span>{entries.length} applicable entries</span><h2>{config.range} builds</h2></div><a href={`${base}${config.sourceHref.replace(/^\/realm\//, '')}`}>Original source</a></div>
+      <div class="guide-filter-bar"><label for={`${route}-filter`}>Filter these builds</label><input id={`${route}-filter`} type="search" placeholder="Production, unlock, faction…" autocomplete="off" data-guide-filter data-guide-filter-target="#range-builds" /><span data-guide-filter-count aria-live="polite"></span></div>
+      <div class="guide-build-entries" id="range-builds">{entries.map((entry) => <GuideBuildEntry entry={entry} />)}</div>
+    </section>
+  </>
+) : null}
+<GuidePager current={route} />

@@ -8,16 +8,16 @@ exceptions, clearer explanations, and updated game information are welcome.
 Every rendered reference page has an **Edit this page on GitHub** link near its
 title. That link opens the canonical source file for the page.
 
-The site is being migrated from PHP templates to Astro. A migrated page links
-to its source under `src/`; a page not yet migrated still links to its existing
-PHP source. Both are intentionally kept directly editable during the
-transition.
+The site is being migrated from PHP templates to Astro. Every Astro page links
+to its canonical source under `src/`; the legacy PHP tree remains temporarily
+for comparison while the migration is validated.
 
 Astro pages follow this structure:
 
 ```text
 src/pages/                 Public routes and page composition
 src/page-content/          Human-authored page bodies
+src/data/guides/           Human-editable A0–A4 build records and range data
 src/data/                  Navigation and other shared site data
 src/components/            Reusable presentation components
 src/layouts/               Shared page shells
@@ -32,9 +32,12 @@ FairyFaction/index.php
 ResearchList/index.php
 ```
 
-The migrated homepage content is `src/page-content/home.html`. Shared Astro
-navigation lives in `src/data/navigation.ts`; shared presentation remains in
-`scripts/common.css` while the migration is in progress.
+The homepage content is `src/page-content/home.html`. Ordinary reference-page
+bodies are in `src/page-content/reference/`. Guide builds are split into one
+JSON file per Ascension under `src/data/guides/`, so a contributor does not
+need to work through a generated template or a single monolithic database.
+Shared Astro navigation lives in `src/data/navigation.ts`; shared presentation
+remains in `scripts/common.css` while the migration is in progress.
 
 Edit the source files directly. Do not edit `_site/`; it is generated for
 GitHub Pages and is replaced by every build.

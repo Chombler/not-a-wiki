@@ -1,0 +1,284 @@
+[
+  {
+    "name": "Fairyline Titan",
+    "type": "Production",
+    "code": "S425,C475,E425",
+    "facts": {
+      "Range": "R165-171, e0-e40 gems",
+      "Faction": "Titan",
+      "Bloodline": "Fairy",
+      "Set": "Dwarf"
+    },
+    "notes": "Until e35 gems do 100x excavations twice per era after aligning with dragons to afford dragon union, max excavations after that.",
+    "author": "Levenyak",
+    "section": "R160 - R171"
+  },
+  {
+    "name": "Dragonline Fairies",
+    "type": "Production",
+    "code": "S425,C425,E450",
+    "facts": {
+      "Range": "R167-171, e37+ gems",
+      "Faction": "Fairy",
+      "Bloodline": "Dragon",
+      "Set": "Angel"
+    },
+    "notes": "Run DJANFR (djinnline angels fairyset) for spells cast beforehand (20-30 mins) (Optional) Do a quick run of FRGBGB beforehand (~4 min). Fairy union set to odd. Maelstrom set to Enchanted Fields by either Assistants or Mana. Dragon’s Breath set to Red,Green,Black,Yellow. Cycle through Dragon’s Breath then activate Maelstrom.",
+    "author": "Weedheter",
+    "section": "R160 - R171"
+  },
+  {
+    "name": "Druidline Goblins",
+    "type": "Production",
+    "code": "S525,C425,D650,E575,W600",
+    "facts": {
+      "Range": "R172-R180, e0-e41 gems",
+      "Faction": "Goblin",
+      "Bloodline": "Druid",
+      "Set": "Demon"
+    },
+    "notes": "Stoneheart: Dwarven Remember to excavate for Infinite Spiral.",
+    "author": "Genhard",
+    "section": "R172 - R180"
+  },
+  {
+    "name": "Fairyline Titan",
+    "type": "Production",
+    "code": "S425,C475,E425",
+    "facts": {
+      "Range": "R172-180, e41-e50 gems",
+      "Faction": "Titan",
+      "Bloodline": "Fairy",
+      "Set": "Dragon (use Dwarven for the first run)"
+    },
+    "notes": "Cycle Dragon’s Breath set to Red,White,Black,Yellow and ideally Blue as 5th. Autocast Gem Grinder & Fairy Chanting to tier 3 until Dragon Union.",
+    "author": "Levenyak",
+    "section": "R172 - R180"
+  },
+  {
+    "name": "A Looming Shadow",
+    "type": "Production",
+    "code": "FR10,EL12,GB3,GB5,GB7,UD7,UD10,EL2,DD6,DN4,DW2,DW7,DW12,DG4,DG7,AR2,SP:Dragon's Breath,SP:Infinite Spiral,UB:Nexus,UNN:UD,S1275,C1325,D700,E425,E450,A575,W600,W650,D1375,S525,S425,C425,C475,C700,E1225,A1500,W1400,FR10,EL12,GB3,GB5,GB7,UD7,UD10,EL2,DD6,DN4,DW2,DW7,DW12,DG4,DG7,AR2,SP:Dragon's Breath,SP:Infinite Spiral,UB:Nexus,UNN:UD,D1375,S1275,C1325,D700,E425,E450,W600,W650,S525,S425,C425,C475,C700,E1225,A575,A1500,W1400,S425,C425,E425",
+    "facts": {
+      "Range": "R172-180, e50+ gems",
+      "Faction": "Fairy",
+      "Bloodline": "Goblin",
+      "Set": "Angel"
+    },
+    "notes": "Secondary Researches (after Mercenary 4th Contract), IMPORTANT: For Mercenary builds, some upgrades (such as FR10 and UD10) are based on the highest amount of certain Unique Buildings this Reincarnation. It is important to run all required buff builds beforehand, pay attention to build notes! Buff Swarming Tower and Flesh Workshop counts (see builds below). Cycle Dragon’s Breath to Red,Green,Black,Yellow and ideally Blue as 5th. ### Max Flesh Workshops Purpose: Building target S425,C425 ### Max Swarming Towers Purpose: Building target Autocast Spiritual Surge on tier 3 until Djinn Treaty.",
+    "author": "ElJay & Crocketeer",
+    "section": "R172 - R180"
+  },
+  {
+    "name": "Non Merc builds",
+    "type": "Buff",
+    "code": "S1275,S425,C1325,C425,C475,D1375,D700,E1325,E425,E450,A575,W650,W1375,S425,S1275,C1325,C425,C475,D1375,E425,E450,E1325,A575,W650,W1375,S1275,C1325,D1375,E1225,A1200,W1375,S425,S1275,C1325,D1375,E450,E1225,E425,A1200,W1400",
+    "facts": {
+      "Faction": "Titan",
+      "Bloodline": "Goblin",
+      "Set": "Dragon",
+      "Range": "R181+"
+    },
+    "notes": "### Max Holy Sites R198+: Pick C1325 before importing. ### Max Swarming Towers R198+: Pick C1325 before importing. Run Goblinline Angel first. ### Max Mountain Palaces/Dragon Pastures Autocast spells other than Tax Collection at tier 2 until Archon Treaty.",
+    "author": "",
+    "section": "Max buildings"
+  },
+  {
+    "name": "Max Good Buildings",
+    "type": "Buff",
+    "code": "FR4,FR10,GB3,GB7,EL11,UD7,TT10,DN2,DW2,DW7,DW8,AR2,MK6,DW12,DG4,DG6,SP:Dragon's Breath,SP:Infinite Spiral,UNN:UD,UNN:FR,S425,S1275,S1500,C1325,C3100,C700,D1375,D3350,E3300,E1225,E425,E450,A2950,W650,W1375,W1400,F5500,S525,C425,D700,A575,A1500,W600,W1275,FR4,FR10,GB3,GB7,EL11,UD7,TT10,DN2,DW2,DW7,DW8,AR2,MK6,DW12,DG4,DG6,SP:Dragon's Breath,SP:Infinite Spiral,UNN:UD,UNN:FR,S5125,C1325,C3100,C700,D1375,D3350,E3300,E1225,E425,E450,A2950,W650,W1375,W1400,F5500,C425,D700,A575,A1500,W600,W1275",
+    "facts": {
+      "Range": "R190+, e57+ gems",
+      "Faction": "Good/Order Mercenary",
+      "Bloodline": "Goblin",
+      "Lineage": "Archon",
+      "Set": "Fairy"
+    },
+    "notes": "A2950: Druid Secondary Researches (After A2950; Pre MCC4): Secondary Researches (after A2950; Post MCC4):",
+    "author": "Genhard",
+    "section": "Max buildings"
+  },
+  {
+    "name": "Max Evil Buildings",
+    "type": "Buff",
+    "code": "FR4,FR10,EL11,GB3,GB7,UD7,AN10,DN2,DW2,DW7,DG7,DW12,DG4,DG6,AR2,AR5,SP:Dragon's Breath,SP:Infinite Spiral,UNN:UD,UNN:FR,S5125,C3100,C1325,D1375,D3350,E3300,A2950,W1400,W650,S525,C425,C700,D700,E425,E575,E1325,A575,A1500,W600,W1275,W1375,F5500",
+    "facts": {
+      "Range": "R190+, e57+ gems",
+      "Faction": "Evil/Order Mercenary",
+      "Bloodline": "Goblin",
+      "Lineage": "Archon",
+      "Set": "Mercenary"
+    },
+    "notes": "A2950: Druid Secondary Researches (after A2950): Cycle Dragon’s Breath to Red,Green,Black,Yellow (ideally Blue).",
+    "author": "ElJay",
+    "section": "Max buildings"
+  },
+  {
+    "name": "Max Neutral Buildings",
+    "type": "Buff",
+    "code": "FR10,GB3,GB7,UD7,EL11,TT10,FR1,DN2,DW6,DW8,DG4,DN4,DG7,AR2,AR11,MK6,SP:Dragon's Breath,SP:Infinite Spiral,UNN:UD,UNN:FR,S5125,C1325,C3100,D3350,E3300,A2950,W650,W1375,D700,D1375,E1225,E425,E1325,A575,A1500,W1400,W600,F5500",
+    "facts": {
+      "Range": "R190+, e57+ gems",
+      "Faction": "Neutral/Order Mercenary",
+      "Bloodline": "Goblin",
+      "Lineage": "Archon",
+      "Set": "Mercenary"
+    },
+    "notes": "A2950: Druid Secondary Researches (after A2950):",
+    "author": "Genhard",
+    "section": "Max buildings"
+  },
+  {
+    "name": "After MCC3",
+    "type": "Buff",
+    "code": "FR4,FR10,EL7,EL11,UD7,GB3,DD3,DD6,DW2,DW7,DN4,DG6,DG7,DG10,AR2,AR10,SP:Dragon's Breath,SP:Precognition,UB:Swarming Tower,UNN:DG,UNN:GB,S1275,S1500,S525,C1325,C700,D3350,D700,E450,E425,E1325,A2950,A575,W600,W650,W1400",
+    "facts": {
+      "Faction": "Good/Balance Mercenary",
+      "Bloodline": "Makers",
+      "Set": "Mercenary"
+    },
+    "notes": "A2950: Elf Buff Swarming Tower, and Dragon Pasture counts. Recommended to be run for 15-30 mins. Gets up to ~36k clicks/sec after mcc5. Can be used for God’s Fingers",
+    "author": "Genhard",
+    "section": "Clicks"
+  },
+  {
+    "name": "Spells Cast",
+    "type": "Buff",
+    "code": "FR4,FR10,EL7,EL11,AN10,GB3,GB7,UD7,DD6,DW2,DN2,DG6,DG7,AR2,MK6,TT10,SP:Dragon's Breath,SP:Precognition,UB:Swarming Tower,UNN:DW,UNN:DG,S3200,S1275,C3100,C1325,D5375,E5375,A2950,W1375,W650,W1400,F5750,S1500,S525,C425,C700,D700,E450,A575,A1500,W1275,W600",
+    "facts": {
+      "Range": "R206+",
+      "Faction": "Good/Balance Mercenary",
+      "Bloodline": "Dwarven",
+      "Set": "Fairy"
+    },
+    "notes": "A2950: Archon Secondary Researches: Buff Holy Sites and Swarming Towers counts.",
+    "author": "Weedheter",
+    "section": "Spell Buffing"
+  },
+  {
+    "name": "After MCC2",
+    "type": "Buff",
+    "code": "EL7,EL12,GB3,UD7,UD10,DD6,FC3,DW2,DW7,DW12,DG4,DG6,DG10,AR2,AR5,DJ9,SP:Fairy Chanting,SP:Precognition,UB:Dragon Pasture,UNN:DN,UNN:FC,C1325,D1375,E425,E1325,A2950,W650,W600,W1375,S5875,C3100,C700,D3350,D700,E3300,A575,A1500,W1400,F5500",
+    "facts": {
+      "Range": "e70+ gems",
+      "Faction": "Neutral/Chaos Mercenary",
+      "Bloodline": "Undead",
+      "Set": "Faceless"
+    },
+    "notes": "A2950: Makers Secondary Researches (during Druid Chaos Madness): Buff spells cast, Combo Strike activity time, and Flesh Workshops count. Run the build multiple times. More gems is ideal for better results, the range is a minimum. Import secondary researches during Druid Chaos Madness, then wait for Fairy Chaos Madness for maximum assistants. You can check [Realm Weather Service](https://shadowgull.github.io/dox4242.github.io/rws/index.html) to see when Druid CM is coming up.",
+    "author": "Weedheter",
+    "section": "Max Assistants"
+  },
+  {
+    "name": "Alternative (quick) Max Excavations",
+    "type": "Buff",
+    "code": "EL11,EL12,GB3,UD7,UD10,DD3,DD6,FC3,DN8,DW12,DG4,DG6,DG7,AR2,DJ9,MK5,SP:Dragon's Breath,SP:Precognition,UB:Pavilion,UNN:DN,UNN:DG,S5875,C475,C1325,C3100,D1375,D700,D3350,E425,E450,E1225,E1325,A2950,A575,A1500,W600,W650,W1375,W1400,W1275,F5750",
+    "facts": {
+      "Range": "e130+ gems",
+      "Faction": "Good/Chaos Mercenary",
+      "Bloodline": "Makers",
+      "Set": "Dwarf"
+    },
+    "notes": "A2950: Undead Doesn’t require buffing assistants, should outperform the above build unless you have high faceless set (e14+). Buff Flesh Workshops; get offline time and alignment times, Combo Strike activity time (offline as ddudan when buffing evil/order, drowline for other alignments). Wait for Druid Chaos Madness to afford all the research. S5875 requires ~12h spent as Good/Chaos, replace with S5125 if you can’t afford it. Dragon’s Breath on Red,Green,Black,Yellow. After setup run for a few mins, then wait for Titan Chaos Madness and buy max excavations. Should reach ~70k excavations.",
+    "author": "Apollo",
+    "section": "Max Excavations"
+  },
+  {
+    "name": "Spells Cast",
+    "type": "Challenge",
+    "code": "S475,C425,E425",
+    "facts": {
+      "Faction": "Angel",
+      "Bloodline": "Djinn",
+      "Set": "Fairy"
+    },
+    "notes": "Wait for the Archon treaty, then Archon Union and Makers Heritage (~15min). Completion time should be roughly 90 minutes. Gets ~500 clicks/sec.",
+    "author": "",
+    "section": "Mercenary Duel R172"
+  },
+  {
+    "name": "Buildings",
+    "type": "Challenge",
+    "code": "S425,C425,D525,E425",
+    "facts": {
+      "Range": "e50+",
+      "Faction": "Fairy",
+      "Bloodline": "Dragon",
+      "Set": "Angel"
+    },
+    "notes": "Will complete at around 1e57 gems. Do spells first",
+    "author": "",
+    "section": "Mercenary Duel R172"
+  },
+  {
+    "name": "Precognition and Brainwave Tier 4 and A5625 unlock",
+    "type": "Unlock",
+    "code": "EL12,AN11,AN12,GB3,GB5,GB7,UD7,DD3,DN4,DW2,DW7,DW12,AN5,DG7,AR2,MK5,SP:Night Time,SP:Precognition,S1275,C1325,A2950,W1275",
+    "facts": {
+      "Range": "R172+, e56+ gems",
+      "Faction": "Evil/Order Mercenary",
+      "Bloodline": "Faceless",
+      "Set": "Angel"
+    },
+    "notes": "A2950: Angel",
+    "author": "",
+    "section": "Unlock builds"
+  },
+  {
+    "name": "Battlefield + Athanor",
+    "type": "Production",
+    "code": "EL2,EL12,GB3,UD7,UD10,DD6,DN8,DW2,DW7,DW12,DG4,DG6,DG10,AR2,DJ9,MK5,SP:Night Time,SP:Precognition,UB:Burning Abyss,UNN:EL,S1500,S525,C700,C1325,D700,D1375,E425,E1225,A2950,A575,W650,W1400",
+    "facts": {
+      "Range": "e67 gems",
+      "Faction": "Evil/Order Mercenary",
+      "Bloodline": "Makers",
+      "Set": "Dwarven"
+    },
+    "notes": "A2950: Undead",
+    "author": "ElJay",
+    "section": "Artifacts R180/R181"
+  },
+  {
+    "name": "Factory + Vault",
+    "type": "Production",
+    "code": "FR4,EL2,EL12,GB3,UD7,UD10,DD6,DN8,DW2,DW7,DW12,DG6,DG10,AR2,DJ9,MK5,SP:Dragon's Breath,SP:Precognition,UB:Dragon Pasture,UNN:GB,S1500,S525,C700,C1325,D700,D1375,E450,E425,E1225,A2950,A575,W650,W1400,W600",
+    "facts": {
+      "Range": "e67 gems",
+      "Faction": "Neutral/Balance Mercenary",
+      "Bloodline": "Makers",
+      "Set": "Mercenary"
+    },
+    "notes": "A2950: Elf Excavate Battlefield and Athanor first.",
+    "author": "ElJay",
+    "section": "Artifacts R180/R181"
+  },
+  {
+    "name": "Mana Loom + Mythos",
+    "type": "Production",
+    "code": "EL2,EL12,GB3,UD7,UD10,DD3,DD6,DN8,DW7,DW12,DG4,DG6,DG7,DG10,AR2,MK5,SP:Dragon's Breath,SP:Precognition,UB:Pavilion,UNN:DN,S1500,S525,C700,C1325,C425,C475,D700,D1375,E425,E1225,A2950,A575,W650,W1375,W600",
+    "facts": {
+      "Range": "e67 gems",
+      "Faction": "Good/Chaos Mercenary",
+      "Bloodline": "Makers",
+      "Set": "Dwarven"
+    },
+    "notes": "A2950: Undead Excavate Factory and Vault first. Increase the chance to excavate Mythos by increasing the spell activity time of your most used spell (essentially, Call to Arms activity time). You can check [Lara Crypt](https://shadowgull.github.io/dox4242.github.io/arch/index.html) to figure out how much is necessary. Autocast spells other than Tax Collection on tier 2 until 4th Mercenary Contract (e100 coins).",
+    "author": "ElJay",
+    "section": "Artifacts R180/R181"
+  },
+  {
+    "name": "The Architect Trophy",
+    "type": "Production",
+    "code": "FR1,FR10,GB12,AN10,GB3,GB7,UD7,TT10,DD6,DN2,DN4,DW8,DG6,DG7,AR2,MK6,SP:Dragon's Breath,SP:Precognition,UB:Swarming Tower,UNN:DW,UNN:UD,S5625,S1275,S525,C425,C700,C1325,C3100,D700,D1375,D3350,E1225,E5375,A575,A1325,A1500,A2950,W1375,W600,W650,W1400,F5500",
+    "facts": {
+      "Range": "R206+, e140+ gems",
+      "Requirement": "Mercenary Challenge 5",
+      "Faction": "Good/Balance Mercenary",
+      "Bloodline": "Goblin",
+      "Set": "Fairy"
+    },
+    "notes": "A2950: Titan",
+    "author": "",
+    "section": "Artifacts R180/R181"
+  }
+]

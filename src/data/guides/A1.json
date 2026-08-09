@@ -1,0 +1,506 @@
+[
+  {
+    "name": "R40-99 DNGB (prod)",
+    "type": "Production",
+    "code": "S50,S200,S330,S400,S475,C80,C120,C150,C340,C400,D55,D200,D250,D320,D650,E80,E330,E425,E450,E575,E700,A10,A105,A150,A400,A510,W25,W120,W180,W205,W250,W400,W600",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R46 DDFR (Dragon unlock)",
+    "type": "Unlock",
+    "code": "S105,S180,S200,S330,S400,S475,C105,C150,C250,C330,C340,C400,C475,D150,D200,D250,D270,D330,E145,E320,E400,E450,E510,A30,A150,A305,A400,A575,W120,W180,W250,W400,W650",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R48 DNTT (prod)",
+    "type": "Production",
+    "code": "S135,S200,S215,S330,S400,C105,C250,C330,C340,C375,C400,D250,D270,D320,D350,D1175,E145,E150,E300,E320,E425,A105,A150,A270,A305,A400,W150,W180,W200,W250,W290,W400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R48 UDTT (Dragon unlock)",
+    "type": "Unlock",
+    "code": "S200,S215,S330,S400,S475,C105,C250,C330,C340,C375,C400,D150,D200,D250,D270,D350,E145,E300,E320,E425,E450,A120,A150,A250,A305,A400,W120,W135,W180,W200,W250,W400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R49 DNTT (prod)",
+    "type": "Production",
+    "code": "S135,S200,S215,S330,S400,C105,C250,C330,C340,C375,C400,D250,D270,D320,D350,D1175,E150,E300,E320,E425,E1225,A105,A150,A270,A305,A400,W150,W180,W200,W250,W290,W400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R50 DNTT (prod)",
+    "type": "Production",
+    "code": "S135,S200,S215,S330,S400,C105,C250,C330,C340,C375,C400,D250,D270,D350,D1175,D1275,E150,E300,E320,E425,E1225,A105,A150,A270,A305,A400,W150,W180,W200,W250,W290,W400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R51 DNTT (prod)",
+    "type": "Production",
+    "code": "S135,S200,S215,S330,S400,C105,C330,C340,C400,C1300,C1325,D250,D270,D350,D1175,D1275,E150,E300,E320,E425,E1225,A105,A150,A270,A305,A400,W150,W180,W200,W250,W290,W400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R52 DNTT (prod)",
+    "type": "Production",
+    "code": "S135,S200,S215,S330,S400,C105,C340,C375,C400,C1300,C1325,D250,D350,D1175,D1275,D1375,E150,E300,E320,E425,E1225,A105,A150,A270,A305,A400,W180,W200,W250,W290,W400,W1375",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R53 DNTT (prod)",
+    "type": "Production",
+    "code": "S135,S200,S215,S330,S400,C105,C340,C375,C400,C1300,C1325,D250,D350,D1175,D1275,D1375,E150,E300,E425,E1225,E1425,A105,A150,A270,A305,A400,W180,W200,W250,W290,W400,W1375",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R53 GBTT (DGC1)",
+    "type": "Build",
+    "code": "S135,S200,S215,S330,S400,C105,C340,C375,C400,C1300,C1325,D250,D350,D1175,D1275,D1375,E135,E150,E300,E425,E1225,A105,A150,A270,A305,A400,W180,W200,W250,W290,W400,W1375",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R54 DNTT (prod)",
+    "type": "Production",
+    "code": "S200,S215,S330,S400,S1450,C105,C340,C375,C400,C1300,C1325,D250,D350,D1175,D1275,D1375,E150,E300,E425,E1225,E1425,A105,A150,A270,A305,A400,W180,W200,W250,W290,W400,W1375",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R55-66 DNTT (low gem prod)",
+    "type": "Production",
+    "code": "S200,S215,S330,S400,S1450,C105,C340,C400,C1300,C1325,C1500,D250,D350,D1175,D1275,D1375,E1225,E150,E300,E425,E1425,A105,A150,A270,A305,A400,W180,W200,W250,W290,W400,W1375",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R56 DGDD (DGC2 V1 - check mercs!)",
+    "type": "Build",
+    "code": "S200,S215,S330,S400,S475,C330,C340,C400,C1300,C1325,D250,D270,D300,D330,D1375,E145,E150,E400,E425,E450,E1225,A105,A150,A305,A375,A1200,A1325,W200,W250,W1275,W1375,W1400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R56 DGDD (DGC2 V2 - e62+)",
+    "type": "Build",
+    "code": "S200,S215,S330,S400,S550,C330,C340,C400,C1300,C1325,D250,D270,D300,D1275,D1375,E145,E150,E425,E450,E1225,E1425,A105,A150,A305,A375,A1200,A1500,W180,W200,W250,W1375,W1400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R56-59 DNTT (prod, e57+)",
+    "type": "Production",
+    "code": "S135,S200,S330,S400,S1450,C105,C340,C400,C1300,C1325,C1500,D250,D350,D1175,D1275,D1375,E150,E300,E425,E450,E1225,A105,A150,A270,A305,A400,W180,W200,W250,W290,W400,W1375",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R60-62 DNTT (prod, e57+)",
+    "type": "Production",
+    "code": "S200,S215,S330,S400,S1450,C105,C340,C400,C1300,C1325,C1500,D250,D350,D1175,D1275,D1375,E150,E300,E425,E450,E1225,A105,A150,A270,A305,A400,W180,W200,W250,W290,W400,W1375",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R62 TTFC (DGC4)",
+    "type": "Build",
+    "code": "S200,S215,S330,S400,S1450,S1500,C105,C305,C340,C1300,C1325,D250,D290,D320,D1175,D1275,D1375,E135,E150,E425,E450,E1225,A150,A300,A305,A400,A1325,W180,W200,W300,W400,W1375",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R63-66 DMDD (prod)",
+    "type": "Production",
+    "code": "S200,S215,S330,S400,S550,C300,C340,C400,C1300,C1325,D250,D270,D320,D1275,D1375,E150,E290,E425,E450,E1225,E1425,A120,A150,A375,A550,A1200,A1500,W120,W180,W200,W350,W400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R63-66 ELDD (PB buff, for DD)",
+    "type": "Buff",
+    "code": "S200,S330,S400,S425,S475,C105,C250,C330,C400,C1325,D200,D250,D270,D300,D1375,E145,E320,E400,E425,E450,E1225,A120,A150,A305,A375,A1200,A1500,W200,W400,W1275,W1375,W1400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R65 ??TT (lineage leveler, L16)",
+    "type": "Lineage",
+    "code": "S30,S105,S200,S400,S475,C105,C250,C330,C375,C400,C1325,D150,D250,D270,D350,D1375,E145,E300,E320,E425,E450,A120,A150,A250,A305,A1325,W135,W200,W250,W400,W1375,W1400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R65 DGGB (DG L10)",
+    "type": "Build",
+    "code": "S50,S215,S400,S475,S1275,C105,C250,C330,C400,C1325,D150,D200,D250,D270,D1375,E135,E145,E320,E400,E425,E450,A120,A250,A305,A400,A1325,W135,W180,W200,W250,W400,W600,W1375",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R65 TTFC (TT L14)",
+    "type": "Build",
+    "code": "S200,S330,S400,S1275,S1450,S1500,C105,C250,C305,C400,C1325,D150,D200,D250,D270,D330,D1375,E145,E320,E425,E450,E1225,A120,A150,A300,A305,A1325,W250,W300,W400,W1375,W1400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R67 DMDM (DWP1 buff)",
+    "type": "Buff",
+    "code": "S215,S330,S400,S525,S1275,C105,C150,C340,C400,C1325,D250,D270,D650,D1275,D1375,E135,E230,E320,E450,E575,A25,A305,A400,A550,A1325,W120,W175,W180,W200,W250,W400,W600,W1375",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R67-69 DWTT (prod)",
+    "type": "Production",
+    "code": "S135,S200,S330,S400,S1450,C105,C340,C400,C1300,C1325,C1500,D250,D350,D1175,D1275,D1375,E150,E300,E425,E450,E1225,A105,A120,A150,A305,A400,W180,W200,W290,W400,W1275,W1375",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R67-73 DWFC (prod, low gem)",
+    "type": "Production",
+    "code": "S200,S330,S400,S1275,S1450,S1500,C105,C340,C400,C1300,C1325,D250,D290,D320,D1175,D1275,D1375,E150,E425,E450,E1225,E1425,A150,A300,A305,A400,A1325,W180,W200,W300,W400,W1375",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R68 DWDD (DGC6)",
+    "type": "Build",
+    "code": "S200,S215,S330,S400,S550,C105,C305,C400,C1300,C1325,D250,D270,D300,D1275,D1375,E150,E270,E425,E450,E1225,E1425,A120,A150,A305,A375,A1200,A1500,W200,W250,W400,W1375,W1400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R70-72 DWTT (prod)",
+    "type": "Production",
+    "code": "S135,S200,S330,S400,S1450,C105,C340,C400,C1300,C1325,C1500,D250,D350,D1175,D1275,D1375,E150,E300,E425,E450,E1225,A105,A120,A150,A305,A400,W180,W200,W290,W400,W1375,W1400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R73 DWDD (PB buff, for DD)",
+    "type": "Buff",
+    "code": "S200,S330,S400,S425,S475,C105,C250,C330,C400,C1325,D200,D250,D270,D300,D1375,E145,E320,E400,E425,E450,E1225,A120,A150,A305,A375,A1200,A1500,W200,W400,W1275,W1375,W1400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R73 GBDD (prod)",
+    "type": "Production",
+    "code": "S200,S215,S330,S400,S1450,C300,C340,C400,C1300,C1325,D250,D320,D330,D1275,D1375,E150,E290,E425,E450,E1225,E1425,A150,A375,A400,A550,A1200,A1500,W180,W200,W400,W1275,W1400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R73 GBDD (prod, UB skip version)",
+    "type": "Production",
+    "code": "S200,S215,S330,S400,S1450,C305,C340,C400,C1300,C1325,D250,D320,D330,D1275,D1375,E145,E150,E425,E450,E1225,E1425,A150,A375,A400,A550,A1200,A1500,W180,W200,W400,W1275,W1400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R74 TTFC (prod)",
+    "type": "Production",
+    "code": "S200,S330,S400,S1275,S1450,S1500,C105,C305,C340,C1300,C1325,D250,D320,D330,D1175,D1275,D1375,E150,E425,E450,E1225,E1425,A150,A300,A305,A400,A1325,W180,W200,W300,W400,W1275",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R74 UDTT (W300 buff, for FC)",
+    "type": "Buff",
+    "code": "S200,S215,S330,S400,S1450,C105,C250,C305,C375,C400,C1325,D200,D250,D270,D350,D1375,E300,E320,E425,E450,E1225,A120,A150,A250,A305,A400,W200,W250,W400,W1275,W1375,W1400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R75 G-UD (W300 buff)",
+    "type": "Buff",
+    "code": "S200,S330,S400,S1275,S1500,C105,C305,C700,C1325,D205,D250,D270,D300,D1375,E135,E320,E400,E1225,A305,A375,A575,A1500,W300,W600,W650,W1400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R75 N-?? (lineage leveler L25)",
+    "type": "Lineage",
+    "code": "S200,S400,S475,S1500,C105,C250,C375,C400,C1325,D150,D250,D270,D1375,E300,E320,E425,E450,A120,A150,A305,A375,A575,W300,W650,W1375,W1400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R75 N-TT (prod)",
+    "type": "Production",
+    "code": "S180,S200,S400,S1450,C340,C700,C1300,C1325,C1500,D250,D700,D1275,D2850,E150,E300,E425,E1225,A30,A150,A375,A575,A1500,W200,W300,W1275,W1400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R75-89 TTFC (prod, low gem)",
+    "type": "Production",
+    "code": "S200,S330,S400,S1275,S1450,S1500,C105,C340,C400,C1300,C1325,D250,D290,D320,D1175,D1275,D1375,E150,E425,E450,E1225,E1425,A150,A300,A305,A400,A1325,W180,W200,W300,W400,W1375",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R76 E-GB (prod)",
+    "type": "Production",
+    "code": "S200,S400,S1450,S2900,C340,C700,C1300,C1325,D250,D700,D1275,D2850,E150,E230,E300,E425,E1225,A30,A150,A375,A575,W180,W200,W300,W400,W625",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R77-78 E-GB-FR (prod)",
+    "type": "Production",
+    "code": "S200,S400,S1450,S2900,C340,C1300,C1325,C3000,D250,D700,D1275,D2850,E150,E230,E300,E425,E1225,A30,A150,A575,A2950,W180,W200,W300,W400,W625",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R77-99 N-DN-FR (prod, merc starter)",
+    "type": "Production",
+    "code": "S200,S330,S400,S1450,S3200,C340,C700,C1300,C1325,C3000,C3100,D250,D700,D1275,D2850,D3350,E150,E300,E425,E1225,E3250,A30,A150,A375,A575,A2950,A3400,W180,W200,W300,W1400,W3150",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R79-80 E-GB-FR (prod)",
+    "type": "Production",
+    "code": "S200,S400,S1450,S2900,C340,C1300,C1325,C3000,D250,D700,D1275,D2850,E150,E230,E300,E425,E1225,A30,A150,A575,A2950,W200,W300,W400,W625,W3150",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R81 GBFR (E3300 unlock)",
+    "type": "Unlock",
+    "code": "S180,S200,S215,S330,S400,S550,C10,C80,C105,C120,C340,C400,C1325,D250,D320,D330,D1275,D1375,E50,E135,E145,E450,E510,A30,A150,A250,A575,A1325,W120,W180,W250,W650,W1375",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R81-84 N-DG-FR (prod)",
+    "type": "Production",
+    "code": "S200,S330,S400,S1450,C105,C700,C1300,C1325,C3000,D250,D350,D1275,D2850,E150,E1225,E3250,E3300,A30,A150,A1200,A1500,A2950,W200,W300,W400,W3150",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R81-99 G-AN-FR (PB10 buff)",
+    "type": "Buff",
+    "code": "S200,S400,S1275,S1500,S2900,S3200,C225,C700,C1325,C3000,C3100,D200,D250,D270,D300,D330,D3350,E50,E135,E400,E1225,E3300,A30,A150,A575,A2950,A3400,W300,W1275,W1375,W1400,W3050",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R81-99 N-DW-UD (W300 buff)",
+    "type": "Buff",
+    "code": "S400,S525,S1500,S3200,C105,C305,C700,C1325,C3100,D250,D350,D1375,D3350,E135,E425,E3250,E3300,A375,A575,A1500,A2950,A3400,W300,W400,W600,W650",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R82 E-DD-AN (D3350 unlock)",
+    "type": "Unlock",
+    "code": "S200,S400,S1500,S3200,C400,C700,C1325,C3100,D270,D300,D700,D1375,E300,E400,E425,E450,E3300,A300,A575,A1500,A2950,W200,W300,W320,W400,W1400",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R85-89 N-DG-UD (prod)",
+    "type": "Production",
+    "code": "S200,S400,S1450,S1500,C105,C700,C1300,C1325,C3000,D250,D350,D1175,D1275,E150,E1225,E3250,E3300,A150,A375,A575,A1500,A2950,W200,W300,W400,W3050",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R90-99 G-FR-UD (prod)",
+    "type": "Production",
+    "code": "S200,S330,S400,S1275,S1500,S2900,C700,C1300,C1325,C3000,C3100,D250,D270,D625,D700,D1275,D1375,E150,E300,E425,E1225,E3300,A30,A150,A375,A575,A2950,W200,W650,W1400,W3050,W3150",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R90-99 TTFC (prod)",
+    "type": "Production",
+    "code": "S200,S215,S330,S400,S1275,S1450,S1500,C105,C250,C340,C400,C1300,C1325,D55,D250,D290,D320,D1175,D1275,D1375,E145,E150,E425,E450,E1225,E1425,A105,A150,A300,A305,A400,A1325,W150,W180,W200,W300,W400,W1375",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R56 G-DD (DGC2 V1, PB4 + tiering)",
+    "type": "Build",
+    "code": "EL1,GB3,GB5,GB7,UD7,DD3,DD4,DN4,DW7,DG3,DG4,DG7",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R75 G-UD (W300 buff)",
+    "type": "Buff",
+    "code": "FR4,GB3,GB5,GB7,UD7,FC3,DN2,DN4,DW7,DG3,DG4,DG7,MA:EL7,SP:Fairy Chanting,SP:Combo Strike",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R75 N-?? (lineage leveler L25)",
+    "type": "Lineage",
+    "code": "FR4,EL1,GB5,GB7,TT7,DD3,FC3,DN4,DW7,DG2,DG4,DG7,SP:Dragon's Breath,SP:Lightning Strike",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R75 N-DN (merc research unlock II)",
+    "type": "Unlock",
+    "code": "FR5,GB3,GB5,GB7,UD7,TT2,DD3,DN4,DW7,DG2,DG4,DG7,SP:Fairy Chanting,SP:Dragon's Breath",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R75 N-GB (merc research unlock I)",
+    "type": "Unlock",
+    "code": "FR1,FR5,GB3,GB5,GB7,TT9,DN2,DN4,DW7,DG3,DG4,DG7,SP:Lightning Strike,SP:Dragon's Breath",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R75 N-TT (prod)",
+    "type": "Production",
+    "code": "FR1,FR5,AN5,GB3,GB7,UD7,DN2,DN4,DN9,DG2,DG4,DG8,SP:Dragon's Breath,SP:Fairy Chanting",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R76 E-GB (prod)",
+    "type": "Production",
+    "code": "FR1,FR5,AN5,GB3,GB7,UD7,DN2,DN4,DW7,DG2,DG4,DG7,MA:GB8,SP:Fairy Chanting,SP:Dragon's Breath",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R77-80 E-GB-FR (prod)",
+    "type": "Production",
+    "code": "FR1,FR5,GB3,GB7,UD7,FC5,DN2,DN4,DW7,DG2,DG4,DG7,MA:GB8,SP:Fairy Chanting,SP:Dragon's Breath",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R77-99 N-DN-FR (prod, merc starter)",
+    "type": "Production",
+    "code": "FR4,EL2,GB3,GB5,GB7,UD7,DD3,DN4,DW7,DG2,DG4,DG7,SP:Fairy Chanting,SP:Dragon's Breath",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R81-84 N-DG-FR (prod)",
+    "type": "Production",
+    "code": "FR1,FR5,EL5,GB3,GB7,UD7,DD6,DN2,DW7,DG2,DG5,DG7,SP:Fairy Chanting,SP:Grand Balance",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R81-99 G-AN-FR (PB10 buff)",
+    "type": "Buff",
+    "code": "FR1,FR4,AN5,GB3,GB5,GB7,UD7,TT2,DN4,DN9,DG3,DG7,MA:EL7,SP:Fairy Chanting,SP:Dragon's Breath",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R81-99 N-DW-UD (W300 buff)",
+    "type": "Buff",
+    "code": "FR1,FR4,GB3,UD7,DM7,DD6,FC3,DN2,DN4,DW7,DG4,DG7,SP:Fairy Chanting,SP:Lightning Strike",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R82 E-DD-AN (D3350 unlock)",
+    "type": "Unlock",
+    "code": "EL1,EL7,AN5,GB3,GB5,GB7,UD7,TT2,DN2,DN4,DG6,DG7,MA:DM7,SP:God's Hand,SP:Moon Blessing",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R85-89 N-DG-UD (prod)",
+    "type": "Production",
+    "code": "EL2,EL5,GB3,UD7,DM7,DD6,FC2,DN4,DW7,DG2,DG5,DG7,SP:Lightning Strike,SP:Grand Balance",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  },
+  {
+    "name": "R90-99 G-FR-UD (prod)",
+    "type": "Production",
+    "code": "FR1,FR4,FR5,GB3,GB9,UD7,FC3,DN4,DW2,DW7,DG6,DG7,MA:EL7,SP:Dragon's Breath,SP:Grand Balance",
+    "facts": [],
+    "notes": "",
+    "author": ""
+  }
+]

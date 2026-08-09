@@ -1,0 +1,26 @@
+---
+import type { GuideEntry } from '../data/guides';
+const { entry } = Astro.props as { entry: GuideEntry };
+const tokens = entry.code.split(',').map((token) => token.trim()).filter(Boolean);
+const research = tokens.filter((token) => /^[SCDEAWF]\d+$/.test(token));
+const setup = tokens.filter((token) => !/^[SCDEAWF]\d+$/.test(token));
+const summary = ['Range', 'Faction', 'Bloodline'].map((key) => entry.facts[key]).filter(Boolean).join(' · ');
+---
+<details class="guide-build-entry" data-guide-entry>
+  <summary>
+    <span class="guide-build-summary-main"><strong>{entry.name}</strong><span class="guide-entry-type">{entry.type}</span></span>
+    {summary && <span class="guide-build-summary-meta">{summary}</span>}
+  </summary>
+  <div class="guide-build-entry-body">
+    {Object.keys(entry.facts).length > 0 && <dl class="build-facts">{Object.entries(entry.facts).filter(([, value]) => value.trim()).map(([label, value]) => <div><dt>{label}</dt><dd>{value}</dd></div>)}</dl>}
+    {entry.notes && <p class="build-entry-note">{entry.notes}</p>}
+    {entry.code && research.length > 0 && setup.length > 0 ? (
+      <div class="guide-combined-template">
+        <div class="guide-template-segment"><strong>Mercenary upgrades and setup</strong><code>{setup.join(',')}</code></div>
+        <div class="guide-template-segment"><strong>Researches</strong><code>{research.join(',')}</code></div>
+        <div class="guide-template-actions"><button type="button" data-copy-build={setup.join(',')}>Copy setup</button><button type="button" data-copy-build={research.join(',')}>Copy researches</button><button type="button" data-copy-build={entry.code}>Copy full build</button></div>
+      </div>
+    ) : entry.code ? <div class="source-build-code"><code>{entry.code}</code><button type="button" data-copy-build={entry.code}>Copy build</button></div> : null}
+    <footer class="build-credit"><span><strong>Original build:</strong> {entry.author || 'Uncredited community source'}</span></footer>
+  </div>
+</details>

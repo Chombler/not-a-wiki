@@ -1,0 +1,13 @@
+---
+import { guideSequence } from '../data/guides';
+const { current } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const keys = Object.keys(guideSequence);
+const index = keys.indexOf(current);
+const previous = index > 0 ? keys[index - 1] : undefined;
+const next = index >= 0 && index < keys.length - 1 ? keys[index + 1] : undefined;
+---
+<nav class="guide-pager" aria-label="Guide sequence">
+  {previous ? <a class="guide-pager-previous" href={`${base}${previous}`}><span>Previous</span><strong>← {guideSequence[previous]}</strong></a> : <span></span>}
+  {next ? <a class="guide-pager-next" href={`${base}${next}`}><span>Next</span><strong>{guideSequence[next]} →</strong></a> : <span></span>}
+</nav>

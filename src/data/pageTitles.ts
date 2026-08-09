@@ -1,4 +1,11 @@
 const pageTitles: Record<string, string> = {
+  A0Guide: 'Ascension 0 Guide',
+  A1Guide: 'Ascension 1 Guide',
+  A2Guide: 'Ascension 2 Guide',
+  A3Guide: 'Ascension 3 Guide',
+  A4Guide: 'Ascension 4 Guide',
+  A3SpecialBuilds: 'A3 Special-purpose Builds',
+  A4PostA4: 'Post-A4 Builds',
   BuildingAlignments: 'Buildings',
   BuildingUpgrades: 'Building Upgrades',
   FactionUpgrades: 'Faction Upgrades',

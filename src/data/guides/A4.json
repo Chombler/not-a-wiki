@@ -1,0 +1,530 @@
+[
+  {
+    "name": "Druidline Titan e0-e15",
+    "type": "Production",
+    "code": "S5875,C5875,D5875,E5625,A5875,W5625,F5750",
+    "facts": [],
+    "notes": "",
+    "author": "",
+    "section": "Pre-Artifact Set Production (R220-R224)"
+  },
+  {
+    "name": "Titans Furry Crew (Redux) e0-e27",
+    "type": "Production",
+    "code": "S5875,C5875,D5875,E5625,A5875,W5625,F5750",
+    "facts": [],
+    "notes": "Druidline Titan Titan Set 2 e22-e26: ANB e26+: FCS Note: Titan Set 2 is needed to push to the higher gems, but you can also use this to unlock Titan Set 2.",
+    "author": "Wylean, updated for 4.3.2 by lojack",
+    "section": "Pre-Lineage Production (R225-R229)"
+  },
+  {
+    "name": "Dragonline Titan Titan Set 2 e23-e28",
+    "type": "Production",
+    "code": "S5875,C5625,D5875,E5625,A5875,W5625,F5750",
+    "facts": [],
+    "notes": "ANB",
+    "author": "",
+    "section": "Pre-Lineage Production (R225-R229)"
+  },
+  {
+    "name": "Titan Starter",
+    "type": "Production",
+    "code": "S5625,S5875,C5625,C5875,D5625,D5875,E5625,A11625,W5625,W5875,F5500,F5750,S5875,S5625,C5625,C5875,D5625,D5875,E5625,A11625,W5625,W5875,F11750,S5875,S5625,C11125,D5625,D5875,E5625,E5125,A11625,W5625,W5875,F11750",
+    "facts": [],
+    "notes": "0-e72 Undeadline (0-e56), Fairyline (e56+) Dragon Set 0-e38 ELB, FCS, UDG e38-e56 (FRB), DDS, DDG, GBG, FR/GB e56-e72 (DDG), GBG, DDS, FRB, FR/GB Notes: always keep some spare excavations At e56: run Undead for ~10 min (depends on R) and Fairy for a few seconds to afford researches Slows down a bit after e65",
+    "author": "ensteffahn",
+    "section": "Post-Prestige Production (R235-254)"
+  },
+  {
+    "name": "Undeadline Druid Druid Set",
+    "type": "Production",
+    "code": "S5875,S5625,C5875,C5625,D5625,D5875,E5625,E5375,A11625,W5625,W5875,F11750",
+    "facts": [],
+    "notes": "e62-e75 (DWB), GBG, FRB, ELD, UDG, FR/GB Note: 5-10m offline + evil time is strongly recommended",
+    "author": "ensteffahn",
+    "section": "Post-Prestige Production (R235-254)"
+  },
+  {
+    "name": "Makerline Faceless Druid Set",
+    "type": "Production",
+    "code": "S5875,S5625,C5875,C5625,D5625,D5875,E5625,E5125,A11625,W5625,W5875,F11750",
+    "facts": [],
+    "notes": "e75-e95 (DND), ELD, GBG, DDG, FRB, FR/GB Notes: buff offline time (1h+) and High Bastions, combinator buffs recommended excavate for FC (don’t go over 30k before starting this build) Swap DND > DNG to excavate the mask (R255, e90+)",
+    "author": "ensteffahn",
+    "section": "Post-Prestige Production (R235-254)"
+  },
+  {
+    "name": "Excavation Rush",
+    "type": "Production",
+    "code": "S5875,C5875,D5875,E5625,A5875,W5625,F5500,S5875,C5625,D5875,E5625,W5625,S5625,C5875,D5625,E5125,A11625,W5875,F11750",
+    "facts": [],
+    "notes": "Undeadline Titan Dragon Set Author : Weedheter e0-e60 e20 Dragon Treaty (DDS),DMB,ANS e25 3rd legacy UDG, AN/UD e40 ANS → ELD AN/UD → EL/DM If low order time Notes : Only works to rush at start of R, requires 10k excavs only do 100 at a time after getting dragon treaty to buy legacies and union",
+    "author": "",
+    "section": "Post-Prestige Production (R235-254)"
+  },
+  {
+    "name": "Nature Squids on Meth Mana",
+    "type": "Production",
+    "code": "S5875,S5625,C5875,C5625,D5875,D5625,E5625,E5375,A5625,A5875,W5625,W5875,F5500,S5875,S5625,C5875,C5625,D5875,D5625,E5625,E5375,A11625,W5625,W5875,F11750,S5875,S5625,C5875,C5625,D5875,D5625,E5625,E5375,A11625,W5625,W5875,F11750",
+    "facts": [],
+    "notes": "e0-e90? Facelessline Druid Dragonset Early: FRB/ELS Middle: (FRB),AND,GBG,ELD Fairy/Goblin Legacy Combo Late: (DWB),AND,GBG,ELD,FRB Fairy/Goblin Legacy Combo Notes: Same basic setup with minor modifications seems to work all the way from early start to completing Rs (currently R249); I do have gift of kings and a substantive event bonus, so I don’t know how that will affect results for people without them. If you do not have the coins to buy the upgrades for the higher tier legacies, utilize lower options instead/reincarnate to rerun with more gems. Doesn’t really rely on any pre-buffing, but at least a few minutes of time is needed on elf/undead to make use of later researches. Probably a fair amount of things that still need optimization. The build generally needs less than 10 minutes per run to get to a good amount of gems, so reincarnate early rather than waiting a long time to try to push for more upgrades.Remember to check dragon breath effects - blue isn’t very useful, white is only good after getting dragon upgrades that buff it, and black is minimal without spending more time in the run. Red/Green carry a lot of value and yellow adds a decent amount. Still works in 4.3.2, but maximum effective gem range without trying to get more buffing is probably significantly reduced and isn’t as smooth of accelerating through as before.C11875 does not appear to be worthwhile over C5875 & C5625 with 10 hours of activity time - not sure if/when there would be a breakpoint that does make it a better option.",
+    "author": "Rade",
+    "section": "Post-Prestige Production (R235-254)"
+  },
+  {
+    "name": "Wyrm Diggers",
+    "type": "Production",
+    "code": "S5875,C5625,E5625,W5625,S5625,C5875,D5875,D5625,E5125,A11625,W5875,F11750",
+    "facts": [],
+    "notes": "Makerline Titan Dragon Set Author : Weedheter e55-e97 (DDS),DMB,DMD,ELD,UDG EL/DM e75 DDS→DNG e85 DNG → DND Start doing longer runs e90+ Dragon Set → Face Set (1e7++) E5125/E5625 → E13500 Notes : Requires ~20k excavations max no higher, slowly wait to afford DGAH,DDAH,FRAH, then wait again to get dragon treaty, takes a few minutes. After dragon treaty excav 100 to buy everything. Once everything bought excav 100 again to boost Wyrm’s Den Any amount of Burning Abyss this R is good enough ( more than 0 ) For really high gems with DND buff high bastions. Needs some offline time for MKP1 For e95-e97, buy max excacs after setting up and excav reset before abdication",
+    "author": "",
+    "section": "Post-Prestige Production (R235-254)"
+  },
+  {
+    "name": "Makersline Faceless Faceset",
+    "type": "Production",
+    "code": "S5875,S5625,C5875,C5625,D5625,D5875,E5625,E5125,A11625,W12250,F11750",
+    "facts": {
+      "Requirement": "Some offline time this R (1h is good), Faceless set at least 1e6 assistants (Starter Ants)"
+    },
+    "notes": "e66-e95?+ (DWB), DMB, FRD, ELD, DMD, FR/EL Notes: - Performs better after first climbing with Infernal Fae Mines to buff W12250, DM10, FR11, and FR12, as well reusing the offline time needed for that build. - W12250 -> W5625,W5875 if W12250 is not unlocked or not buffed (~1000%) - (DWB) -> (DNG) for excavating the Astral artifact, save some excavations for startup. Possible to dig past 50k around e87 gems, but better to push to e90 to be able to push through some small values. - During startup if Faceless Alliance is slow (for mana regen), limit spell tiers. - Excavating ~100 can speed up getting the final legacy (but not required) - Needs some babysitting to keep Dragon Union targeting Unique Buildings. Fine control with Call to Arms tiers, coarse control with Infinite Spiral tiers, uncontrollable variance from FC10. Use the highest Infinite Spiral tier that still targets Unique Buildings, or just go max tiers and wait on FC10. - Ideal breaths: Red > Yellow > Green ~= Black > White > Blue - Quick runs until ~e87 gems, then optional buffs: Faceset, DM10, FR10, W12250 (2000%+, use W12250 unlock build)",
+    "author": "lojack",
+    "section": "Post-Prestige Production (R235-254)"
+  },
+  {
+    "name": "Doubly Dead Druids",
+    "type": "Production",
+    "code": "S5875,S5625,C5875,C5625,D5625,D5875,E5625,E5375,A11625,W5625,W5875,F11750",
+    "facts": {
+      "Faction": "Druid",
+      "Bloodline": "Undead",
+      "Set": "Druid (Dragon below e30)"
+    },
+    "notes": "0-e100 Stoneheart: Undead 0-e30 (ANB), DMB, FCS e30-e57 (FCS), GBG, FRB, ELD, FR/GB e57-e75 (DWB), GBG, FRB, ELD, UDG, FR/GB e75-e85 (DWB), AND, GBG, ELD, UDG, EL/GB e85-e100 (DWB), AND, GBG, FRB, ELD, FR/GB Notes: 5 min offline recommended excavations never needed for FC, but somewhat useful at low gems do a very quick holy sites buff at e75 gets PB10 naturally after getting Makers at e100 can switch to fairyline for a few more gems",
+    "author": "ensteffahn",
+    "section": "Astral Production (R255+)"
+  },
+  {
+    "name": "Meta Titans",
+    "type": "Production",
+    "code": "S5875,S5625,C5625,C5875,D5625,D5875,E5625,E5125,A5875,A5375,W5625,W5875,F11750,S5875,S5625,C5625,C5875,D11125,E11125,A11625,W5625,W5875,F11750",
+    "facts": {
+      "Faction": "Titan",
+      "Bloodline": "Maker"
+    },
+    "notes": "e40-e130 (e40 - e64) Dragon Set (UDG), DDS, GBG, FRB, ELD, FR/GB (e64+) Druid Set (DWB), AND, ELD, FRB, GBB, FR/GB Notes: 5 mins offline as Undead recommended Excavate for legacies and Archon Treaty (e64+) The build has low mana regen for most of the range, so make sure you’re casting Tax Collections, either by keeping spell tiers low enough or by switching to gold autocast regularly",
+    "author": "ensteffahn",
+    "section": "Astral Production (R255+)"
+  },
+  {
+    "name": "Can't Escape The Meta",
+    "type": "Production",
+    "code": "S5875,S5625,C5625,C5875,D11125,E11125,A11625,W5625,W5875,F11750",
+    "facts": {
+      "Faction": "Titan",
+      "Bloodline": "Maker",
+      "Set": "Druid"
+    },
+    "notes": "e95-e145 e95-e120 (DWB), FRD, ELD, AND, GBB, FR/GB e120-e135 (DWB), FRD, ELD, GBB, DND, FR/GB e135-e145 (DWB), ELD, DND, GBB, FRB, FR/GB Notes: run short FR12 and building buffs before starting the build 15-30m offline recommended for e120+ benefits from evil, order, neutral and titan time possible buffs (e130+): excavations (MKFR), spells: (DND), FRD, AND, ELD, UDG, FR/AN a buffed W12250 gives more production, but less FC (e135+): if offline time is low, it might be worth it to go offline for a few minutes at the start of every era",
+    "author": "ensteffahn",
+    "section": "Astral Production (R255+)"
+  },
+  {
+    "name": "Balanced And Fair-y",
+    "type": "Production",
+    "code": "S5875,S5625,C5625,C5875,D11125,E5625,E5375,A11625,W5625,W5875,F11750",
+    "facts": [],
+    "notes": "R255+ Gems: e100/e103 - e145 Makersline Druid Mercset Stoneheart: Druidset (DWB) AND, FRD, DND, ELD, FR/AN Based on Poor Man's Clicker, this is a production based variant of that build for low buffs. Requires around 300k%+ on FR12, this is quickly achieved with any demon build that reaches djinn treaty. Cast spells at T1 until FRD is bought, max excavations once production is fully running. May start up slowly at e100 gems, e103+ will be faster.",
+    "author": "Gull",
+    "section": "Astral Production (R255+)"
+  },
+  {
+    "name": "Holy Site Buff",
+    "type": "Buff",
+    "code": "S5875,C5625,D5875,E5625,A5875,W5625,F5500",
+    "facts": [],
+    "notes": "R230+ Gems: e45 Gobline Angel Undeadset If you’re able to: GBG Notes: This build is probably unoptimized, but is the most optimized for a fast setup time, considering how much time you’d actually need to run this build for before moving to setup for another build.",
+    "author": "CinnamonBoast",
+    "section": "Buildings"
+  },
+  {
+    "name": "Flesh Workshop Buff",
+    "type": "Buff",
+    "code": "S5875,C5625,D5875,E5625,A5875,W5625,F5500",
+    "facts": [],
+    "notes": "R230+ Gems: e45 Gobline Undead Undeadset If you’re able to: GBG Notes: Like the Holy Site Buff, this is heavily unoptimized, but it’s something to quickly copy and use if you need something that takes your buildings to a non-zero value.",
+    "author": "",
+    "section": "Buildings"
+  },
+  {
+    "name": "Starter Ants (Lower gem pre-Astral Assistant Build)",
+    "type": "Buff",
+    "code": "S5875,S5625,C5625,C5875,D5875,D5625,E11625,A5875,A5625,W5625,W5875,F11750",
+    "facts": [],
+    "notes": "R235-R254 Gems: e66 Makersline Fairy Dwarfset AND,ELD,FCB/TTD/UDD,(DWB),ELS Notes: A lower gem assistant buffer, should be able to reach ~1e18 max assistants, for ~1e6 Faceset. Pick FCB/TTD/UDD depending on which has more assistants on it (FC3 vs TT12 vs UD10).",
+    "author": "lojack",
+    "section": "Assistants"
+  },
+  {
+    "name": "Post Astral Ants Buff",
+    "type": "Buff",
+    "code": "S5875,S5625,C5625,C5875,D5875,D5625,E11625,A5875,A5625,W5625,W5875,F11750",
+    "facts": [],
+    "notes": "R255+ Gems: e90+ Makersline Fairy Dwarfset Second Run: Facelessset (DWD) AND, ELD, GBG, FCB/TTD/UDD EL/GB Notes from Cinnamon (4/27/2026): This build should allow you to get the Djinn treaty easily enough so you can have DJC4 along with other things. Being able to reach DJ5 and DJ9 also really help here, but they are not as needed as it may seem. Like the previous, grab whichever of FCB/TTD/UDD are the best here. If you run the build more than one time, make sure you swap dwarfset to facelessset for subsequent runs!",
+    "author": "CinnamonBoast",
+    "section": "Assistants"
+  },
+  {
+    "name": "I Found the Fae Crystals! (FR12/Chaos Spells Cast Buff)",
+    "type": "Buff",
+    "code": "S5625,S5875,C5625,C5875,D5625,D5125,E11125,A11625,W5375,W5625,F11000",
+    "facts": {
+      "Requirement": "Must be online"
+    },
+    "notes": "R255+ Gems: Tested at ~e127 gems Makersline Demon Demonset AND, GBD, UDG, FRD FR/AN Notes: Modified from existing ideas in the W122 and Infernal Fae Mines builds. Utilizes just about the same upgrades but for differing reasons. D5875, while ordinarily okay-ish, as well as E13500, which is very good, are highly deceptive here, as they heavily increase spell duration, thus giving you less casts of Maelstrom and Hellfire Blast. This should net you more casts than some builds that you see in the comments of other builds, but will have a slightly longer setup. D5125 is not impactful here at all, but is added for DJ3 purposes.",
+    "author": "CinnamonBoast",
+    "section": "Spells Cast/Mana Produced"
+  },
+  {
+    "name": "Meta Collection (Makers Lineage Leveler)",
+    "type": "Lineage",
+    "code": "S5875,S5625,C5875,C5625,D11125,E13500,A13125,W13125,F11750",
+    "facts": [],
+    "notes": "R255+ Gems: e138+ Makersline Titan Facelessset (DWB) AND, ELD, GBB, FRD EL/GB Notes: This is likely not optimal, but it is functional for a lineage leveler and is still very quick (nigh-instant L100) (I imagine running any of the prod builds with Makersline in it will net you some levels in Makersline anyhow). Tested with: - 1.2e10 on Faceset. - 6e6 clicks this R. - 11 hours offline time. - 7e26 spells cast this R. - 1e139 gems. - 74k excav depth, no resets.",
+    "author": "CinnamonBoast",
+    "section": "Lineages"
+  },
+  {
+    "name": "Return of the Gobbi (Secondary Lineage Leveler)",
+    "type": "Lineage",
+    "code": "S5625,S5875,C13125,D11125,E13500,A13125,W5375,W5625,F11000",
+    "facts": [],
+    "notes": "R255+ Gems: e138+ Anyline Goblin Facelessset Stoneheart: Druidset AND, ELD, FRD, UDG, FR/AN Notes: The higher gems you have the easier that leveling becomes for a multitude of reasons. Assuming you have my specific level of buffs, these lineages should take you: Instant: Undeadline, Archonline <5m: Titanline, Druidline, Fairyline, Facelessline, Dwarfline, Djinnline, Demonline ~>5m: Elfline, Angelline, Dragonline Tested with: - 1.2e10 on Faceset. - 6e6 clicks this R. - 11 hours offline time. - 7e26 spells cast this R. - 1e139 gems. - 74k excav depth, no resets. - L75 Lineages.",
+    "author": "CinnamonBoast",
+    "section": "Lineages"
+  },
+  {
+    "name": "You Cannot Escape The Neutral Side (Goblin and Drow Lineage Leveler)",
+    "type": "Lineage",
+    "code": "S5875,S5625,C10875,D5875,D5625,E13500,A11625,W13125,F11750",
+    "facts": [],
+    "notes": "R255+ Gems: e138+ Gobline/Drowline Druid Facelessset Stoneheart: Druidset For Gobline: First: S5875,C10875,D11125,E13500,A11625,W13125,F11750 Second: S11625,C5875,D5875,A5875,F5500 For Drowline: Both: (DWB) AND, ELD, GBG, DWD EL/GB Tested with: - 1.2e10 on Faceset. - 6e6 clicks this R. - 11 hours offline time. - 7e26 spells cast this R. - 1e139 gems. - 74k excav depth, no resets.",
+    "author": "CinnamonBoast",
+    "section": "Lineages"
+  },
+  {
+    "name": "W122/DWP1",
+    "type": "Buff",
+    "code": "S11125,C5625,C5875,D11125,E5625,E5875,A11625,W5375,W5625,F11500",
+    "facts": [],
+    "notes": "R255+ Gems: Tested at e119+e137 Makerline Demon Drowset DGG, DND, AND, FRD (May swap legacies around depending on buffing) FR/AN Notes: Grab e135 if you can in lieu of e56+e58. The longer you run the higher that Twisting Nether will go. Run a spells cast buff beforehand.",
+    "author": "CinnamonBoast",
+    "section": "Miscellaneous"
+  },
+  {
+    "name": "Good Enough Druid (Druid Artifact Pre-Prestige)",
+    "type": "Unlock",
+    "code": "S5875,S5625,C5875,C5625,D5875,D5625,E5625,E5375,A10875,W5625,W5125,F11750",
+    "facts": [],
+    "notes": "R230-R234 Gems: e54+ Makerline Druid Mercenary set (AND),GBG,FRD,ELD AN/GB combo Notes: 1 excavation reset should be enough but this build can do more unless you did too many resets.",
+    "author": "Ruvet",
+    "section": "Artifact Unlock Builds"
+  },
+  {
+    "name": "Undead Set 2",
+    "type": "Unlock",
+    "code": "S5875,C5875,D5875,E5625,A5375,W5375,F5750,S5875,S5625,C5875,C5625,D10875,E5625,E5875,A5375,A5875,W5375,W5625,F11750",
+    "facts": [],
+    "notes": "R225 Gems: e42 Angelline Undead Druidset ANS High Gems Version: R235 e89 (DND) AND, DDD, ANS Notes from Cinnamon (4/27/2026): This build was pulled from a comment, but it seems to be relatively successful. If anyone has an idea on what to put for legacies just let me know! Notes (8/3/2026): The High Gems Version was added in the case that you’re at R235+ without Undead Set 2.",
+    "author": "Anonymous",
+    "section": "Artifact Unlock Builds"
+  },
+  {
+    "name": "Demon Set 2",
+    "type": "Unlock",
+    "code": "S5875,C5875,D5625,E5625,W5375,F5750,S5875,C5875,D5875,E5625,W5625,S5625,S5875,C11875,D5375,D5875,E11125,A5625,A5875,W10875,F11750",
+    "facts": [],
+    "notes": "R230 Gems: 2.4e54 Goblinline Demon Undeadset GBG Notes from Cinnamon (4/27/2026): The original author states that it’s “Not a great build but once percent chance hit 0.011% I could get it with <10K excavs guaranteed I think”. I would check your small values but it seems to be solid enough, so it’s here. Angel Set 2: Facelessline Angel Dragon Set (easy with Set 2) Facelessline and D5875 provide Evil+Neutral and Demon+Faceless active spells until T4 or higher. Dragon Set 2 provides an extra Tier for all vanilla faction spells, and Set 1 reduces spell cost. Prestige factions unlocked for Dwarf spells and T5 for all spells to add even more active spells. Add A5625 if you can’t afford to max cast spells with Dragon Set. Anything else like additional researches not listed or Legacies just for adding max mana or boosting production, i.e. max mana legacies/researches from Spell Buff build Elf Set 2: Drowline Elf Goblin Set 1 AND, DMD, (DWB), DDB, TTB, Max Mana or other researches can be used if higher researches/research budget not available",
+    "author": "Anonymous",
+    "section": "Artifact Unlock Builds"
+  },
+  {
+    "name": "Goblin Set 2:",
+    "type": "Unlock",
+    "code": "S10875,C5875,C5625,D5875,D5625,E5625,E5375,A11625,W5625,W5875,F11750",
+    "facts": [],
+    "notes": "R236 (Possibly 235 by extension) Gems: e89 Djinnline Goblin Dwarfset (if second effect unlocked, if not probably Angel) (DWD) AND, ELD, DDS/ANS, FRD EL/AN Notes: Again, very high Gems e89 at R236, so at lower levels different legacies may be better. The order may also involve getting FRD last, due to faster faction coin gain for Fairy. But seems to max Tax Collections cast and Mana Regen without too much Mana waste, if any. Not able to afford later DW or DND upgrades yet, but the above seems most optimal to me",
+    "author": "Anonymous",
+    "section": "Artifact Unlock Builds"
+  },
+  {
+    "name": "F13750 unlock",
+    "type": "Unlock",
+    "code": "S5875,S5625,C5875,C5625,D5625,D5875,E11125,E5125,A11625,W5625,W12250,F11750",
+    "facts": [],
+    "notes": "R255+ e100? gems Gobline Faceless Faceset (DWB),GBB,AND,ELD,UDG,AN/GB Notes: Unsure of minimum gems required, this doesn’t actually require Astrals, but you’ll want Astrals to be able to reach enough gems (and buff W122). At e120 gems, I reached the goal with just (DWB),GBB,AND,AN/GB, before reaching Djinn Treaty.",
+    "author": "lojack",
+    "section": "R255 Research Unlock Builds:"
+  },
+  {
+    "name": "E11875 unlock",
+    "type": "Unlock",
+    "code": "S5875,S5625,C5875,C5625,D5625,D5875,E11125,A11625,W12250,F11750",
+    "facts": [],
+    "notes": "R255+ e100? gems Gobline Goblin Merc Set (DNB),FRD,ELD,FR/EL Unsure of minimum gems required, this doesn’t actually require Astrals, but you’ll want Astrals to be able to reach enough gems (and buff W122). At e120 gems, I reached the goal with just (DNB),FRD,ELD before reaching Makers Treaty.",
+    "author": "lojack",
+    "section": "R255 Research Unlock Builds:"
+  },
+  {
+    "name": "Low-End Holy Sites",
+    "type": "Buff",
+    "code": "S5875,S5625,C10875,D11875,E11125,A11625,W12250,F11750,F5500",
+    "facts": [],
+    "notes": "R255+ Gobline Angel Faceset (DWB) DDS, ELD, FRD, TTB FR/EL Notes: Infing out at 6655 holy sites... so would need E131 to progress further. TL;DR mana regen is pretty sweet with heaven's domain... so that's the means of what i'm using to produce coins.",
+    "author": "CinnamonBoast and Kosuke Oda",
+    "section": "post-A4 Buildings"
+  },
+  {
+    "name": "Workshops (Low-End)",
+    "type": "Buff",
+    "code": "S5875,S5625,C11375,D11375,E13125,A11625,W5375,W5625,F11750",
+    "facts": [],
+    "notes": "R255+,  e115+ Goblinline Undead Facelessset (DNB), AND, ELD, FRD, GBB FR/EL Notes: 15 min",
+    "author": "?",
+    "section": "post-A4 Buildings"
+  },
+  {
+    "name": "Grow Your Potatoes (Mid-range Dragon Pasture and Ziggurat buff)",
+    "type": "Buff",
+    "code": "S5875,S11125,C5375,C5625,C5875,D5625,D11125,E13125,E5375,A5875,A11125,W5875,W11875,F5500,F11000",
+    "facts": [],
+    "notes": "R255+ Gobline Druid Faceset Stoneheart: Druidset DNB FRB AND FRD",
+    "author": "Apani with help from Kuile and Lojack",
+    "section": "post-A4 Buildings"
+  },
+  {
+    "name": "Flood Reconstruction (Mid-range Faceless UB buff)",
+    "type": "Buff",
+    "code": "S5375,S5625,S5875,C5375,C5625,C5875,D5125,D5625,D5875,E13125,E5625,A5875,A11625,W5875,W12250,F5500,F11750",
+    "facts": [],
+    "notes": "R255+ Gobline Faceless Faceset (DNB) DWB GBG FRD ELD FR/EL",
+    "author": "Apani with inspiration from Lojack’s Faceless production build",
+    "section": "post-A4 Buildings"
+  },
+  {
+    "name": "If You Can Use a Doorknob (Mid-range Mountain Palace Buff)",
+    "type": "Buff",
+    "code": "S13125,S5875,C5625,C5875,C5375,D11125,D5625,E13125,E5625,A11625,A5875,W12250,W5875,F11750,F5750",
+    "facts": [],
+    "notes": "R255+ Gobline Titan Faceset (DNB) DWB FRD ELD DND Note: if your money income suddenly freezes, you’ve probably hit a limit break. Turn off some spells (Call to Arms, Gem Grinder, etc.) until your treasury is growing again.",
+    "author": "Apani with inspiration from alpha666’s Titan production build",
+    "section": "post-A4 Buildings"
+  },
+  {
+    "name": "A Cat Named Mittens (Low-End mana produced)",
+    "type": "Buff",
+    "code": "S11125,C5625,C5875,D11375,E13500,A13125,W11875,F11000",
+    "facts": [],
+    "notes": "R255+ Djinnline Titan Druidset AND FRD DND UDG AN/UD Notes: benefits from catalyst activity time this R so consider running Djinnline Undead Bed. D11375->D13500 if you can afford it. D11375’s main purpose is being able to afford E135 as I couldn’t get it otherwise even with 5d of playtime this R, mostly spent as evil/order. Might still be improved. Some alterations I haven’t tested: faceset + different S and D / EL/UD or any other legacy swap.",
+    "author": "Apani with heavy help from Kuile",
+    "section": "post-A4 Spells Cast/Mana Produced"
+  },
+  {
+    "name": "Fairies Got Hands (Mid/High-End Mana Produced)",
+    "type": "Buff",
+    "code": "S5375,S5625,C5875,C5625,D10875,E13500,A13125,W11375,F11000",
+    "facts": [],
+    "notes": "Angelline Fairy Angelset Mid-Range Version: Angelset > Druidset AND, ELD, GBD, TTB EL/AN",
+    "author": "TehTemmie (with some testing done by CinnamonBoast, kuile, ensteffahn, and lojack)",
+    "section": "post-A4 Spells Cast/Mana Produced"
+  },
+  {
+    "name": "FGH High-End Versions",
+    "type": "Buff",
+    "code": "S5375,S5625,S5875,C5875,C13125,D13500,D5375,E13500,E5625,A13125,W11875,W5625,F11000",
+    "facts": [],
+    "notes": "Variant 1 (For those with low RP (testing needed to determine the cutoff)): AND, ELD, UDG, GBD EL/AN Variant 2 (stronger base, lower gains): Angelset > Facelessset S5375,S5625,S5875,C5875,C11625/C10875,D10875,D5375,E13500,A13125,W11875,W5625,F11000 Fill in researches as needed for DJ3 AND, ELD, DDS, TTD EL/AN Variant 3 (weaker base, stronger gains): Angelset > Facelessset S5375,S5625,S5875,C5875,C11625/C10875,D13500,E13500,A13125,W11875,W5625,F11000 Fill in researches as needed for DJ3 AND, ELD, DDS, GBD EL/AN Variant 4 (extreme-end, mix of variants 2 and 3) Angelset > Facelessset Fill in researches as needed for DJ3 AND, ELD, DDS, TTD EL/AN Spells Cast Version: AND, ELD, GBG, GBD EL/AN Recommended Buffs: - S5375, with a special emphasis on God’s Hand for D10875 and subsequently ANP4 - Mana produced/spells cast using Mittens or another mana build (shouldn’t need too much) - W11875 if you are using it - 14d this R - FR12 Notes from Cinnamon (Prior to 7/9/2025): One thing that must be highlighted is whether to pick W11375 or W11875. Realistically, the only reason you’d pick W118 is if you are doing a shorter run with angelset, to take advantage of the second effect. Otherwise, it’s typically best to pick W113, and the disparity grows even more the longer you spend in a particular era. Needs about 14d this R to begin to boot the mid-range variant. Before this, I’d suggest using A Cat Named Mittens. Seems to have a lower base than Mittens, but way higher and faster scaling due to DJC1. EL/AN will scale over time with FR4 and ANP6, so the longer you run this build the higher it will go. Notes From Cinnamon (Updated 7/9/2025): Testing during event has revealed that mana regen is far more important than recognized earlier for those at the higher end of buffing. For this, the build has been updated with these 2 new high end variants, one for shorter runs (Variant 2) and one for longer runs (Variant 3). That being said, Variant 2 will be heavily dependent on W11875 buffing, so it is suggested if you are starting out on Variants 2 and 3 to use Variant 3 first, then swap over once your W118 gets super high. This also determines how long it will take for Variant 3 to pass Variant 2 in terms of sheer mana produced. C116 will yield higher mana through click power > EL/AN, while C118 will yield higher CtA > higher total ants > DDS/S56, so pick which one works best for you. If this isn’t clear already from the number of documented variants, this is an extremely buff-dependent build, so play around a bit if you find something not working well for you. Notes from Lojack (7/13/2025): C10875 takes about 24h to pass C11625 on mana produced at 160k excavation depth. Pick according to how long you intend to run the build.",
+    "author": "",
+    "section": "post-A4 Spells Cast/Mana Produced"
+  },
+  {
+    "name": "Fat Cat Casts (High-End Spells Cast)",
+    "type": "Buff",
+    "code": "S12250,S11125,C5625,C5875,C11875,D11125,D5625,D5875,E13500,E5375,A13125,A11125,W11875,W5875,W5625,F11000,F12000",
+    "facts": [],
+    "notes": "R255+ Djinnline Druid Faceset Stoneheart: Druidset GBB UDG ELG DND GB/UD EL/UD Notes: this build is heavily buff-dependent. even if you can boot it, unless you have serious buffs to primarily clicks and spell activity times (catalyst, limited wish, grand balance, dragon’s beath, infinite spiral) it may not even get you better results than fgh spells cast version. players with very high buffs will likely only see a few ooms improvement. due to this, i strongly discourage anyone from specifically gunning for this build while deciding what to buff Notes: buff clicks, catalyst time, d56, excavs",
+    "author": "kuile, concept by ensteffahn",
+    "section": "post-A4 Spells Cast/Mana Produced"
+  },
+  {
+    "name": "W118 Buff Buff (quick) (easy) (recommended by 1.9 out of 10 dentists)",
+    "type": "Buff",
+    "code": "S5875,S5625,C5625,C5875,D5625,D5875,E5625,E5875,A11625,W11875,F11000",
+    "facts": [],
+    "notes": "R255+ Druidline Undead Dragonset Researches and legacies: whatever gets you to archon treaty and 8.1e11 max mana fastest Example (author: Apani): AND FRD ELD GBG EL/GB Notes: do this after a mana run to increase w118 by 0-several thousand% of its current value (depends mainly on how much mana you’ve produced since last taking druidline) Notes: affiliate with archon, cast grand balance and tier 7 temporal flux, and you’re done",
+    "author": "lojack probably i forget",
+    "section": "post-A4 Spells Cast/Mana Produced"
+  },
+  {
+    "name": "Engelbart (low-end online)",
+    "type": "Buff",
+    "code": "S11125,C5875,C5625,D11125,E13500,A13125,W10875,F11000",
+    "facts": [],
+    "notes": "Makerline Elf Mercset Stoneheart: Druidset AND UDG FRS DGS FR/AN Notes: optionally buff arboreal cities, excavs",
+    "author": "kuile, Reave",
+    "section": "post-A4 Clicks"
+  },
+  {
+    "name": "All Clicks Go To Heaven (High-End online)",
+    "type": "Buff",
+    "code": "S12250,S11125,C5625,C5875,C11625,D11125,D5625,D5875,E13500,E5375,A13125,A11125,W11375,W5625,W5875,F11000,F12000",
+    "facts": [],
+    "notes": "Angelline Druid Faceset Stoneheart: Druidset AND GBB UDG FRS GB/UD FR/AN Lower-end variant: d56+d58 -> d113 More lowerer-end variant: angelline -> dwarfline, w113 -> w118 Notes: for runs longer than a couple of days, just use the offline build",
+    "author": "kuile",
+    "section": "post-A4 Clicks"
+  },
+  {
+    "name": "Roses And Clover (High-End long-term offline)",
+    "type": "Buff",
+    "code": "S5875,S11125,C5625,C11625,D11125,D5625,E13500,E5375,A5875,A11625,W5625,W11875,F5750,F11250",
+    "facts": [],
+    "notes": "Titanline Elf Druidset Stoneheart: Elfset AND GBB UDG DGS GB/UD Notes: buff d56, excav depth, max arboreal cities and holy sites. w118 and a116 are lower priority but good to buff as well Notes: if you can’t afford all the researches, prioritize s111, e135, a116, w56, and f112. replace druidset with faceset only if you cannot afford both c branch researches and both d branch researches. Notes: exceeds all clicks go to heaven cps in maybe 1-2d? need more tests Notes: go offline for a couple of minutes, then do about an hour online, then back offline. spend an hour online every day until you stop gaining noticeable fc from being online. at that point, stay offline until you can gain fc again (like events), or of course until 30d offline Notes: to check your actual offline cps, turn off all spells, then multiply your displayed cps by ttp6. note that ttp6 is a percentage, so if it's e.g. 100000%, you'd multiply cps by 1000 + 1",
+    "author": "kuile",
+    "section": "post-A4 Clicks"
+  },
+  {
+    "name": "Roses, Clover, and More! (Super-Extreme-End Roses and Clover Variant)",
+    "type": "Buff",
+    "code": "S12250,S5875,C11625,C5625,D5625,D11125,E13500,A11625,A5875,W5625,W11875,F11250,F5750",
+    "facts": [],
+    "notes": "Authors: CinnamonBoast and lojack (with some testing also done by TehTemmie) Titanline Elf Druidset Stoneheart: Elfset AND, UDG, DWB, DGS AN/UD Notes from Cinnamon (3/9/2026): This outpaces the original Roses and Clover build by a factor of 1.5x, at the cost of some heavy RP requirements. S58 and F57 are not required for this build to work, so long as you can afford every other research that is the second in each branch to take as listed above. It’s currently not too realistic to take E53 on top of everything, since I am currently missing 350 RP with a R279 save with 172d evil and 185d balance times.",
+    "author": "",
+    "section": "post-A4 Clicks"
+  },
+  {
+    "name": "Mid-Range Assistants",
+    "type": "Buff",
+    "code": "S5875,S5375,C11875,C5625,D5875,D5625,E13125,E5625,A11625,A5875,W11875,W5875,F11750,F5750",
+    "facts": [],
+    "notes": "R255 Makerline Fairy Faceless Set (DWD) ELD TTD FCB UDD",
+    "author": "Tomek",
+    "section": "post-A4 Assistants"
+  },
+  {
+    "name": "High-End Max Assistants",
+    "type": "Buff",
+    "code": "S5875,S5625,S5375,C11375,C5625,D11125,D5875,E11625,E5875,A11625,A5875,W11875,W5875,F11750,F5750",
+    "facts": [],
+    "notes": "R255+ Makerline Fairy Faceset (ELD) DWD DGS TTD FCB",
+    "author": "caseymonster",
+    "section": "post-A4 Assistants"
+  },
+  {
+    "name": "Faerie Dragon Horde (Mid- and High-end+ Max Assistants)",
+    "type": "Buff",
+    "code": "S12250,S5375,S5875,C5875,C11625,D5875,D10875,D5375,E11625,E5625,A13125,A11125,W11875,W11375,F12000,F11000,S12250,S5375,S5875,C5875,C11625,D5875,D11375,E13500,E11625,E5625,A13125,A11125,W11875,W11375,F11000,F11750",
+    "facts": [],
+    "notes": "Contributors (If you feel I missed you, contact lojack on Discord): Argotis, Snapopotamos, Regulus, timbodhidharma, lojack R255+ Dragonline Fairy Faceset Mid-range: S5875,S5375,S5625,C5875,C11625,D5875,D10875,E11625,E5625,A13125,W11875,W5625,F11000/F11750 AND ELD DWD TTD (FCB/UDD) EL/AN Higher-end: GBG UDD AND ELD GB/UD EL/AN Extreme-end: AND ELD DWD TTD (FCB/UDD/UDG) EL/AN Like Fairies Got Hands, this one depends a bit on your buffs. Feel free to test out tweaks to this and add suggestions (a lot depends on personal buffs on your save). Tweakable options: - F11750 vs F11000: This will depend on how good of a buff you have on assistant legacies, and how much activity time you have for F11000. For example, for me (5430% FC3) and ~160d of faction spell activity time (for the spells used), F11750 performs about 1.5x better than F11000, even for very long runs. - D10875 vs D11375: D113 gives a slight bump in assistants for D5875, but its main purpose is research budget, so use D10875 if you don’t need the budget. - W5625 vs W5875: If you have D10875, W5875 may give you more assistants, but you’d have to test. W5625 buffs DJ5, W5875 buffs D10875. For my [lojack] save, W5625 consistently gave ~10% more assistants. For other folks, W5875 gave more. - When choosing between UDD/FCB - first make sure you have W11875 active, then pick the one with the bigger assistant buff. It’s assumed DWD > TTD > others, so if that’s not the case adjust those as needed as well. - CinnamonBoast (2/13/26) - (UDG) on Extreme-end? If you are struggling with getting enough research budget for A131+A111 for the extreme end build, it is possible to circumvent that requirement by getting E135+UDG. Or, if you’re able, you can just do UDG and keep E116. With my testing, it is still about 75% better than the high end build, but I suppose it will depend on your D108 times (for me, it’s 124d, so it may be a steep ask to try and make it better while also still doing high-end, considering that you’d need to go heavily out of your way to make it happen). Other Notes: - Buffed Faceset needed (a good MKFR buff beforehand) - If short on budget, before giving up or changing researches, make sure to hit INF cost on all unique buildings first (DGP3 gives budget).  Buffing W118 will give more budget, as well as the usual sources (alignment times, Undead time with S12250). If still off, then try D108 -> D113 or E116->E135 (building counts for DGP3 again), but you'll have to test if a higher version with these changes is better than lower without. - Mid-range can take a few hours to pass MKFR (for me it was ~1hr) - Tweak Dwarven Union by going offline for a few seconds to change DJ5 - Spend extra research budget for DJ3 (prioritize researches with higher individual digits, such as 5250 (+12) > 5500 (+10)) - It takes some time for the higher-end build to perform better than the mid-range one. In my [Huang Sean] test on R279 save(around 180d this R), it took 1.5d for higher-end to catch up mid-range(F117) build, and 1.76x better when the mid-range fairy chanting duration ended(5d6h). After that the difference widened, in 8.5d higher-end performs about 4x better than mid-range build.",
+    "author": "Reave",
+    "section": "post-A4 Assistants"
+  },
+  {
+    "name": "Mid-Range Max Excavs",
+    "type": "Buff",
+    "code": "S5375,S5625,S5875,C11875,C5625,D11375,D5875,E13125,E5625,A13125,A5875,W11875,W5875,F11750,F5750",
+    "facts": [],
+    "notes": "R255 Makerline Fairy Faceless Set (DWD) ELD TTD FCB UDD Notes: buff spell casts, D5625,",
+    "author": "Tomek",
+    "section": "post-A4 Excavations"
+  },
+  {
+    "name": "High-End Max Excavs",
+    "type": "Buff",
+    "code": "S5875,S5375,S5625,C5875,C10875,D10875,D5875,E13125,A13125,W11875,W5625,F11750",
+    "facts": [],
+    "notes": "R255+ Makerline Fairy Faceset (DWD) ELD UDD TTD FCB EL/UD",
+    "author": "kuile",
+    "section": "post-A4 Excavations"
+  },
+  {
+    "name": "So You Want More A11625? (Extreme-End A11625 Buff)",
+    "type": "Buff",
+    "code": "S12250,S5625,S5875,C5375,C5625,C5875,D5625,D5875,D11125,E13500,E5375,E5625,A11125,A13125,W5625,W5875,W11875,F11000,F11500",
+    "facts": [],
+    "notes": "Dwarfline Druid Faceset Stoneheart: Dwarfset AND,FRD,ELD,DWB EL/AN Notes: buff clicks first",
+    "author": "AlexTrime",
+    "section": "post-A4 Faction Coins"
+  },
+  {
+    "name": "The Walking Druid (Super Extreme-End A11625 Buff)",
+    "type": "Buff",
+    "code": "S12250,S5875,S5625,C11875,C5375,C5875,C5625,D11375,D11125,D5625,E13500,E5375,E5625,A13125,A11125,W11875,W5875,W11375,F11500,F11000",
+    "facts": [],
+    "notes": "Undeadline Druid Faceset Stoneheart: Dwarfset AND, DWB, TTD, ELD EL/AN Notes from Cinnamon (3/23/26): The higher your R is, the stronger this build will be. Make sure you buff… everything!!! Notes from Cinnamon (3/26/26): Swapped S111 for S56 since it seems to be performing better (1 OOM out of e200 lol). Below are some ideas for if you’re missing budget in certain key places. Not sure if it’ll be better than Alex’s at that point but it could prove beneficial for those who can afford it with these modifications! C Branch: Prioritize C11875, C5375, and C5875. D Branch: Prioritize D11375 and D11125. E Branch: Prioritize E13500 and E5375. W Branch: Prioritize W11875 and W5875.",
+    "author": "CinnamonBoast",
+    "section": "post-A4 Faction Coins"
+  },
+  {
+    "name": "Low-end D13500 Buff",
+    "type": "Buff",
+    "code": "S5875,S5625,C5875,C5625,D13500,E13500,A12250,W13125,F11750",
+    "facts": [],
+    "notes": "R255+, e?? (Tested at R270 with e148 gems) Druidline Angel Faceset (DGD) GBD,DWD,FRD,UDD FR/UD Notes: Buff Max Excav and Resets .Optional Buffs: Max ants for Faceset, Spell Cast, Clicks, might not be fully optimised If you have enough RP to boot the build: Faceset > Angelset DWD is only there for more Ants, if you have a better TDD you can swap it here Cinnamon Notes: Tested quite a few variants of this, and came up with this: Once you get max mountain palaces and highend/super highend order time (maybe around 10-20d this R?), swap DWD > TTD, faceset > angelset, D135 > D56 and D53, and W131 > W118 and you will get way more mana regen. (Kind of ironic that the D135 buff doesn’t even need D135 to be “optimal”)",
+    "author": "Kaos and much help from Kuile,AlexTrime and the Discord",
+    "section": "post-A4 Miscellaneous"
+  },
+  {
+    "name": "High-end D13500 Buff",
+    "type": "Buff",
+    "code": "S12250,S5625,C5875,C11625,D5375,D13500,E13500,A12250,W11875,W5625,F11000",
+    "facts": [],
+    "notes": "Druidline Angel Angelset FRD UDG TTD DGD FR/UD Notes: there will be additional researches available in some branches, take what you like if you need help booting, they won’t affect performance Notes from Cinnamon (9/2/2025): Take C116, and make sure you buff excavation resets. This will be quite literally the only place where buffing resets is useful in A4 4.3 when not looking for artifacts.",
+    "author": "kuile, based on the above",
+    "section": "post-A4 Miscellaneous"
+  },
+  {
+    "name": "Extreme-end D13500 Buff",
+    "type": "Buff",
+    "code": "S12250,S5625,S5875,C11625,C5875,C5625,D13500,D5375,E13500,E5625,A12250,A10875,W11875,W11375,F12000,F11000",
+    "facts": [],
+    "notes": "Druidline Angel Angelset FRD, UDG, GBD, DGD GB/UD, FR/UD Notes from Cinnamon (11/18/2025): Buff demon time a lot for A108, and ensure that you’ve buffed resets. Notes from Cinnamon (5/22/2026): If you have the budget, go F11000 > F11750, then go (TTD). Should give you roughly a 40-50x improvement on mana regen.",
+    "author": "CinnamonBoast",
+    "section": "post-A4 Miscellaneous"
+  },
+  {
+    "name": "Mid-Range W122/DWP1",
+    "type": "Buff",
+    "code": "S5375,S11125,C5625,C11375,D5625,D11125,E13500,A13125,W11875,W5625,F5750,F11000",
+    "facts": [],
+    "notes": "R255+ Archonline Demon Drowset AND FRD GBD UDG GB/UD Notes: buff s53, d56, w118, max swarming towers Notes: if you are not mana wasting when lw hits trophies, swap d111 for d135 if possible, otherwise swap and for dnd",
+    "author": "kuile, CinnamonBoast",
+    "section": "post-A4 Miscellaneous"
+  },
+  {
+    "name": "Fairies Got Limited Wishes (Mid-Range FR12 Buff)",
+    "type": "Buff",
+    "code": "S5375,S5625,C11625,D10875,E13500,A13125,W11875,F11000,S5375,S5625,C5625,C5875,D10875,E13500,A13125,W11375,F11000",
+    "facts": [],
+    "notes": "Angelline Fairy Short runs: Angelset AND, ELD, UDG, DGG/DDD EL/AN Long runs: Druidset AND, ELD, UDG, DGG EL/AN Notes: - Buff S5375, D10875 and W11875 (if you’re using it) - Short runs: Take DDD if you’re having a very high amount with W118 (>2500%), otherwise take DGG. (More tests will be done but DGG is for now greater than DDD) - You’ll see that you’ll have a very large amount of mana compared to your mana regen, it’s normal since DJC1 buffs LW casts from max mana. Notes from Cinnamon (5/15/26): This build is stronger than Fae Crystal Magic, and can net you some mana produced if used before the original Fairies Got Hands.",
+    "author": "Atlas",
+    "section": "post-A4 Miscellaneous"
+  },
+  {
+    "name": "Twisted Nether Tier 99 Build (Extreme-End)",
+    "type": "Buff",
+    "code": "S12250,S5875,C5875,C13125,D10875,E13500,A11625,A5625,W11875,W5875,F12000,S12250,S11125,C5375,C5875,C10875,D11375,D10875,E13500,E5625,A5375,A5625,A11625,W11375,W11875,F11500,F12000",
+    "facts": [],
+    "notes": "Authors: CinnamonBoast and TehTemmie, Super-Extreme-End by lojack Angeline Titan Dragonset Extreme-End: AND, FRD, DND, UDG FR/AN, AN/UD Super-Extreme-End (lojack): AND, FRD, UDG, DND FR/AN, AN/UD Notes from Cinnamon (11/27/2025): The title is a smidge misleading, as from what I can see, TN99 is impossible to get in A4. My current record is TN88. Curious to see what tier everyone can get to! Notes from Cinnamon (3/9/2026): After some testing, you can improve the build by adding in F115+D113 at the front end to add in a few extra 5k researches at the back end (notably A53 and W113!). W113 can still be potentially replaced by W58, but it is a close call. Of course, this requires more budget, so it will take quite a while for most to reach it. Credits to lojack for finding this new and improved version of the build.",
+    "author": "",
+    "section": "post-A4 Miscellaneous"
+  },
+  {
+    "name": "Kermit Watching the Rain (Any Range General Time Gathering Template) {#kermit-watching-the-rain-(any-range-general-time-gathering-template)}",
+    "type": "Buff",
+    "code": "D13125,W11375,F12000",
+    "facts": [],
+    "notes": "Anyline Anyfaction (likely your lowest-time non-neutral faction with your least or second-least used spell for bloodline) Faceset/Angelset AND FRD GBB UDG AN/FR GB/UD Notes: Faceset seems to be the best for rushing union + extra RP, otherwise angel/druidset for spell duration. If order, A5375 for spell duration. If chaos or neutral, E13500 for spell duration. If angel or demon, D5875 to have an extra spell running. If any legacy or combo is unavailable, consider ELD and EL/AN as replacement. The rest can be filled in as you like. AN/FR (Twisting Nether) isn’t counted for S5375, AR8 however it still boosts AN11. Spending time as neutral factions is a lower priority since only good, evil, chaos, order and balance time boosts research facilities, so you may put that off and mostly use them for bloodlines. If Undead, run Undead Bed instead. If Elves, consider doing a long run of Roses and Clover instead.",
+    "author": "Apani",
+    "section": "post-A4 Miscellaneous"
+  }
+]
