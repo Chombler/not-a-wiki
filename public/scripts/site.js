@@ -72,6 +72,37 @@
       touchTooltip.style.left = left + 'px';
       touchTooltip.style.top = top + 'px';
     };
+
+    document.querySelectorAll('img[usemap]').forEach(function (image) {
+      var mapName = image.getAttribute('usemap').replace(/^#/, '');
+      var imageMap = Array.prototype.find.call(document.querySelectorAll('map[name]'), function (candidate) {
+        return candidate.getAttribute('name') === mapName;
+      });
+      if (!imageMap) return;
+      var areas = Array.prototype.slice.call(imageMap.querySelectorAll('area[coords]'));
+      areas.forEach(function (area) {
+        if (!area.dataset.originalCoords) area.dataset.originalCoords = area.getAttribute('coords');
+      });
+      var resizeMap = function () {
+        if (!image.naturalWidth || !image.naturalHeight || !image.clientWidth || !image.clientHeight) return;
+        var scaleX = image.clientWidth / image.naturalWidth;
+        var scaleY = image.clientHeight / image.naturalHeight;
+        areas.forEach(function (area) {
+          var original = area.dataset.originalCoords.split(',').map(Number);
+          var shape = (area.getAttribute('shape') || 'rect').toLowerCase();
+          var scaled = original.map(function (coordinate, index) {
+            if (shape === 'circle' && index === 2) return Math.round(coordinate * (scaleX + scaleY) / 2);
+            return Math.round(coordinate * (index % 2 === 0 ? scaleX : scaleY));
+          });
+          area.setAttribute('coords', scaled.join(','));
+        });
+      };
+      if (image.complete) resizeMap();
+      else image.addEventListener('load', resizeMap, { once: true });
+      if (window.ResizeObserver) new ResizeObserver(resizeMap).observe(image);
+      else window.addEventListener('resize', resizeMap);
+    });
+
     document.querySelectorAll('area[research], area[data-research]').forEach(function (hotspot) {
       hotspot.setAttribute('role', 'button');
       hotspot.setAttribute('tabindex', '0');
