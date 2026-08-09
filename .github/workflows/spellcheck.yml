@@ -12,5 +12,5 @@ jobs:
         uses: "codespell-project/actions-codespell@master"
         with:
           check_filenames: true
-          skip: "./WallofShame/index.php"
+          skip: "./WallofShame/index.php,./src/page-content/reference/WallofShame.html,./package-lock.json"
           ignore_words_list: "colorfull,warmup,sting,fanatism,restauration,ded,ore,rade,gud,nd,calss,crystalized,ans"
