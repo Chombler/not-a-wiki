@@ -17,6 +17,65 @@
       window.jQuery('[data-research]').style_my_tooltips({ attribute: 'data-research' });
     }
 
+    var touchTooltip = document.getElementById('s-m-t-tooltip');
+    var activeTouchHotspot = null;
+    var closeTouchTooltip = function () {
+      if (!touchTooltip || !activeTouchHotspot) return;
+      touchTooltip.style.display = 'none';
+      touchTooltip.style.opacity = '0';
+      touchTooltip.style.zIndex = '-1';
+      activeTouchHotspot.setAttribute('aria-expanded', 'false');
+      activeTouchHotspot = null;
+    };
+    var openTouchTooltip = function (hotspot, event) {
+      if (!touchTooltip) return;
+      var content = hotspot.getAttribute('research') || hotspot.getAttribute('data-research');
+      if (!content && window.jQuery) content = window.jQuery(hotspot).data('smt-title');
+      if (!content) return;
+      if (activeTouchHotspot === hotspot) {
+        closeTouchTooltip();
+        return;
+      }
+      closeTouchTooltip();
+      activeTouchHotspot = hotspot;
+      hotspot.setAttribute('aria-expanded', 'true');
+      touchTooltip.children[0].innerHTML = content;
+      touchTooltip.style.display = 'block';
+      touchTooltip.style.opacity = '1';
+      touchTooltip.style.zIndex = '9999';
+      var point = event.changedTouches && event.changedTouches[0] || event;
+      var clientX = Number.isFinite(point.clientX) ? point.clientX : window.innerWidth / 2;
+      var clientY = Number.isFinite(point.clientY) ? point.clientY : window.innerHeight / 2;
+      var margin = 12;
+      var left = window.scrollX + Math.max(margin, Math.min(clientX + 12, window.innerWidth - touchTooltip.offsetWidth - margin));
+      var top = window.scrollY + clientY + 20;
+      if (top + touchTooltip.offsetHeight > window.scrollY + window.innerHeight - margin) {
+        top = window.scrollY + Math.max(margin, clientY - touchTooltip.offsetHeight - 12);
+      }
+      touchTooltip.style.left = left + 'px';
+      touchTooltip.style.top = top + 'px';
+    };
+    document.querySelectorAll('area[research], area[data-research]').forEach(function (hotspot) {
+      hotspot.setAttribute('role', 'button');
+      hotspot.setAttribute('tabindex', '0');
+      hotspot.setAttribute('aria-expanded', 'false');
+      hotspot.addEventListener('click', function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        openTouchTooltip(hotspot, event);
+      });
+      hotspot.addEventListener('keydown', function (event) {
+        if (event.key !== 'Enter' && event.key !== ' ') return;
+        event.preventDefault();
+        event.stopPropagation();
+        openTouchTooltip(hotspot, event);
+      });
+    });
+    document.addEventListener('click', function (event) {
+      if (activeTouchHotspot && event.target !== activeTouchHotspot) closeTouchTooltip();
+    });
+    window.addEventListener('scroll', closeTouchTooltip, { passive: true });
+
     var menuButton = document.querySelector('.site-menu-button');
     var sidebar = document.querySelector('.site-sidebar');
     if (menuButton && sidebar) {
