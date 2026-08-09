@@ -20,22 +20,21 @@ jobs:
     steps:
       - name: Check out source
         uses: actions/checkout@v4
-      - name: Set up PHP
-        uses: shivammathur/setup-php@v2
+      - name: Set up Node
+        uses: actions/setup-node@v4
         with:
-          php-version: "8.3"
+          node-version: 22
+          cache: npm
       - name: Configure Pages
         uses: actions/configure-pages@v5
-      - name: Lint PHP source
-        run: find . -name '*.php' -type f -print0 | xargs -0 -n1 php -l
-      - name: Build static site
-        run: python3 scripts/build_pages.py --base-path /not-a-wiki
-      - name: Validate static site
-        run: python3 scripts/validate_pages.py --base-path /not-a-wiki
+      - name: Install dependencies
+        run: npm ci
+      - name: Build and validate Astro site
+        run: npm test
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: _site
+          path: dist
 
   deploy:
     environment:
