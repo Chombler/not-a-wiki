@@ -1,0 +1,17 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D205
+name: Communion
+branch: divine
+availableTo: All Good Factions
+details:
+  - label: Hint
+    text: Shine bright, Holy Light!
+  - label: Requirement
+    text: 333 Holy Light casts (Total this R), Gemcutting (C175), and Illumination (D135)
+  - label: Cost
+    text: "4.521e152"
+  - label: Effect
+    text: Increase Holy Light duration based on time spent in this Era and multiplicatively increase
+      Autoclick power by 10%.
+  - label: Formula
+    text: +(2 * x ^ 0.7) seconds, where x is time spent in this Era.

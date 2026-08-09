@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W625
+name: Bloodlust
+branch: warfare
+availableTo: Evil
+details:
+  - label: Requirement
+    text: 5,400 seconds (1.5 hours) as Evil this Reincarnation, Research Berserking (W205) and Focus
+      (S425)
+  - label: Cost
+    text: "1.069e214"
+  - label: Effect
+    text: While Blood Frenzy is active, increase the production of all buildings based on faction spells
+      cast in this Era.
+  - label: Formula
+    text: (15 * x ^ 0.75)%, where x is faction spells cast in this Era.

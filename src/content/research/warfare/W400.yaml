@@ -1,0 +1,12 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W400
+name: Siege
+branch: warfare
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: Research Architecture (C281) & Entrench (W270).
+  - label: Cost
+    text: "1.413e181"
+  - label: Effect
+    text: Each building in the three highest building tiers count as 2 buildings for all purposes.

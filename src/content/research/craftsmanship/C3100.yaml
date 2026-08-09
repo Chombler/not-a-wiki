@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C3100
+name: Engineering
+branch: craftsmanship
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Spend some quality time with the Mercenaries.
+  - label: Requirement
+    text: 12 days as Mercenary (across all Reincarnations)
+  - label: Cost
+    text: "5.227e173"
+  - label: Effect
+    text: Increase Maximum Mana based on the total amount of clicks made in this Reincarnation.
+  - label: Formula
+    text: +(1.5 * x ^ 0.35), where x is clicks made in this Reincarnation.

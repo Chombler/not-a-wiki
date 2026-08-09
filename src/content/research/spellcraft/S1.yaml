@@ -1,0 +1,12 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S1
+name: Enchanting
+branch: spellcraft
+availableTo: Fairy
+details:
+  - label: Cost
+    text: "7e122"
+  - label: Effect
+    text: Increase the production of Enchanted Fields based on mana produced in this Era.
+  - label: Formula
+    text: (1.2 * x ^ 0.8)%, where x is Mana produced in this Era.

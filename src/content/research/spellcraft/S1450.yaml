@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S1450
+name: Spellstorm
+branch: spellcraft
+availableTo: Neutral,Dragon
+details:
+  - label: Requirement
+    text: Research Spellbinding (S525) and Plasmation (C1325), Any Neutral, Dragon
+  - label: Cost
+    text: "6.687e79"
+  - label: Effect
+    text: Increase Unique Building production based on the duration of your longest spell.
+  - label: Formula
+    text: (2.5 * x ^ 0.85)%, where x is the duration of your longest spell, in seconds.

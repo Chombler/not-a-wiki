@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D55
+name: Transfixion
+branch: divine
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Massively produced blue energy.
+  - label: Requirement
+    text: Produce 3 M (3e6) Mana (This Era)
+  - label: Cost
+    text: "5.445e130"
+  - label: Effect
+    text: Increase clicking reward based on spell cast in this Era.
+  - label: Formula
+    text: (3 * x ^ 0.7)%, where x is your Spells Cast (This Era) stat.

@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: F5250
+name: Dreamwalking
+branch: forbidden
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: R176+, Forgotten Relic, Apeiron artifact and upgrade, and 1e20 Mana Regeneration.
+  - label: Cost
+    text: Free
+  - label: Effect
+    text: Increase Offline Bonus based on time spent offline in this Reincarnation.
+  - label: Formula
+    text: (2 * x ^ 0.8)%, where x is offline time this Reincarnation.

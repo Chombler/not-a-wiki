@@ -1,0 +1,15 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D1275
+name: Solemnity
+branch: divine
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Urban development.
+  - label: Requirement
+    text: 80,000 Total Buildings
+  - label: Cost
+    text: "7.36e69"
+  - label: Effect
+    text: Increase each building's production by 0.3% per building of the same type; Non-Unique
+      buildings receive a 100-times larger bonus.

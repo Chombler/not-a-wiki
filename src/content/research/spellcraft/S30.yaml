@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S30
+name: Vacuumancy
+branch: spellcraft
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: Have 5,000 Maximum Mana. (This Era)
+  - label: Cost
+    text: "1.21e127"
+  - label: Effect
+    text: Increase Maximum Mana and Mana Regeneration rate based on time spent in this Era.
+  - label: Maximum Mana Formula
+    text: +(7 * x ^ 0.7), where x is time spent in this Era, in seconds.
+  - label: Mana Regeneration Formula
+    text: +(0.4 * x ^ 0.6), where x is time spent in this Era, in seconds.

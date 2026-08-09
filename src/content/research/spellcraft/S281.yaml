@@ -1,0 +1,15 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S281
+name: Assimilation
+branch: spellcraft
+availableTo: Faceless
+details:
+  - label: Requirement
+    text: Secrets of the Ancients (as Faceless)
+  - label: Cost
+    text: "5.767e163"
+  - label: Effect
+    text: Increase the production of Sunken Cities based on time spent affiliated with factions
+      different than the Faceless.
+  - label: Formula
+    text: (80 + 0.8 * x ^ 0.8)%, where x is time spent as non-Faceless factions.

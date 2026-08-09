@@ -1,0 +1,20 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C300
+name: Weighting
+branch: craftsmanship
+availableTo: Druid
+details:
+  - label: Hint
+    text: A lightning strike may hit the same target twice. Or hundreds of times.
+  - label: Requirement
+    text: 650 Lightning Strikes (This R)
+  - label: Cost
+    text: "3.447e166"
+  - label: Effect
+    text: While Grand Balance hits Stone Pillars, increase its production by 2000%.
+  - label: Formula
+    text: (2000 ^ T)%, where T is Grand Balance tier.
+  - label: Effect
+    text: Also increase the production of every Grand Balance target based on maximum mana.
+  - label: Formula
+    text: (25 * (ln(1 + x) ^ 2.5) ^ T)%, where x is Maximum Mana and T is Grand Balance tier.

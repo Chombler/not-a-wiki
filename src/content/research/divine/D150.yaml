@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D150
+name: Retribution
+branch: divine
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: Research Betrayal (W120) & Transfixion (D55).
+  - label: Cost
+    text: "4.151e144"
+  - label: Effect
+    text: Increase chance to find faction coins based on the amount of total research points bought.
+  - label: Formula
+    text: +(5 * x ^ 0.75), where x is Research points.
+  - label: Effect
+    text: Also multiplicatively increase Faction Coin find chance by 50%.

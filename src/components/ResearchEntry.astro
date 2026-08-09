@@ -1,0 +1,15 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import TierTable from './TierTable.astro';
+
+interface Props { research: CollectionEntry<'research'>; }
+const { research } = Astro.props;
+const { code, name, availableTo, details, tierTable } = research.data;
+---
+
+<article class="research-entry" id={code}>
+  <p><b>{code}</b> - For {availableTo}</p>
+  <p><b>Research Name</b>: {name}</p>
+  {details.map((detail) => <p><b>{detail.label}</b>: <Fragment set:html={detail.text} /></p>)}
+  {tierTable && <TierTable kind={tierTable.key} heading={tierTable.heading} />}
+</article>

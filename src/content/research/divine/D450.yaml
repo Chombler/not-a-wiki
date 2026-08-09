@@ -1,0 +1,17 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D450
+name: Mercy
+branch: divine
+availableTo: All Factions
+details:
+  - label: Hint
+    text: You should try everything at least once.
+  - label: Requirement
+    text: 1,800 seconds spent in each Good, Evil, and Neutral alignment in this Reincarnation
+  - label: Cost
+    text: "2.861e188"
+  - label: Effect
+    text: Increase the production of Non-Unique buildings based on time spent in your least-used
+      alignment.
+  - label: Formula
+    text: (80 + 40 * x ^ 0.8)%, where x is time spent in your least-used alignment.

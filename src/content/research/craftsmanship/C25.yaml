@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C25
+name: Light Condenser
+branch: craftsmanship
+availableTo: Angel
+details:
+  - label: Hint
+    text: I've cast a spell on you. Now you cast more.
+  - label: Requirement
+    text: 12,000 Spells cast (This R)
+  - label: Cost
+    text: "2.25e126"
+  - label: Effect
+    text: Increase mana regeneration based on the amount of spells cast.
+  - label: Formula
+    text: +(20 * ln(1 + x) ^ 2), where x is spells cast in this Era.

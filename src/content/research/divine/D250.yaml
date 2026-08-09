@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D250
+name: Demonology
+branch: divine
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: Research Transcendence (D200) & Pyromancy (S150)
+  - label: Cost
+    text: "1.702e159"
+  - label: Effect
+    text: Gain additional assistants based on the amount of Faction Coins found in this Era.
+  - label: Formula
+    text: floor(ln(1 + x) ^ 1.5), where x is your Faction Coins Gained (This Era) stat.

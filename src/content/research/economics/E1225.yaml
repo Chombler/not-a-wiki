@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E1225
+name: Hoarding
+branch: economics
+availableTo: Neutral,Dragon
+details:
+  - label: Hint
+    text: Massive numismatics.
+  - label: Requirement
+    text: 1 T (1e12) Faction coins found this Era
+  - label: Cost
+    text: "1.051e67"
+  - label: Effect
+    text: Increase the Royal Market Ascension multiplier by 0.7.

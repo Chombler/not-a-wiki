@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S135
+name: Augmentation
+branch: spellcraft
+availableTo: All Factions
+details:
+  - label: Hint
+    text: More Unique buildings will do the trick!
+  - label: Requirement
+    text: 3,000 Unique Buildings (This Era)
+  - label: Cost
+    text: "2.668e142"
+  - label: Effect
+    text: Increase the production of Unique Buildings based on Maximum Mana.
+  - label: Formula
+    text: round(2 * x^0.8)%, where x is your Maximum Mana.

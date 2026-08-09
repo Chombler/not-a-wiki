@@ -1,0 +1,17 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D525
+name: Devotion
+branch: divine
+availableTo: Dwarf
+details:
+  - label: Hint
+    text: More diamond hits!
+  - label: Requirement
+    text: 3,600 seconds of Diamond Pickaxe activity time
+  - label: Cost
+    text: "2.607e199"
+  - label: Effect
+    text: Reduce Holy Light Mana cost by 50% and multiplicatively increase production bonus from Gems
+      based on Holy Light duration.
+  - label: Formula
+    text: (6 + 0.6 * x ^ 0.6)%, where x is Holy Light duration in seconds.

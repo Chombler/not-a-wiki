@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W1275
+name: Authority
+branch: warfare
+availableTo: All Factions
+details:
+  - label: Hint
+    text: How long does your Call to Arms last?
+  - label: Requirement
+    text: 7,200 seconds (2 hours) Call to Arms activity time this Era.
+  - label: Cost
+    text: "7.36e69"
+  - label: Effect
+    text: Increase the duration of all spells based on Call to Arms activity time in this Reincarnation.
+  - label: Formula
+    text: (x ^ 0.5)%, where x is Call to Arms active time This Reincarnation in seconds.

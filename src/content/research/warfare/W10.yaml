@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W10
+name: Dueling
+branch: warfare
+availableTo: Elf
+details:
+  - label: Hint
+    text: Too many soldiers. More barracks!
+  - label: Requirement
+    text: 2000 Warrior Barracks
+  - label: Cost
+    text: "1.446e124"
+  - label: Effect
+    text: Increase the production of all other buildings by 130% per Elven Training Ground you own.

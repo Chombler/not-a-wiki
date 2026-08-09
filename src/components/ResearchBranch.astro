@@ -1,0 +1,24 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import ResearchEntry from './ResearchEntry.astro';
+
+interface Props {
+  name: string;
+  icon: string;
+  entries: CollectionEntry<'research'>[];
+}
+const { name, icon, entries } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+
+<section class="shelementwhole" id={name.toLowerCase()}>
+  <p onclick="shohid(this);">
+    <img src={`${base}Factions/picks/${icon}`} alt={name} style="vertical-align: middle" />
+    <a href="#" onclick="return false;"><b> {name}</b></a>
+  </p>
+  <div class="autohide">
+    {entries.map((entry, index) => (
+      <><ResearchEntry research={entry} />{index < entries.length - 1 && <hr />}</>
+    ))}
+  </div>
+</section>

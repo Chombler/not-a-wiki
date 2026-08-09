@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E5625
+name: Loan Sharking
+branch: economics
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R179+, Forgotten Relic, Vault artifact and upgrade, and 5e150 Gold.
+  - label: Effect
+    text: Tax Collection is worth more based on Gold owned.
+  - label: Formula
+    text: +((0.5 * ln(1 + x)) ^ 1.25) seconds, where x is your current amount of coins.

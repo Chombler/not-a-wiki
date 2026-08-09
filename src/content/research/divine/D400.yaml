@@ -1,0 +1,15 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D400
+name: Miracle
+branch: divine
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: Research Communion (D205) & Transubstantiation (D270)
+  - label: Cost
+    text: "1.413e181"
+  - label: Effect
+    text: Increase a random building's production based on Mana produced in this Era; the target changes
+      every 2 minutes. While offline, increase all-building production by 12,000%.
+  - label: Formula
+    text: (2.75 * ln(1 + x) ^ 2.75)%, where x is Mana produced in this Era.

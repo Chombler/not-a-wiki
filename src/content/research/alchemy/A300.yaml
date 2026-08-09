@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A300
+name: Creeping
+branch: alchemy
+availableTo: Faceless
+details:
+  - label: Hint
+    text: Blue Production.
+  - label: Requirement
+    text: Produce 5M mana (This Era) as Druid
+  - label: Cost
+    text: "3.447e166"
+  - label: Effect
+    text: Increase mana regeneration based on mana produced in this Era.
+  - label: Formula
+    text: (3.5 * ln(1 + x) ^ 1.5)%, where x is Mana produced.

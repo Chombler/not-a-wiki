@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E5375
+name: Whipround
+branch: economics
+availableTo: Balance
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R177+, Forgotten Relic, Vault artifact and upgrade.
+  - label: Effect
+    text: Increase Royal Exchange bonus additively and multiplicatively based on Tax Collections cast in
+      this Era.
+  - label: Additive Formula
+    text: +(x ^ 0.2)% additively and (0.5 * x ^ 0.15)% multiplicatively, where x is Tax Collections cast
+      in this Era.

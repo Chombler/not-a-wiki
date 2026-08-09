@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A150
+name: Synthesis
+branch: alchemy
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Faction Currency.
+  - label: Requirement
+    text: 20 B (2e10) Faction Coins (This Era)
+  - label: Cost
+    text: "4.151e144"
+  - label: Effect
+    text: Increase the duration of all spells based on the amount of Faction Coins found in this Era.
+  - label: Formula
+    text: (1.5 * ln(1 + x) ^ 1.5)%, where x is Faction Coins found in this Era.

@@ -1,0 +1,17 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E11125
+name: Gray Friday
+branch: economics
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R223+ and 20,000 Neutral Buildings.
+  - label: Effect
+    text: Reduce building cost multiplier and increase the production of all buildings based on Royal
+      Exchange bonus.
+  - label: Formula
+    text: -0.02, with no other reductions applying, the multiplier will be 1.13 instead of 1.15.
+  - label: Formula
+    text: (1.2 * x ^ 0.8)%, where x is your Royal Exchange bonus.

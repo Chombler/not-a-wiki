@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A1325
+name: Calefaction
+branch: alchemy
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Excavate me out!
+  - label: Requirement
+    text: 4500 Excavations (This R)
+  - label: Cost
+    text: "5.154e72"
+  - label: Effect
+    text: Increase mana regeneration based on the amount of excavations made.
+  - label: Formula
+    text: +(0.15 * x ^ 1.15), where x is excavation depth.

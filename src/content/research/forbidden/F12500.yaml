@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: F12500
+name: Avatars
+branch: forbidden
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R234+ and at least 4 different Factions in your Legacies.
+  - label: Effect
+    text: Multiplactively increase assistants based on the amount of different Factions in your Legacies.
+  - label: Formula
+    text: (50 * x ^ 2.5)%, where x is the amount of different Factions in your Legacies.

@@ -1,0 +1,13 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D1
+name: Blessing
+branch: divine
+availableTo: Angel
+details:
+  - label: Cost
+    text: "7e122"
+  - label: Effect
+    text: Increase the production of Heaven's Domains based on total time spent with at least one active
+      spell.
+  - label: Formula
+    text: (80 + 8 * x ^ 0.8)%, where x is total time spent with at least one active spell.

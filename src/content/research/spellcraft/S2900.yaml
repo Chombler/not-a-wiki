@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S2900
+name: Scholarship
+branch: spellcraft
+availableTo: Mercenary
+details:
+  - label: Hint
+    text: More buildings for the Black Army!
+  - label: Requirement
+    text: 11,000 Merc Unique Buildings.
+  - label: Cost
+    text: "2.174e162"
+  - label: Effect
+    text: Increase Non-Unique building production based on Unique Buildings owned.
+  - label: Formula
+    text: (10 * x ^ 1.05)%, where x is Unique Buildings owned.

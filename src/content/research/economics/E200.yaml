@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E200
+name: Acquisition
+branch: economics
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: Research Investment (E400) & Common Business (E80)
+  - label: Cost
+    text: "8.406e151"
+  - label: Effect
+    text: Increase the production of all buildings based on your percentage of trophies unlocked.
+  - label: Formula
+    text: (round(0.0003 * (100 * x) ^ 3.35))%, where x is trophies unlocked / max trophies.

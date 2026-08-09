@@ -1,0 +1,18 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D25
+name: Cursing
+branch: divine
+availableTo: Undead
+details:
+  - label: Hint
+    text: Spend some time in absence.
+  - label: Requirement
+    text: 3,600 seconds Offline
+  - label: Cost
+    text: "2.25e126"
+  - label: Effect
+    text: Increase the production of all buildings based on your offline production bonus.
+  - label: Formula
+    text: (ln(1 + x) ^ 2.5)%, where x is Offline Bonus as a multiplier.
+  - label: Note
+    text: This research is treated as an A1 upgrade for A-nerf purposes.

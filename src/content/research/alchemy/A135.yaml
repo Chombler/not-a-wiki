@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A135
+name: Decay
+branch: alchemy
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Spend some quality time.
+  - label: Requirement
+    text: 3,600 seconds of playtime in this Reincarnation
+  - label: Cost
+    text: "2.668e142"
+  - label: Effect
+    text: Increase the production of all buildings based on time spent in this Reincarnation.
+  - label: Formula
+    text: (0.3 * x ^ 0.7)%, where x is time spent in this Reincarnation, in seconds.

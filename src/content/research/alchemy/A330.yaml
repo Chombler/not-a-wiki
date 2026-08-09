@@ -1,0 +1,15 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A330
+name: Adaptation
+branch: alchemy
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: Research Mutation (D290) & Meditation (D300)
+  - label: Cost
+    text: "8.341e170"
+  - label: Effect
+    text: Increase the production of all buildings based on time spent playing as other factions.
+  - label: Formula
+    text: (0.05 * (x - y) ^ 0.7)%, where x is All Time playtime and y is the highest All Time spent
+      amongst your current factions.

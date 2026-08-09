@@ -1,0 +1,18 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D5625
+name: Prophecy
+branch: divine
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R179+, Forgotten Relic, Mythos artifact and upgrade, and 1,800 seconds in the least-used
+      faction
+  - label: Effect
+    text: Empowers the effects of your faction's Set based on time spent with your least used faction.
+      Lineage levels count more, by the same amount, for your faction’s Advanced Heritage.
+  - label: Formula
+    text: (50 + 0.25 * x ^ 0.5)%, where x is your least spent faction time.
+  - label: Note
+    text: only considers time spent with factions that are available at the given game stage.

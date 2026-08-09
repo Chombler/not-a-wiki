@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S5625
+name: Leylines
+branch: spellcraft
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R179+, Forgotten Relic, Mana Loom artifact and upgrade, and 1 T (1e12) assistants
+  - label: Effect
+    text: Multiplicatively increase Mana Regeneration based on the amount of assistants you own.
+  - label: Formula
+    text: (0.75 * x ^ 0.25)%, where x is the amount of assistants you own.

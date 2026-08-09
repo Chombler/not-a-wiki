@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E13500
+name: Recession
+branch: economics
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R242+ and 1,000 total Lineage levels.
+  - label: Effect
+    text: Gain all Lineage base effects that match your alignments, up to a maximum of level 25.
+  - label: Note
+    text: This will reduce the level of all lineages you do not pick to 25 for the current run
+      (including lineages that don't match your alignments), which will lower the effectiveness of
+      upgrades based on those lineage levels.

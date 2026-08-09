@@ -1,0 +1,15 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W250
+name: Swarming
+branch: warfare
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: Research Overwhelm (W175) & Berserking (W205)
+  - label: Cost
+    text: "1.702e159"
+  - label: Effect
+    text: Multiplicatively increase assistants by 10% and gain additional assistants based on trophies
+      unlocked.
+  - label: Formula
+    text: +(x ^ 1.05), where x is the amount of trophies unlocked.

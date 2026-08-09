@@ -1,0 +1,17 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C11875
+name: Plating
+branch: craftsmanship
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R229+ and 100 Autoclick power
+  - label: Effect
+    text: Unique Buildings count more for Call to Arms purposes based on Moon Blessing activity time in
+      this Reincarnation.
+  - label: Formula
+    text: +(2 * x ^ 0.8), where x is Moon Blessing activity time in this Reincarnation.
+  - label: Note
+    text: This is an additive bonus and is thus not affected by any multiplicatives such as Good Warcry.

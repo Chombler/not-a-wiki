@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D2850
+name: Intervention
+branch: divine
+availableTo: Mercenary
+details:
+  - label: Requirement
+    text: Secrets of the Warriors.
+  - label: Cost
+    text: "3.105e159"
+  - label: Effect
+    text: Increases the production of Unique Building based on time spent with Mercenaries (All Time).
+  - label: Formula
+    text: (80 + 2 * x ^ 0.8)%, where x is time spent with Mercenary (All Time).

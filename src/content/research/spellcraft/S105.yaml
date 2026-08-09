@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S105
+name: Mysticism
+branch: spellcraft
+availableTo: All Factions
+details:
+  - label: Hint
+    text: I am a Research among Researches.
+  - label: Requirement
+    text: 600 Researches (Total)
+  - label: Cost
+    text: "1.103e138"
+  - label: Effect
+    text: Increase Mana Regeneration based on Research points.
+  - label: Formula
+    text: +(2.5 * x ^ 0.5), where x is Research points.

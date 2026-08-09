@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A11375
+name: Azoth
+branch: alchemy
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R225+ and 100 Qi (1e20) Mana Regeneration
+  - label: Effect
+    text: Increase clicking reward based on Mana Regeneration.
+  - label: Formula
+    text: (ln(1 + x) ^ 2)%, where x is Mana Regeneration (mana/s).

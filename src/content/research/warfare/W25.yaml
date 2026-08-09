@@ -1,0 +1,17 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W25
+name: War Funds
+branch: warfare
+availableTo: Goblin
+details:
+  - label: Hint
+    text: Get rich.
+  - label: Requirement
+    text: 1 Tqag (1e132) Coins Gained (This Era)
+  - label: Cost
+    text: "2.25e126"
+  - label: Effect
+    text: Increase the production of all buildings based on the amount of Tax Collections cast in this
+      Era.
+  - label: Formula
+    text: (10 * x ^ 0.4)%, where x is Tax Collections cast in this Era.

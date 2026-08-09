@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S10
+name: Channeling
+branch: spellcraft
+availableTo: Angel
+details:
+  - label: Hint
+    text: Open the Gates of Heaven.
+  - label: Requirement
+    text: 2,000 Heaven's Gate. (This Era)
+  - label: Cost
+    text: "1.446e124"
+  - label: Effect
+    text: Increase the production of all other buildings based on the number of Heaven's Gates you own.
+  - label: Formula
+    text: (160 * x)%, where x is the number of Heaven's Gates you own.

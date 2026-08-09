@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W10875
+name: Revolution
+branch: warfare
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R221+
+  - label: Effect
+    text: Gain assistants based on Royal Exchanges made.
+  - label: Formula
+    text: +(8 * x ^ 0.8), where x is Royal Exchanges made.

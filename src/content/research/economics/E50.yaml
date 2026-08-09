@@ -1,0 +1,15 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E50
+name: Bartering
+branch: economics
+availableTo: Fairy
+details:
+  - label: Hint
+    text: Royalties earnings.
+  - label: Requirement
+    text: 1,250 Royal Exchanges
+  - label: Cost
+    text: "1.012e130"
+  - label: Effect
+    text: Reduce Enchanted Field cost multiplier. Reduces cost multiplier by 0.02; with no other
+      reductions applying, the multiplier will be 1.13 instead of 1.15.

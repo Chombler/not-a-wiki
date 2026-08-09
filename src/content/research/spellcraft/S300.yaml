@@ -1,0 +1,18 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S300
+name: Chain Lightning
+branch: spellcraft
+availableTo: Titan
+details:
+  - label: Hint
+    text: I can feel the waves...
+  - label: Requirement
+    text: 8 Brainwave casts (This R)
+  - label: Cost
+    text: "3.447e166"
+  - label: Effect
+    text: Lightning Strike duration will not be modified by other effects. While Lightning Strike is
+      active, all non-target buildings have their production increased based on Lightning Strike
+      activity time in this Era.
+  - label: Formula
+    text: (25 * x ^ 0.9)%, where x is Lightning Strike activity time in this Era, in seconds.

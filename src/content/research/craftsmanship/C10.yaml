@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C10
+name: Cultivation
+branch: craftsmanship
+availableTo: Fairy
+details:
+  - label: Hint
+    text: More farms, more crops!
+  - label: Requirement
+    text: 2500 Enchanted Fields
+  - label: Cost
+    text: "1.446e124"
+  - label: Effect
+    text: Increases production of Blacksmith and Inn based on the amount of Enchanted Field you own.
+  - label: Formula
+    text: (70 * x)%, where x is the number of Enchanted Fields owned.

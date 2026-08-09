@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A200
+name: Corrosion
+branch: alchemy
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: Research Plague (A1) & Decay (A135)
+  - label: Cost
+    text: "8.406e151"
+  - label: Effect
+    text: Increase clicking reward based on time spent in this Era.
+  - label: Formula
+    text: (3 * x ^ 0.7)%, where x is time spent in this Era, in seconds.

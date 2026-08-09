@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S3200
+name: Manipulation
+branch: spellcraft
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: 1 B (1e9) Tax Collections (This R), (Calefaction A1325) and (Psionics S1500).
+  - label: Cost
+    text: "2.563e179"
+  - label: Effect
+    text: Multiplicatively increase Mana Regeneration by 12% per active spell.
+  - label: Formula
+    text: (12 * x)%, where x is active spells.
+  - label: Effect
+    text: Also increases offline spell cast amount multiplicatively by 1200%.

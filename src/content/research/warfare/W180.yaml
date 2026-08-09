@@ -1,0 +1,12 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W180
+name: Formation
+branch: warfare
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: 150 Call to Arms casts this Reincarnation, Research Dueling (W10) & Exertion (W50)
+  - label: Cost
+    text: "1.005e149"
+  - label: Effect
+    text: Each building counts 15 times for Call to Arms purposes.

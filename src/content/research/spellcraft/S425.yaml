@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S425
+name: Focus
+branch: spellcraft
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Cast! Cast more!
+  - label: Requirement
+    text: 50,000 spells cast (This Era)
+  - label: Cost
+    text: "6.359e184"
+  - label: Effect
+    text: Increase production bonus from Gems based on faction-spell activity time in this Era.
+  - label: Formula
+    text: +(1.2 * x ^ 0.6)%, where x is total faction-spell activity time in this Era.

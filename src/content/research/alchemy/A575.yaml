@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A575
+name: Elixirs
+branch: alchemy
+availableTo: Dwarf
+details:
+  - label: Hint
+    text: Never enough servitude.
+  - label: Requirement
+    text: 10,000 Base Assistants
+  - label: Cost
+    text: "5.279e206"
+  - label: Effect
+    text: Increase assistants production based on the amount of research made.
+  - label: Formula
+    text: (4.5 * x ^ 0.45)%, where x is Research points.

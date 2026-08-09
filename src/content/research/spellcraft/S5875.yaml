@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S5875
+name: Mirrors
+branch: spellcraft
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R181+, Forgotten Relic, Mana Loom artifact and upgrade, and 1 T (1e12) spells cast
+  - label: Effect
+    text: Multiplicatively increase Assistants based on Spell casts in this Era.
+  - label: Formula
+    text: (ln(1 + x) ^ 1.75)%, where x is spell casts this Era.

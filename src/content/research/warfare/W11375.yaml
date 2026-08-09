@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W11375
+name: Pacifism
+branch: warfare
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R225+ and 7,200 seconds (2 hours) of Neutral time this Era.
+  - label: Effect
+    text: Increase all spells durations based on time spent in this Era.
+  - label: Formula
+    text: (0.3 * x ^ 0.7)%, where x is time spent in this Era.

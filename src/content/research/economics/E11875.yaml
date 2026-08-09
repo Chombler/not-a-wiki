@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E11875
+name: Overworking
+branch: economics
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R229+, the Slave Market upgrade, and 3,500 Slave Pens.
+  - label: Effect
+    text: While Goblin's Greed is active, increase triggered Tax Collections based on assistants owned.
+  - label: Formula
+    text: +(1.5 * ln(1 + x) ^ 1.5), where x is the amount of assistants you have.
+  - label: Note
+    text: Catalyst can also trigger this effect.

@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S400
+name: Capacity
+branch: spellcraft
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: Research Projection (S215) & Domination (W300)
+  - label: Cost
+    text: "1.413e181"
+  - label: Effect
+    text: Artifacts and Trophies count more based on the highest number of spells cast in a single Era.
+  - label: Formula
+    text: (ln(1 + x) ^ 1.5)%, where x is the highest number of spells cast in a single Era.

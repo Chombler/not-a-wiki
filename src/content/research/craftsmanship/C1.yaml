@@ -1,0 +1,12 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C1
+name: Dummy Targets
+branch: craftsmanship
+availableTo: Elf
+details:
+  - label: Cost
+    text: "7e122"
+  - label: Effect
+    text: Increase Elven Training Grounds production based on the amount of Faction Coins you found.
+  - label: Formula
+    text: (3 * ln(1 + x) ^ 3)%, where x is your Faction Coins found this Era.

@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D290
+name: Mutation
+branch: divine
+availableTo: Faceless
+details:
+  - label: Hint
+    text: Lost in the maze? Build your path.
+  - label: Requirement
+    text: 3,000 Sunken Cities
+  - label: Cost
+    text: "1.192e165"
+  - label: Effect
+    text: Increase the production of all other buildings by 95% per Sunken Cities you own.

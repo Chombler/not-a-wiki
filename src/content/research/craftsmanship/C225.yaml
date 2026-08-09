@@ -1,0 +1,12 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C225
+name: Automatons
+branch: craftsmanship
+availableTo: Elf
+details:
+  - label: Requirement
+    text: Research Dummy Targets (C1) & Vivification (A120).
+  - label: Cost
+    text: "3.782e155"
+  - label: Effect
+    text: Each Elven Training Grounds counts as 200 buildings for Call to Arms purposes.

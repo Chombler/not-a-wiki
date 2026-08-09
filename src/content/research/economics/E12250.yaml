@@ -1,0 +1,15 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E12250
+name: Oilery
+branch: economics
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R232+ and at least 30 minutes activity time with the least-used spell in this Reincarnation.
+  - label: Effect
+    text: While both Lightning Strike and Gem Grinder are active, multiplicatively increase the
+      production bonus from Gems based on the duration of your longest spell.
+  - label: Formula
+    text: (0.8 * x ^ 0.8)%, where x is the duration of your longest spell.

@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W120
+name: Betrayal
+branch: warfare
+availableTo: All Factions
+details:
+  - label: Hint
+    text: How big of an army can you muster?
+  - label: Requirement
+    text: 500 base assistants
+  - label: Cost
+    text: "1.715e140"
+  - label: Effect
+    text: Increase the production of non-unique buildings based on the amount of assistants you own.
+  - label: Formula
+    text: (9 * x ^ 0.9)%, where x is the amount of assistants you own.

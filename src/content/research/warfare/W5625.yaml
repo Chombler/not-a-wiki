@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W5625
+name: Concealment
+branch: warfare
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R179+, Forgotten Relic, Battlefield artifact and upgrade, and 1 M (1e6) clicks this
+      Reincarnation.
+  - label: Effect
+    text: Offline time counts 50% more and increase production bonus from Gems based on Mana produced in
+      this Era.
+  - label: Formula
+    text: +(ln(1 + x) ^ 1.7)%, where x is Mana produced in this Era.

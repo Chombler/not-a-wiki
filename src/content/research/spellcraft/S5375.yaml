@@ -1,0 +1,19 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S5375
+name: Invocation
+branch: spellcraft
+availableTo: Chaos
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R177+, Forgotten Relic, Mana Loom artifact and upgrade
+  - label: Effect
+    text: Increase Maximum Mana additively and multiplicatively based on the activity time of your least
+      used spell.
+  - label: Additive
+    text: +(1000 + 80 * x ^ 0.8), where x is the spell activity time of your least used spell in this
+      Reincarnation.
+  - label: Multiplicative
+    text: (5.5 + 0.55 * x ^ 0.55)%, where x is the spell activity time of your least used spell in this
+      Reincarnation.

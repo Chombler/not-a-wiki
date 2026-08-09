@@ -1,0 +1,13 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C375
+name: Lightning Rod
+branch: craftsmanship
+availableTo: Titan
+details:
+  - label: Requirement
+    text: Research Chain Lightning (S300) & Overload (C330)
+  - label: Cost
+    text: "3.14e177"
+  - label: Effect
+    text: Olympian Halls are always hit by Lightning Strike in addition to the primary target. Olympian
+      Halls can no longer be a primary target.

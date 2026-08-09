@@ -1,0 +1,15 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D11625
+name: Compassion
+branch: divine
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R227+ and 7,200 seconds spent as Chaos in this Reincarnation
+  - label: Effect
+    text: Increase the production of Non-Unique buildings based on time spent with your least used
+      alignment in this Reincarnation.
+  - label: Formula
+    text: (50 + x ^ 0.75)%, where x is time spent as the least used alignment this R.

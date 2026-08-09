@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A5375
+name: Albedo
+branch: alchemy
+availableTo: Order
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R177+, Forgotten Relic, Athanor artifact and upgrade.
+  - label: Effect
+    text: Increase all spells duration based on spell casts in this Era.
+  - label: Formula
+    text: (ln(1 + x) ^ 1.8)%, where x is spell casts this Era.

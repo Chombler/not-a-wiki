@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C400
+name: Gravitation
+branch: craftsmanship
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: Research Magnetism (C250) & Weighting (C300)
+  - label: Cost
+    text: "1.413e181"
+  - label: Effect
+    text: Increase Faction Coin find chance based on the amount of Faction Coins found in this Era.
+  - label: Formula
+    text: +floor(3.5 * ln(x + 1) ^ 3)%, where x is Faction Coins found in this Era.
+  - label: Effect
+    text: Also increase Faction Coin find chance by a multiplicative 100%.

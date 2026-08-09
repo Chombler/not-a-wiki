@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A55
+name: Refraction
+branch: alchemy
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Iacta Incantatio.
+  - label: Requirement
+    text: Cast 25000 spells (This Era)
+  - label: Cost
+    text: "5.445e130"
+  - label: Effect
+    text: Improve offline production based on spells cast.
+  - label: Formula
+    text: round(5 * x ^ 0.85), where x is your Spells Cast (Total) stat.

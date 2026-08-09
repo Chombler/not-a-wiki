@@ -1,0 +1,15 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: F11500
+name: Paradox
+branch: forbidden
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R226+ and a Total Research Budget of 60,000.
+  - label: Effect
+    text: Gain the Set bonus of your opposite alignment.
+  - label: Note
+    text: Only gain the effects of the Base Faction that matches both alignments. For Neutral and
+      Balance the opposite is Neutral and Balance respectively.

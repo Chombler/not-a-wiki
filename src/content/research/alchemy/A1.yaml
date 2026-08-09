@@ -1,0 +1,12 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A1
+name: Plague
+branch: alchemy
+availableTo: Undead
+details:
+  - label: Cost
+    text: "7e122"
+  - label: Effect
+    text: Increase Undercity production based on assistants owned.
+  - label: Formula
+    text: (200 * x ^ 0.9)%, where x is assistants owned.

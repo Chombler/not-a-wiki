@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: F11750
+name: Relativity
+branch: forbidden
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R228+ and 5,500 Royal Exchanges.
+  - label: Effect
+    text: You can purchase one Legacy of your choice for free.
+  - label: Note
+    text: This will not increase the cost of the normal Legacy.

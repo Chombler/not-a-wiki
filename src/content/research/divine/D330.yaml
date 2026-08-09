@@ -1,0 +1,12 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D330
+name: Eternity
+branch: divine
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: Research Offering (E300) & Deliverance (D320)
+  - label: Cost
+    text: "8.341e170"
+  - label: Effect
+    text: Double the duration of all faction spells.

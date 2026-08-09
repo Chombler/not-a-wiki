@@ -1,0 +1,18 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A2950
+name: Combination
+branch: alchemy
+availableTo: Mercenary
+details:
+  - label: Hint
+    text: Some lineage?
+  - label: Requirement
+    text: All Lineages Level at 15.
+  - label: Cost
+    text: "1.522e165"
+  - label: Effect
+    text: Select an additional bloodline.
+  - label: Effect
+    text: You also gain the base effect of its respective Lineage.
+  - label: Effect
+    text: Combination Bloodline effects R60/R115 power.

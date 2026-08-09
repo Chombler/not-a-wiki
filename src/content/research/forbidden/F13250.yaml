@@ -1,0 +1,20 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: F13250
+name: Taboo
+branch: forbidden
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R240+ and 10,800 seconds (3 hours) of Call to Arms activity time this Reincarnation.
+  - label: Effect
+    text: Increase the production of all buildings based on the amount of faction upgrades different
+      than your own.
+  - label: Formula
+    text: (1.2 * x ^ 1.2)%, where x is the number of faction upgrades you have that are not part of your
+      faction.
+  - label: Note
+    text: Faction upgrades in this instance refers to only the main 12 faction upgrades (that you get
+      via Legacies). Lineage Perks, Advanced Heritages and such are not counted toward this
+      research.

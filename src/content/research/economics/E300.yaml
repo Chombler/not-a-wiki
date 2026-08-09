@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E300
+name: Offering
+branch: economics
+availableTo: Titan
+details:
+  - label: Hint
+    text: Offer Faction Coins, gain production.
+  - label: Requirement
+    text: 1,500 Royal Exchanges (as Titans)
+  - label: Cost
+    text: "3.447e166"
+  - label: Effect
+    text: Increase mana regeneration based on your Royal Exchange Bonus.
+  - label: Formula
+    text: +(7 * x ^ 0.7), where x is your Royal Exchange Bonus.

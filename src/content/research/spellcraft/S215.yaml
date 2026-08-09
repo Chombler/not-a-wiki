@@ -1,0 +1,17 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S215
+name: Projection
+branch: spellcraft
+availableTo: All Factions
+details:
+  - label: Hint
+    text: How many of these are required for a seance?
+  - label: Requirement
+    text: 200 Spiritual Surge casts (Total this R), Research Channeling (S10) & Incantation (S180)
+  - label: Cost
+    text: "1.308e154"
+  - label: Effect
+    text: While Spiritual Surge is active, increase the production of all buildings based on the amount
+      of active spells.
+  - label: Formula
+    text: (100 * (10 * x) ^ y)%, where x is active spells and y is Spiritual Surge tier.

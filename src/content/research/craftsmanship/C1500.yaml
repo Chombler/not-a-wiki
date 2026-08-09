@@ -1,0 +1,15 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C1500
+name: Gargantuaness
+branch: craftsmanship
+availableTo: Titan,Dragon
+details:
+  - label: Hint
+    text: "Trading with the Dragons might prove risky, but rewarding. <p><b>Requirement</b>: 4,000 Royal
+      Exchanges, Inflation (E425), Solemnity (D1275), as Titan Dragon"
+  - label: Cost
+    text: "4.682e82"
+  - label: Effect
+    text: Increase the production of all buildings based on total time spent as Neutral.
+  - label: Formula
+    text: (0.75 * x ^ 0.75)%, where x is combined Neutral time.

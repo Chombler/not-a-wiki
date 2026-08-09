@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S13125
+name: Fantasia
+branch: spellcraft
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R239+ and 1 Sx (1e21) Mana produced in this Reincarnation
+  - label: Effect
+    text: Multiplicatively increase assistants based on Mana produced in this Era.
+  - label: Formula
+    text: (ln(1 + x) ^ 2)%, where x is Mana produced in this Era.

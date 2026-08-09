@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A5625
+name: Reduction
+branch: alchemy
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R179+, Forgotten Relic, Athanor artifact and upgrade, and an 86,400-second longest spell
+      duration
+  - label: Effect
+    text: Reduce all spells cost based on their individual duration.
+  - label: Formula
+    text: R = min(90, max(10, ln(1 + x / y) ^ 2))%, where x is the spell's current duration and y is its
+      base duration. The spell's cost is multiplied by (1 - R / 100).

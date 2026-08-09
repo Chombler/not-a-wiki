@@ -1,0 +1,15 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S175
+name: Empowered Luck
+branch: spellcraft
+availableTo: Elf
+details:
+  - label: Requirement
+    text: Research Blessing (D1) & Augmentation (S135)
+  - label: Cost
+    text: "1.868e148"
+  - label: Effect
+    text: For 20 seconds after triggering Elven Luck, increase all-building production based on clicks
+      made in this Era; also increase Elven Luck chance by 24%.
+  - label: Formula
+    text: (5000 * x ^ 0.25)%, where x is clicks made in this Era.

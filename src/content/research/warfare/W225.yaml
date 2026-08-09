@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W225
+name: Critical Strike
+branch: warfare
+availableTo: Angel
+details:
+  - label: Requirement
+    text: Research Dueling (W10) & Transfixion (D55)
+  - label: Cost
+    text: "3.782e155"
+  - label: Effect
+    text: Holy Light empowers Heaven’s Domains based on Holy Light activity time in this Reincarnation.
+  - label: Formula
+    text: (5 * x ^ 0.65)%, where x is Holy Light active time This Reincarnation in seconds.

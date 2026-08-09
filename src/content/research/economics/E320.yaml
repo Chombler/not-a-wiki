@@ -1,0 +1,18 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E320
+name: Smuggling
+branch: economics
+availableTo: All Factions
+details:
+  - label: Hint
+    text: You shouldn't abdicate so poorly.
+  - label: Requirement
+    text: Have twice as many Gems in Abdication Treasury
+  - label: Cost
+    text: "2.884e169"
+  - label: Effect
+    text: Increase Faction Coin find chance based on the amount of Unique Buildings owned.
+  - label: Effect
+    text: Also increase FC chance find chance by a multiplicative 100%.
+  - label: Formula
+    text: +(5 * x ^ 0.9)%, where x is Unique Building owned

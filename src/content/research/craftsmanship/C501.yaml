@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C501
+name: Metallurgy
+branch: craftsmanship
+availableTo: Dwarf
+details:
+  - label: Requirement
+    text: Secrets of the Underworld (as Dwarf)
+  - label: Cost
+    text: "8.112e195"
+  - label: Effect
+    text: Increase the production of Dwarven Forges based on the Dwarven Forges you own.
+  - label: Formula
+    text: (60 * x ^ 0.8)%, where x is Dwarven Forges owned.

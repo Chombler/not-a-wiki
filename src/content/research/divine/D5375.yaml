@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D5375
+name: Zealotry
+branch: divine
+availableTo: Good
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R177+, Forgotten Relic, Mythos artifact and upgrade.
+  - label: Effect
+    text: Multiplicatively increase Mana Regeneration based on Royal Exchanges purchased in this Era.
+  - label: Formula
+    text: (0.75 * x ^ 0.75), where x is royal exchanges this Era.

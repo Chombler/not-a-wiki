@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A105
+name: Fusion
+branch: alchemy
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Blacksmith City.
+  - label: Requirement
+    text: 2750 Blacksmiths
+  - label: Cost
+    text: "1.103e138"
+  - label: Effect
+    text: Increases the production of buildings based on the amount of Faction Coins found this Era.
+  - label: Formula
+    text: round(0.7 * ln ^ 3(1 + x))%, where x is your Faction Coins Gained (This Era) stat.

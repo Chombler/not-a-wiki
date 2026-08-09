@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W650
+name: Resilience
+branch: warfare
+availableTo: Dwarf
+details:
+  - label: Requirement
+    text: Research Eternity (D330) and Mercy (D450)
+  - label: Cost
+    text: "4.811e217"
+  - label: Effect
+    text: Multiplicatively increase assistants based on clicks made in this Era.
+  - label: Formula
+    text: (3.5 * x ^ 0.35)%, where x is clicks made in this Era.

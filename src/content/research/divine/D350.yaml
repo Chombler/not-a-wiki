@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D350
+name: Descent
+branch: divine
+availableTo: Titan
+details:
+  - label: Requirement
+    text: Research Swarming (W250) & Heroism (W330)
+  - label: Cost
+    text: "6.979e173"
+  - label: Effect
+    text: Gain additional assistants based on the amount of Olympian Halls you own.
+  - label: Formula
+    text: (0.2 * x ^ 0.8)%, where x is Olympian Halls owned.

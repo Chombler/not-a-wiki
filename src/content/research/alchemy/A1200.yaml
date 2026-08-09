@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A1200
+name: Melting
+branch: alchemy
+availableTo: Neutral,Dragon
+details:
+  - label: Hint
+    text: Steel Stronghold.
+  - label: Requirement
+    text: 5000 Iron Stronghold, Any Neutral Dragon
+  - label: Cost
+    text: "3.972e65"
+  - label: Effect
+    text: Increase the production of all other buildings by 135% per Iron Stronghold owned.
+  - label: Formula
+    text: (135 * x)%, where x is Iron Strongholds owned.

@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E450
+name: Undercutting
+branch: economics
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Maximum magic resources required.
+  - label: Requirement
+    text: 40,000 Max Mana
+  - label: Cost
+    text: "2.861e188"
+  - label: Effect
+    text: Multiplicatively increase Mana Regeneration based on Gems owned.
+  - label: Formula
+    text: (0.5 * ln(1 + x) ^ 1.35)%, where x is Gems owned.

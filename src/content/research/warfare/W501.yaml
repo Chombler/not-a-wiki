@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W501
+name: Ambush
+branch: warfare
+availableTo: Drow
+details:
+  - label: Requirement
+    text: Secrets of the Underworld (as Drow)
+  - label: Cost
+    text: "8.112e195"
+  - label: Effect
+    text: Increase the production of Spider Sanctuaries based on offline Bonus
+  - label: Formula
+    text: (3.5 * ln(1 + x) ^ 3.5)%, where x is offline production bonus multiplier.
+  - label: Note
+    text: This research is treated as an A1 upgrade for A-nerf purposes.

@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C120
+name: Socketing
+branch: craftsmanship
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Fingers crossed!
+  - label: Requirement
+    text: 100,000 clicks
+  - label: Cost
+    text: "1.715e140"
+  - label: Effect
+    text: Increase clicking reward based on the amount of gems you own.
+  - label: Formula
+    text: (5 * ln(1 + x) ^ 1.5)%, where x is Gems owned.

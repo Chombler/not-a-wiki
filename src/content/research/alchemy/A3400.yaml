@@ -1,0 +1,18 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A3400
+name: Chemistry
+branch: alchemy
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Get attracted to Faction Coins.
+  - label: Requirement
+    text: 1 No (1e30) FC (Found this Era), (Customizing C3000) & (Manipulation S3200).
+  - label: Cost
+    text: "6.161e190"
+  - label: Effect
+    text: Increases Faction Coin find chance based on the total amount of Lineage levels you have.
+  - label: Effect
+    text: Also increases Faction Coin find chance by a multiplicative 300%.
+  - label: Formula
+    text: 3 * x ^ 2.25, where x is total Lineage levels.

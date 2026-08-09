@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E3250
+name: Hirelings
+branch: economics
+availableTo: All
+details:
+  - label: Requirement
+    text: Intimidation (E1325) and Scholarship (S2900).
+  - label: Cost
+    text: "1.795e182"
+  - label: Effect
+    text: Gain additional assistants based on Faction Coins found in this Era.
+  - label: Formula
+    text: +(5 * ln(1 + x) ^ 2.5), where x is Faction Coins found in this Era.

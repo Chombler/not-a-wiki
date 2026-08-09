@@ -1,0 +1,12 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E1
+name: Coinage
+branch: economics
+availableTo: Goblin
+details:
+  - label: Cost
+    text: "7e122"
+  - label: Effect
+    text: Increase the production of Goblin Banks based on the amount of buildings you own.
+  - label: Formula
+    text: (2 * x ^ 0.8)%, where x is your Buildings Owned (This Era) stat.

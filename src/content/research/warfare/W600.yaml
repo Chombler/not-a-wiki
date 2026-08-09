@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W600
+name: Stalking
+branch: warfare
+availableTo: Drow
+details:
+  - label: Requirement
+    text: Research Exertion (W50) and Ambush (W501)
+  - label: Cost
+    text: "2.376e210"
+  - label: Effect
+    text: Multiplicatively increase assistants based on Combo Strike activity time in this Reincarnation.
+  - label: Formula
+    text: (x ^ 0.6)%, where x is Combo Strike activity time in this Reincarnation.

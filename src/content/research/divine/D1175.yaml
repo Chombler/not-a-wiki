@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D1175
+name: Oblation
+branch: divine
+availableTo: Neutral,Dragon
+details:
+  - label: Requirement
+    text: Any Neutral,Build Dragons' Unique Building
+  - label: Cost
+    text: "1.501e64"
+  - label: Effect
+    text: Increase the production of Wyrm's Den based on Faction Coin find chance.
+  - label: Formula
+    text: (1.6 * x ^ 0.6)%, where x is Faction Coin find chance.

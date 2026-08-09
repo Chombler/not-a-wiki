@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W320
+name: Shattering
+branch: warfare
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Down all the way.
+  - label: Requirement
+    text: 2,600 Excavations
+  - label: Cost
+    text: "2.884e169"
+  - label: Effect
+    text: Increase offline production based on Excavation depth.
+  - label: Formula
+    text: (10 * x ^ 0.9)%, where x is Excavation depth.

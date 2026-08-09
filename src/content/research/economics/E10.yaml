@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E10
+name: Recycling
+branch: economics
+availableTo: Undead
+details:
+  - label: Hint
+    text: Nation of the dead.
+  - label: Requirement
+    text: 2,000 Undercities
+  - label: Cost
+    text: "1.446e124"
+  - label: Effect
+    text: Increase the production of all other buildings by 140% per Undercity you own.

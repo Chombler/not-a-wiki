@@ -1,0 +1,19 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E5875
+name: Prosperity
+branch: economics
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R181+, Forgotten Relic, Vault artifact and upgrade, and at least 30 minutes activity time with
+      the least-used faction spell in this Era.
+  - label: Effect
+    text: Multiplicatively increase Faction Coin find chance based on your faction spell activity in
+      this Era.
+  - label: Formula
+    text: (0.4 * x ^ 0.4)%, where x is your least used faction spell (This Era)
+  - label: Note
+    text: Only checks the base faction spell of your faction(s). On mercs, scales off Share Benefits and
+      the two chosen Faction Spells.

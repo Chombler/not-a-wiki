@@ -1,0 +1,15 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A11875
+name: Liquefaction
+branch: alchemy
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R229+, Demon Bloodline, and 7,200 seconds in the current Era
+  - label: Effect
+    text: Increase the production of the three highest building tiers based on Hellfire Blast activity
+      time in this Reincarnation.
+  - label: Formula
+    text: (0.7 * x ^ 0.7)%, where x is Hellfire Blast activity time in this Reincarnation.

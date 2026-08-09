@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A10
+name: Transmutation
+branch: alchemy
+availableTo: Goblin
+details:
+  - label: Hint
+    text: Too many witches, not enough houses!
+  - label: Requirement
+    text: 2250 Goblin Banks
+  - label: Cost
+    text: "1.446e124"
+  - label: Effect
+    text: Increase the production of all other buildings by 90% per Goblin Bank owned.

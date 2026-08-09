@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A11125
+name: Alkahest
+branch: alchemy
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R223+
+  - label: Effect
+    text: Clicks count more based on the amount of active spells.
+  - label: Formula
+    text: (x ^ 1.5)%, where x is the amount of active spells.

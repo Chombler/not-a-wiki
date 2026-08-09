@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C13125
+name: Pottery
+branch: craftsmanship
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R239+
+  - label: Effect
+    text: Multiplicatively increase Faction Coin find chance based on the amount of active spells.
+  - label: Formula
+    text: (9 * x ^ 0.9)%, where x is the number of active spells.

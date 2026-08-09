@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E575
+name: Jewellery
+branch: economics
+availableTo: Drow
+details:
+  - label: Hint
+    text: Special architecture.
+  - label: Requirement
+    text: 12000 Unique Buildings (as Dwarf)
+  - label: Cost
+    text: "5.279e206"
+  - label: Effect
+    text: Increase the production bonus from gems based on the amount of Spider Sanctuaries you own.
+  - label: Formula
+    text: +(4 * x ^ 0.8)%, where x is the amount of Spider Sanctuaries you own.

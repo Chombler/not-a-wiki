@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E230
+name: Coercion
+branch: economics
+availableTo: Demon
+details:
+  - label: Requirement
+    text: Research Exertion (W50) & Diplomacy (E30)
+  - label: Cost
+    text: "2.034e156"
+  - label: Effect
+    text: Increases trophy count based on time spent as Evil this Reincarnation.
+  - label: Formula
+    text: (25 + 0.25 * x ^ 0.5)%, where x is time spent as Evil this Reincarnation.

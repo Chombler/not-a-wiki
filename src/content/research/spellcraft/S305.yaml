@@ -1,0 +1,18 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S305
+name: Mesmerization
+branch: spellcraft
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Face not required for a long time.
+  - label: Requirement
+    text: 5 hours as Faceless (across all Reincarnations)
+  - label: Cost
+    text: "1.854e167"
+  - label: Effect
+    text: Increase the production of all buildings by a fraction of your Offline Production Bonus.
+  - label: Formula
+    text: (ln(1 + x) ^ 2.5)%, where x is your Offline Production bonus as a multiplier.
+  - label: Note
+    text: This research is treated as an A1 upgrade for A-nerf purposes.

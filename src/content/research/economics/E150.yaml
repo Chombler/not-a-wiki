@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E150
+name: Conversion
+branch: economics
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: Research Bribing (E135) & Commerce (E25)
+  - label: Cost
+    text: "4.151e144"
+  - label: Effect
+    text: Increase production bonus from Gems based on your Royal Exchange bonus.
+  - label: Formula
+    text: +(2.5 * floor(x ^ 0.5))%, where x is your Royal Exchange Bonus.

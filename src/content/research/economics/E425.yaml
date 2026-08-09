@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E425
+name: Inflation
+branch: economics
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Got enough Faction Coins?
+  - label: Requirement
+    text: 100 B (1e11) Faction Coins (Found this Era)
+  - label: Cost
+    text: "6.359e184"
+  - label: Effect
+    text: Increase Royal Exchange Bonus based on the amount of Faction Coins found in this Era.
+  - label: Formula
+    text: +(2 * ln(1 + x) ^ 2)%, where x is Faction Coins found in this Era.

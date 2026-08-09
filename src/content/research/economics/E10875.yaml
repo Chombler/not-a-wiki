@@ -1,0 +1,15 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E10875
+name: Rigmarole
+branch: economics
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R221+
+  - label: Effect
+    text: Increase Royal Exchange bonus based on the highest amount of assistants you had in this
+      Reincarnation (Additive).
+  - label: Formula
+    text: +(ln(1 + x) ^ 2)%, where x is your highest assistants count this Reincarnation.

@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: F11250
+name: Inanity
+branch: forbidden
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R224+ and a maximum Excavation depth of 15,000 this Reincarnation.
+  - label: Effect
+    text: Excavations count more based on time spent offline in this Era.
+  - label: Formula
+    text: (x ^ 0.5)%, where x is time spent offline this Era.

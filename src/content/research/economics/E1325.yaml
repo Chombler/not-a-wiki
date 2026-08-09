@@ -1,0 +1,17 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E1325
+name: Intimidation
+branch: economics
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Unique wonders of the realm.
+  - label: Requirement
+    text: 18000 Unique Buildings
+  - label: Cost
+    text: "5.154e72"
+  - label: Effect
+    text: Reduce Royal Exchange cost multiplier.
+  - label: Formula
+    text: Reduces multiplier by 0.025; with no other reductions applying, the multiplier will be 1.075
+      instead of 1.1.

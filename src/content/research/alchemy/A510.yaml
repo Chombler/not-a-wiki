@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A510
+name: Poisons
+branch: alchemy
+availableTo: Drow
+details:
+  - label: Hint
+    text: Evil Churches.
+  - label: Requirement
+    text: 4000 Sanctuaries
+  - label: Cost
+    text: "1.676e197"
+  - label: Effect
+    text: Increase the production of all other buildings by 95% per Spider Sanctuary you own.

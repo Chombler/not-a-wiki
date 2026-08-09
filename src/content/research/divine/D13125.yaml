@@ -1,0 +1,28 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D13125
+name: Asceticism
+branch: divine
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R239+, 5 active Dragon's Breath colors
+  - label: Effect
+    text: Neutral Buildings also count as both Good and Evil buildings. Non-Unique buildings also count
+      as Unique buildings.
+  - label: Note
+    text: Neutral Buildings in this instance refers to only Farms, Inns, Blacksmiths and Hall of Legends.
+  - label: Note
+    text: The effect on Unique Buildings is only applied to effects that specifically check for Unique
+      Buildings, such as Lineage Perk 3s. The Non-Unique Buildings will still only count as
+      Non-Unique when it comes to building modifiers, such as E135. Essentially, effects that are
+      "...based on the amount of Unique Buildings" are now "...based on your total amount of
+      buildings".
+  - label: Effect
+    text: When you spend time with a faction, you also gain a fraction of that time spent with all
+      factions.
+  - label: Note
+    text: You gain 0.1 second of playtime for each faction (including Mercenary and Astral factions)
+      every second. This does not include your current Faction(s), which gain time normally. This
+      effect works both offline and in time warps. Time gained is added as real stat.

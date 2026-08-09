@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E11375
+name: Heist
+branch: economics
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R225+ and 1e18 assistants.
+  - label: Effect
+    text: Increase production bonus of Gems based on the amount of assistants you have.
+  - label: Formula
+    text: +(2.25 * ln(1 + x) ^ 2.25)%, where x is the amount of assistants you have.

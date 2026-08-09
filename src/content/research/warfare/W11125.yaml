@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W11125
+name: Vengeance
+branch: warfare
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R223+ and a Call to Arms duration of at least 600 seconds.
+  - label: Effect
+    text: Increase Offline production based on the duration of your longest spell.
+  - label: Formula
+    text: (25 + 2.5 * x ^ 0.75)%, where x is the duration of your longest spell.

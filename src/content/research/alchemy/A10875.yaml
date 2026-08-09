@@ -1,0 +1,18 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A10875
+name: Toxicity
+branch: alchemy
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R221+
+  - label: Effect
+    text: Multiplicatively increase mana regeneration based on time spent with the faction opposite to
+      your current one, in this Reincarnation.
+  - label: Formula
+    text: (1.3 * x ^ 0.7)%, where x is time spent with opposite-alignment faction this R.
+  - label: Note
+    text: For Neutral and Balance the opposite is Neutral and Balance respectively (therefore Druid
+      counts Druid playtime itself).

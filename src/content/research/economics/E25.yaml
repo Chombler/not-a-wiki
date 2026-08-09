@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E25
+name: Commerce
+branch: economics
+availableTo: Elf
+details:
+  - label: Hint
+    text: Colored wealth.
+  - label: Requirement
+    text: 100 M (1e8) Faction Coins (Found this Era)
+  - label: Cost
+    text: "2.25e126"
+  - label: Effect
+    text: Gain additional assistants based on the amount of Royal Exchanges you purchased.
+  - label: Formula
+    text: +(4 * x ^ 0.7), where x is the amount of Royal Exchanges purchased.

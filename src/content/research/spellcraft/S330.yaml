@@ -1,0 +1,15 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S330
+name: Reverberation
+branch: spellcraft
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: Research Cryomancy (S200) & Weather Control (D225)
+  - label: Cost
+    text: "8.341e170"
+  - label: Effect
+    text: Increase the production of all buildings based on the number of active spells you have. You
+      must have at least 3 active spells to generate a bonus.
+  - label: Formula
+    text: (3000 * 2 ^ (x - 3))%, where x is the number of currently active spells (capped at 300 spells).

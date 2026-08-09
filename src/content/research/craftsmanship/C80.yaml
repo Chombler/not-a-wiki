@@ -1,0 +1,23 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C80
+name: Apprenticeship
+branch: craftsmanship
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Shall I paint these buildings blue or red? I can't decide.
+  - label: Requirement
+    text: 16,000 Good and Evil buildings
+  - label: Cost
+    text: "2.45e134"
+  - label: Effect
+    text: Increase the production of all buildings based on Faction Coins found in this Era. Lower
+      building tiers receive a larger bonus.
+  - label: Formula
+    text: (7 * ln(1 + x) ^ 1.4 * 1.4 ^ (12 - T))%, where x is Faction Coins found in this Era and T is
+      building tier.
+  - label: Base value (B)
+    text: (7 * ln(1 + x) ^ 1.4)%.
+tierTable:
+  key: apprenticeship
+  heading: Multiplier by building tier

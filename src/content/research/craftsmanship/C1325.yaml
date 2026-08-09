@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C1325
+name: Plasmation
+branch: craftsmanship
+availableTo: All Factions
+details:
+  - label: Hint
+    text: I've gotta take a Mana shower.
+  - label: Requirement
+    text: 50m (5e7) Mana Produced (This Era)
+  - label: Cost
+    text: "5.154e72"
+  - label: Effect
+    text: Multiplicatively increase assistants based on Mana produced in this Era.
+  - label: Formula
+    text: (1.75 * ln(1 + x) ^ 1.75)%, where x is Mana produced in this Era.

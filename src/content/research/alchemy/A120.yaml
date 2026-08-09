@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A120
+name: Vivification
+branch: alchemy
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Maximum Magic!
+  - label: Requirement
+    text: Have 15,000 Maximum Mana.
+  - label: Cost
+    text: "1.715e140"
+  - label: Effect
+    text: Gain additional assistants based on max mana.
+  - label: Formula
+    text: +(x ^ 0.5), where x is Maximum Mana.

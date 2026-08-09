@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C281
+name: Architecture
+branch: craftsmanship
+availableTo: Titan
+details:
+  - label: Requirement
+    text: Secrets of the Ancients (as Titan)
+  - label: Cost
+    text: "5.767e163"
+  - label: Effect
+    text: Increase the production of Olympian Halls based on the amount of buildings you own.
+  - label: Formula
+    text: (80 * x ^ 0.8)%, where x is Buildings Owned in this Era.

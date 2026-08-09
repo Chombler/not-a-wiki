@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E1425
+name: Rarity
+branch: economics
+availableTo: All Neutral Factions
+details:
+  - label: Hint
+    text: Be neutral. Be different. For a couple hours.
+  - label: Requirement
+    text: 8 hours playtime each with Titan, Druid, and Faceless + Research A545 & C1300
+  - label: Cost
+    text: "2.527e78"
+  - label: Effect
+    text: Increase Gem Grinder bonus based on the amount of artifacts you found.
+  - label: Formula
+    text: (1.25 * x ^ 1.25)%, where x is artifacts found.

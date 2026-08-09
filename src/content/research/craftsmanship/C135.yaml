@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C135
+name: Reinforcing
+branch: craftsmanship
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Green Fortune.
+  - label: Requirement
+    text: 100 Elven Luck triggers
+  - label: Cost
+    text: "2.668e142"
+  - label: Effect
+    text: Increase Non-Unique Building production based on clicks made in this Era.
+  - label: Formula
+    text: (40 * x ^ 0.4)%, where x is clicks made in this Era.

@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S270
+name: Runecarving
+branch: spellcraft
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Click your way through.
+  - label: Requirement
+    text: 20,000 clicks (This Era)
+  - label: Cost
+    text: "1.424e162"
+  - label: Effect
+    text: Increase the production of all buildings based on the amount of Gems you own.
+  - label: Formula
+    text: (1.25 * (0.5 * ln(1 + x)) ^ 1.25)%, where x is Gems owned.

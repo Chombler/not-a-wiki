@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C3000
+name: Customizing
+branch: craftsmanship
+availableTo: Mercenary
+details:
+  - label: Hint
+    text: Go into a deeper tunnel.
+  - label: Requirement
+    text: 9000 Excavations as Mercenary.
+  - label: Cost
+    text: "1.066e168"
+  - label: Effect
+    text: Increases the production of all buildings based on the amount of artifacts you own.
+  - label: Formula
+    text: (2 * x ^ 2), where x is artifacts you own.

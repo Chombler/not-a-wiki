@@ -1,0 +1,15 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W350
+name: Survival
+branch: warfare
+availableTo: Druid
+details:
+  - label: Requirement
+    text: Research Creeping (A300) & Synthesis (A150).
+  - label: Cost
+    text: "6.979e173"
+  - label: Effect
+    text: Increase the production of all other buildings based on the production of your Stonehenge
+      Circles.
+  - label: Formula
+    text: (8 * ln(1 + x) ^ 1.8)%, where x is the production of your Stonehenge Circles.

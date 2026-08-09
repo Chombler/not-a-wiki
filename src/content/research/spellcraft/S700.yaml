@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S700
+name: Trickery
+branch: spellcraft
+availableTo: Fairy,Dwarf
+details:
+  - label: Requirement
+    text: 250 Dwarven Exchanges as Dwairy (This Era), Research Mysticism (S105) & Illusion (S375)
+  - label: Cost
+    text: "9.741e224"
+  - label: Effect
+    text: Increase the production of Neutral buildings based on Maximum Mana.
+  - label: Formula
+    text: (0.5 * x ^ 0.9)%, where x is your Maximum Mana.

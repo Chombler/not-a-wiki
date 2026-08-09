@@ -1,0 +1,19 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W11875
+name: Scouting
+branch: warfare
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R229+ and at least 5 Primal Balance targets.
+  - label: Effect
+    text: Buildings count more based on the maximum amount of Grand Balance targets you had in this
+      Reincarnation.
+  - label: Formula
+    text: (x ^ 0.9)%, where x is the maximum amount of Grand Balance targets you had in this
+      Reincarnation.
+  - label: Note
+    text: Amount of targets can be seen at Druid Challenge Reward, but needs an active Grand Balance to
+      update.

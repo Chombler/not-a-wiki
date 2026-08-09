@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C5625
+name: Discovery
+branch: craftsmanship
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R179+, Forgotten Relic, Factory artifact and upgrade, and 25,000 excavation depth
+  - label: Effect
+    text: Trophies and Artifacts count more based on excavation depth.
+  - label: Formula
+    text: (0.5 * x ^ 0.5)%, where x is excavation depth.

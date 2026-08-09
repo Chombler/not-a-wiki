@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S11375
+name: Concentration
+branch: spellcraft
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R225+ and 1 Qa (1e15) spells cast
+  - label: Effect
+    text: Increase the production of Unique buildings based on Spells cast in this Era.
+  - label: Formula
+    text: (ln(1 + x) ^ 2)%, where x is spell casts this Era.

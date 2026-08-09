@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W270
+name: Entrench
+branch: warfare
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Dig, dig, dig the hole.
+  - label: Requirement
+    text: 2,000 Excavations
+  - label: Cost
+    text: "1.424e162"
+  - label: Effect
+    text: Increase the production of Unique buildings based on the amount of Excavations you made.
+  - label: Formula
+    text: round(15 * x ^ 0.8)%, where x is the amount of excavations made.

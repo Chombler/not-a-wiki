@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C12250
+name: Compression
+branch: craftsmanship
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R232+ and 172,800 seconds of Brainwave duration
+  - label: Effect
+    text: Brainwave increases Faction Coin find chance progressively over its duration.
+  - label: Formula
+    text: +(1.5 * ((x + y) / 60) ^ 2.25)%, where x and y are Brainwave runtime and headstart in seconds.

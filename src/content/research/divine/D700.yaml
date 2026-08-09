@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D700
+name: Dispelling
+branch: divine
+availableTo: Angel,Dwarf
+details:
+  - label: Requirement
+    text: 250 Dwarven Exchanges as Dwangel, Shattering (W320), and Waste (A450)
+  - label: Cost
+    text: "9.741e224"
+  - label: Effect
+    text: Increase the production of Unique buildings based on Mana Regeneration.
+  - label: Formula
+    text: (2 * ln(1 + x) ^ 2)%, where x is Mana Regeneration (mana/s).

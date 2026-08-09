@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D320
+name: Deliverance
+branch: divine
+availableTo: All Factions
+details:
+  - label: Hint
+    text: High-rate mana transfusions.
+  - label: Requirement
+    text: 12,000 Mana Regeneration per second
+  - label: Cost
+    text: "2.884e169"
+  - label: Effect
+    text: Increase assistants production based on mana regeneration.
+  - label: Formula
+    text: (20 * x ^ 0.8)%, where x is your Mana per Second stat.

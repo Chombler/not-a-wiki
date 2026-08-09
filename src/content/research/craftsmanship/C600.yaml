@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C600
+name: Blacksmithing
+branch: craftsmanship
+availableTo: Dwarf
+details:
+  - label: Requirement
+    text: Research Reinforcing (C135) & Metallurgy (C501)
+  - label: Cost
+    text: "2.376e210"
+  - label: Effect
+    text: Increase Unique Building production based on Artifacts found.
+  - label: Formula
+    text: (x ^ 2)%, where x is Artifacts found.

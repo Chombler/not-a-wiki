@@ -1,0 +1,15 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: F13750
+name: The Unseen
+branch: forbidden
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R244+, the Forbidden Library upgrade, and 4,000 Monasteries.
+  - label: Effect
+    text: Increase Offline production based on the maximum amount of assistants you had in this
+      Reincarnation.
+  - label: Formula
+    text: (2 * ln(1 + x) ^ 2)%, where x is the highest number of assistants you had this Reincarnation.

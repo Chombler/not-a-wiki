@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E250
+name: Trade Routes
+branch: economics
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: Research Forgery (E225) & Royal Demand (E145)
+  - label: Cost
+    text: "1.702e159"
+  - label: Effect
+    text: Increase mana regeneration based on the amount of Royal Exchanges you purchased.
+  - label: Formula
+    text: +(floor(10 * x ^ 0.55) / 10), where x is the amount of Royal Exchanges purchased.

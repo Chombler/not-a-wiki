@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S250
+name: Aeromancy
+branch: spellcraft
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: Research Weather Control (D225) & Explosives (A270)
+  - label: Cost
+    text: "1.702e159"
+  - label: Effect
+    text: Increase the production of Unique Buildings based on mana produced in this Era.
+  - label: Formula
+    text: (round(0.5 * x ^ 0.58))%, where x mana produced this Era.

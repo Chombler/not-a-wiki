@@ -1,0 +1,18 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D300
+name: Meditation
+branch: divine
+availableTo: Druid
+details:
+  - label: Hint
+    text: Maximum magical concentration.
+  - label: Requirement
+    text: Have 10,000 Mana (as Druid)
+  - label: Cost
+    text: "3.447e166"
+  - label: Effect
+    text: Increase mana regeneration based on your current mana.
+  - label: Effect
+    text: Also increases offline spell cast amount multiplicatively by 300%.
+  - label: Formula
+    text: (0.35 * x ^0.35 + 0.035 * log(x) ^3.5), where x is max mana.

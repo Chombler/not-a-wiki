@@ -1,0 +1,19 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A30
+name: Delayed Reaction
+branch: alchemy
+availableTo: Fairy
+details:
+  - label: Hint
+    text: Fairy Greatest Hits.
+  - label: Requirement
+    text: 5,000 seconds of Fairy Chanting activity time
+  - label: Cost
+    text: "1.21e127"
+  - label: Effect
+    text: Increases duration of Fairy Chanting based on the amount of Enchanted Fields, Inns and
+      Blacksmiths you own and provides a progressively increasing bonus to the spell.
+  - label: Additive Production increase formula
+    text: floor(1000 * t ^ 1.5), where t is how long FC has been active in seconds.
+  - label: Duration increase formula
+    text: +(0.2 * x ^ 0.8) seconds, where x is the total Farms, Inns, and Blacksmiths owned.

@@ -1,0 +1,19 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W300
+name: Domination
+branch: warfare
+availableTo: Faceless
+details:
+  - label: Hint
+    text: How many people are required to throw a party?
+  - label: Requirement
+    text: 5,000 Base Assistants (as Faceless)
+  - label: Cost
+    text: "3.447e166"
+  - label: Effect
+    text: Increase Faction Coin find chance based on the highest amount of assistants you had in a
+      single game.(This R)
+  - label: Effect
+    text: Also increase Faction Coin find chance multiplicatively by 100%.
+  - label: Formula
+    text: +(100 * x ^ 0.5)%, where x is your highest assistants count in a single Era.

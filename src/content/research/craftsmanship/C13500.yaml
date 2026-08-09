@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C13500
+name: Assembly Line
+branch: craftsmanship
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R242+, Dwarven Bloodline, and 1 Qa (1e15) assistants
+  - label: Effect
+    text: Increase the production of Non-Unique buildings based on the amount of assistants you own.
+  - label: Formula
+    text: (0.75 * x ^ 0.25)%, where x is the number of assistants you own.

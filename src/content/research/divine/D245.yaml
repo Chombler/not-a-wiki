@@ -1,0 +1,18 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D245
+name: Sanctification
+branch: divine
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Surgical Spirits.
+  - label: Requirement
+    text: 10,800 seconds of Spiritual Surge activity time (All Time), Soulweaving (A175), and Necromancy
+      (S225)
+  - label: Cost
+    text: "3.165e158"
+  - label: Effect
+    text: Increase the production of Unique Buildings based on the amount of Non-Unique Buildings you
+      own.
+  - label: Formula
+    text: (2.5 * x ^ 0.55), where x is the amount of Non-Unique Buildings you own.

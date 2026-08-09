@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C475
+name: Minecrafting
+branch: craftsmanship
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Excavate to the bottom!
+  - label: Requirement
+    text: 3,000 excavations
+  - label: Cost
+    text: "1.288e192"
+  - label: Effect
+    text: Increases production bonus from gems based on the amount of excavations you made.
+  - label: Formula
+    text: (3 * x ^ 0.35)%, where x is the amount of Excavations you made.

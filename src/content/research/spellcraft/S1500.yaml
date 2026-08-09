@@ -1,0 +1,17 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S1500
+name: Psionics
+branch: spellcraft
+availableTo: Faceless,Dragon
+details:
+  - label: Hint
+    text: I require assistance.
+  - label: Requirement
+    text: 500,000 Base Assistants, Research Hierarchy (S550) and Intimidation (E1325), as Faceless,
+      Dragon
+  - label: Cost
+    text: "4.682e82"
+  - label: Effect
+    text: Increase triggered Tax Collections based on assistants owned.
+  - label: Formula
+    text: +floor(1 + 0.25 * ln(1 + x) ^ 1.25), where x is assistants owned.

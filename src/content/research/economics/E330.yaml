@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E330
+name: Collection
+branch: economics
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: Research Acquisition (E200) & Forgery (E225)
+  - label: Cost
+    text: "8.341e170"
+  - label: Effect
+    text: Increase the production of all buildings based on the amount of artifacts you found.
+  - label: Formula
+    text: (50 * x ^ 1.1)%, where x is the amount of artifacts found.

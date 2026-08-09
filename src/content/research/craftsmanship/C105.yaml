@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C105
+name: Woodcraft
+branch: craftsmanship
+availableTo: All Factions
+details:
+  - label: Hint
+    text: 25k reiterations of the same movement.
+  - label: Requirement
+    text: 25,000 clicks (This Era)
+  - label: Cost
+    text: "1.103e138"
+  - label: Effect
+    text: Increase the chance to find Faction Coins based on the amount of Unique Buildings you own.
+  - label: Formula
+    text: (x ^ 0.5)%, where x is Unique Buildings owned.

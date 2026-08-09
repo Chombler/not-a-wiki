@@ -1,0 +1,15 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A270
+name: Explosives
+branch: alchemy
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: 20 B (2e10) Faction Coins found in this Era
+  - label: Cost
+    text: "1.424e162"
+  - label: Effect
+    text: Increase the production of the building affected by the most spell effects based on excavation
+      depth.
+  - label: Formula
+    text: (60 + 60 * x ^ 0.6)%, where x is excavation depth.

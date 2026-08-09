@@ -1,0 +1,15 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A25
+name: Deflagration
+branch: alchemy
+availableTo: Demon
+details:
+  - label: Hint
+    text: Hellfire!
+  - label: Requirement
+    text: 6,666 seconds of Hellfire Blast activity time
+  - label: Cost
+    text: "2.25e126"
+  - label: Effect
+    text: Set Hellfire Blast duration to an unmodifiable 4 seconds, reduce its Mana cost by 400, and
+      increase its effect by 1,600%.

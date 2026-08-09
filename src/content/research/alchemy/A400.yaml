@@ -1,0 +1,17 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A400
+name: Bloodspring
+branch: alchemy
+availableTo: All Factions But Mercenary
+details:
+  - label: Requirement
+    text: Research Assimilation (S281) & Transfusion (A375).
+  - label: Cost
+    text: "1.413e181"
+  - label: Effect
+    text: You get your faction's Bloodline effect for free. Bloodstream counts time spent with both
+      factions.
+  - label: Note
+    text: Provides Prestige Bloodline for Astral Factions from R125 to R129, Astral bloodlines at R130+.
+  - label: Note
+    text: Does not work with two Bloodlines of the same type.

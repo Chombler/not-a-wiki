@@ -1,0 +1,15 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D13500
+name: Afterlife
+branch: divine
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R242+, Druid Bloodline, and 100 Sx (1e23) Mana Regeneration
+  - label: Effect
+    text: Multiplicatively increase Mana Regeneration based on the highest amount of Mana Regeneration
+      you had in this Reincarnation.
+  - label: Formula
+    text: (2 * ln(1 + x) ^ 2)%, where x is the highest Mana Regeneration you had this Reincarnation.

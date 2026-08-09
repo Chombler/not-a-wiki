@@ -1,0 +1,18 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S1275
+name: Sequence
+branch: spellcraft
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Cast and cast and cast and cast!
+  - label: Requirement
+    text: 500,000 spells cast (This Era).
+  - label: Cost
+    text: "7.36e69"
+  - label: Effect
+    text: Reduce spell-cost scaling for higher spell tiers.
+  - label: Formula
+    text: For ordinary tiered spells, reduce the per-tier exponent increase from 0.6 to 0.5. For Tax
+      Collection and other spells using multiplicative tier scaling, reduce the per-tier multiplier
+      from 3 to 2.5.

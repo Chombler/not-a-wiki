@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D12250
+name: Enochian
+branch: divine
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R232+, Angel Bloodline, and 7,200 seconds in the current Era
+  - label: Effect
+    text: Multiply Angel Coins found based on God's Hand activity time in this Reincarnation.
+  - label: Formula
+    text: "*(10 + 0.7 * x ^ 0.7)%, where x is God's Hand activity time in this Reincarnation."

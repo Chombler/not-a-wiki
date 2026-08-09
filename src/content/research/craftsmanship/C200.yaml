@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C200
+name: Journeymen
+branch: craftsmanship
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: Research Apprenticeship (C80) & Bartering (E50).
+  - label: Cost
+    text: "8.406e151"
+  - label: Effect
+    text: Increase the production of Unique Buildings based on time spent with their alignment or
+      alignments in this Reincarnation.
+  - label: Formula
+    text: (25 + 1.25 * x ^ 0.75)%, where x is time spent with the alignment or combined alignments of
+      the Unique Building in this Reincarnation.

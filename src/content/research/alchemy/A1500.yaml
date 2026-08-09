@@ -1,0 +1,17 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A1500
+name: Sublimation
+branch: alchemy
+availableTo: Druid,Dragon
+details:
+  - label: Hint
+    text: How long required to achieve a Grand Balance?
+  - label: Requirement
+    text: 3,600 seconds of Grand Balance activity time in a single Era, Dispelling (D700), Calefaction
+      (A1325), Druid, Dragon
+  - label: Cost
+    text: "4.682e82"
+  - label: Effect
+    text: Multiplicatively increase Mana Regeneration based on Unique Buildings built.
+  - label: Formula
+    text: (0.8 * x ^ 0.8)%, where x is Unique Buildings owned.

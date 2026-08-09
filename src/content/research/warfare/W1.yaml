@@ -1,0 +1,13 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W1
+name: Assault
+branch: warfare
+availableTo: Demon
+details:
+  - label: Cost
+    text: "7e122"
+  - label: Effect
+    text: Increase the production of Infernal Realms based on the amount of Hellfire Blasts cast in this
+      Era.
+  - label: Formula
+    text: (160 + 80 * x ^ 0.8)%, where x is Hellfire Blasts cast in this Era.

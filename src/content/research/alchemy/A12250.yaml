@@ -1,0 +1,17 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A12250
+name: Folgoration
+branch: alchemy
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R232+ and 3 Excavation Resets in this Era
+  - label: Effect
+    text: While both Diamond Pickaxe and God's Hand are active, multiplicatively increase Mana
+      Regeneration and Faction Coin find chance based on the amount of Excavations made in this
+      Reincarnation, including resets.
+  - label: Formula
+    text: (15 + 3 * (x * (1 + y)) ^ 0.75)%, where x is excavation depth and y is free plus Ruby
+      Excavation Resets in this Reincarnation.

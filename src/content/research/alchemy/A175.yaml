@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A175
+name: Soulweaving
+branch: alchemy
+availableTo: Undead
+details:
+  - label: Requirement
+    text: Research Cursing (D25) & Reinforcing (C135)
+  - label: Cost
+    text: "1.868e148"
+  - label: Effect
+    text: Increase the production of all buildings based on the amount of times you Reincarnated.
+  - label: Formula
+    text: round(2.5 * x ^ 2.25)%, where x is the amount of times you reincarnated.

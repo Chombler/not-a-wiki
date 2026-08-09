@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S225
+name: Necromancy
+branch: spellcraft
+availableTo: Undead
+details:
+  - label: Requirement
+    text: Research Resurrection (D175) & Cryomancy (S200)
+  - label: Cost
+    text: "3.782e155"
+  - label: Effect
+    text: Increase the production of assistants based on the amount of Necropolises you own.
+  - label: Formula
+    text: (round(5 * x ^ 0.75))%, where x is the number of Necropolises you own.

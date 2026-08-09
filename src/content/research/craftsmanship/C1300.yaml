@@ -1,0 +1,18 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C1300
+name: Scintillation
+branch: craftsmanship
+availableTo: Neutral,Dragon
+details:
+  - label: Hint
+    text: Increase your magic potential.
+  - label: Requirement
+    text: 100,000 Maximum Mana, as any Neutral Dragon
+  - label: Cost
+    text: "1.948e71"
+  - label: Effect
+    text: Increase production of buildings based on max mana and additive gem bonus. (Higher boost for
+      lower gem bonus.)
+  - label: Formula
+    text: (1.5 * ln(1 + x) ^ (0.8 * ln(1 + y) ^ 0.5))%, where x is Maximum Mana and y is additive
+      production bonus from Gems.

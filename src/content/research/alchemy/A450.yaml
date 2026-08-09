@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A450
+name: Waste
+branch: alchemy
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Royal Trade Network.
+  - label: Requirement
+    text: 2000 Royal Exchanges
+  - label: Cost
+    text: "2.861e188"
+  - label: Effect
+    text: Increase offline production based on the amount of Royal Exchanges you purchased.
+  - label: Formula
+    text: 120 * x ^ 0.85, where x is your Royal Exchanges Made stat.

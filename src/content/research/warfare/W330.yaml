@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W330
+name: Heroism
+branch: warfare
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: Research Crusade (W200) & Athletics (W290).
+  - label: Cost
+    text: "8.341e170"
+  - label: Effect
+    text: Increase your click reward based on the amount of trophies you unlocked.
+  - label: Formula
+    text: round(2.5 * x)%, where x is the amount of trophies unlocked.

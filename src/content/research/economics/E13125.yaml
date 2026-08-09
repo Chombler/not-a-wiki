@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E13125
+name: Discount
+branch: economics
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R239+ and at least 200 seconds of Tax Collection cost reduction.
+  - label: Effect
+    text: Reduce Royal Exchange, Excavation and Building cost multipliers.
+  - label: Note
+    text: Cost multiplier reduction is -0.02 for all three.

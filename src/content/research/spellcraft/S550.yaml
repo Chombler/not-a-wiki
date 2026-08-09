@@ -1,0 +1,20 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S550
+name: Hierarchy
+branch: spellcraft
+availableTo: All Factions
+details:
+  - label: Hint
+    text: I thirst for mana.
+  - label: Requirement
+    text: 10 M (1e7) mana produced (This Era)
+  - label: Cost
+    text: "1.173e203"
+  - label: Effect
+    text: Increase the production of buildings based on mana produced in this Era, depending on their
+      tiers. Gives better bonuses for lower tiers.
+  - label: Formula
+    text: (0.1 * x ^ 0.45 * (12 - T) ^ 2)%, where x is mana produced in this Era and T is building tier.
+tierTable:
+  key: hierarchy
+  heading: Bonus by building

@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S150
+name: Pyromancy
+branch: spellcraft
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: Research Inflame (D10) & Fusion (A105)
+  - label: Cost
+    text: "4.151e144"
+  - label: Effect
+    text: Increase the production of the two highest building tiers based on your Mana Regeneration.
+  - label: Formula
+    text: (10 * x ^ 0.6)%, where x is Mana Regeneration (mana/s).

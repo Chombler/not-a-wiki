@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W700
+name: Torture
+branch: warfare
+availableTo: Demon,Drow
+details:
+  - label: Requirement
+    text: 250 Drow Exchanges as Dromon, Research Soulrending (D245) and Stalking (W600)
+  - label: Cost
+    text: "9.741e224"
+  - label: Effect
+    text: Increase assistants production based on total time spent being Evil (This R).
+  - label: Formula
+    text: (8 * x ^ 0.8)%, where x is your Time Spent Being Evil stat.

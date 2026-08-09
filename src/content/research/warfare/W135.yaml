@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W135
+name: Rampage
+branch: warfare
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Light up those cups!
+  - label: Requirement
+    text: 580 Trophies (as Demon)
+  - label: Cost
+    text: "2.668e142"
+  - label: Effect
+    text: Increase maximum mana based on the number of trophies you have unlocked.
+  - label: Formula
+    text: floor(1.3 * x ^ 1.1), where x is the amount of trophies unlocked.

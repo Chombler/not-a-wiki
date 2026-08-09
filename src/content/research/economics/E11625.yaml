@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E11625
+name: Surplus
+branch: economics
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R227+ and enough Gems to meet the current Reincarnation requirement.
+  - label: Effect
+    text: Multiplicatively increase assistants based on the amount of Gems you have.
+  - label: Formula
+    text: (25 + 0.25 * ln(1 + x) ^ 1.5)%, where x is the amount of Gems you have.

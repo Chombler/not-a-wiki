@@ -1,0 +1,17 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D625
+name: Purity
+branch: divine
+availableTo: Good
+details:
+  - label: Hint
+    text: Be patiently good.
+  - label: Requirement
+    text: 5,400 seconds spent as Good in this Reincarnation, Communion (D205), and Devotion (D525)
+  - label: Cost
+    text: "1.069e214"
+  - label: Effect
+    text: Increase Holy Light multiplier based on the amount of times you cast your faction spell in
+      this Era.
+  - label: Formula
+    text: (15 * x ^ 0.75)%, where x is the relevant faction-spell statistic.

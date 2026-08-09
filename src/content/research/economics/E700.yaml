@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E700
+name: Slavery
+branch: economics
+availableTo: Goblin,Drow
+details:
+  - label: Requirement
+    text: 250 Drow Exchanges as Droblin, Research Automatons (C225) and Undercutting (E450)
+  - label: Cost
+    text: "9.741e224"
+  - label: Effect
+    text: Increase assistants production based on the amount of Non-Unique buildings you own.
+  - label: Formula
+    text: +(0.4 * x ^ 0.8)%, where x is the amount of Non-Unique Buildings you own.

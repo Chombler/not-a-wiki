@@ -1,0 +1,18 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D270
+name: Transubstantiation
+branch: divine
+availableTo: All Factions
+details:
+  - label: Hint
+    text: A small buried stone.
+  - label: Requirement
+    text: 1 Rough Stone Artifact
+  - label: Cost
+    text: "1.424e162"
+  - label: Effect
+    text: Each artifact you discover increases Maximum Mana additively and multiplicatively.
+  - label: Additive Formula
+    text: (50 * x ^1.1), where x is the number of artifacts found.
+  - label: Multiplicative Formula
+    text: (x ^ 0.95), where x is the number of artifacts found.

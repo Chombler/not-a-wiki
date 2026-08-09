@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W13125
+name: Artillery
+branch: warfare
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R239+ and at least 50 Triggered Tax Collection Power.
+  - label: Effect
+    text: Increase triggered Tax Collections based on the highest amount of spells cast in this
+      Reincarnation.
+  - label: Formula
+    text: +floor(1 + 0.5 * ln(1 + x) ^ 1.25), where x is the highest number of spells cast in a single
+      run this Reincarnation.

@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A11625
+name: Anima Mundi
+branch: alchemy
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R227+ and 10 T (1e13) Faction Coin find chance
+  - label: Effect
+    text: Multiplicatively increase Maximum Mana based on Faction Coins found in this Reincarnation.
+  - label: Formula
+    text: (0.2 * ln(1 + x) ^ 1.8)%, where x is Faction Coins found in this Reincarnation.

@@ -1,0 +1,15 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C340
+name: Gem Duster
+branch: craftsmanship
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: 200 Gem Grinder casts (This R), Sifting (E290) & Surveyorship (E270)
+  - label: Cost
+    text: "2.413e172"
+  - label: Effect
+    text: Increase production bonus from gems based on the amount of Rubies you collected.
+      (Multiplicative)
+  - label: Formula
+    text: floor(10 * x), where x is your Rubies Gained (All Time) stat.

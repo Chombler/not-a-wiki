@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W1400
+name: Cataclysm
+branch: warfare
+availableTo: Dragon
+details:
+  - label: Requirement
+    text: Research W400, A1200, Affiliated Dragon
+  - label: Cost
+    text: "9.549e76"
+  - label: Effect
+    text: Multiplicatively increase maximum mana based on clicks made in this Era.
+  - label: Formula
+    text: (25 + 0.5 * x ^ 0.5)%, where x is clicks made in this Era.

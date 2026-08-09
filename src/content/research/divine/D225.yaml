@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D225
+name: Weather Control
+branch: divine
+availableTo: Fairy
+details:
+  - label: Requirement
+    text: Research Light Condenser (C25) & Vacuumancy (S30)
+  - label: Cost
+    text: "3.782e155"
+  - label: Effect
+    text: Increase the production of Enchanted Fields based on maximum mana.
+  - label: Formula
+    text: (2.5 * x ^ 0.8)%, where x is Maximum Mana.

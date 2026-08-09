@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E400
+name: Investment
+branch: economics
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: Research Bribing (E135) & Commerce (E25)
+  - label: Cost
+    text: "1.413e181"
+  - label: Effect
+    text: Research points count more based on clicks made in this Era.
+  - label: Formula
+    text: (35 + x ^ 0.35)%, where x is clicks made in this Era.

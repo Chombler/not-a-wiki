@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S180
+name: Incantation
+branch: spellcraft
+availableTo: Fairy
+details:
+  - label: Requirement
+    text: Research Enchanting (S1) & Mysticism (S105)
+  - label: Cost
+    text: "1.005e149"
+  - label: Effect
+    text: Increase the production of all buildings based on Mana Regeneration.
+  - label: Formula
+    text: (50 + 3 * x ^ 0.7)%, where x is Mana Regeneration (mana/s).

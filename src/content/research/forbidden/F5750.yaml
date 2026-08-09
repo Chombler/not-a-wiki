@@ -1,0 +1,15 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: F5750
+name: Corruption
+branch: forbidden
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: R180+, Forgotten Relic, Apeiron artifact and upgrade, and 250,000 Unique Buildings.
+  - label: Cost
+    text: Free
+  - label: Effect
+    text: Gain the base Union effect of your opposite Alignment.
+  - label: Note
+    text: Only gain the effects of the Base Faction that matches both alignments. For Neutral and
+      Balance the opposite is Neutral and Balance respectively.

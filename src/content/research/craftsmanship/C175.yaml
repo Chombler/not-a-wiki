@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C175
+name: Gemcutting
+branch: craftsmanship
+availableTo: Goblin
+details:
+  - label: Requirement
+    text: Research Refining (C50) & Socketing (C120)
+  - label: Cost
+    text: "1.868e148"
+  - label: Effect
+    text: Increase the production bonus from gems based on the number of buildings you own.
+  - label: Formula
+    text: (0.25 * x ^ 0.5)%, where x is Buildings Owned in this Era.

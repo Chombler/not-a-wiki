@@ -1,0 +1,18 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W1375
+name: Scavenging
+branch: warfare
+availableTo: All Factions
+details:
+  - label: Hint
+    text: GUD? More like Evil.
+  - label: Requirement
+    text: 43,200 seconds (12 hours) spent as Evil across all Reincarnations.
+  - label: Cost
+    text: "3.609e75"
+  - label: Effect
+    text: Increases Faction Coin find chance multiplicatively by 160%.
+  - label: Effect
+    text: Increase the chance to find Faction Coins based on the amount of assistants you own.
+  - label: Formula
+    text: +(40 * x ^ 0.4)%, where x is assistants.

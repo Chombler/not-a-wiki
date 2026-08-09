@@ -1,0 +1,17 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C5375
+name: Manufacture
+branch: craftsmanship
+availableTo: Neutral
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R177+, Forgotten Relic, Factory artifact and upgrade,
+  - label: Effect
+    text: Increase Faction Coin Find Chance additively and multiplicatively based on clicks made in this
+      Era.
+  - label: Additive Formula
+    text: +(7.5 * x ^ 0.5)%, where x is clicks made in this Era.
+  - label: Multiplicative Formula
+    text: (1.3 * x ^ 0.3)%, where x is clicks made in this Era.

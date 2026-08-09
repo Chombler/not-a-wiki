@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C250
+name: Magnetism
+branch: craftsmanship
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: Research Tinkering (C150) & Critical Strike (W225).
+  - label: Cost
+    text: "1.702e159"
+  - label: Effect
+    text: Increase Faction Coin find chance based on time spent offline in this Reincarnation.
+  - label: Formula
+    text: +(9 * x ^ 0.9), where x is Offline Bonus.
+  - label: Effect
+    text: Also increase Faction Coin find chance by a multiplicative 50%.

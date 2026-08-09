@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E145
+name: Royal Demand
+branch: economics
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Collect those taxes!
+  - label: Requirement
+    text: 50,000 Tax Collections (This R), Research Cultivation (C10) & Woodcraft (C105)
+  - label: Cost
+    text: "7.719e143"
+  - label: Effect
+    text: Increase Tax Collection reward by 30 seconds of production.

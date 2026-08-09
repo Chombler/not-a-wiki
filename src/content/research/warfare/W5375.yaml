@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W5375
+name: Officers
+branch: warfare
+availableTo: Evil
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R177+, Forgotten Relic, Battlefield artifact and upgrade.
+  - label: Effect
+    text: Multiplactively increase assistants based on the amount of trophies unlocked.
+  - label: Formula
+    text: (2.5 * x ^ 0.5), where x is trophies.

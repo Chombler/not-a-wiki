@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A375
+name: Transfusion
+branch: alchemy
+availableTo: Druid
+details:
+  - label: Requirement
+    text: Research Infusion (A281) & Engraving (A305)
+  - label: Cost
+    text: "3.14e177"
+  - label: Effect
+    text: Gain additional assistants based on mana produced this Era.
+  - label: Formula
+    text: (3 * ln(1 + x) ^ 1.5)%, where x is Mana produced in this Era.

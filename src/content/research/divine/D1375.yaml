@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D1375
+name: Soulrending
+branch: divine
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Be good, wish for the best.
+  - label: Requirement
+    text: 43,200 seconds spent as Good (All Time)
+  - label: Cost
+    text: "3.609e75"
+  - label: Effect
+    text: Reincarnations count 50% more.

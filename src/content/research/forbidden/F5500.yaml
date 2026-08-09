@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: F5500
+name: Gathering
+branch: forbidden
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: R178+, Forgotten Relic, Apeiron artifact and upgrade, and 2 Excavation Resets.
+  - label: Cost
+    text: Free
+  - label: Effect
+    text: Additively increase production bonus from Gems based on your Faction Coin find chance.
+  - label: Formula
+    text: (2.5 * (0.5 * ln(1 + x)) ^ 2.5)%, where x is Faction Coin find chance.

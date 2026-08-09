@@ -1,0 +1,18 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C700
+name: Alloys
+branch: craftsmanship
+availableTo: Elf,Dwarf
+details:
+  - label: Requirement
+    text: 250 Dwarven Exchanges as Dwelf, Fusion (A105), and Blacksmithing (C600)
+  - label: Cost
+    text: "9.741e224"
+  - label: Effect
+    text: Increase clicking reward based on your chance to find Faction Coins.
+  - label: Formula
+    text: (0.9 * x ^ 0.9)%, where x is chance to find Faction Coins.
+  - label: Effect
+    text: Autoclicks the treasure 10 times per second.
+  - label: Effect
+    text: Also generates the same amount of clicks while offline.

@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C305
+name: Golemcraft
+branch: craftsmanship
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Titanic Patience.
+  - label: Requirement
+    text: 5 hours as Titans (across all Reincarnations)
+  - label: Cost
+    text: "1.854e167"
+  - label: Effect
+    text: Multiplicatively increase Assistants based on time spent offline in this Reincarnation.
+  - label: Formula
+    text: (0.7 * x ^ 0.7)%, where x is time spent offline in this Reincarnation.

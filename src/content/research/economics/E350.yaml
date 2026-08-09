@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E350
+name: Repurpose
+branch: economics
+availableTo: Faceless
+details:
+  - label: Requirement
+    text: Research Journeymen (C200) & Adaptation (A330)(as Faceless)
+  - label: Cost
+    text: "6.979e173"
+  - label: Effect
+    text: Increase the production of all buildings based on the amount of Reincarnations you made.
+  - label: Formula
+    text: (round(2.5 * x ^ 2.25))%, where x is the amount of times you reincarnated.

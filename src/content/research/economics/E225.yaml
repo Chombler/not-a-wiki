@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E225
+name: Forgery
+branch: economics
+availableTo: Goblin
+details:
+  - label: Requirement
+    text: Research Coinage (E1) & Gilding (A50)
+  - label: Cost
+    text: "3.782e155"
+  - label: Effect
+    text: Increase the production of Evil Buildings based on the amount of Goblin Banks you own.
+  - label: Formula
+    text: (1.5 * x ^ 0.85)%, where x is the number of Goblin Banks you own.

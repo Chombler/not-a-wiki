@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D5125
+name: Selection
+branch: divine
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R175+, Forgotten Relic, Mythos artifact and upgrade, and 1 Qi (1e18) Faction Coin find chance
+  - label: Effect
+    text: Increase the production of Unique buildings based on Clicks in this Era.
+  - label: Formula
+    text: (x ^ 0.5), where x is clicks this Era.

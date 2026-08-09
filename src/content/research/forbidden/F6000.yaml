@@ -1,0 +1,19 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: F6000
+name: Inevitability
+branch: forbidden
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: R182+, Forgotten Relic, Apeiron artifact and upgrade, and 3,600 seconds (1 hour) spent as
+      Mercenary.
+  - label: Cost
+    text: Free
+  - label: Effect
+    text: Increase your next time head start based on time spent in this Era.
+  - label: Note
+    text: Capped at time spent in your current Reincarnation.
+  - label: Note
+    text: Does not count when Reincarnating.
+  - label: Formula
+    text: (10 * x ^ 0.5) seconds, where x is time spent in this Era.

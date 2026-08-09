@@ -1,0 +1,17 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W205
+name: Berserking
+branch: warfare
+availableTo: All Evil Factions
+details:
+  - label: Requirement
+    text: 200 Blood Frenzy casts this Reincarnation, Research Rampage (W135) & Retribution (D150)
+  - label: Cost
+    text: "4.521e152"
+  - label: Effect
+    text: While Blood Frenzy is active, increase mana regeneration based on the amount of assistants you
+      own.
+  - label: Effect
+    text: Also increases offline spell cast amount multiplicatively by 300%.
+  - label: Formula
+    text: +(3 * x ^ 0.45), where x is your Assistants stat.

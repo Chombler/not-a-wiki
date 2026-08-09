@@ -1,0 +1,17 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D50
+name: Hallowing
+branch: divine
+availableTo: Elf
+details:
+  - label: Hint
+    text: Have you been good enough?
+  - label: Requirement
+    text: 15,000 Good Buildings(as Angel)
+  - label: Cost
+    text: "1.012e130"
+  - label: Effect
+    text: Increase your chance to find Faction Coins based on the amount of Elven Training Grounds you
+      own.
+  - label: Formula
+    text: (2 * x ^ 1.5)%, where x is Elven Training Grounds owned.

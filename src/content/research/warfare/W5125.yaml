@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W5125
+name: Sovereignty
+branch: warfare
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R175+, Forgotten Relic, Battlefield artifact and upgrade, and 50,000 Halls of Legends.
+  - label: Effect
+    text: Increase the production of two highest tier buildings based on assistants you own.
+  - label: Formula
+    text: (0.5 * x ^ 0.25)%, where x is assistants.

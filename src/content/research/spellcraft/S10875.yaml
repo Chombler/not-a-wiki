@@ -1,0 +1,15 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S10875
+name: Encompass
+branch: spellcraft
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R221+
+  - label: Effect
+    text: Increase Maximum Mana based on the highest amount of Maximum Mana you had in this
+      Reincarnation.
+  - label: Formula
+    text: +(15 * ln(1 + x) ^ 3), where x is your highest max mana this Reincarnation.

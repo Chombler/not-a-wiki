@@ -1,0 +1,15 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W3050
+name: Flanking
+branch: warfare
+availableTo: Mercenary
+details:
+  - label: Requirement
+    text: 100 M (1e8) Base Assistants, Authority (W1275), and Intimidation (E1325).
+  - label: Cost
+    text: "7.464e170"
+  - label: Effect
+    text: Increases the production of buildings one tier directly above or below a Unique Building based
+      on the amount of assistants you own.
+  - label: Formula
+    text: (2 * x ^ 0.8)%, where x is assistants.

@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C10875
+name: Masterpiece
+branch: craftsmanship
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R221+
+  - label: Effect
+    text: Multiplicatively increase Faction Coin find chance based on excavation depth.
+  - label: Formula
+    text: (0.6 * x ^ 0.6)%, where x is excavation depth.

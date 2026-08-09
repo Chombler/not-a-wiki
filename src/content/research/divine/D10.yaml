@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D10
+name: Inflame
+branch: divine
+availableTo: Demon
+details:
+  - label: Hint
+    text: Build a highway to hell.
+  - label: Requirement
+    text: 2,000 Infernal Realms
+  - label: Cost
+    text: "1.446e124"
+  - label: Effect
+    text: Increase the production of all other buildings by 160% per Infernal Realm owned.

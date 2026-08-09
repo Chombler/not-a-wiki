@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S11875
+name: Arcane Efficiency
+branch: spellcraft
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R229+ and 5,000 Unique Buildings
+  - label: Effect
+    text: While both Holy Light and Fairy Chanting are active, reduce the cost of all spells by 85%.
+  - label: Note
+    text: Catalyst can be used as one of the spells.

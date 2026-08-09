@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D650
+name: Ritualism
+branch: divine
+availableTo: Drow
+details:
+  - label: Requirement
+    text: Research Necromancy(S225) and Heirlooms (S475)(as drow)
+  - label: Cost
+    text: "4.811e217"
+  - label: Effect
+    text: Increase mana regeneration based on the amount of trophies you unlocked.
+  - label: Formula
+    text: +(1.5 * x ^ 0.85), where x is Trophies unlocked.

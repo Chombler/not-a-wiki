@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S200
+name: Cryomancy
+branch: spellcraft
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: Research Conjuration (S50) and Refraction (A55)
+  - label: Cost
+    text: "8.406e151"
+  - label: Effect
+    text: Increase Spell Duration based on mana produced in this Era.
+  - label: Formula
+    text: (5 * ln(1 + x) ^ 1.5)%, where x is mana produced this Era.

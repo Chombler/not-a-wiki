@@ -1,0 +1,18 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D3350
+name: Vampirism
+branch: divine
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Sound the alarms, production has gone offline!
+  - label: Requirement
+    text: 100 Sp% (1e26%) offline bonus, Intervention (D2850), and Upheaval (W3150).
+  - label: Cost
+    text: "8.799e187"
+  - label: Effect
+    text: Increase assistants additively and multiplicatively based on your Offline Bonus.
+  - label: Additive Formula
+    text: +(2.5 * ln(1 + x) ^ 2.5), where x is Offline Bonus.
+  - label: Multiplicative Formula
+    text: (0.2 * ln(1 + x) ^ 2)%, where x is Offline Bonus.

@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E80
+name: Common Business
+branch: economics
+availableTo: Good/Evil
+details:
+  - label: Hint
+    text: Neutral urbanistics.
+  - label: Requirement
+    text: 9,000 Neutral Buildings
+  - label: Cost
+    text: "2.45e134"
+  - label: Effect
+    text: Increase the production of Good and Evil buildings based on the amount of neutral buildings.
+  - label: Formula
+    text: (round((1.75 * x) ^ 0.8))%, where x is the number of neutral buildings you own.

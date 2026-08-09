@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C150
+name: Tinkering
+branch: craftsmanship
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: Research Recycling (E10) & Reinforcing (C135)
+  - label: Cost
+    text: "4.151e144"
+  - label: Effect
+    text: Increase the production of all buildings based on the amount of total research points bought.
+  - label: Formula
+    text: (18 * x ^ 0.6)%, where x is Research points.

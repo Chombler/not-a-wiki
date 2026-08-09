@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D175
+name: Resurrection
+branch: divine
+availableTo: Angel
+details:
+  - label: Requirement
+    text: Research Blessing (D1) & Refraction (A55)
+  - label: Cost
+    text: "1.868e148"
+  - label: Effect
+    text: You gain additional assistants based on God's Hands activity time. (This R)
+  - label: Formula
+    text: +(2.5 * x ^ 0.75), where x is God's Hand activity time in this Reincarnation.

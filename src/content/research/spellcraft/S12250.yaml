@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S12250
+name: Necrodoomancy
+branch: spellcraft
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R232+ and 28,800 seconds of Offline time in this Reincarnation
+  - label: Effect
+    text: Reincarnations count more based on time spent as Undead in this Reincarnation.
+  - label: Formula
+    text: (20 + 0.4 * x ^ 0.4)%, where x is time spent as Undead in this Reincarnation.

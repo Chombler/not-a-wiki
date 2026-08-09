@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W50
+name: Exertion
+branch: warfare
+availableTo: Undead
+details:
+  - label: Hint
+    text: Bad times!
+  - label: Requirement
+    text: 1 hour of Evil play time this Reincarnation (unlock as Demon)
+  - label: Cost
+    text: "1.012e130"
+  - label: Effect
+    text: Increase faction coin find chance based on the number of Undercities you own.
+  - label: Formula
+    text: (2 * x ^ 1.2)%, where x is the number of Undercities you own.

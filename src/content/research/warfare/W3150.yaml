@@ -1,0 +1,21 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W3150
+name: Upheaval
+branch: warfare
+availableTo: All Factions
+details:
+  - label: Hint
+    text: More of the baseline production buildings!
+  - label: Requirement
+    text: 60000 Farms, Inns and Blacksmiths.
+  - label: Cost
+    text: "3.66e176"
+  - label: Effect
+    text: Increase the production of all buildings based on time spent with your least-used alignment in
+      this Reincarnation and their tier, giving the highest bonus to the lowest tier.
+  - label: Formula
+    text: (0.5 * (60 + x) ^ 0.75 * (12 - T) ^ 2.15)%, where x is time spent with your least-used
+      alignment in this Reincarnation and T is building tier.
+tierTable:
+  key: upheaval
+  heading: Bonus by building

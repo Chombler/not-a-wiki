@@ -1,0 +1,24 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W13500
+name: Backfire
+branch: warfare
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R242+ and 1,800 seconds (30 minutes) with your least-used alignment this Reincarnation.
+  - label: Effect
+    text: Increase the production of Evil buildings based on time spent as Good, the production of Chaos
+      buildings based on time spent as Order, and the production of Chaos Evil buildings as the sum
+      of time spent as Good and Order. Also increases the production of Good and Order buildings
+      based on Evil and Chaos in the same way.
+  - label: Formula
+    text: (0.75 * x ^ 0.75)%, where x is the respective time stat in seconds.
+  - label: Note
+    text: Buildings only receive the highest effect (That is, if the building is Evil/Chaos, it only
+      gets the Evil/Chaos bonus, not the Evil or the Chaos individual bonuses).
+  - label: Note
+    text: The Good/Evil alignment of a building applies normally, while the Order/Chaos alignment of a
+      building only applies to Base Faction's Unique Buildings (both UB1 and UB2) and Elite Unique
+      Buildings

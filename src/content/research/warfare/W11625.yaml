@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W11625
+name: Eradication
+branch: warfare
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R227+ and an offline production multiplier of at least 100,000 (10,000,000%).
+  - label: Effect
+    text: Increase the production of all buildings based on time spent with the least used faction.
+  - label: Formula
+    text: (85 + 1.85 * x ^ 0.85)%, where x is time spent with the least-used faction in seconds.

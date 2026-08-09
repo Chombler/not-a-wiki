@@ -1,0 +1,12 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D200
+name: Transcendence
+branch: divine
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: Research Resurrection (D175) & Illumination (D135)
+  - label: Cost
+    text: "8.406e151"
+  - label: Effect
+    text: Decrease the cost of all spells by 20% and increase their duration by 20%.

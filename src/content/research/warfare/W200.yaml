@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W200
+name: Crusade
+branch: warfare
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: Research Hallowing (D50) & Formation (W180)
+  - label: Cost
+    text: "8.406e151"
+  - label: Effect
+    text: Multiplicatively increase Royal Exchange bonus based on Research Points.
+  - label: Formula
+    text: (2 * x ^ 0.6)%, where x is Research Points.

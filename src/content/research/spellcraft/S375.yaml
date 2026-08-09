@@ -1,0 +1,18 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S375
+name: Illusion
+branch: spellcraft
+availableTo: Faceless
+details:
+  - label: Requirement
+    text: Research Reverberation (S330) & Mesmerization (S305)
+  - label: Cost
+    text: "3.14e177"
+  - label: Effect
+    text: Brainwave also provides progressively more assistants over its duration.
+  - label: Formula
+    text: +(1 + 0.25 * (x + y) ^ 1.5), where x is Brainwave runtime in seconds and y is its headstart in
+      seconds.
+  - label: Note
+    text: Those assistants do not count as base assistants and are not multiplied by upgrades that
+      increase assistants count (such as FC3).

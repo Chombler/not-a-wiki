@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A5875
+name: Equivalence
+branch: alchemy
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R181+, Forgotten Relic, Athanor artifact and upgrade, and 1e40 Faction Coins found in this Era
+  - label: Effect
+    text: Multiplicatively increase Royal Exchange bonus based on Faction Coin found in this Era.
+  - label: Formula
+    text: (0.5 * ln(1 + x) ^ 1.5)%, where x is Faction Coins found in this Era.

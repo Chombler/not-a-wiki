@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E3300
+name: Estates
+branch: economics
+availableTo: Mercenary
+details:
+  - label: Hint
+    text: 50k shades of uniqueness.
+  - label: Requirement
+    text: 45000 Unique buildings, (Hoarding E1225) and (Combination A2950).
+  - label: Cost
+    text: "1.257e185"
+  - label: Effect
+    text: Gives you all the Unique Buildings of your alignment.
+  - label: Effect
+    text: "Ascension 3: Gain all the Unique Buildings that match your alignments."

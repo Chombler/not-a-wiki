@@ -1,0 +1,17 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A50
+name: Gilding
+branch: alchemy
+availableTo: Angel
+details:
+  - label: Hint
+    text: Regeneration magic.
+  - label: Requirement
+    text: 750 Mana Regeneration per second (as Angel)
+  - label: Cost
+    text: "1.012e130"
+  - label: Effect
+    text: Increase Heaven's Gate production when your Mana Regeneration is higher than Maximum Mana.
+  - label: Formula
+    text: (90 * (R / M) ^ 0.9)% while R > M (otherwise 0), where R is Mana Regeneration per second and M
+      is Maximum Mana.

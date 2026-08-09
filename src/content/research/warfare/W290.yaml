@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W290
+name: Athletics
+branch: warfare
+availableTo: Titan
+details:
+  - label: Hint
+    text: Too many legends! Need more room!
+  - label: Requirement
+    text: 3,000 Olympian Halls
+  - label: Cost
+    text: "1.192e165"
+  - label: Effect
+    text: Increase the production of all other buildings by 200% per Olympian Hall you own.

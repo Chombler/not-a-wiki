@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E510
+name: Marketing
+branch: economics
+availableTo: Dwarf
+details:
+  - label: Hint
+    text: A Blacksmith army.
+  - label: Requirement
+    text: 5,000 Blacksmiths
+  - label: Cost
+    text: "1.676e197"
+  - label: Effect
+    text: Increase the production of all other buildings by 25% per Blacksmith you own.

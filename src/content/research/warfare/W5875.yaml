@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: W5875
+name: Patience
+branch: warfare
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R181+, Forgotten Relic, Battlefield artifact and upgrade, and 1e20 Max Mana.
+  - label: Effect
+    text: Time spent with Prestige Counts 500% more.
+  - label: Effect
+    text: Time spent with Astral factions or Mercenaries counts 1000% more.
+  - label: Effect
+    text: While affiliated with your least-used faction, increase Faction Coin find chance by 500%.

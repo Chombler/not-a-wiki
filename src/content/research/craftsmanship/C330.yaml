@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C330
+name: Overload
+branch: craftsmanship
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: Research Aeromancy (S250) & Critical Strike (W225)
+  - label: Cost
+    text: "8.341e170"
+  - label: Effect
+    text: Increase mana regeneration based on the amount of research made.
+  - label: Formula
+    text: +(15 * x ^ 0.75), where x is Research points.

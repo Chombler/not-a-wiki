@@ -1,0 +1,19 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E5125
+name: Decentralization
+branch: economics
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R175+, Forgotten Relic, Vault artifact and upgrade, and 500,000 total buildings.
+  - label: Effect
+    text: Increase the production of all buildings based on the amount of buildings you own. Lower tiers
+      get better bonuses.
+  - label: Formula
+    text: ((3 - 0.25 * T) ^ 4 * x ^ 0.6)%, where T is building tier and x is the number of (every)
+      buildings you own.
+tierTable:
+  key: decentralization
+  heading: Bonus by building

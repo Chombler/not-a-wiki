@@ -1,0 +1,15 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: C425
+name: Distribution
+branch: craftsmanship
+availableTo: All Factions
+details:
+  - label: Requirement
+    text: 500,000 clicks (All Time)
+  - label: Cost
+    text: "6.359e184"
+  - label: Effect
+    text: Multiplicatively increase production bonus from Gems based on time spent with alignments
+      different from your current alignment.
+  - label: Formula
+    text: (0.4 * x ^ 0.6)%, where x is the summed time spent in other alignments.

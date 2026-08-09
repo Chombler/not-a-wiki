@@ -1,0 +1,18 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E30
+name: Diplomacy
+branch: economics
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Exchange more.
+  - label: Requirement
+    text: 1,000 Exchanges (This Era)
+  - label: Cost
+    text: "1.21e127"
+  - label: Effect
+    text: Increases Faction Coin find chance and Royal Exchange bonus based on time spent in this Era.
+  - label: Faction Coin Chance Formula
+    text: +(3 * x ^ 0.7)%, where x is time spent in this Era.
+  - label: Royal Exchange Bonus Formula
+    text: +(0.3 * x ^ 0.7)%, where x is time spent in this Era.

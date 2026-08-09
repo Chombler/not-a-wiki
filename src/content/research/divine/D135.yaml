@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: D135
+name: Illumination
+branch: divine
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Blue regeneration combo.
+  - label: Requirement
+    text: 4,000 Mana Regeneration per second
+  - label: Cost
+    text: "2.668e142"
+  - label: Effect
+    text: Increases mana regeneration based on the amount of gems you own.
+  - label: Formula
+    text: +(5 + 0.05 * ln(1 + x) ^ 1.5), where x is Gems owned.

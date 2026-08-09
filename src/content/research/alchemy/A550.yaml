@@ -1,0 +1,16 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A550
+name: Mineralogy
+branch: alchemy
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Full Showcase.
+  - label: Requirement
+    text: 700 trophies
+  - label: Cost
+    text: "1.173e203"
+  - label: Effect
+    text: Increase Non-Unique Building production based on spells cast in this Reincarnation.
+  - label: Formula
+    text: (0.7 * x ^ 0.7)%, where x is spells cast.

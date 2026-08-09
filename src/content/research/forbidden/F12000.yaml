@@ -1,0 +1,12 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: F12000
+name: Revelations
+branch: forbidden
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R230+ and 1e33 Faction Coins found this Era.
+  - label: Effect
+    text: Allows the purchase of one additional Legacy Combo upgrade.

@@ -1,0 +1,20 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: S525
+name: Spellbinding
+branch: spellcraft
+availableTo: Drow
+details:
+  - label: Hint
+    text: Combo Breaker!
+  - label: Requirement
+    text: 3,600 seconds of Combo Strike activity time (This Era)
+  - label: Cost
+    text: "2.607e199"
+  - label: Effect
+    text: Call to Arms counts more buildings based on time spent offline in this Reincarnation.
+  - label: Formula
+    text: (100 + 3 * x ^ 0.9)%, where x is time spent offline in this Reincarnation.
+  - label: Effect
+    text: Also increase Offline production based on Combo Strike activity time in this Reincarnation.
+  - label: Formula
+    text: (1.2 * x ^ 0.8)%, where x is Combo Strike activity time in this Reincarnation.

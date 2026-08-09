@@ -1,0 +1,15 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A5125
+name: Putrefaction
+branch: alchemy
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R175+, Forgotten Relic, Athanor artifact and upgrade, and a 7,200-second Era
+  - label: Effect
+    text: Increase the production of Non-Unique buildings based on the longest time spent without
+      abdicating in this Reincarnation.
+  - label: Formula
+    text: (0.7 x ^ 0.7), where x is the longest time spent without abdicating (This R).

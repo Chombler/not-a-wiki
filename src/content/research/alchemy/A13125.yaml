@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A13125
+name: Cinnabar
+branch: alchemy
+availableTo: All Factions
+details:
+  - label: Cost
+    text: Free
+  - label: Requirement
+    text: R239+ and 7,200 seconds of Catalyst activity time in this Era
+  - label: Effect
+    text: All spells activity time counts more based on Tax Collection casts in this Era.
+  - label: Formula
+    text: (2 * ln(1 + x) ^ 2)%, where x is the number of Tax Collections cast this Era.

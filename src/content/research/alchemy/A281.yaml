@@ -1,0 +1,14 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: A281
+name: Infusion
+branch: alchemy
+availableTo: Druid
+details:
+  - label: Requirement
+    text: Secrets of the Ancients (as Druids)
+  - label: Cost
+    text: "5.767e163"
+  - label: Effect
+    text: Increase the production of Stonehenge Circles based on mana produced in this Era.
+  - label: Formula
+    text: (0.75 * x ^ 0.75)%, where x is Mana produced.

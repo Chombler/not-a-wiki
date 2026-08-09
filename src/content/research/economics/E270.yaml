@@ -1,0 +1,15 @@
+# Human-authored canonical research record. Edit this file; do not edit rendered HTML.
+code: E270
+name: Surveyorship
+branch: economics
+availableTo: All Factions
+details:
+  - label: Hint
+    text: Take an interest in archeology.
+  - label: Requirement
+    text: 7 Artifacts
+  - label: Cost
+    text: "1.424e162"
+  - label: Effect
+    text: Reduces Excavation cost multiplier by 0.02; with no other reductions applying, the multiplier
+      will be 1.18 instead of 1.2.
