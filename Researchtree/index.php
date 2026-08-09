@@ -314,8 +314,8 @@
 	<p><b>Hint</b>: Cast and cast and cast and cast!</p>
 	<p><b>Requirement</b>: 500,000 spells cast (This Era).</p>
 	<p><b>Cost</b>: 7.36e69</p>
-	<p><b>Effect</b>: Reduce spell cost for higher spell tiers.</p>
-	<p><b>Formula</b>: Reduces cost multiplier by 0.5; with no other reductions applying, the multiplier will be 1.5 instead of 2.</p>
+	<p><b>Effect</b>: Reduce spell-cost scaling for higher spell tiers.</p>
+	<p><b>Formula</b>: For ordinary tiered spells, reduce the per-tier exponent increase from 0.6 to 0.5. For Tax Collection and other spells using multiplicative tier scaling, reduce the per-tier multiplier from 3 to 2.5.</p>
 	" coords="380,86,420,126" shape="rect">
 		<area research="<p><b>S1450</b> - For Neutral,Dragon</p>
 	<p><b>Research Name</b>: Spellstorm</p>
@@ -420,7 +420,7 @@
 	<p><b>Effect</b>: Reincarnations count more based on time spent as Undead in this Reincarnation.</p>
 	<p><b>Formula</b>: (20 + 0.4 * x ^ 0.4)%, where x is time spent as Undead in this Reincarnation.</p>
 	" coords="128,170,168,210" shape="rect">
-		<area research="<p><b>S13125</b> - All Factions</p>
+		<area research="<p><b>S13125</b> - For All Factions</p>
 	<p><b>Research Name</b>: Fantasia</p>
 	<p><b>Cost</b>: Free</p>
 	<p><b>Requirement</b>: R239+ and 1 Sx (1e21) Mana produced in this Reincarnation</p>
@@ -469,8 +469,10 @@
 	<p><b>Hint</b>: Shall i paint these buildings blue or red? I can't decide.</p>
 	<p><b>Requirement</b>: 16,000 Good and Evil buildings</p>
 	<p><b>Cost</b>: 2.45e134</p>
-	<p><b>Effect</b>: Increase all-building production based on Faction Coins found in this Era, with the largest bonus applied to the least productive building.</p>
-	<p><b>Formula</b>: (7 * ln(1 + x) ^ 1.4)%, where x is Faction Coins found in this Era.</p>
+	<p><b>Effect</b>: Increase the production of all buildings based on Faction Coins found in this Era. Lower building tiers receive a larger bonus.</p>
+	<p><b>Formula</b>: (7 * ln(1 + x) ^ 1.4 * 1.4 ^ (12 - T))%, where x is Faction Coins found in this Era and T is building tier.</p>
+	<p><b>Base value (B)</b>: (7 * ln(1 + x) ^ 1.4)%.</p>
+	<?php echo realm_tier_table('apprenticeship', 'Multiplier by building tier'); ?>
 	" coords="254,212,294,252" shape="rect">
 		<area research="<p><b>C105</b> - For All Factions</p>
 	<p><b>Research Name</b>: Woodcraft</p>
@@ -655,7 +657,7 @@
 	<p><b>Effect</b>: Increases the production of all buildings based on the amount of artifacts you own.</p>
 	<p><b>Formula</b>: (2 * x ^ 2), where x is artifacts you own.</p>
 	" coords="86,338,126,378" shape="rect">
-		<area research="<p><b>C3100</b> - All Factions</p>
+		<area research="<p><b>C3100</b> - For All Factions</p>
 	<p><b>Research Name</b>: Engineering</p>
 	<p><b>Hint</b>: Spend some quality time with the Mercenaries.</p>
 	<p><b>Requirement</b>: 12 days as Mercenary (across all Reincarnations)</p>
@@ -1624,7 +1626,7 @@
 	<p><b>Cost</b>: Free</p>
 	<p><b>Requirement</b>: R179+, Forgotten Relic, Athanor artifact and upgrade, and an 86,400-second longest spell duration</p>
 	<p><b>Effect</b>: Reduce all spells cost based on their individual duration.</p>
-	<p><b>Formula</b>: Additive reduction: ((x/y) ^ 0.65), where x is duration and y is base duration.</p>
+	<p><b>Formula</b>: R = min(90, max(10, ln(1 + x / y) ^ 2))%, where x is the spell's current duration and y is its base duration. The spell's cost is multiplied by (1 - R / 100).</p>
 	" coords="254,968,294,1008" shape="rect">
 		<area research="<p><b>A5875</b> - For All Factions</p>
 	<p><b>Research Name</b>: Equivalence</p>
