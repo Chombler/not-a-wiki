@@ -30,7 +30,7 @@ const legends = [
   ['Locked Upgrade (?): You cannot unlock this upgrade with the faction you are playing.', '338,170,377,209'],
   ['Available Upgrade (!): You can unlock this upgrade with the faction you are playing. Its tooltip shows your unlock progress.', '380,170,419,209'],
 ] as const;
-const base = import.meta.env.BASE_URL;
+const base = `${import.meta.env.BASE_URL.replace(/\/+$/, '')}/`;
 ---
 
 <SiteLayout title="Research Tree" sourcePath="src/content/research-tree/nodes.yaml">

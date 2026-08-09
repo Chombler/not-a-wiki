@@ -1,7 +1,7 @@
 ---
 import { guideSequence } from '../data/guides';
 const { current } = Astro.props;
-const base = import.meta.env.BASE_URL;
+const base = `${import.meta.env.BASE_URL.replace(/\/+$/, '')}/`;
 const keys = Object.keys(guideSequence);
 const index = keys.indexOf(current);
 const previous = index > 0 ? keys[index - 1] : undefined;

@@ -15,7 +15,7 @@ const {
   sourcePath,
   home = false,
 } = Astro.props;
-const base = import.meta.env.BASE_URL;
+const base = `${import.meta.env.BASE_URL.replace(/\/+$/, '')}/`;
 const url = (path = '') => `${base}${path}`;
 const documentTitle = home ? 'Realm Grinder Reference' : `${title} · Realm Grinder Reference`;
 const editUrl = sourcePath ? `https://github.com/chombler/not-a-wiki/edit/codex/modernization-first-pass/${sourcePath}` : undefined;

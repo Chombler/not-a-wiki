@@ -4,7 +4,7 @@ import GuideBuildEntry from './GuideBuildEntry.astro';
 import { entriesFor, landingData, rangeConfigs, type GuideEra } from '../data/guides';
 import a3Source from '../../content/A3/a3-reference-v4.3.11.md?raw';
 const { route } = Astro.props as { route: string };
-const base = import.meta.env.BASE_URL;
+const base = `${import.meta.env.BASE_URL.replace(/\/+$/, '')}/`;
 const config = rangeConfigs[route];
 const era = (route.match(/^A[0-4]/)?.[0] ?? 'A0') as GuideEra;
 const landing = route.endsWith('Guide');

@@ -18,7 +18,7 @@ const byBranch = Object.fromEntries(branchDefinitions.map(([key]) => [
   key,
   research.filter((entry) => entry.data.branch === key).sort((a, b) => numericCode(a.data.code) - numericCode(b.data.code)),
 ]));
-const base = import.meta.env.BASE_URL;
+const base = `${import.meta.env.BASE_URL.replace(/\/+$/, '')}/`;
 ---
 
 <SiteLayout title="Research List" sourcePath="src/content/research/README.md">
