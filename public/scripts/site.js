@@ -12,9 +12,19 @@
   window.shohid = showHide;
 
   document.addEventListener('DOMContentLoaded', function () {
-    if (window.jQuery) {
+    var supportsTrueHover = !window.matchMedia || window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    if (window.jQuery && supportsTrueHover) {
       window.jQuery('[research]').style_my_tooltips();
       window.jQuery('[data-research]').style_my_tooltips({ attribute: 'data-research' });
+    }
+
+    if (!document.getElementById('s-m-t-tooltip')) {
+      var tooltipShell = document.createElement('div');
+      tooltipShell.id = 's-m-t-tooltip';
+      tooltipShell.appendChild(document.createElement('div'));
+      tooltipShell.style.display = 'none';
+      tooltipShell.style.position = 'absolute';
+      document.body.appendChild(tooltipShell);
     }
 
     var touchTooltip = document.getElementById('s-m-t-tooltip');
@@ -37,6 +47,13 @@
         return;
       }
       closeTouchTooltip();
+      if (window.jQuery) {
+        var legacyHotspot = window.jQuery(hotspot);
+        legacyHotspot.removeClass('smt-current-element');
+        window.jQuery(document).unbind('mousemove');
+        if (!hotspot.getAttribute('research') && hotspot.hasAttribute('research')) hotspot.setAttribute('research', content);
+        if (!hotspot.getAttribute('data-research') && hotspot.hasAttribute('data-research')) hotspot.setAttribute('data-research', content);
+      }
       activeTouchHotspot = hotspot;
       hotspot.setAttribute('aria-expanded', 'true');
       touchTooltip.children[0].innerHTML = content;
