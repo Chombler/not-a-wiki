@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro check && astro build",
+    "validate": "node scripts/validate_astro.mjs",
+    "test": "BASE_PATH=/not-a-wiki npm run build && npm run validate",
     "preview": "astro preview",
     "check": "astro check"
   },
