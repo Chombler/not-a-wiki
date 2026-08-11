@@ -54,7 +54,7 @@ const base = `${import.meta.env.BASE_URL.replace(/\/+$/, '')}/`;
   <p><img src={`${base}Factions/picks/ResearchTreeA4.png`} usemap="#ResearchTreeA4-map" class="centerimg" alt="Research Tree" /></p>
   <map name="ResearchTreeA4-map">
     {facilities.map((facility) => <area data-research={facilityTooltip(facility)} coords={facility[3]} shape="rect" />)}
-    {tree.data.nodes.map((node) => <area data-research={researchTooltip(byCode.get(node.code)!)} coords={node.coords} shape="rect" />)}
+    {tree.data.nodes.map((node) => <area href={`${base}ResearchList/#${node.code}`} data-research={researchTooltip(byCode.get(node.code)!)} coords={node.coords} shape="rect" />)}
     {legends.map(([tooltip, coords]) => <area data-research={tooltip} coords={coords} shape="rect" />)}
   </map>
   <script is:inline>

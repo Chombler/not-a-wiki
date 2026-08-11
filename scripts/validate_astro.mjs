@@ -36,8 +36,7 @@ for (const route of legacyRoutes) if (!builtRoutes.has(route)) failures.push(`Mi
 const missingAssets = new Set();
 for (const file of builtFiles) {
   const html = fs.readFileSync(file, 'utf8').replace(/<!--[\s\S]*?-->/g, '');
-  if (['Spells/index.html', 'TrophyPage/index.html'].includes(path.relative(output, file))
-    && /<area\b(?:(?!>).)*\bresearch=(["'])(?:(?!\1).)*<table/is.test(html)) {
+  if (/<area\b(?:(?!>).)*\b(?:data-)?research=(["'])(?:(?!\1).)*<table/is.test(html)) {
     failures.push(`${path.relative(output, file)} contains table markup inside an image-map tooltip`);
   }
   for (const match of html.matchAll(/(?:href|src)=(["'])(.*?)\1/g)) {
@@ -62,7 +61,8 @@ for (const asset of knownMissing) if (!missingAssets.has(asset)) failures.push(`
 
 const contracts = {
   'index.html': ['class="site-shell"', 'class="site-sidebar"', 'class="reference-home-header"'],
-  'Artifacts/index.html': ['name="QuestArtifacts-map"', 'name="LoreArtifacts-map"', 'class="numtable tier-table'],
+  'Artifacts/index.html': ['name="QuestArtifacts-map"', 'name="LoreArtifacts-map"', 'href="/not-a-wiki/LoreArtifacts/#WallFragment"', 'href="/not-a-wiki/LoreArtifacts/#WallChunk"'],
+  'LoreArtifacts/index.html': ['id="WallFragment"', 'id="WallChunk"', 'class="numtable tier-table'],
   'ResearchList/index.html': ['id="spellcraft"', 'class="research-entry"'],
   'Researchtree/index.html': ['usemap="#ResearchTreeA4-map"', 'data-research='],
   'Spells/index.html': ['(11 - T) ^ 5', 'Hall of Legends</td><td>0 × ln(1 + x)^6%', 'class="numtable primal-balance-table"', '<td>11 (all)</td>'],
