@@ -33,6 +33,32 @@ a.tooltips {
     pointer-events: none;
 }
 
+.trophy-grid-section {
+    margin-block: 1.25rem 2rem;
+}
+
+.trophy-icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 60px);
+    gap: 8px;
+    align-items: start;
+}
+
+.trophy-grid-button {
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.trophy-grid-button:focus-visible {
+    outline: 3px solid var(--accent, #8d5b18);
+    outline-offset: 3px;
+}
+
 /* Arcane Ledger ---------------------------------------------------------- */
 .theme-toggle {
     padding: 3px 7px;

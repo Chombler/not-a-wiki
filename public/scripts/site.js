@@ -103,7 +103,7 @@
       else window.addEventListener('resize', resizeMap);
     });
 
-    document.querySelectorAll('area[research], area[data-research]').forEach(function (hotspot) {
+    document.querySelectorAll('area[research], area[data-research], .trophy-grid-button[research]').forEach(function (hotspot) {
       hotspot.setAttribute('role', 'button');
       hotspot.setAttribute('tabindex', '0');
       hotspot.setAttribute('aria-expanded', 'false');

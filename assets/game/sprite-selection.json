@@ -294,9 +294,42 @@
         "ArtOfTheCrowGoodChaos", "ArtOfTheCrowEvilChaos", "ArtOfTheCrowNeutralChaos",
         "ArtOfTheCrowGoodBalance", "ArtOfTheCrowEvilBalance", "ArtOfTheCrowNeutralBalance"
       ]
+    },
+    {
+      "kind": "trophy",
+      "role": "icon",
+      "sprite_names": [
+        "ArcheologyExpeditionTrophy", "CloudedTrophy", "VanillaChallengerTrophy",
+        "NeutralChallengerTrophy", "PrestigeChallengerTrophy", "EliteChallengerTrophy",
+        "NoviceResearcherTrophy", "IntermediateResearcherTrophy", "ExpertResearcherTrophy",
+        "MasterResearcherTrophy", "GrandmasterResearcherTrophy", "VanillaResearcherTrophy",
+        "AncientResearcherTrophy", "UnderworldResearcherTrophy", "EternalResearcherTrophy",
+        "WarriorResearcherTrophy", "NoviceCombinatorTrophy", "ExpertCombinatorTrophy",
+        "AutocastUpgrade", "ImprovedAutocastUpgrade", "MasterfulAutocastUpgrade",
+        "PriorityAutocastUpgrade", "ContingencyAutocastUpgrade", "PlannedAutocastUpgrade",
+        "EfficientAutocastUpgrade", "ReverseAutocastUpgrade", "TieredAutocastUpgrade",
+        "CoinPillageTrophy", "FairyChoirTrophy", "SunBlessingTrophy", "GodsRestTrophy",
+        "GreedDriveTrophy", "TrueNightTrophy", "HellRushTrophy", "LightningStormTrophy",
+        "HallsOfBalanceTrophy", "FacelessOvermindTrophy", "MinedwarfTrophy",
+        "PerfectComboTrophy", "DragonsRoarTrophy", "ChronoLoadingTrophy",
+        "PersistentEntropyTrophy", "RealityCraterTrophy"
+      ]
     }
   ],
   "sprite_families": [
+    { "sprite_prefix": "GainCoinTrophy", "count": 20, "kind": "trophy", "entity_prefix": "coins-earned", "role": "icon" },
+    { "sprite_prefix": "GainClickTrophy", "count": 19, "kind": "trophy", "entity_prefix": "treasure-clicks", "role": "icon" },
+    { "sprite_prefix": "TreasureClickTrophy", "count": 9, "kind": "trophy", "entity_prefix": "manual-clicks", "role": "icon" },
+    { "sprite_prefix": "FactionCoinTrophy", "count": 21, "kind": "trophy", "entity_prefix": "faction-coins", "role": "icon" },
+    { "sprite_prefix": "AssistantTrophy", "count": 18, "kind": "trophy", "entity_prefix": "assistants", "role": "icon" },
+    { "sprite_prefix": "ArtifactTrophy", "count": 7, "kind": "trophy", "entity_prefix": "artifacts", "role": "icon" },
+    { "sprite_prefix": "GainGemTrophy", "count": 23, "kind": "trophy", "entity_prefix": "gems", "role": "icon" },
+    { "sprite_prefix": "GainRubyTrophy", "count": 4, "kind": "trophy", "entity_prefix": "rubies", "role": "icon" },
+    { "sprite_prefix": "BuyUpgradesTrophy", "count": 11, "kind": "trophy", "entity_prefix": "upgrades", "role": "icon" },
+    { "sprite_prefix": "ReincarnationTrophy", "count": 20, "kind": "trophy", "entity_prefix": "reincarnations", "role": "icon" },
+    { "sprite_prefix": "ManaUpgrade", "count": 16, "kind": "trophy", "entity_prefix": "mana-produced", "role": "icon" },
+    { "sprite_prefix": "CastSpellTrophy", "count": 16, "kind": "trophy", "entity_prefix": "spells-cast", "role": "icon" },
+    { "sprite_prefix": "ArcaneBrillianceTrophy", "count": 4, "kind": "trophy", "entity_prefix": "arcane-brilliance", "role": "icon" },
     { "sprite_prefix": "FarmTrophy", "count": 22, "kind": "trophy", "entity_prefix": "farm", "role": "icon" },
     { "sprite_prefix": "InnTrophy", "count": 22, "kind": "trophy", "entity_prefix": "inn", "role": "icon" },
     { "sprite_prefix": "BlacksmithTrophy", "count": 22, "kind": "trophy", "entity_prefix": "blacksmith", "role": "icon" },
