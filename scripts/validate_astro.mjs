@@ -66,7 +66,7 @@ for (const asset of currentMissing) if (!knownSet.has(asset)) failures.push(`New
 for (const asset of knownMissing) if (!missingAssets.has(asset)) failures.push(`Remove repaired asset from baseline: ${asset}`);
 
 const contracts = {
-  'index.html': ['class="site-shell"', 'class="site-sidebar"', 'class="reference-home-header"'],
+  'index.html': ['class="site-shell"', 'class="site-sidebar"', 'class="reference-home-header"', '--game-icon-frame: url(&quot;/not-a-wiki/assets/game/sprites/black-gold-trim.png&quot;)'],
   'Artifacts/index.html': ['name="QuestArtifacts-map"', 'name="LoreArtifacts-map"', 'href="/not-a-wiki/LoreArtifacts/#WallFragment"', 'href="/not-a-wiki/LoreArtifacts/#WallChunk"'],
   'LoreArtifacts/index.html': ['id="WallFragment"', 'id="WallChunk"', 'class="numtable tier-table'],
   'ResearchList/index.html': ['id="spellcraft"', 'class="research-entry"'],
