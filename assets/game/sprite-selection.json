@@ -259,6 +259,43 @@
       "role": "icon"
     }
   ],
+  "sprite_groups": [
+    {
+      "kind": "trophy",
+      "role": "icon",
+      "sprite_names": [
+        "LeetTrophy", "UnitaryTrophy", "BuildingHaterTrophy", "GrandDiplomatTrophy",
+        "ExchangeMasterTrophy", "LuckyNeutralTrophy", "PerfectlyGoodTrophy",
+        "DiabolicalEvilTrophy", "AssistantSquasherTrophy", "RewindTrophy",
+        "FactionGrinderTrophy", "MasterArcheologistTrophy", "SpellfuryTrophy",
+        "SpeedRunTrophy", "EqualityTrophy", "BeardCarpetTrophy", "PremeditationTrophy",
+        "FastForwardTrophy", "NeedAHeadstartTrophy", "RealmDiggerTrophy", "HarlequinTrophy",
+        "LuciferTrophy", "MathematicianTrophy", "MercenarySpiritTrophy", "BloodstreamTrophy",
+        "UnlimitedManaTrophy", "ForScienceTrophy", "ExchangeLordTrophy", "MagicianTrophy",
+        "ArtisanTrophy", "DemigodTrophy", "BusinessmanTrophy", "ApothecaryTrophy",
+        "WarlordTrophy", "FactionRunTrophy", "NoRecruitingTrophy",
+        "ThatExcavatedQuicklyTrophy", "GlhoKohhlSnodTrophy", "ManaMatrixTrophy",
+        "SuggestionMasterTrophy", "RuleDisTrophy", "BecauseILikeToGrindTrophy",
+        "TripleWeirdnessTrophy", "StoicResistanceTrophy", "VanishmentTrophy",
+        "IronRushTrophy", "ColorfulAutocastingTrophy", "SpellCataclysmTrophy",
+        "DoubleBottomTrophy", "UITipTrophy", "DragonTamerTrophy",
+        "HeldenSterbenNichtTrophy", "ManaWasteTrophy", "PrismaticManaTrophy",
+        "AutoclickerTrophy", "ExchangeHighLordTrophy", "GenealogistTrophy",
+        "HolyFrenzyTrophy", "UniformityTrophy", "ArtOfTheCrowTrophy",
+        "FactionRulerTrophy", "MADMasksTrophy", "FutureLinkinTrophy",
+        "GodsFingersTrophy", "TrueHarlequinTrophy"
+      ]
+    },
+    {
+      "kind": "upgrade",
+      "role": "icon",
+      "sprite_names": [
+        "ArtOfTheCrowGoodOrder", "ArtOfTheCrowEvilOrder", "ArtOfTheCrowNeutralOrder",
+        "ArtOfTheCrowGoodChaos", "ArtOfTheCrowEvilChaos", "ArtOfTheCrowNeutralChaos",
+        "ArtOfTheCrowGoodBalance", "ArtOfTheCrowEvilBalance", "ArtOfTheCrowNeutralBalance"
+      ]
+    }
+  ],
   "sprite_families": [
     { "sprite_prefix": "FarmTrophy", "count": 22, "kind": "trophy", "entity_prefix": "farm", "role": "icon" },
     { "sprite_prefix": "InnTrophy", "count": 22, "kind": "trophy", "entity_prefix": "inn", "role": "icon" },

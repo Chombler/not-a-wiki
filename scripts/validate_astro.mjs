@@ -104,6 +104,8 @@ validateCanonicalIconBatch('AllTrophies/index.html', 'Building Trophies (566)', 
 validateCanonicalIconBatch('TrophyPage/index.html', '<map name="BuildingTrophies-map">', '<img src=&quot;/not-a-wiki/assets/game/sprites/build-building-trophy1.png', 550);
 validateCanonicalIconBatch('AllTrophies/index.html', 'Total Buildings (16)', '\n\t\t\t\t\t</div>', 16);
 validateCanonicalIconBatch('TrophyPage/index.html', '<img src=&quot;/not-a-wiki/assets/game/sprites/build-building-trophy1.png', '</map>', 16);
+validateCanonicalIconBatch('AllTrophies/index.html', 'Secret Trophies (65)', '<div class="shelementwhole">', 74);
+validateCanonicalIconBatch('TrophyPage/index.html', '<map name="SecretTrophies-map">', '<h2 id="mathematician-building-bonuses">', 65);
 
 console.log(`Routes: ${builtRoutes.size} built, ${legacyRoutes.size} legacy routes covered`);
 console.log(`Internal links: checked across ${builtFiles.length} pages`);

@@ -949,6 +949,1634 @@
       "role": "icon"
     },
     {
+      "key": "leet-trophy",
+      "path": "assets/game/sprites/leet-trophy.png",
+      "sprite_name": "LeetTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1511,
+        "y": 563,
+        "width": 50,
+        "height": 49
+      },
+      "frame": {
+        "x": 0,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "leet-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "unitary-trophy",
+      "path": "assets/game/sprites/unitary-trophy.png",
+      "sprite_name": "UnitaryTrophy",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 279,
+        "y": 802,
+        "width": 43,
+        "height": 49
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "unitary-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "building-hater-trophy",
+      "path": "assets/game/sprites/building-hater-trophy.png",
+      "sprite_name": "BuildingHaterTrophy",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 2,
+        "y": 522,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "building-hater-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "grand-diplomat-trophy",
+      "path": "assets/game/sprites/grand-diplomat-trophy.png",
+      "sprite_name": "GrandDiplomatTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1053,
+        "y": 662,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "grand-diplomat-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "exchange-master-trophy",
+      "path": "assets/game/sprites/exchange-master-trophy.png",
+      "sprite_name": "ExchangeMasterTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 302,
+        "y": 1700,
+        "width": 48,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "exchange-master-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "lucky-neutral-trophy",
+      "path": "assets/game/sprites/lucky-neutral-trophy.png",
+      "sprite_name": "LuckyNeutralTrophy",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1949,
+        "y": 811,
+        "width": 45,
+        "height": 45
+      },
+      "frame": {
+        "x": -2,
+        "y": -3,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "lucky-neutral-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "perfectly-good-trophy",
+      "path": "assets/game/sprites/perfectly-good-trophy.png",
+      "sprite_name": "PerfectlyGoodTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1802,
+        "y": 1874,
+        "width": 48,
+        "height": 48
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "perfectly-good-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "diabolical-evil-trophy",
+      "path": "assets/game/sprites/diabolical-evil-trophy.png",
+      "sprite_name": "DiabolicalEvilTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 320,
+        "y": 68,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "diabolical-evil-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "assistant-squasher-trophy",
+      "path": "assets/game/sprites/assistant-squasher-trophy.png",
+      "sprite_name": "AssistantSquasherTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 70,
+        "y": 323,
+        "width": 50,
+        "height": 42
+      },
+      "frame": {
+        "x": 0,
+        "y": -5,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "assistant-squasher-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "rewind-trophy",
+      "path": "assets/game/sprites/rewind-trophy.png",
+      "sprite_name": "RewindTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 953,
+        "y": 1715,
+        "width": 50,
+        "height": 40
+      },
+      "frame": {
+        "x": 0,
+        "y": -5,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "rewind-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "faction-grinder-trophy",
+      "path": "assets/game/sprites/faction-grinder-trophy.png",
+      "sprite_name": "FactionGrinderTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 202,
+        "y": 717,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "faction-grinder-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "master-archeologist-trophy",
+      "path": "assets/game/sprites/master-archeologist-trophy.png",
+      "sprite_name": "MasterArcheologistTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1719,
+        "y": 1624,
+        "width": 49,
+        "height": 48
+      },
+      "frame": {
+        "x": 0,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "master-archeologist-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "spellfury-trophy",
+      "path": "assets/game/sprites/spellfury-trophy.png",
+      "sprite_name": "SpellfuryTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1944,
+        "y": 1329,
+        "width": 50,
+        "height": 49
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "spellfury-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "speed-run-trophy",
+      "path": "assets/game/sprites/speed-run-trophy.png",
+      "sprite_name": "SpeedRunTrophy",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 962,
+        "y": 712,
+        "width": 41,
+        "height": 49
+      },
+      "frame": {
+        "x": -4,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "speed-run-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "equality-trophy",
+      "path": "assets/game/sprites/equality-trophy.png",
+      "sprite_name": "EqualityTrophy",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 495,
+        "y": 558,
+        "width": 46,
+        "height": 49
+      },
+      "frame": {
+        "x": -2,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "equality-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "beard-carpet-trophy",
+      "path": "assets/game/sprites/beard-carpet-trophy.png",
+      "sprite_name": "BeardCarpetTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 254,
+        "y": 1232,
+        "width": 39,
+        "height": 50
+      },
+      "frame": {
+        "x": -5,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "beard-carpet-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "premeditation-trophy",
+      "path": "assets/game/sprites/premeditation-trophy.png",
+      "sprite_name": "PremeditationTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1840,
+        "y": 1327,
+        "width": 50,
+        "height": 46
+      },
+      "frame": {
+        "x": 0,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "premeditation-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "fast-forward-trophy",
+      "path": "assets/game/sprites/fast-forward-trophy.png",
+      "sprite_name": "FastForwardTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 353,
+        "y": 985,
+        "width": 50,
+        "height": 40
+      },
+      "frame": {
+        "x": 0,
+        "y": -6,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "fast-forward-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "need-a-headstart-trophy",
+      "path": "assets/game/sprites/need-a-headstart-trophy.png",
+      "sprite_name": "NeedAHeadstartTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1999,
+        "y": 1074,
+        "width": 47,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "need-a-headstart-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "realm-digger-trophy",
+      "path": "assets/game/sprites/realm-digger-trophy.png",
+      "sprite_name": "RealmDiggerTrophy",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1808,
+        "y": 818,
+        "width": 39,
+        "height": 49
+      },
+      "frame": {
+        "x": -3,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "realm-digger-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "harlequin-trophy",
+      "path": "assets/game/sprites/harlequin-trophy.png",
+      "sprite_name": "HarlequinTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 387,
+        "y": 1033,
+        "width": 50,
+        "height": 43
+      },
+      "frame": {
+        "x": 0,
+        "y": -5,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "harlequin-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "lucifer-trophy",
+      "path": "assets/game/sprites/lucifer-trophy.png",
+      "sprite_name": "LuciferTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1566,
+        "y": 1623,
+        "width": 49,
+        "height": 48
+      },
+      "frame": {
+        "x": -1,
+        "y": -2,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "lucifer-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "mathematician-trophy",
+      "path": "assets/game/sprites/mathematician-trophy.png",
+      "sprite_name": "MathematicianTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1667,
+        "y": 667,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "mathematician-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "mercenary-spirit-trophy",
+      "path": "assets/game/sprites/mercenary-spirit-trophy.png",
+      "sprite_name": "MercenarySpiritTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 975,
+        "y": 1018,
+        "width": 50,
+        "height": 45
+      },
+      "frame": {
+        "x": 0,
+        "y": -2,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "mercenary-spirit-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "bloodstream-trophy",
+      "path": "assets/game/sprites/bloodstream-trophy.png",
+      "sprite_name": "BloodstreamTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 254,
+        "y": 1284,
+        "width": 40,
+        "height": 50
+      },
+      "frame": {
+        "x": -1,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "bloodstream-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "unlimited-mana-trophy",
+      "path": "assets/game/sprites/unlimited-mana-trophy.png",
+      "sprite_name": "UnlimitedManaTrophy",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 172,
+        "y": 1140,
+        "width": 36,
+        "height": 50
+      },
+      "frame": {
+        "x": -10,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "unlimited-mana-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "for-science-trophy",
+      "path": "assets/game/sprites/for-science-trophy.png",
+      "sprite_name": "ForScienceTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 445,
+        "y": 1284,
+        "width": 46,
+        "height": 50
+      },
+      "frame": {
+        "x": -3,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "for-science-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "exchange-lord-trophy",
+      "path": "assets/game/sprites/exchange-lord-trophy.png",
+      "sprite_name": "ExchangeLordTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 54,
+        "y": 1180,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "exchange-lord-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "magician-trophy",
+      "path": "assets/game/sprites/magician-trophy.png",
+      "sprite_name": "MagicianTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 595,
+        "y": 1246,
+        "width": 50,
+        "height": 48
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "magician-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "artisan-trophy",
+      "path": "assets/game/sprites/artisan-trophy.png",
+      "sprite_name": "ArtisanTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 175,
+        "y": 227,
+        "width": 50,
+        "height": 46
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "artisan-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "demigod-trophy",
+      "path": "assets/game/sprites/demigod-trophy.png",
+      "sprite_name": "DemigodTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 258,
+        "y": 820,
+        "width": 41,
+        "height": 50
+      },
+      "frame": {
+        "x": -5,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "demigod-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "businessman-trophy",
+      "path": "assets/game/sprites/businessman-trophy.png",
+      "sprite_name": "BusinessmanTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 226,
+        "y": 326,
+        "width": 50,
+        "height": 44
+      },
+      "frame": {
+        "x": 0,
+        "y": -5,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "businessman-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "apothecary-trophy",
+      "path": "assets/game/sprites/apothecary-trophy.png",
+      "sprite_name": "ApothecaryTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1979,
+        "y": 261,
+        "width": 49,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "apothecary-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "warlord-trophy",
+      "path": "assets/game/sprites/warlord-trophy.png",
+      "sprite_name": "WarlordTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1999,
+        "y": 1282,
+        "width": 47,
+        "height": 50
+      },
+      "frame": {
+        "x": -2,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "warlord-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "faction-run-trophy",
+      "path": "assets/game/sprites/faction-run-trophy.png",
+      "sprite_name": "FactionRunTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 144,
+        "y": 1026,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "faction-run-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "no-recruiting-trophy",
+      "path": "assets/game/sprites/no-recruiting-trophy.png",
+      "sprite_name": "NoRecruitingTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 509,
+        "y": 935,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "no-recruiting-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "that-excavated-quickly-trophy",
+      "path": "assets/game/sprites/that-excavated-quickly-trophy.png",
+      "sprite_name": "ThatExcavatedQuicklyTrophy",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 913,
+        "y": 750,
+        "width": 41,
+        "height": 49
+      },
+      "frame": {
+        "x": -2,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "that-excavated-quickly-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "glho-kohhl-snod-trophy",
+      "path": "assets/game/sprites/glho-kohhl-snod-trophy.png",
+      "sprite_name": "GlhoKohhlSnodTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 715,
+        "y": 1018,
+        "width": 50,
+        "height": 35
+      },
+      "frame": {
+        "x": 0,
+        "y": -7,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "glho-kohhl-snod-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "mana-matrix-trophy",
+      "path": "assets/game/sprites/mana-matrix-trophy.png",
+      "sprite_name": "ManaMatrixTrophy",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 369,
+        "y": 852,
+        "width": 43,
+        "height": 48
+      },
+      "frame": {
+        "x": -3,
+        "y": -2,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "mana-matrix-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "suggestion-master-trophy",
+      "path": "assets/game/sprites/suggestion-master-trophy.png",
+      "sprite_name": "SuggestionMasterTrophy",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 979,
+        "y": 530,
+        "width": 45,
+        "height": 38
+      },
+      "frame": {
+        "x": -1,
+        "y": -5,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "suggestion-master-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "rule-dis-trophy",
+      "path": "assets/game/sprites/rule-dis-trophy.png",
+      "sprite_name": "RuleDisTrophy",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1153,
+        "y": 611,
+        "width": 41,
+        "height": 50
+      },
+      "frame": {
+        "x": -4,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "rule-dis-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "because-i-like-to-grind-trophy",
+      "path": "assets/game/sprites/because-i-like-to-grind-trophy.png",
+      "sprite_name": "BecauseILikeToGrindTrophy",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 788,
+        "y": 483,
+        "width": 46,
+        "height": 47
+      },
+      "frame": {
+        "x": -2,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "because-i-like-to-grind-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "triple-weirdness-trophy",
+      "path": "assets/game/sprites/triple-weirdness-trophy.png",
+      "sprite_name": "TripleWeirdnessTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1219,
+        "y": 1122,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "triple-weirdness-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "stoic-resistance-trophy",
+      "path": "assets/game/sprites/stoic-resistance-trophy.png",
+      "sprite_name": "StoicResistanceTrophy",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1238,
+        "y": 516,
+        "width": 45,
+        "height": 44
+      },
+      "frame": {
+        "x": -2,
+        "y": -3,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "stoic-resistance-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "vanishment-trophy",
+      "path": "assets/game/sprites/vanishment-trophy.png",
+      "sprite_name": "VanishmentTrophy",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 201,
+        "y": 317,
+        "width": 47,
+        "height": 48
+      },
+      "frame": {
+        "x": -2,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "vanishment-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "iron-rush-trophy",
+      "path": "assets/game/sprites/iron-rush-trophy.png",
+      "sprite_name": "IronRushTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 844,
+        "y": 761,
+        "width": 50,
+        "height": 47
+      },
+      "frame": {
+        "x": 0,
+        "y": -3,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "iron-rush-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "colorful-autocasting-trophy",
+      "path": "assets/game/sprites/colorful-autocasting-trophy.png",
+      "sprite_name": "ColorfulAutocastingTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1147,
+        "y": 309,
+        "width": 50,
+        "height": 44
+      },
+      "frame": {
+        "x": 0,
+        "y": -3,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "colorful-autocasting-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "spell-cataclysm-trophy",
+      "path": "assets/game/sprites/spell-cataclysm-trophy.png",
+      "sprite_name": "SpellCataclysmTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1892,
+        "y": 1327,
+        "width": 50,
+        "height": 49
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "spell-cataclysm-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "double-bottom-trophy",
+      "path": "assets/game/sprites/double-bottom-trophy.png",
+      "sprite_name": "DoubleBottomTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 887,
+        "y": 354,
+        "width": 50,
+        "height": 48
+      },
+      "frame": {
+        "x": 0,
+        "y": -2,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "double-bottom-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "ui-tip-trophy",
+      "path": "assets/game/sprites/ui-tip-trophy.png",
+      "sprite_name": "UITipTrophy",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 364,
+        "y": 1564,
+        "width": 30,
+        "height": 40
+      },
+      "frame": {
+        "x": -8,
+        "y": -5,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "ui-tip-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "dragon-tamer-trophy",
+      "path": "assets/game/sprites/dragon-tamer-trophy.png",
+      "sprite_name": "DragonTamerTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1660,
+        "y": 54,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "dragon-tamer-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "helden-sterben-nicht-trophy",
+      "path": "assets/game/sprites/helden-sterben-nicht-trophy.png",
+      "sprite_name": "HeldenSterbenNichtTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1875,
+        "y": 460,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "helden-sterben-nicht-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "mana-waste-trophy",
+      "path": "assets/game/sprites/mana-waste-trophy.png",
+      "sprite_name": "ManaWasteTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1511,
+        "y": 666,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "mana-waste-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "prismatic-mana-trophy",
+      "path": "assets/game/sprites/prismatic-mana-trophy.png",
+      "sprite_name": "PrismaticManaTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1927,
+        "y": 869,
+        "width": 50,
+        "height": 49
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "prismatic-mana-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "autoclicker-trophy",
+      "path": "assets/game/sprites/autoclicker-trophy.png",
+      "sprite_name": "AutoclickerTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 168,
+        "y": 125,
+        "width": 50,
+        "height": 49
+      },
+      "frame": {
+        "x": 0,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "autoclicker-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "exchange-high-lord-trophy",
+      "path": "assets/game/sprites/exchange-high-lord-trophy.png",
+      "sprite_name": "ExchangeHighLordTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 54,
+        "y": 1128,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "exchange-high-lord-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "genealogist-trophy",
+      "path": "assets/game/sprites/genealogist-trophy.png",
+      "sprite_name": "GenealogistTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 793,
+        "y": 506,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "genealogist-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "holy-frenzy-trophy",
+      "path": "assets/game/sprites/holy-frenzy-trophy.png",
+      "sprite_name": "HolyFrenzyTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1823,
+        "y": 512,
+        "width": 50,
+        "height": 49
+      },
+      "frame": {
+        "x": 0,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "holy-frenzy-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "uniformity-trophy",
+      "path": "assets/game/sprites/uniformity-trophy.png",
+      "sprite_name": "UniformityTrophy",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 397,
+        "y": 601,
+        "width": 46,
+        "height": 49
+      },
+      "frame": {
+        "x": -2,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "uniformity-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "art-of-the-crow-trophy",
+      "path": "assets/game/sprites/art-of-the-crow-trophy.png",
+      "sprite_name": "ArtOfTheCrowTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1934,
+        "y": 1431,
+        "width": 49,
+        "height": 43
+      },
+      "frame": {
+        "x": 0,
+        "y": -4,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "art-of-the-crow-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "faction-ruler-trophy",
+      "path": "assets/game/sprites/faction-ruler-trophy.png",
+      "sprite_name": "FactionRulerTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 157,
+        "y": 820,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "faction-ruler-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "mad-masks-trophy",
+      "path": "assets/game/sprites/mad-masks-trophy.png",
+      "sprite_name": "MADMasksTrophy",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 2011,
+        "y": 927,
+        "width": 35,
+        "height": 49
+      },
+      "frame": {
+        "x": -7,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "mad-masks-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "future-linkin-trophy",
+      "path": "assets/game/sprites/future-linkin-trophy.png",
+      "sprite_name": "FutureLinkinTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 301,
+        "y": 768,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "future-linkin-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "gods-fingers-trophy",
+      "path": "assets/game/sprites/gods-fingers-trophy.png",
+      "sprite_name": "GodsFingersTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1001,
+        "y": 506,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "gods-fingers-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "true-harlequin-trophy",
+      "path": "assets/game/sprites/true-harlequin-trophy.png",
+      "sprite_name": "TrueHarlequinTrophy",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1094,
+        "y": 2,
+        "width": 50,
+        "height": 43
+      },
+      "frame": {
+        "x": 0,
+        "y": -5,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "true-harlequin-trophy",
+      "role": "icon"
+    },
+    {
+      "key": "art-of-the-crow-good-order",
+      "path": "assets/game/sprites/art-of-the-crow-good-order.png",
+      "sprite_name": "ArtOfTheCrowGoodOrder",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1979,
+        "y": 463,
+        "width": 49,
+        "height": 48
+      },
+      "frame": {
+        "x": 0,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "art-of-the-crow-good-order",
+      "role": "icon"
+    },
+    {
+      "key": "art-of-the-crow-evil-order",
+      "path": "assets/game/sprites/art-of-the-crow-evil-order.png",
+      "sprite_name": "ArtOfTheCrowEvilOrder",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1979,
+        "y": 413,
+        "width": 49,
+        "height": 48
+      },
+      "frame": {
+        "x": 0,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "art-of-the-crow-evil-order",
+      "role": "icon"
+    },
+    {
+      "key": "art-of-the-crow-neutral-order",
+      "path": "assets/game/sprites/art-of-the-crow-neutral-order.png",
+      "sprite_name": "ArtOfTheCrowNeutralOrder",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 390,
+        "y": 1078,
+        "width": 49,
+        "height": 48
+      },
+      "frame": {
+        "x": 0,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "art-of-the-crow-neutral-order",
+      "role": "icon"
+    },
+    {
+      "key": "art-of-the-crow-good-chaos",
+      "path": "assets/game/sprites/art-of-the-crow-good-chaos.png",
+      "sprite_name": "ArtOfTheCrowGoodChaos",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 588,
+        "y": 626,
+        "width": 49,
+        "height": 49
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "art-of-the-crow-good-chaos",
+      "role": "icon"
+    },
+    {
+      "key": "art-of-the-crow-evil-chaos",
+      "path": "assets/game/sprites/art-of-the-crow-evil-chaos.png",
+      "sprite_name": "ArtOfTheCrowEvilChaos",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1979,
+        "y": 362,
+        "width": 49,
+        "height": 49
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "art-of-the-crow-evil-chaos",
+      "role": "icon"
+    },
+    {
+      "key": "art-of-the-crow-neutral-chaos",
+      "path": "assets/game/sprites/art-of-the-crow-neutral-chaos.png",
+      "sprite_name": "ArtOfTheCrowNeutralChaos",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 588,
+        "y": 677,
+        "width": 49,
+        "height": 49
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "art-of-the-crow-neutral-chaos",
+      "role": "icon"
+    },
+    {
+      "key": "art-of-the-crow-good-balance",
+      "path": "assets/game/sprites/art-of-the-crow-good-balance.png",
+      "sprite_name": "ArtOfTheCrowGoodBalance",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 588,
+        "y": 576,
+        "width": 49,
+        "height": 48
+      },
+      "frame": {
+        "x": 0,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "art-of-the-crow-good-balance",
+      "role": "icon"
+    },
+    {
+      "key": "art-of-the-crow-evil-balance",
+      "path": "assets/game/sprites/art-of-the-crow-evil-balance.png",
+      "sprite_name": "ArtOfTheCrowEvilBalance",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1979,
+        "y": 312,
+        "width": 49,
+        "height": 48
+      },
+      "frame": {
+        "x": 0,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "art-of-the-crow-evil-balance",
+      "role": "icon"
+    },
+    {
+      "key": "art-of-the-crow-neutral-balance",
+      "path": "assets/game/sprites/art-of-the-crow-neutral-balance.png",
+      "sprite_name": "ArtOfTheCrowNeutralBalance",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 339,
+        "y": 1078,
+        "width": 49,
+        "height": 48
+      },
+      "frame": {
+        "x": 0,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "art-of-the-crow-neutral-balance",
+      "role": "icon"
+    },
+    {
       "key": "farm-trophy1",
       "path": "assets/game/sprites/farm-trophy1.png",
       "sprite_name": "FarmTrophy1",

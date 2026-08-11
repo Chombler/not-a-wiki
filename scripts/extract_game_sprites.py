@@ -83,6 +83,16 @@ def main() -> None:
     output = args.output.resolve()
     selection_data = json.loads(selection_path.read_text(encoding="utf-8"))
     selections = list(selection_data["sprites"])
+    for group in selection_data.get("sprite_groups", []):
+        for sprite_name in group["sprite_names"]:
+            selections.append(
+                {
+                    "sprite_name": sprite_name,
+                    "kind": group["kind"],
+                    "entity": normalized_key(sprite_name),
+                    "role": group["role"],
+                }
+            )
     for family in selection_data.get("sprite_families", []):
         for index in range(1, family["count"] + 1):
             selections.append(
