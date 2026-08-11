@@ -36,7 +36,7 @@ for (const route of legacyRoutes) if (!builtRoutes.has(route)) failures.push(`Mi
 const missingAssets = new Set();
 for (const file of builtFiles) {
   const html = fs.readFileSync(file, 'utf8').replace(/<!--[\s\S]*?-->/g, '');
-  if (path.relative(output, file) === 'Spells/index.html'
+  if (['Spells/index.html', 'TrophyPage/index.html'].includes(path.relative(output, file))
     && /<area\b(?:(?!>).)*\bresearch=(["'])(?:(?!\1).)*<table/is.test(html)) {
     failures.push(`${path.relative(output, file)} contains table markup inside an image-map tooltip`);
   }
@@ -65,7 +65,8 @@ const contracts = {
   'Artifacts/index.html': ['name="QuestArtifacts-map"', 'name="LoreArtifacts-map"', 'class="numtable tier-table'],
   'ResearchList/index.html': ['id="spellcraft"', 'class="research-entry"'],
   'Researchtree/index.html': ['usemap="#ResearchTreeA4-map"', 'data-research='],
-  'Spells/index.html': ['(12 - T) ^ 5', 'Hall of Legends</td><td>0.000001 × ln(1 + x)^6%', 'class="numtable primal-balance-table"', '<td>11 (all)</td>'],
+  'Spells/index.html': ['(11 - T) ^ 5', 'Hall of Legends</td><td>0 × ln(1 + x)^6%', 'class="numtable primal-balance-table"', '<td>11 (all)</td>'],
+  'TrophyPage/index.html': ['id="mathematician-building-bonuses"', 'Mathematician bonus by building', 'Hall of Legends</td><td>10%'],
   'A0Guide/index.html': ['class="progression-plot"', 'class="guide-stage-grid"', 'class="guide-pager"'],
   'A4Guide/index.html': ['class="a4-budget-table"', 'class="guide-stage-grid"'],
   'A4PostA4/index.html': ['data-guide-filter', 'class="guide-build-entry"', 'class="build-credit"'],

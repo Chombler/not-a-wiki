@@ -161,13 +161,13 @@
 <p><b>Effect</b>: Increases the production of all non-neutral buildings by 300%.</p>
 <p><b>Note</b>: See the <a target=&quot;_blank&quot; href=&quot;/realm/MercBuilds/#TrophyBuilds&quot;><b>Mercenary trophy builds</b></a>.</p>
 	" coords="3,223,57,277" shape="rect">
-		<area research="
+		<area href="#mathematician-building-bonuses" research="
 	<p><img src=&quot;/realm/Factions/picks/MathematicianSecretTrophy.png&quot; align=&quot;middle&quot;><b> Mathematician</b></p>
 <p><b>Requirement</b>: Have buildings amounts exactly equal to 2^tier from bottom to top, starting from 2^0 Halls of Legends up to 2^10 Farms. (1024 Farms, 512 Inns, 256 Blacksmiths, 128, 64, 32, 16, 8, 4, 2 and 1 Hall of Legends.) (Building count has to be exact)</p>
 <p><b>Cost</b>: 1 Td (1e42), A1, Free</p>
 <p><b>Effect</b>: Increases the production of all buildings based on their tier.</p>
 <p><b>Formula</b>: (10 * (12 - T))%, where T is building tier.</p>
-<realm-tier-table data-kind="mathematician" data-heading="Bonus by building"></realm-tier-table>
+<p><b>Table</b>: Select this trophy to view its bonus for each building.</p>
 <p><b>Note</b>: This can be done at the end of R0 just before reincarnating.</p>
 	" coords="63,223,117,277" shape="rect">
 		<area research="
@@ -473,6 +473,9 @@
 <p><b>Effect</b>: Increase Offline production by 100%. This effect does not suffer Ascension penalties.</p>
 	" coords="63,583,117,637" shape="rect">
 	</map>
+	<h2 id="mathematician-building-bonuses">Mathematician building bonuses</h2>
+	<p>Mathematician increases lower-tier building production more than higher-tier building production.</p>
+	<realm-tier-table data-kind="mathematician" data-heading="Mathematician bonus by building"></realm-tier-table>
 	<map name="AllegiancesTrophies-map">
 		<area research="
 	<p><span class=&quot;game-icon-frame&quot;><img src=&quot;/realm/assets/game/sprites/buy-fairy-upgrades-trophy.png&quot; alt=&quot;&quot;></span><b> Fairy Champion</b></p>
