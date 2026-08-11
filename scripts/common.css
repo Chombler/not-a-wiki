@@ -26,6 +26,7 @@ a.tooltips {
     position: absolute;
     inset: 3px;
     z-index: 0;
+    background: #131313;
     border: 9px solid transparent;
     border-image: var(--game-icon-frame) 9 fill / 9px;
     content: "";
