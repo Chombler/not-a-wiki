@@ -4,6 +4,7 @@ import GuidePage from '../../components/GuidePage.astro';
 import { getPageTitle } from '../../data/pageTitles';
 import { guideSequence } from '../../data/guides';
 import { isTierTableKind, tierTableHtml } from '../../lib/tierTables';
+import { primalBalanceTableHtml } from '../../lib/primalBalance';
 
 const pageModules = import.meta.glob('../../page-content/reference/*.html', {
   eager: true,
@@ -35,7 +36,10 @@ const base = `${import.meta.env.BASE_URL.replace(/\/+$/, '')}/`;
 const baseContent = kind === 'reference' ? pageModules[source]
   .replaceAll('/realm/', base)
   .replaceAll('/realm"', `${base}"`) : '';
-const content = baseContent.replace(
+const content = baseContent.replaceAll(
+  '<realm-primal-balance-table></realm-primal-balance-table>',
+  primalBalanceTableHtml(),
+).replace(
   /<realm-tier-table data-kind="([^"]+)" data-heading="([^"]*)"><\/realm-tier-table>/g,
   (_element, kind: string, heading: string) => {
     if (!isTierTableKind(kind)) throw new Error(`Unknown tier table ${kind} on ${route}`);

@@ -65,7 +65,7 @@ const contracts = {
   'Artifacts/index.html': ['name="QuestArtifacts-map"', 'name="LoreArtifacts-map"', 'class="numtable tier-table'],
   'ResearchList/index.html': ['id="spellcraft"', 'class="research-entry"'],
   'Researchtree/index.html': ['usemap="#ResearchTreeA4-map"', 'data-research='],
-  'Spells/index.html': ['(12 - T) ^ 5', 'Hall of Legends</td><td>0.000001 × ln(1 + x)^6%'],
+  'Spells/index.html': ['(12 - T) ^ 5', 'Hall of Legends</td><td>0.000001 × ln(1 + x)^6%', 'class="numtable primal-balance-table"', '<td>11 (all)</td>'],
   'A0Guide/index.html': ['class="progression-plot"', 'class="guide-stage-grid"', 'class="guide-pager"'],
   'A4Guide/index.html': ['class="a4-budget-table"', 'class="guide-stage-grid"'],
   'A4PostA4/index.html': ['data-guide-filter', 'class="guide-build-entry"', 'class="build-credit"'],

@@ -1,0 +1,27 @@
+const ascensions = [0, 1, 2, 3, 4] as const;
+const additionalTargets = Array.from({ length: 10 }, (_, index) => index + 1);
+
+// Inverse of floor((mana / 100000) ^ (0.2 / (0.5 * ascension + 1))).
+export function primalBalanceMana(targets: number, ascension: number) {
+  return 100_000 * targets ** (5 * (0.5 * ascension + 1));
+}
+
+function formatMana(value: number) {
+  return value.toExponential(6)
+    .replace(/\.0+(?=e)/, '')
+    .replace(/(\.\d*?[1-9])0+(?=e)/, '$1')
+    .replace('e+', 'e');
+}
+
+export function primalBalanceTableHtml() {
+  const headings = ascensions.map((ascension) => `<th>A${ascension}</th>`).join('');
+  const rows = additionalTargets.map((targets) => {
+    const total = targets + 1;
+    const values = ascensions
+      .map((ascension) => `<td>${formatMana(primalBalanceMana(targets, ascension))}</td>`)
+      .join('');
+    return `<tr><td>+${targets}</td><td>${total}${total === 11 ? ' (all)' : ''}</td>${values}</tr>`;
+  }).join('');
+
+  return `<table class="numtable primal-balance-table"><caption><b>Mana produced this Reincarnation required for Primal Balance targets</b></caption><thead><tr><th>Additional targets</th><th>Total buildings affected</th>${headings}</tr></thead><tbody>${rows}</tbody></table>`;
+}
