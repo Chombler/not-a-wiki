@@ -252,5 +252,32 @@
       "entity": "dragon-master",
       "role": "icon"
     }
+  ],
+  "sprite_families": [
+    { "sprite_prefix": "FarmTrophy", "count": 22, "kind": "trophy", "entity_prefix": "farm", "role": "icon" },
+    { "sprite_prefix": "InnTrophy", "count": 22, "kind": "trophy", "entity_prefix": "inn", "role": "icon" },
+    { "sprite_prefix": "BlacksmithTrophy", "count": 22, "kind": "trophy", "entity_prefix": "blacksmith", "role": "icon" },
+    { "sprite_prefix": "WarriorBarracksTrophy", "count": 22, "kind": "trophy", "entity_prefix": "warrior-barracks", "role": "icon" },
+    { "sprite_prefix": "SlavePenTrophy", "count": 22, "kind": "trophy", "entity_prefix": "slave-pen", "role": "icon" },
+    { "sprite_prefix": "KnightsJoustTrophy", "count": 22, "kind": "trophy", "entity_prefix": "knights-joust", "role": "icon" },
+    { "sprite_prefix": "OrcishArenaTrophy", "count": 22, "kind": "trophy", "entity_prefix": "orcish-arena", "role": "icon" },
+    { "sprite_prefix": "WizardTowerTrophy", "count": 22, "kind": "trophy", "entity_prefix": "wizard-tower", "role": "icon" },
+    { "sprite_prefix": "WitchConclaveTrophy", "count": 22, "kind": "trophy", "entity_prefix": "witch-conclave", "role": "icon" },
+    { "sprite_prefix": "CathedralTrophy", "count": 22, "kind": "trophy", "entity_prefix": "cathedral", "role": "icon" },
+    { "sprite_prefix": "DarkTempleTrophy", "count": 22, "kind": "trophy", "entity_prefix": "dark-temple", "role": "icon" },
+    { "sprite_prefix": "CitadelTrophy", "count": 22, "kind": "trophy", "entity_prefix": "citadel", "role": "icon" },
+    { "sprite_prefix": "NecropolisTrophy", "count": 22, "kind": "trophy", "entity_prefix": "necropolis", "role": "icon" },
+    { "sprite_prefix": "RoyalCastleTrophy", "count": 22, "kind": "trophy", "entity_prefix": "royal-castle", "role": "icon" },
+    { "sprite_prefix": "EvilFortressTrophy", "count": 22, "kind": "trophy", "entity_prefix": "evil-fortress", "role": "icon" },
+    { "sprite_prefix": "HeavensGateTrophy", "count": 22, "kind": "trophy", "entity_prefix": "heavens-gate", "role": "icon" },
+    { "sprite_prefix": "HellPortalTrophy", "count": 22, "kind": "trophy", "entity_prefix": "hell-portal", "role": "icon" },
+    { "sprite_prefix": "DeepMineTrophy", "count": 22, "kind": "trophy", "entity_prefix": "deep-mine", "role": "icon" },
+    { "sprite_prefix": "StonePillarsTrophy", "count": 22, "kind": "trophy", "entity_prefix": "stone-pillars", "role": "icon" },
+    { "sprite_prefix": "AlchemistLabTrophy", "count": 22, "kind": "trophy", "entity_prefix": "alchemist-lab", "role": "icon" },
+    { "sprite_prefix": "MonasteryTrophy", "count": 22, "kind": "trophy", "entity_prefix": "monastery", "role": "icon" },
+    { "sprite_prefix": "LabyrinthTrophy", "count": 22, "kind": "trophy", "entity_prefix": "labyrinth", "role": "icon" },
+    { "sprite_prefix": "IronStrongholdTrophy", "count": 22, "kind": "trophy", "entity_prefix": "iron-stronghold", "role": "icon" },
+    { "sprite_prefix": "AncientPyramidTrophy", "count": 22, "kind": "trophy", "entity_prefix": "ancient-pyramid", "role": "icon" },
+    { "sprite_prefix": "HallOfLegendsTrophy", "count": 22, "kind": "trophy", "entity_prefix": "hall-of-legends", "role": "icon" }
   ]
 }

@@ -81,7 +81,18 @@ def main() -> None:
     args = parse_args()
     selection_path = args.selection.resolve()
     output = args.output.resolve()
-    selections = json.loads(selection_path.read_text(encoding="utf-8"))["sprites"]
+    selection_data = json.loads(selection_path.read_text(encoding="utf-8"))
+    selections = list(selection_data["sprites"])
+    for family in selection_data.get("sprite_families", []):
+        for index in range(1, family["count"] + 1):
+            selections.append(
+                {
+                    "sprite_name": f'{family["sprite_prefix"]}{index}',
+                    "kind": family["kind"],
+                    "entity": f'{family["entity_prefix"]}-{index}',
+                    "role": family["role"],
+                }
+            )
     atlas_entries = load_atlas_entries(args.game_assets.resolve())
 
     seen_keys: dict[str, str] = {}
