@@ -28,7 +28,9 @@ const values = {
   'wall-chunk': (tier: number) => [30000 * (11 - tier) ** 3.5, '%'],
   mathematician: (tier: number) => [10 * (12 - tier), '%'],
   maelstrom: (tier: number) => [100 * (12 - tier), '% base-assistant multiplier'],
-  'dragons-breath-green': (tier: number) => [0.000001 * (11 - tier) ** 5, ' × ln(1 + x)^6%'],
+  // The client uses a zero-based building index in (11 - index)^5.
+  // `tier` is human-facing (Farm = 1), so the equivalent is (12 - tier)^5.
+  'dragons-breath-green': (tier: number) => [0.000001 * (12 - tier) ** 5, ' × ln(1 + x)^6%'],
 } satisfies Record<TierTableKind, (tier: number) => [number, string]>;
 
 const format = (value: number) => {

@@ -36,6 +36,10 @@ for (const route of legacyRoutes) if (!builtRoutes.has(route)) failures.push(`Mi
 const missingAssets = new Set();
 for (const file of builtFiles) {
   const html = fs.readFileSync(file, 'utf8').replace(/<!--[\s\S]*?-->/g, '');
+  if (path.relative(output, file) === 'Spells/index.html'
+    && /<area\b(?:(?!>).)*\bresearch=(["'])(?:(?!\1).)*<table/is.test(html)) {
+    failures.push(`${path.relative(output, file)} contains table markup inside an image-map tooltip`);
+  }
   for (const match of html.matchAll(/(?:href|src)=(["'])(.*?)\1/g)) {
     const raw = match[2].split('#')[0].split('?')[0];
     if (!raw.startsWith(normalizedBase)) continue;
@@ -61,6 +65,7 @@ const contracts = {
   'Artifacts/index.html': ['name="QuestArtifacts-map"', 'name="LoreArtifacts-map"', 'class="numtable tier-table'],
   'ResearchList/index.html': ['id="spellcraft"', 'class="research-entry"'],
   'Researchtree/index.html': ['usemap="#ResearchTreeA4-map"', 'data-research='],
+  'Spells/index.html': ['(12 - T) ^ 5', 'Hall of Legends</td><td>0.000001 × ln(1 + x)^6%'],
   'A0Guide/index.html': ['class="progression-plot"', 'class="guide-stage-grid"', 'class="guide-pager"'],
   'A4Guide/index.html': ['class="a4-budget-table"', 'class="guide-stage-grid"'],
   'A4PostA4/index.html': ['data-guide-filter', 'class="guide-build-entry"', 'class="build-credit"'],
