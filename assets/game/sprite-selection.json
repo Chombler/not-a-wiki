@@ -41,6 +41,216 @@
       "kind": "trophy",
       "entity": "demon-champion",
       "role": "icon"
+    },
+    {
+      "sprite_name": "BuyTitanUpgradesTrophy",
+      "kind": "trophy",
+      "entity": "titan-champion",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "BuyDruidUpgradesTrophy",
+      "kind": "trophy",
+      "entity": "druid-champion",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "BuyFacelessUpgradesTrophy",
+      "kind": "trophy",
+      "entity": "faceless-champion",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "BuyDwarvenUpgradesTrophy",
+      "kind": "trophy",
+      "entity": "dwarven-champion",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "BuyDrowUpgradesTrophy",
+      "kind": "trophy",
+      "entity": "drow-champion",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "BuyMercenaryUpgradesTrophy",
+      "kind": "trophy",
+      "entity": "mercenary-champion",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "BuyDragonUpgradesTrophy",
+      "kind": "trophy",
+      "entity": "dragon-champion",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "BuyArchonUpgradesTrophy",
+      "kind": "trophy",
+      "entity": "archon-champion",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "BuyDjinnUpgradesTrophy",
+      "kind": "trophy",
+      "entity": "djinn-champion",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "BuyMakersUpgradesTrophy",
+      "kind": "trophy",
+      "entity": "makers-champion",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "MercenaryOath",
+      "kind": "trophy",
+      "entity": "mercenary-oath",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "FairyGrandChampion",
+      "kind": "trophy",
+      "entity": "fairy-grand-champion",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "ElvenGrandChampion",
+      "kind": "trophy",
+      "entity": "elven-grand-champion",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "AngelGrandChampion",
+      "kind": "trophy",
+      "entity": "angel-grand-champion",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "GoblinGrandChampion",
+      "kind": "trophy",
+      "entity": "goblin-grand-champion",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "UndeadGrandChampion",
+      "kind": "trophy",
+      "entity": "undead-grand-champion",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "DemonGrandChampion",
+      "kind": "trophy",
+      "entity": "demon-grand-champion",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "TitanGrandChampion",
+      "kind": "trophy",
+      "entity": "titan-grand-champion",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "DruidGrandChampion",
+      "kind": "trophy",
+      "entity": "druid-grand-champion",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "FacelessGrandChampion",
+      "kind": "trophy",
+      "entity": "faceless-grand-champion",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "DwarvenGrandChampion",
+      "kind": "trophy",
+      "entity": "dwarven-grand-champion",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "DrowGrandChampion",
+      "kind": "trophy",
+      "entity": "drow-grand-champion",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "DragonGrandChampion",
+      "kind": "trophy",
+      "entity": "dragon-grand-champion",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "BuyFairyUpgradesTrophy2",
+      "kind": "trophy",
+      "entity": "fairy-master",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "BuyElvenUpgradesTrophy2",
+      "kind": "trophy",
+      "entity": "elven-master",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "BuyAngelUpgradesTrophy2",
+      "kind": "trophy",
+      "entity": "angel-master",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "BuyGoblinUpgradesTrophy2",
+      "kind": "trophy",
+      "entity": "goblin-master",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "BuyUndeadUpgradesTrophy2",
+      "kind": "trophy",
+      "entity": "undead-master",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "BuyDemonUpgradesTrophy2",
+      "kind": "trophy",
+      "entity": "demon-master",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "BuyTitanUpgradesTrophy2",
+      "kind": "trophy",
+      "entity": "titan-master",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "BuyDruidUpgradesTrophy2",
+      "kind": "trophy",
+      "entity": "druid-master",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "BuyFacelessUpgradesTrophy2",
+      "kind": "trophy",
+      "entity": "faceless-master",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "BuyDwarvenUpgradesTrophy2",
+      "kind": "trophy",
+      "entity": "dwarven-master",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "BuyDrowUpgradesTrophy2",
+      "kind": "trophy",
+      "entity": "drow-master",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "BuyDragonUpgradesTrophy2",
+      "kind": "trophy",
+      "entity": "dragon-master",
+      "role": "icon"
     }
   ]
 }

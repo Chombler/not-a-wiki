@@ -84,6 +84,23 @@ for (const [relative, markers] of Object.entries(contracts)) {
   for (const marker of markers) if (!html.includes(marker)) failures.push(`${relative} lost layout marker: ${marker}`);
 }
 
+function validateCanonicalIconBatch(relative, startMarker, endMarker, expected) {
+  const html = fs.readFileSync(path.join(output, relative), 'utf8');
+  const start = html.indexOf(startMarker);
+  const end = html.indexOf(endMarker, start + startMarker.length);
+  if (start === -1 || end === -1) {
+    failures.push(`${relative} lost icon-batch boundary: ${startMarker}`);
+    return;
+  }
+  const batch = html.slice(start, end);
+  const canonical = [...batch.matchAll(/<img\b[^>]*\/assets\/game\/sprites\//gi)].length;
+  if (canonical !== expected) failures.push(`${relative} has ${canonical}/${expected} canonical icons in ${startMarker}`);
+  if (/\/Factions\/picks\//i.test(batch)) failures.push(`${relative} retains legacy icons in ${startMarker}`);
+}
+
+validateCanonicalIconBatch('AllTrophies/index.html', 'Allegiances Trophies (41)', '<div class="shelementwhole">', 41);
+validateCanonicalIconBatch('TrophyPage/index.html', '<map name="AllegiancesTrophies-map">', '</map>', 41);
+
 console.log(`Routes: ${builtRoutes.size} built, ${legacyRoutes.size} legacy routes covered`);
 console.log(`Internal links: checked across ${builtFiles.length} pages`);
 console.log(`Known missing assets: ${currentMissing.length}`);

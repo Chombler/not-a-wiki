@@ -155,6 +155,776 @@
       "kind": "trophy",
       "entity": "demon-champion",
       "role": "icon"
+    },
+    {
+      "key": "buy-titan-upgrades-trophy",
+      "path": "assets/game/sprites/buy-titan-upgrades-trophy.png",
+      "sprite_name": "BuyTitanUpgradesTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1352,
+        "y": 1868,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "titan-champion",
+      "role": "icon"
+    },
+    {
+      "key": "buy-druid-upgrades-trophy",
+      "path": "assets/game/sprites/buy-druid-upgrades-trophy.png",
+      "sprite_name": "BuyDruidUpgradesTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1152,
+        "y": 1766,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "druid-champion",
+      "role": "icon"
+    },
+    {
+      "key": "buy-faceless-upgrades-trophy",
+      "path": "assets/game/sprites/buy-faceless-upgrades-trophy.png",
+      "sprite_name": "BuyFacelessUpgradesTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1252,
+        "y": 1766,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "faceless-champion",
+      "role": "icon"
+    },
+    {
+      "key": "buy-dwarven-upgrades-trophy",
+      "path": "assets/game/sprites/buy-dwarven-upgrades-trophy.png",
+      "sprite_name": "BuyDwarvenUpgradesTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1152,
+        "y": 1817,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "dwarven-champion",
+      "role": "icon"
+    },
+    {
+      "key": "buy-drow-upgrades-trophy",
+      "path": "assets/game/sprites/buy-drow-upgrades-trophy.png",
+      "sprite_name": "BuyDrowUpgradesTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1102,
+        "y": 1766,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "drow-champion",
+      "role": "icon"
+    },
+    {
+      "key": "buy-mercenary-upgrades-trophy",
+      "path": "assets/game/sprites/buy-mercenary-upgrades-trophy.png",
+      "sprite_name": "BuyMercenaryUpgradesTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1352,
+        "y": 1817,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "mercenary-champion",
+      "role": "icon"
+    },
+    {
+      "key": "buy-dragon-upgrades-trophy",
+      "path": "assets/game/sprites/buy-dragon-upgrades-trophy.png",
+      "sprite_name": "BuyDragonUpgradesTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1052,
+        "y": 1866,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "dragon-champion",
+      "role": "icon"
+    },
+    {
+      "key": "buy-archon-upgrades-trophy",
+      "path": "assets/game/sprites/buy-archon-upgrades-trophy.png",
+      "sprite_name": "BuyArchonUpgradesTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1002,
+        "y": 1762,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "archon-champion",
+      "role": "icon"
+    },
+    {
+      "key": "buy-djinn-upgrades-trophy",
+      "path": "assets/game/sprites/buy-djinn-upgrades-trophy.png",
+      "sprite_name": "BuyDjinnUpgradesTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1052,
+        "y": 1764,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "djinn-champion",
+      "role": "icon"
+    },
+    {
+      "key": "buy-makers-upgrades-trophy",
+      "path": "assets/game/sprites/buy-makers-upgrades-trophy.png",
+      "sprite_name": "BuyMakersUpgradesTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1352,
+        "y": 1766,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "makers-champion",
+      "role": "icon"
+    },
+    {
+      "key": "mercenary-oath",
+      "path": "assets/game/sprites/mercenary-oath.png",
+      "sprite_name": "MercenaryOath",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1303,
+        "y": 716,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "mercenary-oath",
+      "role": "icon"
+    },
+    {
+      "key": "fairy-grand-champion",
+      "path": "assets/game/sprites/fairy-grand-champion.png",
+      "sprite_name": "FairyGrandChampion",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1702,
+        "y": 1772,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "fairy-grand-champion",
+      "role": "icon"
+    },
+    {
+      "key": "elven-grand-champion",
+      "path": "assets/game/sprites/elven-grand-champion.png",
+      "sprite_name": "ElvenGrandChampion",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1652,
+        "y": 1822,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "elven-grand-champion",
+      "role": "icon"
+    },
+    {
+      "key": "angel-grand-champion",
+      "path": "assets/game/sprites/angel-grand-champion.png",
+      "sprite_name": "AngelGrandChampion",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 613,
+        "y": 987,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "angel-grand-champion",
+      "role": "icon"
+    },
+    {
+      "key": "goblin-grand-champion",
+      "path": "assets/game/sprites/goblin-grand-champion.png",
+      "sprite_name": "GoblinGrandChampion",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1752,
+        "y": 1772,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "goblin-grand-champion",
+      "role": "icon"
+    },
+    {
+      "key": "undead-grand-champion",
+      "path": "assets/game/sprites/undead-grand-champion.png",
+      "sprite_name": "UndeadGrandChampion",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1026,
+        "y": 144,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "undead-grand-champion",
+      "role": "icon"
+    },
+    {
+      "key": "demon-grand-champion",
+      "path": "assets/game/sprites/demon-grand-champion.png",
+      "sprite_name": "DemonGrandChampion",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1502,
+        "y": 1766,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "demon-grand-champion",
+      "role": "icon"
+    },
+    {
+      "key": "titan-grand-champion",
+      "path": "assets/game/sprites/titan-grand-champion.png",
+      "sprite_name": "TitanGrandChampion",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 976,
+        "y": 144,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "titan-grand-champion",
+      "role": "icon"
+    },
+    {
+      "key": "druid-grand-champion",
+      "path": "assets/game/sprites/druid-grand-champion.png",
+      "sprite_name": "DruidGrandChampion",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1652,
+        "y": 1771,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "druid-grand-champion",
+      "role": "icon"
+    },
+    {
+      "key": "faceless-grand-champion",
+      "path": "assets/game/sprites/faceless-grand-champion.png",
+      "sprite_name": "FacelessGrandChampion",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1604,
+        "y": 1873,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "faceless-grand-champion",
+      "role": "icon"
+    },
+    {
+      "key": "dwarven-grand-champion",
+      "path": "assets/game/sprites/dwarven-grand-champion.png",
+      "sprite_name": "DwarvenGrandChampion",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1602,
+        "y": 1822,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "dwarven-grand-champion",
+      "role": "icon"
+    },
+    {
+      "key": "drow-grand-champion",
+      "path": "assets/game/sprites/drow-grand-champion.png",
+      "sprite_name": "DrowGrandChampion",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1552,
+        "y": 1822,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "drow-grand-champion",
+      "role": "icon"
+    },
+    {
+      "key": "dragon-grand-champion",
+      "path": "assets/game/sprites/dragon-grand-champion.png",
+      "sprite_name": "DragonGrandChampion",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1602,
+        "y": 1771,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "dragon-grand-champion",
+      "role": "icon"
+    },
+    {
+      "key": "buy-fairy-upgrades-trophy2",
+      "path": "assets/game/sprites/buy-fairy-upgrades-trophy2.png",
+      "sprite_name": "BuyFairyUpgradesTrophy2",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1302,
+        "y": 1766,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "fairy-master",
+      "role": "icon"
+    },
+    {
+      "key": "buy-elven-upgrades-trophy2",
+      "path": "assets/game/sprites/buy-elven-upgrades-trophy2.png",
+      "sprite_name": "BuyElvenUpgradesTrophy2",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1202,
+        "y": 1817,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "elven-master",
+      "role": "icon"
+    },
+    {
+      "key": "buy-angel-upgrades-trophy2",
+      "path": "assets/game/sprites/buy-angel-upgrades-trophy2.png",
+      "sprite_name": "BuyAngelUpgradesTrophy2",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 902,
+        "y": 1882,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "angel-master",
+      "role": "icon"
+    },
+    {
+      "key": "buy-goblin-upgrades-trophy2",
+      "path": "assets/game/sprites/buy-goblin-upgrades-trophy2.png",
+      "sprite_name": "BuyGoblinUpgradesTrophy2",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1302,
+        "y": 1817,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "goblin-master",
+      "role": "icon"
+    },
+    {
+      "key": "buy-undead-upgrades-trophy2",
+      "path": "assets/game/sprites/buy-undead-upgrades-trophy2.png",
+      "sprite_name": "BuyUndeadUpgradesTrophy2",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1402,
+        "y": 1868,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "undead-master",
+      "role": "icon"
+    },
+    {
+      "key": "buy-demon-upgrades-trophy2",
+      "path": "assets/game/sprites/buy-demon-upgrades-trophy2.png",
+      "sprite_name": "BuyDemonUpgradesTrophy2",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1002,
+        "y": 1915,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "demon-master",
+      "role": "icon"
+    },
+    {
+      "key": "buy-titan-upgrades-trophy2",
+      "path": "assets/game/sprites/buy-titan-upgrades-trophy2.png",
+      "sprite_name": "BuyTitanUpgradesTrophy2",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1402,
+        "y": 1817,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "titan-master",
+      "role": "icon"
+    },
+    {
+      "key": "buy-druid-upgrades-trophy2",
+      "path": "assets/game/sprites/buy-druid-upgrades-trophy2.png",
+      "sprite_name": "BuyDruidUpgradesTrophy2",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1102,
+        "y": 1868,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "druid-master",
+      "role": "icon"
+    },
+    {
+      "key": "buy-faceless-upgrades-trophy2",
+      "path": "assets/game/sprites/buy-faceless-upgrades-trophy2.png",
+      "sprite_name": "BuyFacelessUpgradesTrophy2",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1202,
+        "y": 1868,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "faceless-master",
+      "role": "icon"
+    },
+    {
+      "key": "buy-dwarven-upgrades-trophy2",
+      "path": "assets/game/sprites/buy-dwarven-upgrades-trophy2.png",
+      "sprite_name": "BuyDwarvenUpgradesTrophy2",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1202,
+        "y": 1766,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "dwarven-master",
+      "role": "icon"
+    },
+    {
+      "key": "buy-drow-upgrades-trophy2",
+      "path": "assets/game/sprites/buy-drow-upgrades-trophy2.png",
+      "sprite_name": "BuyDrowUpgradesTrophy2",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1102,
+        "y": 1817,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "drow-master",
+      "role": "icon"
+    },
+    {
+      "key": "buy-dragon-upgrades-trophy2",
+      "path": "assets/game/sprites/buy-dragon-upgrades-trophy2.png",
+      "sprite_name": "BuyDragonUpgradesTrophy2",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1052,
+        "y": 1917,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "dragon-master",
+      "role": "icon"
     }
   ]
 }
