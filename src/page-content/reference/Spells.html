@@ -1,15 +1,42 @@
-<h6><img src="/realm/Factions/picks/SpellsTopPage.png"></h6>
-	<p>Spells are an active component of the game mechanics that boost production. They require mana to be cast and <b>only work while playing online</b>.</p>
-	<p>Their duration, mana cost and effect bonus can be altered by getting specific Faction, Heritage, Challenge, or Research upgrades. Different aspects of the spells can also be used in other upgrades (while a spell is active, the number of spell casts, based on mana produced, etc.).</p>
-	<p>The trick to use spells efficiently relies on finding the best setting: Which spell combination to cast, at what timing, with which automatic-casting tool, and where to set the contingency arrow. Like for upgrades, these choices can make a crucial difference for your game progress.</p>
-	<p>In later stages of the game you unlock more spells and spells can also have additional tiers. More information on Spell Tiers can be found <a target="_blank" href="/realm/SpellTiers/">here</a>.</p>
-	<hr>
-	<p><b>While offline</b>: Spells set on autocasting will gain "Active Time", but no spell will actually be cast. Instead, a generic non-specific spell will increase your "Spell Casts" entry in the stats.</p>
-	<p><b>Offline Activity Time Gain Formula</b>:<br/>(Requires Masterful Autocast)</p>
-	<p><b>(t * min(1, m * d / (n * c ^ 1.5)))</b>, where t is offline time, m is offline Mana Regeneration, d is spell duration, c is the spell's base mana cost (of tier 1), and n is number of spells set to autocast (not counting Tax Collection).</p>
+<h6><img src="/realm/Factions/picks/SpellsTopPage.png" alt="Spells"></h6>
+	<p>Spells consume Mana and apply their effects while online. Upgrades can change their cost, duration, tiers, activity time, and autocasting behavior.</p>
+	<p>For tier requirements and tier scaling, see <a href="/realm/SpellTiers/">Spell Tiers</a>.</p>
+
+	<h2 id="spell-mechanics">Spell mechanics</h2>
+	<table class="numtable">
+		<thead><tr><th>Term</th><th>Meaning</th></tr></thead>
+		<tbody>
+			<tr><td>Mana Regeneration</td><td>Mana generated per second, as displayed on the mana orb. Online regeneration stops when the mana pool reaches Maximum Mana.</td></tr>
+			<tr><td>Maximum Mana</td><td>The capacity of the mana pool. It also limits the regeneration value used by offline autocasting mana.</td></tr>
+			<tr><td>Spell activity time</td><td>Total time a spell has been active. Some upgrades and spell tiers use this statistic.</td></tr>
+			<tr><td>Autocasting</td><td>Casts selected spells online when its conditions are met. Offline time is calculated as statistics rather than simulated spell activations.</td></tr>
+		</tbody>
+	</table>
+
+	<h2 id="offline-mana-and-autocasting">Offline mana and autocasting</h2>
+	<p>Going offline applies two separate mana calculations:</p>
+	<ol>
+		<li><b>Mana pool refill:</b> your current mana increases at the displayed offline Mana Regeneration rate until it reaches Maximum Mana. Only the amount that fits in the pool is added to Mana Produced.</li>
+		<li><b>Autocasting mana:</b> owned autocasting upgrades credit additional Mana Produced for the entire offline period. This does not add spendable mana to the pool.</li>
+	</ol>
+	<p><b>Base offline autocasting mana per second:</b> min(Maximum Mana, offline Mana Regeneration) * P / 100, where P is the combined offline mana percentage from owned autocasting upgrades.</p>
+	<table class="numtable">
+		<thead><tr><th>Autocasting upgrade</th><th>Offline Mana Produced</th><th>Running total</th></tr></thead>
+		<tbody>
+			<tr><td>Automatic Casting</td><td>10% of the capped regeneration value</td><td>10%</td></tr>
+			<tr><td>Improved Autocasting</td><td>+15%</td><td>25%</td></tr>
+			<tr><td>Masterful Autocasting</td><td>+35%</td><td>60%</td></tr>
+			<tr><td>Planned Autocasting</td><td>+10%</td><td>70%</td></tr>
+			<tr><td>Efficient Autocasting</td><td>+10%</td><td>80%</td></tr>
+			<tr><td>Reverse Autocasting</td><td>+10%</td><td>90%</td></tr>
+			<tr><td>Tiered Autocasting</td><td>+10%</td><td>100%</td></tr>
+		</tbody>
+	</table>
+	<p>The percentage can be increased further by effects that make offline Mana Produced count more. Spells themselves are not activated offline; qualifying autocasting upgrades separately add spell casts and activity time to the appropriate statistics.</p>
+	<p><b>Offline activity time gain</b> (requires Masterful Autocasting): t * min(1, m * d / (n * c ^ 1.5)), where t is offline time, m is offline Mana Regeneration, d is spell duration, c is the tier-one base mana cost, and n is the number of spells set to autocast, excluding Tax Collection.</p>
 	<br style="clear: both" />
 	<a id="Spells"></a>
-	<hr>
+	<h2 id="spell-reference">Spell reference</h2>
 	<center>
 		<table class="imgtable">
 			<tr>
