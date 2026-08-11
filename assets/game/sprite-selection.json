@@ -251,6 +251,12 @@
       "kind": "trophy",
       "entity": "dragon-master",
       "role": "icon"
+    },
+    {
+      "sprite_name": "TheArchitectTrophy",
+      "kind": "trophy",
+      "entity": "the-architect",
+      "role": "icon"
     }
   ],
   "sprite_families": [
@@ -278,6 +284,7 @@
     { "sprite_prefix": "LabyrinthTrophy", "count": 22, "kind": "trophy", "entity_prefix": "labyrinth", "role": "icon" },
     { "sprite_prefix": "IronStrongholdTrophy", "count": 22, "kind": "trophy", "entity_prefix": "iron-stronghold", "role": "icon" },
     { "sprite_prefix": "AncientPyramidTrophy", "count": 22, "kind": "trophy", "entity_prefix": "ancient-pyramid", "role": "icon" },
-    { "sprite_prefix": "HallOfLegendsTrophy", "count": 22, "kind": "trophy", "entity_prefix": "hall-of-legends", "role": "icon" }
+    { "sprite_prefix": "HallOfLegendsTrophy", "count": 22, "kind": "trophy", "entity_prefix": "hall-of-legends", "role": "icon" },
+    { "sprite_prefix": "BuildBuildingTrophy", "count": 15, "kind": "trophy", "entity_prefix": "total-buildings", "role": "icon" }
   ]
 }

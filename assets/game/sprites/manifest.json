@@ -927,6 +927,28 @@
       "role": "icon"
     },
     {
+      "key": "the-architect-trophy",
+      "path": "assets/game/sprites/the-architect-trophy.png",
+      "sprite_name": "TheArchitectTrophy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 959,
+        "y": 1221,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "the-architect",
+      "role": "icon"
+    },
+    {
       "key": "farm-trophy1",
       "path": "assets/game/sprites/farm-trophy1.png",
       "sprite_name": "FarmTrophy1",
@@ -13024,6 +13046,336 @@
       },
       "kind": "trophy",
       "entity": "hall-of-legends-22",
+      "role": "icon"
+    },
+    {
+      "key": "build-building-trophy1",
+      "path": "assets/game/sprites/build-building-trophy1.png",
+      "sprite_name": "BuildBuildingTrophy1",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1809,
+        "y": 1052,
+        "width": 29,
+        "height": 44
+      },
+      "frame": {
+        "x": -10,
+        "y": -5,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "total-buildings-1",
+      "role": "icon"
+    },
+    {
+      "key": "build-building-trophy2",
+      "path": "assets/game/sprites/build-building-trophy2.png",
+      "sprite_name": "BuildBuildingTrophy2",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 2015,
+        "y": 970,
+        "width": 31,
+        "height": 44
+      },
+      "frame": {
+        "x": -10,
+        "y": -5,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "total-buildings-2",
+      "role": "icon"
+    },
+    {
+      "key": "build-building-trophy3",
+      "path": "assets/game/sprites/build-building-trophy3.png",
+      "sprite_name": "BuildBuildingTrophy3",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 2015,
+        "y": 1016,
+        "width": 31,
+        "height": 44
+      },
+      "frame": {
+        "x": -10,
+        "y": -5,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "total-buildings-3",
+      "role": "icon"
+    },
+    {
+      "key": "build-building-trophy4",
+      "path": "assets/game/sprites/build-building-trophy4.png",
+      "sprite_name": "BuildBuildingTrophy4",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1316,
+        "y": 752,
+        "width": 40,
+        "height": 45
+      },
+      "frame": {
+        "x": -10,
+        "y": -5,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "total-buildings-4",
+      "role": "icon"
+    },
+    {
+      "key": "build-building-trophy5",
+      "path": "assets/game/sprites/build-building-trophy5.png",
+      "sprite_name": "BuildBuildingTrophy5",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1814,
+        "y": 373,
+        "width": 48,
+        "height": 45
+      },
+      "frame": {
+        "x": -2,
+        "y": -5,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "total-buildings-5",
+      "role": "icon"
+    },
+    {
+      "key": "build-building-trophy6",
+      "path": "assets/game/sprites/build-building-trophy6.png",
+      "sprite_name": "BuildBuildingTrophy6",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 495,
+        "y": 512,
+        "width": 47,
+        "height": 44
+      },
+      "frame": {
+        "x": -1,
+        "y": -5,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "total-buildings-6",
+      "role": "icon"
+    },
+    {
+      "key": "build-building-trophy7",
+      "path": "assets/game/sprites/build-building-trophy7.png",
+      "sprite_name": "BuildBuildingTrophy7",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 691,
+        "y": 429,
+        "width": 47,
+        "height": 44
+      },
+      "frame": {
+        "x": -1,
+        "y": -5,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "total-buildings-7",
+      "role": "icon"
+    },
+    {
+      "key": "build-building-trophy8",
+      "path": "assets/game/sprites/build-building-trophy8.png",
+      "sprite_name": "BuildBuildingTrophy8",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 397,
+        "y": 555,
+        "width": 47,
+        "height": 44
+      },
+      "frame": {
+        "x": -1,
+        "y": -5,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "total-buildings-8",
+      "role": "icon"
+    },
+    {
+      "key": "build-building-trophy9",
+      "path": "assets/game/sprites/build-building-trophy9.png",
+      "sprite_name": "BuildBuildingTrophy9",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1979,
+        "y": 822,
+        "width": 49,
+        "height": 45
+      },
+      "frame": {
+        "x": -1,
+        "y": -5,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "total-buildings-9",
+      "role": "icon"
+    },
+    {
+      "key": "build-building-trophy10",
+      "path": "assets/game/sprites/build-building-trophy10.png",
+      "sprite_name": "BuildBuildingTrophy10",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1985,
+        "y": 1437,
+        "width": 49,
+        "height": 45
+      },
+      "frame": {
+        "x": -1,
+        "y": -5,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "total-buildings-10",
+      "role": "icon"
+    },
+    {
+      "key": "build-building-trophy11",
+      "path": "assets/game/sprites/build-building-trophy11.png",
+      "sprite_name": "BuildBuildingTrophy11",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1721,
+        "y": 1674,
+        "width": 47,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "total-buildings-11",
+      "role": "icon"
+    },
+    {
+      "key": "build-building-trophy12",
+      "path": "assets/game/sprites/build-building-trophy12.png",
+      "sprite_name": "BuildBuildingTrophy12",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1925,
+        "y": 1676,
+        "width": 47,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "total-buildings-12",
+      "role": "icon"
+    },
+    {
+      "key": "build-building-trophy13",
+      "path": "assets/game/sprites/build-building-trophy13.png",
+      "sprite_name": "BuildBuildingTrophy13",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 554,
+        "y": 277,
+        "width": 47,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "total-buildings-13",
+      "role": "icon"
+    },
+    {
+      "key": "build-building-trophy14",
+      "path": "assets/game/sprites/build-building-trophy14.png",
+      "sprite_name": "BuildBuildingTrophy14",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 106,
+        "y": 1752,
+        "width": 49,
+        "height": 50
+      },
+      "frame": {
+        "x": -1,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "total-buildings-14",
+      "role": "icon"
+    },
+    {
+      "key": "build-building-trophy15",
+      "path": "assets/game/sprites/build-building-trophy15.png",
+      "sprite_name": "BuildBuildingTrophy15",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 106,
+        "y": 1804,
+        "width": 49,
+        "height": 50
+      },
+      "frame": {
+        "x": -1,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "trophy",
+      "entity": "total-buildings-15",
       "role": "icon"
     }
   ]

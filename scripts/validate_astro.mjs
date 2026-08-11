@@ -101,7 +101,9 @@ function validateCanonicalIconBatch(relative, startMarker, endMarker, expected) 
 validateCanonicalIconBatch('AllTrophies/index.html', 'Allegiances Trophies (41)', '<div class="shelementwhole">', 41);
 validateCanonicalIconBatch('TrophyPage/index.html', '<map name="AllegiancesTrophies-map">', '</map>', 41);
 validateCanonicalIconBatch('AllTrophies/index.html', 'Building Trophies (566)', 'Total Buildings (16)', 550);
-validateCanonicalIconBatch('TrophyPage/index.html', '<map name="BuildingTrophies-map">', '<p><img src=&quot;/not-a-wiki/Factions/picks/VillageGrinder.png', 550);
+validateCanonicalIconBatch('TrophyPage/index.html', '<map name="BuildingTrophies-map">', '<img src=&quot;/not-a-wiki/assets/game/sprites/build-building-trophy1.png', 550);
+validateCanonicalIconBatch('AllTrophies/index.html', 'Total Buildings (16)', '\n\t\t\t\t\t</div>', 16);
+validateCanonicalIconBatch('TrophyPage/index.html', '<img src=&quot;/not-a-wiki/assets/game/sprites/build-building-trophy1.png', '</map>', 16);
 
 console.log(`Routes: ${builtRoutes.size} built, ${legacyRoutes.size} legacy routes covered`);
 console.log(`Internal links: checked across ${builtFiles.length} pages`);
