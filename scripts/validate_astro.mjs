@@ -36,6 +36,12 @@ for (const route of legacyRoutes) if (!builtRoutes.has(route)) failures.push(`Mi
 const missingAssets = new Set();
 for (const file of builtFiles) {
   const html = fs.readFileSync(file, 'utf8').replace(/<!--[\s\S]*?-->/g, '');
+  for (const icon of html.matchAll(/<img\b[^>]*\/assets\/game\/sprites\/(?!black-gold-trim\.png)[^>]*>/gi)) {
+    const prefix = html.slice(Math.max(0, icon.index - 80), icon.index);
+    if (!/<span class="game-icon-frame">\s*$/.test(prefix)) {
+      failures.push(`${path.relative(output, file)} contains an unframed canonical game icon`);
+    }
+  }
   if (/<area\b(?:(?!>).)*\b(?:data-)?research=(["'])(?:(?!\1).)*<table/is.test(html)) {
     failures.push(`${path.relative(output, file)} contains table markup inside an image-map tooltip`);
   }
