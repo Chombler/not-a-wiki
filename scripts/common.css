@@ -108,6 +108,46 @@ a.tooltips {
     outline-offset: 3px;
 }
 
+.trophy-text-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.trophy-list-section {
+  border: 1px solid var(--line);
+  border-radius: 0.35rem;
+  background: var(--panel-bg);
+}
+
+.trophy-list-section > summary {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.trophy-list-entries {
+  padding: 0 1rem 1rem;
+}
+
+.trophy-entry {
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.trophy-entry-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0;
+}
+
+.art-crow-alignments > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.4rem 0 0.75rem;
+}
+
 @media (max-width: 520px) {
     .trophy-drawer,
     .trophy-grid-section {

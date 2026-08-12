@@ -1,0 +1,437 @@
+# Canonical, human-authored trophy records. Both trophy pages render this file.
+category: "magic"
+label: "Magic Trophies"
+order: 3
+trophies:
+  - id: "holy-frenzy-trophy"
+    name: "Holy Frenzy"
+    icon: "holy-frenzy-trophy.png"
+    body: |-
+      <p><b>Requirements</b>: A2+, within a single Reincarnation, have a combined activity time of at least 1 day from Holy Light and Blood Frenzy.</p>
+      <p><b>Cost</b>: 100 Dc (1e35)</p>
+      <p><b>Effect</b>: While Blood Frenzy or Holy Light are active, increase the production of all buildings.</p>
+      <p><b>Formula</b>: (250 * (1 + T) ^ 2)%, where T is the higher active tier of Blood Frenzy or Holy Light.</p>
+      <p><b>Effect (A4+ only)</b>: Also multiplicatively increase Faction Coin find chance by 500% while playing as any Good or Evil faction.</p>
+  - id: "mana-upgrade1"
+    name: "Mana Droplet"
+    icon: "mana-upgrade1.png"
+    body: |-
+      <p><b>Requirement</b>: Produce 200 Mana.</p>
+      <p><b>Cost</b>: 10,000</p>
+      <p><b>Effect</b>: Increase Mana Regeneration by +2.</p>
+  - id: "mana-upgrade2"
+    name: "Mana Rain"
+    icon: "mana-upgrade2.png"
+    body: |-
+      <p><b>Requirement</b>: Produce 2,000 Mana.</p>
+      <p><b>Cost</b>: 20 M (2e7)</p>
+      <p><b>Effect</b>: Increase Mana Regeneration by +2.</p>
+  - id: "mana-upgrade3"
+    name: "Mana Surge"
+    icon: "mana-upgrade3.png"
+    body: |-
+      <p><b>Requirement</b>: Produce 5,000 Mana.</p>
+      <p><b>Cost</b>: 30 B (3e10)</p>
+      <p><b>Effect</b>: Increase Mana Regeneration by +2.</p>
+  - id: "mana-upgrade4"
+    name: "Mana Fountain"
+    icon: "mana-upgrade4.png"
+    body: |-
+      <p><b>Requirement</b>: Produce 10,000 Mana.</p>
+      <p><b>Cost</b>: 40 T (4e13)</p>
+      <p><b>Effect</b>: Increase Mana Regeneration by +2.</p>
+  - id: "mana-upgrade5"
+    name: "Mana Shower"
+    icon: "mana-upgrade5.png"
+    body: |-
+      <p><b>Requirement</b>: Produce 20,000 Mana.</p>
+      <p><b>Cost</b>: 50 Qa (5e16)</p>
+      <p><b>Effect</b>: Increase Mana Regeneration by +2.</p>
+  - id: "mana-upgrade6"
+    name: "Mana Stream"
+    icon: "mana-upgrade6.png"
+    body: |-
+      <p><b>Requirement</b>: Produce 100,000 Mana.</p>
+      <p><b>Cost</b>: 60 Qi (6e19)</p>
+      <p><b>Effect</b>: Increase Mana Regeneration by +2.</p>
+  - id: "mana-upgrade7"
+    name: "Mana Flood"
+    icon: "mana-upgrade7.png"
+    body: |-
+      <p><b>Requirement</b>: Produce 200,000 Mana.</p>
+      <p><b>Cost</b>: 70 Sx (7e22)</p>
+      <p><b>Effect</b>: Increase Mana Regeneration by +2.</p>
+  - id: "mana-upgrade8"
+    name: "Mana Squall"
+    icon: "mana-upgrade8.png"
+    body: |-
+      <p><b>Requirement</b>: Produce 10 M (1e7) Mana.</p>
+      <p><b>Cost</b>: 8e25 coins</p>
+      <p><b>Effect</b>: Increase Mana Regeneration by +2.</p>
+  - id: "mana-upgrade9"
+    name: "Mana Storm"
+    icon: "mana-upgrade9.png"
+    body: |-
+      <p><b>Requirement</b>: Produce 200 M (2e8) Mana.</p>
+      <p><b>Cost</b>: 9e28 coins</p>
+      <p><b>Effect</b>: Increase Mana Regeneration by +2.</p>
+  - id: "mana-upgrade10"
+    name: "Mana Wave"
+    icon: "mana-upgrade10.png"
+    body: |-
+      <p><b>Requirement</b>: A1+, R40+, produce 20 B (2e10) Mana.</p>
+      <p><b>Cost</b>: 1e30 gems</p>
+      <p><b>Effect</b>: Increase Mana Regeneration by +250.</p>
+  - id: "mana-upgrade11"
+    name: "Mana River"
+    icon: "mana-upgrade11.png"
+    body: |-
+      <p><b>Requirement</b>: A1+, R40+, produce 2 T (2e12) Mana.</p>
+      <p><b>Cost</b>: 1e40 gems</p>
+      <p><b>Effect</b>: Increase Mana Regeneration by +250.</p>
+  - id: "mana-upgrade12"
+    name: "Mana Lake"
+    icon: "mana-upgrade12.png"
+    body: |-
+      <p><b>Requirement</b>: A1+, R40+, produce 200 T (2e14) Mana.</p>
+      <p><b>Cost</b>: 1e50 gems</p>
+      <p><b>Effect</b>: Increase Mana Regeneration by +250.</p>
+  - id: "mana-upgrade13"
+    name: "Mana Sea"
+    icon: "mana-upgrade13.png"
+    body: |-
+      <p><b>Requirement</b>: A1+, R40+, produce 20 Qa (2e16) Mana.</p>
+      <p><b>Cost</b>: 1e125 gems</p>
+      <p><b>Effect</b>: Increase Mana Regeneration by +250.</p>
+  - id: "mana-upgrade14"
+    name: "Mana Ocean"
+    icon: "mana-upgrade14.png"
+    body: |-
+      <p><b>Requirement</b>: A1+, R40+, produce 2 Qi (2e18) Mana.</p>
+      <p><b>Cost</b>: 1e180 gems</p>
+      <p><b>Effect</b>: Increase Mana Regeneration by +250.</p>
+  - id: "mana-upgrade15"
+    name: "Mana Spring"
+    icon: "mana-upgrade15.png"
+    body: |-
+      <p><b>Requirement</b>: A2+, R100+, produce 20 Sx (2e22) Mana.</p>
+      <p><b>Cost</b>: 1e24 Faction Coins</p>
+      <p><b>Effect</b>: Increase Mana Regeneration by +250.</p>
+  - id: "mana-upgrade16"
+    name: "Mana Falls"
+    icon: "mana-upgrade16.png"
+    body: |-
+      <p><b>Requirement</b>: A2+, R100+, produce 200 Sp (2e26) Mana.</p>
+      <p><b>Cost</b>: 1e130 Faction Coins</p>
+      <p><b>Effect</b>: Increase Mana Regeneration by +250.</p>
+  - id: "cast-spell-trophy1"
+    name: "Magic User"
+    icon: "cast-spell-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: 10 spell casts in a single game.</p>
+  - id: "cast-spell-trophy2"
+    name: "Magic Abuser"
+    icon: "cast-spell-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: 100 spell casts in a single game.</p>
+  - id: "cast-spell-trophy3"
+    name: "Spell Prodigy"
+    icon: "cast-spell-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: 500 spells casts in a single game.</p>
+  - id: "cast-spell-trophy4"
+    name: "Mana Leaker"
+    icon: "cast-spell-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: 1,000 spell casts in a single game.</p>
+  - id: "cast-spell-trophy5"
+    name: "Mana Eraser"
+    icon: "cast-spell-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: 2,000 spell casts in a single game.</p>
+  - id: "cast-spell-trophy6"
+    name: "Autocaster"
+    icon: "cast-spell-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: 5,000 spell casts in a single game.</p>
+  - id: "cast-spell-trophy7"
+    name: "Spell Spammer"
+    icon: "cast-spell-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: 20,000 spell casts in a single game.</p>
+  - id: "cast-spell-trophy8"
+    name: "Mana Annihilator"
+    icon: "cast-spell-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: 50,000 spell casts in a single game.</p>
+  - id: "cast-spell-trophy9"
+    name: "Master Channeler"
+    icon: "cast-spell-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: 100,000 spell casts in a single game.</p>
+  - id: "cast-spell-trophy10"
+    name: "Caster Supreme"
+    icon: "cast-spell-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: 200,000 spell casts in a single game.</p>
+  - id: "cast-spell-trophy11"
+    name: "Spell Superiority"
+    icon: "cast-spell-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: 500,000 spell casts in a single game.</p>
+  - id: "cast-spell-trophy12"
+    name: "Massive Autocaster"
+    icon: "cast-spell-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: 1 M (1e6) spell casts in a single game.</p>
+  - id: "cast-spell-trophy13"
+    name: "Spell Weaver"
+    icon: "cast-spell-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: 50 M (5e7) spell casts in a single game.</p>
+  - id: "cast-spell-trophy14"
+    name: "Archwizard"
+    icon: "cast-spell-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: 1 B (1e9) spell casts in a single game.</p>
+  - id: "cast-spell-trophy15"
+    name: "Spell Master"
+    icon: "cast-spell-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Cast 50 T (5e13) spells in a single game.</p>
+  - id: "cast-spell-trophy16"
+    name: "Spell Grinder"
+    icon: "cast-spell-trophy16.png"
+    body: |-
+      <p><b>Requirement</b>: Cast 10 Qa (1e16) spells in a single game.</p>
+  - id: "autocast-upgrade"
+    name: "Automatic Casting"
+    icon: "autocast-upgrade.png"
+    body: |-
+      <p><b>Requirement</b>: Reach 50,000 Mana produced in this Reincarnation and purchase Automatic Casting.</p>
+      <p><b>Cost</b>: 100 B (1e11)</p>
+      <p><b>Effect</b>: Allows autocasting of spells. To activate it, use the buttons in the spell's tooltip or by CTRL+Clicking them. If you set a spell in Autocast mode, it will be fired automatically as soon as you have enough mana. If you have multiple spells in Autocast mode, the cheapest will be cast first. Later in the game, you will unlock more Autocasting options which will allow you to better manage your spells while idle.</p>
+      <p><b>Effect</b>: While offline, spells are not cast. Instead, increase your Mana produced amount by 10% of your Mana Regeneration per second.</p>
+  - id: "improved-autocast-upgrade"
+    name: "Improved Autocasting"
+    icon: "improved-autocast-upgrade.png"
+    body: |-
+      <p><b>Requirement</b>: 2 M (2e6) Mana Produced (Total this R)</p>
+      <p><b>Cost</b>: 200 Qi (2e20)</p>
+      <p><b>Effect</b>: Increases mana regeneration by 5%.</p>
+      <p><b>Effect</b>: While offline, increases mana produced amount by an additional 15% of your mana regeneration per second.</p>
+  - id: "masterful-autocast-upgrade"
+    name: "Masterful Autocasting"
+    icon: "masterful-autocast-upgrade.png"
+    body: |-
+      <p><b>Requirement</b>: 6 M (6e6) Mana Produced (Total this R)</p>
+      <p><b>Cost</b>: 300 Oc (3e29)</p>
+      <p><b>Effect</b>: Increases mana regeneration by 10%.</p>
+      <p><b>Effect</b>: Only while offline, increases mana produced amount by an additional 35% of your mana regeneration per second and increase Activity Time for spell set to autocast based on their duration, cost and your mana regeneration.</p>
+  - id: "priority-autocast-upgrade"
+    name: "Priority Autocasting"
+    icon: "priority-autocast-upgrade.png"
+    body: |-
+      <p><b>Requirement</b>: 12 M (1.2e7) Mana Produced (Total this R)</p>
+      <p><b>Cost</b>: 400 Ud (4e38)</p>
+      <p><b>Effect</b>: Allows you to prioritize the order of spell casting. Spells with lower priority will be cast only if the higher priority spells are already active.</p>
+      <p><b>Effect</b>: Only while offline, improves spell cast amount by 1 per minute.</p>
+  - id: "contingency-autocast-upgrade"
+    name: "Contingency Autocasting"
+    icon: "contingency-autocast-upgrade.png"
+    body: |-
+      <p><b>Requirement</b>: 20 M (2e7) Mana Produced (Total this R)</p>
+      <p><b>Cost</b>: 500 Qad (5e47)</p>
+      <p><b>Effect</b>: Allows you to set a minimum amount of mana before starting to Autocast.</p>
+      <p><b>Note</b>: You can activate the Contingency Autocast by CTRL+Clicking the Mana Bowl/Mana Bar. A golden arrow will appear. By sliding it you will set a minimum amount of mana below which spells won't be cast. Once your mana reaches the threshold, spells will follow the priority rules. The contingency loop will break when you can't cast a spell, at which point the cycle will reset. CTRL+Clicking again to disable Contingency Autocasting.</p>
+      <p><b>Effect</b>: Only while offline, increase your spells cast amount by an additional 2 per minute.</p>
+  - id: "planned-autocast-upgrade"
+    name: "Planned Autocasting"
+    icon: "planned-autocast-upgrade.png"
+    body: |-
+      <p><b>Requirement</b>: 30 M (3e7) Mana Produced (Total this R)</p>
+      <p><b>Cost</b>: 600 Spd (6e56)</p>
+      <p><b>Effect</b>: Allows you to select Primary and Secondary spells to work with your contingency settings.</p>
+      <p><b>Effect</b>: Primary spells (set with the silver icon in the spell tooltip) or (Set with CTRL+Click) will fire once your contingency has reached its threshold. While these are active, Secondary spells (set with the gold icon in the spell tooltip) or (Set with SHIFT+Click) will be fired as soon as you have enough mana, as long as the primary spells are ALL still active. If there are no secondary spells selected, the contingency settings will be the same as without Planned Autocasting. If there are no primary spells selected, spell casting will work the same as Priority Autocasting.</p>
+      <p><b>Effect</b>: Only while offline, increases mana produced by an additional 10% of your mana regeneration per second and your spells cast amount by an additional 2 per minute.</p>
+  - id: "efficient-autocast-upgrade"
+    name: "Efficient Autocasting"
+    icon: "efficient-autocast-upgrade.png"
+    body: |-
+      <p><b>Requirement</b>: 50 M (5e7) Mana Produced (Total this R)</p>
+      <p><b>Cost</b>: 700 Vg (7e65)</p>
+      <p><b>Effect</b>: Allows you to select Independent Spells (set with the bronze icon in the spell tooltip) or (Set with CTRL+SHIFT+Click) to work outside of contingency settings. These spells disregard your contingency rules and are cast as soon as you have enough mana for them.</p>
+      <p><b>Effect</b>: Only while offline, increases mana produced amount by an additional 10% of your mana regen per second and spell cast amount by 2 per minute.</p>
+  - id: "reverse-autocast-upgrade"
+    name: "Reverse Autocasting"
+    icon: "reverse-autocast-upgrade.png"
+    body: |-
+      <p><b>Requirement</b>: R40+, 150 M (1.5e8) Mana Produced (Total this R)</p>
+      <p><b>Cost</b>: 3.2 Dc (3.2e33)</p>
+      <p><b>Effect</b>: Allows you to manually reset spells with a 2 second cooldown per spell.</p>
+      <p><b>Note</b>: Can not reset spells with a fixed duration.</p>
+      <p><b>Note</b>: Only while offline, increase your mana produced amount by an additional 10% of your Mana Regeneration per second, and your spells cast amount multiplicatively based on your offline Mana Regeneration.</p>
+      <p><b>Formula</b>: (500 * ln(1 + x))%, where x is offline Mana Regeneration (mana/s).</p>
+  - id: "tiered-autocast-upgrade"
+    name: "Tiered Autocasting"
+    icon: "tiered-autocast-upgrade.png"
+    body: |-
+      <p><b>Requirement</b>: A1+, R42+, unlock and purchase Tiered Autocasting after Efficient Autocasting and its prerequisite Research upgrade.</p>
+      <p><b>Cost</b>: 100 Qid (1e50)</p>
+      <p><b>Effect</b>: Allows you to set the maximum tier you wish to autocast each spell to. In the spell tooltip, use the diamond icon to change its mode until you get to the desired maximum tier number. Spells will still follow their previous priority rules.</p>
+      <p><b>Effect</b>: Only while offline, increase Mana produced by 10% of your Mana Regeneration per second and multiplicatively increase spells cast based on offline Mana Regeneration.</p>
+      <p><b>Formula</b>: (500 * ln(1 + x))%, where x is offline Mana Regeneration (mana/s).</p>
+  - id: "arcane-brilliance-trophy1"
+    name: "Arcane Brilliance 1"
+    icon: "arcane-brilliance-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Unlock tier 2 for all spells</p>
+      <p><b>Effect</b>: Arcane Brilliance trophies unlock a 1e50-coin upgrade that multiplicatively increases Maximum Mana by (2 * A * max(0, U + 1 - S))%, where A is active spells, U is the highest Arcane Brilliance tier unlocked, and S is Ascensions.</p>
+  - id: "arcane-brilliance-trophy2"
+    name: "Arcane Brilliance 2"
+    icon: "arcane-brilliance-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Unlock tier 3 for all spells</p>
+  - id: "arcane-brilliance-trophy3"
+    name: "Arcane Brilliance 3"
+    icon: "arcane-brilliance-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Unlock tier 4 for all spells</p>
+  - id: "arcane-brilliance-trophy4"
+    name: "Arcane Brilliance 4"
+    icon: "arcane-brilliance-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Unlock tier 5 for all spells</p>
+  - id: "coin-pillage-trophy"
+    name: "Coin Pillage"
+    icon: "coin-pillage-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Cast 120 Tax Collections in less than 5 seconds.</p>
+      <p><b>Cost</b>: 1 Dc (1e33), A1+ Free</p>
+      <p><b>Effect</b>: Tax Collection also finds 30 seconds worth of Faction Coins.</p>
+      <p><b>Note</b>: Default Spell</p>
+  - id: "fairy-choir-trophy"
+    name: "Fairy Choir"
+    icon: "fairy-choir-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Cast Fairy Chanting while having 50 or more assistants.</p>
+      <p><b>Cost</b>: 1 M (1e6)</p>
+      <p><b>Effect</b>: Fairy Chanting triples your assistants for its duration.</p>
+      <p><b>Note</b>: Fairy Spell</p>
+  - id: "sun-blessing-trophy"
+    name: "Sun Blessing"
+    icon: "sun-blessing-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Cast Moon Blessing while having at least 5 Elven Luck triggers in this Era.</p>
+      <p><b>Cost</b>: 1 M (1e6)</p>
+      <p><b>Effect</b>: The treasure is autoclicked 15 times per second while Moon Blessing is active.</p>
+      <p><b>Note</b>: Elven Spell</p>
+  - id: "gods-rest-trophy"
+    name: "God's Rest"
+    icon: "gods-rest-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Cast God's Hand while having at least 1,500 Maximum Mana and 75 Mana Regeneration.</p>
+      <p><b>Cost</b>: 1 M (1e6)</p>
+      <p><b>Effect</b>: While God's Hand is active, each other spell cast gives random Faction Coins based on your Faction Coin find chance.</p>
+      <p><b>Formula</b>: floor(x ^ 1.1) Faction Coins, where x is Faction Coin find chance.</p>
+      <p><b>Note</b>: Angel Spell</p>
+  - id: "greed-drive-trophy"
+    name: "Greed Drive"
+    icon: "greed-drive-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Cast Goblin's Greed while having at least 100 Royal Exchanges purchased.</p>
+      <p><b>Cost</b>: 1 M (1e6)</p>
+      <p><b>Effect</b>: While Goblin's Greed is active, Tax Collection costs 10% less Mana.</p>
+      <p><b>Note</b>: Goblin Spell</p>
+  - id: "true-night-trophy"
+    name: "True Night"
+    icon: "true-night-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Cast Night Time while having at least 20,000% Offline production.</p>
+      <p><b>Cost</b>: 1 M (1e6)</p>
+      <p><b>Effect</b>: Increase Night Time's assistant-production bonus based on its activity time in this Reincarnation and make Offline time count 50% more.</p>
+      <p><b>Formula</b>: (0.4 * x ^ 0.6)%, where x is Night Time activity time in this Reincarnation, in seconds.</p>
+      <p><b>Note</b>: Undead Spell</p>
+  - id: "hell-rush-trophy"
+    name: "Hell Rush"
+    icon: "hell-rush-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Cast Hellfire Blast in the first 60 seconds of playtime</p>
+      <p><b>Cost</b>: 1 M (1e6)</p>
+      <p><b>Effect</b>: Hellfire Blast also boost Halls of Legends</p>
+      <p><b>Note</b>: Demon Spell.</p>
+  - id: "lightning-storm-trophy"
+    name: "Lightning Storm"
+    icon: "lightning-storm-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Cast Lightning Strike 100 times in a single game.</p>
+      <p><b>Cost</b>: 1e35 coins</p>
+      <p><b>Effect</b>: Increase Lightning Strike multiplier by 50%.</p>
+      <p><b>Note</b>: Titan Spell</p>
+  - id: "halls-of-balance-trophy"
+    name: "Halls of Balance"
+    icon: "halls-of-balance-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Have Grand Balance affect Hall of Legends</p>
+      <p><b>Cost</b>: 1e35 coins</p>
+      <p><b>Effect</b>: Increase Grand Balance duration by 4 seconds and lower its cost by 200 mana</p>
+      <p><b>Note</b>: Druid Spell</p>
+      <p><b>Tip</b>: Buy at least 1 of everything and buy 0 Hall of Legends.</p>
+  - id: "faceless-overmind-trophy"
+    name: "Faceless Overmind"
+    icon: "faceless-overmind-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Affiliate with the Faceless 5 times in a row. (Buy Faceless Trade Treaty 5x in a row)</p>
+      <p><b>Cost</b>: 1e35 coins</p>
+      <p><b>Effect</b>: Increase Brainwave multiplier by 50%.</p>
+      <p><b>Note</b>: Faceless Spell</p>
+  - id: "minedwarf-trophy"
+    name: "Minedwarf"
+    icon: "minedwarf-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Find 30,000 Faction Coins from Diamond Pickaxe in a single game.</p>
+      <p><b>Cost</b>: 100 Sxd (1e53), A1+ Free</p>
+      <p><b>Effect</b>: Increase Diamond Pickaxe's bonus to Faction Coin find chance by 100%.</p>
+      <p><b>Note</b>: Dwarven Spell</p>
+  - id: "perfect-combo-trophy"
+    name: "Perfect Combo"
+    icon: "perfect-combo-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Cast a chain of 50 Combo Strikes in a single Era. The chain is interrupted by casting a different spell.</p>
+      <p><b>Cost</b>: 100 Sxd (1e53), A1+ Free</p>
+      <p><b>Effect</b>: Increase the Combo Strike counter based on your longest Era in this Reincarnation.</p>
+      <p><b>Formula</b>: +2.5 * x ^ 0.5 Combo Strike count, where x is your longest Era in this Reincarnation, in seconds.</p>
+      <p><b>Note</b>: Drow Spell</p>
+  - id: "dragons-roar-trophy"
+    name: "Dragon's Roar"
+    icon: "dragons-roar-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Cast Dragon's Breath while having at least 5 other active spells.</p>
+      <p><b>Cost</b>: 1.0e45</p>
+      <p><b>Effect</b>: Dragon's Breath multiplicatively increases Faction Coin find chance based on its duration.</p>
+      <p><b>Formula</b>: (6 * x ^ 0.6)%, where x is Dragon's Breath duration in seconds.</p>
+  - id: "chrono-loading-trophy"
+    name: "Chrono Loading"
+    icon: "chrono-loading-trophy.png"
+    body: |-
+      <p><b>Requirements</b>: R125+, Cast Precognition with at least 100 Qa (1e17) mana regeneration.</p>
+      <p><b>Cost</b>: 10 Octg (1e118)</p>
+      <p><b>Effect</b>: A fraction of Precognition duration is added to time spent in this Era.</p>
+      <p><b>Effect</b>: Scale off invisible spell duration modifiers.</p>
+      <p><b>Formula</b>: 150 * ln(1 + x / 60) ^ 2 seconds, where x is Precognition duration in seconds.</p>
+      <p><b>Note</b>: Precognition raises regen itself. Make sure that you have 100 Qa (1e17) with it not active</p>
+  - id: "persistent-entropy-trophy"
+    name: "Persistent Entropy"
+    icon: "persistent-entropy-trophy.png"
+    body: |-
+      <p><b>Requirements</b>: R125+, Cast Limited Wish 100 times within 30 minutes of a new Era.</p>
+      <p><b>Cost</b>: 10 Octg (1e118)</p>
+      <p><b>Effect</b>: Give Limited Wish a headstart of 500 casts.</p>
+  - id: "reality-crater-trophy"
+    name: "Reality Crater"
+    icon: "reality-crater-trophy.png"
+    body: |-
+      <p><b>Requirements</b>: R125+, Cast Infinite Spiral with at least 10 excavation resets this Era.</p>
+      <p><b>Cost</b>: 10 Octg (1e118)</p>
+      <p><b>Effect</b>: Infinite Spiral also reduces excavation cost multiplier based on assistants owned.</p>
+      <p><b>Formula</b>: 0.0005 * ln(1 + x), where x is assistants owned.</p>

@@ -1,0 +1,2836 @@
+# Canonical, human-authored trophy records. Both trophy pages render this file.
+category: "building"
+label: "Building Trophies"
+order: 4
+trophies:
+  - id: "farm-trophy1"
+    name: "1 Farm"
+    icon: "farm-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Build 1 Farm in a single game.</p>
+  - id: "farm-trophy2"
+    name: "50 Farm"
+    icon: "farm-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Build 50 Farms in a single game.</p>
+  - id: "farm-trophy3"
+    name: "100 Farm"
+    icon: "farm-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Build 100 Farms in a single game.</p>
+  - id: "farm-trophy4"
+    name: "150 Farm"
+    icon: "farm-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Build 150 Farms in a single game.</p>
+  - id: "farm-trophy5"
+    name: "200 Farm"
+    icon: "farm-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Build 200 Farms in a single game.</p>
+  - id: "farm-trophy6"
+    name: "300 Farm"
+    icon: "farm-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Build 300 Farms in a single game.</p>
+  - id: "farm-trophy7"
+    name: "400 Farm"
+    icon: "farm-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Build 400 Farms in a single game.</p>
+  - id: "farm-trophy8"
+    name: "500 Farm"
+    icon: "farm-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Build 500 Farms in a single game.</p>
+  - id: "farm-trophy9"
+    name: "600 Farm"
+    icon: "farm-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Build 600 Farms in a single game.</p>
+  - id: "farm-trophy10"
+    name: "700 Farm"
+    icon: "farm-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Build 700 Farms in a single game.</p>
+  - id: "farm-trophy11"
+    name: "800 Farm"
+    icon: "farm-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Build 800 Farms in a single game.</p>
+  - id: "farm-trophy12"
+    name: "900 Farm"
+    icon: "farm-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: Build 900 Farms in a single game.</p>
+  - id: "farm-trophy13"
+    name: "1000 Farm"
+    icon: "farm-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: Build 1000 Farms in a single game.</p>
+  - id: "farm-trophy14"
+    name: "1500 Farm"
+    icon: "farm-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: Build 1500 Farms in a single game.</p>
+  - id: "farm-trophy15"
+    name: "2000 Farm"
+    icon: "farm-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Build 2000 Farms in a single game.</p>
+  - id: "farm-trophy16"
+    name: "2500 Farm"
+    icon: "farm-trophy16.png"
+    body: |-
+      <p><b>Requirement</b>: Build 2500 Farms in a single game.</p>
+  - id: "farm-trophy17"
+    name: "3000 Farm"
+    icon: "farm-trophy17.png"
+    body: |-
+      <p><b>Requirement</b>: Build 3000 Farms in a single game.</p>
+  - id: "farm-trophy18"
+    name: "3500 Farm"
+    icon: "farm-trophy18.png"
+    body: |-
+      <p><b>Requirement</b>: Build 3500 Farms in a single game.</p>
+  - id: "farm-trophy19"
+    name: "5000 Farm"
+    icon: "farm-trophy19.png"
+    body: |-
+      <p><b>Requirement</b>: Build 5000 Farms in a single game.</p>
+  - id: "farm-trophy20"
+    name: "7500 Farm"
+    icon: "farm-trophy20.png"
+    body: |-
+      <p><b>Requirement</b>: Build 7500 Farms in a single game.</p>
+  - id: "farm-trophy21"
+    name: "12000 Farm"
+    icon: "farm-trophy21.png"
+    body: |-
+      <p><b>Requirement</b>: Build 12000 Farms in a single game.</p>
+  - id: "farm-trophy22"
+    name: "20000 Farm"
+    icon: "farm-trophy22.png"
+    body: |-
+      <p><b>Requirement</b>: Build 20000 Farms in a single game.</p>
+  - id: "inn-trophy1"
+    name: "1 Inn"
+    icon: "inn-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1 Inn</p>
+  - id: "inn-trophy2"
+    name: "50 Inns"
+    icon: "inn-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 50 Inns</p>
+  - id: "inn-trophy3"
+    name: "100 Inns"
+    icon: "inn-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 100 Inns</p>
+  - id: "inn-trophy4"
+    name: "150 Inn"
+    icon: "inn-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 150 Inns</p>
+  - id: "inn-trophy5"
+    name: "200 Inns"
+    icon: "inn-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 200 Inns</p>
+  - id: "inn-trophy6"
+    name: "300 Inns"
+    icon: "inn-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 300 Inns</p>
+  - id: "inn-trophy7"
+    name: "400 Inns"
+    icon: "inn-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 400 Inns</p>
+  - id: "inn-trophy8"
+    name: "500 Inns"
+    icon: "inn-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 500 Inns</p>
+  - id: "inn-trophy9"
+    name: "600 Inns"
+    icon: "inn-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 600 Inns</p>
+  - id: "inn-trophy10"
+    name: "700 Inns"
+    icon: "inn-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 700 Inns</p>
+  - id: "inn-trophy11"
+    name: "800 Inns"
+    icon: "inn-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 800 Inns</p>
+  - id: "inn-trophy12"
+    name: "900 Inns"
+    icon: "inn-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 900 Inns</p>
+  - id: "inn-trophy13"
+    name: "1000 Inns"
+    icon: "inn-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1000 Inns</p>
+  - id: "inn-trophy14"
+    name: "1500 Inns"
+    icon: "inn-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1500 Inns</p>
+  - id: "inn-trophy15"
+    name: "2000 Inns"
+    icon: "inn-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2000 Inns</p>
+  - id: "inn-trophy16"
+    name: "2500 Inns"
+    icon: "inn-trophy16.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2500 Inns</p>
+  - id: "inn-trophy17"
+    name: "3000 Inns"
+    icon: "inn-trophy17.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3000 Inns</p>
+  - id: "inn-trophy18"
+    name: "3500 Inns"
+    icon: "inn-trophy18.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3500 Inns</p>
+  - id: "inn-trophy19"
+    name: "5000 Inns"
+    icon: "inn-trophy19.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 5000 Inns</p>
+  - id: "inn-trophy20"
+    name: "7500 Inns"
+    icon: "inn-trophy20.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 7500 Inns</p>
+  - id: "inn-trophy21"
+    name: "12000 Inns"
+    icon: "inn-trophy21.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 12000 Inns</p>
+  - id: "inn-trophy22"
+    name: "20000 Inns"
+    icon: "inn-trophy22.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 20000 Inns</p>
+  - id: "blacksmith-trophy1"
+    name: "1 Blacksmith"
+    icon: "blacksmith-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1 Blacksmith</p>
+  - id: "blacksmith-trophy2"
+    name: "50 Blacksmiths"
+    icon: "blacksmith-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 50 Blacksmiths</p>
+  - id: "blacksmith-trophy3"
+    name: "100 Blacksmiths"
+    icon: "blacksmith-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 100 Blacksmiths</p>
+  - id: "blacksmith-trophy4"
+    name: "150 Blacksmiths"
+    icon: "blacksmith-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 150 Blacksmiths</p>
+  - id: "blacksmith-trophy5"
+    name: "200 Blacksmiths"
+    icon: "blacksmith-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 200 Blacksmiths</p>
+  - id: "blacksmith-trophy6"
+    name: "300 Blacksmiths"
+    icon: "blacksmith-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 300 Blacksmiths</p>
+  - id: "blacksmith-trophy7"
+    name: "400 Blacksmiths"
+    icon: "blacksmith-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 400 Blacksmiths</p>
+  - id: "blacksmith-trophy8"
+    name: "500 Blacksmiths"
+    icon: "blacksmith-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 500 Blacksmiths</p>
+  - id: "blacksmith-trophy9"
+    name: "600 Blacksmiths"
+    icon: "blacksmith-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 600 Blacksmiths</p>
+  - id: "blacksmith-trophy10"
+    name: "700 Blacksmiths"
+    icon: "blacksmith-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 700 Blacksmiths</p>
+  - id: "blacksmith-trophy11"
+    name: "800 Blacksmiths"
+    icon: "blacksmith-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 800 Blacksmiths</p>
+  - id: "blacksmith-trophy12"
+    name: "900 Blacksmiths"
+    icon: "blacksmith-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 900 Blacksmiths</p>
+  - id: "blacksmith-trophy13"
+    name: "1000 Blacksmiths"
+    icon: "blacksmith-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1000 Blacksmiths</p>
+  - id: "blacksmith-trophy14"
+    name: "1500 Blacksmiths"
+    icon: "blacksmith-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1500 Blacksmiths</p>
+  - id: "blacksmith-trophy15"
+    name: "2000 Blacksmiths"
+    icon: "blacksmith-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2000 Blacksmiths</p>
+  - id: "blacksmith-trophy16"
+    name: "2500 Blacksmiths"
+    icon: "blacksmith-trophy16.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2500 Blacksmiths</p>
+  - id: "blacksmith-trophy17"
+    name: "3000 Blacksmiths"
+    icon: "blacksmith-trophy17.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3000 Blacksmiths</p>
+  - id: "blacksmith-trophy18"
+    name: "3500 Blacksmiths"
+    icon: "blacksmith-trophy18.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3500 Blacksmiths</p>
+  - id: "blacksmith-trophy19"
+    name: "5000 Blacksmiths"
+    icon: "blacksmith-trophy19.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 5000 Blacksmiths</p>
+  - id: "blacksmith-trophy20"
+    name: "7500 Blacksmiths"
+    icon: "blacksmith-trophy20.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 7500 Blacksmiths</p>
+  - id: "blacksmith-trophy21"
+    name: "12000 Blacksmiths"
+    icon: "blacksmith-trophy21.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 12000 Blacksmiths</p>
+  - id: "blacksmith-trophy22"
+    name: "20000 Blacksmiths"
+    icon: "blacksmith-trophy22.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 20000 Blacksmiths</p>
+  - id: "warrior-barracks-trophy1"
+    name: "1 Warrior Barrack"
+    icon: "warrior-barracks-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1 Warrior Barrack</p>
+  - id: "warrior-barracks-trophy2"
+    name: "50 Warrior Barracks"
+    icon: "warrior-barracks-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 50 Warrior Barracks</p>
+  - id: "warrior-barracks-trophy3"
+    name: "100 Warrior Barracks"
+    icon: "warrior-barracks-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 100 Warrior Barracks</p>
+  - id: "warrior-barracks-trophy4"
+    name: "150 Warrior Barracks"
+    icon: "warrior-barracks-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 150 Warrior Barracks</p>
+  - id: "warrior-barracks-trophy5"
+    name: "200 Warrior Barracks"
+    icon: "warrior-barracks-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 200 Warrior Barracks</p>
+  - id: "warrior-barracks-trophy6"
+    name: "300 Warrior Barracks"
+    icon: "warrior-barracks-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 300 Warrior Barracks</p>
+  - id: "warrior-barracks-trophy7"
+    name: "400 Warrior Barracks"
+    icon: "warrior-barracks-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 400 Warrior Barracks</p>
+  - id: "warrior-barracks-trophy8"
+    name: "500 Warrior Barracks"
+    icon: "warrior-barracks-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 500 Warrior Barracks</p>
+  - id: "warrior-barracks-trophy9"
+    name: "600 Warrior Barracks"
+    icon: "warrior-barracks-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 600 Warrior Barracks</p>
+  - id: "warrior-barracks-trophy10"
+    name: "700 Warrior Barracks"
+    icon: "warrior-barracks-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 700 Warrior Barracks</p>
+  - id: "warrior-barracks-trophy11"
+    name: "800 Warrior Barracks"
+    icon: "warrior-barracks-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 800 Warrior Barracks</p>
+  - id: "warrior-barracks-trophy12"
+    name: "900 Warrior Barracks"
+    icon: "warrior-barracks-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 900 Warrior Barracks</p>
+  - id: "warrior-barracks-trophy13"
+    name: "1000 Warrior Barracks"
+    icon: "warrior-barracks-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1000 Warrior Barracks</p>
+  - id: "warrior-barracks-trophy14"
+    name: "1500 Warrior Barracks"
+    icon: "warrior-barracks-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1500 Warrior Barracks</p>
+  - id: "warrior-barracks-trophy15"
+    name: "2000 Warrior Barracks"
+    icon: "warrior-barracks-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2000 Warrior Barracks</p>
+  - id: "warrior-barracks-trophy16"
+    name: "2500 Warrior Barracks"
+    icon: "warrior-barracks-trophy16.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2500 Warrior Barracks</p>
+  - id: "warrior-barracks-trophy17"
+    name: "3000 Warrior Barracks"
+    icon: "warrior-barracks-trophy17.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3000 Warrior Barracks</p>
+  - id: "warrior-barracks-trophy18"
+    name: "3500 Warrior Barracks"
+    icon: "warrior-barracks-trophy18.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3500 Warrior Barracks</p>
+  - id: "warrior-barracks-trophy19"
+    name: "5000 Warrior Barracks"
+    icon: "warrior-barracks-trophy19.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 5000 Warrior Barracks</p>
+  - id: "warrior-barracks-trophy20"
+    name: "7500 Warrior Barracks"
+    icon: "warrior-barracks-trophy20.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 7500 Warrior Barracks</p>
+  - id: "warrior-barracks-trophy21"
+    name: "12000 Warrior Barracks"
+    icon: "warrior-barracks-trophy21.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 12000 Warrior Barracks</p>
+  - id: "warrior-barracks-trophy22"
+    name: "20000 Warrior Barracks"
+    icon: "warrior-barracks-trophy22.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 20000 Warrior Barracks</p>
+  - id: "slave-pen-trophy1"
+    name: "1 Slave Pen"
+    icon: "slave-pen-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1 Slave Pen</p>
+  - id: "slave-pen-trophy2"
+    name: "50 Slave Pens"
+    icon: "slave-pen-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 50 Slave Pens</p>
+  - id: "slave-pen-trophy3"
+    name: "100 Slave Pens"
+    icon: "slave-pen-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 100 Slave Pens</p>
+  - id: "slave-pen-trophy4"
+    name: "150 Slave Pens"
+    icon: "slave-pen-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 150 Slave Pens</p>
+  - id: "slave-pen-trophy5"
+    name: "200 Slave Pens"
+    icon: "slave-pen-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 200 Slave Pens</p>
+  - id: "slave-pen-trophy6"
+    name: "300 Slave Pens"
+    icon: "slave-pen-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 300 Slave Pens</p>
+  - id: "slave-pen-trophy7"
+    name: "400 Slave Pens"
+    icon: "slave-pen-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 400 Slave Pens</p>
+  - id: "slave-pen-trophy8"
+    name: "500 Slave Pens"
+    icon: "slave-pen-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 500 Slave Pens</p>
+  - id: "slave-pen-trophy9"
+    name: "600 Slave Pens"
+    icon: "slave-pen-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 600 Slave Pens</p>
+  - id: "slave-pen-trophy10"
+    name: "700 Slave Pens"
+    icon: "slave-pen-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 700 Slave Pens</p>
+  - id: "slave-pen-trophy11"
+    name: "800 Slave Pens"
+    icon: "slave-pen-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 800 Slave Pens</p>
+  - id: "slave-pen-trophy12"
+    name: "900 Slave Pen"
+    icon: "slave-pen-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 900 Slave Pens</p>
+  - id: "slave-pen-trophy13"
+    name: "1000 Slave Pens"
+    icon: "slave-pen-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1000 Slave Pens</p>
+  - id: "slave-pen-trophy14"
+    name: "1500 Slave Pens"
+    icon: "slave-pen-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1500 Slave Pens</p>
+  - id: "slave-pen-trophy15"
+    name: "2000 Slave Pens"
+    icon: "slave-pen-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2000 Slave Pens</p>
+  - id: "slave-pen-trophy16"
+    name: "2500 Slave Pens"
+    icon: "slave-pen-trophy16.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2500 Slave Pens</p>
+  - id: "slave-pen-trophy17"
+    name: "3000 Slave Pens"
+    icon: "slave-pen-trophy17.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3000 Slave Pens</p>
+  - id: "slave-pen-trophy18"
+    name: "3500 Slave Pens"
+    icon: "slave-pen-trophy18.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3500 Slave Pens</p>
+  - id: "slave-pen-trophy19"
+    name: "5000 Slave Pens"
+    icon: "slave-pen-trophy19.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 5000 Slave Pens</p>
+  - id: "slave-pen-trophy20"
+    name: "7500 Slave Pens"
+    icon: "slave-pen-trophy20.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 7500 Slave Pens</p>
+  - id: "slave-pen-trophy21"
+    name: "12000 Slave Pens"
+    icon: "slave-pen-trophy21.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 12000 Slave Pens</p>
+  - id: "slave-pen-trophy22"
+    name: "20000 Slave Pens"
+    icon: "slave-pen-trophy22.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 20000 Slave Pens</p>
+  - id: "knights-joust-trophy1"
+    name: "1 Knights Joust"
+    icon: "knights-joust-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1 Knights Joust</p>
+  - id: "knights-joust-trophy2"
+    name: "50 Knights Jousts"
+    icon: "knights-joust-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 50 Knights Jousts</p>
+  - id: "knights-joust-trophy3"
+    name: "100 Knights Jousts"
+    icon: "knights-joust-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 100 Knights Jousts</p>
+  - id: "knights-joust-trophy4"
+    name: "150 Knights Jousts"
+    icon: "knights-joust-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 150 Knights Jousts</p>
+  - id: "knights-joust-trophy5"
+    name: "200 Knights Jousts"
+    icon: "knights-joust-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 200 Knights Jousts</p>
+  - id: "knights-joust-trophy6"
+    name: "300 Knights Jousts"
+    icon: "knights-joust-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 300 Knights Jousts</p>
+  - id: "knights-joust-trophy7"
+    name: "400 Knights Jousts"
+    icon: "knights-joust-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 400 Knights Jousts</p>
+  - id: "knights-joust-trophy8"
+    name: "500 Knights Jousts"
+    icon: "knights-joust-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 500 Knights Jousts</p>
+  - id: "knights-joust-trophy9"
+    name: "600 Knights Jousts"
+    icon: "knights-joust-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 600 Knights Jousts</p>
+  - id: "knights-joust-trophy10"
+    name: "700 Knights Jousts"
+    icon: "knights-joust-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 700 Knights Jousts</p>
+  - id: "knights-joust-trophy11"
+    name: "800 Knights Jousts"
+    icon: "knights-joust-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 800 Knights Jousts</p>
+  - id: "knights-joust-trophy12"
+    name: "900 Knights Jousts"
+    icon: "knights-joust-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 900 Knights Jousts</p>
+  - id: "knights-joust-trophy13"
+    name: "1000 Knights Jousts"
+    icon: "knights-joust-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1000 Knights Jousts</p>
+  - id: "knights-joust-trophy14"
+    name: "1500 Knights Jousts"
+    icon: "knights-joust-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1500 Knights Jousts</p>
+  - id: "knights-joust-trophy15"
+    name: "2000 Knights Jousts"
+    icon: "knights-joust-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2000 Knights Jousts</p>
+  - id: "knights-joust-trophy16"
+    name: "2500 Knights Jousts"
+    icon: "knights-joust-trophy16.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2500 Knights Jousts</p>
+  - id: "knights-joust-trophy17"
+    name: "3000 Knights Jousts"
+    icon: "knights-joust-trophy17.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3000 Knights Jousts</p>
+  - id: "knights-joust-trophy18"
+    name: "3500 Knights Jousts"
+    icon: "knights-joust-trophy18.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3500 Knights Jousts</p>
+  - id: "knights-joust-trophy19"
+    name: "5000 Knights Jousts"
+    icon: "knights-joust-trophy19.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 5000 Knights Jousts</p>
+  - id: "knights-joust-trophy20"
+    name: "7500 Knights Jousts"
+    icon: "knights-joust-trophy20.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 7500 Knights Jousts</p>
+  - id: "knights-joust-trophy21"
+    name: "12000 Knights Jousts"
+    icon: "knights-joust-trophy21.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 12000 Knights Jousts</p>
+  - id: "knights-joust-trophy22"
+    name: "20000 Knights Jousts"
+    icon: "knights-joust-trophy22.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 20000 Knights Jousts</p>
+  - id: "orcish-arena-trophy1"
+    name: "1 Orcish Arena"
+    icon: "orcish-arena-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1 Orcish Arena</p>
+  - id: "orcish-arena-trophy2"
+    name: "50 Orcish Arenas"
+    icon: "orcish-arena-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 50 Orcish Arenas</p>
+  - id: "orcish-arena-trophy3"
+    name: "100 Orcish Arenas"
+    icon: "orcish-arena-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 100 Orcish Arenas</p>
+  - id: "orcish-arena-trophy4"
+    name: "150 Orcish Arenas"
+    icon: "orcish-arena-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 150 Orcish Arenas</p>
+  - id: "orcish-arena-trophy5"
+    name: "200 Orcish Arenas"
+    icon: "orcish-arena-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 200 Orcish Arenas</p>
+  - id: "orcish-arena-trophy6"
+    name: "300 Orcish Arenas"
+    icon: "orcish-arena-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 300 Orcish Arenas</p>
+  - id: "orcish-arena-trophy7"
+    name: "400 Orcish Arenas"
+    icon: "orcish-arena-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 400 Orcish Arenas</p>
+  - id: "orcish-arena-trophy8"
+    name: "500 Orcish Arenas"
+    icon: "orcish-arena-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 500 Orcish Arenas</p>
+  - id: "orcish-arena-trophy9"
+    name: "600 Orcish Arenas"
+    icon: "orcish-arena-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 600 Orcish Arenas</p>
+  - id: "orcish-arena-trophy10"
+    name: "700 Orcish Arenas"
+    icon: "orcish-arena-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 700 Orcish Arenas</p>
+  - id: "orcish-arena-trophy11"
+    name: "800 Orcish Arenas"
+    icon: "orcish-arena-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 800 Orcish Arenas</p>
+  - id: "orcish-arena-trophy12"
+    name: "900 Orcish Arenas"
+    icon: "orcish-arena-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 900 Orcish Arenas</p>
+  - id: "orcish-arena-trophy13"
+    name: "1000 Orcish Arenas"
+    icon: "orcish-arena-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1000 Orcish Arenas</p>
+  - id: "orcish-arena-trophy14"
+    name: "1500 Orcish Arenas"
+    icon: "orcish-arena-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1500 Orcish Arenas</p>
+  - id: "orcish-arena-trophy15"
+    name: "2000 Orcish Arenas"
+    icon: "orcish-arena-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2000 Orcish Arenas</p>
+  - id: "orcish-arena-trophy16"
+    name: "2500 Orcish Arenas"
+    icon: "orcish-arena-trophy16.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2500 Orcish Arenas</p>
+  - id: "orcish-arena-trophy17"
+    name: "3000 Orcish Arenas"
+    icon: "orcish-arena-trophy17.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3000 Orcish Arenas</p>
+  - id: "orcish-arena-trophy18"
+    name: "3500 Orcish Arenas"
+    icon: "orcish-arena-trophy18.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3500 Orcish Arenas</p>
+  - id: "orcish-arena-trophy19"
+    name: "5000 Orcish Arenas"
+    icon: "orcish-arena-trophy19.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 5000 Orcish Arenas</p>
+  - id: "orcish-arena-trophy20"
+    name: "7500 Orcish Arenas"
+    icon: "orcish-arena-trophy20.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 7500 Orcish Arenas</p>
+  - id: "orcish-arena-trophy21"
+    name: "12000 Orcish Arenas"
+    icon: "orcish-arena-trophy21.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 12000 Orcish Arenas</p>
+  - id: "orcish-arena-trophy22"
+    name: "20000 Orcish Arenas"
+    icon: "orcish-arena-trophy22.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 20000 Orcish Arenas</p>
+  - id: "wizard-tower-trophy1"
+    name: "1 Wizard Tower"
+    icon: "wizard-tower-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1 Wizard Tower</p>
+  - id: "wizard-tower-trophy2"
+    name: "50 Wizard Towers"
+    icon: "wizard-tower-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 50 Wizard Towers</p>
+  - id: "wizard-tower-trophy3"
+    name: "100 Wizard Towers"
+    icon: "wizard-tower-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 100 Wizard Towers</p>
+  - id: "wizard-tower-trophy4"
+    name: "150 Wizard Towers"
+    icon: "wizard-tower-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 150 Wizard Towers</p>
+  - id: "wizard-tower-trophy5"
+    name: "200 Wizard Towers"
+    icon: "wizard-tower-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 200 Wizard Towers</p>
+  - id: "wizard-tower-trophy6"
+    name: "300 Wizard Towers"
+    icon: "wizard-tower-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 300 Wizard Towers</p>
+  - id: "wizard-tower-trophy7"
+    name: "400 Wizard Towers"
+    icon: "wizard-tower-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 400 Wizard Towers</p>
+  - id: "wizard-tower-trophy8"
+    name: "500 Wizard Towers"
+    icon: "wizard-tower-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 500 Wizard Towers</p>
+  - id: "wizard-tower-trophy9"
+    name: "600 Wizard Towers"
+    icon: "wizard-tower-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 600 Wizard Towers</p>
+  - id: "wizard-tower-trophy10"
+    name: "700 Wizard Towers"
+    icon: "wizard-tower-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 700 Wizard Towers</p>
+  - id: "wizard-tower-trophy11"
+    name: "800 Wizard Towers"
+    icon: "wizard-tower-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 800 Wizard Towers</p>
+  - id: "wizard-tower-trophy12"
+    name: "900 Wizard Towers"
+    icon: "wizard-tower-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 900 Wizard Towers</p>
+  - id: "wizard-tower-trophy13"
+    name: "1000 Wizard Tower"
+    icon: "wizard-tower-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1000 Wizard Towers</p>
+  - id: "wizard-tower-trophy14"
+    name: "1500 Wizard Towers"
+    icon: "wizard-tower-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1500 Wizard Towers</p>
+  - id: "wizard-tower-trophy15"
+    name: "2000 Wizard Towers"
+    icon: "wizard-tower-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2000 Wizard Towers</p>
+  - id: "wizard-tower-trophy16"
+    name: "2500 Wizard Towers"
+    icon: "wizard-tower-trophy16.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2500 Wizard Towers</p>
+  - id: "wizard-tower-trophy17"
+    name: "3000 Wizard Towers"
+    icon: "wizard-tower-trophy17.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3000 Wizard Towers</p>
+  - id: "wizard-tower-trophy18"
+    name: "3500 Wizard Towers"
+    icon: "wizard-tower-trophy18.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3500 Wizard Towers</p>
+  - id: "wizard-tower-trophy19"
+    name: "5000 Wizard Towers"
+    icon: "wizard-tower-trophy19.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 5000 Wizard Towers</p>
+  - id: "wizard-tower-trophy20"
+    name: "7500 Wizard Towers"
+    icon: "wizard-tower-trophy20.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 7500 Wizard Towers</p>
+  - id: "wizard-tower-trophy21"
+    name: "12000 Wizard Towers"
+    icon: "wizard-tower-trophy21.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 12000 Wizard Towers</p>
+  - id: "wizard-tower-trophy22"
+    name: "20000 Wizard Towers"
+    icon: "wizard-tower-trophy22.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 20000 Wizard Towers</p>
+  - id: "witch-conclave-trophy1"
+    name: "1 Witch Conclave"
+    icon: "witch-conclave-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1 Witch Conclave</p>
+  - id: "witch-conclave-trophy2"
+    name: "50 Witch Conclaves"
+    icon: "witch-conclave-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 50 Witch Conclaves</p>
+  - id: "witch-conclave-trophy3"
+    name: "100 Witch Conclaves"
+    icon: "witch-conclave-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 100 Witch Conclaves</p>
+  - id: "witch-conclave-trophy4"
+    name: "150 Witch Conclaves"
+    icon: "witch-conclave-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 150 Witch Conclaves</p>
+  - id: "witch-conclave-trophy5"
+    name: "200 Witch Conclaves"
+    icon: "witch-conclave-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 200 Witch Conclaves</p>
+  - id: "witch-conclave-trophy6"
+    name: "300 Witch Conclaves"
+    icon: "witch-conclave-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 300 Witch Conclaves</p>
+  - id: "witch-conclave-trophy7"
+    name: "400 Witch Conclaves"
+    icon: "witch-conclave-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 400 Witch Conclaves</p>
+  - id: "witch-conclave-trophy8"
+    name: "500 Witch Conclaves"
+    icon: "witch-conclave-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 500 Witch Conclaves</p>
+  - id: "witch-conclave-trophy9"
+    name: "600 Witch Conclaves"
+    icon: "witch-conclave-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 600 Witch Conclaves</p>
+  - id: "witch-conclave-trophy10"
+    name: "700 Witch Conclaves"
+    icon: "witch-conclave-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 700 Witch Conclaves</p>
+  - id: "witch-conclave-trophy11"
+    name: "800 Witch Conclaves"
+    icon: "witch-conclave-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 800 Witch Conclaves</p>
+  - id: "witch-conclave-trophy12"
+    name: "900 Witch Conclaves"
+    icon: "witch-conclave-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 900 Witch Conclaves</p>
+  - id: "witch-conclave-trophy13"
+    name: "1000 Witch Conclaves"
+    icon: "witch-conclave-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1000 Witch Conclaves</p>
+  - id: "witch-conclave-trophy14"
+    name: "1500 Witch Conclaves"
+    icon: "witch-conclave-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1500 Witch Conclaves</p>
+  - id: "witch-conclave-trophy15"
+    name: "2000 Witch Conclaves"
+    icon: "witch-conclave-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2000 Witch Conclaves</p>
+  - id: "witch-conclave-trophy16"
+    name: "2500 Witch Conclaves"
+    icon: "witch-conclave-trophy16.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2500 Witch Conclaves</p>
+  - id: "witch-conclave-trophy17"
+    name: "3000 Witch Conclaves"
+    icon: "witch-conclave-trophy17.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3000 Witch Conclaves</p>
+  - id: "witch-conclave-trophy18"
+    name: "3500 Witch Conclaves"
+    icon: "witch-conclave-trophy18.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3500 Witch Conclaves</p>
+  - id: "witch-conclave-trophy19"
+    name: "5000 Witch Conclaves"
+    icon: "witch-conclave-trophy19.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 5000 Witch Conclaves</p>
+  - id: "witch-conclave-trophy20"
+    name: "7500 Witch Conclaves"
+    icon: "witch-conclave-trophy20.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 7500 Witch Conclaves</p>
+  - id: "witch-conclave-trophy21"
+    name: "12000 Witch Conclaves"
+    icon: "witch-conclave-trophy21.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 12000 Witch Conclaves</p>
+  - id: "witch-conclave-trophy22"
+    name: "20000 Witch Conclaves"
+    icon: "witch-conclave-trophy22.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 20000 Witch Conclaves</p>
+  - id: "cathedral-trophy1"
+    name: "1 Cathedral"
+    icon: "cathedral-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1 Cathedral</p>
+  - id: "cathedral-trophy2"
+    name: "50 Cathedrals"
+    icon: "cathedral-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 50 Cathedrals</p>
+  - id: "cathedral-trophy3"
+    name: "100 Cathedrals"
+    icon: "cathedral-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 100 Cathedrals</p>
+  - id: "cathedral-trophy4"
+    name: "150 Cathedrals"
+    icon: "cathedral-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 150 Cathedrals</p>
+  - id: "cathedral-trophy5"
+    name: "200 Cathedrals"
+    icon: "cathedral-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 200 Cathedrals</p>
+  - id: "cathedral-trophy6"
+    name: "300 Cathedrals"
+    icon: "cathedral-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 300 Cathedrals</p>
+  - id: "cathedral-trophy7"
+    name: "400 Cathedrals"
+    icon: "cathedral-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 400 Cathedrals</p>
+  - id: "cathedral-trophy8"
+    name: "500 Cathedrals"
+    icon: "cathedral-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 500 Cathedrals</p>
+  - id: "cathedral-trophy9"
+    name: "600 Cathedrals"
+    icon: "cathedral-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 600 Cathedrals</p>
+  - id: "cathedral-trophy10"
+    name: "700 Cathedrals"
+    icon: "cathedral-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 700 Cathedrals</p>
+  - id: "cathedral-trophy11"
+    name: "800 Cathedrals"
+    icon: "cathedral-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 800 Cathedrals</p>
+  - id: "cathedral-trophy12"
+    name: "900 Cathedrals"
+    icon: "cathedral-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 900 Cathedrals</p>
+  - id: "cathedral-trophy13"
+    name: "1000 Cathedrals"
+    icon: "cathedral-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1000 Cathedrals</p>
+  - id: "cathedral-trophy14"
+    name: "1500 Cathedrals"
+    icon: "cathedral-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1500 Cathedrals</p>
+  - id: "cathedral-trophy15"
+    name: "2000 Cathedrals"
+    icon: "cathedral-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2000 Cathedrals</p>
+  - id: "cathedral-trophy16"
+    name: "2500 Cathedrals"
+    icon: "cathedral-trophy16.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2500 Cathedrals</p>
+  - id: "cathedral-trophy17"
+    name: "3000 Cathedrals"
+    icon: "cathedral-trophy17.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3000 Cathedrals</p>
+  - id: "cathedral-trophy18"
+    name: "3500 Cathedrals"
+    icon: "cathedral-trophy18.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3500 Cathedrals</p>
+  - id: "cathedral-trophy19"
+    name: "5000 Cathedrals"
+    icon: "cathedral-trophy19.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 5000 Cathedrals</p>
+  - id: "cathedral-trophy20"
+    name: "7500 Cathedrals"
+    icon: "cathedral-trophy20.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 7500 Cathedrals</p>
+  - id: "cathedral-trophy21"
+    name: "12000 Cathedrals"
+    icon: "cathedral-trophy21.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 12000 Cathedrals</p>
+  - id: "cathedral-trophy22"
+    name: "20000 Cathedrals"
+    icon: "cathedral-trophy22.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 20000 Cathedrals</p>
+  - id: "dark-temple-trophy1"
+    name: "1 Dark Temple"
+    icon: "dark-temple-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1 Dark Temple</p>
+  - id: "dark-temple-trophy2"
+    name: "50 Dark Temples"
+    icon: "dark-temple-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 50 Dark Temples</p>
+  - id: "dark-temple-trophy3"
+    name: "100 Dark Temples"
+    icon: "dark-temple-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 100 Dark Temples</p>
+  - id: "dark-temple-trophy4"
+    name: "150 Dark Temples"
+    icon: "dark-temple-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 150 Dark Temples</p>
+  - id: "dark-temple-trophy5"
+    name: "200 Dark Temples"
+    icon: "dark-temple-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 200 Dark Temples</p>
+  - id: "dark-temple-trophy6"
+    name: "300 Dark Temples"
+    icon: "dark-temple-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 300 Dark Temples</p>
+  - id: "dark-temple-trophy7"
+    name: "400 Dark Temples"
+    icon: "dark-temple-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 400 Dark Temples</p>
+  - id: "dark-temple-trophy8"
+    name: "500 Dark Temples"
+    icon: "dark-temple-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 500 Dark Temples</p>
+  - id: "dark-temple-trophy9"
+    name: "600 Dark Temple"
+    icon: "dark-temple-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 600 Dark Temples</p>
+  - id: "dark-temple-trophy10"
+    name: "700 Dark Temple"
+    icon: "dark-temple-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 700 Dark Temples</p>
+  - id: "dark-temple-trophy11"
+    name: "800 Dark Temples"
+    icon: "dark-temple-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 800 Dark Temples</p>
+  - id: "dark-temple-trophy12"
+    name: "900 Dark Temples"
+    icon: "dark-temple-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 900 Dark Temples</p>
+  - id: "dark-temple-trophy13"
+    name: "1000 Dark Temples"
+    icon: "dark-temple-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1000 Dark Temples</p>
+  - id: "dark-temple-trophy14"
+    name: "1500 Dark Temples"
+    icon: "dark-temple-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1500 Dark Temples</p>
+  - id: "dark-temple-trophy15"
+    name: "2000 Dark Temples"
+    icon: "dark-temple-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2000 Dark Temples</p>
+  - id: "dark-temple-trophy16"
+    name: "2500 Dark Temples"
+    icon: "dark-temple-trophy16.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2500 Dark Temples</p>
+  - id: "dark-temple-trophy17"
+    name: "3000 Dark Temples"
+    icon: "dark-temple-trophy17.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3000 Dark Temples</p>
+  - id: "dark-temple-trophy18"
+    name: "3500 Dark Temples"
+    icon: "dark-temple-trophy18.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3500 Dark Temples</p>
+  - id: "dark-temple-trophy19"
+    name: "5000 Dark Temple"
+    icon: "dark-temple-trophy19.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 5000 Dark Temples</p>
+  - id: "dark-temple-trophy20"
+    name: "7500 Dark Temple"
+    icon: "dark-temple-trophy20.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 7500 Dark Temples</p>
+  - id: "dark-temple-trophy21"
+    name: "12000 Dark Temple"
+    icon: "dark-temple-trophy21.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 12000 Dark Temples</p>
+  - id: "dark-temple-trophy22"
+    name: "20000 Dark Temple"
+    icon: "dark-temple-trophy22.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 20000 Dark Temples</p>
+  - id: "citadel-trophy1"
+    name: "1 Citadel"
+    icon: "citadel-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1 Citadel</p>
+  - id: "citadel-trophy2"
+    name: "50 Citadels"
+    icon: "citadel-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 50 Citadels</p>
+  - id: "citadel-trophy3"
+    name: "100 Citadels"
+    icon: "citadel-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 100 Citadels</p>
+  - id: "citadel-trophy4"
+    name: "150 Citadels"
+    icon: "citadel-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 150 Citadels</p>
+  - id: "citadel-trophy5"
+    name: "200 Citadels"
+    icon: "citadel-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 200 Citadels</p>
+  - id: "citadel-trophy6"
+    name: "300 Citadels"
+    icon: "citadel-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 300 Citadels</p>
+  - id: "citadel-trophy7"
+    name: "400 Citadels"
+    icon: "citadel-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 400 Citadels</p>
+  - id: "citadel-trophy8"
+    name: "500 Citadels"
+    icon: "citadel-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 500 Citadels</p>
+  - id: "citadel-trophy9"
+    name: "600 Citadels"
+    icon: "citadel-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 600 Citadels</p>
+  - id: "citadel-trophy10"
+    name: "700 Citadels"
+    icon: "citadel-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 700 Citadels</p>
+  - id: "citadel-trophy11"
+    name: "800 Citadels"
+    icon: "citadel-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 800 Citadels</p>
+  - id: "citadel-trophy12"
+    name: "900 Citadels"
+    icon: "citadel-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 900 Citadels</p>
+  - id: "citadel-trophy13"
+    name: "1000 Citadels"
+    icon: "citadel-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1000 Citadels</p>
+  - id: "citadel-trophy14"
+    name: "1500 Citadels"
+    icon: "citadel-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1500 Citadels</p>
+  - id: "citadel-trophy15"
+    name: "2000 Citadels"
+    icon: "citadel-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2000 Citadels</p>
+  - id: "citadel-trophy16"
+    name: "2500 Citadels"
+    icon: "citadel-trophy16.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2500 Citadels</p>
+  - id: "citadel-trophy17"
+    name: "3000 Citadels"
+    icon: "citadel-trophy17.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3000 Citadels</p>
+  - id: "citadel-trophy18"
+    name: "3500 Citadels"
+    icon: "citadel-trophy18.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3500 Citadels</p>
+  - id: "citadel-trophy19"
+    name: "5000 Citadels"
+    icon: "citadel-trophy19.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 5000 Citadels</p>
+  - id: "citadel-trophy20"
+    name: "7500 Citadels"
+    icon: "citadel-trophy20.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 7500 Citadels</p>
+  - id: "citadel-trophy21"
+    name: "12000 Citadels"
+    icon: "citadel-trophy21.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 12000 Citadels</p>
+  - id: "citadel-trophy22"
+    name: "20000 Citadels"
+    icon: "citadel-trophy22.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 20000 Citadels</p>
+  - id: "necropolis-trophy1"
+    name: "1 Necropolis"
+    icon: "necropolis-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1 Necropolis</p>
+  - id: "necropolis-trophy2"
+    name: "50 Necropolises"
+    icon: "necropolis-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 50 Necropolises</p>
+  - id: "necropolis-trophy3"
+    name: "100 Necropolises"
+    icon: "necropolis-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 100 Necropolises</p>
+  - id: "necropolis-trophy4"
+    name: "150 Necropolises"
+    icon: "necropolis-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 150 Necropolises</p>
+  - id: "necropolis-trophy5"
+    name: "200 Necropolises"
+    icon: "necropolis-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 200 Necropolises</p>
+  - id: "necropolis-trophy6"
+    name: "300 Necropolises"
+    icon: "necropolis-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 300 Necropolises</p>
+  - id: "necropolis-trophy7"
+    name: "400 Necropolises"
+    icon: "necropolis-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 400 Necropolises</p>
+  - id: "necropolis-trophy8"
+    name: "500 Necropolises"
+    icon: "necropolis-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 500 Necropolises</p>
+  - id: "necropolis-trophy9"
+    name: "600 Necropolises"
+    icon: "necropolis-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 600 Necropolises</p>
+  - id: "necropolis-trophy10"
+    name: "700 Necropolises"
+    icon: "necropolis-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 700 Necropolises</p>
+  - id: "necropolis-trophy11"
+    name: "800 Necropolises"
+    icon: "necropolis-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 800 Necropolises</p>
+  - id: "necropolis-trophy12"
+    name: "900 Necropolises"
+    icon: "necropolis-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 900 Necropolises</p>
+  - id: "necropolis-trophy13"
+    name: "1000 Necropolises"
+    icon: "necropolis-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1000 Necropolises</p>
+  - id: "necropolis-trophy14"
+    name: "1500 Necropolises"
+    icon: "necropolis-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1500 Necropolises</p>
+  - id: "necropolis-trophy15"
+    name: "2000 Necropolises"
+    icon: "necropolis-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2000 Necropolises</p>
+  - id: "necropolis-trophy16"
+    name: "2500 Necropolises"
+    icon: "necropolis-trophy16.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2500 Necropolises</p>
+  - id: "necropolis-trophy17"
+    name: "3000 Necropolises"
+    icon: "necropolis-trophy17.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3000 Necropolises</p>
+  - id: "necropolis-trophy18"
+    name: "3500 Necropolises"
+    icon: "necropolis-trophy18.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3500 Necropolises</p>
+  - id: "necropolis-trophy19"
+    name: "5000 Necropolises"
+    icon: "necropolis-trophy19.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 5000 Necropolises</p>
+  - id: "necropolis-trophy20"
+    name: "7500 Necropolises"
+    icon: "necropolis-trophy20.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 7500 Necropolises</p>
+  - id: "necropolis-trophy21"
+    name: "12000 Necropolises"
+    icon: "necropolis-trophy21.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 12000 Necropolises</p>
+  - id: "necropolis-trophy22"
+    name: "20000 Necropolises"
+    icon: "necropolis-trophy22.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 20000 Necropolises</p>
+  - id: "royal-castle-trophy1"
+    name: "1 Royal Castle"
+    icon: "royal-castle-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1 Royal Castle</p>
+  - id: "royal-castle-trophy2"
+    name: "50 Royal Castles"
+    icon: "royal-castle-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 50 Royal Castles</p>
+  - id: "royal-castle-trophy3"
+    name: "100 Royal Castles"
+    icon: "royal-castle-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 100 Royal Castles</p>
+  - id: "royal-castle-trophy4"
+    name: "150 Royal Castles"
+    icon: "royal-castle-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 150 Royal Castles</p>
+  - id: "royal-castle-trophy5"
+    name: "200 Royal Castles"
+    icon: "royal-castle-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 200 Royal Castles</p>
+  - id: "royal-castle-trophy6"
+    name: "300 Royal Castles"
+    icon: "royal-castle-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 300 Royal Castles</p>
+  - id: "royal-castle-trophy7"
+    name: "400 Royal Castles"
+    icon: "royal-castle-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 400 Royal Castles</p>
+  - id: "royal-castle-trophy8"
+    name: "500 Royal Castles"
+    icon: "royal-castle-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 500 Royal Castles</p>
+  - id: "royal-castle-trophy9"
+    name: "600 Royal Castles"
+    icon: "royal-castle-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 600 Royal Castles</p>
+  - id: "royal-castle-trophy10"
+    name: "700 Royal Castles"
+    icon: "royal-castle-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 700 Royal Castles</p>
+  - id: "royal-castle-trophy11"
+    name: "800 Royal Castles"
+    icon: "royal-castle-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 800 Royal Castles</p>
+  - id: "royal-castle-trophy12"
+    name: "900 Royal Castles"
+    icon: "royal-castle-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 900 Royal Castles</p>
+  - id: "royal-castle-trophy13"
+    name: "1000 Royal Castles"
+    icon: "royal-castle-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1000 Royal Castles</p>
+  - id: "royal-castle-trophy14"
+    name: "1500 Royal Castles"
+    icon: "royal-castle-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1500 Royal Castles</p>
+  - id: "royal-castle-trophy15"
+    name: "2000 Royal Castles"
+    icon: "royal-castle-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2000 Royal Castles</p>
+  - id: "royal-castle-trophy16"
+    name: "2500 Royal Castles"
+    icon: "royal-castle-trophy16.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2500 Royal Castles</p>
+  - id: "royal-castle-trophy17"
+    name: "3000 Royal Castles"
+    icon: "royal-castle-trophy17.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3000 Royal Castles</p>
+  - id: "royal-castle-trophy18"
+    name: "3500 Royal Castles"
+    icon: "royal-castle-trophy18.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3500 Royal Castles</p>
+  - id: "royal-castle-trophy19"
+    name: "5000 Royal Castles"
+    icon: "royal-castle-trophy19.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 5000 Royal Castles</p>
+  - id: "royal-castle-trophy20"
+    name: "7500 Royal Castles"
+    icon: "royal-castle-trophy20.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 7500 Royal Castles</p>
+  - id: "royal-castle-trophy21"
+    name: "12000 Royal Castles"
+    icon: "royal-castle-trophy21.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 12000 Royal Castles</p>
+  - id: "royal-castle-trophy22"
+    name: "20000 Royal Castles"
+    icon: "royal-castle-trophy22.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 20000 Royal Castles</p>
+  - id: "evil-fortress-trophy1"
+    name: "1 Evil Fortress"
+    icon: "evil-fortress-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1 Evil Fortress</p>
+  - id: "evil-fortress-trophy2"
+    name: "50 Evil Fortresses"
+    icon: "evil-fortress-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 50 Evil Fortresses</p>
+  - id: "evil-fortress-trophy3"
+    name: "100 Evil Fortresses"
+    icon: "evil-fortress-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 100 Evil Fortresses</p>
+  - id: "evil-fortress-trophy4"
+    name: "150 Evil Fortresses"
+    icon: "evil-fortress-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 150 Evil Fortresses</p>
+  - id: "evil-fortress-trophy5"
+    name: "200 Evil Fortresses"
+    icon: "evil-fortress-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 200 Evil Fortresses</p>
+  - id: "evil-fortress-trophy6"
+    name: "300 Evil Fortresses"
+    icon: "evil-fortress-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 300 Evil Fortresses</p>
+  - id: "evil-fortress-trophy7"
+    name: "400 Evil Fortresses"
+    icon: "evil-fortress-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 400 Evil Fortresses</p>
+  - id: "evil-fortress-trophy8"
+    name: "500 Evil Fortresses"
+    icon: "evil-fortress-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 500 Evil Fortresses</p>
+  - id: "evil-fortress-trophy9"
+    name: "600 Evil Fortresses"
+    icon: "evil-fortress-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 600 Evil Fortresses</p>
+  - id: "evil-fortress-trophy10"
+    name: "700 Evil Fortresses"
+    icon: "evil-fortress-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 700 Evil Fortresses</p>
+  - id: "evil-fortress-trophy11"
+    name: "800 Evil Fortresses"
+    icon: "evil-fortress-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 800 Evil Fortresses</p>
+  - id: "evil-fortress-trophy12"
+    name: "900 Evil Fortresses"
+    icon: "evil-fortress-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 900 Evil Fortresses</p>
+  - id: "evil-fortress-trophy13"
+    name: "1000 Evil Fortresses"
+    icon: "evil-fortress-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1000 Evil Fortresses</p>
+  - id: "evil-fortress-trophy14"
+    name: "1500 Evil Fortresses"
+    icon: "evil-fortress-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1500 Evil Fortresses</p>
+  - id: "evil-fortress-trophy15"
+    name: "2000 Evil Fortresses"
+    icon: "evil-fortress-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2000 Evil Fortresses</p>
+  - id: "evil-fortress-trophy16"
+    name: "2500 Evil Fortresses"
+    icon: "evil-fortress-trophy16.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2500 Evil Fortresses</p>
+  - id: "evil-fortress-trophy17"
+    name: "3000 Evil Fortresses"
+    icon: "evil-fortress-trophy17.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3000 Evil Fortresses</p>
+  - id: "evil-fortress-trophy18"
+    name: "3500 Evil Fortresses"
+    icon: "evil-fortress-trophy18.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3500 Evil Fortresses</p>
+  - id: "evil-fortress-trophy19"
+    name: "5000 Evil Fortresses"
+    icon: "evil-fortress-trophy19.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 5000 Evil Fortresses</p>
+  - id: "evil-fortress-trophy20"
+    name: "7500 Evil Fortresses"
+    icon: "evil-fortress-trophy20.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 7500 Evil Fortresses</p>
+  - id: "evil-fortress-trophy21"
+    name: "12000 Evil Fortresses"
+    icon: "evil-fortress-trophy21.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 12000 Evil Fortresses</p>
+  - id: "evil-fortress-trophy22"
+    name: "20000 Evil Fortresses"
+    icon: "evil-fortress-trophy22.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 20000 Evil Fortresses</p>
+  - id: "heavens-gate-trophy1"
+    name: "1 Heaven's Gate"
+    icon: "heavens-gate-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1 Heaven's Gate</p>
+  - id: "heavens-gate-trophy2"
+    name: "50 Heaven's Gates"
+    icon: "heavens-gate-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 50 Heaven's Gates</p>
+  - id: "heavens-gate-trophy3"
+    name: "100 Heaven's Gates"
+    icon: "heavens-gate-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 100 Heaven's Gates</p>
+  - id: "heavens-gate-trophy4"
+    name: "150 Heaven's Gates"
+    icon: "heavens-gate-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 150 Heaven's Gates</p>
+  - id: "heavens-gate-trophy5"
+    name: "200 Heaven's Gates"
+    icon: "heavens-gate-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 200 Heaven's Gates</p>
+  - id: "heavens-gate-trophy6"
+    name: "300 Heaven's Gates"
+    icon: "heavens-gate-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 300 Heaven's Gates</p>
+  - id: "heavens-gate-trophy7"
+    name: "400 Heaven's Gates"
+    icon: "heavens-gate-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 400 Heaven's Gates</p>
+  - id: "heavens-gate-trophy8"
+    name: "500 Heaven's Gates"
+    icon: "heavens-gate-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 500 Heaven's Gates</p>
+  - id: "heavens-gate-trophy9"
+    name: "600 Heaven's Gates"
+    icon: "heavens-gate-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 600 Heaven's Gates</p>
+  - id: "heavens-gate-trophy10"
+    name: "700 Heaven's Gates"
+    icon: "heavens-gate-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 700 Heaven's Gates</p>
+  - id: "heavens-gate-trophy11"
+    name: "800 Heaven's Gates"
+    icon: "heavens-gate-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 800 Heaven's Gates</p>
+  - id: "heavens-gate-trophy12"
+    name: "900 Heaven's Gates"
+    icon: "heavens-gate-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 900 Heaven's Gates</p>
+  - id: "heavens-gate-trophy13"
+    name: "1000 Heaven's Gates"
+    icon: "heavens-gate-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1000 Heaven's Gates</p>
+  - id: "heavens-gate-trophy14"
+    name: "1500 Heaven's Gates"
+    icon: "heavens-gate-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1500 Heaven's Gates</p>
+  - id: "heavens-gate-trophy15"
+    name: "2000 Heaven's Gates"
+    icon: "heavens-gate-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2000 Heaven's Gates</p>
+  - id: "heavens-gate-trophy16"
+    name: "2500 Heaven's Gates"
+    icon: "heavens-gate-trophy16.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2500 Heaven's Gates</p>
+  - id: "heavens-gate-trophy17"
+    name: "3000 Heaven's Gates"
+    icon: "heavens-gate-trophy17.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3000 Heaven's Gates</p>
+  - id: "heavens-gate-trophy18"
+    name: "3500 Heaven's Gates"
+    icon: "heavens-gate-trophy18.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3500 Heaven's Gates</p>
+  - id: "heavens-gate-trophy19"
+    name: "5000 Heaven's Gates"
+    icon: "heavens-gate-trophy19.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 5000 Heaven's Gates</p>
+  - id: "heavens-gate-trophy20"
+    name: "7500 Heaven's Gates"
+    icon: "heavens-gate-trophy20.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 7500 Heaven's Gates</p>
+  - id: "heavens-gate-trophy21"
+    name: "12000 Heaven's Gates"
+    icon: "heavens-gate-trophy21.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 12000 Heaven's Gates</p>
+  - id: "heavens-gate-trophy22"
+    name: "20000 Heaven's Gates"
+    icon: "heavens-gate-trophy22.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 20000 Heaven's Gates</p>
+  - id: "hell-portal-trophy1"
+    name: "1 Hell Portal"
+    icon: "hell-portal-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1 Hell Portal</p>
+  - id: "hell-portal-trophy2"
+    name: "50 Hell Portals"
+    icon: "hell-portal-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 50 Hell Portals</p>
+  - id: "hell-portal-trophy3"
+    name: "100 Hell Portals"
+    icon: "hell-portal-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 100 Hell Portals</p>
+  - id: "hell-portal-trophy4"
+    name: "150 Hell Portals"
+    icon: "hell-portal-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 150 Hell Portals</p>
+  - id: "hell-portal-trophy5"
+    name: "200 Hell Portals"
+    icon: "hell-portal-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 200 Hell Portals</p>
+  - id: "hell-portal-trophy6"
+    name: "300 Hell Portals"
+    icon: "hell-portal-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 300 Hell Portals</p>
+  - id: "hell-portal-trophy7"
+    name: "400 Hell Portals"
+    icon: "hell-portal-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 400 Hell Portals</p>
+  - id: "hell-portal-trophy8"
+    name: "500 Hell Portals"
+    icon: "hell-portal-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 500 Hell Portals</p>
+  - id: "hell-portal-trophy9"
+    name: "600 Hell Portals"
+    icon: "hell-portal-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 600 Hell Portals</p>
+  - id: "hell-portal-trophy10"
+    name: "700 Hell Portals"
+    icon: "hell-portal-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 700 Hell Portals</p>
+  - id: "hell-portal-trophy11"
+    name: "800 Hell Portals"
+    icon: "hell-portal-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 800 Hell Portals</p>
+  - id: "hell-portal-trophy12"
+    name: "900 Hell Portals"
+    icon: "hell-portal-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 900 Hell Portals</p>
+  - id: "hell-portal-trophy13"
+    name: "1000 Hell Portals"
+    icon: "hell-portal-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1000 Hell Portals</p>
+  - id: "hell-portal-trophy14"
+    name: "1500 Hell Portals"
+    icon: "hell-portal-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1500 Hell Portals</p>
+  - id: "hell-portal-trophy15"
+    name: "2000 Hell Portals"
+    icon: "hell-portal-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2000 Hell Portals</p>
+  - id: "hell-portal-trophy16"
+    name: "2500 Hell Portals"
+    icon: "hell-portal-trophy16.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2500 Hell Portals</p>
+  - id: "hell-portal-trophy17"
+    name: "3000 Hell Portals"
+    icon: "hell-portal-trophy17.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3000 Hell Portals</p>
+  - id: "hell-portal-trophy18"
+    name: "3500 Hell Portals"
+    icon: "hell-portal-trophy18.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3500 Hell Portals</p>
+  - id: "hell-portal-trophy19"
+    name: "5000 Hell Portals"
+    icon: "hell-portal-trophy19.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 5000 Hell Portals</p>
+  - id: "hell-portal-trophy20"
+    name: "7500 Hell Portals"
+    icon: "hell-portal-trophy20.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 7500 Hell Portals</p>
+  - id: "hell-portal-trophy21"
+    name: "12000 Hell Portals"
+    icon: "hell-portal-trophy21.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 12000 Hell Portals</p>
+  - id: "hell-portal-trophy22"
+    name: "20000 Hell Portals"
+    icon: "hell-portal-trophy22.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 20000 Hell Portals</p>
+  - id: "deep-mine-trophy1"
+    name: "1 Deep Mine"
+    icon: "deep-mine-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1 Deep Mine</p>
+  - id: "deep-mine-trophy2"
+    name: "50 Deep Mines"
+    icon: "deep-mine-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 50 Deep Mines</p>
+  - id: "deep-mine-trophy3"
+    name: "100 Deep Mines"
+    icon: "deep-mine-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 100 Deep Mines</p>
+  - id: "deep-mine-trophy4"
+    name: "150 Deep Mines"
+    icon: "deep-mine-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 150 Deep Mines</p>
+  - id: "deep-mine-trophy5"
+    name: "200 Deep Mines"
+    icon: "deep-mine-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 200 Deep Mines</p>
+  - id: "deep-mine-trophy6"
+    name: "300 Deep Mines"
+    icon: "deep-mine-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 300 Deep Mines</p>
+  - id: "deep-mine-trophy7"
+    name: "400 Deep Mines"
+    icon: "deep-mine-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 400 Deep Mines</p>
+  - id: "deep-mine-trophy8"
+    name: "500 Deep Mines"
+    icon: "deep-mine-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 500 Deep Mines</p>
+  - id: "deep-mine-trophy9"
+    name: "600 Deep Mines"
+    icon: "deep-mine-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 600 Deep Mines</p>
+  - id: "deep-mine-trophy10"
+    name: "700 Deep Mines"
+    icon: "deep-mine-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 700 Deep Mines</p>
+  - id: "deep-mine-trophy11"
+    name: "800 Deep Mines"
+    icon: "deep-mine-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 800 Deep Mines</p>
+  - id: "deep-mine-trophy12"
+    name: "900 Deep Mines"
+    icon: "deep-mine-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 900 Deep Mines</p>
+  - id: "deep-mine-trophy13"
+    name: "1000 Deep Mines"
+    icon: "deep-mine-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1000 Deep Mines</p>
+  - id: "deep-mine-trophy14"
+    name: "1500 Deep Mines"
+    icon: "deep-mine-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1500 Deep Mines</p>
+  - id: "deep-mine-trophy15"
+    name: "2000 Deep Mines"
+    icon: "deep-mine-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2000 Deep Mines</p>
+  - id: "deep-mine-trophy16"
+    name: "2500 Deep Mines"
+    icon: "deep-mine-trophy16.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2500 Deep Mines</p>
+  - id: "deep-mine-trophy17"
+    name: "3000 Deep Mines"
+    icon: "deep-mine-trophy17.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3000 Deep Mines</p>
+  - id: "deep-mine-trophy18"
+    name: "3500 Deep Mines"
+    icon: "deep-mine-trophy18.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3500 Deep Mines</p>
+  - id: "deep-mine-trophy19"
+    name: "5000 Deep Mines"
+    icon: "deep-mine-trophy19.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 5000 Deep Mines</p>
+  - id: "deep-mine-trophy20"
+    name: "7500 Deep Mines"
+    icon: "deep-mine-trophy20.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 7500 Deep Mines</p>
+  - id: "deep-mine-trophy21"
+    name: "12000 Deep Mines"
+    icon: "deep-mine-trophy21.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 12000 Deep Mines</p>
+  - id: "deep-mine-trophy22"
+    name: "20000 Deep Mines"
+    icon: "deep-mine-trophy22.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 20000 Deep Mines</p>
+  - id: "stone-pillars-trophy1"
+    name: "1 Stone Pillars"
+    icon: "stone-pillars-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1 Stone Pillars</p>
+  - id: "stone-pillars-trophy2"
+    name: "50 Stone Pillars"
+    icon: "stone-pillars-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 50 Stone Pillars</p>
+  - id: "stone-pillars-trophy3"
+    name: "100 Stone Pillars"
+    icon: "stone-pillars-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 100 Stone Pillars</p>
+  - id: "stone-pillars-trophy4"
+    name: "150 Stone Pillars"
+    icon: "stone-pillars-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 150 Stone Pillars</p>
+  - id: "stone-pillars-trophy5"
+    name: "200 Stone Pillars"
+    icon: "stone-pillars-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 200 Stone Pillars</p>
+  - id: "stone-pillars-trophy6"
+    name: "300 Stone Pillars"
+    icon: "stone-pillars-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 300 Stone Pillars</p>
+  - id: "stone-pillars-trophy7"
+    name: "400 Stone Pillars"
+    icon: "stone-pillars-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 400 Stone Pillars</p>
+  - id: "stone-pillars-trophy8"
+    name: "500 Stone Pillars"
+    icon: "stone-pillars-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 500 Stone Pillars</p>
+  - id: "stone-pillars-trophy9"
+    name: "600 Stone Pillars"
+    icon: "stone-pillars-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 600 Stone Pillars</p>
+  - id: "stone-pillars-trophy10"
+    name: "700 Stone Pillars"
+    icon: "stone-pillars-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 700 Stone Pillars</p>
+  - id: "stone-pillars-trophy11"
+    name: "800 Stone Pillars"
+    icon: "stone-pillars-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 800 Stone Pillars</p>
+  - id: "stone-pillars-trophy12"
+    name: "900 Stone Pillars"
+    icon: "stone-pillars-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 900 Stone Pillars</p>
+  - id: "stone-pillars-trophy13"
+    name: "1000 Stone Pillars"
+    icon: "stone-pillars-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1000 Stone Pillars</p>
+  - id: "stone-pillars-trophy14"
+    name: "1500 Stone Pillars"
+    icon: "stone-pillars-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1500 Stone Pillars</p>
+  - id: "stone-pillars-trophy15"
+    name: "2000 Stone Pillars"
+    icon: "stone-pillars-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2000 Stone Pillars</p>
+  - id: "stone-pillars-trophy16"
+    name: "2500 Stone Pillars"
+    icon: "stone-pillars-trophy16.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2500 Stone Pillars</p>
+  - id: "stone-pillars-trophy17"
+    name: "3000 Stone Pillars"
+    icon: "stone-pillars-trophy17.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3000 Stone Pillars</p>
+  - id: "stone-pillars-trophy18"
+    name: "3500 Stone Pillars"
+    icon: "stone-pillars-trophy18.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3500 Stone Pillars</p>
+  - id: "stone-pillars-trophy19"
+    name: "5000 Stone Pillars"
+    icon: "stone-pillars-trophy19.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 5000 Stone Pillars</p>
+  - id: "stone-pillars-trophy20"
+    name: "7500 Stone Pillars"
+    icon: "stone-pillars-trophy20.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 7500 Stone Pillars</p>
+  - id: "stone-pillars-trophy21"
+    name: "12000 Stone Pillars"
+    icon: "stone-pillars-trophy21.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 12000 Stone Pillars</p>
+  - id: "stone-pillars-trophy22"
+    name: "20000 Stone Pillars"
+    icon: "stone-pillars-trophy22.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 20000 Stone Pillars</p>
+  - id: "alchemist-lab-trophy1"
+    name: "1 Alchemist Lab"
+    icon: "alchemist-lab-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1 Alchemist Lab</p>
+  - id: "alchemist-lab-trophy2"
+    name: "50 Alchemist Labs"
+    icon: "alchemist-lab-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 50 Alchemist Labs</p>
+  - id: "alchemist-lab-trophy3"
+    name: "100 Alchemist Labs"
+    icon: "alchemist-lab-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 100 Alchemist Labs</p>
+  - id: "alchemist-lab-trophy4"
+    name: "150 Alchemist Labs"
+    icon: "alchemist-lab-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 150 Alchemist Labs</p>
+  - id: "alchemist-lab-trophy5"
+    name: "200 Alchemist Labs"
+    icon: "alchemist-lab-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 200 Alchemist Labs</p>
+  - id: "alchemist-lab-trophy6"
+    name: "300 Alchemist Labs"
+    icon: "alchemist-lab-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 300 Alchemist Labs</p>
+  - id: "alchemist-lab-trophy7"
+    name: "400 Alchemist Labs"
+    icon: "alchemist-lab-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 400 Alchemist Labs</p>
+  - id: "alchemist-lab-trophy8"
+    name: "500 Alchemist Labs"
+    icon: "alchemist-lab-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 500 Alchemist Labs</p>
+  - id: "alchemist-lab-trophy9"
+    name: "600 Alchemist Labs"
+    icon: "alchemist-lab-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 600 Alchemist Labs</p>
+  - id: "alchemist-lab-trophy10"
+    name: "700 Alchemist Labs"
+    icon: "alchemist-lab-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 700 Alchemist Labs</p>
+  - id: "alchemist-lab-trophy11"
+    name: "800 Alchemist Labs"
+    icon: "alchemist-lab-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 800 Alchemist Labs</p>
+  - id: "alchemist-lab-trophy12"
+    name: "900 Alchemist Labs"
+    icon: "alchemist-lab-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 900 Alchemist Labs</p>
+  - id: "alchemist-lab-trophy13"
+    name: "1000 Alchemist Labs"
+    icon: "alchemist-lab-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1000 Alchemist Labs</p>
+  - id: "alchemist-lab-trophy14"
+    name: "1500 Alchemist Labs"
+    icon: "alchemist-lab-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1500 Alchemist Labs</p>
+  - id: "alchemist-lab-trophy15"
+    name: "2000 Alchemist Labs"
+    icon: "alchemist-lab-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2000 Alchemist Labs</p>
+  - id: "alchemist-lab-trophy16"
+    name: "2500 Alchemist Labs"
+    icon: "alchemist-lab-trophy16.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2500 Alchemist Labs</p>
+  - id: "alchemist-lab-trophy17"
+    name: "3000 Alchemist Labs"
+    icon: "alchemist-lab-trophy17.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3000 Alchemist Labs</p>
+  - id: "alchemist-lab-trophy18"
+    name: "3500 Alchemist Labs"
+    icon: "alchemist-lab-trophy18.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3500 Alchemist Labs</p>
+  - id: "alchemist-lab-trophy19"
+    name: "5000 Alchemist Labs"
+    icon: "alchemist-lab-trophy19.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 5000 Alchemist Labs</p>
+  - id: "alchemist-lab-trophy20"
+    name: "7500 Alchemist Labs"
+    icon: "alchemist-lab-trophy20.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 7500 Alchemist Labs</p>
+  - id: "alchemist-lab-trophy21"
+    name: "12000 Alchemist Labs"
+    icon: "alchemist-lab-trophy21.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 12000 Alchemist Labs</p>
+  - id: "alchemist-lab-trophy22"
+    name: "20000 Alchemist Labs"
+    icon: "alchemist-lab-trophy22.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 20000 Alchemist Labs</p>
+  - id: "monastery-trophy1"
+    name: "1 Monastery"
+    icon: "monastery-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1 Monastery</p>
+  - id: "monastery-trophy2"
+    name: "50 Monasteries"
+    icon: "monastery-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 50 Monasteries</p>
+  - id: "monastery-trophy3"
+    name: "100 Monasteries"
+    icon: "monastery-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 100 Monasteries</p>
+  - id: "monastery-trophy4"
+    name: "150 Monasteries"
+    icon: "monastery-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 150 Monasteries</p>
+  - id: "monastery-trophy5"
+    name: "200 Monasteries"
+    icon: "monastery-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 200 Monasteries</p>
+  - id: "monastery-trophy6"
+    name: "300 Monasteries"
+    icon: "monastery-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 300 Monasteries</p>
+  - id: "monastery-trophy7"
+    name: "400 Monasteries"
+    icon: "monastery-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 400 Monasteries</p>
+  - id: "monastery-trophy8"
+    name: "500 Monasteries"
+    icon: "monastery-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 500 Monasteries</p>
+  - id: "monastery-trophy9"
+    name: "600 Monasteries"
+    icon: "monastery-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 600 Monasteries</p>
+  - id: "monastery-trophy10"
+    name: "700 Monasteries"
+    icon: "monastery-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 700 Monasteries</p>
+  - id: "monastery-trophy11"
+    name: "800 Monasteries"
+    icon: "monastery-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 800 Monasteries</p>
+  - id: "monastery-trophy12"
+    name: "900 Monasteries"
+    icon: "monastery-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 900 Monasteries</p>
+  - id: "monastery-trophy13"
+    name: "1000 Monasteries"
+    icon: "monastery-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1000 Monasteries</p>
+  - id: "monastery-trophy14"
+    name: "1500 Monasteries"
+    icon: "monastery-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1500 Monasteries</p>
+  - id: "monastery-trophy15"
+    name: "2000 Monasteries"
+    icon: "monastery-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2000 Monasteries</p>
+  - id: "monastery-trophy16"
+    name: "2500 Monasteries"
+    icon: "monastery-trophy16.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2500 Monasteries</p>
+  - id: "monastery-trophy17"
+    name: "3000 Monasteries"
+    icon: "monastery-trophy17.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3000 Monasteries</p>
+  - id: "monastery-trophy18"
+    name: "3500 Monasteries"
+    icon: "monastery-trophy18.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3500 Monasteries</p>
+  - id: "monastery-trophy19"
+    name: "5000 Monasteries"
+    icon: "monastery-trophy19.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 5000 Monasteries</p>
+  - id: "monastery-trophy20"
+    name: "7500 Monasteries"
+    icon: "monastery-trophy20.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 7500 Monasteries</p>
+  - id: "monastery-trophy21"
+    name: "12000 Monasteries"
+    icon: "monastery-trophy21.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 12000 Monasteries</p>
+  - id: "monastery-trophy22"
+    name: "20000 Monasteries"
+    icon: "monastery-trophy22.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 20000 Monasteries</p>
+  - id: "labyrinth-trophy1"
+    name: "1 Labyrinth"
+    icon: "labyrinth-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1 Labyrinth</p>
+  - id: "labyrinth-trophy2"
+    name: "50 Labyrinths"
+    icon: "labyrinth-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 50 Labyrinths</p>
+  - id: "labyrinth-trophy3"
+    name: "100 Labyrinths"
+    icon: "labyrinth-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 100 Labyrinths</p>
+  - id: "labyrinth-trophy4"
+    name: "150 Labyrinths"
+    icon: "labyrinth-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 150 Labyrinths</p>
+  - id: "labyrinth-trophy5"
+    name: "200 Labyrinths"
+    icon: "labyrinth-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 200 Labyrinths</p>
+  - id: "labyrinth-trophy6"
+    name: "300 Labyrinths"
+    icon: "labyrinth-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 300 Labyrinths</p>
+  - id: "labyrinth-trophy7"
+    name: "400 Labyrinths"
+    icon: "labyrinth-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 400 Labyrinths</p>
+  - id: "labyrinth-trophy8"
+    name: "500 Labyrinths"
+    icon: "labyrinth-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 500 Labyrinths</p>
+  - id: "labyrinth-trophy9"
+    name: "600 Labyrinths"
+    icon: "labyrinth-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 600 Labyrinths</p>
+  - id: "labyrinth-trophy10"
+    name: "700 Labyrinths"
+    icon: "labyrinth-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 700 Labyrinths</p>
+  - id: "labyrinth-trophy11"
+    name: "800 Labyrinths"
+    icon: "labyrinth-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 800 Labyrinths</p>
+  - id: "labyrinth-trophy12"
+    name: "900 Labyrinths"
+    icon: "labyrinth-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 900 Labyrinths</p>
+  - id: "labyrinth-trophy13"
+    name: "1000 Labyrinths"
+    icon: "labyrinth-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1000 Labyrinths</p>
+  - id: "labyrinth-trophy14"
+    name: "1500 Labyrinths"
+    icon: "labyrinth-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1500 Labyrinths</p>
+  - id: "labyrinth-trophy15"
+    name: "2000 Labyrinths"
+    icon: "labyrinth-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2000 Labyrinths</p>
+  - id: "labyrinth-trophy16"
+    name: "2500 Labyrinths"
+    icon: "labyrinth-trophy16.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2500 Labyrinths</p>
+  - id: "labyrinth-trophy17"
+    name: "3000 Labyrinths"
+    icon: "labyrinth-trophy17.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3000 Labyrinths</p>
+  - id: "labyrinth-trophy18"
+    name: "3500 Labyrinths"
+    icon: "labyrinth-trophy18.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3500 Labyrinths</p>
+  - id: "labyrinth-trophy19"
+    name: "5000 Labyrinths"
+    icon: "labyrinth-trophy19.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 5000 Labyrinths</p>
+  - id: "labyrinth-trophy20"
+    name: "7500 Labyrinths"
+    icon: "labyrinth-trophy20.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 7500 Labyrinths</p>
+  - id: "labyrinth-trophy21"
+    name: "12000 Labyrinths"
+    icon: "labyrinth-trophy21.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 12000 Labyrinths</p>
+  - id: "labyrinth-trophy22"
+    name: "20000 Labyrinths"
+    icon: "labyrinth-trophy22.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 20000 Labyrinths</p>
+  - id: "iron-stronghold-trophy1"
+    name: "1 Iron Stronghold"
+    icon: "iron-stronghold-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1 Iron Stronghold</p>
+  - id: "iron-stronghold-trophy2"
+    name: "50 Iron Strongholds"
+    icon: "iron-stronghold-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 50 Iron Strongholds</p>
+  - id: "iron-stronghold-trophy3"
+    name: "100 Iron Strongholds"
+    icon: "iron-stronghold-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 100 Iron Strongholds</p>
+  - id: "iron-stronghold-trophy4"
+    name: "150 Iron Strongholds"
+    icon: "iron-stronghold-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 150 Iron Strongholds</p>
+  - id: "iron-stronghold-trophy5"
+    name: "200 Iron Strongholds"
+    icon: "iron-stronghold-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 200 Iron Strongholds</p>
+  - id: "iron-stronghold-trophy6"
+    name: "300 Iron Strongholds"
+    icon: "iron-stronghold-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 300 Iron Strongholds</p>
+  - id: "iron-stronghold-trophy7"
+    name: "400 Iron Strongholds"
+    icon: "iron-stronghold-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 400 Iron Strongholds</p>
+  - id: "iron-stronghold-trophy8"
+    name: "500 Iron Strongholds"
+    icon: "iron-stronghold-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 500 Iron Strongholds</p>
+  - id: "iron-stronghold-trophy9"
+    name: "600 Iron Strongholds"
+    icon: "iron-stronghold-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 600 Iron Strongholds</p>
+  - id: "iron-stronghold-trophy10"
+    name: "700 Iron Strongholds"
+    icon: "iron-stronghold-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 700 Iron Strongholds</p>
+  - id: "iron-stronghold-trophy11"
+    name: "800 Iron Strongholds"
+    icon: "iron-stronghold-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 800 Iron Strongholds</p>
+  - id: "iron-stronghold-trophy12"
+    name: "900 Iron Strongholds"
+    icon: "iron-stronghold-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 900 Iron Strongholds</p>
+  - id: "iron-stronghold-trophy13"
+    name: "1000 Iron Strongholds"
+    icon: "iron-stronghold-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1000 Iron Strongholds</p>
+  - id: "iron-stronghold-trophy14"
+    name: "1500 Iron Strongholds"
+    icon: "iron-stronghold-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1500 Iron Strongholds</p>
+  - id: "iron-stronghold-trophy15"
+    name: "2000 Iron Strongholds"
+    icon: "iron-stronghold-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2000 Iron Strongholds</p>
+  - id: "iron-stronghold-trophy16"
+    name: "2500 Iron Strongholds"
+    icon: "iron-stronghold-trophy16.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2500 Iron Strongholds</p>
+  - id: "iron-stronghold-trophy17"
+    name: "3000 Iron Strongholds"
+    icon: "iron-stronghold-trophy17.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3000 Iron Strongholds</p>
+  - id: "iron-stronghold-trophy18"
+    name: "3500 Iron Strongholds"
+    icon: "iron-stronghold-trophy18.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3500 Iron Strongholds</p>
+  - id: "iron-stronghold-trophy19"
+    name: "5000 Iron Strongholds"
+    icon: "iron-stronghold-trophy19.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 5000 Iron Strongholds</p>
+  - id: "iron-stronghold-trophy20"
+    name: "7500 Iron Strongholds"
+    icon: "iron-stronghold-trophy20.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 7500 Iron Strongholds</p>
+  - id: "iron-stronghold-trophy21"
+    name: "12000 Iron Strongholds"
+    icon: "iron-stronghold-trophy21.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 12000 Iron Strongholds</p>
+  - id: "iron-stronghold-trophy22"
+    name: "20000 Iron Strongholds"
+    icon: "iron-stronghold-trophy22.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 20000 Iron Strongholds</p>
+  - id: "ancient-pyramid-trophy1"
+    name: "1 Ancient Pyramid"
+    icon: "ancient-pyramid-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1 Ancient Pyramid</p>
+  - id: "ancient-pyramid-trophy2"
+    name: "50 Ancient Pyramids"
+    icon: "ancient-pyramid-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 50 Ancient Pyramids</p>
+  - id: "ancient-pyramid-trophy3"
+    name: "100 Ancient Pyramids"
+    icon: "ancient-pyramid-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 100 Ancient Pyramids</p>
+  - id: "ancient-pyramid-trophy4"
+    name: "150 Ancient Pyramids"
+    icon: "ancient-pyramid-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 150 Ancient Pyramids</p>
+  - id: "ancient-pyramid-trophy5"
+    name: "200 Ancient Pyramids"
+    icon: "ancient-pyramid-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 200 Ancient Pyramids</p>
+  - id: "ancient-pyramid-trophy6"
+    name: "300 Ancient Pyramids"
+    icon: "ancient-pyramid-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 300 Ancient Pyramids</p>
+  - id: "ancient-pyramid-trophy7"
+    name: "400 Ancient Pyramids"
+    icon: "ancient-pyramid-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 400 Ancient Pyramids</p>
+  - id: "ancient-pyramid-trophy8"
+    name: "500 Ancient Pyramids"
+    icon: "ancient-pyramid-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 500 Ancient Pyramids</p>
+  - id: "ancient-pyramid-trophy9"
+    name: "600 Ancient Pyramids"
+    icon: "ancient-pyramid-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 600 Ancient Pyramids</p>
+  - id: "ancient-pyramid-trophy10"
+    name: "700 Ancient Pyramids"
+    icon: "ancient-pyramid-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 700 Ancient Pyramids</p>
+  - id: "ancient-pyramid-trophy11"
+    name: "800 Ancient Pyramids"
+    icon: "ancient-pyramid-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 800 Ancient Pyramids</p>
+  - id: "ancient-pyramid-trophy12"
+    name: "900 Ancient Pyramids"
+    icon: "ancient-pyramid-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 900 Ancient Pyramids</p>
+  - id: "ancient-pyramid-trophy13"
+    name: "1000 Ancient Pyramids"
+    icon: "ancient-pyramid-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1000 Ancient Pyramids</p>
+  - id: "ancient-pyramid-trophy14"
+    name: "1500 Ancient Pyramids"
+    icon: "ancient-pyramid-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1500 Ancient Pyramids</p>
+  - id: "ancient-pyramid-trophy15"
+    name: "2000 Ancient Pyramids"
+    icon: "ancient-pyramid-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2000 Ancient Pyramids</p>
+  - id: "ancient-pyramid-trophy16"
+    name: "2500 Ancient Pyramids"
+    icon: "ancient-pyramid-trophy16.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2500 Ancient Pyramids</p>
+  - id: "ancient-pyramid-trophy17"
+    name: "3000 Ancient Pyramids"
+    icon: "ancient-pyramid-trophy17.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3000 Ancient Pyramids</p>
+  - id: "ancient-pyramid-trophy18"
+    name: "3500 Ancient Pyramids"
+    icon: "ancient-pyramid-trophy18.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3500 Ancient Pyramids</p>
+  - id: "ancient-pyramid-trophy19"
+    name: "5000 Ancient Pyramids"
+    icon: "ancient-pyramid-trophy19.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 5000 Ancient Pyramids</p>
+  - id: "ancient-pyramid-trophy20"
+    name: "7500 Ancient Pyramids"
+    icon: "ancient-pyramid-trophy20.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 7500 Ancient Pyramids</p>
+  - id: "ancient-pyramid-trophy21"
+    name: "12000 Ancient Pyramids"
+    icon: "ancient-pyramid-trophy21.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 12000 Ancient Pyramids</p>
+  - id: "ancient-pyramid-trophy22"
+    name: "20000 Ancient Pyramids"
+    icon: "ancient-pyramid-trophy22.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 20000 Ancient Pyramids</p>
+  - id: "hall-of-legends-trophy1"
+    name: "1 Hall of Legends"
+    icon: "hall-of-legends-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1 Hall of Legends</p>
+  - id: "hall-of-legends-trophy2"
+    name: "50 Hall of Legends"
+    icon: "hall-of-legends-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 50 Hall of Legends</p>
+  - id: "hall-of-legends-trophy3"
+    name: "100 Hall of Legends"
+    icon: "hall-of-legends-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 100 Hall of Legends</p>
+  - id: "hall-of-legends-trophy4"
+    name: "150 Hall of Legends"
+    icon: "hall-of-legends-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 150 Hall of Legends</p>
+  - id: "hall-of-legends-trophy5"
+    name: "200 Hall of Legends"
+    icon: "hall-of-legends-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 200 Hall of Legends</p>
+  - id: "hall-of-legends-trophy6"
+    name: "300 Hall of Legends"
+    icon: "hall-of-legends-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 300 Hall of Legends</p>
+  - id: "hall-of-legends-trophy7"
+    name: "400 Hall of Legends"
+    icon: "hall-of-legends-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 400 Hall of Legends</p>
+  - id: "hall-of-legends-trophy8"
+    name: "500 Hall of Legends"
+    icon: "hall-of-legends-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 500 Hall of Legends</p>
+  - id: "hall-of-legends-trophy9"
+    name: "600 Hall of Legends"
+    icon: "hall-of-legends-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 600 Hall of Legends</p>
+  - id: "hall-of-legends-trophy10"
+    name: "700 Hall of Legends"
+    icon: "hall-of-legends-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 700 Hall of Legends</p>
+  - id: "hall-of-legends-trophy11"
+    name: "800 Hall of Legends"
+    icon: "hall-of-legends-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 800 Hall of Legends</p>
+  - id: "hall-of-legends-trophy12"
+    name: "900 Hall of Legends"
+    icon: "hall-of-legends-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 900 Hall of Legends</p>
+  - id: "hall-of-legends-trophy13"
+    name: "1000 Hall of Legends"
+    icon: "hall-of-legends-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1000 Hall of Legends</p>
+  - id: "hall-of-legends-trophy14"
+    name: "1500 Hall of Legends"
+    icon: "hall-of-legends-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1500 Hall of Legends</p>
+  - id: "hall-of-legends-trophy15"
+    name: "2000 Hall of Legends"
+    icon: "hall-of-legends-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2000 Hall of Legends</p>
+  - id: "hall-of-legends-trophy16"
+    name: "2500 Hall of Legends"
+    icon: "hall-of-legends-trophy16.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 2500 Hall of Legends</p>
+  - id: "hall-of-legends-trophy17"
+    name: "3000 Hall of Legends"
+    icon: "hall-of-legends-trophy17.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3000 Hall of Legends</p>
+  - id: "hall-of-legends-trophy18"
+    name: "3500 Hall of Legends"
+    icon: "hall-of-legends-trophy18.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 3500 Hall of Legends</p>
+  - id: "hall-of-legends-trophy19"
+    name: "5000 Hall of Legends"
+    icon: "hall-of-legends-trophy19.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 5000 Hall of Legends</p>
+  - id: "hall-of-legends-trophy20"
+    name: "7500 Hall of Legends"
+    icon: "hall-of-legends-trophy20.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 7500 Hall of Legends</p>
+  - id: "hall-of-legends-trophy21"
+    name: "12000 Hall of Legends"
+    icon: "hall-of-legends-trophy21.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 12000 Hall of Legends</p>
+  - id: "hall-of-legends-trophy22"
+    name: "20000 Hall of Legends"
+    icon: "hall-of-legends-trophy22.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 20000 Hall of Legends</p>
+  - id: "build-building-trophy1"
+    name: "Village Grinder"
+    icon: "build-building-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Build a total of 100 buildings</p>
+  - id: "build-building-trophy2"
+    name: "Town Grinder"
+    icon: "build-building-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Build a total of 250 buildings</p>
+  - id: "build-building-trophy3"
+    name: "City Grinder"
+    icon: "build-building-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Build a total of 500 buildings</p>
+  - id: "build-building-trophy4"
+    name: "Kingdom Grinder"
+    icon: "build-building-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Build a total of 1,000 buildings</p>
+  - id: "build-building-trophy5"
+    name: "Empire Grinder"
+    icon: "build-building-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Build a total of 2,000 buildings</p>
+  - id: "build-building-trophy6"
+    name: "Realm Grinder"
+    icon: "build-building-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Build a total of 3,000 buildings</p>
+  - id: "build-building-trophy7"
+    name: "History Grinder"
+    icon: "build-building-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Build a total of 5,000 buildings</p>
+  - id: "build-building-trophy8"
+    name: "World Grinder"
+    icon: "build-building-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Build a total of 8,000 buildings</p>
+  - id: "build-building-trophy9"
+    name: "Universe Grinder"
+    icon: "build-building-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Build a total of 12,000 buildings</p>
+  - id: "build-building-trophy10"
+    name: "Multiverse Grinder"
+    icon: "build-building-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Build a total of 20,000 buildings</p>
+  - id: "build-building-trophy11"
+    name: "Metagrinder"
+    icon: "build-building-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Build a total of 35,000 buildings</p>
+  - id: "build-building-trophy12"
+    name: "Overgrinder"
+    icon: "build-building-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: Build a total of 50,000 buildings</p>
+  - id: "build-building-trophy13"
+    name: "True Grinder"
+    icon: "build-building-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: Build a total of 125,000 buildings</p>
+  - id: "build-building-trophy14"
+    name: "Master Grinder"
+    icon: "build-building-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: Build a total of 200,000 buildings</p>
+  - id: "build-building-trophy15"
+    name: "Grandmaster Grinder"
+    icon: "build-building-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Build a total of 300,000 buildings</p>
+  - id: "the-architect-trophy"
+    name: "The Architect"
+    icon: "the-architect-trophy.png"
+    body: |-
+      <p><b>Requirements</b>: Build 100,000 units of any individual building.</p>
+      <p><b>Effect</b>: Unlocks a free upgrade that increases Faction Coins found with excavations by (x ^ 0.8)%, where x is buildings built.</p>

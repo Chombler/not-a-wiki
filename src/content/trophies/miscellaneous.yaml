@@ -1,0 +1,920 @@
+# Canonical, human-authored trophy records. Both trophy pages render this file.
+category: "miscellaneous"
+label: "Miscellaneous Trophies"
+order: 2
+trophies:
+  - id: "gain-coin-trophy1"
+    name: "A Thousand Coins"
+    icon: "gain-coin-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1,000 coins in a single game.</p>
+  - id: "gain-coin-trophy2"
+    name: "A Million Coins"
+    icon: "gain-coin-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 M (1e6) coins in a single game.</p>
+  - id: "gain-coin-trophy3"
+    name: "A Billion Coins"
+    icon: "gain-coin-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 B (1e9) coins in a single game.</p>
+  - id: "gain-coin-trophy4"
+    name: "A Trillion Coins"
+    icon: "gain-coin-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 T (1e12) coins in a single game.</p>
+  - id: "gain-coin-trophy5"
+    name: "A Quadrillion Coins"
+    icon: "gain-coin-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Qa (1e15) coins in a single game.</p>
+  - id: "gain-coin-trophy6"
+    name: "A Quintillion Coins"
+    icon: "gain-coin-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Qi (1e18) coins in a single game.</p>
+  - id: "gain-coin-trophy7"
+    name: "A Sextillion Coins"
+    icon: "gain-coin-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Sx (1e21) coins in a single game.</p>
+  - id: "gain-coin-trophy8"
+    name: "A Septillion Coins"
+    icon: "gain-coin-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Sp (1e24) coins in a single game.</p>
+  - id: "gain-coin-trophy9"
+    name: "An Octillion Coins"
+    icon: "gain-coin-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Oc (1e27) coins in a single game.</p>
+  - id: "gain-coin-trophy10"
+    name: "A Nonillion Coins"
+    icon: "gain-coin-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 No (1e30) coins in a single game.</p>
+  - id: "gain-coin-trophy11"
+    name: "A Decillion Coins"
+    icon: "gain-coin-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Dc (1e33) coins in a single game.</p>
+  - id: "gain-coin-trophy12"
+    name: "Countless Coins"
+    icon: "gain-coin-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Ud (1e36) coins in a single game.</p>
+  - id: "gain-coin-trophy13"
+    name: "Infinite Coins"
+    icon: "gain-coin-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Uvg (1e66) coins in a single game.</p>
+  - id: "gain-coin-trophy14"
+    name: "Unlimited Coins"
+    icon: "gain-coin-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Qivg (1e78) coins in a single game.</p>
+  - id: "gain-coin-trophy15"
+    name: "Endless Coins"
+    icon: "gain-coin-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Tg (1e93) coins in a single game.</p>
+  - id: "gain-coin-trophy16"
+    name: "Coins Galore"
+    icon: "gain-coin-trophy16.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Qitg (1e108) coins in a single game.</p>
+  - id: "gain-coin-trophy17"
+    name: "Coin Multiplication"
+    icon: "gain-coin-trophy17.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Qag (1e123) coins in a single game.</p>
+  - id: "gain-coin-trophy18"
+    name: "Coin Hemisphere"
+    icon: "gain-coin-trophy18.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Qig (1e153) coins in a single game.</p>
+  - id: "gain-coin-trophy19"
+    name: "Coin World"
+    icon: "gain-coin-trophy19.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 SxSxg (1e201) coins in a single game.</p>
+  - id: "gain-coin-trophy20"
+    name: "Coin Universe"
+    icon: "gain-coin-trophy20.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Ocg (1e243) coins in a single game.</p>
+  - id: "gain-click-trophy1"
+    name: "Treasure Clicker"
+    icon: "gain-click-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 100 coins by clicking in a single game.</p>
+  - id: "gain-click-trophy2"
+    name: "Treasure Finder"
+    icon: "gain-click-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1,000 coins by clicking in a single game.</p>
+  - id: "gain-click-trophy3"
+    name: "Treasure Digger"
+    icon: "gain-click-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 M (1e6) coins by clicking in a single game.</p>
+  - id: "gain-click-trophy4"
+    name: "Treasure Hunter"
+    icon: "gain-click-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 B (1e9) coins by clicking in a single game.</p>
+  - id: "gain-click-trophy5"
+    name: "Treasure Seeker"
+    icon: "gain-click-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 T (1e12) coins by clicking in a single game.</p>
+  - id: "gain-click-trophy6"
+    name: "Treasure Master"
+    icon: "gain-click-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Qa (1e15) coins by clicking in a single game.</p>
+  - id: "gain-click-trophy7"
+    name: "Treasure Hero"
+    icon: "gain-click-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Qi (1e18) coins by clicking in a single game.</p>
+  - id: "gain-click-trophy8"
+    name: "Treasure Legend"
+    icon: "gain-click-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Sx (1e21) coins by clicking in a single game.</p>
+  - id: "gain-click-trophy9"
+    name: "Treasure Grinder"
+    icon: "gain-click-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Sp (1e24) coins by clicking in a single game.</p>
+  - id: "gain-click-trophy10"
+    name: "Treasure Breaker"
+    icon: "gain-click-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Ud (1e36) coins by clicking in a single game.</p>
+  - id: "gain-click-trophy11"
+    name: "Treasure Smasher"
+    icon: "gain-click-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Qad (1e45) coins by clicking in a single game.</p>
+  - id: "gain-click-trophy12"
+    name: "Treasure Destroyer"
+    icon: "gain-click-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Spd (1e54) coins by clicking in a single game.</p>
+  - id: "gain-click-trophy13"
+    name: "Treasure Annihilator"
+    icon: "gain-click-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Vg (1e63) coins by clicking in a single game.</p>
+  - id: "gain-click-trophy14"
+    name: "Treasure Disintegrator"
+    icon: "gain-click-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Qivg (1e78) coins by clicking in a single game.</p>
+  - id: "gain-click-trophy15"
+    name: "Treasure Ender"
+    icon: "gain-click-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Tg (1e93) coins by clicking in a single game.</p>
+  - id: "gain-click-trophy16"
+    name: "Treasure Unmaker"
+    icon: "gain-click-trophy16.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Qitg (1e108) coins by clicking in a single game.</p>
+  - id: "gain-click-trophy17"
+    name: "Treasure Nullifier"
+    icon: "gain-click-trophy17.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Qag (1e123) coins by clicking in a single game.</p>
+  - id: "gain-click-trophy18"
+    name: "Treasure Wrecker"
+    icon: "gain-click-trophy18.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Qig (1e153) coins by clicking in a single game.</p>
+  - id: "gain-click-trophy19"
+    name: "Treasure Obliterator"
+    icon: "gain-click-trophy19.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 SxSxg (1e201) coins by clicking in a single game.</p>
+  - id: "treasure-click-trophy1"
+    name: "A Clicking Start"
+    icon: "treasure-click-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Click the background 100 Times in a single game.</p>
+  - id: "treasure-click-trophy2"
+    name: "Clicking More"
+    icon: "treasure-click-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Click the background 500 Times in a single game.</p>
+  - id: "treasure-click-trophy3"
+    name: "Click Clock"
+    icon: "treasure-click-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Click the background 1,000 Times in a single game.</p>
+  - id: "treasure-click-trophy4"
+    name: "Clicking Forward"
+    icon: "treasure-click-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Click the background 2,500 Times in a single game.</p>
+  - id: "treasure-click-trophy5"
+    name: "Clicking Frenzy"
+    icon: "treasure-click-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Click the background 5,000 Times in a single game.</p>
+  - id: "treasure-click-trophy6"
+    name: "World of Clicks"
+    icon: "treasure-click-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Click the background 10,000 Times in a single game.</p>
+  - id: "treasure-click-trophy7"
+    name: "The Clicky Way"
+    icon: "treasure-click-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Click the background 20,000 Times in a single game.</p>
+  - id: "treasure-click-trophy8"
+    name: "Clicker Eternal"
+    icon: "treasure-click-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Click the background 50,000 Times in a single game.</p>
+  - id: "treasure-click-trophy9"
+    name: "Realm Clicker"
+    icon: "treasure-click-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Click the background 100,000 Times in a single game.</p>
+  - id: "faction-coin-trophy1"
+    name: "1 Faction Coin"
+    icon: "faction-coin-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Find 1 Faction Coin in a single game.</p>
+  - id: "faction-coin-trophy2"
+    name: "50 Faction Coins"
+    icon: "faction-coin-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Find 50 Faction Coins in a single game.</p>
+  - id: "faction-coin-trophy3"
+    name: "250 Faction Coins"
+    icon: "faction-coin-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Find 250 Faction Coins in a single game.</p>
+  - id: "faction-coin-trophy4"
+    name: "1000 Faction Coins"
+    icon: "faction-coin-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Find 1,000 Faction Coins in a single game.</p>
+  - id: "faction-coin-trophy5"
+    name: "5000 Faction Coins"
+    icon: "faction-coin-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Find 5,000 Faction Coins in a single game.</p>
+  - id: "faction-coin-trophy6"
+    name: "10000 Faction Coins"
+    icon: "faction-coin-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Find 10,000 Faction Coins in a single game.</p>
+  - id: "faction-coin-trophy7"
+    name: "50000 Faction Coins"
+    icon: "faction-coin-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Find 50,000 Faction Coins in a single game.</p>
+  - id: "faction-coin-trophy8"
+    name: "100000 Faction Coins"
+    icon: "faction-coin-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Find 100,000 Faction Coins in a single game.</p>
+  - id: "faction-coin-trophy9"
+    name: "500000 Faction Coins"
+    icon: "faction-coin-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Find 500,000 Faction Coins in a single game.</p>
+  - id: "faction-coin-trophy10"
+    name: "1 Million Faction Coins"
+    icon: "faction-coin-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Find 1 M (1e6) Faction Coins in a single game.</p>
+  - id: "faction-coin-trophy11"
+    name: "100 Million Faction Coins"
+    icon: "faction-coin-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Find 100 M (1e8) Faction Coins in a single game.</p>
+  - id: "faction-coin-trophy12"
+    name: "1 Billion Faction Coins"
+    icon: "faction-coin-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: Find 1 B (1e9) Faction Coins in a single game.</p>
+  - id: "faction-coin-trophy13"
+    name: "100 Billion Faction Coins"
+    icon: "faction-coin-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: Find 100 B (1e11) Faction Coins in a single game.</p>
+  - id: "faction-coin-trophy14"
+    name: "1 Trillion Faction Coins"
+    icon: "faction-coin-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: Find 1 T (1e12) Faction Coins in a single game.</p>
+  - id: "faction-coin-trophy15"
+    name: "100 Trillion Faction Coins"
+    icon: "faction-coin-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Find 100 T (1e14) Faction Coins in a single game.</p>
+  - id: "faction-coin-trophy16"
+    name: "1 Quadrillion Faction Coins"
+    icon: "faction-coin-trophy16.png"
+    body: |-
+      <p><b>Requirement</b>: Find 1 Qa (1e15) Faction Coins in a single game.</p>
+  - id: "faction-coin-trophy17"
+    name: "1 Quintillion Faction Coins"
+    icon: "faction-coin-trophy17.png"
+    body: |-
+      <p><b>Requirement</b>: Find 1 Qi (1e18) Faction Coins in a single game.</p>
+  - id: "faction-coin-trophy18"
+    name: "1 Sextillion Faction Coins"
+    icon: "faction-coin-trophy18.png"
+    body: |-
+      <p><b>Requirement</b>: Find 1 Sx (1e21) Faction Coins in a single game.</p>
+  - id: "faction-coin-trophy19"
+    name: "1 Nonillion Faction Coins"
+    icon: "faction-coin-trophy19.png"
+    body: |-
+      <p><b>Requirement</b>: Find 1 No (1e30) Faction Coins in a single game.</p>
+  - id: "faction-coin-trophy20"
+    name: "1 Tredecillion Faction Coins"
+    icon: "faction-coin-trophy20.png"
+    body: |-
+      <p><b>Requirement</b>: Find 1 Td (1e42) Faction Coins in a single game.</p>
+  - id: "faction-coin-trophy21"
+    name: "1 Septendecillion Faction Coins"
+    icon: "faction-coin-trophy21.png"
+    body: |-
+      <p><b>Requirement</b>: Find 1 Spd (1e54) Faction Coins in a single game.</p>
+  - id: "assistant-trophy1"
+    name: "Assistant Solo"
+    icon: "assistant-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Have 1 Assistant in a single game.</p>
+  - id: "assistant-trophy2"
+    name: "Assistant Group"
+    icon: "assistant-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Have 20 Assistants in a single game.</p>
+  - id: "assistant-trophy3"
+    name: "Assistant Commando"
+    icon: "assistant-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Have 50 Assistants in a single game.</p>
+  - id: "assistant-trophy4"
+    name: "Assistant Squad"
+    icon: "assistant-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Have 100 Assistants in a single game.</p>
+  - id: "assistant-trophy5"
+    name: "Assistant Army"
+    icon: "assistant-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Have 200 Assistants in a single game.</p>
+  - id: "assistant-trophy6"
+    name: "Assistant Legion"
+    icon: "assistant-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Have 300 Assistants in a single game.</p>
+  - id: "assistant-trophy7"
+    name: "Assistant Horde"
+    icon: "assistant-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Have 500 Assistants in a single game.</p>
+  - id: "assistant-trophy8"
+    name: "Assistant Host"
+    icon: "assistant-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Have 1,000 Assistants in a single game.</p>
+  - id: "assistant-trophy9"
+    name: "Assistant Clump"
+    icon: "assistant-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Have 2,000 Assistants in a single game</p>
+  - id: "assistant-trophy10"
+    name: "Assistant Nation"
+    icon: "assistant-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Have 5,000 Assistants in a single game.</p>
+  - id: "assistant-trophy11"
+    name: "Assistant Kingdom"
+    icon: "assistant-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Have 10,000 Assistants in a single game.</p>
+  - id: "assistant-trophy12"
+    name: "Assistant Continent"
+    icon: "assistant-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: Have 25,000 Assistants in a single game.</p>
+  - id: "assistant-trophy13"
+    name: "Assistant World"
+    icon: "assistant-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: Have 50,000 Assistants in a single game.</p>
+  - id: "assistant-trophy14"
+    name: "Assistant Galaxy"
+    icon: "assistant-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: Have 500,000 Assistants in a single game.</p>
+  - id: "assistant-trophy15"
+    name: "Assistant Universe"
+    icon: "assistant-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Have 5,000,000 (5e6) Assistants in a single game.</p>
+  - id: "assistant-trophy16"
+    name: "Assistant Dimension"
+    icon: "assistant-trophy16.png"
+    body: |-
+      <p><b>Requirement</b>: Have 5 B (5e9) Assistants in a single game.</p>
+  - id: "assistant-trophy17"
+    name: "Assistant Multiverse"
+    icon: "assistant-trophy17.png"
+    body: |-
+      <p><b>Requirement</b>: Have 5 T (5e12) Assistants in a single game.</p>
+  - id: "assistant-trophy18"
+    name: "Assistant Stratum"
+    icon: "assistant-trophy18.png"
+    body: |-
+      <p><b>Requirement</b>: Have 5 Qi (5e18) Assistants in a single game.</p>
+  - id: "artifact-trophy1"
+    name: "1 Artifact"
+    icon: "artifact-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Find 1 Artifact (All Time).</p>
+  - id: "artifact-trophy2"
+    name: "5 Artifacts"
+    icon: "artifact-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Find 5 Artifacts (All Time).</p>
+  - id: "artifact-trophy3"
+    name: "10 Artifacts"
+    icon: "artifact-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Find 10 Artifacts (All Time).</p>
+  - id: "artifact-trophy4"
+    name: "20 Artifacts"
+    icon: "artifact-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Find 20 Artifacts (All Time).</p>
+  - id: "artifact-trophy5"
+    name: "35 Artifacts"
+    icon: "artifact-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Find 35 Artifacts (All Time).</p>
+  - id: "artifact-trophy6"
+    name: "50 Artifacts"
+    icon: "artifact-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Find 50 Artifacts (All Time).</p>
+  - id: "artifact-trophy7"
+    name: "75 Artifacts"
+    icon: "artifact-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Find 75 Artifacts (All Time).</p>
+  - id: "gain-gem-trophy1"
+    name: "1 Gem"
+    icon: "gain-gem-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Gem (Total).</p>
+  - id: "gain-gem-trophy2"
+    name: "50 Gems"
+    icon: "gain-gem-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 50 Gems (Total).</p>
+  - id: "gain-gem-trophy3"
+    name: "150 Gems"
+    icon: "gain-gem-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 150 Gems (Total).</p>
+  - id: "gain-gem-trophy4"
+    name: "500 Gems"
+    icon: "gain-gem-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 500 Gems (Total).</p>
+  - id: "gain-gem-trophy5"
+    name: "1000 Gems"
+    icon: "gain-gem-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1,000 Gems (Total).</p>
+  - id: "gain-gem-trophy6"
+    name: "5000 Gems"
+    icon: "gain-gem-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 5,000 Gems (Total).</p>
+  - id: "gain-gem-trophy7"
+    name: "15000 Gems"
+    icon: "gain-gem-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 15,000 Gems (Total).</p>
+  - id: "gain-gem-trophy8"
+    name: "50000 Gems"
+    icon: "gain-gem-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 50,000 Gems (Total).</p>
+  - id: "gain-gem-trophy9"
+    name: "100000 Gems"
+    icon: "gain-gem-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 100,000 Gems (Total).</p>
+  - id: "gain-gem-trophy10"
+    name: "1 Billion Gems"
+    icon: "gain-gem-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 B (1e9) Gems (Total).</p>
+  - id: "gain-gem-trophy11"
+    name: "1 Quadrillion Gems"
+    icon: "gain-gem-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Qa (1e15) Gems (Total).</p>
+  - id: "gain-gem-trophy12"
+    name: "1 Sextillion Gems"
+    icon: "gain-gem-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Sx (1e21) Gems (Total).</p>
+  - id: "gain-gem-trophy13"
+    name: "1 Nonillion Gems"
+    icon: "gain-gem-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 No (1e30) Gems (Total).</p>
+  - id: "gain-gem-trophy14"
+    name: "1 Duodecillion Gems"
+    icon: "gain-gem-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Dd (1e39) Gems (Total).</p>
+  - id: "gain-gem-trophy15"
+    name: "1 Quindecillion Gems"
+    icon: "gain-gem-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Qid (1e48) Gems (Total).</p>
+  - id: "gain-gem-trophy16"
+    name: "1 Octodecillion Gems"
+    icon: "gain-gem-trophy16.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Ocd (1e57) Gems (Total).</p>
+  - id: "gain-gem-trophy17"
+    name: "1 Unvigintillion Gems"
+    icon: "gain-gem-trophy17.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Uvg (1e66) Gems (Total).</p>
+  - id: "gain-gem-trophy18"
+    name: "1 Quadravigintillion Gems"
+    icon: "gain-gem-trophy18.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Qavg (1e75) Gems (Total).</p>
+  - id: "gain-gem-trophy19"
+    name: "1 Septenvigintillion Gems"
+    icon: "gain-gem-trophy19.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Spvg (1e84) Gems (Total).</p>
+  - id: "gain-gem-trophy20"
+    name: "1 Trigintillion Gems"
+    icon: "gain-gem-trophy20.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Tg (1e93) Gems (Total).</p>
+  - id: "gain-gem-trophy21"
+    name: "1 Tretrigintillion Gems"
+    icon: "gain-gem-trophy21.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Ttg (1e102) Gems (Total).</p>
+  - id: "gain-gem-trophy22"
+    name: "1 Sextrigintillion Gems"
+    icon: "gain-gem-trophy22.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Sxtg (1e111) Gems (Total).</p>
+  - id: "gain-gem-trophy23"
+    name: "1 Unquadragintillion Gems"
+    icon: "gain-gem-trophy23.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Uqag (1e126) Gems (Total).</p>
+  - id: "gain-ruby-trophy1"
+    name: "1 Ruby"
+    icon: "gain-ruby-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 1 Ruby (All time).</p>
+  - id: "gain-ruby-trophy2"
+    name: "10 Rubies"
+    icon: "gain-ruby-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 10 Rubies (All time).</p>
+  - id: "gain-ruby-trophy3"
+    name: "25 Rubies"
+    icon: "gain-ruby-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 25 Rubies (All time).</p>
+  - id: "gain-ruby-trophy4"
+    name: "50 Rubies"
+    icon: "gain-ruby-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Gain 50 Rubies (All time).</p>
+  - id: "buy-upgrades-trophy1"
+    name: "1 Upgrade"
+    icon: "buy-upgrades-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 1 Upgrade in a single game.</p>
+  - id: "buy-upgrades-trophy2"
+    name: "5 Upgrades"
+    icon: "buy-upgrades-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 5 Upgrades in a single game.</p>
+  - id: "buy-upgrades-trophy3"
+    name: "15 Upgrades"
+    icon: "buy-upgrades-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 15 Upgrades in a single game.</p>
+  - id: "buy-upgrades-trophy4"
+    name: "30 Upgrades"
+    icon: "buy-upgrades-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 30 Upgrades in a single game.</p>
+  - id: "buy-upgrades-trophy5"
+    name: "50 Upgrades"
+    icon: "buy-upgrades-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 50 Upgrades in a single game.</p>
+  - id: "buy-upgrades-trophy6"
+    name: "85 Upgrades"
+    icon: "buy-upgrades-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 85 Upgrades in a single game.</p>
+  - id: "buy-upgrades-trophy7"
+    name: "120 Upgrades"
+    icon: "buy-upgrades-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 120 Upgrades in a single game.</p>
+  - id: "buy-upgrades-trophy8"
+    name: "175 Upgrades"
+    icon: "buy-upgrades-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 175 Upgrades in a single game.</p>
+  - id: "buy-upgrades-trophy9"
+    name: "235 Upgrades"
+    icon: "buy-upgrades-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 235 Upgrades in a single game.</p>
+  - id: "buy-upgrades-trophy10"
+    name: "305 Upgrades"
+    icon: "buy-upgrades-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 305 Upgrades in a single game.</p>
+  - id: "buy-upgrades-trophy11"
+    name: "385 Upgrades"
+    icon: "buy-upgrades-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase 385 Upgrades in a single game.</p>
+  - id: "reincarnation-trophy1"
+    name: "1 Reincarnation"
+    icon: "reincarnation-trophy1.png"
+    body: |-
+      <p><b>Requirement</b>: Reincarnate 1 time.</p>
+      <p><b>Cost</b>: (To Reincarnate to R1) 1 Oc (1e27) Gems</p>
+  - id: "reincarnation-trophy2"
+    name: "3 Reincarnations"
+    icon: "reincarnation-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: Reincarnate 3 times.</p>
+      <p><b>Cost</b>: (To Reincarnate to R3) 1 Dc (1e33) Gems</p>
+  - id: "reincarnation-trophy3"
+    name: "5 Reincarnations"
+    icon: "reincarnation-trophy3.png"
+    body: |-
+      <p><b>Requirement</b>: Reincarnate 5 times.</p>
+      <p><b>Cost</b>: (To Reincarnate to R5) 1 Dd (1e39) Gems</p>
+  - id: "reincarnation-trophy4"
+    name: "7 Reincarnations"
+    icon: "reincarnation-trophy4.png"
+    body: |-
+      <p><b>Requirement</b>: Reincarnate 7 times.</p>
+      <p><b>Cost</b>: (To Reincarnate to R7) 1 Qad (1e45) Gems</p>
+  - id: "reincarnation-trophy5"
+    name: "10 Reincarnations"
+    icon: "reincarnation-trophy5.png"
+    body: |-
+      <p><b>Requirement</b>: Reincarnate 10 times.</p>
+      <p><b>Cost</b>: (To Reincarnate to R10) 1 Spd (1e54) Gems</p>
+  - id: "reincarnation-trophy6"
+    name: "12 Reincarnations"
+    icon: "reincarnation-trophy6.png"
+    body: |-
+      <p><b>Requirement</b>: Reincarnate 12 times.</p>
+      <p><b>Cost</b>: (To Reincarnate to R12) 1 Nod (1e60) Gems</p>
+  - id: "reincarnation-trophy7"
+    name: "15 Reincarnations"
+    icon: "reincarnation-trophy7.png"
+    body: |-
+      <p><b>Requirement</b>: Reincarnate 15 times.</p>
+      <p><b>Cost</b>: (To Reincarnate to R15) 1 Dvg (1e69) Gems</p>
+  - id: "reincarnation-trophy8"
+    name: "20 Reincarnations"
+    icon: "reincarnation-trophy8.png"
+    body: |-
+      <p><b>Requirement</b>: Reincarnate 20 times.</p>
+      <p><b>Cost</b>: (To Reincarnate to R20) 1 Spvg (1e84) Gems</p>
+  - id: "reincarnation-trophy9"
+    name: "25 Reincarnations"
+    icon: "reincarnation-trophy9.png"
+    body: |-
+      <p><b>Requirement</b>: Reincarnate 25 times.</p>
+      <p><b>Cost</b>: (To Reincarnate to R25) 1 Dtg (1e99) Gems</p>
+  - id: "reincarnation-trophy10"
+    name: "30 Reincarnations"
+    icon: "reincarnation-trophy10.png"
+    body: |-
+      <p><b>Requirement</b>: Reincarnate 30 times</p>
+      <p><b>Cost</b>: (To Reincarnate to R30) 1 Sptg (1e114) Gems</p>
+  - id: "reincarnation-trophy11"
+    name: "35 Reincarnations"
+    icon: "reincarnation-trophy11.png"
+    body: |-
+      <p><b>Requirement</b>: Reincarnate 35 times</p>
+      <p><b>Cost</b>: (To Reincarnate to R35) 1 Dqag (1e129) Gems</p>
+  - id: "reincarnation-trophy12"
+    name: "40 Reincarnations"
+    icon: "reincarnation-trophy12.png"
+    body: |-
+      <p><b>Requirement</b>: Reincarnate 40 times</p>
+      <p><b>Cost</b>: (To Reincarnate to R40) 1 Spqag (1e144) Gems</p>
+  - id: "reincarnation-trophy13"
+    name: "45 Reincarnations"
+    icon: "reincarnation-trophy13.png"
+    body: |-
+      <p><b>Requirement</b>: Reincarnate 45 times</p>
+      <p><b>Cost</b>: (To Reincarnate to R45) 17.78 Oc Sp (1.778e28) Gems</p>
+  - id: "reincarnation-trophy14"
+    name: "50 Reincarnations"
+    icon: "reincarnation-trophy14.png"
+    body: |-
+      <p><b>Requirement</b>: Reincarnate 50 times</p>
+      <p><b>Cost</b>: (To Reincarnate to R50) 177.8 Ud (1.778e38) Gems</p>
+  - id: "reincarnation-trophy15"
+    name: "60 Reincarnations"
+    icon: "reincarnation-trophy15.png"
+    body: |-
+      <p><b>Requirement</b>: Reincarnate 60 times</p>
+      <p><b>Cost</b>: (To Reincarnate to R60) 17.78 Ocd (1.778e58) Gems</p>
+  - id: "reincarnation-trophy16"
+    name: "70 Reincarnations"
+    icon: "reincarnation-trophy16.png"
+    body: |-
+      <p><b>Requirement</b>: Reincarnate 70 times</p>
+      <p><b>Cost</b>: (To Reincarnate to R70) 1.778 Qivg (1.778e78) Gems</p>
+  - id: "reincarnation-trophy17"
+    name: "85 Reincarnations"
+    icon: "reincarnation-trophy17.png"
+    body: |-
+      <p><b>Requirement</b>: Reincarnate 85 times</p>
+      <p><b>Cost</b>: (To Reincarnate to R85) 1.778 Qitg (1.778e108) Gems</p>
+  - id: "reincarnation-trophy18"
+    name: "100 Reincarnations"
+    icon: "reincarnation-trophy18.png"
+    body: |-
+      <p><b>Requirement</b>: Reincarnate 100 times</p>
+      <p><b>Cost</b>: (To Reincarnate to R100) 1.778 Qiqag (1.778e138) Gems</p>
+  - id: "reincarnation-trophy19"
+    name: "125 Reincarnations"
+    icon: "reincarnation-trophy19.png"
+    body: |-
+      <p><b>Requirement</b>: Reincarnate 125 times</p>
+      <p><b>Cost</b>: (To Reincarnate to R125) 31.05 Dvg (3.105e70) Gems</p>
+  - id: "reincarnation-trophy20"
+    name: "150 Reincarnations"
+    icon: "reincarnation-trophy20.png"
+    body: |-
+      <p><b>Requirement</b>: Reincarnate 150 times</p>
+      <p><b>Cost</b>: (To Reincarnate to R150) 1.134 Dqag (1.134e129) Gems</p>
+  - id: "archeology-expedition-trophy"
+    name: "Archeology Expedition"
+    icon: "archeology-expedition-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: You have funded an archeology expedition to find relics of the Ancient Races.</p>
+  - id: "clouded-trophy"
+    name: "Clouded"
+    icon: "clouded-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Register your realm in the Cloud Service!</p>
+  - id: "vanilla-challenger-trophy"
+    name: "Vanilla Challenger"
+    icon: "vanilla-challenger-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Complete all the Vanilla Faction Challenges.</p>
+      <p><b>Cost</b>: 1 coins, A1+ Free</p>
+      <p><b>Effect</b>: Increase the overall production of Vanilla Factions by 25%.</p>
+      <p><b>Note</b>: Not A-Nerfed.</p>
+  - id: "neutral-challenger-trophy"
+    name: "Neutral Challenger"
+    icon: "neutral-challenger-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Complete all the Neutral Faction Challenges.</p>
+      <p><b>Cost</b>: 10 coins, A1+ Free</p>
+      <p><b>Effect</b>: Increase the overall production of Neutral Factions by 25%.</p>
+      <p><b>Note</b>: Not A-Nerfed.</p>
+  - id: "prestige-challenger-trophy"
+    name: "Prestige Challenger"
+    icon: "prestige-challenger-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Complete all the Prestige Challenges, R63+</p>
+      <p><b>Cost</b>: 10</p>
+      <p><b>Effect</b>: Increase the overall production of Prestige Factions by 25%.</p>
+      <p><b>Note</b>: Not A-Nerfed.</p>
+  - id: "elite-challenger-trophy"
+    name: "Astral Challenger"
+    icon: "elite-challenger-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Complete all the MAD Challenges.</p>
+      <p><b>Cost</b>: 10 Faction Coins</p>
+      <p><b>Effect</b>: Increase the overall production of Astral Factions by 25%.</p>
+      <p><b>Note</b>: Not A-Nerfed.</p>
+  - id: "novice-researcher-trophy"
+    name: "Novice Researcher"
+    icon: "novice-researcher-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Research 600 times across all fields.</p>
+      <p><b>Cost</b>: 1 Tqag (1e132), A1+ Free</p>
+      <p><b>Effect</b>: Increase the overall production of Vanilla Factions by 100%.</p>
+  - id: "intermediate-researcher-trophy"
+    name: "Intermediate Researcher"
+    icon: "intermediate-researcher-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Research 1800 times across all fields.</p>
+      <p><b>Cost</b>: 1 QiQig (1e168), A1+ Free</p>
+      <p><b>Effect</b>: Increases the production of all Neutral Factions by 100%.</p>
+  - id: "expert-researcher-trophy"
+    name: "Expert Researcher"
+    icon: "expert-researcher-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Research 2750 times across all fields.</p>
+      <p><b>Cost</b>: 1 QiQig (1e168), A1+ Free</p>
+      <p><b>Effect</b>: Increase the overall production of Prestige Factions by 100%.</p>
+  - id: "master-researcher-trophy"
+    name: "Master Researcher"
+    icon: "master-researcher-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Research 10000 times across all fields.</p>
+      <p><b>Cost</b>: 1 Qavg (1e75)</p>
+      <p><b>Effect</b>: Increase the overall production of Dragons by 100%.</p>
+  - id: "grandmaster-researcher-trophy"
+    name: "Grandmaster Researcher"
+    icon: "grandmaster-researcher-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Research 18500 times across all fields.</p>
+      <p><b>Cost</b>: 10 SpQig (1e175)</p>
+      <p><b>Effect</b>: Increase the overall production of Mercenaries by 150%.</p>
+  - id: "vanilla-researcher-trophy"
+    name: "Vanilla Researcher"
+    icon: "vanilla-researcher-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Discover all the Vanilla Faction researches.</p>
+      <p><b>Cost</b>: 1 SpQig (1e174), A1+ Free</p>
+      <p><b>Effect</b>: Increase the production of all buildings based on research done.</p>
+      <p><b>Formula</b>: (0.3 * x ^ 0.7)%, where x is amount of research done.</p>
+  - id: "ancient-researcher-trophy"
+    name: "Ancient Researcher"
+    icon: "ancient-researcher-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Discover all the Ancient Races researches.</p>
+      <p><b>Cost</b>: 1 NoSxg (1e210), A1+ Free</p>
+      <p><b>Effect</b>: Increase the production of all buildings based on research done.</p>
+      <p><b>Formula</b>: (0.3 * x ^ 0.7)%, where x is amount of research done.</p>
+      <p><b>Note</b>: Can be done at R29.</p>
+  - id: "underworld-researcher-trophy"
+    name: "Underworld Researcher"
+    icon: "underworld-researcher-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Discover all the Underworld researches.</p>
+      <p><b>Cost</b>: 1 NoSxg (1e210), A1+ Free</p>
+      <p><b>Effect</b>: Increase the production of all buildings based on research done.</p>
+      <p><b>Formula</b>: (0.3 * x ^ 0.7)%, where x is amount of research done.</p>
+  - id: "eternal-researcher-trophy"
+    name: "Eternal Researcher"
+    icon: "eternal-researcher-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Discover all the Dragon researches, R55+</p>
+      <p><b>Cost</b>: 1 Novg (1e90)</p>
+      <p><b>Effect</b>: Increase the production of all buildings based on research done.</p>
+      <p><b>Formula</b>: (0.3 * x ^ 0.7)%, where x is amount of research done.</p>
+  - id: "warrior-researcher-trophy"
+    name: "Warrior Researcher"
+    icon: "warrior-researcher-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Discover all the Mercenary researches</p>
+      <p><b>Cost</b>: 1 DSpg (1e219)</p>
+      <p><b>Effect</b>: Increase the production of all buildings based on research done</p>
+      <p><b>Formula</b>: (0.3 * x ^ 0.7)%, where x is amount of research done.</p>
+      <p><b>Upgrade</b>: Good for Mercenary.</p>
+  - id: "novice-combinator-trophy"
+    name: "Novice Combinator"
+    icon: "novice-combinator-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: A4+, have 4 different factions involved in your Legacy upgrades.</p>
+      <p><b>Cost</b>: 1 Qavg (1e75)</p>
+      <p><b>Effect</b>: Multiplicatively increase Mana Regeneration based on time spent with the least-used alignment.</p>
+      <p><b>Formula</b>: (5 + 2.5 * x ^ 0.5)%, where x is time spent with your least-used alignment, in seconds.</p>
+  - id: "expert-combinator-trophy"
+    name: "Expert Combinator"
+    icon: "expert-combinator-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: A4+, have 5 different factions involved in your Legacy upgrades.</p>
+      <p><b>Cost</b>: 10 Dtg (1e100)</p>
+      <p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on time spent with the least-used alignment.</p>
+      <p><b>Formula</b>: (30 + 0.6 * x ^ 0.6)%, where x is time spent with your least-used alignment, in seconds.</p>

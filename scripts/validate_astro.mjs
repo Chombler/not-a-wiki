@@ -84,20 +84,6 @@ for (const [relative, markers] of Object.entries(contracts)) {
   for (const marker of markers) if (!html.includes(marker)) failures.push(`${relative} lost layout marker: ${marker}`);
 }
 
-function validateCanonicalIconBatch(relative, startMarker, endMarker, expected) {
-  const html = fs.readFileSync(path.join(output, relative), 'utf8');
-  const start = html.indexOf(startMarker);
-  const end = html.indexOf(endMarker, start + startMarker.length);
-  if (start === -1 || end === -1) {
-    failures.push(`${relative} lost icon-batch boundary: ${startMarker}`);
-    return;
-  }
-  const batch = html.slice(start, end);
-  const canonical = [...batch.matchAll(/<img\b[^>]*\/assets\/game\/sprites\//gi)].length;
-  if (canonical !== expected) failures.push(`${relative} has ${canonical}/${expected} canonical icons in ${startMarker}`);
-  if (/\/Factions\/picks\//i.test(batch)) failures.push(`${relative} retains legacy icons in ${startMarker}`);
-}
-
 function validateTrophyGrid(heading, expected) {
   const html = fs.readFileSync(path.join(output, 'TrophyPage/index.html'), 'utf8');
   const start = html.indexOf(`<span>${heading} (`);
@@ -112,25 +98,25 @@ function validateTrophyGrid(heading, expected) {
   if (/\/Factions\/picks\//i.test(grid)) failures.push(`TrophyPage retains legacy icons in ${heading}`);
 }
 
-validateCanonicalIconBatch('AllTrophies/index.html', 'Allegiances Trophies (45)', '<div class="shelementwhole">', 41);
 validateTrophyGrid('Allegiance Trophies', 45);
-validateCanonicalIconBatch('AllTrophies/index.html', 'Building Trophies (566)', 'Total Buildings (16)', 550);
 validateTrophyGrid('Building Trophies', 566);
-validateCanonicalIconBatch('AllTrophies/index.html', 'Total Buildings (16)', '\n\t\t\t\t\t</div>', 16);
-validateCanonicalIconBatch('AllTrophies/index.html', 'Secret Trophies (60)', '<div class="shelementwhole">', 74);
 validateTrophyGrid('Secret Trophies', 60);
-validateCanonicalIconBatch('AllTrophies/index.html', 'Misc Trophies (170)', 'Magic Trophies (62)', 170);
 validateTrophyGrid('Miscellaneous Trophies', 170);
-validateCanonicalIconBatch('AllTrophies/index.html', 'Magic Trophies (62)', 'Building Trophies (566)', 61);
 validateTrophyGrid('Magic Trophies', 62);
 
 const allTrophiesHtml = fs.readFileSync(path.join(output, 'AllTrophies/index.html'), 'utf8');
 if (!allTrophiesHtml.includes('903 Total Trophies')) failures.push('AllTrophies lost the current 903-trophy total');
-const trophyRenderer = fs.readFileSync(path.join(root, 'src/lib/gameIcons.ts'), 'utf8');
-if (!trophyRenderer.includes("'BuildingTrophies-map': { label: 'Building Trophies', count: 566 }") || !trophyRenderer.includes("'holy-frenzy-trophy.png': 'MagicTrophies-map'") || !trophyRenderer.includes('class="trophy-icon-grid"')) {
-  failures.push('TrophyPage lost the canonical interactive-grid enhancement');
+const trophyEntries = [...allTrophiesHtml.matchAll(/class="trophy-entry"/g)].length;
+if (trophyEntries !== 903) failures.push(`AllTrophies has ${trophyEntries}/903 text records`);
+for (const [heading, expected] of [['Secret Trophies', 60], ['Allegiance Trophies', 45], ['Miscellaneous Trophies', 170], ['Magic Trophies', 62], ['Building Trophies', 566]]) {
+  if (!allTrophiesHtml.includes(`<summary>${heading} (${expected})</summary>`)) {
+    failures.push(`AllTrophies lost canonical ${heading} count`);
+  }
 }
 const trophyPageHtml = fs.readFileSync(path.join(output, 'TrophyPage/index.html'), 'utf8');
+const trophyButtons = [...trophyPageHtml.matchAll(/class="trophy-grid-button"/g)].length;
+if (trophyButtons !== 903) failures.push(`TrophyPage has ${trophyButtons}/903 interactive records`);
+if (!trophyPageHtml.includes('Harlequin') || !allTrophiesHtml.includes('Harlequin')) failures.push('Canonical trophy content is missing from one rendered view');
 if (trophyPageHtml.includes('If a build is needed I will add a link to that build')) {
   failures.push('TrophyPage restored the obsolete build-link disclaimer');
 }

@@ -1,0 +1,291 @@
+# Canonical, human-authored trophy records. Both trophy pages render this file.
+category: "allegiance"
+label: "Allegiance Trophies"
+order: 1
+trophies:
+  - id: "dragon-tamer-trophy"
+    name: "Dragon Tamer"
+    icon: "dragon-tamer-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Fully develop your Spiky Egg into an Elder Dragon, R46+.</p>
+      <p><b>Cost</b>: 100 Vg (1e65), A2+, Free</p>
+      <p><b>Effect</b>: Increase the production of all buildings based on Reincarnations made and multiplicatively increase Faction Coin find chance by 100%.</p>
+      <p><b>Formula</b>: (3.5 * x ^ 0.95)%, where x is your effective Reincarnation count.</p>
+  - id: "genealogist-trophy"
+    name: "Genealogist"
+    icon: "genealogist-trophy.png"
+    body: |-
+      <p><b>Requirements</b>: Have a total of 180 Lineage levels.</p>
+      <p><b>Cost</b>: 1e150 gems</p>
+      <p><b>Effect</b>: Increase the production of all buildings based on the total amount of lineage levels you have.</p>
+      <p><b>Formula</b>: (5 * x ^ 1.5)%, where x is the total amount of Lineage levels you have.</p>
+  - id: "art-of-the-crow-trophy"
+    name: "Art of the Crow"
+    icon: "art-of-the-crow-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Excavate 6 complete Faction Artifact Sets.</p>
+      <p><b>Effect</b>: Gives upgrade with the same name.</p>
+      <p><b> Art of the Crow Upgrade</b></p>
+      <p><b>Requirement</b>: Faction and Set Alignments has to match to buy the upgrade (Evil, Good, Neutral).</p>
+      <p><b>Cost</b>: 1e70 Faction Coins</p>
+      <p><b>Alignments</b></p>
+      <div class="art-crow-alignments"><b>Proof of Order</b><div><img src="/realm/assets/game/sprites/art-of-the-crow-good-order.png" alt="Good Order"><img src="/realm/assets/game/sprites/art-of-the-crow-evil-order.png" alt="Evil Order"><img src="/realm/assets/game/sprites/art-of-the-crow-neutral-order.png" alt="Neutral Order"></div></div>
+      <p><b>Effect</b>: Multiplicatively increase max mana.</p>
+      <div class="art-crow-alignments"><b>Proof of Chaos</b><div><img src="/realm/assets/game/sprites/art-of-the-crow-good-chaos.png" alt="Good Chaos"><img src="/realm/assets/game/sprites/art-of-the-crow-evil-chaos.png" alt="Evil Chaos"><img src="/realm/assets/game/sprites/art-of-the-crow-neutral-chaos.png" alt="Neutral Chaos"></div></div>
+      <p><b>Effect</b>: Multiplicatively increase assistants.</p>
+      <div class="art-crow-alignments"><b>Proof of Balance</b><div><img src="/realm/assets/game/sprites/art-of-the-crow-good-balance.png" alt="Good Balance"><img src="/realm/assets/game/sprites/art-of-the-crow-evil-balance.png" alt="Evil Balance"><img src="/realm/assets/game/sprites/art-of-the-crow-neutral-balance.png" alt="Neutral Balance"></div></div>
+      <p><b>Effect</b>: Multiplicatively increase mana regeneration.</p>
+      <p><b>Good Effect</b>: The amount increased is based on Excavation depth.</p>
+      <p><b>Formula</b>: (0.1 * x ^ 0.9)%, where x is Excavation depth.</p>
+      <p><b>Evil Effect</b>: The amount increased is based on Mana produced in this Reincarnation.</p>
+      <p><b>Formula</b>: (ln(1 + x) ^ 2)%, where x is Mana produced in this Reincarnation.</p>
+      <p><b>Neutral Effect</b>: The amount increased is based on Royal Exchanges made</p>
+      <p><b>Formula</b>: (1.5 * x ^ 0.6)%, where x is Royal Exchanges made.</p>
+      <p><b>Additional Effect</b>: Increase Non-Unique Building production for all factions by 10,000%.</p>
+  - id: "mad-masks-trophy"
+    name: "MAD Masks"
+    icon: "mad-masks-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: R125+, Find all fragments of the Makers, Archon and Djinn masks.</p>
+      <p><b>Cost</b>: 1e148 Faction Coins</p>
+      <p><b>Effect</b>: Gives upgrade with same name.</p>
+      <p><b>Effect</b>: Increase the production of all buildings based on the highest excavation count made in this Reincarnation.</p>
+      <p><b>Formula</b>: (1.5 * x ^ 0.6)%, where x is highest excavation count made in this Reincarnation.</p>
+  - id: "buy-fairy-upgrades-trophy"
+    name: "Fairy Champion"
+    icon: "buy-fairy-upgrades-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+      <p><b>Note</b>: This can be done at R0.</p>
+  - id: "buy-elven-upgrades-trophy"
+    name: "Elven Champion"
+    icon: "buy-elven-upgrades-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+      <p><b>Note</b>: This can be done at R0.</p>
+  - id: "buy-angel-upgrades-trophy"
+    name: "Angel Champion"
+    icon: "buy-angel-upgrades-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+      <p><b>Note</b>: This can be done at R0.</p>
+  - id: "buy-goblin-upgrades-trophy"
+    name: "Goblin Champion"
+    icon: "buy-goblin-upgrades-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+      <p><b>Note</b>: This can be done at R0.</p>
+  - id: "buy-undead-upgrades-trophy"
+    name: "Undead Champion"
+    icon: "buy-undead-upgrades-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+      <p><b>Note</b>: This can be done at R0.</p>
+  - id: "buy-demon-upgrades-trophy"
+    name: "Demon Champion"
+    icon: "buy-demon-upgrades-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+      <p><b>Note</b>: This can be done at R0.</p>
+  - id: "buy-titan-upgrades-trophy"
+    name: "Titan Champion"
+    icon: "buy-titan-upgrades-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+      <p><b>Note</b>: This can be done at R0.</p>
+  - id: "buy-druid-upgrades-trophy"
+    name: "Druid Champion"
+    icon: "buy-druid-upgrades-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+      <p><b>Note</b>: This can be done at R0.</p>
+  - id: "buy-faceless-upgrades-trophy"
+    name: "Faceless Champion"
+    icon: "buy-faceless-upgrades-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+      <p><b>Note</b>: This can be done at R0.</p>
+  - id: "buy-dwarven-upgrades-trophy"
+    name: "Dwarven Champion"
+    icon: "buy-dwarven-upgrades-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+      <p><b>Note</b>: This can be done at R0.</p>
+  - id: "buy-drow-upgrades-trophy"
+    name: "Drow Champion"
+    icon: "buy-drow-upgrades-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+      <p><b>Note</b>: This can be done at R0.</p>
+  - id: "buy-mercenary-upgrades-trophy"
+    name: "Mercenary Champion"
+    icon: "buy-mercenary-upgrades-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase all Mercenary Upgrades</p>
+      <p><b>Note</b>: This can be done at R3</p>
+      <p><b>Tier 1 Upgrades</b>: Mercenary First Contract, Mercenary Magic Contract,Mercenary Upgrades 1,2,3,4</p>
+      <p><b>Tier 2 Upgrades</b>: Mercenary Second Contract, Holy Crusaders(For Good Alignments), Heresiarchs (For Evil Alignments), Mercenary Upgrades 5,6,7,8</p>
+      <p><b>Tier 3 Upgrades</b>: Mercenary Third Contract, Mercenary Sorcery Contract, Mercenary Upgrades 9,10,11,12</p>
+  - id: "buy-dragon-upgrades-trophy"
+    name: "Dragon Champion"
+    icon: "buy-dragon-upgrades-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+      <p><b>Note</b>: This can be done at R46+.</p>
+  - id: "buy-archon-upgrades-trophy"
+    name: "Archon Champion"
+    icon: "buy-archon-upgrades-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+      <p><b>Note</b>: This can be done at R125+.</p>
+  - id: "buy-djinn-upgrades-trophy"
+    name: "Djinn Champion"
+    icon: "buy-djinn-upgrades-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+      <p><b>Note</b>: This can be done at R125+.</p>
+  - id: "buy-makers-upgrades-trophy"
+    name: "Makers Champion"
+    icon: "buy-makers-upgrades-trophy.png"
+    body: |-
+      <p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
+      <p><b>Note</b>: This can be done at R125+.</p>
+  - id: "mercenary-oath"
+    name: "Mercenary Oath"
+    icon: "mercenary-oath.png"
+    body: |-
+      <p>You have become a Mercenary for the rest of your existence.</p>
+      <p><b>Requirement</b>: Purchase Mercenary Tribute & Oath of the Mercenaries.</p>
+      <p><b>Note</b>: This is done near the end of R3.</p>
+  - id: "fairy-grand-champion"
+    name: "Fairy Grand Champion"
+    icon: "fairy-grand-champion.png"
+    body: |-
+      <p><b>Requirement</b>: R60+, Upgrade Fairy Lineage to level 25 and purchase the first 2 Fairy Lineage perks.</p>
+  - id: "elven-grand-champion"
+    name: "Elven Grand Champion"
+    icon: "elven-grand-champion.png"
+    body: |-
+      <p><b>Requirement</b>: R60+, Upgrade Elven Lineage to level 25 and purchase the first 2 Elven Lineage perks.</p>
+  - id: "angel-grand-champion"
+    name: "Angel Grand Champion"
+    icon: "angel-grand-champion.png"
+    body: |-
+      <p><b>Requirement</b>: R60+, Upgrade Angel Lineage to level 25 and purchase the first 2 Angel Lineage perks.</p>
+  - id: "goblin-grand-champion"
+    name: "Goblin Grand Champion"
+    icon: "goblin-grand-champion.png"
+    body: |-
+      <p><b>Requirement</b>: R60+, Upgrade Goblin Lineage to level 25 and purchase the first 2 Goblin Lineage perks.</p>
+  - id: "undead-grand-champion"
+    name: "Undead Grand Champion"
+    icon: "undead-grand-champion.png"
+    body: |-
+      <p><b>Requirement</b>: R60+, Upgrade Undead Lineage to level 25 and purchase the first 2 Undead Lineage perks.</p>
+  - id: "demon-grand-champion"
+    name: "Demon Grand Champion"
+    icon: "demon-grand-champion.png"
+    body: |-
+      <p><b>Requirement</b>: R60+, Upgrade Demon Lineage to level 25 and purchase the first 2 Demon Lineage perks.</p>
+  - id: "titan-grand-champion"
+    name: "Titan Grand Champion"
+    icon: "titan-grand-champion.png"
+    body: |-
+      <p><b>Requirement</b>: R60+, Upgrade Titan Lineage to level 25 and purchase the first 2 Titan Lineage perks.</p>
+  - id: "druid-grand-champion"
+    name: "Druid Grand Champion"
+    icon: "druid-grand-champion.png"
+    body: |-
+      <p><b>Requirement</b>: R60+, Upgrade Druid Lineage to level 25 and purchase the first 2 Druid Lineage perks.</p>
+  - id: "faceless-grand-champion"
+    name: "Faceless Grand Champion"
+    icon: "faceless-grand-champion.png"
+    body: |-
+      <p><b>Requirement</b>: R60+, Upgrade Faceless Lineage to level 25 and purchase the first 2 Faceless Lineage perks.</p>
+  - id: "dwarven-grand-champion"
+    name: "Dwarven Grand Champion"
+    icon: "dwarven-grand-champion.png"
+    body: |-
+      <p><b>Requirement</b>: R60+, Upgrade Dwarven Lineage to level 25 and purchase the first 2 Dwarven Lineage perks.</p>
+  - id: "drow-grand-champion"
+    name: "Drow Grand Champion"
+    icon: "drow-grand-champion.png"
+    body: |-
+      <p><b>Requirement</b>: R60+, Upgrade Drow Lineage to level 25 and purchase the first 2 Drow Lineage perks.</p>
+  - id: "dragon-grand-champion"
+    name: "Dragon Grand Champion"
+    icon: "dragon-grand-champion.png"
+    body: |-
+      <p><b>Requirement</b>: R60+, Upgrade Dragon Lineage to level 25 and purchase the first 2 Dragon Lineage perks.</p>
+  - id: "buy-fairy-upgrades-trophy2"
+    name: "Fairy Master"
+    icon: "buy-fairy-upgrades-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: A2+, purchase all Fairy Upgrades while Fairy Lineage is at least level 30.</p>
+      <p><b>Additional unlock</b>: 1 hour of activity time with the Fairy faction spell unlocks its Advanced Heritage.</p>
+  - id: "buy-elven-upgrades-trophy2"
+    name: "Elven Master"
+    icon: "buy-elven-upgrades-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: A2+, purchase all Elven Upgrades while Elven Lineage is at least level 30.</p>
+      <p><b>Additional unlock</b>: 1 hour of activity time with the Elven faction spell unlocks its Advanced Heritage.</p>
+  - id: "buy-angel-upgrades-trophy2"
+    name: "Angel Master"
+    icon: "buy-angel-upgrades-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: A2+, purchase all Angel Upgrades while Angel Lineage is at least level 30.</p>
+      <p><b>Additional unlock</b>: 1 hour of activity time with the Angel faction spell unlocks its Advanced Heritage.</p>
+  - id: "buy-goblin-upgrades-trophy2"
+    name: "Goblin Master"
+    icon: "buy-goblin-upgrades-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: A2+, purchase all Goblin Upgrades while Goblin Lineage is at least level 30.</p>
+      <p><b>Additional unlock</b>: 1 hour of activity time with the Goblin faction spell unlocks its Advanced Heritage.</p>
+  - id: "buy-undead-upgrades-trophy2"
+    name: "Undead Master"
+    icon: "buy-undead-upgrades-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: A2+, purchase all Undead Upgrades while Undead Lineage is at least level 30.</p>
+      <p><b>Additional unlock</b>: 1 hour of activity time with the Undead faction spell unlocks its Advanced Heritage.</p>
+  - id: "buy-demon-upgrades-trophy2"
+    name: "Demon Master"
+    icon: "buy-demon-upgrades-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: A2+, purchase all Demon Upgrades while Demon Lineage is at least level 30.</p>
+      <p><b>Additional unlock</b>: 1 hour of activity time with the Demon faction spell unlocks its Advanced Heritage.</p>
+  - id: "buy-titan-upgrades-trophy2"
+    name: "Titan Master"
+    icon: "buy-titan-upgrades-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: A2+, purchase all Titan Upgrades while Titan Lineage is at least level 30.</p>
+      <p><b>Additional unlock</b>: 1 hour of activity time with the Titan faction spell unlocks its Advanced Heritage.</p>
+  - id: "buy-druid-upgrades-trophy2"
+    name: "Druid Master"
+    icon: "buy-druid-upgrades-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: A2+, purchase all Druid Upgrades while Druid Lineage is at least level 30.</p>
+      <p><b>Additional unlock</b>: 1 hour of activity time with the Druid faction spell unlocks its Advanced Heritage.</p>
+  - id: "buy-faceless-upgrades-trophy2"
+    name: "Faceless Master"
+    icon: "buy-faceless-upgrades-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: A2+, purchase all Faceless Upgrades while Faceless Lineage is at least level 30.</p>
+      <p><b>Additional unlock</b>: 1 hour of activity time with the Faceless faction spell unlocks its Advanced Heritage.</p>
+  - id: "buy-dwarven-upgrades-trophy2"
+    name: "Dwarven Master"
+    icon: "buy-dwarven-upgrades-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: A2+, purchase all Dwarven Upgrades while Dwarven Lineage is at least level 30.</p>
+      <p><b>Additional unlock</b>: 1 hour of activity time with the Dwarven faction spell unlocks its Advanced Heritage.</p>
+  - id: "buy-drow-upgrades-trophy2"
+    name: "Drow Master"
+    icon: "buy-drow-upgrades-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: A2+, purchase all Drow Upgrades while Drow Lineage is at least level 30.</p>
+      <p><b>Additional unlock</b>: 1 hour of activity time with the Drow faction spell unlocks its Advanced Heritage.</p>
+  - id: "buy-dragon-upgrades-trophy2"
+    name: "Dragon Master"
+    icon: "buy-dragon-upgrades-trophy2.png"
+    body: |-
+      <p><b>Requirement</b>: A2+, purchase all Dragon Upgrades while Dragon Lineage is at least level 30.</p>
+      <p><b>Additional unlock</b>: 1 hour of activity time with the Dragon faction spell unlocks its Advanced Heritage.</p>

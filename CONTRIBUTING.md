@@ -39,6 +39,31 @@ need to work through a generated template or a single monolithic database.
 Shared Astro navigation lives in `src/data/navigation.ts`; shared presentation
 remains in `scripts/common.css` while the migration is in progress.
 
+### Edit trophy information
+
+Trophies have one canonical source under `src/content/trophies/`, split into
+five readable YAML files by in-game category. Both the icon drawer and the
+full text page are generated from these same records. Edit only the matching
+YAML record; do not copy the correction into either page wrapper.
+
+Each trophy has four straightforward fields:
+
+```yaml
+- id: "harlequin-trophy"
+  name: "Harlequin"
+  icon: "harlequin-trophy.png"
+  body: |-
+    <p><b>Requirement</b>: As a Mercenary, purchase one upgrade from 11 different factions.</p>
+    <p><b>Build</b>: <a href="/realm/MercBuilds/#TrophyBuilds">Mercenary trophy builds</a>.</p>
+```
+
+`id` is the text-page anchor, `icon` is the filename in
+`public/assets/game/sprites/`, and `body` is ordinary editable HTML. To link a
+trophy to a build, add the link once inside `body`; it will appear in both the
+desktop tooltip and the text listing. Keep IDs unique and do not manually edit
+the category totals—the build verifies all 903 records and derives totals from
+the files.
+
 Edit the source files directly. Do not edit `_site/`; it is generated for
 GitHub Pages and is replaced by every build.
 

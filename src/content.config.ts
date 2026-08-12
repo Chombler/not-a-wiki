@@ -30,4 +30,19 @@ const researchTree = defineCollection({
   }),
 });
 
-export const collections = { research, researchTree };
+const trophies = defineCollection({
+  loader: glob({ pattern: '*.yaml', base: './src/content/trophies' }),
+  schema: z.object({
+    category: z.enum(['secret', 'allegiance', 'miscellaneous', 'magic', 'building']),
+    label: z.string().min(1),
+    order: z.number().int().min(0),
+    trophies: z.array(z.object({
+      id: z.string().regex(/^[a-z0-9-]+$/),
+      name: z.string().min(1),
+      icon: z.string().regex(/^[a-z0-9-]+\.png$/),
+      body: z.string(),
+    })),
+  }),
+});
+
+export const collections = { research, researchTree, trophies };
