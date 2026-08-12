@@ -130,6 +130,10 @@ const trophyRenderer = fs.readFileSync(path.join(root, 'src/lib/gameIcons.ts'), 
 if (!trophyRenderer.includes("'BuildingTrophies-map': { label: 'Building Trophies', count: 566 }") || !trophyRenderer.includes("'holy-frenzy-trophy.png': 'MagicTrophies-map'") || !trophyRenderer.includes('class="trophy-icon-grid"')) {
   failures.push('TrophyPage lost the canonical interactive-grid enhancement');
 }
+const trophyPageHtml = fs.readFileSync(path.join(output, 'TrophyPage/index.html'), 'utf8');
+if (trophyPageHtml.includes('If a build is needed I will add a link to that build')) {
+  failures.push('TrophyPage restored the obsolete build-link disclaimer');
+}
 
 console.log(`Routes: ${builtRoutes.size} built, ${legacyRoutes.size} legacy routes covered`);
 console.log(`Internal links: checked across ${builtFiles.length} pages`);
