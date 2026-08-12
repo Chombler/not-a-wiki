@@ -104,22 +104,6 @@ a.tooltips {
     cursor: pointer;
 }
 
-a.trophy-grid-button[title] {
-    position: relative;
-}
-
-a.trophy-grid-button[title]::after {
-    content: "↗";
-    position: absolute;
-    right: 2px;
-    bottom: 2px;
-    padding: 0 2px;
-    border-radius: 2px;
-    background: #111;
-    color: #f2cf72;
-    font: 700 11px/14px system-ui, sans-serif;
-}
-
 .trophy-grid-button:focus-visible {
     outline: 3px solid var(--accent, #8d5b18);
     outline-offset: 3px;
