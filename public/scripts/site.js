@@ -104,16 +104,20 @@
     });
 
     document.querySelectorAll('area[research], area[data-research], .trophy-grid-button[research]').forEach(function (hotspot) {
-      hotspot.setAttribute('role', 'button');
-      hotspot.setAttribute('tabindex', '0');
+      if (!hotspot.getAttribute('href')) {
+        hotspot.setAttribute('role', 'button');
+        hotspot.setAttribute('tabindex', '0');
+      }
       hotspot.setAttribute('aria-expanded', 'false');
       hotspot.addEventListener('click', function (event) {
+        if (hotspot.getAttribute('href') && window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
         event.preventDefault();
         event.stopPropagation();
         openTouchTooltip(hotspot, event);
       });
       hotspot.addEventListener('keydown', function (event) {
         if (event.key !== 'Enter' && event.key !== ' ') return;
+        if (event.key === 'Enter' && hotspot.getAttribute('href')) return;
         event.preventDefault();
         event.stopPropagation();
         openTouchTooltip(hotspot, event);

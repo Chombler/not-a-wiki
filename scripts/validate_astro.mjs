@@ -116,6 +116,11 @@ for (const [heading, expected] of [['Secret Trophies', 60], ['Allegiance Trophie
 const trophyPageHtml = fs.readFileSync(path.join(output, 'TrophyPage/index.html'), 'utf8');
 const trophyButtons = [...trophyPageHtml.matchAll(/class="trophy-grid-button"/g)].length;
 if (trophyButtons !== 903) failures.push(`TrophyPage has ${trophyButtons}/903 interactive records`);
+const linkedTrophyIcons = [...trophyPageHtml.matchAll(/<a class="trophy-grid-button"/g)].length;
+if (linkedTrophyIcons !== 3) failures.push(`TrophyPage has ${linkedTrophyIcons}/3 guide-linked icons`);
+if (!trophyPageHtml.includes('href="/not-a-wiki/MercBuilds/#TrophyBuilds"') || !trophyPageHtml.includes('href="/not-a-wiki/TrophyPage/#mathematician-building-bonuses"')) {
+  failures.push('TrophyPage lost guide links or their section anchors');
+}
 if (!trophyPageHtml.includes('Harlequin') || !allTrophiesHtml.includes('Harlequin')) failures.push('Canonical trophy content is missing from one rendered view');
 if (trophyPageHtml.includes('If a build is needed I will add a link to that build')) {
   failures.push('TrophyPage restored the obsolete build-link disclaimer');

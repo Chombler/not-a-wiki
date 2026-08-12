@@ -52,15 +52,19 @@ Each trophy has four straightforward fields:
 - id: "harlequin-trophy"
   name: "Harlequin"
   icon: "harlequin-trophy.png"
+  guide:
+    href: "/realm/MercBuilds/#TrophyBuilds"
+    label: "Mercenary trophy builds"
   body: |-
     <p><b>Requirement</b>: As a Mercenary, purchase one upgrade from 11 different factions.</p>
-    <p><b>Build</b>: <a href="/realm/MercBuilds/#TrophyBuilds">Mercenary trophy builds</a>.</p>
 ```
 
 `id` is the text-page anchor, `icon` is the filename in
 `public/assets/game/sprites/`, and `body` is ordinary editable HTML. To link a
-trophy to a build, add the link once inside `body`; it will appear in both the
-desktop tooltip and the text listing. Keep IDs unique and do not manually edit
+trophy icon to a guide or a specific section, add the optional `guide` block.
+Use a site path plus `#section-id` for a particular heading. The linked icon is
+marked with an arrow, and the guide appears in both its tooltip and text entry.
+Keep IDs unique and do not manually edit
 the category totals—the build verifies all 903 records and derives totals from
 the files.
 

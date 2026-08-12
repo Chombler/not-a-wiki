@@ -41,6 +41,10 @@ const trophies = defineCollection({
       name: z.string().min(1),
       icon: z.string().regex(/^[a-z0-9-]+\.png$/),
       body: z.string(),
+      guide: z.object({
+        href: z.string().min(1),
+        label: z.string().min(1),
+      }).optional(),
     })),
   }),
 });

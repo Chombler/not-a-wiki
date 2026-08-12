@@ -3,6 +3,7 @@ export interface Trophy {
   name: string;
   icon: string;
   body: string;
+  guide?: { href: string; label: string };
 }
 
 export interface TrophyCategory {
@@ -30,12 +31,21 @@ function frameBodyIcons(body: string) {
   return body.replace(/<img\b[^>]*\/assets\/game\/sprites\/[^>]*>/gi, (image) => `<span class="game-icon-frame">${image}</span>`);
 }
 
+function guideHtml(trophy: Trophy, base: string) {
+  if (!trophy.guide) return '';
+  const href = bodyForBase(trophy.guide.href, base);
+  return `<p class="trophy-guide-link"><b>Guide</b>: <a href="${escapeAttribute(href)}">${trophy.guide.label}</a></p>`;
+}
+
 export function trophyDrawerHtml(categories: TrophyCategory[], base: string) {
   const sections = categories.map((category, index) => {
     const buttons = category.trophies.map((trophy) => {
       const heading = `<p><span class="game-icon-frame">${icon(base, trophy)}</span><b> ${trophy.name}</b></p>`;
-      const tooltip = escapeAttribute(`${heading}${frameBodyIcons(bodyForBase(trophy.body, base))}`);
-      return `<button type="button" class="trophy-grid-button" research="${tooltip}" aria-label="${escapeAttribute(trophy.name)}">${icon(base, trophy)}</button>`;
+      const tooltip = escapeAttribute(`${heading}${frameBodyIcons(bodyForBase(trophy.body, base))}${guideHtml(trophy, base)}`);
+      const common = `class="trophy-grid-button" research="${tooltip}" aria-label="${escapeAttribute(trophy.name)}"`;
+      return trophy.guide
+        ? `<a ${common} href="${escapeAttribute(bodyForBase(trophy.guide.href, base))}" title="Open ${escapeAttribute(trophy.guide.label)}">${icon(base, trophy)}</a>`
+        : `<button type="button" ${common}>${icon(base, trophy)}</button>`;
     }).join('');
     return `<details class="trophy-grid-section"${index === 0 ? ' open' : ''}><summary><span>${category.label} (${category.trophies.length}/${category.trophies.length})</span></summary><div class="trophy-icon-grid">${buttons}</div></details>`;
   }).join('');
@@ -44,7 +54,7 @@ export function trophyDrawerHtml(categories: TrophyCategory[], base: string) {
 
 export function trophyListHtml(categories: TrophyCategory[], base: string) {
   const sections = categories.map((category, index) => {
-    const trophies = category.trophies.map((trophy) => `<article class="trophy-entry" id="${trophy.id}"><p class="trophy-entry-heading">${icon(base, trophy, trophy.name)}<b>${trophy.name}</b></p>${bodyForBase(trophy.body, base)}</article>`).join('');
+    const trophies = category.trophies.map((trophy) => `<article class="trophy-entry" id="${trophy.id}"><p class="trophy-entry-heading">${icon(base, trophy, trophy.name)}<b>${trophy.name}</b></p>${bodyForBase(trophy.body, base)}${guideHtml(trophy, base)}</article>`).join('');
     return `<details class="trophy-list-section"${index === 0 ? ' open' : ''}><summary>${category.label} (${category.trophies.length})</summary><div class="trophy-list-entries">${trophies}</div></details>`;
   }).join('');
   return `<div class="trophy-text-list">${sections}</div>`;
