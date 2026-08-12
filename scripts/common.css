@@ -59,9 +59,10 @@ a.tooltips {
     border-bottom: 1px solid #393939;
     background: linear-gradient(#292929, #1d1d1d);
     color: #f6f6f6;
-    font-family: "Pixel Azure Bonds", monospace;
-    font-size: 24px;
-    font-weight: 400;
+    font-family: "Realm Grinder Liony", Georgia, serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
     cursor: pointer;
     list-style: none;
 }
