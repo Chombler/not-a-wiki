@@ -58,7 +58,10 @@ a.tooltips {
     padding: 4px 8px;
     border-bottom: 1px solid #393939;
     background: linear-gradient(#292929, #1d1d1d);
-    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    color: #f6f6f6;
+    font-family: "Pixel Azure Bonds", monospace;
+    font-size: 24px;
+    font-weight: 400;
     cursor: pointer;
     list-style: none;
 }
@@ -68,14 +71,12 @@ a.tooltips {
 }
 
 .trophy-grid-section > summary::after {
-    /* Game textures: expanded = collapseArrowUp, collapsed = collapseArrowDown. */
-    content: '▲';
-    display: grid;
-    width: 24px;
-    height: 24px;
-    place-items: center;
-    border: 1px solid #aaa;
-    border-radius: 3px;
+    /* Exact current-game texture: expanded groups use collapseArrowUp. */
+    content: '';
+    flex: 0 0 26px;
+    width: 26px;
+    height: 26px;
+    background: var(--trophy-collapse-up) center / 26px 26px no-repeat;
 }
 
 .trophy-grid-section:not([open]) > summary {
@@ -83,7 +84,8 @@ a.tooltips {
 }
 
 .trophy-grid-section:not([open]) > summary::after {
-    content: '▼';
+    /* Exact current-game texture: collapsed groups use collapseArrowDown. */
+    background-image: var(--trophy-collapse-down);
 }
 
 .trophy-icon-grid {

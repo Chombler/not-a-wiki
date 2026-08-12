@@ -116,8 +116,14 @@ for (const [heading, expected] of [['Secret Trophies', 60], ['Allegiance Trophie
 const trophyPageHtml = fs.readFileSync(path.join(output, 'TrophyPage/index.html'), 'utf8');
 if (!trophyPageHtml.includes('If a trophy has a guide, click its icon to open it.')) failures.push('TrophyPage lost its clickable-guide instruction');
 const trophyStyles = fs.readFileSync(path.join(root, 'scripts/common.css'), 'utf8');
-if (!trophyStyles.includes("expanded = collapseArrowUp, collapsed = collapseArrowDown") || !trophyStyles.includes("content: '▲'") || !trophyStyles.includes("content: '▼'")) {
-  failures.push('Trophy section controls no longer match the game\'s expanded-up/collapsed-down arrows');
+if (!trophyStyles.includes('font-family: "Pixel Azure Bonds", monospace') || !trophyStyles.includes('var(--trophy-collapse-up)') || !trophyStyles.includes('var(--trophy-collapse-down)')) {
+  failures.push('Trophy section controls no longer use the game\'s font and collapse-arrow textures');
+}
+for (const asset of ['assets/game/fonts/pixel-azure-bonds.ttf', 'assets/game/ui/collapse-arrow-up.png', 'assets/game/ui/collapse-arrow-down.png']) {
+  if (!fs.existsSync(path.join(root, 'public', asset))) failures.push(`Missing current-game trophy header asset: ${asset}`);
+}
+if (!trophyPageHtml.includes('@font-face{font-family:"Pixel Azure Bonds"') || !trophyPageHtml.includes('--trophy-collapse-up: url(&quot;/not-a-wiki/assets/game/ui/collapse-arrow-up.png&quot;)') || !trophyPageHtml.includes('--trophy-collapse-down: url(&quot;/not-a-wiki/assets/game/ui/collapse-arrow-down.png&quot;)')) {
+  failures.push('Trophy header game assets are not mounted through the configured site base path');
 }
 const trophyButtons = [...trophyPageHtml.matchAll(/class="trophy-grid-button"/g)].length;
 if (trophyButtons !== 903) failures.push(`TrophyPage has ${trophyButtons}/903 interactive records`);
