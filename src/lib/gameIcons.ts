@@ -41,7 +41,11 @@ export function renderTrophyGrids(html: string) {
         if (!source) return '';
         const label = tooltip.match(/<b>([^<]+)<\/b>/i)?.[1].trim() || 'Trophy details';
         const decodedTooltip = tooltip.replaceAll('&quot;', '"').replaceAll('&amp;', '&');
-        return `<button type="button" class="trophy-grid-button" research="${escapeAttribute(decodedTooltip)}" aria-label="${escapeAttribute(label)}"><img src="${source}" alt=""></button>`;
+        const framedTooltip = decodedTooltip.replace(
+          /<img\b[^>]*\/assets\/game\/sprites\/[^>]*>/i,
+          (image) => `<span class="game-icon-frame">${image}</span>`,
+        );
+        return `<button type="button" class="trophy-grid-button" research="${escapeAttribute(framedTooltip)}" aria-label="${escapeAttribute(label)}"><img src="${source}" alt=""></button>`;
       })
       .join('');
     const initiallyOpen = mapName === 'SecretTrophies-map' ? ' open' : '';
