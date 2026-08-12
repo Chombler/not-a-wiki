@@ -64,7 +64,8 @@ Each trophy has four straightforward fields:
 trophy icon to a guide or a specific section, add the optional `guide` block.
 Use a site path plus `#section-id` for a particular heading. The linked icon is
 clickable on the desktop trophy page, and the guide also appears in its tooltip
-and text entry.
+and text entry. Do not put guide links directly in `body`; validation requires
+them to use the structured `guide` field so the icon is always clickable.
 Keep IDs unique and do not manually edit
 the category totals—the build verifies all 903 records and derives totals from
 the files.
