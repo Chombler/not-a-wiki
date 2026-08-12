@@ -116,13 +116,13 @@ for (const [heading, expected] of [['Secret Trophies', 60], ['Allegiance Trophie
 const trophyPageHtml = fs.readFileSync(path.join(output, 'TrophyPage/index.html'), 'utf8');
 if (!trophyPageHtml.includes('If a trophy has a guide, click its icon to open it.')) failures.push('TrophyPage lost its clickable-guide instruction');
 const trophyStyles = fs.readFileSync(path.join(root, 'scripts/common.css'), 'utf8');
-if (!trophyStyles.includes('font-family: "Realm Grinder Liony", Georgia, serif') || !trophyStyles.includes('font-size: 32px') || !trophyStyles.includes('filter: blur(0.2px)') || !trophyStyles.includes('var(--trophy-collapse-up)') || !trophyStyles.includes('var(--trophy-collapse-down)')) {
+if (!trophyStyles.includes('font-family: "Realm Grinder Liony", Georgia, serif') || !trophyStyles.includes('font-size: 32px') || !trophyStyles.includes('row-gap: 2px') || !trophyStyles.includes('var(--trophy-header-skin)') || !trophyStyles.includes('var(--trophy-collapse-up)') || !trophyStyles.includes('var(--trophy-collapse-down)')) {
   failures.push('Trophy section controls no longer use the game\'s font and collapse-arrow textures');
 }
-for (const asset of ['assets/game/fonts/liony-bold.ttf', 'assets/game/ui/collapse-arrow-up.png', 'assets/game/ui/collapse-arrow-down.png']) {
+for (const asset of ['assets/game/fonts/liony-bold.otf', 'assets/game/ui/black-stone-header.png', 'assets/game/ui/collapse-arrow-up.png', 'assets/game/ui/collapse-arrow-down.png']) {
   if (!fs.existsSync(path.join(root, 'public', asset))) failures.push(`Missing current-game trophy header asset: ${asset}`);
 }
-if (!trophyPageHtml.includes('@font-face{font-family:"Realm Grinder Liony"') || !trophyPageHtml.includes('/not-a-wiki/assets/game/fonts/liony-bold.ttf') || !trophyPageHtml.includes('--trophy-collapse-up: url(&quot;/not-a-wiki/assets/game/ui/collapse-arrow-up.png&quot;)') || !trophyPageHtml.includes('--trophy-collapse-down: url(&quot;/not-a-wiki/assets/game/ui/collapse-arrow-down.png&quot;)')) {
+if (!trophyPageHtml.includes('@font-face{font-family:"Realm Grinder Liony"') || !trophyPageHtml.includes('/not-a-wiki/assets/game/fonts/liony-bold.otf') || !trophyPageHtml.includes('--trophy-header-skin: url(&quot;/not-a-wiki/assets/game/ui/black-stone-header.png&quot;)') || !trophyPageHtml.includes('--trophy-collapse-up: url(&quot;/not-a-wiki/assets/game/ui/collapse-arrow-up.png&quot;)') || !trophyPageHtml.includes('--trophy-collapse-down: url(&quot;/not-a-wiki/assets/game/ui/collapse-arrow-down.png&quot;)')) {
   failures.push('Trophy header game assets are not mounted through the configured site base path');
 }
 const trophyButtons = [...trophyPageHtml.matchAll(/class="trophy-grid-button"/g)].length;

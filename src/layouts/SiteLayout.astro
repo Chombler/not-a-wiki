@@ -28,7 +28,7 @@ const editUrl = sourcePath ? `https://github.com/chombler/not-a-wiki/edit/codex/
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <link rel="shortcut icon" href={url('scripts/favicon.ico')} />
-    <style is:inline set:html={`@font-face{font-family:"Realm Grinder Liony";src:url("${url('assets/game/fonts/liony-bold.ttf')}") format("truetype");font-style:normal;font-weight:700;font-display:swap}`} />
+    <style is:inline set:html={`@font-face{font-family:"Realm Grinder Liony";src:url("${url('assets/game/fonts/liony-bold.otf')}") format("opentype");font-style:normal;font-weight:700;font-display:swap}`} />
     <title>{documentTitle}</title>
     <script is:inline>
       (() => {
@@ -38,7 +38,7 @@ const editUrl = sourcePath ? `https://github.com/chombler/not-a-wiki/edit/codex/
       })();
     </script>
   </head>
-  <body style={`--game-icon-frame: url("${url('assets/game/sprites/black-gold-trim.png')}"); --trophy-collapse-up: url("${url('assets/game/ui/collapse-arrow-up.png')}"); --trophy-collapse-down: url("${url('assets/game/ui/collapse-arrow-down.png')}")`}>
+  <body style={`--game-icon-frame: url("${url('assets/game/sprites/black-gold-trim.png')}"); --trophy-header-skin: url("${url('assets/game/ui/black-stone-header.png')}"); --trophy-collapse-up: url("${url('assets/game/ui/collapse-arrow-up.png')}"); --trophy-collapse-down: url("${url('assets/game/ui/collapse-arrow-down.png')}")`}>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <div class="site-shell">
       <header class="site-header">
