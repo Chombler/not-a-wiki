@@ -114,6 +114,7 @@ for (const [heading, expected] of [['Secret Trophies', 60], ['Allegiance Trophie
   }
 }
 const trophyPageHtml = fs.readFileSync(path.join(output, 'TrophyPage/index.html'), 'utf8');
+if (!trophyPageHtml.includes('If a trophy has a guide, click its icon to open it.')) failures.push('TrophyPage lost its clickable-guide instruction');
 const trophyButtons = [...trophyPageHtml.matchAll(/class="trophy-grid-button"/g)].length;
 if (trophyButtons !== 903) failures.push(`TrophyPage has ${trophyButtons}/903 interactive records`);
 const linkedTrophyIcons = [...trophyPageHtml.matchAll(/<a class="trophy-grid-button"/g)].length;
