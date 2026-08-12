@@ -114,6 +114,26 @@ for (const [heading, expected] of [['Secret Trophies', 60], ['Allegiance Trophie
   }
 }
 const trophyPageHtml = fs.readFileSync(path.join(output, 'TrophyPage/index.html'), 'utf8');
+function requireIncreasingOrder(html, markers, label) {
+  let previous = -1;
+  for (const marker of markers) {
+    const current = html.indexOf(marker);
+    if (current === -1 || current <= previous) {
+      failures.push(`${label} no longer follows current-game order at: ${marker}`);
+      return;
+    }
+    previous = current;
+  }
+}
+const gameCategoryOrder = ['Allegiance Trophies', 'Miscellaneous Trophies', 'Magic Trophies', 'Building Trophies', 'Secret Trophies'];
+requireIncreasingOrder(trophyPageHtml, gameCategoryOrder.map((heading) => `<span>${heading} (`), 'TrophyPage categories');
+requireIncreasingOrder(allTrophiesHtml, gameCategoryOrder.map((heading) => `<summary>${heading} (`), 'AllTrophies categories');
+requireIncreasingOrder(trophyPageHtml, ['aria-label="Mercenary Oath"', 'aria-label="Dragon Tamer"'], 'TrophyPage Allegiance trophies');
+requireIncreasingOrder(allTrophiesHtml, ['id="mercenary-oath"', 'id="dragon-tamer-trophy"'], 'AllTrophies Allegiance trophies');
+requireIncreasingOrder(trophyPageHtml, ['aria-label="Reality Crater"', 'aria-label="Holy Frenzy"'], 'TrophyPage Magic trophies');
+requireIncreasingOrder(allTrophiesHtml, ['id="reality-crater-trophy"', 'id="holy-frenzy-trophy"'], 'AllTrophies Magic trophies');
+requireIncreasingOrder(trophyPageHtml, ['aria-label="Spell Cataclysm"', 'aria-label="Double Bottom"', 'aria-label="Advisor Insight"'], 'TrophyPage Secret trophies');
+requireIncreasingOrder(allTrophiesHtml, ['id="spell-cataclysm-trophy"', 'id="double-bottom-trophy"', 'id="ui-tip-trophy"'], 'AllTrophies Secret trophies');
 if (!trophyPageHtml.includes('If a trophy has a guide, click its icon to open it.')) failures.push('TrophyPage lost its clickable-guide instruction');
 const trophyStyles = fs.readFileSync(path.join(root, 'scripts/common.css'), 'utf8');
 if (!trophyStyles.includes('font-family: "Realm Grinder Liony", Georgia, serif') || !trophyStyles.includes('font-size: 32px') || !trophyStyles.includes('row-gap: 2px') || !trophyStyles.includes('var(--trophy-header-skin)') || !trophyStyles.includes('var(--trophy-collapse-up)') || !trophyStyles.includes('var(--trophy-collapse-down)')) {

@@ -1,17 +1,8 @@
 # Canonical, human-authored trophy records. Both trophy pages render this file.
 category: "magic"
 label: "Magic Trophies"
-order: 3
+order: 2
 trophies:
-  - id: "holy-frenzy-trophy"
-    name: "Holy Frenzy"
-    icon: "holy-frenzy-trophy.png"
-    body: |-
-      <p><b>Requirements</b>: A2+, within a single Reincarnation, have a combined activity time of at least 1 day from Holy Light and Blood Frenzy.</p>
-      <p><b>Cost</b>: 100 Dc (1e35)</p>
-      <p><b>Effect</b>: While Blood Frenzy or Holy Light are active, increase the production of all buildings.</p>
-      <p><b>Formula</b>: (250 * (1 + T) ^ 2)%, where T is the higher active tier of Blood Frenzy or Holy Light.</p>
-      <p><b>Effect (A4+ only)</b>: Also multiplicatively increase Faction Coin find chance by 500% while playing as any Good or Evil faction.</p>
   - id: "mana-upgrade1"
     name: "Mana Droplet"
     icon: "mana-upgrade1.png"
@@ -435,3 +426,12 @@ trophies:
       <p><b>Cost</b>: 10 Octg (1e118)</p>
       <p><b>Effect</b>: Infinite Spiral also reduces excavation cost multiplier based on assistants owned.</p>
       <p><b>Formula</b>: 0.0005 * ln(1 + x), where x is assistants owned.</p>
+  - id: "holy-frenzy-trophy"
+    name: "Holy Frenzy"
+    icon: "holy-frenzy-trophy.png"
+    body: |-
+      <p><b>Requirements</b>: A2+, within a single Reincarnation, have a combined activity time of at least 1 day from Holy Light and Blood Frenzy.</p>
+      <p><b>Cost</b>: 100 Dc (1e35)</p>
+      <p><b>Effect</b>: While Blood Frenzy or Holy Light are active, increase the production of all buildings.</p>
+      <p><b>Formula</b>: (250 * (1 + T) ^ 2)%, where T is the higher active tier of Blood Frenzy or Holy Light.</p>
+      <p><b>Effect (A4+ only)</b>: Also multiplicatively increase Faction Coin find chance by 500% while playing as any Good or Evil faction.</p>

@@ -1,7 +1,7 @@
 # Canonical, human-authored trophy records. Both trophy pages render this file.
 category: "building"
 label: "Building Trophies"
-order: 4
+order: 3
 trophies:
   - id: "farm-trophy1"
     name: "1 Farm"

@@ -1,8 +1,15 @@
 # Canonical, human-authored trophy records. Both trophy pages render this file.
 category: "allegiance"
 label: "Allegiance Trophies"
-order: 1
+order: 0
 trophies:
+  - id: "mercenary-oath"
+    name: "Mercenary Oath"
+    icon: "mercenary-oath.png"
+    body: |-
+      <p>You have become a Mercenary for the rest of your existence.</p>
+      <p><b>Requirement</b>: Purchase Mercenary Tribute & Oath of the Mercenaries.</p>
+      <p><b>Note</b>: This is done near the end of R3.</p>
   - id: "dragon-tamer-trophy"
     name: "Dragon Tamer"
     icon: "dragon-tamer-trophy.png"
@@ -150,13 +157,6 @@ trophies:
     body: |-
       <p><b>Requirement</b>: Purchase the first 12 faction upgrades in this Era (this includes Trade Treaty, Friendship Pact, and Alliance)</p>
       <p><b>Note</b>: This can be done at R125+.</p>
-  - id: "mercenary-oath"
-    name: "Mercenary Oath"
-    icon: "mercenary-oath.png"
-    body: |-
-      <p>You have become a Mercenary for the rest of your existence.</p>
-      <p><b>Requirement</b>: Purchase Mercenary Tribute & Oath of the Mercenaries.</p>
-      <p><b>Note</b>: This is done near the end of R3.</p>
   - id: "fairy-grand-champion"
     name: "Fairy Grand Champion"
     icon: "fairy-grand-champion.png"
