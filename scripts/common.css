@@ -71,6 +71,13 @@ a.tooltips {
     display: none;
 }
 
+.trophy-grid-section > summary > span {
+    /* Flash rasterizes this TextBlock into a texture; Starling then samples
+       that texture bilinearly. A subpixel blur reproduces that softer edge. */
+    filter: blur(0.2px);
+    -webkit-font-smoothing: antialiased;
+}
+
 .trophy-grid-section > summary::after {
     /* Exact current-game texture: expanded groups use collapseArrowUp. */
     content: '';
