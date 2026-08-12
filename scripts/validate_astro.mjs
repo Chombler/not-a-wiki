@@ -100,8 +100,8 @@ function validateCanonicalIconBatch(relative, startMarker, endMarker, expected) 
 
 function validateTrophyGrid(heading, expected) {
   const html = fs.readFileSync(path.join(output, 'TrophyPage/index.html'), 'utf8');
-  const start = html.indexOf(`<h2>${heading}</h2>`);
-  const end = html.indexOf('</section>', start);
+  const start = html.indexOf(`<span>${heading} (`);
+  const end = html.indexOf('</details>', start);
   if (start === -1 || end === -1) {
     failures.push(`TrophyPage lost ${heading} grid`);
     return;
@@ -127,7 +127,7 @@ validateTrophyGrid('Magic Trophies', 61);
 const allTrophiesHtml = fs.readFileSync(path.join(output, 'AllTrophies/index.html'), 'utf8');
 if (!allTrophiesHtml.includes('903 Total Trophies')) failures.push('AllTrophies lost the current 903-trophy total');
 const trophyRenderer = fs.readFileSync(path.join(root, 'src/lib/gameIcons.ts'), 'utf8');
-if (!trophyRenderer.includes("'BuildingTrophies-map': 'Building Trophies'") || !trophyRenderer.includes('class="trophy-icon-grid"')) {
+if (!trophyRenderer.includes("'BuildingTrophies-map': { label: 'Building Trophies', count: 566 }") || !trophyRenderer.includes('class="trophy-icon-grid"')) {
   failures.push('TrophyPage lost the canonical interactive-grid enhancement');
 }
 

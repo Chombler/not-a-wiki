@@ -33,15 +33,64 @@ a.tooltips {
     pointer-events: none;
 }
 
-.trophy-grid-section {
+.trophy-drawer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: flex-start;
     margin-block: 1.25rem 2rem;
+}
+
+.trophy-grid-section {
+    width: min(436px, 100%);
+    border: 2px solid #4e4e4e;
+    border-radius: 3px;
+    background: #111;
+    color: #eee;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 35%);
+}
+
+.trophy-grid-section > summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 34px;
+    padding: 4px 8px;
+    border-bottom: 1px solid #393939;
+    background: linear-gradient(#292929, #1d1d1d);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    cursor: pointer;
+    list-style: none;
+}
+
+.trophy-grid-section > summary::-webkit-details-marker {
+    display: none;
+}
+
+.trophy-grid-section > summary::after {
+    content: '▾';
+    display: grid;
+    width: 24px;
+    height: 24px;
+    place-items: center;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+}
+
+.trophy-grid-section:not([open]) > summary {
+    border-bottom: 0;
+}
+
+.trophy-grid-section:not([open]) > summary::after {
+    content: '▸';
 }
 
 .trophy-icon-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, 60px);
-    gap: 8px;
+    gap: 0;
     align-items: start;
+    padding: 6px;
 }
 
 .trophy-grid-button {
@@ -57,6 +106,13 @@ a.tooltips {
 .trophy-grid-button:focus-visible {
     outline: 3px solid var(--accent, #8d5b18);
     outline-offset: 3px;
+}
+
+@media (max-width: 520px) {
+    .trophy-drawer,
+    .trophy-grid-section {
+        width: 100%;
+    }
 }
 
 /* Arcane Ledger ---------------------------------------------------------- */

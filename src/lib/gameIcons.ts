@@ -14,12 +14,12 @@ export function frameGameIcons(html: string) {
   });
 }
 
-const trophyMaps: Record<string, string> = {
-  'SecretTrophies-map': 'Secret Trophies',
-  'AllegiancesTrophies-map': 'Allegiance Trophies',
-  'MiscTrophies-map': 'Miscellaneous Trophies',
-  'MagicTrophies-map': 'Magic Trophies',
-  'BuildingTrophies-map': 'Building Trophies',
+const trophyMaps: Record<string, { label: string; count: number }> = {
+  'SecretTrophies-map': { label: 'Secret Trophies', count: 65 },
+  'AllegiancesTrophies-map': { label: 'Allegiance Trophies', count: 41 },
+  'MiscTrophies-map': { label: 'Miscellaneous Trophies', count: 170 },
+  'MagicTrophies-map': { label: 'Magic Trophies', count: 61 },
+  'BuildingTrophies-map': { label: 'Building Trophies', count: 566 },
 };
 
 /** Convert the old prebaked trophy image maps into responsive, accessible grids. */
@@ -29,7 +29,7 @@ export function renderTrophyGrids(html: string) {
     .replaceAll('"', '&quot;')
     .replaceAll('<', '&lt;')
     .replaceAll('>', '&gt;');
-  for (const [mapName, heading] of Object.entries(trophyMaps)) {
+  for (const [mapName, section] of Object.entries(trophyMaps)) {
     const mapPattern = new RegExp(`<map name="${mapName}">([\\s\\S]*?)<\\/map>`);
     const match = html.match(mapPattern);
     if (!match) continue;
@@ -40,12 +40,14 @@ export function renderTrophyGrids(html: string) {
         const source = tooltip.match(/<img\b[^>]*\bsrc=&quot;([^&]+)&quot;/i)?.[1];
         if (!source) return '';
         const label = tooltip.match(/<b>([^<]+)<\/b>/i)?.[1].trim() || 'Trophy details';
-        return `<button type="button" class="trophy-grid-button" research="${escapeAttribute(tooltip)}" aria-label="${escapeAttribute(label)}"><img src="${source}" alt=""></button>`;
+        const decodedTooltip = tooltip.replaceAll('&quot;', '"').replaceAll('&amp;', '&');
+        return `<button type="button" class="trophy-grid-button" research="${escapeAttribute(decodedTooltip)}" aria-label="${escapeAttribute(label)}"><img src="${source}" alt=""></button>`;
       })
       .join('');
-    const grid = `<section class="trophy-grid-section"><h2>${heading}</h2><div class="trophy-icon-grid">${buttons}</div></section>`;
+    const initiallyOpen = mapName === 'SecretTrophies-map' ? ' open' : '';
+    const grid = `<details class="trophy-grid-section"${initiallyOpen}><summary><span>${section.label} (${section.count}/${section.count})</span></summary><div class="trophy-icon-grid">${buttons}</div></details>`;
     const imagePattern = new RegExp(`<p>\\s*<img[^>]*usemap="#${mapName}"[^>]*>\\s*<\\/p>`);
     html = html.replace(imagePattern, grid).replace(mapPattern, '');
   }
-  return html;
+  return html.replace(/((?:<details class="trophy-grid-section"[\s\S]*?<\/details>\s*){5})/, '<div class="trophy-drawer">$1</div>');
 }
