@@ -1,6 +1,6 @@
 # Canonical, human-authored trophy records. Both trophy pages render this file.
 category: "miscellaneous"
-label: "Miscellaneous Trophies"
+label: "Misc Trophies"
 order: 1
 trophies:
   - id: "gain-coin-trophy1"

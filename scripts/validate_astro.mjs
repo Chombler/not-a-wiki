@@ -101,14 +101,14 @@ function validateTrophyGrid(heading, expected) {
 validateTrophyGrid('Allegiance Trophies', 45);
 validateTrophyGrid('Building Trophies', 566);
 validateTrophyGrid('Secret Trophies', 60);
-validateTrophyGrid('Miscellaneous Trophies', 170);
+validateTrophyGrid('Misc Trophies', 170);
 validateTrophyGrid('Magic Trophies', 62);
 
 const allTrophiesHtml = fs.readFileSync(path.join(output, 'AllTrophies/index.html'), 'utf8');
 if (!allTrophiesHtml.includes('903 Total Trophies')) failures.push('AllTrophies lost the current 903-trophy total');
 const trophyEntries = [...allTrophiesHtml.matchAll(/class="trophy-entry"/g)].length;
 if (trophyEntries !== 903) failures.push(`AllTrophies has ${trophyEntries}/903 text records`);
-for (const [heading, expected] of [['Secret Trophies', 60], ['Allegiance Trophies', 45], ['Miscellaneous Trophies', 170], ['Magic Trophies', 62], ['Building Trophies', 566]]) {
+for (const [heading, expected] of [['Secret Trophies', 60], ['Allegiance Trophies', 45], ['Misc Trophies', 170], ['Magic Trophies', 62], ['Building Trophies', 566]]) {
   if (!allTrophiesHtml.includes(`<summary>${heading} (${expected})</summary>`)) {
     failures.push(`AllTrophies lost canonical ${heading} count`);
   }
@@ -125,7 +125,7 @@ function requireIncreasingOrder(html, markers, label) {
     previous = current;
   }
 }
-const gameCategoryOrder = ['Allegiance Trophies', 'Miscellaneous Trophies', 'Magic Trophies', 'Building Trophies', 'Secret Trophies'];
+const gameCategoryOrder = ['Allegiance Trophies', 'Misc Trophies', 'Magic Trophies', 'Building Trophies', 'Secret Trophies'];
 requireIncreasingOrder(trophyPageHtml, gameCategoryOrder.map((heading) => `<span>${heading} (`), 'TrophyPage categories');
 requireIncreasingOrder(allTrophiesHtml, gameCategoryOrder.map((heading) => `<summary>${heading} (`), 'AllTrophies categories');
 requireIncreasingOrder(trophyPageHtml, ['aria-label="Mercenary Oath"', 'aria-label="Dragon Tamer"'], 'TrophyPage Allegiance trophies');
