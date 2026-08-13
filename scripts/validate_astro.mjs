@@ -166,9 +166,6 @@ const spellPageHtml = fs.readFileSync(path.join(output, 'Spells/index.html'), 'u
 const spellTierPageHtml = fs.readFileSync(path.join(output, 'SpellTiers/index.html'), 'utf8');
 const allowedSpellComposites = new Set([
   'SpellsTopPage.png',
-  'SpellsMap.png',
-  'SpellTrophyMap.png',
-  'ChallengeRewardMap.png',
   'RealmGrinderHeader.png',
 ]);
 for (const [page, html] of [['Spells', spellPageHtml], ['SpellTiers', spellTierPageHtml]]) {
@@ -179,9 +176,13 @@ for (const [page, html] of [['Spells', spellPageHtml], ['SpellTiers', spellTierP
 }
 const currentSpellSprites = [...spellPageHtml.matchAll(/assets\/game\/sprites\/([^&"']+\.png)/g)];
 if (currentSpellSprites.length < 100) failures.push(`Spells renders only ${currentSpellSprites.length} current-game sprite references`);
-if (!spellPageHtml.includes(`<area href="#GodsHand" research="\n\t<p><b><span class='game-icon-frame'><img src='/not-a-wiki/assets/game/sprites/gods-hand-icon.png'`)) {
-  failures.push('Spells imagemap tooltip markup was broken by current-game icon framing');
+for (const [kind, expected] of [['spell', 30], ['upgrade', 16], ['challenge', 16]]) {
+  const count = [...spellPageHtml.matchAll(new RegExp(`spell-grid-button--${kind}`, 'g'))].length;
+  if (count !== expected) failures.push(`Spells renders ${count} ${kind} grid entries; expected ${expected}`);
 }
+if ([...spellPageHtml.matchAll(/class="spell-entry"/g)].length !== 30) failures.push('Spells does not render 30 detailed spell entries');
+if (spellPageHtml.includes('<map ') || spellPageHtml.includes('SpellsMap.png')) failures.push('Spells restored a baked imagemap instead of canonical spell records');
+if (!spellPageHtml.includes(`href="#GodsHand"`) || !spellPageHtml.includes(`gods-hand-icon.png`)) failures.push('Spells lost the God\'s Hand anchor or current icon');
 if (!spellTierPageHtml.includes('assets/game/sprites/tiered-autocast-upgrade.png')) failures.push('SpellTiers lost the current Tiered Autocasting icon');
 const sunForceHtml = fs.readFileSync(path.join(output, 'SunForce/index.html'), 'utf8');
 for (const icon of ['dawnstone-artifact.png', 'duskstone-artifact.png', 'planetary-force-artifact.png']) {
