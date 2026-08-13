@@ -38,7 +38,7 @@ for (const file of builtFiles) {
   const html = fs.readFileSync(file, 'utf8').replace(/<!--[\s\S]*?-->/g, '');
   for (const icon of html.matchAll(/<img\b[^>]*\/assets\/game\/sprites\/(?!black-gold-trim\.png)[^>]*>/gi)) {
     const prefix = html.slice(Math.max(0, icon.index - 80), icon.index);
-    if (!/<span class="game-icon-frame">\s*$/.test(prefix)) {
+    if (!/<span class=(?:"game-icon-frame"|'game-icon-frame')>\s*$/.test(prefix)) {
       failures.push(`${path.relative(output, file)} contains an unframed canonical game icon`);
     }
   }
@@ -179,6 +179,9 @@ for (const [page, html] of [['Spells', spellPageHtml], ['SpellTiers', spellTierP
 }
 const currentSpellSprites = [...spellPageHtml.matchAll(/assets\/game\/sprites\/([^&"']+\.png)/g)];
 if (currentSpellSprites.length < 100) failures.push(`Spells renders only ${currentSpellSprites.length} current-game sprite references`);
+if (!spellPageHtml.includes(`<area href="#GodsHand" research="\n\t<p><b><span class='game-icon-frame'><img src='/not-a-wiki/assets/game/sprites/gods-hand-icon.png'`)) {
+  failures.push('Spells imagemap tooltip markup was broken by current-game icon framing');
+}
 if (!spellTierPageHtml.includes('assets/game/sprites/tiered-autocast-upgrade.png')) failures.push('SpellTiers lost the current Tiered Autocasting icon');
 const sunForceHtml = fs.readFileSync(path.join(output, 'SunForce/index.html'), 'utf8');
 for (const icon of ['dawnstone-artifact.png', 'duskstone-artifact.png', 'planetary-force-artifact.png']) {
