@@ -261,6 +261,61 @@
   ],
   "sprite_groups": [
     {
+      "kind": "spell",
+      "role": "icon",
+      "sprite_names": [
+        "TaxCollectionIcon", "CallToArmsIcon", "SpiritualSurgeIcon", "HolyLightIcon",
+        "BloodFrenzyIcon", "GemGrinderIcon", "FairyChantingIcon", "MoonBlessingIcon",
+        "GodsHandIcon", "DiamondPickaxeIcon", "GoblinsGreedIcon", "NightTimeIcon",
+        "HellfireBlastIcon", "ComboStrikeIcon", "LightningStrikeIcon", "BrainwaveIcon",
+        "GrandBalanceIcon", "DragonsBreathIcon", "TemporalFluxIcon", "MaelstromIcon",
+        "AllCreationIcon", "PrecognitionIcon", "LimitedWishIcon", "InfiniteSpiralIcon",
+        "CatalystIcon", "ChaosMadnessIcon", "TwistingNetherIcon"
+      ]
+    },
+    {
+      "kind": "spell",
+      "role": "tier-icon",
+      "sprite_names": [
+        "Call to ArmsTier2", "Call to ArmsTier3", "Call to ArmsTier4", "Call to ArmsTier5",
+        "Spiritual SurgeTier2", "Spiritual SurgeTier3", "Spiritual SurgeTier4", "Spiritual SurgeTier5",
+        "Holy LightTier2", "Holy LightTier3", "Holy LightTier4", "Holy LightTier5",
+        "Blood FrenzyTier2", "Blood FrenzyTier3", "Blood FrenzyTier4", "Blood FrenzyTier5",
+        "Gem GrinderTier2", "Gem GrinderTier3", "Gem GrinderTier4", "Gem GrinderTier5",
+        "Fairy ChantingTier2", "Fairy ChantingTier3", "Fairy ChantingTier4", "Fairy ChantingTier5",
+        "Moon BlessingTier2", "Moon BlessingTier3", "Moon BlessingTier4", "Moon BlessingTier5",
+        "God's HandTier2", "God's HandTier3", "God's HandTier4", "God's HandTier5",
+        "Diamond PickaxeTier2", "Diamond PickaxeTier3", "Diamond PickaxeTier4", "Diamond PickaxeTier5",
+        "Goblin's GreedTier2", "Goblin's GreedTier3", "Goblin's GreedTier4", "Goblin's GreedTier5",
+        "Night TimeTier2", "Night TimeTier3", "Night TimeTier4", "Night TimeTier5",
+        "Hellfire BlastTier2", "Hellfire BlastTier3", "Hellfire BlastTier4", "Hellfire BlastTier5",
+        "Combo StrikeTier2", "Combo StrikeTier3", "Combo StrikeTier4", "Combo StrikeTier5",
+        "Lightning StrikeTier2", "Lightning StrikeTier3", "Lightning StrikeTier4", "Lightning StrikeTier5",
+        "BrainwaveTier2", "BrainwaveTier3", "BrainwaveTier4", "BrainwaveTier5",
+        "Grand BalanceTier2", "Grand BalanceTier3", "Grand BalanceTier4", "Grand BalanceTier5",
+        "Dragon's BreathTier2", "Dragon's BreathTier3", "Dragon's BreathTier4", "Dragon's BreathTier5",
+        "Temporal FluxTier2", "MaelstromTier2", "All CreationTier2", "PrecognitionTier2",
+        "Limited WishTier2", "Infinite SpiralTier2"
+      ]
+    },
+    {
+      "kind": "challenge-reward",
+      "role": "icon",
+      "sprite_names": [
+        "ChallengeFairy", "ChallengeElven", "ChallengeAngel", "ChallengeDwarven",
+        "ChallengeGoblin", "ChallengeUndead", "ChallengeDemon", "ChallengeDrow",
+        "ChallengeTitan", "ChallengeDruid", "ChallengeFaceless", "ChallengeDragon",
+        "ChallengeArchon", "ChallengeDjinn", "ChallengeMakers", "ChallengeMercenary"
+      ]
+    },
+    {
+      "kind": "artifact",
+      "role": "icon",
+      "sprite_names": [
+        "DawnstoneArtifact", "DuskstoneArtifact", "PlanetaryForceArtifact"
+      ]
+    },
+    {
       "kind": "trophy",
       "role": "icon",
       "sprite_names": [

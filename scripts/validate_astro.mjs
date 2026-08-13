@@ -162,6 +162,29 @@ if (trophyPageHtml.includes('If a build is needed I will add a link to that buil
   failures.push('TrophyPage restored the obsolete build-link disclaimer');
 }
 
+const spellPageHtml = fs.readFileSync(path.join(output, 'Spells/index.html'), 'utf8');
+const spellTierPageHtml = fs.readFileSync(path.join(output, 'SpellTiers/index.html'), 'utf8');
+const allowedSpellComposites = new Set([
+  'SpellsTopPage.png',
+  'SpellsMap.png',
+  'SpellTrophyMap.png',
+  'ChallengeRewardMap.png',
+  'RealmGrinderHeader.png',
+]);
+for (const [page, html] of [['Spells', spellPageHtml], ['SpellTiers', spellTierPageHtml]]) {
+  const legacyImages = [...html.matchAll(/Factions\/picks\/([^&"']+\.png)/g)]
+    .map((match) => match[1])
+    .filter((name) => !allowedSpellComposites.has(name));
+  if (legacyImages.length) failures.push(`${page} retains legacy individual icons: ${[...new Set(legacyImages)].join(', ')}`);
+}
+const currentSpellSprites = [...spellPageHtml.matchAll(/assets\/game\/sprites\/([^&"']+\.png)/g)];
+if (currentSpellSprites.length < 100) failures.push(`Spells renders only ${currentSpellSprites.length} current-game sprite references`);
+if (!spellTierPageHtml.includes('assets/game/sprites/tiered-autocast-upgrade.png')) failures.push('SpellTiers lost the current Tiered Autocasting icon');
+const sunForceHtml = fs.readFileSync(path.join(output, 'SunForce/index.html'), 'utf8');
+for (const icon of ['dawnstone-artifact.png', 'duskstone-artifact.png', 'planetary-force-artifact.png']) {
+  if (!sunForceHtml.includes(`assets/game/sprites/${icon}`)) failures.push(`SunForce lost current-game icon: ${icon}`);
+}
+
 console.log(`Routes: ${builtRoutes.size} built, ${legacyRoutes.size} legacy routes covered`);
 console.log(`Internal links: checked across ${builtFiles.length} pages`);
 console.log(`Known missing assets: ${currentMissing.length}`);

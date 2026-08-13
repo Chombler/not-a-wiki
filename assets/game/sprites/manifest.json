@@ -949,6 +949,2646 @@
       "role": "icon"
     },
     {
+      "key": "tax-collection-icon",
+      "path": "assets/game/sprites/tax-collection-icon.png",
+      "sprite_name": "TaxCollectionIcon",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1239,
+        "y": 1642,
+        "width": 45,
+        "height": 41
+      },
+      "frame": {
+        "x": -2,
+        "y": -8,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "tax-collection-icon",
+      "role": "icon"
+    },
+    {
+      "key": "call-to-arms-icon",
+      "path": "assets/game/sprites/call-to-arms-icon.png",
+      "sprite_name": "CallToArmsIcon",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1509,
+        "y": 1905,
+        "width": 46,
+        "height": 50
+      },
+      "frame": {
+        "x": -2,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "call-to-arms-icon",
+      "role": "icon"
+    },
+    {
+      "key": "spiritual-surge-icon",
+      "path": "assets/game/sprites/spiritual-surge-icon.png",
+      "sprite_name": "SpiritualSurgeIcon",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1461,
+        "y": 1905,
+        "width": 47,
+        "height": 50
+      },
+      "frame": {
+        "x": -1,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "spiritual-surge-icon",
+      "role": "icon"
+    },
+    {
+      "key": "holy-light-icon",
+      "path": "assets/game/sprites/holy-light-icon.png",
+      "sprite_name": "HolyLightIcon",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1577,
+        "y": 1830,
+        "width": 50,
+        "height": 49
+      },
+      "frame": {
+        "x": 0,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "holy-light-icon",
+      "role": "icon"
+    },
+    {
+      "key": "blood-frenzy-icon",
+      "path": "assets/game/sprites/blood-frenzy-icon.png",
+      "sprite_name": "BloodFrenzyIcon",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1099,
+        "y": 1193,
+        "width": 41,
+        "height": 50
+      },
+      "frame": {
+        "x": -4,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "blood-frenzy-icon",
+      "role": "icon"
+    },
+    {
+      "key": "gem-grinder-icon",
+      "path": "assets/game/sprites/gem-grinder-icon.png",
+      "sprite_name": "GemGrinderIcon",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1637,
+        "y": 1615,
+        "width": 46,
+        "height": 43
+      },
+      "frame": {
+        "x": -2,
+        "y": -4,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "gem-grinder-icon",
+      "role": "icon"
+    },
+    {
+      "key": "fairy-chanting-icon",
+      "path": "assets/game/sprites/fairy-chanting-icon.png",
+      "sprite_name": "FairyChantingIcon",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1482,
+        "y": 1781,
+        "width": 49,
+        "height": 50
+      },
+      "frame": {
+        "x": -1,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "fairy-chanting-icon",
+      "role": "icon"
+    },
+    {
+      "key": "moon-blessing-icon",
+      "path": "assets/game/sprites/moon-blessing-icon.png",
+      "sprite_name": "MoonBlessingIcon",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1334,
+        "y": 1632,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "moon-blessing-icon",
+      "role": "icon"
+    },
+    {
+      "key": "gods-hand-icon",
+      "path": "assets/game/sprites/gods-hand-icon.png",
+      "sprite_name": "GodsHandIcon",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1680,
+        "y": 1974,
+        "width": 46,
+        "height": 46
+      },
+      "frame": {
+        "x": -2,
+        "y": -2,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "gods-hand-icon",
+      "role": "icon"
+    },
+    {
+      "key": "diamond-pickaxe-icon",
+      "path": "assets/game/sprites/diamond-pickaxe-icon.png",
+      "sprite_name": "DiamondPickaxeIcon",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 446,
+        "y": 2001,
+        "width": 50,
+        "height": 46
+      },
+      "frame": {
+        "x": 0,
+        "y": -2,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "diamond-pickaxe-icon",
+      "role": "icon"
+    },
+    {
+      "key": "goblins-greed-icon",
+      "path": "assets/game/sprites/goblins-greed-icon.png",
+      "sprite_name": "GoblinsGreedIcon",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1047,
+        "y": 1418,
+        "width": 41,
+        "height": 46
+      },
+      "frame": {
+        "x": -5,
+        "y": -2,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "goblins-greed-icon",
+      "role": "icon"
+    },
+    {
+      "key": "night-time-icon",
+      "path": "assets/game/sprites/night-time-icon.png",
+      "sprite_name": "NightTimeIcon",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 977,
+        "y": 2006,
+        "width": 50,
+        "height": 41
+      },
+      "frame": {
+        "x": 0,
+        "y": -5,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "night-time-icon",
+      "role": "icon"
+    },
+    {
+      "key": "hellfire-blast-icon",
+      "path": "assets/game/sprites/hellfire-blast-icon.png",
+      "sprite_name": "HellfireBlastIcon",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 499,
+        "y": 1680,
+        "width": 38,
+        "height": 50
+      },
+      "frame": {
+        "x": -6,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "hellfire-blast-icon",
+      "role": "icon"
+    },
+    {
+      "key": "combo-strike-icon",
+      "path": "assets/game/sprites/combo-strike-icon.png",
+      "sprite_name": "ComboStrikeIcon",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1621,
+        "y": 1440,
+        "width": 50,
+        "height": 48
+      },
+      "frame": {
+        "x": 0,
+        "y": -2,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "combo-strike-icon",
+      "role": "icon"
+    },
+    {
+      "key": "lightning-strike-icon",
+      "path": "assets/game/sprites/lightning-strike-icon.png",
+      "sprite_name": "LightningStrikeIcon",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 511,
+        "y": 1275,
+        "width": 26,
+        "height": 50
+      },
+      "frame": {
+        "x": -14,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "lightning-strike-icon",
+      "role": "icon"
+    },
+    {
+      "key": "brainwave-icon",
+      "path": "assets/game/sprites/brainwave-icon.png",
+      "sprite_name": "BrainwaveIcon",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 2014,
+        "y": 962,
+        "width": 31,
+        "height": 48
+      },
+      "frame": {
+        "x": -11,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "brainwave-icon",
+      "role": "icon"
+    },
+    {
+      "key": "grand-balance-icon",
+      "path": "assets/game/sprites/grand-balance-icon.png",
+      "sprite_name": "GrandBalanceIcon",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1173,
+        "y": 1685,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "grand-balance-icon",
+      "role": "icon"
+    },
+    {
+      "key": "dragons-breath-icon",
+      "path": "assets/game/sprites/dragons-breath-icon.png",
+      "sprite_name": "DragonsBreathIcon",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1125,
+        "y": 1787,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "dragons-breath-icon",
+      "role": "icon"
+    },
+    {
+      "key": "temporal-flux-icon",
+      "path": "assets/game/sprites/temporal-flux-icon.png",
+      "sprite_name": "TemporalFluxIcon",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1431,
+        "y": 1785,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "temporal-flux-icon",
+      "role": "icon"
+    },
+    {
+      "key": "maelstrom-icon",
+      "path": "assets/game/sprites/maelstrom-icon.png",
+      "sprite_name": "MaelstromIcon",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1305,
+        "y": 1735,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "maelstrom-icon",
+      "role": "icon"
+    },
+    {
+      "key": "all-creation-icon",
+      "path": "assets/game/sprites/all-creation-icon.png",
+      "sprite_name": "AllCreationIcon",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1565,
+        "y": 1103,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "all-creation-icon",
+      "role": "icon"
+    },
+    {
+      "key": "precognition-icon",
+      "path": "assets/game/sprites/precognition-icon.png",
+      "sprite_name": "PrecognitionIcon",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1231,
+        "y": 1992,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "precognition-icon",
+      "role": "icon"
+    },
+    {
+      "key": "limited-wish-icon",
+      "path": "assets/game/sprites/limited-wish-icon.png",
+      "sprite_name": "LimitedWishIcon",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1278,
+        "y": 1787,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "limited-wish-icon",
+      "role": "icon"
+    },
+    {
+      "key": "infinite-spiral-icon",
+      "path": "assets/game/sprites/infinite-spiral-icon.png",
+      "sprite_name": "InfiniteSpiralIcon",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1673,
+        "y": 1764,
+        "width": 49,
+        "height": 47
+      },
+      "frame": {
+        "x": 0,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "infinite-spiral-icon",
+      "role": "icon"
+    },
+    {
+      "key": "catalyst-icon",
+      "path": "assets/game/sprites/catalyst-icon.png",
+      "sprite_name": "CatalystIcon",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 948,
+        "y": 1749,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "catalyst-icon",
+      "role": "icon"
+    },
+    {
+      "key": "chaos-madness-icon",
+      "path": "assets/game/sprites/chaos-madness-icon.png",
+      "sprite_name": "ChaosMadnessIcon",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 972,
+        "y": 1800,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "chaos-madness-icon",
+      "role": "icon"
+    },
+    {
+      "key": "twisting-nether-icon",
+      "path": "assets/game/sprites/twisting-nether-icon.png",
+      "sprite_name": "TwistingNetherIcon",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1458,
+        "y": 1730,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "twisting-nether-icon",
+      "role": "icon"
+    },
+    {
+      "key": "call-to-arms-tier2",
+      "path": "assets/game/sprites/call-to-arms-tier2.png",
+      "sprite_name": "Call to ArmsTier2",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 159,
+        "y": 872,
+        "width": 48,
+        "height": 50
+      },
+      "frame": {
+        "x": -2,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "call-to-arms-tier2",
+      "role": "tier-icon"
+    },
+    {
+      "key": "call-to-arms-tier3",
+      "path": "assets/game/sprites/call-to-arms-tier3.png",
+      "sprite_name": "Call to ArmsTier3",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 159,
+        "y": 924,
+        "width": 48,
+        "height": 50
+      },
+      "frame": {
+        "x": -2,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "call-to-arms-tier3",
+      "role": "tier-icon"
+    },
+    {
+      "key": "call-to-arms-tier4",
+      "path": "assets/game/sprites/call-to-arms-tier4.png",
+      "sprite_name": "Call to ArmsTier4",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 209,
+        "y": 872,
+        "width": 48,
+        "height": 50
+      },
+      "frame": {
+        "x": -2,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "call-to-arms-tier4",
+      "role": "tier-icon"
+    },
+    {
+      "key": "call-to-arms-tier5",
+      "path": "assets/game/sprites/call-to-arms-tier5.png",
+      "sprite_name": "Call to ArmsTier5",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 209,
+        "y": 924,
+        "width": 48,
+        "height": 50
+      },
+      "frame": {
+        "x": -2,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "call-to-arms-tier5",
+      "role": "tier-icon"
+    },
+    {
+      "key": "spiritual-surge-tier2",
+      "path": "assets/game/sprites/spiritual-surge-tier2.png",
+      "sprite_name": "Spiritual SurgeTier2",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 800,
+        "y": 1520,
+        "width": 49,
+        "height": 50
+      },
+      "frame": {
+        "x": -1,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "spiritual-surge-tier2",
+      "role": "tier-icon"
+    },
+    {
+      "key": "spiritual-surge-tier3",
+      "path": "assets/game/sprites/spiritual-surge-tier3.png",
+      "sprite_name": "Spiritual SurgeTier3",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 851,
+        "y": 1468,
+        "width": 49,
+        "height": 50
+      },
+      "frame": {
+        "x": -1,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "spiritual-surge-tier3",
+      "role": "tier-icon"
+    },
+    {
+      "key": "spiritual-surge-tier4",
+      "path": "assets/game/sprites/spiritual-surge-tier4.png",
+      "sprite_name": "Spiritual SurgeTier4",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 749,
+        "y": 1622,
+        "width": 49,
+        "height": 50
+      },
+      "frame": {
+        "x": -1,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "spiritual-surge-tier4",
+      "role": "tier-icon"
+    },
+    {
+      "key": "spiritual-surge-tier5",
+      "path": "assets/game/sprites/spiritual-surge-tier5.png",
+      "sprite_name": "Spiritual SurgeTier5",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 800,
+        "y": 1572,
+        "width": 49,
+        "height": 50
+      },
+      "frame": {
+        "x": -1,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "spiritual-surge-tier5",
+      "role": "tier-icon"
+    },
+    {
+      "key": "holy-light-tier2",
+      "path": "assets/game/sprites/holy-light-tier2.png",
+      "sprite_name": "Holy LightTier2",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1355,
+        "y": 509,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "holy-light-tier2",
+      "role": "tier-icon"
+    },
+    {
+      "key": "holy-light-tier3",
+      "path": "assets/game/sprites/holy-light-tier3.png",
+      "sprite_name": "Holy LightTier3",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1407,
+        "y": 509,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "holy-light-tier3",
+      "role": "tier-icon"
+    },
+    {
+      "key": "holy-light-tier4",
+      "path": "assets/game/sprites/holy-light-tier4.png",
+      "sprite_name": "Holy LightTier4",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1459,
+        "y": 510,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "holy-light-tier4",
+      "role": "tier-icon"
+    },
+    {
+      "key": "holy-light-tier5",
+      "path": "assets/game/sprites/holy-light-tier5.png",
+      "sprite_name": "Holy LightTier5",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1511,
+        "y": 511,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "holy-light-tier5",
+      "role": "tier-icon"
+    },
+    {
+      "key": "blood-frenzy-tier2",
+      "path": "assets/game/sprites/blood-frenzy-tier2.png",
+      "sprite_name": "Blood FrenzyTier2",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 106,
+        "y": 1440,
+        "width": 49,
+        "height": 50
+      },
+      "frame": {
+        "x": -1,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "blood-frenzy-tier2",
+      "role": "tier-icon"
+    },
+    {
+      "key": "blood-frenzy-tier3",
+      "path": "assets/game/sprites/blood-frenzy-tier3.png",
+      "sprite_name": "Blood FrenzyTier3",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 106,
+        "y": 1492,
+        "width": 49,
+        "height": 50
+      },
+      "frame": {
+        "x": -1,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "blood-frenzy-tier3",
+      "role": "tier-icon"
+    },
+    {
+      "key": "blood-frenzy-tier4",
+      "path": "assets/game/sprites/blood-frenzy-tier4.png",
+      "sprite_name": "Blood FrenzyTier4",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 106,
+        "y": 1544,
+        "width": 49,
+        "height": 50
+      },
+      "frame": {
+        "x": -1,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "blood-frenzy-tier4",
+      "role": "tier-icon"
+    },
+    {
+      "key": "blood-frenzy-tier5",
+      "path": "assets/game/sprites/blood-frenzy-tier5.png",
+      "sprite_name": "Blood FrenzyTier5",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 106,
+        "y": 1596,
+        "width": 49,
+        "height": 50
+      },
+      "frame": {
+        "x": -1,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "blood-frenzy-tier5",
+      "role": "tier-icon"
+    },
+    {
+      "key": "gem-grinder-tier2",
+      "path": "assets/game/sprites/gem-grinder-tier2.png",
+      "sprite_name": "Gem GrinderTier2",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 301,
+        "y": 976,
+        "width": 50,
+        "height": 48
+      },
+      "frame": {
+        "x": 0,
+        "y": -2,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "gem-grinder-tier2",
+      "role": "tier-icon"
+    },
+    {
+      "key": "gem-grinder-tier3",
+      "path": "assets/game/sprites/gem-grinder-tier3.png",
+      "sprite_name": "Gem GrinderTier3",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1199,
+        "y": 458,
+        "width": 50,
+        "height": 48
+      },
+      "frame": {
+        "x": 0,
+        "y": -2,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "gem-grinder-tier3",
+      "role": "tier-icon"
+    },
+    {
+      "key": "gem-grinder-tier4",
+      "path": "assets/game/sprites/gem-grinder-tier4.png",
+      "sprite_name": "Gem GrinderTier4",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1251,
+        "y": 459,
+        "width": 50,
+        "height": 48
+      },
+      "frame": {
+        "x": 0,
+        "y": -2,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "gem-grinder-tier4",
+      "role": "tier-icon"
+    },
+    {
+      "key": "gem-grinder-tier5",
+      "path": "assets/game/sprites/gem-grinder-tier5.png",
+      "sprite_name": "Gem GrinderTier5",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1303,
+        "y": 459,
+        "width": 50,
+        "height": 48
+      },
+      "frame": {
+        "x": 0,
+        "y": -2,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "gem-grinder-tier5",
+      "role": "tier-icon"
+    },
+    {
+      "key": "fairy-chanting-tier2",
+      "path": "assets/game/sprites/fairy-chanting-tier2.png",
+      "sprite_name": "Fairy ChantingTier2",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 307,
+        "y": 1960,
+        "width": 49,
+        "height": 50
+      },
+      "frame": {
+        "x": -1,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "fairy-chanting-tier2",
+      "role": "tier-icon"
+    },
+    {
+      "key": "fairy-chanting-tier3",
+      "path": "assets/game/sprites/fairy-chanting-tier3.png",
+      "sprite_name": "Fairy ChantingTier3",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 588,
+        "y": 472,
+        "width": 49,
+        "height": 50
+      },
+      "frame": {
+        "x": -1,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "fairy-chanting-tier3",
+      "role": "tier-icon"
+    },
+    {
+      "key": "fairy-chanting-tier4",
+      "path": "assets/game/sprites/fairy-chanting-tier4.png",
+      "sprite_name": "Fairy ChantingTier4",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 588,
+        "y": 524,
+        "width": 49,
+        "height": 50
+      },
+      "frame": {
+        "x": -1,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "fairy-chanting-tier4",
+      "role": "tier-icon"
+    },
+    {
+      "key": "fairy-chanting-tier5",
+      "path": "assets/game/sprites/fairy-chanting-tier5.png",
+      "sprite_name": "Fairy ChantingTier5",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 639,
+        "y": 498,
+        "width": 49,
+        "height": 50
+      },
+      "frame": {
+        "x": -1,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "fairy-chanting-tier5",
+      "role": "tier-icon"
+    },
+    {
+      "key": "moon-blessing-tier2",
+      "path": "assets/game/sprites/moon-blessing-tier2.png",
+      "sprite_name": "Moon BlessingTier2",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 353,
+        "y": 881,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "moon-blessing-tier2",
+      "role": "tier-icon"
+    },
+    {
+      "key": "moon-blessing-tier3",
+      "path": "assets/game/sprites/moon-blessing-tier3.png",
+      "sprite_name": "Moon BlessingTier3",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 405,
+        "y": 829,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "moon-blessing-tier3",
+      "role": "tier-icon"
+    },
+    {
+      "key": "moon-blessing-tier4",
+      "path": "assets/game/sprites/moon-blessing-tier4.png",
+      "sprite_name": "Moon BlessingTier4",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 353,
+        "y": 933,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "moon-blessing-tier4",
+      "role": "tier-icon"
+    },
+    {
+      "key": "moon-blessing-tier5",
+      "path": "assets/game/sprites/moon-blessing-tier5.png",
+      "sprite_name": "Moon BlessingTier5",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 405,
+        "y": 881,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "moon-blessing-tier5",
+      "role": "tier-icon"
+    },
+    {
+      "key": "god-s-hand-tier2",
+      "path": "assets/game/sprites/god-s-hand-tier2.png",
+      "sprite_name": "God's HandTier2",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 845,
+        "y": 662,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "god-s-hand-tier2",
+      "role": "tier-icon"
+    },
+    {
+      "key": "god-s-hand-tier3",
+      "path": "assets/game/sprites/god-s-hand-tier3.png",
+      "sprite_name": "God's HandTier3",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 897,
+        "y": 662,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "god-s-hand-tier3",
+      "role": "tier-icon"
+    },
+    {
+      "key": "god-s-hand-tier4",
+      "path": "assets/game/sprites/god-s-hand-tier4.png",
+      "sprite_name": "God's HandTier4",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 949,
+        "y": 506,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "god-s-hand-tier4",
+      "role": "tier-icon"
+    },
+    {
+      "key": "god-s-hand-tier5",
+      "path": "assets/game/sprites/god-s-hand-tier5.png",
+      "sprite_name": "God's HandTier5",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 949,
+        "y": 558,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "god-s-hand-tier5",
+      "role": "tier-icon"
+    },
+    {
+      "key": "diamond-pickaxe-tier2",
+      "path": "assets/game/sprites/diamond-pickaxe-tier2.png",
+      "sprite_name": "Diamond PickaxeTier2",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 382,
+        "y": 323,
+        "width": 50,
+        "height": 48
+      },
+      "frame": {
+        "x": 0,
+        "y": -2,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "diamond-pickaxe-tier2",
+      "role": "tier-icon"
+    },
+    {
+      "key": "diamond-pickaxe-tier3",
+      "path": "assets/game/sprites/diamond-pickaxe-tier3.png",
+      "sprite_name": "Diamond PickaxeTier3",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 434,
+        "y": 323,
+        "width": 50,
+        "height": 48
+      },
+      "frame": {
+        "x": 0,
+        "y": -2,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "diamond-pickaxe-tier3",
+      "role": "tier-icon"
+    },
+    {
+      "key": "diamond-pickaxe-tier4",
+      "path": "assets/game/sprites/diamond-pickaxe-tier4.png",
+      "sprite_name": "Diamond PickaxeTier4",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 486,
+        "y": 323,
+        "width": 50,
+        "height": 48
+      },
+      "frame": {
+        "x": 0,
+        "y": -2,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "diamond-pickaxe-tier4",
+      "role": "tier-icon"
+    },
+    {
+      "key": "diamond-pickaxe-tier5",
+      "path": "assets/game/sprites/diamond-pickaxe-tier5.png",
+      "sprite_name": "Diamond PickaxeTier5",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 538,
+        "y": 323,
+        "width": 50,
+        "height": 48
+      },
+      "frame": {
+        "x": 0,
+        "y": -2,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "diamond-pickaxe-tier5",
+      "role": "tier-icon"
+    },
+    {
+      "key": "goblin-s-greed-tier2",
+      "path": "assets/game/sprites/goblin-s-greed-tier2.png",
+      "sprite_name": "Goblin's GreedTier2",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 590,
+        "y": 323,
+        "width": 45,
+        "height": 48
+      },
+      "frame": {
+        "x": -5,
+        "y": -2,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "goblin-s-greed-tier2",
+      "role": "tier-icon"
+    },
+    {
+      "key": "goblin-s-greed-tier3",
+      "path": "assets/game/sprites/goblin-s-greed-tier3.png",
+      "sprite_name": "Goblin's GreedTier3",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1951,
+        "y": 714,
+        "width": 45,
+        "height": 48
+      },
+      "frame": {
+        "x": -5,
+        "y": -2,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "goblin-s-greed-tier3",
+      "role": "tier-icon"
+    },
+    {
+      "key": "goblin-s-greed-tier4",
+      "path": "assets/game/sprites/goblin-s-greed-tier4.png",
+      "sprite_name": "Goblin's GreedTier4",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1998,
+        "y": 732,
+        "width": 45,
+        "height": 48
+      },
+      "frame": {
+        "x": -5,
+        "y": -2,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "goblin-s-greed-tier4",
+      "role": "tier-icon"
+    },
+    {
+      "key": "goblin-s-greed-tier5",
+      "path": "assets/game/sprites/goblin-s-greed-tier5.png",
+      "sprite_name": "Goblin's GreedTier5",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1526,
+        "y": 515,
+        "width": 45,
+        "height": 48
+      },
+      "frame": {
+        "x": -5,
+        "y": -2,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "goblin-s-greed-tier5",
+      "role": "tier-icon"
+    },
+    {
+      "key": "night-time-tier2",
+      "path": "assets/game/sprites/night-time-tier2.png",
+      "sprite_name": "Night TimeTier2",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 457,
+        "y": 934,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "night-time-tier2",
+      "role": "tier-icon"
+    },
+    {
+      "key": "night-time-tier3",
+      "path": "assets/game/sprites/night-time-tier3.png",
+      "sprite_name": "Night TimeTier3",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 509,
+        "y": 779,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "night-time-tier3",
+      "role": "tier-icon"
+    },
+    {
+      "key": "night-time-tier4",
+      "path": "assets/game/sprites/night-time-tier4.png",
+      "sprite_name": "Night TimeTier4",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 509,
+        "y": 831,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "night-time-tier4",
+      "role": "tier-icon"
+    },
+    {
+      "key": "night-time-tier5",
+      "path": "assets/game/sprites/night-time-tier5.png",
+      "sprite_name": "Night TimeTier5",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 561,
+        "y": 779,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "night-time-tier5",
+      "role": "tier-icon"
+    },
+    {
+      "key": "hellfire-blast-tier2",
+      "path": "assets/game/sprites/hellfire-blast-tier2.png",
+      "sprite_name": "Hellfire BlastTier2",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 496,
+        "y": 1388,
+        "width": 47,
+        "height": 50
+      },
+      "frame": {
+        "x": -3,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "hellfire-blast-tier2",
+      "role": "tier-icon"
+    },
+    {
+      "key": "hellfire-blast-tier3",
+      "path": "assets/game/sprites/hellfire-blast-tier3.png",
+      "sprite_name": "Hellfire BlastTier3",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 496,
+        "y": 1440,
+        "width": 47,
+        "height": 50
+      },
+      "frame": {
+        "x": -3,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "hellfire-blast-tier3",
+      "role": "tier-icon"
+    },
+    {
+      "key": "hellfire-blast-tier4",
+      "path": "assets/game/sprites/hellfire-blast-tier4.png",
+      "sprite_name": "Hellfire BlastTier4",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 496,
+        "y": 1492,
+        "width": 47,
+        "height": 50
+      },
+      "frame": {
+        "x": -3,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "hellfire-blast-tier4",
+      "role": "tier-icon"
+    },
+    {
+      "key": "hellfire-blast-tier5",
+      "path": "assets/game/sprites/hellfire-blast-tier5.png",
+      "sprite_name": "Hellfire BlastTier5",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 496,
+        "y": 1544,
+        "width": 47,
+        "height": 50
+      },
+      "frame": {
+        "x": -3,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "hellfire-blast-tier5",
+      "role": "tier-icon"
+    },
+    {
+      "key": "combo-strike-tier2",
+      "path": "assets/game/sprites/combo-strike-tier2.png",
+      "sprite_name": "Combo StrikeTier2",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 2,
+        "y": 1354,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "combo-strike-tier2",
+      "role": "tier-icon"
+    },
+    {
+      "key": "combo-strike-tier3",
+      "path": "assets/game/sprites/combo-strike-tier3.png",
+      "sprite_name": "Combo StrikeTier3",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 2,
+        "y": 1406,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "combo-strike-tier3",
+      "role": "tier-icon"
+    },
+    {
+      "key": "combo-strike-tier4",
+      "path": "assets/game/sprites/combo-strike-tier4.png",
+      "sprite_name": "Combo StrikeTier4",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 2,
+        "y": 1458,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "combo-strike-tier4",
+      "role": "tier-icon"
+    },
+    {
+      "key": "combo-strike-tier5",
+      "path": "assets/game/sprites/combo-strike-tier5.png",
+      "sprite_name": "Combo StrikeTier5",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 2,
+        "y": 1510,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "combo-strike-tier5",
+      "role": "tier-icon"
+    },
+    {
+      "key": "lightning-strike-tier2",
+      "path": "assets/game/sprites/lightning-strike-tier2.png",
+      "sprite_name": "Lightning StrikeTier2",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1726,
+        "y": 234,
+        "width": 36,
+        "height": 50
+      },
+      "frame": {
+        "x": -14,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "lightning-strike-tier2",
+      "role": "tier-icon"
+    },
+    {
+      "key": "lightning-strike-tier3",
+      "path": "assets/game/sprites/lightning-strike-tier3.png",
+      "sprite_name": "Lightning StrikeTier3",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1726,
+        "y": 286,
+        "width": 36,
+        "height": 50
+      },
+      "frame": {
+        "x": -14,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "lightning-strike-tier3",
+      "role": "tier-icon"
+    },
+    {
+      "key": "lightning-strike-tier4",
+      "path": "assets/game/sprites/lightning-strike-tier4.png",
+      "sprite_name": "Lightning StrikeTier4",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 2010,
+        "y": 978,
+        "width": 36,
+        "height": 50
+      },
+      "frame": {
+        "x": -14,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "lightning-strike-tier4",
+      "role": "tier-icon"
+    },
+    {
+      "key": "lightning-strike-tier5",
+      "path": "assets/game/sprites/lightning-strike-tier5.png",
+      "sprite_name": "Lightning StrikeTier5",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 93,
+        "y": 1138,
+        "width": 36,
+        "height": 50
+      },
+      "frame": {
+        "x": -14,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "lightning-strike-tier5",
+      "role": "tier-icon"
+    },
+    {
+      "key": "brainwave-tier2",
+      "path": "assets/game/sprites/brainwave-tier2.png",
+      "sprite_name": "BrainwaveTier2",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 766,
+        "y": 882,
+        "width": 39,
+        "height": 49
+      },
+      "frame": {
+        "x": -11,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "brainwave-tier2",
+      "role": "tier-icon"
+    },
+    {
+      "key": "brainwave-tier3",
+      "path": "assets/game/sprites/brainwave-tier3.png",
+      "sprite_name": "BrainwaveTier3",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 807,
+        "y": 898,
+        "width": 39,
+        "height": 49
+      },
+      "frame": {
+        "x": -11,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "brainwave-tier3",
+      "role": "tier-icon"
+    },
+    {
+      "key": "brainwave-tier4",
+      "path": "assets/game/sprites/brainwave-tier4.png",
+      "sprite_name": "BrainwaveTier4",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 848,
+        "y": 923,
+        "width": 39,
+        "height": 49
+      },
+      "frame": {
+        "x": -11,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "brainwave-tier4",
+      "role": "tier-icon"
+    },
+    {
+      "key": "brainwave-tier5",
+      "path": "assets/game/sprites/brainwave-tier5.png",
+      "sprite_name": "BrainwaveTier5",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 889,
+        "y": 957,
+        "width": 39,
+        "height": 49
+      },
+      "frame": {
+        "x": -11,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "brainwave-tier5",
+      "role": "tier-icon"
+    },
+    {
+      "key": "grand-balance-tier2",
+      "path": "assets/game/sprites/grand-balance-tier2.png",
+      "sprite_name": "Grand BalanceTier2",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1001,
+        "y": 662,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "grand-balance-tier2",
+      "role": "tier-icon"
+    },
+    {
+      "key": "grand-balance-tier3",
+      "path": "assets/game/sprites/grand-balance-tier3.png",
+      "sprite_name": "Grand BalanceTier3",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1053,
+        "y": 506,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "grand-balance-tier3",
+      "role": "tier-icon"
+    },
+    {
+      "key": "grand-balance-tier4",
+      "path": "assets/game/sprites/grand-balance-tier4.png",
+      "sprite_name": "Grand BalanceTier4",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1053,
+        "y": 558,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "grand-balance-tier4",
+      "role": "tier-icon"
+    },
+    {
+      "key": "grand-balance-tier5",
+      "path": "assets/game/sprites/grand-balance-tier5.png",
+      "sprite_name": "Grand BalanceTier5",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1105,
+        "y": 506,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "grand-balance-tier5",
+      "role": "tier-icon"
+    },
+    {
+      "key": "dragon-s-breath-tier2",
+      "path": "assets/game/sprites/dragon-s-breath-tier2.png",
+      "sprite_name": "Dragon's BreathTier2",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 776,
+        "y": 54,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "dragon-s-breath-tier2",
+      "role": "tier-icon"
+    },
+    {
+      "key": "dragon-s-breath-tier3",
+      "path": "assets/game/sprites/dragon-s-breath-tier3.png",
+      "sprite_name": "Dragon's BreathTier3",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 828,
+        "y": 54,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "dragon-s-breath-tier3",
+      "role": "tier-icon"
+    },
+    {
+      "key": "dragon-s-breath-tier4",
+      "path": "assets/game/sprites/dragon-s-breath-tier4.png",
+      "sprite_name": "Dragon's BreathTier4",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 880,
+        "y": 54,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "dragon-s-breath-tier4",
+      "role": "tier-icon"
+    },
+    {
+      "key": "dragon-s-breath-tier5",
+      "path": "assets/game/sprites/dragon-s-breath-tier5.png",
+      "sprite_name": "Dragon's BreathTier5",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 932,
+        "y": 54,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "dragon-s-breath-tier5",
+      "role": "tier-icon"
+    },
+    {
+      "key": "temporal-flux-tier2",
+      "path": "assets/game/sprites/temporal-flux-tier2.png",
+      "sprite_name": "Temporal FluxTier2",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 907,
+        "y": 1219,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "temporal-flux-tier2",
+      "role": "tier-icon"
+    },
+    {
+      "key": "maelstrom-tier2",
+      "path": "assets/game/sprites/maelstrom-tier2.png",
+      "sprite_name": "MaelstromTier2",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1667,
+        "y": 615,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "maelstrom-tier2",
+      "role": "tier-icon"
+    },
+    {
+      "key": "all-creation-tier2",
+      "path": "assets/game/sprites/all-creation-tier2.png",
+      "sprite_name": "All CreationTier2",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 2,
+        "y": 1360,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "all-creation-tier2",
+      "role": "tier-icon"
+    },
+    {
+      "key": "precognition-tier2",
+      "path": "assets/game/sprites/precognition-tier2.png",
+      "sprite_name": "PrecognitionTier2",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1329,
+        "y": 1786,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "precognition-tier2",
+      "role": "tier-icon"
+    },
+    {
+      "key": "limited-wish-tier2",
+      "path": "assets/game/sprites/limited-wish-tier2.png",
+      "sprite_name": "Limited WishTier2",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1227,
+        "y": 1787,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "limited-wish-tier2",
+      "role": "tier-icon"
+    },
+    {
+      "key": "infinite-spiral-tier2",
+      "path": "assets/game/sprites/infinite-spiral-tier2.png",
+      "sprite_name": "Infinite SpiralTier2",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1578,
+        "y": 1980,
+        "width": 50,
+        "height": 49
+      },
+      "frame": {
+        "x": 0,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "infinite-spiral-tier2",
+      "role": "tier-icon"
+    },
+    {
+      "key": "challenge-fairy",
+      "path": "assets/game/sprites/challenge-fairy.png",
+      "sprite_name": "ChallengeFairy",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 190,
+        "y": 2,
+        "width": 65,
+        "height": 70
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 70,
+        "height": 70
+      },
+      "kind": "challenge-reward",
+      "entity": "challenge-fairy",
+      "role": "icon"
+    },
+    {
+      "key": "challenge-elven",
+      "path": "assets/game/sprites/challenge-elven.png",
+      "sprite_name": "ChallengeElven",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 2,
+        "y": 872,
+        "width": 57,
+        "height": 63
+      },
+      "frame": {
+        "x": -7,
+        "y": -4,
+        "width": 70,
+        "height": 70
+      },
+      "kind": "challenge-reward",
+      "entity": "challenge-elven",
+      "role": "icon"
+    },
+    {
+      "key": "challenge-angel",
+      "path": "assets/game/sprites/challenge-angel.png",
+      "sprite_name": "ChallengeAngel",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 2,
+        "y": 728,
+        "width": 52,
+        "height": 70
+      },
+      "frame": {
+        "x": -9,
+        "y": 0,
+        "width": 70,
+        "height": 70
+      },
+      "kind": "challenge-reward",
+      "entity": "challenge-angel",
+      "role": "icon"
+    },
+    {
+      "key": "challenge-dwarven",
+      "path": "assets/game/sprites/challenge-dwarven.png",
+      "sprite_name": "ChallengeDwarven",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 257,
+        "y": 2,
+        "width": 70,
+        "height": 64
+      },
+      "frame": {
+        "x": 0,
+        "y": -2,
+        "width": 70,
+        "height": 70
+      },
+      "kind": "challenge-reward",
+      "entity": "challenge-dwarven",
+      "role": "icon"
+    },
+    {
+      "key": "challenge-goblin",
+      "path": "assets/game/sprites/challenge-goblin.png",
+      "sprite_name": "ChallengeGoblin",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 2,
+        "y": 800,
+        "width": 52,
+        "height": 70
+      },
+      "frame": {
+        "x": -7,
+        "y": 0,
+        "width": 70,
+        "height": 70
+      },
+      "kind": "challenge-reward",
+      "entity": "challenge-goblin",
+      "role": "icon"
+    },
+    {
+      "key": "challenge-undead",
+      "path": "assets/game/sprites/challenge-undead.png",
+      "sprite_name": "ChallengeUndead",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 2,
+        "y": 260,
+        "width": 66,
+        "height": 66
+      },
+      "frame": {
+        "x": -2,
+        "y": -2,
+        "width": 70,
+        "height": 70
+      },
+      "kind": "challenge-reward",
+      "entity": "challenge-undead",
+      "role": "icon"
+    },
+    {
+      "key": "challenge-demon",
+      "path": "assets/game/sprites/challenge-demon.png",
+      "sprite_name": "ChallengeDemon",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 2,
+        "y": 328,
+        "width": 65,
+        "height": 65
+      },
+      "frame": {
+        "x": -3,
+        "y": -2,
+        "width": 70,
+        "height": 70
+      },
+      "kind": "challenge-reward",
+      "entity": "challenge-demon",
+      "role": "icon"
+    },
+    {
+      "key": "challenge-drow",
+      "path": "assets/game/sprites/challenge-drow.png",
+      "sprite_name": "ChallengeDrow",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 2,
+        "y": 189,
+        "width": 67,
+        "height": 69
+      },
+      "frame": {
+        "x": 0,
+        "y": -1,
+        "width": 70,
+        "height": 70
+      },
+      "kind": "challenge-reward",
+      "entity": "challenge-drow",
+      "role": "icon"
+    },
+    {
+      "key": "challenge-titan",
+      "path": "assets/game/sprites/challenge-titan.png",
+      "sprite_name": "ChallengeTitan",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 593,
+        "y": 2,
+        "width": 66,
+        "height": 55
+      },
+      "frame": {
+        "x": -2,
+        "y": -11,
+        "width": 70,
+        "height": 70
+      },
+      "kind": "challenge-reward",
+      "entity": "challenge-titan",
+      "role": "icon"
+    },
+    {
+      "key": "challenge-druid",
+      "path": "assets/game/sprites/challenge-druid.png",
+      "sprite_name": "ChallengeDruid",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 2,
+        "y": 937,
+        "width": 57,
+        "height": 57
+      },
+      "frame": {
+        "x": -6,
+        "y": -7,
+        "width": 70,
+        "height": 70
+      },
+      "kind": "challenge-reward",
+      "entity": "challenge-druid",
+      "role": "icon"
+    },
+    {
+      "key": "challenge-faceless",
+      "path": "assets/game/sprites/challenge-faceless.png",
+      "sprite_name": "ChallengeFaceless",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 2,
+        "y": 659,
+        "width": 59,
+        "height": 67
+      },
+      "frame": {
+        "x": -5,
+        "y": -2,
+        "width": 70,
+        "height": 70
+      },
+      "kind": "challenge-reward",
+      "entity": "challenge-faceless",
+      "role": "icon"
+    },
+    {
+      "key": "challenge-dragon",
+      "path": "assets/game/sprites/challenge-dragon.png",
+      "sprite_name": "ChallengeDragon",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 2,
+        "y": 117,
+        "width": 70,
+        "height": 70
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 70,
+        "height": 70
+      },
+      "kind": "challenge-reward",
+      "entity": "challenge-dragon",
+      "role": "icon"
+    },
+    {
+      "key": "challenge-archon",
+      "path": "assets/game/sprites/challenge-archon.png",
+      "sprite_name": "ChallengeArchon",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 2,
+        "y": 990,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "challenge-reward",
+      "entity": "challenge-archon",
+      "role": "icon"
+    },
+    {
+      "key": "challenge-djinn",
+      "path": "assets/game/sprites/challenge-djinn.png",
+      "sprite_name": "ChallengeDjinn",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 226,
+        "y": 275,
+        "width": 50,
+        "height": 49
+      },
+      "frame": {
+        "x": 0,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "challenge-reward",
+      "entity": "challenge-djinn",
+      "role": "icon"
+    },
+    {
+      "key": "challenge-makers",
+      "path": "assets/game/sprites/challenge-makers.png",
+      "sprite_name": "ChallengeMakers",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 2,
+        "y": 1042,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "challenge-reward",
+      "entity": "challenge-makers",
+      "role": "icon"
+    },
+    {
+      "key": "challenge-mercenary",
+      "path": "assets/game/sprites/challenge-mercenary.png",
+      "sprite_name": "ChallengeMercenary",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 2,
+        "y": 1094,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "challenge-reward",
+      "entity": "challenge-mercenary",
+      "role": "icon"
+    },
+    {
+      "key": "dawnstone-artifact",
+      "path": "assets/game/sprites/dawnstone-artifact.png",
+      "sprite_name": "DawnstoneArtifact",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1112,
+        "y": 914,
+        "width": 40,
+        "height": 37
+      },
+      "frame": {
+        "x": -6,
+        "y": -8,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "artifact",
+      "entity": "dawnstone-artifact",
+      "role": "icon"
+    },
+    {
+      "key": "duskstone-artifact",
+      "path": "assets/game/sprites/duskstone-artifact.png",
+      "sprite_name": "DuskstoneArtifact",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1744,
+        "y": 721,
+        "width": 40,
+        "height": 36
+      },
+      "frame": {
+        "x": -6,
+        "y": -9,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "artifact",
+      "entity": "duskstone-artifact",
+      "role": "icon"
+    },
+    {
+      "key": "planetary-force-artifact",
+      "path": "assets/game/sprites/planetary-force-artifact.png",
+      "sprite_name": "PlanetaryForceArtifact",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 543,
+        "y": 1192,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "artifact",
+      "entity": "planetary-force-artifact",
+      "role": "icon"
+    },
+    {
       "key": "leet-trophy",
       "path": "assets/game/sprites/leet-trophy.png",
       "sprite_name": "LeetTrophy",
