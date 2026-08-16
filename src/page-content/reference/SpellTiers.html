@@ -42,33 +42,40 @@
 	<br/>
 	<hr>
 	<p><b>Spell Tier Unlocks</b>
-	<p><b>Unlock Requirement</b>: For ordinary spells, Tier N requires N - 1 hours of that spell's activity time accumulated during the current Reincarnation, plus a spell-specific statistic requirement. A tier cannot appear before its Ascension is reached. There is no separate tier challenge requirement.</p>
-	<p><b>After Tier 2</b>: Tier 3 becomes available in Ascension 2, Tier 4 in Ascension 3, and Tier 5 in Ascension 4. These tiers have no additional Reincarnation gate beyond reaching the appropriate Ascension. The next upgrade remains hidden until the spell is available and both its activity-time and spell-specific statistic requirements are fully met in the current Reincarnation. It then appears as an unlocked upgrade to purchase; the game does not show partial progress toward a hidden tier upgrade.</p>
-	<p><b>Ascension 1 availability</b>: Tier 2 upgrades are introduced in stages by the Dragon quest. <b>Hatch!</b> at R42 enables Call to Arms and Spiritual Surge; <b>Drakeling</b> at R44 enables Blood Frenzy, Goblin's Greed, Night Time, Hellfire Blast, and Combo Strike; <b>Dragon</b> at R46 enables Holy Light, Fairy Chanting, Moon Blessing, God's Hand, and Diamond Pickaxe; and <b>Elder Dragon</b> at R48 enables Gem Grinder, Lightning Strike, Grand Balance, and Brainwave.</p>
-	<p>In the table below, <b>n = N - 1</b> for the tier being unlocked. These are the exact additional statistic requirements shown by the current v4.3.12 tier-upgrade logic.</p>
-	<table class="numtable">
-		<tr><th>Spell</th><th>Additional requirement for Tier N</th></tr>
-		<tr><td>Call to Arms</td><td>((60,000 if below A4; 10,000 in A4+) / Ascension) * n buildings</td></tr>
-		<tr><td>Holy Light</td><td>200,000 * n clicks in this Reincarnation</td></tr>
-		<tr><td>Fairy Chanting</td><td>40,000 * n assistants</td></tr>
-		<tr><td>Moon Blessing</td><td>8e12 * n Faction Coins</td></tr>
-		<tr><td>God's Hand</td><td>500,000 * n Mana Regeneration</td></tr>
-		<tr><td>Diamond Pickaxe</td><td>4,000 * n excavation depth</td></tr>
-		<tr><td>Blood Frenzy</td><td>7,200 * n seconds of cumulative Evil-spell activity in this Reincarnation</td></tr>
-		<tr><td>Goblin's Greed</td><td>1,000,000 * n Tax Collection casts</td></tr>
-		<tr><td>Night Time</td><td>80,000 * n% offline bonus</td></tr>
-		<tr><td>Hellfire Blast</td><td>12 * n casts during the first 5 minutes of a new Era</td></tr>
-		<tr><td>Combo Strike</td><td>100 * n Combo Strike counter</td></tr>
-		<tr><td>Gem Grinder</td><td>1e30 * 10 ^ (3 * n) Gems</td></tr>
-		<tr><td>Lightning Strike</td><td>15,000 * n% Royal Exchange bonus</td></tr>
-		<tr><td>Grand Balance</td><td>200,000 * n Maximum Mana</td></tr>
-		<tr><td>Brainwave</td><td>3,600 * n seconds of Brainwave duration</td></tr>
-		<tr><td>Spiritual Surge</td><td>60 * n Reincarnations</td></tr>
-		<tr><td>Temporal Flux</td><td>300 * n seconds spent in this Era</td></tr>
-		<tr><td>All Creation</td><td>100 * n Royal Exchanges made</td></tr>
-		<tr><td>Maelstrom</td><td>4 * n active spells</td></tr>
-		<tr><td>Precognition</td><td>360 * n seconds of Precognition duration</td></tr>
-		<tr><td>Infinite Spiral</td><td>1.6e41 * n Faction Coins</td></tr>
-		<tr><td>Limited Wish</td><td>1e10 ^ (0.25 * (1 + n)) Maximum Mana</td></tr>
+	<div class="spell-tier-key">
+		<p><b>How to read this table</b>: Ascension permits the tier; completing everything in a cell reveals and permanently unlocks that spell's upgrade. Hidden upgrades show no partial progress. Scroll horizontally to compare all four tiers.</p>
+		<p><b>Every cell requires both parts</b>: the listed spell activity in the current Reincarnation <em>plus</em> the listed statistic. Once unlocked, the upgrade must still be purchased again each Abdication.</p>
+	</div>
+	<div class="tier-matrix-wrap" tabindex="0" role="region" aria-label="Spell tier unlock requirements by spell and Ascension">
+	<table class="numtable spell-tier-matrix">
+		<thead><tr><th>Spell</th><th><span>Tier 2</span><small>Ascension 1</small></th><th><span>Tier 3</span><small>Ascension 2</small></th><th><span>Tier 4</span><small>Ascension 3</small></th><th><span>Tier 5</span><small>Ascension 4</small></th></tr></thead>
+		<tbody>
+		<tr class="tier-group"><th colspan="5">Base and prestige spells</th></tr>
+		<tr><th>Call to Arms</th><td><span class="tier-gate">R42 · Hatch!</span>1h + 60,000 buildings</td><td>2h + 60,000 buildings</td><td>3h + 60,000 buildings</td><td>4h + 10,000 buildings</td></tr>
+		<tr><th>Spiritual Surge</th><td><span class="tier-gate">R42 · Hatch!</span>1h + R60</td><td>2h + R120</td><td>3h + R180</td><td>4h + R240</td></tr>
+		<tr><th>Blood Frenzy</th><td><span class="tier-gate">R44 · Drakeling</span>1h + 2h cumulative Evil-spell activity</td><td>2h + 4h cumulative Evil-spell activity</td><td>3h + 6h cumulative Evil-spell activity</td><td>4h + 8h cumulative Evil-spell activity</td></tr>
+		<tr><th>Goblin's Greed</th><td><span class="tier-gate">R44 · Drakeling</span>1h + 1 M Tax Collections</td><td>2h + 2 M Tax Collections</td><td>3h + 3 M Tax Collections</td><td>4h + 4 M Tax Collections</td></tr>
+		<tr><th>Night Time</th><td><span class="tier-gate">R44 · Drakeling</span>1h + 80,000% Offline Bonus</td><td>2h + 160,000% Offline Bonus</td><td>3h + 240,000% Offline Bonus</td><td>4h + 320,000% Offline Bonus</td></tr>
+		<tr><th>Hellfire Blast</th><td><span class="tier-gate">R44 · Drakeling</span>1h + 12 casts in the first 5 minutes</td><td>2h + 24 casts in the first 5 minutes</td><td>3h + 36 casts in the first 5 minutes</td><td>4h + 48 casts in the first 5 minutes</td></tr>
+		<tr><th>Combo Strike</th><td><span class="tier-gate">R44 · Drakeling</span>1h + 100 Combo Strike counter</td><td>2h + 200 Combo Strike counter</td><td>3h + 300 Combo Strike counter</td><td>4h + 400 Combo Strike counter</td></tr>
+		<tr><th>Holy Light</th><td><span class="tier-gate">R46 · Dragon</span>1h + 200,000 clicks this Reincarnation</td><td>2h + 400,000 clicks this Reincarnation</td><td>3h + 600,000 clicks this Reincarnation</td><td>4h + 800,000 clicks this Reincarnation</td></tr>
+		<tr><th>Fairy Chanting</th><td><span class="tier-gate">R46 · Dragon</span>1h + 40,000 assistants</td><td>2h + 80,000 assistants</td><td>3h + 120,000 assistants</td><td>4h + 160,000 assistants</td></tr>
+		<tr><th>Moon Blessing</th><td><span class="tier-gate">R46 · Dragon</span>1h + 8e12 Faction Coins</td><td>2h + 1.6e13 Faction Coins</td><td>3h + 2.4e13 Faction Coins</td><td>4h + 3.2e13 Faction Coins</td></tr>
+		<tr><th>God's Hand</th><td><span class="tier-gate">R46 · Dragon</span>1h + 500,000 Mana Regeneration</td><td>2h + 1 M Mana Regeneration</td><td>3h + 1.5 M Mana Regeneration</td><td>4h + 2 M Mana Regeneration</td></tr>
+		<tr><th>Diamond Pickaxe</th><td><span class="tier-gate">R46 · Dragon</span>1h + 4,000 Excavations</td><td>2h + 8,000 Excavations</td><td>3h + 12,000 Excavations</td><td>4h + 16,000 Excavations</td></tr>
+		<tr><th>Gem Grinder</th><td><span class="tier-gate">R48 · Elder Dragon</span>1h + 1e33 Gems</td><td>2h + 1e36 Gems</td><td>3h + 1e39 Gems</td><td>4h + 1e42 Gems</td></tr>
+		<tr><th>Lightning Strike</th><td><span class="tier-gate">R48 · Elder Dragon</span>1h + 15,000% Royal Exchange bonus</td><td>2h + 30,000% Royal Exchange bonus</td><td>3h + 45,000% Royal Exchange bonus</td><td>4h + 60,000% Royal Exchange bonus</td></tr>
+		<tr><th>Grand Balance</th><td><span class="tier-gate">R48 · Elder Dragon</span>1h + 200,000 Maximum Mana</td><td>2h + 400,000 Maximum Mana</td><td>3h + 600,000 Maximum Mana</td><td>4h + 800,000 Maximum Mana</td></tr>
+		<tr><th>Brainwave</th><td><span class="tier-gate">R48 · Elder Dragon</span>1h + 1h spell duration</td><td>2h + 2h spell duration</td><td>3h + 3h spell duration</td><td>4h + 4h spell duration</td></tr>
+		<tr class="tier-group"><th colspan="5">Ascension 2 alignment spells <small>These spells enter the system in A2, so Tier 2 also starts there.</small></th></tr>
+		<tr><th>Temporal Flux</th><td><span class="tier-gate">Available in A2</span>1h + 5m spent this Era</td><td>2h + 10m spent this Era</td><td>3h + 15m spent this Era</td><td>4h + 20m spent this Era</td></tr>
+		<tr><th>All Creation</th><td><span class="tier-gate">Available in A2</span>1h + 100 Royal Exchanges</td><td>2h + 200 Royal Exchanges</td><td>3h + 300 Royal Exchanges</td><td>4h + 400 Royal Exchanges</td></tr>
+		<tr><th>Maelstrom</th><td><span class="tier-gate">Available in A2</span>1h + 4 active spells</td><td>2h + 8 active spells</td><td>3h + 12 active spells</td><td>4h + 16 active spells</td></tr>
+		<tr class="tier-group"><th colspan="5">Astral spells <small>These spells enter the system in A3; their artifact is required for every tier.</small></th></tr>
+		<tr><th>Precognition</th><td><span class="tier-gate">A3 · Lantern of Guidance</span>1h + 6m spell duration</td><td><span class="tier-gate">A3 · Lantern of Guidance</span>2h + 12m spell duration</td><td><span class="tier-gate">Lantern of Guidance</span>3h + 18m spell duration</td><td><span class="tier-gate">Lantern of Guidance</span>4h + 24m spell duration</td></tr>
+		<tr><th>Limited Wish</th><td><span class="tier-gate">A3 · Oil Lamp</span>1h + 1e5 Maximum Mana</td><td><span class="tier-gate">A3 · Oil Lamp</span>2h + 3.16e7 Maximum Mana</td><td><span class="tier-gate">Oil Lamp</span>3h + 1e10 Maximum Mana</td><td><span class="tier-gate">Oil Lamp</span>4h + 3.16e12 Maximum Mana</td></tr>
+		<tr><th>Infinite Spiral</th><td><span class="tier-gate">A3 · Spark of Life</span>1h + 1.6e41 Faction Coins</td><td><span class="tier-gate">A3 · Spark of Life</span>2h + 3.2e41 Faction Coins</td><td><span class="tier-gate">Spark of Life</span>3h + 4.8e41 Faction Coins</td><td><span class="tier-gate">Spark of Life</span>4h + 6.4e41 Faction Coins</td></tr>
+		</tbody>
 	</table>
+	</div>
 	<p><b>Dragon's Breath</b> uses Reincarnation requirements instead of activity/statistic pairs: Tier 2 at R54, Tier 3 at R60, Tier 4 at R66, and Tier 5 at R72.</p>
