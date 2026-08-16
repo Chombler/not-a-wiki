@@ -1645,6 +1645,33 @@ table {
     font-weight: 700;
 }
 
+.site-main .spell-tier-bonus-table {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    overflow: visible;
+}
+
+.spell-tier-bonus-table th,
+.spell-tier-bonus-table td {
+    padding: .35rem .4rem;
+    font-size: .78rem;
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+}
+
+.spell-tier-bonus-table tr > :first-child {
+    width: 16%;
+}
+
+.spell-tier-bonus-table tr > :nth-child(2) {
+    width: 30%;
+}
+
+.spell-tier-bonus-table tr > :nth-child(n + 3) {
+    text-align: center;
+}
+
 @media (max-width: 700px) {
     .spell-tier-key {
         grid-template-columns: 1fr;

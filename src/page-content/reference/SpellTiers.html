@@ -14,30 +14,33 @@
 	<p><b>Additional Effects</b>: Each tier upgrade has a spell-specific effect and, except for Dragon's Breath, also increases offline production based on Mana statistics. It also multiplicatively increases Faction Coins found while offline by 200% per tier, stacking additively with other sources.</p>
 	<p><b>Raw offline-production formula per tier upgrade</b>: (m ^ (2 / max(3, A)) + r ^ (2 / max(3, A))) ^ 0.4%, where m is Maximum Mana, r is Mana Regeneration per second, and A is the current Ascension. Each upgrade's result is then subjected to the Ascension penalty assigned to that tier; the in-game tooltip shows the combined purchased bonus.</p>
 	<p><b>Note</b>: Offline bonuses from tier upgrades are assigned to the Ascension in which that tier becomes available. Dragon's Breath tier upgrades do not provide these offline bonuses.</p>
-	<table class="numtable">
-		<tr><th>Spell</th><th>Spell-specific tier-upgrade effect</th></tr>
-		<tr><td>Call to Arms</td><td>Buildings count more based on spell tier.</td></tr>
-		<tr><td>Holy Light</td><td>Multiplicatively increases Mana Regeneration based on spell tier.</td></tr>
-		<tr><td>Fairy Chanting</td><td>Increases duration based on spell tier.</td></tr>
-		<tr><td>Moon Blessing</td><td>While Sun Blessing is active, autoclicks 2 additional times per tier.</td></tr>
-		<tr><td>God's Hand</td><td>Increases the duration-growth coefficient based on spell tier.</td></tr>
-		<tr><td>Diamond Pickaxe</td><td>Multiplicatively increases Faction Coin find chance based on spell tier.</td></tr>
-		<tr><td>Blood Frenzy</td><td>Multiplicatively increases Non-Unique building production based on spell tier.</td></tr>
-		<tr><td>Goblin's Greed</td><td>Additively and multiplicatively increases triggered Tax Collections based on spell tier.</td></tr>
-		<tr><td>Night Time</td><td>Multiplicatively increases assistants based on spell tier.</td></tr>
-		<tr><td>Hellfire Blast</td><td>Makes Evil spells cast count more based on spell tier.</td></tr>
-		<tr><td>Combo Strike</td><td>Makes its cast statistic increase more when casting higher tiers.</td></tr>
-		<tr><td>Gem Grinder</td><td>Multiplicatively increases Royal Exchange bonus based on spell tier.</td></tr>
-		<tr><td>Lightning Strike</td><td>Makes Iron Strongholds count more based on spell tier.</td></tr>
-		<tr><td>Grand Balance</td><td>Multiplicatively increases Maximum Mana based on spell tier.</td></tr>
-		<tr><td>Brainwave</td><td>Increases headstart time based on spell tier.</td></tr>
-		<tr><td>Spiritual Surge</td><td>Makes Reincarnations count more based on spell tier.</td></tr>
-		<tr><td>Temporal Flux</td><td>Makes Mana produced count more based on spell tier.</td></tr>
-		<tr><td>All Creation</td><td>Multiplicatively increases production bonus from Gems based on spell tier.</td></tr>
-		<tr><td>Maelstrom</td><td>Affects one more random building per tier.</td></tr>
-		<tr><td>Precognition</td><td>Makes Research points count more based on spell tier.</td></tr>
-		<tr><td>Infinite Spiral</td><td>Multiplicatively increases Offline Bonus based on spell tier.</td></tr>
-		<tr><td>Limited Wish</td><td>Makes Limited Wish casts count more based on spell tier.</td></tr>
+	<p><b>Values below are the spell-specific effect at each tier.</b> Tier 1 has no tier-upgrade bonus unless the row gives a base value. These values do not include the separate Mana-based offline bonus shared by tier upgrades.</p>
+	<table class="numtable spell-tier-bonus-table">
+		<thead><tr><th>Spell</th><th>Spell-specific effect</th><th>T1</th><th>T2</th><th>T3</th><th>T4</th><th>T5</th></tr></thead>
+		<tbody>
+		<tr><th>Call to Arms</th><td>Buildings count more</td><td>—</td><td>5%</td><td>10%</td><td>15%</td><td>20%</td></tr>
+		<tr><th>Holy Light</th><td>Mana Regeneration</td><td>—</td><td>10%</td><td>20%</td><td>30%</td><td>40%</td></tr>
+		<tr><th>Fairy Chanting</th><td>Duration</td><td>—</td><td>10%</td><td>20%</td><td>30%</td><td>40%</td></tr>
+		<tr><th>Moon Blessing</th><td>Additional autoclicks while Sun Blessing is active</td><td>—</td><td>+2</td><td>+4</td><td>+6</td><td>+8</td></tr>
+		<tr><th>God's Hand</th><td>Duration-growth coefficient</td><td>0.50</td><td>0.55</td><td>0.60</td><td>0.65</td><td>0.70</td></tr>
+		<tr><th>Diamond Pickaxe</th><td>Faction Coin find chance</td><td>—</td><td>10%</td><td>20%</td><td>30%</td><td>40%</td></tr>
+		<tr><th>Blood Frenzy</th><td>Non-Unique building production</td><td>—</td><td>500%</td><td>1,000%</td><td>1,500%</td><td>2,000%</td></tr>
+		<tr><th>Goblin's Greed</th><td>Triggered Tax Collections</td><td>—</td><td>+1</td><td>+2</td><td>+3</td><td>+4</td></tr>
+		<tr><th>Night Time</th><td>Assistants</td><td>—</td><td>5%</td><td>10%</td><td>15%</td><td>20%</td></tr>
+		<tr><th>Hellfire Blast</th><td>Evil spell casts count more</td><td>—</td><td>50%</td><td>100%</td><td>150%</td><td>200%</td></tr>
+		<tr><th>Combo Strike</th><td>Cast-stat gain per cast</td><td>+1</td><td>+4</td><td>+12</td><td>+27</td><td>+51</td></tr>
+		<tr><th>Gem Grinder</th><td>Royal Exchange bonus</td><td>—</td><td>10%</td><td>20%</td><td>30%</td><td>40%</td></tr>
+		<tr><th>Lightning Strike</th><td>Iron Strongholds count more</td><td>—</td><td>75%</td><td>150%</td><td>225%</td><td>300%</td></tr>
+		<tr><th>Grand Balance</th><td>Maximum Mana</td><td>—</td><td>5%</td><td>10%</td><td>15%</td><td>20%</td></tr>
+		<tr><th>Brainwave</th><td>Headstart</td><td>—</td><td>+10m</td><td>+20m</td><td>+30m</td><td>+40m</td></tr>
+		<tr><th>Spiritual Surge</th><td>Reincarnations count more</td><td>—</td><td>5%</td><td>10%</td><td>15%</td><td>20%</td></tr>
+		<tr><th>Temporal Flux</th><td>Mana produced counts more</td><td>—</td><td>10%</td><td>20%</td><td>30%</td><td>40%</td></tr>
+		<tr><th>All Creation</th><td>Production bonus from Gems</td><td>—</td><td>10%</td><td>20%</td><td>30%</td><td>40%</td></tr>
+		<tr><th>Maelstrom</th><td>Random buildings affected</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+		<tr><th>Precognition</th><td>Research Points count more</td><td>—</td><td>10%</td><td>20%</td><td>30%</td><td>40%</td></tr>
+		<tr><th>Infinite Spiral</th><td>Offline Bonus</td><td>—</td><td>10%</td><td>20%</td><td>30%</td><td>40%</td></tr>
+		<tr><th>Limited Wish</th><td>Casts count more</td><td>—</td><td>10%</td><td>40%</td><td>90%</td><td>160%</td></tr>
+		</tbody>
 	</table>
 	<br/>
 	<hr>
