@@ -184,7 +184,7 @@
 			<div class="shelementwhole">
 				<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">Detailed plan for R46 tiering</a></b></p>
 				<div class="autohide">
-					<p><b>Spell Tier 2 requirement</b>: 1 hour of that spell's activity time in the current Reincarnation, its spell-specific statistic requirement, and the Tier 2 challenge. See the Spell Tiers reference for each statistic.</p>
+					<p><b>Spell Tier 2 requirement</b>: 1 hour of that spell's activity time in the current Reincarnation and its spell-specific statistic requirement. There is no separate Tier 2 challenge. See the Spell Tiers reference for each statistic and the Dragon-quest stage that enables each spell's upgrade.</p>
 					<p>Additional information about <b><a target="_blank" href="/realm/Spells/">Spells and Spell Tiers</a></b>.</p>
 					<p><b>Step 1</b>: Start with Goblin until Spiky Rough Egg is excavated, then go to step 2. Switch back to Goblin (or Fairy, for stage 3) for completion when necessary.</p>
 					<p><b>Step 2</b>: Run Demon (all spells on autocast) until the desired spells meet their Tier 2 activity and statistic requirements.</p>
