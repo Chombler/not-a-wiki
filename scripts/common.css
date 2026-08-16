@@ -1534,14 +1534,13 @@ table {
 
 .tier-matrix-wrap {
     max-width: 100%;
-    overflow-x: auto;
     border: 1px solid var(--line);
 }
 
 .site-main .spell-tier-matrix {
     display: table;
     width: 100%;
-    min-width: 1040px;
+    table-layout: fixed;
     overflow: visible;
     border: 0;
     border-radius: 0;
@@ -1549,9 +1548,12 @@ table {
 
 .spell-tier-matrix th,
 .spell-tier-matrix td {
-    min-width: 205px;
+    min-width: 0;
+    padding: .35rem .4rem;
     vertical-align: top;
-    line-height: 1.35;
+    font-size: .78rem;
+    line-height: 1.28;
+    overflow-wrap: anywhere;
 }
 
 .spell-tier-matrix thead th {
@@ -1581,7 +1583,7 @@ table {
     position: sticky;
     left: 0;
     z-index: 1;
-    min-width: 150px;
+    width: 15%;
     background: var(--panel-raised);
     color: #fff;
 }
@@ -1611,6 +1613,36 @@ table {
     font-weight: 700;
     letter-spacing: .02em;
     text-transform: uppercase;
+}
+
+.spell-tier-matrix tbody tr:not(.tier-group):not(.a2-spell):not(.astral-spell) td:nth-child(3)::before { content: "A1"; }
+.spell-tier-matrix tbody tr:not(.tier-group):not(.a2-spell):not(.astral-spell) td:nth-child(4)::before { content: "A2"; }
+.spell-tier-matrix tbody tr:not(.tier-group):not(.a2-spell):not(.astral-spell) td:nth-child(5)::before { content: "A3"; }
+.spell-tier-matrix tbody tr:not(.tier-group):not(.a2-spell):not(.astral-spell) td:nth-child(6)::before { content: "A4"; }
+.spell-tier-matrix .a2-spell .tier-default::before { content: "A2 spell"; }
+.spell-tier-matrix .a2-spell td:nth-child(3)::before { content: "A2"; }
+.spell-tier-matrix .a2-spell td:nth-child(4)::before { content: "A2"; }
+.spell-tier-matrix .a2-spell td:nth-child(5)::before { content: "A3"; }
+.spell-tier-matrix .a2-spell td:nth-child(6)::before { content: "A4"; }
+.spell-tier-matrix .astral-spell .tier-default::before { content: "A3 spell"; }
+.spell-tier-matrix .astral-spell td:nth-child(3)::before { content: "A3"; }
+.spell-tier-matrix .astral-spell td:nth-child(4)::before { content: "A3"; }
+.spell-tier-matrix .astral-spell td:nth-child(5)::before { content: "A3"; }
+.spell-tier-matrix .astral-spell td:nth-child(6)::before { content: "A4"; }
+
+.spell-tier-matrix tbody td::before {
+    display: block;
+    margin-bottom: .2rem;
+    color: var(--gold);
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+}
+
+.tier-default {
+    color: var(--success);
+    font-weight: 700;
 }
 
 @media (max-width: 700px) {
