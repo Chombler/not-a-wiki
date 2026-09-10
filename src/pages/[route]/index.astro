@@ -64,6 +64,6 @@ const content = frameGameIcons(baseContent
 ));
 ---
 
-<SiteLayout title={getPageTitle(route)} sourcePath={kind === 'guide' ? `src/data/guides/${route.slice(0, 2)}.json` : ['TrophyPage', 'AllTrophies'].includes(route) ? 'src/content/trophies' : `src/page-content/reference/${route}.html`}>
+<SiteLayout title={getPageTitle(route)} sourcePath={kind === 'guide' ? `src/data/guides/${route.slice(0, 2)}.json` : ['TrophyPage', 'AllTrophies'].includes(route) ? 'src/content/trophies/README.md' : `src/page-content/reference/${route}.html`}>
   {kind === 'guide' ? <GuidePage route={route} /> : <Fragment set:html={content} />}
 </SiteLayout>

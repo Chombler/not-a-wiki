@@ -30,6 +30,8 @@ const researchTree = defineCollection({
   }),
 });
 
+// Trophies are a narrow structured exception: one game-ordered inventory feeds
+// both the desktop drawer and mobile text list. Each body remains authored HTML.
 const trophies = defineCollection({
   loader: glob({ pattern: '*.yaml', base: './src/content/trophies' }),
   schema: z.object({

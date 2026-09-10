@@ -68,7 +68,22 @@ and text entry. Do not put guide links directly in `body`; validation requires
 them to use the structured `guide` field so the icon is always clickable.
 Keep IDs unique and do not manually edit
 the category totals—the build verifies all 903 records and derives totals from
-the files.
+the files. See `src/content/trophies/README.md` for the complete maintenance
+contract and the reason trophies remain a structured exception.
+
+### Edit faction information
+
+The complete reference for each faction is its human-authored
+`src/page-content/reference/*Faction.html` file. These pages intentionally keep
+the faction's related unlocks, spell, upgrades, heritage, bloodline, lineage,
+and exceptions together in the context where readers need them.
+
+`src/page-content/reference/Factions.html` is the overview and affiliation
+index. Its game-style image map is navigation only; do not hide another copy of
+faction descriptions in image-map hover attributes. Pages such as `Angel.html`
+without the `Faction` suffix are the established challenge-page routes, not
+duplicate faction homes. See `src/page-content/reference/FACTIONS.md` for the
+full page-ownership guide.
 
 Edit the source files directly. Do not edit `_site/`; it is generated for
 GitHub Pages and is replaced by every build.

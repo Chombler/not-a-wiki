@@ -72,6 +72,7 @@ const contracts = {
   'ResearchList/index.html': ['id="spellcraft"', 'class="research-entry"'],
   'Researchtree/index.html': ['usemap="#ResearchTreeA4-map"', 'data-research='],
   'Spells/index.html': ['(11 - T) ^ 5', 'Hall of Legends</td><td>0 × ln(1 + x)^6%', 'class="numtable primal-balance-table"', '<td>11 (all)</td>'],
+  'Factions/index.html': ['usemap="#FactionGrid-map"', 'Click a faction icon to open its complete reference page', 'href="/not-a-wiki/FairyFaction/"'],
   'TrophyPage/index.html': ['id="mathematician-building-bonuses"', 'Mathematician bonus by building', 'Hall of Legends</td><td>10%'],
   'A0Guide/index.html': ['class="progression-plot"', 'class="guide-stage-grid"', 'class="guide-pager"'],
   'A4Guide/index.html': ['class="a4-budget-table"', 'class="guide-stage-grid"'],
@@ -160,6 +161,14 @@ for (const source of walk(path.join(root, 'src/content/trophies'), (file) => fil
 if (!trophyPageHtml.includes('Harlequin') || !allTrophiesHtml.includes('Harlequin')) failures.push('Canonical trophy content is missing from one rendered view');
 if (trophyPageHtml.includes('If a build is needed I will add a link to that build')) {
   failures.push('TrophyPage restored the obsolete build-link disclaimer');
+}
+
+const factionsSource = fs.readFileSync(path.join(root, 'src/page-content/reference/Factions.html'), 'utf8');
+if (/<area\b[^>]*\bresearch=/i.test(factionsSource)) {
+  failures.push('Factions navigation map regained independently maintained faction summaries');
+}
+if ([...factionsSource.matchAll(/<area\b/g)].length !== 16) {
+  failures.push('Factions navigation map does not contain all 16 faction destinations');
 }
 
 const spellPageHtml = fs.readFileSync(path.join(output, 'Spells/index.html'), 'utf8');
