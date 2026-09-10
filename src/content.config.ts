@@ -49,31 +49,21 @@ const trophies = defineCollection({
   }),
 });
 
-const relatedSpell = z.object({
-  id: z.string().regex(/^[a-z0-9-]+$/),
-  spellId: z.string().regex(/^[A-Za-z0-9]+$/),
+const spellMenuEntry = z.object({
+  id: z.string().regex(/^[A-Za-z0-9-]+$/),
   name: z.string().min(1),
   icon: z.string().regex(/^[a-z0-9-]+\.png$/),
-  body: z.string(),
+  target: z.string().regex(/^[A-Za-z0-9]+$/),
+  tooltip: z.string(),
 });
 
-const spells = defineCollection({
-  loader: glob({ pattern: '*.yaml', base: './src/content/spells' }),
+const spellMenu = defineCollection({
+  loader: glob({ pattern: '*.yaml', base: './src/content/spell-menu' }),
   schema: z.object({
-    spells: z.array(z.object({
-      id: z.string().regex(/^[A-Za-z0-9]+$/),
-      name: z.string().min(1),
-      icon: z.string().regex(/^[a-z0-9-]+\.png$/),
-      section: z.enum(['default', 'alignment', 'faction', 'mercenary', 'secondary-alignment', 'astral', 'special']),
-      affiliation: z.string().optional(),
-      body: z.string(),
-      supplement: z.string().optional(),
-      upgradeId: z.string().regex(/^[a-z0-9-]+$/).optional(),
-      challengeId: z.string().regex(/^[a-z0-9-]+$/).optional(),
-    })),
-    upgrades: z.array(relatedSpell),
-    challenges: z.array(relatedSpell),
+    spells: z.array(spellMenuEntry),
+    upgrades: z.array(spellMenuEntry),
+    challenges: z.array(spellMenuEntry),
   }),
 });
 
-export const collections = { research, researchTree, trophies, spells };
+export const collections = { research, researchTree, trophies, spellMenu };

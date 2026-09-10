@@ -164,6 +164,8 @@ if (trophyPageHtml.includes('If a build is needed I will add a link to that buil
 
 const spellPageHtml = fs.readFileSync(path.join(output, 'Spells/index.html'), 'utf8');
 const spellTierPageHtml = fs.readFileSync(path.join(output, 'SpellTiers/index.html'), 'utf8');
+const authoredSpellSource = fs.readFileSync(path.join(root, 'src/page-content/reference/Spells.html'), 'utf8');
+const spellMenuSource = fs.readFileSync(path.join(root, 'src/content/spell-menu/menu.yaml'), 'utf8');
 const allowedSpellComposites = new Set([
   'SpellsTopPage.png',
   'RealmGrinderHeader.png',
@@ -183,6 +185,12 @@ for (const [kind, expected] of [['spell', 30], ['upgrade', 16], ['challenge', 16
 if ([...spellPageHtml.matchAll(/class="spell-entry"/g)].length !== 30) failures.push('Spells does not render 30 detailed spell entries');
 if (spellPageHtml.includes('<map ') || spellPageHtml.includes('SpellsMap.png')) failures.push('Spells restored a baked imagemap instead of canonical spell records');
 if (!spellPageHtml.includes(`href="#GodsHand"`) || !spellPageHtml.includes(`gods-hand-icon.png`)) failures.push('Spells lost the God\'s Hand anchor or current icon');
+if ([...authoredSpellSource.matchAll(/class="spell-entry"/g)].length !== 30 || !authoredSpellSource.includes('<realm-spell-menu>')) {
+  failures.push('Spells reference content is no longer authored as one readable page around the reusable icon menu');
+}
+for (const normalizedField of ['supplement:', 'section:', 'upgradeId:', 'challengeId:']) {
+  if (spellMenuSource.includes(normalizedField)) failures.push(`Spell menu regained full-reference field: ${normalizedField}`);
+}
 if (!spellTierPageHtml.includes('assets/game/sprites/tiered-autocast-upgrade.png')) failures.push('SpellTiers lost the current Tiered Autocasting icon');
 const sunForceHtml = fs.readFileSync(path.join(output, 'SunForce/index.html'), 'utf8');
 for (const icon of ['dawnstone-artifact.png', 'duskstone-artifact.png', 'planetary-force-artifact.png']) {

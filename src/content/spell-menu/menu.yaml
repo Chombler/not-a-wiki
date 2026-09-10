@@ -1,0 +1,577 @@
+# Structured spell-menu inventory. Full spell explanations are authored in src/page-content/reference/Spells.html.
+spells:
+  - id: GodsHand
+    name: God's Hand
+    icon: gods-hand-icon.png
+    target: GodsHand
+    tooltip: |-
+      <p><b>Spell Type</b>: (Good/Order) Angel Faction Spell</p>
+      	<p><b>Cost</b>: 900 Mana - <b>Duration</b>: 10 seconds</p>
+      	<p><b>Effect</b>: Increase the production of all buildings based on your Mana Regeneration rate.</p>
+      	<p><b>Formula</b>: (10 * ln(1 + x) ^ 4)%, where x is Mana Regeneration (mana/s).</p>
+      	<p><b>Effect</b>: Duration increases based on time spent as Good in this Reincarnation.</p>
+      	<p><b>Formula</b>: +floor((0.5 + 0.05 * T) * y ^ (0.5 + 0.05 * T)) seconds, where T is God's Hand's tier and y is time spent as Good in this Reincarnation.</p>
+  - id: FairyChanting
+    name: Fairy Chanting
+    icon: fairy-chanting-icon.png
+    target: FairyChanting
+    tooltip: |-
+      <p><b>Spell Type</b>: (Good/Chaos) Fairy Faction Spell</p>
+      	<p><b>Cost</b>: 800 Mana - <b>Duration</b>: 10 seconds</p>
+      	<p><b>Effect</b>: Increase the production of Farms, Inns and Blacksmiths based on the number of those buildings built.</p>
+      	<p><b>Formula</b>: (20,000 ^ (1 + 0.02 * x ^ 0.2))%, where x is the total Farms, Inns, and Blacksmiths built.</p>
+  - id: MoonBlessing
+    name: Moon Blessing
+    icon: moon-blessing-icon.png
+    target: MoonBlessing
+    tooltip: |-
+      <p><b>Spell Type</b>: (Good/Balance) Elven Faction Spell</p>
+      	<p><b>Cost</b>: 700 Mana - <b>Duration</b>: 20 seconds</p>
+      	<p><b>Effect</b>: Increases the production of all buildings based on on the amount of clicks made in this Reincarnation.</p>
+      	<p><b>Formula</b>: (1.3 * x ^ 0.7)%, where x is the amount of clicks made in this Reincarnation.</p>
+  - id: HolyLight
+    name: Holy Light
+    icon: holy-light-icon.png
+    target: HolyLight
+    tooltip: |-
+      <p><b>Spell Tier Effect</b>: Multiplicatively increase Mana Regeneration by 10% per spell tier.</p>
+      	<p><b>Spell Type</b>: Good Alignment Spell</p>
+      	<p><b>Cost</b>: 900 Mana - <b>Duration</b>: 10 seconds</p>
+      	<p><b>Effect</b>: Increase clicking reward by 1750%.</p>
+  - id: DiamondPickaxe
+    name: Diamond Pickaxe
+    icon: diamond-pickaxe-icon.png
+    target: DiamondPickaxe
+    tooltip: |-
+      <p><b>Spell Type</b>: (Good) Dwarven Faction Spell</p>
+      	<p><b>Cost</b>: 1,000 Mana - <b>Duration</b>: 12 seconds</p>
+      	<p><b>Effect</b>: Increase clicking reward based on amount of Excavation you made and increase your Faction Coin find chance by +200%.</p>
+      	<p><b>Formula</b>: (30 * x)%, where x is your excavation depth.</p>
+  - id: ShareBenefits
+    name: Share Benefits
+    icon: tax-collection-icon.png
+    target: ShareBenefits
+    tooltip: |-
+      <p><b>Spell Type</b>: (Good) Mercenary Faction Spell (R75+)</p>
+      	<p><b>Cost</b>: 200 Mana - <b>Duration</b>: Fixed to 20 seconds</p>
+      	<p><b>Effect</b>: Alters Tax Collection with new name and effect (still counts as Tax Collection for all purposes).</p>
+      	<p><b>Effect</b>: Increases the production of all buildings and Faction Coin find chance based on this spell tier level.</p>
+      	<p><b>Effect</b>: Also produce Tax Collection casts per second based on your Maximum Mana.</p>
+      	<p><b>Formula (Production bonus)</b>: (m * (80 + 1.6 * ln(1 + x) ^ 1.6) ^ ((0.5 * T + 1) ^ 0.9))%, where x is Tax Collection worth in seconds, T the Share Benefits tier, and m is 100 below A3 (1 in A3+).</p>
+      	<p><b>Formula (Faction Coin find chance)</b>: (100 * (3 + 0.1 * ln(1 + c)) ^ (T + 1))%, where c is your Triggered Tax Collections power and T the Share Benefits tier.</p>
+      	<p><b>Formula (Tax Collection casts per second)</b>: +(0.00001 * c * x ^ 0.5 * M * (T + 1))/s, where c is Triggered Tax Collections power, x is Tax Collection worth in seconds, M is Maximum Mana and T the Share Benefits tier.</p>
+      	<p><b>Note</b>: Can be cast up to 36 tiers (99 in A3+).</p>
+  - id: NightTime
+    name: Night Time
+    icon: night-time-icon.png
+    target: NightTime
+    tooltip: |-
+      <p><b>Spell Type</b>: (Evil/Order) Undead Faction Spell</p>
+      	<p><b>Cost</b>: 800 Mana - <b>Duration</b>: 20 seconds </p>
+      	<p><b>Effect</b>: Increase assistant production by (50 + 50 * x)%, where x is the number of Necropolises you own.</p>
+  - id: HellfireBlast
+    name: Hellfire Blast
+    icon: hellfire-blast-icon.png
+    target: HellfireBlast
+    tooltip: |-
+      <p><b>Spell Type</b>: (Evil/Chaos) Demon Faction Spell</p>
+      	<p><b>Cost</b>: 900 Mana - <b>Duration</b>: 20 seconds</p>
+      	<p><b>Effect</b>: Increase the production of Evil Fortresses and Hell Portals based on your amount of trophies.</p>
+      	<p><b>Formula</b>: (120 * x ^ 0.8)%, where x is your amount of trophies.</p>
+  - id: GoblinsGreed
+    name: Goblin's Greed
+    icon: goblins-greed-icon.png
+    target: GoblinsGreed
+    tooltip: |-
+      <p><b>Spell Type</b>: (Evil/Balance) Goblin Faction Spell</p>
+      	<p><b>Cost</b>: 400 Mana - <b>Duration</b>: 8 seconds</p>
+      	<p><b>Effect</b>: Instantly produces Faction Coins based on gems you own. Also increases production of all buildings based on the number of Faction Coins found in this Era.</p>
+      	<p><b>Faction Coin Formula</b>: +(80 + 2.25 * ln(10 + x) ^ 2.25), where x is your current amount of Gems.</p>
+      	<p><b>Production Formula</b>: (30 + 3 * ln(1 + x) ^ 3)%, where x is the number of Faction Coins found in this Era.</p>
+  - id: BloodFrenzy
+    name: Blood Frenzy
+    icon: blood-frenzy-icon.png
+    target: BloodFrenzy
+    tooltip: |-
+      <p><b>Spell Tier Effect</b>: Multiplicatively increase Non-Unique building production by 500% per spell tier.</p>
+      	<p><b>Spell Type</b>: Evil Alignment Spell</p>
+      	<p><b>Cost</b>: 600 Mana - <b>Duration</b>: 20 seconds</p>
+      	<p><b>Effect</b>: Increases the production of all Evil buildings by 1500%.</p>
+  - id: ComboStrike
+    name: Combo Strike
+    icon: combo-strike-icon.png
+    target: ComboStrike
+    tooltip: |-
+      <p><b>Spell Type</b>: (Evil) Drow Faction Spell</p>
+      	<p><b>Cost</b>: 800 Mana - <b>Duration</b>: Fixed to 16 seconds</p>
+      	<p><b>Effect</b>: Increase the production of all buildings by a progressively higher value as you continue casting this spell (This Era).</p>
+      	<p><b>Formula</b>: (100 * x ^ 0.9)%, where x is the Combo Strike counter.</p>
+  - id: ReapInterests
+    name: Reap Interests
+    icon: tax-collection-icon.png
+    target: ReapInterests
+    tooltip: |-
+      <p><b>Spell Type</b>: (Evil) Mercenary Faction Spell (R75+)</p>
+      	<p><b>Cost</b>: 200 Mana - <b>Duration</b>: None</p>
+      	<p><b>Effect</b>: Alters Tax Collection with new name and effect (still counts as Tax Collection for all purposes).</p>
+      	<p><b>Effect</b>: Additional casts of Reap Interests increase its seconds worth of production.</p>
+      	<p><b>Formula</b>: Seconds worth = (T * ln(1 + x) ^ 4), where T is your Tax Collection worth in seconds and x is amount of Reap Interests casts.</p>
+      	<p><b>Note</b>: Upgrades that cast free Tax Collection are treated as Reap Interests casts.</p>
+  - id: LightningStrike
+    name: Lightning Strike
+    icon: lightning-strike-icon.png
+    target: LightningStrike
+    tooltip: |-
+      <p><b>Spell Type</b>: (Neutral/Order) Titan Faction Spell</p>
+      	<p><b>Cost</b>: 250 Mana - <b>Duration</b>: 5 seconds </p>
+      	<p><b>Effect</b>: Increase the production of a random building by 900% for each Iron Stronghold. Also multiplicatively increase Faction Coin find chance based on Gems owned.</p>
+      	<p><b>Formula</b>: (50 + 2 * ln(1 + x) ^ 1.5)%, where x is your current amount of Gems.</p>
+  - id: Brainwave
+    name: Brainwave
+    icon: brainwave-icon.png
+    target: Brainwave
+    tooltip: |-
+      <p><b>Spell Type</b>: (Neutral/Chaos) Faceless Faction Spell</p>
+      	<p><b>Cost</b>: 600 Mana - <b>Duration</b>: 600 seconds </p>
+      	<p><b>Effect</b>: Increase production of all buildings by a cumulative 20% per second.</p>
+  - id: GrandBalance
+    name: Grand Balance
+    icon: grand-balance-icon.png
+    target: GrandBalance
+    tooltip: |-
+      <p><b>Spell Tier Effect</b>: Multiplicatively increase Maximum Mana by 5% per spell tier.</p>
+      	<p><b>Spell Type</b>: (Neutral/Balance) Druid Faction Spell</p>
+      	<p><b>Cost</b>: 1,000 Mana - <b>Duration</b>: 20 seconds</p>
+      	<p><b>Effect</b>: Increase the production of your least productive building based on the amount of the three most built ones.</p>
+      	<p><b>Formula</b>: (1 + round(25 * (x * y * z / (A + 3) ^ 6) ^ 0.9))%, where x, y and z are the number of your three most-built buildings and A is how many times you have ascended.</p>
+  - id: GemGrinder
+    name: Gem Grinder
+    icon: gem-grinder-icon.png
+    target: GemGrinder
+    tooltip: |-
+      <p><b>Spell Tier Effect</b>: Multiplicatively increase Royal Exchange bonus by 10% per spell tier.</p>
+      	<p><b>Spell Type</b>: Neutral Alignment Spell</p>
+      	<p><b>Cost</b>: 1,000 Mana - <b>Duration</b>: 20 seconds </p>
+      	<p><b>Effect</b>: Multiplicatively increase production bonus from Gems based on the amount of times you reincarnated and ascended.</p>
+      	<p><b>Formula</b>: (2500 * (1 + 0.005 * R) * (T + 1))%, where R is the number of times you have reincarnated and T is the spell tier.</p>
+  - id: DragonsBreath
+    name: Dragon's Breath
+    icon: dragons-breath-icon.png
+    target: DragonsBreath
+    tooltip: |-
+      <p><b>Spell Type</b>: (Neutral) Dragon Faction Spell (R46+)</p>
+      	<p><b>Cost</b>: 1,500 Mana - <b>Duration</b>: 20 seconds</p>
+      	<p><b>Effect</b>: Activates one of the following effects at random for 20 seconds.</p>
+      	<p><b><font color='red'>Red</font></b>: Increase the production of unique buildings based on the amount of Faction Coins found in this Era.</p>
+      	<p><b><font color='red'>Formula</font></b>: (1.75 * ln(1 + x) ^ 1.75)%, where x is the amount of Faction Coins found in this Era.</p>
+      	<p><b><font color='green'>Green</font></b>: Increase the production of all buildings based on the amount of spells cast in this Era. Higher bonuses are provided to lower building tiers.</p>
+      	<p><b><font color='green'>Formula</font></b>: (0.000001 * ln(1 + x) ^ 6 * (11 - T) ^ 5)%, where x is spells cast this Era and T is the building tier (1 for Farms, 11 for Hall of Legends).</p>
+      	<p><b><font color='blue'>Blue</font></b>: Multiplicatively increase your Mana Regeneration by 200%.</p>
+      	<p><b><font color='white'>White</font></b>: Temporarily increase the amount of assistants based on time spent being Neutral in this Reincarnation.</p>
+      	<p><b><font color='white'>Formula</font></b>: +(30 * x ^ 0.7), where x is time spent as Neutral this Reincarnation.</p>
+      	<p><b><font color='grey'>Black</b></font>: Increase the production of all buildings based on Dragon's Breath activity time in this Era.</p>
+      	<p><b><font color='grey'>Formula</font></b>: (30 + 0.85 * x ^ 0.85)%, where x is Dragon's Breath activity time in this Era.</p>
+      	<p><b><font color='goldenrod'>Yellow</font></b> (A2+): Multiplicatively increases production bonus from Gems based on assistants owned.</p>
+      	<p><b><font color='goldenrod'>Formula</font></b>: (1.75 * ln(1 + x) ^ 1.75)%, where x is assistants owned.</p>
+  - id: AppraisalVantage
+    name: Appraisal Vantage
+    icon: tax-collection-icon.png
+    target: AppraisalVantage
+    tooltip: |-
+      <p><b>Spell Type</b>: (Neutral) Mercenary Faction Spell (R75+)</p>
+      	<p><b>Cost</b>: 200 Mana - <b>Duration</b>: None</p>
+      	<p><b>Effect</b>: Alters Tax Collection with new name and effect (still counts as Tax Collection for all purposes).</p>
+      	<p><b>Effect</b>: Generates additional Faction Coins based on the amount of assistants you own.</p>
+      	<p><b>Formula</b>: +(x * T * y ^ 1.25), where x is assistants owned, T is Tax Collection worth in seconds and y is Faction Coin find chance.</p>
+      	<p><b>Note</b>: Upgrades that cast free Tax Collection are treated as Appraisal Vantage casts.</p>
+  - id: TemporalFlux
+    name: Temporal Flux
+    icon: temporal-flux-icon.png
+    target: TemporalFlux
+    tooltip: |-
+      <p><b>Spell Type</b>: Order Alignment Spell (R100+)</p>
+      	<p><b>Cost</b>: 950 Mana - <b>Duration</b>: 20 seconds</p>
+      	<p><b>Effect</b>: Increase Unique building production based on time spent this Era.</p>
+      	<p><b>Production Formula</b>: (x ^ 0.825)%, where x is time spent in this Era.</p>
+      	<p><b>Effect</b>: Also multiplicatively increase Mana Regeneration based on time spent in this Era.</p>
+      	<p><b>Mana Regeneration Formula</b>: (3.75 * (x / 60) ^ 0.825 * (T + 1))%, where x is time spent in this Era and T is the zero-based spell tier.</p>
+      	<p><b>Archon Union Effect</b>: Also multiplicatively increase Maximum Mana based on time spent in this Era.</p>
+      	<p><b>Maximum Mana Formula</b>: (0.375 * (x / 60) ^ 0.825 * (T + 1))%, where x is time spent in this Era and T is the zero-based spell tier.</p>
+      	<p><b>Spell Tier Effect</b>: Mana produced counts 10% more per spell tier.</p>
+      	<p><b>An Untimely Death Effect</b>: Also increase Offline production using the Unique Building production formula.</p>
+  - id: Maelstrom
+    name: Maelstrom
+    icon: maelstrom-icon.png
+    target: Maelstrom
+    tooltip: |-
+      <p><b>Spell Tier Effect</b>: Affect one additional random building per spell tier.</p>
+      	<p><b>Spell Type</b>: Chaos Alignment Spell (R100+)</p>
+      	<p><b>Cost</b>: 700 Mana - <b>Duration</b>: 20 seconds</p>
+      	<p><b>Effect</b>: Increase the production of two random buildings based on one of these stats, chosen at random: Mana produced this Era, trophies unlocked, Faction Coins found this Era, or assistants.</p>
+      	<p><b>Formula (Mana)</b>: (0.1 * ln(1 + x) ^ 5)%, where x is Mana produced this Era.</p>
+      	<p><b>Formula (Trophies)</b>: (5 * x ^ 0.9)%, where x is trophies unlocked.</p>
+      	<p><b>Formula (Faction Coins)</b>: (0.01 * ln(1 + x) ^ 4)%, where x is Faction Coins found this Era.</p>
+      	<p><b>Formula (Assistants)</b>: (0.1 * ln(1 + x) ^ 5)%, where x is the number of assistants.</p>
+  - id: AllCreation
+    name: All Creation
+    icon: all-creation-icon.png
+    target: AllCreation
+    tooltip: |-
+      <p><b>Spell Tier Effect</b>: Multiplicatively increase production bonus from Gems by 10% per spell tier.</p>
+      	<p><b>Spell Type</b>: Balance Alignment Spell (R100+)</p>
+      	<p><b>Cost</b>: 1,100 Mana - <b>Duration</b>: 20 seconds</p>
+      	<p><b>Effect</b>: Increase production of all buildings based on your Mana Regeneration rate.</p>
+      	<p><b>Formula</b>: (0.5 * ln(1 + x) ^ 3 + x ^ 0.5)%, where x is Mana Regeneration (mana/s).</p>
+      	<p><b>Effect</b>: Also multiplicatively increase Faction Coin find chance based on your Mana Regeneration rate.</p>
+      	<p><b>Formula</b>: (4.5 * ln(1 + x) ^ 2.25 + 12.5 * x ^ 0.125)%, where x is Mana Regeneration (mana/s).</p>
+  - id: Precognition
+    name: Precognition
+    icon: precognition-icon.png
+    target: Precognition
+    tooltip: |-
+      <p><b>Spell Tier Effect</b>: Research Points count 10% more per spell tier.</p>
+      	<p><b>Spell Type</b>: (Order) Archon Faction Spell (R125+)</p>
+      	<p><b>Cost</b>: 123,456 Mana - <b>Duration</b>: 20 seconds</p>
+      	<p><b>Effect</b>: Buildings, Assistants, Royal Exchanges, Spells cast and Clicks count more based on Mana produced in this Era.</p>
+      	<p><b>Formula</b>: (0.65 * ln(1 + x) ^ 1.15)%, where x is Mana produced in this Era.</p>
+      	<p><b>Note</b>: Formula improves to (1.3 * ln(1 + x) ^ 1.25)% with AR2.</p>
+  - id: LimitedWish
+    name: Limited Wish
+    icon: limited-wish-icon.png
+    target: LimitedWish
+    tooltip: |-
+      <p><b>Spell Type</b>: (Chaos) Djinn Faction Spell (R125+)</p>
+      	<p><b>Cost</b>: 800,000 Mana - <b>Duration</b>: Fixed to 6 seconds</p>
+      	<p><b>Effect</b>: Provide a random effect based on your chosen base alignment, for 6 seconds. The duration of the spell cannot be modified. Its power increases as you continue casting this spell.</p>
+      	<p><b>Formula (Production effect)</b>: (50 + 5 * ln(1 + x) ^ 1.75 * y)%, where x is Limited Wish activity time in this Era and y is a random number between 1 and Limited Wish casts this Era rolled on cast.</p>
+      	<p><b>Formula (Non-Production effects)</b>: (25 + 2.5 * ln(1 + x) ^ 1.75 * y ^ 0.5 * (T + 1))%, where T is the spell tier.</p>
+      	<p><b>Note</b>: Limited Wish casts count more based on spell tier: (10 * T ^ 2)%. Its cost decreases by 1% per minute up to 1 hour, then resets.</p>
+      	<p><b>Possible Effects</b></p>
+      	<p><b>1</b>: Increase the production of all buildings.</p>
+      	<p><b>Good Alignment</b></p>
+      	<p><b>2</b>: Temporarily increase Assistants (multiplicatively).</p>
+      	<p><b>3</b>: All spells durations count more.</p>
+      	<p><b>4</b>: Multiplicatively increase Mana Regeneration.</p>
+      	<p><b>Evil Alignment</b></p>
+      	<p><b>2</b>: Multiplicatively increase Trophy count and Offline Bonus.</p>
+      	<p><b>3</b>: Multiplicatively increase Mana Regeneration.</p>
+      	<p><b>4</b>: Multiplicatively increase Faction Coin find chance.</p>
+      	<p><b>Neutral Alignment</b></p>
+      	<p><b>2</b>: Multiplicatively increase Maximum Mana.</p>
+      	<p><b>3</b>: All spells durations count more.</p>
+      	<p><b>4</b>: Multiplicatively increase Faction Coin find chance.</p>
+  - id: InfiniteSpiral
+    name: Infinite Spiral
+    icon: infinite-spiral-icon.png
+    target: InfiniteSpiral
+    tooltip: |-
+      <p><b>Spell Tier Effect</b>: Multiplicatively increase Offline bonus by 10% per spell tier.</p>
+      	<p><b>Spell Type</b>: (Balance) Makers Faction Spell (R125+)</p>
+      	<p><b>Cost</b>: 505,000 mana - <b>Duration</b>: 10 seconds</p>
+      	<p><b>Effect</b>: Temporarily increase assistants based on Maximum Mana (multiplicatively).</p>
+      	<p><b>Formula</b>: (10 * ln(1 + x) ^ 1.25)%, where x is Maximum Mana.</p>
+      	<p><b>Effect</b>: Multiplicatively increase Maximum Mana based on Faction Coin find chance.</p>
+      	<p><b>Formula</b>: (1.5 * ln(1 + x) ^ 1.5)%, where x is Faction Coin find chance.</p>
+      	<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on Excavations made, including resets, in this Reincarnation.</p>
+      	<p><b>Formula</b>: (10 + 0.1 * x ^ 0.75)%, where x is your excavation depth.</p>
+  - id: Catalyst
+    name: Catalyst
+    icon: catalyst-icon.png
+    target: Catalyst
+    tooltip: |-
+      <p><b>Spell Type</b>: (Chaos) Djinn Faction Spell (R130+)</p>
+      	<p><b>Cost</b>: 500,000 Mana - <b>Duration</b>: Fixed to 60 seconds</p>
+      	<p><b>Requirement</b>: R130+, Djinn Bloodline</p>
+      	<p><b>Effect</b>: Activates two random unavailable vanilla or base-alignment spells at a tier equal to your Ascension for 60 seconds. This spell's duration cannot be modified.</p>
+      	<p><b>Note</b>: Having access to this spell also enables the spell trophies and the challenge rewards of those spells.</p>
+      	<p><b>Note</b>: Cannot cast a spell that is already available.</p>
+      	<p><b>Note</b>: Does not give access to Holy Frenzy for Neutral alignment.</p>
+  - id: ChaosMadness
+    name: Chaos Madness
+    icon: chaos-madness-icon.png
+    target: ChaosMadness
+    tooltip: |-
+      <p><b>Spell Type</b>: (Chaos) Mercenary Faction Spell (R194+)</p>
+      	<p><b>Cost</b>: 500,000 Mana - <b>Duration</b>: Fixed to 20 seconds</p>
+      	<p><b>Requirement</b>: Mercenary Challenge 2 active</p>
+      	<p><b>Effect</b>: Grants the effect of a random lineage, with the level of your highest lineage for 20 seconds.</p>
+      	<p><b>Note</b>: Does not select a lineage that is already available.</p>
+  - id: TaxCollection
+    name: Tax Collection
+    icon: tax-collection-icon.png
+    target: TaxCollection
+    tooltip: |-
+      <p><b>Spell Type</b>: Default Spell</p>
+      	<p><b>Cost</b>: 200 Mana (1,000 Mana in A4) - <b>Duration</b>: None</p>
+      	<p><b>Effect</b>: Instantly gain 30 seconds worth of coin production from buildings and assistants.</p>
+  - id: CalltoArms
+    name: Call to Arms
+    icon: call-to-arms-icon.png
+    target: CalltoArms
+    tooltip: |-
+      <p><b>Spell Tier Effect</b>: Buildings count 5% more per spell tier.</p>
+      	<p><b>Spell Type</b>: Default Spell </p>
+      	<p><b>Cost</b>: 400 Mana - <b>Duration</b>: 20 seconds </p>
+      	<p><b>Effect</b>: Increase the production of all buildings based on the amount of buildings you own.</p>
+      	<p><b>Formula</b>: (25 + (0.3 * x) ^ 0.975)%, where x is your Buildings Owned (This Era) stat.</p>
+  - id: SpiritualSurge
+    name: Spiritual Surge
+    icon: spiritual-surge-icon.png
+    target: SpiritualSurge
+    tooltip: |-
+      <p><b>Spell Tier Effect</b>: Reincarnations count 5% more per spell tier.</p>
+      	<p><b>Spell Type</b>: Default Spell (R14+)</p>
+      	<p><b>Cost</b>: 2,500 Mana - <b>Duration</b>: 20 seconds </p>
+      	<p><b>Effect</b>: Increase the production of all buildings based on the amount of times you reincarnated and ascended.</p>
+      	<p><b>Formula</b>: (2500 * R ^ 0.9)%, where R is the number of times you have reincarnated.</p>
+  - id: TwistingNether
+    name: Twisting Nether
+    icon: twisting-nether-icon.png
+    target: TwistingNether
+    tooltip: |-
+      <p><b>Spell Type</b>: Faction Spell (R220+)</p>
+      	<p><b>Cost</b>: 100,000 Mana - <b>Duration</b>: 20 seconds</p>
+      	<p><b>Requirement</b>: Twisting Nether (Fairy/Undead) Legacy Combo</p>
+      	<p><b>Effect</b>: Lineage levels count +2 more per tier.</p>
+      	<p><b>Note</b>: Twisting Nether counts as a faction spell, but has no alignments for upgrades such as Djinn Challenge 5.</p>
+upgrades:
+  - id: fairy-choir-upgrade
+    name: Fairy Choir
+    icon: fairy-choir-trophy.png
+    target: FairyChanting
+    tooltip: |-
+      <p><b>Requirement</b>: Cast Fairy Chanting while having 50 or more assistants.</p>
+      	<p><b>Cost</b>: 1 M (1e6), A1+ Free</p>
+      	<p><b>Effect</b>: Triples your assistants while Fairy Chanting is active.</p>
+  - id: sun-blessing-upgrade
+    name: Sun Blessing
+    icon: sun-blessing-trophy.png
+    target: MoonBlessing
+    tooltip: |-
+      <p><b>Requirement</b>: Cast Moon Blessing with at least 5 Elven Luck triggers in this Era.</p>
+      	<p><b>Cost</b>: 1 M (1e6), A1+ Free</p>
+      	<p><b>Effect</b>: Autoclicks 15 times per second while Moon Blessing is active.</p>
+  - id: god-s-rest-upgrade
+    name: God's Rest
+    icon: gods-rest-trophy.png
+    target: GodsHand
+    tooltip: |-
+      <p><b>Requirement</b>: Cast God's Hand with at least 1,500 Maximum Mana and 75 Mana Regeneration.</p>
+      	<p><b>Cost</b>: 1 M (1e6), A1+ Free</p>
+      	<p><b>Effect</b>: Gives random Faction Coins based on your Faction Coin find chance for each other spell you cast while God's Hand is active.</p>
+      	<p><b>Formula</b>: floor(x ^ 1.1), where x is Faction Coin find chance.</p>
+  - id: minedwarf-upgrade
+    name: Minedwarf
+    icon: minedwarf-trophy.png
+    target: DiamondPickaxe
+    tooltip: |-
+      <p><b>Requirement</b>: Find 30,000 Faction Coins using Diamond Pickaxe in a single Era.</p>
+      	<p><b>Cost</b>: 100 Sxd (1e53), A1+ Free</p>
+      	<p><b>Effect</b>: Increases Diamond Pickaxe bonus to Faction Coin find chance to +300%.</p>
+  - id: greed-drive-upgrade
+    name: Greed Drive
+    icon: greed-drive-trophy.png
+    target: GoblinsGreed
+    tooltip: |-
+      <p><b>Requirement</b>: Cast Goblin's Greed with at least 100 Royal Exchanges purchased.</p>
+      	<p><b>Cost</b>: 1 M (1e6), A1+ Free</p>
+      	<p><b>Effect</b>: While Goblin's Greed is active, Tax Collection costs 10% less Mana.</p>
+  - id: true-night-upgrade
+    name: True Night
+    icon: true-night-trophy.png
+    target: NightTime
+    tooltip: |-
+      <p><b>Requirement</b>: Cast Night Time with at least 20,000% Offline production.</p>
+      	<p><b>Cost</b>: 1 M (1e6), A1+ Free</p>
+      	<p><b>Effect</b>: Increase Night Time's assistant-production bonus by (0.4 * x ^ 0.6)%, where x is its activity time in this Reincarnation; Offline time also counts 50% more.</p>
+  - id: hell-rush-upgrade
+    name: Hell Rush
+    icon: hell-rush-trophy.png
+    target: HellfireBlast
+    tooltip: |-
+      <p><b>Requirement</b>: Cast the Demon spell Hellfire Blast in the first 60 seconds of a playtime.</p>
+      	<p><b>Cost</b>: 1 M (1e6), A1+ Free</p>
+      	<p><b>Effect</b>: Hellfire Blast also boosts Halls of Legends.</p>
+  - id: perfect-combo-upgrade
+    name: Perfect Combo
+    icon: perfect-combo-trophy.png
+    target: ComboStrike
+    tooltip: |-
+      <p><b>Requirement</b>: Cast a chain of 50 Combo Strikes in a single Era. The chain is interrupted by casting different spells.</p>
+      	<p><b>Cost</b>: 100 Sxd (1e53), A1+ Free</p>
+      	<p><b>Effect</b>: Increase the Combo Strike counter based on your longest Era in this Reincarnation.</p>
+      	<p><b>Formula</b>: +(2.5 * x ^ 0.5), where x is the longest Era time in this Reincarnation, in seconds.</p>
+  - id: lightning-storm-upgrade
+    name: Lightning Storm
+    icon: lightning-storm-trophy.png
+    target: LightningStrike
+    tooltip: |-
+      <p><b>Requirement</b>: Cast Lightning Strike 100 times in a single Era.</p>
+      	<p><b>Cost</b>: 100 Dc (1e35), A1+ Free</p>
+      	<p><b>Effect</b>: Increase Lightning Strike's multiplier by 50%.</p>
+  - id: halls-of-balance-upgrade
+    name: Halls of Balance
+    icon: halls-of-balance-trophy.png
+    target: GrandBalance
+    tooltip: |-
+      <p><b>Requirement</b>: Have Grand Balance affect Hall of Legends.</p>
+      	<p><b>Cost</b>: 10 Dd (1e40), A1+ Free</p>
+      	<p><b>Effect</b>: Increases Grand Balance duration to 24 seconds and lower its cost by 200 mana.</p>
+  - id: faceless-overmind-upgrade
+    name: Faceless Overmind
+    icon: faceless-overmind-trophy.png
+    target: Brainwave
+    tooltip: |-
+      <p><b>Requirement</b>: Affiliate with the Faceless 5 times in a row.</p>
+      	<p><b>Cost</b>: 100 Dc (1e35), A1+ Free</p>
+      	<p><b>Effect</b>: Increases Brainwave ticks from 20% to 30% per second.</p>
+  - id: dragon-s-roar-upgrade
+    name: Dragon's Roar
+    icon: dragons-roar-trophy.png
+    target: DragonsBreath
+    tooltip: |-
+      <p><b>Requirement</b>: Cast Dragon's Breath while having at least 5 other active spells.</p>
+      	<p><b>Cost</b>: 1 Qad (1e45), A2+ Free</p>
+      	<p><b>Effect</b>: Dragon's Breath multiplicatively increases Faction Coin find chance based on its duration.</p>
+      	<p><b>Formula</b>: (6 * x ^ 0.6)%, where x is its duration.</p>
+  - id: chrono-loading-upgrade
+    name: Chrono Loading
+    icon: chrono-loading-trophy.png
+    target: Precognition
+    tooltip: |-
+      <p><b>Requirement</b>: Cast Precognition with at least 100 Qa (1e17) Mana Regeneration.</p>
+      	<p><b>Note</b>: Precognition raises regen itself. Make sure that you have 100 Qa (1e17) before being cast.</p>
+      	<p><b>Cost</b>: 10 Octg (1e118), A3+ Free</p>
+      	<p><b>Effect</b>: A fraction of Precognition's duration is added to time spent in this Era.</p>
+      	<p><b>Formula</b>: (150 * ln(1 + x / 60) ^ 2), where x is its duration.</p>
+  - id: persistent-entropy-upgrade
+    name: Persistent Entropy
+    icon: persistent-entropy-trophy.png
+    target: LimitedWish
+    tooltip: |-
+      <p><b>Requirement</b>: Cast Limited Wish 100 times within 30 minutes of a new Era.</p>
+      	<p><b>Cost</b>: 10 Octg (1e118), A3+ Free</p>
+      	<p><b>Effect</b>: Adds 150 casts to Limited Wish's formula.</p>
+  - id: reality-crater-upgrade
+    name: Reality Crater
+    icon: reality-crater-trophy.png
+    target: InfiniteSpiral
+    tooltip: |-
+      <p><b>Requirement</b>: R125+, Cast Infinite Spiral with at least 10 excavation resets this Era.</p>
+      	<p><b>Cost</b>: 10 Octg (1e118), A3+ Free</p>
+      	<p><b>Effect</b>: Infinite Spiral also reduces excavation cost multiplier based on assistants owned.</p>
+      	<p><b>Formula</b>: -(0.0005 * ln(1 + x)), where x is assistants owned.</p>
+  - id: coin-pillage-upgrade
+    name: Coin Pillage
+    icon: coin-pillage-trophy.png
+    target: TaxCollection
+    tooltip: |-
+      <p><b>Requirement</b>: Cast 120 Tax Collections in less than 5 seconds.</p>
+      	<p><b>Cost</b>: 1 Dc (1e33), A1+ Free</p>
+      	<p><b>Effect</b>: Tax Collection also finds 30 seconds worth of Faction Coins.</p>
+challenges:
+  - id: fairy-orchestra-challenge
+    name: Fairy Orchestra
+    icon: challenge-fairy.png
+    target: FairyChanting
+    tooltip: "<p><b>Effect</b>: Each assistant generates 3 times as many faction coins while Fairy Chanting is active.</p>"
+  - id: star-blessing-challenge
+    name: Star Blessing
+    icon: challenge-elven.png
+    target: MoonBlessing
+    tooltip: "<p><b>Effect</b>: While Moon Blessing is active, increase the Elven Luck-trigger statistic each second by floor(1 + t ^ 0.2), where t is elapsed spell time in seconds.</p>"
+  - id: god-s-throne-challenge
+    name: God's Throne
+    icon: challenge-angel.png
+    target: GodsHand
+    tooltip: |-
+      <p><b>Effect</b>: Mana Regeneration is multiplicatively increased by 50% while God's Hand is active.</p>
+      	<p><b>Effect</b>: Also increase offline spells cast amount multiplicatively based on your offline Mana Regeneration.</p>
+      	<p><b>Formula</b>: (5 * ln(1 + x))%, where x is offline Mana Regeneration (mana/s).</p>
+  - id: iron-grip-challenge
+    name: Iron Grip
+    icon: challenge-dwarven.png
+    target: DiamondPickaxe
+    tooltip: "<p><b>Effect</b>: Increase Diamond Pickaxe duration by 8 seconds, and its bonus to Faction Coin find chance is passively applied as a multiplier to excavations Faction Coin rewards.</p>"
+  - id: avarice-drive-challenge
+    name: Avarice Drive
+    icon: challenge-goblin.png
+    target: GoblinsGreed
+    tooltip: "<p><b>Effect</b>: Goblin's Greed counts Faction Coins found in this Reincarnation.</p>"
+  - id: midnight-time-challenge
+    name: Midnight Time
+    icon: challenge-undead.png
+    target: NightTime
+    tooltip: |-
+      <p><b>Effect</b>: Increase Night Time assistant bonus based on time spent in this Reincarnation.</p>
+      	<p><b>Formula</b>: (0.25 * x ^ 0.75)%, where x is time spent in this Reincarnation, in seconds.</p>
+  - id: hellfire-burst-challenge
+    name: Hellfire Burst
+    icon: challenge-demon.png
+    target: HellfireBlast
+    tooltip: "<p><b>Effect</b>: Hellfire Blast also counts Evil spells cast in this reincarnation to increase its bonus.</p>"
+  - id: versatile-combo-challenge
+    name: Versatile Combo
+    icon: challenge-drow.png
+    target: ComboStrike
+    tooltip: |-
+      <p><b>Effect</b>: Increase Combo Strike counter based on the amount of spells cast in this Era, not including Tax Collection.</p>
+      	<p><b>New Combo Strike Counter Formula</b>: (x + y), where x is your Combo Strike cast count and y is every other spell (except tax collection and generic) cast count.</p>
+      	<p><b>Effect</b>: Also increase offline spells cast amount multiplicatively based on your offline Mana Regeneration.</p>
+      	<p><b>Formula</b>: (5 * ln(1 + x))%, where x is offline Mana Regeneration (mana/s).</p>
+  - id: thunderstorm-challenge
+    name: Thunderstorm
+    icon: challenge-titan.png
+    target: LightningStrike
+    tooltip: |-
+      <p><b>Effect</b>: Increase Faction Coin find chance from Lightning Strike by 20% per building tier hit.</p>
+      	<p><b>Formula</b>: (20 * sum(T))%, where T is each building tier hit.</p>
+      	<p><b>Note</b>: Lightning Strike can hit multiple tiers at once if you have C375 and/or Titan Perk 4.</p>
+  - id: primal-balance-challenge
+    name: Primal Balance
+    icon: challenge-druid.png
+    target: GrandBalance
+    tooltip: |-
+      <p><b>Effect</b>: Grand Balance now affects extra buildings based on Mana produced in this Reincarnation.</p>
+      	<p><b>Formula</b>: floor((x / 100,000) ^ (0.2 / (0.5 * A + 1))), where x is Mana produced in this Reincarnation and A is Ascension.</p>
+      	<p><b>Effect</b>: Once Primal Balance grants more than 10 additional targets (enough to affect all 11 buildings), each excess target increases the production of all affected buildings. Does not suffer from Ascension penalties.</p>
+      	<p><b>Formula</b>: (3 * (x - 10) ^ 1.5)%, where x is the amount of additional targets.</p>
+  - id: focused-thoughts-challenge
+    name: Focused Thoughts
+    icon: challenge-faceless.png
+    target: Brainwave
+    tooltip: |-
+      <p><b>Effect</b>: Give Brainwave a 10-minute headstart, increasing based on its activity time in this Era.</p>
+      	<p><b>Formula</b>: 600 + 0.4 * x ^ 0.8 seconds, where x is Brainwave activity time in this Era.</p>
+  - id: prismatic-breath-challenge
+    name: Prismatic Breath
+    icon: challenge-dragon.png
+    target: DragonsBreath
+    tooltip: "<p><b>Effect</b>: Reincarnations count 5% more per active Dragon's Breath.</p>"
+  - id: omniscience-challenge
+    name: Omniscience
+    icon: challenge-archon.png
+    target: Precognition
+    tooltip: "<p><b>Effect</b>: Precognition also makes Excavations, Artifacts, Reincarnations, Research points and Lineage levels count 15% more.</p>"
+  - id: full-wish-challenge
+    name: Full Wish
+    icon: challenge-djinn.png
+    target: LimitedWish
+    tooltip: "<p><b>Effect</b>: Production of all buildings effect of Limited Wish is active on every cast and is no longer a possible random outcome.</p>"
+  - id: gaia-s-cradle-challenge
+    name: Gaia's Cradle
+    icon: challenge-makers.png
+    target: InfiniteSpiral
+    tooltip: "<p><b>Effect</b>: All Infinite Spiral effects scale 15% faster.</p>"
+  - id: warcry-challenge
+    name: Warcry
+    icon: challenge-mercenary.png
+    target: CalltoArms
+    tooltip: |-
+      <p>Call to Arms gains additional effects based on your alignments, scaling off your Call to Arms strength.</p>
+      	<p><b>Good</b>: Grants one maximum castable Call to Arms tier per ascension and removes one ascension penalty from Call to Arms. Tax Collection casts in this Era now increases Call to Arms base bonus (this bonus will boost the other Warcry effect).</p>
+      	<p><b>Evil</b>: Multiplicatively increase Tax Collection worth in seconds.</p>
+      	<p><b>Neutral</b>: Multiplicatively increase Faction Coins find chance.</p>
+      	<p><b>Order</b>: Increases all spell durations.</p>
+      	<p><b>Chaos</b>: Multiplicatively increase assistants (Temporary).</p>
+      	<p><b>Balance</b>: Increases Royal Exchange Bonus multiplicatively and makes them count more.</p>

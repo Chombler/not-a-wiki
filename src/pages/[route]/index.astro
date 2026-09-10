@@ -8,7 +8,7 @@ import { primalBalanceTableHtml } from '../../lib/primalBalance';
 import { frameGameIcons } from '../../lib/gameIcons';
 import { getCollection } from 'astro:content';
 import { trophyDrawerHtml, trophyListHtml, validateTrophyCategories, type TrophyCategory } from '../../lib/trophies';
-import { spellReferenceHtml, validateSpellReference, type SpellReference } from '../../lib/spells';
+import { spellMenuHtml, validateSpellMenu, type SpellMenu } from '../../lib/spells';
 
 const pageModules = import.meta.glob('../../page-content/reference/*.html', {
   eager: true,
@@ -41,17 +41,17 @@ const trophyCategories = (await getCollection('trophies'))
   .map((entry) => entry.data as TrophyCategory)
   .sort((left, right) => left.order - right.order);
 validateTrophyCategories(trophyCategories);
-const spellEntries = await getCollection('spells');
-if (spellEntries.length !== 1) throw new Error(`Expected one spell reference file; found ${spellEntries.length}`);
-const spellReference = spellEntries[0].data as SpellReference;
-validateSpellReference(spellReference);
+const spellMenuEntries = await getCollection('spellMenu');
+if (spellMenuEntries.length !== 1) throw new Error(`Expected one spell menu file; found ${spellMenuEntries.length}`);
+const spellMenu = spellMenuEntries[0].data as SpellMenu;
+validateSpellMenu(spellMenu);
 const baseContent = kind === 'reference' ? pageModules[source]
   .replaceAll('/realm/', base)
   .replaceAll('/realm"', `${base}"`) : '';
 const content = frameGameIcons(baseContent
   .replace('<realm-trophy-drawer></realm-trophy-drawer>', trophyDrawerHtml(trophyCategories, base))
   .replace('<realm-trophy-list></realm-trophy-list>', trophyListHtml(trophyCategories, base))
-  .replace('<realm-spell-reference></realm-spell-reference>', spellReferenceHtml(spellReference, base))
+  .replace('<realm-spell-menu></realm-spell-menu>', spellMenuHtml(spellMenu, base))
   .replaceAll(
   '<realm-primal-balance-table></realm-primal-balance-table>',
   primalBalanceTableHtml(),
@@ -64,6 +64,6 @@ const content = frameGameIcons(baseContent
 ));
 ---
 
-<SiteLayout title={getPageTitle(route)} sourcePath={kind === 'guide' ? `src/data/guides/${route.slice(0, 2)}.json` : ['TrophyPage', 'AllTrophies'].includes(route) ? 'src/content/trophies' : route === 'Spells' ? 'src/content/spells/reference.yaml' : `src/page-content/reference/${route}.html`}>
+<SiteLayout title={getPageTitle(route)} sourcePath={kind === 'guide' ? `src/data/guides/${route.slice(0, 2)}.json` : ['TrophyPage', 'AllTrophies'].includes(route) ? 'src/content/trophies' : `src/page-content/reference/${route}.html`}>
   {kind === 'guide' ? <GuidePage route={route} /> : <Fragment set:html={content} />}
 </SiteLayout>

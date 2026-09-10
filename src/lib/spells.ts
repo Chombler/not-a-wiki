@@ -1,84 +1,65 @@
-export type SpellSection = 'default' | 'alignment' | 'faction' | 'mercenary' | 'secondary-alignment' | 'astral' | 'special';
-
-export interface SpellRecord {
+export interface SpellMenuEntry {
   id: string;
   name: string;
   icon: string;
-  section: SpellSection;
-  affiliation?: string;
-  body: string;
-  supplement?: string;
-  upgradeId?: string;
-  challengeId?: string;
+  target: string;
+  tooltip: string;
 }
 
-export interface SpellRelatedRecord {
-  id: string;
-  spellId: string;
-  name: string;
-  icon: string;
-  body: string;
+export interface SpellMenu {
+  spells: SpellMenuEntry[];
+  upgrades: SpellMenuEntry[];
+  challenges: SpellMenuEntry[];
 }
 
-export interface SpellReference {
-  spells: SpellRecord[];
-  upgrades: SpellRelatedRecord[];
-  challenges: SpellRelatedRecord[];
+const escapeAttribute = (value: string) => value
+  .replaceAll('&', '&amp;')
+  .replaceAll('"', '&quot;')
+  .replaceAll('<', '&lt;')
+  .replaceAll('>', '&gt;');
+
+const bodyForBase = (body: string, base: string) => body
+  .replaceAll('/realm/', base)
+  .replaceAll('/realm"', `${base}"`);
+
+function image(base: string, entry: SpellMenuEntry) {
+  return `<img src="${base}assets/game/sprites/${entry.icon}" alt="${escapeAttribute(entry.name)}">`;
 }
 
-const sectionLabels: Record<SpellSection, string> = {
-  default: 'All-Faction Default Spells',
-  alignment: 'Alignment Spells',
-  faction: 'Faction Spells',
-  mercenary: 'Mercenary Tax Collection Variants',
-  'secondary-alignment': 'Ascension 2: Secondary Alignment Spells',
-  astral: 'Astral Faction Spells',
-  special: 'Special Spells',
-};
-
-const escapeAttribute = (value: string) => value.replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
-const bodyForBase = (body: string, base: string) => body.replaceAll('/realm/', base).replaceAll('/realm"', `${base}"`);
-const image = (base: string, record: Pick<SpellRecord, 'icon' | 'name'>) => `<img src="${base}assets/game/sprites/${record.icon}" alt="${escapeAttribute(record.name)}">`;
-const framedImage = (base: string, record: Pick<SpellRecord, 'icon' | 'name'>) => `<span class="game-icon-frame">${image(base, record)}</span>`;
-const frameBodyIcons = (body: string) => body.replace(/<img\b[^>]*\/assets\/game\/sprites\/[^>]*>/gi, (value) => `<span class="game-icon-frame">${value}</span>`);
-
-function gridButton(record: SpellRecord | SpellRelatedRecord, base: string, kind: string) {
-  const heading = `<p>${framedImage(base, record)}<b> ${record.name}</b></p>`;
-  const tooltip = escapeAttribute(`${heading}${frameBodyIcons(bodyForBase(record.body, base))}`);
-  const target = 'spellId' in record ? record.spellId : record.id;
-  return `<a class="trophy-grid-button spell-grid-button spell-grid-button--${kind}" research="${tooltip}" href="#${target}" aria-label="${escapeAttribute(record.name)}">${image(base, record)}</a>`;
+function framedImage(base: string, entry: SpellMenuEntry) {
+  return `<span class="game-icon-frame">${image(base, entry)}</span>`;
 }
 
-function relatedDetail(label: string, record: SpellRelatedRecord | undefined, base: string) {
-  if (!record) return '';
-  return `<section class="spell-related"><p class="spell-related-heading"><b>${label}</b>: ${framedImage(base, record)}<b>${record.name}</b></p>${bodyForBase(record.body, base)}</section>`;
+function frameTooltipIcons(body: string) {
+  return body.replace(
+    /<img\b[^>]*\/assets\/game\/sprites\/[^>]*>/gi,
+    (value) => `<span class="game-icon-frame">${value}</span>`,
+  );
 }
 
-export function spellReferenceHtml(reference: SpellReference, base: string) {
-  const spellGrid = reference.spells.map((record) => gridButton(record, base, 'spell')).join('');
-  const upgradeGrid = reference.upgrades.map((record) => gridButton(record, base, 'upgrade')).join('');
-  const challengeGrid = reference.challenges.map((record) => gridButton(record, base, 'challenge')).join('');
-  const grids = `<div class="spell-reference-grids"><section class="spell-grid-panel"><h3>Spells</h3><div class="trophy-icon-grid spell-icon-grid">${spellGrid}</div></section><details class="spell-related-grids"><summary>Spell Trophies and Challenge Rewards</summary><div class="spell-related-grid-panels"><section class="spell-grid-panel"><h3>Spell Trophies</h3><div class="trophy-icon-grid spell-icon-grid">${upgradeGrid}</div></section><section class="spell-grid-panel"><h3>Challenge Rewards</h3><div class="trophy-icon-grid spell-icon-grid">${challengeGrid}</div></section></div></details></div>`;
-  const details = Object.entries(sectionLabels).map(([section, label]) => {
-    const entries = reference.spells.filter((spell) => spell.section === section).map((spell) => {
-      const upgrade = reference.upgrades.find((record) => record.id === spell.upgradeId);
-      const challenge = reference.challenges.find((record) => record.id === spell.challengeId);
-      const affiliation = spell.affiliation ? ` <span class="spell-affiliation">(${spell.affiliation})</span>` : '';
-      return `<article class="spell-entry" id="${spell.id}"><p class="spell-entry-heading">${framedImage(base, spell)}<b>${spell.name}</b>${affiliation}</p>${bodyForBase(spell.body, base)}${relatedDetail('Spell Trophy & Upgrade', upgrade, base)}${relatedDetail('Challenge Upgrade', challenge, base)}${bodyForBase(spell.supplement ?? '', base)}</article>`;
-    }).join('');
-    return `<section class="spell-section"><h2>${label}</h2>${entries}</section>`;
-  }).join('');
-  return `${grids}<div class="spell-reference-details">${details}</div>`;
+function gridButton(entry: SpellMenuEntry, base: string, kind: string) {
+  const heading = `<p>${framedImage(base, entry)}<b> ${entry.name}</b></p>`;
+  const tooltip = escapeAttribute(`${heading}${frameTooltipIcons(bodyForBase(entry.tooltip, base))}`);
+  return `<a class="trophy-grid-button spell-grid-button spell-grid-button--${kind}" research="${tooltip}" href="#${entry.target}" aria-label="${escapeAttribute(entry.name)}">${image(base, entry)}</a>`;
 }
 
-export function validateSpellReference(reference: SpellReference) {
-  if (reference.spells.length !== 30) throw new Error(`Spell collection has ${reference.spells.length} spells; expected 30`);
-  if (reference.upgrades.length !== 16) throw new Error(`Spell collection has ${reference.upgrades.length} trophy upgrades; expected 16`);
-  if (reference.challenges.length !== 16) throw new Error(`Spell collection has ${reference.challenges.length} challenge rewards; expected 16`);
-  const spellIds = new Set(reference.spells.map(({ id }) => id));
-  const ids = [...reference.spells, ...reference.upgrades, ...reference.challenges].map(({ id }) => id);
-  if (new Set(ids).size !== ids.length) throw new Error('Spell collection contains duplicate IDs');
-  for (const related of [...reference.upgrades, ...reference.challenges]) {
-    if (!spellIds.has(related.spellId)) throw new Error(`${related.name} refers to unknown spell ${related.spellId}`);
+export function spellMenuHtml(menu: SpellMenu, base: string) {
+  const spellGrid = menu.spells.map((entry) => gridButton(entry, base, 'spell')).join('');
+  const upgradeGrid = menu.upgrades.map((entry) => gridButton(entry, base, 'upgrade')).join('');
+  const challengeGrid = menu.challenges.map((entry) => gridButton(entry, base, 'challenge')).join('');
+  return `<div class="spell-reference-grids"><section class="spell-grid-panel"><h3>Spells</h3><div class="trophy-icon-grid spell-icon-grid">${spellGrid}</div></section><details class="spell-related-grids"><summary>Spell Trophies and Challenge Rewards</summary><div class="spell-related-grid-panels"><section class="spell-grid-panel"><h3>Spell Trophies</h3><div class="trophy-icon-grid spell-icon-grid">${upgradeGrid}</div></section><section class="spell-grid-panel"><h3>Challenge Rewards</h3><div class="trophy-icon-grid spell-icon-grid">${challengeGrid}</div></section></div></details></div>`;
+}
+
+export function validateSpellMenu(menu: SpellMenu) {
+  const expected = { spells: 30, upgrades: 16, challenges: 16 } as const;
+  const ids = new Set<string>();
+  for (const kind of Object.keys(expected) as Array<keyof typeof expected>) {
+    if (menu[kind].length !== expected[kind]) {
+      throw new Error(`Spell menu has ${menu[kind].length} ${kind}; expected ${expected[kind]}`);
+    }
+    for (const entry of menu[kind]) {
+      if (ids.has(entry.id)) throw new Error(`Duplicate spell-menu ID: ${entry.id}`);
+      ids.add(entry.id);
+    }
   }
 }
