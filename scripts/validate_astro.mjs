@@ -152,6 +152,9 @@ requireIncreasingOrder(allTrophiesHtml, ['id="reality-crater-trophy"', 'id="holy
 requireIncreasingOrder(trophyPageHtml, ['aria-label="Spell Cataclysm"', 'aria-label="Double Bottom"', 'aria-label="Advisor Insight"'], 'TrophyPage Secret trophies');
 requireIncreasingOrder(allTrophiesHtml, ['id="spell-cataclysm-trophy"', 'id="double-bottom-trophy"', 'id="ui-tip-trophy"'], 'AllTrophies Secret trophies');
 const trophyStyles = fs.readFileSync(path.join(root, 'scripts/common.css'), 'utf8');
+if (/\.progression-nav:focus-within\s+\.guide-range-nav/.test(trophyStyles)) {
+  failures.push('Sidebar focus globally expands every nested navigation branch');
+}
 if (!trophyStyles.includes('font-family: "Realm Grinder Liony", Georgia, serif') || !trophyStyles.includes('font-size: 32px') || !trophyStyles.includes('row-gap: 2px') || !trophyStyles.includes('var(--trophy-header-skin)') || !trophyStyles.includes('var(--trophy-collapse-up)') || !trophyStyles.includes('var(--trophy-collapse-down)')) {
   failures.push('Trophy section controls no longer use the game\'s font and collapse-arrow textures');
 }

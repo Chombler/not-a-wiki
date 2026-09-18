@@ -1818,8 +1818,7 @@ table {
     display: none;
 }
 
-.progression-nav .is-current-branch > .guide-range-nav,
-.progression-nav:focus-within .guide-range-nav {
+.progression-nav .is-current-branch > .guide-range-nav {
     display: block;
 }
 
