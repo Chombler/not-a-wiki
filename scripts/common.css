@@ -269,20 +269,8 @@ a.tooltips {
     transform: rotate(90deg);
 }
 
-.progression-nav .child-mode-current .guide-range-nav li:not(.is-current-item) {
-    display: none;
-}
-
-.progression-nav .child-mode-current.is-current-root .guide-range-nav li {
-    display: list-item;
-}
-
 .progression-nav.is-filtering .guide-range-nav {
     display: block;
-}
-
-.progression-nav.is-filtering .child-mode-current .guide-range-nav li {
-    display: list-item;
 }
 
 .progression-nav .guide-range-nav a[aria-current="page"] {
@@ -3784,10 +3772,6 @@ html[data-theme="ledger"] .progression-nav li.guide-nav-era > a {
 .progression-nav li.is-current-branch > a {
     background: var(--panel-raised);
     color: var(--gold);
-}
-
-.progression-nav.is-filtering .child-mode-current .guide-range-nav li[hidden] {
-    display: none;
 }
 
 /* Tables keep native table layout; this container owns responsive overflow. */

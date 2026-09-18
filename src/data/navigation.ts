@@ -2,7 +2,6 @@ export interface NavigationItem {
   label: string;
   href: string;
   children?: NavigationItem[];
-  childDisplay?: 'all' | 'current';
 }
 
 export interface NavigationGroup {
@@ -38,7 +37,7 @@ export const navigation: NavigationGroup[] = [
         { label: 'Unique buildings', href: 'UniqueBuilding' },
       ] },
       { label: 'Spells', href: 'Spells', children: [{ label: 'Spell tiers', href: 'SpellTiers' }] },
-      { label: 'Factions', href: 'Factions', children: factionPages, childDisplay: 'current' },
+      { label: 'Factions', href: 'Factions', children: factionPages },
       { label: 'Upgrades', href: 'Upgrades', children: [
         { label: 'Faction upgrades', href: 'FactionUpgrades' },
         { label: 'Premium upgrades', href: 'PremiumUpgrades' },
@@ -59,7 +58,7 @@ export const navigation: NavigationGroup[] = [
         { label: 'Ascension 3', href: 'Ascension3' },
         { label: 'Ascension 4', href: 'Ascension4' },
       ] },
-      { label: 'Challenges', href: 'Challenges', children: challengePages, childDisplay: 'current' },
+      { label: 'Challenges', href: 'Challenges', children: challengePages },
       { label: 'Mercenaries', href: 'MercenaryFaction' },
       { label: 'Excavation and artifacts', href: 'Artifacts', children: [
         { label: 'Lore artifacts', href: 'LoreArtifacts' },
@@ -91,7 +90,7 @@ export const navigation: NavigationGroup[] = [
     label: 'History',
     className: 'progression-group-secondary',
     items: [
-      { label: 'Changelog', href: 'Changelog', childDisplay: 'current', children: [
+      { label: 'Changelog', href: 'Changelog', children: [
         { label: 'Version 4.3 major update', href: 'Changes' },
         { label: 'Version 4.2', href: '4.2Patch' }, { label: 'Version 4.1', href: '4.1Patch' },
         { label: 'Version 4.0', href: '4.0Patch' }, { label: 'Version 3.8', href: '3.8Patch' },
