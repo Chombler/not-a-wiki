@@ -273,6 +273,10 @@ a.tooltips {
     display: none;
 }
 
+.progression-nav .child-mode-current.is-current-root .guide-range-nav li {
+    display: list-item;
+}
+
 .progression-nav.is-filtering .guide-range-nav {
     display: block;
 }

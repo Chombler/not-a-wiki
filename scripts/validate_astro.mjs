@@ -155,6 +155,9 @@ const trophyStyles = fs.readFileSync(path.join(root, 'scripts/common.css'), 'utf
 if (/\.progression-nav:focus-within\s+\.guide-range-nav/.test(trophyStyles)) {
   failures.push('Sidebar focus globally expands every nested navigation branch');
 }
+if (!trophyStyles.includes('.child-mode-current.is-current-root .guide-range-nav li')) {
+  failures.push('Large sidebar collections no longer expand their children on the collection root page');
+}
 if (!trophyStyles.includes('font-family: "Realm Grinder Liony", Georgia, serif') || !trophyStyles.includes('font-size: 32px') || !trophyStyles.includes('row-gap: 2px') || !trophyStyles.includes('var(--trophy-header-skin)') || !trophyStyles.includes('var(--trophy-collapse-up)') || !trophyStyles.includes('var(--trophy-collapse-down)')) {
   failures.push('Trophy section controls no longer use the game\'s font and collapse-arrow textures');
 }

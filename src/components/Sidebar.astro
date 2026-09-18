@@ -20,6 +20,7 @@ const containsCurrent = (item: { href: string; children?: { href: string }[] }) 
             <li class:list={{
               'guide-nav-era': Boolean(item.children),
               'is-current-branch': containsCurrent(item),
+              'is-current-root': item.href === currentRoute,
               'child-mode-current': item.childDisplay === 'current',
             }}>
               <a href={url(item.href)} aria-current={item.href === currentRoute ? 'page' : undefined}>{item.label}</a>
