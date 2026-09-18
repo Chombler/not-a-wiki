@@ -3,6 +3,9 @@ import { navigation } from '../data/navigation';
 
 const base = `${import.meta.env.BASE_URL.replace(/\/+$/, '')}/`;
 const url = (path: string) => `${base}${path}`;
+const currentRoute = Astro.url.pathname.replace(base, '').replace(/^\/+|\/+$/g, '');
+const containsCurrent = (item: { href: string; children?: { href: string }[] }) =>
+  item.href === currentRoute || Boolean(item.children?.some((child) => child.href === currentRoute));
 ---
 
 <aside class="site-sidebar" id="site-sidebar">
@@ -14,11 +17,11 @@ const url = (path: string) => `${base}${path}`;
         <h2>{group.label}</h2>
         <ul>
           {group.items.map((item) => (
-            <li class:list={{ 'guide-nav-era': Boolean(item.children) }}>
-              <a href={url(item.href)}>{item.label}</a>
+            <li class:list={{ 'guide-nav-era': Boolean(item.children), 'is-current-branch': containsCurrent(item) }}>
+              <a href={url(item.href)} aria-current={item.href === currentRoute ? 'page' : undefined}>{item.label}</a>
               {item.children && (
                 <ul class="guide-range-nav">
-                  {item.children.map((child) => <li><a href={url(child.href)}>{child.label}</a></li>)}
+                  {item.children.map((child) => <li><a href={url(child.href)} aria-current={child.href === currentRoute ? 'page' : undefined}>{child.label}</a></li>)}
                 </ul>
               )}
             </li>

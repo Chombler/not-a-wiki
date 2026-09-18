@@ -58,8 +58,25 @@ const content = frameGameIcons(baseContent
     return tierTableHtml(kind, heading);
   },
 ));
+const ascensionOrder = ['Ascension', 'Ascension1', 'Ascension2', 'Ascension3', 'Ascension4'];
+const ascensionIndex = ascensionOrder.indexOf(route);
+const ascensionLabels: Record<string, string> = {
+  Ascension: 'Overview', Ascension1: 'Ascension 1', Ascension2: 'Ascension 2', Ascension3: 'Ascension 3', Ascension4: 'Ascension 4',
+};
+const previousAscension = ascensionIndex > 0 ? ascensionOrder[ascensionIndex - 1] : undefined;
+const nextAscension = ascensionIndex >= 0 && ascensionIndex < ascensionOrder.length - 1 ? ascensionOrder[ascensionIndex + 1] : undefined;
 ---
 
 <SiteLayout title={getPageTitle(route)} sourcePath={['TrophyPage', 'AllTrophies'].includes(route) ? 'src/content/trophies/README.md' : `src/page-content/reference/${route}.html`}>
+  {ascensionIndex >= 0 && <nav class="reference-sibling-nav" aria-label="Ascension pages">
+    {previousAscension ? <a href={`${base}${previousAscension}`}>&larr; {ascensionLabels[previousAscension]}</a> : <span></span>}
+    <a href={`${base}Ascension`}>Ascensions overview</a>
+    {nextAscension ? <a href={`${base}${nextAscension}`}>{ascensionLabels[nextAscension]} &rarr;</a> : <span></span>}
+  </nav>}
   <Fragment set:html={content} />
+  {ascensionIndex >= 0 && <nav class="reference-sibling-nav reference-sibling-nav-bottom" aria-label="Ascension pages">
+    {previousAscension ? <a href={`${base}${previousAscension}`}>&larr; {ascensionLabels[previousAscension]}</a> : <span></span>}
+    <a href={`${base}Ascension`}>Ascensions overview</a>
+    {nextAscension ? <a href={`${base}${nextAscension}`}>{ascensionLabels[nextAscension]} &rarr;</a> : <span></span>}
+  </nav>}
 </SiteLayout>

@@ -44,6 +44,12 @@ for (const route of withheldGuidanceRoutes) {
 const missingAssets = new Set();
 for (const file of builtFiles) {
   const html = fs.readFileSync(file, 'utf8').replace(/<!--[\s\S]*?-->/g, '');
+  const route = publicRoute(file, output, 'index.html');
+  if (route) {
+    const breadcrumb = html.match(/<nav class="breadcrumbs"[\s\S]*?<\/nav>/i)?.[0];
+    if (!breadcrumb) failures.push(`${path.relative(output, file)} has no navigation breadcrumb`);
+    else if ([...breadcrumb.matchAll(/<li>/g)].length < 2) failures.push(`${path.relative(output, file)} has no classified parent in its breadcrumb`);
+  }
   for (const route of withheldGuidanceRoutes) {
     if (new RegExp(`href=["'][^"']*/${route}/?(?:[#?][^"']*)?["']`, 'i').test(html)) {
       failures.push(`${path.relative(output, file)} links to withheld community guidance: ${route}`);
