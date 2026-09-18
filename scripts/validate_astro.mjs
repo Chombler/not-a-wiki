@@ -6,6 +6,8 @@ const output = path.join(root, 'dist');
 const base = process.env.BASE_PATH || '/not-a-wiki';
 const normalizedBase = `/${base.replace(/^\/+|\/+$/g, '')}/`;
 const baselinePath = path.join(root, 'scripts', 'known-missing-assets.json');
+const siteScope = JSON.parse(fs.readFileSync(path.join(root, 'src', 'data', 'site-scope.json'), 'utf8'));
+const withheldGuidanceRoutes = new Set(siteScope.withheldGuidanceRoutes);
 const writeBaseline = process.argv.includes('--write-baseline');
 const failures = [];
 
@@ -28,14 +30,25 @@ function targetExists(relative) {
 
 const legacyRoutes = new Set(walk(root, (file) => file.endsWith('/index.php') || file.endsWith(`${path.sep}index.php`))
   .filter((file) => !file.includes(`${path.sep}node_modules${path.sep}`))
+  .filter((file) => !file.includes(`${path.sep}local-support${path.sep}`))
   .map((file) => publicRoute(file, root, 'index.php')));
 const builtFiles = walk(output, (file) => file.endsWith('.html'));
 const builtRoutes = new Set(builtFiles.map((file) => publicRoute(file, output, 'index.html')));
-for (const route of legacyRoutes) if (!builtRoutes.has(route)) failures.push(`Missing legacy route: /${route}`);
+for (const route of legacyRoutes) {
+  if (!builtRoutes.has(route) && !withheldGuidanceRoutes.has(route)) failures.push(`Missing legacy route: /${route}`);
+}
+for (const route of withheldGuidanceRoutes) {
+  if (builtRoutes.has(route)) failures.push(`Withheld community-guidance route was published: /${route}`);
+}
 
 const missingAssets = new Set();
 for (const file of builtFiles) {
   const html = fs.readFileSync(file, 'utf8').replace(/<!--[\s\S]*?-->/g, '');
+  for (const route of withheldGuidanceRoutes) {
+    if (new RegExp(`href=["'][^"']*/${route}/?(?:[#?][^"']*)?["']`, 'i').test(html)) {
+      failures.push(`${path.relative(output, file)} links to withheld community guidance: ${route}`);
+    }
+  }
   for (const icon of html.matchAll(/<img\b[^>]*\/assets\/game\/sprites\/(?!black-gold-trim\.png)[^>]*>/gi)) {
     const prefix = html.slice(Math.max(0, icon.index - 80), icon.index);
     if (!/<span class=(?:"game-icon-frame"|'game-icon-frame')>\s*$/.test(prefix)) {
@@ -74,9 +87,6 @@ const contracts = {
   'Spells/index.html': ['(11 - T) ^ 5', 'Hall of Legends</td><td>0 × ln(1 + x)^6%', 'class="numtable primal-balance-table"', '<td>11 (all)</td>'],
   'Factions/index.html': ['usemap="#FactionGrid-map"', 'Click a faction icon to open its complete reference page', 'href="/not-a-wiki/FairyFaction/"'],
   'TrophyPage/index.html': ['id="mathematician-building-bonuses"', 'Mathematician bonus by building', 'Hall of Legends</td><td>10%'],
-  'A0Guide/index.html': ['class="progression-plot"', 'class="guide-stage-grid"', 'class="guide-pager"'],
-  'A4Guide/index.html': ['class="a4-budget-table"', 'class="guide-stage-grid"'],
-  'A4PostA4/index.html': ['data-guide-filter', 'class="guide-build-entry"', 'class="build-credit"'],
 };
 for (const [relative, markers] of Object.entries(contracts)) {
   const file = path.join(output, relative);
@@ -135,7 +145,6 @@ requireIncreasingOrder(trophyPageHtml, ['aria-label="Reality Crater"', 'aria-lab
 requireIncreasingOrder(allTrophiesHtml, ['id="reality-crater-trophy"', 'id="holy-frenzy-trophy"'], 'AllTrophies Magic trophies');
 requireIncreasingOrder(trophyPageHtml, ['aria-label="Spell Cataclysm"', 'aria-label="Double Bottom"', 'aria-label="Advisor Insight"'], 'TrophyPage Secret trophies');
 requireIncreasingOrder(allTrophiesHtml, ['id="spell-cataclysm-trophy"', 'id="double-bottom-trophy"', 'id="ui-tip-trophy"'], 'AllTrophies Secret trophies');
-if (!trophyPageHtml.includes('If a trophy has a guide, click its icon to open it.')) failures.push('TrophyPage lost its clickable-guide instruction');
 const trophyStyles = fs.readFileSync(path.join(root, 'scripts/common.css'), 'utf8');
 if (!trophyStyles.includes('font-family: "Realm Grinder Liony", Georgia, serif') || !trophyStyles.includes('font-size: 32px') || !trophyStyles.includes('row-gap: 2px') || !trophyStyles.includes('var(--trophy-header-skin)') || !trophyStyles.includes('var(--trophy-collapse-up)') || !trophyStyles.includes('var(--trophy-collapse-down)')) {
   failures.push('Trophy section controls no longer use the game\'s font and collapse-arrow textures');
@@ -149,10 +158,9 @@ if (!trophyPageHtml.includes('@font-face{font-family:"Realm Grinder Liony"') || 
 const trophyButtons = [...trophyPageHtml.matchAll(/class="trophy-grid-button"/g)].length;
 if (trophyButtons !== 903) failures.push(`TrophyPage has ${trophyButtons}/903 interactive records`);
 const linkedTrophyIcons = [...trophyPageHtml.matchAll(/<a class="trophy-grid-button"/g)].length;
-if (linkedTrophyIcons !== 4) failures.push(`TrophyPage has ${linkedTrophyIcons}/4 guide-linked icons`);
-if (!trophyPageHtml.includes('href="/not-a-wiki/MercBuilds/#TrophyBuilds"') || !trophyPageHtml.includes('href="/not-a-wiki/TrophyPage/#mathematician-building-bonuses"') || !trophyPageHtml.includes('href="/not-a-wiki/SpeedRun/"')) {
-  failures.push('TrophyPage lost guide links or their section anchors');
-}
+if (linkedTrophyIcons !== 1) failures.push(`TrophyPage has ${linkedTrophyIcons}/1 published reference-linked icons`);
+if (!trophyPageHtml.includes('href="/not-a-wiki/TrophyPage/#mathematician-building-bonuses"')) failures.push('TrophyPage lost the Mathematician reference link');
+if (/href="\/not-a-wiki\/(?:MercBuilds|SpeedRun)\//.test(trophyPageHtml)) failures.push('TrophyPage publishes a withheld community-guidance link');
 for (const source of walk(path.join(root, 'src/content/trophies'), (file) => file.endsWith('.yaml'))) {
   if (/<a\b/i.test(fs.readFileSync(source, 'utf8'))) {
     failures.push(`${path.relative(root, source)} contains a description-only link; use the structured guide field`);

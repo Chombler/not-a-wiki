@@ -1,8 +1,7 @@
 ---
 import SiteLayout from '../../layouts/SiteLayout.astro';
-import GuidePage from '../../components/GuidePage.astro';
 import { getPageTitle } from '../../data/pageTitles';
-import { guideSequence } from '../../data/guides';
+import siteScope from '../../data/site-scope.json';
 import { isTierTableKind, tierTableHtml } from '../../lib/tierTables';
 import { primalBalanceTableHtml } from '../../lib/primalBalance';
 import { frameGameIcons } from '../../lib/gameIcons';
@@ -22,19 +21,16 @@ export function getStaticPaths() {
     import: 'default',
     query: '?raw',
   });
-  const referencePaths = Object.keys(modules).map((source) => {
+  const withheld = new Set(siteScope.withheldGuidanceRoutes);
+  const referencePaths = Object.keys(modules).flatMap((source) => {
     const route = source.split('/').pop()!.replace(/\.html$/, '');
-    return { params: { route }, props: { source, kind: 'reference' } };
+    return withheld.has(route) ? [] : [{ params: { route }, props: { source } }];
   });
-  const guidePaths = Object.keys(guideSequence).map((route) => ({
-    params: { route }, props: { source: '', kind: 'guide' },
-  }));
-  return [...referencePaths, ...guidePaths];
+  return referencePaths;
 }
 
-interface Props { source: string; kind: 'reference' | 'guide'; }
 const { route } = Astro.params;
-const { source, kind } = Astro.props;
+const { source } = Astro.props;
 if (!route) throw new Error('Static reference route is missing');
 const base = `${import.meta.env.BASE_URL.replace(/\/+$/, '')}/`;
 const trophyCategories = (await getCollection('trophies'))
@@ -45,9 +41,9 @@ const spellMenuEntries = await getCollection('spellMenu');
 if (spellMenuEntries.length !== 1) throw new Error(`Expected one spell menu file; found ${spellMenuEntries.length}`);
 const spellMenu = spellMenuEntries[0].data as SpellMenu;
 validateSpellMenu(spellMenu);
-const baseContent = kind === 'reference' ? pageModules[source]
+const baseContent = pageModules[source]
   .replaceAll('/realm/', base)
-  .replaceAll('/realm"', `${base}"`) : '';
+  .replaceAll('/realm"', `${base}"`);
 const content = frameGameIcons(baseContent
   .replace('<realm-trophy-drawer></realm-trophy-drawer>', trophyDrawerHtml(trophyCategories, base))
   .replace('<realm-trophy-list></realm-trophy-list>', trophyListHtml(trophyCategories, base))
@@ -64,6 +60,6 @@ const content = frameGameIcons(baseContent
 ));
 ---
 
-<SiteLayout title={getPageTitle(route)} sourcePath={kind === 'guide' ? `src/data/guides/${route.slice(0, 2)}.json` : ['TrophyPage', 'AllTrophies'].includes(route) ? 'src/content/trophies/README.md' : `src/page-content/reference/${route}.html`}>
-  {kind === 'guide' ? <GuidePage route={route} /> : <Fragment set:html={content} />}
+<SiteLayout title={getPageTitle(route)} sourcePath={['TrophyPage', 'AllTrophies'].includes(route) ? 'src/content/trophies/README.md' : `src/page-content/reference/${route}.html`}>
+  <Fragment set:html={content} />
 </SiteLayout>

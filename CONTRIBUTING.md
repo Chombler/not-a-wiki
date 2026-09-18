@@ -17,7 +17,6 @@ Astro pages follow this structure:
 ```text
 src/pages/                 Public routes and page composition
 src/page-content/          Human-authored page bodies
-src/data/guides/           Human-editable A0–A4 build records and range data
 src/data/                  Navigation and other shared site data
 src/components/            Reusable presentation components
 src/layouts/               Shared page shells
@@ -33,11 +32,14 @@ ResearchList/index.php
 ```
 
 The homepage content is `src/page-content/home.html`. Ordinary reference-page
-bodies are in `src/page-content/reference/`. Guide builds are split into one
-JSON file per Ascension under `src/data/guides/`, so a contributor does not
-need to work through a generated template or a single monolithic database.
-Shared Astro navigation lives in `src/data/navigation.ts`; shared presentation
-remains in `scripts/common.css` while the migration is in progress.
+bodies are in `src/page-content/reference/`. Shared Astro navigation lives in
+`src/data/navigation.ts`; shared presentation remains in `scripts/common.css`
+while the migration is in progress.
+
+The first public version is deliberately limited to current game reference
+facts. Community builds, walkthroughs, progression advice, and other guidance
+are not published. Previously collected guide source remains in the repository
+for a later, separately designed community-guidance section.
 
 ### Edit trophy information
 
@@ -52,20 +54,15 @@ Each trophy has four straightforward fields:
 - id: "harlequin-trophy"
   name: "Harlequin"
   icon: "harlequin-trophy.png"
-  guide:
-    href: "/realm/MercBuilds/#TrophyBuilds"
-    label: "Mercenary trophy builds"
   body: |-
     <p><b>Requirement</b>: As a Mercenary, purchase one upgrade from 11 different factions.</p>
 ```
 
 `id` is the text-page anchor, `icon` is the filename in
-`public/assets/game/sprites/`, and `body` is ordinary editable HTML. To link a
-trophy icon to a guide or a specific section, add the optional `guide` block.
-Use a site path plus `#section-id` for a particular heading. The linked icon is
-clickable on the desktop trophy page, and the guide also appears in its tooltip
-and text entry. Do not put guide links directly in `body`; validation requires
-them to use the structured `guide` field so the icon is always clickable.
+`public/assets/game/sprites/`, and `body` is ordinary editable HTML. Reference
+links that must appear identically in the icon drawer and full text entry may
+use the optional `guide` field retained by the existing schema. Links to routes
+withheld in `src/data/site-scope.json` are intentionally not rendered in v1.
 Keep IDs unique and do not manually edit
 the category totals—the build verifies all 903 records and derives totals from
 the files. See `src/content/trophies/README.md` for the complete maintenance

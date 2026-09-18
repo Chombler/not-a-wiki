@@ -1,3 +1,5 @@
+import siteScope from '../data/site-scope.json';
+
 export interface Trophy {
   id: string;
   name: string;
@@ -19,6 +21,17 @@ const escapeAttribute = (value: string) => value
   .replaceAll('<', '&lt;')
   .replaceAll('>', '&gt;');
 
+const withheldGuidanceRoutes = new Set(siteScope.withheldGuidanceRoutes);
+
+function publishedGuide(trophy: Trophy) {
+  if (!trophy.guide) return undefined;
+  const route = trophy.guide.href
+    .replace(/^https?:\/\/[^/]+/i, '')
+    .replace(/^\/realm\//, '')
+    .split(/[\/#?]/)[0];
+  return withheldGuidanceRoutes.has(route) ? undefined : trophy.guide;
+}
+
 function icon(base: string, trophy: Trophy, alt = '') {
   return `<img src="${base}assets/game/sprites/${trophy.icon}" alt="${escapeAttribute(alt)}">`;
 }
@@ -32,9 +45,10 @@ function frameBodyIcons(body: string) {
 }
 
 function guideHtml(trophy: Trophy, base: string) {
-  if (!trophy.guide) return '';
-  const href = bodyForBase(trophy.guide.href, base);
-  return `<p class="trophy-guide-link"><b>Guide</b>: <a href="${escapeAttribute(href)}">${trophy.guide.label}</a></p>`;
+  const guide = publishedGuide(trophy);
+  if (!guide) return '';
+  const href = bodyForBase(guide.href, base);
+  return `<p class="trophy-guide-link"><b>Related reference</b>: <a href="${escapeAttribute(href)}">${guide.label}</a></p>`;
 }
 
 export function trophyDrawerHtml(categories: TrophyCategory[], base: string) {
@@ -43,8 +57,9 @@ export function trophyDrawerHtml(categories: TrophyCategory[], base: string) {
       const heading = `<p><span class="game-icon-frame">${icon(base, trophy)}</span><b> ${trophy.name}</b></p>`;
       const tooltip = escapeAttribute(`${heading}${frameBodyIcons(bodyForBase(trophy.body, base))}${guideHtml(trophy, base)}`);
       const common = `class="trophy-grid-button" research="${tooltip}" aria-label="${escapeAttribute(trophy.name)}"`;
-      return trophy.guide
-        ? `<a ${common} href="${escapeAttribute(bodyForBase(trophy.guide.href, base))}" title="Open ${escapeAttribute(trophy.guide.label)}">${icon(base, trophy)}</a>`
+      const guide = publishedGuide(trophy);
+      return guide
+        ? `<a ${common} href="${escapeAttribute(bodyForBase(guide.href, base))}" title="Open ${escapeAttribute(guide.label)}">${icon(base, trophy)}</a>`
         : `<button type="button" ${common}>${icon(base, trophy)}</button>`;
     }).join('');
     return `<details class="trophy-grid-section"${index === 0 ? ' open' : ''}><summary><span>${category.label} (${category.trophies.length}/${category.trophies.length})</span></summary><div class="trophy-icon-grid">${buttons}</div></details>`;
