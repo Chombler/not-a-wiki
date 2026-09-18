@@ -17,11 +17,15 @@ const containsCurrent = (item: { href: string; children?: { href: string }[] }) 
         <h2>{group.label}</h2>
         <ul>
           {group.items.map((item) => (
-            <li class:list={{ 'guide-nav-era': Boolean(item.children), 'is-current-branch': containsCurrent(item) }}>
+            <li class:list={{
+              'guide-nav-era': Boolean(item.children),
+              'is-current-branch': containsCurrent(item),
+              'child-mode-current': item.childDisplay === 'current',
+            }}>
               <a href={url(item.href)} aria-current={item.href === currentRoute ? 'page' : undefined}>{item.label}</a>
               {item.children && (
                 <ul class="guide-range-nav">
-                  {item.children.map((child) => <li><a href={url(child.href)} aria-current={child.href === currentRoute ? 'page' : undefined}>{child.label}</a></li>)}
+                  {item.children.map((child) => <li class:list={{ 'is-current-item': child.href === currentRoute }}><a href={url(child.href)} aria-current={child.href === currentRoute ? 'page' : undefined}>{child.label}</a></li>)}
                 </ul>
               )}
             </li>

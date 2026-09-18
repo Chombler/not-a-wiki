@@ -157,6 +157,8 @@
     if (filter) {
       filter.addEventListener('input', function () {
         var query = filter.value.toLowerCase().trim();
+        var navigation = document.querySelector('.progression-nav');
+        if (navigation) navigation.classList.toggle('is-filtering', Boolean(query));
         document.querySelectorAll('.progression-nav li').forEach(function (item) {
           item.hidden = Boolean(query && item.textContent.toLowerCase().indexOf(query) === -1);
         });

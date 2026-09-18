@@ -243,6 +243,49 @@ a.tooltips {
     }
 }
 
+/* Compact reference navigation ------------------------------------------ */
+.progression-nav .guide-nav-era > a {
+    position: relative;
+    padding-right: 24px;
+    color: inherit;
+    font-family: inherit;
+    font-weight: 600;
+}
+
+.progression-nav .guide-nav-era > a::after {
+    content: "›";
+    position: absolute;
+    right: 8px;
+    color: var(--text-muted);
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.progression-nav .is-current-branch > a {
+    background: color-mix(in srgb, var(--panel-raised) 70%, transparent);
+}
+
+.progression-nav .is-current-branch > a::after {
+    transform: rotate(90deg);
+}
+
+.progression-nav .child-mode-current .guide-range-nav li:not(.is-current-item) {
+    display: none;
+}
+
+.progression-nav.is-filtering .guide-range-nav {
+    display: block;
+}
+
+.progression-nav.is-filtering .child-mode-current .guide-range-nav li {
+    display: list-item;
+}
+
+.progression-nav .guide-range-nav a[aria-current="page"] {
+    border-left: 3px solid var(--gold);
+    background: var(--panel-raised);
+}
+
 /* Arcane Ledger ---------------------------------------------------------- */
 .theme-toggle {
     padding: 3px 7px;
@@ -3720,6 +3763,28 @@ hr {
         font: 12px Arial, sans-serif;
         text-transform: none;
     }
+}
+
+/* Final sidebar overrides intentionally follow the legacy skin rules. */
+.progression-nav li.guide-nav-era > a {
+    position: relative;
+    padding-right: 24px;
+    color: inherit;
+    font-family: inherit;
+    font-weight: 600;
+}
+
+html[data-theme="ledger"] .progression-nav li.guide-nav-era > a {
+    color: #433a30;
+}
+
+.progression-nav li.is-current-branch > a {
+    background: var(--panel-raised);
+    color: var(--gold);
+}
+
+.progression-nav.is-filtering .child-mode-current .guide-range-nav li[hidden] {
+    display: none;
 }
 
 /* Tables keep native table layout; this container owns responsive overflow. */
