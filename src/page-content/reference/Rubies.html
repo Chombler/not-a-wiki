@@ -1,35 +1,43 @@
 <div class="resource-intro">
     <img class="resource-display" src="/realm/assets/game/sprites/ruby.png" alt="Ruby">
-    <p><b>In game description:</b></p>
+    <div>
+        <p><b>In-game description</b></p>
+        <p>Rubies are a rare resource that increase multiple parts of production. Collecting them unlocks permanent bonuses, upgrades and trophies, while owned Rubies can be spent on additional perks.</p>
+    </div>
 </div>
-    <p>Rubies are a rare resource which allows you to increase all aspects of your production. Accumulating them will unlock new upgrades and trophies, providing both a permanent passive bonus and the ability to spend them to purchase new perks.
-    <p>Rubies persist through Abdications and Reincarnations.</p>
-    <p>Prior to "The Secrets of the Ancients" expansion, Rubies were only available in the shop. Since then, Rubies can also be found for free by excavating.
-    <p>Along with coins, Faction coins and gems, Rubies are another kind of currency. They enable you to buy special items that cannot be bought otherwise.
-    <h2 id="getting-rubies">Getting rubies</h2>
-    <p>You can either buy Rubies in the shop, find free Rubies at Events, or by excavating.
-    <p>You can buy an unlimited number of Rubies, or you can excavate for them but they get progressively harder to find.
-   <div id="rubcalc" class="calc">
-        <table>
-            <tbody><tr><th colspan="9">Ruby Excavation Count and Cost</th></tr>
+<p>The game tracks <b>currently owned Rubies</b> separately from <b>all-time collected Rubies</b>. Spending Rubies reduces the owned balance, but it does not reduce the all-time total used by Ruby Power tiers. Rubies and purchased Ruby bonuses persist through Abdications and Reincarnations.</p>
+
+<h2 id="getting-rubies">Getting Rubies</h2>
+<ul>
+    <li><b>Excavation</b>: free Rubies are awarded the first time specific excavation thresholds are reached. Each successive Ruby requires more excavations.</li>
+    <li><a href="/realm/Events/"><b>Seasonal events</b></a>: event rewards and daily presents may award Rubies.</li>
+    <li><b>Royal Shop</b>: Rubies may be purchased without a quantity limit.</li>
+</ul>
+<p>Finding the 1st, 10th, 25th and 50th excavation Ruby also awards a trophy.</p>
+
+<h3 id="ruby-excavation-calculator">Ruby excavation calculator</h3>
+<p>Enter the target excavation Ruby and the active cost modifiers. The calculator returns the required excavation count and the equivalent Coin and Gem requirements.</p>
+<div id="rubcalc" class="calc">
+        <table class="numtable">
+            <tbody><tr><th colspan="9">Ruby excavation count and cost</th></tr>
             <tr>
-		<th style="width: 10%">Ruby</th>
-		<th style="width: 7%" id="Ascension"></th>
+		<th style="width: 10%">Target Ruby</th>
+		<th style="width: 7%" id="Ascension">E290</th>
 		<th style="width: 7%">DN8</th>
 		<th style="width: 7%">Easter</th>
-		<th style="width: 13%">Maker</th>
+		<th style="width: 13%">Maker reduction</th>
 		<th style="width: 14%">Ascension</th>
-		<th style="width: 14%">Excavation</th>
+		<th style="width: 14%">Excavations</th>
 		<th style="width: 14%">Coins</th>
 		<th style="width: 14%">Gems</th>
             </tr>
             <tr>
-		<td><input id="rub" type="number" min="1" max="99" value="1"></td>
-		<td><label><input id="Research" type="checkbox"></label></td>
-		<td><label><input id="DN8" type="checkbox"></label></td>
-                <td><label><input id="eas" type="checkbox"></label></td>
-                <td><input id="maker" type="number" step="0.001" min="0.000" max="0.100" value="0.000"></td>
-                <td><input id="asc" type="number" min="0" max="4" value="0"></td>
+		<td><input id="rub" aria-label="Target excavation Ruby" type="number" min="1" max="99" value="1"></td>
+		<td><input id="Research" aria-label="Apply E290 or E13125" type="checkbox"></td>
+		<td><input id="DN8" aria-label="Apply DN8" type="checkbox"></td>
+                <td><input id="eas" aria-label="Apply Easter modifier" type="checkbox"></td>
+                <td><input id="maker" aria-label="Maker cost multiplier reduction" type="number" step="0.001" min="0.000" max="0.100" value="0.000"></td>
+                <td><input id="asc" aria-label="Ascension number" type="number" min="0" max="4" value="0"></td>
                 <td id="exc"></td>
                 <td id="coi"></td>
                 <td id="gem"></td>
@@ -73,320 +81,341 @@
             $('#rubcalc').on('input', rubcalc);
             $('#rubcalc :checkbox').on('change', rubcalc);
         </script>
-    </div>
-    <p>The formula for the number of excavations required for each ruby is (25 * n * (n + 1)), where n is the number of rubies found from excavations.</p>
-    <p>Finding the 1st, 10th, 25th and 50th ruby rewards a trophy.</p>
-    <h2 id="spending-rubies">Spending rubies</h2>
-    <p>Rubies enable you to buy: Excavation Resets (see <b><a target="_blank" href="/realm/Artifacts/">Artifacts</a></b> page)), Event items (such as snowballs during the Christmas event) or mainly <b>Ruby Upgrades</b>.</p>
-	<p><img src="/realm/Factions/picks/RubyPower.png" align="middle"><b> Ruby Power Upgrade</b></p>
-    <p>Finding 1 Ruby will unlock the Ruby power upgrade which unlocks The Power of Rubies.</p>
-    <p>Each Ruby enables you to purchase one of the Ruby powers listed below:</p>
-    <p>Ruby power bonus will also increase by Tier based on all-time amounts of Rubies collected. See Ruby Upgrades for more details.</p>
-    <hr>
-    <h2 id="ruby-upgrade-panel">Ruby upgrade panel</h2>
-    <p><img src="/realm/Factions/picks/RubyUpgradePanel.png" alt=""></p>
-       <a id="Upgrades"></a>
+ </div>
+<p>The excavation threshold for Ruby <i>n</i> is <code>25 × n × (n + 1)</code>, where <i>n</i> is the number of Rubies found through excavation.</p>
+
+<h2 id="spending-rubies">Spending Rubies</h2>
+<p>After the first Ruby unlocks Ruby Power, owned Rubies can be allocated among five permanent upgrades. If an upgrade has been purchased <i>x</i> times, its next purchase costs <code>x + 1</code> Rubies.</p>
+<table class="numtable">
+    <tr><th>Ruby upgrade</th><th>Effect per purchase</th></tr>
+    <tr><td>Ruby Assistant</td><td>+1 assistant</td></tr>
+    <tr><td>Ruby Mana Regeneration</td><td>+1 Mana per second</td></tr>
+    <tr><td>Ruby Max Mana</td><td>+100 Maximum Mana</td></tr>
+    <tr><td>Ruby Gem Bonus</td><td>+1% Gem production bonus</td></tr>
+    <tr><td>Ruby Royal Trading</td><td>+2% Royal Exchange production bonus</td></tr>
+</table>
+<p>Rubies can also pay for <a href="/realm/Artifacts/"><b>Excavation Resets</b></a>, Gem conversion without Abdicating, and resource offers during seasonal events.</p>
+
+<h2 id="ruby-reset-behavior">Ruby reset behavior</h2>
+<table class="numtable">
+    <tr><th>Reset</th><th>Owned Rubies</th><th>All-time collected</th><th>Allocated Ruby upgrades</th></tr>
+    <tr><td><a href="/realm/Abdication/">Abdication</a></td><td>Kept</td><td>Kept</td><td>Kept</td></tr>
+    <tr><td><a href="/realm/Reincarnation/">Reincarnation</a></td><td>Kept</td><td>Kept</td><td>Kept</td></tr>
+    <tr><td>Ruby Bonus Reset</td><td>Spent Rubies are refunded</td><td>Kept</td><td>Reset; forces an Abdication</td></tr>
+</table>
+<p>Ruby Bonus Reset itself does not cost Rubies.</p>
+
+<h2 id="ruby-upgrade-panel">Ruby Power tiers</h2>
+<div class="resource-intro">
+    <img class="resource-display" src="/realm/Factions/picks/RubyPower.png" alt="Ruby Power">
+    <p>Ruby Power unlocks after collecting the first Ruby and begins with +100% production to all buildings. Its tier is based on all-time collected Rubies, so spending Rubies does not reduce this production bonus.</p>
+</div>
+<p><img src="/realm/Factions/picks/RubyUpgradePanel.png" alt="Ruby upgrade panel"></p>
+<a id="Upgrades"></a>
     <table class="numtable">
         <tr>
-            <th colspan="4">Ruby Upgrades</th>
-       </tr>
-<tr>
-            <td><img src="/realm/Factions/picks/RubyTier2.png" alt="" align="center"> <b>2</b></td>
+            <th colspan="4">Ruby Power tiers</th>
+        </tr>
+        <tr><th>Tier</th><th>Coin cost</th><th>All-time Rubies</th><th>Ruby Power</th></tr>
+        <tr>
+            <td><img src="/realm/Factions/picks/RubyTier1.png" alt="Ruby Tier 1"> <b>1</b></td>
+            <td>1 Coin</td>
+            <td>50 Rubies</td>
+            <td>Increases Ruby Power by 100% to 200%.</td>
+        </tr>
+        <tr>
+            <td><img src="/realm/Factions/picks/RubyTier2.png" alt=""> <b>2</b></td>
             <td>1 Coin</td>
             <td>100 Rubies</td>
-            <td>Increases ruby power 100% to 300%.</td>
+            <td>Increases Ruby Power 100% to 300%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier3.png" alt="" align="center"> <b>3</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier3.png" alt=""> <b>3</b></td>
             <td>1 Coin</td>
             <td>150 Rubies</td>
-            <td>Increases ruby power 100% to 400%.</td>
+            <td>Increases Ruby Power 100% to 400%.</td>
         </tr>
        <tr>
-            <td><img src="/realm/Factions/picks/RubyTier4.png" alt="" align="center"> <b>4</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier4.png" alt=""> <b>4</b></td>
             <td>1 Coin</td>
             <td>250 Rubies</td>
-            <td>Increases ruby power 200% to 600%.</td>
+            <td>Increases Ruby Power 200% to 600%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier5.png" alt="" align="center"> <b>5</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier5.png" alt=""> <b>5</b></td>
             <td>1 Coin</td>
             <td>350 Rubies</td>
-            <td>Increases ruby power 200% to 800%.</td>
+            <td>Increases Ruby Power 200% to 800%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier6.png" alt="" align="center"> <b>6</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier6.png" alt=""> <b>6</b></td>
             <td>1 Coin</td>
             <td>450 Rubies</td>
-            <td>Increases ruby power 200% to 1000%.</td>
+            <td>Increases Ruby Power 200% to 1000%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier7.png" alt="" align="center"> <b>7</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier7.png" alt=""> <b>7</b></td>
             <td>1 Coin</td>
             <td>550 Rubies</td>
-            <td>Increases ruby power 200% to 1200%.</td>
+            <td>Increases Ruby Power 200% to 1200%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier8.png" alt="" align="center"> <b>8</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier8.png" alt=""> <b>8</b></td>
             <td>1 Coin</td>
             <td>650 Rubies</td>
-            <td>Increases ruby power 200% to 1400%.</td>
+            <td>Increases Ruby Power 200% to 1400%.</td>
         </tr>
-        </tbody>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier9.png" alt="" align="center"> <b>9</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier9.png" alt=""> <b>9</b></td>
             <td>1 Coin</td>
             <td>800 Rubies</td>
-            <td>Increases ruby power 300% to 1700%.</td>
+            <td>Increases Ruby Power 300% to 1700%.</td>
         </tr>
-        </tbody>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier10.png" alt="" align="center"> <b>10</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier10.png" alt=""> <b>10</b></td>
             <td>1 Coin</td>
             <td>950 Rubies</td>
-            <td>Increases ruby power 300% to 2000%.</td>
+            <td>Increases Ruby Power 300% to 2000%.</td>
         </tr>
-        </tbody>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier11.png" align="center"> <b>11</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier11.png" alt=""> <b>11</b></td>
             <td>1 Coin</td>
             <td>1100 Rubies</td>
-            <td>Increases ruby power 300% to 2300%.</td>
+            <td>Increases Ruby Power 300% to 2300%.</td>
         </tr>
-        </tbody>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier12.png" alt="" align="center"> <b>12</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier12.png" alt=""> <b>12</b></td>
             <td>1 Coin</td>
             <td>1250 Rubies</td>
-            <td>Increases ruby power 300% to 2600%.</td>
+            <td>Increases Ruby Power 300% to 2600%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier13.png" alt="" align="center"> <b>13</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier13.png" alt=""> <b>13</b></td>
             <td>1 Coin</td>
             <td>1400 Rubies</td>
-            <td>Increases ruby power 300% to 2900%.</td>
+            <td>Increases Ruby Power 300% to 2900%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier14.png" alt="" align="center"> <b>14</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier14.png" alt=""> <b>14</b></td>
             <td>1 Coin</td>
             <td>1600 Rubies</td>
-            <td>Increases ruby power 400% to 3300%.</td>
+            <td>Increases Ruby Power 400% to 3300%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier15.png" alt="" align="center"> <b>15</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier15.png" alt=""> <b>15</b></td>
             <td>1 Coin</td>
             <td>1800 Rubies</td>
-            <td>Increases ruby power 400% to 3700%.</td>
+            <td>Increases Ruby Power 400% to 3700%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier16.png" alt="" align="center"> <b>16</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier16.png" alt=""> <b>16</b></td>
             <td>1 Coin</td>
             <td>2000 Rubies</td>
-            <td>Increases ruby power 400% to 4100%.</td>
+            <td>Increases Ruby Power 400% to 4100%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier17.png" alt="" align="center"> <b>17</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier17.png" alt=""> <b>17</b></td>
             <td>1 Coin</td>
             <td>2200 Rubies</td>
-            <td>Increases ruby power 400% to 4500%.</td>
+            <td>Increases Ruby Power 400% to 4500%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier18.png" alt="" align="center"> <b>18</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier18.png" alt=""> <b>18</b></td>
             <td>1 Coin</td>
             <td>2400 Rubies</td>
-            <td>Increases ruby power 400% to 4900%.</td>
+            <td>Increases Ruby Power 400% to 4900%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier19.png" alt="" align="center"> <b>19</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier19.png" alt=""> <b>19</b></td>
             <td>1 Coin</td>
             <td>2650 Rubies</td>
-            <td>Increases ruby power 500% to 5400%.</td>
+            <td>Increases Ruby Power 500% to 5400%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier20.png" alt="" align="center"> <b>20</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier20.png" alt=""> <b>20</b></td>
             <td>1 Coin</td>
             <td>2900 Rubies</td>
-            <td>Increases ruby power 500% to 5900%.</td>
+            <td>Increases Ruby Power 500% to 5900%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier21.png" alt="" align="center"> <b>21</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier21.png" alt=""> <b>21</b></td>
             <td>1 Coin</td>
             <td>3150 Rubies</td>
-            <td>Increases ruby power 500% to 6400%.</td>
+            <td>Increases Ruby Power 500% to 6400%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier22.png" alt="" align="center"> <b>22</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier22.png" alt=""> <b>22</b></td>
             <td>1 Coin</td>
             <td>3400 Rubies</td>
-            <td>Increases ruby power 500% to 6900%.</td>
+            <td>Increases Ruby Power 500% to 6900%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier23.png" alt="" align="center"> <b>23</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier23.png" alt=""> <b>23</b></td>
             <td>1 Coin</td>
             <td>3650 Rubies</td>
-            <td>Increases ruby power 500% to 7400%.</td>
+            <td>Increases Ruby Power 500% to 7400%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier24.png" alt="" align="center"> <b>24</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier24.png" alt=""> <b>24</b></td>
             <td>1 Coin</td>
             <td>3900 Rubies</td>
-            <td>Increases ruby power 600% to 8000%.</td>
+            <td>Increases Ruby Power 600% to 8000%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier25.png" alt="" align="center"> <b>25</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier25.png" alt=""> <b>25</b></td>
             <td>1 Coin</td>
             <td>4200 Rubies</td>
-            <td>Increases ruby power 600% to 8600%.</td>
+            <td>Increases Ruby Power 600% to 8600%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier26.png" alt="" align="center"> <b>26</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier26.png" alt=""> <b>26</b></td>
             <td>1 Coin</td>
             <td>4500 Rubies</td>
-            <td>Increases ruby power 600% to 9200%.</td>
+            <td>Increases Ruby Power 600% to 9200%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier27.png" alt="" align="center"> <b>27</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier27.png" alt=""> <b>27</b></td>
             <td>1 Coin</td>
             <td>4800 Rubies</td>
-            <td>Increases ruby power 600% to 9800%.</td>
+            <td>Increases Ruby Power 600% to 9800%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier28.png" alt="" align="center"> <b>28</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier28.png" alt=""> <b>28</b></td>
             <td>1 Coin</td>
             <td>5150 Rubies</td>
-            <td>Increases ruby power 600% to 10400%.</td>
+            <td>Increases Ruby Power 600% to 10400%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier29.png" alt="" align="center"> <b>29</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier29.png" alt=""> <b>29</b></td>
             <td>1 Coin</td>
             <td>5500 Rubies</td>
-            <td>Increases ruby power 600% to 11000%.</td>
+            <td>Increases Ruby Power 600% to 11000%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier30.png" alt="" align="center"> <b>30</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier30.png" alt=""> <b>30</b></td>
             <td>1 Coin</td>
             <td>5850 Rubies</td>
-            <td>Increases ruby power 700% to 11700%.</td>
+            <td>Increases Ruby Power 700% to 11700%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier31.png" alt="" align="center"> <b>31</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier31.png" alt=""> <b>31</b></td>
             <td>1 Coin</td>
             <td>6200 Rubies</td>
-            <td>Increases ruby power 700% to 12400%.</td>
+            <td>Increases Ruby Power 700% to 12400%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier32.png" alt="" align="center"> <b>32</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier32.png" alt=""> <b>32</b></td>
             <td>1 Coin</td>
             <td>6550 Rubies</td>
-            <td>Increases ruby power 700% to 13100%.</td>
+            <td>Increases Ruby Power 700% to 13100%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier33.png" alt="" align="center"> <b>33</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier33.png" alt=""> <b>33</b></td>
             <td>1 Coin</td>
             <td>6900 Rubies</td>
-            <td>Increases ruby power 700% to 13800%.</td>
+            <td>Increases Ruby Power 700% to 13800%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier34.png" alt="" align="center"> <b>34</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier34.png" alt=""> <b>34</b></td>
             <td>1 Coin</td>
             <td>7300 Rubies</td>
-            <td>Increases ruby power 700% to 14500%.</td>
+            <td>Increases Ruby Power 700% to 14500%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier35.png" alt="" align="center"> <b>35</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier35.png" alt=""> <b>35</b></td>
             <td>1 Coin</td>
             <td>7700 Rubies</td>
-            <td>Increases ruby power 800% to 15300%.</td>
+            <td>Increases Ruby Power 800% to 15300%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier36.png" alt="" align="center"> <b>36</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier36.png" alt=""> <b>36</b></td>
             <td>1 Coin</td>
             <td>8100 Rubies</td>
-            <td>Increases ruby power 800% to 16100%.</td>
+            <td>Increases Ruby Power 800% to 16100%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier37.png" alt="" align="center"> <b>37</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier37.png" alt=""> <b>37</b></td>
             <td>1 Coin</td>
             <td>8500 Rubies</td>
-            <td>Increases ruby power 800% to 16900%.</td>
+            <td>Increases Ruby Power 800% to 16900%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier38.png" alt="" align="center"> <b>38</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier38.png" alt=""> <b>38</b></td>
             <td>1 Coin</td>
             <td>8900 Rubies</td>
-            <td>Increases ruby power 800% to 17700%.</td>
+            <td>Increases Ruby Power 800% to 17700%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier39.png" alt="" align="center"> <b>39</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier39.png" alt=""> <b>39</b></td>
             <td>1 Coin</td>
             <td>9350 Rubies</td>
-            <td>Increases ruby power 800% to 18500%.</td>
+            <td>Increases Ruby Power 800% to 18500%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier40.png" alt="" align="center"> <b>40</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier40.png" alt=""> <b>40</b></td>
             <td>1 Coin</td>
             <td>9800 Rubies</td>
-            <td>Increases ruby power 900% to 19400%.</td>
+            <td>Increases Ruby Power 900% to 19400%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier41.png" alt="" align="center"> <b>41</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier41.png" alt=""> <b>41</b></td>
             <td>1 Coin</td>
             <td>10250 Rubies</td>
-            <td>Increases ruby power 900% to 20300%.</td>
+            <td>Increases Ruby Power 900% to 20300%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier42.png" alt="" align="center"> <b>42</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier42.png" alt=""> <b>42</b></td>
             <td>1 Coin</td>
             <td>10700 Rubies</td>
-            <td>Increases ruby power 900% to 21200%.</td>
+            <td>Increases Ruby Power 900% to 21200%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier43.png" alt="" align="center"> <b>43</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier43.png" alt=""> <b>43</b></td>
             <td>1 Coin</td>
             <td>11150 Rubies</td>
-            <td>Increases ruby power 900% to 22100%.</td>
+            <td>Increases Ruby Power 900% to 22100%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier44.png" alt="" align="center"> <b>44</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier44.png" alt=""> <b>44</b></td>
             <td>1 Coin</td>
             <td>11650 Rubies</td>
-            <td>Increases ruby power 900% to 23000%.</td>
+            <td>Increases Ruby Power 900% to 23000%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier45.png" alt="" align="center"> <b>45</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier45.png" alt=""> <b>45</b></td>
             <td>1 Coin</td>
             <td>12150 Rubies</td>
-            <td>Increases ruby power 1000% to 24000%.</td>
+            <td>Increases Ruby Power 1000% to 24000%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier46.png" alt="" align="center"> <b>46</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier46.png" alt=""> <b>46</b></td>
             <td>1 Coin</td>
             <td>12650 Rubies</td>
-            <td>Increases ruby power 1000% to 25000%.</td>
+            <td>Increases Ruby Power 1000% to 25000%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier47.png" alt="" align="center"> <b>47</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier47.png" alt=""> <b>47</b></td>
             <td>1 Coin</td>
             <td>13150 Rubies</td>
-            <td>Increases ruby power 1000% to 26000%.</td>
+            <td>Increases Ruby Power 1000% to 26000%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier48.png" alt="" align="center"> <b>48</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier48.png" alt=""> <b>48</b></td>
             <td>1 Coin</td>
             <td>13650 Rubies</td>
-            <td>Increases ruby power 1000% to 27000%.</td>
+            <td>Increases Ruby Power 1000% to 27000%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier49.png" alt="" align="center"> <b>49</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier49.png" alt=""> <b>49</b></td>
             <td>1 Coin</td>
             <td>14200 Rubies</td>
-            <td>Increases ruby power 1000% to 28000%.</td>
+            <td>Increases Ruby Power 1000% to 28000%.</td>
         </tr>
         <tr>
-            <td><img src="/realm/Factions/picks/RubyTier50.png" alt="" align="center"> <b>50</b></td>
+            <td><img src="/realm/Factions/picks/RubyTier50.png" alt=""> <b>50</b></td>
             <td>1 Coin</td>
             <td>14750 Rubies</td>
-            <td>Increases ruby power 1100% to 29100%.</td>
+            <td>Increases Ruby Power 1100% to 29100%.</td>
         </tr>
     </table>
 
