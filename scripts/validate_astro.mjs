@@ -126,7 +126,7 @@ const contracts = {
   'Resources/index.html': ['id="resource-summary"', 'id="resource-pages"', 'id="other-currencies"', 'id="cosmetic-appearances"', 'mana-bubble-full.png'],
   'Mana/index.html': ['id="mana-values"', 'id="online-mana"', 'id="offline-mana"', 'min(Maximum Mana, offline Mana Regeneration)', 'id="mana-appearance"'],
   'CoinsAndGems/index.html': ['id="coin-currencies"', 'id="gems"', '5e11 * n * (n + 1)', 'id="coin-and-gem-resets"', 'diamond-coin.png', 'id="coin-appearance"'],
-  'FactionCoins/index.html': ['id="faction-coin-types"', 'id="finding-faction-coins"', 'id="spending-faction-coins"', 'fairy-coin-small.png', 'id="faction-coin-appearance"'],
+  'FactionCoins/index.html': ['id="faction-coin-types"', 'Corresponding faction', 'Elven Coins</td><td>Elf', 'Dwarven Coins</td><td>Dwarf', 'id="finding-faction-coins"', 'id="spending-faction-coins"', 'fairy-coin-small.png', 'id="faction-coin-appearance"'],
 };
 for (const [relative, markers] of Object.entries(contracts)) {
   const file = path.join(output, relative);

@@ -7,6 +7,7 @@ a.tooltips {
 .game-icon-frame {
     position: relative;
     display: inline-block;
+    flex: 0 0 60px;
     width: 60px;
     height: 60px;
     vertical-align: middle;
@@ -228,6 +229,13 @@ a.tooltips {
 .faction-coin-list img {
   width: 1.65rem;
   height: 1.65rem;
+  object-fit: contain;
+}
+
+.faction-coin-icon {
+  display: block;
+  width: 2rem;
+  height: 2rem;
   object-fit: contain;
 }
 
