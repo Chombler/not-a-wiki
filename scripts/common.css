@@ -244,25 +244,13 @@ a.tooltips {
 }
 
 /* Compact reference navigation ------------------------------------------ */
-.progression-nav .sidebar-category-row {
+.progression-nav .sidebar-category {
+    position: relative;
     display: flex;
     width: 100%;
     align-items: center;
-}
-
-.progression-nav .sidebar-category-link {
-    flex: 1;
-    min-width: 0;
-    font-weight: 600;
-}
-
-.progression-nav .sidebar-category {
-    display: grid;
-    flex: 0 0 28px;
-    width: 28px;
-    align-self: stretch;
-    place-items: center;
-    padding: 0;
+    justify-content: space-between;
+    padding: 5px 8px;
     border: 0;
     border-bottom: 1px solid var(--line-soft);
     background: transparent;
@@ -280,7 +268,7 @@ a.tooltips {
     transition: transform .12s ease;
 }
 
-.progression-nav .is-current-branch > .sidebar-category-row {
+.progression-nav .is-current-branch > .sidebar-category {
     background: color-mix(in srgb, var(--panel-raised) 70%, transparent);
 }
 
@@ -2224,7 +2212,6 @@ body,
     color: #f2cf72;
 }
 
-.progression-nav .sidebar-category-link,
 .progression-nav .sidebar-category {
     color: #e0c77e;
     font-family: Georgia, "Times New Roman", serif;
@@ -3777,20 +3764,18 @@ hr {
 }
 
 /* Final sidebar overrides intentionally follow the legacy skin rules. */
-.progression-nav li.guide-nav-era > .sidebar-category-row .sidebar-category-link,
-.progression-nav li.guide-nav-era > .sidebar-category-row .sidebar-category {
+.progression-nav li.guide-nav-era > .sidebar-category {
     position: relative;
     color: inherit;
     font-family: inherit;
     font-weight: 600;
 }
 
-html[data-theme="ledger"] .progression-nav li.guide-nav-era > .sidebar-category-row .sidebar-category-link,
-html[data-theme="ledger"] .progression-nav li.guide-nav-era > .sidebar-category-row .sidebar-category {
+html[data-theme="ledger"] .progression-nav li.guide-nav-era > .sidebar-category {
     color: #433a30;
 }
 
-.progression-nav li.is-current-branch > .sidebar-category-row {
+.progression-nav li.is-current-branch > .sidebar-category {
     background: var(--panel-raised);
     color: var(--gold);
 }

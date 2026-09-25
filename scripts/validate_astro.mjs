@@ -156,21 +156,12 @@ if (/\.progression-nav:focus-within\s+\.guide-range-nav/.test(trophyStyles)) {
   failures.push('Sidebar focus globally expands every nested navigation branch');
 }
 const sidebarCategoryCount = [...trophyPageHtml.matchAll(/<button class="sidebar-category"/g)].length;
-const sidebarCategoryLinkCount = [...trophyPageHtml.matchAll(/<a class="sidebar-category-link"/g)].length;
-if (!sidebarCategoryCount || sidebarCategoryLinkCount !== sidebarCategoryCount) {
-  failures.push(`Sidebar has ${sidebarCategoryCount} disclosure controls but ${sidebarCategoryLinkCount} linked category pages`);
+const sidebarOverviewCount = [...trophyPageHtml.matchAll(/<a href="[^"]+">Overview<\/a>/g)].length;
+if (!sidebarCategoryCount || sidebarOverviewCount !== sidebarCategoryCount) {
+  failures.push(`Sidebar has ${sidebarCategoryCount} categories but ${sidebarOverviewCount} explicit overview pages`);
 }
-const navigationSource = fs.readFileSync(path.join(root, 'src/data/navigation.ts'), 'utf8');
-if (/label:\s*['"]Overview['"]/.test(navigationSource)) {
-  failures.push('Sidebar regained artificial Overview child links');
-}
-const sidebarBranches = [...trophyPageHtml.matchAll(/<li class="guide-nav-era[^"]*">[\s\S]*?<ul class="guide-range-nav"[^>]*>([\s\S]*?)<\/ul><\/li>/g)];
-if (sidebarBranches.length !== sidebarCategoryCount) {
-  failures.push(`Sidebar exposes ${sidebarBranches.length}/${sidebarCategoryCount} category page lists`);
-}
-for (const branch of sidebarBranches) {
-  const pageCount = [...branch[1].matchAll(/<li>/g)].length;
-  if (pageCount < 2) failures.push(`Sidebar category has only ${pageCount} detail page${pageCount === 1 ? '' : 's'}`);
+if (/<a[^>]+class="sidebar-category"/.test(trophyPageHtml)) {
+  failures.push('Sidebar category labels must disclose page lists rather than navigate ambiguously');
 }
 if (!trophyStyles.includes('font-family: "Realm Grinder Liony", Georgia, serif') || !trophyStyles.includes('font-size: 32px') || !trophyStyles.includes('row-gap: 2px') || !trophyStyles.includes('var(--trophy-header-skin)') || !trophyStyles.includes('var(--trophy-collapse-up)') || !trophyStyles.includes('var(--trophy-collapse-down)')) {
   failures.push('Trophy section controls no longer use the game\'s font and collapse-arrow textures');
