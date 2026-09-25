@@ -255,6 +255,10 @@ a.tooltips {
   margin: 0.5rem 0 0;
 }
 
+.building-tier-table .building-shared {
+  text-align: center;
+}
+
 .resource-cosmetic-samples,
 .resource-cosmetic-gallery {
   display: flex;
