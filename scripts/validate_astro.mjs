@@ -15,6 +15,10 @@ const siteScript = fs.readFileSync(path.join(root, 'public', 'scripts', 'site.js
 if (!siteScript.includes("main.querySelectorAll('h2[id], h3[id]')") || !siteScript.includes('if (headings.length < 2) return;')) {
   failures.push('Page TOC no longer requires at least two authored, stable section headings');
 }
+const gameWindowSource = fs.readFileSync(path.join(root, 'src', 'page-content', 'reference', 'GameWindow.html'), 'utf8');
+if (/rtree\.css/i.test(gameWindowSource)) {
+  failures.push('GameWindow restored the legacy Research Tree stylesheet and its global layout overrides');
+}
 
 function walk(directory, predicate) {
   if (!fs.existsSync(directory)) return [];
