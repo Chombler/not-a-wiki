@@ -259,6 +259,20 @@ a.tooltips {
   text-align: center;
 }
 
+.building-tier-table th small {
+  font: inherit;
+  font-size: 0.78em;
+  font-weight: 400;
+}
+
+.building-tier-table .building-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-width: max-content;
+  text-align: left;
+}
+
 .formula-expression {
   color: inherit;
   font-family: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace;
@@ -3867,6 +3881,26 @@ hr {
         font: 12px Arial, sans-serif;
         text-transform: none;
     }
+}
+
+/* Compact in-table presentation for current-game icon art. */
+.site-main .building-tier-table .game-icon-frame-compact {
+    flex: 0 0 38px;
+    width: 38px;
+    height: 38px;
+}
+
+.site-main .building-tier-table .game-icon-frame-compact > img {
+    inset: 4px;
+    width: 30px;
+    height: 30px;
+}
+
+.site-main .building-tier-table .game-icon-frame-compact::after {
+    inset: 2px;
+    border-width: 6px;
+    border-image-slice: 9;
+    border-image-width: 6px;
 }
 
 /* Final sidebar overrides intentionally follow the legacy skin rules. */
