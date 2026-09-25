@@ -629,14 +629,6 @@ html[data-theme="ledger"] .build-group-title {
     color: #5f4317;
 }
 
-html[data-theme="ledger"] .build-code code,
-html[data-theme="ledger"] .research-build-row code,
-html[data-theme="ledger"] .source-build-code code,
-html[data-theme="ledger"] .guide-template-segment code,
-html[data-theme="ledger"] code {
-    color: #43325c;
-}
-
 html[data-theme="ledger"] .copy-build,
 html[data-theme="ledger"] .copy-template,
 html[data-theme="ledger"] [data-copy-build] {
@@ -4455,16 +4447,6 @@ html[data-theme="ledger"] :is(
 }
 
 html[data-theme="ledger"] :is(
-    .guide-template-segment code,
-    .source-build-code code,
-    .research-build-row code,
-    .build-code code,
-    .guide-format-row code
-) {
-    color: #3f2e57 !important;
-}
-
-html[data-theme="ledger"] :is(
     .guide-build-entry > summary:hover,
     .guide-stage-grid a:hover,
     .guide-pager a:hover
@@ -4598,7 +4580,7 @@ html[data-theme="ledger"] .guide-entry-type {
     padding: 2px 6px;
     border-color: #936ba4;
     background: #dcc6e5;
-    color: #4f1f6b;
+    color: #332e26;
     font-size: 11px;
     font-weight: 600;
     letter-spacing: .025em;
@@ -4627,7 +4609,7 @@ html[data-theme="ledger"] :is(
     .guide-format-row code,
     code
 ) {
-    color: #4f1f6b !important;
+    color: inherit !important;
 }
 
 html[data-theme="ledger"] :is(
