@@ -259,6 +259,15 @@ a.tooltips {
   text-align: center;
 }
 
+.formula-expression {
+  color: inherit;
+  font-family: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
+.formula-line {
+  overflow-x: auto;
+}
+
 .resource-cosmetic-samples,
 .resource-cosmetic-gallery {
   display: flex;

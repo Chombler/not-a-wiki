@@ -1,8 +1,6 @@
 <p>Buildings produce Coins automatically. The first three tiers are available with every alignment; tiers 4–10 use a different building line for Good, Evil and Neutral; and the Hall of Legends is shared by all three alignments.</p>
 
-<div class="resource-note">
-    <p><b>Production values:</b> The table shows the base production of one building per second, matching the rate displayed by the game. These values are before upgrades and other production bonuses.</p>
-</div>
+<p><b>Production values:</b> The table shows the base production of one building per second, matching the rate displayed by the game. These values are before upgrades and other production bonuses.</p>
 
 <h2 id="building-tiers">Building tiers</h2>
 <table class="numtable building-tier-table">
@@ -40,28 +38,28 @@
 
 <h2 id="hall-of-legends">Hall of Legends</h2>
 <p>The Hall of Legends does not have a fixed base-production value like the other buildings. Before Hall-specific upgrades, each Hall produces:</p>
-<p><code>250,000 × T</code> Coins per second, where <code>T</code> is the number of Trophies currently counted by the game.</p>
+<p><span class="formula-expression">250,000 × T</span> Coins per second, where <var>T</var> is the number of Trophies currently counted by the game.</p>
 <p>Hall of Fame, Hall of Prestige and Hall of Renown increase the production granted per Trophy. Other upgrades can further change the effective Trophy count or multiply Hall of Legends production.</p>
 
 <h2 id="building-costs">Building costs</h2>
-<p>Each building type has its own base cost <code>B</code>, shown in the table above. Buying buildings does not change their base production, but each successive building costs more according to that building's cost multiplier <code>M</code>.</p>
+<p>Each building type has its own base cost <var>B</var>, shown in the table above. Buying buildings does not change their base production, but each successive building costs more according to that building's cost multiplier <var>M</var>.</p>
 
 <h3 id="next-building-cost">Next building</h3>
-<p>If <code>n</code> buildings of that type are already owned, the next building's cost is the difference between the cumulative cost through building <code>n + 1</code> and the cumulative cost through building <code>n</code>:</p>
-<p><code>floor(B × (M ^ (n + 1) − 1) / (M − 1)) − floor(B × (M ^ n − 1) / (M − 1))</code></p>
+<p>If <var>n</var> buildings of that type are already owned, the next building's cost is the difference between the cumulative cost through building <var>n + 1</var> and the cumulative cost through building <var>n</var>:</p>
+<p class="formula-line"><span class="formula-expression">floor(B × (M ^ (n + 1) − 1) / (M − 1)) − floor(B × (M ^ n − 1) / (M − 1))</span></p>
 <p>For example, with no cost reductions in A0, the first Farm costs 10 Coins and the second costs 11 Coins.</p>
 
 <h3 id="multiple-building-cost">Buying several buildings</h3>
-<p>The exact cost of buying <code>q</code> buildings while already owning <code>n</code> is:</p>
-<p><code>floor(B × (M ^ (n + q) − 1) / (M − 1)) − floor(B × (M ^ n − 1) / (M − 1))</code></p>
+<p>The exact cost of buying <var>q</var> buildings while already owning <var>n</var> is:</p>
+<p class="formula-line"><span class="formula-expression">floor(B × (M ^ (n + q) − 1) / (M − 1)) − floor(B × (M ^ n − 1) / (M − 1))</span></p>
 
 <h2 id="cost-multiplier">Cost multiplier</h2>
-<p>The base building cost multiplier is <code>1.15</code>. Applicable flat cost-multiplier reductions are subtracted first.</p>
+<p>The base building cost multiplier is 1.15. Applicable flat cost-multiplier reductions are subtracted first.</p>
 <ul>
-    <li><b>A0 and A4:</b> <code>M = 1.15 − C</code></li>
-    <li><b>A1–A3:</b> <code>M = 1 + (0.15 − C) / (5 × A)</code></li>
+    <li><b>A0 and A4:</b> <span class="formula-expression">M = 1.15 − C</span></li>
+    <li><b>A1–A3:</b> <span class="formula-expression">M = 1 + (0.15 − C) / (5 × A)</span></li>
 </ul>
-<p><code>C</code> is the total applicable flat cost-multiplier reduction and <code>A</code> is the current Ascension number. Some reductions apply only to particular buildings or building groups.</p>
+<p><var>C</var> is the total applicable flat cost-multiplier reduction and <var>A</var> is the current Ascension number. Some reductions apply only to particular buildings or building groups.</p>
 
 <h2 id="related-building-pages">Related building pages</h2>
 <ul>
