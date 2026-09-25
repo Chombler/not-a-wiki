@@ -4645,6 +4645,556 @@
       "role": "icon"
     },
     {
+      "key": "building-farm",
+      "path": "assets/game/sprites/building-farm.png",
+      "sprite_name": "BuildingFarm",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1099,
+        "y": 1102,
+        "width": 42,
+        "height": 50
+      },
+      "frame": {
+        "x": -1,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "building",
+      "entity": "building-farm",
+      "role": "icon"
+    },
+    {
+      "key": "building-inn",
+      "path": "assets/game/sprites/building-inn.png",
+      "sprite_name": "BuildingInn",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1711,
+        "y": 1489,
+        "width": 48,
+        "height": 44
+      },
+      "frame": {
+        "x": -1,
+        "y": -3,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "building",
+      "entity": "building-inn",
+      "role": "icon"
+    },
+    {
+      "key": "building-blacksmith",
+      "path": "assets/game/sprites/building-blacksmith.png",
+      "sprite_name": "BuildingBlacksmith",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1576,
+        "y": 1376,
+        "width": 45,
+        "height": 45
+      },
+      "frame": {
+        "x": -2,
+        "y": -4,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "building",
+      "entity": "building-blacksmith",
+      "role": "icon"
+    },
+    {
+      "key": "building-warrior-barracks",
+      "path": "assets/game/sprites/building-warrior-barracks.png",
+      "sprite_name": "BuildingWarriorBarracks",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1519,
+        "y": 1415,
+        "width": 50,
+        "height": 36
+      },
+      "frame": {
+        "x": 0,
+        "y": -7,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "building",
+      "entity": "building-warrior-barracks",
+      "role": "icon"
+    },
+    {
+      "key": "building-slave-pen",
+      "path": "assets/game/sprites/building-slave-pen.png",
+      "sprite_name": "BuildingSlavePen",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1417,
+        "y": 1450,
+        "width": 50,
+        "height": 35
+      },
+      "frame": {
+        "x": 0,
+        "y": -5,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "building",
+      "entity": "building-slave-pen",
+      "role": "icon"
+    },
+    {
+      "key": "building-deep-mine",
+      "path": "assets/game/sprites/building-deep-mine.png",
+      "sprite_name": "BuildingDeepMine",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1219,
+        "y": 1317,
+        "width": 43,
+        "height": 49
+      },
+      "frame": {
+        "x": -3,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "building",
+      "entity": "building-deep-mine",
+      "role": "icon"
+    },
+    {
+      "key": "building-knights-joust",
+      "path": "assets/game/sprites/building-knights-joust.png",
+      "sprite_name": "BuildingKnightsJoust",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1530,
+        "y": 1679,
+        "width": 48,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "building",
+      "entity": "building-knights-joust",
+      "role": "icon"
+    },
+    {
+      "key": "building-orcish-arena",
+      "path": "assets/game/sprites/building-orcish-arena.png",
+      "sprite_name": "BuildingOrcishArena",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 855,
+        "y": 415,
+        "width": 48,
+        "height": 37
+      },
+      "frame": {
+        "x": 0,
+        "y": -7,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "building",
+      "entity": "building-orcish-arena",
+      "role": "icon"
+    },
+    {
+      "key": "building-stone-pillars",
+      "path": "assets/game/sprites/building-stone-pillars.png",
+      "sprite_name": "BuildingStonePillars",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1525,
+        "y": 1568,
+        "width": 48,
+        "height": 49
+      },
+      "frame": {
+        "x": -2,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "building",
+      "entity": "building-stone-pillars",
+      "role": "icon"
+    },
+    {
+      "key": "building-wizard-tower",
+      "path": "assets/game/sprites/building-wizard-tower.png",
+      "sprite_name": "BuildingWizardTower",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 694,
+        "y": 1475,
+        "width": 27,
+        "height": 50
+      },
+      "frame": {
+        "x": -11,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "building",
+      "entity": "building-wizard-tower",
+      "role": "icon"
+    },
+    {
+      "key": "building-witch-conclave",
+      "path": "assets/game/sprites/building-witch-conclave.png",
+      "sprite_name": "BuildingWitchConclave",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1166,
+        "y": 1501,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "building",
+      "entity": "building-witch-conclave",
+      "role": "icon"
+    },
+    {
+      "key": "building-alchemist-lab",
+      "path": "assets/game/sprites/building-alchemist-lab.png",
+      "sprite_name": "BuildingAlchemistLab",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 364,
+        "y": 1666,
+        "width": 28,
+        "height": 47
+      },
+      "frame": {
+        "x": -11,
+        "y": -2,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "building",
+      "entity": "building-alchemist-lab",
+      "role": "icon"
+    },
+    {
+      "key": "building-cathedral",
+      "path": "assets/game/sprites/building-cathedral.png",
+      "sprite_name": "BuildingCathedral",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1711,
+        "y": 1534,
+        "width": 48,
+        "height": 43
+      },
+      "frame": {
+        "x": 0,
+        "y": -5,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "building",
+      "entity": "building-cathedral",
+      "role": "icon"
+    },
+    {
+      "key": "building-dark-temple",
+      "path": "assets/game/sprites/building-dark-temple.png",
+      "sprite_name": "BuildingDarkTemple",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 395,
+        "y": 2001,
+        "width": 50,
+        "height": 46
+      },
+      "frame": {
+        "x": 0,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "building",
+      "entity": "building-dark-temple",
+      "role": "icon"
+    },
+    {
+      "key": "building-monastery",
+      "path": "assets/game/sprites/building-monastery.png",
+      "sprite_name": "BuildingMonastery",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1468,
+        "y": 1415,
+        "width": 50,
+        "height": 36
+      },
+      "frame": {
+        "x": 0,
+        "y": -5,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "building",
+      "entity": "building-monastery",
+      "role": "icon"
+    },
+    {
+      "key": "building-citadel",
+      "path": "assets/game/sprites/building-citadel.png",
+      "sprite_name": "BuildingCitadel",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1028,
+        "y": 2005,
+        "width": 50,
+        "height": 42
+      },
+      "frame": {
+        "x": 0,
+        "y": -4,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "building",
+      "entity": "building-citadel",
+      "role": "icon"
+    },
+    {
+      "key": "building-necropolis",
+      "path": "assets/game/sprites/building-necropolis.png",
+      "sprite_name": "BuildingNecropolis",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1622,
+        "y": 1390,
+        "width": 49,
+        "height": 49
+      },
+      "frame": {
+        "x": 0,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "building",
+      "entity": "building-necropolis",
+      "role": "icon"
+    },
+    {
+      "key": "building-labyrinth",
+      "path": "assets/game/sprites/building-labyrinth.png",
+      "sprite_name": "BuildingLabyrinth",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1285,
+        "y": 1642,
+        "width": 48,
+        "height": 40
+      },
+      "frame": {
+        "x": -1,
+        "y": -7,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "building",
+      "entity": "building-labyrinth",
+      "role": "icon"
+    },
+    {
+      "key": "building-royal-castle",
+      "path": "assets/game/sprites/building-royal-castle.png",
+      "sprite_name": "BuildingRoyalCastle",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1813,
+        "y": 1337,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "building",
+      "entity": "building-royal-castle",
+      "role": "icon"
+    },
+    {
+      "key": "building-evil-fortress",
+      "path": "assets/game/sprites/building-evil-fortress.png",
+      "sprite_name": "BuildingEvilFortress",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1079,
+        "y": 2005,
+        "width": 50,
+        "height": 42
+      },
+      "frame": {
+        "x": 0,
+        "y": -2,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "building",
+      "entity": "building-evil-fortress",
+      "role": "icon"
+    },
+    {
+      "key": "building-iron-stronghold",
+      "path": "assets/game/sprites/building-iron-stronghold.png",
+      "sprite_name": "BuildingIronStronghold",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 875,
+        "y": 2006,
+        "width": 50,
+        "height": 41
+      },
+      "frame": {
+        "x": 0,
+        "y": -3,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "building",
+      "entity": "building-iron-stronghold",
+      "role": "icon"
+    },
+    {
+      "key": "building-heavens-gate",
+      "path": "assets/game/sprites/building-heavens-gate.png",
+      "sprite_name": "BuildingHeavensGate",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1047,
+        "y": 1371,
+        "width": 41,
+        "height": 46
+      },
+      "frame": {
+        "x": -3,
+        "y": -2,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "building",
+      "entity": "building-heavens-gate",
+      "role": "icon"
+    },
+    {
+      "key": "building-hell-portal",
+      "path": "assets/game/sprites/building-hell-portal.png",
+      "sprite_name": "BuildingHellPortal",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1104,
+        "y": 1053,
+        "width": 37,
+        "height": 48
+      },
+      "frame": {
+        "x": -6,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "building",
+      "entity": "building-hell-portal",
+      "role": "icon"
+    },
+    {
+      "key": "building-ancient-pyramid",
+      "path": "assets/game/sprites/building-ancient-pyramid.png",
+      "sprite_name": "BuildingAncientPyramid",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 714,
+        "y": 415,
+        "width": 47,
+        "height": 38
+      },
+      "frame": {
+        "x": -2,
+        "y": -6,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "building",
+      "entity": "building-ancient-pyramid",
+      "role": "icon"
+    },
+    {
+      "key": "building-hall-of-legends",
+      "path": "assets/game/sprites/building-hall-of-legends.png",
+      "sprite_name": "BuildingHallOfLegends",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1622,
+        "y": 1340,
+        "width": 49,
+        "height": 49
+      },
+      "frame": {
+        "x": 0,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "building",
+      "entity": "building-hall-of-legends",
+      "role": "icon"
+    },
+    {
       "key": "leet-trophy",
       "path": "assets/game/sprites/leet-trophy.png",
       "sprite_name": "LeetTrophy",

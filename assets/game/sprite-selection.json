@@ -604,6 +604,21 @@
       ]
     },
     {
+      "kind": "building",
+      "role": "icon",
+      "sprite_names": [
+        "BuildingFarm", "BuildingInn", "BuildingBlacksmith",
+        "BuildingWarriorBarracks", "BuildingSlavePen", "BuildingDeepMine",
+        "BuildingKnightsJoust", "BuildingOrcishArena", "BuildingStonePillars",
+        "BuildingWizardTower", "BuildingWitchConclave", "BuildingAlchemistLab",
+        "BuildingCathedral", "BuildingDarkTemple", "BuildingMonastery",
+        "BuildingCitadel", "BuildingNecropolis", "BuildingLabyrinth",
+        "BuildingRoyalCastle", "BuildingEvilFortress", "BuildingIronStronghold",
+        "BuildingHeavensGate", "BuildingHellPortal", "BuildingAncientPyramid",
+        "BuildingHallOfLegends"
+      ]
+    },
+    {
       "kind": "trophy",
       "role": "icon",
       "sprite_names": [
