@@ -183,6 +183,106 @@ a.tooltips {
   color: var(--text-muted);
 }
 
+.resource-label,
+.resource-intro,
+.faction-coin-list,
+.faction-coin-list > span {
+  display: flex;
+  align-items: center;
+}
+
+.resource-label,
+.faction-coin-list > span {
+  gap: 0.55rem;
+}
+
+.resource-intro {
+  gap: 1rem;
+}
+
+.resource-intro > p {
+  margin: 0;
+}
+
+.resource-icon,
+.resource-display {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+.resource-display-large {
+  width: 5.5rem;
+  height: 5.5rem;
+}
+
+.resource-icon-stack {
+  display: grid;
+  grid-template-columns: repeat(2, 1.35rem);
+  width: 3rem;
+  justify-content: center;
+}
+
+.resource-icon-stack img,
+.faction-coin-list img {
+  width: 1.65rem;
+  height: 1.65rem;
+  object-fit: contain;
+}
+
+.faction-coin-list {
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+}
+
+.resource-note {
+  margin: 0.75rem 0 1rem;
+  padding: 0.8rem 1rem;
+  border-left: 3px solid var(--accent);
+  background: var(--panel-bg);
+}
+
+.resource-note > p {
+  margin: 0.5rem 0 0;
+}
+
+.resource-cosmetic-samples,
+.resource-cosmetic-gallery {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.resource-cosmetic-samples img {
+  width: 2.75rem;
+  height: 2.75rem;
+  object-fit: contain;
+}
+
+.resource-cosmetic-gallery figure {
+  width: 6.5rem;
+  margin: 0;
+  padding: 0.6rem;
+  text-align: center;
+  border: 1px solid var(--line);
+  background: var(--panel-bg);
+}
+
+.resource-cosmetic-gallery img {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  margin: 0 auto 0.35rem;
+  object-fit: contain;
+}
+
+.resource-cosmetic-gallery figcaption {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+}
+
 .spell-related {
   margin: 0.75rem 0;
   padding: 0.7rem 0.85rem;

@@ -7,6 +7,174 @@
       "role": "frame"
     },
     {
+      "sprite_name": "manaBubble_Full",
+      "kind": "resource",
+      "entity": "mana",
+      "role": "display"
+    },
+    {
+      "sprite_name": "manaBubble_Full_valentine",
+      "kind": "resource-cosmetic",
+      "entity": "mana-valentine",
+      "role": "display"
+    },
+    {
+      "sprite_name": "manaBubble_Full_easter",
+      "kind": "resource-cosmetic",
+      "entity": "mana-easter",
+      "role": "display"
+    },
+    {
+      "sprite_name": "manaBubble_Full_bloodwar",
+      "kind": "resource-cosmetic",
+      "entity": "mana-blood-war",
+      "role": "display"
+    },
+    {
+      "sprite_name": "manaBubble_Full_invasion",
+      "kind": "resource-cosmetic",
+      "entity": "mana-goblin-invasion",
+      "role": "display"
+    },
+    {
+      "sprite_name": "manaBubble_Full_summer",
+      "kind": "resource-cosmetic",
+      "entity": "mana-summer",
+      "role": "display"
+    },
+    {
+      "sprite_name": "manaBubble_Full_halloween",
+      "kind": "resource-cosmetic",
+      "entity": "mana-halloween",
+      "role": "display"
+    },
+    {
+      "sprite_name": "manaBubble_Full_christmas",
+      "kind": "resource-cosmetic",
+      "entity": "mana-christmas",
+      "role": "display"
+    },
+    {
+      "sprite_name": "manaBubble_Full_idillium",
+      "kind": "resource-cosmetic",
+      "entity": "mana-idillium",
+      "role": "display"
+    },
+    {
+      "sprite_name": "Coin",
+      "kind": "resource",
+      "entity": "gold-coin",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "DiamondCoin",
+      "kind": "resource",
+      "entity": "diamond-coin",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "EmeraldCoin",
+      "kind": "resource",
+      "entity": "emerald-coin",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "AmethystCoin",
+      "kind": "resource",
+      "entity": "amethyst-coin",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "SapphireCoin",
+      "kind": "resource",
+      "entity": "sapphire-coin",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "Gem",
+      "kind": "resource",
+      "entity": "gem",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "Ruby",
+      "kind": "resource",
+      "entity": "ruby",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "FairyCoinSmall",
+      "kind": "resource",
+      "entity": "fairy-faction-coin",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "ElvenCoinSmall",
+      "kind": "resource",
+      "entity": "elven-faction-coin",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "AngelCoinSmall",
+      "kind": "resource",
+      "entity": "angel-faction-coin",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "GoblinCoinSmall",
+      "kind": "resource",
+      "entity": "goblin-faction-coin",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "UndeadCoinSmall",
+      "kind": "resource",
+      "entity": "undead-faction-coin",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "DemonCoinSmall",
+      "kind": "resource",
+      "entity": "demon-faction-coin",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "DwarvenCoinSmall",
+      "kind": "resource",
+      "entity": "dwarven-faction-coin",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "DrowCoinSmall",
+      "kind": "resource",
+      "entity": "drow-faction-coin",
+      "role": "icon"
+    },
+    {
+      "sprite_name": "ParticleCoin",
+      "kind": "resource-cosmetic",
+      "entity": "coin-particle-default",
+      "role": "particle"
+    },
+    {
+      "sprite_name": "ParticleChristmas",
+      "kind": "resource-cosmetic",
+      "entity": "coin-particle-christmas",
+      "role": "particle"
+    },
+    {
+      "sprite_name": "ParticleEgg1",
+      "kind": "resource-cosmetic",
+      "entity": "coin-particle-easter",
+      "role": "particle"
+    },
+    {
+      "sprite_name": "ParticleHalloween",
+      "kind": "resource-cosmetic",
+      "entity": "coin-particle-halloween",
+      "role": "particle"
+    },
+    {
       "sprite_name": "BuyFairyUpgradesTrophy",
       "kind": "trophy",
       "entity": "fairy-champion",

@@ -65,6 +65,7 @@ for (const file of builtFiles) {
     }
   }
   for (const icon of html.matchAll(/<img\b[^>]*\/assets\/game\/sprites\/(?!black-gold-trim\.png)[^>]*>/gi)) {
+    if (/data-game-icon-unframed/i.test(icon[0])) continue;
     const prefix = html.slice(Math.max(0, icon.index - 80), icon.index);
     if (!/<span class=(?:"game-icon-frame"|'game-icon-frame')>\s*$/.test(prefix)) {
       failures.push(`${path.relative(output, file)} contains an unframed canonical game icon`);
@@ -122,10 +123,10 @@ const contracts = {
   'FactionUpgrades/index.html': ['id="tier-1-upgrades"', 'id="tier-4-upgrades"'],
   'Notation/index.html': ['id="suffix-table"', 'id="full-number-list"'],
   'Rubies/index.html': ['id="getting-rubies"', 'id="spending-rubies"', 'id="ruby-upgrade-panel"'],
-  'Resources/index.html': ['id="resource-summary"', 'id="resource-pages"', 'id="other-currencies"'],
-  'Mana/index.html': ['id="mana-values"', 'id="online-mana"', 'id="offline-mana"', 'min(Maximum Mana, offline Mana Regeneration)'],
-  'CoinsAndGems/index.html': ['id="coin-currencies"', 'id="gems"', '5e11 * n * (n + 1)', 'id="coin-and-gem-resets"'],
-  'FactionCoins/index.html': ['id="faction-coin-types"', 'id="finding-faction-coins"', 'id="spending-faction-coins"'],
+  'Resources/index.html': ['id="resource-summary"', 'id="resource-pages"', 'id="other-currencies"', 'id="cosmetic-appearances"', 'mana-bubble-full.png'],
+  'Mana/index.html': ['id="mana-values"', 'id="online-mana"', 'id="offline-mana"', 'min(Maximum Mana, offline Mana Regeneration)', 'id="mana-appearance"'],
+  'CoinsAndGems/index.html': ['id="coin-currencies"', 'id="gems"', '5e11 * n * (n + 1)', 'id="coin-and-gem-resets"', 'diamond-coin.png', 'id="coin-appearance"'],
+  'FactionCoins/index.html': ['id="faction-coin-types"', 'id="finding-faction-coins"', 'id="spending-faction-coins"', 'fairy-coin-small.png', 'id="faction-coin-appearance"'],
 };
 for (const [relative, markers] of Object.entries(contracts)) {
   const file = path.join(output, relative);
