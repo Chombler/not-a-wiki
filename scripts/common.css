@@ -271,12 +271,17 @@ a.tooltips {
   gap: 0.35rem;
   min-width: max-content;
   text-align: left;
+  font-weight: 600;
 }
 
 .building-tier-table .building-icon {
   flex: 0 0 32px;
   width: 32px;
   height: 32px;
+  box-sizing: content-box;
+  padding: 2px;
+  border: 2px ridge #8d835f;
+  background: #171717;
   object-fit: contain;
   image-rendering: pixelated;
 }
