@@ -35,6 +35,7 @@ const base = `${import.meta.env.BASE_URL.replace(/\/+$/, '')}/`;
 
 <SiteLayout title="Research Tree" sourcePath="src/content/research-tree/nodes.yaml">
   <h6 class="page-corner-art"><img src={`${base}Factions/picks/ResearchTopPage.png`} alt="Research" /></h6>
+  <h2 id="research-point-calculator">Research point calculator</h2>
   <div id="calrps">
     <table style="border-collapse: collapse">
       <tr><th colspan="4">Maximum Research Points and Next-Point Cost Per Reincarnation</th></tr>
@@ -51,6 +52,7 @@ const base = `${import.meta.env.BASE_URL.replace(/\/+$/, '')}/`;
   <p>Information about how Research Slots and Budget work can be found at <b><a href={`${base}Research`}>Research</a></b>.</p>
   <p><b>All Researches in Text Version</b>: <b><a href={`${base}ResearchList`}>Research List</a></b>.</p>
   <hr />
+  <h2 id="research-tree">Research tree</h2>
   <p><img src={`${base}Factions/picks/ResearchTreeA4.png`} usemap="#ResearchTreeA4-map" class="centerimg" alt="Research Tree" /></p>
   <map name="ResearchTreeA4-map">
     {facilities.map((facility) => <area data-research={facilityTooltip(facility)} coords={facility[3]} shape="rect" />)}
