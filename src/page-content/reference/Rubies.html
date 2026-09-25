@@ -44,42 +44,89 @@
             </tr>
         </tbody></table>
         <script>
-            function rubcalc() {
-                var asc = parseInt($('input#asc').val());
-                var maker = parseFloat($('input#maker').val());
-                var rub = parseInt($('input#rub').val()),
-                    mult = 1.2,
-                    cost = 0,
-                    base = ($('#eas').prop('checked')) ? 1e24 : 1e27;
-                    base = (asc > 0) ? Math.pow(base , Math.pow(0.75 , asc)) : base;
-                var exc = 25 * rub * (rub + 1);
-                $('#exc').html(exc);
-		if ($('#Research').prop('checked')) mult -= 0.02;
-		if ($('#DN8').prop('checked')) mult -= 0.02;
-                if (maker > 0) {
-                    mult -= maker;
+            (() => {
+                const calculator = document.getElementById('rubcalc');
+                if (!calculator) return;
+
+                const fields = {
+                    ruby: calculator.querySelector('#rub'),
+                    research: calculator.querySelector('#Research'),
+                    dn8: calculator.querySelector('#DN8'),
+                    easter: calculator.querySelector('#eas'),
+                    maker: calculator.querySelector('#maker'),
+                    ascension: calculator.querySelector('#asc'),
+                    researchLabel: calculator.querySelector('#Ascension'),
+                    excavations: calculator.querySelector('#exc'),
+                    coins: calculator.querySelector('#coi'),
+                    gems: calculator.querySelector('#gem')
+                };
+                const LN10 = Math.log(10);
+
+                function boundedNumber(input, minimum, maximum, fallback) {
+                    const value = Number(input.value);
+                    if (!Number.isFinite(value)) return fallback;
+                    return Math.min(maximum, Math.max(minimum, value));
                 }
-                if (asc > 0) {
-                    mult = 1 + ((mult - 1) / (asc * 5));
+
+                function scientificFromNaturalLog(naturalLog) {
+                    if (!Number.isFinite(naturalLog)) return '—';
+                    let exponent = Math.floor(naturalLog / LN10);
+                    let mantissa = Math.exp(naturalLog - exponent * LN10);
+                    let rounded = Number(mantissa.toFixed(2));
+                    if (rounded >= 10) {
+                        rounded /= 10;
+                        exponent += 1;
+                    }
+                    return `${rounded.toFixed(2)}e${exponent >= 0 ? '+' : ''}${exponent}`;
                 }
-                cost = base * ((1 - Math.pow(mult , exc)) / (1 - mult));
-                $('#coi').html(cost.toExponential(2));
-                if (asc == 2) {
-                    $('#gem').html((((1 + 8e-4 * cost) ** 0.5 - 1) * 0.5).toExponential(2));
-                } else if (asc == 4) {
-                    $('#gem').html((((1 + 8e-27 * cost) ** 0.5 - 1) * 0.5).toExponential(2));
-                } else {
-                    $('#gem').html((((1 + 8e-12 * cost) ** 0.5 - 1) * 0.5).toExponential(2));
+
+                function calculateRubyExcavation() {
+                    const ruby = Math.round(boundedNumber(fields.ruby, 1, 99, 1));
+                    const ascension = Math.round(boundedNumber(fields.ascension, 0, 4, 0));
+                    const makerReduction = boundedNumber(fields.maker, 0, 0.1, 0);
+                    const excavations = 25 * ruby * (ruby + 1);
+
+                    let multiplier = 1.2;
+                    if (fields.research.checked) multiplier -= 0.02;
+                    if (fields.dn8.checked) multiplier -= 0.02;
+                    multiplier -= makerReduction;
+                    if (ascension > 0) multiplier = 1 + (multiplier - 1) / (ascension * 5);
+
+                    const baseExponent = (fields.easter.checked ? 24 : 27) * Math.pow(0.75, ascension);
+                    const naturalLogBase = baseExponent * LN10;
+                    let naturalLogCoins;
+                    if (Math.abs(multiplier - 1) < Number.EPSILON) {
+                        naturalLogCoins = naturalLogBase + Math.log(excavations);
+                    } else {
+                        const growth = excavations * Math.log(multiplier);
+                        const naturalLogSeries = growth < 700 ? Math.log(Math.expm1(growth)) : growth;
+                        naturalLogCoins = naturalLogBase + naturalLogSeries - Math.log(multiplier - 1);
+                    }
+
+                    const gemScale = ascension === 2 ? 8e-4 : ascension === 4 ? 8e-27 : 8e-12;
+                    const scaledCoinLog = Math.log(gemScale) + naturalLogCoins;
+                    let naturalLogGems;
+                    if (scaledCoinLog < 700) {
+                        const scaledCoins = Math.exp(scaledCoinLog);
+                        const root = Math.sqrt(1 + scaledCoins);
+                        naturalLogGems = Math.log(0.5 * scaledCoins / (root + 1));
+                    } else {
+                        naturalLogGems = Math.log(0.5) + scaledCoinLog / 2;
+                    }
+
+                    fields.ruby.value = String(ruby);
+                    fields.ascension.value = String(ascension);
+                    fields.maker.value = makerReduction.toFixed(3);
+                    fields.researchLabel.textContent = ascension < 4 ? 'E290' : 'E13125';
+                    fields.excavations.textContent = excavations.toLocaleString('en-US');
+                    fields.coins.textContent = scientificFromNaturalLog(naturalLogCoins);
+                    fields.gems.textContent = scientificFromNaturalLog(naturalLogGems);
                 }
-		if (asc < 4) {
-			document.getElementById("Ascension").innerHTML = "E290";
-		} else {
-			document.getElementById("Ascension").innerHTML = "E13125";
-		}
-            }
-            rubcalc();
-            $('#rubcalc').on('input', rubcalc);
-            $('#rubcalc :checkbox').on('change', rubcalc);
+
+                calculator.addEventListener('input', calculateRubyExcavation);
+                calculator.addEventListener('change', calculateRubyExcavation);
+                calculateRubyExcavation();
+            })();
         </script>
  </div>
 <p>The excavation threshold for Ruby <i>n</i> is <code>25 × n × (n + 1)</code>, where <i>n</i> is the number of Rubies found through excavation.</p>
