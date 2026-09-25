@@ -244,35 +244,28 @@ a.tooltips {
 }
 
 /* Compact reference navigation ------------------------------------------ */
-.progression-nav .sidebar-category {
+.progression-nav .guide-nav-era > a {
     position: relative;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px 8px;
-    border: 0;
-    border-bottom: 1px solid var(--line-soft);
-    background: transparent;
+    padding-right: 24px;
     color: inherit;
     font-family: inherit;
     font-weight: 600;
-    text-align: left;
-    cursor: pointer;
 }
 
-.progression-nav .sidebar-category-icon {
+.progression-nav .guide-nav-era > a::after {
+    content: "›";
+    position: absolute;
+    right: 8px;
     color: var(--text-muted);
     font-family: sans-serif;
     font-weight: 400;
-    transition: transform .12s ease;
 }
 
-.progression-nav .is-current-branch > .sidebar-category {
+.progression-nav .is-current-branch > a {
     background: color-mix(in srgb, var(--panel-raised) 70%, transparent);
 }
 
-.progression-nav .sidebar-category[aria-expanded="true"] .sidebar-category-icon {
+.progression-nav .is-current-branch > a::after {
     transform: rotate(90deg);
 }
 
@@ -443,7 +436,7 @@ html[data-theme="ledger"] .progression-nav a:hover {
     background: #b9aa8e;
 }
 
-html[data-theme="ledger"] .progression-nav .sidebar-category,
+html[data-theme="ledger"] .progression-nav .guide-nav-era > a,
 html[data-theme="ledger"] .guide-build-card h3,
 html[data-theme="ledger"] .site-main .guide-build-card h3,
 html[data-theme="ledger"] .guide-kicker,
@@ -1817,7 +1810,7 @@ table {
     display: none;
 }
 
-.progression-nav .guide-range-nav:not([hidden]) {
+.progression-nav .is-current-branch > .guide-range-nav {
     display: block;
 }
 
@@ -2212,7 +2205,7 @@ body,
     color: #f2cf72;
 }
 
-.progression-nav .sidebar-category {
+.progression-nav .guide-nav-era > a {
     color: #e0c77e;
     font-family: Georgia, "Times New Roman", serif;
     font-weight: 700;
@@ -3764,18 +3757,19 @@ hr {
 }
 
 /* Final sidebar overrides intentionally follow the legacy skin rules. */
-.progression-nav li.guide-nav-era > .sidebar-category {
+.progression-nav li.guide-nav-era > a {
     position: relative;
+    padding-right: 24px;
     color: inherit;
     font-family: inherit;
     font-weight: 600;
 }
 
-html[data-theme="ledger"] .progression-nav li.guide-nav-era > .sidebar-category {
+html[data-theme="ledger"] .progression-nav li.guide-nav-era > a {
     color: #433a30;
 }
 
-.progression-nav li.is-current-branch > .sidebar-category {
+.progression-nav li.is-current-branch > a {
     background: var(--panel-raised);
     color: var(--gold);
 }

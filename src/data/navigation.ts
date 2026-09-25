@@ -1,17 +1,13 @@
 export interface NavigationItem {
   label: string;
   href: string;
-}
-
-export interface NavigationCategory {
-  label: string;
-  pages: NavigationItem[];
+  children?: NavigationItem[];
 }
 
 export interface NavigationGroup {
   label: string;
   className?: string;
-  items: NavigationCategory[];
+  items: NavigationItem[];
 }
 
 const factionPages: NavigationItem[] = [
@@ -34,29 +30,26 @@ export const navigation: NavigationGroup[] = [
   {
     label: 'Core game',
     items: [
-      { label: 'Game interface', pages: [{ label: 'Overview', href: 'GameWindow' }] },
-      { label: 'Resources', pages: [{ label: 'Overview', href: 'Resources' }, { label: 'Rubies', href: 'Rubies' }] },
-      { label: 'Buildings', pages: [
-        { label: 'Overview', href: 'BuildingAlignments' },
+      { label: 'Game interface', href: 'GameWindow' },
+      { label: 'Resources', href: 'Resources', children: [{ label: 'Rubies', href: 'Rubies' }] },
+      { label: 'Buildings', href: 'BuildingAlignments', children: [
         { label: 'Standard building upgrades', href: 'BuildingUpgrades' },
         { label: 'Unique buildings', href: 'UniqueBuilding' },
       ] },
-      { label: 'Spells', pages: [{ label: 'Overview', href: 'Spells' }, { label: 'Spell tiers', href: 'SpellTiers' }] },
-      { label: 'Factions', pages: [{ label: 'Overview', href: 'Factions' }, ...factionPages] },
-      { label: 'Upgrades', pages: [
-        { label: 'Overview', href: 'Upgrades' },
+      { label: 'Spells', href: 'Spells', children: [{ label: 'Spell tiers', href: 'SpellTiers' }] },
+      { label: 'Factions', href: 'Factions', children: factionPages },
+      { label: 'Upgrades', href: 'Upgrades', children: [
         { label: 'Faction upgrades', href: 'FactionUpgrades' },
         { label: 'Premium upgrades', href: 'PremiumUpgrades' },
         { label: 'Sun Force', href: 'SunForce' },
       ] },
-      { label: 'Trophies', pages: [{ label: 'Overview', href: 'TrophyPage' }, { label: 'Complete trophy list', href: 'AllTrophies' }] },
+      { label: 'Trophies', href: 'TrophyPage', children: [{ label: 'Complete trophy list', href: 'AllTrophies' }] },
     ],
   },
   {
     label: 'Progression',
     items: [
-      { label: 'Resets and progression', pages: [
-        { label: 'Overview', href: 'Reset' },
+      { label: 'Resets and progression', href: 'Reset', children: [
         { label: 'Abdication', href: 'Abdication' },
         { label: 'Reincarnation', href: 'Reincarnation' },
         { label: 'Ascensions', href: 'Ascension' },
@@ -65,41 +58,39 @@ export const navigation: NavigationGroup[] = [
         { label: 'Ascension 3', href: 'Ascension3' },
         { label: 'Ascension 4', href: 'Ascension4' },
       ] },
-      { label: 'Challenges', pages: [{ label: 'Overview', href: 'Challenges' }, ...challengePages] },
-      { label: 'Mercenaries', pages: [{ label: 'Overview', href: 'MercenaryFaction' }] },
-      { label: 'Excavation and artifacts', pages: [
-        { label: 'Overview', href: 'Artifacts' },
+      { label: 'Challenges', href: 'Challenges', children: challengePages },
+      { label: 'Mercenaries', href: 'MercenaryFaction' },
+      { label: 'Excavation and artifacts', href: 'Artifacts', children: [
         { label: 'Lore artifacts', href: 'LoreArtifacts' },
         { label: 'Quest artifacts', href: 'QuestArtifacts' },
         { label: 'Artifact sets', href: 'ArtifactSet' },
       ] },
-      { label: 'Bloodlines', pages: [{ label: 'Overview', href: 'Bloodline' }] },
-      { label: 'Research', pages: [
-        { label: 'Overview', href: 'Research' },
+      { label: 'Bloodlines', href: 'Bloodline' },
+      { label: 'Research', href: 'Research', children: [
         { label: 'Research list', href: 'ResearchList' },
         { label: 'Research tree', href: 'Researchtree' },
         { label: 'Research facilities', href: 'ResearchFacilities' },
+        { label: 'Unique buildings', href: 'UniqueBuilding' },
       ] },
-      { label: 'Heritages', pages: [{ label: 'Overview', href: 'Heritages' }] },
-      { label: 'Lineages', pages: [{ label: 'Overview', href: 'Lineages' }] },
-      { label: 'Legacies', pages: [{ label: 'Overview', href: 'Legacies' }] },
+      { label: 'Heritages', href: 'Heritages' },
+      { label: 'Lineages', href: 'Lineages' },
+      { label: 'Legacies', href: 'Legacies' },
     ],
   },
-  { label: 'Events', items: [{ label: 'Events', pages: [{ label: 'Overview', href: 'Events' }] }] },
+  { label: 'Events', items: [{ label: 'Events', href: 'Events' }] },
   {
     label: 'Game reference',
     items: [
-      { label: 'Notation', pages: [{ label: 'Overview', href: 'Notation' }] },
-      { label: 'Terminology', pages: [{ label: 'Overview', href: 'Terminology' }] },
-      { label: 'Random number generation', pages: [{ label: 'Overview', href: 'RNG' }] },
+      { label: 'Notation', href: 'Notation' },
+      { label: 'Terminology', href: 'Terminology' },
+      { label: 'Random number generation', href: 'RNG' },
     ],
   },
   {
     label: 'History',
     className: 'progression-group-secondary',
     items: [
-      { label: 'Changelog', pages: [
-        { label: 'Overview', href: 'Changelog' },
+      { label: 'Changelog', href: 'Changelog', children: [
         { label: 'Version 4.3 major update', href: 'Changes' },
         { label: 'Version 4.2', href: '4.2Patch' }, { label: 'Version 4.1', href: '4.1Patch' },
         { label: 'Version 4.0', href: '4.0Patch' }, { label: 'Version 3.8', href: '3.8Patch' },
@@ -107,7 +98,7 @@ export const navigation: NavigationGroup[] = [
         { label: 'Version 3.5', href: '3.5Patch' }, { label: 'Version 3.4', href: '3.4Patch' },
         { label: 'Version 3.3', href: '3.3Patch' },
       ] },
-      { label: 'Site map', pages: [{ label: 'Overview', href: 'SiteMap' }] },
+      { label: 'All pages', href: 'SiteMap' },
     ],
   },
 ];
@@ -124,9 +115,10 @@ export const footerNavigation: NavigationItem[] = [
 
 export function navigationTrail(route: string): NavigationTrailItem[] {
   for (const group of navigation) {
-    for (const category of group.items) {
-      const page = category.pages.find((candidate) => candidate.href === route);
-      if (page) return [{ label: group.label }, { label: category.label }, { label: page.label, href: page.href }];
+    for (const item of group.items) {
+      if (item.href === route) return [{ label: group.label }, { label: item.label, href: item.href }];
+      const child = item.children?.find((candidate) => candidate.href === route);
+      if (child) return [{ label: group.label }, { label: item.label, href: item.href }, { label: child.label, href: child.href }];
     }
   }
   const footerItem = footerNavigation.find((item) => item.href === route);
