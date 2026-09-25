@@ -155,6 +155,14 @@ const trophyStyles = fs.readFileSync(path.join(root, 'scripts/common.css'), 'utf
 if (/\.progression-nav:focus-within\s+\.guide-range-nav/.test(trophyStyles)) {
   failures.push('Sidebar focus globally expands every nested navigation branch');
 }
+const sidebarCategoryCount = [...trophyPageHtml.matchAll(/<button class="sidebar-category"/g)].length;
+const sidebarOverviewCount = [...trophyPageHtml.matchAll(/<a href="[^"]+">Overview<\/a>/g)].length;
+if (!sidebarCategoryCount || sidebarOverviewCount !== sidebarCategoryCount) {
+  failures.push(`Sidebar has ${sidebarCategoryCount} categories but ${sidebarOverviewCount} explicit overview pages`);
+}
+if (/<a[^>]+class="sidebar-category"/.test(trophyPageHtml)) {
+  failures.push('Sidebar category labels must disclose page lists rather than navigate ambiguously');
+}
 if (!trophyStyles.includes('font-family: "Realm Grinder Liony", Georgia, serif') || !trophyStyles.includes('font-size: 32px') || !trophyStyles.includes('row-gap: 2px') || !trophyStyles.includes('var(--trophy-header-skin)') || !trophyStyles.includes('var(--trophy-collapse-up)') || !trophyStyles.includes('var(--trophy-collapse-down)')) {
   failures.push('Trophy section controls no longer use the game\'s font and collapse-arrow textures');
 }
