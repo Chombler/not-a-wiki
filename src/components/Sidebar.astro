@@ -4,8 +4,8 @@ import { navigation } from '../data/navigation';
 const base = `${import.meta.env.BASE_URL.replace(/\/+$/, '')}/`;
 const url = (path: string) => `${base}${path}`;
 const currentRoute = Astro.url.pathname.replace(base, '').replace(/^\/+|\/+$/g, '');
-const containsCurrent = (item: { pages: { href: string }[] }) =>
-  item.pages.some((page) => page.href === currentRoute);
+const containsCurrent = (item: { href: string; pages: { href: string }[] }) =>
+  item.href === currentRoute || item.pages.some((page) => page.href === currentRoute);
 ---
 
 <aside class="site-sidebar" id="site-sidebar">
@@ -21,9 +21,12 @@ const containsCurrent = (item: { pages: { href: string }[] }) =>
               'guide-nav-era': true,
               'is-current-branch': containsCurrent(item),
             }}>
-              <button class="sidebar-category" type="button" aria-expanded={containsCurrent(item) ? 'true' : 'false'} aria-controls={`sidebar-pages-${groupIndex}-${itemIndex}`}>
-                <span>{item.label}</span><span class="sidebar-category-icon" aria-hidden="true">›</span>
-              </button>
+              <div class="sidebar-category-row">
+                <a class="sidebar-category-link" href={url(item.href)} aria-current={item.href === currentRoute ? 'page' : undefined}>{item.label}</a>
+                <button class="sidebar-category" type="button" aria-label={`Toggle ${item.label} pages`} aria-expanded={containsCurrent(item) ? 'true' : 'false'} aria-controls={`sidebar-pages-${groupIndex}-${itemIndex}`}>
+                  <span class="sidebar-category-icon" aria-hidden="true">›</span>
+                </button>
+              </div>
               <ul class="guide-range-nav" id={`sidebar-pages-${groupIndex}-${itemIndex}`} hidden={!containsCurrent(item)}>
                 {item.pages.map((page) => <li><a href={url(page.href)} aria-current={page.href === currentRoute ? 'page' : undefined}>{page.label}</a></li>)}
               </ul>

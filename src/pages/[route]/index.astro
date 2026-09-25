@@ -47,6 +47,14 @@ const baseContent = pageModules[source]
 const content = frameGameIcons(baseContent
   .replace('<realm-trophy-drawer></realm-trophy-drawer>', trophyDrawerHtml(trophyCategories, base))
   .replace('<realm-trophy-list></realm-trophy-list>', trophyListHtml(trophyCategories, base))
+  .replace(
+    /<realm-trophy-category data-category="([^"]+)"><\/realm-trophy-category>/g,
+    (_element, categoryName: string) => {
+      const category = trophyCategories.find((candidate) => candidate.category === categoryName);
+      if (!category) throw new Error(`Unknown trophy category ${categoryName} on ${route}`);
+      return trophyListHtml([category], base);
+    },
+  )
   .replace('<realm-spell-menu></realm-spell-menu>', spellMenuHtml(spellMenu, base))
   .replaceAll(
   '<realm-primal-balance-table></realm-primal-balance-table>',
@@ -67,7 +75,7 @@ const previousAscension = ascensionIndex > 0 ? ascensionOrder[ascensionIndex - 1
 const nextAscension = ascensionIndex >= 0 && ascensionIndex < ascensionOrder.length - 1 ? ascensionOrder[ascensionIndex + 1] : undefined;
 ---
 
-<SiteLayout title={getPageTitle(route)} sourcePath={['TrophyPage', 'AllTrophies'].includes(route) ? 'src/content/trophies/README.md' : `src/page-content/reference/${route}.html`}>
+<SiteLayout title={getPageTitle(route)} sourcePath={['TrophyPage', 'AllTrophies', 'AllegianceTrophies', 'MiscTrophies', 'MagicTrophies', 'BuildingTrophies', 'SecretTrophies'].includes(route) ? 'src/content/trophies/README.md' : `src/page-content/reference/${route}.html`}>
   {ascensionIndex >= 0 && <nav class="reference-sibling-nav" aria-label="Ascension pages">
     {previousAscension ? <a href={`${base}${previousAscension}`}>&larr; {ascensionLabels[previousAscension]}</a> : <span></span>}
     <a href={`${base}Ascension`}>Ascensions overview</a>
