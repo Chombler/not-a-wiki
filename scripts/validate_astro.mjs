@@ -122,11 +122,11 @@ const contracts = {
   'Upgrades/index.html': ['id="alignment-upgrades"', 'id="assistant-upgrades"'],
   'FactionUpgrades/index.html': ['id="tier-1-upgrades"', 'id="tier-4-upgrades"'],
   'Notation/index.html': ['id="suffix-table"', 'id="full-number-list"'],
-  'Rubies/index.html': ['id="getting-rubies"', 'id="spending-rubies"', 'id="ruby-upgrade-panel"'],
+  'Rubies/index.html': ['id="getting-rubies"', 'id="spending-rubies"', 'id="ruby-upgrade-panel"', 'id="ruby-appearance"', 'Rubies have one standard appearance'],
   'Resources/index.html': ['id="resource-summary"', 'id="resource-pages"', 'id="other-currencies"', 'id="cosmetic-appearances"', 'mana-bubble-full.png'],
   'Mana/index.html': ['id="mana-values"', 'id="online-mana"', 'id="offline-mana"', 'min(Maximum Mana, offline Mana Regeneration)', 'id="mana-appearance"'],
-  'CoinsAndGems/index.html': ['id="coin-currencies"', 'id="gems"', '5e11 * n * (n + 1)', 'id="coin-and-gem-resets"', 'diamond-coin.png', 'id="coin-appearance"'],
-  'FactionCoins/index.html': ['id="faction-coin-types"', 'Corresponding faction', 'Elven Coins</td><td><a href="/not-a-wiki/ElfFaction/">Elf</a>', 'Dwarven Coins</td><td><a href="/not-a-wiki/DwarfFaction/">Dwarf</a>', 'Drow Coins</td><td><a href="/not-a-wiki/DrowFaction/">Drow</a>', 'id="neutral-factions"', 'Titan</a></td><td><span class="faction-coin-list"', 'id="later-factions"', 'Prestige and Astral faction currency pairs', 'Dragon</a></td><td><span class="faction-coin-list"', 'id="finding-faction-coins"', 'id="spending-faction-coins"', 'Faction affiliation and tier unlocks', 'Lineage levels', 'Mercenary contracts and upgrades', 'Legacy Containers and Legacy Combos', 'fairy-coin-small.png', 'id="faction-coin-appearance"'],
+  'CoinsAndGems/index.html': ['id="coin-currencies"', 'id="gems"', '5e11 * n * (n + 1)', 'id="coin-and-gem-resets"', 'diamond-coin.png', 'id="coin-appearance"', 'Selectable coin particles', 'particle-valentine.png', 'particle-idillium.png'],
+  'FactionCoins/index.html': ['id="faction-coin-types"', 'Corresponding faction', 'Elven Coins</td><td><a href="/not-a-wiki/ElfFaction/">Elf</a>', 'Dwarven Coins</td><td><a href="/not-a-wiki/DwarfFaction/">Dwarf</a>', 'Drow Coins</td><td><a href="/not-a-wiki/DrowFaction/">Drow</a>', 'id="neutral-factions"', 'Titan</a></td><td><span class="faction-coin-list"', 'id="later-factions"', 'Prestige and Astral faction currency pairs', 'Dragon</a></td><td><span class="faction-coin-list"', 'id="finding-faction-coins"', 'id="spending-faction-coins"', 'Faction affiliation and tier unlocks', 'Lineage levels', 'Mercenary contracts and upgrades', 'Legacy Containers and Legacy Combos', 'fairy-coin-small.png', 'id="faction-coin-appearance"', 'particle-fairy-coin.png', 'particle-drow-coin.png'],
 };
 for (const [relative, markers] of Object.entries(contracts)) {
   const file = path.join(output, relative);

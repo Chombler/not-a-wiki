@@ -641,6 +641,292 @@
       "role": "particle"
     },
     {
+      "key": "particle-valentine",
+      "path": "assets/game/sprites/particle-valentine.png",
+      "sprite_name": "ParticleValentine",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 762,
+        "y": 415,
+        "width": 41,
+        "height": 38
+      },
+      "frame": {
+        "x": 0,
+        "y": -4,
+        "width": 41,
+        "height": 43
+      },
+      "kind": "resource-cosmetic",
+      "entity": "coin-particle-valentine",
+      "role": "particle"
+    },
+    {
+      "key": "particle-cloud1",
+      "path": "assets/game/sprites/particle-cloud1.png",
+      "sprite_name": "ParticleCloud1",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 927,
+        "y": 1722,
+        "width": 41,
+        "height": 26
+      },
+      "frame": {
+        "x": 0,
+        "y": -8,
+        "width": 41,
+        "height": 43
+      },
+      "kind": "resource-cosmetic",
+      "entity": "coin-particle-blood-war",
+      "role": "particle"
+    },
+    {
+      "key": "particle-nugget",
+      "path": "assets/game/sprites/particle-nugget.png",
+      "sprite_name": "ParticleNugget",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1672,
+        "y": 1863,
+        "width": 41,
+        "height": 36
+      },
+      "frame": {
+        "x": 0,
+        "y": -3,
+        "width": 41,
+        "height": 43
+      },
+      "kind": "resource-cosmetic",
+      "entity": "coin-particle-goblin-invasion",
+      "role": "particle"
+    },
+    {
+      "key": "particle-summer1",
+      "path": "assets/game/sprites/particle-summer1.png",
+      "sprite_name": "ParticleSummer1",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 692,
+        "y": 1568,
+        "width": 29,
+        "height": 29
+      },
+      "frame": {
+        "x": -6,
+        "y": -7,
+        "width": 41,
+        "height": 43
+      },
+      "kind": "resource-cosmetic",
+      "entity": "coin-particle-summer",
+      "role": "particle"
+    },
+    {
+      "key": "particle-idillium",
+      "path": "assets/game/sprites/particle-idillium.png",
+      "sprite_name": "ParticleIdillium",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1756,
+        "y": 1856,
+        "width": 41,
+        "height": 43
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 41,
+        "height": 43
+      },
+      "kind": "resource-cosmetic",
+      "entity": "coin-particle-idillium",
+      "role": "particle"
+    },
+    {
+      "key": "particle-fairy-coin",
+      "path": "assets/game/sprites/particle-fairy-coin.png",
+      "sprite_name": "ParticleFairyCoin",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1768,
+        "y": 1603,
+        "width": 41,
+        "height": 43
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 41,
+        "height": 43
+      },
+      "kind": "resource",
+      "entity": "fairy-faction-coin",
+      "role": "particle"
+    },
+    {
+      "key": "particle-elven-coin",
+      "path": "assets/game/sprites/particle-elven-coin.png",
+      "sprite_name": "ParticleElvenCoin",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1719,
+        "y": 1654,
+        "width": 41,
+        "height": 43
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 41,
+        "height": 43
+      },
+      "kind": "resource",
+      "entity": "elven-faction-coin",
+      "role": "particle"
+    },
+    {
+      "key": "particle-angel-coin",
+      "path": "assets/game/sprites/particle-angel-coin.png",
+      "sprite_name": "ParticleAngelCoin",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1047,
+        "y": 1509,
+        "width": 41,
+        "height": 43
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 41,
+        "height": 43
+      },
+      "kind": "resource",
+      "entity": "angel-faction-coin",
+      "role": "particle"
+    },
+    {
+      "key": "particle-goblin-coin",
+      "path": "assets/game/sprites/particle-goblin-coin.png",
+      "sprite_name": "ParticleGoblinCoin",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1723,
+        "y": 1747,
+        "width": 41,
+        "height": 43
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 41,
+        "height": 43
+      },
+      "kind": "resource",
+      "entity": "goblin-faction-coin",
+      "role": "particle"
+    },
+    {
+      "key": "particle-undead-coin",
+      "path": "assets/game/sprites/particle-undead-coin.png",
+      "sprite_name": "ParticleUndeadCoin",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1768,
+        "y": 1812,
+        "width": 41,
+        "height": 43
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 41,
+        "height": 43
+      },
+      "kind": "resource",
+      "entity": "undead-faction-coin",
+      "role": "particle"
+    },
+    {
+      "key": "particle-demon-coin",
+      "path": "assets/game/sprites/particle-demon-coin.png",
+      "sprite_name": "ParticleDemonCoin",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1047,
+        "y": 1597,
+        "width": 41,
+        "height": 43
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 41,
+        "height": 43
+      },
+      "kind": "resource",
+      "entity": "demon-faction-coin",
+      "role": "particle"
+    },
+    {
+      "key": "particle-dwarven-coin",
+      "path": "assets/game/sprites/particle-dwarven-coin.png",
+      "sprite_name": "ParticleDwarvenCoin",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1579,
+        "y": 1472,
+        "width": 41,
+        "height": 43
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 41,
+        "height": 43
+      },
+      "kind": "resource",
+      "entity": "dwarven-faction-coin",
+      "role": "particle"
+    },
+    {
+      "key": "particle-drow-coin",
+      "path": "assets/game/sprites/particle-drow-coin.png",
+      "sprite_name": "ParticleDrowCoin",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 927,
+        "y": 1678,
+        "width": 41,
+        "height": 43
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 41,
+        "height": 43
+      },
+      "kind": "resource",
+      "entity": "drow-faction-coin",
+      "role": "particle"
+    },
+    {
       "key": "buy-fairy-upgrades-trophy",
       "path": "assets/game/sprites/buy-fairy-upgrades-trophy.png",
       "sprite_name": "BuyFairyUpgradesTrophy",

@@ -175,6 +175,84 @@
       "role": "particle"
     },
     {
+      "sprite_name": "ParticleValentine",
+      "kind": "resource-cosmetic",
+      "entity": "coin-particle-valentine",
+      "role": "particle"
+    },
+    {
+      "sprite_name": "ParticleCloud1",
+      "kind": "resource-cosmetic",
+      "entity": "coin-particle-blood-war",
+      "role": "particle"
+    },
+    {
+      "sprite_name": "ParticleNugget",
+      "kind": "resource-cosmetic",
+      "entity": "coin-particle-goblin-invasion",
+      "role": "particle"
+    },
+    {
+      "sprite_name": "ParticleSummer1",
+      "kind": "resource-cosmetic",
+      "entity": "coin-particle-summer",
+      "role": "particle"
+    },
+    {
+      "sprite_name": "ParticleIdillium",
+      "kind": "resource-cosmetic",
+      "entity": "coin-particle-idillium",
+      "role": "particle"
+    },
+    {
+      "sprite_name": "ParticleFairyCoin",
+      "kind": "resource",
+      "entity": "fairy-faction-coin",
+      "role": "particle"
+    },
+    {
+      "sprite_name": "ParticleElvenCoin",
+      "kind": "resource",
+      "entity": "elven-faction-coin",
+      "role": "particle"
+    },
+    {
+      "sprite_name": "ParticleAngelCoin",
+      "kind": "resource",
+      "entity": "angel-faction-coin",
+      "role": "particle"
+    },
+    {
+      "sprite_name": "ParticleGoblinCoin",
+      "kind": "resource",
+      "entity": "goblin-faction-coin",
+      "role": "particle"
+    },
+    {
+      "sprite_name": "ParticleUndeadCoin",
+      "kind": "resource",
+      "entity": "undead-faction-coin",
+      "role": "particle"
+    },
+    {
+      "sprite_name": "ParticleDemonCoin",
+      "kind": "resource",
+      "entity": "demon-faction-coin",
+      "role": "particle"
+    },
+    {
+      "sprite_name": "ParticleDwarvenCoin",
+      "kind": "resource",
+      "entity": "dwarven-faction-coin",
+      "role": "particle"
+    },
+    {
+      "sprite_name": "ParticleDrowCoin",
+      "kind": "resource",
+      "entity": "drow-faction-coin",
+      "role": "particle"
+    },
+    {
       "sprite_name": "BuyFairyUpgradesTrophy",
       "kind": "trophy",
       "entity": "fairy-champion",
