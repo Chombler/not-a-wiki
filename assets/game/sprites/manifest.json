@@ -725,7 +725,29 @@
         "height": 43
       },
       "kind": "resource-cosmetic",
-      "entity": "coin-particle-summer",
+      "entity": "coin-particle-summer-snow",
+      "role": "particle"
+    },
+    {
+      "key": "particle-summer2",
+      "path": "assets/game/sprites/particle-summer2.png",
+      "sprite_name": "ParticleSummer2",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 364,
+        "y": 1636,
+        "width": 29,
+        "height": 29
+      },
+      "frame": {
+        "x": -6,
+        "y": -7,
+        "width": 41,
+        "height": 43
+      },
+      "kind": "resource-cosmetic",
+      "entity": "coin-particle-summer-fire",
       "role": "particle"
     },
     {

@@ -195,7 +195,13 @@
     {
       "sprite_name": "ParticleSummer1",
       "kind": "resource-cosmetic",
-      "entity": "coin-particle-summer",
+      "entity": "coin-particle-summer-snow",
+      "role": "particle"
+    },
+    {
+      "sprite_name": "ParticleSummer2",
+      "kind": "resource-cosmetic",
+      "entity": "coin-particle-summer-fire",
       "role": "particle"
     },
     {
