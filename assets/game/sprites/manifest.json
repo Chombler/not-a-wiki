@@ -377,6 +377,138 @@
       "role": "icon"
     },
     {
+      "key": "ruby-assistant-upgrade",
+      "path": "assets/game/sprites/ruby-assistant-upgrade.png",
+      "sprite_name": "RubyAssistantUpgrade",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 605,
+        "y": 282,
+        "width": 48,
+        "height": 44
+      },
+      "frame": {
+        "x": -2,
+        "y": -6,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-assistant",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-mana-upgrade",
+      "path": "assets/game/sprites/ruby-mana-upgrade.png",
+      "sprite_name": "RubyManaUpgrade",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1229,
+        "y": 1678,
+        "width": 49,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-mana-regeneration",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-max-mana-upgrade",
+      "path": "assets/game/sprites/ruby-max-mana-upgrade.png",
+      "sprite_name": "RubyMaxManaUpgrade",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1280,
+        "y": 1678,
+        "width": 49,
+        "height": 49
+      },
+      "frame": {
+        "x": -1,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-maximum-mana",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-gem-upgrade",
+      "path": "assets/game/sprites/ruby-gem-upgrade.png",
+      "sprite_name": "RubyGemUpgrade",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1086,
+        "y": 558,
+        "width": 45,
+        "height": 50
+      },
+      "frame": {
+        "x": -3,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-gem-bonus",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-exchange-upgrade",
+      "path": "assets/game/sprites/ruby-exchange-upgrade.png",
+      "sprite_name": "RubyExchangeUpgrade",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 405,
+        "y": 235,
+        "width": 48,
+        "height": 46
+      },
+      "frame": {
+        "x": -2,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-royal-trading",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-power-upgrade",
+      "path": "assets/game/sprites/ruby-power-upgrade.png",
+      "sprite_name": "RubyPowerUpgrade",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1231,
+        "y": 474,
+        "width": 44,
+        "height": 46
+      },
+      "frame": {
+        "x": -2,
+        "y": -2,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power",
+      "role": "icon"
+    },
+    {
       "key": "fairy-coin-small",
       "path": "assets/game/sprites/fairy-coin-small.png",
       "sprite_name": "FairyCoinSmall",
@@ -9746,6 +9878,1106 @@
       },
       "kind": "trophy",
       "entity": "rubies-4",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade1",
+      "path": "assets/game/sprites/ruby-upgrade1.png",
+      "sprite_name": "RubyUpgrade1",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1334,
+        "y": 376,
+        "width": 47,
+        "height": 44
+      },
+      "frame": {
+        "x": -2,
+        "y": -6,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-1",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade2",
+      "path": "assets/game/sprites/ruby-upgrade2.png",
+      "sprite_name": "RubyUpgrade2",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1383,
+        "y": 376,
+        "width": 47,
+        "height": 44
+      },
+      "frame": {
+        "x": -2,
+        "y": -6,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-2",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade3",
+      "path": "assets/game/sprites/ruby-upgrade3.png",
+      "sprite_name": "RubyUpgrade3",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1432,
+        "y": 376,
+        "width": 47,
+        "height": 44
+      },
+      "frame": {
+        "x": -2,
+        "y": -6,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-3",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade4",
+      "path": "assets/game/sprites/ruby-upgrade4.png",
+      "sprite_name": "RubyUpgrade4",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1481,
+        "y": 376,
+        "width": 47,
+        "height": 44
+      },
+      "frame": {
+        "x": -2,
+        "y": -6,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-4",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade5",
+      "path": "assets/game/sprites/ruby-upgrade5.png",
+      "sprite_name": "RubyUpgrade5",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1530,
+        "y": 376,
+        "width": 47,
+        "height": 44
+      },
+      "frame": {
+        "x": -2,
+        "y": -6,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-5",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade6",
+      "path": "assets/game/sprites/ruby-upgrade6.png",
+      "sprite_name": "RubyUpgrade6",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1579,
+        "y": 376,
+        "width": 47,
+        "height": 44
+      },
+      "frame": {
+        "x": -2,
+        "y": -6,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-6",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade7",
+      "path": "assets/game/sprites/ruby-upgrade7.png",
+      "sprite_name": "RubyUpgrade7",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1628,
+        "y": 420,
+        "width": 47,
+        "height": 44
+      },
+      "frame": {
+        "x": -2,
+        "y": -6,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-7",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade8",
+      "path": "assets/game/sprites/ruby-upgrade8.png",
+      "sprite_name": "RubyUpgrade8",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1677,
+        "y": 464,
+        "width": 47,
+        "height": 44
+      },
+      "frame": {
+        "x": -2,
+        "y": -6,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-8",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade9",
+      "path": "assets/game/sprites/ruby-upgrade9.png",
+      "sprite_name": "RubyUpgrade9",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1726,
+        "y": 503,
+        "width": 47,
+        "height": 44
+      },
+      "frame": {
+        "x": -2,
+        "y": -6,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-9",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade10",
+      "path": "assets/game/sprites/ruby-upgrade10.png",
+      "sprite_name": "RubyUpgrade10",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1775,
+        "y": 504,
+        "width": 47,
+        "height": 44
+      },
+      "frame": {
+        "x": -2,
+        "y": -6,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-10",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade11",
+      "path": "assets/game/sprites/ruby-upgrade11.png",
+      "sprite_name": "RubyUpgrade11",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1822,
+        "y": 176,
+        "width": 49,
+        "height": 46
+      },
+      "frame": {
+        "x": 0,
+        "y": -4,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-11",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade12",
+      "path": "assets/game/sprites/ruby-upgrade12.png",
+      "sprite_name": "RubyUpgrade12",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1925,
+        "y": 177,
+        "width": 49,
+        "height": 46
+      },
+      "frame": {
+        "x": 0,
+        "y": -4,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-12",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade13",
+      "path": "assets/game/sprites/ruby-upgrade13.png",
+      "sprite_name": "RubyUpgrade13",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1873,
+        "y": 214,
+        "width": 49,
+        "height": 46
+      },
+      "frame": {
+        "x": 0,
+        "y": -4,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-13",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade14",
+      "path": "assets/game/sprites/ruby-upgrade14.png",
+      "sprite_name": "RubyUpgrade14",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1976,
+        "y": 217,
+        "width": 49,
+        "height": 46
+      },
+      "frame": {
+        "x": 0,
+        "y": -4,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-14",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade15",
+      "path": "assets/game/sprites/ruby-upgrade15.png",
+      "sprite_name": "RubyUpgrade15",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1924,
+        "y": 225,
+        "width": 49,
+        "height": 46
+      },
+      "frame": {
+        "x": 0,
+        "y": -4,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-15",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade16",
+      "path": "assets/game/sprites/ruby-upgrade16.png",
+      "sprite_name": "RubyUpgrade16",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1975,
+        "y": 265,
+        "width": 49,
+        "height": 46
+      },
+      "frame": {
+        "x": 0,
+        "y": -4,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-16",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade17",
+      "path": "assets/game/sprites/ruby-upgrade17.png",
+      "sprite_name": "RubyUpgrade17",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1042,
+        "y": 138,
+        "width": 49,
+        "height": 46
+      },
+      "frame": {
+        "x": 0,
+        "y": -4,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-17",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade18",
+      "path": "assets/game/sprites/ruby-upgrade18.png",
+      "sprite_name": "RubyUpgrade18",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 938,
+        "y": 139,
+        "width": 49,
+        "height": 46
+      },
+      "frame": {
+        "x": 0,
+        "y": -4,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-18",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade19",
+      "path": "assets/game/sprites/ruby-upgrade19.png",
+      "sprite_name": "RubyUpgrade19",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 989,
+        "y": 139,
+        "width": 49,
+        "height": 46
+      },
+      "frame": {
+        "x": 0,
+        "y": -4,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-19",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade20",
+      "path": "assets/game/sprites/ruby-upgrade20.png",
+      "sprite_name": "RubyUpgrade20",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 262,
+        "y": 140,
+        "width": 49,
+        "height": 46
+      },
+      "frame": {
+        "x": 0,
+        "y": -4,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-20",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade21",
+      "path": "assets/game/sprites/ruby-upgrade21.png",
+      "sprite_name": "RubyUpgrade21",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1495,
+        "y": 1020,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-21",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade22",
+      "path": "assets/game/sprites/ruby-upgrade22.png",
+      "sprite_name": "RubyUpgrade22",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1547,
+        "y": 1020,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-22",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade23",
+      "path": "assets/game/sprites/ruby-upgrade23.png",
+      "sprite_name": "RubyUpgrade23",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1599,
+        "y": 1021,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-23",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade24",
+      "path": "assets/game/sprites/ruby-upgrade24.png",
+      "sprite_name": "RubyUpgrade24",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1651,
+        "y": 1021,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-24",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade25",
+      "path": "assets/game/sprites/ruby-upgrade25.png",
+      "sprite_name": "RubyUpgrade25",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1703,
+        "y": 1021,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-25",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade26",
+      "path": "assets/game/sprites/ruby-upgrade26.png",
+      "sprite_name": "RubyUpgrade26",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1755,
+        "y": 1021,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-26",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade27",
+      "path": "assets/game/sprites/ruby-upgrade27.png",
+      "sprite_name": "RubyUpgrade27",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1807,
+        "y": 1021,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-27",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade28",
+      "path": "assets/game/sprites/ruby-upgrade28.png",
+      "sprite_name": "RubyUpgrade28",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1859,
+        "y": 1022,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-28",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade29",
+      "path": "assets/game/sprites/ruby-upgrade29.png",
+      "sprite_name": "RubyUpgrade29",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1911,
+        "y": 1022,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-29",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade30",
+      "path": "assets/game/sprites/ruby-upgrade30.png",
+      "sprite_name": "RubyUpgrade30",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1963,
+        "y": 1024,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-30",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade31",
+      "path": "assets/game/sprites/ruby-upgrade31.png",
+      "sprite_name": "RubyUpgrade31",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1491,
+        "y": 279,
+        "width": 48,
+        "height": 47
+      },
+      "frame": {
+        "x": -1,
+        "y": -3,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-31",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade32",
+      "path": "assets/game/sprites/ruby-upgrade32.png",
+      "sprite_name": "RubyUpgrade32",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1541,
+        "y": 279,
+        "width": 48,
+        "height": 47
+      },
+      "frame": {
+        "x": -1,
+        "y": -3,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-32",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade33",
+      "path": "assets/game/sprites/ruby-upgrade33.png",
+      "sprite_name": "RubyUpgrade33",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1591,
+        "y": 279,
+        "width": 48,
+        "height": 47
+      },
+      "frame": {
+        "x": -1,
+        "y": -3,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-33",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade34",
+      "path": "assets/game/sprites/ruby-upgrade34.png",
+      "sprite_name": "RubyUpgrade34",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1641,
+        "y": 323,
+        "width": 48,
+        "height": 47
+      },
+      "frame": {
+        "x": -1,
+        "y": -3,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-34",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade35",
+      "path": "assets/game/sprites/ruby-upgrade35.png",
+      "sprite_name": "RubyUpgrade35",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1691,
+        "y": 367,
+        "width": 48,
+        "height": 47
+      },
+      "frame": {
+        "x": -1,
+        "y": -3,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-35",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade36",
+      "path": "assets/game/sprites/ruby-upgrade36.png",
+      "sprite_name": "RubyUpgrade36",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1741,
+        "y": 407,
+        "width": 48,
+        "height": 47
+      },
+      "frame": {
+        "x": -1,
+        "y": -3,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-36",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade37",
+      "path": "assets/game/sprites/ruby-upgrade37.png",
+      "sprite_name": "RubyUpgrade37",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1791,
+        "y": 408,
+        "width": 48,
+        "height": 47
+      },
+      "frame": {
+        "x": -1,
+        "y": -3,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-37",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade38",
+      "path": "assets/game/sprites/ruby-upgrade38.png",
+      "sprite_name": "RubyUpgrade38",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1841,
+        "y": 445,
+        "width": 48,
+        "height": 47
+      },
+      "frame": {
+        "x": -1,
+        "y": -3,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-38",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade39",
+      "path": "assets/game/sprites/ruby-upgrade39.png",
+      "sprite_name": "RubyUpgrade39",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1891,
+        "y": 451,
+        "width": 48,
+        "height": 47
+      },
+      "frame": {
+        "x": -1,
+        "y": -3,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-39",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade40",
+      "path": "assets/game/sprites/ruby-upgrade40.png",
+      "sprite_name": "RubyUpgrade40",
+      "atlas_xml": "realmgrinder_new1.xml",
+      "atlas_image": "realmgrinder_new1.png",
+      "region": {
+        "x": 1941,
+        "y": 452,
+        "width": 48,
+        "height": 47
+      },
+      "frame": {
+        "x": -1,
+        "y": -3,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-40",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade41",
+      "path": "assets/game/sprites/ruby-upgrade41.png",
+      "sprite_name": "RubyUpgrade41",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 646,
+        "y": 1491,
+        "width": 49,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-41",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade42",
+      "path": "assets/game/sprites/ruby-upgrade42.png",
+      "sprite_name": "RubyUpgrade42",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 646,
+        "y": 1543,
+        "width": 49,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-42",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade43",
+      "path": "assets/game/sprites/ruby-upgrade43.png",
+      "sprite_name": "RubyUpgrade43",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 646,
+        "y": 1595,
+        "width": 49,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-43",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade44",
+      "path": "assets/game/sprites/ruby-upgrade44.png",
+      "sprite_name": "RubyUpgrade44",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 646,
+        "y": 1595,
+        "width": 49,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-44",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade45",
+      "path": "assets/game/sprites/ruby-upgrade45.png",
+      "sprite_name": "RubyUpgrade45",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 646,
+        "y": 1647,
+        "width": 49,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-45",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade46",
+      "path": "assets/game/sprites/ruby-upgrade46.png",
+      "sprite_name": "RubyUpgrade46",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 696,
+        "y": 1335,
+        "width": 49,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-46",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade47",
+      "path": "assets/game/sprites/ruby-upgrade47.png",
+      "sprite_name": "RubyUpgrade47",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 697,
+        "y": 1387,
+        "width": 49,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-47",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade48",
+      "path": "assets/game/sprites/ruby-upgrade48.png",
+      "sprite_name": "RubyUpgrade48",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 646,
+        "y": 1595,
+        "width": 49,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-48",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade49",
+      "path": "assets/game/sprites/ruby-upgrade49.png",
+      "sprite_name": "RubyUpgrade49",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 697,
+        "y": 1439,
+        "width": 49,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-49",
+      "role": "icon"
+    },
+    {
+      "key": "ruby-upgrade50",
+      "path": "assets/game/sprites/ruby-upgrade50.png",
+      "sprite_name": "RubyUpgrade50",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 697,
+        "y": 1491,
+        "width": 49,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "upgrade",
+      "entity": "ruby-power-tier-50",
       "role": "icon"
     },
     {
