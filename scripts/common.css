@@ -419,7 +419,7 @@ html[data-theme="ledger"] .progression-nav h2,
 html[data-theme="ledger"] .reference-panel-title,
 html[data-theme="ledger"] .guide-section-heading,
 html[data-theme="ledger"] .site-main th,
-html[data-theme="ledger"] .shelementwhole > p:first-child {
+html[data-theme="ledger"] .shelementwhole > :is(p, h2):first-child {
     border-color: #887a60;
     background: linear-gradient(#c4b79c, #aa9d83);
     color: #352d23;
@@ -1043,13 +1043,13 @@ h7 {
     display: block;
 }
 
-.shelementwhole > p:first-child[role="button"] {
+.shelementwhole > :is(p, h2):first-child[role="button"] {
     position: relative;
     padding-right: 2rem !important;
     cursor: pointer;
 }
 
-.shelementwhole > p:first-child[role="button"]::after {
+.shelementwhole > :is(p, h2):first-child[role="button"]::after {
     content: "▸";
     position: absolute;
     top: 50%;
@@ -1057,11 +1057,11 @@ h7 {
     transform: translateY(-50%);
 }
 
-.shelementwhole > p:first-child[role="button"][aria-expanded="true"]::after {
+.shelementwhole > :is(p, h2):first-child[role="button"][aria-expanded="true"]::after {
     content: "▾";
 }
 
-.shelementwhole > p:first-child[role="button"]:focus-visible,
+.shelementwhole > :is(p, h2):first-child[role="button"]:focus-visible,
 details > summary:focus-visible {
     outline: 3px solid var(--focus, #d8c47f);
     outline-offset: 2px;
@@ -1725,14 +1725,14 @@ table {
     background: var(--panel-bg);
 }
 
-.shelementwhole > p:first-child {
+.shelementwhole > :is(p, h2):first-child {
     max-width: none !important;
     margin: 0 !important;
     padding: .85rem 1rem !important;
     background: var(--panel-raised);
 }
 
-.shelementwhole > p:first-child a {
+.shelementwhole > :is(p, h2):first-child a {
     text-decoration: none;
 }
 
@@ -2330,7 +2330,7 @@ hr {
     background: #191919;
 }
 
-.shelementwhole > p:first-child {
+.shelementwhole > :is(p, h2):first-child {
     padding: 6px 9px !important;
     background: linear-gradient(#393939, #242424);
 }

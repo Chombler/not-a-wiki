@@ -5,12 +5,12 @@
 	<p>There you will be able to advance your research progress, unlock and buy special upgrades which will boost all your abilities hugely.</p>
 	<p>Your research points in each branch are limited by the amount of Reincarnations you have.</p>
 	<hr>
-	<p><b>The Facilities & Related Factions</b></p>
+	<h2 id="research-facilities">Facilities and related factions</h2>
 	<p>Each Facility is related to several Factions: Vanilla factions are related to one facility, Neutral to two, Prestige to three, and Mercenary to one. Each facility increases the production of the related Faction's based on Research Points invested (see next section).</p>
 	<p><b>Production Bonus</b>: Standard facilities use (100,000 * (1 + 0.01 * x ^ 0.7))%; the Forbidden facility uses (100 * (1 + 0.01 * x ^ 0.7))%, where x is Research Points invested in that facility.</p>
 	<p><b>Facility cost</b>: 10 Notg (1e121) coins, 1 M (1e6) Faction Coins of the related faction(s).</p>
 	<hr>
-	<p><b>Research Points</b></p>
+	<h2 id="research-points">Research points</h2>
 	<p>With increasing number of Reincarnations, you can spend more Research Points (RP) to upgrade each facility. The available Research Points per facility are based on the number of Reincarnations made.</p>
 	<p><b>Formula (A0, A1)</b>: ((x + 1) * x / 2), where x is the number of Reincarnations made.</p>
 	<p><b>Formula (A3 [R175-R190], and A4 [R220-R246])</b>: min(cap, 5000 + 125 * (x - 174)), where x is the number of Reincarnations made; the cap is 7,000 in A3 and 14,000 in A4.</p>
@@ -29,7 +29,7 @@
 		<div class="shelementwhole">
 			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">Research Slot/Budget Upgrade Requirements</a></b></p>
 			<div class="autohide">
-				<p><b>Research Slot Upgrade Requirements</b></p>
+				<h2 id="research-slots">Research slots and budget</h2>
 				<p><img src="/realm/Factions/picks/MagicianSlotUpgrade.png" alt="Warfare" align="middle"> <b>Magician</b> (R20+)</p>
 				<p><b>Requirement</b>: Discover at least 10 Spellcraft Researches.</p>
 				<p><b>Cost</b>: 250 Noqag (2.5e152)</p>
@@ -233,7 +233,7 @@
 		</div>
 	</div>
 	<br>
-	<center><b>Research Requirements</b></center>
+	<h2 id="research-requirements">Research requirements</h2>
 	<div class="shlisting">
 		<div class="shelementwhole">
 			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">Vanilla Research</a></b> (R16+)</p>

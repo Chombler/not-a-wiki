@@ -70,7 +70,7 @@ export function trophyDrawerHtml(categories: TrophyCategory[], base: string) {
 export function trophyListHtml(categories: TrophyCategory[], base: string) {
   const sections = categories.map((category, index) => {
     const trophies = category.trophies.map((trophy) => `<article class="trophy-entry" id="${trophy.id}"><p class="trophy-entry-heading">${icon(base, trophy, trophy.name)}<b>${trophy.name}</b></p>${bodyForBase(trophy.body, base)}${guideHtml(trophy, base)}</article>`).join('');
-    return `<details class="trophy-list-section"${index === 0 ? ' open' : ''}><summary>${category.label} (${category.trophies.length})</summary><div class="trophy-list-entries">${trophies}</div></details>`;
+    return `<h2 id="${category.category}-trophies">${category.label}</h2><details class="trophy-list-section"${index === 0 ? ' open' : ''}><summary>${category.label} (${category.trophies.length})</summary><div class="trophy-list-entries">${trophies}</div></details>`;
   }).join('');
   return `<div class="trophy-text-list">${sections}</div>`;
 }

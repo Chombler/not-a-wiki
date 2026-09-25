@@ -11,6 +11,11 @@ const withheldGuidanceRoutes = new Set(siteScope.withheldGuidanceRoutes);
 const writeBaseline = process.argv.includes('--write-baseline');
 const failures = [];
 
+const siteScript = fs.readFileSync(path.join(root, 'public', 'scripts', 'site.js'), 'utf8');
+if (!siteScript.includes("main.querySelectorAll('h2[id], h3[id]')") || !siteScript.includes('if (headings.length < 2) return;')) {
+  failures.push('Page TOC no longer requires at least two authored, stable section headings');
+}
+
 function walk(directory, predicate) {
   if (!fs.existsSync(directory)) return [];
   return fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
@@ -86,13 +91,17 @@ for (const asset of knownMissing) if (!missingAssets.has(asset)) failures.push(`
 
 const contracts = {
   'index.html': ['class="site-shell"', 'class="site-sidebar"', 'class="reference-home-header"', '--game-icon-frame: url(&quot;/not-a-wiki/assets/game/sprites/black-gold-trim.png&quot;)'],
-  'Artifacts/index.html': ['name="QuestArtifacts-map"', 'name="LoreArtifacts-map"', 'href="/not-a-wiki/LoreArtifacts/#WallFragment"', 'href="/not-a-wiki/LoreArtifacts/#WallChunk"'],
+  'Artifacts/index.html': ['name="QuestArtifacts-map"', 'name="LoreArtifacts-map"', 'href="/not-a-wiki/LoreArtifacts/#WallFragment"', 'href="/not-a-wiki/LoreArtifacts/#WallChunk"', 'id="artifact-overview"', 'id="excavations"'],
   'LoreArtifacts/index.html': ['id="WallFragment"', 'id="WallChunk"', 'class="numtable tier-table'],
-  'ResearchList/index.html': ['id="spellcraft"', 'class="research-entry"'],
+  'ResearchList/index.html': ['id="spellcraft"', 'id="forbidden"', 'class="research-entry"'],
   'Researchtree/index.html': ['usemap="#ResearchTreeA4-map"', 'data-research='],
   'Spells/index.html': ['(11 - T) ^ 5', 'Hall of Legends</td><td>0 × ln(1 + x)^6%', 'class="numtable primal-balance-table"', '<td>11 (all)</td>'],
   'Factions/index.html': ['usemap="#FactionGrid-map"', 'Click a faction icon to open its complete reference page', 'href="/not-a-wiki/FairyFaction/"'],
   'TrophyPage/index.html': ['id="mathematician-building-bonuses"', 'Mathematician bonus by building', 'Hall of Legends</td><td>10%'],
+  'AllTrophies/index.html': ['id="allegiance-trophies"', 'id="building-trophies"', '903 Total Trophies'],
+  'FairyFaction/index.html': ['id="faction-overview"', 'id="faction-spell"', 'id="tier-4-upgrades"'],
+  'Fairy/index.html': ['id="FRC1"', 'id="FRCR"'],
+  'Reincarnation/index.html': ['id="reincarnation-power"', 'id="current-powers"', 'id="kept-at-reincarnation"'],
 };
 for (const [relative, markers] of Object.entries(contracts)) {
   const file = path.join(output, relative);

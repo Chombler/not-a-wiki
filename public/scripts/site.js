@@ -200,21 +200,15 @@
     var toc = document.getElementById('page-toc');
     var list = document.getElementById('page-toc-list');
     if (!main || !toc || !list) return;
-    var headings = Array.prototype.slice.call(main.querySelectorAll('h2, h3')).filter(function (heading) {
+    var headings = Array.prototype.slice.call(main.querySelectorAll('h2[id], h3[id]')).filter(function (heading) {
       return !heading.closest('[data-guide-entry], .build-card, .research-build-row, .guide-build-card, .guide-detail-source, .build-group-title, .reference-panel-title, .autohide');
     });
-    var used = {};
-    headings.forEach(function (heading, index) {
-      var base = heading.id || heading.textContent.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'section-' + (index + 1);
-      var id = base;
-      var suffix = 2;
-      while (used[id] || (document.getElementById(id) && document.getElementById(id) !== heading)) id = base + '-' + suffix++;
-      used[id] = true;
-      heading.id = id;
+    if (headings.length < 2) return;
+    headings.forEach(function (heading) {
       var item = document.createElement('li');
       if (heading.tagName === 'H3') item.className = 'page-toc-subsection';
       var link = document.createElement('a');
-      link.href = '#' + id;
+      link.href = '#' + heading.id;
       link.textContent = heading.textContent.trim();
       item.appendChild(link);
       list.appendChild(item);
