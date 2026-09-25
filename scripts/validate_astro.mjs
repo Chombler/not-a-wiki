@@ -102,6 +102,8 @@ const contracts = {
   'FairyFaction/index.html': ['id="faction-overview"', 'id="faction-spell"', 'id="tier-4-upgrades"'],
   'Fairy/index.html': ['id="FRC1"', 'id="FRCR"'],
   'Reincarnation/index.html': ['id="reincarnation-power"', 'id="current-powers"', 'id="kept-at-reincarnation"'],
+  'Bloodline/index.html': ['<h3 id="Fairy">', '<h3 id="Dwarf">', '<h3 id="Makers">'],
+  'Lineages/index.html': ['<h3 id="Fairy">', '<h3 id="Dwarven">', '<h3 id="Makers">'],
 };
 for (const [relative, markers] of Object.entries(contracts)) {
   const file = path.join(output, relative);
