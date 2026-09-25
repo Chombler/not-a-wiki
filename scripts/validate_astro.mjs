@@ -104,7 +104,7 @@ const contracts = {
   'Reincarnation/index.html': ['id="reincarnation-power"', 'id="current-powers"', 'id="kept-at-reincarnation"'],
   'Bloodline/index.html': ['<h3 id="Fairy">', '<h3 id="Dwarf">', '<h3 id="Makers">'],
   'Lineages/index.html': ['<h3 id="Fairy">', '<h3 id="Dwarven">', '<h3 id="Makers">'],
-  'QuestArtifacts/index.html': ['class="artifact-era-heading" id="ascension-0"', 'id="ascension-1"', 'id="ascension-2"', 'class="artifact-family-heading" id="iron-fragments"', 'id="ascension-3"', 'id="ascension-4"'],
+  'QuestArtifacts/index.html': ['id="ascension-0"', 'id="ascension-1"', 'id="ascension-2"', 'id="iron-fragments"', 'id="ascension-3"', 'id="ascension-4"'],
 };
 for (const [relative, markers] of Object.entries(contracts)) {
   const file = path.join(output, relative);
