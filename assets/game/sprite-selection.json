@@ -619,6 +619,13 @@
       ]
     },
     {
+      "kind": "building",
+      "role": "panel",
+      "sprite_names": [
+        "goodBuilding_Up", "evilBuilding_Up", "neutralBuilding_Up"
+      ]
+    },
+    {
       "kind": "trophy",
       "role": "icon",
       "sprite_names": [

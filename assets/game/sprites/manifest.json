@@ -5195,6 +5195,72 @@
       "role": "icon"
     },
     {
+      "key": "good-building-up",
+      "path": "assets/game/sprites/good-building-up.png",
+      "sprite_name": "goodBuilding_Up",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1769,
+        "y": 744,
+        "width": 130,
+        "height": 57
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 130,
+        "height": 57
+      },
+      "kind": "building",
+      "entity": "good-building-up",
+      "role": "panel"
+    },
+    {
+      "key": "evil-building-up",
+      "path": "assets/game/sprites/evil-building-up.png",
+      "sprite_name": "evilBuilding_Up",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1142,
+        "y": 791,
+        "width": 130,
+        "height": 57
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 130,
+        "height": 57
+      },
+      "kind": "building",
+      "entity": "evil-building-up",
+      "role": "panel"
+    },
+    {
+      "key": "neutral-building-up",
+      "path": "assets/game/sprites/neutral-building-up.png",
+      "sprite_name": "neutralBuilding_Up",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1883,
+        "y": 863,
+        "width": 130,
+        "height": 57
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 130,
+        "height": 57
+      },
+      "kind": "building",
+      "entity": "neutral-building-up",
+      "role": "panel"
+    },
+    {
       "key": "leet-trophy",
       "path": "assets/game/sprites/leet-trophy.png",
       "sprite_name": "LeetTrophy",

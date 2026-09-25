@@ -267,23 +267,65 @@ a.tooltips {
 
 .building-tier-table .building-label {
   display: inline-flex;
+  position: relative;
   align-items: center;
-  gap: 0.35rem;
+  height: 48px;
   min-width: max-content;
   text-align: left;
-  font-weight: 600;
+  vertical-align: middle;
+}
+
+.building-tier-table .building-icon-well {
+  z-index: 1;
+  display: grid;
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  box-sizing: border-box;
+  border: 3px ridge #a8a8a8;
+  border-radius: 2px;
+  background: #090a0b;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 65%);
 }
 
 .building-tier-table .building-icon {
-  flex: 0 0 32px;
-  width: 32px;
-  height: 32px;
-  box-sizing: content-box;
-  padding: 2px;
-  border: 2px ridge #8d835f;
-  background: #171717;
+  width: 42px;
+  height: 42px;
   object-fit: contain;
   image-rendering: pixelated;
+}
+
+.building-tier-table .building-name {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  min-width: 8.5rem;
+  margin-left: -2px;
+  padding: 0 0.8rem 0 0.7rem;
+  border-radius: 0 3px 3px 0;
+  background-image: var(--building-panel-neutral);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #f1f0ea;
+  font-family: "Realm Grinder Liony", Georgia, serif;
+  font-size: 1.12rem;
+  font-weight: 400;
+  line-height: 1.05;
+  text-shadow: 0 1px 1px #000, 1px 0 1px #000;
+}
+
+.building-tier-table .building-label-good .building-name {
+  background-image: var(--building-panel-good);
+}
+
+.building-tier-table .building-label-evil .building-name {
+  background-image: var(--building-panel-evil);
+}
+
+.building-tier-table .building-label-neutral .building-name,
+.building-tier-table .building-label-shared .building-name {
+  background-image: var(--building-panel-neutral);
 }
 
 .formula-expression {
