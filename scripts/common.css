@@ -266,27 +266,37 @@ a.tooltips {
 }
 
 .building-tier-table .building-label {
-  display: inline-flex;
+  display: inline-block;
   position: relative;
-  align-items: center;
-  height: 48px;
-  min-width: max-content;
+  width: 202px;
+  height: 60px;
   text-align: left;
   vertical-align: middle;
+  --building-panel: var(--building-panel-neutral);
+}
+
+.building-tier-table .building-label::before {
+  position: absolute;
+  inset: 0;
+  box-sizing: border-box;
+  border: solid transparent;
+  border-width: 28px 23px;
+  border-image: var(--building-panel) 28 23 28 23 fill stretch;
+  content: "";
 }
 
 .building-tier-table .building-icon-well {
-  z-index: 1;
+  position: absolute;
+  z-index: 2;
+  top: 6px;
+  left: 6px;
   display: grid;
-  flex: 0 0 48px;
   width: 48px;
   height: 48px;
   place-items: center;
   box-sizing: border-box;
-  border: 3px ridge #a8a8a8;
-  border-radius: 2px;
-  background: #090a0b;
-  box-shadow: 0 1px 2px rgb(0 0 0 / 65%);
+  padding: 3px;
+  background: var(--game-icon-frame) center / 100% 100% no-repeat;
 }
 
 .building-tier-table .building-icon {
@@ -297,35 +307,32 @@ a.tooltips {
 }
 
 .building-tier-table .building-name {
-  display: flex;
-  align-items: center;
-  align-self: stretch;
-  min-width: 8.5rem;
-  margin-left: -2px;
-  padding: 0 0.8rem 0 0.7rem;
-  border-radius: 0 3px 3px 0;
-  background-image: var(--building-panel-neutral);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  color: #f1f0ea;
+  position: absolute;
+  z-index: 1;
+  top: 7px;
+  left: 59px;
+  width: 137px;
+  height: 22px;
+  overflow: hidden;
+  color: #fff;
   font-family: "Realm Grinder Liony", Georgia, serif;
-  font-size: 1.12rem;
-  font-weight: 400;
-  line-height: 1.05;
-  text-shadow: 0 1px 1px #000, 1px 0 1px #000;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
 }
 
-.building-tier-table .building-label-good .building-name {
-  background-image: var(--building-panel-good);
+.building-tier-table .building-label-good {
+  --building-panel: var(--building-panel-good);
 }
 
-.building-tier-table .building-label-evil .building-name {
-  background-image: var(--building-panel-evil);
+.building-tier-table .building-label-evil {
+  --building-panel: var(--building-panel-evil);
 }
 
-.building-tier-table .building-label-neutral .building-name,
-.building-tier-table .building-label-shared .building-name {
-  background-image: var(--building-panel-neutral);
+.building-tier-table .building-label-neutral,
+.building-tier-table .building-label-shared {
+  --building-panel: var(--building-panel-neutral);
 }
 
 .formula-expression {
