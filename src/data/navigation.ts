@@ -31,7 +31,12 @@ export const navigation: NavigationGroup[] = [
     label: 'Core game',
     items: [
       { label: 'Game interface', href: 'GameWindow' },
-      { label: 'Resources', href: 'Resources', children: [{ label: 'Rubies', href: 'Rubies' }] },
+      { label: 'Resources', href: 'Resources', children: [
+        { label: 'Mana', href: 'Mana' },
+        { label: 'Coins and Gems', href: 'CoinsAndGems' },
+        { label: 'Faction Coins', href: 'FactionCoins' },
+        { label: 'Rubies', href: 'Rubies' },
+      ] },
       { label: 'Buildings', href: 'BuildingAlignments', children: [
         { label: 'Standard building upgrades', href: 'BuildingUpgrades' },
         { label: 'Unique buildings', href: 'UniqueBuilding' },

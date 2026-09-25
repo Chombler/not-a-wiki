@@ -1,0 +1,21 @@
+<p>Mana powers spellcasting. The mana orb displays the current Mana pool, Maximum Mana and Mana Regeneration.</p>
+
+<h2 id="mana-values">Mana values</h2>
+<table class="numtable">
+	<tr><th>Value</th><th>Meaning</th></tr>
+	<tr><td><b>Current Mana</b></td><td>The Mana presently available to spend on spells. A new Era starts with 500 current Mana.</td></tr>
+	<tr><td><b>Maximum Mana</b></td><td>The capacity of the Mana pool. Its base value is 1,000 before upgrades and other effects.</td></tr>
+	<tr><td><b>Mana Regeneration</b></td><td>Mana generated per second, as displayed on the mana orb.</td></tr>
+</table>
+
+<h2 id="online-mana">Online Mana</h2>
+<p>While online, current Mana increases at the displayed Mana Regeneration rate until the pool reaches Maximum Mana. Casting a spell subtracts its Mana cost from the current pool. Maximum Mana limits the amount held at one time; it does not limit the lifetime Mana Produced statistic.</p>
+
+<h2 id="offline-mana">Offline Mana</h2>
+<p>While offline, the current pool refills at the displayed offline Mana Regeneration rate until it reaches Maximum Mana. Only Mana that fits in the pool is added to Mana Produced.</p>
+<p>Offline spellcasting uses a separate mana budget supplied by autocasting upgrades:</p>
+<p><b>Base offline autocasting Mana per second</b> = min(Maximum Mana, offline Mana Regeneration) * P / 100, where P is the combined offline-mana percentage from owned autocasting upgrades.</p>
+<p>Maximum Mana therefore caps the Mana Regeneration value used for offline autocasting, even when the displayed offline regeneration is higher. See <a href="/realm/Spells/#offline-spellcasting">Offline spellcasting</a> for spell priority, activity-time gain and tier behavior.</p>
+
+<h2 id="mana-and-resets">Mana and resets</h2>
+<p>Abdication and larger resets begin a new Era. Current Mana returns to its starting value, and purchased upgrades affecting Maximum Mana or Mana Regeneration must be obtained again. Permanent bonuses and retained unlocks continue to apply according to their own rules.</p>

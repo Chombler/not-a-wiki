@@ -122,6 +122,10 @@ const contracts = {
   'FactionUpgrades/index.html': ['id="tier-1-upgrades"', 'id="tier-4-upgrades"'],
   'Notation/index.html': ['id="suffix-table"', 'id="full-number-list"'],
   'Rubies/index.html': ['id="getting-rubies"', 'id="spending-rubies"', 'id="ruby-upgrade-panel"'],
+  'Resources/index.html': ['id="resource-summary"', 'id="resource-pages"', 'id="other-currencies"'],
+  'Mana/index.html': ['id="mana-values"', 'id="online-mana"', 'id="offline-mana"', 'min(Maximum Mana, offline Mana Regeneration)'],
+  'CoinsAndGems/index.html': ['id="coin-currencies"', 'id="gems"', '5e11 * n * (n + 1)', 'id="coin-and-gem-resets"'],
+  'FactionCoins/index.html': ['id="faction-coin-types"', 'id="finding-faction-coins"', 'id="spending-faction-coins"'],
 };
 for (const [relative, markers] of Object.entries(contracts)) {
   const file = path.join(output, relative);

@@ -21,6 +21,8 @@ const pageTitles: Record<string, string> = {
   SpellTiers: 'Spell Tiers',
   PremiumUpgrades: 'Premium Upgrades',
   GameWindow: 'Game Window',
+  CoinsAndGems: 'Coins and Gems',
+  FactionCoins: 'Faction Coins',
   SiteMap: 'All Pages',
   Changes: 'Latest Major Patch',
   UniqueBuilding: 'Unique Buildings',
