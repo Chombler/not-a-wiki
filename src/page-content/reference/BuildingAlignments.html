@@ -91,24 +91,27 @@
 <p>Hall of Fame, Hall of Prestige and Hall of Renown increase the production granted per Trophy. Other upgrades can further change the effective Trophy count or multiply Hall of Legends production.</p>
 
 <h2 id="building-costs">Building costs</h2>
-<p>Each building type has its own base cost <var>B</var>, shown on its card above. Buying buildings does not change their base production, but each successive building costs more according to that building's cost multiplier <var>M</var>.</p>
+<p>Each building type starts at the first-building cost shown above. That value is its base cost <var>B</var>. Every building already owned raises the price of the next one according to the cost multiplier <var>M</var>.</p>
 
-<h3 id="next-building-cost">Next building</h3>
-<p>If <var>n</var> buildings of that type are already owned, the next building's cost is the difference between the cumulative cost through building <var>n + 1</var> and the cumulative cost through building <var>n</var>:</p>
-<p class="formula-line"><span class="formula-expression">floor(B × (M ^ (n + 1) − 1) / (M − 1)) − floor(B × (M ^ n − 1) / (M − 1))</span></p>
-<p>For example, with no cost reductions in A0, the first Farm costs 10 Coins and the second costs 11 Coins.</p>
-
-<h3 id="multiple-building-cost">Buying several buildings</h3>
-<p>The exact cost of buying <var>q</var> buildings while already owning <var>n</var> is:</p>
-<p class="formula-line"><span class="formula-expression">floor(B × (M ^ (n + q) − 1) / (M − 1)) − floor(B × (M ^ n − 1) / (M − 1))</span></p>
-
-<h2 id="cost-multiplier">Cost multiplier</h2>
-<p>The base building cost multiplier is 1.15. Applicable flat cost-multiplier reductions are subtracted first.</p>
+<h3 id="cost-multiplier">Cost multiplier</h3>
+<p>The base cost multiplier is 1.15, meaning that prices normally increase by 15% per building before the game's integer rounding. Applicable flat reductions are subtracted from that increase.</p>
+<p><var>C</var> is the total applicable flat cost-multiplier reduction and <var>A</var> is the current Ascension number:</p>
 <ul>
     <li><b>A0 and A4:</b> <span class="formula-expression">M = 1.15 − C</span></li>
     <li><b>A1–A3:</b> <span class="formula-expression">M = 1 + (0.15 − C) / (5 × A)</span></li>
 </ul>
-<p><var>C</var> is the total applicable flat cost-multiplier reduction and <var>A</var> is the current Ascension number. Some reductions apply only to particular buildings or building groups.</p>
+<p>Some reductions apply only to particular buildings or building groups.</p>
+
+<h3 id="exact-building-cost">Exact calculation</h3>
+<p>The game calculates the cumulative cost at both ends of a purchase and subtracts them. This preserves its integer rounding when buying one or many buildings.</p>
+<details class="reference-details">
+    <summary>Show the exact cost formula</summary>
+    <div>
+        <p>When <var>n</var> buildings are already owned, the exact cost of buying <var>q</var> more is:</p>
+        <p class="formula-line"><span class="formula-expression">floor(B × (M ^ (n + q) − 1) / (M − 1)) − floor(B × (M ^ n − 1) / (M − 1))</span></p>
+        <p>Set <var>q</var> to 1 to calculate the price of the next building. For example, with no cost reductions in A0, the first Farm costs 10 Coins and the second costs 11 Coins.</p>
+    </div>
+</details>
 
 <h2 id="related-building-pages">Related building pages</h2>
 <ul>

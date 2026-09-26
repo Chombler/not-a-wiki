@@ -387,6 +387,26 @@ a.tooltips {
   --building-panel: var(--building-panel-neutral);
 }
 
+.reference-details {
+  max-width: 54rem;
+  margin: 0.75rem 0 1rem;
+  border-block: 1px solid var(--border);
+}
+
+.reference-details > summary {
+  padding: 0.7rem 0;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.reference-details > div {
+  padding: 0 0 0.75rem 1.25rem;
+}
+
+.reference-details > div > :first-child {
+  margin-top: 0;
+}
+
 .formula-expression {
   color: inherit;
   font-family: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace;
