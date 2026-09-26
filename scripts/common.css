@@ -259,6 +259,16 @@ a.tooltips {
   max-width: 48rem;
 }
 
+.building-comparison-table td[colspan] {
+  text-align: center;
+}
+
+.building-comparison-table th small {
+  font: inherit;
+  font-size: 0.78em;
+  font-weight: 400;
+}
+
 .building-card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, 202px);

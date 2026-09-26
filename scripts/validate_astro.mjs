@@ -117,7 +117,7 @@ const contracts = {
   'Challenges/index.html': ['id="challenge-rules"', 'id="challenge-factions"', 'id="challenge-map"'],
   'Events/index.html': ['id="permanent-seasonal-rewards"', 'id="seasonal-event-upgrades"', 'id="events-2015"'],
   'Terminology/index.html': ['id="shortcuts"', 'id="game-terminology"', 'id="abbreviations"'],
-  'BuildingAlignments/index.html': ['id="building-tiers"', 'id="shared-buildings"', '250,000 × T/s', 'id="good-buildings"', 'id="evil-buildings"', 'id="neutral-buildings"', 'id="alignment-and-proofs"', 'id="hall-of-legends"', 'id="building-costs"', 'id="next-building-cost"', 'id="multiple-building-cost"', 'id="cost-multiplier"', 'id="related-building-pages"', '/BuildingUpgrades/', '/UniqueBuilding/'],
+  'BuildingAlignments/index.html': ['id="building-tiers"', 'id="building-comparison"', '250,000 × <var>T</var>', 'id="building-cards"', 'id="shared-buildings"', '250,000 × T/s', 'id="good-buildings"', 'id="evil-buildings"', 'id="neutral-buildings"', 'id="alignment-and-proofs"', 'id="hall-of-legends"', 'id="building-costs"', 'id="next-building-cost"', 'id="multiple-building-cost"', 'id="cost-multiplier"', 'id="related-building-pages"', '/BuildingUpgrades/', '/UniqueBuilding/'],
   'GameWindow/index.html': ['id="game-window"', 'id="options-window"'],
   'Upgrades/index.html': ['id="alignment-upgrades"', 'id="assistant-upgrades"'],
   'FactionUpgrades/index.html': ['id="tier-1-upgrades"', 'id="tier-4-upgrades"'],
