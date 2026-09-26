@@ -255,17 +255,18 @@ a.tooltips {
   margin: 0.5rem 0 0;
 }
 
-.building-tier-table .building-shared {
-  text-align: center;
+.building-card-legend {
+  max-width: 48rem;
 }
 
-.building-tier-table th small {
-  font: inherit;
-  font-size: 0.78em;
-  font-weight: 400;
+.building-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 202px);
+  gap: 0.65rem;
+  margin: 0.75rem 0 1.5rem;
 }
 
-.building-tier-table .building-label {
+.building-label {
   display: inline-block;
   position: relative;
   width: 202px;
@@ -275,7 +276,7 @@ a.tooltips {
   --building-panel: var(--building-panel-neutral);
 }
 
-.building-tier-table .building-label::before {
+.building-label::before {
   position: absolute;
   inset: 0;
   box-sizing: border-box;
@@ -285,7 +286,7 @@ a.tooltips {
   content: "";
 }
 
-.building-tier-table .building-icon-well {
+.building-label .building-icon-well {
   position: absolute;
   z-index: 2;
   top: 6px;
@@ -299,39 +300,80 @@ a.tooltips {
   background: var(--game-icon-frame) center / 100% 100% no-repeat;
 }
 
-.building-tier-table .building-icon {
+.building-label .building-icon {
   width: 42px;
   height: 42px;
   object-fit: contain;
   image-rendering: pixelated;
 }
 
-.building-tier-table .building-name {
+.building-label .building-name,
+.building-label .building-cost,
+.building-label .building-production,
+.building-label .building-tier {
   position: absolute;
   z-index: 1;
-  top: 7px;
-  left: 59px;
-  width: 137px;
-  height: 22px;
   overflow: hidden;
   color: #fff;
   font-family: "Realm Grinder Liony", Georgia, serif;
-  font-size: 22px;
-  font-weight: 700;
   line-height: 1;
   white-space: nowrap;
 }
 
-.building-tier-table .building-label-good {
+.building-label .building-name {
+  top: 7px;
+  left: 59px;
+  width: 137px;
+  height: 22px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.building-label .building-name-long {
+  font-size: 18px;
+  top: 9px;
+}
+
+.building-label .building-cost {
+  top: 26px;
+  left: 59px;
+  width: 137px;
+  height: 17px;
+  font-size: 19px;
+}
+
+.building-label .building-production {
+  top: 43px;
+  left: 59px;
+  width: 78px;
+  height: 15px;
+  font-size: 15px;
+}
+
+.building-label .building-production-long {
+  font-size: 13px;
+}
+
+.building-label .building-tier {
+  top: 38px;
+  left: 136px;
+  width: 60px;
+  height: 22px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.building-label-good {
   --building-panel: var(--building-panel-good);
 }
 
-.building-tier-table .building-label-evil {
+.building-label-evil {
   --building-panel: var(--building-panel-evil);
 }
 
-.building-tier-table .building-label-neutral,
-.building-tier-table .building-label-shared {
+.building-label-neutral,
+.building-label-shared {
   --building-panel: var(--building-panel-neutral);
 }
 
