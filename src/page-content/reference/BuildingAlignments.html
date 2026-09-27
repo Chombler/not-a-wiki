@@ -104,14 +104,9 @@
 
 <h3 id="exact-building-cost">Exact calculation</h3>
 <p>The game calculates the cumulative cost at both ends of a purchase and subtracts them. This preserves its integer rounding when buying one or many buildings.</p>
-<details class="reference-details">
-    <summary>Show the exact cost formula</summary>
-    <div>
-        <p>When <var>n</var> buildings are already owned, the exact cost of buying <var>q</var> more is:</p>
-        <p class="formula-line"><span class="formula-expression">floor(B × (M ^ (n + q) − 1) / (M − 1)) − floor(B × (M ^ n − 1) / (M − 1))</span></p>
-        <p>Set <var>q</var> to 1 to calculate the price of the next building. For example, with no cost reductions in A0, the first Farm costs 10 Coins and the second costs 11 Coins.</p>
-    </div>
-</details>
+<p>When <var>n</var> buildings are already owned, the exact cost of buying <var>q</var> more is:</p>
+<p class="formula-line"><span class="formula-expression">floor(B × (M ^ (n + q) − 1) / (M − 1)) − floor(B × (M ^ n − 1) / (M − 1))</span></p>
+<p>Set <var>q</var> to 1 to calculate the price of the next building. For example, with no cost reductions in A0, the first Farm costs 10 Coins and the second costs 11 Coins.</p>
 
 <h2 id="related-building-pages">Related building pages</h2>
 <ul>
