@@ -661,6 +661,14 @@
       ]
     },
     {
+      "kind": "building-upgrade",
+      "role": "icon",
+      "sprite_names": [
+        "HallOfLegendsPrestigeUpgrade1", "HallOfLegendsPrestigeUpgrade2", "HallOfLegendsPrestigeUpgrade3",
+        "TrophyUpgrade1", "TrophyUpgrade2", "TrophyUpgrade3"
+      ]
+    },
+    {
       "kind": "trophy",
       "role": "icon",
       "sprite_names": [
@@ -682,6 +690,31 @@
     }
   ],
   "sprite_families": [
+    { "sprite_prefix": "FarmUpgrade", "count": 23, "kind": "building-upgrade", "entity_prefix": "farm-upgrade", "role": "icon" },
+    { "sprite_prefix": "InnUpgrade", "count": 23, "kind": "building-upgrade", "entity_prefix": "inn-upgrade", "role": "icon" },
+    { "sprite_prefix": "BlacksmithUpgrade", "count": 23, "kind": "building-upgrade", "entity_prefix": "blacksmith-upgrade", "role": "icon" },
+    { "sprite_prefix": "DeepMineUpgrade", "count": 23, "kind": "building-upgrade", "entity_prefix": "deep-mine-upgrade", "role": "icon" },
+    { "sprite_prefix": "StonePillarsUpgrade", "count": 23, "kind": "building-upgrade", "entity_prefix": "stone-pillars-upgrade", "role": "icon" },
+    { "sprite_prefix": "AlchemistLabUpgrade", "count": 23, "kind": "building-upgrade", "entity_prefix": "alchemist-lab-upgrade", "role": "icon" },
+    { "sprite_prefix": "MonasteryUpgrade", "count": 23, "kind": "building-upgrade", "entity_prefix": "monastery-upgrade", "role": "icon" },
+    { "sprite_prefix": "LabyrinthUpgrade", "count": 23, "kind": "building-upgrade", "entity_prefix": "labyrinth-upgrade", "role": "icon" },
+    { "sprite_prefix": "IronStrongholdUpgrade", "count": 23, "kind": "building-upgrade", "entity_prefix": "iron-stronghold-upgrade", "role": "icon" },
+    { "sprite_prefix": "AncientPyramidUpgrade", "count": 23, "kind": "building-upgrade", "entity_prefix": "ancient-pyramid-upgrade", "role": "icon" },
+    { "sprite_prefix": "WarriorBarracksUpgrade", "count": 23, "kind": "building-upgrade", "entity_prefix": "warrior-barracks-upgrade", "role": "icon" },
+    { "sprite_prefix": "KnightsJoustUpgrade", "count": 23, "kind": "building-upgrade", "entity_prefix": "knights-joust-upgrade", "role": "icon" },
+    { "sprite_prefix": "WizardTowerUpgrade", "count": 23, "kind": "building-upgrade", "entity_prefix": "wizard-tower-upgrade", "role": "icon" },
+    { "sprite_prefix": "CathedralUpgrade", "count": 23, "kind": "building-upgrade", "entity_prefix": "cathedral-upgrade", "role": "icon" },
+    { "sprite_prefix": "CitadelUpgrade", "count": 23, "kind": "building-upgrade", "entity_prefix": "citadel-upgrade", "role": "icon" },
+    { "sprite_prefix": "RoyalCastleUpgrade", "count": 23, "kind": "building-upgrade", "entity_prefix": "royal-castle-upgrade", "role": "icon" },
+    { "sprite_prefix": "HeavensGateUpgrade", "count": 23, "kind": "building-upgrade", "entity_prefix": "heavens-gate-upgrade", "role": "icon" },
+    { "sprite_prefix": "SlavePenUpgrade", "count": 23, "kind": "building-upgrade", "entity_prefix": "slave-pen-upgrade", "role": "icon" },
+    { "sprite_prefix": "OrcishArenaUpgrade", "count": 23, "kind": "building-upgrade", "entity_prefix": "orcish-arena-upgrade", "role": "icon" },
+    { "sprite_prefix": "WitchConclaveUpgrade", "count": 23, "kind": "building-upgrade", "entity_prefix": "witch-conclave-upgrade", "role": "icon" },
+    { "sprite_prefix": "DarkTempleUpgrade", "count": 23, "kind": "building-upgrade", "entity_prefix": "dark-temple-upgrade", "role": "icon" },
+    { "sprite_prefix": "NecropolisUpgrade", "count": 23, "kind": "building-upgrade", "entity_prefix": "necropolis-upgrade", "role": "icon" },
+    { "sprite_prefix": "EvilFortressUpgrade", "count": 23, "kind": "building-upgrade", "entity_prefix": "evil-fortress-upgrade", "role": "icon" },
+    { "sprite_prefix": "HellPortalUpgrade", "count": 23, "kind": "building-upgrade", "entity_prefix": "hell-portal-upgrade", "role": "icon" },
+    { "sprite_prefix": "HallOfLegendsUpgrade", "count": 23, "kind": "building-upgrade", "entity_prefix": "hall-of-legends-upgrade", "role": "icon" },
     { "sprite_prefix": "GainCoinTrophy", "count": 20, "kind": "trophy", "entity_prefix": "coins-earned", "role": "icon" },
     { "sprite_prefix": "GainClickTrophy", "count": 19, "kind": "trophy", "entity_prefix": "treasure-clicks", "role": "icon" },
     { "sprite_prefix": "TreasureClickTrophy", "count": 9, "kind": "trophy", "entity_prefix": "manual-clicks", "role": "icon" },

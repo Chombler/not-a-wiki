@@ -118,6 +118,7 @@ const contracts = {
   'Events/index.html': ['id="permanent-seasonal-rewards"', 'id="seasonal-event-upgrades"', 'id="events-2015"'],
   'Terminology/index.html': ['id="shortcuts"', 'id="game-terminology"', 'id="abbreviations"'],
   'BuildingAlignments/index.html': ['id="building-tiers"', 'id="building-comparison"', '250,000 × <var>T</var>', 'id="building-cards"', 'id="shared-buildings"', '250,000 × T/s', 'id="good-buildings"', 'id="evil-buildings"', 'id="neutral-buildings"', 'id="alignment-and-proofs"', 'id="hall-of-legends"', 'id="building-costs"', 'id="cost-multiplier"', 'id="exact-building-cost"', 'exact cost of buying <var>q</var> more', 'id="related-building-pages"', '/BuildingUpgrades/', '/UniqueBuilding/'],
+  'BuildingUpgrades/index.html': ['id="universal-buildings"', 'id="farm"', 'id="farm-upgrade-1"', 'farm-upgrade1.png', 'id="good-buildings"', 'id="evil-buildings"', 'id="neutral-buildings"', 'id="hall-of-legends-group"', 'id="hall-of-legends-bonus-upgrades"', 'trophy-upgrade3.png', 'Pre-Ascension effect'],
   'GameWindow/index.html': ['id="game-window"', 'id="options-window"'],
   'Upgrades/index.html': ['id="alignment-upgrades"', 'id="assistant-upgrades"'],
   'FactionUpgrades/index.html': ['id="tier-1-upgrades"', 'id="tier-4-upgrades"'],

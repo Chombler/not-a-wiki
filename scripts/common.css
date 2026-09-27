@@ -387,6 +387,102 @@ a.tooltips {
   --building-panel: var(--building-panel-neutral);
 }
 
+.building-upgrade-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.building-upgrade-jump a {
+  padding: 0.35rem 0.65rem;
+  border: 1px solid var(--border);
+  background: var(--panel-bg);
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.building-upgrade-section {
+  margin: 1rem 0 2.5rem;
+  scroll-margin-top: 1rem;
+}
+
+.building-upgrade-heading {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.building-upgrade-heading h3,
+.building-upgrade-heading p {
+  margin: 0;
+}
+
+.building-upgrade-heading p {
+  color: var(--muted-text);
+}
+
+.building-upgrade-icon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 60px);
+  gap: 0.4rem;
+  margin: 0.75rem 0 1rem;
+}
+
+.building-upgrade-icon-grid > a {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+.building-upgrade-icon-grid > a > span:last-child {
+  position: absolute;
+  z-index: 2;
+  right: 4px;
+  bottom: 4px;
+  min-width: 1.15rem;
+  padding: 0.05rem 0.2rem;
+  border: 1px solid #aaa;
+  border-radius: 2px;
+  background: rgb(0 0 0 / 78%);
+  color: #fff;
+  font: 700 0.7rem/1 "Realm Grinder Liony", Georgia, serif;
+  text-align: center;
+}
+
+.building-upgrade-name {
+  min-width: 13rem;
+}
+
+.building-upgrade-name .game-icon-frame {
+  width: 50px;
+  height: 50px;
+  margin-right: 0.45rem;
+  vertical-align: middle;
+}
+
+.building-upgrade-name .game-icon-frame > img {
+  inset: 4px;
+  width: 42px;
+  height: 42px;
+}
+
+.building-upgrade-name .game-icon-frame::after {
+  inset: 2px;
+}
+
+.building-upgrade-table tr:target > td {
+  background: var(--row-highlight);
+  box-shadow: inset 3px 0 var(--accent);
+}
+
+.building-unique-links {
+  margin-top: 0.75rem;
+}
+
 .formula-expression {
   color: inherit;
   font-family: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace;
