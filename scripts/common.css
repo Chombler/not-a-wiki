@@ -391,6 +391,15 @@ a.tooltips {
   border-top: 1px solid var(--line);
 }
 
+.building-upgrade-progression {
+  margin: 1rem 0 1.5rem;
+}
+
+.building-upgrade-progression table {
+  width: auto;
+  min-width: min(100%, 34rem);
+}
+
 .building-upgrade-row {
   display: grid;
   grid-template-columns: 200px minmax(0, 1fr);
@@ -414,6 +423,31 @@ a.tooltips {
   grid-template-columns: repeat(8, var(--building-upgrade-icon-size));
   align-content: start;
   gap: 0;
+}
+
+.building-upgrade-era {
+  padding: 0.1rem 0.2rem 0.15rem;
+  border-bottom: 2px solid var(--line);
+  color: var(--muted-text);
+  font-size: 0.65rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.building-upgrade-era-a0,
+.building-upgrade-era-a1 {
+  grid-column: span 3;
+}
+
+.building-upgrade-era-a2 {
+  grid-column: span 2;
+}
+
+.building-upgrade-era-a1,
+.building-upgrade-era-a2 {
+  border-left: 1px solid var(--line);
 }
 
 .building-upgrade-button.trophy-grid-button {

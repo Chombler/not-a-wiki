@@ -220,6 +220,8 @@ const buildingUpgradeRows = [...buildingUpgradesHtml.matchAll(/class="building-u
 if (buildingUpgradeRows !== 25) failures.push(`BuildingUpgrades has ${buildingUpgradeRows}/25 compact building rows`);
 const buildingUpgradeButtons = [...buildingUpgradesHtml.matchAll(/class="trophy-grid-button building-upgrade-button"/g)].length;
 if (buildingUpgradeButtons !== 581) failures.push(`BuildingUpgrades has ${buildingUpgradeButtons}/581 interactive upgrade icons`);
+const buildingUpgradeEraBands = [...buildingUpgradesHtml.matchAll(/class="building-upgrade-era building-upgrade-era-a0"/g)].length;
+if (buildingUpgradeEraBands !== 25) failures.push(`BuildingUpgrades has ${buildingUpgradeEraBands}/25 Ascension band rows`);
 if (buildingUpgradesHtml.includes('building-upgrade-table')) failures.push('BuildingUpgrades restored the verbose always-visible upgrade tables');
 
 const factionsSource = fs.readFileSync(path.join(root, 'src/page-content/reference/Factions.html'), 'utf8');
