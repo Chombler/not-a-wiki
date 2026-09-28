@@ -387,67 +387,41 @@ a.tooltips {
   --building-panel: var(--building-panel-neutral);
 }
 
-.building-upgrade-matrix-wrap {
-  margin: 1.25rem 0 1.75rem;
-}
-
-.building-upgrade-matrix {
-  width: 100%;
-  min-width: 720px;
-  table-layout: fixed;
-}
-
-.building-upgrade-matrix th:first-child {
-  width: 7.5rem;
-}
-
-.building-upgrade-matrix th:nth-child(2) {
-  width: 9.5rem;
-}
-
-.building-upgrade-matrix th:last-child {
-  width: 7.5rem;
-}
-
-.building-upgrade-matrix thead th {
-  position: sticky;
-  top: 0;
-  z-index: 3;
-}
-
-.building-upgrade-matrix tbody th,
-.building-upgrade-matrix tbody td {
-  vertical-align: top;
-}
-
-.building-upgrade-matrix tbody td > strong {
-  display: block;
-  margin-bottom: 0.3rem;
-  color: inherit;
-  font-size: 0.88rem;
-}
-
-.building-upgrade-milestone,
-.building-upgrade-gate {
-  display: block;
-}
-
-.building-upgrade-milestone {
-  font-size: 1rem;
-}
-
-.building-upgrade-gate {
-  margin-top: 0.1rem;
-  color: var(--muted-text);
-  font-size: 0.72rem;
-  font-weight: 600;
-}
-
-.building-upgrade-matrix-icons {
+.building-upgrade-jump {
   display: flex;
   flex-wrap: wrap;
-  align-content: flex-start;
-  gap: 0;
+  gap: 0.4rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.building-upgrade-jump a {
+  padding: 0.35rem 0.65rem;
+  border: 1px solid var(--border);
+  background: var(--panel-bg);
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.building-upgrade-rows {
+  border-top: 1px solid var(--line);
+}
+
+.building-upgrade-row {
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr);
+  gap: 0.75rem;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--line);
+  scroll-margin-top: 1rem;
+}
+
+.building-upgrade-row-identity .building-label {
+  width: 200px;
+}
+
+.building-upgrade-row-content {
+  min-width: 0;
 }
 
 .building-upgrade-compact-grid {
@@ -486,10 +460,6 @@ a.tooltips {
   outline-offset: 1px;
 }
 
-.building-upgrade-matrix .building-upgrade-index {
-  display: none;
-}
-
 .building-upgrade-index {
   position: absolute;
   z-index: 2;
@@ -505,23 +475,26 @@ a.tooltips {
 }
 
 .building-upgrade-bonus-group {
-  margin-top: 0;
+  margin-top: 0.55rem;
+  padding-top: 0.45rem;
+  border-top: 1px solid var(--line);
 }
 
 .building-upgrade-bonus-group h3 {
-  margin: 0 0 0.5rem;
-}
-
-.building-upgrade-bonus-section {
-  margin-top: 1.5rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--line);
+  margin: 0 0 0.35rem;
+  font-size: 0.9rem;
 }
 
 .site-main .building-unique-links {
   margin: 0.35rem 0 0;
   color: var(--muted-text);
   font-size: 0.82rem;
+}
+
+@media (max-width: 760px) {
+  .building-upgrade-row {
+    grid-template-columns: 1fr;
+  }
 }
 
 .formula-expression {
