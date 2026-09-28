@@ -426,13 +426,13 @@ a.tooltips {
 }
 
 .building-upgrade-era {
-  padding: 0.1rem 0.2rem 0.15rem;
-  border-bottom: 2px solid var(--line);
+  padding: 0.15rem 0 0.2rem;
   color: var(--muted-text);
   font-size: 0.65rem;
   font-weight: 800;
   line-height: 1;
   letter-spacing: 0.04em;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -458,12 +458,7 @@ a.tooltips {
 
 .building-upgrade-era-gap,
 .building-upgrade-era-tail {
-  border-bottom: 2px solid var(--line);
-}
-
-.building-upgrade-era-a1,
-.building-upgrade-era-a2 {
-  border-left: 1px solid var(--line);
+  padding: 0;
 }
 
 .building-upgrade-compact-grid > .building-upgrade-button[id$="-upgrade-23"] {
