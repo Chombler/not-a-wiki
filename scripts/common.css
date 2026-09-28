@@ -420,7 +420,7 @@ a.tooltips {
 .building-upgrade-compact-grid {
   --building-upgrade-icon-size: 48px;
   display: grid;
-  grid-template-columns: repeat(8, var(--building-upgrade-icon-size));
+  grid-template-columns: repeat(10, var(--building-upgrade-icon-size));
   align-content: start;
   gap: 0;
 }
@@ -436,18 +436,42 @@ a.tooltips {
   text-transform: uppercase;
 }
 
-.building-upgrade-era-a0,
+.building-upgrade-era-a0 {
+  grid-column: span 10;
+}
+
 .building-upgrade-era-a1 {
   grid-column: span 3;
 }
 
+.building-upgrade-era-gap {
+  grid-column: span 1;
+}
+
 .building-upgrade-era-a2 {
-  grid-column: span 2;
+  grid-column: span 1;
+}
+
+.building-upgrade-era-tail {
+  grid-column: span 5;
+}
+
+.building-upgrade-era-gap,
+.building-upgrade-era-tail {
+  border-bottom: 2px solid var(--line);
 }
 
 .building-upgrade-era-a1,
 .building-upgrade-era-a2 {
   border-left: 1px solid var(--line);
+}
+
+.building-upgrade-compact-grid > .building-upgrade-button[id$="-upgrade-23"] {
+  grid-column: 5;
+}
+
+.building-upgrade-bonus-group .building-upgrade-compact-grid {
+  grid-template-columns: repeat(6, var(--building-upgrade-icon-size));
 }
 
 .building-upgrade-button.trophy-grid-button {
@@ -516,7 +540,7 @@ a.tooltips {
   }
 
   .building-upgrade-compact-grid {
-    --building-upgrade-icon-size: 40px;
+    --building-upgrade-icon-size: 34px;
   }
 }
 
