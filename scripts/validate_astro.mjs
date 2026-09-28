@@ -215,6 +215,13 @@ if (trophyPageHtml.includes('If a build is needed I will add a link to that buil
   failures.push('TrophyPage restored the obsolete build-link disclaimer');
 }
 
+const buildingUpgradesHtml = fs.readFileSync(path.join(output, 'BuildingUpgrades/index.html'), 'utf8');
+const buildingUpgradeRows = [...buildingUpgradesHtml.matchAll(/class="building-upgrade-row"/g)].length;
+if (buildingUpgradeRows !== 25) failures.push(`BuildingUpgrades has ${buildingUpgradeRows}/25 compact building rows`);
+const buildingUpgradeButtons = [...buildingUpgradesHtml.matchAll(/class="trophy-grid-button building-upgrade-button"/g)].length;
+if (buildingUpgradeButtons !== 581) failures.push(`BuildingUpgrades has ${buildingUpgradeButtons}/581 interactive upgrade icons`);
+if (buildingUpgradesHtml.includes('building-upgrade-table')) failures.push('BuildingUpgrades restored the verbose always-visible upgrade tables');
+
 const factionsSource = fs.readFileSync(path.join(root, 'src/page-content/reference/Factions.html'), 'utf8');
 if (/<area\b[^>]*\bresearch=/i.test(factionsSource)) {
   failures.push('Factions navigation map regained independently maintained faction summaries');

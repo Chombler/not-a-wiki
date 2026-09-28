@@ -403,84 +403,98 @@ a.tooltips {
   text-decoration: none;
 }
 
-.building-upgrade-section {
-  margin: 1rem 0 2.5rem;
+.building-upgrade-rows {
+  border-top: 1px solid var(--line);
+}
+
+.building-upgrade-row {
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr);
+  gap: 0.75rem;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--line);
   scroll-margin-top: 1rem;
 }
 
-.building-upgrade-heading {
+.building-upgrade-row-identity .building-label {
+  width: 200px;
+}
+
+.building-upgrade-row-content {
+  min-width: 0;
+}
+
+.building-upgrade-compact-grid {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
-  gap: 0.75rem 1rem;
-  margin-bottom: 0.75rem;
+  align-content: flex-start;
+  gap: 0;
 }
 
-.building-upgrade-heading h3,
-.building-upgrade-heading p {
-  margin: 0;
-}
-
-.building-upgrade-heading p {
-  color: var(--muted-text);
-}
-
-.building-upgrade-icon-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 60px);
-  gap: 0.4rem;
-  margin: 0.75rem 0 1rem;
-}
-
-.building-upgrade-icon-grid > a {
+.building-upgrade-button.trophy-grid-button {
   position: relative;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
 }
 
-.building-upgrade-icon-grid > a > span:last-child {
+.building-upgrade-button .game-icon-frame {
+  width: 40px;
+  height: 40px;
+  background: #131313;
+}
+
+.building-upgrade-button .game-icon-frame > img {
+  inset: 4px;
+  width: 32px;
+  height: 32px;
+}
+
+.building-upgrade-button .game-icon-frame::after {
+  inset: 2px;
+  border-width: 6px;
+  border-image-width: 6px;
+}
+
+.building-upgrade-button:target {
+  outline: 3px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.building-upgrade-index {
   position: absolute;
   z-index: 2;
-  right: 4px;
-  bottom: 4px;
-  min-width: 1.15rem;
-  padding: 0.05rem 0.2rem;
-  border: 1px solid #aaa;
-  border-radius: 2px;
+  right: 2px;
+  bottom: 2px;
+  min-width: 0.8rem;
+  padding: 0.05rem 0.1rem;
+  border: 1px solid #999;
   background: rgb(0 0 0 / 78%);
   color: #fff;
-  font: 700 0.7rem/1 "Realm Grinder Liony", Georgia, serif;
+  font: 700 0.55rem/1 Arial, sans-serif;
   text-align: center;
 }
 
-.building-upgrade-name {
-  min-width: 13rem;
+.building-upgrade-bonus-group {
+  margin-top: 0.55rem;
+  padding-top: 0.45rem;
+  border-top: 1px solid var(--line);
 }
 
-.building-upgrade-name .game-icon-frame {
-  width: 50px;
-  height: 50px;
-  margin-right: 0.45rem;
-  vertical-align: middle;
+.building-upgrade-bonus-group h3 {
+  margin: 0 0 0.35rem;
+  font-size: 0.9rem;
 }
 
-.building-upgrade-name .game-icon-frame > img {
-  inset: 4px;
-  width: 42px;
-  height: 42px;
+.site-main .building-unique-links {
+  margin: 0.35rem 0 0;
+  color: var(--muted-text);
+  font-size: 0.82rem;
 }
 
-.building-upgrade-name .game-icon-frame::after {
-  inset: 2px;
-}
-
-.building-upgrade-table tr:target > td {
-  background: var(--row-highlight);
-  box-shadow: inset 3px 0 var(--accent);
-}
-
-.building-unique-links {
-  margin-top: 0.75rem;
+@media (max-width: 760px) {
+  .building-upgrade-row {
+    grid-template-columns: 1fr;
+  }
 }
 
 .formula-expression {
