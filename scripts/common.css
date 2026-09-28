@@ -387,22 +387,6 @@ a.tooltips {
   --building-panel: var(--building-panel-neutral);
 }
 
-.building-upgrade-jump {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin: 1rem 0 1.5rem;
-}
-
-.building-upgrade-jump a {
-  padding: 0.35rem 0.65rem;
-  border: 1px solid var(--border);
-  background: var(--panel-bg);
-  color: inherit;
-  font-weight: 700;
-  text-decoration: none;
-}
-
 .building-upgrade-rows {
   border-top: 1px solid var(--line);
 }
