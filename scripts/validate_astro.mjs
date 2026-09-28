@@ -118,7 +118,7 @@ const contracts = {
   'Events/index.html': ['id="permanent-seasonal-rewards"', 'id="seasonal-event-upgrades"', 'id="events-2015"'],
   'Terminology/index.html': ['id="shortcuts"', 'id="game-terminology"', 'id="abbreviations"'],
   'BuildingAlignments/index.html': ['id="building-tiers"', 'id="building-comparison"', '250,000 × <var>T</var>', 'id="building-cards"', 'id="shared-buildings"', '250,000 × T/s', 'id="good-buildings"', 'id="evil-buildings"', 'id="neutral-buildings"', 'id="alignment-and-proofs"', 'id="hall-of-legends"', 'id="building-costs"', 'id="cost-multiplier"', 'id="exact-building-cost"', 'exact cost of buying <var>q</var> more', 'id="related-building-pages"', '/BuildingUpgrades/', '/UniqueBuilding/'],
-  'BuildingUpgrades/index.html': ['id="universal-buildings"', 'id="farm"', 'id="farm-upgrade-1"', 'farm-upgrade1.png', 'id="good-buildings"', 'id="evil-buildings"', 'id="neutral-buildings"', 'id="hall-of-legends-group"', 'id="hall-of-legends-bonus-upgrades"', 'trophy-upgrade3.png', 'Pre-Ascension effect'],
+  'BuildingUpgrades/index.html': ['class="building-upgrade-matrix"', 'id="milestone-5"', 'id="milestone-18000"', 'id="farm-upgrade-1"', 'farm-upgrade1.png', 'id="hall-of-legends-upgrade-23"', 'id="hall-of-legends-bonus-upgrades"', 'trophy-upgrade3.png', 'Pre-Ascension effect'],
   'GameWindow/index.html': ['id="game-window"', 'id="options-window"'],
   'Upgrades/index.html': ['id="alignment-upgrades"', 'id="assistant-upgrades"'],
   'FactionUpgrades/index.html': ['id="tier-1-upgrades"', 'id="tier-4-upgrades"'],
@@ -216,8 +216,10 @@ if (trophyPageHtml.includes('If a build is needed I will add a link to that buil
 }
 
 const buildingUpgradesHtml = fs.readFileSync(path.join(output, 'BuildingUpgrades/index.html'), 'utf8');
-const buildingUpgradeRows = [...buildingUpgradesHtml.matchAll(/class="building-upgrade-row"/g)].length;
-if (buildingUpgradeRows !== 25) failures.push(`BuildingUpgrades has ${buildingUpgradeRows}/25 compact building rows`);
+const buildingUpgradeRows = [...buildingUpgradesHtml.matchAll(/<tr id="milestone-/g)].length;
+if (buildingUpgradeRows !== 23) failures.push(`BuildingUpgrades has ${buildingUpgradeRows}/23 milestone rows`);
+const buildingUpgradeGroups = [...buildingUpgradesHtml.matchAll(/class="building-upgrade-matrix-icons"/g)].length;
+if (buildingUpgradeGroups !== 69) failures.push(`BuildingUpgrades has ${buildingUpgradeGroups}/69 milestone icon groups`);
 const buildingUpgradeButtons = [...buildingUpgradesHtml.matchAll(/class="trophy-grid-button building-upgrade-button"/g)].length;
 if (buildingUpgradeButtons !== 581) failures.push(`BuildingUpgrades has ${buildingUpgradeButtons}/581 interactive upgrade icons`);
 if (buildingUpgradesHtml.includes('building-upgrade-table')) failures.push('BuildingUpgrades restored the verbose always-visible upgrade tables');
