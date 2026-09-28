@@ -409,28 +409,29 @@ a.tooltips {
 }
 
 .building-upgrade-compact-grid {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
+  --building-upgrade-icon-size: 48px;
+  display: grid;
+  grid-template-columns: repeat(8, var(--building-upgrade-icon-size));
+  align-content: start;
   gap: 0;
 }
 
 .building-upgrade-button.trophy-grid-button {
   position: relative;
-  width: 40px;
-  height: 40px;
+  width: var(--building-upgrade-icon-size, 48px);
+  height: var(--building-upgrade-icon-size, 48px);
 }
 
 .building-upgrade-button .game-icon-frame {
-  width: 40px;
-  height: 40px;
+  width: var(--building-upgrade-icon-size, 48px);
+  height: var(--building-upgrade-icon-size, 48px);
   background: #131313;
 }
 
 .building-upgrade-button .game-icon-frame > img {
   inset: 4px;
-  width: 32px;
-  height: 32px;
+  width: calc(var(--building-upgrade-icon-size, 48px) - 8px);
+  height: calc(var(--building-upgrade-icon-size, 48px) - 8px);
 }
 
 .building-upgrade-button .game-icon-frame::after {
@@ -478,6 +479,10 @@ a.tooltips {
 @media (max-width: 760px) {
   .building-upgrade-row {
     grid-template-columns: 1fr;
+  }
+
+  .building-upgrade-compact-grid {
+    --building-upgrade-icon-size: 40px;
   }
 }
 
