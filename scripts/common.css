@@ -434,13 +434,8 @@ a.tooltips {
   width: 200px;
 }
 
-.building-unique-icon-link .building-cost {
-  font-size: 17px;
-}
-
 .building-unique-icon-link .building-production {
   width: 137px;
-  font-size: 12px;
 }
 
 .building-unique-icon-link:hover,
