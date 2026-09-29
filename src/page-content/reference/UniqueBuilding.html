@@ -219,7 +219,8 @@
       const [questName, questIcon, upgradeName, upgradeIcon] = unlockSteps;
       const [questCost, upgradeCost] = costsFor(icon);
       const unlocks = document.createElement('div');
-      unlocks.className = 'unique-building-unlocks' + (panel === 'fairy' ? ' unique-building-unlocks-game' : '');
+      const usesFactionLayout = panel === 'fairy';
+      unlocks.className = 'unique-building-unlocks' + (usesFactionLayout ? ' unique-building-unlocks-faction-layout' : '');
       unlocks.setAttribute('aria-label', label + ' unlocks');
       const makeUpgrade = (stepName, stepIcon, descriptionText, fields) => {
         const step = document.createElement('section');
@@ -236,18 +237,35 @@
         title.textContent = stepName;
         const description = document.createElement('p');
         description.className = 'unique-building-upgrade-description';
-        description.textContent = descriptionText;
-        const facts = document.createElement('p');
+        if (usesFactionLayout && stepName.endsWith('Quest')) {
+          description.innerHTML = `<strong>Description:</strong> ${descriptionText}`;
+        } else {
+          description.textContent = descriptionText;
+        }
+        const facts = document.createElement('div');
         facts.className = 'unique-building-upgrade-facts';
         facts.innerHTML = fields;
         copy.append(title, description, facts);
-        step.append(framedIcon, copy);
+        if (usesFactionLayout) {
+          const heading = document.createElement('div');
+          heading.className = 'unique-building-upgrade-heading';
+          heading.append(framedIcon, title);
+          step.append(heading, copy);
+        } else {
+          step.append(framedIcon, copy);
+        }
         return step;
       };
       const upgradeDescription = `Upgrade ${replaces || 'the standard building'} to ${entry.querySelector('h3')?.textContent || label}, ${productionEffect ? productionEffect.charAt(0).toLowerCase() + productionEffect.slice(1) : 'unlocking its unique production effect.'}`;
+      const fairyQuestFields = icon === 'building-enchanted-field.png'
+        ? `<p><strong>Note:</strong> Required once throughout the entire game and does not count toward the purchased-upgrade statistic.</p><p><strong>Requirements:</strong> R16+ and 2,250 Farms</p><p><strong>Cost:</strong> ${questCost}</p>`
+        : `<p><strong>Requirement:</strong> 1,000,000 Assistants</p><p><strong>Cost:</strong> ${questCost}</p><p><strong>Effect:</strong> Grants access to the Swarming Tower upgrade.</p>`;
+      const fairyUpgradeFields = icon === 'building-enchanted-field.png'
+        ? `<p><strong>Formula:</strong> (50 × (500 × x)<sup>0.5</sup>)%, where x is assistants owned.</p><p><strong>Effect:</strong> Also allows access to the Research Facilities.</p><p><strong>Requirement:</strong> Enchanted Field Quest</p><p><strong>Cost:</strong> ${upgradeCost}</p>`
+        : `<p><strong>Requirement:</strong> Swarming Tower Quest</p><p><strong>Cost:</strong> ${upgradeCost}</p><p><strong>Effect:</strong> Replaces Wizard Towers with Swarming Towers and grants access to Fairies Union.</p>`;
       unlocks.append(
-        makeUpgrade(questName, questIcon, questFlavorByIcon[icon] || 'Complete the faction quest to unlock the building upgrade.', `<strong>Requirement:</strong> ${questRequirement || 'Complete the listed faction quest.'}${questCost ? ` · <strong>Cost:</strong> ${questCost}` : ''}`),
-        makeUpgrade(upgradeName, upgradeIcon, upgradeDescription, `<strong>Requirement:</strong> ${questName}${upgradeCost ? ` · <strong>Cost:</strong> ${upgradeCost}` : ''}`)
+        makeUpgrade(questName, questIcon, questFlavorByIcon[icon] || 'Complete the faction quest to unlock the building upgrade.', usesFactionLayout ? fairyQuestFields : `<strong>Requirement:</strong> ${questRequirement || 'Complete the listed faction quest.'}${questCost ? ` · <strong>Cost:</strong> ${questCost}` : ''}`),
+        makeUpgrade(upgradeName, upgradeIcon, upgradeDescription, usesFactionLayout ? fairyUpgradeFields : `<strong>Requirement:</strong> ${questName}${upgradeCost ? ` · <strong>Cost:</strong> ${upgradeCost}` : ''}`)
       );
       const resultLabel = document.createElement('div');
       resultLabel.className = 'unique-building-result-label';
