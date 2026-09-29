@@ -336,17 +336,14 @@
     section.className = 'unique-faction-section';
     const title = document.createElement('h3');
     title.id = key;
-    title.textContent = displayName;
-    const factionLink = document.createElement('p');
-    factionLink.className = 'unique-faction-reference-link';
     const link = document.createElement('a');
     const routeName = key === 'mercenary'
       ? 'MercenaryFaction'
       : key.charAt(0).toUpperCase() + key.slice(1) + 'Faction';
     link.href = '/realm/' + routeName + '/';
-    link.textContent = displayName + ' faction reference';
-    factionLink.append(link);
-    section.append(title, factionLink);
+    link.textContent = displayName;
+    title.append(link);
+    section.append(title);
     if (key === 'mercenary') {
       const mercenaryQuest = document.createElement('div');
       mercenaryQuest.className = 'unique-building-shared-quest unique-building-shared-quest-faction-layout';
