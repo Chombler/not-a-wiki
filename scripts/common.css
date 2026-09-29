@@ -543,7 +543,6 @@ a.tooltips {
 .unique-building-metadata { color: var(--text-muted); font-size: 0.9rem; }
 .unique-faction-section { margin-top: 1.5rem; scroll-margin-top: 1rem; }
 .unique-faction-section > h3 { margin-bottom: 0.35rem; }
-.unique-faction-section .unique-building-entry:last-child { border-bottom: 0; }
 
 .reference-field-guide {
   display: grid;
