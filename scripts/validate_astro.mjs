@@ -118,7 +118,7 @@ const contracts = {
   'Events/index.html': ['id="permanent-seasonal-rewards"', 'id="seasonal-event-upgrades"', 'id="events-2015"'],
   'Terminology/index.html': ['id="shortcuts"', 'id="game-terminology"', 'id="abbreviations"'],
   'BuildingAlignments/index.html': ['id="building-tiers"', 'id="building-comparison"', '250,000 × <var>T</var>', 'id="building-cards"', 'id="shared-buildings"', '250,000 × T/s', 'id="good-buildings"', 'id="evil-buildings"', 'id="neutral-buildings"', 'id="alignment-and-proofs"', 'id="hall-of-legends"', 'id="building-costs"', 'id="cost-multiplier"', 'id="exact-building-cost"', 'exact cost of buying <var>q</var> more', 'id="related-building-pages"', '/BuildingUpgrades/', '/UniqueBuilding/'],
-  'BuildingUpgrades/index.html': ['id="universal-buildings"', 'id="farm"', 'id="farm-upgrade-1"', 'farm-upgrade1.png', 'id="good-buildings"', 'id="evil-buildings"', 'id="neutral-buildings"', 'id="hall-of-legends-group"', 'id="hall-of-legends-bonus-upgrades"', 'trophy-upgrade3.png', 'Pre-Ascension effect'],
+  'BuildingUpgrades/index.html': ['id="universal-buildings"', 'id="farm"', 'id="farm-upgrade-1"', 'farm-upgrade1.png', 'id="good-buildings"', 'id="evil-buildings"', 'id="neutral-buildings"', 'id="hall-of-legends-group"', 'id="hall-of-legends-bonus-upgrades"', 'trophy-upgrade3.png', 'Availability:', 'Effect (A2):'],
   'GameWindow/index.html': ['id="game-window"', 'id="options-window"'],
   'Upgrades/index.html': ['id="alignment-upgrades"', 'id="assistant-upgrades"'],
   'FactionUpgrades/index.html': ['id="tier-1-upgrades"', 'id="tier-4-upgrades"'],
@@ -222,6 +222,13 @@ const buildingUpgradeButtons = [...buildingUpgradesHtml.matchAll(/class="trophy-
 if (buildingUpgradeButtons !== 581) failures.push(`BuildingUpgrades has ${buildingUpgradeButtons}/581 interactive upgrade icons`);
 const buildingUpgradeEraBands = [...buildingUpgradesHtml.matchAll(/class="building-upgrade-era building-upgrade-era-a0"/g)].length;
 if (buildingUpgradeEraBands !== 25) failures.push(`BuildingUpgrades has ${buildingUpgradeEraBands}/25 Ascension band rows`);
+const buildingUpgradeAvailability = [...buildingUpgradesHtml.matchAll(/Availability:/g)].length;
+if (buildingUpgradeAvailability !== 581) failures.push(`BuildingUpgrades has ${buildingUpgradeAvailability}/581 explicit availability fields`);
+const buildingUpgradeA2Effects = [...buildingUpgradesHtml.matchAll(/Effect \(A2\):/g)].length;
+if (buildingUpgradeA2Effects !== 556) failures.push(`BuildingUpgrades has ${buildingUpgradeA2Effects}/556 explicit A2 effect fields`);
+if (/Pre-Ascension (?:cost|effect)|Post-Ascension (?:cost|effect)/.test(buildingUpgradesHtml)) {
+  failures.push('BuildingUpgrades still contains ambiguous pre/post-Ascension fields');
+}
 if (buildingUpgradesHtml.includes('building-upgrade-table')) failures.push('BuildingUpgrades restored the verbose always-visible upgrade tables');
 
 const factionsSource = fs.readFileSync(path.join(root, 'src/page-content/reference/Factions.html'), 'utf8');
