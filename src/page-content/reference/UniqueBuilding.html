@@ -168,7 +168,6 @@
 
   uniqueBuildingEntries.forEach((entry) => {
     const { icon, panel, label, type, available } = entry.dataset;
-    const usesFactionRecord = panel === 'fairy';
     const tier = tierByIcon[icon];
     const isFactionUnion = entry.textContent.includes('grants Faction Union');
     const buildingType = panel === 'mercenary'
@@ -213,15 +212,13 @@
     tierLabel.className = 'building-tier';
     tierLabel.textContent = 'T' + tier;
     visual.append(iconWell, name, kind, availability, tierLabel);
-    if (!usesFactionRecord) entry.prepend(visual);
 
     const unlockSteps = unlockStepsByIcon[icon];
     if (unlockSteps) {
       const [questName, questIcon, upgradeName, upgradeIcon] = unlockSteps;
       const [questCost, upgradeCost] = costsFor(icon);
       const unlocks = document.createElement('div');
-      const usesFactionLayout = panel === 'fairy';
-      unlocks.className = 'unique-building-unlocks' + (usesFactionLayout ? ' unique-building-unlocks-faction-layout' : '');
+      unlocks.className = 'unique-building-unlocks unique-building-unlocks-faction-layout';
       unlocks.setAttribute('aria-label', label + ' unlocks');
       const makeUpgrade = (stepName, stepIcon, descriptionText, fields) => {
         const step = document.createElement('section');
@@ -238,7 +235,7 @@
         title.textContent = stepName;
         const description = document.createElement('p');
         description.className = 'unique-building-upgrade-description';
-        if (usesFactionLayout && stepName.endsWith('Quest')) {
+        if (stepName.endsWith('Quest')) {
           description.innerHTML = `<strong>Description:</strong> ${descriptionText}`;
         } else {
           description.textContent = descriptionText;
@@ -247,14 +244,10 @@
         facts.className = 'unique-building-upgrade-facts';
         facts.innerHTML = fields;
         copy.append(title, description, facts);
-        if (usesFactionLayout) {
-          const heading = document.createElement('div');
-          heading.className = 'unique-building-upgrade-heading';
-          heading.append(framedIcon, title);
-          step.append(heading, copy);
-        } else {
-          step.append(framedIcon, copy);
-        }
+        const heading = document.createElement('div');
+        heading.className = 'unique-building-upgrade-heading';
+        heading.append(framedIcon, title);
+        step.append(heading, copy);
         return step;
       };
       const upgradeDescription = `Upgrade ${replaces || 'the standard building'} to ${entry.querySelector('h3')?.textContent || label}, ${productionEffect ? productionEffect.charAt(0).toLowerCase() + productionEffect.slice(1) : 'unlocking its unique production effect.'}`;
@@ -264,14 +257,16 @@
       const fairyUpgradeFields = icon === 'building-enchanted-field.png'
         ? `<p><strong>Formula:</strong> (50 × (500 × x)<sup>0.5</sup>)%, where x is assistants owned.</p><p><strong>Effect:</strong> Also allows access to the Research Facilities.</p><p><strong>Requirement:</strong> Enchanted Field Quest</p><p><strong>Cost:</strong> ${upgradeCost}</p>`
         : `<p><strong>Requirement:</strong> Swarming Tower Quest</p><p><strong>Cost:</strong> ${upgradeCost}</p><p><strong>Effect:</strong> Replaces Wizard Towers with Swarming Towers and grants access to Fairies Union.</p>`;
+      const questFields = panel === 'fairy'
+        ? fairyQuestFields
+        : `<p><strong>Requirement:</strong> ${questRequirement || 'Complete the listed faction quest.'}</p>${questCost ? `<p><strong>Cost:</strong> ${questCost}</p>` : ''}`;
+      const upgradeFields = panel === 'fairy'
+        ? fairyUpgradeFields
+        : `<p><strong>Requirement:</strong> ${questName}</p>${upgradeCost ? `<p><strong>Cost:</strong> ${upgradeCost}</p>` : ''}`;
       unlocks.append(
-        makeUpgrade(questName, questIcon, questFlavorByIcon[icon] || 'Complete the faction quest to unlock the building upgrade.', usesFactionLayout ? fairyQuestFields : `<strong>Requirement:</strong> ${questRequirement || 'Complete the listed faction quest.'}${questCost ? ` · <strong>Cost:</strong> ${questCost}` : ''}`),
-        makeUpgrade(upgradeName, upgradeIcon, upgradeDescription, usesFactionLayout ? fairyUpgradeFields : `<strong>Requirement:</strong> ${questName}${upgradeCost ? ` · <strong>Cost:</strong> ${upgradeCost}` : ''}`)
+        makeUpgrade(questName, questIcon, questFlavorByIcon[icon] || 'Complete the faction quest to unlock the building upgrade.', questFields),
+        makeUpgrade(upgradeName, upgradeIcon, upgradeDescription, upgradeFields)
       );
-      const resultLabel = document.createElement('div');
-      resultLabel.className = 'unique-building-result-label';
-      resultLabel.textContent = 'Unique building';
-      if (!usesFactionRecord) entry.prepend(resultLabel);
       entry.prepend(unlocks);
     }
 
@@ -279,40 +274,34 @@
     const heading = content?.querySelector('h3');
     if (content && heading) {
       const effect = [...content.querySelectorAll('p')].find((paragraph) => paragraph.querySelector('strong')?.textContent === 'Effect:');
-      if (usesFactionRecord) {
-        entry.classList.add('unique-building-entry-faction-layout');
-        const headingRow = document.createElement('div');
-        headingRow.className = 'unique-building-record-heading';
-        heading.before(headingRow);
-        headingRow.append(visual, heading);
+      entry.classList.add('unique-building-entry-faction-layout');
+      const headingRow = document.createElement('div');
+      headingRow.className = 'unique-building-record-heading';
+      heading.before(headingRow);
+      headingRow.append(visual, heading);
 
-        const typeLine = document.createElement('p');
-        typeLine.innerHTML = `<strong>Type:</strong> ${buildingType}`;
-        const availableLine = document.createElement('p');
-        availableLine.innerHTML = `<strong>Available:</strong> ${available}`;
-        headingRow.after(typeLine, availableLine);
+      const typeLine = document.createElement('p');
+      typeLine.innerHTML = `<strong>Type:</strong> ${buildingType}`;
+      const availableLine = document.createElement('p');
+      availableLine.innerHTML = `<strong>Available:</strong> ${available}`;
+      headingRow.after(typeLine, availableLine);
 
-        const replacesLine = [...content.querySelectorAll('p')].find((paragraph) => paragraph.querySelector('strong')?.textContent === 'Replaces:');
-        const alignmentLabel = replacesLine ? [...replacesLine.querySelectorAll('strong')].find((strong) => strong.textContent === 'Alignment:') : null;
-        if (alignmentLabel) {
-          const alignment = alignmentLabel.nextSibling?.textContent.trim() || '';
-          const alignmentLine = document.createElement('p');
-          alignmentLine.innerHTML = `<strong>Alignment:</strong> ${alignment}`;
-          replacesLine.innerHTML = `<strong>Replaces:</strong> ${replaces}`;
-          replacesLine.after(alignmentLine);
-        }
+      const replacesLine = [...content.querySelectorAll('p')].find((paragraph) => paragraph.querySelector('strong')?.textContent === 'Replaces:');
+      const alignmentLabel = replacesLine ? [...replacesLine.querySelectorAll('strong')].find((strong) => strong.textContent === 'Alignment:') : null;
+      if (alignmentLabel) {
+        const alignment = alignmentLabel.nextSibling?.textContent.trim() || '';
+        const alignmentLine = document.createElement('p');
+        alignmentLine.innerHTML = `<strong>Alignment:</strong> ${alignment}`;
+        replacesLine.innerHTML = `<strong>Replaces:</strong> ${replaces}`;
+        replacesLine.after(alignmentLine);
+      }
 
-        if (effect) {
-          effect.innerHTML = icon === 'building-enchanted-field.png'
-            ? 'Upgrade Farms to Enchanted Fields, boosting their production based on assistants owned and unlocking additional building perks.'
-            : 'Upgrade Wizard Towers to Swarming Towers, boosting their production based on active spells and unlocking additional building perks.';
-        }
-      } else {
-        const metadata = document.createElement('p');
-        metadata.className = 'unique-building-metadata';
-        metadata.innerHTML = `<strong>Type:</strong> ${buildingType} <span aria-hidden="true">·</span> <strong>Tier:</strong> T${tier} <span aria-hidden="true">·</span> <strong>Available:</strong> ${available}`;
-        heading.after(metadata);
-        if (effect) effect.querySelector('strong').textContent = 'Production effect:';
+      if (effect) {
+        const buildingName = heading.textContent;
+        const effectSummary = productionEffect
+          ? productionEffect.charAt(0).toLowerCase() + productionEffect.slice(1)
+          : 'unlocking its unique production effect.';
+        effect.textContent = `Upgrade ${replaces || 'the standard building'} to ${buildingName}, ${effectSummary}`;
       }
       if (isFactionUnion) {
         effect.lastChild.textContent = effect.lastChild.textContent.replace('; grants Faction Union.', '.');
@@ -360,8 +349,8 @@
     section.append(title, factionLink);
     if (key === 'mercenary') {
       const mercenaryQuest = document.createElement('div');
-      mercenaryQuest.className = 'unique-building-shared-quest';
-      mercenaryQuest.innerHTML = '<span class="game-icon-frame"><img data-game-icon-unframed src="/realm/Factions/picks/MercenaryEncampmentQuest.png" alt=""></span><span><h4>Mercenary Encampment Quest</h4><p class="unique-building-upgrade-description">We salute you, commander. Your strategical skills had not gone unnoticed within our ranks. We have decided to offer you a chance to establish a formal encampment within your boundaries... Build more structures to strengthen our city.</p><p class="unique-building-upgrade-facts"><strong>Requirement:</strong> R75+ and 125,000 buildings · <strong>Cost:</strong> 10 Notg (1e121) Coins · <strong>Note:</strong> Purchased once</p></span>';
+      mercenaryQuest.className = 'unique-building-shared-quest unique-building-shared-quest-faction-layout';
+      mercenaryQuest.innerHTML = '<div class="unique-building-upgrade-heading"><span class="game-icon-frame"><img data-game-icon-unframed src="/realm/Factions/picks/MercenaryEncampmentQuest.png" alt=""></span><h4>Mercenary Encampment Quest</h4></div><p class="unique-building-upgrade-description"><strong>Description:</strong> We salute you, commander. Your strategical skills had not gone unnoticed within our ranks. We have decided to offer you a chance to establish a formal encampment within your boundaries... Build more structures to strengthen our city.</p><div class="unique-building-upgrade-facts"><p><strong>Requirement:</strong> R75+ and 125,000 buildings</p><p><strong>Cost:</strong> 10 Notg (1e121) Coins</p><p><strong>Note:</strong> Purchased once</p></div>';
       section.append(mercenaryQuest);
     }
     entries.forEach((entry) => {

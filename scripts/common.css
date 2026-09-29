@@ -482,6 +482,16 @@ a.tooltips {
   margin: 0.25rem 0;
 }
 
+.unique-building-shared-quest-faction-layout {
+  display: block;
+  padding: 0.75rem 0 0.9rem;
+}
+
+.unique-building-shared-quest-faction-layout .unique-building-upgrade-facts p {
+  display: block;
+  margin: 0.25rem 0;
+}
+
 .unique-building-unlocks-faction-layout .unique-building-upgrade > span:last-child,
 .unique-building-unlocks-faction-layout .unique-building-upgrade-facts {
   display: block;
