@@ -8,18 +8,7 @@
 <tr><th scope="row">A2</th><td>Elite-faction unique buildings</td><td>R130+</td></tr>
 </tbody></table></div>
 
-<h2 id="how-unique-buildings-work">How to read this reference</h2>
-<p>A unique building occupies the named standard building's slot while its faction and other requirements are active. Each entry separates the building's production effect from the condition that unlocks it.</p>
-<dl class="reference-field-guide">
-  <dt>Quest upgrade</dt><dd>Shows the quest purchase, its cost, and the condition that must be met. The icon matches the quest upgrade shown in game.</dd>
-  <dt>Building upgrade</dt><dd>Shows the separate purchase made after the quest. Buying it grants the unique building replacement.</dd>
-  <dt>Building row</dt><dd>Shows the in-game building, owning faction, earliest availability, and building tier.</dd>
-  <dt>Replaces</dt><dd>Names the standard building slot that becomes the unique building.</dd>
-  <dt>Production effect</dt><dd>States which game value drives the building's production. Goblin Banks are called out separately because they add base production.</dd>
-  <dt>Formula</dt><dd>Gives the exact calculation and defines the scope of each variable, such as this Era, this Reincarnation, or all time.</dd>
-  <dt>Requirement</dt><dd>Gives the Research threshold, quest, Reincarnation, or building total needed to make the replacement available.</dd>
-  <dt>Unlocks</dt><dd>Appears when the building grants an additional system, such as Faction Union.</dd>
-</dl>
+<p>Each faction entry lists the quest, the upgrade it unlocks, and the resulting unique building.</p>
 
 <span id="unique-building-reference"></span>
 <h2 id="research-unique-buildings">Research unique buildings</h2>
@@ -125,6 +114,35 @@
     'building-pavilion.png': ['Pavilion Quest', 'PavilionQuest.png', 'Pavilion Upgrade', 'PavilionUpgrade.png'],
     'building-hall-of-origination.png': ['Hall of Origination Quest', 'HallofOriginationQuest.png', 'Hall of Origination Upgrade', 'HallofOriginationUpgrade.png']
   };
+  const questFlavorByIcon = {
+    'building-enchanted-field.png': 'Hey! Listen! A True Fairy has never enough Farms! We will offer you the chance to improve them!',
+    'building-training-grounds.png': "Hello, mellonamin. We require a new place to train our soldiers. Build enough Warrior Barracks, and we'll make them worthy of you.",
+    'building-heaven-s-domain.png': 'Bless you, dear friend. The Lands of the sky are expanding as more good souls are joining our ranks. Would you be so kind to provide them a place to stay in the Heavens?',
+    'building-goblin-bank.png': "Hey There! We need a safe place to keep our honestly earned savings. We'll turn those Witch Conclaves into something more... useful, if you build enough of them.",
+    'building-undercity.png': "Hello there. The dead stand ready. Give them a place to rise and live again... Build enough Necropolises, we'll take care of the rest.",
+    'building-infernal-realm.png': 'Useless underling, be warned! The Demons are going to invade your world with all their might. If you know which side you want to be on when that happens, build those Hell Portals!',
+    'building-olympian-hall.png': 'Khaire, ruler. More of our people will join your cause if you build enough Hall of Legends. Our architects will take care of expanding them to accommodate the almighty Titans.',
+    'building-stonehenge.png': "Hello, friend. The balance of nature requires more magic to sustain it. Build enough Stone Pillars, we'll gather our elders to improve them.",
+    'building-sunken-city.png': "C-uh'e sll'ha hrii nog nwyar. Kn'a wgah'n ph'sgn'wahl. (Those unpronounceable words with no apparent meaning have spoken directly to your mind: you have to build enough Labyrinths.)",
+    'building-dwarven-forge.png': "Aye again lad! Don't ye want a better place to forge yer weapons? With enough Blacksmiths me people can help ye!",
+    'building-spider-sanctuary.png': 'Kivvil. Our Valsharess requires more places to worship the almighty Spider Queen. Build enough Dark Temples, and our priestesses will consecrate them.',
+    'building-wyrm-s-den.png': "Ava'yorn thurirl. Our kind needs large spaces and a place to take flight. Build enough Iron Strongholds to make room for us.",
+    'building-swarming-tower.png': 'Hey! [echoes a thousand times] Listen! [echoes again]. Then the overlapping voice of a thousand fairies fills your head with the desire of having more of their kind as assistants.',
+    'building-arboreal-city.png': "Hello again, mellonamin. It is time for the Elves to have their place to live. Collect enough Elven Faction Coins, and we'll start to build a true green city!",
+    'building-holy-site.png': "Welcome again, dearest ally. We need your help once more: improve your mana potency in this new era, and we'll reward you by blessing the ground you walk on.",
+    'building-slave-market.png': 'Time is money, friend! The markets are expanding, we need new places to sell our slaves to! Build more Neutral buildings for us, will you?',
+    'building-flesh-workshop.png': "Heelloo... The dead need to rest... accumulate a high enough offline production to allow them their peace, and they'll be forever your servants.",
+    'building-burning-abyss.png': 'Bwahahahaha! We are going to destroy this world! Everything will burn in the flames of hell! We want a Call to Arms longer than ever, everyone needs to suffer and despair!',
+    'building-mountain-palace.png': "Khaire, ruler. Our kind want to reshape the mountain into something more fitting, but we need funds. Make enough Royal Exchanges, and we'll let you see our masterpiece.",
+    'building-ziggurat.png': "Hello, friend. We are close to restore the world balance... build us more Stonehenges, and we'll upgrade other buildings to be great places of power.",
+    'building-forbidden-library.png': "Het'ankd gewob iiray. Gan'il Knes'fj pha'rgn wahl. (Those unpronounceable words with no apparent meaning have spoken directly to your mind: you have to excavate enough.)",
+    'building-high-bastion.png': "Aye lad! Yer castle looks solid, but we think we can do better, yes? Excavate to yer best and then again from the start, we'll have a deal.",
+    'building-brothel.png': "Yawn... Kivvil, your realm is starting to bore us. We need better places to have fun and rest. Show us your spellcasting ability and we'll teach you a few new things about underworld fun.",
+    'building-dragon-pasture.png': 'Insignificant creature, you have much to do to gain our full respect. Our hatchlings need more food... yes, this would be a task worthy of your stature. Show your ability to maintain powerful magic at the same time, and we will let you serve us.',
+    'building-nexus.png': 'Hassar, Ruler. Our kind wants to establish better communications with you. Please build more Wizard Towers, Witch Conclaves, and Alchemist Labs to convert.',
+    'building-pavilion.png': 'Greetings. You will have the honor of hosting our people. Cover your realm in Chaos magic for us!',
+    'building-hall-of-origination.png': 'Hello, child! Your realm progress looks kinda... obsolete. Would you mind if we help improve your realm with our advanced perks? Please gather more Faction Coins to generate more energy!'
+  };
   const researchCosts = new Set([
     'building-enchanted-field.png', 'building-training-grounds.png', 'building-heaven-s-domain.png',
     'building-goblin-bank.png', 'building-undercity.png', 'building-infernal-realm.png',
@@ -164,6 +182,12 @@
     const questRequirement = rawQuestRequirement
       ? rawQuestRequirement.charAt(0).toUpperCase() + rawQuestRequirement.slice(1)
       : null;
+    const replaces = [...entry.querySelectorAll('p')]
+      .find((paragraph) => paragraph.querySelector('strong')?.textContent === 'Replaces:')
+      ?.childNodes[1]?.textContent.trim().split('·')[0].trim();
+    const productionEffect = [...entry.querySelectorAll('p')]
+      .find((paragraph) => paragraph.querySelector('strong')?.textContent === 'Effect:')
+      ?.textContent.replace('Effect:', '').replace('; grants Faction Union.', '.').trim();
     const visual = document.createElement('div');
     visual.className = 'building-label building-label-unique';
     visual.style.setProperty('--building-panel', `url("/realm/assets/game/sprites/${panel}-building-up.png")`);
@@ -194,12 +218,12 @@
     if (unlockSteps) {
       const [questName, questIcon, upgradeName, upgradeIcon] = unlockSteps;
       const [questCost, upgradeCost] = costsFor(icon);
-      const chain = document.createElement('ol');
-      chain.className = 'unique-building-unlock-chain';
-      chain.setAttribute('aria-label', label + ' unlock chain');
-      const makeStep = (kindName, stepName, stepIcon, details) => {
-        const step = document.createElement('li');
-        step.className = 'unique-building-unlock-step';
+      const unlocks = document.createElement('div');
+      unlocks.className = 'unique-building-unlocks';
+      unlocks.setAttribute('aria-label', label + ' unlocks');
+      const makeUpgrade = (stepName, stepIcon, descriptionText, fields) => {
+        const step = document.createElement('section');
+        step.className = 'unique-building-upgrade';
         const framedIcon = document.createElement('span');
         framedIcon.className = 'game-icon-frame';
         const stepImage = document.createElement('img');
@@ -208,25 +232,28 @@
         stepImage.alt = '';
         framedIcon.append(stepImage);
         const copy = document.createElement('span');
-        const kind = document.createElement('small');
-        kind.textContent = kindName;
-        const title = document.createElement('strong');
+        const title = document.createElement('h4');
         title.textContent = stepName;
-        const description = document.createElement('span');
-        description.textContent = details;
-        copy.append(kind, title, description);
+        const description = document.createElement('p');
+        description.className = 'unique-building-upgrade-description';
+        description.textContent = descriptionText;
+        const facts = document.createElement('p');
+        facts.className = 'unique-building-upgrade-facts';
+        facts.innerHTML = fields;
+        copy.append(title, description, facts);
         step.append(framedIcon, copy);
         return step;
       };
-      chain.append(
-        makeStep('Quest upgrade', questName, questIcon, (questCost ? 'Cost: ' + questCost + '. ' : '') + (questRequirement || 'Complete the listed faction quest.')),
-        makeStep('Building upgrade', upgradeName, upgradeIcon, (upgradeCost ? 'Cost: ' + upgradeCost + '. ' : '') + 'Requires ' + questName + '; grants ' + label + '.')
+      const upgradeDescription = `Upgrade ${replaces || 'the standard building'} to ${entry.querySelector('h3')?.textContent || label}, ${productionEffect ? productionEffect.charAt(0).toLowerCase() + productionEffect.slice(1) : 'unlocking its unique production effect.'}`;
+      unlocks.append(
+        makeUpgrade(questName, questIcon, questFlavorByIcon[icon] || 'Complete the faction quest to unlock the building upgrade.', `<strong>Requirement:</strong> ${questRequirement || 'Complete the listed faction quest.'}${questCost ? ` · <strong>Cost:</strong> ${questCost}` : ''}`),
+        makeUpgrade(upgradeName, upgradeIcon, upgradeDescription, `<strong>Requirement:</strong> ${questName}${upgradeCost ? ` · <strong>Cost:</strong> ${upgradeCost}` : ''}`)
       );
       const resultLabel = document.createElement('div');
       resultLabel.className = 'unique-building-result-label';
-      resultLabel.textContent = 'Resulting unique building';
+      resultLabel.textContent = 'Unique building';
       entry.prepend(resultLabel);
-      entry.prepend(chain);
+      entry.prepend(unlocks);
     }
 
     const content = entry.lastElementChild;
@@ -285,7 +312,7 @@
     if (key === 'mercenary') {
       const mercenaryQuest = document.createElement('div');
       mercenaryQuest.className = 'unique-building-shared-quest';
-      mercenaryQuest.innerHTML = '<span class="game-icon-frame"><img data-game-icon-unframed src="/realm/Factions/picks/MercenaryEncampmentQuest.png" alt=""></span><span><small>Shared quest upgrade</small><strong>Mercenary Encampment Quest</strong><span>At R75, reach 125,000 total buildings and pay 10 Notg (1e121) Coins. Purchased once; unlocks the alignment-specific Mercenary unique buildings.</span></span>';
+      mercenaryQuest.innerHTML = '<span class="game-icon-frame"><img data-game-icon-unframed src="/realm/Factions/picks/MercenaryEncampmentQuest.png" alt=""></span><span><h4>Mercenary Encampment Quest</h4><p class="unique-building-upgrade-description">We salute you, commander. Your strategical skills had not gone unnoticed within our ranks. We have decided to offer you a chance to establish a formal encampment within your boundaries... Build more structures to strengthen our city.</p><p class="unique-building-upgrade-facts"><strong>Requirement:</strong> R75+ and 125,000 buildings · <strong>Cost:</strong> 10 Notg (1e121) Coins · <strong>Note:</strong> Purchased once</p></span>';
       section.append(mercenaryQuest);
     }
     entries.forEach((entry) => {
