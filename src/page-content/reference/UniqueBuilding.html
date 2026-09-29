@@ -98,7 +98,7 @@
     'building-dwarven-forge.png': ['Dwarven Forge Quest', 'DwarvenForgeQuestFactionUpgrade.png', 'Dwarven Forge', 'DwarvenForgeFactionUpgrade.png'],
     'building-spider-sanctuary.png': ['Spider Sanctuary Quest', 'SpiderSanctuaryQuestFactionUpgrade.png', 'Spider Sanctuary', 'SpiderSanctuaryFactionUpgrade.png'],
     'building-wyrm-s-den.png': ["Wyrm's Den Quest", "Wyrm'sDenQuestFactionUpgrade.png", "Wyrm's Den", "Wyrm'sDenFactionUpgrade.png"],
-    'building-swarming-tower.png': ['Swarming Towers Quest', 'SwarmingTowerQuest.png', 'Unique Building Upgrade', 'SwarmingTowersUniqueBuildingUpgrade.png'],
+    'building-swarming-tower.png': ['Swarming Tower Quest', 'SwarmingTowerQuest.png', 'Swarming Tower', 'SwarmingTowersUniqueBuildingUpgrade.png'],
     'building-arboreal-city.png': ['Arboreal City Quest', 'ArborealCityQuest.png', 'Unique Building Upgrade', 'ArborealCityUniqueBuildingUpgrade.png'],
     'building-holy-site.png': ['Holy Site Quest', 'HolySiteQuest.png', 'Unique Building Upgrade', 'HolySiteUniqueBuildingUpgrade.png'],
     'building-slave-market.png': ['Slave Market Quest', 'SlaveMarketQuest.png', 'Unique Building Upgrade', 'SlaveMarketUniqueBuildingUpgrade.png'],
@@ -219,7 +219,7 @@
       const [questName, questIcon, upgradeName, upgradeIcon] = unlockSteps;
       const [questCost, upgradeCost] = costsFor(icon);
       const unlocks = document.createElement('div');
-      unlocks.className = 'unique-building-unlocks';
+      unlocks.className = 'unique-building-unlocks' + (panel === 'fairy' ? ' unique-building-unlocks-game' : '');
       unlocks.setAttribute('aria-label', label + ' unlocks');
       const makeUpgrade = (stepName, stepIcon, descriptionText, fields) => {
         const step = document.createElement('section');
