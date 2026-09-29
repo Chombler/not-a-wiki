@@ -13,42 +13,41 @@
 </div>
 <script>
   const uniqueBuildingIcons = {
-    'Enchanted Fields': ['building-enchanted-field.png', 'fairy', 'fairy', 'Enchanted Field'],
-    'Dragon Pastures': ['building-dragon-pasture.png', 'dragon', 'dragon', 'Dragon Pasture'],
-    'Brothels': ['building-brothel.png', 'drow', 'drow', 'Brothel'],
-    "Freemason's Halls": ['building-freemason-s-hall.png', 'mercenary', 'mercenary', "Freemason's Hall"],
-    'Dwarven Forges': ['building-dwarven-forge.png', 'dwarf', 'dwarf', 'Dwarven Forge'],
-    'Elven Training Grounds': ['building-training-grounds.png', 'elf', 'elf', 'Elven Training Grounds'],
-    'Pavilions': ['building-pavilion.png', 'djinn', 'djinn', 'Pavilion'],
-    'Mercenary Camps': ['building-mercenary-camp.png', 'mercenary', 'mercenary', 'Mercenary Camp'],
-    'Swarming Towers': ['building-swarming-tower.png', 'fairy', 'fairy', 'Swarming Tower'],
-    'Nexuses': ['building-nexus.png', 'archon', 'archon', 'Nexus'],
-    'Holy Sites': ['building-holy-site.png', 'angel', 'angel', 'Holy Site'],
-    'Arboreal Cities': ['building-arboreal-city.png', 'elf', 'elf', 'Arboreal City'],
-    'High Bastions': ['building-high-bastion.png', 'dwarf', 'dwarf', 'High Bastion'],
-    "Heaven's Domains": ['building-heaven-s-domain.png', 'angel', 'angel', "Heaven's Domain"],
-    'Slave Markets': ['building-slave-market.png', 'goblin', 'goblin', 'Slave Market'],
-    'Flesh Workshops': ['building-flesh-workshop.png', 'undead', 'undead', 'Flesh Workshop'],
-    'Goblin Banks': ['building-goblin-bank.png', 'goblin', 'goblin', 'Goblin Bank'],
-    'Spider Sanctuaries': ['building-spider-sanctuary.png', 'drow', 'drow', 'Spider Sanctuary'],
-    'Undercities': ['building-undercity.png', 'undead', 'undead', 'Undercity'],
-    'Tyrant Garrisons': ['building-tyrant-garrison.png', 'mercenary', 'mercenary', 'Tyrant Garrison'],
-    'Infernal Realms': ['building-infernal-realm.png', 'demon', 'demon', 'Infernal Realm'],
-    'Mountain Palaces': ['building-mountain-palace.png', 'titan', 'titan', 'Mountain Palace'],
-    'Stonehenge Circles': ['building-stonehenge.png', 'druid', 'druid', 'Stonehenge'],
-    'Forbidden Libraries': ['building-forbidden-library.png', 'faceless', 'faceless', 'Forbidden Library'],
-    'Sunken Cities': ['building-sunken-city.png', 'faceless', 'faceless', 'Sunken City'],
-    'Wyrm Dens': ['building-wyrm-s-den.png', 'dragon', 'dragon', "Wyrm's Den"],
-    'Ziggurats': ['building-ziggurat.png', 'druid', 'druid', 'Ziggurat'],
-    'Olympian Halls': ['building-olympian-hall.png', 'titan', 'titan', 'Olympian Hall'],
-    'Burning Abysses': ['building-burning-abyss.png', 'demon', 'demon', 'Burning Abyss'],
-    'Halls of Origination': ['building-hall-of-origination.png', 'makers', 'makers', 'Hall of Origination']
+    'Enchanted Fields': ['building-enchanted-field.png', 'fairy', 'fairy', 'Enchanted Field', 'A0+', 'Production scales with assistants owned.', 'Research and 2,250 Farms'],
+    'Dragon Pastures': ['building-dragon-pasture.png', 'dragon', 'dragon', 'Dragon Pasture', 'A2+', 'Production scales with maximum Mana.', 'R116+ and Dragon Pasture Quest'],
+    'Brothels': ['building-brothel.png', 'drow', 'drow', 'Brothel', 'A2+', 'Production scales with Royal Exchanges made this Era.', 'R116+ and Brothel Quest'],
+    "Freemason's Halls": ['building-freemason-s-hall.png', 'mercenary', 'mercenary', "Freemason's Hall", 'A1+', 'Production scales with Faction Coins found this Era.', 'R75+, Mercenary, and 125,000 total buildings'],
+    'Dwarven Forges': ['building-dwarven-forge.png', 'dwarf', 'dwarf', 'Dwarven Forge', 'A0+', 'Production scales with Mana per second.', 'Research and 3,500 Blacksmiths'],
+    'Elven Training Grounds': ['building-training-grounds.png', 'elf', 'elf', 'Elven Training Grounds', 'A0+', 'Production scales with total clicks made.', 'Research and 1,750 Warrior Barracks'],
+    'Pavilions': ['building-pavilion.png', 'djinn', 'djinn', 'Pavilion', 'A2+', 'Production scales with spells cast this Reincarnation.', 'R130+ and Pavilion Quest'],
+    'Mercenary Camps': ['building-mercenary-camp.png', 'mercenary', 'mercenary', 'Mercenary Camp', 'A1+', 'Production scales with non-unique buildings owned.', 'R75+, Mercenary, and 125,000 total buildings'],
+    'Swarming Towers': ['building-swarming-tower.png', 'fairy', 'fairy', 'Swarming Tower', 'A2+', 'Production scales with active spells and grants access to Faction Union.', 'Swarming Tower Quest'],
+    'Nexuses': ['building-nexus.png', 'archon', 'archon', 'Nexus', 'A2+', 'Production scales with time spent as Order this Reincarnation.', 'R130+ and Nexus Quest'],
+    'Holy Sites': ['building-holy-site.png', 'angel', 'angel', 'Holy Site', 'A2+', 'Production scales with time spent as Good this Reincarnation and grants access to Faction Union.', 'Holy Site Quest'],
+    'Arboreal Cities': ['building-arboreal-city.png', 'elf', 'elf', 'Arboreal City', 'A2+', 'Production scales with Faction Coin find chance and grants access to Faction Union.', 'Arboreal City Quest'],
+    'High Bastions': ['building-high-bastion.png', 'dwarf', 'dwarf', 'High Bastion', 'A2+', 'Production scales with clicks made this Reincarnation and grants access to Faction Union.', 'R116+ and High Bastion Quest'],
+    "Heaven's Domains": ['building-heaven-s-domain.png', 'angel', 'angel', "Heaven's Domain", 'A0+', 'Production scales with Mana per second.', "Research and 1,500 Heaven's Gates"],
+    'Slave Markets': ['building-slave-market.png', 'goblin', 'goblin', 'Slave Market', 'A2+', 'Production scales with assistants owned and grants access to Faction Union.', 'Slave Market Quest'],
+    'Flesh Workshops': ['building-flesh-workshop.png', 'undead', 'undead', 'Flesh Workshop', 'A2+', 'Production scales with Mana per second and grants access to Faction Union.', 'Flesh Workshop Quest'],
+    'Goblin Banks': ['building-goblin-bank.png', 'goblin', 'goblin', 'Goblin Bank', 'A0+', 'Base production scales with Coins owned.', 'Research and 1,750 Witch Conclaves'],
+    'Spider Sanctuaries': ['building-spider-sanctuary.png', 'drow', 'drow', 'Spider Sanctuary', 'A0+', 'Production scales with offline time this Reincarnation.', 'Research and 3,000 Dark Temples'],
+    'Undercities': ['building-undercity.png', 'undead', 'undead', 'Undercity', 'A0+', 'Production scales with time spent in this Era.', 'Research and 1,750 Necropolises'],
+    'Tyrant Garrisons': ['building-tyrant-garrison.png', 'mercenary', 'mercenary', 'Tyrant Garrison', 'A1+', 'Production scales with Offline production bonus.', 'R75+, Mercenary, and 125,000 total buildings'],
+    'Infernal Realms': ['building-infernal-realm.png', 'demon', 'demon', 'Infernal Realm', 'A0+', 'Production scales with trophies unlocked.', 'Research and 1,500 Hell Portals'],
+    'Mountain Palaces': ['building-mountain-palace.png', 'titan', 'titan', 'Mountain Palace', 'A2+', 'Production scales with buildings owned and grants access to Faction Union.', 'Mountain Palace Quest'],
+    'Stonehenge Circles': ['building-stonehenge.png', 'druid', 'druid', 'Stonehenge', 'A0+', 'Production scales with maximum Mana.', 'Research and 2,000 Stone Pillars'],
+    'Forbidden Libraries': ['building-forbidden-library.png', 'faceless', 'faceless', 'Forbidden Library', 'A2+', 'Production scales with spells cast this Era and grants access to Faction Union.', 'Forbidden Library Quest'],
+    'Sunken Cities': ['building-sunken-city.png', 'faceless', 'faceless', 'Sunken City', 'A0+', 'Production scales with the longest Era in this Reincarnation.', 'Research and 2,000 Labyrinths'],
+    'Wyrm Dens': ['building-wyrm-s-den.png', 'dragon', 'dragon', "Wyrm's Den", 'A1+', 'Production scales with Faction Coins found this Era.', 'R46+, Research, and 4,500 Iron Strongholds'],
+    'Ziggurats': ['building-ziggurat.png', 'druid', 'druid', 'Ziggurat', 'A2+', 'Production scales with total Lineage levels and grants access to Faction Union.', 'Ziggurat Quest'],
+    'Olympian Halls': ['building-olympian-hall.png', 'titan', 'titan', 'Olympian Hall', 'A0+', 'Production scales with Royal Exchanges purchased.', 'Research and 2,000 Halls of Legends'],
+    'Burning Abysses': ['building-burning-abyss.png', 'demon', 'demon', 'Burning Abyss', 'A2+', 'Production scales with time spent as Evil this Reincarnation and grants access to Faction Union.', 'Burning Abyss Quest'],
+    'Halls of Origination': ['building-hall-of-origination.png', 'makers', 'makers', 'Hall of Origination', 'A2+', 'Production scales with assistants owned.', 'R130+ and Hall of Origination Quest']
   };
 
   const addUniqueBuildingIcons = () => document.querySelectorAll('.building-upgrade-row').forEach((row) => {
     const textLinks = [...row.querySelectorAll('.building-unique-links a')];
     const identity = row.querySelector('.building-upgrade-row-identity');
-    const standardName = row.querySelector('.building-name')?.textContent.trim();
     if (!identity || textLinks.length === 0) return;
 
     const iconList = document.createElement('nav');
@@ -60,7 +59,7 @@
       const icon = uniqueBuildingIcons[name];
       if (!icon) return;
 
-      const [fileName, section, faction, displayName] = icon;
+      const [fileName, section, faction, displayName, availability, effect, requirement] = icon;
       const href = `/realm/UniqueBuilding/#${section}`;
       textLink.href = href;
 
@@ -69,6 +68,7 @@
       iconLink.href = href;
       iconLink.title = name;
       iconLink.setAttribute('aria-label', name);
+      iconLink.setAttribute('data-research', `<p><span class="game-icon-frame"><img data-game-icon-unframed src="` + '/realm/assets/game/sprites/' + fileName + `" alt=""></span><b> ${displayName}</b></p><p><b>Availability:</b> ${availability}</p><p><b>Effect:</b> ${effect}</p><p><b>Requirement:</b> ${requirement}</p><p>Click to open the full unique-building reference.</p>`);
 
       const uniqueLabel = document.createElement('span');
       uniqueLabel.className = 'building-label building-label-unique';
@@ -91,7 +91,7 @@
       typeLabel.textContent = faction.charAt(0).toUpperCase() + faction.slice(1) + ' unique';
       const replacementLabel = document.createElement('span');
       replacementLabel.className = 'building-production';
-      replacementLabel.textContent = 'Replaces ' + standardName;
+      replacementLabel.textContent = 'Available ' + availability;
 
       uniqueLabel.append(iconWell, nameLabel, typeLabel, replacementLabel);
       iconLink.append(uniqueLabel);

@@ -222,7 +222,7 @@ const buildingUpgradeButtons = [...buildingUpgradesHtml.matchAll(/class="trophy-
 if (buildingUpgradeButtons !== 581) failures.push(`BuildingUpgrades has ${buildingUpgradeButtons}/581 interactive upgrade icons`);
 const buildingUpgradeEraBands = [...buildingUpgradesHtml.matchAll(/class="building-upgrade-era building-upgrade-era-a0"/g)].length;
 if (buildingUpgradeEraBands !== 25) failures.push(`BuildingUpgrades has ${buildingUpgradeEraBands}/25 Ascension band rows`);
-const buildingUpgradeAvailability = [...buildingUpgradesHtml.matchAll(/Availability:/g)].length;
+const buildingUpgradeAvailability = [...buildingUpgradesHtml.matchAll(/research="[^"]*Availability:/g)].length;
 if (buildingUpgradeAvailability !== 581) failures.push(`BuildingUpgrades has ${buildingUpgradeAvailability}/581 explicit availability fields`);
 const buildingUpgradeA2Effects = [...buildingUpgradesHtml.matchAll(/Effect \(A2\):/g)].length;
 if (buildingUpgradeA2Effects !== 556) failures.push(`BuildingUpgrades has ${buildingUpgradeA2Effects}/556 explicit A2 effect fields`);
@@ -231,9 +231,9 @@ if (/Pre-Ascension (?:cost|effect)|Post-Ascension (?:cost|effect)/.test(building
 }
 if (buildingUpgradesHtml.includes('building-upgrade-table')) failures.push('BuildingUpgrades restored the verbose always-visible upgrade tables');
 const buildingUpgradesSource = fs.readFileSync(path.join(root, 'src/page-content/reference/BuildingUpgrades.html'), 'utf8');
-const uniqueBuildingIconMappings = [...buildingUpgradesSource.matchAll(/'building-[^']+\.png', '[^']+', '[^']+',/g)].length;
+const uniqueBuildingIconMappings = [...buildingUpgradesSource.matchAll(/^\s+['"].+?: \['building-[^']+\.png'.+?'A[0-4]\+'/gm)].length;
 if (uniqueBuildingIconMappings !== 30) failures.push(`BuildingUpgrades maps ${uniqueBuildingIconMappings}/30 unique-building icon types`);
-for (const marker of ['building-unique-icon-list', 'building-label-unique', 'Related unique buildings', 'building-hall-of-origination.png', '-building-up.png']) {
+for (const marker of ['building-unique-icon-list', 'building-label-unique', 'Related unique buildings', 'building-hall-of-origination.png', '-building-up.png', "'data-research'", "'Available ' + availability"]) {
   if (!buildingUpgradesSource.includes(marker)) failures.push(`BuildingUpgrades lost unique-building icon marker: ${marker}`);
 }
 const spriteManifest = JSON.parse(fs.readFileSync(path.join(root, 'assets/game/sprites/manifest.json'), 'utf8'));
