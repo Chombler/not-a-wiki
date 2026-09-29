@@ -231,10 +231,9 @@ if (/Pre-Ascension (?:cost|effect)|Post-Ascension (?:cost|effect)/.test(building
 }
 if (buildingUpgradesHtml.includes('building-upgrade-table')) failures.push('BuildingUpgrades restored the verbose always-visible upgrade tables');
 const buildingUpgradesSource = fs.readFileSync(path.join(root, 'src/page-content/reference/BuildingUpgrades.html'), 'utf8');
-const uniqueBuildingIconMappings = [...buildingUpgradesSource.matchAll(/'[^']+UniqueBuilding\.png', '[^']+'/g)].length
-  + [...buildingUpgradesSource.matchAll(/'HallofOrigination\.png', '[^']+'/g)].length;
+const uniqueBuildingIconMappings = [...buildingUpgradesSource.matchAll(/'building-[^']+\.png', '[^']+', '[^']+',/g)].length;
 if (uniqueBuildingIconMappings !== 30) failures.push(`BuildingUpgrades maps ${uniqueBuildingIconMappings}/30 unique-building icon types`);
-for (const marker of ['building-unique-icon-list', 'building-unique-ui-image', 'Related unique buildings', 'HallofOrigination.png']) {
+for (const marker of ['building-unique-icon-list', 'building-label-unique', 'Related unique buildings', 'building-hall-of-origination.png', '-building-up.png']) {
   if (!buildingUpgradesSource.includes(marker)) failures.push(`BuildingUpgrades lost unique-building icon marker: ${marker}`);
 }
 const spriteManifest = JSON.parse(fs.readFileSync(path.join(root, 'assets/game/sprites/manifest.json'), 'utf8'));

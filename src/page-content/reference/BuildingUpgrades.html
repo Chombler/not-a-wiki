@@ -13,41 +13,42 @@
 </div>
 <script>
   const uniqueBuildingIcons = {
-    'Enchanted Fields': ['FairyUniqueBuilding.png', 'fairy'],
-    'Dragon Pastures': ['DragonPastureUniqueBuilding.png', 'dragon'],
-    'Brothels': ['BrothelUniqueBuilding.png', 'drow'],
-    "Freemason's Halls": ['NeutralMercUniqueBuilding.png', 'mercenary'],
-    'Dwarven Forges': ['DwarvenUniqueBuilding.png', 'dwarf'],
-    'Elven Training Grounds': ['ElfUniqueBuilding.png', 'elf'],
-    'Pavilions': ['PavillionUniqueBuilding.png', 'djinn'],
-    'Mercenary Camps': ['GoodMercUniqueBuilding.png', 'mercenary'],
-    'Swarming Towers': ['SwarmingTowersUniqueBuilding.png', 'fairy'],
-    'Nexuses': ['NexusUniqueBuilding.png', 'archon'],
-    'Holy Sites': ['HolySiteUniqueBuilding.png', 'angel'],
-    'Arboreal Cities': ['ArborealCityUniqueBuilding.png', 'elf'],
-    'High Bastions': ['HighBastionUniqueBuilding.png', 'dwarf'],
-    "Heaven's Domains": ['AngelUniqueBuilding.png', 'angel'],
-    'Slave Markets': ['SlaveMarketUniqueBuilding.png', 'goblin'],
-    'Flesh Workshops': ['FleshWorkshopUniqueBuilding.png', 'undead'],
-    'Goblin Banks': ['GoblinUniqueBuilding.png', 'goblin'],
-    'Spider Sanctuaries': ['DrowUniqueBuilding.png', 'drow'],
-    'Undercities': ['UndeadUniqueBuilding.png', 'undead'],
-    'Tyrant Garrisons': ['EvilMercUniqueBuilding.png', 'mercenary'],
-    'Infernal Realms': ['DemonUniqueBuilding.png', 'demon'],
-    'Mountain Palaces': ['MountainPalaceUniqueBuilding.png', 'titan'],
-    'Stonehenge Circles': ['DruidUniqueBuilding.png', 'druid'],
-    'Forbidden Libraries': ['ForbiddenLibraryUniqueBuilding.png', 'faceless'],
-    'Sunken Cities': ['FacelessUniqueBuilding.png', 'faceless'],
-    'Wyrm Dens': ['DragonUniqueBuilding.png', 'dragon'],
-    'Ziggurats': ['ZigguratUniqueBuilding.png', 'druid'],
-    'Olympian Halls': ['TitanUniqueBuilding.png', 'titan'],
-    'Burning Abysses': ['BurningAbyssUniqueBuilding.png', 'demon'],
-    'Halls of Origination': ['HallofOrigination.png', 'makers']
+    'Enchanted Fields': ['building-enchanted-field.png', 'fairy', 'fairy', 'Enchanted Field'],
+    'Dragon Pastures': ['building-dragon-pasture.png', 'dragon', 'dragon', 'Dragon Pasture'],
+    'Brothels': ['building-brothel.png', 'drow', 'drow', 'Brothel'],
+    "Freemason's Halls": ['building-freemason-s-hall.png', 'mercenary', 'mercenary', "Freemason's Hall"],
+    'Dwarven Forges': ['building-dwarven-forge.png', 'dwarf', 'dwarf', 'Dwarven Forge'],
+    'Elven Training Grounds': ['building-training-grounds.png', 'elf', 'elf', 'Elven Training Grounds'],
+    'Pavilions': ['building-pavilion.png', 'djinn', 'djinn', 'Pavilion'],
+    'Mercenary Camps': ['building-mercenary-camp.png', 'mercenary', 'mercenary', 'Mercenary Camp'],
+    'Swarming Towers': ['building-swarming-tower.png', 'fairy', 'fairy', 'Swarming Tower'],
+    'Nexuses': ['building-nexus.png', 'archon', 'archon', 'Nexus'],
+    'Holy Sites': ['building-holy-site.png', 'angel', 'angel', 'Holy Site'],
+    'Arboreal Cities': ['building-arboreal-city.png', 'elf', 'elf', 'Arboreal City'],
+    'High Bastions': ['building-high-bastion.png', 'dwarf', 'dwarf', 'High Bastion'],
+    "Heaven's Domains": ['building-heaven-s-domain.png', 'angel', 'angel', "Heaven's Domain"],
+    'Slave Markets': ['building-slave-market.png', 'goblin', 'goblin', 'Slave Market'],
+    'Flesh Workshops': ['building-flesh-workshop.png', 'undead', 'undead', 'Flesh Workshop'],
+    'Goblin Banks': ['building-goblin-bank.png', 'goblin', 'goblin', 'Goblin Bank'],
+    'Spider Sanctuaries': ['building-spider-sanctuary.png', 'drow', 'drow', 'Spider Sanctuary'],
+    'Undercities': ['building-undercity.png', 'undead', 'undead', 'Undercity'],
+    'Tyrant Garrisons': ['building-tyrant-garrison.png', 'mercenary', 'mercenary', 'Tyrant Garrison'],
+    'Infernal Realms': ['building-infernal-realm.png', 'demon', 'demon', 'Infernal Realm'],
+    'Mountain Palaces': ['building-mountain-palace.png', 'titan', 'titan', 'Mountain Palace'],
+    'Stonehenge Circles': ['building-stonehenge.png', 'druid', 'druid', 'Stonehenge'],
+    'Forbidden Libraries': ['building-forbidden-library.png', 'faceless', 'faceless', 'Forbidden Library'],
+    'Sunken Cities': ['building-sunken-city.png', 'faceless', 'faceless', 'Sunken City'],
+    'Wyrm Dens': ['building-wyrm-s-den.png', 'dragon', 'dragon', "Wyrm's Den"],
+    'Ziggurats': ['building-ziggurat.png', 'druid', 'druid', 'Ziggurat'],
+    'Olympian Halls': ['building-olympian-hall.png', 'titan', 'titan', 'Olympian Hall'],
+    'Burning Abysses': ['building-burning-abyss.png', 'demon', 'demon', 'Burning Abyss'],
+    'Halls of Origination': ['building-hall-of-origination.png', 'makers', 'makers', 'Hall of Origination']
   };
 
   const addUniqueBuildingIcons = () => document.querySelectorAll('.building-upgrade-row').forEach((row) => {
     const textLinks = [...row.querySelectorAll('.building-unique-links a')];
     const identity = row.querySelector('.building-upgrade-row-identity');
+    const standardName = row.querySelector('.building-name')?.textContent.trim();
     if (!identity || textLinks.length === 0) return;
 
     const iconList = document.createElement('nav');
@@ -59,7 +60,7 @@
       const icon = uniqueBuildingIcons[name];
       if (!icon) return;
 
-      const [fileName, section] = icon;
+      const [fileName, section, faction, displayName] = icon;
       const href = `/realm/UniqueBuilding/#${section}`;
       textLink.href = href;
 
@@ -68,11 +69,32 @@
       iconLink.href = href;
       iconLink.title = name;
       iconLink.setAttribute('aria-label', name);
+
+      const uniqueLabel = document.createElement('span');
+      uniqueLabel.className = 'building-label building-label-unique';
+      uniqueLabel.style.setProperty('--building-panel', `url("/realm/assets/game/sprites/${faction}-building-up.png")`);
+
+      const iconWell = document.createElement('span');
+      iconWell.className = 'building-icon-well';
       const image = document.createElement('img');
-      image.className = 'building-unique-ui-image';
-      image.src = '/realm/Factions/picks/' + fileName;
+      image.className = 'building-icon';
+      image.setAttribute('data-game-icon-unframed', '');
+      image.src = '/realm/assets/game/sprites/' + fileName;
       image.alt = '';
-      iconLink.append(image);
+      iconWell.append(image);
+
+      const nameLabel = document.createElement('span');
+      nameLabel.className = 'building-name' + (displayName.length > 16 ? ' building-name-long' : '');
+      nameLabel.textContent = displayName;
+      const typeLabel = document.createElement('span');
+      typeLabel.className = 'building-cost';
+      typeLabel.textContent = faction.charAt(0).toUpperCase() + faction.slice(1) + ' unique';
+      const replacementLabel = document.createElement('span');
+      replacementLabel.className = 'building-production';
+      replacementLabel.textContent = 'Replaces ' + standardName;
+
+      uniqueLabel.append(iconWell, nameLabel, typeLabel, replacementLabel);
+      iconLink.append(uniqueLabel);
       iconList.append(iconLink);
     });
 

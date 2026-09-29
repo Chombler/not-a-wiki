@@ -639,7 +639,13 @@
       "kind": "building",
       "role": "panel",
       "sprite_names": [
-        "goodBuilding_Up", "evilBuilding_Up", "neutralBuilding_Up"
+        "goodBuilding_Up", "evilBuilding_Up", "neutralBuilding_Up",
+        "fairyBuilding_Up", "elfBuilding_Up", "angelBuilding_Up",
+        "goblinBuilding_Up", "undeadBuilding_Up", "demonBuilding_Up",
+        "titanBuilding_Up", "druidBuilding_Up", "facelessBuilding_Up",
+        "dwarfBuilding_Up", "drowBuilding_Up", "dragonBuilding_Up",
+        "mercenaryBuilding_Up", "archonBuilding_Up", "djinnBuilding_Up",
+        "makersBuilding_Up"
       ]
     },
     {

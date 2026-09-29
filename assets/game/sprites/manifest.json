@@ -5921,6 +5921,358 @@
       "role": "panel"
     },
     {
+      "key": "fairy-building-up",
+      "path": "assets/game/sprites/fairy-building-up.png",
+      "sprite_name": "fairyBuilding_Up",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1273,
+        "y": 816,
+        "width": 130,
+        "height": 57
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 130,
+        "height": 57
+      },
+      "kind": "building",
+      "entity": "fairy-building-up",
+      "role": "panel"
+    },
+    {
+      "key": "elf-building-up",
+      "path": "assets/game/sprites/elf-building-up.png",
+      "sprite_name": "elfBuilding_Up",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1771,
+        "y": 628,
+        "width": 130,
+        "height": 57
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 130,
+        "height": 57
+      },
+      "kind": "building",
+      "entity": "elf-building-up",
+      "role": "panel"
+    },
+    {
+      "key": "angel-building-up",
+      "path": "assets/game/sprites/angel-building-up.png",
+      "sprite_name": "angelBuilding_Up",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 991,
+        "y": 553,
+        "width": 130,
+        "height": 57
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 130,
+        "height": 57
+      },
+      "kind": "building",
+      "entity": "angel-building-up",
+      "role": "panel"
+    },
+    {
+      "key": "goblin-building-up",
+      "path": "assets/game/sprites/goblin-building-up.png",
+      "sprite_name": "goblinBuilding_Up",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 756,
+        "y": 940,
+        "width": 130,
+        "height": 57
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 130,
+        "height": 57
+      },
+      "kind": "building",
+      "entity": "goblin-building-up",
+      "role": "panel"
+    },
+    {
+      "key": "undead-building-up",
+      "path": "assets/game/sprites/undead-building-up.png",
+      "sprite_name": "undeadBuilding_Up",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 624,
+        "y": 1056,
+        "width": 130,
+        "height": 57
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 130,
+        "height": 57
+      },
+      "kind": "building",
+      "entity": "undead-building-up",
+      "role": "panel"
+    },
+    {
+      "key": "demon-building-up",
+      "path": "assets/game/sprites/demon-building-up.png",
+      "sprite_name": "demonBuilding_Up",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1294,
+        "y": 584,
+        "width": 130,
+        "height": 57
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 130,
+        "height": 57
+      },
+      "kind": "building",
+      "entity": "demon-building-up",
+      "role": "panel"
+    },
+    {
+      "key": "titan-building-up",
+      "path": "assets/game/sprites/titan-building-up.png",
+      "sprite_name": "titanBuilding_Up",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 973,
+        "y": 1017,
+        "width": 130,
+        "height": 57
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 130,
+        "height": 57
+      },
+      "kind": "building",
+      "entity": "titan-building-up",
+      "role": "panel"
+    },
+    {
+      "key": "druid-building-up",
+      "path": "assets/game/sprites/druid-building-up.png",
+      "sprite_name": "druidBuilding_Up",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1902,
+        "y": 573,
+        "width": 130,
+        "height": 57
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 130,
+        "height": 57
+      },
+      "kind": "building",
+      "entity": "druid-building-up",
+      "role": "panel"
+    },
+    {
+      "key": "faceless-building-up",
+      "path": "assets/game/sprites/faceless-building-up.png",
+      "sprite_name": "facelessBuilding_Up",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1639,
+        "y": 686,
+        "width": 130,
+        "height": 57
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 130,
+        "height": 57
+      },
+      "kind": "building",
+      "entity": "faceless-building-up",
+      "role": "panel"
+    },
+    {
+      "key": "dwarf-building-up",
+      "path": "assets/game/sprites/dwarf-building-up.png",
+      "sprite_name": "dwarfBuilding_Up",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 974,
+        "y": 785,
+        "width": 130,
+        "height": 57
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 130,
+        "height": 57
+      },
+      "kind": "building",
+      "entity": "dwarf-building-up",
+      "role": "panel"
+    },
+    {
+      "key": "drow-building-up",
+      "path": "assets/game/sprites/drow-building-up.png",
+      "sprite_name": "drowBuilding_Up",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 626,
+        "y": 766,
+        "width": 130,
+        "height": 57
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 130,
+        "height": 57
+      },
+      "kind": "building",
+      "entity": "drow-building-up",
+      "role": "panel"
+    },
+    {
+      "key": "dragon-building-up",
+      "path": "assets/game/sprites/dragon-building-up.png",
+      "sprite_name": "dragonBuilding_Up",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1509,
+        "y": 570,
+        "width": 130,
+        "height": 57
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 130,
+        "height": 57
+      },
+      "kind": "building",
+      "entity": "dragon-building-up",
+      "role": "panel"
+    },
+    {
+      "key": "mercenary-building-up",
+      "path": "assets/game/sprites/mercenary-building-up.png",
+      "sprite_name": "mercenaryBuilding_Up",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1898,
+        "y": 805,
+        "width": 130,
+        "height": 57
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 130,
+        "height": 57
+      },
+      "kind": "building",
+      "entity": "mercenary-building-up",
+      "role": "panel"
+    },
+    {
+      "key": "archon-building-up",
+      "path": "assets/game/sprites/archon-building-up.png",
+      "sprite_name": "archonBuilding_Up",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 990,
+        "y": 611,
+        "width": 130,
+        "height": 57
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 130,
+        "height": 57
+      },
+      "kind": "building",
+      "entity": "archon-building-up",
+      "role": "panel"
+    },
+    {
+      "key": "djinn-building-up",
+      "path": "assets/game/sprites/djinn-building-up.png",
+      "sprite_name": "djinnBuilding_Up",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 757,
+        "y": 708,
+        "width": 130,
+        "height": 57
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 130,
+        "height": 57
+      },
+      "kind": "building",
+      "entity": "djinn-building-up",
+      "role": "panel"
+    },
+    {
+      "key": "makers-building-up",
+      "path": "assets/game/sprites/makers-building-up.png",
+      "sprite_name": "makersBuilding_Up",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1142,
+        "y": 907,
+        "width": 130,
+        "height": 57
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 130,
+        "height": 57
+      },
+      "kind": "building",
+      "entity": "makers-building-up",
+      "role": "panel"
+    },
+    {
       "key": "leet-trophy",
       "path": "assets/game/sprites/leet-trophy.png",
       "sprite_name": "LeetTrophy",
