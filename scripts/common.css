@@ -445,14 +445,13 @@ a.tooltips {
 .unique-building-unlocks { grid-column: 1 / -1; }
 .unique-building-upgrade,
 .unique-building-shared-quest { display: grid; grid-template-columns: 60px minmax(0, 1fr); gap: 0.75rem; align-items: start; padding: 0.7rem 0; border-bottom: 1px solid var(--line); }
-.unique-building-upgrade:first-child { border-top: 1px solid var(--line); }
 .unique-building-upgrade > span:last-child,
 .unique-building-shared-quest > span:last-child { min-width: 0; }
-.unique-building-upgrade h4 { margin: 0 0 0.2rem; font-size: 1rem; }
-.unique-building-upgrade-description { margin: 0; color: var(--text); line-height: 1.45; }
-.unique-building-upgrade-facts { margin: 0.3rem 0 0; color: var(--text-muted); font-size: 0.9rem; }
+.site-main .unique-building-entry .unique-building-upgrade h4 { margin: 0 0 0.2rem; font-size: 1rem; }
+.unique-building-entry .unique-building-upgrade-description { margin: 0; color: var(--text); line-height: 1.45; }
+.unique-building-entry .unique-building-upgrade-facts { margin: 0.3rem 0 0; color: var(--text-muted); font-size: 0.9rem; }
 .unique-building-shared-quest { margin: 0.35rem 0 0.6rem; }
-.unique-building-shared-quest h4 { margin: 0 0 0.2rem; font-size: 1rem; }
+.site-main .unique-building-shared-quest h4 { margin: 0 0 0.2rem; font-size: 1rem; }
 .unique-building-result-label { grid-column: 1 / -1; margin-top: 0.25rem; font-weight: 750; }
 .unique-building-entry .building-label { margin-top: 0; }
 .unique-building-entry .building-production { width: 137px; }
