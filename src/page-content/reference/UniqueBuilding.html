@@ -168,6 +168,7 @@
 
   uniqueBuildingEntries.forEach((entry) => {
     const { icon, panel, label, type, available } = entry.dataset;
+    const usesFactionRecord = panel === 'fairy';
     const tier = tierByIcon[icon];
     const isFactionUnion = entry.textContent.includes('grants Faction Union');
     const buildingType = panel === 'mercenary'
@@ -212,7 +213,7 @@
     tierLabel.className = 'building-tier';
     tierLabel.textContent = 'T' + tier;
     visual.append(iconWell, name, kind, availability, tierLabel);
-    entry.prepend(visual);
+    if (!usesFactionRecord) entry.prepend(visual);
 
     const unlockSteps = unlockStepsByIcon[icon];
     if (unlockSteps) {
@@ -270,19 +271,56 @@
       const resultLabel = document.createElement('div');
       resultLabel.className = 'unique-building-result-label';
       resultLabel.textContent = 'Unique building';
-      entry.prepend(resultLabel);
+      if (!usesFactionRecord) entry.prepend(resultLabel);
       entry.prepend(unlocks);
     }
 
     const content = entry.lastElementChild;
     const heading = content?.querySelector('h3');
     if (content && heading) {
-      const metadata = document.createElement('p');
-      metadata.className = 'unique-building-metadata';
-      metadata.innerHTML = `<strong>Type:</strong> ${buildingType} <span aria-hidden="true">·</span> <strong>Tier:</strong> T${tier} <span aria-hidden="true">·</span> <strong>Available:</strong> ${available}`;
-      heading.after(metadata);
       const effect = [...content.querySelectorAll('p')].find((paragraph) => paragraph.querySelector('strong')?.textContent === 'Effect:');
-      if (effect) effect.querySelector('strong').textContent = 'Production effect:';
+      if (usesFactionRecord) {
+        entry.classList.add('unique-building-entry-faction-layout');
+        const headingRow = document.createElement('div');
+        headingRow.className = 'unique-building-record-heading';
+        const framedIcon = document.createElement('span');
+        framedIcon.className = 'game-icon-frame';
+        const buildingImage = document.createElement('img');
+        buildingImage.setAttribute('data-game-icon-unframed', '');
+        buildingImage.src = '/realm/assets/game/sprites/' + icon;
+        buildingImage.alt = '';
+        framedIcon.append(buildingImage);
+        heading.before(headingRow);
+        headingRow.append(framedIcon, heading);
+
+        const typeLine = document.createElement('p');
+        typeLine.innerHTML = `<strong>Type:</strong> ${buildingType}`;
+        const availableLine = document.createElement('p');
+        availableLine.innerHTML = `<strong>Available:</strong> ${available}`;
+        headingRow.after(typeLine, availableLine);
+
+        const replacesLine = [...content.querySelectorAll('p')].find((paragraph) => paragraph.querySelector('strong')?.textContent === 'Replaces:');
+        const alignmentLabel = replacesLine ? [...replacesLine.querySelectorAll('strong')].find((strong) => strong.textContent === 'Alignment:') : null;
+        if (alignmentLabel) {
+          const alignment = alignmentLabel.nextSibling?.textContent.trim() || '';
+          const alignmentLine = document.createElement('p');
+          alignmentLine.innerHTML = `<strong>Alignment:</strong> ${alignment}`;
+          replacesLine.innerHTML = `<strong>Replaces:</strong> ${replaces}`;
+          replacesLine.after(alignmentLine);
+        }
+
+        if (effect) {
+          effect.innerHTML = icon === 'building-enchanted-field.png'
+            ? 'Upgrade Farms to Enchanted Fields, boosting their production based on assistants owned and unlocking additional building perks.'
+            : 'Upgrade Wizard Towers to Swarming Towers, boosting their production based on active spells and unlocking additional building perks.';
+        }
+      } else {
+        const metadata = document.createElement('p');
+        metadata.className = 'unique-building-metadata';
+        metadata.innerHTML = `<strong>Type:</strong> ${buildingType} <span aria-hidden="true">·</span> <strong>Tier:</strong> T${tier} <span aria-hidden="true">·</span> <strong>Available:</strong> ${available}`;
+        heading.after(metadata);
+        if (effect) effect.querySelector('strong').textContent = 'Production effect:';
+      }
       if (isFactionUnion) {
         effect.lastChild.textContent = effect.lastChild.textContent.replace('; grants Faction Union.', '.');
         const unlocks = document.createElement('p');

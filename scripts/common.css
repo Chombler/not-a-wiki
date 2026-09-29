@@ -478,6 +478,40 @@ a.tooltips {
 }
 
 .unique-building-unlocks-faction-layout .unique-building-upgrade-facts p {
+  display: block;
+  margin: 0.25rem 0;
+}
+
+.unique-building-unlocks-faction-layout .unique-building-upgrade > span:last-child,
+.unique-building-unlocks-faction-layout .unique-building-upgrade-facts {
+  display: block;
+  width: 100%;
+}
+
+.unique-building-entry-faction-layout {
+  display: block;
+}
+
+.unique-building-entry-faction-layout > div:last-child {
+  padding-top: 0.75rem;
+}
+
+.unique-building-record-heading {
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+  margin-bottom: 0.45rem;
+}
+
+.site-main .unique-building-entry .unique-building-record-heading h3,
+.site-main .unique-building-entry .unique-building-record-heading h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.unique-building-entry-faction-layout > div:last-child > p {
+  display: block;
+  width: 100%;
   margin: 0.25rem 0;
 }
 .unique-building-shared-quest { margin: 0.35rem 0 0.6rem; }
