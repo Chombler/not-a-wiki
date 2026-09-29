@@ -619,6 +619,23 @@
       ]
     },
     {
+      "kind": "unique-building",
+      "role": "icon",
+      "sprite_names": [
+        "BuildingEnchanted Field", "BuildingDragon Pasture",
+        "BuildingBrothel", "BuildingFreemason's Hall", "BuildingDwarven Forge",
+        "BuildingTraining Grounds", "BuildingPavilion", "BuildingMercenary Camp",
+        "BuildingSwarming Tower", "BuildingNexus", "BuildingHoly Site",
+        "BuildingArboreal City", "BuildingHigh Bastion", "BuildingHeaven's Domain",
+        "BuildingSlave Market", "BuildingFlesh Workshop", "BuildingGoblin Bank",
+        "BuildingSpider Sanctuary", "BuildingUndercity", "BuildingTyrant Garrison",
+        "BuildingInfernal Realm", "BuildingMountain Palace", "BuildingStonehenge",
+        "BuildingForbidden Library", "BuildingSunken City", "BuildingWyrm's Den",
+        "BuildingZiggurat", "BuildingOlympian Hall", "BuildingBurning Abyss",
+        "BuildingHall of Origination"
+      ]
+    },
+    {
       "kind": "building",
       "role": "panel",
       "sprite_names": [

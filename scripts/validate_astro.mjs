@@ -230,6 +230,15 @@ if (/Pre-Ascension (?:cost|effect)|Post-Ascension (?:cost|effect)/.test(building
   failures.push('BuildingUpgrades still contains ambiguous pre/post-Ascension fields');
 }
 if (buildingUpgradesHtml.includes('building-upgrade-table')) failures.push('BuildingUpgrades restored the verbose always-visible upgrade tables');
+const buildingUpgradesSource = fs.readFileSync(path.join(root, 'src/page-content/reference/BuildingUpgrades.html'), 'utf8');
+const uniqueBuildingIconMappings = [...buildingUpgradesSource.matchAll(/'building-[^']+\.png', '[^']+'/g)].length;
+if (uniqueBuildingIconMappings !== 30) failures.push(`BuildingUpgrades maps ${uniqueBuildingIconMappings}/30 unique-building icon types`);
+for (const marker of ['building-unique-icon-list', 'Related unique buildings', 'building-hall-of-origination.png']) {
+  if (!buildingUpgradesSource.includes(marker)) failures.push(`BuildingUpgrades lost unique-building icon marker: ${marker}`);
+}
+const spriteManifest = JSON.parse(fs.readFileSync(path.join(root, 'assets/game/sprites/manifest.json'), 'utf8'));
+const uniqueBuildingSprites = spriteManifest.sprites.filter((sprite) => sprite.kind === 'unique-building');
+if (uniqueBuildingSprites.length !== 30) failures.push(`Sprite manifest contains ${uniqueBuildingSprites.length}/30 unique-building icons`);
 
 const factionsSource = fs.readFileSync(path.join(root, 'src/page-content/reference/Factions.html'), 'utf8');
 if (/<area\b[^>]*\bresearch=/i.test(factionsSource)) {

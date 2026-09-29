@@ -11,6 +11,83 @@
     </tbody>
   </table>
 </div>
+<script>
+  const uniqueBuildingIcons = {
+    'Enchanted Fields': ['building-enchanted-field.png', 'fairy'],
+    'Dragon Pastures': ['building-dragon-pasture.png', 'dragon'],
+    'Brothels': ['building-brothel.png', 'drow'],
+    "Freemason's Halls": ['building-freemason-s-hall.png', 'mercenary'],
+    'Dwarven Forges': ['building-dwarven-forge.png', 'dwarf'],
+    'Elven Training Grounds': ['building-training-grounds.png', 'elf'],
+    'Pavilions': ['building-pavilion.png', 'djinn'],
+    'Mercenary Camps': ['building-mercenary-camp.png', 'mercenary'],
+    'Swarming Towers': ['building-swarming-tower.png', 'fairy'],
+    'Nexuses': ['building-nexus.png', 'archon'],
+    'Holy Sites': ['building-holy-site.png', 'angel'],
+    'Arboreal Cities': ['building-arboreal-city.png', 'elf'],
+    'High Bastions': ['building-high-bastion.png', 'dwarf'],
+    "Heaven's Domains": ['building-heaven-s-domain.png', 'angel'],
+    'Slave Markets': ['building-slave-market.png', 'goblin'],
+    'Flesh Workshops': ['building-flesh-workshop.png', 'undead'],
+    'Goblin Banks': ['building-goblin-bank.png', 'goblin'],
+    'Spider Sanctuaries': ['building-spider-sanctuary.png', 'drow'],
+    'Undercities': ['building-undercity.png', 'undead'],
+    'Tyrant Garrisons': ['building-tyrant-garrison.png', 'mercenary'],
+    'Infernal Realms': ['building-infernal-realm.png', 'demon'],
+    'Mountain Palaces': ['building-mountain-palace.png', 'titan'],
+    'Stonehenge Circles': ['building-stonehenge.png', 'druid'],
+    'Forbidden Libraries': ['building-forbidden-library.png', 'faceless'],
+    'Sunken Cities': ['building-sunken-city.png', 'faceless'],
+    'Wyrm Dens': ['building-wyrm-s-den.png', 'dragon'],
+    'Ziggurats': ['building-ziggurat.png', 'druid'],
+    'Olympian Halls': ['building-olympian-hall.png', 'titan'],
+    'Burning Abysses': ['building-burning-abyss.png', 'demon'],
+    'Halls of Origination': ['building-hall-of-origination.png', 'makers']
+  };
+
+  const addUniqueBuildingIcons = () => document.querySelectorAll('.building-upgrade-row').forEach((row) => {
+    const textLinks = [...row.querySelectorAll('.building-unique-links a')];
+    const identity = row.querySelector('.building-upgrade-row-identity');
+    if (!identity || textLinks.length === 0) return;
+
+    const iconList = document.createElement('nav');
+    iconList.className = 'building-unique-icon-list';
+    iconList.setAttribute('aria-label', 'Related unique buildings');
+
+    textLinks.forEach((textLink) => {
+      const name = textLink.textContent.trim();
+      const icon = uniqueBuildingIcons[name];
+      if (!icon) return;
+
+      const [fileName, section] = icon;
+      const href = `/realm/UniqueBuilding/#${section}`;
+      textLink.href = href;
+
+      const iconLink = document.createElement('a');
+      iconLink.className = 'building-unique-icon-link';
+      iconLink.href = href;
+      iconLink.title = name;
+      iconLink.setAttribute('aria-label', name);
+      const frame = document.createElement('span');
+      frame.className = 'game-icon-frame';
+      const image = document.createElement('img');
+      image.setAttribute('data-game-icon-unframed', '');
+      image.src = '/realm/assets/game/sprites/' + fileName;
+      image.alt = '';
+      frame.append(image);
+      iconLink.append(frame);
+      iconList.append(iconLink);
+    });
+
+    if (iconList.childElementCount > 0) identity.append(iconList);
+  });
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', addUniqueBuildingIcons, { once: true });
+  } else {
+    addUniqueBuildingIcons();
+  }
+</script>
 <h2 id="universal-buildings">Universal buildings</h2>
 <div class="building-upgrade-rows">
   <article class="building-upgrade-row" id="farm" aria-label="Farm upgrades">
