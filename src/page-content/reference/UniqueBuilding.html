@@ -1,10 +1,11 @@
 <p>Unique buildings replace a standard building while you meet the listed faction and progression requirements. The replacement keeps the standard building's count and adds its own production effect.</p>
 
-<div class="table-scroll unique-building-progression"><table><thead><tr><th>Group</th><th>Available</th><th>Unlocked by</th></tr></thead><tbody>
-<tr><th><a href="#research-unique-buildings">Research</a></th><td>A0+</td><td>Research and a building-count requirement</td></tr>
-<tr><th><a href="#faction-union-buildings">Faction Union</a></th><td>A2, R100+</td><td>A faction quest and secondary alignment</td></tr>
-<tr><th><a href="#mercenary-unique-buildings">Mercenary</a></th><td>A1, R75+</td><td>Mercenary affiliation and 125,000 total buildings</td></tr>
-<tr><th><a href="#elite-unique-buildings">Elite faction</a></th><td>A2, R130+</td><td>An elite-faction quest</td></tr>
+<div class="table-scroll unique-building-progression"><table><thead><tr><th>Ascension</th><th>Unlock</th><th>Available</th></tr></thead><tbody>
+<tr><th scope="row">A0</th><td>Research unique buildings</td><td>Base, Neutral, Dwarf, and Drow factions</td></tr>
+<tr><th scope="row">A1</th><td>Dragon research unique building</td><td>R46+</td></tr>
+<tr><th scope="row">A1</th><td>Mercenary unique buildings</td><td>R75+</td></tr>
+<tr><th scope="row">A2</th><td>Faction Union unique buildings</td><td>R100+; prestige factions at R116+</td></tr>
+<tr><th scope="row">A2</th><td>Elite-faction unique buildings</td><td>R130+</td></tr>
 </tbody></table></div>
 
 <span id="unique-building-reference"></span>
@@ -59,7 +60,9 @@
 </div>
 
 <script>
-  document.querySelectorAll('.unique-building-entry').forEach((entry) => {
+  const uniqueBuildingEntries = [...document.querySelectorAll('.unique-building-entry')];
+
+  uniqueBuildingEntries.forEach((entry) => {
     const { icon, panel, label, type, available } = entry.dataset;
     const visual = document.createElement('div');
     visual.className = 'building-label building-label-unique';
@@ -83,5 +86,57 @@
     availability.textContent = 'Available ' + available;
     visual.append(iconWell, name, kind, availability);
     entry.prepend(visual);
+  });
+
+  const factionOrder = [
+    ['fairy', 'Fairy'], ['elf', 'Elf'], ['angel', 'Angel'],
+    ['goblin', 'Goblin'], ['undead', 'Undead'], ['demon', 'Demon'],
+    ['titan', 'Titan'], ['druid', 'Druid'], ['faceless', 'Faceless'],
+    ['dwarf', 'Dwarf'], ['drow', 'Drow'],
+    ['dragon', 'Dragon'], ['mercenary', 'Mercenary'],
+    ['archon', 'Archon'], ['djinn', 'Djinn'], ['makers', 'Makers']
+  ];
+  const reference = document.createElement('section');
+  reference.className = 'unique-building-faction-reference';
+  const referenceTitle = document.createElement('h2');
+  referenceTitle.id = 'faction-reference';
+  referenceTitle.textContent = 'Unique buildings by faction';
+  const referenceIntro = document.createElement('p');
+  referenceIntro.textContent = 'Choose a faction to find all of its unique buildings together. Buildings appear in the order they become available.';
+  reference.append(referenceTitle, referenceIntro);
+
+  factionOrder.forEach(([key, displayName]) => {
+    const entries = uniqueBuildingEntries.filter((entry) => entry.dataset.panel === key);
+    if (entries.length === 0) return;
+    const section = document.createElement('section');
+    section.className = 'unique-faction-section';
+    const title = document.createElement('h3');
+    title.id = key;
+    title.textContent = displayName;
+    section.append(title);
+    entries.forEach((entry) => {
+      entry.removeAttribute('id');
+      const buildingTitle = entry.querySelector('h3');
+      if (buildingTitle) {
+        const heading = document.createElement('h4');
+        heading.innerHTML = buildingTitle.innerHTML;
+        buildingTitle.replaceWith(heading);
+      }
+      section.append(entry);
+    });
+    reference.append(section);
+  });
+
+  document.querySelector('#unique-building-reference').after(reference);
+  ['research-unique-buildings', 'faction-union-buildings', 'mercenary-unique-buildings', 'elite-unique-buildings'].forEach((id) => {
+    const heading = document.getElementById(id);
+    if (!heading) return;
+    const intro = heading.nextElementSibling?.matches('p') ? heading.nextElementSibling : null;
+    const list = intro?.nextElementSibling?.matches('.unique-building-list')
+      ? intro.nextElementSibling
+      : heading.nextElementSibling?.matches('.unique-building-list') ? heading.nextElementSibling : null;
+    heading.remove();
+    intro?.remove();
+    list?.remove();
   });
 </script>
