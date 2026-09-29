@@ -222,6 +222,10 @@
         makeStep('Quest upgrade', questName, questIcon, (questCost ? 'Cost: ' + questCost + '. ' : '') + (questRequirement || 'Complete the listed faction quest.')),
         makeStep('Building upgrade', upgradeName, upgradeIcon, (upgradeCost ? 'Cost: ' + upgradeCost + '. ' : '') + 'Requires ' + questName + '; grants ' + label + '.')
       );
+      const resultLabel = document.createElement('div');
+      resultLabel.className = 'unique-building-result-label';
+      resultLabel.textContent = 'Resulting unique building';
+      entry.prepend(resultLabel);
       entry.prepend(chain);
     }
 
