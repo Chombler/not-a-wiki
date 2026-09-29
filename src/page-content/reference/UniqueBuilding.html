@@ -8,6 +8,17 @@
 <tr><th scope="row">A2</th><td>Elite-faction unique buildings</td><td>R130+</td></tr>
 </tbody></table></div>
 
+<h2 id="how-unique-buildings-work">How to read this reference</h2>
+<p>A unique building occupies the named standard building's slot while its faction and other requirements are active. Each entry separates the building's production effect from the condition that unlocks it.</p>
+<dl class="reference-field-guide">
+  <dt>Building row</dt><dd>Shows the in-game building, owning faction, earliest availability, and building tier.</dd>
+  <dt>Replaces</dt><dd>Names the standard building slot that becomes the unique building.</dd>
+  <dt>Production effect</dt><dd>States which game value drives the building's production. Goblin Banks are called out separately because they add base production.</dd>
+  <dt>Formula</dt><dd>Gives the exact calculation and defines the scope of each variable, such as this Era, this Reincarnation, or all time.</dd>
+  <dt>Requirement</dt><dd>Gives the Research threshold, quest, Reincarnation, or building total needed to make the replacement available.</dd>
+  <dt>Unlocks</dt><dd>Appears when the building grants an additional system, such as Faction Union.</dd>
+</dl>
+
 <span id="unique-building-reference"></span>
 <h2 id="research-unique-buildings">Research unique buildings</h2>
 <p>These replacements unlock with the Research system. Each belongs to a faction and requires a specific number of its standard building.</p>
@@ -61,9 +72,38 @@
 
 <script>
   const uniqueBuildingEntries = [...document.querySelectorAll('.unique-building-entry')];
+  const tierByIcon = {
+    'building-enchanted-field.png': 1, 'building-dragon-pasture.png': 1,
+    'building-brothel.png': 2, 'building-freemason-s-hall.png': 2,
+    'building-dwarven-forge.png': 3,
+    'building-training-grounds.png': 4, 'building-slave-market.png': 4,
+    'building-mountain-palace.png': 4, 'building-pavilion.png': 4,
+    'building-mercenary-camp.png': 5, 'building-flesh-workshop.png': 5,
+    'building-stonehenge.png': 5,
+    'building-swarming-tower.png': 6, 'building-goblin-bank.png': 6,
+    'building-nexus.png': 6,
+    'building-holy-site.png': 7, 'building-spider-sanctuary.png': 7,
+    'building-forbidden-library.png': 7,
+    'building-arboreal-city.png': 8, 'building-undercity.png': 8,
+    'building-sunken-city.png': 8,
+    'building-high-bastion.png': 9, 'building-tyrant-garrison.png': 9,
+    'building-wyrm-s-den.png': 9,
+    'building-heaven-s-domain.png': 10, 'building-infernal-realm.png': 10,
+    'building-ziggurat.png': 10,
+    'building-olympian-hall.png': 11, 'building-burning-abyss.png': 11,
+    'building-hall-of-origination.png': 11
+  };
+  const eliteFactions = new Set(['archon', 'djinn', 'makers']);
 
   uniqueBuildingEntries.forEach((entry) => {
     const { icon, panel, label, type, available } = entry.dataset;
+    const tier = tierByIcon[icon];
+    const isFactionUnion = entry.textContent.includes('grants Faction Union');
+    const buildingType = panel === 'mercenary'
+      ? 'Mercenary unique building'
+      : eliteFactions.has(panel)
+        ? 'Elite-faction unique building'
+        : isFactionUnion ? 'Faction Union unique building' : 'Research unique building';
     const visual = document.createElement('div');
     visual.className = 'building-label building-label-unique';
     visual.style.setProperty('--building-panel', `url("/realm/assets/game/sprites/${panel}-building-up.png")`);
@@ -84,8 +124,28 @@
     const availability = document.createElement('span');
     availability.className = 'building-production';
     availability.textContent = 'Available ' + available;
-    visual.append(iconWell, name, kind, availability);
+    const tierLabel = document.createElement('span');
+    tierLabel.className = 'building-tier';
+    tierLabel.textContent = 'T' + tier;
+    visual.append(iconWell, name, kind, availability, tierLabel);
     entry.prepend(visual);
+
+    const content = entry.lastElementChild;
+    const heading = content?.querySelector('h3');
+    if (content && heading) {
+      const metadata = document.createElement('p');
+      metadata.className = 'unique-building-metadata';
+      metadata.innerHTML = `<strong>Type:</strong> ${buildingType} <span aria-hidden="true">·</span> <strong>Tier:</strong> T${tier} <span aria-hidden="true">·</span> <strong>Available:</strong> ${available}`;
+      heading.after(metadata);
+      const effect = [...content.querySelectorAll('p')].find((paragraph) => paragraph.querySelector('strong')?.textContent === 'Effect:');
+      if (effect) effect.querySelector('strong').textContent = 'Production effect:';
+      if (isFactionUnion) {
+        effect.lastChild.textContent = effect.lastChild.textContent.replace('; grants Faction Union.', '.');
+        const unlocks = document.createElement('p');
+        unlocks.innerHTML = '<strong>Unlocks:</strong> Faction Union.';
+        effect.after(unlocks);
+      }
+    }
   });
 
   const factionOrder = [
@@ -113,7 +173,16 @@
     const title = document.createElement('h3');
     title.id = key;
     title.textContent = displayName;
-    section.append(title);
+    const factionLink = document.createElement('p');
+    factionLink.className = 'unique-faction-reference-link';
+    const link = document.createElement('a');
+    const routeName = key === 'mercenary'
+      ? 'MercenaryFaction'
+      : key.charAt(0).toUpperCase() + key.slice(1) + 'Faction';
+    link.href = '/realm/' + routeName + '/';
+    link.textContent = displayName + ' faction reference';
+    factionLink.append(link);
+    section.append(title, factionLink);
     entries.forEach((entry) => {
       entry.removeAttribute('id');
       const buildingTitle = entry.querySelector('h3');
