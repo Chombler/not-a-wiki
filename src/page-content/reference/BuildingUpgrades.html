@@ -48,6 +48,7 @@
   const addUniqueBuildingIcons = () => document.querySelectorAll('.building-upgrade-row').forEach((row) => {
     const textLinks = [...row.querySelectorAll('.building-unique-links a')];
     const identity = row.querySelector('.building-upgrade-row-identity');
+    const standardName = row.querySelector('.building-name')?.textContent.trim();
     if (!identity || textLinks.length === 0) return;
 
     const iconList = document.createElement('nav');
@@ -66,9 +67,8 @@
       const iconLink = document.createElement('a');
       iconLink.className = 'building-unique-icon-link';
       iconLink.href = href;
-      iconLink.title = name;
       iconLink.setAttribute('aria-label', name);
-      iconLink.setAttribute('data-research', `<p><span class="game-icon-frame"><img data-game-icon-unframed src="` + '/realm/assets/game/sprites/' + fileName + `" alt=""></span><b> ${displayName}</b></p><p><b>Availability:</b> ${availability}</p><p><b>Effect:</b> ${effect}</p><p><b>Requirement:</b> ${requirement}</p><p>Click to open the full unique-building reference.</p>`);
+      iconLink.setAttribute('data-research', `<p><span class="game-icon-frame"><img data-game-icon-unframed src="` + '/realm/assets/game/sprites/' + fileName + `" alt=""></span><b> ${displayName}</b></p><p><b>Availability:</b> ${availability}</p><p><b>Building:</b> Upgrades ${standardName} into ${name}.</p><p><b>Effect:</b> ${effect}</p><p><b>Requirement:</b> ${requirement}</p><p>Click to open the complete unique-building entry.</p>`);
 
       const uniqueLabel = document.createElement('span');
       uniqueLabel.className = 'building-label building-label-unique';

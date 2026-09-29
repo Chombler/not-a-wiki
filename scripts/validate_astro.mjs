@@ -233,9 +233,10 @@ if (buildingUpgradesHtml.includes('building-upgrade-table')) failures.push('Buil
 const buildingUpgradesSource = fs.readFileSync(path.join(root, 'src/page-content/reference/BuildingUpgrades.html'), 'utf8');
 const uniqueBuildingIconMappings = [...buildingUpgradesSource.matchAll(/^\s+['"].+?: \['building-[^']+\.png'.+?'A[0-4]\+'/gm)].length;
 if (uniqueBuildingIconMappings !== 30) failures.push(`BuildingUpgrades maps ${uniqueBuildingIconMappings}/30 unique-building icon types`);
-for (const marker of ['building-unique-icon-list', 'building-label-unique', 'Related unique buildings', 'building-hall-of-origination.png', '-building-up.png', "'data-research'", "'Available ' + availability"]) {
+for (const marker of ['building-unique-icon-list', 'building-label-unique', 'Related unique buildings', 'building-hall-of-origination.png', '-building-up.png', "'data-research'", "'Available ' + availability", 'Upgrades ${standardName} into ${name}']) {
   if (!buildingUpgradesSource.includes(marker)) failures.push(`BuildingUpgrades lost unique-building icon marker: ${marker}`);
 }
+if (buildingUpgradesSource.includes('iconLink.title = name')) failures.push('BuildingUpgrades restores the duplicate native unique-building tooltip');
 const spriteManifest = JSON.parse(fs.readFileSync(path.join(root, 'assets/game/sprites/manifest.json'), 'utf8'));
 const uniqueBuildingSprites = spriteManifest.sprites.filter((sprite) => sprite.kind === 'unique-building');
 if (uniqueBuildingSprites.length !== 30) failures.push(`Sprite manifest contains ${uniqueBuildingSprites.length}/30 unique-building icons`);
