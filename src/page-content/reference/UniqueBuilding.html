@@ -283,15 +283,8 @@
         entry.classList.add('unique-building-entry-faction-layout');
         const headingRow = document.createElement('div');
         headingRow.className = 'unique-building-record-heading';
-        const framedIcon = document.createElement('span');
-        framedIcon.className = 'game-icon-frame';
-        const buildingImage = document.createElement('img');
-        buildingImage.setAttribute('data-game-icon-unframed', '');
-        buildingImage.src = '/realm/assets/game/sprites/' + icon;
-        buildingImage.alt = '';
-        framedIcon.append(buildingImage);
         heading.before(headingRow);
-        headingRow.append(framedIcon, heading);
+        headingRow.append(visual, heading);
 
         const typeLine = document.createElement('p');
         typeLine.innerHTML = `<strong>Type:</strong> ${buildingType}`;
