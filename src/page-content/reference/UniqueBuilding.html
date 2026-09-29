@@ -11,6 +11,8 @@
 <h2 id="how-unique-buildings-work">How to read this reference</h2>
 <p>A unique building occupies the named standard building's slot while its faction and other requirements are active. Each entry separates the building's production effect from the condition that unlocks it.</p>
 <dl class="reference-field-guide">
+  <dt>Quest upgrade</dt><dd>Shows the quest purchase, its cost, and the condition that must be met. The icon matches the quest upgrade shown in game.</dd>
+  <dt>Building upgrade</dt><dd>Shows the separate purchase made after the quest. Buying it grants the unique building replacement.</dd>
   <dt>Building row</dt><dd>Shows the in-game building, owning faction, earliest availability, and building tier.</dd>
   <dt>Replaces</dt><dd>Names the standard building slot that becomes the unique building.</dd>
   <dt>Production effect</dt><dd>States which game value drives the building's production. Goblin Banks are called out separately because they add base production.</dd>
@@ -94,6 +96,57 @@
     'building-hall-of-origination.png': 11
   };
   const eliteFactions = new Set(['archon', 'djinn', 'makers']);
+  const unlockStepsByIcon = {
+    'building-enchanted-field.png': ['Enchanted Field Quest', 'EnchantedFieldQuestFactionUpgrade.png', 'Enchanted Field', 'EnchantedFieldFactionUpgrade.png'],
+    'building-training-grounds.png': ['Elven Training Grounds Quest', 'ElvenTrainingGroundsQuestFactionUpgrade.png', 'Elven Training Grounds', 'ElvenTrainingGroundsFactionUpgrade.png'],
+    'building-heaven-s-domain.png': ["Heaven's Domain Quest", "Heaven'sDomainQuestFactionUpgrade.png", "Heaven's Domain", "Heaven'sDomainFactionUpgrade.png"],
+    'building-goblin-bank.png': ['Goblin Bank Quest', 'GoblinBankQuestFactionUpgrade.png', 'Goblin Bank', 'GoblinBankFactionUpgrade.png'],
+    'building-undercity.png': ['Undercities Quest', 'UndercitiesQuestFactionUpgrade.png', 'Undercity', 'UndercityFactionUpgrade.png'],
+    'building-infernal-realm.png': ['Infernal Realm Quest', 'InfernalRealmQuestFactionUpgrade.png', 'Infernal Realm', 'InfernalRealmFactionUpgrade.png'],
+    'building-olympian-hall.png': ['Olympian Halls Quest', 'OlympianHallsQuestFactionUpgrade.png', 'Olympian Halls', 'OlympianHallsFactionUpgrade.png'],
+    'building-stonehenge.png': ['Stonehenge Circles Quest', 'StonehengeCirclesQuestFactionUpgrade.png', 'Stonehenge Circles', 'StonehengeCircleFactionUpgrade.png'],
+    'building-sunken-city.png': ['Sunken Cities Quest', 'SunkenCitiesQuestFactionUpgrade.png', 'Sunken City', 'SunkenCityFactionUpgrade.png'],
+    'building-dwarven-forge.png': ['Dwarven Forge Quest', 'DwarvenForgeQuestFactionUpgrade.png', 'Dwarven Forge', 'DwarvenForgeFactionUpgrade.png'],
+    'building-spider-sanctuary.png': ['Spider Sanctuary Quest', 'SpiderSanctuaryQuestFactionUpgrade.png', 'Spider Sanctuary', 'SpiderSanctuaryFactionUpgrade.png'],
+    'building-wyrm-s-den.png': ["Wyrm's Den Quest", "Wyrm'sDenQuestFactionUpgrade.png", "Wyrm's Den", "Wyrm'sDenFactionUpgrade.png"],
+    'building-swarming-tower.png': ['Swarming Towers Quest', 'SwarmingTowerQuest.png', 'Unique Building Upgrade', 'SwarmingTowersUniqueBuildingUpgrade.png'],
+    'building-arboreal-city.png': ['Arboreal City Quest', 'ArborealCityQuest.png', 'Unique Building Upgrade', 'ArborealCityUniqueBuildingUpgrade.png'],
+    'building-holy-site.png': ['Holy Site Quest', 'HolySiteQuest.png', 'Unique Building Upgrade', 'HolySiteUniqueBuildingUpgrade.png'],
+    'building-slave-market.png': ['Slave Market Quest', 'SlaveMarketQuest.png', 'Unique Building Upgrade', 'SlaveMarketUniqueBuildingUpgrade.png'],
+    'building-flesh-workshop.png': ['Flesh Workshop Quest', 'FleshWorkshopQuest.png', 'Unique Building Upgrade', 'FleshWorkshopUniqueBuildingUpgrade.png'],
+    'building-burning-abyss.png': ['Burning Abyss Quest', 'BurningAbyssQuest.png', 'Unique Building Upgrade', 'BurningAbyssUniqueBuildingUpgrade.png'],
+    'building-mountain-palace.png': ['Mountain Palace Quest', 'MountainPalaceQuest.png', 'Unique Building Upgrade', 'MountainPalaceUniqueBuildingUpgrade.png'],
+    'building-ziggurat.png': ['Ziggurat Quest', 'ZigguratQuest.png', 'Unique Building Upgrade', 'ZigguratUniqueBuildingUpgrade.png'],
+    'building-forbidden-library.png': ['Forbidden Library Quest', 'ForbiddenLibraryQuest.png', 'Unique Building Upgrade', 'ForbiddenLibraryUniqueBuildingUpgrade.png'],
+    'building-high-bastion.png': ['High Bastion Quest', 'HighBastionQuest.png', 'High Bastion', 'HighBastion.png'],
+    'building-brothel.png': ['Brothel Quest', 'BrothelQuest.png', 'Brothel', 'Brothel.png'],
+    'building-dragon-pasture.png': ['Dragon Pasture Quest', 'DragonPastureQuest.png', 'Dragon Pasture', 'DragonPasture.png'],
+    'building-nexus.png': ['Nexus Quest', 'NexusQuest.png', 'Nexus Upgrade', 'NexusUpgrade.png'],
+    'building-pavilion.png': ['Pavilion Quest', 'PavilionQuest.png', 'Pavilion Upgrade', 'PavilionUpgrade.png'],
+    'building-hall-of-origination.png': ['Hall of Origination Quest', 'HallofOriginationQuest.png', 'Hall of Origination Upgrade', 'HallofOriginationUpgrade.png']
+  };
+  const researchCosts = new Set([
+    'building-enchanted-field.png', 'building-training-grounds.png', 'building-heaven-s-domain.png',
+    'building-goblin-bank.png', 'building-undercity.png', 'building-infernal-realm.png',
+    'building-olympian-hall.png', 'building-stonehenge.png', 'building-sunken-city.png'
+  ]);
+  const prestigeResearchCosts = new Set(['building-dwarven-forge.png', 'building-spider-sanctuary.png']);
+  const standardUnionCosts = new Set([
+    'building-swarming-tower.png', 'building-arboreal-city.png', 'building-holy-site.png',
+    'building-slave-market.png', 'building-flesh-workshop.png', 'building-burning-abyss.png',
+    'building-mountain-palace.png', 'building-ziggurat.png', 'building-forbidden-library.png'
+  ]);
+  const prestigeUnionCosts = new Set(['building-high-bastion.png', 'building-brothel.png', 'building-dragon-pasture.png']);
+  const eliteCosts = new Set(['building-nexus.png', 'building-pavilion.png', 'building-hall-of-origination.png']);
+  const costsFor = (icon) => {
+    if (researchCosts.has(icon)) return ['10 Dtg (1e100) Coins', '10 Ttg (1e103) Coins'];
+    if (prestigeResearchCosts.has(icon)) return ['10 Sxg (1e184) Coins', '10 USxg (1e187) Coins'];
+    if (icon === 'building-wyrm-s-den.png') return ['100 Tvg (1e74) Coins', '10 Nod (1e61) Coins'];
+    if (standardUnionCosts.has(icon)) return ['1 Ud (1e36) Emerald Coins', '1 Td (1e42) Emerald Coins'];
+    if (prestigeUnionCosts.has(icon)) return ['100 Vg (1e65) Coins', '100 Qivg (1e80) Coins'];
+    if (eliteCosts.has(icon)) return ['1e177 Coins', '1e180 Coins'];
+    return [null, null];
+  };
 
   uniqueBuildingEntries.forEach((entry) => {
     const { icon, panel, label, type, available } = entry.dataset;
@@ -104,6 +157,13 @@
       : eliteFactions.has(panel)
         ? 'Elite-faction unique building'
         : isFactionUnion ? 'Faction Union unique building' : 'Research unique building';
+    const requirementText = [...entry.querySelectorAll('p')]
+      .find((paragraph) => paragraph.querySelector('strong')?.textContent === 'Requirement:')
+      ?.textContent.replace('Requirement:', '').trim();
+    const rawQuestRequirement = requirementText?.replace(/^.+? Quest\s+—\s+/, '');
+    const questRequirement = rawQuestRequirement
+      ? rawQuestRequirement.charAt(0).toUpperCase() + rawQuestRequirement.slice(1)
+      : null;
     const visual = document.createElement('div');
     visual.className = 'building-label building-label-unique';
     visual.style.setProperty('--building-panel', `url("/realm/assets/game/sprites/${panel}-building-up.png")`);
@@ -129,6 +189,41 @@
     tierLabel.textContent = 'T' + tier;
     visual.append(iconWell, name, kind, availability, tierLabel);
     entry.prepend(visual);
+
+    const unlockSteps = unlockStepsByIcon[icon];
+    if (unlockSteps) {
+      const [questName, questIcon, upgradeName, upgradeIcon] = unlockSteps;
+      const [questCost, upgradeCost] = costsFor(icon);
+      const chain = document.createElement('ol');
+      chain.className = 'unique-building-unlock-chain';
+      chain.setAttribute('aria-label', label + ' unlock chain');
+      const makeStep = (kindName, stepName, stepIcon, details) => {
+        const step = document.createElement('li');
+        step.className = 'unique-building-unlock-step';
+        const framedIcon = document.createElement('span');
+        framedIcon.className = 'game-icon-frame';
+        const stepImage = document.createElement('img');
+        stepImage.setAttribute('data-game-icon-unframed', '');
+        stepImage.src = '/realm/Factions/picks/' + stepIcon;
+        stepImage.alt = '';
+        framedIcon.append(stepImage);
+        const copy = document.createElement('span');
+        const kind = document.createElement('small');
+        kind.textContent = kindName;
+        const title = document.createElement('strong');
+        title.textContent = stepName;
+        const description = document.createElement('span');
+        description.textContent = details;
+        copy.append(kind, title, description);
+        step.append(framedIcon, copy);
+        return step;
+      };
+      chain.append(
+        makeStep('Quest upgrade', questName, questIcon, (questCost ? 'Cost: ' + questCost + '. ' : '') + (questRequirement || 'Complete the listed faction quest.')),
+        makeStep('Building upgrade', upgradeName, upgradeIcon, (upgradeCost ? 'Cost: ' + upgradeCost + '. ' : '') + 'Requires ' + questName + '; grants ' + label + '.')
+      );
+      entry.prepend(chain);
+    }
 
     const content = entry.lastElementChild;
     const heading = content?.querySelector('h3');
@@ -183,6 +278,12 @@
     link.textContent = displayName + ' faction reference';
     factionLink.append(link);
     section.append(title, factionLink);
+    if (key === 'mercenary') {
+      const mercenaryQuest = document.createElement('div');
+      mercenaryQuest.className = 'unique-building-shared-quest';
+      mercenaryQuest.innerHTML = '<span class="game-icon-frame"><img data-game-icon-unframed src="/realm/Factions/picks/MercenaryEncampmentQuest.png" alt=""></span><span><small>Shared quest upgrade</small><strong>Mercenary Encampment Quest</strong><span>At R75, reach 125,000 total buildings and pay 10 Notg (1e121) Coins. Purchased once; unlocks the alignment-specific Mercenary unique buildings.</span></span>';
+      section.append(mercenaryQuest);
+    }
     entries.forEach((entry) => {
       entry.removeAttribute('id');
       const buildingTitle = entry.querySelector('h3');
