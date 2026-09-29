@@ -13,36 +13,36 @@
 </div>
 <script>
   const uniqueBuildingIcons = {
-    'Enchanted Fields': ['building-enchanted-field.png', 'fairy'],
-    'Dragon Pastures': ['building-dragon-pasture.png', 'dragon'],
-    'Brothels': ['building-brothel.png', 'drow'],
-    "Freemason's Halls": ['building-freemason-s-hall.png', 'mercenary'],
-    'Dwarven Forges': ['building-dwarven-forge.png', 'dwarf'],
-    'Elven Training Grounds': ['building-training-grounds.png', 'elf'],
-    'Pavilions': ['building-pavilion.png', 'djinn'],
-    'Mercenary Camps': ['building-mercenary-camp.png', 'mercenary'],
-    'Swarming Towers': ['building-swarming-tower.png', 'fairy'],
-    'Nexuses': ['building-nexus.png', 'archon'],
-    'Holy Sites': ['building-holy-site.png', 'angel'],
-    'Arboreal Cities': ['building-arboreal-city.png', 'elf'],
-    'High Bastions': ['building-high-bastion.png', 'dwarf'],
-    "Heaven's Domains": ['building-heaven-s-domain.png', 'angel'],
-    'Slave Markets': ['building-slave-market.png', 'goblin'],
-    'Flesh Workshops': ['building-flesh-workshop.png', 'undead'],
-    'Goblin Banks': ['building-goblin-bank.png', 'goblin'],
-    'Spider Sanctuaries': ['building-spider-sanctuary.png', 'drow'],
-    'Undercities': ['building-undercity.png', 'undead'],
-    'Tyrant Garrisons': ['building-tyrant-garrison.png', 'mercenary'],
-    'Infernal Realms': ['building-infernal-realm.png', 'demon'],
-    'Mountain Palaces': ['building-mountain-palace.png', 'titan'],
-    'Stonehenge Circles': ['building-stonehenge.png', 'druid'],
-    'Forbidden Libraries': ['building-forbidden-library.png', 'faceless'],
-    'Sunken Cities': ['building-sunken-city.png', 'faceless'],
-    'Wyrm Dens': ['building-wyrm-s-den.png', 'dragon'],
-    'Ziggurats': ['building-ziggurat.png', 'druid'],
-    'Olympian Halls': ['building-olympian-hall.png', 'titan'],
-    'Burning Abysses': ['building-burning-abyss.png', 'demon'],
-    'Halls of Origination': ['building-hall-of-origination.png', 'makers']
+    'Enchanted Fields': ['FairyUniqueBuilding.png', 'fairy'],
+    'Dragon Pastures': ['DragonPastureUniqueBuilding.png', 'dragon'],
+    'Brothels': ['BrothelUniqueBuilding.png', 'drow'],
+    "Freemason's Halls": ['NeutralMercUniqueBuilding.png', 'mercenary'],
+    'Dwarven Forges': ['DwarvenUniqueBuilding.png', 'dwarf'],
+    'Elven Training Grounds': ['ElfUniqueBuilding.png', 'elf'],
+    'Pavilions': ['PavillionUniqueBuilding.png', 'djinn'],
+    'Mercenary Camps': ['GoodMercUniqueBuilding.png', 'mercenary'],
+    'Swarming Towers': ['SwarmingTowersUniqueBuilding.png', 'fairy'],
+    'Nexuses': ['NexusUniqueBuilding.png', 'archon'],
+    'Holy Sites': ['HolySiteUniqueBuilding.png', 'angel'],
+    'Arboreal Cities': ['ArborealCityUniqueBuilding.png', 'elf'],
+    'High Bastions': ['HighBastionUniqueBuilding.png', 'dwarf'],
+    "Heaven's Domains": ['AngelUniqueBuilding.png', 'angel'],
+    'Slave Markets': ['SlaveMarketUniqueBuilding.png', 'goblin'],
+    'Flesh Workshops': ['FleshWorkshopUniqueBuilding.png', 'undead'],
+    'Goblin Banks': ['GoblinUniqueBuilding.png', 'goblin'],
+    'Spider Sanctuaries': ['DrowUniqueBuilding.png', 'drow'],
+    'Undercities': ['UndeadUniqueBuilding.png', 'undead'],
+    'Tyrant Garrisons': ['EvilMercUniqueBuilding.png', 'mercenary'],
+    'Infernal Realms': ['DemonUniqueBuilding.png', 'demon'],
+    'Mountain Palaces': ['MountainPalaceUniqueBuilding.png', 'titan'],
+    'Stonehenge Circles': ['DruidUniqueBuilding.png', 'druid'],
+    'Forbidden Libraries': ['ForbiddenLibraryUniqueBuilding.png', 'faceless'],
+    'Sunken Cities': ['FacelessUniqueBuilding.png', 'faceless'],
+    'Wyrm Dens': ['DragonUniqueBuilding.png', 'dragon'],
+    'Ziggurats': ['ZigguratUniqueBuilding.png', 'druid'],
+    'Olympian Halls': ['TitanUniqueBuilding.png', 'titan'],
+    'Burning Abysses': ['BurningAbyssUniqueBuilding.png', 'demon'],
+    'Halls of Origination': ['HallofOrigination.png', 'makers']
   };
 
   const addUniqueBuildingIcons = () => document.querySelectorAll('.building-upgrade-row').forEach((row) => {
@@ -68,14 +68,11 @@
       iconLink.href = href;
       iconLink.title = name;
       iconLink.setAttribute('aria-label', name);
-      const frame = document.createElement('span');
-      frame.className = 'game-icon-frame';
       const image = document.createElement('img');
-      image.setAttribute('data-game-icon-unframed', '');
-      image.src = '/realm/assets/game/sprites/' + fileName;
+      image.className = 'building-unique-ui-image';
+      image.src = '/realm/Factions/picks/' + fileName;
       image.alt = '';
-      frame.append(image);
-      iconLink.append(frame);
+      iconLink.append(image);
       iconList.append(iconLink);
     });
 

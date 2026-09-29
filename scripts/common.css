@@ -415,34 +415,24 @@ a.tooltips {
 
 .building-unique-icon-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.2rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
   margin: 0.4rem 0 0 0.35rem;
 }
 
 .building-unique-icon-link {
   display: block;
-  width: 42px;
-  height: 42px;
+  width: 190px;
+  min-height: 52px;
   border-radius: 3px;
 }
 
-.building-unique-icon-link .game-icon-frame {
-  width: 42px;
-  height: 42px;
-  background: #131313;
-}
-
-.building-unique-icon-link .game-icon-frame > img {
-  inset: 4px;
-  width: 34px;
-  height: 34px;
-}
-
-.building-unique-icon-link .game-icon-frame::after {
-  inset: 2px;
-  border-width: 6px;
-  border-image-width: 6px;
+.building-unique-ui-image {
+  display: block;
+  width: 190px;
+  height: auto;
+  image-rendering: pixelated;
 }
 
 .building-unique-icon-link:hover,
