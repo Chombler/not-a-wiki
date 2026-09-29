@@ -455,6 +455,11 @@ a.tooltips {
 .unique-building-unlocks-faction-layout .unique-building-upgrade {
   display: block;
   padding: 0.75rem 0 0.9rem;
+  border-bottom: 0;
+}
+
+.unique-building-unlocks-faction-layout .unique-building-upgrade + .unique-building-upgrade {
+  margin-top: 0.35rem;
 }
 
 .unique-building-unlocks-faction-layout .unique-building-upgrade-heading {
@@ -484,7 +489,9 @@ a.tooltips {
 
 .unique-building-shared-quest-faction-layout {
   display: block;
+  margin-bottom: 1.1rem;
   padding: 0.75rem 0 0.9rem;
+  border-bottom: 0;
 }
 
 .unique-building-shared-quest-faction-layout .unique-building-upgrade-facts p {
@@ -536,7 +543,7 @@ a.tooltips {
 .unique-building-metadata { color: var(--text-muted); font-size: 0.9rem; }
 .unique-faction-section { margin-top: 1.5rem; scroll-margin-top: 1rem; }
 .unique-faction-section > h3 { margin-bottom: 0.35rem; }
-.unique-faction-section .unique-building-entry:first-of-type { border-top: 1px solid var(--line); }
+.unique-faction-section .unique-building-entry:last-child { border-bottom: 0; }
 
 .reference-field-guide {
   display: grid;
