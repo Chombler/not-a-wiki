@@ -613,7 +613,7 @@
 		<p><b>Hint</b>: Angels may fall after a long time.</p>
 		<p><b>Description</b>: The remains of an Angel fallen to earth.</p>
 		<p><b>Requirement</b>:  R100+, Angel Faction, Pillar Fragment and Divine Sword artifacts, 2000+ Excavations</p>
-		<p><b>Chance</b>: (x / 2,592,000 (2.592 M))%, where x is time spent with Angels (All Time).</p>
+		<p><b>Chance</b>: (x / 2,592,000 (2.592 M))%, where x is time spent with Angels (All Time), in seconds.</p>
 	" coords="303,403,356,456" shape="rect">
 		<area research="
 	<p><b><img src=&quot;/realm/Factions/picks/SpikedWhipArtifact.png&quot; align=&quot;middle&quot;> Spiked Whip</b></p>
@@ -627,7 +627,8 @@
 		<p><b>Hint</b>: The undead have patience.</p>
 		<p><b>Description</b>: Sealed since forever, yet you can hear a strange noise from within.</p>
 		<p><b>Requirement</b>: R100+, Undead Faction, Rotten Organ and Jaw Bone artifacts, 2000+ Excavations</p>
-		<p><b>Chance</b>: (x / 2,592,000 (2.592 M))%, where x is Undead playtime without abdicating, in seconds.</p>
+		<p><b>Chance</b>: (x / 2,592,000 (2.592 M))%, where x is time spent with Undead (All Time), in seconds.</p>
+	<p><b>Note</b>: This is cumulative Undead playtime across abdications and reincarnations; abdicating does not reset it.</p>
 	" coords="3,463,56,516" shape="rect">
 		<area research="
 	<p><b><img src=&quot;/realm/Factions/picks/CrystallizedLavaArtifact.png&quot; align=&quot;middle&quot;> Crystallized Lava</b></p>
@@ -654,8 +655,8 @@
 	<p><b><img src=&quot;/realm/Factions/picks/NightmareFigmentArtifact.png&quot; align=&quot;middle&quot;> Nightmare Figment</b></p>
 		<p><b>Hint</b>: A strong and quick brain is required.</p>
 		<p><b>Description</b>: An unshaped, ephemeral substance which is politely trying to corrupt your mind.</p>
-		<p><b>Requirement</b>: R100+, Faceless Faction, Translucent Goo and Octupus-shaped Helmet artifacts, 2000+ Excavations</p>
-		<p><b>Chance</b>: (x ^ 1.5 / 1,000,000 (1 M))%, where x is Brainwave's headstart time.</p>
+		<p><b>Requirement</b>: R100+, Faceless Faction, Translucent Goo and Octopus-shaped Helmet artifacts, 2000+ Excavations</p>
+		<p><b>Chance</b>: (x ^ 1.5 / 1,000,000 (1 M))%, where x is Brainwave's headstart time, in seconds.</p>
 	" coords="243,463,296,516" shape="rect">
 		<area research="
 	<p><b><img src=&quot;/realm/Factions/picks/BeardHair.png&quot; align=&quot;middle&quot;> Beard Hair</b></p>
@@ -669,14 +670,15 @@
 		<p><b>Hint</b>: Combo your way through.</p>
 		<p><b>Description</b>: One drop of this is enough to fell thousands of non-immune creatures.</p>
 		<p><b>Requirement</b>: R116+, Drow Faction, Ceremonial Dagger and Arachnid Figurine artifacts, 2000+ Excavations</p>
-		<p><b>Chance</b>: ((40 * x ^ 0.9) / 10,000,000 (10 M))%, where x is combo strike counter.</p>
+		<p><b>Chance</b>: ((100 + y) * x ^ 0.9 / 10,000,000 (10 M))%, where x is the Combo Strike counter and y is the Drow Perk 4 combo bonus (0 without the perk; 0.5 * floor(t) with it, where t is effective time spent in this Era in seconds, including time-count bonuses).</p>
+	<p><b>Note</b>: Uses the base Combo Strike bonus before spell-tier scaling and Ascension penalties.</p>
 	" coords="363,463,416,516" shape="rect">
 		<area research="
 	<p><b><img src=&quot;/realm/Factions/picks/DragonScale.png&quot; align=&quot;middle&quot;> Dragon Scale</b></p>
 		<p><b>Hint</b>: Usually found when a lot of magic is lingering.</p>
 		<p><b>Description</b>: Very high on the realms' most accurate hardiness rankings.</p>
 		<p><b>Requirement</b>: R116+, Dragon Faction, Dragon Fang and Dragon Soul artifacts, 2000+ Excavations</p>
-		<p><b>Chance</b>: (x / 2,000)%, where x is the amount of active spells, including spell tiers.</p>
+		<p><b>Chance</b>: (x / 2,000)%, where x is the amount of active spells, including spell tiers. Active-spell count multipliers do not count.</p>
 	" coords="3,523,56,576" shape="rect">
 		<area research="
 	<p><b><img src=&quot;/realm/Factions/picks/LanternofGuidanceArtifact.png&quot; align=&quot;middle&quot;> Lantern of Guidance</b></p>
