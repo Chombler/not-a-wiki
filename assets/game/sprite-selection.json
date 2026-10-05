@@ -582,8 +582,12 @@
         "BrainwaveTier2", "BrainwaveTier3", "BrainwaveTier4", "BrainwaveTier5",
         "Grand BalanceTier2", "Grand BalanceTier3", "Grand BalanceTier4", "Grand BalanceTier5",
         "Dragon's BreathTier2", "Dragon's BreathTier3", "Dragon's BreathTier4", "Dragon's BreathTier5",
-        "Temporal FluxTier2", "MaelstromTier2", "All CreationTier2", "PrecognitionTier2",
-        "Limited WishTier2", "Infinite SpiralTier2"
+        "Temporal FluxTier2", "Temporal FluxTier3", "Temporal FluxTier4", "Temporal FluxTier5",
+        "MaelstromTier2", "MaelstromTier3", "MaelstromTier4", "MaelstromTier5",
+        "All CreationTier2", "All CreationTier3", "All CreationTier4", "All CreationTier5",
+        "PrecognitionTier2", "PrecognitionTier3", "PrecognitionTier4", "PrecognitionTier5",
+        "Limited WishTier2", "Limited WishTier3", "Limited WishTier4", "Limited WishTier5",
+        "Infinite SpiralTier2", "Infinite SpiralTier3", "Infinite SpiralTier4", "Infinite SpiralTier5"
       ]
     },
     {

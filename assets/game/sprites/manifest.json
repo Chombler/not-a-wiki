@@ -4117,6 +4117,72 @@
       "role": "tier-icon"
     },
     {
+      "key": "temporal-flux-tier3",
+      "path": "assets/game/sprites/temporal-flux-tier3.png",
+      "sprite_name": "Temporal FluxTier3",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1011,
+        "y": 1067,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "temporal-flux-tier3",
+      "role": "tier-icon"
+    },
+    {
+      "key": "temporal-flux-tier4",
+      "path": "assets/game/sprites/temporal-flux-tier4.png",
+      "sprite_name": "Temporal FluxTier4",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 907,
+        "y": 1171,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "temporal-flux-tier4",
+      "role": "tier-icon"
+    },
+    {
+      "key": "temporal-flux-tier5",
+      "path": "assets/game/sprites/temporal-flux-tier5.png",
+      "sprite_name": "Temporal FluxTier5",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 959,
+        "y": 1119,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "temporal-flux-tier5",
+      "role": "tier-icon"
+    },
+    {
       "key": "maelstrom-tier2",
       "path": "assets/game/sprites/maelstrom-tier2.png",
       "sprite_name": "MaelstromTier2",
@@ -4136,6 +4202,72 @@
       },
       "kind": "spell",
       "entity": "maelstrom-tier2",
+      "role": "tier-icon"
+    },
+    {
+      "key": "maelstrom-tier3",
+      "path": "assets/game/sprites/maelstrom-tier3.png",
+      "sprite_name": "MaelstromTier3",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1771,
+        "y": 615,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "maelstrom-tier3",
+      "role": "tier-icon"
+    },
+    {
+      "key": "maelstrom-tier4",
+      "path": "assets/game/sprites/maelstrom-tier4.png",
+      "sprite_name": "MaelstromTier4",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1823,
+        "y": 615,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "maelstrom-tier4",
+      "role": "tier-icon"
+    },
+    {
+      "key": "maelstrom-tier5",
+      "path": "assets/game/sprites/maelstrom-tier5.png",
+      "sprite_name": "MaelstromTier5",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1875,
+        "y": 615,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "maelstrom-tier5",
       "role": "tier-icon"
     },
     {
@@ -4161,6 +4293,72 @@
       "role": "tier-icon"
     },
     {
+      "key": "all-creation-tier3",
+      "path": "assets/game/sprites/all-creation-tier3.png",
+      "sprite_name": "All CreationTier3",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1077,
+        "y": 2,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "all-creation-tier3",
+      "role": "tier-icon"
+    },
+    {
+      "key": "all-creation-tier4",
+      "path": "assets/game/sprites/all-creation-tier4.png",
+      "sprite_name": "All CreationTier4",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 2,
+        "y": 1412,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "all-creation-tier4",
+      "role": "tier-icon"
+    },
+    {
+      "key": "all-creation-tier5",
+      "path": "assets/game/sprites/all-creation-tier5.png",
+      "sprite_name": "All CreationTier5",
+      "atlas_xml": "realmgrinder_new0.xml",
+      "atlas_image": "realmgrinder_new0.png",
+      "region": {
+        "x": 1129,
+        "y": 2,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "all-creation-tier5",
+      "role": "tier-icon"
+    },
+    {
       "key": "precognition-tier2",
       "path": "assets/game/sprites/precognition-tier2.png",
       "sprite_name": "PrecognitionTier2",
@@ -4180,6 +4378,72 @@
       },
       "kind": "spell",
       "entity": "precognition-tier2",
+      "role": "tier-icon"
+    },
+    {
+      "key": "precognition-tier3",
+      "path": "assets/game/sprites/precognition-tier3.png",
+      "sprite_name": "PrecognitionTier3",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1356,
+        "y": 1734,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "precognition-tier3",
+      "role": "tier-icon"
+    },
+    {
+      "key": "precognition-tier4",
+      "path": "assets/game/sprites/precognition-tier4.png",
+      "sprite_name": "PrecognitionTier4",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1377,
+        "y": 1683,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "precognition-tier4",
+      "role": "tier-icon"
+    },
+    {
+      "key": "precognition-tier5",
+      "path": "assets/game/sprites/precognition-tier5.png",
+      "sprite_name": "PrecognitionTier5",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1380,
+        "y": 1785,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "precognition-tier5",
       "role": "tier-icon"
     },
     {
@@ -4205,6 +4469,72 @@
       "role": "tier-icon"
     },
     {
+      "key": "limited-wish-tier3",
+      "path": "assets/game/sprites/limited-wish-tier3.png",
+      "sprite_name": "Limited WishTier3",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1224,
+        "y": 1685,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "limited-wish-tier3",
+      "role": "tier-icon"
+    },
+    {
+      "key": "limited-wish-tier4",
+      "path": "assets/game/sprites/limited-wish-tier4.png",
+      "sprite_name": "Limited WishTier4",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1254,
+        "y": 1736,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "limited-wish-tier4",
+      "role": "tier-icon"
+    },
+    {
+      "key": "limited-wish-tier5",
+      "path": "assets/game/sprites/limited-wish-tier5.png",
+      "sprite_name": "Limited WishTier5",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1275,
+        "y": 1684,
+        "width": 50,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "limited-wish-tier5",
+      "role": "tier-icon"
+    },
+    {
       "key": "infinite-spiral-tier2",
       "path": "assets/game/sprites/infinite-spiral-tier2.png",
       "sprite_name": "Infinite SpiralTier2",
@@ -4224,6 +4554,72 @@
       },
       "kind": "spell",
       "entity": "infinite-spiral-tier2",
+      "role": "tier-icon"
+    },
+    {
+      "key": "infinite-spiral-tier3",
+      "path": "assets/game/sprites/infinite-spiral-tier3.png",
+      "sprite_name": "Infinite SpiralTier3",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1607,
+        "y": 1903,
+        "width": 50,
+        "height": 49
+      },
+      "frame": {
+        "x": 0,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "infinite-spiral-tier3",
+      "role": "tier-icon"
+    },
+    {
+      "key": "infinite-spiral-tier4",
+      "path": "assets/game/sprites/infinite-spiral-tier4.png",
+      "sprite_name": "Infinite SpiralTier4",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1629,
+        "y": 1978,
+        "width": 50,
+        "height": 49
+      },
+      "frame": {
+        "x": 0,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "infinite-spiral-tier4",
+      "role": "tier-icon"
+    },
+    {
+      "key": "infinite-spiral-tier5",
+      "path": "assets/game/sprites/infinite-spiral-tier5.png",
+      "sprite_name": "Infinite SpiralTier5",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1658,
+        "y": 1901,
+        "width": 50,
+        "height": 49
+      },
+      "frame": {
+        "x": 0,
+        "y": -1,
+        "width": 50,
+        "height": 50
+      },
+      "kind": "spell",
+      "entity": "infinite-spiral-tier5",
       "role": "tier-icon"
     },
     {
