@@ -4325,8 +4325,9 @@ hr {
 }
 
 .spell-entry-heading img {
-    width: 32px;
-    height: 32px;
+    width: 50px;
+    height: 50px;
+    flex: 0 0 50px;
     object-fit: contain;
 }
 
