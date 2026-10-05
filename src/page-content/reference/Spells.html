@@ -1,4 +1,4 @@
-<h6><img src="/realm/Factions/picks/SpellsTopPage.png" alt="Spells"></h6>
+<p class="spell-page-banner"><img src="/realm/Factions/picks/SpellsTopPage.png" alt=""></p>
 	<p>Spells consume Mana and apply their effects while online. Upgrades can change their cost, duration, tiers, activity time, and autocasting behavior.</p>
 	<p>For tier requirements and tier scaling, see <a href="/realm/SpellTiers/">Spell Tiers</a>.</p>
 
@@ -34,7 +34,6 @@
 	</table>
 	<p>The percentage can be increased further by effects that make offline Mana Produced count more. Spells themselves are not activated offline; qualifying autocasting upgrades separately add spell casts and activity time to the appropriate statistics.</p>
 	<p><b>Offline activity time gain</b> (requires Masterful Autocasting): t * min(1, m * d / (n * c ^ 1.5)), where t is offline time, m is offline Mana Regeneration, d is spell duration, c is the tier-one base mana cost, and n is the number of spells set to autocast, excluding Tax Collection.</p>
-	<br style="clear: both" />
 	<a id="Spells"></a>
 	<h2 id="spell-reference">Spell reference</h2>
 	<realm-spell-menu></realm-spell-menu>
@@ -42,7 +41,7 @@
 <section class="spell-section">
 	<h3 id="default-spells">All-faction default spells</h3>
 	<article class="spell-entry" id="TaxCollection">
-		<p class="spell-entry-heading"><img src="/realm/assets/game/sprites/tax-collection-icon.png" alt="Tax Collection"> <b>Tax Collection</b> <span class="spell-affiliation">(All Factions)</span></p>
+		<h4 class="spell-entry-heading"><img src="/realm/assets/game/sprites/tax-collection-icon.png" alt="Tax Collection"> <b>Tax Collection</b> <span class="spell-affiliation">(All Factions)</span></h4>
 		<p><b>Spell Type</b>: Default Spell</p>
 		<p><b>Cost</b>: 200 Mana (1,000 Mana in A4) - <b>Duration</b>: None</p>
 		<p><b>Effect</b>: Instantly gain 30 seconds worth of coin production from buildings and assistants.</p>
@@ -54,7 +53,7 @@
 		</section>
 	</article>
 	<article class="spell-entry" id="CalltoArms">
-		<p class="spell-entry-heading"><img src="/realm/assets/game/sprites/call-to-arms-icon.png" alt="Call to Arms"> <b>Call to Arms</b> <span class="spell-affiliation">(All Factions)</span></p>
+		<h4 class="spell-entry-heading"><img src="/realm/assets/game/sprites/call-to-arms-icon.png" alt="Call to Arms"> <b>Call to Arms</b> <span class="spell-affiliation">(All Factions)</span></h4>
 		<p><b>Spell Tier Effect</b>: Buildings count 5% more per spell tier.</p>
 		<p><b>Spell Type</b>: Default Spell </p>
 		<p><b>Cost</b>: 400 Mana - <b>Duration</b>: 20 seconds </p>
@@ -85,10 +84,9 @@
 		</div>
 		</div>
 		</div>
-		<br>
 	</article>
 	<article class="spell-entry" id="SpiritualSurge">
-		<p class="spell-entry-heading"><img src="/realm/assets/game/sprites/spiritual-surge-icon.png" alt="Spiritual Surge"> <b>Spiritual Surge</b> <span class="spell-affiliation">(All Factions, R14+)</span></p>
+		<h4 class="spell-entry-heading"><img src="/realm/assets/game/sprites/spiritual-surge-icon.png" alt="Spiritual Surge"> <b>Spiritual Surge</b> <span class="spell-affiliation">(All Factions, R14+)</span></h4>
 		<p><b>Spell Tier Effect</b>: Reincarnations count 5% more per spell tier.</p>
 		<p><b>Spell Type</b>: Default Spell (R14+)</p>
 		<p><b>Cost</b>: 2,500 Mana - <b>Duration</b>: 20 seconds </p>
@@ -231,7 +229,7 @@
 <section class="spell-section">
 	<h3 id="alignment-spells">Good, evil, and neutral spells</h3>
 	<article class="spell-entry" id="HolyLight">
-		<p class="spell-entry-heading"><img src="/realm/assets/game/sprites/holy-light-icon.png" alt="Holy Light"> <b>Holy Light</b> <span class="spell-affiliation">(Proof of Good Deed)</span></p>
+		<h4 class="spell-entry-heading"><img src="/realm/assets/game/sprites/holy-light-icon.png" alt="Holy Light"> <b>Holy Light</b> <span class="spell-affiliation">(Proof of Good Deed)</span></h4>
 		<p><b>Spell Tier Effect</b>: Multiplicatively increase Mana Regeneration by 10% per spell tier.</p>
 		<p><b>Spell Type</b>: Good Alignment Spell</p>
 		<p><b>Cost</b>: 900 Mana - <b>Duration</b>: 10 seconds</p>
@@ -252,10 +250,9 @@
 		</div>
 		</div>
 		</div>
-		<br>
 	</article>
 	<article class="spell-entry" id="BloodFrenzy">
-		<p class="spell-entry-heading"><img src="/realm/assets/game/sprites/blood-frenzy-icon.png" alt="Blood Frenzy"> <b>Blood Frenzy</b> <span class="spell-affiliation">(Proof of Evil Deed)</span></p>
+		<h4 class="spell-entry-heading"><img src="/realm/assets/game/sprites/blood-frenzy-icon.png" alt="Blood Frenzy"> <b>Blood Frenzy</b> <span class="spell-affiliation">(Proof of Evil Deed)</span></h4>
 		<p><b>Spell Tier Effect</b>: Multiplicatively increase Non-Unique building production by 500% per spell tier.</p>
 		<p><b>Spell Type</b>: Evil Alignment Spell</p>
 		<p><b>Cost</b>: 600 Mana - <b>Duration</b>: 20 seconds</p>
@@ -276,10 +273,9 @@
 		</div>
 		</div>
 		</div>
-		<br>
 	</article>
 	<article class="spell-entry" id="GemGrinder">
-		<p class="spell-entry-heading"><img src="/realm/assets/game/sprites/gem-grinder-icon.png" alt="Gem Grinder"> <b>Gem Grinder</b> <span class="spell-affiliation">(Proof of Neutrality)</span></p>
+		<h4 class="spell-entry-heading"><img src="/realm/assets/game/sprites/gem-grinder-icon.png" alt="Gem Grinder"> <b>Gem Grinder</b> <span class="spell-affiliation">(Proof of Neutrality)</span></h4>
 		<p><b>Spell Tier Effect</b>: Multiplicatively increase Royal Exchange bonus by 10% per spell tier.</p>
 		<p><b>Spell Type</b>: Neutral Alignment Spell</p>
 		<p><b>Cost</b>: 1,000 Mana - <b>Duration</b>: 20 seconds </p>
@@ -307,7 +303,7 @@
 <section class="spell-section">
 	<h3 id="faction-spells">Faction spells</h3>
 	<article class="spell-entry" id="GodsHand">
-		<p class="spell-entry-heading"><img src="/realm/assets/game/sprites/gods-hand-icon.png" alt="God's Hand"> <b>God's Hand</b> <span class="spell-affiliation">(Angel)</span></p>
+		<h4 class="spell-entry-heading"><img src="/realm/assets/game/sprites/gods-hand-icon.png" alt="God's Hand"> <b>God's Hand</b> <span class="spell-affiliation">(Angel)</span></h4>
 		<p><b>Spell Type</b>: (Good/Order) Angel Faction Spell</p>
 		<p><b>Cost</b>: 900 Mana - <b>Duration</b>: 10 seconds</p>
 		<p><b>Effect</b>: Increase the production of all buildings based on your Mana Regeneration rate.</p>
@@ -343,10 +339,9 @@
 		</div>
 		</div>
 		</div>
-		<br>
 	</article>
 	<article class="spell-entry" id="FairyChanting">
-		<p class="spell-entry-heading"><img src="/realm/assets/game/sprites/fairy-chanting-icon.png" alt="Fairy Chanting"> <b>Fairy Chanting</b> <span class="spell-affiliation">(Fairy)</span></p>
+		<h4 class="spell-entry-heading"><img src="/realm/assets/game/sprites/fairy-chanting-icon.png" alt="Fairy Chanting"> <b>Fairy Chanting</b> <span class="spell-affiliation">(Fairy)</span></h4>
 		<p><b>Spell Type</b>: (Good/Chaos) Fairy Faction Spell</p>
 		<p><b>Cost</b>: 800 Mana - <b>Duration</b>: 10 seconds</p>
 		<p><b>Effect</b>: Increase the production of Farms, Inns and Blacksmiths based on the number of those buildings built.</p>
@@ -378,10 +373,9 @@
 		</div>
 		</div>
 		</div>
-		<br>
 	</article>
 	<article class="spell-entry" id="MoonBlessing">
-		<p class="spell-entry-heading"><img src="/realm/assets/game/sprites/moon-blessing-icon.png" alt="Moon Blessing"> <b>Moon Blessing</b> <span class="spell-affiliation">(Elven)</span></p>
+		<h4 class="spell-entry-heading"><img src="/realm/assets/game/sprites/moon-blessing-icon.png" alt="Moon Blessing"> <b>Moon Blessing</b> <span class="spell-affiliation">(Elven)</span></h4>
 		<p><b>Spell Type</b>: (Good/Balance) Elven Faction Spell</p>
 		<p><b>Cost</b>: 700 Mana - <b>Duration</b>: 20 seconds</p>
 		<p><b>Effect</b>: Increases the production of all buildings based on on the amount of clicks made in this Reincarnation.</p>
@@ -413,10 +407,9 @@
 		</div>
 		</div>
 		</div>
-		<br>
 	</article>
 	<article class="spell-entry" id="DiamondPickaxe">
-		<p class="spell-entry-heading"><img src="/realm/assets/game/sprites/diamond-pickaxe-icon.png" alt="Diamond Pickaxe"> <b>Diamond Pickaxe</b> <span class="spell-affiliation">(Dwarven)</span></p>
+		<h4 class="spell-entry-heading"><img src="/realm/assets/game/sprites/diamond-pickaxe-icon.png" alt="Diamond Pickaxe"> <b>Diamond Pickaxe</b> <span class="spell-affiliation">(Dwarven)</span></h4>
 		<p><b>Spell Type</b>: (Good) Dwarven Faction Spell</p>
 		<p><b>Cost</b>: 1,000 Mana - <b>Duration</b>: 12 seconds</p>
 		<p><b>Effect</b>: Increase clicking reward based on amount of Excavation you made and increase your Faction Coin find chance by +200%.</p>
@@ -448,10 +441,9 @@
 		</div>
 		</div>
 		</div>
-		<br>
 	</article>
 	<article class="spell-entry" id="NightTime">
-		<p class="spell-entry-heading"><img src="/realm/assets/game/sprites/night-time-icon.png" alt="Night Time"> <b>Night Time</b> <span class="spell-affiliation">(Undead)</span></p>
+		<h4 class="spell-entry-heading"><img src="/realm/assets/game/sprites/night-time-icon.png" alt="Night Time"> <b>Night Time</b> <span class="spell-affiliation">(Undead)</span></h4>
 		<p><b>Spell Type</b>: (Evil/Order) Undead Faction Spell</p>
 		<p><b>Cost</b>: 800 Mana - <b>Duration</b>: 20 seconds </p>
 		<p><b>Effect</b>: Increase assistant production by (50 + 50 * x)%, where x is the number of Necropolises you own.</p>
@@ -482,10 +474,9 @@
 		</div>
 		</div>
 		</div>
-		<br>
 	</article>
 	<article class="spell-entry" id="HellfireBlast">
-		<p class="spell-entry-heading"><img src="/realm/assets/game/sprites/hellfire-blast-icon.png" alt="Hellfire Blast"> <b>Hellfire Blast</b> <span class="spell-affiliation">(Demon)</span></p>
+		<h4 class="spell-entry-heading"><img src="/realm/assets/game/sprites/hellfire-blast-icon.png" alt="Hellfire Blast"> <b>Hellfire Blast</b> <span class="spell-affiliation">(Demon)</span></h4>
 		<p><b>Spell Type</b>: (Evil/Chaos) Demon Faction Spell</p>
 		<p><b>Cost</b>: 900 Mana - <b>Duration</b>: 20 seconds</p>
 		<p><b>Effect</b>: Increase the production of Evil Fortresses and Hell Portals based on your amount of trophies.</p>
@@ -518,10 +509,9 @@
 		</div>
 		</div>
 		</div>
-		<br>
 	</article>
 	<article class="spell-entry" id="GoblinsGreed">
-		<p class="spell-entry-heading"><img src="/realm/assets/game/sprites/goblins-greed-icon.png" alt="Goblin's Greed"> <b>Goblin's Greed</b> <span class="spell-affiliation">(Goblin)</span></p>
+		<h4 class="spell-entry-heading"><img src="/realm/assets/game/sprites/goblins-greed-icon.png" alt="Goblin's Greed"> <b>Goblin's Greed</b> <span class="spell-affiliation">(Goblin)</span></h4>
 		<p><b>Spell Type</b>: (Evil/Balance) Goblin Faction Spell</p>
 		<p><b>Cost</b>: 400 Mana - <b>Duration</b>: 8 seconds</p>
 		<p><b>Effect</b>: Instantly produces Faction Coins based on gems you own. Also increases production of all buildings based on the number of Faction Coins found in this Era.</p>
@@ -553,10 +543,9 @@
 		</div>
 		</div>
 		</div>
-		<br>
 	</article>
 	<article class="spell-entry" id="ComboStrike">
-		<p class="spell-entry-heading"><img src="/realm/assets/game/sprites/combo-strike-icon.png" alt="Combo Strike"> <b>Combo Strike</b> <span class="spell-affiliation">(Drow)</span></p>
+		<h4 class="spell-entry-heading"><img src="/realm/assets/game/sprites/combo-strike-icon.png" alt="Combo Strike"> <b>Combo Strike</b> <span class="spell-affiliation">(Drow)</span></h4>
 		<p><b>Spell Type</b>: (Evil) Drow Faction Spell</p>
 		<p><b>Cost</b>: 800 Mana - <b>Duration</b>: Fixed to 16 seconds</p>
 		<p><b>Effect</b>: Increase the production of all buildings by a progressively higher value as you continue casting this spell (This Era).</p>
@@ -592,10 +581,9 @@
 		</div>
 		</div>
 		</div>
-		<br>
 	</article>
 	<article class="spell-entry" id="LightningStrike">
-		<p class="spell-entry-heading"><img src="/realm/assets/game/sprites/lightning-strike-icon.png" alt="Lightning Strike"> <b>Lightning Strike</b> <span class="spell-affiliation">(Titan)</span></p>
+		<h4 class="spell-entry-heading"><img src="/realm/assets/game/sprites/lightning-strike-icon.png" alt="Lightning Strike"> <b>Lightning Strike</b> <span class="spell-affiliation">(Titan)</span></h4>
 		<p><b>Spell Type</b>: (Neutral/Order) Titan Faction Spell</p>
 		<p><b>Cost</b>: 250 Mana - <b>Duration</b>: 5 seconds </p>
 		<p><b>Effect</b>: Increase the production of a random building by 900% for each Iron Stronghold. Also multiplicatively increase Faction Coin find chance based on Gems owned.</p>
@@ -629,10 +617,9 @@
 		</div>
 		</div>
 		</div>
-		<br>
 	</article>
 	<article class="spell-entry" id="Brainwave">
-		<p class="spell-entry-heading"><img src="/realm/assets/game/sprites/brainwave-icon.png" alt="Brainwave"> <b>Brainwave</b> <span class="spell-affiliation">(Faceless)</span></p>
+		<h4 class="spell-entry-heading"><img src="/realm/assets/game/sprites/brainwave-icon.png" alt="Brainwave"> <b>Brainwave</b> <span class="spell-affiliation">(Faceless)</span></h4>
 		<p><b>Spell Type</b>: (Neutral/Chaos) Faceless Faction Spell</p>
 		<p><b>Cost</b>: 600 Mana - <b>Duration</b>: 600 seconds </p>
 		<p><b>Effect</b>: Increase production of all buildings by a cumulative 20% per second.</p>
@@ -664,10 +651,9 @@
 		</div>
 		</div>
 		</div>
-		<br>
 	</article>
 	<article class="spell-entry" id="GrandBalance">
-		<p class="spell-entry-heading"><img src="/realm/assets/game/sprites/grand-balance-icon.png" alt="Grand Balance"> <b>Grand Balance</b> <span class="spell-affiliation">(Druid)</span></p>
+		<h4 class="spell-entry-heading"><img src="/realm/assets/game/sprites/grand-balance-icon.png" alt="Grand Balance"> <b>Grand Balance</b> <span class="spell-affiliation">(Druid)</span></h4>
 		<p><b>Spell Tier Effect</b>: Multiplicatively increase Maximum Mana by 5% per spell tier.</p>
 		<p><b>Spell Type</b>: (Neutral/Balance) Druid Faction Spell</p>
 		<p><b>Cost</b>: 1,000 Mana - <b>Duration</b>: 20 seconds</p>
@@ -686,10 +672,8 @@
 			<p><b>Effect</b>: Once Primal Balance grants more than 10 additional targets (enough to affect all 11 buildings), each excess target increases the production of all affected buildings. Does not suffer from Ascension penalties.</p>
 			<p><b>Formula</b>: (3 * (x - 10) ^ 1.5)%, where x is the amount of additional targets.</p>
 		</section>
+		<h4 id="primal-balance-targets" class="spell-subheading">Primal Balance targets</h4>
 		<realm-primal-balance-table></realm-primal-balance-table>
-		<p><b>Effect</b>: Once Primal Balance grants more than 10 additional targets (enough to affect all 11 buildings), each excess target increases the production of all affected buildings. Does not suffer from Ascension penalties.</p>
-		<p><b>Formula</b>: (3 * (x - 10) ^ 1.5)%, where x is the amount of additional targets.</p>
-		<a id="Primal Balance"></a>
 		<div class="shlisting">
 		<div class="shelementwhole">
 		<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">Grand Balance Tier Upgrades</a></b> (R48+, limited by Ascension)</p>
@@ -708,10 +692,11 @@
 		</div>
 	</article>
 	<article class="spell-entry" id="DragonsBreath">
-		<p class="spell-entry-heading"><img src="/realm/assets/game/sprites/dragons-breath-icon.png" alt="Dragon's Breath"> <b>Dragon's Breath</b> <span class="spell-affiliation">(Dragon, R46+)</span></p>
+		<h4 class="spell-entry-heading"><img src="/realm/assets/game/sprites/dragons-breath-icon.png" alt="Dragon's Breath"> <b>Dragon's Breath</b> <span class="spell-affiliation">(Dragon, R46+)</span></h4>
 		<p><b>Spell Type</b>: (Neutral) Dragon Faction Spell (R46+)</p>
 		<p><b>Cost</b>: 1,500 Mana - <b>Duration</b>: 20 seconds</p>
 		<p><b>Effect</b>: Activates one of the following effects at random for 20 seconds.</p>
+		<h4 id="dragons-breath-effects" class="spell-subheading">Breath effects</h4>
 		<p><b><font color='red'>Red</font></b>: Increase the production of unique buildings based on the amount of Faction Coins found in this Era.</p>
 		<p><b><font color='red'>Formula</font></b>: (1.75 * ln(1 + x) ^ 1.75)%, where x is the amount of Faction Coins found in this Era.</p>
 		<p><b><font color='green'>Green</font></b>: Increase the production of all buildings based on the amount of spells cast in this Era. Higher bonuses are provided to lower building tiers.</p>
@@ -734,6 +719,7 @@
 			<p class="spell-related-heading"><b>Challenge Upgrade</b>: <img src="/realm/assets/game/sprites/challenge-dragon.png" alt="Prismatic Breath"> <b>Prismatic Breath</b></p>
 			<p><b>Effect</b>: Reincarnations count 5% more per active Dragon's Breath.</p>
 		</section>
+		<h4 id="green-dragons-breath-bonus" class="spell-subheading">Green Dragon's Breath by building</h4>
 		<realm-tier-table data-kind="dragons-breath-green" data-heading="Green Dragon's Breath bonus by building"></realm-tier-table>
 		<div class="shlisting">
 		<div class="shelementwhole">
@@ -761,7 +747,7 @@
 <section class="spell-section">
 	<h3 id="mercenary-tax-collection-variants">Mercenary Tax Collection variants</h3>
 	<article class="spell-entry" id="ShareBenefits">
-		<p class="spell-entry-heading"><img src="/realm/assets/game/sprites/tax-collection-icon.png" alt="Share Benefits"> <b>Share Benefits</b> <span class="spell-affiliation">(Good Mercenary)</span></p>
+		<h4 class="spell-entry-heading"><img src="/realm/assets/game/sprites/tax-collection-icon.png" alt="Share Benefits"> <b>Share Benefits</b> <span class="spell-affiliation">(Good Mercenary)</span></h4>
 		<p><b>Spell Type</b>: (Good) Mercenary Faction Spell (R75+)</p>
 		<p><b>Cost</b>: 200 Mana - <b>Duration</b>: Fixed to 20 seconds</p>
 		<p><b>Effect</b>: Alters Tax Collection with new name and effect (still counts as Tax Collection for all purposes).</p>
@@ -773,7 +759,7 @@
 		<p><b>Note</b>: Can be cast up to 36 tiers (99 in A3+).</p>
 	</article>
 	<article class="spell-entry" id="ReapInterests">
-		<p class="spell-entry-heading"><img src="/realm/assets/game/sprites/tax-collection-icon.png" alt="Reap Interests"> <b>Reap Interests</b> <span class="spell-affiliation">(Evil Mercenary)</span></p>
+		<h4 class="spell-entry-heading"><img src="/realm/assets/game/sprites/tax-collection-icon.png" alt="Reap Interests"> <b>Reap Interests</b> <span class="spell-affiliation">(Evil Mercenary)</span></h4>
 		<p><b>Spell Type</b>: (Evil) Mercenary Faction Spell (R75+)</p>
 		<p><b>Cost</b>: 200 Mana - <b>Duration</b>: None</p>
 		<p><b>Effect</b>: Alters Tax Collection with new name and effect (still counts as Tax Collection for all purposes).</p>
@@ -782,7 +768,7 @@
 		<p><b>Note</b>: Upgrades that cast free Tax Collection are treated as Reap Interests casts.</p>
 	</article>
 	<article class="spell-entry" id="AppraisalVantage">
-		<p class="spell-entry-heading"><img src="/realm/assets/game/sprites/tax-collection-icon.png" alt="Appraisal Vantage"> <b>Appraisal Vantage</b> <span class="spell-affiliation">(Neutral Mercenary)</span></p>
+		<h4 class="spell-entry-heading"><img src="/realm/assets/game/sprites/tax-collection-icon.png" alt="Appraisal Vantage"> <b>Appraisal Vantage</b> <span class="spell-affiliation">(Neutral Mercenary)</span></h4>
 		<p><b>Spell Type</b>: (Neutral) Mercenary Faction Spell (R75+)</p>
 		<p><b>Cost</b>: 200 Mana - <b>Duration</b>: None</p>
 		<p><b>Effect</b>: Alters Tax Collection with new name and effect (still counts as Tax Collection for all purposes).</p>
@@ -795,7 +781,7 @@
 <section class="spell-section">
 	<h3 id="secondary-alignment-spells">Order, chaos, and balance spells</h3>
 	<article class="spell-entry" id="TemporalFlux">
-		<p class="spell-entry-heading"><img src="/realm/assets/game/sprites/temporal-flux-icon.png" alt="Temporal Flux"> <b>Temporal Flux</b> <span class="spell-affiliation">(Proof of Order)</span></p>
+		<h4 class="spell-entry-heading"><img src="/realm/assets/game/sprites/temporal-flux-icon.png" alt="Temporal Flux"> <b>Temporal Flux</b> <span class="spell-affiliation">(Proof of Order)</span></h4>
 		<p><b>Spell Type</b>: Order Alignment Spell (R100+)</p>
 		<p><b>Cost</b>: 950 Mana - <b>Duration</b>: 20 seconds</p>
 		<p><b>Effect</b>: Increase Unique building production based on time spent this Era.</p>
@@ -810,10 +796,9 @@
 		<p><b>Requirement</b>: Lantern of Guidance (Artifact)</p>
 		<p><b>Coin Cost</b>: 120 Notg (1.2e122) Emerald coins</p>
 		<p><b>FC Cost</b>: 1 Sp (1e24) Angel, Undead, Dwarven and Drow Coins.</p>
-		<br/>
 	</article>
 	<article class="spell-entry" id="Maelstrom">
-		<p class="spell-entry-heading"><img src="/realm/assets/game/sprites/maelstrom-icon.png" alt="Maelstrom"> <b>Maelstrom</b> <span class="spell-affiliation">(Proof of Chaos)</span></p>
+		<h4 class="spell-entry-heading"><img src="/realm/assets/game/sprites/maelstrom-icon.png" alt="Maelstrom"> <b>Maelstrom</b> <span class="spell-affiliation">(Proof of Chaos)</span></h4>
 		<p><b>Spell Tier Effect</b>: Affect one additional random building per spell tier.</p>
 		<p><b>Spell Type</b>: Chaos Alignment Spell (R100+)</p>
 		<p><b>Cost</b>: 700 Mana - <b>Duration</b>: 20 seconds</p>
@@ -826,10 +811,9 @@
 		<p><b>Requirement</b>: Oil Lamp (Artifact)</p>
 		<p><b>Coin Cost</b>: 120 Notg (1.2e122) Emerald coins</p>
 		<p><b>FC Cost</b>: 1 Sp (1e24) Fairy, Demon, Dwarven and Drow Coins.</p>
-		<br/>
 	</article>
 	<article class="spell-entry" id="AllCreation">
-		<p class="spell-entry-heading"><img src="/realm/assets/game/sprites/all-creation-icon.png" alt="All Creation"> <b>All Creation</b> <span class="spell-affiliation">(Proof Of Balance)</span></p>
+		<h4 class="spell-entry-heading"><img src="/realm/assets/game/sprites/all-creation-icon.png" alt="All Creation"> <b>All Creation</b> <span class="spell-affiliation">(Proof Of Balance)</span></h4>
 		<p><b>Spell Tier Effect</b>: Multiplicatively increase production bonus from Gems by 10% per spell tier.</p>
 		<p><b>Spell Type</b>: Balance Alignment Spell (R100+)</p>
 		<p><b>Cost</b>: 1,100 Mana - <b>Duration</b>: 20 seconds</p>
@@ -847,7 +831,7 @@
 <section class="spell-section">
 	<h3 id="astral-faction-spells">Astral faction spells</h3>
 	<article class="spell-entry" id="Precognition">
-		<p class="spell-entry-heading"><img src="/realm/assets/game/sprites/precognition-icon.png" alt="Precognition"> <b>Precognition</b> <span class="spell-affiliation">(Archon)</span></p>
+		<h4 class="spell-entry-heading"><img src="/realm/assets/game/sprites/precognition-icon.png" alt="Precognition"> <b>Precognition</b> <span class="spell-affiliation">(Archon)</span></h4>
 		<p><b>Spell Tier Effect</b>: Research Points count 10% more per spell tier.</p>
 		<p><b>Spell Type</b>: (Order) Archon Faction Spell (R125+)</p>
 		<p><b>Cost</b>: 123,456 Mana - <b>Duration</b>: 20 seconds</p>
@@ -868,14 +852,14 @@
 		</section>
 	</article>
 	<article class="spell-entry" id="LimitedWish">
-		<p class="spell-entry-heading"><img src="/realm/assets/game/sprites/limited-wish-icon.png" alt="Limited Wish"> <b>Limited Wish</b> <span class="spell-affiliation">(Djinn)</span></p>
+		<h4 class="spell-entry-heading"><img src="/realm/assets/game/sprites/limited-wish-icon.png" alt="Limited Wish"> <b>Limited Wish</b> <span class="spell-affiliation">(Djinn)</span></h4>
 		<p><b>Spell Type</b>: (Chaos) Djinn Faction Spell (R125+)</p>
 		<p><b>Cost</b>: 800,000 Mana - <b>Duration</b>: Fixed to 6 seconds</p>
 		<p><b>Effect</b>: Provide a random effect based on your chosen base alignment, for 6 seconds. The duration of the spell cannot be modified. Its power increases as you continue casting this spell.</p>
 		<p><b>Formula (Production effect)</b>: (50 + 5 * ln(1 + x) ^ 1.75 * y)%, where x is Limited Wish activity time in this Era and y is a random number between 1 and Limited Wish casts this Era rolled on cast.</p>
 		<p><b>Formula (Non-Production effects)</b>: (25 + 2.5 * ln(1 + x) ^ 1.75 * y ^ 0.5 * (T + 1))%, where T is the spell tier.</p>
 		<p><b>Note</b>: Limited Wish casts count more based on spell tier: (10 * T ^ 2)%. Its cost decreases by 1% per minute up to 1 hour, then resets.</p>
-		<p><b>Possible Effects</b></p>
+		<h4 id="limited-wish-effects" class="spell-subheading">Possible effects</h4>
 		<p><b>1</b>: Increase the production of all buildings.</p>
 		<p><b>Good Alignment</b></p>
 		<p><b>2</b>: Temporarily increase Assistants (multiplicatively).</p>
@@ -901,7 +885,7 @@
 		</section>
 	</article>
 	<article class="spell-entry" id="InfiniteSpiral">
-		<p class="spell-entry-heading"><img src="/realm/assets/game/sprites/infinite-spiral-icon.png" alt="Infinite Spiral"> <b>Infinite Spiral</b> <span class="spell-affiliation">(Makers)</span></p>
+		<h4 class="spell-entry-heading"><img src="/realm/assets/game/sprites/infinite-spiral-icon.png" alt="Infinite Spiral"> <b>Infinite Spiral</b> <span class="spell-affiliation">(Makers)</span></h4>
 		<p><b>Spell Tier Effect</b>: Multiplicatively increase Offline bonus by 10% per spell tier.</p>
 		<p><b>Spell Type</b>: (Balance) Makers Faction Spell (R125+)</p>
 		<p><b>Cost</b>: 505,000 mana - <b>Duration</b>: 10 seconds</p>
@@ -928,7 +912,7 @@
 <section class="spell-section">
 	<h3 id="special-spells">Special spells</h3>
 	<article class="spell-entry" id="Catalyst">
-		<p class="spell-entry-heading"><img src="/realm/assets/game/sprites/catalyst-icon.png" alt="Catalyst"> <b>Catalyst</b></p>
+		<h4 class="spell-entry-heading"><img src="/realm/assets/game/sprites/catalyst-icon.png" alt="Catalyst"> <b>Catalyst</b></h4>
 		<p><b>Spell Type</b>: (Chaos) Djinn Faction Spell (R130+)</p>
 		<p><b>Cost</b>: 500,000 Mana - <b>Duration</b>: Fixed to 60 seconds</p>
 		<p><b>Requirement</b>: R130+, Djinn Bloodline</p>
@@ -938,7 +922,7 @@
 		<p><b>Note</b>: Does not give access to Holy Frenzy for Neutral alignment.</p>
 	</article>
 	<article class="spell-entry" id="ChaosMadness">
-		<p class="spell-entry-heading"><img src="/realm/assets/game/sprites/chaos-madness-icon.png" alt="Chaos Madness"> <b>Chaos Madness</b> <span class="spell-affiliation">(Chaos Mercenary)</span></p>
+		<h4 class="spell-entry-heading"><img src="/realm/assets/game/sprites/chaos-madness-icon.png" alt="Chaos Madness"> <b>Chaos Madness</b> <span class="spell-affiliation">(Chaos Mercenary)</span></h4>
 		<p><b>Spell Type</b>: (Chaos) Mercenary Faction Spell (R194+)</p>
 		<p><b>Cost</b>: 500,000 Mana - <b>Duration</b>: Fixed to 20 seconds</p>
 		<p><b>Requirement</b>: Mercenary Challenge 2 active</p>
@@ -946,7 +930,7 @@
 		<p><b>Note</b>: Does not select a lineage that is already available.</p>
 	</article>
 	<article class="spell-entry" id="TwistingNether">
-		<p class="spell-entry-heading"><img src="/realm/assets/game/sprites/twisting-nether-icon.png" alt="Twisting Nether"> <b>Twisting Nether</b></p>
+		<h4 class="spell-entry-heading"><img src="/realm/assets/game/sprites/twisting-nether-icon.png" alt="Twisting Nether"> <b>Twisting Nether</b></h4>
 		<p><b>Spell Type</b>: Faction Spell (R220+)</p>
 		<p><b>Cost</b>: 100,000 Mana - <b>Duration</b>: 20 seconds</p>
 		<p><b>Requirement</b>: Twisting Nether (Fairy/Undead) Legacy Combo</p>
