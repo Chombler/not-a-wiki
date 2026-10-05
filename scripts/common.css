@@ -4356,20 +4356,6 @@ hr {
     object-fit: contain;
 }
 
-.spell-tier-heading {
-    display: flex;
-    align-items: center;
-    gap: .4rem;
-    margin-top: .85rem !important;
-}
-
-.spell-tier-heading img {
-    width: 50px;
-    height: 50px;
-    flex: 0 0 50px;
-    object-fit: contain;
-}
-
 .spell-related > p:not(.spell-related-heading) {
     margin: .25rem 0;
 }
