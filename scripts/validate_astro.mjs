@@ -101,7 +101,7 @@ const contracts = {
   'ResearchList/index.html': ['id="spellcraft"', 'id="forbidden"', 'class="research-entry"'],
   'Researchtree/index.html': ['id="research-point-calculator"', 'id="research-tree"', 'usemap="#ResearchTreeA4-map"', 'data-research='],
   'Spells/index.html': ['id="default-spells"', 'id="special-spells"', '(11 - T) ^ 5', 'Hall of Legends</td><td>0 × ln(1 + x)^6%', 'class="numtable primal-balance-table"', '<td>11 (all)</td>'],
-  'SpellTiers/index.html': ['id="spell-tier-mechanics"', 'id="tier-upgrades-and-autocasting"', 'id="spell-tier-unlocks"'],
+  'SpellTiers/index.html': ['id="spell-tier-mechanics"', 'id="unlocking-and-buying-tiers"', 'id="autocasting-and-shared-bonuses"', 'id="spell-specific-tier-effects"', 'id="spell-tier-unlocks"'],
   'Factions/index.html': ['id="base-factions"', 'id="astral-factions"', 'id="faction-spells-and-upgrades"', 'usemap="#FactionGrid-map"', 'Click a faction icon to open its complete reference page', 'href="/not-a-wiki/FairyFaction/"'],
   'TrophyPage/index.html': ['id="mathematician-building-bonuses"', 'Mathematician bonus by building', 'Hall of Legends</td><td>10%'],
   'AllTrophies/index.html': ['id="allegiance-trophies"', 'id="building-trophies"', '903 Total Trophies'],

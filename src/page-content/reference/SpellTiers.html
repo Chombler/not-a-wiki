@@ -1,21 +1,24 @@
-<h6><img src="/realm/Factions/picks/SpellsTopPage.png"></h6>
-	<h2 id="spell-tier-mechanics">Spell tier mechanics</h2>
+	<p class="spell-page-banner"><img src="/realm/Factions/picks/SpellsTopPage.png" alt=""></p>
+	<p>Spell Tiers let a spell cast at several tiers at once. This page covers how tiers scale, how their upgrades are bought, and the requirements for permanently unlocking each upgrade. See <a href="/realm/Spells/">Spells</a> for the underlying spell effects.</p>
+	<h2 id="spell-tier-mechanics">How spell tiers work</h2>
 	<p><b>From R42+, Spell Tiers become available.</b> A spell's purchased tier is the number of simultaneous casts and normally multiplies its production effect once per cast.</p>
-	<p>The generalized formula for the final spell bonus is (B ^ T), where B is the base spell production (<b>not</b> as a percentage bonus but as a multiplier) and T is the tier of the spell. The exceptions to this are Gem Grinder, which increases its production by a linear amount, and Dragon's Breath, which simply adds one new type of Dragon Breath to the current breaths in effect. Other peripheral effects, such as the tripling of assistants granted from Fairy Chanting, are also not impacted by spell tiers.</p>
+	<p>Before Ascension penalties, a production multiplier <span class="formula-expression">B</span> cast at tier <span class="formula-expression">T</span> normally becomes <span class="formula-expression">B ^ T</span>. Gem Grinder scales linearly instead, while Dragon's Breath adds another breath color. Peripheral effects such as Fairy Chanting's assistant multiplier are not repeated by each simultaneous cast.</p>
 	<p>Ordinary spells unlock at most one additional tier per Ascension: Tier 1 in Ascension 0, Tier 2 in Ascension 1, Tier 3 in Ascension 2, and so on. Tax Collection with Round Table, Dragon's Breath, Catalyst, Twisting Nether, and seasonal spells use their own rules.</p>
-	<p>Each tier has its own Ascension penalty. For an ordinary spell with at least one tier upgrade, a base multiplier B at Ascension A and purchased tier T uses an exponent of (0.5 / A) * 0.5 ^ (A - T) when T is no greater than A. Casting a tier above A applies one additional square-root penalty. A spell with no tier upgrade uses exponent 0.1 / A.</p>
+	<p>Each simultaneous cast is calculated separately and receives its own Ascension penalty. Let <span class="formula-expression">A</span> be the current Ascension and <span class="formula-expression">t</span> the zero-based tier-upgrade count (displayed tier minus one). A spell with no tier upgrade uses exponent <span class="formula-expression">0.1 / A</span>. A purchased tier uses exponent <span class="formula-expression">(0.5 / A) × 0.5 ^ ((t &gt; A ? 0.5 : 1) × (A - t))</span>. The resulting tier effects multiply together.</p>
 	<p>Dragon's Breath starts with five colors and gains colors across Ascensions. Its production effects do not suffer Ascension penalties.</p>
-	<br/>
-	<hr>
-	<h2 id="tier-upgrades-and-autocasting">Spell tier upgrades and autocasting</h2>
+	<h2 id="unlocking-and-buying-tiers">Unlocking and buying tiers</h2>
+	<p>Each Spell Tier upgrade must be unlocked once, after which the unlock is permanent. The upgrade itself must be purchased again after every Abdication. Every purchase has a Faction Coin cost.</p>
+	<p>The ordinary coin cost advances with the Ascension that introduces the tier: Tier 2 costs Diamond Coins in A1, Tier 3 costs Emerald Coins in A2, Tier 4 costs Amethyst Coins in A3, and Tier 5 costs Sapphire Coins in A4. A tier's ordinary coin cost becomes free in later Ascensions. Spells introduced in A2 therefore receive Tier 2 free, then follow the same currency sequence from Tier 3 onward.</p>
+	<h2 id="autocasting-and-shared-bonuses">Autocasting and shared tier bonuses</h2>
 	<p><img src="/realm/assets/game/sprites/tiered-autocast-upgrade.png" align="middle"><b> Tiered Autocasting</b> is not required to unlock or purchase Spell Tier upgrades. Its upgrade becomes available in Ascension 1 at R42 after purchasing <b>Hatch!</b> and <b>Efficient Autocasting</b>. Efficient Autocasting requires 50 M Mana Produced this Reincarnation. Purchasing the Tiered Autocasting upgrade grants its trophy.</p>
 	<p>Tiered Autocasting will automatically set the autocasted spell tier at the highest you have bought, but you can change it to a lower tier if you wish.</p>
 	<p>Reverse Autocasting and Tiered Autocasting are separate, independent upgrades; Tiered Autocasting does not require Reverse Autocasting.</p>
-	<p>The Spell Tier upgrades need to be unlocked once (see chapter below), but they need to be purchased in every abdication and cost Diamond Coins (free in A2+) and Faction Coins.</p>
-	<p><b>Additional Effects</b>: Each tier upgrade has a spell-specific effect and, except for Dragon's Breath, also increases offline production based on Mana statistics. It also multiplicatively increases Faction Coins found while offline by 200% per tier, stacking additively with other sources.</p>
+	<p><b>Additional Effects</b>: Each tier upgrade has a spell-specific effect and, except for Dragon's Breath, also increases offline production based on Mana statistics. Each purchased upgrade adds 200% to that spell's offline Faction Coin multiplier; upgrades belonging to the same spell add together, while the multipliers from different spells multiply.</p>
 	<p><b>Raw offline-production formula per tier upgrade</b>: (m ^ (2 / max(3, A)) + r ^ (2 / max(3, A))) ^ 0.4%, where m is Maximum Mana, r is Mana Regeneration per second, and A is the current Ascension. Each upgrade's result is then subjected to the Ascension penalty assigned to that tier; the in-game tooltip shows the combined purchased bonus.</p>
 	<p><b>Note</b>: Offline bonuses from tier upgrades are assigned to the Ascension in which that tier becomes available. Dragon's Breath tier upgrades do not provide these offline bonuses.</p>
-	<p><b>Values below are the spell-specific effect at each tier.</b> Tier 1 has no tier-upgrade bonus unless the row gives a base value. These values do not include the separate Mana-based offline bonus shared by tier upgrades.</p>
+	<h2 id="spell-specific-tier-effects">Spell-specific tier effects</h2>
+	<p>Tier 1 has no tier-upgrade bonus unless the row gives a base value. These values do not include the separate Mana-based offline bonus shared by tier upgrades.</p>
+	<div class="spell-tier-table-wrap" tabindex="0" role="region" aria-label="Spell-specific effects by tier">
 	<table class="numtable spell-tier-bonus-table">
 		<thead><tr><th>Spell</th><th>Spell-specific effect</th><th>T1</th><th>T2</th><th>T3</th><th>T4</th><th>T5</th></tr></thead>
 		<tbody>
@@ -43,9 +46,8 @@
 		<tr><th>Limited Wish</th><td>Casts count more</td><td>—</td><td>10%</td><td>40%</td><td>90%</td><td>160%</td></tr>
 		</tbody>
 	</table>
-	<br/>
-	<hr>
-	<h2 id="spell-tier-unlocks">Spell tier unlocks</h2>
+	</div>
+	<h2 id="spell-tier-unlocks">Unlock requirements</h2>
 	<div class="spell-tier-key">
 		<p><b>How to read this table</b>: Tier 1 is available by default when its spell becomes available. For later tiers, the Ascension or progression label inside the cell permits that upgrade; completing the remaining requirements reveals and permanently unlocks it. Hidden upgrades show no partial progress.</p>
 		<p><b>Activity + statistic</b>: The column heading gives the required activity time for that spell in the current Reincarnation; each cell gives its additional statistic and any availability gate. Once unlocked, the upgrade must still be purchased again each Abdication.</p>

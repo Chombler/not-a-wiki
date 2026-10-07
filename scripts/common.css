@@ -2113,14 +2113,17 @@ table {
     background: var(--panel-bg);
 }
 
-.tier-matrix-wrap {
+.tier-matrix-wrap,
+.spell-tier-table-wrap {
     max-width: 100%;
+    overflow-x: auto;
     border: 1px solid var(--line);
 }
 
 .site-main .spell-tier-matrix {
     display: table;
     width: 100%;
+    min-width: 900px;
     table-layout: fixed;
     overflow: visible;
     border: 0;
@@ -2132,7 +2135,7 @@ table {
     min-width: 0;
     padding: .35rem .4rem;
     vertical-align: top;
-    font-size: .78rem;
+    font-size: .875rem;
     line-height: 1.28;
     overflow-wrap: anywhere;
 }
@@ -2205,9 +2208,9 @@ table {
 .spell-tier-matrix .a2-spell td:nth-child(4)::before { content: "A2"; }
 .spell-tier-matrix .a2-spell td:nth-child(5)::before { content: "A3"; }
 .spell-tier-matrix .a2-spell td:nth-child(6)::before { content: "A4"; }
-.spell-tier-matrix .astral-spell .tier-default::before { content: "A3 spell"; }
-.spell-tier-matrix .astral-spell td:nth-child(3)::before { content: "A3"; }
-.spell-tier-matrix .astral-spell td:nth-child(4)::before { content: "A3"; }
+.spell-tier-matrix .astral-spell .tier-default::before { content: "A2 spell"; }
+.spell-tier-matrix .astral-spell td:nth-child(3)::before { content: "A2"; }
+.spell-tier-matrix .astral-spell td:nth-child(4)::before { content: "A2"; }
 .spell-tier-matrix .astral-spell td:nth-child(5)::before { content: "A3"; }
 .spell-tier-matrix .astral-spell td:nth-child(6)::before { content: "A4"; }
 
@@ -2229,6 +2232,7 @@ table {
 .site-main .spell-tier-bonus-table {
     display: table;
     width: 100%;
+    min-width: 760px;
     table-layout: fixed;
     overflow: visible;
 }
@@ -2236,7 +2240,7 @@ table {
 .spell-tier-bonus-table th,
 .spell-tier-bonus-table td {
     padding: .35rem .4rem;
-    font-size: .78rem;
+    font-size: .875rem;
     line-height: 1.25;
     overflow-wrap: anywhere;
 }
