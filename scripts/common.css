@@ -2246,6 +2246,60 @@ table {
     font-weight: 700;
 }
 
+.spell-tier-exception {
+    margin-top: 1rem;
+    padding: .85rem;
+    border: 1px solid var(--line);
+    background: var(--panel-bg);
+}
+
+.spell-tier-exception-heading {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    margin-bottom: .75rem;
+}
+
+.site-main .spell-tier-exception-heading h3,
+.site-main .spell-tier-exception-heading p {
+    margin: 0;
+}
+
+.site-main .spell-tier-exception-heading h3 {
+    font-size: 1.05rem;
+}
+
+.dragon-breath-tier-list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1px;
+    margin: 0;
+    border: 1px solid var(--line);
+    background: var(--line);
+}
+
+.dragon-breath-tier-list > div {
+    background: var(--panel-raised);
+    text-align: center;
+}
+
+.dragon-breath-tier-list dt,
+.dragon-breath-tier-list dd {
+    margin: 0;
+    padding: .35rem .5rem;
+}
+
+.dragon-breath-tier-list dt {
+    border-bottom: 1px solid var(--line);
+    font-weight: 700;
+}
+
+@media (max-width: 560px) {
+    .dragon-breath-tier-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
 .site-main .spell-tier-bonus-table {
     display: table;
     width: 100%;
