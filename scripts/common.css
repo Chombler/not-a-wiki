@@ -2303,7 +2303,7 @@ table {
 .site-main .spell-tier-bonus-table {
     display: table;
     width: 100%;
-    min-width: 760px;
+    min-width: 960px;
     table-layout: fixed;
     overflow: visible;
 }
@@ -2317,11 +2317,11 @@ table {
 }
 
 .spell-tier-bonus-table tr > :first-child {
-    width: 16%;
+    width: 24%;
 }
 
 .spell-tier-bonus-table tr > :nth-child(2) {
-    width: 30%;
+    width: 25%;
 }
 
 .spell-tier-bonus-table tr > :nth-child(n + 3) {
