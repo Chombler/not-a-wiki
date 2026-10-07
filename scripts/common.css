@@ -2206,20 +2206,18 @@ table {
     text-transform: uppercase;
 }
 
-.spell-tier-matrix tbody tr:not(.tier-group):not(.a2-spell):not(.astral-spell) td:nth-child(3)::before { content: "A1"; }
-.spell-tier-matrix tbody tr:not(.tier-group):not(.a2-spell):not(.astral-spell) td:nth-child(4)::before { content: "A2"; }
-.spell-tier-matrix tbody tr:not(.tier-group):not(.a2-spell):not(.astral-spell) td:nth-child(5)::before { content: "A3"; }
-.spell-tier-matrix tbody tr:not(.tier-group):not(.a2-spell):not(.astral-spell) td:nth-child(6)::before { content: "A4"; }
-.spell-tier-matrix .a2-spell .tier-default::before { content: "A2 spell"; }
+.spell-tier-matrix tbody tr:not(.tier-group):not(.a2-spell):not(.astral-spell) td:nth-child(2)::before { content: "A1"; }
+.spell-tier-matrix tbody tr:not(.tier-group):not(.a2-spell):not(.astral-spell) td:nth-child(3)::before { content: "A2"; }
+.spell-tier-matrix tbody tr:not(.tier-group):not(.a2-spell):not(.astral-spell) td:nth-child(4)::before { content: "A3"; }
+.spell-tier-matrix tbody tr:not(.tier-group):not(.a2-spell):not(.astral-spell) td:nth-child(5)::before { content: "A4"; }
+.spell-tier-matrix .a2-spell td:nth-child(2)::before,
 .spell-tier-matrix .a2-spell td:nth-child(3)::before { content: "A2"; }
-.spell-tier-matrix .a2-spell td:nth-child(4)::before { content: "A2"; }
-.spell-tier-matrix .a2-spell td:nth-child(5)::before { content: "A3"; }
-.spell-tier-matrix .a2-spell td:nth-child(6)::before { content: "A4"; }
-.spell-tier-matrix .astral-spell .tier-default::before { content: "A2 spell"; }
+.spell-tier-matrix .a2-spell td:nth-child(4)::before { content: "A3"; }
+.spell-tier-matrix .a2-spell td:nth-child(5)::before { content: "A4"; }
+.spell-tier-matrix .astral-spell td:nth-child(2)::before,
 .spell-tier-matrix .astral-spell td:nth-child(3)::before { content: "A2"; }
-.spell-tier-matrix .astral-spell td:nth-child(4)::before { content: "A2"; }
-.spell-tier-matrix .astral-spell td:nth-child(5)::before { content: "A3"; }
-.spell-tier-matrix .astral-spell td:nth-child(6)::before { content: "A4"; }
+.spell-tier-matrix .astral-spell td:nth-child(4)::before { content: "A3"; }
+.spell-tier-matrix .astral-spell td:nth-child(5)::before { content: "A4"; }
 
 .spell-tier-matrix tbody td::before {
     display: block;
