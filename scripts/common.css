@@ -2116,7 +2116,7 @@ table {
 .site-main .spell-tier-matrix {
     display: table;
     width: 100%;
-    min-width: 900px;
+    min-width: 960px;
     table-layout: fixed;
     overflow: visible;
     border: 0;
@@ -2128,13 +2128,25 @@ table {
     align-items: center;
     gap: .45rem;
     text-align: left;
+    white-space: nowrap;
 }
 
-.tier-spell-name img {
-    width: 2rem;
-    height: 2rem;
-    flex: 0 0 2rem;
-    object-fit: contain;
+.tier-spell-name .game-icon-frame {
+    width: 42px;
+    height: 42px;
+    flex-basis: 42px;
+}
+
+.tier-spell-name .game-icon-frame > img {
+    inset: 4px;
+    width: 34px;
+    height: 34px;
+}
+
+.tier-spell-name .game-icon-frame::after {
+    inset: 2px;
+    border-width: 7px;
+    border-image-width: 7px;
 }
 
 .spell-tier-matrix th,
@@ -2174,7 +2186,7 @@ table {
     position: sticky;
     left: 0;
     z-index: 1;
-    width: 15%;
+    width: 24%;
     background: var(--panel-raised);
     color: #fff;
 }
