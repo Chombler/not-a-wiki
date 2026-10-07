@@ -1,5 +1,6 @@
 ---
 import SiteLayout from '../../layouts/SiteLayout.astro';
+import SpellReferenceMenu from '../../components/SpellReferenceMenu.astro';
 import { getPageTitle } from '../../data/pageTitles';
 import siteScope from '../../data/site-scope.json';
 import { isTierTableKind, tierTableHtml } from '../../lib/tierTables';
@@ -7,7 +8,7 @@ import { primalBalanceTableHtml } from '../../lib/primalBalance';
 import { frameGameIcons } from '../../lib/gameIcons';
 import { getCollection } from 'astro:content';
 import { trophyDrawerHtml, trophyListHtml, validateTrophyCategories, type TrophyCategory } from '../../lib/trophies';
-import { spellMenuHtml, validateSpellMenu, type SpellMenu } from '../../lib/spells';
+import { validateSpellMenu, type SpellMenu } from '../../lib/spells';
 
 const pageModules = import.meta.glob('../../page-content/reference/*.html', {
   eager: true,
@@ -47,7 +48,6 @@ const baseContent = pageModules[source]
 const content = frameGameIcons(baseContent
   .replace('<realm-trophy-drawer></realm-trophy-drawer>', trophyDrawerHtml(trophyCategories, base))
   .replace('<realm-trophy-list></realm-trophy-list>', trophyListHtml(trophyCategories, base))
-  .replace('<realm-spell-menu></realm-spell-menu>', spellMenuHtml(spellMenu, base))
   .replaceAll(
   '<realm-primal-balance-table></realm-primal-balance-table>',
   primalBalanceTableHtml(),
@@ -58,6 +58,11 @@ const content = frameGameIcons(baseContent
     return tierTableHtml(kind, heading);
   },
 ));
+const spellMenuMarker = '<!-- spell-reference-menu -->';
+const spellContentParts = content.split(spellMenuMarker);
+if (route === 'Spells' && spellContentParts.length !== 2) {
+  throw new Error(`Expected one spell menu marker; found ${spellContentParts.length - 1}`);
+}
 const ascensionOrder = ['Ascension', 'Ascension1', 'Ascension2', 'Ascension3', 'Ascension4'];
 const ascensionIndex = ascensionOrder.indexOf(route);
 const ascensionLabels: Record<string, string> = {
@@ -73,7 +78,13 @@ const nextAscension = ascensionIndex >= 0 && ascensionIndex < ascensionOrder.len
     <a href={`${base}Ascension`}>Ascensions overview</a>
     {nextAscension ? <a href={`${base}${nextAscension}`}>{ascensionLabels[nextAscension]} &rarr;</a> : <span></span>}
   </nav>}
-  <Fragment set:html={content} />
+  {route === 'Spells' ? (
+    <>
+      <Fragment set:html={spellContentParts[0]} />
+      <SpellReferenceMenu menu={spellMenu} base={base} />
+      <Fragment set:html={spellContentParts[1]} />
+    </>
+  ) : <Fragment set:html={content} />}
   {ascensionIndex >= 0 && <nav class="reference-sibling-nav reference-sibling-nav-bottom" aria-label="Ascension pages">
     {previousAscension ? <a href={`${base}${previousAscension}`}>&larr; {ascensionLabels[previousAscension]}</a> : <span></span>}
     <a href={`${base}Ascension`}>Ascensions overview</a>

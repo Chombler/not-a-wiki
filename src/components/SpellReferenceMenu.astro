@@ -1,0 +1,70 @@
+---
+import type { SpellMenu, SpellMenuEntry } from '../lib/spells';
+
+interface Props {
+  menu: SpellMenu;
+  base: string;
+}
+
+const { menu, base } = Astro.props;
+
+const iconPath = (entry: SpellMenuEntry) => `${base}assets/game/sprites/${entry.icon}`;
+const escapeHtml = (value: string) => value
+  .replaceAll('&', '&amp;')
+  .replaceAll('"', '&quot;')
+  .replaceAll('<', '&lt;')
+  .replaceAll('>', '&gt;');
+const bodyForBase = (body: string) => body
+  .replaceAll('/realm/', base)
+  .replaceAll('/realm"', `${base}"`);
+const frameTooltipIcons = (body: string) => body.replace(
+  /<img\b[^>]*\/assets\/game\/sprites\/[^>]*>/gi,
+  (value) => `<span class="game-icon-frame">${value}</span>`,
+);
+const tooltipFor = (entry: SpellMenuEntry) => {
+  const name = escapeHtml(entry.name);
+  const heading = `<p><span class="game-icon-frame"><img src="${iconPath(entry)}" alt="${name}"></span><b> ${name}</b></p>`;
+  return `${heading}${frameTooltipIcons(bodyForBase(entry.tooltip))}`;
+};
+const tooltipAttribute = (entry: SpellMenuEntry) => ({ research: tooltipFor(entry) });
+---
+
+<div class="spell-reference-grids">
+  <section class="spell-grid-panel">
+    <h3>Spells</h3>
+    <div class="trophy-icon-grid spell-icon-grid">
+      {menu.spells.map((entry) => (
+        <a class="trophy-grid-button spell-grid-button spell-grid-button--spell" {...tooltipAttribute(entry)} href={`#${entry.target}`} aria-label={entry.name}>
+          <span class="game-icon-frame"><img src={iconPath(entry)} alt={entry.name} /></span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <details class="spell-related-grids">
+    <summary>Spell Trophies and Challenge Rewards</summary>
+    <div class="spell-related-grid-panels">
+      <section class="spell-grid-panel">
+        <h3>Spell Trophies</h3>
+        <div class="trophy-icon-grid spell-icon-grid">
+          {menu.upgrades.map((entry) => (
+            <a class="trophy-grid-button spell-grid-button spell-grid-button--upgrade" {...tooltipAttribute(entry)} href={`#${entry.target}`} aria-label={entry.name}>
+              <span class="game-icon-frame"><img src={iconPath(entry)} alt={entry.name} /></span>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section class="spell-grid-panel">
+        <h3>Challenge Rewards</h3>
+        <div class="trophy-icon-grid spell-icon-grid">
+          {menu.challenges.map((entry) => (
+            <a class="trophy-grid-button spell-grid-button spell-grid-button--challenge" {...tooltipAttribute(entry)} href={`#${entry.target}`} aria-label={entry.name}>
+              <span class="game-icon-frame"><img src={iconPath(entry)} alt={entry.name} /></span>
+            </a>
+          ))}
+        </div>
+      </section>
+    </div>
+  </details>
+</div>

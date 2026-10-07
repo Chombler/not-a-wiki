@@ -67,7 +67,7 @@ for (const file of builtFiles) {
   for (const icon of html.matchAll(/<img\b[^>]*\/assets\/game\/sprites\/(?!black-gold-trim\.png)[^>]*>/gi)) {
     if (/data-game-icon-unframed/i.test(icon[0])) continue;
     const prefix = html.slice(Math.max(0, icon.index - 80), icon.index);
-    if (!/<span class=(?:"game-icon-frame"|'game-icon-frame')>\s*$/.test(prefix)) {
+    if (!/<span class=(?:"game-icon-frame"|'game-icon-frame'|&quot;game-icon-frame&quot;)>\s*$/.test(prefix)) {
       failures.push(`${path.relative(output, file)} contains an unframed canonical game icon`);
     }
   }
@@ -272,8 +272,8 @@ for (const [kind, expected] of [['spell', 30], ['upgrade', 16], ['challenge', 16
 if ([...spellPageHtml.matchAll(/class="spell-entry"/g)].length !== 30) failures.push('Spells does not render 30 detailed spell entries');
 if (spellPageHtml.includes('<map ') || spellPageHtml.includes('SpellsMap.png')) failures.push('Spells restored a baked imagemap instead of canonical spell records');
 if (!spellPageHtml.includes(`href="#GodsHand"`) || !spellPageHtml.includes(`gods-hand-icon.png`)) failures.push('Spells lost the God\'s Hand anchor or current icon');
-if ([...authoredSpellSource.matchAll(/class="spell-entry"/g)].length !== 30 || !authoredSpellSource.includes('<realm-spell-menu>')) {
-  failures.push('Spells reference content is no longer authored as one readable page around the reusable icon menu');
+if ([...authoredSpellSource.matchAll(/class="spell-entry"/g)].length !== 30 || !authoredSpellSource.includes('<!-- spell-reference-menu -->')) {
+  failures.push('Spells reference content is no longer authored as one readable page around the Astro icon menu');
 }
 for (const normalizedField of ['supplement:', 'section:', 'upgradeId:', 'challengeId:']) {
   if (spellMenuSource.includes(normalizedField)) failures.push(`Spell menu regained full-reference field: ${normalizedField}`);
