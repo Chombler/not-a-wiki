@@ -19,15 +19,6 @@ export const factionAlignmentPair: Partial<Record<IconAffiliation, [PrimaryAlign
   druid: ['neutral', 'balance'],
 };
 
-export const alignmentBackgroundColors = {
-  good: '#7b9eb0',
-  evil: '#841f19',
-  neutral: '#cbc298',
-  order: '#d5ebe7',
-  chaos: '#78974e',
-  balance: '#e6d17e',
-} as const;
-
 export interface ReferenceIconItem {
   label: string;
   icon: string;

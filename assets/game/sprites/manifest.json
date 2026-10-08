@@ -3,6 +3,138 @@
   "source": "Realm Grinder v4.3.15 desktop TexturePacker atlases",
   "sprites": [
     {
+      "key": "spell-box-good-up",
+      "path": "assets/game/sprites/spell-box-good-up.png",
+      "sprite_name": "spellBox_Good_Up",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 539,
+        "y": 989,
+        "width": 85,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 85,
+        "height": 50
+      },
+      "kind": "ui",
+      "entity": "good",
+      "role": "spell-alignment-background"
+    },
+    {
+      "key": "spell-box-evil-up",
+      "path": "assets/game/sprites/spell-box-evil-up.png",
+      "sprite_name": "spellBox_Evil_Up",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 888,
+        "y": 851,
+        "width": 85,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 85,
+        "height": 50
+      },
+      "kind": "ui",
+      "entity": "evil",
+      "role": "spell-alignment-background"
+    },
+    {
+      "key": "spell-box-neutral-up",
+      "path": "assets/game/sprites/spell-box-neutral-up.png",
+      "sprite_name": "spellBox_Neutral_Up",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 538,
+        "y": 1091,
+        "width": 85,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 85,
+        "height": 50
+      },
+      "kind": "ui",
+      "entity": "neutral",
+      "role": "spell-alignment-background"
+    },
+    {
+      "key": "spell-box-order-up",
+      "path": "assets/game/sprites/spell-box-order-up.png",
+      "sprite_name": "spellBox_Order_Up",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1400,
+        "y": 1034,
+        "width": 85,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 85,
+        "height": 50
+      },
+      "kind": "ui",
+      "entity": "order",
+      "role": "spell-alignment-background"
+    },
+    {
+      "key": "spell-box-chaos-up",
+      "path": "assets/game/sprites/spell-box-chaos-up.png",
+      "sprite_name": "spellBox_Chaos_Up",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 1422,
+        "y": 663,
+        "width": 85,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 85,
+        "height": 50
+      },
+      "kind": "ui",
+      "entity": "chaos",
+      "role": "spell-alignment-background"
+    },
+    {
+      "key": "spell-box-balance-up",
+      "path": "assets/game/sprites/spell-box-balance-up.png",
+      "sprite_name": "spellBox_Balance_Up",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 895,
+        "y": 698,
+        "width": 85,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 85,
+        "height": 50
+      },
+      "kind": "ui",
+      "entity": "balance",
+      "role": "spell-alignment-background"
+    },
+    {
       "key": "black-gold-trim",
       "path": "assets/game/sprites/black-gold-trim.png",
       "sprite_name": "black_GoldTrim",

@@ -1,6 +1,6 @@
 ---
 import GameIcon from './GameIcon.astro';
-import { alignmentBackgroundColors, factionAlignmentPair, type ReferenceIconItem } from '../lib/referenceIcons';
+import { factionAlignmentPair, type ReferenceIconItem } from '../lib/referenceIcons';
 
 interface Props {
   item: ReferenceIconItem;
@@ -26,12 +26,15 @@ const tooltipPair = item.affiliation ? factionAlignmentPair[item.affiliation] : 
 const tooltipSplit = item.splitAlignments && tooltipPair;
 const tooltipStyles = [
   item.affiliation && `--reference-icon-frame:url(${base}assets/game/sprites/${item.affiliation}-trim.png)`,
-  tooltipSplit && `--reference-icon-primary:${alignmentBackgroundColors[tooltipPair[0]]}`,
-  tooltipSplit && `--reference-icon-secondary:${alignmentBackgroundColors[tooltipPair[1]]}`,
+  tooltipSplit && `--reference-icon-primary:url(${base}assets/game/sprites/spell-box-${tooltipPair[0]}-up.png)`,
+  tooltipSplit && `--reference-icon-secondary:url(${base}assets/game/sprites/spell-box-${tooltipPair[1]}-up.png)`,
 ].filter(Boolean).join(';');
 const tooltipFrameStyle = tooltipStyles ? ` style="${tooltipStyles}"` : '';
 const tooltipSplitClass = tooltipSplit ? ' game-icon-frame--alignment-split' : '';
-const tooltipHeading = `<p><span class="game-icon-frame${tooltipSplitClass}"${tooltipFrameStyle}><img src="${base}assets/game/sprites/${item.icon}" alt="${label}"></span><b> ${label}</b></p>`;
+const tooltipAlignmentPanels = tooltipSplit
+  ? '<span class="game-icon-alignment game-icon-alignment--primary"></span><span class="game-icon-alignment game-icon-alignment--secondary"></span>'
+  : '';
+const tooltipHeading = `<p><span class="game-icon-frame${tooltipSplitClass}"${tooltipFrameStyle}><img src="${base}assets/game/sprites/${item.icon}" alt="${label}">${tooltipAlignmentPanels}</span><b> ${label}</b></p>`;
 const tooltip = `${tooltipHeading}${frameTooltipIcons(bodyForBase(item.tooltipHtml))}`;
 const tooltipAttribute = { research: tooltip };
 const className = ['reference-icon-button', variant && `reference-icon-button--${variant}`].filter(Boolean).join(' ');

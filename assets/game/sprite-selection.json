@@ -1,6 +1,42 @@
 {
   "sprites": [
     {
+      "sprite_name": "spellBox_Good_Up",
+      "kind": "ui",
+      "entity": "good",
+      "role": "spell-alignment-background"
+    },
+    {
+      "sprite_name": "spellBox_Evil_Up",
+      "kind": "ui",
+      "entity": "evil",
+      "role": "spell-alignment-background"
+    },
+    {
+      "sprite_name": "spellBox_Neutral_Up",
+      "kind": "ui",
+      "entity": "neutral",
+      "role": "spell-alignment-background"
+    },
+    {
+      "sprite_name": "spellBox_Order_Up",
+      "kind": "ui",
+      "entity": "order",
+      "role": "spell-alignment-background"
+    },
+    {
+      "sprite_name": "spellBox_Chaos_Up",
+      "kind": "ui",
+      "entity": "chaos",
+      "role": "spell-alignment-background"
+    },
+    {
+      "sprite_name": "spellBox_Balance_Up",
+      "kind": "ui",
+      "entity": "balance",
+      "role": "spell-alignment-background"
+    },
+    {
       "sprite_name": "black_GoldTrim",
       "kind": "ui",
       "entity": "icon-frame",

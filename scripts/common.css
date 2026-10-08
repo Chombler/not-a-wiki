@@ -24,17 +24,27 @@ a.tooltips {
     image-rendering: pixelated;
 }
 
-.game-icon-frame--alignment-split::before {
+.game-icon-alignment {
     position: absolute;
-    inset: 7px;
+    top: 7px;
+    bottom: 7px;
     z-index: 1;
-    background: linear-gradient(
-        to right,
-        var(--reference-icon-primary) 0 50%,
-        var(--reference-icon-secondary) 50% 100%
-    );
-    content: "";
+    width: 23px;
+    background-repeat: no-repeat;
+    background-size: 200% 100%;
     pointer-events: none;
+}
+
+.game-icon-alignment--primary {
+    left: 7px;
+    background-image: var(--reference-icon-primary);
+    background-position: left center;
+}
+
+.game-icon-alignment--secondary {
+    right: 7px;
+    background-image: var(--reference-icon-secondary);
+    background-position: right center;
 }
 
 .game-icon-frame::after {

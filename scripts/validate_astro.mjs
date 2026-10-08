@@ -66,7 +66,7 @@ for (const file of builtFiles) {
   }
   for (const icon of html.matchAll(/<img\b[^>]*\/assets\/game\/sprites\/(?!black-gold-trim\.png)[^>]*>/gi)) {
     if (/data-game-icon-unframed/i.test(icon[0])) continue;
-    const prefix = html.slice(Math.max(0, icon.index - 320), icon.index);
+    const prefix = html.slice(Math.max(0, icon.index - 800), icon.index);
     if (!/<span class=(?:"[^"]*\bgame-icon-frame\b[^"]*"|'[^']*\bgame-icon-frame\b[^']*'|&quot;[^>]*\bgame-icon-frame\b[^>]*&quot;)(?:\s+[^>]*)?>\s*$/.test(prefix)) {
       failures.push(`${path.relative(output, file)} contains an unframed canonical game icon`);
     }

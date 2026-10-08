@@ -1,5 +1,5 @@
 ---
-import { alignmentBackgroundColors, factionAlignmentPair, type IconAffiliation } from '../lib/referenceIcons';
+import { factionAlignmentPair, type IconAffiliation } from '../lib/referenceIcons';
 
 interface Props {
   icon: string;
@@ -14,11 +14,13 @@ const pair = affiliation ? factionAlignmentPair[affiliation] : undefined;
 const split = splitAlignments && pair;
 const styles = [
   affiliation && `--reference-icon-frame:url("${base}assets/game/sprites/${affiliation}-trim.png")`,
-  split && `--reference-icon-primary:${alignmentBackgroundColors[pair[0]]}`,
-  split && `--reference-icon-secondary:${alignmentBackgroundColors[pair[1]]}`,
+  split && `--reference-icon-primary:url("${base}assets/game/sprites/spell-box-${pair[0]}-up.png")`,
+  split && `--reference-icon-secondary:url("${base}assets/game/sprites/spell-box-${pair[1]}-up.png")`,
 ].filter(Boolean).join(';');
 ---
 
 <span class:list={['game-icon-frame', { 'game-icon-frame--alignment-split': split }]} style={styles || undefined}>
   <img src={`${base}assets/game/sprites/${icon}`} alt={label} />
+  {split && <span class="game-icon-alignment game-icon-alignment--primary"></span>}
+  {split && <span class="game-icon-alignment game-icon-alignment--secondary"></span>}
 </span>
