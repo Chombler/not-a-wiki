@@ -45,6 +45,33 @@ export function gameIconHtml(item: GameIconAppearance, base: string) {
   return `<span class="${classes}"${styles ? ` style="${styles}"` : ''}><img data-game-icon-unframed src="${base}assets/game/sprites/${item.icon}" alt="${escapeAttribute(item.label)}">${affiliationPanels}${alignmentPanels}</span>`;
 }
 
+/** Render the horizontal spell control shown beside detailed spell records. */
+export function spellControlHtml(item: GameIconAppearance, base: string, manaCost: string) {
+  const pair = item.affiliation ? factionAlignmentPair[item.affiliation] : undefined;
+  const split = Boolean(item.splitAlignments && pair);
+  const classes = [
+    'spell-control',
+    item.splitAffiliations ? 'spell-control--affiliation-split' : '',
+    split ? 'spell-control--alignment-split' : '',
+    item.alignmentBackground ? 'spell-control--alignment-full' : '',
+  ].filter(Boolean).join(' ');
+  const styles = [
+    item.affiliation && `--reference-icon-frame:url('${base}assets/game/sprites/${item.affiliation}-trim.png')`,
+    item.splitAffiliations && `--reference-icon-affiliation-primary:url('${base}assets/game/sprites/${item.splitAffiliations[0]}-trim.png')`,
+    item.splitAffiliations && `--reference-icon-affiliation-secondary:url('${base}assets/game/sprites/${item.splitAffiliations[1]}-trim.png')`,
+    split && pair && `--reference-icon-primary:url('${base}assets/game/sprites/spell-box-${pair[0]}-up.png')`,
+    split && pair && `--reference-icon-secondary:url('${base}assets/game/sprites/spell-box-${pair[1]}-up.png')`,
+    item.alignmentBackground && `--reference-icon-alignment:url('${base}assets/game/sprites/spell-box-${item.alignmentBackground}-up.png')`,
+  ].filter(Boolean).join(';');
+  const affiliationPanels = item.splitAffiliations
+    ? '<span class="spell-control-affiliation spell-control-affiliation--primary"></span><span class="spell-control-affiliation spell-control-affiliation--secondary"></span>'
+    : '';
+  const alignmentPanels = split
+    ? '<span class="spell-control-alignment spell-control-alignment--primary"></span><span class="spell-control-alignment spell-control-alignment--secondary"></span>'
+    : item.alignmentBackground ? '<span class="spell-control-alignment spell-control-alignment--full"></span>' : '';
+  return `<span class="${classes}"${styles ? ` style="${styles}"` : ''}>${affiliationPanels}${alignmentPanels}<img data-game-icon-unframed src="${base}assets/game/sprites/${item.icon}" alt=""><span class="spell-control-copy"><span class="spell-control-name">${escapeAttribute(item.label)}</span><span class="spell-control-mana">${escapeAttribute(manaCost)}</span></span></span>`;
+}
+
 /**
  * Detailed spell prose stays hand-authored. Existing article IDs connect its
  * heading and related upgrade/challenge icons to the shared spell inventory.
@@ -57,9 +84,10 @@ export function decorateSpellEntryIcons(html: string, items: Array<GameIconAppea
     const targetItems = itemsByTarget.get(target);
     if (!targetItems) return article;
     let decorated = article;
-    for (const item of targetItems) {
+    const cost = article.match(/<p><b>Cost<\/b>:\s*([^<]*?Mana)/i)?.[1]?.trim() ?? '— mana';
+    for (const [index, item] of targetItems.entries()) {
       const imagePattern = new RegExp(`<span class='game-icon-frame'><img\\b[^>]*\\bsrc="[^"]*/${item.icon.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')}"[^>]*><\\/span>`);
-      decorated = decorated.replace(imagePattern, gameIconHtml(item, base));
+      decorated = decorated.replace(imagePattern, index === 0 ? spellControlHtml(item, base, cost) : gameIconHtml(item, base));
     }
     return decorated;
   });

@@ -272,6 +272,113 @@ a.tooltips {
   gap: 0.4rem;
 }
 
+.spell-control {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: 340px;
+  height: 86px;
+  flex: 0 0 340px;
+  overflow: hidden;
+  background: #131313;
+  color: #f6f1e7;
+  vertical-align: middle;
+  isolation: isolate;
+}
+
+.spell-control::after,
+.spell-control-affiliation {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  border: 12px solid transparent;
+  pointer-events: none;
+  content: "";
+}
+
+.spell-control::after {
+  border-image: var(--reference-icon-frame, var(--game-icon-frame)) 9 fill / 12px;
+}
+
+.spell-control--affiliation-split::after {
+  display: none;
+}
+
+.spell-control-affiliation--primary {
+  border-image: var(--reference-icon-affiliation-primary) 9 fill / 12px;
+  clip-path: inset(0 50% 0 0);
+}
+
+.spell-control-affiliation--secondary {
+  border-image: var(--reference-icon-affiliation-secondary) 9 fill / 12px;
+  clip-path: inset(0 0 0 50%);
+}
+
+.spell-control-alignment {
+  position: absolute;
+  inset-block: 9px;
+  z-index: 3;
+  background-repeat: no-repeat;
+  background-size: 200% 100%;
+  pointer-events: none;
+}
+
+.spell-control-alignment--primary {
+  left: 9px;
+  width: calc(50% - 9px);
+  background-image: var(--reference-icon-primary);
+  background-position: left center;
+}
+
+.spell-control-alignment--secondary {
+  right: 9px;
+  width: calc(50% - 9px);
+  background-image: var(--reference-icon-secondary);
+  background-position: right center;
+}
+
+.spell-control-alignment--full {
+  inset-inline: 9px;
+  background-image: var(--reference-icon-alignment);
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.spell-control > img {
+  position: relative;
+  z-index: 4;
+  width: 58px;
+  height: 58px;
+  margin-left: 12px;
+  flex: 0 0 58px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.spell-control-copy {
+  position: relative;
+  z-index: 4;
+  display: grid;
+  flex: 1 1 auto;
+  justify-items: center;
+  padding: 0 20px 0 8px;
+  font-family: "Realm Grinder Liony", Georgia, serif;
+  font-weight: 700;
+  line-height: 1;
+  text-shadow: 0 1px 1px rgb(0 0 0 / 75%);
+}
+
+.spell-control-name {
+  color: #f2d44b;
+  font-size: 25px;
+}
+
+.spell-control-mana {
+  margin-top: 5px;
+  color: #f6f1e7;
+  font-size: 21px;
+}
+
 .spell-affiliation {
   color: var(--text-muted);
 }
@@ -4422,6 +4529,24 @@ hr {
     height: 50px;
     flex: 0 0 50px;
     object-fit: contain;
+}
+
+.spell-entry-heading .spell-control > img {
+    width: 58px;
+    height: 58px;
+    flex-basis: 58px;
+}
+
+@media (max-width: 760px) {
+    .spell-entry-heading {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .spell-control {
+        width: min(340px, 100%);
+        flex-basis: min(340px, 100%);
+    }
 }
 
 .spell-entry > p:not(.spell-entry-heading) {
