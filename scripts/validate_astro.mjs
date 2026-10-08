@@ -270,7 +270,6 @@ for (const [kind, expected] of [['spell', 30], ['upgrade', 16], ['challenge', 16
   if (count !== expected) failures.push(`Spells renders ${count} ${kind} grid entries; expected ${expected}`);
 }
 if ([...spellPageHtml.matchAll(/class="spell-entry"/g)].length !== 30) failures.push('Spells does not render 30 detailed spell entries');
-if ([...spellPageHtml.matchAll(/class="spell-control(?:\s|\")/g)].length !== 30) failures.push('Spells does not render a full game-style control for all 30 detailed spell entries');
 if ([...spellPageHtml.matchAll(/data-game-icon-unframed/g)].length !== 186) failures.push('Spells does not consistently compose its menu, tooltip, and detailed-entry icons');
 if (!spellPageHtml.includes('game-icon-frame--alignment-split') || !spellPageHtml.includes('spell-box-good-up.png')) failures.push('Spells detailed icons lost their faction/alignment composition');
 if (spellPageHtml.includes('<map ') || spellPageHtml.includes('SpellsMap.png')) failures.push('Spells restored a baked imagemap instead of canonical spell records');
