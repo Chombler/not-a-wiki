@@ -350,7 +350,7 @@ spells:
   - id: TaxCollection
     name: Tax Collection
     icon: tax-collection-icon.png
-    alignmentBackground: gold
+    alignmentBackground: neutral
     target: TaxCollection
     tooltip: |-
       <p><b>Spell Type</b>: Default Spell</p>
@@ -359,7 +359,7 @@ spells:
   - id: CalltoArms
     name: Call to Arms
     icon: call-to-arms-icon.png
-    alignmentBackground: gold
+    alignmentBackground: neutral
     target: CalltoArms
     tooltip: |-
       <p><b>Spell Tier Effect</b>: Buildings count 5% more per spell tier.</p>
