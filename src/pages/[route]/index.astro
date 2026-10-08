@@ -5,7 +5,7 @@ import { getPageTitle } from '../../data/pageTitles';
 import siteScope from '../../data/site-scope.json';
 import { isTierTableKind, tierTableHtml } from '../../lib/tierTables';
 import { primalBalanceTableHtml } from '../../lib/primalBalance';
-import { frameGameIcons } from '../../lib/gameIcons';
+import { decorateSpellEntryIcons, frameGameIcons } from '../../lib/gameIcons';
 import { getCollection } from 'astro:content';
 import { trophyDrawerHtml, trophyListHtml, validateTrophyCategories, type TrophyCategory } from '../../lib/trophies';
 import { validateSpellMenu, type SpellMenu } from '../../lib/spells';
@@ -45,7 +45,7 @@ validateSpellMenu(spellMenu);
 const baseContent = pageModules[source]
   .replaceAll('/realm/', base)
   .replaceAll('/realm"', `${base}"`);
-const content = frameGameIcons(baseContent
+const framedContent = frameGameIcons(baseContent
   .replace('<realm-trophy-drawer></realm-trophy-drawer>', trophyDrawerHtml(trophyCategories, base))
   .replace('<realm-trophy-list></realm-trophy-list>', trophyListHtml(trophyCategories, base))
   .replaceAll(
@@ -58,6 +58,13 @@ const content = frameGameIcons(baseContent
     return tierTableHtml(kind, heading);
   },
 ));
+const content = route === 'Spells'
+  ? decorateSpellEntryIcons(
+      framedContent,
+      [...spellMenu.spells, ...spellMenu.upgrades, ...spellMenu.challenges].map((item) => ({ ...item, label: item.name })),
+      base,
+    )
+  : framedContent;
 const spellMenuMarker = '<!-- spell-reference-menu -->';
 const spellContentParts = content.split(spellMenuMarker);
 if (route === 'Spells' && spellContentParts.length !== 2) {

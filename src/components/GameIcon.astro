@@ -1,5 +1,6 @@
 ---
-import { factionAlignmentPair, type IconAffiliation, type SpellBackground } from '../lib/referenceIcons';
+import { gameIconHtml } from '../lib/gameIcons';
+import type { IconAffiliation, SpellBackground } from '../lib/referenceIcons';
 
 interface Props {
   icon: string;
@@ -12,23 +13,7 @@ interface Props {
 
 const { icon, label = '', affiliation, splitAffiliations, splitAlignments = false, alignmentBackground } = Astro.props;
 const base = `${import.meta.env.BASE_URL.replace(/\/+$/, '')}/`;
-const pair = affiliation ? factionAlignmentPair[affiliation] : undefined;
-const split = splitAlignments && pair;
-const styles = [
-  affiliation && `--reference-icon-frame:url("${base}assets/game/sprites/${affiliation}-trim.png")`,
-  splitAffiliations && `--reference-icon-affiliation-primary:url("${base}assets/game/sprites/${splitAffiliations[0]}-trim.png")`,
-  splitAffiliations && `--reference-icon-affiliation-secondary:url("${base}assets/game/sprites/${splitAffiliations[1]}-trim.png")`,
-  split && `--reference-icon-primary:url("${base}assets/game/sprites/spell-box-${pair[0]}-up.png")`,
-  split && `--reference-icon-secondary:url("${base}assets/game/sprites/spell-box-${pair[1]}-up.png")`,
-  alignmentBackground && `--reference-icon-alignment:url("${base}assets/game/sprites/spell-box-${alignmentBackground}-up.png")`,
-].filter(Boolean).join(';');
+const html = gameIconHtml({ icon, label, affiliation, splitAffiliations, splitAlignments, alignmentBackground }, base);
 ---
 
-<span class:list={['game-icon-frame', { 'game-icon-frame--affiliation-split': splitAffiliations, 'game-icon-frame--alignment-split': split, 'game-icon-frame--alignment-full': alignmentBackground }]} style={styles || undefined}>
-  <img src={`${base}assets/game/sprites/${icon}`} alt={label} />
-  {splitAffiliations && <span class="game-icon-affiliation game-icon-affiliation--primary"></span>}
-  {splitAffiliations && <span class="game-icon-affiliation game-icon-affiliation--secondary"></span>}
-  {split && <span class="game-icon-alignment game-icon-alignment--primary"></span>}
-  {split && <span class="game-icon-alignment game-icon-alignment--secondary"></span>}
-  {alignmentBackground && !split && <span class="game-icon-alignment game-icon-alignment--full"></span>}
-</span>
+<Fragment set:html={html} />

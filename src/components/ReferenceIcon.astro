@@ -1,6 +1,7 @@
 ---
 import GameIcon from './GameIcon.astro';
-import { factionAlignmentPair, type ReferenceIconItem } from '../lib/referenceIcons';
+import { gameIconHtml } from '../lib/gameIcons';
+import type { ReferenceIconItem } from '../lib/referenceIcons';
 
 interface Props {
   item: ReferenceIconItem;
@@ -22,26 +23,8 @@ const frameTooltipIcons = (body: string) => body.replace(
   (image) => `<span class="game-icon-frame">${image}</span>`,
 );
 const label = escapeHtml(item.label);
-const tooltipPair = item.affiliation ? factionAlignmentPair[item.affiliation] : undefined;
-const tooltipSplit = item.splitAlignments && tooltipPair;
-const tooltipStyles = [
-  item.affiliation && `--reference-icon-frame:url(${base}assets/game/sprites/${item.affiliation}-trim.png)`,
-  item.splitAffiliations && `--reference-icon-affiliation-primary:url(${base}assets/game/sprites/${item.splitAffiliations[0]}-trim.png)`,
-  item.splitAffiliations && `--reference-icon-affiliation-secondary:url(${base}assets/game/sprites/${item.splitAffiliations[1]}-trim.png)`,
-  tooltipSplit && `--reference-icon-primary:url(${base}assets/game/sprites/spell-box-${tooltipPair[0]}-up.png)`,
-  tooltipSplit && `--reference-icon-secondary:url(${base}assets/game/sprites/spell-box-${tooltipPair[1]}-up.png)`,
-  item.alignmentBackground && `--reference-icon-alignment:url(${base}assets/game/sprites/spell-box-${item.alignmentBackground}-up.png)`,
-].filter(Boolean).join(';');
-const tooltipFrameStyle = tooltipStyles ? ` style="${tooltipStyles}"` : '';
-const tooltipSplitClass = tooltipSplit ? ' game-icon-frame--alignment-split' : item.alignmentBackground ? ' game-icon-frame--alignment-full' : '';
-const tooltipAffiliationClass = item.splitAffiliations ? ' game-icon-frame--affiliation-split' : '';
-const tooltipAffiliationPanels = item.splitAffiliations
-  ? '<span class="game-icon-affiliation game-icon-affiliation--primary"></span><span class="game-icon-affiliation game-icon-affiliation--secondary"></span>'
-  : '';
-const tooltipAlignmentPanels = tooltipSplit
-  ? '<span class="game-icon-alignment game-icon-alignment--primary"></span><span class="game-icon-alignment game-icon-alignment--secondary"></span>'
-  : item.alignmentBackground ? '<span class="game-icon-alignment game-icon-alignment--full"></span>' : '';
-const tooltipHeading = `<p><span class="game-icon-frame${tooltipAffiliationClass}${tooltipSplitClass}"${tooltipFrameStyle}><img src="${base}assets/game/sprites/${item.icon}" alt="${label}">${tooltipAffiliationPanels}${tooltipAlignmentPanels}</span><b> ${label}</b></p>`;
+const tooltipIcon = gameIconHtml({ ...item, label: item.label }, base);
+const tooltipHeading = `<p>${tooltipIcon}<b> ${label}</b></p>`;
 const tooltip = `${tooltipHeading}${frameTooltipIcons(bodyForBase(item.tooltipHtml))}`;
 const tooltipAttribute = { research: tooltip };
 const className = ['reference-icon-button', variant && `reference-icon-button--${variant}`].filter(Boolean).join(' ');
