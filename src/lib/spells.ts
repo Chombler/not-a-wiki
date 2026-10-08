@@ -1,4 +1,4 @@
-import type { IconAffiliation } from './referenceIcons';
+import type { IconAffiliation, SpellAlignment } from './referenceIcons';
 
 export interface SpellMenuEntry {
   id: string;
@@ -6,6 +6,7 @@ export interface SpellMenuEntry {
   icon: string;
   affiliation?: IconAffiliation;
   splitAlignments?: boolean;
+  alignmentBackground?: SpellAlignment;
   target: string;
   tooltip: string;
 }

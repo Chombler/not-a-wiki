@@ -47,6 +47,15 @@ a.tooltips {
     background-position: right center;
 }
 
+.game-icon-alignment--full {
+  left: 7px;
+  right: 7px;
+  width: auto;
+  background-image: var(--reference-icon-alignment);
+  background-position: center;
+  background-size: 100% 100%;
+}
+
 .game-icon-frame::after {
     position: absolute;
     inset: 3px;

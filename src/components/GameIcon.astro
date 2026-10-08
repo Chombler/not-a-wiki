@@ -1,14 +1,15 @@
 ---
-import { factionAlignmentPair, type IconAffiliation } from '../lib/referenceIcons';
+import { factionAlignmentPair, type IconAffiliation, type SpellAlignment } from '../lib/referenceIcons';
 
 interface Props {
   icon: string;
   label?: string;
   affiliation?: IconAffiliation;
   splitAlignments?: boolean;
+  alignmentBackground?: SpellAlignment;
 }
 
-const { icon, label = '', affiliation, splitAlignments = false } = Astro.props;
+const { icon, label = '', affiliation, splitAlignments = false, alignmentBackground } = Astro.props;
 const base = `${import.meta.env.BASE_URL.replace(/\/+$/, '')}/`;
 const pair = affiliation ? factionAlignmentPair[affiliation] : undefined;
 const split = splitAlignments && pair;
@@ -16,11 +17,13 @@ const styles = [
   affiliation && `--reference-icon-frame:url("${base}assets/game/sprites/${affiliation}-trim.png")`,
   split && `--reference-icon-primary:url("${base}assets/game/sprites/spell-box-${pair[0]}-up.png")`,
   split && `--reference-icon-secondary:url("${base}assets/game/sprites/spell-box-${pair[1]}-up.png")`,
+  alignmentBackground && `--reference-icon-alignment:url("${base}assets/game/sprites/spell-box-${alignmentBackground}-up.png")`,
 ].filter(Boolean).join(';');
 ---
 
-<span class:list={['game-icon-frame', { 'game-icon-frame--alignment-split': split }]} style={styles || undefined}>
+<span class:list={['game-icon-frame', { 'game-icon-frame--alignment-split': split, 'game-icon-frame--alignment-full': alignmentBackground }]} style={styles || undefined}>
   <img src={`${base}assets/game/sprites/${icon}`} alt={label} />
   {split && <span class="game-icon-alignment game-icon-alignment--primary"></span>}
   {split && <span class="game-icon-alignment game-icon-alignment--secondary"></span>}
+  {alignmentBackground && !split && <span class="game-icon-alignment game-icon-alignment--full"></span>}
 </span>
