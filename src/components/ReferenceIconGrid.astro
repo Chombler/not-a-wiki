@@ -1,0 +1,20 @@
+---
+import ReferenceIcon from './ReferenceIcon.astro';
+import type { ReferenceIconItem } from '../lib/referenceIcons';
+
+interface Props {
+  title: string;
+  items: ReferenceIconItem[];
+  variant?: string;
+}
+
+const { title, items, variant } = Astro.props;
+---
+
+<section class="reference-icon-panel">
+  <h3>{title}</h3>
+  <div class="reference-icon-grid">
+    {items.map((item) => <ReferenceIcon item={item} variant={variant} />)}
+  </div>
+</section>
+

@@ -81,7 +81,7 @@ const nextAscension = ascensionIndex >= 0 && ascensionIndex < ascensionOrder.len
   {route === 'Spells' ? (
     <>
       <Fragment set:html={spellContentParts[0]} />
-      <SpellReferenceMenu menu={spellMenu} base={base} />
+      <SpellReferenceMenu menu={spellMenu} />
       <Fragment set:html={spellContentParts[1]} />
     </>
   ) : <Fragment set:html={content} />}

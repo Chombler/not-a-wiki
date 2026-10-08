@@ -266,7 +266,7 @@ for (const [page, html] of [['Spells', spellPageHtml], ['SpellTiers', spellTierP
 const currentSpellSprites = [...spellPageHtml.matchAll(/assets\/game\/sprites\/([^&"']+\.png)/g)];
 if (currentSpellSprites.length < 100) failures.push(`Spells renders only ${currentSpellSprites.length} current-game sprite references`);
 for (const [kind, expected] of [['spell', 30], ['upgrade', 16], ['challenge', 16]]) {
-  const count = [...spellPageHtml.matchAll(new RegExp(`spell-grid-button--${kind}`, 'g'))].length;
+  const count = [...spellPageHtml.matchAll(new RegExp(`reference-icon-button--${kind}`, 'g'))].length;
   if (count !== expected) failures.push(`Spells renders ${count} ${kind} grid entries; expected ${expected}`);
 }
 if ([...spellPageHtml.matchAll(/class="spell-entry"/g)].length !== 30) failures.push('Spells does not render 30 detailed spell entries');
