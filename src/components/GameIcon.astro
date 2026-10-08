@@ -1,5 +1,5 @@
 ---
-import { alignmentColors, iconPresentationForAffiliation, type IconAffiliation } from '../lib/referenceIcons';
+import type { IconAffiliation } from '../lib/referenceIcons';
 
 interface Props {
   icon: string;
@@ -9,15 +9,11 @@ interface Props {
 
 const { icon, label = '', affiliation } = Astro.props;
 const base = `${import.meta.env.BASE_URL.replace(/\/+$/, '')}/`;
-const presentation = iconPresentationForAffiliation(affiliation);
-const styles = [
-  presentation.trim && `--reference-icon-frame:url("${base}assets/game/sprites/${presentation.trim}-trim.png")`,
-  presentation.primary && `--reference-icon-primary:${alignmentColors[presentation.primary]}`,
-  presentation.secondary && `--reference-icon-secondary:${alignmentColors[presentation.secondary]}`,
-].filter(Boolean).join(';');
-const split = Boolean(presentation.primary && presentation.secondary);
+const frameStyle = affiliation
+  ? `--reference-icon-frame: url("${base}assets/game/sprites/${affiliation}-trim.png")`
+  : undefined;
 ---
 
-<span class:list={['game-icon-frame', { 'game-icon-frame--split': split }]} style={styles || undefined}>
+<span class="game-icon-frame" style={frameStyle}>
   <img src={`${base}assets/game/sprites/${icon}`} alt={label} />
 </span>

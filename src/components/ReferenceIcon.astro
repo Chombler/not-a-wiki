@@ -1,6 +1,6 @@
 ---
 import GameIcon from './GameIcon.astro';
-import { alignmentColors, iconPresentationForAffiliation, type ReferenceIconItem } from '../lib/referenceIcons';
+import type { ReferenceIconItem } from '../lib/referenceIcons';
 
 interface Props {
   item: ReferenceIconItem;
@@ -22,15 +22,10 @@ const frameTooltipIcons = (body: string) => body.replace(
   (image) => `<span class="game-icon-frame">${image}</span>`,
 );
 const label = escapeHtml(item.label);
-const tooltipPresentation = iconPresentationForAffiliation(item.affiliation);
-const tooltipStyles = [
-  tooltipPresentation.trim && `--reference-icon-frame:url(${base}assets/game/sprites/${tooltipPresentation.trim}-trim.png)`,
-  tooltipPresentation.primary && `--reference-icon-primary:${alignmentColors[tooltipPresentation.primary]}`,
-  tooltipPresentation.secondary && `--reference-icon-secondary:${alignmentColors[tooltipPresentation.secondary]}`,
-].filter(Boolean).join(';');
-const tooltipSplit = tooltipPresentation.primary && tooltipPresentation.secondary ? ' game-icon-frame--split' : '';
-const tooltipFrameStyle = tooltipStyles ? ` style="${tooltipStyles}"` : '';
-const tooltipHeading = `<p><span class="game-icon-frame${tooltipSplit}"${tooltipFrameStyle}><img src="${base}assets/game/sprites/${item.icon}" alt="${label}"></span><b> ${label}</b></p>`;
+const tooltipFrameStyle = item.affiliation
+  ? ` style="--reference-icon-frame:url(${base}assets/game/sprites/${item.affiliation}-trim.png)"`
+  : '';
+const tooltipHeading = `<p><span class="game-icon-frame"${tooltipFrameStyle}><img src="${base}assets/game/sprites/${item.icon}" alt="${label}"></span><b> ${label}</b></p>`;
 const tooltip = `${tooltipHeading}${frameTooltipIcons(bodyForBase(item.tooltipHtml))}`;
 const tooltipAttribute = { research: tooltip };
 const className = ['reference-icon-button', variant && `reference-icon-button--${variant}`].filter(Boolean).join(' ');

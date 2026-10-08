@@ -55,7 +55,7 @@ spells:
   - id: ShareBenefits
     name: Share Benefits
     icon: tax-collection-icon.png
-    affiliation: good
+    affiliation: mercenary
     target: ShareBenefits
     tooltip: |-
       <p><b>Spell Type</b>: (Good) Mercenary Faction Spell (R75+)</p>
@@ -120,7 +120,7 @@ spells:
   - id: ReapInterests
     name: Reap Interests
     icon: tax-collection-icon.png
-    affiliation: evil
+    affiliation: mercenary
     target: ReapInterests
     tooltip: |-
       <p><b>Spell Type</b>: (Evil) Mercenary Faction Spell (R75+)</p>
@@ -192,6 +192,7 @@ spells:
   - id: AppraisalVantage
     name: Appraisal Vantage
     icon: tax-collection-icon.png
+    affiliation: mercenary
     target: AppraisalVantage
     tooltip: |-
       <p><b>Spell Type</b>: (Neutral) Mercenary Faction Spell (R75+)</p>
