@@ -61,6 +61,7 @@ const spellMenuEntry = z.object({
     'dragon', 'archon', 'djinn', 'makers',
     'good', 'evil', 'order', 'chaos', 'balance',
   ]).optional(),
+  splitAlignments: z.boolean().optional(),
   target: z.string().regex(/^[A-Za-z0-9]+$/),
   tooltip: z.string(),
 });

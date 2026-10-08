@@ -1,19 +1,24 @@
 ---
-import type { IconAffiliation } from '../lib/referenceIcons';
+import { alignmentBackgroundColors, factionAlignmentPair, type IconAffiliation } from '../lib/referenceIcons';
 
 interface Props {
   icon: string;
   label?: string;
   affiliation?: IconAffiliation;
+  splitAlignments?: boolean;
 }
 
-const { icon, label = '', affiliation } = Astro.props;
+const { icon, label = '', affiliation, splitAlignments = false } = Astro.props;
 const base = `${import.meta.env.BASE_URL.replace(/\/+$/, '')}/`;
-const frameStyle = affiliation
-  ? `--reference-icon-frame: url("${base}assets/game/sprites/${affiliation}-trim.png")`
-  : undefined;
+const pair = affiliation ? factionAlignmentPair[affiliation] : undefined;
+const split = splitAlignments && pair;
+const styles = [
+  affiliation && `--reference-icon-frame:url("${base}assets/game/sprites/${affiliation}-trim.png")`,
+  split && `--reference-icon-primary:${alignmentBackgroundColors[pair[0]]}`,
+  split && `--reference-icon-secondary:${alignmentBackgroundColors[pair[1]]}`,
+].filter(Boolean).join(';');
 ---
 
-<span class="game-icon-frame" style={frameStyle}>
+<span class:list={['game-icon-frame', { 'game-icon-frame--alignment-split': split }]} style={styles || undefined}>
   <img src={`${base}assets/game/sprites/${icon}`} alt={label} />
 </span>

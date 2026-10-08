@@ -4,6 +4,7 @@ spells:
     name: God's Hand
     icon: gods-hand-icon.png
     affiliation: angel
+    splitAlignments: true
     target: GodsHand
     tooltip: |-
       <p><b>Spell Type</b>: (Good/Order) Angel Faction Spell</p>
@@ -16,6 +17,7 @@ spells:
     name: Fairy Chanting
     icon: fairy-chanting-icon.png
     affiliation: fairy
+    splitAlignments: true
     target: FairyChanting
     tooltip: |-
       <p><b>Spell Type</b>: (Good/Chaos) Fairy Faction Spell</p>
@@ -26,6 +28,7 @@ spells:
     name: Moon Blessing
     icon: moon-blessing-icon.png
     affiliation: elven
+    splitAlignments: true
     target: MoonBlessing
     tooltip: |-
       <p><b>Spell Type</b>: (Good/Balance) Elven Faction Spell</p>
@@ -71,6 +74,7 @@ spells:
     name: Night Time
     icon: night-time-icon.png
     affiliation: undead
+    splitAlignments: true
     target: NightTime
     tooltip: |-
       <p><b>Spell Type</b>: (Evil/Order) Undead Faction Spell</p>
@@ -80,6 +84,7 @@ spells:
     name: Hellfire Blast
     icon: hellfire-blast-icon.png
     affiliation: demon
+    splitAlignments: true
     target: HellfireBlast
     tooltip: |-
       <p><b>Spell Type</b>: (Evil/Chaos) Demon Faction Spell</p>
@@ -90,6 +95,7 @@ spells:
     name: Goblin's Greed
     icon: goblins-greed-icon.png
     affiliation: goblin
+    splitAlignments: true
     target: GoblinsGreed
     tooltip: |-
       <p><b>Spell Type</b>: (Evil/Balance) Goblin Faction Spell</p>
@@ -133,6 +139,7 @@ spells:
     name: Lightning Strike
     icon: lightning-strike-icon.png
     affiliation: titan
+    splitAlignments: true
     target: LightningStrike
     tooltip: |-
       <p><b>Spell Type</b>: (Neutral/Order) Titan Faction Spell</p>
@@ -143,6 +150,7 @@ spells:
     name: Brainwave
     icon: brainwave-icon.png
     affiliation: faceless
+    splitAlignments: true
     target: Brainwave
     tooltip: |-
       <p><b>Spell Type</b>: (Neutral/Chaos) Faceless Faction Spell</p>
@@ -152,6 +160,7 @@ spells:
     name: Grand Balance
     icon: grand-balance-icon.png
     affiliation: druid
+    splitAlignments: true
     target: GrandBalance
     tooltip: |-
       <p><b>Spell Tier Effect</b>: Multiplicatively increase Maximum Mana by 5% per spell tier.</p>

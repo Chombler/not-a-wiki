@@ -1,6 +1,6 @@
 ---
 import GameIcon from './GameIcon.astro';
-import type { ReferenceIconItem } from '../lib/referenceIcons';
+import { alignmentBackgroundColors, factionAlignmentPair, type ReferenceIconItem } from '../lib/referenceIcons';
 
 interface Props {
   item: ReferenceIconItem;
@@ -22,10 +22,16 @@ const frameTooltipIcons = (body: string) => body.replace(
   (image) => `<span class="game-icon-frame">${image}</span>`,
 );
 const label = escapeHtml(item.label);
-const tooltipFrameStyle = item.affiliation
-  ? ` style="--reference-icon-frame:url(${base}assets/game/sprites/${item.affiliation}-trim.png)"`
-  : '';
-const tooltipHeading = `<p><span class="game-icon-frame"${tooltipFrameStyle}><img src="${base}assets/game/sprites/${item.icon}" alt="${label}"></span><b> ${label}</b></p>`;
+const tooltipPair = item.affiliation ? factionAlignmentPair[item.affiliation] : undefined;
+const tooltipSplit = item.splitAlignments && tooltipPair;
+const tooltipStyles = [
+  item.affiliation && `--reference-icon-frame:url(${base}assets/game/sprites/${item.affiliation}-trim.png)`,
+  tooltipSplit && `--reference-icon-primary:${alignmentBackgroundColors[tooltipPair[0]]}`,
+  tooltipSplit && `--reference-icon-secondary:${alignmentBackgroundColors[tooltipPair[1]]}`,
+].filter(Boolean).join(';');
+const tooltipFrameStyle = tooltipStyles ? ` style="${tooltipStyles}"` : '';
+const tooltipSplitClass = tooltipSplit ? ' game-icon-frame--alignment-split' : '';
+const tooltipHeading = `<p><span class="game-icon-frame${tooltipSplitClass}"${tooltipFrameStyle}><img src="${base}assets/game/sprites/${item.icon}" alt="${label}"></span><b> ${label}</b></p>`;
 const tooltip = `${tooltipHeading}${frameTooltipIcons(bodyForBase(item.tooltipHtml))}`;
 const tooltipAttribute = { research: tooltip };
 const className = ['reference-icon-button', variant && `reference-icon-button--${variant}`].filter(Boolean).join(' ');
@@ -33,10 +39,10 @@ const className = ['reference-icon-button', variant && `reference-icon-button--$
 
 {item.href ? (
   <a class={className} {...tooltipAttribute} href={item.href} aria-label={item.label}>
-    <GameIcon icon={item.icon} label={item.label} affiliation={item.affiliation} />
+    <GameIcon icon={item.icon} label={item.label} affiliation={item.affiliation} splitAlignments={item.splitAlignments} />
   </a>
 ) : (
   <button type="button" class={className} {...tooltipAttribute} aria-label={item.label}>
-    <GameIcon icon={item.icon} label={item.label} affiliation={item.affiliation} />
+    <GameIcon icon={item.icon} label={item.label} affiliation={item.affiliation} splitAlignments={item.splitAlignments} />
   </button>
 )}

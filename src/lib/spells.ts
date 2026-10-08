@@ -5,6 +5,7 @@ export interface SpellMenuEntry {
   name: string;
   icon: string;
   affiliation?: IconAffiliation;
+  splitAlignments?: boolean;
   target: string;
   tooltip: string;
 }
