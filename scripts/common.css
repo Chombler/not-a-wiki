@@ -24,6 +24,28 @@ a.tooltips {
     image-rendering: pixelated;
 }
 
+.game-icon-affiliation {
+    position: absolute;
+    inset: 3px;
+    z-index: 0;
+    border: 9px solid transparent;
+    pointer-events: none;
+}
+
+.game-icon-affiliation--primary {
+    border-image: var(--reference-icon-affiliation-primary) 9 fill / 9px;
+    clip-path: inset(0 50% 0 0);
+}
+
+.game-icon-affiliation--secondary {
+    border-image: var(--reference-icon-affiliation-secondary) 9 fill / 9px;
+    clip-path: inset(0 0 0 50%);
+}
+
+.game-icon-frame--affiliation-split::after {
+    display: none;
+}
+
 .game-icon-alignment {
     position: absolute;
     top: 7px;

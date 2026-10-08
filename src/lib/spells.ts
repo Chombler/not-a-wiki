@@ -5,6 +5,7 @@ export interface SpellMenuEntry {
   name: string;
   icon: string;
   affiliation?: IconAffiliation;
+  splitAffiliations?: [IconAffiliation, IconAffiliation];
   splitAlignments?: boolean;
   alignmentBackground?: SpellBackground;
   target: string;

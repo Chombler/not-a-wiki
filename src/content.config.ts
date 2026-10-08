@@ -61,6 +61,10 @@ const spellMenuEntry = z.object({
     'dragon', 'archon', 'djinn', 'makers',
     'good', 'evil', 'order', 'chaos', 'balance',
   ]).optional(),
+  splitAffiliations: z.tuple([
+    z.enum(['fairy', 'elven', 'angel', 'goblin', 'undead', 'demon', 'titan', 'druid', 'faceless', 'dwarven', 'drow', 'mercenary', 'dragon', 'archon', 'djinn', 'makers']),
+    z.enum(['fairy', 'elven', 'angel', 'goblin', 'undead', 'demon', 'titan', 'druid', 'faceless', 'dwarven', 'drow', 'mercenary', 'dragon', 'archon', 'djinn', 'makers']),
+  ]).optional(),
   splitAlignments: z.boolean().optional(),
   alignmentBackground: z.enum(['good', 'evil', 'neutral', 'order', 'chaos', 'balance', 'gold']).optional(),
   target: z.string().regex(/^[A-Za-z0-9]+$/),

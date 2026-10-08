@@ -25,6 +25,7 @@ export interface ReferenceIconItem {
   label: string;
   icon: string;
   affiliation?: IconAffiliation;
+  splitAffiliations?: [IconAffiliation, IconAffiliation];
   splitAlignments?: boolean;
   alignmentBackground?: SpellBackground;
   href?: string;

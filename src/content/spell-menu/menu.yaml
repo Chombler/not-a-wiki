@@ -381,6 +381,7 @@ spells:
   - id: TwistingNether
     name: Twisting Nether
     icon: twisting-nether-icon.png
+    splitAffiliations: [fairy, undead]
     alignmentBackground: gold
     target: TwistingNether
     tooltip: |-
