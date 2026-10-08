@@ -223,11 +223,7 @@ a.tooltips {
   min-width: 360px;
   margin-inline: auto;
   padding: 8px;
-  background: transparent;
-}
-
-.spell-system-board .game-icon-frame {
-  background: transparent;
+  background: #1a1917;
 }
 
 .spell-system-row {
