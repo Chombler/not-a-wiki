@@ -277,6 +277,33 @@ if (!spellPageHtml.includes(`href="#GodsHand"`) || !spellPageHtml.includes(`gods
 if ([...authoredSpellSource.matchAll(/class="spell-entry"/g)].length !== 30 || !authoredSpellSource.includes('<!-- spell-reference-menu -->')) {
   failures.push('Spells reference content is no longer authored as one readable page around the Astro icon menu');
 }
+for (const match of authoredSpellSource.matchAll(/<article class="spell-entry" id="([^"]+)">([\s\S]*?)<\/article>/g)) {
+  const [, spellId, entry] = match;
+  const core = entry.split(/<section class="spell-related"|<div class="shlisting"/)[0];
+  const headingAt = core.indexOf('class="spell-entry-heading"');
+  const typeAt = core.indexOf('<b>Spell Type</b>');
+  const requirementAt = core.indexOf('<b>Requirement</b>');
+  const costAt = core.indexOf('<b>Cost</b>');
+  const effectAt = core.indexOf('<b>Effect</b>');
+  const tierEffectAt = core.indexOf('<b>Spell Tier Effect</b>');
+  const orderedCore = headingAt >= 0 && typeAt > headingAt
+    && (requirementAt < 0 || (requirementAt > typeAt && requirementAt < costAt))
+    && costAt > typeAt && effectAt > costAt
+    && (tierEffectAt < 0 || tierEffectAt > effectAt);
+  if (!orderedCore) failures.push(`Spell entry ${spellId} no longer follows heading, type/availability, cost/duration, effect/formula order`);
+
+  const trophyAt = entry.indexOf('<b>Spell Trophy &amp; Upgrade</b>') >= 0
+    ? entry.indexOf('<b>Spell Trophy &amp; Upgrade</b>')
+    : entry.indexOf('<b>Spell Trophy & Upgrade</b>');
+  const challengeAt = entry.indexOf('<b>Challenge Upgrade</b>');
+  const tiersAt = entry.indexOf('<div class="shlisting"');
+  if (trophyAt >= 0 && challengeAt >= 0 && trophyAt > challengeAt) failures.push(`Spell entry ${spellId} places its challenge before its trophy upgrade`);
+  if (tiersAt >= 0 && Math.max(trophyAt, challengeAt) > tiersAt) failures.push(`Spell entry ${spellId} places related upgrades after tier upgrades`);
+}
+for (const [spellId, extendedId] of [['GrandBalance', 'primal-balance-targets'], ['DragonsBreath', 'green-dragons-breath-bonus']]) {
+  const entry = authoredSpellSource.match(new RegExp(`<article class="spell-entry" id="${spellId}">([\\s\\S]*?)<\\/article>`))?.[1] ?? '';
+  if (entry.indexOf(extendedId) < entry.indexOf('<div class="shlisting"')) failures.push(`Spell entry ${spellId} places extended reference material before tier upgrades`);
+}
 for (const normalizedField of ['supplement:', 'section:', 'upgradeId:', 'challengeId:']) {
   if (spellMenuSource.includes(normalizedField)) failures.push(`Spell menu regained full-reference field: ${normalizedField}`);
 }
