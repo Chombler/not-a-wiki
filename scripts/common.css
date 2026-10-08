@@ -24,6 +24,19 @@ a.tooltips {
     image-rendering: pixelated;
 }
 
+.game-icon-frame--split::before {
+    position: absolute;
+    inset: 7px;
+    z-index: 0;
+    background: linear-gradient(
+        135deg,
+        var(--reference-icon-primary) 0 48%,
+        var(--reference-icon-secondary) 52% 100%
+    );
+    content: "";
+    pointer-events: none;
+}
+
 .game-icon-frame::after {
     position: absolute;
     inset: 3px;
@@ -32,6 +45,10 @@ a.tooltips {
     border-image: var(--reference-icon-frame, var(--game-icon-frame)) 9 fill / 9px;
     content: "";
     pointer-events: none;
+}
+
+.game-icon-frame--split::after {
+    border-image: var(--reference-icon-frame, var(--game-icon-frame)) 9 / 9px;
 }
 
 .trophy-drawer {
