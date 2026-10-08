@@ -1,6 +1,7 @@
 ---
 import type { SpellMenu, SpellMenuEntry } from '../lib/spells';
 import type { ReferenceIconItem } from '../lib/referenceIcons';
+import ReferenceIcon from './ReferenceIcon.astro';
 import ReferenceIconGrid from './ReferenceIconGrid.astro';
 
 interface Props {
@@ -14,10 +15,62 @@ const referenceItems = (entries: SpellMenuEntry[]): ReferenceIconItem[] => entri
   href: `#${entry.target}`,
   tooltipHtml: entry.tooltip,
 }));
+const spellById = new Map(menu.spells.map((entry) => [entry.id, entry]));
+const spells = (ids: string[]) => referenceItems(ids.map((id) => {
+  const spell = spellById.get(id);
+  if (!spell) throw new Error(`Spell menu layout references missing spell: ${id}`);
+  return spell;
+}));
+const primaryRows = [
+  { label: 'Good spells: Order, Chaos, Balance, alignment, prestige, and Mercenary', ids: ['GodsHand', 'FairyChanting', 'MoonBlessing', 'HolyLight', 'DiamondPickaxe', 'ShareBenefits'] },
+  { label: 'Evil spells: Order, Chaos, Balance, alignment, prestige, and Mercenary', ids: ['NightTime', 'HellfireBlast', 'GoblinsGreed', 'BloodFrenzy', 'ComboStrike', 'ReapInterests'] },
+  { label: 'Neutral spells: Order, Chaos, Balance, alignment, prestige, and Mercenary', ids: ['LightningStrike', 'Brainwave', 'GrandBalance', 'GemGrinder', 'DragonsBreath', 'AppraisalVantage'] },
+];
+const secondaryAlignment = spells(['TemporalFlux', 'Maelstrom', 'AllCreation']);
+const astralFactions = spells(['Precognition', 'LimitedWish', 'InfiniteSpiral']);
+const chaosSpecials = spells(['Catalyst', 'ChaosMadness']);
+const defaultSpells = spells(['TaxCollection', 'CalltoArms']);
+const universalSpecials = spells(['SpiritualSurge', 'TwistingNether']);
 ---
 
 <div class="spell-reference-grids">
-  <ReferenceIconGrid title="Spells" items={referenceItems(menu.spells)} variant="spell" />
+  <section class="reference-icon-panel spell-system-panel">
+    <h3>Spells</h3>
+    <div class="spell-system-board-scroll">
+      <div class="spell-system-board">
+        <div class="spell-primary-matrix" aria-label="Primary alignment spell matrix">
+          {primaryRows.map((row) => (
+            <div class="spell-system-row" role="group" aria-label={row.label}>
+              {spells(row.ids).map((item) => <ReferenceIcon item={item} variant="spell" />)}
+            </div>
+          ))}
+        </div>
+
+        <div class="spell-later-systems">
+          <div class="spell-alignment-families">
+            <div class="spell-system-row" role="group" aria-label="Order, Chaos, and Balance secondary alignment spells">
+              {secondaryAlignment.map((item) => <ReferenceIcon item={item} variant="spell" />)}
+            </div>
+            <div class="spell-system-row" role="group" aria-label="Order, Chaos, and Balance astral faction spells">
+              {astralFactions.map((item) => <ReferenceIcon item={item} variant="spell" />)}
+            </div>
+            <div class="spell-special-pair" role="group" aria-label="Chaos special spells">
+              {chaosSpecials.map((item) => <ReferenceIcon item={item} variant="spell" />)}
+            </div>
+          </div>
+
+          <div class="spell-default-family">
+            <div class="spell-system-row" role="group" aria-label="Default spells">
+              {defaultSpells.map((item) => <ReferenceIcon item={item} variant="spell" />)}
+            </div>
+            <div class="spell-system-row" role="group" aria-label="Universal and special spells">
+              {universalSpecials.map((item) => <ReferenceIcon item={item} variant="spell" />)}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <details class="spell-related-grids">
     <summary>Spell Trophies and Challenge Rewards</summary>

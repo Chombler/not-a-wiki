@@ -159,6 +159,41 @@ a.tooltips {
   border-bottom: 1px solid var(--line);
 }
 
+.spell-system-board-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.spell-system-board {
+  width: max-content;
+  min-width: 360px;
+  margin-inline: auto;
+  padding: 8px;
+  background: #111;
+}
+
+.spell-system-row {
+  display: flex;
+}
+
+.spell-later-systems {
+  display: grid;
+  grid-template-columns: 180px 60px 120px;
+}
+
+.spell-alignment-families {
+  grid-column: 1;
+}
+
+.spell-default-family {
+  grid-column: 3;
+}
+
+.spell-special-pair {
+  display: flex;
+  justify-content: center;
+}
+
 .spell-related-grids > summary {
   cursor: pointer;
   font-weight: 700;
