@@ -7,6 +7,132 @@
       "role": "frame"
     },
     {
+      "sprite_name": "FairyTrim",
+      "kind": "ui",
+      "entity": "fairy",
+      "role": "icon-frame"
+    },
+    {
+      "sprite_name": "ElvenTrim",
+      "kind": "ui",
+      "entity": "elven",
+      "role": "icon-frame"
+    },
+    {
+      "sprite_name": "AngelTrim",
+      "kind": "ui",
+      "entity": "angel",
+      "role": "icon-frame"
+    },
+    {
+      "sprite_name": "GoblinTrim",
+      "kind": "ui",
+      "entity": "goblin",
+      "role": "icon-frame"
+    },
+    {
+      "sprite_name": "UndeadTrim",
+      "kind": "ui",
+      "entity": "undead",
+      "role": "icon-frame"
+    },
+    {
+      "sprite_name": "DemonTrim",
+      "kind": "ui",
+      "entity": "demon",
+      "role": "icon-frame"
+    },
+    {
+      "sprite_name": "TitanTrim",
+      "kind": "ui",
+      "entity": "titan",
+      "role": "icon-frame"
+    },
+    {
+      "sprite_name": "DruidTrim",
+      "kind": "ui",
+      "entity": "druid",
+      "role": "icon-frame"
+    },
+    {
+      "sprite_name": "FacelessTrim",
+      "kind": "ui",
+      "entity": "faceless",
+      "role": "icon-frame"
+    },
+    {
+      "sprite_name": "DwarvenTrim",
+      "kind": "ui",
+      "entity": "dwarven",
+      "role": "icon-frame"
+    },
+    {
+      "sprite_name": "DrowTrim",
+      "kind": "ui",
+      "entity": "drow",
+      "role": "icon-frame"
+    },
+    {
+      "sprite_name": "MercenaryTrim",
+      "kind": "ui",
+      "entity": "mercenary",
+      "role": "icon-frame"
+    },
+    {
+      "sprite_name": "DragonTrim",
+      "kind": "ui",
+      "entity": "dragon",
+      "role": "icon-frame"
+    },
+    {
+      "sprite_name": "ArchonTrim",
+      "kind": "ui",
+      "entity": "archon",
+      "role": "icon-frame"
+    },
+    {
+      "sprite_name": "DjinnTrim",
+      "kind": "ui",
+      "entity": "djinn",
+      "role": "icon-frame"
+    },
+    {
+      "sprite_name": "MakersTrim",
+      "kind": "ui",
+      "entity": "makers",
+      "role": "icon-frame"
+    },
+    {
+      "sprite_name": "GoodTrim",
+      "kind": "ui",
+      "entity": "good",
+      "role": "icon-frame"
+    },
+    {
+      "sprite_name": "EvilTrim",
+      "kind": "ui",
+      "entity": "evil",
+      "role": "icon-frame"
+    },
+    {
+      "sprite_name": "OrderTrim",
+      "kind": "ui",
+      "entity": "order",
+      "role": "icon-frame"
+    },
+    {
+      "sprite_name": "ChaosTrim",
+      "kind": "ui",
+      "entity": "chaos",
+      "role": "icon-frame"
+    },
+    {
+      "sprite_name": "BalanceTrim",
+      "kind": "ui",
+      "entity": "balance",
+      "role": "icon-frame"
+    },
+    {
       "sprite_name": "manaBubble_Full",
       "kind": "resource",
       "entity": "mana",

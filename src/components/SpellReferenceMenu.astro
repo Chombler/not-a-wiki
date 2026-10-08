@@ -12,6 +12,7 @@ const { menu } = Astro.props;
 const referenceItems = (entries: SpellMenuEntry[]): ReferenceIconItem[] => entries.map((entry) => ({
   label: entry.name,
   icon: entry.icon,
+  affiliation: entry.affiliation,
   href: `#${entry.target}`,
   tooltipHtml: entry.tooltip,
 }));

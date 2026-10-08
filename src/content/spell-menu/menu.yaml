@@ -3,6 +3,7 @@ spells:
   - id: GodsHand
     name: God's Hand
     icon: gods-hand-icon.png
+    affiliation: angel
     target: GodsHand
     tooltip: |-
       <p><b>Spell Type</b>: (Good/Order) Angel Faction Spell</p>
@@ -14,6 +15,7 @@ spells:
   - id: FairyChanting
     name: Fairy Chanting
     icon: fairy-chanting-icon.png
+    affiliation: fairy
     target: FairyChanting
     tooltip: |-
       <p><b>Spell Type</b>: (Good/Chaos) Fairy Faction Spell</p>
@@ -23,6 +25,7 @@ spells:
   - id: MoonBlessing
     name: Moon Blessing
     icon: moon-blessing-icon.png
+    affiliation: elven
     target: MoonBlessing
     tooltip: |-
       <p><b>Spell Type</b>: (Good/Balance) Elven Faction Spell</p>
@@ -32,6 +35,7 @@ spells:
   - id: HolyLight
     name: Holy Light
     icon: holy-light-icon.png
+    affiliation: good
     target: HolyLight
     tooltip: |-
       <p><b>Spell Tier Effect</b>: Multiplicatively increase Mana Regeneration by 10% per spell tier.</p>
@@ -41,6 +45,7 @@ spells:
   - id: DiamondPickaxe
     name: Diamond Pickaxe
     icon: diamond-pickaxe-icon.png
+    affiliation: dwarven
     target: DiamondPickaxe
     tooltip: |-
       <p><b>Spell Type</b>: (Good) Dwarven Faction Spell</p>
@@ -50,6 +55,7 @@ spells:
   - id: ShareBenefits
     name: Share Benefits
     icon: tax-collection-icon.png
+    affiliation: mercenary
     target: ShareBenefits
     tooltip: |-
       <p><b>Spell Type</b>: (Good) Mercenary Faction Spell (R75+)</p>
@@ -64,6 +70,7 @@ spells:
   - id: NightTime
     name: Night Time
     icon: night-time-icon.png
+    affiliation: undead
     target: NightTime
     tooltip: |-
       <p><b>Spell Type</b>: (Evil/Order) Undead Faction Spell</p>
@@ -72,6 +79,7 @@ spells:
   - id: HellfireBlast
     name: Hellfire Blast
     icon: hellfire-blast-icon.png
+    affiliation: demon
     target: HellfireBlast
     tooltip: |-
       <p><b>Spell Type</b>: (Evil/Chaos) Demon Faction Spell</p>
@@ -81,6 +89,7 @@ spells:
   - id: GoblinsGreed
     name: Goblin's Greed
     icon: goblins-greed-icon.png
+    affiliation: goblin
     target: GoblinsGreed
     tooltip: |-
       <p><b>Spell Type</b>: (Evil/Balance) Goblin Faction Spell</p>
@@ -91,6 +100,7 @@ spells:
   - id: BloodFrenzy
     name: Blood Frenzy
     icon: blood-frenzy-icon.png
+    affiliation: evil
     target: BloodFrenzy
     tooltip: |-
       <p><b>Spell Tier Effect</b>: Multiplicatively increase Non-Unique building production by 500% per spell tier.</p>
@@ -100,6 +110,7 @@ spells:
   - id: ComboStrike
     name: Combo Strike
     icon: combo-strike-icon.png
+    affiliation: drow
     target: ComboStrike
     tooltip: |-
       <p><b>Spell Type</b>: (Evil) Drow Faction Spell</p>
@@ -109,6 +120,7 @@ spells:
   - id: ReapInterests
     name: Reap Interests
     icon: tax-collection-icon.png
+    affiliation: mercenary
     target: ReapInterests
     tooltip: |-
       <p><b>Spell Type</b>: (Evil) Mercenary Faction Spell (R75+)</p>
@@ -120,6 +132,7 @@ spells:
   - id: LightningStrike
     name: Lightning Strike
     icon: lightning-strike-icon.png
+    affiliation: titan
     target: LightningStrike
     tooltip: |-
       <p><b>Spell Type</b>: (Neutral/Order) Titan Faction Spell</p>
@@ -129,6 +142,7 @@ spells:
   - id: Brainwave
     name: Brainwave
     icon: brainwave-icon.png
+    affiliation: faceless
     target: Brainwave
     tooltip: |-
       <p><b>Spell Type</b>: (Neutral/Chaos) Faceless Faction Spell</p>
@@ -137,6 +151,7 @@ spells:
   - id: GrandBalance
     name: Grand Balance
     icon: grand-balance-icon.png
+    affiliation: druid
     target: GrandBalance
     tooltip: |-
       <p><b>Spell Tier Effect</b>: Multiplicatively increase Maximum Mana by 5% per spell tier.</p>
@@ -157,6 +172,7 @@ spells:
   - id: DragonsBreath
     name: Dragon's Breath
     icon: dragons-breath-icon.png
+    affiliation: dragon
     target: DragonsBreath
     tooltip: |-
       <p><b>Spell Type</b>: (Neutral) Dragon Faction Spell (R46+)</p>
@@ -176,6 +192,7 @@ spells:
   - id: AppraisalVantage
     name: Appraisal Vantage
     icon: tax-collection-icon.png
+    affiliation: mercenary
     target: AppraisalVantage
     tooltip: |-
       <p><b>Spell Type</b>: (Neutral) Mercenary Faction Spell (R75+)</p>
@@ -187,6 +204,7 @@ spells:
   - id: TemporalFlux
     name: Temporal Flux
     icon: temporal-flux-icon.png
+    affiliation: order
     target: TemporalFlux
     tooltip: |-
       <p><b>Spell Type</b>: Order Alignment Spell (R100+)</p>
@@ -202,6 +220,7 @@ spells:
   - id: Maelstrom
     name: Maelstrom
     icon: maelstrom-icon.png
+    affiliation: chaos
     target: Maelstrom
     tooltip: |-
       <p><b>Spell Tier Effect</b>: Affect one additional random building per spell tier.</p>
@@ -215,6 +234,7 @@ spells:
   - id: AllCreation
     name: All Creation
     icon: all-creation-icon.png
+    affiliation: balance
     target: AllCreation
     tooltip: |-
       <p><b>Spell Tier Effect</b>: Multiplicatively increase production bonus from Gems by 10% per spell tier.</p>
@@ -227,6 +247,7 @@ spells:
   - id: Precognition
     name: Precognition
     icon: precognition-icon.png
+    affiliation: archon
     target: Precognition
     tooltip: |-
       <p><b>Spell Tier Effect</b>: Research Points count 10% more per spell tier.</p>
@@ -238,6 +259,7 @@ spells:
   - id: LimitedWish
     name: Limited Wish
     icon: limited-wish-icon.png
+    affiliation: djinn
     target: LimitedWish
     tooltip: |-
       <p><b>Spell Type</b>: (Chaos) Djinn Faction Spell (R125+)</p>
@@ -263,6 +285,7 @@ spells:
   - id: InfiniteSpiral
     name: Infinite Spiral
     icon: infinite-spiral-icon.png
+    affiliation: makers
     target: InfiniteSpiral
     tooltip: |-
       <p><b>Spell Tier Effect</b>: Multiplicatively increase Offline bonus by 10% per spell tier.</p>
@@ -277,6 +300,7 @@ spells:
   - id: Catalyst
     name: Catalyst
     icon: catalyst-icon.png
+    affiliation: chaos
     target: Catalyst
     tooltip: |-
       <p><b>Spell Type</b>: (Chaos) Djinn Faction Spell (R130+)</p>
@@ -289,6 +313,7 @@ spells:
   - id: ChaosMadness
     name: Chaos Madness
     icon: chaos-madness-icon.png
+    affiliation: chaos
     target: ChaosMadness
     tooltip: |-
       <p><b>Spell Type</b>: (Chaos) Mercenary Faction Spell (R194+)</p>
@@ -338,6 +363,7 @@ upgrades:
   - id: fairy-choir-upgrade
     name: Fairy Choir
     icon: fairy-choir-trophy.png
+    affiliation: fairy
     target: FairyChanting
     tooltip: |-
       <p><b>Requirement</b>: Cast Fairy Chanting while having 50 or more assistants.</p>
@@ -346,6 +372,7 @@ upgrades:
   - id: sun-blessing-upgrade
     name: Sun Blessing
     icon: sun-blessing-trophy.png
+    affiliation: elven
     target: MoonBlessing
     tooltip: |-
       <p><b>Requirement</b>: Cast Moon Blessing with at least 5 Elven Luck triggers in this Era.</p>
@@ -354,6 +381,7 @@ upgrades:
   - id: god-s-rest-upgrade
     name: God's Rest
     icon: gods-rest-trophy.png
+    affiliation: angel
     target: GodsHand
     tooltip: |-
       <p><b>Requirement</b>: Cast God's Hand with at least 1,500 Maximum Mana and 75 Mana Regeneration.</p>
@@ -363,6 +391,7 @@ upgrades:
   - id: minedwarf-upgrade
     name: Minedwarf
     icon: minedwarf-trophy.png
+    affiliation: dwarven
     target: DiamondPickaxe
     tooltip: |-
       <p><b>Requirement</b>: Find 30,000 Faction Coins using Diamond Pickaxe in a single Era.</p>
@@ -371,6 +400,7 @@ upgrades:
   - id: greed-drive-upgrade
     name: Greed Drive
     icon: greed-drive-trophy.png
+    affiliation: goblin
     target: GoblinsGreed
     tooltip: |-
       <p><b>Requirement</b>: Cast Goblin's Greed with at least 100 Royal Exchanges purchased.</p>
@@ -379,6 +409,7 @@ upgrades:
   - id: true-night-upgrade
     name: True Night
     icon: true-night-trophy.png
+    affiliation: undead
     target: NightTime
     tooltip: |-
       <p><b>Requirement</b>: Cast Night Time with at least 20,000% Offline production.</p>
@@ -387,6 +418,7 @@ upgrades:
   - id: hell-rush-upgrade
     name: Hell Rush
     icon: hell-rush-trophy.png
+    affiliation: demon
     target: HellfireBlast
     tooltip: |-
       <p><b>Requirement</b>: Cast the Demon spell Hellfire Blast in the first 60 seconds of a playtime.</p>
@@ -395,6 +427,7 @@ upgrades:
   - id: perfect-combo-upgrade
     name: Perfect Combo
     icon: perfect-combo-trophy.png
+    affiliation: drow
     target: ComboStrike
     tooltip: |-
       <p><b>Requirement</b>: Cast a chain of 50 Combo Strikes in a single Era. The chain is interrupted by casting different spells.</p>
@@ -404,6 +437,7 @@ upgrades:
   - id: lightning-storm-upgrade
     name: Lightning Storm
     icon: lightning-storm-trophy.png
+    affiliation: titan
     target: LightningStrike
     tooltip: |-
       <p><b>Requirement</b>: Cast Lightning Strike 100 times in a single Era.</p>
@@ -412,6 +446,7 @@ upgrades:
   - id: halls-of-balance-upgrade
     name: Halls of Balance
     icon: halls-of-balance-trophy.png
+    affiliation: druid
     target: GrandBalance
     tooltip: |-
       <p><b>Requirement</b>: Have Grand Balance affect Hall of Legends.</p>
@@ -420,6 +455,7 @@ upgrades:
   - id: faceless-overmind-upgrade
     name: Faceless Overmind
     icon: faceless-overmind-trophy.png
+    affiliation: faceless
     target: Brainwave
     tooltip: |-
       <p><b>Requirement</b>: Affiliate with the Faceless 5 times in a row.</p>
@@ -428,6 +464,7 @@ upgrades:
   - id: dragon-s-roar-upgrade
     name: Dragon's Roar
     icon: dragons-roar-trophy.png
+    affiliation: dragon
     target: DragonsBreath
     tooltip: |-
       <p><b>Requirement</b>: Cast Dragon's Breath while having at least 5 other active spells.</p>
@@ -437,6 +474,7 @@ upgrades:
   - id: chrono-loading-upgrade
     name: Chrono Loading
     icon: chrono-loading-trophy.png
+    affiliation: archon
     target: Precognition
     tooltip: |-
       <p><b>Requirement</b>: Cast Precognition with at least 100 Qa (1e17) Mana Regeneration.</p>
@@ -447,6 +485,7 @@ upgrades:
   - id: persistent-entropy-upgrade
     name: Persistent Entropy
     icon: persistent-entropy-trophy.png
+    affiliation: djinn
     target: LimitedWish
     tooltip: |-
       <p><b>Requirement</b>: Cast Limited Wish 100 times within 30 minutes of a new Era.</p>
@@ -455,6 +494,7 @@ upgrades:
   - id: reality-crater-upgrade
     name: Reality Crater
     icon: reality-crater-trophy.png
+    affiliation: makers
     target: InfiniteSpiral
     tooltip: |-
       <p><b>Requirement</b>: R125+, Cast Infinite Spiral with at least 10 excavation resets this Era.</p>
@@ -473,16 +513,19 @@ challenges:
   - id: fairy-orchestra-challenge
     name: Fairy Orchestra
     icon: challenge-fairy.png
+    affiliation: fairy
     target: FairyChanting
     tooltip: "<p><b>Effect</b>: Each assistant generates 3 times as many faction coins while Fairy Chanting is active.</p>"
   - id: star-blessing-challenge
     name: Star Blessing
     icon: challenge-elven.png
+    affiliation: elven
     target: MoonBlessing
     tooltip: "<p><b>Effect</b>: While Moon Blessing is active, increase the Elven Luck-trigger statistic each second by floor(1 + t ^ 0.2), where t is elapsed spell time in seconds.</p>"
   - id: god-s-throne-challenge
     name: God's Throne
     icon: challenge-angel.png
+    affiliation: angel
     target: GodsHand
     tooltip: |-
       <p><b>Effect</b>: Mana Regeneration is multiplicatively increased by 50% while God's Hand is active.</p>
@@ -491,16 +534,19 @@ challenges:
   - id: iron-grip-challenge
     name: Iron Grip
     icon: challenge-dwarven.png
+    affiliation: dwarven
     target: DiamondPickaxe
     tooltip: "<p><b>Effect</b>: Increase Diamond Pickaxe duration by 8 seconds, and its bonus to Faction Coin find chance is passively applied as a multiplier to excavations Faction Coin rewards.</p>"
   - id: avarice-drive-challenge
     name: Avarice Drive
     icon: challenge-goblin.png
+    affiliation: goblin
     target: GoblinsGreed
     tooltip: "<p><b>Effect</b>: Goblin's Greed counts Faction Coins found in this Reincarnation.</p>"
   - id: midnight-time-challenge
     name: Midnight Time
     icon: challenge-undead.png
+    affiliation: undead
     target: NightTime
     tooltip: |-
       <p><b>Effect</b>: Increase Night Time assistant bonus based on time spent in this Reincarnation.</p>
@@ -508,11 +554,13 @@ challenges:
   - id: hellfire-burst-challenge
     name: Hellfire Burst
     icon: challenge-demon.png
+    affiliation: demon
     target: HellfireBlast
     tooltip: "<p><b>Effect</b>: Hellfire Blast also counts Evil spells cast in this reincarnation to increase its bonus.</p>"
   - id: versatile-combo-challenge
     name: Versatile Combo
     icon: challenge-drow.png
+    affiliation: drow
     target: ComboStrike
     tooltip: |-
       <p><b>Effect</b>: Increase Combo Strike counter based on the amount of spells cast in this Era, not including Tax Collection.</p>
@@ -522,6 +570,7 @@ challenges:
   - id: thunderstorm-challenge
     name: Thunderstorm
     icon: challenge-titan.png
+    affiliation: titan
     target: LightningStrike
     tooltip: |-
       <p><b>Effect</b>: Increase Faction Coin find chance from Lightning Strike by 20% per building tier hit.</p>
@@ -530,6 +579,7 @@ challenges:
   - id: primal-balance-challenge
     name: Primal Balance
     icon: challenge-druid.png
+    affiliation: druid
     target: GrandBalance
     tooltip: |-
       <p><b>Effect</b>: Grand Balance now affects extra buildings based on Mana produced in this Reincarnation.</p>
@@ -539,6 +589,7 @@ challenges:
   - id: focused-thoughts-challenge
     name: Focused Thoughts
     icon: challenge-faceless.png
+    affiliation: faceless
     target: Brainwave
     tooltip: |-
       <p><b>Effect</b>: Give Brainwave a 10-minute headstart, increasing based on its activity time in this Era.</p>
@@ -546,21 +597,25 @@ challenges:
   - id: prismatic-breath-challenge
     name: Prismatic Breath
     icon: challenge-dragon.png
+    affiliation: dragon
     target: DragonsBreath
     tooltip: "<p><b>Effect</b>: Reincarnations count 5% more per active Dragon's Breath.</p>"
   - id: omniscience-challenge
     name: Omniscience
     icon: challenge-archon.png
+    affiliation: archon
     target: Precognition
     tooltip: "<p><b>Effect</b>: Precognition also makes Excavations, Artifacts, Reincarnations, Research points and Lineage levels count 15% more.</p>"
   - id: full-wish-challenge
     name: Full Wish
     icon: challenge-djinn.png
+    affiliation: djinn
     target: LimitedWish
     tooltip: "<p><b>Effect</b>: Production of all buildings effect of Limited Wish is active on every cast and is no longer a possible random outcome.</p>"
   - id: gaia-s-cradle-challenge
     name: Gaia's Cradle
     icon: challenge-makers.png
+    affiliation: makers
     target: InfiniteSpiral
     tooltip: "<p><b>Effect</b>: All Infinite Spiral effects scale 15% faster.</p>"
   - id: warcry-challenge

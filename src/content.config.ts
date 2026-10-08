@@ -55,6 +55,12 @@ const spellMenuEntry = z.object({
   id: z.string().regex(/^[A-Za-z0-9-]+$/),
   name: z.string().min(1),
   icon: z.string().regex(/^[a-z0-9-]+\.png$/),
+  affiliation: z.enum([
+    'fairy', 'elven', 'angel', 'goblin', 'undead', 'demon',
+    'titan', 'druid', 'faceless', 'dwarven', 'drow', 'mercenary',
+    'dragon', 'archon', 'djinn', 'makers',
+    'good', 'evil', 'order', 'chaos', 'balance',
+  ]).optional(),
   target: z.string().regex(/^[A-Za-z0-9]+$/),
   tooltip: z.string(),
 });

@@ -1,7 +1,10 @@
+import type { IconAffiliation } from './referenceIcons';
+
 export interface SpellMenuEntry {
   id: string;
   name: string;
   icon: string;
+  affiliation?: IconAffiliation;
   target: string;
   tooltip: string;
 }
