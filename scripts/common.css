@@ -226,6 +226,10 @@ a.tooltips {
   background: transparent;
 }
 
+.spell-system-board .game-icon-frame {
+  background: transparent;
+}
+
 .spell-system-row {
   display: flex;
 }
