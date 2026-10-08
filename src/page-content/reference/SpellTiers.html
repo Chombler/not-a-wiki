@@ -8,7 +8,7 @@
 	<p>Dragon's Breath starts with five colors and gains colors across Ascensions. Its production effects do not suffer Ascension penalties.</p>
 	<h2 id="unlocking-and-buying-tiers">Unlocking and buying tiers</h2>
 	<p>Each Spell Tier upgrade must be unlocked once, after which the unlock is permanent. The upgrade itself must be purchased again after every Abdication. Every purchase has a Faction Coin cost.</p>
-	<p>The ordinary coin cost advances with the Ascension that introduces the tier: Tier 2 costs Diamond Coins in A1, Tier 3 costs Emerald Coins in A2, Tier 4 costs Amethyst Coins in A3, and Tier 5 costs Sapphire Coins in A4. A tier's ordinary coin cost becomes free in later Ascensions. Spells introduced in A2 therefore receive Tier 2 free, then follow the same currency sequence from Tier 3 onward.</p>
+	<p>The ordinary coin cost advances with the Ascension that introduces the tier: Tier 2 costs Diamond Coins in A1, Tier 3 costs Emerald Coins in A2, Tier 4 costs Amethyst Coins in A3, and Tier 5 costs Sapphire Coins in A4. A tier's ordinary coin cost becomes free in later Ascensions. Spells introduced in A2 therefore receive Tier 2 free and first pay a coin cost for Tier 3. Astral spells introduced in A3 receive Tiers 2 and 3 free and first pay a coin cost for Tier 4.</p>
 	<h2 id="autocasting-and-shared-bonuses">Autocasting and shared tier bonuses</h2>
 	<p><img src="/realm/assets/game/sprites/tiered-autocast-upgrade.png" align="middle"><b> Tiered Autocasting</b> is not required to unlock or purchase Spell Tier upgrades. Its upgrade becomes available in Ascension 1 at R42 after purchasing <b>Hatch!</b> and <b>Efficient Autocasting</b>. Efficient Autocasting requires 50 M Mana Produced this Reincarnation. Purchasing the Tiered Autocasting upgrade grants its trophy.</p>
 	<p>Tiered Autocasting will automatically set the autocasted spell tier at the highest you have bought, but you can change it to a lower tier if you wish.</p>
@@ -17,7 +17,7 @@
 	<p><b>Raw offline-production formula per tier upgrade</b>: (m ^ (2 / max(3, A)) + r ^ (2 / max(3, A))) ^ 0.4%, where m is Maximum Mana, r is Mana Regeneration per second, and A is the current Ascension. Each upgrade's result is then subjected to the Ascension penalty assigned to that tier; the in-game tooltip shows the combined purchased bonus.</p>
 	<p><b>Note</b>: Offline bonuses from tier upgrades are assigned to the Ascension in which that tier becomes available. Dragon's Breath tier upgrades do not provide these offline bonuses.</p>
 	<h2 id="spell-specific-tier-effects">Spell-specific tier effects</h2>
-	<p>Tier 1 has no tier-upgrade bonus unless the row gives a base value. These values do not include the separate Mana-based offline bonus shared by tier upgrades.</p>
+	<p>Tier 1 has no purchased-tier bonus unless the row gives a base value. Each later column shows the cumulative spell-specific effect at that displayed spell tier. These values do not include the separate Mana-based offline bonus shared by tier upgrades.</p>
 	<table class="numtable spell-tier-bonus-table">
 		<thead><tr><th>Spell</th><th>Spell-specific effect</th><th>T1</th><th>T2</th><th>T3</th><th>T4</th><th>T5</th></tr></thead>
 		<tbody>

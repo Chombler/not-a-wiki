@@ -300,6 +300,22 @@ for (const match of authoredSpellSource.matchAll(/<article class="spell-entry" i
   if (trophyAt >= 0 && challengeAt >= 0 && trophyAt > challengeAt) failures.push(`Spell entry ${spellId} places its challenge before its trophy upgrade`);
   if (tiersAt >= 0 && Math.max(trophyAt, challengeAt) > tiersAt) failures.push(`Spell entry ${spellId} places related upgrades after tier upgrades`);
 }
+if ([...authoredSpellSource.matchAll(/<b>Spell Tier Effect<\/b>/g)].length !== 22) failures.push('Spells does not summarize all 22 ordinary spell-specific tier effects');
+const tierCollapsibles = [...authoredSpellSource.matchAll(/<div class="shlisting">([\s\S]*?)<\/article>/g)];
+if (tierCollapsibles.length !== 23 || tierCollapsibles.some(([, body]) => !body.includes('<b>Effect</b>'))) {
+  failures.push('Spells does not give every tier-upgrade collapsible an explicit, source-audited effect');
+}
+for (const staleTierClaim of [
+  'duration of the spell by 10 seconds per tier',
+  'Evils spells count more per Tier',
+  'Tier 5 will trigger all the effects simultaneously',
+  'No 1 spell will be casted twice',
+]) {
+  if (authoredSpellSource.includes(staleTierClaim)) failures.push(`Spells restored stale tier claim: ${staleTierClaim}`);
+}
+for (const artifact of ['Lantern of Guidance', 'Oil Lamp', 'Spark of Life']) {
+  if (!authoredSpellSource.includes(`Automatically unlocked with ${artifact}`)) failures.push(`Spells lost the automatic Astral Tier 2 unlock for ${artifact}`);
+}
 for (const [spellId, extendedId] of [['GrandBalance', 'primal-balance-targets'], ['DragonsBreath', 'green-dragons-breath-bonus']]) {
   const entry = authoredSpellSource.match(new RegExp(`<article class="spell-entry" id="${spellId}">([\\s\\S]*?)<\\/article>`))?.[1] ?? '';
   if (entry.indexOf(extendedId) < entry.indexOf('<div class="shlisting"')) failures.push(`Spell entry ${spellId} places extended reference material before tier upgrades`);

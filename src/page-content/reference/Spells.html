@@ -58,7 +58,7 @@
 		<p><b>Cost</b>: 400 Mana - <b>Duration</b>: 20 seconds </p>
 		<p><b>Effect</b>: Increase the production of all buildings based on the amount of buildings you own.</p>
 		<p><b>Formula</b>: (25 + (0.3 * x) ^ 0.975)%, where x is your Buildings Owned (This Era) stat.</p>
-		<p><b>Spell Tier Effect</b>: Buildings count 5% more per spell tier.</p>
+		<p><b>Spell Tier Effect</b>: Buildings count 5% more per purchased tier.</p>
 		<section class="spell-related">
 			<p class="spell-related-heading"><b>Challenge Upgrade</b>: <img src="/realm/assets/game/sprites/challenge-mercenary.png" alt="Warcry"> <b>Warcry</b></p>
 			<p>Call to Arms gains additional effects based on your alignments, scaling off your Call to Arms strength.</p>
@@ -73,6 +73,7 @@
 		<div class="shelementwhole">
 		<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">Call to Arms Tier Upgrades</a></b> (R42+, limited by Ascension)</p>
 		<div class="autohide">
+		<p><b>Effect</b>: Buildings count 5% more per purchased tier.</p>
 		<p><b><img src="/realm/assets/game/sprites/call-to-arms-tier2.png" alt="Calltoarms2" align="middle"> Tier</b>: 2</p>
 		<p><b>Cost</b> 51 Sxd (5.1e52) - <b>FC</b> 0</p>
 		<p><b><img src="/realm/assets/game/sprites/call-to-arms-tier3.png" alt="Calltoarms3" align="middle"> Tier</b>: 3</p>
@@ -91,7 +92,7 @@
 		<p><b>Cost</b>: 2,500 Mana - <b>Duration</b>: 20 seconds </p>
 		<p><b>Effect</b>: Increase the production of all buildings based on the amount of times you reincarnated and ascended.</p>
 		<p><b>Formula</b>: (2500 * R ^ 0.9)%, where R is the number of times you have reincarnated.</p>
-		<p><b>Spell Tier Effect</b>: Reincarnations count 5% more per spell tier.</p>
+		<p><b>Spell Tier Effect</b>: Reincarnations count 5% more per purchased tier.</p>
 		<div id="SSCal" class="calculator">
 		<table>
 		<tr>
@@ -211,6 +212,7 @@
 		<div class="shelementwhole">
 		<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">Spiritual Surge Tier Upgrades</a></b> (R42+, limited by Ascension)</p>
 		<div class="autohide">
+		<p><b>Effect</b>: Reincarnations count 5% more per purchased tier.</p>
 		<p><b>Faction Coins Needed</b> Fairy, Elven, Angel, Goblin, Undead, Demon, Dwarven, Drow</p>
 		<p><b><img src="/realm/assets/game/sprites/spiritual-surge-tier2.png" alt="Spiritual Surge" align="middle"> Tier</b>: 2</p>
 		<p><b>Cost</b> 70 Tvg (7e71) - <b>FC</b> 10 T (1e13) each</p>
@@ -233,11 +235,12 @@
 		<p><b>Spell Type</b>: Good Alignment Spell</p>
 		<p><b>Cost</b>: 900 Mana - <b>Duration</b>: 10 seconds</p>
 		<p><b>Effect</b>: Increase clicking reward by 1750%.</p>
-		<p><b>Spell Tier Effect</b>: Multiplicatively increase Mana Regeneration by 10% per spell tier.</p>
+		<p><b>Spell Tier Effect</b>: Multiplicatively increase Mana Regeneration by 10% per purchased tier.</p>
 		<div class="shlisting">
 		<div class="shelementwhole">
 		<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">Holy Light Tier Upgrades</a></b> (R46+, limited by Ascension)</p>
 		<div class="autohide">
+		<p><b>Effect</b>: Multiplicatively increase Mana Regeneration by 10% per purchased tier.</p>
 		<p><b>Faction Coins Needed</b> Fairy, Elven, Angel, Dwarf</p>
 		<p><b><img src="/realm/assets/game/sprites/holy-light-tier2.png" alt="HolyLightTier2" align="middle"> Tier</b>: 2</p>
 		<p><b>Cost</b> 54 Spd (5.4e55) - <b>FC</b> 1 B (1e9)</p>
@@ -256,11 +259,12 @@
 		<p><b>Spell Type</b>: Evil Alignment Spell</p>
 		<p><b>Cost</b>: 600 Mana - <b>Duration</b>: 20 seconds</p>
 		<p><b>Effect</b>: Increases the production of all Evil buildings by 1500%.</p>
-		<p><b>Spell Tier Effect</b>: Multiplicatively increase Non-Unique building production by 500% per spell tier.</p>
+		<p><b>Spell Tier Effect</b>: Multiplicatively increase Non-Unique building production by 500% per purchased tier.</p>
 		<div class="shlisting">
 		<div class="shelementwhole">
 		<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">Blood Frenzy Tier Upgrades</a></b> (R44+, limited by Ascension)</p>
 		<div class="autohide">
+		<p><b>Effect</b>: Multiplicatively increase Non-Unique building production by 500% per purchased tier.</p>
 		<p><b>Faction Coins Needed</b> Goblin, Undead, Demon, Drow</p>
 		<p><b><img src="/realm/assets/game/sprites/blood-frenzy-tier2.png" alt="Bloodfrenzytier" align="middle"> Tier</b>: 2</p>
 		<p><b>Cost</b> 54 Spd (5.4e55) - <b>FC</b> 1 B (1e9)</p>
@@ -280,11 +284,12 @@
 		<p><b>Cost</b>: 1,000 Mana - <b>Duration</b>: 20 seconds </p>
 		<p><b>Effect</b>: Multiplicatively increase production bonus from Gems based on the amount of times you reincarnated and ascended.</p>
 		<p><b>Formula</b>: (2500 * (1 + 0.005 * R) * (T + 1))%, where R is the number of times you have reincarnated and T is the spell tier.</p>
-		<p><b>Spell Tier Effect</b>: Multiplicatively increase Royal Exchange bonus by 10% per spell tier.</p>
+		<p><b>Spell Tier Effect</b>: Multiplicatively increase Royal Exchange bonus by 10% per purchased tier.</p>
 		<div class="shlisting">
 		<div class="shelementwhole">
 		<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">Gem Grinder Tier Upgrades</a></b> (R48+, limited by Ascension)</p>
 		<div class="autohide">
+		<p><b>Effect</b>: Multiplicatively increase Royal Exchange bonus by 10% per purchased tier.</p>
 		<p><b>Faction Coins Needed</b> Fairy, Elven, Angel, Goblin, Undead, Demon, Dwarven, Drow</p>
 		<p><b><img src="/realm/assets/game/sprites/gem-grinder-tier2.png" alt="Gem Grinder" align="middle"> Tier</b>: 2</p>
 		<p><b>Cost</b> 57 Ocd (5.7e58) - <b>FC</b> 5 B (5e9)</p>
@@ -310,6 +315,7 @@
 		<p><b>Formula</b>: (10 * ln(1 + x) ^ 4)%, where x is Mana Regeneration (mana/s).</p>
 		<p><b>Effect</b>: Duration increases based on time spent as Good in this Reincarnation.</p>
 		<p><b>Formula</b>: +floor((0.5 + 0.05 * T) * y ^ (0.5 + 0.05 * T)) seconds, where T is God's Hand's tier and y is time spent as Good in this Reincarnation.</p>
+		<p><b>Spell Tier Effect</b>: Increase the duration-growth coefficient by 0.05 per purchased tier.</p>
 		<section class="spell-related">
 			<p class="spell-related-heading"><b>Spell Trophy & Upgrade</b>: <img src="/realm/assets/game/sprites/gods-rest-trophy.png" alt="God's Rest"> <b>God's Rest</b></p>
 			<p><b>Requirement</b>: Cast God's Hand with at least 1,500 Maximum Mana and 75 Mana Regeneration.</p>
@@ -327,6 +333,7 @@
 		<div class="shelementwhole">
 		<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">God's Hand Tier Upgrades</a></b> (R46+, limited by Ascension)</p>
 		<div class="autohide">
+		<p><b>Effect</b>: Increase the duration-growth coefficient by 0.05 per purchased tier.</p>
 		<p><b>Faction Coins Needed</b> Angel</p>
 		<p><b><img src="/realm/assets/game/sprites/god-s-hand-tier2.png" alt="God's Hand" align="middle"> Tier</b>: 2</p>
 		<p><b>Cost</b> 57 Ocd (5.7e58) - <b>FC</b> 10 B (1e10)</p>
@@ -346,6 +353,7 @@
 		<p><b>Cost</b>: 800 Mana - <b>Duration</b>: 10 seconds</p>
 		<p><b>Effect</b>: Increase the production of Farms, Inns and Blacksmiths based on the number of those buildings built.</p>
 		<p><b>Formula</b>: (20,000 ^ (1 + 0.02 * x ^ 0.2))%, where x is the total Farms, Inns, and Blacksmiths built.</p>
+		<p><b>Spell Tier Effect</b>: Increase duration by 10% per purchased tier.</p>
 		<section class="spell-related">
 			<p class="spell-related-heading"><b>Spell Trophy & Upgrade</b>: <img src="/realm/assets/game/sprites/fairy-choir-trophy.png" alt="Fairy Choir"> <b>Fairy Choir</b></p>
 			<p><b>Requirement</b>: Cast Fairy Chanting while having 50 or more assistants.</p>
@@ -361,7 +369,7 @@
 		<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">Fairy Chanting Tier Upgrades</a></b> (R46+, limited by Ascension)</p>
 		<div class="autohide">
 		<p><b>Faction Coins Needed</b> Fairy</p>
-		<p><b>Effect</b>: Increases the duration of the spell by 10 seconds per tier.</p>
+		<p><b>Effect</b>: Increase spell duration by 10% per purchased tier.</p>
 		<p><b><img src="/realm/assets/game/sprites/fairy-chanting-tier2.png" alt="FairyChanting" align="middle"> Tier</b>: 2</p>
 		<p><b>Cost</b> 57 Ocd (5.7e58) - <b>FC</b> 10 B (1e10)</p>
 		<p><b><img src="/realm/assets/game/sprites/fairy-chanting-tier3.png" alt="FairyChanting" align="middle"> Tier</b>: 3</p>
@@ -380,6 +388,7 @@
 		<p><b>Cost</b>: 700 Mana - <b>Duration</b>: 20 seconds</p>
 		<p><b>Effect</b>: Increases the production of all buildings based on on the amount of clicks made in this Reincarnation.</p>
 		<p><b>Formula</b>: (1.3 * x ^ 0.7)%, where x is the amount of clicks made in this Reincarnation.</p>
+		<p><b>Spell Tier Effect</b>: While Sun Blessing is active, autoclick 2 additional times per second per purchased tier.</p>
 		<section class="spell-related">
 			<p class="spell-related-heading"><b>Spell Trophy & Upgrade</b>: <img src="/realm/assets/game/sprites/sun-blessing-trophy.png" alt="Sun Blessing"> <b>Sun Blessing</b></p>
 			<p><b>Requirement</b>: Cast Moon Blessing with at least 5 Elven Luck triggers in this Era.</p>
@@ -395,7 +404,7 @@
 		<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">Moon Blessing Tier Upgrades</a></b> (R46+, limited by Ascension)</p>
 		<div class="autohide">
 		<p><b>Faction Coins Needed</b> Elven</p>
-		<p><b>Effect</b>: While Sun Blessing is active, autoclick 2 additional times per tier.</p>
+		<p><b>Effect</b>: While Sun Blessing is active, autoclick 2 additional times per second per purchased tier.</p>
 		<p><b><img src="/realm/assets/game/sprites/moon-blessing-tier2.png" alt="MoonBlessing" align="middle"> Tier</b>: 2</p>
 		<p><b>Cost</b> 57 Ocd (5.7e58) - <b>FC</b> 10 B (1e10)</p>
 		<p><b><img src="/realm/assets/game/sprites/moon-blessing-tier3.png" alt="MoonBlessing" align="middle"> Tier</b>: 3</p>
@@ -414,6 +423,7 @@
 		<p><b>Cost</b>: 1,000 Mana - <b>Duration</b>: 12 seconds</p>
 		<p><b>Effect</b>: Increase clicking reward based on amount of Excavation you made and increase your Faction Coin find chance by +200%.</p>
 		<p><b>Formula</b>: (30 * x)%, where x is your excavation depth.</p>
+		<p><b>Spell Tier Effect</b>: Multiplicatively increase Faction Coin find chance by 10% per purchased tier.</p>
 		<section class="spell-related">
 			<p class="spell-related-heading"><b>Spell Trophy & Upgrade</b>: <img src="/realm/assets/game/sprites/minedwarf-trophy.png" alt="Minedwarf"> <b>Minedwarf</b></p>
 			<p><b>Requirement</b>: Find 30,000 Faction Coins using Diamond Pickaxe in a single Era.</p>
@@ -429,7 +439,7 @@
 		<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">Diamond Pickaxe Tier Upgrades</a></b> (R46+, limited by Ascension)</p>
 		<div class="autohide">
 		<p><b>Faction Coins Needed</b> Dwarf</p>
-		<p><b>Effect</b>: Increases FC find chance per tier.</p>
+		<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance by 10% per purchased tier.</p>
 		<p><b><img src="/realm/assets/game/sprites/diamond-pickaxe-tier2.png" alt="Diamond Pickaxe" align="middle"> Tier</b>: 2</p>
 		<p><b>Cost</b> 69 Dvg (6.9e70) - <b>FC</b> 1 T (1e12)</p>
 		<p><b><img src="/realm/assets/game/sprites/diamond-pickaxe-tier3.png" alt="Diamond Pickaxe" align="middle"> Tier</b>: 3</p>
@@ -447,6 +457,7 @@
 		<p><b>Spell Type</b>: (Evil/Order) Undead Faction Spell</p>
 		<p><b>Cost</b>: 800 Mana - <b>Duration</b>: 20 seconds </p>
 		<p><b>Effect</b>: Increase assistant production by (50 + 50 * x)%, where x is the number of Necropolises you own.</p>
+		<p><b>Spell Tier Effect</b>: Multiplicatively increase assistants by 5% per purchased tier.</p>
 		<section class="spell-related">
 			<p class="spell-related-heading"><b>Spell Trophy & Upgrade</b>: <img src="/realm/assets/game/sprites/true-night-trophy.png" alt="True Night"> <b>True Night</b></p>
 			<p><b>Requirement</b>: Cast Night Time with at least 20,000% Offline production.</p>
@@ -462,6 +473,7 @@
 		<div class="shelementwhole">
 		<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">Night Time Tier Upgrades</a></b> (R44+, limited by Ascension)</p>
 		<div class="autohide">
+		<p><b>Effect</b>: Multiplicatively increase assistants by 5% per purchased tier.</p>
 		<p><b>Faction Coins Needed</b> Undead</p>
 		<p><b><img src="/realm/assets/game/sprites/night-time-tier2.png" alt="Night Time" align="middle"> Tier</b>: 2</p>
 		<p><b>Cost</b> 57 Ocd (5.7e58) - <b>FC</b> 10 B (1e10)</p>
@@ -481,6 +493,7 @@
 		<p><b>Cost</b>: 900 Mana - <b>Duration</b>: 20 seconds</p>
 		<p><b>Effect</b>: Increase the production of Evil Fortresses and Hell Portals based on your amount of trophies.</p>
 		<p><b>Formula</b>: (120 * x ^ 0.8)%, where x is your amount of trophies.</p>
+		<p><b>Spell Tier Effect</b>: Evil spells cast count 50% more per purchased tier.</p>
 		<section class="spell-related">
 			<p class="spell-related-heading"><b>Spell Trophy & Upgrade</b>: <img src="/realm/assets/game/sprites/hell-rush-trophy.png" alt="Hell Rush"> <b>Hell Rush</b></p>
 			<p><b>Requirement</b>: Cast the Demon spell Hellfire Blast in the first 60 seconds of a playtime.</p>
@@ -496,8 +509,7 @@
 		<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">Hellfire Blast Tier Upgrades</a></b> (R44+, limited by Ascension)</p>
 		<div class="autohide">
 		<p><b>Faction Coins Needed</b> Demon</p>
-		<p><b>Effect</b>: Evils spells count more per Tier.</b>
-		<p><b>Formula</b>: (50 * (T - 1))%, where T is the Hellfire Blast Tier.</p>
+		<p><b>Effect</b>: Evil spells cast count 50% more per purchased tier.</p>
 		<p><b><img src="/realm/assets/game/sprites/hellfire-blast-tier2.png" alt="Hellfire Blast" align="middle"> Tier</b>: 2</p>
 		<p><b>Cost</b> 57 Ocd (5.7e58) - <b>FC</b> 10 B (1e10)</p>
 		<p><b><img src="/realm/assets/game/sprites/hellfire-blast-tier3.png" alt="Hellfire Blast" align="middle"> Tier</b>: 3</p>
@@ -517,6 +529,7 @@
 		<p><b>Effect</b>: Instantly produces Faction Coins based on gems you own. Also increases production of all buildings based on the number of Faction Coins found in this Era.</p>
 		<p><b>Faction Coin Formula</b>: +(80 + 2.25 * ln(10 + x) ^ 2.25), where x is your current amount of Gems.</p>
 		<p><b>Production Formula</b>: (30 + 3 * ln(1 + x) ^ 3)%, where x is the number of Faction Coins found in this Era.</p>
+		<p><b>Spell Tier Effect</b>: Add 1 to triggered Tax Collections per purchased tier.</p>
 		<section class="spell-related">
 			<p class="spell-related-heading"><b>Spell Trophy & Upgrade</b>: <img src="/realm/assets/game/sprites/greed-drive-trophy.png" alt="Greed Drive"> <b>Greed Drive</b></p>
 			<p><b>Requirement</b>: Cast Goblin's Greed with at least 100 Royal Exchanges purchased.</p>
@@ -531,6 +544,7 @@
 		<div class="shelementwhole">
 		<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">Goblin's Greed Tier Upgrades</a></b> (R44+, limited by Ascension)</p>
 		<div class="autohide">
+		<p><b>Effect</b>: Add 1 to triggered Tax Collections per purchased tier.</p>
 		<p><b>Faction Coins Needed</b> Goblin</p>
 		<p><b><img src="/realm/assets/game/sprites/goblin-s-greed-tier2.png" alt="Goblin's Greed" align="middle"> Tier</b>: 2</p>
 		<p><b>Cost</b> 57 Ocd (5.7e58) - <b>FC</b> 10 B (1e10)</p>
@@ -550,6 +564,7 @@
 		<p><b>Cost</b>: 800 Mana - <b>Duration</b>: Fixed to 16 seconds</p>
 		<p><b>Effect</b>: Increase the production of all buildings by a progressively higher value as you continue casting this spell (This Era).</p>
 		<p><b>Formula</b>: (100 * x ^ 0.9)%, where x is the Combo Strike counter.</p>
+		<p><b>Spell Tier Effect</b>: Higher-tier casts increase the Combo Strike cast statistic by more: +1, +4, +12, +27, and +51 at Tiers 1–5.</p>
 		<section class="spell-related">
 			<p class="spell-related-heading"><b>Spell Trophy & Upgrade</b>: <img src="/realm/assets/game/sprites/perfect-combo-trophy.png" alt="Perfect Combo"> <b>Perfect Combo</b></p>
 			<p><b>Requirement</b>: Cast a chain of 50 Combo Strikes in a single Era. The chain is interrupted by casting different spells.</p>
@@ -569,7 +584,7 @@
 		<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">Combo Strike Tier Upgrades</a></b> (R44+, limited by Ascension)</p>
 		<div class="autohide">
 		<p><b>Faction Coins Needed</b> Drow</p>
-		<p><b>Effect</b>: Combo strike cast stat increases more when you cast higher tiers.</p>
+		<p><b>Effect</b>: Higher-tier casts increase the Combo Strike cast statistic by more: +1, +4, +12, +27, and +51 at Tiers 1–5.</p>
 		<p><b><img src="/realm/assets/game/sprites/combo-strike-tier2.png" alt="Combo Strike" align="middle"> Tier</b>: 2</p>
 		<p><b>Cost</b> 69 Dvg (6.9e70) - <b>FC</b> 1 T (1e12)</p>
 		<p><b><img src="/realm/assets/game/sprites/combo-strike-tier3.png" alt="Combo Strike" align="middle"> Tier</b>: 3</p>
@@ -588,6 +603,7 @@
 		<p><b>Cost</b>: 250 Mana - <b>Duration</b>: 5 seconds </p>
 		<p><b>Effect</b>: Increase the production of a random building by 900% for each Iron Stronghold. Also multiplicatively increase Faction Coin find chance based on Gems owned.</p>
 		<p><b>Formula</b>: (50 + 2 * ln(1 + x) ^ 1.5)%, where x is your current amount of Gems.</p>
+		<p><b>Spell Tier Effect</b>: Iron Strongholds count 75% more per purchased tier for Lightning Strike's production bonus.</p>
 		<section class="spell-related">
 			<p class="spell-related-heading"><b>Spell Trophy & Upgrade</b>: <img src="/realm/assets/game/sprites/lightning-storm-trophy.png" alt="Lightning Storm"> <b>Lightning Storm</b></p>
 			<p><b>Requirement</b>: Cast Lightning Strike 100 times in a single Era.</p>
@@ -605,7 +621,7 @@
 		<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">Lightning Strike Tier Upgrades</a></b> (R48+, limited by Ascension)</p>
 		<div class="autohide">
 		<p><b>Faction Coins Needed</b> Angel, Goblin</p>
-		<p><b>Effect</b>: Iron Strongholds count for 75% more per tier for the spell bonus.</p>
+		<p><b>Effect</b>: Iron Strongholds count 75% more per purchased tier for Lightning Strike's production bonus.</p>
 		<p><b><img src="/realm/assets/game/sprites/lightning-strike-tier2.png" alt="Lightning Strike" align="middle"> Tier</b>: 2</p>
 		<p><b>Cost</b> 60 Nod (6e61) - <b>FC</b> 50 B (5e10)</p>
 		<p><b><img src="/realm/assets/game/sprites/lightning-strike-tier3.png" alt="Lightning Strike" align="middle"> Tier</b>: 3</p>
@@ -623,6 +639,7 @@
 		<p><b>Spell Type</b>: (Neutral/Chaos) Faceless Faction Spell</p>
 		<p><b>Cost</b>: 600 Mana - <b>Duration</b>: 600 seconds </p>
 		<p><b>Effect</b>: Increase production of all buildings by a cumulative 20% per second.</p>
+		<p><b>Spell Tier Effect</b>: Add a 10-minute headstart per purchased tier.</p>
 		<section class="spell-related">
 			<p class="spell-related-heading"><b>Spell Trophy & Upgrade</b>: <img src="/realm/assets/game/sprites/faceless-overmind-trophy.png" alt="Faceless Overmind"> <b>Faceless Overmind</b></p>
 			<p><b>Requirement</b>: Affiliate with the Faceless 5 times in a row.</p>
@@ -639,7 +656,7 @@
 		<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">Brainwave Tier Upgrades</a></b> (R48+, limited by Ascension)</p>
 		<div class="autohide">
 		<p><b>Faction Coins Needed</b> Fairy, Undead</p>
-		<p><b>Effect</b>: Brainwave headstarts for an additional 10 minutes per tier.</p>
+		<p><b>Effect</b>: Add a 10-minute headstart per purchased tier.</p>
 		<p><b><img src="/realm/assets/game/sprites/brainwave-tier2.png" alt="Brainwave" align="middle"> Tier</b>: 2</p>
 		<p><b>Cost</b> 60 Nod (6e61) - <b>FC</b> 50 B (5E10)</p>
 		<p><b><img src="/realm/assets/game/sprites/brainwave-tier3.png" alt="Brainwave" align="middle"> Tier</b>: 3</p>
@@ -658,7 +675,7 @@
 		<p><b>Cost</b>: 1,000 Mana - <b>Duration</b>: 20 seconds</p>
 		<p><b>Effect</b>: Increase the production of your least productive building based on the amount of the three most built ones.</p>
 		<p><b>Formula</b>: (1 + round(25 * (x * y * z / (A + 3) ^ 6) ^ 0.9))%, where x, y and z are the number of your three most-built buildings and A is how many times you have ascended.</p>
-		<p><b>Spell Tier Effect</b>: Multiplicatively increase Maximum Mana by 5% per spell tier.</p>
+		<p><b>Spell Tier Effect</b>: Multiplicatively increase Maximum Mana by 5% per purchased tier.</p>
 		<section class="spell-related">
 			<p class="spell-related-heading"><b>Spell Trophy & Upgrade</b>: <img src="/realm/assets/game/sprites/halls-of-balance-trophy.png" alt="Halls of Balance"> <b>Halls of Balance</b></p>
 			<p><b>Requirement</b>: Have Grand Balance affect Hall of Legends.</p>
@@ -676,6 +693,7 @@
 		<div class="shelementwhole">
 		<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">Grand Balance Tier Upgrades</a></b> (R48+, limited by Ascension)</p>
 		<div class="autohide">
+		<p><b>Effect</b>: Multiplicatively increase Maximum Mana by 5% per purchased tier.</p>
 		<p><b>Faction Coins Needed</b> Elven, Demon</p>
 		<p><b><img src="/realm/assets/game/sprites/grand-balance-tier2.png" alt="Grand Balance" align="middle"> Tier</b>: 2</p>
 		<p><b>Cost</b> 60 Nod (6e61) - <b>FC</b> 50 B (5E10)</p>
@@ -724,9 +742,8 @@
 		<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">Dragon's Breath Tier Upgrades</a></b> (Tier 2 at R54, Tier 3 at R60, Tier 4 at R66, Tier 5 at R72)</p>
 		<div class="autohide">
 		<p><b>Faction Coins Needed</b> Dwarf, Drow</p>
-		<p><b>Effect</b>: Each tier gives another random effect per cast. Tier 5 will trigger all the effects simultaneously.</p>
-		<p><b>Formula</b></p>
-		<p><b>Note</b>: No 1 spell will be casted twice in the same cast.</p>
+		<p><b>Effect</b>: Each spell tier activates one random breath color that is not already active in its current six-tier cycle. Before A2, only the five base colors are available; Yellow joins the pool in A2+.</p>
+		<p><b>Note</b>: Once every available color is active, further tiers begin another cycle and can stack a color already supplied by the previous cycle.</p>
 		<p><b><img src="/realm/assets/game/sprites/dragon-s-breath-tier2.png" alt="DragonsBreathTier2" align="middle"> Tier</b>: 2</p>
 		<p><b>Cost</b> 69 Dvg (6.9e70) - <b>FC</b> 1 Qa (1e15) Dwarven, Drow</p>
 		<p><b><img src="/realm/assets/game/sprites/dragon-s-breath-tier3.png" alt="DragonsBreathTier3" align="middle"> Tier</b>: 3</p>
@@ -735,8 +752,6 @@
 		<p><b>Cost</b> 69 Dvg (6.9e70) - <b>FC</b> 31.62 Qi (3.162e19) Dwarven, Drow</p>
 		<p><b><img src="/realm/assets/game/sprites/dragon-s-breath-tier5.png" alt="DragonsBreathTier5" align="middle"> Tier</b>: 5</p>
 		<p><b>Cost</b> 69 Dvg (6.9e70) - <b>FC</b> 5.623 Sx (5.623e21) Dwarven, Drow</p>
-		<p><b>Note</b>: Dragon's Breath will cast a random Dragon's Breath spell for the 6th tier.</p>
-		<p><b>Note</b>: Dragon's Breath will cast 2 random Dragon's Breath spell for the 7th tier.</p>
 		</div>
 		</div>
 		</div>
@@ -790,14 +805,15 @@
 		<p><b>Mana Regeneration Formula</b>: (3.75 * (x / 60) ^ 0.825 * (T + 1))%, where x is time spent in this Era and T is the zero-based spell tier.</p>
 		<p><b>Archon Union Effect</b>: Also multiplicatively increase Maximum Mana based on time spent in this Era.</p>
 		<p><b>Maximum Mana Formula</b>: (0.375 * (x / 60) ^ 0.825 * (T + 1))%, where x is time spent in this Era and T is the zero-based spell tier.</p>
-		<p><b>Spell Tier Effect</b>: Mana produced counts 10% more per spell tier.</p>
+		<p><b>Spell Tier Effect</b>: Mana produced counts 10% more per purchased tier.</p>
 		<p><b>An Untimely Death Effect</b>: Also increase Offline production using the Unique Building production formula.</p>
 		<div class="shlisting">
 		<div class="shelementwhole">
 		<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">Temporal Flux Tier Upgrades</a></b> (limited by Ascension)</p>
 		<div class="autohide">
+		<p><b>Effect</b>: Mana produced counts 10% more per purchased tier.</p>
 		<p><b><img src="/realm/assets/game/sprites/temporal-flux-tier2.png" alt="Temporal Flux Tier 2" align="middle"> Tier</b>: 2</p>
-		<p><b>Requirement</b>: 1 hour of Temporal Flux activity time in this Reincarnation and at least 5 minutes spent in the current Era.</p>
+		<p><b>Requirement</b>: Automatically unlocked when Temporal Flux becomes available.</p>
 		<p><b>Coin Cost</b>: Free</p>
 		<p><b>FC Cost</b>: 1 Qi (1e18) Angel, Undead, Dwarven and Drow Coins.</p>
 		<p><b><img src="/realm/assets/game/sprites/temporal-flux-tier3.png" alt="Temporal Flux Tier 3" align="middle"> Tier</b>: 3</p>
@@ -825,13 +841,14 @@
 		<p><b>Formula (Trophies)</b>: (5 * x ^ 0.9)%, where x is trophies unlocked.</p>
 		<p><b>Formula (Faction Coins)</b>: (0.01 * ln(1 + x) ^ 4)%, where x is Faction Coins found this Era.</p>
 		<p><b>Formula (Assistants)</b>: (0.1 * ln(1 + x) ^ 5)%, where x is the number of assistants.</p>
-		<p><b>Spell Tier Effect</b>: Affect one additional random building per spell tier.</p>
+		<p><b>Spell Tier Effect</b>: Affect one additional random building per purchased tier.</p>
 		<div class="shlisting">
 		<div class="shelementwhole">
 		<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">Maelstrom Tier Upgrades</a></b> (limited by Ascension)</p>
 		<div class="autohide">
+		<p><b>Effect</b>: Affect one additional random building per purchased tier.</p>
 		<p><b><img src="/realm/assets/game/sprites/maelstrom-tier2.png" alt="Maelstrom Tier 2" align="middle"> Tier</b>: 2</p>
-		<p><b>Requirement</b>: 1 hour of Maelstrom activity time in this Reincarnation and at least 4 active spells.</p>
+		<p><b>Requirement</b>: Automatically unlocked when Maelstrom becomes available.</p>
 		<p><b>Coin Cost</b>: Free</p>
 		<p><b>FC Cost</b>: 1 Qi (1e18) Fairy, Demon, Dwarven and Drow Coins.</p>
 		<p><b><img src="/realm/assets/game/sprites/maelstrom-tier3.png" alt="Maelstrom Tier 3" align="middle"> Tier</b>: 3</p>
@@ -858,13 +875,14 @@
 		<p><b>Formula</b>: (0.5 * ln(1 + x) ^ 3 + x ^ 0.5)%, where x is Mana Regeneration (mana/s).</p>
 		<p><b>Effect</b>: Also multiplicatively increase Faction Coin find chance based on your Mana Regeneration rate.</p>
 		<p><b>Formula</b>: ((4.5 * ln(1 + x) ^ 2.25 + 12.5 * x ^ 0.125) * (T + 1))%, where x is Mana Regeneration (mana/s) and T is the zero-based spell tier.</p>
-		<p><b>Spell Tier Effect</b>: Multiplicatively increase production bonus from Gems by 10% per spell tier.</p>
+		<p><b>Spell Tier Effect</b>: Multiplicatively increase production bonus from Gems by 10% per purchased tier.</p>
 		<div class="shlisting">
 		<div class="shelementwhole">
 		<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">All Creation Tier Upgrades</a></b> (limited by Ascension)</p>
 		<div class="autohide">
+		<p><b>Effect</b>: Multiplicatively increase production bonus from Gems by 10% per purchased tier.</p>
 		<p><b><img src="/realm/assets/game/sprites/all-creation-tier2.png" alt="All Creation Tier 2" align="middle"> Tier</b>: 2</p>
-		<p><b>Requirement</b>: 1 hour of All Creation activity time in this Reincarnation and at least 100 Royal Exchanges.</p>
+		<p><b>Requirement</b>: Automatically unlocked when All Creation becomes available.</p>
 		<p><b>Coin Cost</b>: Free</p>
 		<p><b>FC Cost</b>: 1 Qi (1e18) Elven, Goblin, Dwarven and Drow Coins.</p>
 		<p><b><img src="/realm/assets/game/sprites/all-creation-tier3.png" alt="All Creation Tier 3" align="middle"> Tier</b>: 3</p>
@@ -894,7 +912,7 @@
 		<p><b>Effect</b>: Buildings, Assistants, Royal Exchanges, Spells cast and Clicks count more based on Mana produced in this Era.</p>
 		<p><b>Formula</b>: (0.65 * ln(1 + x) ^ 1.15)%, where x is Mana produced in this Era.</p>
 		<p><b>Note</b>: Formula improves to (1.3 * ln(1 + x) ^ 1.25)% with AR2.</p>
-		<p><b>Spell Tier Effect</b>: Research Points count 10% more per spell tier.</p>
+		<p><b>Spell Tier Effect</b>: Research Points count 10% more per purchased tier.</p>
 		<section class="spell-related">
 			<p class="spell-related-heading"><b>Spell Trophy & Upgrade</b>: <img src="/realm/assets/game/sprites/chrono-loading-trophy.png" alt="Chrono Loading"> <b>Chrono Loading</b></p>
 			<p><b>Requirement</b>: Cast Precognition with at least 100 Qa (1e17) Mana Regeneration.</p>
@@ -911,13 +929,14 @@
 		<div class="shelementwhole">
 		<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">Precognition Tier Upgrades</a></b> (limited by Ascension)</p>
 		<div class="autohide">
+		<p><b>Effect</b>: Research Points count 10% more per purchased tier.</p>
 		<p><b><img src="/realm/assets/game/sprites/precognition-tier2.png" alt="Precognition Tier 2" align="middle"> Tier</b>: 2</p>
-		<p><b>Requirement</b>: Lantern of Guidance, 1 hour of Precognition activity time in this Reincarnation, and at least 6 minutes of Precognition duration.</p>
+		<p><b>Requirement</b>: Automatically unlocked with Lantern of Guidance.</p>
 		<p><b>Coin Cost</b>: Free</p>
 		<p><b>FC Cost</b>: 1 Sp (1e24) Angel, Undead, Dwarven and Drow Coins.</p>
 		<p><b><img src="/realm/assets/game/sprites/precognition-tier3.png" alt="Precognition Tier 3" align="middle"> Tier</b>: 3</p>
 		<p><b>Requirement</b>: Lantern of Guidance, 2 hours of Precognition activity time in this Reincarnation, and at least 12 minutes of Precognition duration.</p>
-		<p><b>Coin Cost</b>: 120 Notg (1.2e122) Emerald Coins</p>
+		<p><b>Coin Cost</b>: Free</p>
 		<p><b>FC Cost</b>: 3.981 Oc (3.981e27) Angel, Undead, Dwarven and Drow Coins.</p>
 		<p><b><img src="/realm/assets/game/sprites/precognition-tier4.png" alt="Precognition Tier 4" align="middle"> Tier</b>: 4</p>
 		<p><b>Requirement</b>: Lantern of Guidance, 3 hours of Precognition activity time in this Reincarnation, and at least 18 minutes of Precognition duration.</p>
@@ -939,6 +958,7 @@
 		<p><b>Formula (Production effect)</b>: (50 + 5 * ln(1 + x) ^ 1.75 * y)%, where x is Limited Wish activity time in this Era and y is a random number between 1 and Limited Wish casts this Era rolled on cast.</p>
 		<p><b>Formula (Non-Production effects)</b>: (25 + 2.5 * ln(1 + x) ^ 1.75 * y ^ 0.5 * (T + 1))%, where T is the spell tier.</p>
 		<p><b>Note</b>: Limited Wish casts count more based on spell tier: (10 * T ^ 2)%. Its cost decreases by 1% per minute up to 1 hour, then resets.</p>
+		<p><b>Spell Tier Effect</b>: Limited Wish casts count (10 * T ^ 2)% more, where T is the number of purchased tiers.</p>
 		<h4 id="limited-wish-effects" class="spell-subheading">Possible effects</h4>
 		<p><b>1</b>: Increase the production of all buildings.</p>
 		<p><b>Good Alignment</b></p>
@@ -967,13 +987,14 @@
 		<div class="shelementwhole">
 		<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">Limited Wish Tier Upgrades</a></b> (limited by Ascension)</p>
 		<div class="autohide">
+		<p><b>Effect</b>: Limited Wish casts count (10 * T ^ 2)% more, where T is the number of purchased tiers.</p>
 		<p><b><img src="/realm/assets/game/sprites/limited-wish-tier2.png" alt="Limited Wish Tier 2" align="middle"> Tier</b>: 2</p>
-		<p><b>Requirement</b>: Oil Lamp, 1 hour of Limited Wish activity time in this Reincarnation, and at least 100,000 Maximum Mana.</p>
+		<p><b>Requirement</b>: Automatically unlocked with Oil Lamp.</p>
 		<p><b>Coin Cost</b>: Free</p>
 		<p><b>FC Cost</b>: 1 Sp (1e24) Fairy, Demon, Dwarven and Drow Coins.</p>
 		<p><b><img src="/realm/assets/game/sprites/limited-wish-tier3.png" alt="Limited Wish Tier 3" align="middle"> Tier</b>: 3</p>
 		<p><b>Requirement</b>: Oil Lamp, 2 hours of Limited Wish activity time in this Reincarnation, and at least 31.62 M (3.162e7) Maximum Mana.</p>
-		<p><b>Coin Cost</b>: 120 Notg (1.2e122) Emerald Coins</p>
+		<p><b>Coin Cost</b>: Free</p>
 		<p><b>FC Cost</b>: 3.981 Oc (3.981e27) Fairy, Demon, Dwarven and Drow Coins.</p>
 		<p><b><img src="/realm/assets/game/sprites/limited-wish-tier4.png" alt="Limited Wish Tier 4" align="middle"> Tier</b>: 4</p>
 		<p><b>Requirement</b>: Oil Lamp, 3 hours of Limited Wish activity time in this Reincarnation, and at least 10 B (1e10) Maximum Mana.</p>
@@ -997,7 +1018,7 @@
 		<p><b>Formula</b>: (1.5 * ln(1 + x) ^ 1.5)%, where x is Faction Coin find chance.</p>
 		<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on Excavations made, including resets, in this Reincarnation.</p>
 		<p><b>Formula</b>: (10 + 0.1 * x ^ 0.75)%, where x is your excavation depth.</p>
-		<p><b>Spell Tier Effect</b>: Multiplicatively increase Offline bonus by 10% per spell tier.</p>
+		<p><b>Spell Tier Effect</b>: Multiplicatively increase Offline bonus by 10% per purchased tier.</p>
 		<section class="spell-related">
 			<p class="spell-related-heading"><b>Spell Trophy & Upgrade</b>: <img src="/realm/assets/game/sprites/reality-crater-trophy.png" alt="Reality Crater"> <b>Reality Crater</b></p>
 			<p><b>Requirement</b>: R125+, Cast Infinite Spiral with at least 10 excavation resets this Era.</p>
@@ -1013,13 +1034,14 @@
 		<div class="shelementwhole">
 		<p onclick="shohid($(this));"><b><a href="#" onclick="return false;">Infinite Spiral Tier Upgrades</a></b> (limited by Ascension)</p>
 		<div class="autohide">
+		<p><b>Effect</b>: Multiplicatively increase Offline bonus by 10% per purchased tier.</p>
 		<p><b><img src="/realm/assets/game/sprites/infinite-spiral-tier2.png" alt="Infinite Spiral Tier 2" align="middle"> Tier</b>: 2</p>
-		<p><b>Requirement</b>: Spark of Life, 1 hour of Infinite Spiral activity time in this Reincarnation, and at least 160 Dd (1.6e41) Faction Coins found.</p>
+		<p><b>Requirement</b>: Automatically unlocked with Spark of Life.</p>
 		<p><b>Coin Cost</b>: Free</p>
 		<p><b>FC Cost</b>: 1 Sp (1e24) Elven, Goblin, Dwarven and Drow Coins.</p>
 		<p><b><img src="/realm/assets/game/sprites/infinite-spiral-tier3.png" alt="Infinite Spiral Tier 3" align="middle"> Tier</b>: 3</p>
 		<p><b>Requirement</b>: Spark of Life, 2 hours of Infinite Spiral activity time in this Reincarnation, and at least 320 Dd (3.2e41) Faction Coins found.</p>
-		<p><b>Coin Cost</b>: 120 Notg (1.2e122) Emerald Coins</p>
+		<p><b>Coin Cost</b>: Free</p>
 		<p><b>FC Cost</b>: 3.981 Oc (3.981e27) Elven, Goblin, Dwarven and Drow Coins.</p>
 		<p><b><img src="/realm/assets/game/sprites/infinite-spiral-tier4.png" alt="Infinite Spiral Tier 4" align="middle"> Tier</b>: 4</p>
 		<p><b>Requirement</b>: Spark of Life, 3 hours of Infinite Spiral activity time in this Reincarnation, and at least 480 Dd (4.8e41) Faction Coins found.</p>
