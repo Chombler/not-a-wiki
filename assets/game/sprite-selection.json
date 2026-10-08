@@ -37,6 +37,12 @@
       "role": "spell-alignment-background"
     },
     {
+      "sprite_name": "spellBox_Gold_Up",
+      "kind": "ui",
+      "entity": "gold",
+      "role": "spell-unaffiliated-background"
+    },
+    {
       "sprite_name": "black_GoldTrim",
       "kind": "ui",
       "entity": "icon-frame",

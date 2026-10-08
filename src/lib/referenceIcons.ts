@@ -7,6 +7,7 @@ export type IconAffiliation =
 export type PrimaryAlignment = 'good' | 'evil' | 'neutral';
 export type SecondaryAlignment = 'order' | 'chaos' | 'balance';
 export type SpellAlignment = PrimaryAlignment | SecondaryAlignment;
+export type SpellBackground = SpellAlignment | 'gold';
 
 export const factionAlignmentPair: Partial<Record<IconAffiliation, [PrimaryAlignment, SecondaryAlignment]>> = {
   angel: ['good', 'order'],
@@ -25,7 +26,7 @@ export interface ReferenceIconItem {
   icon: string;
   affiliation?: IconAffiliation;
   splitAlignments?: boolean;
-  alignmentBackground?: SpellAlignment;
+  alignmentBackground?: SpellBackground;
   href?: string;
   tooltipHtml: string;
 }

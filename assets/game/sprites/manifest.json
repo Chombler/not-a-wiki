@@ -135,6 +135,28 @@
       "role": "spell-alignment-background"
     },
     {
+      "key": "spell-box-gold-up",
+      "path": "assets/game/sprites/spell-box-gold-up.png",
+      "sprite_name": "spellBox_Gold_Up",
+      "atlas_xml": "realmgrinderui_new.xml",
+      "atlas_image": "realmgrinderui_new.png",
+      "region": {
+        "x": 902,
+        "y": 1801,
+        "width": 69,
+        "height": 50
+      },
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 69,
+        "height": 50
+      },
+      "kind": "ui",
+      "entity": "gold",
+      "role": "spell-unaffiliated-background"
+    },
+    {
       "key": "black-gold-trim",
       "path": "assets/game/sprites/black-gold-trim.png",
       "sprite_name": "black_GoldTrim",

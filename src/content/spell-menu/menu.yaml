@@ -350,6 +350,7 @@ spells:
   - id: TaxCollection
     name: Tax Collection
     icon: tax-collection-icon.png
+    alignmentBackground: gold
     target: TaxCollection
     tooltip: |-
       <p><b>Spell Type</b>: Default Spell</p>
@@ -358,6 +359,7 @@ spells:
   - id: CalltoArms
     name: Call to Arms
     icon: call-to-arms-icon.png
+    alignmentBackground: gold
     target: CalltoArms
     tooltip: |-
       <p><b>Spell Tier Effect</b>: Buildings count 5% more per spell tier.</p>
@@ -368,6 +370,7 @@ spells:
   - id: SpiritualSurge
     name: Spiritual Surge
     icon: spiritual-surge-icon.png
+    alignmentBackground: gold
     target: SpiritualSurge
     tooltip: |-
       <p><b>Spell Tier Effect</b>: Reincarnations count 5% more per spell tier.</p>
@@ -378,6 +381,7 @@ spells:
   - id: TwistingNether
     name: Twisting Nether
     icon: twisting-nether-icon.png
+    alignmentBackground: gold
     target: TwistingNether
     tooltip: |-
       <p><b>Spell Type</b>: Faction Spell (R220+)</p>

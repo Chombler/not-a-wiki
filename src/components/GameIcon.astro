@@ -1,12 +1,12 @@
 ---
-import { factionAlignmentPair, type IconAffiliation, type SpellAlignment } from '../lib/referenceIcons';
+import { factionAlignmentPair, type IconAffiliation, type SpellBackground } from '../lib/referenceIcons';
 
 interface Props {
   icon: string;
   label?: string;
   affiliation?: IconAffiliation;
   splitAlignments?: boolean;
-  alignmentBackground?: SpellAlignment;
+  alignmentBackground?: SpellBackground;
 }
 
 const { icon, label = '', affiliation, splitAlignments = false, alignmentBackground } = Astro.props;

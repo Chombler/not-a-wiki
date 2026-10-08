@@ -62,7 +62,7 @@ const spellMenuEntry = z.object({
     'good', 'evil', 'order', 'chaos', 'balance',
   ]).optional(),
   splitAlignments: z.boolean().optional(),
-  alignmentBackground: z.enum(['good', 'evil', 'neutral', 'order', 'chaos', 'balance']).optional(),
+  alignmentBackground: z.enum(['good', 'evil', 'neutral', 'order', 'chaos', 'balance', 'gold']).optional(),
   target: z.string().regex(/^[A-Za-z0-9]+$/),
   tooltip: z.string(),
 });
