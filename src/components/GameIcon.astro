@@ -1,5 +1,5 @@
 ---
-import type { IconAffiliation } from '../lib/referenceIcons';
+import { iconTrimForAffiliation, type IconAffiliation } from '../lib/referenceIcons';
 
 interface Props {
   icon: string;
@@ -9,8 +9,9 @@ interface Props {
 
 const { icon, label = '', affiliation } = Astro.props;
 const base = `${import.meta.env.BASE_URL.replace(/\/+$/, '')}/`;
-const frameStyle = affiliation
-  ? `--reference-icon-frame: url("${base}assets/game/sprites/${affiliation}-trim.png")`
+const trim = iconTrimForAffiliation(affiliation);
+const frameStyle = trim
+  ? `--reference-icon-frame: url("${base}assets/game/sprites/${trim}-trim.png")`
   : undefined;
 ---
 
