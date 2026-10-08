@@ -17,7 +17,7 @@ a.tooltips {
 .game-icon-frame > img {
     position: absolute;
     inset: 5px;
-    z-index: 1;
+    z-index: 2;
     width: 50px;
     height: 50px;
     max-width: none;
@@ -27,7 +27,7 @@ a.tooltips {
 .game-icon-frame--alignment-split::before {
     position: absolute;
     inset: 7px;
-    z-index: 0;
+    z-index: 1;
     background: linear-gradient(
         to right,
         var(--reference-icon-primary) 0 50%,
@@ -45,10 +45,6 @@ a.tooltips {
     border-image: var(--reference-icon-frame, var(--game-icon-frame)) 9 fill / 9px;
     content: "";
     pointer-events: none;
-}
-
-.game-icon-frame--alignment-split::after {
-    border-image: var(--reference-icon-frame, var(--game-icon-frame)) 9 / 9px;
 }
 
 .trophy-drawer {
