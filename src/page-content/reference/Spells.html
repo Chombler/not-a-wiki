@@ -116,94 +116,91 @@
 		</tr>
 		</table>
 		<script>
-		function CalSSHidSho(r) {
-		$('.ResUnl, .SSCalTieHid, .SSCalDDLinHid, .SSCalDra ').css('display', 'none');
-		$('#SSCal th').removeAttr('rowspan colspan');
-		if (r >= 52) {
-		$('#SSCal tr:eq(0) > th:eq(4)').attr('colspan', '2');
-		$('#SSCal tr:eq(0) > th:not(:eq(4))').attr('rowspan', '2');
-		$('th.ResUnl, td.ResUnl').css('display', 'table-cell');
-		$('tr.ResUnl').css('display', 'table-row');
-		}
-		if (r >= 40) {
-		$('.SSCalTieHid').css('display', 'table-cell');
-		}
-		if (r >= 60) {
-		$('.SSCalDDLinHid').css('display', 'table-cell');
-		}
-		if (r >= 63) {
-			$('.SSCalDra').css('display', 'table-cell');
-			}
+		(() => {
+			const calculator = document.getElementById('SSCal');
+			if (!calculator) return;
+
+			const reincarnationInput = calculator.querySelector('#SSCalRei');
+			const tierInput = calculator.querySelector('#SSCalTie');
+			const druidLevelInput = calculator.querySelector('#SSCalDDLin');
+			const prismaticBreathInput = calculator.querySelector('#SSCalPB');
+			const productionWithoutD1375 = calculator.querySelector('#SSCalProNoD1375');
+			const productionWithD1375 = calculator.querySelector('#SSCalProD1375');
+			const d1375Production = calculator.querySelector('#SSCalD1375');
+
+			function setVisible(selector, visible, display = 'table-cell') {
+				calculator.querySelectorAll(selector).forEach((element) => {
+					element.style.display = visible ? display : 'none';
+				});
 			}
 
-			/**
-		* @return {number}
-		* @param rei
-		* @param [D1375]
-		* @param [dp]
-		* @param [tier]
-		*/
-		function CalSSMul(rei, D1375 = false, tier = 1, druidLevel = 0, dp = false) {
-		var ascension = (rei >= 40) + (rei >= 100) + (rei >= 160) + (rei >= 220);
-		rei = rei + 2 * druidLevel;
-		rei = (dp) ? rei * 1.5 : rei;
-		var base = (2500 * rei ** 1.05) ** (1 + (D1375?1.5:1) * ascension * 0.5);
-		base = (base/100 + 1)**((0.1 ** ascension)*Math.min(tier,6) + 0.2*Math.max(0,tier-6) / (10**Math.max(0,ascension-2)));
-			return base;
+			function updateAvailableFields(reincarnation) {
+				setVisible('.ResUnl, .SSCalTieHid, .SSCalDDLinHid, .SSCalDra', false);
+				calculator.querySelectorAll('th').forEach((heading) => {
+					heading.removeAttribute('rowspan');
+					heading.removeAttribute('colspan');
+				});
+
+				if (reincarnation >= 52) {
+					const firstRowHeadings = calculator.querySelectorAll('tr:first-child > th');
+					firstRowHeadings[4]?.setAttribute('colspan', '2');
+					firstRowHeadings.forEach((heading, index) => {
+						if (index !== 4) heading.setAttribute('rowspan', '2');
+					});
+					setVisible('th.ResUnl, td.ResUnl', true);
+					setVisible('tr.ResUnl', true, 'table-row');
+				}
+				if (reincarnation >= 40) setVisible('.SSCalTieHid', true);
+				if (reincarnation >= 60) setVisible('.SSCalDDLinHid', true);
+				if (reincarnation >= 63) setVisible('.SSCalDra', true);
 			}
 
-			/**
-		* @return {string}
-		*/
-		function MulToBon(mul) {
-		var percent = Math.floor(100 * (mul - 1));
-		var length = percent.toString().length;
-		percent = length > 6?percent.toPrecision(4):percent.toPrecision(length).replace('.0','');
-		if (length > 3 && length <= 6) percent = percent.substring(0,length-3) + "," + percent.substring(length-3,length);
-			return percent;
+			function spiritualSurgeMultiplier(reincarnation, hasD1375 = false, tier = 1, druidLevel = 0, hasPrismaticBreath = false) {
+				const ascension = Number(reincarnation >= 40) + Number(reincarnation >= 100) + Number(reincarnation >= 160) + Number(reincarnation >= 220);
+				let effectiveReincarnations = reincarnation + 2 * druidLevel;
+				if (hasPrismaticBreath) effectiveReincarnations *= 1.5;
+				let multiplier = (2500 * effectiveReincarnations ** 1.05) ** (1 + (hasD1375 ? 1.5 : 1) * ascension * 0.5);
+				multiplier = (multiplier / 100 + 1) ** ((0.1 ** ascension) * Math.min(tier, 6) + 0.2 * Math.max(0, tier - 6) / (10 ** Math.max(0, ascension - 2)));
+				return multiplier;
 			}
 
-			function CalSS() {
-		var rei = parseInt($('#SSCalRei').val()),
-		tie = 1,
-		dp = $('#SSCalPB').is(':checked'),
-		ProNoD1375 = 0,
-		ProD1375 = 0,
-		DruidLevel = 0;
-		CalSSHidSho(rei);
-		if (rei < 40) {
-		ProNoD1375 = CalSSMul(rei);
-		} else if (rei < 52) {
-		tie = parseInt($('#SSCalTie').val());
-		ProNoD1375 = CalSSMul(rei, false, tie);
-		} else if (rei < 60) {
-		tie = parseInt($('#SSCalTie').val());
-		ProNoD1375 = CalSSMul(rei, false, tie);
-		ProD1375 = CalSSMul(rei, true, tie);
-		} else if (rei < 63) {
-		tie = parseInt($('#SSCalTie').val());
-		DruidLevel = parseInt($('#SSCalDDLin').val());
-		ProNoD1375 = CalSSMul(rei, false, tie, DruidLevel);
-		ProD1375 = CalSSMul(rei, true, tie, DruidLevel);
-		} else {
-		tie = parseInt($('#SSCalTie').val());
-		DruidLevel = parseInt($('#SSCalDDLin').val());
-		ProNoD1375 = CalSSMul(rei, false, tie, DruidLevel, dp);
-		ProD1375 = CalSSMul(rei, true, tie, DruidLevel, dp);
-		}
-		if (rei < 100 && tie > 6) {
-		$('#SSCalProNoD1375').text('N/A');
-		$('#SSCalProD1375').text('N/A');
-		$('#SSCalD1375').text('N/A');
-		} else {
-		$('#SSCalProNoD1375').text(MulToBon(ProNoD1375) + '%');
-		$('#SSCalProD1375').text(MulToBon(ProD1375) + '%');
-		$('#SSCalD1375').text(MulToBon(ProD1375 / ProNoD1375) + '%');
-		}
-		}
-		CalSS();
-		$('#SSCalRei, #SSCalTie, #SSCalDDLin').on('input', CalSS);
-		$('#SSCalPB').on('change', CalSS);
+			function multiplierToBonus(multiplier) {
+				let percent = Math.floor(100 * (multiplier - 1));
+				if (!Number.isFinite(percent)) return 'N/A';
+				const length = percent.toString().length;
+				percent = length > 6 ? percent.toPrecision(4) : percent.toPrecision(length).replace('.0', '');
+				if (length > 3 && length <= 6) percent = `${percent.substring(0, length - 3)},${percent.substring(length - 3, length)}`;
+				return percent;
+			}
+
+			function calculate() {
+				const reincarnation = Number.parseInt(reincarnationInput.value, 10);
+				if (!Number.isFinite(reincarnation)) return;
+				const tier = reincarnation >= 40 ? Number.parseInt(tierInput.value, 10) || 1 : 1;
+				const druidLevel = reincarnation >= 60 ? Number.parseInt(druidLevelInput.value, 10) || 0 : 0;
+				const hasPrismaticBreath = reincarnation >= 63 && prismaticBreathInput.checked;
+				updateAvailableFields(reincarnation);
+
+				if (reincarnation < 100 && tier > 6) {
+					productionWithoutD1375.textContent = 'N/A';
+					productionWithD1375.textContent = 'N/A';
+					d1375Production.textContent = 'N/A';
+					return;
+				}
+
+				const withoutD1375 = spiritualSurgeMultiplier(reincarnation, false, tier, druidLevel, hasPrismaticBreath);
+				productionWithoutD1375.textContent = `${multiplierToBonus(withoutD1375)}%`;
+				if (reincarnation >= 52) {
+					const withD1375 = spiritualSurgeMultiplier(reincarnation, true, tier, druidLevel, hasPrismaticBreath);
+					productionWithD1375.textContent = `${multiplierToBonus(withD1375)}%`;
+					d1375Production.textContent = `${multiplierToBonus(withD1375 / withoutD1375)}%`;
+				}
+			}
+
+			[reincarnationInput, tierInput, druidLevelInput].forEach((input) => input.addEventListener('input', calculate));
+			prismaticBreathInput.addEventListener('change', calculate);
+			calculate();
+		})();
 		</script>
 		</div>
 		<details class="spell-tier-upgrades">

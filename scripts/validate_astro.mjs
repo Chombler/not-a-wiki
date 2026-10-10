@@ -301,6 +301,11 @@ for (const match of authoredSpellSource.matchAll(/<article class="spell-entry" i
   if (tiersAt >= 0 && Math.max(trophyAt, challengeAt) > tiersAt) failures.push(`Spell entry ${spellId} places related upgrades after tier upgrades`);
 }
 if ([...authoredSpellSource.matchAll(/<b>Spell Tier Effect<\/b>/g)].length !== 22) failures.push('Spells does not summarize all 22 ordinary spell-specific tier effects');
+const spiritualSurgeCalculator = authoredSpellSource.match(/<div id="SSCal"[\s\S]*?<\/script>\s*<\/div>/)?.[0] || '';
+if (!spiritualSurgeCalculator.includes('function spiritualSurgeMultiplier')
+  || spiritualSurgeCalculator.includes("$('#SSCal")) {
+  failures.push('Spiritual Surge calculator is missing or once again depends on late-loading jQuery');
+}
 const tierCollapsibles = [...authoredSpellSource.matchAll(/<details class="spell-tier-upgrades">([\s\S]*?)<\/details>/g)];
 if (tierCollapsibles.length !== 23 || tierCollapsibles.some(([, body]) => !body.includes('<b>Effect</b>'))) {
   failures.push('Spells does not give every tier-upgrade collapsible an explicit, source-audited effect');
