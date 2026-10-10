@@ -279,7 +279,7 @@ if ([...authoredSpellSource.matchAll(/class="spell-entry"/g)].length !== 30 || !
 }
 for (const match of authoredSpellSource.matchAll(/<article class="spell-entry" id="([^"]+)">([\s\S]*?)<\/article>/g)) {
   const [, spellId, entry] = match;
-  const core = entry.split(/<section class="spell-related"|<div class="shlisting"/)[0];
+  const core = entry.split(/<section class="spell-related"|<details class="spell-tier-upgrades"/)[0];
   const headingAt = core.indexOf('class="spell-entry-heading"');
   const typeAt = core.indexOf('<b>Spell Type</b>');
   const requirementAt = core.indexOf('<b>Requirement</b>');
@@ -296,14 +296,18 @@ for (const match of authoredSpellSource.matchAll(/<article class="spell-entry" i
     ? entry.indexOf('<b>Spell Trophy &amp; Upgrade</b>')
     : entry.indexOf('<b>Spell Trophy & Upgrade</b>');
   const challengeAt = entry.indexOf('<b>Challenge Upgrade</b>');
-  const tiersAt = entry.indexOf('<div class="shlisting"');
+  const tiersAt = entry.indexOf('<details class="spell-tier-upgrades"');
   if (trophyAt >= 0 && challengeAt >= 0 && trophyAt > challengeAt) failures.push(`Spell entry ${spellId} places its challenge before its trophy upgrade`);
   if (tiersAt >= 0 && Math.max(trophyAt, challengeAt) > tiersAt) failures.push(`Spell entry ${spellId} places related upgrades after tier upgrades`);
 }
 if ([...authoredSpellSource.matchAll(/<b>Spell Tier Effect<\/b>/g)].length !== 22) failures.push('Spells does not summarize all 22 ordinary spell-specific tier effects');
-const tierCollapsibles = [...authoredSpellSource.matchAll(/<div class="shlisting">([\s\S]*?)<\/article>/g)];
+const tierCollapsibles = [...authoredSpellSource.matchAll(/<details class="spell-tier-upgrades">([\s\S]*?)<\/details>/g)];
 if (tierCollapsibles.length !== 23 || tierCollapsibles.some(([, body]) => !body.includes('<b>Effect</b>'))) {
   failures.push('Spells does not give every tier-upgrade collapsible an explicit, source-audited effect');
+}
+if ([...spellPageHtml.matchAll(/class="spell-related-grid-panels"/g)].length !== 1
+  || !spellPageHtml.includes('class="reference-icon-grid"')) {
+  failures.push('Spells lost its shared trophy and challenge icon grids');
 }
 for (const staleTierClaim of [
   'duration of the spell by 10 seconds per tier',

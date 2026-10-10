@@ -255,9 +255,20 @@ a.tooltips {
 
 .spell-related-grid-panels {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
   gap: 0.75rem;
   padding: 0.75rem;
+}
+
+.spell-related-grid-panels .reference-icon-grid {
+  grid-template-columns: repeat(4, 60px);
+}
+
+@media (max-width: 700px) {
+  .spell-related-grid-panels {
+    grid-template-columns: max-content;
+  }
 }
 
 .spell-entry {
@@ -4453,26 +4464,26 @@ hr {
     margin: .25rem 0;
 }
 
-.spell-entry > .shlisting {
+.spell-tier-upgrades {
     margin: .85rem 0 0;
-}
-
-.spell-entry > .shlisting .shelementwhole {
+    overflow: hidden;
+    border: 1px solid var(--line);
     border-width: 1px;
     border-radius: .35rem;
-}
-
-.spell-entry > .shlisting .shelementwhole > :is(p, h2):first-child {
-    padding: .65rem .8rem !important;
     background: var(--panel-bg);
 }
 
-.spell-entry > .shlisting .autohide {
+.spell-tier-upgrades > summary {
+    padding: .65rem .8rem;
+    cursor: pointer;
+}
+
+.spell-tier-upgrades-body {
     padding: .7rem .85rem;
     border-top: 1px solid var(--line);
 }
 
-.spell-entry > .shlisting .autohide > p {
+.spell-tier-upgrades-body > p {
     margin: .3rem 0;
 }
 
