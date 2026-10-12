@@ -342,23 +342,23 @@ body {
     background: none;
 }
 
-#ReiCosCal table, #SSCal table {
+#ReiCosCal table {
     width: 98%;
     border-collapse: collapse;
 }
 
-#ReiCosCal td, #ReiCosCal th, #SSCal td, #SSCal th {
+#ReiCosCal td, #ReiCosCal th {
     border: 1px solid black;
     font-size: 14px;
     text-align: center;
 }
 
-#ReiCosCal th, #SSCal th {
+#ReiCosCal th {
     background-color: #b3bcc6;
     color: black;
 }
 
-#ReiCosCal input, #SSCal input {
+#ReiCosCal input {
     text-align: center;
     background-color: #b3bcc6;
 }

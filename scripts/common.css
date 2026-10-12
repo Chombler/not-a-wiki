@@ -1647,23 +1647,23 @@ h7 {
     background: none;
 }
 
-.calc table, #ReiCosCal table, #SSCal table {
+.calc table, #ReiCosCal table {
     width: 98%;
     border-collapse: collapse;
 }
 
-.calc td, .calc th, #ReiCosCal td, #ReiCosCal th, #SSCal td, #SSCal th {
+.calc td, .calc th, #ReiCosCal td, #ReiCosCal th {
     border: 1px solid black;
     font-size: 14px;
     text-align: center;
 }
 
-.calc th, #ReiCosCal th, #SSCal th {
+.calc th, #ReiCosCal th {
     background-color: #b3bcc6;
     color: black;
 }
 
-.calc input, #ReiCosCal input, #SSCal input {
+.calc input, #ReiCosCal input {
   width: 90%;
     text-align: center;
     background-color: #b3bcc6;
