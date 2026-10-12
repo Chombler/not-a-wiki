@@ -314,8 +314,15 @@ for (const staleTierClaim of [
   'Evils spells count more per Tier',
   'Tier 5 will trigger all the effects simultaneously',
   'No 1 spell will be casted twice',
+  'per purchased tier',
+  'zero-based spell tier',
 ]) {
   if (authoredSpellSource.includes(staleTierClaim)) failures.push(`Spells restored stale tier claim: ${staleTierClaim}`);
+}
+if (spellMenuSource.includes('per spell tier')
+  || spellMenuSource.includes('number of purchased tiers')
+  || spellMenuSource.includes('zero-based spell tier')) {
+  failures.push('Spell menu uses ambiguous purchased-tier terminology instead of the Tier 1 baseline');
 }
 for (const artifact of ['Lantern of Guidance', 'Oil Lamp', 'Spark of Life']) {
   if (!authoredSpellSource.includes(`Automatically unlocked with ${artifact}`)) failures.push(`Spells lost the automatic Astral Tier 2 unlock for ${artifact}`);

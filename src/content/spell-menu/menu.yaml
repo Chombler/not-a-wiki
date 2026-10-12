@@ -12,7 +12,7 @@ spells:
       	<p><b>Effect</b>: Increase the production of all buildings based on your Mana Regeneration rate.</p>
       	<p><b>Formula</b>: (10 * ln(1 + x) ^ 4)%, where x is Mana Regeneration (mana/s).</p>
       	<p><b>Effect</b>: Duration increases based on time spent as Good in this Reincarnation.</p>
-      	<p><b>Formula</b>: +floor((0.5 + 0.05 * T) * y ^ (0.5 + 0.05 * T)) seconds, where T is God's Hand's tier and y is time spent as Good in this Reincarnation.</p>
+      <p><b>Formula</b>: +floor((0.5 + 0.05 * T) * y ^ (0.5 + 0.05 * T)) seconds, where T is the number of tiers above Tier 1 and y is time spent as Good in this Reincarnation.</p>
   - id: FairyChanting
     name: Fairy Chanting
     icon: fairy-chanting-icon.png
@@ -42,7 +42,7 @@ spells:
     alignmentBackground: good
     target: HolyLight
     tooltip: |-
-      <p><b>Spell Tier Effect</b>: Multiplicatively increase Mana Regeneration by 10% per spell tier.</p>
+      <p><b>Spell Tier Effect</b>: Multiplicatively increase Mana Regeneration by 10% per tier above Tier 1.</p>
       	<p><b>Spell Type</b>: Good Alignment Spell</p>
       	<p><b>Cost</b>: 900 Mana - <b>Duration</b>: 10 seconds</p>
       	<p><b>Effect</b>: Increase clicking reward by 1750%.</p>
@@ -69,9 +69,9 @@ spells:
       	<p><b>Effect</b>: Alters Tax Collection with new name and effect (still counts as Tax Collection for all purposes).</p>
       	<p><b>Effect</b>: Increases the production of all buildings and Faction Coin find chance based on this spell tier level.</p>
       	<p><b>Effect</b>: Also produce Tax Collection casts per second based on your Maximum Mana.</p>
-      	<p><b>Formula (Production bonus)</b>: (m * (80 + 1.6 * ln(1 + x) ^ 1.6) ^ ((0.5 * T + 1) ^ 0.9))%, where x is Tax Collection worth in seconds, T the Share Benefits tier, and m is 100 below A3 (1 in A3+).</p>
-      	<p><b>Formula (Faction Coin find chance)</b>: (100 * (3 + 0.1 * ln(1 + c)) ^ (T + 1))%, where c is your Triggered Tax Collections power and T the Share Benefits tier.</p>
-      	<p><b>Formula (Tax Collection casts per second)</b>: +(0.00001 * c * x ^ 0.5 * M * (T + 1))/s, where c is Triggered Tax Collections power, x is Tax Collection worth in seconds, M is Maximum Mana and T the Share Benefits tier.</p>
+      <p><b>Formula (Production bonus)</b>: (m * (80 + 1.6 * ln(1 + x) ^ 1.6) ^ ((0.5 * T + 1) ^ 0.9))%, where x is Tax Collection worth in seconds, T is the number of tiers above Tier 1, and m is 100 below A3 (1 in A3+).</p>
+      <p><b>Formula (Faction Coin find chance)</b>: (100 * (3 + 0.1 * ln(1 + c)) ^ (T + 1))%, where c is your Triggered Tax Collections power and T is the number of tiers above Tier 1.</p>
+      <p><b>Formula (Tax Collection casts per second)</b>: +(0.00001 * c * x ^ 0.5 * M * (T + 1))/s, where c is Triggered Tax Collections power, x is Tax Collection worth in seconds, M is Maximum Mana and T is the number of tiers above Tier 1.</p>
       	<p><b>Note</b>: Can be cast up to 36 tiers (99 in A3+).</p>
   - id: NightTime
     name: Night Time
@@ -113,7 +113,7 @@ spells:
     alignmentBackground: evil
     target: BloodFrenzy
     tooltip: |-
-      <p><b>Spell Tier Effect</b>: Multiplicatively increase Non-Unique building production by 500% per spell tier.</p>
+      <p><b>Spell Tier Effect</b>: Multiplicatively increase Non-Unique building production by 500% per tier above Tier 1.</p>
       	<p><b>Spell Type</b>: Evil Alignment Spell</p>
       	<p><b>Cost</b>: 600 Mana - <b>Duration</b>: 20 seconds</p>
       	<p><b>Effect</b>: Increases the production of all Evil buildings by 1500%.</p>
@@ -169,7 +169,7 @@ spells:
     splitAlignments: true
     target: GrandBalance
     tooltip: |-
-      <p><b>Spell Tier Effect</b>: Multiplicatively increase Maximum Mana by 5% per spell tier.</p>
+      <p><b>Spell Tier Effect</b>: Multiplicatively increase Maximum Mana by 5% per tier above Tier 1.</p>
       	<p><b>Spell Type</b>: (Neutral/Balance) Druid Faction Spell</p>
       	<p><b>Cost</b>: 1,000 Mana - <b>Duration</b>: 20 seconds</p>
       	<p><b>Effect</b>: Increase the production of your least productive building based on the amount of the three most built ones.</p>
@@ -180,11 +180,11 @@ spells:
     alignmentBackground: neutral
     target: GemGrinder
     tooltip: |-
-      <p><b>Spell Tier Effect</b>: Multiplicatively increase Royal Exchange bonus by 10% per spell tier.</p>
+      <p><b>Spell Tier Effect</b>: Multiplicatively increase Royal Exchange bonus by 10% per tier above Tier 1.</p>
       	<p><b>Spell Type</b>: Neutral Alignment Spell</p>
       	<p><b>Cost</b>: 1,000 Mana - <b>Duration</b>: 20 seconds </p>
       	<p><b>Effect</b>: Multiplicatively increase production bonus from Gems based on the amount of times you reincarnated and ascended.</p>
-      	<p><b>Formula</b>: (2500 * (1 + 0.005 * R) * (T + 1))%, where R is the number of times you have reincarnated and T is the spell tier.</p>
+      <p><b>Formula</b>: (2500 * (1 + 0.005 * R) * (T + 1))%, where R is the number of times you have reincarnated and T is the number of tiers above Tier 1.</p>
   - id: DragonsBreath
     name: Dragon's Breath
     icon: dragons-breath-icon.png
@@ -231,10 +231,10 @@ spells:
       	<p><b>Effect</b>: Increase Unique building production based on time spent this Era.</p>
       	<p><b>Production Formula</b>: (x ^ 0.825)%, where x is time spent in this Era.</p>
       	<p><b>Effect</b>: Also multiplicatively increase Mana Regeneration based on time spent in this Era.</p>
-      	<p><b>Mana Regeneration Formula</b>: (3.75 * (x / 60) ^ 0.825 * (T + 1))%, where x is time spent in this Era and T is the zero-based spell tier.</p>
+      <p><b>Mana Regeneration Formula</b>: (3.75 * (x / 60) ^ 0.825 * (T + 1))%, where x is time spent in this Era and T is the number of tiers above Tier 1.</p>
       	<p><b>Archon Union Effect</b>: Also multiplicatively increase Maximum Mana based on time spent in this Era.</p>
-      	<p><b>Maximum Mana Formula</b>: (0.375 * (x / 60) ^ 0.825 * (T + 1))%, where x is time spent in this Era and T is the zero-based spell tier.</p>
-      	<p><b>Spell Tier Effect</b>: Mana produced counts 10% more per spell tier.</p>
+      <p><b>Maximum Mana Formula</b>: (0.375 * (x / 60) ^ 0.825 * (T + 1))%, where x is time spent in this Era and T is the number of tiers above Tier 1.</p>
+      <p><b>Spell Tier Effect</b>: Mana produced counts 10% more per tier above Tier 1.</p>
       	<p><b>An Untimely Death Effect</b>: Also increase Offline production using the Unique Building production formula.</p>
   - id: Maelstrom
     name: Maelstrom
@@ -243,7 +243,7 @@ spells:
     alignmentBackground: chaos
     target: Maelstrom
     tooltip: |-
-      <p><b>Spell Tier Effect</b>: Affect one additional random building per spell tier.</p>
+      <p><b>Spell Tier Effect</b>: Affect one additional random building per tier above Tier 1.</p>
       	<p><b>Spell Type</b>: Chaos Alignment Spell (R100+)</p>
       	<p><b>Cost</b>: 700 Mana - <b>Duration</b>: 20 seconds</p>
       	<p><b>Effect</b>: Increase the production of two random buildings based on one of these stats, chosen at random: Mana produced this Era, trophies unlocked, Faction Coins found this Era, or assistants.</p>
@@ -258,7 +258,7 @@ spells:
     alignmentBackground: balance
     target: AllCreation
     tooltip: |-
-      <p><b>Spell Tier Effect</b>: Multiplicatively increase production bonus from Gems by 10% per spell tier.</p>
+      <p><b>Spell Tier Effect</b>: Multiplicatively increase production bonus from Gems by 10% per tier above Tier 1.</p>
       	<p><b>Spell Type</b>: Balance Alignment Spell (R100+)</p>
       	<p><b>Cost</b>: 1,100 Mana - <b>Duration</b>: 20 seconds</p>
       	<p><b>Effect</b>: Increase production of all buildings based on your Mana Regeneration rate.</p>
@@ -272,7 +272,7 @@ spells:
     alignmentBackground: order
     target: Precognition
     tooltip: |-
-      <p><b>Spell Tier Effect</b>: Research Points count 10% more per spell tier.</p>
+      <p><b>Spell Tier Effect</b>: Research Points count 10% more per tier above Tier 1.</p>
       	<p><b>Spell Type</b>: (Order) Archon Faction Spell (R125+)</p>
       	<p><b>Cost</b>: 123,456 Mana - <b>Duration</b>: 20 seconds</p>
       	<p><b>Effect</b>: Buildings, Assistants, Royal Exchanges, Spells cast and Clicks count more based on Mana produced in this Era.</p>
@@ -289,8 +289,8 @@ spells:
       	<p><b>Cost</b>: 800,000 Mana - <b>Duration</b>: Fixed to 6 seconds</p>
       	<p><b>Effect</b>: Provide a random effect based on your chosen base alignment, for 6 seconds. The duration of the spell cannot be modified. Its power increases as you continue casting this spell.</p>
       	<p><b>Formula (Production effect)</b>: (50 + 5 * ln(1 + x) ^ 1.75 * y)%, where x is Limited Wish activity time in this Era and y is a random number between 1 and Limited Wish casts this Era rolled on cast.</p>
-      	<p><b>Formula (Non-Production effects)</b>: (25 + 2.5 * ln(1 + x) ^ 1.75 * y ^ 0.5 * (T + 1))%, where T is the spell tier.</p>
-      	<p><b>Note</b>: Limited Wish casts count more based on spell tier: (10 * T ^ 2)%. Its cost decreases by 1% per minute up to 1 hour, then resets.</p>
+      <p><b>Formula (Non-Production effects)</b>: (25 + 2.5 * ln(1 + x) ^ 1.75 * y ^ 0.5 * (T + 1))%, where T is the number of tiers above Tier 1.</p>
+      <p><b>Note</b>: Limited Wish casts count more based on tiers above Tier 1: (10 * T ^ 2)%, where T is the number of tiers above Tier 1. Its cost decreases by 1% per minute up to 1 hour, then resets.</p>
       	<p><b>Possible Effects</b></p>
       	<p><b>1</b>: Increase the production of all buildings.</p>
       	<p><b>Good Alignment</b></p>
@@ -312,7 +312,7 @@ spells:
     alignmentBackground: balance
     target: InfiniteSpiral
     tooltip: |-
-      <p><b>Spell Tier Effect</b>: Multiplicatively increase Offline bonus by 10% per spell tier.</p>
+      <p><b>Spell Tier Effect</b>: Multiplicatively increase Offline bonus by 10% per tier above Tier 1.</p>
       	<p><b>Spell Type</b>: (Balance) Makers Faction Spell (R125+)</p>
       	<p><b>Cost</b>: 505,000 mana - <b>Duration</b>: 10 seconds</p>
       	<p><b>Effect</b>: Temporarily increase assistants based on Maximum Mana (multiplicatively).</p>
@@ -362,7 +362,7 @@ spells:
     alignmentBackground: neutral
     target: CalltoArms
     tooltip: |-
-      <p><b>Spell Tier Effect</b>: Buildings count 5% more per spell tier.</p>
+      <p><b>Spell Tier Effect</b>: Buildings count 5% more per tier above Tier 1.</p>
       	<p><b>Spell Type</b>: Default Spell </p>
       	<p><b>Cost</b>: 400 Mana - <b>Duration</b>: 20 seconds </p>
       	<p><b>Effect</b>: Increase the production of all buildings based on the amount of buildings you own.</p>
@@ -373,7 +373,7 @@ spells:
     alignmentBackground: gold
     target: SpiritualSurge
     tooltip: |-
-      <p><b>Spell Tier Effect</b>: Reincarnations count 5% more per spell tier.</p>
+      <p><b>Spell Tier Effect</b>: Reincarnations count 5% more per tier above Tier 1.</p>
       	<p><b>Spell Type</b>: Default Spell (R14+)</p>
       	<p><b>Cost</b>: 2,500 Mana - <b>Duration</b>: 20 seconds </p>
       	<p><b>Effect</b>: Increase the production of all buildings based on the amount of times you reincarnated and ascended.</p>
